@@ -1,0 +1,54 @@
+title: Topic 2: Loops and Variables
+
+{
+h2: Big Ideas
+big-idea: Explore the development of the 3D Graphics field
+big-idea: Get a sense of the complexity and team work required to produce modern animated films.
+
+	video: Video Lecture: 3D Graphics (Dan Garcia) [https://coursesharing.org/courses/6/lectures/10]
+	reading: Animating a Blockbuster [http://www.wired.com/magazine/2010/05/process_pixar/]
+	reading: Justices Reject Ban on Violent Video Games for Children [http://www.nytimes.com/2011/06/28/us/28scotus.html?_r=1]
+
+
+h2: Activities
+learning-goal: Learn to use key listeners to move the characters around the screen.
+learning-goal: Learn to use the movement and drawing commands in Snap! to draw complex images and geometric shapes.
+learning-goal: Learn to use variables that change dynamically within a program.
+learning-goal: Use layers of abstraction in programs to draw complex images.
+
+heading: Game controls
+	resource: Moving with the Arrow Keys [/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
+	resource: Two characters running! [/cur/programming/intro/drawing/two-characters-running.html]
+	resource: Game of TAG! [/cur/programming/intro/drawing/game-of-tag.html]
+	quiz: Test Yourself: Detecting a key press [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13920]
+	
+heading: Drawing
+	resource: Experiment with drawing commands [/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
+	resource: Experiment with Repeat [/cur/programming/intro/drawing/experiment-with-repeat.html]
+	quiz: Turns [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13924]
+	quiz: Repeat [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13925]
+
+heading: Variables
+	quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
+	resource: Tempo [/cur/programming/variables/tempo.html]
+	quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
+	resource: Change how fast the tempo changes [/cur/programming/variables/change-how-fast-the-tempo-changes.html]
+	resource: Variable Tutorial (Scales) [/cur/programming/variables/variable-tutorial-scales.html]
+	resource: Common Bug - Set vs. Change [/cur/programming/variables/common-bug-set-vs-change.html]
+	resource: (<i>Optional</i>) Exploring Regular Shapes [/cur/programming/variables/optional-exploring-regular-shapes.html]
+	resource: Variable Sized Shapes [/cur/programming/variables/variable-sized-shapes.html]
+	resource: Countdown [/cur/programming/variables/countdown.html]
+	resource: Repeat Until [/cur/programming/variables/repeat-until.html]
+	resource: (<i>Optional</i>) Practice with Repeat Until [/cur/programming/variables/optional-practice-with-repeat-until.html]
+	resource: Draw a Squiral [/cur/programming/variables/draw-a-squiral.html]
+	quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
+
+	
+heading: Activities
+	resource: Draw a Picture in Scratch [/cur/programming/intro/drawing/draw-a-picture-in-scratch.html]
+	resource: Electric Keyboard [/cur/programming/variables/electric-keyboard.html]
+	resource: [/cur/programming/variables/countdown-with-sprites.html]
+	
+//heading: Turn in your work
+	//submit: Submit: Loops and Variables 
+}

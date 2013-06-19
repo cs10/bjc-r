@@ -1,0 +1,35 @@
+<html>
+
+
+   <head>
+      
+      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      
+      <title> Combining all the items of a list</title>
+      
+   </head>   
+      
+
+   <body>
+
+<p><br>Let's say you have a list of numbers, such as all the students' grades on a quiz. You want to find the average grade. There are two steps: First, add up all the numbers; then divide that sum by the number of numbers — that is, by the length of the list.<br>
+<img width="428" vspace="0" hspace="0" height="84" border="0" src="../../../../img/list/hof/average.png" alt="average uses COMBINE WITH +" title="average uses COMBINE WITH +"/>
+<br>Notice that the red <b>length of</b> block that finds the number of items in a list is different from the green <b>length of</b> block that finds the number of letters in a text string.
+
+<br><br>The first input to the <b>combine with</b> block is a <i>two-input </i>function. In this case, it's the <b>+</b> block, because we want to add all the numbers. In fact, unlike the situation with the <b>map</b> and <b>keep</b> blocks, there are really only a handful of functions you'll ever use with <b>combine</b>:<br>
+<img width="308" vspace="0" hspace="0" height="155" border="0" src="../../../../img/list/hof/bad-operators.png" alt="+, *, and, or, join, join words" title="+, *, and, or, join, join words"/>
+</p>Why did we include the addition and multiplication operators, but not subtraction or division? Using an operator with <b>combine</b> makes sense only if it doesn't matter whether the values are combined left to right or right to left. That is,
+<br>
+3+(4+5) = (3+4)+5
+<br>but
+<br>3-(4-5) &ne; (3-4)-5
+
+<p><br>Very occasionally you'll define a two-input custom reporter for use with <b>combine</b>.
+
+</p><br><br><b>Try this: <br></b>
+Write a two-input <b>max</b> function that takes two numbers as inputs and returns whichever is larger. Then use that with <b>combine</b> to find the largest number in a list.<br>We should try out the <b>average</b> block:<br>
+<img width="319" vspace="0" hspace="0" height="87" border="0" src="../../../../img/list/hof/avg781.png" alt="average of the list 7,8,1 iw 5.333333" title="average of the list 7,8,1 iw 5.333333"/>
+<br>Is that the answer you'd expect?<br><br>  
+
+   </body>
+</html>

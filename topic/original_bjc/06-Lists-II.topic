@@ -1,0 +1,37 @@
+title: Topic 6: Lists II
+{
+h2: Big Ideas
+big-idea: Explore various methods of developing algorithms to solve problems
+big-idea: Understand the role of encryption in securing documents and the dangers inherent in producing sensitive digital information as it relates to privacy and security concerns
+
+	video: Algorithms (Luke Segars) [https://coursesharing.org/courses/6/lectures/14]
+	reading: Blown to Bits, Chapter 3 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf]
+
+h2: Activities
+learning-goal: Get more practice with making Lists, accessing elements and inserting items.
+learning-goal: Learn patterns of looping over an entire list or part of a list.
+learning-goal: Write and analyze code that sorts a list.
+
+heading: More Practice With Lists: Game Board
+	resource: Make a Game Board [/cur/programming/lists/gameboard/make-a-game-board.html]
+	resource: Get One Piece [/cur/programming/lists/gameboard/get-one-piece.html]
+	resource: Error Checking [/cur/programming/lists/gameboard/error-checking.html] 
+	resource: Change a Piece Value [/cur/programming/lists/gameboard/change-a-piece-value.html] 
+	resource: Copy Letters: Hint [/cur/programming/lists/gameboard/copy-letters-hint.html]
+	resource: Change a Piece Value: Take Two [/cur/programming/lists/gameboard/change-a-piece-value-take-two.html]
+
+heading: Sorting a List
+	resource: Sorting a List: Helper Functions [/cur/programming/sorting/intro/sorting-a-list-helper-functions.html]
+	resource: Sorting a List [/cur/programming/sorting/intro/sorting-a-list.html]
+	resource: Sorting a List: Implementation [/cur/programming/sorting/intro/sorting-a-list-implementation.html]
+	resource: (optional) Sorting a Word [/cur/programming/sorting/intro/optional-sorting-a-word.html]
+
+// CS10 hid everything below this...
+heading: Drawing a Game Board
+	resource: Drawing the board (not the pieces) [/cur/programming/lists/gameboard/drawing-the-board-not-the-pieces.html]
+
+heading: Activities
+	resource: Common Game Board Actions [/cur/programming/lists/gameboard/common-game-board-actions.html]
+	resource: Make a High-Score List [/cur/programming/lists/assignments/make-a-high-score-list.html]
+	
+}
