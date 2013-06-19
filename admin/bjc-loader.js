@@ -1,5 +1,5 @@
 /*
- * Used by curriculum pages (/r/cur/) to insert script and link tags.
+ * Used by curriculum pages (/bjc-course/cur/) to insert script and link tags.
  *
  * The functionality here is duplicated in other html pages as well, using static scripts
  *   glossary/view.html
@@ -12,7 +12,7 @@
 
 // NOTE: this is built in bjc-main.js if not built here...
 var bjc = {};
-bjc.rootURL = "/r/";
+bjc.rootURL = "/bjc-course/";
 
 bjc.paths = {};
 bjc.paths.links = [

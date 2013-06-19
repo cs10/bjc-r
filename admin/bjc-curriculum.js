@@ -86,7 +86,7 @@ bjc.secondarySetUp = function() {
 		}
 		bjc['file'] = getParameterByName("topic");
 		$.ajax({
-			url : "/r/topic/" + bjc.file,
+			url : "/bjc-course/topic/" + bjc.file,
 			type : "GET",
 			dataType : "text",
 			//data : myData,
@@ -137,7 +137,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = "/r/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+					url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
 				} else {
 					url += "?" + "topic=" + bjc.file + "&step=" + num;
 				}
@@ -191,7 +191,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	list_header.width(list.outerWidth());
 	list.slideToggle(0);
 	
-	if (document.URL.indexOf("/r/admin/empty-curriculum-page.html") != -1) {
+	if (document.URL.indexOf("/bjc-course/admin/empty-curriculum-page.html") != -1) {
 		bjc.addFrame();
 	}
 

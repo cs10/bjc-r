@@ -140,7 +140,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					temp.append(text);
 					url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 					if (url.indexOf("http") != -1) {
-						url = "/r/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+						url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
 					} else {
 						url += "?" + "topic=" + bjc.file + "&step=" + num;
 					}
@@ -214,7 +214,7 @@ bjc.isTag = function(s) {
 if (getParameterByName("topic") != "") {
 	bjc.file = getParameterByName("topic");
 	$.ajax({
-		url : "/r/topic/" + bjc.file,
+		url : "/bjc-course/topic/" + bjc.file,
 		type : "GET",
 		dataType : "text",
 		cache : false,
