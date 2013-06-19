@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
 <html>
 	<head>
-		<!-- put the following in exactly --><script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>Improving Our Number Finder</title><!--ORIGINAL NAME: Improving Our Number Finder-->
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-course/admin/bjc-loader.js"></script><title>Improving Our Number Finder</title><!--ORIGINAL NAME: Improving Our Number Finder-->
 	</head>
 	<body>
 		<span style="font-weight: bold;">Feel free to ask your teacher for help on this section if you get stuck. We'll be discussing a somewhat difficult subject and it may be helpful to have it explained in person.</span>
@@ -13,7 +13,7 @@
 		Let&rsquo;s add a third block to our BYOB project (almost a copy of block #2, the sorted number finder) that uses memoization to remember the location of numbers that have already been found.
 		<br>
 		<br>
-		<div style="text-align: center;"><img border="0" width="313" vspace="0" hspace="0" height="31" title="Memoized" alt="Memoized" src="/r/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
+		<div style="text-align: center;"><img border="0" width="313" vspace="0" hspace="0" height="31" title="Memoized" alt="Memoized" src="/bjc-course/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
 			<br>
 		</div>
 		We&rsquo;ll use a list to keep track of the locations of numbers that we&rsquo;ve found already: the index of each element in the list will be the number we&rsquo;re looking for and the corresponding value will be the location where that number was found. If the value at a particular index is -1, that means that we haven&rsquo;t looked for the number yet and if the value is 0 then that means that the number doesn't exist in the list. Here is an algorithm describing how the new BYOB block should progress using the new memoization list:

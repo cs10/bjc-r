@@ -91,7 +91,9 @@ bjc.secondarySetUp = function() {
 			dataType : "text",
 			//data : myData,
 			cache : false,
-			success : bjc.processLinks
+			success : function(data, unused1, unused2) {
+				setTimeout(bjc.processLinks(data, unused1, unused2), 300); // I think this helps with a few concurrency errors...
+			}
 		});
 	}
 
@@ -126,18 +128,36 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	var hidden;
 	var list_header = $(document.createElement("div")).attr({'class': 'list_header'});
 	list_header.menu();
+	
+	
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
 		if (line.length > 1) {
+			if (line.indexOf("title:") != -1) {
+				/* Create a link back to the main topic. */
+				url = "/bjc-course/topic/topic.html?topic=" + bjc.file;
+				text = line.slice(line.indexOf(":") + 1);
+				if (text.length > 35) {
+					text = text.slice(0, 35) + "...";
+				}
+				text = "<span class='main-topic-link'>" + text + "</span>";
+				option = $(document.createElement("a")).attr({'href': url});
+				option.html(text);
+				list_item = $(document.createElement("li")).attr({'class': 'list_item'});
+				list_item.append(option);
+				list.prepend(list_item);
+			}
 			if (line.indexOf("[") != -1) {
 				text = line.slice(line.indexOf(":") + 1, line.indexOf("["))
-				if (text.length > 45) {
-					text = text.slice(0, 45) + "...";
+				if (text.length > 35) {
+					text = text.slice(0, 35) + "...";
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
 					url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+				} else if (url.indexOf("?") != -1) {
+					url += "&" + "topic=" + bjc.file + "&step=" + num;
 				} else {
 					url += "?" + "topic=" + bjc.file + "&step=" + num;
 				}
@@ -150,9 +170,9 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 					option.html(text);
 					
 				} else if (num == bjc.step) {
-					option = $(document.createElement("a")).attr({'href': url, 'selected': true});
+					text = "<span class='current-step-link'>" + text + "</span>";
+					option = $(document.createElement("a")); //.attr({'href': url, 'selected': true});
 					option.html(text);
-					option.css("font-weight", "bold");
 					//list_header.html(text);
 					list_header.html("Click here to navigate...");
 					
@@ -179,7 +199,12 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		list.slideUp(500);
 	});*/
 	list_header.click(function() {
-		$(".steps").slideToggle(500);
+		if (list_header.html() == "Click here to navigate...") {
+			list_header.html("Click again to close...");
+		} else {
+			list_header.html("Click here to navigate...");
+		}
+		$(".steps").slideToggle(300);
 	});
 	nav.append(backButton);
 	nav.append(list_header);

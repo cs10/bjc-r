@@ -9,9 +9,9 @@ learning-goal: Understand and analyze some the impact of the internet on our cul
 
 heading: First: lets do this
 resource: This is a Resource [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
-    resource: An indented resource (no link) 
+    resource: An indented item (no link) 
     	forum: Another (more) indented resource [/bjc-course/cur/programming/intro/drawing/game-of-tag.html] 
-quiz: This is a <b>Quiz</b> [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+quiz: This is a <b>Quiz</b> [/bjc-course/quiz/multiple-choice.html?quiz=example-multiple-choice-quiz.quiz]
 
 big-idea: Get comfortable with the Scratch user interface.
 //big-idea: Learn to use Broadcast blocks to communicate between sprites and make a movie.
@@ -28,7 +28,7 @@ resource: This is a Resource [/bjc-course/cur/programming/intro/scratch/welcome-
 This line doesn't have a class, but is still indented properly.
 
 raw-html:
-<img src="/img/web/NOTFOUND.png"
+<img src="/bjc-course/img/web/NOTFOUND.png"
 	alt="This is the logo of the topic that you are looking at">
 	</img>
 

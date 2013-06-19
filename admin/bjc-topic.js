@@ -141,6 +141,8 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 					if (url.indexOf("http") != -1) {
 						url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+					} else if (url.indexOf("?") != -1) {
+						url += "&" + "topic=" + bjc.file + "&step=" + num;
 					} else {
 						url += "?" + "topic=" + bjc.file + "&step=" + num;
 					}
