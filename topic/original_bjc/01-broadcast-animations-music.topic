@@ -17,24 +17,24 @@ learning-goal: Get experience debugging using single-step.
 learning-goal: Learn to download, remix and re-post projects on the Scratch website.
 
 heading: Exploring Scratch
-	resource: Welcome to Scratch [/cur/programming/intro/scratch/welcome-to-scratch.html]
-	resource: Make a Sprite sing! [/cur/programming/intro/scratch/make-a-sprite-sing.html]
-	resource: The Scratch workspace [/cur/programming/intro/scratch/the-scratch-workspace.html]
-	resource: Some Starting Scratch Lingo [/cur/programming/intro/scratch/some-starting-scratch-lingo.html]
+	resource: Welcome to Scratch [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
+	resource: Make a Sprite sing! [/bjc-course/cur/programming/intro/scratch/make-a-sprite-sing.html]
+	resource: The Scratch workspace [/bjc-course/cur/programming/intro/scratch/the-scratch-workspace.html]
+	resource: Some Starting Scratch Lingo [/bjc-course/cur/programming/intro/scratch/some-starting-scratch-lingo.html]
 	
 heading: Playing with Sounds and Broadcasting
-	resource:  Meowing: One at a time or in unison? [/cur/programming/intro/scratch/meowing-one-at-a-time-or-in-unison-.html]
+	resource:  Meowing: One at a time or in unison? [/bjc-course/cur/programming/intro/scratch/meowing-one-at-a-time-or-in-unison-.html]
 	//resource:  Meowing: One at a time or in unison? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=4048]
-	resource: Single Step Mode [/cur/programming/intro/scratch/single-step-mode.html]
-	resource: Experiment with a short Scratch play [/cur/programming/intro/scratch/experiment-with-a-short-scratch-play.html]
+	resource: Single Step Mode [/bjc-course/cur/programming/intro/scratch/single-step-mode.html]
+	resource: Experiment with a short Scratch play [/bjc-course/cur/programming/intro/scratch/experiment-with-a-short-scratch-play.html]
 	quiz: Test Yourself: Go Bears! [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13901]
 	quiz: Test Yourself: Different Ways to Broadcast [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13902]
-	resource: Exporting and Importing Sprites [/cur/programming/intro/scratch/exporting-and-importing-sprites.html]
+	resource: Exporting and Importing Sprites [/bjc-course/cur/programming/intro/scratch/exporting-and-importing-sprites.html]
 	
 heading: Activities
-	resource: Using Scratch at home and Exploring the Scratch site [/cur/programming/intro/scratch/using-scratch-at-home-and-exploring-the-scratch-site.html]
-	resource: Re-mixing Scratch Projects [/cur/programming/intro/scratch/re-mixing-scratch-projects.html]
-	resource: Make a movie [/cur/programming/intro/scratch/make-a-movie.html]
+	resource: Using Scratch at home and Exploring the Scratch site [/bjc-course/cur/programming/intro/scratch/using-scratch-at-home-and-exploring-the-scratch-site.html]
+	resource: Re-mixing Scratch Projects [/bjc-course/cur/programming/intro/scratch/re-mixing-scratch-projects.html]
+	resource: Make a movie [/bjc-course/cur/programming/intro/scratch/make-a-movie.html]
 	
 //heading: Turn in your work
 	//submit: Submit: Broadcast, Animations, and Music! 

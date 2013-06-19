@@ -20,32 +20,32 @@ learning-goal: Explore some of the complexities of managing block variables.
 
 
 heading: The Basics of BYOB
-	resource: Welcome to BYOB! [/cur/programming/functions/welcome-to-byob.html]
-	resource: Make a "Draw Shape" Block [/cur/programming/functions/make-a-draw-shape-block.html]
-	resource: The Max Block [/cur/programming/functions/the-max-block.html]
-	resource: Input types [/cur/programming/functions/input-types.html]
+	resource: Welcome to BYOB! [/bjc-course/cur/programming/functions/welcome-to-byob.html]
+	resource: Make a "Draw Shape" Block [/bjc-course/cur/programming/functions/make-a-draw-shape-block.html]
+	resource: The Max Block [/bjc-course/cur/programming/functions/the-max-block.html]
+	resource: Input types [/bjc-course/cur/programming/functions/input-types.html]
 	//forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
-	resource: Do it: Composition of Functions [/cur/programming/functions/do-it-composition-of-functions.html]
+	resource: Do it: Composition of Functions [/bjc-course/cur/programming/functions/do-it-composition-of-functions.html]
 	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
-	resource: Sum-thing's Up [/cur/programming/loops/sum-things-up.html]
+	resource: Sum-thing's Up [/bjc-course/cur/programming/loops/sum-things-up.html]
 	
 heading: Predicates
-	resource: Predicates [/cur/programming/functions/predicates/predicates.html]
-	resource: Predicates: Make a "Between" block [/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+	resource: Predicates [/bjc-course/cur/programming/functions/predicates/predicates.html]
+	resource: Predicates: Make a "Between" block [/bjc-course/cur/programming/functions/predicates/predicates-make-a-between-block.html]
 	//forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
 	
 heading: Variables
-	resource: Difference between Arguments/Input and Variables [/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+	resource: Difference between Arguments/Input and Variables [/bjc-course/cur/programming/functions/difference-between-arguments-input-and-variables.html]
 	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
 	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
 	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-	resource: Conflicts between regular variables and block variables [/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+	resource: Conflicts between regular variables and block variables [/bjc-course/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
 	
 heading: Functions make code easier to understand
-	resource: Simplifying a tic-tac-toe board drawer using functions [/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	resource: Simplifying a tic-tac-toe board drawer using functions [/bjc-course/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
 	
 heading: Activities
-	resource: Brick Wall [/cur/programming/abstraction/original-brick-wall.html]
+	resource: Brick Wall [/bjc-course/cur/programming/abstraction/original-brick-wall.html]
 	
 // submission stuff	
 

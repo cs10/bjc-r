@@ -8,9 +8,9 @@ learning-goal: Explore <u>Abstraction</u> as it relates to Computer Science
 learning-goal: Understand and analyze some the impact of the internet on our culture
 
 heading: First: lets do this
-resource: This is a Resource [/cur/programming/intro/scratch/welcome-to-scratch.html]
+resource: This is a Resource [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
     resource: An indented resource (no link) 
-    	forum: Another (more) indented resource [/cur/programming/intro/drawing/game-of-tag.html] 
+    	forum: Another (more) indented resource [/bjc-course/cur/programming/intro/drawing/game-of-tag.html] 
 quiz: This is a <b>Quiz</b> [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
 big-idea: Get comfortable with the Scratch user interface.
@@ -19,11 +19,11 @@ big-idea: Get experience <b>debugging</b> using single-step.
 big-idea: Learn to download, remix and re-post projects on the Scratch website.
 
 heading: Second section
-extresource: This is an <b>External Resource</b> [/cur/programming/intro/scratch/welcome-to-scratch.html]
+extresource: This is an <b>External Resource</b> [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
 video: This is a Video [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
 heading: Third section <b>is the very very best!</b> // a comment at the end of a line
-resource: This is a Resource [/cur/programming/intro/scratch/welcome-to-scratch.html]
+resource: This is a Resource [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
 
 This line doesn't have a class, but is still indented properly.
 
@@ -34,6 +34,6 @@ raw-html:
 
 This line doesn't have a class.
 
-resource: This title isssssssssssssreallllllllllllly longgggggggggggggggggg [/cur/programming/intro/scratch/welcome-to-scratch.html]
+resource: This title isssssssssssssreallllllllllllly longgggggggggggggggggg [/bjc-course/cur/programming/intro/scratch/welcome-to-scratch.html]
 
 }

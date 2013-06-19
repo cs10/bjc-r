@@ -22,31 +22,31 @@ learning-goal: The meta learning goal for this part is for you to develop an acc
 
 
 heading: Background: concurrency without the computer
-	resource: Card Sorting [/cur/programming/sorting/cards/card-sorting.html]
-	group: Card Sorting: Discussion [/cur/programming/sorting/cards/card-sorting-discuss.html]
-	resource: Card Sorting: Let's do it [/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
-	resource: Card Sorting: Reflect [/cur/programming/sorting/cards/card-sorting-reflect.html]
+	resource: Card Sorting [/bjc-course/cur/programming/sorting/cards/card-sorting.html]
+	group: Card Sorting: Discussion [/bjc-course/cur/programming/sorting/cards/card-sorting-discuss.html]
+	resource: Card Sorting: Let's do it [/bjc-course/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
+	resource: Card Sorting: Reflect [/bjc-course/cur/programming/sorting/cards/card-sorting-reflect.html]
 	forum: Concurrency in real life... [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=2022]
 	//   Share a non-computer, real-life example in which the serial portion of some task is smallest (i.e., embarassingly parallel) and greatest (i.e., most difficult to parallelize)
 	
 heading: Two heads are better than one.
-	resource: Scratch Machine Concepts [/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
-	resource: Scratch Play [/cur/programming/concurrency/scratch/scratch-play-1.html]
-	resource: Scratch Debug [/cur/programming/concurrency/scratch/scratch-debug.html]
-	resource: Reflection [/cur/programming/concurrency/scratch/reflection-1.html]
+	resource: Scratch Machine Concepts [/bjc-course/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
+	resource: Scratch Play [/bjc-course/cur/programming/concurrency/scratch/scratch-play-1.html]
+	resource: Scratch Debug [/bjc-course/cur/programming/concurrency/scratch/scratch-debug.html]
+	resource: Reflection [/bjc-course/cur/programming/concurrency/scratch/reflection-1.html]
 
 heading: Scratch... don't all talk at once!
-	resource: Overview [/cur/programming/concurrency/scratch/overview-2.html]
-	resource: Scratch Modify [/cur/programming/concurrency/scratch/scratch-modify.html] 
-	resource: What are the possible values? [/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
+	resource: Overview [/bjc-course/cur/programming/concurrency/scratch/overview-2.html]
+	resource: Scratch Modify [/bjc-course/cur/programming/concurrency/scratch/scratch-modify.html] 
+	resource: What are the possible values? [/bjc-course/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
 	//quiz: Quiz
-	resource: These are the possible values [/cur/programming/concurrency/scratch/read-and-finish-with-n-answer.html]
-	resource: Scratch Play [/cur/programming/concurrency/scratch/scratch-play-2.html]
+	resource: These are the possible values [/bjc-course/cur/programming/concurrency/scratch/read-and-finish-with-n-answer.html]
+	resource: Scratch Play [/bjc-course/cur/programming/concurrency/scratch/scratch-play-2.html]
 
 heading: Scratch... some details to form a mental model
-	resource: Overview [/cur/programming/concurrency/scratch/overview-3.html]
-	resource: Scratch Play [/cur/programming/concurrency/scratch/scratch-play-3.html] 
-	resource: Reflection [/cur/programming/concurrency/scratch/reflection-3.html]
+	resource: Overview [/bjc-course/cur/programming/concurrency/scratch/overview-3.html]
+	resource: Scratch Play [/bjc-course/cur/programming/concurrency/scratch/scratch-play-3.html] 
+	resource: Reflection [/bjc-course/cur/programming/concurrency/scratch/reflection-3.html]
 
 
 }
