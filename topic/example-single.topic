@@ -34,6 +34,6 @@ raw-html:
 
 This line doesn't have a class.
 
-resource: This title isssssssssssssreallllllllllllly longgggggggggggggggggg [{{site.baseurl}}/cur/programming/intro/scratch/welcome-to-scratch.html]
+resource: This title isssssssssssssreallllllllllllly longgggggggggggggggggg [/cur/programming/intro/scratch/welcome-to-scratch.html]
 
 }
