@@ -2,26 +2,26 @@
 <html>
 	<head>
 		<!-- put the following in exactly -->
-		<script type="text/javascript" src="/bjc-course/admin/bjc-loader.js"></script><title>Conflicts between regular variables and block variables</title>
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>Conflicts between regular variables and block variables</title>
 		<!--ORIGINAL NAME: Conflicts between regular variables and block variables-->
 	</head>
 	<body>
 		We would like to point out something about accessing regular variables when we're in the block editor. In the current situation we have the regular variables, x, y and z (shown below).
 		<br>
-		<div style="margin-left: 40px;"><img border="0" width="213" vspace="0" hspace="0" height="248" src="/bjc-course/img/sys/global-variables-x-y-z.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variablesXYZ.jpg">
+		<div style="margin-left: 40px;"><img border="0" width="213" vspace="0" hspace="0" height="248" src="/r/img/sys/global-variables-x-y-z.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variablesXYZ.jpg">
 			<br>
 		</div>
 		<br>
 		We have made a block that takes arguments named x and y. When we use a "set" block, we click on the drop down menu to see what variables are available to us. Notice that the first variable show is z. This is the regular variable z. Then below the line are the variables x and y. We have made the input names the same as the regular variables x and y so we can no longer access those regular variables!
 		<br>
 		<br>
-		<div style="margin-left: 40px;"><img border="0" width="387" vspace="0" hspace="0" height="287" src="/bjc-course/img/sys/available-variables-global-and-local-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variables_which_are_available.jpg">
+		<div style="margin-left: 40px;"><img border="0" width="387" vspace="0" hspace="0" height="287" src="/r/img/sys/available-variables-global-and-local-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variables_which_are_available.jpg">
 			<br>
 		</div>
 		Now if we add another block variable z in our block editor, we are no longer able to access the regular variable z. (See the image below)
 		<br>
 		<br>
-		<img border="0" width="387" vspace="0" hspace="0" height="287" src="/bjc-course/img/prog/global-z-variable-access-gone-when-local-z-exists-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variables_z_global_no_longer_accessible.jpg">
+		<img border="0" width="387" vspace="0" hspace="0" height="287" src="/r/img/prog/global-z-variable-access-gone-when-local-z-exists-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Conflicts_between_global_and_block_variables/variables_z_global_no_longer_accessible.jpg">
 		<br>
 		<br>
 		Here are two ways to think about why this is the way it works:
