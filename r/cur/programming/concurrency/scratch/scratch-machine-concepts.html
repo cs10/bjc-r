@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script>
+		<title>Scratch Machine Concepts</title>
+		<!--ORIGINAL NAME: Scratch Machine Concepts-->
+	</head>
+	<body>
+		<p>
+			Scratch supports parallelism! The programming environment is full of concurrency,
+			implicit (two scripts both start when the green flag is clicked, or when they
+			receive the same broadcast message), and explicit (the launch block). Let's
+			first explore the explicit kind, then we'll play with the implicit kind a bit.
+		</p>
+		<p>
+			Let's try to use concurrency for what it was meant for: <b>speed!</b> 
+			</p><p>There are three important models of the machine you should develop:
+		</p>
+		<ol>
+			<li>
+				The first that Scratch is like a parent with lots of kids, the parent wants to give the kids equal attention.
+				So if there are 3 things happening at one time, Scratch will rotate among the three of them,
+				giving each of them a chance to do their "thing" (e.g., complete one iteration of a loop, say).
+				It will choose the same order every time, in a very predictable way. This is known as time-sharing.
+			</li>
+			<li>
+
+				The second is that Scratch has a speed governor so that projects run 
+				the same speed on different machines. It's obvious why that's important&mdash;imagine 
+				developing this great Pac Man game on your parent's slow computer 
+				and working very hard to get the timing just right so it's not too fast or slow. 
+				However, when you share it with others who have faster machines, it runs too fast 
+				to play (because the other computers have a faster "heartbeat", the clock rate). 
+				So Scratch slows itself down on faster computers so that it always looks like it's 
+				running on the same, slow, computer. The reason this is relevant in the discussion 
+				of concurrency is that (on the vast majority of computers) Scratch spends a lot of 
+				time just sitting there, waiting, so it has lots of idle "cycles" to handle multiple 
+				things running at the same time.
+
+			</li>
+			<li>
+
+				The third is that Scratch actually does NOT make use of more than one core 
+				(independent hardware computation unit), it runs everything in one core and 
+				time shares any parallel task on the single core. This gives Scratch much more 
+				control over its parallelism, since once you decide to use two (or more) 
+				physical cores, you can no longer control when (or in what order) the computations 
+				will return, and you open up the standard Pandora's box of concurrency problems, 
+				like deadlock and race conditions. So your Scratch programs are insulated 
+				from these realities, allowing you to have predictable parallelism (usually impossible) 
+				at the cost of being able to run really fast and make use of hardware resources.
+			</li>
+			
+		</ol>
+
+	</body>
+</html>

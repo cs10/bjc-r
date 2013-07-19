@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>Scratch Play</title>
+		<!--ORIGINAL NAME: Scratch Play-->
+	</head>
+	<body>
+		<img class="center" src="/r/img/conc/multiple-broadcasts.gif">
+
+		<p>
+			Let's explore some subtle details.
+		</p>
+		<ul>
+			<li>
+				Load in <code><a href="http://inst.eecs.berkeley.edu/%7Ecs10/fa10/lab/09/byob/MultipleBroadcast.ypr">MultipleBroadcast.ypr</a></code>
+				, shown above.
+				<ul>
+					<li>
+						Take a look at the green flag hat block and the "<code>when I receive <em>go</em></code>"
+						hat block Do you agree that all 5 numbers in
+						<code>nums</code>
+						should always be the same when the program is done running?
+						 This is called a <em>Loop Invariant</em> 
+						 (something that if it's true before the loop, 
+						 will be true after the loop), and it's easy to prove this 
+						 should always be the case.
+					</li>
+				</ul>
+			</li>
+			<li>
+				Make sure you have "<code> Edit-&gt;Thread Safe Scripts</code>" checked in the Scratch menu.
+			</li>
+			<li>
+				Hit the
+				<code>r</code> key (for <strong>r</strong>eset), space bar (to broadcast 
+				<code>go</code>	once), <code>w</code>
+				key (to send three consecutive broadcast-and-waits of
+				<code>go</code>), and
+				<code> b </code>
+				key (to send three consecutive broadcasts of
+				<code> go </code>
+				). Are all the values the same? Did you get what you expect? (No, the broadcasts should have incremented each number 3 times but it only incremented it once!)
+			</li>
+			<li>
+				Now uncheck <tt>Edit-&gt;Thread Safe Scripts</tt>, and reset the values of all 5 elements to 0.
+			</li>
+			<li>
+				Now reset, and try the
+				<code> space </code>
+				,
+				<code> w </code>
+				and
+				<code> b </code>
+				keys. What just happened? Did you get what you expect? (No, the Broadcasts should have incremented each number 3 times, but it only incremented the first one!)
+			</li>
+		</ul>
+
+	</body>
+</html>

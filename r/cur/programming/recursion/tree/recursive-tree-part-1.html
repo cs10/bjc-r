@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>Recursion</title>
+		<!--ORIGINAL NAME: Recursive Tree Part 1-->
+	</head>
+	<body>
+		<p>
+			This assignment must be done using the BYOB (Build Your Own Blocks) version of Scratch.
+			<b>When you make blocks, be sure that the ATOMIC box is <u><i>not</i></u> checked!
+			(This will allow you to stop your program if you write a program that will go on forever!)</b>
+		</p>
+		<p>
+			Our goal is to draw a tree like this:
+			<br>
+		</p>
+		<img class="center" width="246" vspace="0" hspace="0" height="249" border="0" src="/r/img/recur/real-tree.jpg" alt="" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/nicetree.jpg">
+
+		<p>
+			but we'll start with a simpler version that shows the technique clearly, although less prettily:
+
+		</p>
+		<img  class="center" width="177" vspace="0" hspace="0" height="191" border="0" src="/r/img/recur/normal-recursive-tree-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/fulltree.jpg">
+		<br>
+		</p>
+		<p>
+			The key to understanding this technique is to see that the tree is a <i>fractal,</i> that is, a picture that contains smaller versions of itself:
+			<br>
+		</p>
+		<img  class="center" width="193" vspace="0" hspace="0" height="205" border="0" src="/r/img/recur/split-recursive-tree-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/splittree.jpg">
+		<p>
+			We're going to create a TREE block in BYOB Scratch. It'll start with a MOVE block to draw the trunk of the tree, then a TURN block turning left, <i>then a TREE block</i> to draw the left smaller tree, and so on.
+		</p>
+		<p>
+			"Wait!" you're probably thinking. "How can we use a TREE block inside a TREE block? It doesn't exist yet!" That's the big idea for this assignment.
+		</p>
+		<p>
+			We're going to work up to the complicated tree starting with very simple steps.
+		</p>
+		<p>
+			1. Make a TREE1 block (so named because it draws just one level of the tree) using this script:
+			<br>
+		</p>
+		<img  class="center" width="173" vspace="0" hspace="0" height="134" border="0" title="There should be an image here" alt="" src="/r/img/recur/tree-level1-code-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg">
+
+		</p>
+		<p>
+			This looks ridiculously simple, but trust us, it'll get interesting soon. When run, the script draws one tree branch, <i>and then moves the sprite back to its original position.</i> That's going to be really important when we start using scripts within scripts; we always want to be able to assume that our tree blocks leave the sprite in the same position, and facing the same direction, after it as before it.
+		</p>
+		<p>
+			2. Point the sprite facing upward, and put the pen down. Then try TREE1 SIZE 50. You should get a result something like this:
+			<br>
+		</p>
+		<img  class="center" width="57" vspace="0" hspace="0" height="90" border="0" src="/r/img/recur/tree-level1-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1.jpg">
+
+		<p>
+			3. Make a TREE2 block that draws two levels:
+			<br>
+		</p>
+		<img  class="center" width="218" vspace="0" hspace="0" height="313" border="0" title="" alt="" src="/r/img/recur/tree-level2-full-code2-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg">
+
+		<p>
+			When run, it should give this result:
+			<br>
+		</p>
+		<img  class="center" width="59" vspace="0" hspace="0" height="116" border="0" src="/r/img/recur/tree-level2.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2.jpg">
+
+		<ul>
+			<li>
+				At this rate we'll never be able to make the beautiful version of the tree in this century. In the next step, we'll discuss how to simplify this process.
+				<br>
+			</li>
+			<li>
+				Before going on, make sure that you can mentally trace through the code provided. Paying close attention to the forwards and turns is going to be important to see the big picture and understand the recursion.
+				<br>
+			</li>
+		</ul>
+	</body>
+</html>
