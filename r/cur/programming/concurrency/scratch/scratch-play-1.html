@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>Scratch Play</title>
+		<!--ORIGINAL NAME: Scratch Play-->
+	</head>
+	<body>
+
+		<p align="center"><img width="181" height="437" src="http://inst.eecs.berkeley.edu/%7Ecs10/fa10/lab/09/images/LaunchTutorial.gif" style="border: medium none;" />
+		</p>
+		<p>
+			First, to understand the idea of two things happening at once, load up
+			<code><a href="http://inst.eecs.berkeley.edu/%7Ecs10/fa10/lab/09/byob/LaunchTutorial.ypr">LaunchTutorial.ypr</a></code>
+			(shown above). After you click the green flag, let it run for a bit,
+			then hit the space bar once. Then hit it again, and again.
+			Talk with your partner about what is happening, and why.
+		</p>
+		<p>
+			(Answer: When you hit the green flag, Gobo starts off running in a circle,
+			because he's moving and turning at the same time. Now, whenever you hit the space key
+			Gobo's circles become wider because he's moving <em>more</em> than before, and he only
+			does that because his MOVE <em>threads</em> are increasing, not the number of steps per
+			single move. I.e., Scratch initially gives equal time to its 2 &quot;forever&quot; children --
+			one that turns and one that moves 5 steps. So it's move, turn, move, turn, etc.,
+			yielding a (360/15 =) 24-sided polygon with 5-step sides.
+			The next time space bar is pressed, another &quot;child&quot; is born,
+			so now the three equal-time children are: &quot;turn&quot;, &quot;move&quot;
+			and &quot;move&quot;, yielding a 24-sided polygon with 10-step sides,
+			or a &quot;circle&quot; of twice the size)
+		</p>
+
+	</body>
+</html>
