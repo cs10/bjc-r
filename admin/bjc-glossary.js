@@ -9,7 +9,7 @@ if (termParam !== "") {
 	termWord = filename2term(termParam);
 	
 	$.ajax({
-		url:	"/bjc-course/glossary/" + file,
+		url:	"/bjc-r/glossary/" + file,
 		type:	"GET",
 		dataType:	"text",
 		data:	myData,
@@ -19,7 +19,7 @@ if (termParam !== "") {
 		});
 } else {
 	$.ajax({
-		url:	"/bjc-course/glossary/",
+		url:	"/bjc-r/glossary/",
 		type:	"GET",
 		dataType:	"text",
 		data:	myData,

@@ -1,5 +1,5 @@
 /*
- * Used by curriculum pages (/bjc-course/cur/) to insert script and link tags.
+ * Used by curriculum pages (/bjc-r/cur/) to insert script and link tags.
  *
  * The functionality here is duplicated in other html pages as well, using static scripts
  *   glossary/view.html
@@ -12,7 +12,7 @@
 
 // NOTE: this is built in bjc-main.js if not built here...
 var bjc = {};
-bjc.rootURL = "/bjc-course/";
+bjc.rootURL = "/bjc-r/";
 
 bjc.paths = {};
 bjc.paths.links = [
@@ -30,8 +30,9 @@ bjc.paths.libraryscripts = [
 // to be loaded after jquery is loaded
 bjc.paths.jqueryscripts = [
 	"admin/jquery-ui.1.10.2.min.js",
-	"admin/bjc-curriculum.js",
-	"admin/bjc-multiple-choice.js"
+	"admin/quiz/multiplechoice.js",
+	"admin/bjc-quiz.js",
+	"admin/bjc-curriculum.js"
 	];
 
 
@@ -82,7 +83,7 @@ bjc.initialSetUp = function() {
 		return tag;
 	}
 
-}
+};
 
 bjc.initialSetUp();
 

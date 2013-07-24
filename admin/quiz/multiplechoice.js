@@ -1,49 +1,45 @@
-var mc = [];
-$(document).ready(function() {
-	var centeredDiv = $(document.createElement('div')).attr({'id': 'centeredDiv', 'class': 'bg7'});
-	$("#full").append(centeredDiv);
-	fetchData();
-	setTimeout(function() {
-		var questions = $(".interaction").length;
-		for (var i = 0; i < questions; i++) {
-			mc.push(new MC(i));
-			$("#centeredDiv").append(currentQuestionHTML);
-			//setTimeout(function() {
-				mc[i].loadContent();
-				mc[i].render();
-				mc[i].postRender();
-			//}, 300);
-		}
-	}, 300);
-});
 
-	// TODO: make this work with more than one <div class="interaction"> on the page!
-	// that is page with several MC questions.  Changes need to happen in lots of places -
-	// instead of constraining by .MultipleChoice , make an id for each of these and 
 
-function MC(questionNumber) {
+// TODO move MC-template into here as a string, oh well
+
+function MC(data, questionNumber) {
+	this.myClass = "MultipleChoice";
+			
+			
+	// questionNumber is the index of the question -- hopefully goes away?
+	this.num = questionNumber;
+
 	this.content = {};
 	this.properties = {};
 	this.correctResponse = [];
 	this.choices = [];
 	this.attempts = [];
 	this.states = [];
-	this.file = "";
-	this.num = questionNumber;
-	this.interaction = $($(".interaction")[this.num]);
-	this.responseDec = $($(".responseDeclaration")[this.num]);
-	this.multipleChoice;
+
+	this.interaction = $(data);
+	//this.responseDec = $($(".responseDeclaration")[this.num]);
+	var rii = this.interaction.attr("responseIdentifier");
+	this.responseDec = $('.responseDeclaration[identifier="' + rii + '"]');
+	
+	// make a copy of the template
+	var template = this.getTemplate();
+	$(data).after(template);
+	
+	// save this MC dom element
+	// this.multipleChoice = $($(".MultipleChoice")[this.num]);
+	var myDom = $("." + this.myClass).last();
+	this.multipleChoice = myDom;
 
 	//boolean to prevent shuffling after each answer submit
 	this.previouslyRendered = false;
+	
+
+			
 }
 
-MC.prototype.loadContent = function() {
-	// TODO: make this work with more than one <div class="interaction"> on the page!
 
-	// copy a reference to the instance variable array to use
-	// within the callback function
-	this.multipleChoice = $($(".MultipleChoice")[this.num]);
+
+MC.prototype.loadContent = function() {
 	var choices = this.choices;
 	var i;
 	this.interaction.find('.choice').each(function() {
@@ -67,25 +63,13 @@ MC.prototype.loadContent = function() {
 	for ( i = 0; i !== corrResponses.length; i++) {
 		this.correctResponse.push($(corrResponses[i]).attr('identifier'));
 	}
-	
-	if (this.num == 0) {
-		// set the page title and dispose the div
-		// also used in postRender()
-		document.title = $(".title").html();
-		var header = $(document.createElement("div")).attr("class", "header");
-		header.html(document.title);
-		if ($(".nav").length == 0) {
-			$("#full").prepend(header);
-		} else {
-			$(".nav").after(header);
-		}
-	}
+
 };
 
 //gets and returns a choice object given the choice's identifier
 MC.prototype.getChoiceByIdentifier = function(identifier) {
 	var i;
-	for (i = 0; i < this.choices.length; i++) {
+	for ( i = 0; i < this.choices.length; i++) {
 		if (this.removeSpace(this.choices[i].identifier) == identifier) {
 			return this.choices[i];
 		}
@@ -131,20 +115,21 @@ MC.prototype.render = function() {
 		//if (this.num == 0) {
 		this.multipleChoice.find('.questionType').html('Question ' + (this.num + 1));
 		//} else {
-			//this.multipleChoice.find('.questionType').html('');
+		//this.multipleChoice.find('.questionType').html('');
 		//}
 	}
 
-	/* render the prompt 
+	/* render the prompt
 	 */
 	this.multipleChoice.find('.promptDiv').html(this.content.prompt);
 
 	/* remove buttons */
+        
 	var radiobuttondiv = this.multipleChoice.find('.radiobuttondiv')[0];
 	while (radiobuttondiv.hasChildNodes()) {
 		radiobuttondiv.removeChild(radiobuttondiv.firstChild);
 	}
-
+        
 	/*
 	 * if shuffle is enabled, shuffle the choices when they enter the step
 	 * but not each time after they submit an answer
@@ -162,39 +147,37 @@ MC.prototype.render = function() {
 
 	/* render the choices */
 	for ( i = 0; i < this.choices.length; i++) {
-		choiceHTML = '<table><tbody><tr><td>' + 
-                     '<input type="' + type + 
-                     '" name="radiobutton"' +
-                     ' id="' + this.removeSpace(this.choices[i].identifier) + 
-                     '" value="' + this.removeSpace(this.choices[i].identifier) + 
-                     '" class="' + type + '"/></td><td>' + 
-                         '<div id="choicetext:' + this.removeSpace(this.choices[i].identifier) + '">'
-                            + this.choices[i].text + 
-                            '</div></td><td><div id="feedback_' + this.removeSpace(this.choices[i].identifier) +
-                    '" name="feedbacks"></div></td></tr></tbody></table>';
+		choiceHTML = '<table><tbody><tr><td>' + '<input type="' + type + '" name="radiobutton"' + ' id="' + this.removeSpace(this.choices[i].identifier) + '" value="' + this.removeSpace(this.choices[i].identifier) + '" class="' + type + '"/></td><td>' + '<div id="choicetext:' + this.removeSpace(this.choices[i].identifier) + '">' + this.choices[i].text + '</div></td><td><div id="feedback_' + this.removeSpace(this.choices[i].identifier) + '" name="feedbacks"></div></td></tr></tbody></table>';
 
 		this.multipleChoice.find('.radiobuttondiv').append(choiceHTML);
-		
+
 		// TODO -- what are these doing?  need to move from id's to classes eventually...
 		// Peter: I think this is actually okay
-		$('#' + this.removeSpace(this.choices[i].identifier)).bind('click', {myQuestion: this}, function(args) {
+		$('#' + this.removeSpace(this.choices[i].identifier)).bind('click', {
+			myQuestion : this
+		}, function(args) {
 			args.data.myQuestion.enableCheckAnswerButton('true');
 		});
 		if (this.selectedInSavedState(this.choices[i].identifier)) {
 			$('#' + this.removeSpace(this.choices[i].identifier)).attr('checked', true);
 		}
-		
-		this.multipleChoice.find(".checkAnswerButton").bind('click', {myQuestion: this}, function(args) {
+
+		this.multipleChoice.find(".checkAnswerButton").bind('click', {
+			myQuestion : this
+		}, function(args) {
 			args.data.myQuestion.checkAnswer();
 		});
-		
-		this.multipleChoice.find(".tryAgainButton").bind('click', {myQuestion: this}, function(args) {
+
+		this.multipleChoice.find(".tryAgainButton").bind('click', {
+			myQuestion : this
+		}, function(args) {
 			args.data.myQuestion.tryAgain();
 		});
 	}
 
 	this.multipleChoice.find('.tryAgainButton').addClass('disabledLink');
-	this.enableCheckAnswerButton('true'); // should this be here??? TODO
+	this.enableCheckAnswerButton('true');
+	// should this be here??? TODO
 	this.clearFeedbackDiv();
 
 	if (this.correctResponse.length < 1) {
@@ -318,9 +301,9 @@ MC.prototype.checkAnswer = function() {
 	var i, checked, choiceIdentifier, choice;
 
 	/*
-	if (!this.enforceMaxChoices(inputbuttons)) {
-		return;
-	}*/
+	 if (!this.enforceMaxChoices(inputbuttons)) {
+	 return;
+	 }*/
 
 	this.enableRadioButtons(false);
 	// disable radiobuttons
@@ -451,8 +434,7 @@ MC.prototype.enableCheckAnswerButton = function(doEnable) {
 		this.multipleChoice.find('.tryAgainButton').addClass('disabledLink');
 		// disable checkAnswerButton
 	}
-}
-
+};
 /**
  * Enables radiobuttons so that user can click on them
  */
@@ -466,7 +448,8 @@ MC.prototype.enableRadioButtons = function(doEnable) {
 			radiobuttons[i].setAttribute('disabled', 'true');
 		}
 	}
-}
+};
+
 
 /**
  * Clears HTML inside feedbackdiv
@@ -480,100 +463,58 @@ MC.prototype.clearFeedbackDiv = function() {
 	for ( z = 0; z < feedbacks.length; z++) {
 		feedbacks[z].innerHTML = "";
 	}
-}
+};
 
 MC.prototype.postRender = function() {
 
-	// add utf-8 character encoding, why not. Firebug complains otherwise.
-	//  This should happen for all html pages, not just MC though.
-	$('head').prepend('<meta http-equiv="content-type" content="text/html; charset=UTF-8">');
+	//  var thetitle = document.title;
+};
 
-	var thetitle = document.title;
-	/*if (this.num == 0) {
-		this.multipleChoice.find(".questionType").html(thetitle);
-	}*/
 
-}
+// BEAUTIOUS
+MC.prototype.getTemplate = function() {
+	return "<div class='MultipleChoice Question bg7'>" +
+	"			<div class='questionCountBox bg8'>" +
+	"				<div class='questionTable'>" +
+	"					<div class='questionType color1'>" +
+	"						Multiple Choice" +
+	"					</div>" +
+	"				</div>" +
+	"			</div>" +
+	"			<!-- end of questionCountBox -->" +
+	"			<div class='currentQuestionBox'>" +
+	"				<div class='leftColumn' class='bg8'>" +
+	"					<div class='promptDiv'></div>" +
+	"					<div class='radiobuttondiv'></div>" +
+	"					<div class='feedbackdiv'></div>" +
+	"				</div>" +
+	"				<div class='rightColumn' class='bg2'>" +
+	"					<img src='/bjc-r/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
+	"				</div>" +
+	"			</div>" +
+	"			<div class='clearBoth'></div>" +
+	"			<div ='interactionBox'>" +
+	"				<div class='statusMessages'>" +
+	"					<div class='numberAttemptsDiv'></div>" +
+	"					<div class='scoreDiv'></div>" +
+	"					<div class='resultMessageDiv' style='font-size:16px'></div>" +
+	"				</div>" +
+	"				<!-- Anchor-Based Button Layout using TABLE -->" +
+	"				<div class='buttonDiv'>" +
+	"					<table class='buttonTable'>" +
+	"						<tr>" +
+	"							<td>" +
+	"							<div class='buttonDiv'>" +
+	"								<a class='checkAnswerButton  ui-button'>Check Answer</a>" +
+	"							</div></td><td>" +
+	"							<div class='buttonDiv'>" +
+	"								<a class='tryAgainButton ui-button'>Try Again</a>" +
+	"							</div></td>" +
+	"						</tr>" +
+	"					</table>" +
+	"				</div>" +
+	"			</div>" +
+	"		</div>";
 
-/**
-* Fetches data from file specified in URL and inserts it in the question-data div.
-*/
-function fetchData() {
-	var file = "/bjc-course/quiz/" + getParameterByName("quiz");
-	$.ajax({
-		url : file,
-		type : "GET",
-		dataType : "text",
-		cache : false,
-		success : store
-	});
-}
-
-/**
-* Stores the data in the div.
-*/
-function store(data, unused1, unused2) {
-	$(".question-data").html(data);
-}
-
-/**
-* Will eventually not reside here.
-*/
-getParameterByName = function(name) {
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
-}
-
-var currentQuestionHTML = 
-				"<!-- from mc-single-template.body -->\
-				<div class='MultipleChoice'>\
-					<div class='questionCountBox bg8'>\
-						<div class='questionTable'>\
-							<div class='questionType color1'>\
-								Multiple Choice\
-							</div>\
-						</div>\
-					</div>\
-					<!-- end of questionCountBox -->\
-				\
-					<div class='currentQuestionBox'>\
-						<div class='leftColumn' class='bg8'>\
-							<div class='promptDiv'></div>\
-							<div class='radiobuttondiv'></div>\
-							<div class='feedbackdiv'></div>\
-						</div>\
-						<div class='rightColumn' class='bg2'>\
-							<img src='/bjc-course/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />\
-						</div>\
-					</div>\
-					<div class='clearBoth'></div>\
-					<div ='interactionBox'>\
-						<div class='statusMessages'>\
-							<div class='numberAttemptsDiv'></div>\
-							<div class='scoreDiv'></div>\
-							<div class='resultMessageDiv' style='font-size:16px'></div>\
-						</div>\
-						<!-- Anchor-Based Button Layout using TABLE -->\
-						<div class='buttonDiv'>\
-							<table class='buttonTable'>\
-								<tr>\
-									<td>\
-									<div class='buttonDiv'>\
-										<a class='checkAnswerButton  ui-button'>Check Answer</a>\
-									</div></td><td>\
-									<div class='buttonDiv'>\
-										<a class='tryAgainButton ui-button'>Try Again</a>\
-									</div></td>\
-								</tr>\
-							</table>\
-						</div>\
-					</div>\
-				</div>";
-				
+};
 

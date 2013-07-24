@@ -15,7 +15,6 @@ bjc['topic_list'] = new Array();
 
 bjc.secondarySetUp = function() {
 
-
 	// insert main div
 	$(document.body).wrapInner('<div id="full"></div>');
 
@@ -45,7 +44,8 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('term'))) {
 				this.setAttribute('term', this.innerHTML)
 			}
-			vocabDiv.append('<a href="' + bjc.rootURL + 'glossary/view.html?term=' + this.getAttribute('term') + '" target="_vocab">' + this.getAttribute('term') + '</a>');
+			vocabDiv.append('<a href="' + bjc.rootURL + 'glossary/view.html?term=' + this.getAttribute('term')
+					+ '" target="_vocab">' + this.getAttribute('term') + '</a>');
 		});
 	}
 
@@ -58,7 +58,8 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('topic'))) {
 				this.setAttribute('topic', this.innerHTML)
 			};
-			helpDiv.append('<p><a href="' + bjc.rootURL + 'help/view.html?topic=' + this.getAttribute('topic') + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
+			helpDiv.append('<p><a href="' + bjc.rootURL + 'help/view.html?topic=' + this.getAttribute('topic')
+				       + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
 		});
 	}
 
@@ -86,20 +87,16 @@ bjc.secondarySetUp = function() {
 		}
 		bjc['file'] = getParameterByName("topic");
 		$.ajax({
-			url : "/bjc-course/topic/" + bjc.file,
-			type : "GET",
-			dataType : "text",
-			//data : myData,
-			cache : false,
-			success : function(data, unused1, unused2) {
-				setTimeout(bjc.processLinks(data, unused1, unused2), 300); // I think this helps with a few concurrency errors...
-			}
+		    url : "/bjc-r/topic/" + bjc.file,
+		    type : "GET",
+		    dataType : "text",
+		    cache : false,
+		    /* success : function(data, unused1, unused2) {
+		       bjc.processLinks(data, unused1, unused2);} // should this include a setTimeout? */
+		    success: bjc.processLinks
 		});
 	}
-
-
-
-}
+};
 
 
 /** Processes just the hyperlinked elements in this page,
@@ -112,13 +109,21 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	var num = 0;
 	var nav = $(document.createElement("div")).addClass("nav");
 	var backButton = $(document.createElement("a")).addClass("backbutton");
+        var b_backButton = $(document.createElement("a")).addClass("backbutton");
 	backButton.text("BACK");
 	backButton.button({disabled: true});
 	backButton.click(bjc.goBack);
+        b_backButton.text("BACK");
+	b_backButton.button({disabled: true});
+	b_backButton.click(bjc.goBack);
 	var forwardButton = $(document.createElement("a")).addClass("forwardbutton");
+        var b_forwardButton = $(document.createElement("a")).addClass("forwardbutton");
 	forwardButton.text("FORWARD");
 	forwardButton.button({disabled: true});
 	forwardButton.click(bjc.goForward);
+        b_forwardButton.text("FORWARD");
+	b_forwardButton.button({disabled: true});
+	b_forwardButton.click(bjc.goForward);
 	var list = $(document.createElement("ul")).attr({'class': 'steps'});
 	list.menu();
 	list.menu("collapse");
@@ -136,7 +141,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		if (line.length > 1) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = "/bjc-course/topic/topic.html?topic=" + bjc.file;
+				url = "/bjc-r/topic/topic.html?topic=" + bjc.file;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -155,7 +160,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+					url = "/bjc-r/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
 				} else if (url.indexOf("?") != -1) {
 					url += "&" + "topic=" + bjc.file + "&step=" + num;
 				} else {
@@ -166,6 +171,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				if (num == (bjc.step - 1)) {
 					backButton.attr({'value': url});
 					backButton.button({disabled: false});
+                                        b_backButton.attr({'value': url});
+					b_backButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
 					
@@ -179,6 +186,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				} else if (num == (bjc.step + 1)) {
 					forwardButton.attr({'value': url});
 					forwardButton.button({disabled: false});
+                                        b_forwardButton.attr({'value': url});
+					b_forwardButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
 				
@@ -204,7 +213,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		} else {
 			list_header.html("Click here to navigate...");
 		}
-		$(".steps").slideToggle(300);
+		$($(".steps")[0]).slideToggle(300);
 	});
 	nav.append(backButton);
 	nav.append(list_header);
@@ -212,13 +221,46 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	nav.append(list);
 	var background = $(document.createElement("div")).attr({'class': 'nav_background'});
 	nav.append(background);
-	$("#full").prepend(nav);
+        $("#full").prepend(nav);
 	list_header.width(list.outerWidth());
 	list.slideToggle(0);
+
+        var b_list = list.clone();
+        var b_list_header = list_header.clone();
+        b_list_header.click(
+                function() {
+		        if (b_list_header.html() == "Click here to navigate...") {
+			        b_list_header.html("Click again to close...");
+		        } else {
+			        b_list_header.html("Click here to navigate...");
+		        }
+		        $($(".steps")[1]).slideToggle(300);
+	        });
+        /* b_list_header.click(
+           function() {
+	   if (b_list_header.html() == "Click here to navigate...") {
+	   b_list_header.html("Click again to close...");
+                        $($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
+		} else {
+			b_list_header.html("Click here to navigate...");
+                        $($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
+		}
+	});*/
+        var b_nav = $(document.createElement("div")).addClass("nav");
+        var b_list = list.clone();
+        b_nav.append(b_backButton);
+	b_nav.append(b_list_header);
+	b_nav.append(b_forwardButton);
+	b_nav.append(b_list);
+	b_nav.append(background.clone());
+
 	
-	if (document.URL.indexOf("/bjc-course/admin/empty-curriculum-page.html") != -1) {
-		bjc.addFrame();
+	if (document.URL.indexOf("/bjc-r/admin/empty-curriculum-page.html") != -1) {
+	        bjc.addFrame();
 	}
+
+        $("#full").append(b_nav);
+        b_list_header.width(list.outerWidth());
 
 
 }
@@ -246,4 +288,4 @@ bjc.goForward = function() {
 
 
 
-$(document).ready(bjc.secondarySetUp());
+$(document).ready(bjc.secondarySetUp);

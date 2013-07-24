@@ -9,7 +9,7 @@
 if ( typeof bjc === 'undefined') {
 	// if bjc-loader wasn't used, we need this.
 	bjc = {};
-	bjc.rootURL = "/bjc-course/";
+	bjc.rootURL = "/bjc-r/";
 }
 
 

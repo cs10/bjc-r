@@ -49,6 +49,7 @@ var tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 bjc.renderFull = function(data, ignored1, ignored2) {
+	data = data.replace(/(\r)/gm,"");    // remove crazy windows linefeed characters
 	var lines = data.split("\n");
 	var line;
 	var in_topic = false;
@@ -65,7 +66,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
-		if (line.length > 1 && !raw) {
+		if (line.length > 0 && !raw) {
 			if (line.slice(0, 6) == "title:") {
 				//TODO pull out the html tags for the page title
 				$("div .header").html(line.slice(6));
@@ -140,7 +141,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					temp.append(text);
 					url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 					if (url.indexOf("http") != -1) {
-						url = "/bjc-course/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+						url = "/bjc-r/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
 					} else if (url.indexOf("?") != -1) {
 						url += "&" + "topic=" + bjc.file + "&step=" + num;
 					} else {
@@ -216,7 +217,7 @@ bjc.isTag = function(s) {
 if (getParameterByName("topic") != "") {
 	bjc.file = getParameterByName("topic");
 	$.ajax({
-		url : "/bjc-course/topic/" + bjc.file,
+		url : "/bjc-r/topic/" + bjc.file,
 		type : "GET",
 		dataType : "text",
 		cache : false,

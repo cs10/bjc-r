@@ -972,6 +972,7 @@ blockquote {
 	margin-right:88px;
 	padding:0px;
 	line-height:1.2;
+        position: absolute;
 }
 
 .list_item {
@@ -999,7 +1000,7 @@ blockquote {
 	font-size:100%;
 	text-decoration:underline;
 	font-weight:bold;
-	background-image: url("/bjc-course/img/web/toolbar_home.png");
+	background-image: url("/bjc-r/img/web/toolbar_home.png");
 	background-size: contain;
 	background-repeat:no-repeat;
 	padding-left:20px;
@@ -1007,7 +1008,7 @@ blockquote {
 
 .current-step-link {
 	font-weight:bold;
-	background-image: url("/bjc-course/img/web/forward.png");
+	background-image: url("/bjc-r/img/web/forward.png");
 	background-size:contain;
 	background-repeat:no-repeat;
 	padding-left:20px;
