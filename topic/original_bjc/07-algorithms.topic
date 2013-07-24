@@ -15,14 +15,14 @@ learning-goal: Practice implementing algorithms that were discussed verbally.
 learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
-	resource: Everyone's Got Algorithms [/bjc-course/cur/programming/algorithms/everyones-got-algorithms.html]
+	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 	forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
-	resource: (group work) Experiencing Algorithms [/bjc-course/cur/programming/algorithms/experiencing-algorithms.html]
-	// resource: (group work) Searching [/bjc-course/cur/programming/algorithms/group-work-searching.html]
-	// resource: (group work) The Need for Speed [/bjc-course/cur/programming/algorithms/group-work-the-need-for-speed.html]
-	resource: Algorithms in BYOB [/bjc-course/cur/programming/algorithms/algorithms-in-byob.html]
-	resource: Improving Our Number Finder [/bjc-course/cur/programming/algorithms/improving-our-number-finder.html]
-	resource: Too Many Blocks! [/bjc-course/cur/programming/algorithms/too-many-blocks.html]
+	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
+	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
+	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
+	resource: Algorithms in BYOB [/bjc-r/cur/programming/algorithms/algorithms-in-byob.html]
+	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
+	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
 	
 	
 	

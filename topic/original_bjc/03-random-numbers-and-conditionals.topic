@@ -19,25 +19,25 @@ learning-goal: Implement the <tt>random</tt> number block to create randomness i
 
 
 heading: Review: 'Change' versus 'Set'
-	resource: Reviewing Variables [/bjc-course/cur/programming/variables/reviewing-variables.html]
+	resource: Reviewing Variables [/bjc-r/cur/programming/variables/reviewing-variables.html]
 	quiz: Changing Variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13954]
 
 heading: The <tt>If</tt> Block
 	quiz: If: What would you expect? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13956]
-	resource: How many days are there in a given month? [/bjc-course/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-.html]
+	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-.html]
 	
 heading: Random
-	resource: Position on the Scratch Stage  [/bjc-course/cur/programming/random/position-on-the-scratch-stage.html]
-	resource: Randomly Moving Character [/bjc-course/cur/programming/random/randomly-moving-character.html]
+	resource: Position on the Scratch Stage  [/bjc-r/cur/programming/random/position-on-the-scratch-stage.html]
+	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
 
 heading: Number Guessing Game
-	resource: Number-Guessing Game v1.0 [/bjc-course/cur/programming/conditionals/number-guessing-game-v1-0.html]
-	resource: Number-Guessing Game v2.0 [/bjc-course/cur/programming/conditionals/number-guessing-game-v2-0.html]
-	homework: Homework (due later): Word Guessing [/bjc-course/cur/programming/projects/hangman/word-guessing.html]
+	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+	homework: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
 	
 heading: Rock, Paper, Scissors
 	quiz: Rock, Paper, Scissors: Choices [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13965]
-	resource: Rock, Paper, Scissors [/bjc-course/cur/programming/conditionals/rock-paper-scissors.html]
+	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
 	
 // submission stuff	
 
