@@ -1,14 +1,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/r/admin/bjc-loader.js"></script><title>
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>
 	Time is of the Es-sense
 </title><!--ORIGINAL NAME: Time is of the Es-sense--></head><body>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;We have seen how BYOB can be used to wait for a certain time before reporting anything. &Acirc;&nbsp;BYOB also allows us to do the converse: to report how long a program takes to finish. &Acirc;&nbsp;In the <tt>Sensing</tt> menu, you will see a command called <tt>reset timer</tt> and a reporter called <tt>timer</tt>: <br><br></p><div style="margin-left: 40px;">
-	<img src="/r/img/list/reset-timer-BYOB.jpg" alt="Reset Timer Command" title="Reset Timer Command" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/ResetTimer.jpg"></div>
+	<img src="/bjc-r/img/list/reset-timer-BYOB.jpg" alt="Reset Timer Command" title="Reset Timer Command" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/ResetTimer.jpg"></div>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;Activate (tick-mark) the <tt>timer</tt> reporter and you should see a timer ticking away above Alonzo. &Acirc;&nbsp;It's been ticking ever since you opened up BYOB, and counts in tenths of a second:<br><div style="margin-left: 40px;">
-	<img src="/r/img/list/timer-ticking-on-stage-BYOB.jpg" alt="Timer ticking away" title="Timer ticking away" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/TimerTicking.jpg"></div>
+	<img src="/bjc-r/img/list/timer-ticking-on-stage-BYOB.jpg" alt="Timer ticking away" title="Timer ticking away" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/TimerTicking.jpg"></div>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;We are going to be performing timing experiments in the following sections, so this timer will prove useful. &Acirc;&nbsp;Add the following timing framework script into the space for BYOB scripts:<br><div style="margin-left: 40px;">
-	<img src="/r/img/web/NOTFOUND.png" alt="Timing Framework" title="Timing Framework" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/TimingFramework.jpg"></div>
+	<img src="/bjc-r/img/web/NOTFOUND.png" alt="Timing Framework" title="Timing Framework" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/TimingFramework.jpg"></div>
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;The script will reset the timer whenever the green flag is pressed. Alonzo will then say <tt>Hello!</tt> for 1 second, and soon after that, he will say the current time, less 1 second to account for how long he said <tt>Hello!</tt>. &Acirc;&nbsp;If we replace <tt>Hello!</tt> with a reporter, then Alonzo will say the answer of the reporter, and one second later, how long the reporter took to generate the answer: this is the timing information that we need. &Acirc;&nbsp;Save the script with the name <tt>TimingFramework</tt>.   </body></html>
