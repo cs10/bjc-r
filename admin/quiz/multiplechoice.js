@@ -489,7 +489,9 @@ MC.prototype.getTemplate = function() {
 	"					<div class='feedbackdiv'></div>" +
 	"				</div>" +
 	"				<div class='rightColumn' class='bg2'>" +
-	"					<img src='/bjc-r/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
+	"					<img src='" +
+	bjc.rootURL +
+	"/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
 	"				</div>" +
 	"			</div>" +
 	"			<div class='clearBoth'></div>" +
