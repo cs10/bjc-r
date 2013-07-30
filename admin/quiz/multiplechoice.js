@@ -2,7 +2,7 @@
 
 // TODO move MC-template into here as a string, oh well
 
-function MC(data, questionNumber) {
+function MC(data, location, questionNumber) {
 	this.myClass = "MultipleChoice";
 			
 			
@@ -23,7 +23,8 @@ function MC(data, questionNumber) {
 	
 	// make a copy of the template
 	var template = this.getTemplate();
-	$(data).after(template);
+	
+	$(location).html(template);
 	
 	// save this MC dom element
 	// this.multipleChoice = $($(".MultipleChoice")[this.num]);
