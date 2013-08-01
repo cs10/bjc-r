@@ -2,7 +2,7 @@
 
 // TODO move MC-template into here as a string, oh well
 
-function MC(data, questionNumber) {
+function MC(data, location, questionNumber) {
 	this.myClass = "MultipleChoice";
 			
 			
@@ -23,7 +23,8 @@ function MC(data, questionNumber) {
 	
 	// make a copy of the template
 	var template = this.getTemplate();
-	$(data).after(template);
+	
+	$(location).html(template);
 	
 	// save this MC dom element
 	// this.multipleChoice = $($(".MultipleChoice")[this.num]);
@@ -489,7 +490,9 @@ MC.prototype.getTemplate = function() {
 	"					<div class='feedbackdiv'></div>" +
 	"				</div>" +
 	"				<div class='rightColumn' class='bg2'>" +
-	"					<img src='/bjc-r/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
+	"					<img src='" +
+	bjc.rootURL +
+	"/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
 	"				</div>" +
 	"			</div>" +
 	"			<div class='clearBoth'></div>" +

@@ -1,5 +1,5 @@
 /*
- * Used by curriculum pages (/bjc-r/cur/) to insert script and link tags.
+ * Used by curriculum pages (/cur) to insert script and link tags.
  *
  * The functionality here is duplicated in other html pages as well, using static scripts
  *   glossary/view.html
@@ -10,29 +10,31 @@
  *
  */
 
-// NOTE: this is built in bjc-main.js if not built here...
+// NOTE: this is built in bjc-library.js if not built here...
 var bjc = {};
-bjc.rootURL = "/bjc-r/";
+// rootURL also spec'ed in bjc-library.js
+bjc.rootURL = "/bjc-r";
+
 
 bjc.paths = {};
 bjc.paths.links = [
-	"admin/jquery-ui-1.10.2-smoothness.css",
-	"admin/BJC.css",
-	"admin/from-mvle.css"
+	"/admin/jquery-ui-1.10.2-smoothness.css",
+	"/admin/BJC.css",
+	"/admin/from-mvle.css"
 	];
 
 // to be loaded right away, I guess...
 bjc.paths.libraryscripts = [
-	"admin/jquery-1.9.1.min.js", 
-	"admin/bjc-library.js"
+	"/admin/jquery-1.9.1.min.js", 
+	"/admin/bjc-library.js"
 	];
 
 // to be loaded after jquery is loaded
 bjc.paths.jqueryscripts = [
-	"admin/jquery-ui.1.10.2.min.js",
-	"admin/quiz/multiplechoice.js",
-	"admin/bjc-quiz.js",
-	"admin/bjc-curriculum.js"
+	"/admin/jquery-ui.1.10.2.min.js",
+	"/admin/quiz/multiplechoice.js",
+	"/admin/bjc-quiz.js",
+	"/admin/bjc-curriculum.js"
 	];
 
 

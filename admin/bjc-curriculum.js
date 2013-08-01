@@ -11,7 +11,7 @@ bjc['url_list'] = new Array();
 // never gets used?
 bjc['topic_list'] = new Array();
 
-
+//bjc['rootURL'] = bjc.rootURL;
 
 bjc.secondarySetUp = function() {
 
@@ -44,7 +44,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('term'))) {
 				this.setAttribute('term', this.innerHTML)
 			}
-			vocabDiv.append('<a href="' + bjc.rootURL + 'glossary/view.html?term=' + this.getAttribute('term')
+			vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
 					+ '" target="_vocab">' + this.getAttribute('term') + '</a>');
 		});
 	}
@@ -58,7 +58,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('topic'))) {
 				this.setAttribute('topic', this.innerHTML)
 			};
-			helpDiv.append('<p><a href="' + bjc.rootURL + 'help/view.html?topic=' + this.getAttribute('topic')
+			helpDiv.append('<p><a href="' + bjc.rootURL + '/help/view.html?topic=' + this.getAttribute('topic')
 				       + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
 		});
 	}
@@ -87,7 +87,7 @@ bjc.secondarySetUp = function() {
 		}
 		bjc['file'] = getParameterByName("topic");
 		$.ajax({
-		    url : "/bjc-r/topic/" + bjc.file,
+		    url : bjc.rootURL + "/topic/" + bjc.file,
 		    type : "GET",
 		    dataType : "text",
 		    cache : false,
@@ -141,7 +141,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		if (line.length > 1) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = "/bjc-r/topic/topic.html?topic=" + bjc.file;
+				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -160,7 +160,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = "/bjc-r/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
 				} else if (url.indexOf("?") != -1) {
 					url += "&" + "topic=" + bjc.file + "&step=" + num;
 				} else {
@@ -255,7 +255,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	b_nav.append(background.clone());
 
 	
-	if (document.URL.indexOf("/bjc-r/admin/empty-curriculum-page.html") != -1) {
+	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
 	        bjc.addFrame();
 	}
 

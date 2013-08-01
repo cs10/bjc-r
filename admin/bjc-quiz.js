@@ -1,9 +1,9 @@
 // instance dispatch on type
 
-function getQInstance(type, qdata, i) {
+function getQInstance(type, qdata, location,  i) {
 	// switch would be nicer here...
 	if (type = "multiplechoice") {
-		return new MC(qdata, i);
+		return new MC(qdata, location, i);
 	}
 	
 }
@@ -34,14 +34,16 @@ function buildQuestions() {
 
 	
 	for (var i = 0; i < num; i++) {
-		qdata = qdatas.get(i);
+		var qdata = qdatas.get(i);
+		var location = $(qdata).after('<div></div>');
 		
 		if (qdata.hasAttribute("src")) {
-			// need to figure out how to pass the questionNum through to buildQuestion
-			alert("yo");
+			var target = qdata.getAttribute("src");
+			getRemoteQdata(target, location, i);
+			
 		} else {
 			// need to figure out how to pass in the questionNumber here
-			buildQuestion(qdata);
+			buildQuestion(qdata, location);
 		}	
 	}
 	
@@ -52,10 +54,29 @@ function buildQuestions() {
 	
 }
 
-//function buildQuestion(qdata, questionNumber) {
-function buildQuestion(qdata, unused, unused2) {
+function getRemoteQdata(target, location, questionNum) {
+		$.ajax({
+			url : target,
+			type : "GET",
+			dataType : "html",
+			success : makeGetQdataCallback(location, questionNum)
+			}
+		})
+}
+
+function makeGetRemoteQdataCallback (location, questionNum) {
+	var callback = function(data) {
+		buildQuestion(data, location, questionNum);
+	};
+	return callback;
+}
+
+
+
+//qdata is a div with the relevant data
+//location is a div whose contents will be replaced with the question.
+function buildQuestion(qdata, location, questionNum)  {
 		// TODO figure out how to pull questionNum out of ajax call
-		var questionNum = 0;
 		var type = $(qdata).attr("type");
 		var question = getQInstance(type, qdata, questionNum);
 		question.loadContent();
