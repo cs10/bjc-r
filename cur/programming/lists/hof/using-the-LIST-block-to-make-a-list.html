@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> Using the LIST block to make a list</title>
       
@@ -13,18 +13,31 @@
    <body>
 
 <p><br>Look in the Variables palette below the orange variable-related blocks for a bunch of red blocks. These blocks are about lists. A <i>list </i>is a way to combine several values into one grouped value.</p>
-The first red block is the <b>list</b> block, used to create a list:<br>
-<img width="201" vspace="0" hspace="0" height="422" border="0" src="../../../../img/list/hof/listblock.png" alt="LIST block in the palette" title="LIST block in the palette"/>
+<p>The first red block is the <code>list</code> block, used to create a list:<br>
+  <img width="201" vspace="0" hspace="0" height="422" border="0" src="/bjc-r/img/list/hof/listblock.png" alt="LIST block in the palette" title="LIST block in the palette"/>
+  
+  </p>
+<p>
+  </p>
+  Drag a <code>list</code> block into the scripting area to experiment with.</p>
+<p>This block uses a Snap! feature you've seen once before, in the <code>join</code> block: a <i>variadic </i>input. This means that, even though you see one input slot in the block, you can give it any number of inputs. The left and right arrowheads at the end of the block are used to delete or add input slots:<br>
+  <img width="117" vspace="0" hspace="0" height="174" border="0" src="/bjc-r/img/list/hof/variadic.png" alt="LIST blocks with different numbers of input slots" title="LIST blocks with different numbers of input slots"/>
+  
+</p>
+<p><br><br>
+  Like any reporter block, the <code>list</code> block can be dragged into an input slot of another block:<br>
+<img width="149" vspace="0" hspace="0" height="52" border="0" src="/bjc-r/img/list/hof/saylist.png" alt="SAY (LIST [the] [Beatles])" title="SAY (LIST [the] [Beatles])"/> <img width="141" vspace="0" hspace="0" height="125" border="0" src="/bjc-r/img/list/hof/saylist-bubble.png" alt="The resulting list in a speech bubble" title="The resulting list in a speech bubble"/>
 
-</p>Drag a <b>list</b><i> </i>block into the scripting area to experiment with.<br>This block uses a Snap! feature you haven't seen before: a <i>variadic </i>input. This means that, even though you see one input slot in the block, you can give it any number of inputs. The left and right arrowheads at the end of the block are used to delete or add input slots:<br>
-<img width="117" vspace="0" hspace="0" height="174" border="0" src="../../../../img/list/hof/variadic.png" alt="LIST blocks with different numbers of input slots" title="LIST blocks with different numbers of input slots"/>
-
-<p><br><br>Like any reporter block, the <b>list</b><i> </i>block can be dragged into an input slot of another block:<br>
-<img width="149" vspace="0" hspace="0" height="52" border="0" src="../../../../img/list/hof/saylist.png" alt="SAY (LIST [the] [Beatles])" title="SAY (LIST [the] [Beatles])"/> <img width="141" vspace="0" hspace="0" height="125" border="0" src="../../../../img/list/hof/saylist-bubble.png" alt="The resulting list in a speech bubble" title="The resulting list in a speech bubble"/>
-
-</p>The grey rounded rectangle with red rounded rectangles inside it is the visual representation of a list. Each red rectangle is one list item.<br>The list picture has several extra widgets: a + button, the downarrow, and so on. When a list value is seen in a variable watcher, you can use these controls to modify the contents of the list directly. But we're not doing that for a while, so for now just focus on the values in the red rectangles.
-
-</p><br><br><b>Try these:<br></b>What value do you get if you call the <b>list</b> block with no inputs? (Use the left arrow to delete the original input slot.)<br>Can you drag other reporters into <b>list</b> input slots to compute the list items?<br>What happens if you drag a <b>list</b><i> </i>block into an input slot that expects a number as input, such as the inputs to the arithmetic operators?<br><br> 
+</p>
+<p>The grey rounded rectangle with red rounded rectangles inside it is the visual representation of a list. Each red rectangle is one list item.</p>
+<p>The list picture has several extra widgets: a + button, the downarrow, and so on. When a list value is seen in a variable watcher, you can use these controls to modify the contents of the list directly. But we're not doing that for a while, so for now just focus on the values in the red rectangles.
+  
+  </p><br><br>
+  <b>Try these:<br>
+  </b>What value do you get if you call the <code>list</code> block with no inputs? (Use the left arrow to delete the original input slot.)</p>
+<p>Can you drag other reporters into <code>list</code> input slots to compute the list items?</p>
+<p>What happens if you drag a <code>list</code> block into an input slot that expects a number as input, such as the inputs to the arithmetic operators?<br><br>
+</p> 
 
    </body>
 </html>

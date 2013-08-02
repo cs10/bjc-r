@@ -2,21 +2,23 @@
 <html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>
 	Input Types 
 </title><!--ORIGINAL NAME: Input types--></head><body>
-Unfortunately, we have a bug with our <tt>max</tt> block! We wanted the <tt>max</tt> block to work only for numbers. Yet, you can type text in! <br><br><div style="margin-left: 40px;">
+The <tt>max</tt> block has an unexpected behavior. We wanted it to work only for numbers. Yet, you can type text in! <br><br><div style="margin-left: 40px;">
 	<img width="191" vspace="0" hspace="0" height="63" border="0" title="Max can also take text" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/maxCatDog2.jpg"><br></div>
 <br>
 We are going to limit the <tt>max</tt> block to accept only numbers as arguments. 
 <ol><li>Open the <tt>Block Editor</tt> for the <tt>max</tt> block and click on the input <tt>x</tt>. 
 	<br><div style="margin-left: 40px;">
-		<img width="319" vspace="0" hspace="0" height="206" border="0" src="/bjc-r/img/prog/edit-input-variable-x-BYOB.jpg" alt="Editing input 'x'" title="Editing input 'x'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/MaxVariables.jpg"></div>
+		<img width="319" vspace="0" hspace="0" height="206" border="0" src="/bjc-r/img/sys/edit-input-variable-x-BYOB.jpg" alt="Editing input 'x'" title="Editing input 'x'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/MaxVariables.jpg"></div>
 	</li>
 	<br><li>Then, click on the right arrow in the pop-up box shown above. This will open the dialog box shown below. This allows us to specify the shape of the slot. We want a numbers-only slot (as shown selected below). We can also specify that we want the variable to have a <em>default</em> value; this is similar to blocks like <tt>move</tt> that always start out with the default value <tt>10</tt>.</li>
 	<br><div style="margin-left: 40px;">
-		<img width="551" vspace="0" hspace="0" height="426" border="0" src="/bjc-r/img/sys/edit-input-type-BYOB.jpg" alt="Input Type" title="Input Type" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/InputType.jpg"><br></div>
+		<img width="523" vspace="0" hspace="0" height="404" border="0" src="/bjc-r/img/prog/x-long-dialog.png" alt="Input Type" title="Input Type" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/InputType.jpg"><br></div>
 	
 	<br><li>Modify both the <tt>x</tt> and <tt>y</tt> variables to take only numbers and to have the default values of <tt>5</tt> and <tt>10</tt>, respectively. Your <tt>Block Editor</tt> should then look like this, with the default values shown in the header. <br><br><div style="margin-left: 40px;">
-		<img width="440" vspace="0" hspace="0" height="408" border="0" src="/bjc-r/img/prog/max-block-code-with-default-values-BYOB.jpg" alt="Default Values" title="Default Values" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/DefaultValues.jpg"><br></div>
+		<img width="390" vspace="0" hspace="0" height="315" border="0" src="/bjc-r/img/prog/max-defaults.png" alt="Default Values" title="Default Values" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/DefaultValues.jpg"><br></div>
 	</li>
 	<br><li>When you click <tt>OK</tt>, you should be able to see your block in the <tt>Operators</tt> tab, with the default values filled in. Also, note that you will no longer be able to enter text.<br><br><div style="margin-left: 40px;">
 		<img width="124" vspace="0" hspace="0" height="32" border="0" src="/bjc-r/img/prog/max-of-5-and-10.png" alt="'max' block with defaults" title="'max' block with defaults" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/max_input_values/max_with_defaults_block.jpg"><br></div>
-</li></ol><em>Note</em>: Maybe we <em>did</em> want the <tt>max</tt> block to work with words! However, for the <tt>draw square</tt> and <tt>draw shape</tt> blocks, we definitely only wanted numbers. Modify those blocks to only take in numbers.   </body></html>
+</li></ol>
+<em>Note</em>: Maybe you <em>did</em> want the <tt>max</tt> block to work with words! However, for the <tt>draw square</tt> and <tt>draw polygon</tt> blocks, we definitely only wanted numbers. Modify those blocks to take only numbers as inputs.   
+</body></html>

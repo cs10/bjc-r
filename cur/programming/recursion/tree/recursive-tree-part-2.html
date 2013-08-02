@@ -7,31 +7,28 @@
 	</head>
 	<body>
 		<p>
-			4. That TREE2 block is pretty long and repetitive. But we can simplify it if we notice that in two places it has a move forward/move back pair of blocks, and that this is what TREE1 does! So we can use TREE1 to shorten TREE2. Compare the code below to convince yourself that the new Tree2a will work the same as the original Tree2.
-			<br>
+			4. That <code>tree2a</code> block is pretty long and repetitive. But we can simplify it if we notice that in two places it has a move forward/move back pair of blocks, and that this is what <code>tree1</code> does! So we can use <code>tree1</code> to shorten <code>tree2</code>. Compare the code below to convince yourself that the new <code>tree2</code> will work the same as the original <code>tree2a</code>. <br>
 		</p>
 
 		<table width="100%" border="1">
 			<tbody>
 				<tr>
-					<td width="33%" valign="top" style="text-align: center;">Tree1
-					<br>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree1
+					</code><br>
 					</td>
-					<td width="33%" valign="top" style="text-align: center;">Old Tree2
-					<br>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2a</code> (old version)<br>
 					</td>
-					<td width="33%" valign="top" style="text-align: center;">New Tree2a
-					<br>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2</code> (new version)<br>
 					</td>
 				</tr>
 				<tr>
-					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="134" width="173" vspace="0" border="0" src="/bjc-r/img/recur/tree-level1-code-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg">
+					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="99" width="166" vspace="0" border="0" src="/bjc-r/img/recur/tree1.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg">
 					<br>
 					</td>
-					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="313" width="218" vspace="0" border="0" src="/bjc-r/img/recur/tree-level2-full-code2-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg">
+					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="279" width="233" vspace="0" border="0" src="/bjc-r/img/recur/tree2a.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg">
 					<br>
 					</td>
-					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="263" width="192" vspace="0" border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree-level2-with-level1-code-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2aS.jpg">
+					<td width="33%" valign="top" style="text-align: center;"><img hspace="0" height="220" width="177" vspace="0" border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree2.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2aS.jpg">
 					<br>
 					</td>
 				</tr>
@@ -39,25 +36,19 @@
 		</table>
 		<br>
 		<p>
-			Note that the tree blocks inside this TREE2A script are TREE1 blocks, not TREE2 blocks! So there's no mysterious TREE-using-TREE situation here; it's not unusual for one block to be used in another block's script.
-		</p>
+		Note that the tree blocks inside this <code>tree2</code> script are <code>tree1</code> blocks, not <code>tree2</code> blocks! So there's no mysterious <code>tree</code>-using-<code>tree</code> situation here; it's not unusual for one already-written block to be used in <em>another</em> block's script. </p>
 		<p>
-			5. Make a TREE3 block that uses the TREE2 block, on the same pattern, and see if you get the result that you expect.
-		</p>
+		5. Make a <code>tree3</code> block that uses the <code>tree2</code> block, on the same pattern, and see if you get the result that you expect. </p>
 		<p>
-			6. If you can stand it, make a TREE4 block that uses the TREE3 block and try it out.
-		</p>
+		6. If you can stand it, make a <code>tree4</code> block that uses the <code>tree3</code> block and try it out. </p>
 		<p>
 			<b>This would be a good time to save your project.</b>
 		</p>
 		<p>
-			7. Okay, here's the big idea: We can write a TREE block that uses itself in its own script <i>provided that it knows how many levels it's expected to draw!</i> So, in addition to the size input, it'll have a LEVELS input:
-		</p>
+		7. These blocks all look exactly the same, don't they? So it makes sense to wonder if we can't replace them all with a single <code>tree</code> block. Here's the big idea: We can write a <code>tree</code> block that uses itself in its own script <i>provided that it knows how many levels it's expected to draw!</i> So, in addition to the size input, it'll have a <code>levels</code> input: </p>
 		<p>
-			In the earlier steps, TREE3 used TREE2; TREE2 used TREE1. Here, TREE will use TREE, but reducing the number of levels by 1.
-		</p>
-		<p>
-			8. Once you can draw a tree of five or six levels using your TREE block, see if you can make one like the first picture in this handout. It's different from what we've done so far because the smaller trees are drawn part way up the trunk, instead of at the top of the trunk, and because the pen color is green for the lowest-level branches (the TREE1-like ones) and brown for the others. You don't have to get it exactly like the picture; just try to make a more realistic-looking tree.
-		</p>
+		In the earlier steps, <code>tree3</code> used <code>tree2</code>; <code>tree2</code> used <code>tree1</code>. If you actually had the patience to work up to a <code>tree437</code> block, what block would it call for its two branches? To generalize the pattern, <code>tree</code> will use <code>tree</code>, but reducing the number of levels by 1:</p>
+		<p><img src="../../../../img/recur/tree-nobase.png" width="312" height="220" alt="recursive tree, first version"></p>
+		<p>Try this out. What happens? <em>Why </em>does it happen? When you know the answer, go to the next activity.</p>
 	</body>
 </html>

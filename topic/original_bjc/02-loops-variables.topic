@@ -18,12 +18,12 @@ learning-goal: Use layers of abstraction in programs to draw complex images.
 
 heading: Game controls
 	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
-	resource: Two characters running! [/bjc-r/cur/programming/intro/drawing/two-characters-running.html]
-	resource: Game of TAG! [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
+	resource: Two characters running! [/bjc-r/cur/programming/intro/drawing/two-characters-running-BYOB.html]
+	resource: Game of TAG! [/bjc-r/cur/programming/intro/drawing/game-of-tag-BYOB.html]
 	quiz: Test Yourself: Detecting a key press [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13920]
 	
 heading: Drawing
-	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
+	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands-BYOB.html]
 	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
 	quiz: Turns [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13924]
 	quiz: Repeat [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13925]

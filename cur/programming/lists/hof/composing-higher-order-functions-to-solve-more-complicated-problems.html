@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> Composing higher order functions to solve more complicated problems</title>
       
@@ -12,16 +12,20 @@
 
    <body>
 
-<p><br>Suppose we want the squares of all the items of a list of numbers. That's a straightforward <b>map</b> problem:<br>
-<img width="431" vspace="0" hspace="0" height="137" border="0" title="map (() * ()) over list" alt="map (() * ()) over list" src="../../../../img/list/hof/mapsq.png"/>
+<p><br>
+  Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br>
+<img width="431" vspace="0" hspace="0" height="137" border="0" title="map (() * ()) over list" alt="map (() * ()) over list" src="/bjc-r/img/list/hof/mapsq.png"/>
 
-<br><br>Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <b>keep</b> problem:<br>
-<img width="624" vspace="0" hspace="0" height="139" border="0" title="keep items such that <(() mod (2)) = (1)> from list..." alt="keep items such that <(() mod (2)) = (1)> from list..." src="../../../../img/list/hof/keepodds.png"/>
+<br><br>
+Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <code>keep</code> problem:<br>
+<img width="624" vspace="0" hspace="0" height="139" border="0" title="keep items such that <(() mod (2)) = (1)> from list..." alt="keep items such that <(() mod (2)) = (1)> from list..." src="/bjc-r/img/list/hof/keepodds.png"/>
 
-<br><br>But what if we want the squares of the odd numbers? This is neither a simple <b>map</b> nor a simple <b>keep</b>, but combines aspects of both. And we can solve the problem by using the value reported by the <b>keep</b> as the list input to <b>map</b>:<br>
-<img width="663" vspace="0" hspace="0" height="148" border="0" title="map square over keep odds from list" alt="map square over keep odds from list" src="../../../../img/list/hof/sq-odds.png"/>
+<br><br>
+But what if we want the squares of the odd numbers? This is neither a simple <code>map</code> nor a simple <code>keep</code>, but combines aspects of both. And we can solve the problem by using the value reported by the <code>keep</code> as the list input to <code>map</code>:<br>
+<img width="663" vspace="0" hspace="0" height="148" border="0" title="map square over keep odds from list" alt="map square over keep odds from list" src="/bjc-r/img/list/hof/sq-odds.png"/>
 
-<br>Don't be confused about which inputs do and don't have rings. It's the square function and the are-you-odd? function that we use as the first input to each higher order function. But, even though <b>keep</b> itself is a function, it's <i>the list reported by <b>keep </b></i>that we're using as the second input to <b>map</b>.
+<br>
+Don't be confused about which inputs do and don't have rings. It's the square <u>function</u> and the are-you-odd? <u>function</u> that we use as the first input to each higher order function. But, even though <code>keep</code> itself is a function, it's <i>the <u>list</u> reported by <code>keep </code></i>that we're using as the second input to <code>map</code>.
 
 </p><br>We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
 <br>   - Select only the words with five or more letters.<br>   - Make a list of the first letters of the words.
@@ -29,24 +33,25 @@
 
 <p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
 
-</p>To translate from a text string to a list of words, Snap! provides the reporter <b>sentence-&gt;list</b> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
-<img width="414" vspace="0" hspace="0" height="132" border="0" src="../../../../img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
+</p>
+To translate from a text string to a list of words, Snap! provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
+<img width="414" vspace="0" hspace="0" height="132" border="0" src="/bjc-r/img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
 <br>As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
 
 <p>Once we have the list, we can use the tools we've already built to get a list of the first letters of the long words. What we want, though, is a single word as the reported value. We can use one of the higher order functions to join the letters into a string.
 
-</p><b>Try this: </b>Should we use <b>map</b>, <b>keep</b>, or <b>combine</b> for this purpose?
+</p><b>Try this: </b>Should we use <code>map</code>, <code>keep</code>, or <code>combine</code> for this purpose?
 
 <p>Here's the final result:<br>
-<img width="447" vspace="0" hspace="0" height="151" border="0" src="../../../../img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br>
-<img width="291" vspace="0" hspace="0" height="70" border="0" src="../../../../img/list/hof/bad-bjc.png" alt="acronym reports BC instead of BJC" title="acronym reports BC instead of BJC"/>
+<img width="447" vspace="0" hspace="0" height="151" border="0" src="/bjc-r/img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br>
+<img width="291" vspace="0" hspace="0" height="70" border="0" src="/bjc-r/img/list/hof/bad-bjc.png" alt="acronym reports BC instead of BJC" title="acronym reports BC instead of BJC"/>
 <br>Oops! The word &quot;Joy&quot; is shorter than five letters, but it's still an important word in the acronym. We need a better algorithm.
 
 </p><br><br><b>Try this: <br></b>
-Modify the <b>acronym</b> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <b>unicode of</b> block.)<br>
-<img width="291" vspace="0" hspace="0" height="70" border="0" src="../../../../img/list/hof/good-bjc.png" alt="acronym reports BJC" title="acronym reports BJC"/><p>
-<img width="326" vspace="0" hspace="0" height="70" border="0" src="../../../../img/list/hof/ucb-acro.png" alt="acronym of UCB" title="acronym of UCB"/></p>
-<img width="326" vspace="0" hspace="0" height="70" border="0" src="../../../../img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br><br>  
+Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br>
+<img width="291" vspace="0" hspace="0" height="70" border="0" src="/bjc-r/img/list/hof/good-bjc.png" alt="acronym reports BJC" title="acronym reports BJC"/><p>
+<img width="326" vspace="0" hspace="0" height="70" border="0" src="/bjc-r/img/list/hof/ucb-acro.png" alt="acronym of UCB" title="acronym of UCB"/></p>
+<img width="326" vspace="0" hspace="0" height="70" border="0" src="/bjc-r/img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br><br>  
 
    </body>
 </html>

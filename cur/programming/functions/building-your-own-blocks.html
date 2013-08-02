@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Your first custom block</title><!--ORIGINAL NAME: Welcome to BYOB!-->
+	</head>
+	<body>
+		<p>
+			From time to time we've suggested using <code>
+				broadcast and wait</code>
+			along with <code>
+				when I receive</code>
+			to separate out part of a script and give it a name reflecting its part of the overall task:
+		</p>
+		<p align="center"><img src="/bjc-r/img/prog/BAWflower.png" width="211" height="25" alt="broadcast and wait block">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/bjc-r/img/prog/WIRflower.png" width="185" height="37" alt="when I receive block">
+		</p>
+		<p align="left">
+			This is a form of abstraction, the central idea of this course, and arguably the central idea of computer science. But <code>
+				broadcast and wait</code>
+			isn't a perfect mechanism with which to express abstraction. For one thing, the script that receives the message always does exactly the same thing. That's why the flower picture needed three separate scripts to draw the same flower shape in different sizes! Compare that to the <code>
+				move</code>
+			block, which takes an <em>input </em>saying how far to move. Wouldn't it be better if you could build a <code>
+				flower</code>
+			<em>block,</em> like this:
+		</p>
+		<p align="center"><img src="/bjc-r/img/prog/flowerblock.png" width="124" height="24" alt="flower of size (#) block">
+		</p>
+		<p align="left">
+			Snap! lets you do this. A block that you build yourself is called a <em>custom</em> block. We're going to start with a simpler example block, though.
+		</p>
+		<h2> Build Your Own Block: A Tutorial </h2>
+		We are going to teach the computer how to draw a square using a block named <tt>draw square</tt>. Please follow the steps below:
+		<br>
+		<ol>
+			<li>
+				Click on <tt>make a block</tt> at the bottom of the Variables palette (or right-click or control-click on the scripting area background and choose "<tt>make a block</tt>").
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="98" vspace="0" hspace="0" height="44" border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/MakeABlock-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlock.jpg">
+				</div>
+			</li>
+			<li>
+				This will open up the <tt>Make a block</tt> dialog box. Now, you get to choose which tab the block should go into. Our block is going to draw a square, so let us choose <tt>Motion</tt>. (Note: A very common mistake is to omit this step. If you do forget, your block will become a gray Other block, in the Variables palette.)
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="312" vspace="0" hspace="0" height="336" border="0" title="'make a block' dialog box" alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockDialog.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When we selected <tt>Motion</tt>, the block became blue. We now have the option of making blocks of different shapes. Right now, however, we are  going to make a Lego-shaped command block, the default.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="312" vspace="0" hspace="0" height="336" border="0" title="Make a command block" alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquare.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When we click <tt>OK</tt>, we should see the block editor below. Inside the window is a picture of what your block will look like, called its <em>prototype,</em> inside a hat block. Usually a hat block is used at the top of a script to say &quot;<strong>When</strong> such-and-such event happens, run this script.&quot;  The hat block here is the same; it's saying &quot;<strong>when</strong> the <code>
+					draw-square</code>
+				block is run in a script, run <em>this </em>script.&quot; You'll create the script to draw a square below this hat block.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="390" vspace="0" hspace="0" height="315" border="0" src="/bjc-r/img/prog/empty-draw-square-BYOB.png" alt="Block Editor for 'draw square'" title="Block Editor for 'draw square'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EmptyDrawSquare.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				Use the blocks from the Control and Motion palettes to create a script that draws a square, as shown below.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="142" vspace="0" hspace="0" height="127" border="0" title="Script to draw a square" alt="Script to draw a square" src="/bjc-r/img/prog/draw-square-code-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquareCode.gif">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When you click <tt>OK</tt>, you should be able to use this block as if it were a regular block. Since you created the block as a <tt>Motion</tt> block, it will end up at the bottom of the <tt>Motion</tt> tab.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="79" vspace="0" hspace="0" height="48" border="0" title="Using the 'draw square' block" alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareNoArgs.gif">
+					<br>
+				</div>
+			</li>
+			<br>
+			Congratulations! You have just created your first custom block.
+		</ol><h2> Improving the <tt>draw</tt><tt>square</tt> block </h2>
+		You have created a block that draws a square, but only a square in which each side is of length <tt>100</tt> steps. It would be better if you could specify how long you wanted each side to be. Edit the block to accept an <em>input</em> (or<em> argument</em>), which tells it the length of the square it has to draw:
+		<ol>
+			<li>
+				Right-click or control-click on the new block (either in the palette or in a script) and select <tt>edit</tt> to go back to the block editor.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="159" vspace="0" hspace="0" height="119" border="0" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EditCurrentBlock.jpg">
+				<br>
+			</div>
+
+			<br>
+			<li>
+				In the <tt>Block Editor</tt>, notice that when you move the mouse over the prototype of the custom block, the plus signs (<tt>+</tt>) between words change color when you point to them. When you click on these plus signs, you can add more text or inputs. When you click on the text between the plus signs, you can delete or modify that text. Click on the plus sign at the far right as shown below:
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="444" vspace="0" hspace="0" height="412" border="0" title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquarePlus.jpg">
+				<br>
+			</div>
+
+			<br>
+			<li>
+				When you click on the plus sign on the far right, you should get the following dialog box. With this dialog box, we can select if we want to add input (orange) or more text (blue). You want to add an input called <tt>size</tt>, so  type <tt>size</tt>, select <tt>Input Name</tt>, and click <tt>OK</tt>.
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="316" vspace="0" hspace="0" height="208" border="0" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/AddArgument.jpg">
+				<br>
+			</div>
+			<li>
+				Now you have a variable inside your block definition, just like a script variable, but getting its value from the custom block's input slot.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="170" vspace="0" hspace="0" height="133" border="0" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/prog/draw-square-code-with-size-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSize.gif">
+				<br>
+			</div>
+			<br>
+			<li>
+				Drag the variable <tt>size</tt> down into the move block. Whenever you need a new copy of a variable,  just drag the copy from that variable in the prototype.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="170" vspace="0" hspace="0" height="137" border="0" title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/prog/draw-square-code-size-in-body-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSizeInBody.jpg">
+				<br>
+			</div>
+			<br>
+			<li>
+				When you click <tt>OK</tt>, you'll see that the <tt>draw square</tt> block now takes an argument. You can put different numbers in the blank and draw squares of different sizes.
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="110" vspace="0" hspace="0" height="48" border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
+			</div>
+		</ol>
+	</body>
+</html>
