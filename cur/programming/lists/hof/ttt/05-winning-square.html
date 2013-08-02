@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Find a Winning Square</title>
+</head>
+
+<body>
+<h3> Can the Computer Win on this Move? </h3>
+<p>Converting a <em>position</em> into a <em>list of triples </em>will pay off as we start writing strategy rules. The overall structure of <code>ttt</code> will be (don't try to build this in Snap<em>!</em> yet; just read it)</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/simplified-ttt.png" width="288" height="191" alt="super-simplified ttt structure" /></p>
+</blockquote>
+<p>But that's an oversimplified picture just so you understand the important parts before we add the bookkeeping. Each of the reporters and predicates shown above (except the last, all-else-fails rule) will need two inputs: the list of triples and the computer's letter (X or O).  So here's a more realistic picture:</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/better-ttt.png" width="350" height="263" alt="ttt with inputs to helpers" /></p>
+</blockquote>
+<p>This is the clearest way to express the process that <code>ttt</code> must follow to try several &quot;if <em>this </em>then do <em>that</em>&quot; rules in sequence. It's a bit inefficient, though, because the computation to answer the blue yes-or-no questions above is basically to look for an answer to the green which-square question below it, and then report <code>true</code> if a square is found. So we end up doing those computations twice. Instead, we'll combine the yes-or-no computation and the which-square computation by writing rule procedures that report a square number if one is found, or <code>false</code> if not. Then the code in <code>ttt</code> for each rule becomes</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/ttt-rule-fragment.png" width="365" height="112" alt="fragment of ttt for one rule using temp variable" /></p>
+</blockquote>
+<hr />
+<p>Okay, time to move from planning to doing. The next goal is to build a <code>winning square</code> block. It'll take a list of triples and an X-or-O, and look for a square in which that player can move to win immediately. What does that mean in terms the program can understand? (We asked you to think about this a few screens ago.) Our answer is, &quot;look for a winning combination in which our letter appears twice and the other letter doesn't appear at all.&quot; So we seem to need two helpers: one that reports how many times a letter appears in a triple, and one that reports &quot;the other letter.&quot;</p>
+<p>Start with the second of those. Write a reporter called <code>opponent</code> that just takes an <code>X</code> or <code>O</code> as its input, and reports the other letter.<br />
+Now make a helper block called <code>appearances</code> that takes a word and a list as inputs, and  returns the number of times the first one appears in the second. Hint: Use a higher order function.</p>
+<div>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/appearances-block.png" alt="" width="253" height="76" title="There should be an image here" border="0" hspace="0" vspace="0" /></p>
+  </blockquote>
+</div>
+<p>Now write a <code>winning square</code> block that uses a higher order function to select those triples in which our letter appears twice and the opponent's letter doesn't appear at all, and then if any such triples are found, report the number of the vacant square in the first such triple; if not, report <code>false</code>.</p>
+<div></div>
+</body>
+</html>

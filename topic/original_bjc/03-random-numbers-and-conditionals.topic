@@ -24,10 +24,10 @@ heading: Review: 'Change' versus 'Set'
 
 heading: The <tt>If</tt> Block
 	quiz: If: What would you expect? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13956]
-	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-.html]
+	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-BYOB.html]
 	
 heading: Random
-	resource: Position on the Scratch Stage  [/bjc-r/cur/programming/random/position-on-the-scratch-stage.html]
+	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
 	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
 
 heading: Number Guessing Game

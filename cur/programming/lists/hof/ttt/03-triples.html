@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Finding Triples</title>
+</head>
+
+<body>
+<div>
+  <h3> Triples </h3>
+  <p>To win a game of tic-tac-toe, you have to get your letter (X or O) in three squares in a row. How many ways are there to do that?</p>
+  <blockquote>
+    <p>Go on, count them!</p>
+  </blockquote>
+  <p>This number is small enough so that we can just put them all in the program explicitly. We'll call each row, column, and diagonal a<em> triple. </em>The program will need a list of all the winning triples. This is the sort of thing—an unchanging value that's needed throughout the program—that can reasonably be put in a global variable:</p>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/ttt-wins.png" width="433" height="65" alt="list of winning combinations" /></p>
+  </blockquote>
+  <p>This list of winning triples is important to answer all the questions the strategy program will have to ask. For example, &quot;can I win on the next move&quot; means &quot;is there a triple in which two of the squares have my letter and the third square is empty?&quot; So you're going to translate each board position into a list based on <code>wins</code> in which each number is replaced by the status of that square (X, O, or empty):</p>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/ttt-triples-example.png" width="551" height="543" alt="example board as triples" /></p>
+  </blockquote>
+  <p>The picture doesn't show all of the result, just the first five triples. Make sure that each triple in the list reported by <code>find triples</code> corresponds to a triple in <code>wins</code>, with the square numbers replaced by what's in each square in the sample position. For example, the first triple in <code>wins</code> is <code>1 2 3</code>, and the first triple in the result is <code>1 O X</code>, the first three items of the position list, corresponding to the first row of the board. Vacant squares in the position are represented as <em>the square number </em>(not <code>_</code>) if the square is vacant.</p>
+  <p>Why do we say to use underscore for a vacant square in a position, but the square number in the triples? Remember that these two representations are for different purposes. The position is for human beings, and people expect to see an empty square, not a number, when a square is vacant. The triples are for the strategy program, and it's going to need to know the numbers of empty squares in a triple of interest. For example, if the computer is playing X and it sees the triple <code>X X 7</code> on the board, it wants to move in square 7 in order to win.</p>
+  <p>Take a minute to convince yourself that this list is <em>all</em> you need to  know about the corresponding board position. Once the strategy program finds  the triples for a board position, it never needs to look back at the  original position again. In that triple <code>X X 7</code> we mentioned, it really doesn't matter whether the two Xs are in the first column (1,4,7) or the second diagonal (3,5,7). Either way, we move in square 7 and win.</p>
+  <p>It's actually possible to write <code>find triples</code> as a (pretty long and complicated) Snap<em>!</em> one-liner (go ahead, try it, if you want), but we're going to work up to it in small steps. To start, write a reporter <code>substitute letter</code> that takes a square number  and a  position as input, and reports the letter X or O if the square is occupied, or the square number (not <code>_</code>) if the square is vacant.</p>
+  <p>&nbsp;</p>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/substitute-letter-block.png" width="297" height="111" alt="substitute letter returning letter" /> <img src="/bjc-r/img/hof/substitute-letter-block2.png" width="279" height="95" alt="substitute letter returning square number" /></p>
+  </blockquote>
+</div>
+</body>
+</html>

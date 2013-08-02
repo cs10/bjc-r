@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Swap Two List Values</title><!--ORIGINAL NAME: Swap List Values-->
+	</head>
+	<body>
+
+		We want to make a block that swaps two items in a list.  The block takes two numbers, representing positions of items in the list, and the list itself as its inputs; it swaps the positions of those items in the list.
+
+		Make this block in the List category; it's a command block. Set the input types of <code>
+			itemX</code>
+		and <code>
+			itemY</code>
+		to number, and the type of <code>
+			data</code>
+		to list.
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="51" width="355" vspace="0" border="0" title="'swap items' block" alt="'swap items' block" src="/bjc-r/img/list/swapproto.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/Empty.gif">
+		</div>
+
+		<p>
+			When you click <tt>Apply</tt>, you should be able to see the block with two round number input spots and one list input spot.
+		</p>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="28" width="159" vspace="0" border="0" title="'swap items' block with list input" alt="'swap items' block with list input" src="/bjc-r/img/list/swap-rows-empty-block-list-input-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/ListInput.gif">
+		</div>
+
+		<p>
+			(By the way, we called the list input <code>
+				data</code>
+			instead of <code>
+				list</code>
+			because people have commented that it's too easy to confuse a <code>
+				list</code>
+			variable block with the block to create an empty list: <img src="/bjc-r/img/list/orangelist.png" width="30" height="15" alt="orange list variable"><img src="/bjc-r/img/list/redlist.png" width="35" height="15" alt="red list constructor"> .)
+			<br>
+		</p>
+		<p>
+			Finish entering the complete script:
+		</p>
+		<p><img src="/bjc-r/img/list/swapitems.png" width="378" height="151" alt="complete swap items script">
+		</p>
+		<p>
+			Here is an example of how the block will be used:  If we run the block with the arguments
+			<br>
+		</p>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="25" width="260" vspace="0" border="0" src="/bjc-r/img/list/swapexample.png" alt="Swap items" title="Swap items" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/SwapRowsExample.gif">
+		</div>
+
+		<p>
+			where <tt>game board</tt> is the list
+		</p>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="185" width="112" vspace="0" border="0" src="/bjc-r/img/list/gameboard.png" alt="Before" title="Before" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListBeforeSwap.gif">
+		</div>
+
+		<p>
+			then the list should become
+		</p>
+		<div style="margin-left: 40px;">
+			<p><img hspace="0" height="185" width="112" vspace="0" border="0" src="/bjc-r/img/list/gameboard-after.png" alt="After" title="After" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListAfterSwap.gif">
+			</p>
+		</div>
+		<p>
+			The <code>
+				replace item</code>
+			blocks in this script are an example of a new technique, list <em>mutation</em>--changing items in an existing list, instead of creating a new list the way <code>
+				map</code>
+			and <code>
+				keep</code>
+			do. As in this example, mutation can be more efficient than recopying the entire list except for the two changed items.  On the other hand, mutation introduces the possibility of new kinds of bugs that can't happen with <em>functional</em> programming, the technique we've been using with lists until now.  If two parts of a large program are using the same list for different purposes, and one part mutates the list, the other part will get confused.  That's why we showed you functional programming first, and why functional programming should be your first instinct.
+		</p>
+		<p>
+			We <em>have</em> used mutation before with non-list data; for example, the <code>
+				for</code>
+			block changes the value of its variable <code>
+				i</code>
+			each time through the loop. Mutation isn't so dangerous in that context, because that variable exists only inside the <code>
+				for</code>
+			loop, there's no way another part of the program can be relying on an old value. Mutating <em>global</em> variables does have the same risk, though, which is why we've been saying that script variables are a better choice when possible. But a game board is an example of a value that's unavoidably both global and mutable.  We'll go into this further in the next lesson.
+		</p>
+	</body>
+</html>

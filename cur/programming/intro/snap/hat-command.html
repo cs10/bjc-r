@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Hat blocks and command blocks</title></head>
+
+<body>
+<p>Here's the script from the last screen again:</p>
+<p><img alt="when flag, pen down, repeat 4, move turn" src="/bjc-r/img/prog/script.png" />
+
+<p>At the top of the script is a <em>hat</em> block, which indicates when the script should be carried out.  [By the way, when you see a word in italics like "<em>hat</em>" above, it often means that a technical term is being defined.  You should keep a log of such terms and their meanings.  Sometimes a technical term is introduced in a picture, such as the word "palette" that you should already have seen.]  Hat block names typically start with the word “when”; in this example, the script should be run when the green flag near the right end of the Snap<em>!</em> tool bar is clicked.  (The Snap<em>!</em> tool bar is part of the Snap<em>!</em> window, not the same as the browser’s or operating system’s menu bar.)  A script isn’t required to have a hat block, but if not, then the script will be run only if the user clicks on the script itself.  A script can’t have more than one hat block, and the hat block can be used only at the top of the script; its distinctive shape is meant to remind you of that.
+</p>
+<p>The other blocks in this script are <em>command</em> blocks.  Each command block corresponds to an action that Snap<em>!</em> already knows how to carry out.  For example, the block
+<img alt="move 10 steps" src="/bjc-r/img/prog/moveblock.png" />
+tells the <em>sprite</em> (the arrowhead shape on the stage at the right end of the window) to move ten steps (a <em>step</em> is a very small unit of distance) in the direction in which the arrowhead is pointing.  We’ll see shortly that there can be more than one sprite, and that each sprite has its own scripts.  Also, a sprite doesn’t have to look like an arrowhead, but can have any picture as a costume.  The shape of the move block is meant to remind you of a Lego™ brick; a script is a stack of blocks.  (The word “block” denotes both the graphical shape on the screen and the procedure, the action, that the block carries out.)
+<p>The number 10 in the <code>move</code> block above is called an <em>input</em> to the block.  By clicking on the white oval, you can type any number in place of the 10.  The sample script above uses 100 as the input value.  We’ll see later that inputs can have non-oval shapes that accept values other than numbers.  We’ll also see that you can compute input values, instead of typing a particular value into the oval.  A block can have more than one input slot.  For example, the <code>glide</code> block located about halfway down the Motion palette has three inputs.
+  Most command blocks have that brick shape, but some, like the <code>repeat</code> block in the sample script, are <em>C-shaped.</em> Most C-shaped blocks are found in the Control palette.  The slot inside the C shape is a special kind of input slot that accepts a script as the input.  In the sample script, the <code>repeat</code> block has two inputs: the number 4 and the script
+<img alt="move, turn" src="/bjc-r/img/prog/subscript.png" /> . 
+</body>
+</html>
