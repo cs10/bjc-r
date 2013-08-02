@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Tic-Tac-Toe: Introduction</title>
+</head>
+
+<body>
+<h3> Introduction </h3>
+Now that you've learned about higher order functions (HOFs), we're going  to use them for a larger example. You are going to make a program that  plays a decent game of tic-tac-toe. First of all, you should understand how a mid-game tic-tac-toe board will be represented in the project, as a list of what's in each of the nine squares.
+<div>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/tic-tac-toe-board.png" width="179" height="312" alt="tic-tac-toe board" /></p>
+  </blockquote>
+</div>
+<p> </p>
+<p> We will represent the board as a list whose items are in the order of the numbers above. In this sample board the first item is an underline (which represents a blank  square to make the list more human-readable), and the second item is a O. We will call this the <em>position.</em> (We'll see shortly that our program will also use a second representation of the board that's easier for the program to manipulate.)<br />
+</p>
+<div>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/ttt-position.png" width="189" height="18" alt="position as list" /></p>
+  </blockquote>
+</div>
+<p></p>
+<p>The program will allow a human user to play against the computer. Your goal in this project is to write a block, <code>ttt</code>, that will determine the computer's next move based on the current position. (Tic-tac-toe isn't a very challenging game, for people, but as a first game-strategy project it's just right.)</p>
+<p>The  <code>ttt</code> block will  report the computer's next move given the current configuration. It  takes two inputs: the current position and whether the computer is  playing X or O. If the computer is X and using the board above, we can  use the <code>ttt</code> block like this: </p>
+<div>
+  <blockquote>
+    <p><img src="/bjc-r/img/hof/ttt-sample-call.png" width="346" height="57" alt="ttt sample call" /><br />
+    </p>
+  </blockquote>
+  <div>
+    <p>So the computer will move in the first square, which makes sense.<br />
+    </p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>How long does this computation take?</title>
+</head>
+
+<body>
+<p>Here's our solution:
+</p>
+<p><img src="/bjc-r/img/recur/reporters/pascal-script.png" width="336" height="179" alt="pascal script" /></p>
+<p>If the desired position is at the left (<code>column=0</code>) or the right (<code>column=row</code>) end of a row, then the value is 1. That's the base case. In the recursive case, the desired value is the sum of two values in the previous row (the two recursive calls).</p>
+<p>This is like the other examples we've seen in that what's reported is the result from a combiner block, in this case <code>+</code>. But it's different in that the two things being combined are both recursive calls.</p>
+<p>Just how many recursive calls are needed to compute a value in Pascal's Triangle? In, let's say, the middle of row 10? (Values near an end of a row are faster to compute because they reach a base case quickly.)</p>
+<blockquote>
+  <p>☞ How many <em>seconds </em>does it take to compute <code>pascal 10 5</code>? How about <code>pascal 12 6</code>? What's your guess about how long it would take to compute <code>pascal 20 10</code>?</p>
+</blockquote>
+<p>As a first approximation, pretend that the computation would never reach a base case until row 0. Then a value in row 10 will make two recursive calls into row 9. Each of those will make two recursive calls, for a total of four into row 8. Each of <em>those </em>makes two recursive calls, so there are eight calls into row 7, 16 into row 6, 32 into row 5, 64 into row 4, 128 into row 3, 256 into row 2, 512 into row 1, and 1024 into row 0! In reality the situation isn't quite so bad, because by row 5 you're already hitting the ends of the row. But still, roughly speaking, it takes something like 2<sup><em>n</em></sup> recursive calls to find a value near the middle of row <em>n</em> of the triangle.</p>
+<blockquote>
+  <p>☞ Make a global variable called <code>count</code> and set it to 0. Modify your <code>pascal</code> script to keep count of recursive calls:</p>
+  <p><img src="/bjc-r/img/recur/reporters/pascal-count.png" width="336" height="201" alt="pascal script with counter" /></p>
+  <p>How many calls are actually made when you compute <code>pascal 10 5</code>? <code>pascal 12 6</code>? (Don't forget to reset <code>count</code> to 0 for each experiment.) Make a guess for <code>pascal 14 7</code> and see how close you come.</p>
+</blockquote>
+<p>If all those recursive calls were really contributing new information to the result, then the slowness of this algorithm would be unfortunate but unavoidable. In fact, though, a lot of them are redundant. Consider these calls:</p>
+<blockquote>
+  <p><code>pascal&nbsp;10&nbsp;5&nbsp;&nbsp;--&gt;&nbsp;&nbsp;pascal&nbsp;9&nbsp;4&nbsp;&nbsp;--&gt;&nbsp;&nbsp;pascal&nbsp;8&nbsp;3</code><br /><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;--&gt;&nbsp;&nbsp;</code><code style="color: red">pascal&nbsp;8&nbsp;4</code><br /><br /><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;--&gt;&nbsp;&nbsp;pascal 9 5&nbsp;&nbsp;--&gt;&nbsp;&nbsp;</code><code style="color: red">pascal 8 4</code><br /><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;</code><code>&nbsp;--&gt;&nbsp;&nbsp;pascal 8 5</code></p>
+</blockquote>
+<p>There are two calls to <code>pascal 8 4</code>, out of four calls on row 8 altogether. The redundancy just gets worse in higher rows. In fact, the total number of numbers at or above row 10 is smaller than 10<sup>2</sup>, and in general <em>n</em><sup>2</sup> at or above row <em>n</em>.</p>
+<blockquote>
+  <p>☞ Why?</p>
+  <p>☞ For row 20, estimate 2<sup>20</sup> (the number of calls made) and 20<sup>2</sup> (the number of unique values needed).</p>
+  <p>☞ Optional for hotshots: Figure out how to modify the <code>pascal</code> script to get an exact count of the number of unique <code>row</code>-<code>column</code> input pairs used in a computation.</p>
+  <p>☞ Optional for hotshots: Use a list structure to keep track of already-computed values, and when the same inputs are given again, look up the saved value instead of making more recursive calls. (This technique is called <em>memoization, </em>no typo, there's no &quot;r&quot; in the word.)</p>
+</blockquote>
+<p>Math haters, turn the page.</p>
+<p>The rest of you might remember from your earlier exposure to Pascal's Triangle that there's a <em>formula </em>to compute the numbers in the table:</p>
+<p align="center"><em>nCr = n</em>!/<em>r</em>!(<em>n-r</em>)!</p>
+<p>This can be computed, without using recursion at all, in a time proportional to the row number <em>n</em>. The moral: An ounce of math is worth a pound of computer science, sometimes.</p>
+</body>
+</html>

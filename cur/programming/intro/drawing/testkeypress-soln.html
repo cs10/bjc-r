@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Test Yourself: Detecting a key press</title>
+</head>
+
+<body>
+<p>Which versions shown below provide the same functionality as the Original script, in which the character will say <code>Up Arrow Pressed</code> for two seconds every time the up arrow key is pressed?</p>
+<p><img src="../../../../img/prog/WhenArrowPressedWide.gif" width="771" height="389" alt="alternate scripts" /></p>
+<form id="form1" name="form1" method="post" action="http:testkeypress-soln.html">
+  <p>
+    <label style="color: green">
+      <input name="CheckboxGroup1" type="checkbox" id="CheckboxGroup1_0" value="2" checked="checked" />
+      Version 2</label>
+    <br />
+    <label style="color: red">
+      <input type="checkbox" name="CheckboxGroup1" value="3" id="CheckboxGroup1_1" />
+      Version 3</label>
+    <br />
+    <label style="color: red">
+      <input type="checkbox" name="CheckboxGroup1" value="4" id="CheckboxGroup1_2" />
+      Version 4</label>
+    <br />
+    <label style="color: red">
+      <input type="checkbox" name="CheckboxGroup1" value="5" id="CheckboxGroup1_3" />
+      Version 5</label>
+    <br />
+    <label style="color: red">
+      <input type="checkbox" name="CheckboxGroup1" value="6" id="CheckboxGroup1_4" />
+      Version 6</label>
+    <br />
+  </p>
+</form>
+<p>Versions 3 and 6 detect <em>the first </em>up arrow pressed, but then stop and do not detect additional up arrows. Versions 4 and 5 keep <code>say</code>ing &quot;<code>Up Arrow Pressed</code>&quot; forever. (Version 4 does this only if you are pressing up arrow <em>at the moment </em>when you click the green flag. Version 5 <em>stops</em> saying it when you press the key.)</p>
+</div>
+</body>
+</html>

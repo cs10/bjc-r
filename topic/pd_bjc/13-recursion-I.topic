@@ -31,16 +31,4 @@ heading: Fractals
 	resource: C-Curve [/r/cur/programming/recursion/fractals/c-curve.html]
 	resource: Search for "Fractals in Nature" [/r/cur/programming/recursion/fractals/search-for-fractals-in-nature.html]
 
-big-idea: The remaining activities should logically be in the next topic (recursive reporters), but because of the Wednesday midterm this week, that topic only gets one lab day, so you're going to start it early:
-
-heading: Number representation
-	resource: Recursive Reporters [/r/cur/programming/recursion/recursive-reporters/01-binary.html]
-	resource: Binary Numbers: Hint [/r/cur/programming/recursion/recursive-reporters/02-hint.html]
-	resource: Beyond Binary [/r/cur/programming/recursion/recursive-reporters/03-beyond.html]
-
-heading: Pascal's Triangle
-	 resource: What is Pascal's Triangle? [/r/cur/programming/recursion/recursive-reporters/11-pascal.html]
-	 resource: Computing a number in Pascal's Triangle [/r/cur/programming/recursion/recursive-reporters/12-pascal-alg.html]
-	 resource: Pascal's Triangle: Hints [/r/cur/programming/recursion/recursive-reporters/13-pascal-hint.html]
-	 resource: How long does this computation take? [/r/cur/programming/recursion/recursive-reporters/14-pascal-slow.html]
 }

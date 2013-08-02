@@ -14,38 +14,38 @@ learning-goal: Understand how reporters use combiners instead of sequences.
 learning-goal: Practice planning and coding recursive reporters.
 learning-goal: Implement higher order functions.
 
-big-idea: So that you get a sense of the complete topic, this page includes the activities you already saw in the previous topic that are about reporters:
+big-idea: Recursive Reporters:
 
 heading: Number representation
-	resource: Recursive Reporters [/r/cur/programming/recursion/recursive-reporters/01-binary.html]
-	resource: Binary Numbers: Hint [/r/cur/programming/recursion/recursive-reporters/02-hint.html]
-	resource: Beyond Binary [/r/cur/programming/recursion/recursive-reporters/03-beyond.html]
+	resource: Recursive Reporters: Binary Numbers [/r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
+	resource: A Hint on Binary Numbers [/r/cur/programming/recursion/recursive-reporters/binary-numbers-hint.html]
+	resource: Beyond Binary [/r/cur/programming/recursion/recursive-reporters/beyond-binary.html]
 
 heading: Pascal's Triangle
-	 resource: What is Pascal's Triangle? [/r/cur/programming/recursion/recursive-reporters/11-pascal.html]
-	 resource: Computing a number in Pascal's Triangle [/r/cur/programming/recursion/recursive-reporters/12-pascal-alg.html]
-	 resource: Pascal's Triangle: Hints [/r/cur/programming/recursion/recursive-reporters/13-pascal-hint.html]
-	 resource: How long does this computation take? [/r/cur/programming/recursion/recursive-reporters/14-pascal-slow.html]
+	 resource: What is Pascal's Triangle? [/r/cur/programming/recursion/recursive-reporters/pascals-triangle.html]
+	 resource: Computing a number in Pascal's Triangle [/r/cur/programming/recursion/recursive-reporters/pascals-triangle-algorithm.html]
+	 resource: Pascal's Triangle: Hints [/r/cur/programming/recursion/recursive-reporters/pascals-triangle-hint.html]
+	 resource: How long does this computation take? [/r/cur/programming/recursion/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
 big-idea: Here are the ones you haven't seen before:
 
 heading: Sorting
-	 resource: Sorting a List [/r/cur/programming/recursion/recursive-reporters/20-sort.html]
+	 resource: Sorting a List [/r/cur/programming/recursion/recursive-reporters/recursively-sorting.html]
 
 heading: Subsets
-	 resource: Subsets of a Set [/r/cur/programming/recursion/recursive-reporters/21-set.html]
-	 resource: Subset hints [/r/cur/programming/recursion/recursive-reporters/22-set-hint.html]
-	 resource: Subsets and Efficiency [/r/cur/programming/recursion/recursive-reporters/23-set-soln.html]
-	 resource: Fast Subsets [/r/cur/programming/recursion/recursive-reporters/24-set-fast.html]
+	 resource: Subsets of a Set [/r/cur/programming/recursion/recursive-reporters/subsets-of-a-set.html]
+	 resource: Subset hints [/r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-hint.html]
+	 resource: Subsets and Efficiency [/r/cur/programming/recursion/recursive-reporters/subsets-and-efficiency.html]
+	 resource: Fast Subsets [/r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-fast-soln.html]
 
 heading: Ice Cream Shop Menu
-	 resource: At the Ice Cream Shop [/r/cur/programming/recursion/recursive-reporters/31-icecream.html]
-	 resource: Formal Parameters [/r/cur/programming/recursion/recursive-reporters/32-icecream-formals.html]
-	 resource: Menu hints [/r/cur/programming/recursion/recursive-reporters/33-icecream-hint.html]
+	 resource: At the Ice Cream Shop [/r/cur/programming/recursion/recursive-reporters/ice-cream-shop.html]
+	 resource: Formal Parameters [/r/cur/programming/recursion/recursive-reporters/ice-cream-formal-parameters.html]
+	 resource: Menu hints [/r/cur/programming/recursion/recursive-reporters/ice-cream-hint.html]
 
 
 heading: Some simple ones
-	 resource: Plurals of Words [/r/cur/programming/recursion/recursive-reporters/41-plurals.html]
-	 resource: Generalizing the Map Pattern [/r/cur/programming/recursion/recursive-reporters/42-map.html]
-	 resource: Even numbers [/r/cur/programming/recursion/recursive-reporters/43-evens.html]
+	 resource: Plurals of Words [/r/cur/programming/recursion/recursive-reporters/plurals-of-words.html]
+	 resource: Generalizing the Map Pattern [/r/cur/programming/recursion/recursive-reporters/generalizing-the-map-pattern.html]
+	 resource: Even numbers [/r/cur/programming/recursion/recursive-reporters/even-number-filter.html]
 }

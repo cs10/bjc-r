@@ -31,7 +31,7 @@ heading: Introduction to Lists
 	
 heading: List Mutation
 	resource: Swap Two List Values [/r/cur/programming/lists/intro/swap-two-list-values.html]
-	resource: Mutation of Variables [/r/cur/programming/lists/mutate-vars.html]
+	resource: Mutation of Variables [/r/cur/programming/lists/mutation/mutate-vars.html]
 
 	
 heading: Homework

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Recursive Tree Part 3</title>
+</head>
+
+<body>
+<p>Last time, we tried to generalize this pattern:</p>
+<p><img src="../../../../img/recur/tree2.png" width="177" height="220" alt="tree2" />  &nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../img/recur/tree3.png" width="177" height="220" alt="tree3" /> &nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../img/recur/tree4.png" width="177" height="220" alt="tree4" /></p>
+<p>by making a single block that took the level number as an <em>input, </em>instead of as part of the block name:</p>
+<p><img src="../../../../img/recur/tree-nobase.png" width="312" height="220" alt="tree script first version" /></p>
+<p>Unfortunately, it didn't work:</p>
+<p><img src="../../../../img/recur/treefail.png" width="210" height="285" alt="picture of failing tree" /></p>
+<p>The sprite draws smaller and smaller left branches, finally just spinning around in one place, without ever drawing a right branch.</p>
+<p>What went wrong? The problem is that the original numbered <code>tree</code> scripts <em>aren't </em>all the same. The first one, <code>tree1</code>, is different; it just draws a trunk, without any branches:</p>
+<p><img src="../../../../img/recur/tree1.png" width="166" height="99" alt="tree1 script" /></p>
+<p>So our all-in-one <code>tree</code> block has to do something different from what's now in the script for the case <code>levels=1</code>.</p>
+<p><img src="../../../../img/recur/tree.png" width="319" height="319" alt="correct tree script" /></p>
+<p>With this change, we can draw trees of any complexity. Here's a level-9 tree:</p>
+<p><img src="../../../../img/recur/tree9.png" width="344" height="349" alt="picture of tree on stage" /></p>
+<p>(Note: the amount of time required to draw the tree goes up very quickly with the number of levels, so we don't recommend trying 100 levels.)</p>
+<p>This general code pattern, with a simple <em>base case </em>that doesn't call the block itself, is typical of recursion. (<em>Recursion </em>is the name for a block that calls itself in its script.) There's a base case and a recursice case.</p>
+<p>Questions:</p>
+<p>1. What's the base case in the <code>vee</code> program?</p>
+<p>2. Sometimes you can make a recursive procedure more elegant by having a smaller base case. In our <code>tree</code> program, what would a &quot;zero level&quot; tree mean? Try rewriting <code>tree</code> so that the base case is <code>levels=0</code>.</p>
+<p>3.See if you can make a tree like the first picture in this activity:</p>
+<p><img src="../../../../img/recur/real-tree.jpg" width="246" height="249" alt="beautiful tree" /></p>
+<p> It's different from what we've done so far because the smaller trees are drawn part way up the trunk, instead of at the top of the trunk, and because the pen color is green for the lowest-level branches (the <code>tree1</code>-like ones) and brown for the others. You don't have to get it exactly like the picture; just try to make a more realistic-looking tree. </p>
+</body>
+</html>

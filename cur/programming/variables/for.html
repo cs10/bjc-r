@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+   <head>
+      <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      <title>The FOR block</title>
+      <!--ORIGINAL NAME: Repeat Until-->
+   </head>
+   <body>
+   <p>The <code>repeat</code> block is great if you want to repeat <em>exactly </em>the same behavior each time. 
+   Sometimes, though, you want to do <em>almost </em>the same thing every time, but with a slight variation. Many such situations can be handled by the <code>for</code> block near the bottom of the Control palette:</p>
+   <p align="center"><img src="../../../img/prog/for.png" width="146" height="48" alt="for"></p>
+   <p>What's new here is the orange oval with &quot;<code>i</code>&quot; in it. This is called a <em>variable.</em> It represents a different value in each repetition. Try this:</p>
+   <p><img src="../../../img/prog/for35say.png" width="141" height="60" alt="for35say"></p>
+   <p>Note that we changed the numbers in the two white-oval input slots. We also <em>dragged</em> the variable <code>i</code> from the <code>for</code> block itself into the <code>say</code> block within its action slot. This &quot;for loop&quot; is equivalent to the following script:</p>
+   <p><img src="../../../img/prog/say345.png" width="125" height="66" alt="say345"></p>
+   <p>Just <code>say</code>ing the variable isn't all that interesting, although we can use that technique to simulate a rocket launch:</p>
+   <p><img src="../../../img/prog/blastoff.png" width="146" height="81" alt="blastoff"></p>
+   <p>But now try this:</p>
+   <p><img src="../../../img/prog/squiral.png" width="192" height="140" alt="squiral"></p>
+   <p>Note that we changed the name of the variable, by clicking on the orange oval <em>without </em>dragging it. This shape is called a &quot;squiral&quot; &mdash; a square spiral. Do you see why it spirals outward? The length of the <code>move</code> varies between repetitions. If we wanted to create this shape without using <code>for</code>, the script would look like this:</p>
+   <p><img src="../../../img/prog/unroll-squiral.png" width="135" height="338" alt="unrolled squiral"></p>
+   <p>By the way, try changing the turning angle from 90 to 92. It makes a beautiful picture! Then play around with the numbers and see how close you can come to a smooth spiral:</p>
+   <p><img src="../../../img/prog/spiral.png" width="127" height="121" alt="spiral"></p>
+   <p>&nbsp;</p>
+   </body>
+</html>
