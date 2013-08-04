@@ -1,10 +1,51 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Randomly Moving Character</title><!--ORIGINAL NAME: Randomly Moving Character--></head><body> We can generate a random number in Scratch between any two numbers (inclusive) using the <tt>random</tt> block: <br><br><div style="text-align: center;"> <img width="153" vspace="0" hspace="0" height="31" border="0" title="Random" alt="Random" src="/bjc-r/img/sys/pick-random-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"></div> <br> This block (with the round edges) is a <strong>reporter</strong> block -- it <em>reports</em> a value. We can use this block inside other blocks that take a value: <br><br><div style="text-align: center;"> <img width="301" vspace="0" hspace="0" height="243" border="0" title="Random Everywhere" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif"></div> <br><br> Try the following out:
-<ul><li>Make a character move around the screen randomly.</li>
-  <li>Now, make your character move around randomly, but still stay within 100 pixels (in the <tt>x</tt>- and <tt>y</tt>- directions) of the center of the screen (0, 0). You can do this as follows:
-    <ul><li>If the character is below the <tt>y = -100</tt> line, they should not go any lower.</li>
-      <li>If the character is above the <tt>y = 100</tt> line, they should not go any higher.</li>
-      <li>If they are to the left of the <tt>x = -100</tt> line, they should not go any farther left.</li>
-      <li>If they are to the right of the <tt>x = 100</tt> line, they should not go any farther right.</li>
-    </ul></li>
-</ul> These blocks may prove helpful: <br><div style="text-align: center;"> <img width="75" vspace="0" hspace="0" height="65" border="0" title="Positions" alt="Positions" src="/bjc-r/img/sys/Position-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Positions.jpg"></div>    </body></html>
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Randomly Moving Character</title><!--ORIGINAL NAME: Randomly Moving Character-->
+	</head>
+	<body>
+		We can generate a random number between any two whole numbers (inclusive) using the <tt>random</tt> block:
+		<br>
+		<br>
+		<div style="text-align: center;">
+			<img width="153" vspace="0" hspace="0" height="31" border="0" title="Random" alt="Random" src="/bjc-r/img/sys/pick-random-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg">
+		</div>
+		<br>
+		This block (with the round edges) is a <strong>reporter</strong> block -- it <em>reports</em> a value. We can use this block inside other blocks that take an input:
+		<br>
+		<br>
+		<div style="text-align: center;">
+			<img width="301" vspace="0" hspace="0" height="243" border="0" title="Random Everywhere" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
+		</div>
+		<br>
+		<br>
+		Try the following out:
+		<ul>
+			<li>
+				Make a sprite keep moving around the screen randomly.
+			</li>
+			<li>
+				Now, make your sprite move around randomly, but still stay within 100 pixels (in the <tt>x</tt>- and <tt>y</tt>- directions) of the center of the screen (0, 0). You can do this as follows:
+				<ul>
+					<li>
+						If the character is below the <tt>y = -100</tt> line, they should not go any lower.
+					</li>
+					<li>
+						If the character is above the <tt>y = 100</tt> line, they should not go any higher.
+					</li>
+					<li>
+						If they are to the left of the <tt>x = -100</tt> line, they should not go any farther left.
+					</li>
+					<li>
+						If they are to the right of the <tt>x = 100</tt> line, they should not go any farther right.
+					</li>
+				</ul>
+			</li>
+		</ul>
+		These blocks may prove helpful:
+		<br>
+		<div style="text-align: center;">
+			<img width="75" vspace="0" hspace="0" height="65" border="0" title="Positions" alt="Positions" src="/bjc-r/img/sys/Position-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Positions.jpg">
+		</div>
+	</body>
+</html>

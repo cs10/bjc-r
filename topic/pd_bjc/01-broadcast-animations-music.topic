@@ -1,0 +1,45 @@
+title: Topic 1: Broadcast, Animations, and Music
+
+{
+h2: Big Ideas
+big-idea: Explore Abstraction as it relates to Computer Science
+big-idea: Understand and analyze some of the impact of the internet on our culture
+
+	  video: No lecture or reading during week 1, but if you want to start early:
+	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+
+
+h2: Activities
+learning-goal: Get comfortable with the Snap! user interface.
+learning-goal: Learn to use <tt>Broadcast</tt> blocks to communicate between sprites and make a movie.
+learning-goal: Get a Snap! account set up to save projects.
+learning-goal: Learn to use key listeners to move the characters around the screen.
+
+heading: Exploring Snap!
+	resource: Welcome to Snap!. [/bjc-r/cur/programming/intro/snap/welcome-to-snap.html]
+	resource: Make a Sprite sing [/bjc-r/cur/programming/intro/snap/make-a-sprite-sing.html]
+	resource: Blocks and scripts [/bjc-r/cur/programming/intro/snap/blocks-scripts.html]
+	resource: Hat blocks and command blocks [/bjc-r/cur/programming/intro/snap/hat-command.html]
+	
+heading: Playing with Sounds and Broadcasting
+//	resource:  Meowing: One at a time or in unison? [/bjc-r/cur/programming/intro/snap/meowing.html]
+
+	resource: Experiment with a short Snap! play [/bjc-r/cur/programming/intro/snap/intro-play.html]
+	resource: Test Yourself: Go Bears! [/bjc-r/cur/programming/intro/snap/gobears.html]
+	resource: Test Yourself: Different Ways to Broadcast [/bjc-r/cur/programming/intro/snap/diffways.html]
+//	resource: Single Step Mode [/bjc-r/cur/programming/intro/snap/single-step-mode.html]
+//	resource: Exporting and Importing Sprites [/bjc-r/cur/programming/intro/snap/exporting-and-importing-sprites.html]
+	
+heading: Activities
+	resource: Make a movie [/bjc-r/cur/programming/intro/snap/make-a-movie.html]
+	
+heading: Game controls
+	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys-BYOB.html]
+	resource: Game of Tag [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
+	resource: Test Yourself: Detecting a key press [/bjc-r/cur/programming/intro/drawing/testkeypress.html]
+
+heading: Activities
+	resource: Electric Keyboard [/bjc-r/cur/programming/variables/electric-keyboard.html]
+
+}

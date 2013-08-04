@@ -22,7 +22,7 @@ learning-goal: Explore some of the complexities of managing block variables.
 heading: The Basics of BYOB
 	resource: Welcome to BYOB! [/bjc-r/cur/programming/functions/welcome-to-byob.html]
 	resource: Make a "Draw Shape" Block [/bjc-r/cur/programming/functions/make-a-draw-shape-block.html]
-	resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block.html]
+	resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block-BYOB.html]
 	resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
 	//forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
 	resource: Do it: Composition of Functions [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
@@ -30,7 +30,7 @@ heading: The Basics of BYOB
 	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
 	
 heading: Predicates
-	resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates.html]
+	resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates-BYOB.html]
 	resource: Predicates: Make a "Between" block [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
 	//forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
 	

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Best Free Square</title>
+</head>
+
+<body>
+<p>It's time to write the fallback rule: If none of the other rules apply, then take the center square if it's free, or a corner square if one of those is free, or an edge square if necessary.</p>
+<p>Take a moment to think about how to write this. You <em>could </em>do it this way:</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/silly-bestfree.png" width="233" height="222" alt="silly best free with three branches" /></p>
+</blockquote>
+<p>... but don't. That would be way more complicated than necessary. Instead, look for specific squares in the right order, e.g., 5,1,3,7,9,2,4,6,8. We don't really care which corner (or edge) we find, but it's easier to look in a specific order than to look by category.</p>
+<p>This rule takes the position as input, rather than the triples, because we've given up on finding potential winning or losing combinations if all those rules failed. Now we just want a square, and it's easier to find it in a simple ordered list of squares. Don't forget, though, that free squares in the position are represented as <code>_</code> rather than as a number.</p>
+<p>We suggest <code>for each item</code> as the easiest way to do this.</p>
+<p>This is the end of the required part of the project. You now have a procedure that plays a pretty good, but not perfect, tic-tac-toe strategy. Be sure to test your program thoroughly, on several board positions with different configurations of possible wins and losses. Then go on to the next screen.</p>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Program Structure and Strategy</title>
+</head>
+
+<body>
+<h3>Building the program</h3>
+<p>We're going to go through the program structure <em>bottom-up,</em> which means that you'll build helper blocks before you build <code>ttt</code> itself. But keep the goal in mind. We're not, right now, dealing with the user interface part of the game: displaying the board, accepting a move from the user, or even noticing when someone wins. Those parts will be easy to add once you've done the hard part, which is figuring out the computer's strategy.</p>
+<h3>How do <em>you </em>play tic-tac-toe?
+</h3>
+<p>Almost certainly, you have a bunch of rules of the form &quot;<strong>if</strong> such-and-such is true, <strong>then</strong> play here.&quot; These rules have different degrees of urgency. For example, the most important rule is &quot;if I can win on this move, then play in the winning square.&quot;</p>
+<p>Before you read further, answer these questions, discussing them with your partner and with other students if necessary:</p>
+<blockquote>
+  <p>1. What's the next most important rule?</p>
+  <p>2. Can you express &quot;If I can win on this move&quot; in more detail, in terms of the current board position, so that you could program it into Snap!?</p>
+</blockquote>
+<p>The if-all-else-fails rule is &quot;If no other rule applies, play in the best possible square: the center (square 5), if it's free, or a corner (squares 1, 3, 7, and 9) as second choice, or an edge (2, 4, 6, 8) as last resort.&quot;</p>
+<blockquote>
+  <p>3. Why is the center the best choice? Why is a corner second best? You should have a really short, logical, convincing explanation. Compare your explanation with those of other students.</p>
+</blockquote>
+<p>These three rules (including the one you answered in question 1 above) are part of everyone's tic-tac-toe strategy, and they are the minimum acceptable strategy for this assignment.  Humans don't always think alike about the in-between rules; we'll make suggestions later, after you finish the minimal assignment.</p>
+</body>
+</html>

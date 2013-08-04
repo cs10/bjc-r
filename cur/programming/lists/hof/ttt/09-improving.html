@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Improving the Strategy</title>
+</head>
+
+<body>
+<p>Our strategy up to this point is just so-so. It looks just one move ahead. To play a perfect game, you have to consider the move after that (your own move) and the move after <em>that </em>(the opponent's move).</p>
+<p>The rules we gave you so far are obvious. There's more than one possible way to finish the strategy program, but we'll go through one possible choice for the third rule.</p>
+<h3>Finding a Fork</h3>
+<p>It's not good enough just to look for a winning move for yourself two moves from now. If you can see such a move, so can your opponent, who'll move to block you. So what you have to find is a <em>fork: </em>two triples in which you have one appearance and your opponent has none, and which have a free square in common. This is much easier to see with a picture:</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/fork.png" width="164" height="152" alt="board with fork" /></p>
+</blockquote>
+<p>X opened the game with the standard opening move, in the center. O  responded very badly, on the top edge, and is therefore about to lose the game. X played in the top left corner. O had to respond in the bottom right corner in order to block an immediate win for X. It's X's turn. There is no winning combination with two Xs, nor with two Os. But X can find <em>two</em> winning combinations, the ones marked with the red lines, both of which have one X and two free squares, <em>with one of the free squares in common. </em>In the picture, the common square is 4, the left edge square, and so that's where X should move.</p>
+<p>Trick question to make sure you're paying attention: Wouldn't it be better to find a fork in which X has <em>two</em> apperances in each triple? Discuss this with your partner if you don't have a good answer.</p>
+<p>The point of the fork is that if X moves in square 4, then X has two winning combinations for next time. It's O's turn, but O can block only one of the two wins, and so X fills out the remaining winning combination two moves from now. For example, if O moves in square 6 to block the center row, then X moves in square 7 to win in the left column. Conversely, if O moves in 7, then X moves in 6 and wins.</p>
+<p>The straightforward way to find a fork would be this mess:</p>
+<p><img src="/bjc-r/img/hof/hairy-fork.png" width="466" height="366" alt="really complicated fork script" /></p>
+<p>Don't strain too hard to understand this; it's complicated, because (unlike the usual situation with HOFs) you have to look at every possible <em>pair </em>of triples, to find a number in common between two triples. In this script, <code>singles</code> is a list of those <em>singleton </em>triples with exactly one X (if that's our letter) and two free squares. Therefore, we have to <em>nest </em>two HOF calls. For each item of <code>singles</code>, we make a list <code>forks</code> containing those <em>other</em> triples that share a free square with this one. If that list is nonempty, we've found at least one fork, and so we take the first fork (it's unlikely that there will be two forks at once, but <code>keep</code> doesn't know that, so it reports a list, as usual) and report the number in common.</p>
+<p>Luckily, there's an easier way, although it's a little tricky. It depends on noticing that, in the end, we don't really care about the two triples in a fork, but only about the <em>pivot, </em>the number that appears in two triples. So we're going to find the pivot directly, without finding the triples, by &quot;collapsing&quot; the triple structure. Here's the plan:</p>
+<p>1. As in the previous version, find the singleton triples.</p>
+<p><img src="/bjc-r/img/hof/ttt-singles.png" width="466" height="130" alt="find singles with keep" /></p>
+<p>2. This gives us a list of triples—that is, a list of lists. Make one big list of all the letters and numbers from the triples:</p>
+<p><img src="/bjc-r/img/hof/ttt-flatten.png" width="423" height="63" alt="flatten triples" /></p>
+<p>You don't have the <code>append</code> block in your palette, but it's in one of the Snap<em>!</em> libraries. Click on the file menu icon, and choose &quot;Libraries...&quot; at the bottom of the menu, then choose &quot;List utilities&quot; from the new menu that appears.</p>
+<p>(The word <em>atom </em>in computer science means a value that isn't a list. Another name for an atom is a <em>scalar. </em> The use of <code>combine</code> here turns a list of lists into a list of its component atoms.)</p>
+<p>Now find a number that appears more than once in <code>atoms</code>. This part is easy:</p>
+<p><img src="/bjc-r/img/hof/ttt-pivot.png" width="245" height="120" alt="for loop to find pivot" /></p>
+<p>That should do it!</p>
+<h3>Take the Offensive</h3>
+<p>You might think that the fourth rule should be to look for a possible fork for the opponent, and block its pivot. You can do that (if you did all the work above, just use <code>opponent</code> in the call to <code>find fork</code>) easily enough to experiment with the resulting program. What you'll see is that there are situations in which the opponent has <em>two </em>possible forks, and you can block only one of them.</p>
+<p>Instead, take the offensive. Just find a singleton triple (one with one of your letter and the other squares free) and pick either square. That will force the opponent to block.</p>
+<p>However, it's really important to make sure that you don't force your opponent into a square that creates a fork! If that would happen, just choose another singleton triple in which to attack.</p>
+<p>We're not going to go through this rule in any further detail; try it on your own.</p>
+</body>
+</html>

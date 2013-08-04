@@ -1,0 +1,34 @@
+title: Topic 13: Recursion
+{
+h2: Big Ideas
+big-idea: Understand the techniques to solving a computer science problem recursively.
+big-idea: See examples of recursion in nature and art and its relationship to how we already conceptualize various aspects of our world.
+
+//	video: Recursion I [https://coursesharing.org/courses/6/lectures/17]
+	video: No new lectures; prepare for midterm Wednesday.
+	reading: Blown to Bits, Chapter 5 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter5.pdf]
+
+h2: Activities
+
+learning-goal: Explore the idea of representing a problem in terms of itself.
+learning-goal: Practice planning and coding recursive blocks.
+
+h2: &nbsp;
+big-idea: Make sure you watch the first recursion lecture (assigned last week) before doing this lab!
+
+heading: Tree Recursion
+	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-1.html]
+	resource: Recursive Tree Part 2 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-2.html]
+	resource: Recursive Tree Part 3 [/bjc-r/cur/programming/recursion/tree/treepart3.html]
+	resource: Self Test -- Understanding TREE inputs [/bjc-r/cur/programming/recursion/tree/selftest1.html]
+	resource: What was changed? [/bjc-r/cur/programming/recursion/tree/treechange.html]
+	resource: Vary your tree [/bjc-r/cur/programming/recursion/tree/vary-your-tree.html]
+	resource: Random Tree [/bjc-r/cur/programming/recursion/tree/random-tree.html]
+	resource: Base Cases [/bjc-r/cur/programming/recursion/tree/base-cases.html]
+
+heading: Fractals
+	resource: Snowflake [/bjc-r/cur/programming/recursion/fractals/snowflake.html]
+	resource: C-Curve [/bjc-r/cur/programming/recursion/fractals/c-curve.html]
+	resource: Search for "Fractals in Nature" [/bjc-r/cur/programming/recursion/fractals/search-for-fractals-in-nature.html]
+
+}

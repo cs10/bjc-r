@@ -1,43 +1,83 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Homework: Word Guessing</title><!--ORIGINAL NAME: Homework (due later): Word Guessing--></head><body>    
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Homework: Word Guessing</title><!--ORIGINAL NAME: Homework (due later): Word Guessing-->
+	</head>
+	<body>
 
-    <h2>Your Mission</h2>
-    <p>The goal of this homework assignment is to create a word guessing game. The computer will know one word (provided by Player 2) and will accept guesses from Player 1 about what that word is. The game continues until Player 1 guesses the correct word.  When Player 1 guesses the correct word, the computer should announce how many guesses it took Player 1 to figure it out.</p>
-    <p style="font-weight: bold;">This assignment must be completed individually.  You can discuss high-level ideas with other students but you should <span style="font-style: italic;">not</span> share code.
-    </p><h2>Your Timeline</h2>
-    <p>This assignment is due at the end of the Lists I topic.</p>
-    <h2>A Friendly Suggestion</h2>
-    <p>All of the homework assignments this semester are going to build on each other.  We highly recommend that you spend some time thinking about your design and even going back to clean things up once you become more comfortable programming.  You'll be glad you did once new assignments come out!</p>
-    <h2>Additional Details</h2>
-    <p>This is a game between two players -- Player 2 provides a word and Player 1
-tries to guess what it is using feedback they receive from previous guesses.</p>
-    <p>Player 2 first enters the mystery word by entering a response to an "ask" block.  
-The word is immediately hidden from view after Player 2 finishes entering it.  The computer then 
-starts by telling Player 1 how many letters are in the mystery word. Player 1 makes 
-guesses, and the computer should tell the player whether their guess was right or wrong. If 
-the player was wrong, the computer should also tell them how many letters in their guess were 
-correctly positioned in the actual answer. The computer does <i>not</i>, however, have to say which
-letters were correct OR which positions they were in.  The conversation alternates back and forth until 
-Player 1 guesses the word correctly. Here is an example dialog (the text in the square brackets is simply to improve clarity and does not need 
-to be printed): </p>
-    <code>
-      <p>[computer's word: fireball]</p> 
-      <p>Computer starts by saying: "There are 8 letter(s) in my word. Try to guess it!"</p> 
-      <p>Human guesses "factions"</p>
-      <p>Computer says "No, but 1 letter(s) is correct!" [the f] </p>
-      <p>Human guesses "facebook"</p>
-      <p>Computer says "No, but 3 letter(s) are correct!" [the f, the e and the b]</p> 
-      <p>Human guesses "fireball"</p> 
-      <p>Computer says "Yes, that is correct!  You figured out my word in 2 guess(es)."</p>
-      <p>[...and the game ends] </p>
-    </code>
+		<h2>Your Mission</h2>
+		<p>
+			The goal of this homework assignment is to create a word guessing game. The computer will know one word (provided by Player 2) and will accept guesses from Player 1 about what that word is. The game continues until Player 1 guesses the correct word.  When Player 1 guesses the correct word, the computer should announce how many guesses it took Player 1 to figure it out.
+		</p>
+		<p style="font-weight: bold;">
+			This assignment must be completed individually.  You can discuss high-level ideas with other students but you should <span style="font-style: italic;">not</span> share code.
+		</p><h2>Your Timeline</h2>
+		<p>
+			This assignment is due at the end of the Lists I topic.
+		</p>
+		<h2>A Friendly Suggestion</h2>
+		<p>
+			All of the homework assignments this semester are going to build on each other.  We highly recommend that you spend some time thinking about your design and even going back to clean things up once you become more comfortable programming.  You'll be glad you did once new assignments come out!
+		</p>
+		<h2>Additional Details</h2>
+		<p>
+			This is a game between two players -- Player 2 provides a word and Player 1
+			tries to guess what it is using feedback they receive from previous guesses.
+		</p>
+		<p>
+			Player 2 first enters the mystery word by entering a response to an "ask" block.
+			The word is immediately hidden from view after Player 2 finishes entering it.  The computer then
+			starts by telling Player 1 how many letters are in the mystery word. Player 1 makes
+			guesses, and the computer should tell the player whether their guess was right or wrong. If
+			the player was wrong, the computer should also tell them how many letters in their guess were
+			correctly positioned in the actual answer. The computer does <i>not</i>, however, have to say which
+			letters were correct OR which positions they were in.  The conversation alternates back and forth until
+			Player 1 guesses the word correctly. Here is an example dialog (the text in the square brackets is simply to improve clarity and should not be printed):
+		</p>
+		<code>
+			<p>
+				[Player 2's word: fireball]
+			</p>
+			<p>
+				Computer starts by saying: "There are 8 letters in the word. Try to guess it!"
+			</p>
+			<p>
+				Player 1 guesses "factions"
+			</p>
+			<p>
+				Computer says "No, but 1 letter is correct!" [the f]
+			</p>
+			Player 1 guesses "facebook"
+			<p>
+				Computer says "No, but 3 letters are correct!" [the f, the e and the b]
+			</p>
+			Player 1 guesses "fireball"
+			<p>
+				Computer says "Yes, that is correct!  You figured out the word in 3 guess(es)."
+			</p>
+			<p>
+				[...and the game ends]
+			</p>
+		</code>
 
-    <p>Your game should have at least one sprite, but there are no graphical requirements other than that. Feel free to develop the graphics more if you'd like -- it may come in handy later! </p>
+		<p>
+			Your game should have at least one sprite, but there are no graphical requirements other than that. Feel free to develop the graphics more if you'd like -- it may come in handy later!
+		</p>
 
-    <h2>Starting Materials</h2>
-    <p>You should start from a blank BYOB project.</p>
-    <h2>Tips and Thoughts</h2>
-    <ul><li>* You can display the value of variables using the check box beside the variable name in the <i>Variables</i> tab.</li>
-    <li>* What block or blocks could you create to make your job easier here?</li>
-    <li>* Refer to the Number Guessing Game in Lab 3 for ideas if you get stuck.</li>
-  </ul></body></html>
+		<h2>Starting Materials</h2>
+		<p>
+			You should start from an empty project.
+		</p>
+		<h2>Tips and Thoughts</h2>
+		<ul>
+			<li>
+				You can display the value of script variables using the <code>
+					show variable</code>
+				block inside the script.
+			</li>
+			<li>
+				Refer to the <a href="/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html">Number Guessing Game activity</a> for ideas if you get stuck.
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+title: Topic 8: Algorithm Complexity
+{
+h2: Big Ideas
+big-idea: Explore the implications of computing and technology on our culture and institutions
+big-idea: Understand Moore's law and the technical limitations and hurdles the hardware industry is facing as it develops the next generation of computers
+
+	video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
+	reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
+	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
+
+h2: Activities
+learning-goal: Use the BYOB timer to gather run time information
+learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
+
+heading: Introduction
+	resource: A (non-video) Game [/bjc-r/cur/programming/algorithms/a-non-video-game.html]
+	resource: Competing with Young Gauss [/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html]
+	//forum: Comparing Algorithms [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1802]
+
+heading: Timing Experiments
+	resource: Time is of the Es-sense [/bjc-r/cur/programming/algorithms/timing/time-is-of-the-es-sense.html]
+	resource: Do You Have Time to Add? [/bjc-r/cur/programming/algorithms/timing/do-you-have-time-to-add.html] 
+	resource: Constant-Time [/bjc-r/cur/programming/algorithms/timing/constant-time.html]
+	resource: All the Numbers, All the Time [/bjc-r/cur/programming/algorithms/timing/all-the-numbers-all-the-time.html]
+	resource: Linear-Time [/bjc-r/cur/programming/algorithms/timing/linear-time.html]
+	quiz: Searching Through Time [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14078] 
+	resource: Timing Sum-thing's Up [/bjc-r/cur/programming/algorithms/timing/timing-sum-things-up.html]
+	resource: Constant versus Linear [/bjc-r/cur/programming/algorithms/timing/constant-versus-linear.html]
+	resource: A Distinct Difference [/bjc-r/cur/programming/algorithms/timing/a-distinct-difference.html]
+	resource: Quadratic-Time [/bjc-r/cur/programming/algorithms/timing/quadratic-time.html]
+	resource: Logarithmic-Time [/bjc-r/cur/programming/algorithms/timing/logarithmic-time.html]
+
+heading: Homework
+	resource: Evil Hangman [/bjc-r/cur/programming/projects/hangman/evil-hangman.html]
+	
+}

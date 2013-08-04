@@ -1,0 +1,30 @@
+title: Topic 7: Algorithms
+{
+h2: Big Ideas
+big-idea: Explore how to analyze algorithmic speed and understand various factors that contribute to slow or fast runtimes.
+big-idea: Explore the implications of a world increasingly controlled by algorithms.
+
+	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
+	video: How Algorithms Shape Our World [http://www.ted.com/talks/kevin_slavin_how_algorithms_shape_our_world.html]
+
+h2: Activities
+learning-goal: Solidify understanding of what an algorithm is and why they’re important to computer science and other fields.
+learning-goal: Gain a basic understanding of why certain algorithms perform better than others.
+learning-goal: There’s often more than one way to solve the same problem. Certain solutions will be superior to others, but very often choosing a solution will require evaluating a list of trade-offs relevant to your particular situation.
+learning-goal: Practice implementing algorithms that were discussed verbally.
+learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
+learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
+
+	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
+	forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
+	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
+	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
+	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
+	resource: Algorithms in BYOB [/bjc-r/cur/programming/algorithms/algorithms-in-byob.html]
+	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
+	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
+	
+	
+	
+	
+}

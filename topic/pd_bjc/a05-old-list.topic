@@ -1,0 +1,39 @@
+title: Topic 5: Lists I
+{
+h2: Big Ideas
+big-idea: Explore programming paradigms: functional, imperative, object-oriented, and declarative.
+big-idea: Understand the meaning of Turing Completeness.
+big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
+
+	video: Programming Paradigms (Dan Garcia) [https://coursesharing.org/courses/6/lectures/13]
+	reading: Blown to Bits, Chapter 2 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter2.pdf]
+
+h2: Activities
+learning-goal: Practice writing and reading functions with different input types.
+learning-goal: Determine how to break problems down into individual functions.
+learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
+learning-goal: Develop the techniques and functions to draw a game board.
+
+heading: Introduction to Lists
+	resource: Make a List [/bjc-r/cur/programming/lists/intro/make-a-list.html]
+	quiz: Weird Cases [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14006]
+	resource: Read a List of Names [/bjc-r/cur/programming/lists/intro/read-a-list-of-names.html]
+	resource: Process a List [/bjc-r/cur/programming/lists/intro/process-a-list.html]
+	resource: Practice with Index Variables [/bjc-r/cur/programming/lists/intro/practice-with-index-variables.html]
+	resource: Remove List Elements [/bjc-r/cur/programming/lists/intro/remove-list-elements.html]
+	//quiz: Loops and Lists []
+	resource: Remove List Elements: Take Two [/bjc-r/cur/programming/lists/intro/remove-list-elements-take-two.html]
+	resource: Range of List Elements [/bjc-r/cur/programming/lists/intro/range-of-list-elements.html]
+	
+heading: Lists and Sentences: The Index Variable Pattern
+	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
+	
+heading: Lists as Arguments
+	resource: Swap List Values [/bjc-r/cur/programming/lists/intro/swap-list-values.html]
+	resource: Check if a List is Sorted [/bjc-r/cur/programming/sorting/intro/check-if-a-list-is-sorted.html]
+	resource: Check if a List is Sorted: Hint [/bjc-r/cur/programming/sorting/intro/check-if-a-list-is-sorted-hint.html]
+	
+heading: Homework
+	homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+	
+}

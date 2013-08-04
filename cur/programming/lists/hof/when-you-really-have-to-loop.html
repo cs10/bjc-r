@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> When you really have to loop</title>
       
@@ -12,23 +12,34 @@
 
    <body>
 
-<p><br>We want to write a predicate <b>increasing?</b> that takes a list of numbers as input, and outputs <b>true</b> if the numbers are in increasing order (equal neighbors are okay), or <b>false</b> otherwise.
-</p>Because this is a predicate, it's tempting to try to make it use <b>keep</b>:<br>
-<img width="354" vspace="0" hspace="0" height="42" border="0" src="../../../../img/list/hof/wannabe-increasing.png" alt="report <empty? (keep items such that (<() < (???)>) from (list)" title="report <empty? (keep items such that (<() < (???)>) from (list)"/>
+<p><br>
+  We want to write a predicate <code>increasing?</code> that takes a list of numbers as input, and outputs <code>true</code> if the numbers are in increasing order (equal neighbors are okay), or <code>false</code> otherwise.
+</p>
+Because this is a predicate, it's tempting to try to make it use <code>keep</code>:<br>
+<img width="354" vspace="0" hspace="0" height="42" border="0" src="/bjc-r/img/list/hof/wannabe-increasing.png" alt="report <empty? (keep items such that (<() < (???)>) from (list)" title="report <empty? (keep items such that (<() < (???)>) from (list)"/>
 
-<p>But <b>map</b>, <b>keep</b>, and <b>combine</b> work when each item can be considered independently of the others, and in this problem we have to consider each item in relation with the ones that have come before it - Is this number at least as big as the ones we've already seen?
+<p>But <code>map</code>, <code>keep</code>, and <code>combine</code> work when each item can be considered independently of the others, and in this problem we have to consider each item in relation with the ones that have come before it - Is this number at least as big as the ones we've already seen?
 
-</p>So we have to loop through the list's items, from left to right. But we still can abstract away the item <i>numbers </i>by which we find an item in the list. Those index numbers have nothing to do with the problem we're trying to solve. The solution is to use the <b>for each item</b> block, this way:<br>
-<img width="205" vspace="0" hspace="0" height="229" border="0" src="../../../../img/list/hof/increasing.png" alt="definition of INCREASING? block" title="definition of INCREASING? block"/>
-
-<br><br>Like the functions used as input to <b>map</b> and friends, the script inside the C-shaped slot of <b>for each item</b> interprets empty input slots (in the <b>&lt;</b> and <b>set</b> blocks) as placeholders into which an item of the list will be entered. <b>For each item</b> promises to go through the list starting with item 1 and continuing in sequence to the end of the list. We use a script variable <b>minimum</b> to remember the most recent item's value, which is the minimum allowable value for the next item. If any item is smaller than that remembered value, <b>increasing?</b> reports <b>false</b>. If we make it to the end of the list without violating that requirement, then <b>increasing? </b>reports <b>true</b>.
-
-<p><br><br><b>Try this: </b>Display a longish list using time instead of stage space by <b>say</b>ing each item for two seconds.
-
-<br><br>Technically, <b>for each item</b> isn't a higher order function, because the script in its C-shaped slot isn't a function: It doesn't report a value. (There's a <b>report</b> block in the script in our example, but that's reporting a value from <b>increasing?</b>, not from the script itself.) But it's a higher-order <i>procedure, </i>because that script in the C-shaped slot is a procedure. All of the C-shaped blocks in the Control palette are higher order procedures, too, although Scratch users don't generally think of them in that way.
-
-<br><br><b>Try this: </b>Write an <b>expand</b> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br>
-<img width="357" vspace="0" hspace="0" height="65" border="0" src="../../../../img/list/hof/expand.png" alt="she loves you 3 yeah -> she loves you yeah yeah yeah" title="she loves you 3 yeah -> she loves you yeah yeah yeah"/><br><br> 
-
+</p>
+<p>So we have to loop through the list's items, from left to right. But we still can abstract away the item <i>numbers </i>by which we find an item in the list. Those index numbers have nothing to do with the problem we're trying to solve. The solution is to use the <code>for each item</code> block, this way:<br>
+  <img width="205" vspace="0" hspace="0" height="229" border="0" src="/bjc-r/img/list/hof/increasing.png" alt="definition of INCREASING? block" title="definition of INCREASING? block"/>
+  
+  <br><br>
+  Like the functions used as input to <code>map</code> and friends, the script inside the C-shaped slot of <code>for each item</code> interprets empty input slots (in the <code>&lt;</code> and <code>set</code> blocks) as placeholders into which an item of the list will be entered. <code>For each item</code> promises to go through the list starting with item 1 and continuing in sequence to the end of the list. We use a script variable <code>minimum</code> to remember the most recent item's value, which is the minimum allowable value for the next item. If any item is smaller than that remembered value, <code>increasing?</code> reports <code>false</code>. If we make it to the end of the list without violating that requirement, then <code>increasing? </code>reports <code>true</code>.
+ </p>
+<p>Note that the <code>for each item</code> block has the word &quot;item&quot; in a round orange block. It's a variable, and you can drag it into the script that goes inside the C-slot, instead of using an empty input to represent the list item:</p>
+<p><img src="/bjc-r/img/list/hof/increasing-item.png" width="231" height="233" alt="for each using item variable"></p>
+<p>Why two different ways? Well, Brian likes the empty input slot, so it works the same as <code>map</code> and friends, but Dan likes the variable.
+<p>Actually, this script has a bug. If the input list is <em>empty,</em> it tries to take <code>item 1</code> of the empty list and crashes. Fix this by adding the blocks
+<p><img src="/bjc-r/img/list/hof/ifempty.png" width="124" height="59" alt="if &lt;empty? list&gt; report">
+<p>somewhere in the script. There are two things you have to decide: Where do you put them, and what value should you report in this case? Discuss this with your partner, then check your answers with other students.<br>
+  <br><b>Try this: </b>Display a longish list using time instead of stage space by <code>say</code>ing each item for two seconds.
+  
+  <br><br>
+  Technically, <code>for each item</code> isn't a higher order function, because the script in its C-shaped slot isn't a function: It doesn't report a value. (There's a <b><code>report</code></b> block in the script in our example, but that's reporting a value from <code>increasing?</code>, not from the script itself.) But it's a higher-order <i>procedure, </i>because that script in the C-shaped slot is a procedure. All of the C-shaped blocks in the Control palette are higher order procedures, too, although Scratch users don't generally think of them in that way.
+  
+  <br><br><b>Try this: </b>Write an <code>expand</code> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br>
+  <img width="357" vspace="0" hspace="0" height="65" border="0" src="/bjc-r/img/list/hof/expand.png" alt="she loves you 3 yeah -> she loves you yeah yeah yeah" title="she loves you 3 yeah -> she loves you yeah yeah yeah"/><br><br> 
+  
    </body>
 </html>

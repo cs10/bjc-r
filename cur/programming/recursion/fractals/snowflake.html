@@ -6,12 +6,21 @@
 		<!--ORIGINAL NAME: Snowflake-->
 	</head>
 	<body>
-		Using recursion we can make beautiful things! In this step we'll learn to make the beautiful koch snowflake (below)
-		<br>
-		<img border="0" width="380" vspace="0" hspace="0" height="340" src="/bjc-r/img/recur/kochflake-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/snowflake/kochflake.jpg">
-		<br>
-		We're going to work with fractals that do not return to the same place between recursive calls. For example, our base case has the character start on the left and go to the right (below).
-		<br>
+		<p>
+			Using recursion we can make beautiful things! In this step you'll learn to make the beautiful Koch snowflake (below).
+			<br>
+			<img border="0" width="380" vspace="0" hspace="0" height="340" src="/bjc-r/img/recur/kochflake-BYOB.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/snowflake/kochflake.jpg">
+			<br>
+		</p>
+		<p>
+			The entire snowflake consists of three copies of a fractal, arranged in a triangular shape:
+		</p>
+		<p><img src="../../../../img/recur/kochflake-triangle.jpg" width="380" height="340" alt="snowflke with tringle inscribed">
+		</p>
+		<p>
+			This fractal does not return to the same place between recursive calls. For example, the base case has the sprite start on the left and go to the right (below).
+			<br>
+		</p>
 		<div style="margin-left: 40px;"><img border="0" width="339" vspace="0" hspace="0" height="81" src="/bjc-r/img/recur/snowflake-level0-BYOB.gif" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/snowflake/snow0.gif">
 			<br>
 		</div>
@@ -32,14 +41,14 @@
 			<br>
 			<br>
 		</div>
-		Something that is hard to tell visually is that each recursive call is one-third the size of the previous step. Fill in the blanks in the following recursive function to draw the koch snowflake. Note that at the end of each recursive call we do not end where we started like we did with the trees.
+		Something that is hard to tell visually is that each recursive call is one-third the size of the caller. (This makes the entire fractal the same ditance from left to right in every level.) Fill in the blanks in the following recursive procedure to draw the Koch snowflake. Note that at the end of each recursive call we do not end where we started as we did with the trees.
 		<br>
 		<br>
 		<div style="margin-left: 40px;"><img border="0" width="376" vspace="0" hspace="0" height="306" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/snowflake-code-with-blanks-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/snowflake/snowflakeFillINBlanks.gif">
 			<br>
 		</div>
 		<br>
-		When you get one side of the snowflake working, combine three of these to actually make the snowflake.
+		When you get one side of the snowflake working, combine three of these to  make the entire snowflake.
 		<br>
 	</body>
 </html>

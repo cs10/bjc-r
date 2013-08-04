@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Blocking the Opponent</title>
+</head>
+
+<body>
+<p>At this point you're ready to assemble a first version of the <code>ttt</code> block:
+</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/ttt-first.png" width="301" height="201" alt="ttt block with winnng-square rule" /></p>
+</blockquote>
+<p>The sample position we've been using all along has a winning move for O, but not for X:</p>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/ttt-O-wins.png" width="389" height="66" alt="ttt wins for O" /><img src="/bjc-r/img/hof/ttt-X-fails.png" width="389" height="66" alt="ttt fails for X" /></p>
+</blockquote>
+<p>(Yes, we know that if the board has the same number of X squares as O squares it has to be X's turn. We'll worry about that when you write a complete game program. For now, it's easier to debug if we ignore that rule and use the same position regardless of who plays next, at least for this first rule.)</p>
+<blockquote>
+  <p>Question: Why do we get the answer 1 for O? What winning combination is the program finding?</p>
+</blockquote>
+<p>Now add a second rule to <code>ttt</code> that looks for a square in which the opponent can win on the next move. This new rule comes <em>after</em> the one we have already, because if the computer can win on this move, we don't care what the opponent could have done later.</p>
+<p><strong>Big hint: Do not write any new helper blocks!</strong> You already have all the tools you need to find and block a potential win for the human player.</p>
+<p>Once you've modified <code>ttt</code> with the new rule, it should give an answer for our sample board with the computer playing X, who can't win on this move but can block O's win on the next move:</p>
+<p><img src="/bjc-r/img/hof/ttt-X-blocked.png" width="389" height="66" alt="ttt blocking for X" /></p>
+</body>
+</html>

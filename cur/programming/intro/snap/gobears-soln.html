@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Go Bears!</title>
+<style type="text/css">
+wrong {
+	color: #F00;
+}
+wrong {
+	color: #F00;
+}
+</style>
+</head>
+
+<body>
+<p>Without trying this in Snap!, try to answer the following question: <br />
+  <br />
+What does the following set of scripts do when you click on the <code>When I receive Turn1</code> script? </p>
+<p><img src="/bjc-r/img/prog/turn1.png" width="172" height="80" alt="turn1" />&nbsp;&nbsp;&nbsp;&nbsp; <img src="/bjc-r/img/prog/turn2.png" width="172" height="80" alt="turn2" /><br />
+</p>
+<form id="form1" name="form1" method="post" action="">
+  <p>
+    <label style="color: red">
+      <input type="radio" name="RadioGroup1" value="a" id="RadioGroup1_0" />
+      a. The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; once.</label>
+    <br />
+    <label style="color: green">
+      <input type="radio" name="RadioGroup1" value="b" checked="checked" id="RadioGroup1_1" />
+      b. The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; until you hit the red Stop button. </label>
+    <br />
+    <label style="color: red">
+      <input type="radio" name="RadioGroup1" value="c" id="RadioGroup1_2" />
+      c. Nothing happens - this does not work.</label>
+    <br />
+    <label style="color: red">
+      <input type="radio" name="RadioGroup1" value="d" id="RadioGroup1_3" />
+      d. The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; a few times and then stops by itself.</label>
+    <br />
+ </p>
+</form>
+<p>
+Here, we see an <em>infinite loop,</em> or a never-ending loop. Whenever this happens in Snap<em>!</em>, we can always stop it by pressing the Stop button at the top right of the window, just above the stage.
+
+<p>Why does this happen? Well, when you click on the <code>When I receive Turn1</code> script, the sprite says <code>Go</code> for two seconds, and then broadcasts a <code>Turn2</code> message.
+
+<p>If there is any character that has a script that responds to the <code>Turn2</code> message, it will perform that script. In this case, the same sprite has a script that responds to the <code>Turn2</code> message, and so it will run the corresponding script. It says <code>Bears!</code> and then broadcasts a <code>Turn1</code> message. But, it also has a script that responds to the <code>Turn1</code> message, which in turn sends a <code>Turn2</code> message, and so on. This continues until the scripts are forced to stop. 
+</body>
+</html>

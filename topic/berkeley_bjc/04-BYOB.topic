@@ -1,0 +1,54 @@
+title: Topic 4: Build Your Own Blocks
+{
+h2: Big Ideas
+big-idea: Understand and use procedures (blocks) as an abstraction mechanism.
+big-idea: Define functional programming.
+big-idea: Explore the relationship between Functional Programming and Parallelism.
+big-idea: Explore historical roots of functional programming and lambda calculus.
+big-idea: Explore programming paradigms: functional, imperative, object-oriented, and declarative.
+// big-idea: Consider the importance and economic value of software companies on the economy.
+
+	video: Functions [https://coursesharing.org/courses/6/lectures/12]
+	video: Programming Paradigms [https://coursesharing.org/courses/6/lectures/13]
+	video: Program or be Programmed [http://www.youtube.com/embed/JKAzZocdQ1Y]
+	reading: Blown To Bits: Chapter 2 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter2.pdf]
+	reading: Why Software Is Eating The World [http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html]
+
+h2: Activities
+learning-goal: Discover how to:
+		Create different shaped blocks;
+		Create inputs of different types;
+		Create inputs with initial values.
+learning-goal: Employ blocks and data abstraction to break problems down into smaller problems and thus write more beautiful and elegant code.
+
+heading: Building a custom block
+	resource: Building your own blocks [/bjc-r/cur/programming/functions/building-your-own-blocks.html]
+	resource: Make a "draw polygon" Block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
+	resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block.html]
+	resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
+	//forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
+	resource: Do it: Composition of Functions [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
+//	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
+	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
+	
+heading: Predicates
+	resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates.html]
+	resource: Predicates: Make a "Between" block [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+	//forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
+	
+//heading: Variables
+//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+//	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
+//	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
+//	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+	
+heading: Custom blocks make code easier to understand
+	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	
+heading: Activities
+	resource: Brick Wall [/bjc-r/cur/programming/abstraction/brick-wall.html]
+	
+
+
+}

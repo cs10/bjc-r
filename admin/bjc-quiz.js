@@ -2,12 +2,12 @@
 
 function getQInstance(type, qdata, location,  i) {
 	// switch would be nicer here...
+	// based on value of 'type' attribute in the div with class=asessment-data
 	if (type = "multiplechoice") {
 		return new MC(qdata, location, i);
 	}
 	
 }
-
 
 
 
@@ -40,7 +40,6 @@ function buildQuestions() {
 			getRemoteQdata(target, location, i);
 			
 		} else {
-			// need to figure out how to pass in the questionNumber here
 			buildQuestion(qdata, location, i, false);
 		}	
 	}
@@ -52,6 +51,7 @@ function buildQuestions() {
 	
 }
 
+// use a closure to keep around location and questionNum
 function getRemoteQdata(target, location, questionNum) {
 		$.ajax({
 			url : target,

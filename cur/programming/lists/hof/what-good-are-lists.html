@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> What good are lists?</title>
       
@@ -12,23 +12,30 @@
 
    <body>
 
-<p><br>Let's say you're writing a program to generate English sentences. Your starting point might be various lists of words:<br>
-<img width="419" vspace="0" hspace="0" height="153" border="0" src="../../../../img/list/hof/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." />
-</p>You could build up a sentence out of phrases. For example, to make a noun phrase, you want to pick one item from the <b>articles</b> list, one from the <b>adjectives</b> list, and one from the <b>nouns</b> list.
-
-</p>To select one item from a list, use the <b>item</b> block:<br>
-<img width="91" vspace="0" hspace="0" height="18" border="0" src="../../../../img/list/hof/itemblock.png" alt="ITEM (n) OF (list)" title="ITEM (n) OF (list)" />
-<p>List items are numbered from 1, so, for example, item 3 of the <b>nouns</b> list above is <b>pizza</b>. The first input slot accepts a number like other rounded input slots, but it also has a downward arrow that, when clicked, offers two special choices: <b>last</b> for the last item of the list, and <b>any</b> to pick an item at random.
-<br>The second input slot in the <b>item</b> block is something you haven't seen before: a rectangle with two orange smaller rectangles inside it. Just as a rounded input slot indicates that a number is expected, and a hexagonal input slot indicates that a <b>true</b> or <b>false</b> value is expected, this new kind of input slot means that a list value is expected. It's meant to look like what you see when you <b>say</b> a list: a grey (rounded) rectangle with red-orange rectangles for the individual items.
-
-<p>Use the <b>item any</b> feature to make a noun phrase by choosing a random article, a random adjective, and a random noun:<br>
-<img width="453" vspace="0" hspace="0" height="92" border="0" src="../../../../img/list/hof/nounphrase-block.png" alt="Noun phrase block, JOIN WORDS of an item from each of ARTICLES, ADJECTIVES, and NOUNS" title="Noun phrase block, JOIN WORDS of an item from each of ARTICLES, ADJECTIVES, and NOUNS" />
-</p>Because of the random item choices, we get a different result each time we call <b>noun phrase</b>:<br>
-<img width="228" vspace="0" hspace="0" height="225" border="0" src="../../../../img/list/hof/nouphrase-calls.png" alt="the little elephant, a red aardvark, etc." title="the little elephant, a red aardvark, etc." />
-
-<p><br><br><b>Try this: <br></b>Create blocks <b>prepositional phrase</b>, <b>verb phrase</b>, and anything else you need, ending with a <b>sentence</b> block that reports sentences like &quot;the little elephant runs excitedly around the big pizza.&quot; Can you improve on this so that the sentence structure varies, sometimes including people's names instead of article-adjective-noun phrases, for example? You might want different sentence structures for transitive and intransitive verbs. This is an open-ended project!
-</p>Besides lists of words, you'll find uses for lists of numbers, to keep track of your grades in this course, for example, or to represent a sprite's position as a single vector (list) containing the X and Y position numbers. And you can even use <i>lists of lists </i>for more complicated data structures:<br>
-<img width="400" vspace="0" hspace="0" height="65" border="0" title="List of the list John and Lennon, the list Paul and McCartney, etc." alt="List of the list John and Lennon, the list Paul and McCartney, etc." src="../../../../img/list/hof/Beatles.png" /><br><br>
+<p><br>
+  Let's say you're writing a program to generate English sentences. Your starting point might be various lists of words:</p>
+<p><img width="419" vspace="0" hspace="0" height="153" border="0" src="/bjc-r/img/list/hof/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+<p>You could build up a sentence out of phrases. For example, to make a noun phrase, you want to pick one item from the <code>articles</code> list, one from the <code>adjectives</code> list, and one from the <code>nouns</code> list.
+  
+  </p>
+  To select one item from a list, use the <code>item</code> block:</p>
+<p><img width="91" vspace="0" hspace="0" height="18" border="0" src="/bjc-r/img/list/hof/itemblock.png" alt="ITEM (n) OF (list)" title="ITEM (n) OF (list)" />
+</p>
+<p>List items are numbered from 1, so, for example, item 3 of the <code>nouns</code> list above is <code>pizza</code>. The first input slot accepts a number like other rounded input slots, but it also has a downward arrow that, when clicked, offers two special choices: <code>last</code> for the last item of the list, and <code>any</code> to pick an item at random.
+<p>The second input slot in the <code>item</code> block is something you haven't seen before: a rectangle with two orange smaller rectangles inside it. Just as a rounded input slot indicates that a number is expected, and a hexagonal input slot indicates that a <code>true</code> or <code>false</code> value is expected, this new kind of input slot means that a list value is expected. It's meant to look like what you see when you <b><code>say</code></b> a list: a grey (rounded) rectangle with red-orange rectangles for the individual items.
+  <p>Use the <code>item any</code> feature to make a noun phrase by choosing a random article, a random adjective, and a random noun:</p>
+  <p><img width="453" vspace="0" hspace="0" height="92" border="0" src="/bjc-r/img/list/hof/nounphrase-block.png" alt="Noun phrase block, JOIN WORDS of an item from each of ARTICLES, ADJECTIVES, and NOUNS" title="Noun phrase block, JOIN WORDS of an item from each of ARTICLES, ADJECTIVES, and NOUNS" />
+  </p>
+  <p>Because of the random item choices, we get a different result each time we call <code>noun phrase</code>:</p>
+  <p><img width="228" vspace="0" hspace="0" height="225" border="0" src="/bjc-r/img/list/hof/nouphrase-calls.png" alt="the little elephant, a red aardvark, etc." title="the little elephant, a red aardvark, etc." />
+    
+  </p>
+  <p><br><br><b>Try this: </b></p>
+  <p>Create blocks <code>prepositional phrase</code>, <code>verb phrase</code>, and anything else you need, ending with a <code>sentence</code> block that reports sentences like &quot;the little elephant runs excitedly around the big pizza.&quot; Can you improve on this so that the sentence structure varies, sometimes including people's names instead of article-adjective-noun phrases, for example? You might want different sentence structures for transitive and intransitive verbs. This is an open-ended project!
+  </p>
+  <p>Besides lists of words, you'll find uses for lists of numbers, to keep track of your grades in this course, for example, or to represent a sprite's position as a single vector (list) containing the X and Y position numbers. And you can even use <i>lists of lists </i>for more complicated data structures:</p>
+  <p><img width="400" vspace="0" hspace="0" height="65" border="0" title="List of the list John and Lennon, the list Paul and McCartney, etc." alt="List of the list John and Lennon, the list Paul and McCartney, etc." src="/bjc-r/img/list/hof/Beatles.png" /><br><br>
+  </p>
 
    </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Finding Triples (Continued)</title>
+</head>
+
+<body>
+<div>
+  <h3> Finding the Triples (Continued) </h3>
+  <p>We are working up to being able to transform the <code>wins</code> list, which is a list of lists, into a similar list but with some square numbers replaced with X and O according to the position. You started, in the last activity, by making a <code>substitute letter</code> block that transforms a single square number into the desired value for that square. Now  use that to make <code>substitute triple</code>, a block that takes a triple (a list of three numbers, one of the winning combinations) and a position as its inputs, and returns the transformed version of that triple.</p>
+  <div><img src="/bjc-r/img/hof/substitute-triple-block-output.png" width="374" height="203" alt="output from substitute triple" /></div>
+  <p> </p>
+  <div><img src="/bjc-r/img/hof/substitute-triple-block-output2.png" width="377" height="201" alt="another example" /></div>
+  <p> </p>
+  <p> You can use <code>substitute triple</code> to make the <code>find triples</code> block. It  takes one input, a position, and returns the list of  triples that we wanted. Here's a reminder of what's needed:</p>
+  <div></div>
+  <div><img src="/bjc-r/img/hof/ttt-triples-example.png" width="551" height="543" alt="find triples result" /></div>
+  <p>This is hard to read, isn't it? Fortunately, we provide a block that helps you read the list.</p>
+  <div><img src="/bjc-r/img/hof/ttt-triples-converter.png" width="443" height="116" alt="triples converter script" /><br />
+  </div>
+  <br />
+  <p><img src="/bjc-r/img/hof/ttt-triples-converter-output.png" width="584" height="97" alt="triples converter result" /><br />
+  </p>
+  <p><br />
+  </p>
+  <p>Note: triples-converter is used <em><strong>only </strong></em>to help you read the list while debugging; don't use it in the program itself.<br />
+  </p>
+</div>
+</body>
+</html>

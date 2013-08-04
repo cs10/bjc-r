@@ -22,6 +22,10 @@ function MC(data, location, questionNumber) {
 	var rii = this.interaction.attr("responseIdentifier");
 	this.responseDec = $('.responseDeclaration[identifier="' + rii + '"]');
 	
+
+	// save this MC dom element
+	this.multipleChoice = $(location);
+	
 	// make a copy of the template
 	var template = this.getTemplate();
 	this.multipleChoice = $(template).insertAfter(location);
