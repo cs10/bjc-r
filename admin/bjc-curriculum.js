@@ -225,44 +225,44 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	list_header.width(list.outerWidth());
 	list.slideToggle(0);
 
-        var b_list = list.clone();
-        var b_list_header = list_header.clone();
-        b_list_header.click(
-                function() {
-		        if (b_list_header.html() == "Click here to navigate...") {
-			        b_list_header.html("Click again to close...");
-		        } else {
-			        b_list_header.html("Click here to navigate...");
-		        }
-		        $($(".steps")[1]).slideToggle(300);
-	        });
-        /* b_list_header.click(
-           function() {
-	   if (b_list_header.html() == "Click here to navigate...") {
-	   b_list_header.html("Click again to close...");
-                        $($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
-		} else {
-			b_list_header.html("Click here to navigate...");
-                        $($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
-		}
-	});*/
-        var b_nav = $(document.createElement("div")).addClass("nav");
-        var b_list = list.clone();
-        b_nav.append(b_backButton);
-	b_nav.append(b_list_header);
-	b_nav.append(b_forwardButton);
-	b_nav.append(b_list);
-	b_nav.append(background.clone());
-
+	var b_list = list.clone();
+	var b_list_header = list_header.clone();
+	b_list_header.click(
+			function() {
+			if (b_list_header.html() == "Click here to navigate...") {
+				b_list_header.html("Click again to close...");
+			} else {
+				b_list_header.html("Click here to navigate...");
+			}
+			$($(".steps")[1]).slideToggle(300);
+		});
+	/* b_list_header.click(
+	   function() {
+   if (b_list_header.html() == "Click here to navigate...") {
+   b_list_header.html("Click again to close...");
+					$($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
+	} else {
+		b_list_header.html("Click here to navigate...");
+					$($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
+	}
+});*/
+	
 	
 	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
-	        bjc.addFrame();
+	    bjc.addFrame();
+	} else {
+		var b_nav = $(document.createElement("div")).addClass("nav");
+		var b_list = list.clone();
+		b_nav.append(b_backButton);
+		b_nav.append(b_list_header);
+		b_nav.append(b_forwardButton);
+		b_nav.append(b_list);
+		b_nav.append(background.clone());
+		$("#full").append(b_nav);
+        b_list_header.width(list.outerWidth());
 	}
 
-        $("#full").append(b_nav);
-        b_list_header.width(list.outerWidth());
-
-
+        
 }
 
 
