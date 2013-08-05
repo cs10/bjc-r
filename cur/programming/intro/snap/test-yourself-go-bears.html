@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Test Yourself: Go Bears!</title>
+    </head>
+
+    <body>
+
+        <div class="assessment-data" type="multiplechoice" identifier="gobears"
+        hasinlinefeedback="true" maxchoices="2"
+        responseIdentifier="ri" shuffle="true"
+        >
+            <div class="prompt">
+                <p>
+                    Without trying this in Snap!, try to answer the following question:
+                    <br />
+                    <br />
+                    What does the following set of scripts do when you click on the <code>When I receive Turn1</code> script?
+                </p>
+                <p><img src="../../../../img/prog/turn1.png" width="172" height="80" alt="turn1" />&nbsp;&nbsp;&nbsp;&nbsp; <img src="../../../../img/prog/turn2.png" width="172" height="80" alt="turn2" />
+                  </p>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; once.
+                </div>
+                <div class="feedback">
+                    No, the <code>broadcast Turn1 and wait</code> block after the <code>say Bears! ...</code> block will execute.  Snap! will blindly follow its script.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; until you hit the red Stop button.
+                </div>
+                <div class="feedback">
+                    <p>
+                        Right!
+                        Here, we see an <em>infinite loop,</em> or a never-ending loop. Whenever this happens in Snap<em>!</em>, we can always stop it by pressing the Stop button at the top right of the window, just above the stage.
+                    </p>
+                    <p>
+                        Why does this happen? Well, when you click on the <code> When I receive Turn1</code>
+                        script, the sprite says <code> Go</code>
+                        for two seconds, and then broadcasts a <code> Turn2</code> message.
+                    </p>
+                    <p>
+                        If there is any character that has a script that responds to the <code> Turn2</code>
+                        message, it will perform that script. In this case, the same sprite has a script that responds to the <code> Turn2</code>
+                        message, and so it will run the corresponding script. It says <code> Bears!</code>
+                        and then broadcasts a <code>Turn1</code>
+                        message. But, it also has a script that responds to the <code> Turn1</code>
+                        message, which in turn sends a <code> Turn2</code>
+                        message, and so on. This continues until the scripts are forced to stop.
+                    </p>
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    Nothing happens - this does not work.
+                </div>
+                <div class="feedback">
+                    No, the script here definitely does something when clicking on <code>When I receive Turn1</code>
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Bears!&quot; a few times and then stops by itself.
+                </div>
+                <div class="feedback">
+                    No.  The computer can't just decide to stop itself; rather, it will blindly follow the script!
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

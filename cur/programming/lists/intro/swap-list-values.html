@@ -1,37 +1,60 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Swap List Values</title><!--ORIGINAL NAME: Swap List Values--></head><body>
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Swap List Values</title><!--ORIGINAL NAME: Swap List Values-->
+	</head>
+	<body>
 
-We want to make a block that swaps two rows in a list.  The block takes two numbers, representing positions of elements in the list, and a list as its inputs, and it swaps the positions of those elements in the list.
+		We want to make a block that swaps two rows in a list.  The block takes two numbers, representing positions of elements in the list, and a list as its inputs, and it swaps the positions of those elements in the list.
 
-<br><br><div style="margin-left: 40px;">
-<img hspace="0" height="56" width="277" vspace="0" border="0" title="'swap rows' block" alt="'swap rows' block" src="/bjc-r/img/list/swap-rows-empty-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/Empty.gif"></div>
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="56" width="277" vspace="0" border="0" title="'swap rows' block" alt="'swap rows' block" src="/bjc-r/img/list/swap-rows-empty-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/Empty.gif">
+		</div>
 
-To do so, we need to do something that we have not done before: take a list in as an argument.  The third input, <tt>list</tt>, will be a list.  Click on the <tt>rowX</tt> and <tt>rowY</tt> variables and limit their input types to be numbers.  Then, click on the <tt>list</tt> variable and limit the input type to be a list.  The image below shows the dialog box to select a list from the input type options.
+		To do so, we need to do something that we have not done before: take a list in as an argument.  The third input, <tt>list</tt>, will be a list.  Click on the <tt>rowX</tt> and <tt>rowY</tt> variables and limit their input types to be numbers.  Then, click on the <tt>list</tt> variable and limit the input type to be a list.  The image below shows the dialog box to select a list from the input type options.
 
-<br><br><div style="margin-left: 40px;">
-<img hspace="0" height="424" width="548" vspace="0" border="0" title="Dialog box to make an input a list" alt="Dialog box to make an input a list" src="/bjc-r/img/list/edit-input-type-list-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/MakeArgList.jpg"></div>
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="424" width="548" vspace="0" border="0" title="Dialog box to make an input a list" alt="Dialog box to make an input a list" src="/bjc-r/img/list/edit-input-type-list-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/MakeArgList.jpg">
+		</div>
 
-When you click <tt>OK</tt>, you should be able to see the block with two round number input spots and one list input spot.
+		When you click <tt>OK</tt>, you should be able to see the block with two round number input spots and one list input spot.
 
-<br><br><div style="margin-left: 40px;">
-<img hspace="0" height="28" width="159" vspace="0" border="0" title="'swap rows' block with list input" alt="'swap rows' block with list input" src="/bjc-r/img/list/swap-rows-empty-block-list-input-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/ListInput.gif"></div>
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="28" width="159" vspace="0" border="0" title="'swap rows' block with list input" alt="'swap rows' block with list input" src="/bjc-r/img/list/swap-rows-empty-block-list-input-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/ListInput.gif">
+		</div>
 
-Inside the <tt>Block Editor</tt>, we can use the <tt>list</tt> variable as a real list, as shown below, where we set the block variable <tt>temp-value</tt> to be the item at <tt>rowX</tt> of <tt>list</tt>.
+		Inside the <tt>Block Editor</tt>, we can use the <tt>list</tt> variable as a real list, as shown below, where we set the block variable <tt>temp-value</tt> to be the item at <tt>rowX</tt> of <tt>list</tt>.
 
-<br><br><div style="margin-left: 40px;">
-<img hspace="0" vspace="0" border="0" title="Partial script" alt="Partial script" src="/bjc-r/img/list/swap-rows-partial-script-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/PartialScript.gif"></div>
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" vspace="0" border="0" title="Partial script" alt="Partial script" src="/bjc-r/img/list/swap-rows-partial-script-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/Lists/SwapRows/PartialScript.gif">
+		</div>
 
-Now, complete the definition of the block using the hint given above.  Here is an example of how the block will be used:  If we run the block with the arguments
+		Now, complete the definition of the block using the hint given above.  Here is an example of how the block will be used:  If we run the block with the arguments
 
-<br><br><div style="margin-left: 40px;">
-<img hspace="0" height="30" width="226" vspace="0" border="0" src="/bjc-r/img/prog/swap-rows-block-BYOB.gif" alt="Swap Rows" title="Swap Rows" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/SwapRowsExample.gif"></div>
+		<br>
+		<br>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="30" width="226" vspace="0" border="0" src="/bjc-r/img/prog/swap-rows-block-BYOB.gif" alt="Swap Rows" title="Swap Rows" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/SwapRowsExample.gif">
+		</div>
 
-where <tt>game board</tt> is the list
+		where <tt>game board</tt> is the list
 
-<div style="margin-left: 40px;">
-<img hspace="0" height="229" width="133" vspace="0" border="0" src="/bjc-r/img/prog/game-board-list-before-swap-BYOB.gif" alt="Before" title="Before" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListBeforeSwap.gif"></div>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="229" width="133" vspace="0" border="0" src="/bjc-r/img/prog/game-board-list-before-swap-BYOB.gif" alt="Before" title="Before" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListBeforeSwap.gif">
+		</div>
 
-then, the list should become
+		then, the list should become
 
-<div style="margin-left: 40px;">
-<img hspace="0" height="228" width="127" vspace="0" border="0" src="/bjc-r/img/prog/game-board-list-after-swap-BYOB.gif" alt="After" title="After" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListAfterSwap.gif"></div>   </body></html>
+		<div style="margin-left: 40px;">
+			<img hspace="0" height="228" width="127" vspace="0" border="0" src="/bjc-r/img/prog/game-board-list-after-swap-BYOB.gif" alt="After" title="After" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab05/GameBoard/ListAfterSwap.gif">
+		</div>
+	</body>
+</html>

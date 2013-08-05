@@ -6,11 +6,11 @@
     <p>This assignment is due on at the end of the <b>Algorithms</b> topic.</p>
     <h2>Additional Details</h2>
     <p>This is a single-player game.</p>
-    <p>The player specifies the length of the word they'd like the use, and the computer picks a random word from a list that is the appropriate length. The player then guesses a letter that they think may appear in the word. The computer checks whether the letter appears in the word and either reveals all instances of it (if it exists) or takes away one point from the player's lives. The computer then displays (somehow) the progress that the player has made towards guessing the word.  The game continues until either all of the letters have been guessed (and the player wins) or all of the player's lives are used up (and the player loses). In either case, the computer should announce this event and the game should end.</p>
+    <p>The player specifies the length of the word they'd like the use, and the computer picks a random word of the chosen length.from a list. The player then guesses a letter that they think may appear in the word. The computer checks whether the letter appears in the word and either reveals all instances of it (if it exists) or takes away one point from the player's lives. The computer then displays (somehow) the progress that the player has made towards guessing the word.  The game continues until either all of the letters have been guessed (and the player wins) or all of the player's lives are used up (and the player loses). In either case, the computer should announce this event and the game should end.</p>
 
     <p>Here is an example dialog.  Words in parentheses are provided for clarity and do not need to show up in your actual output:</p>
     <code>
-      <p>Computer asks: "How long of a word do you want to play with?"</p> 
+      <p>Computer asks: "How long a word do you want to play with?"</p> 
       <p>Human says 8.</p> 
       <p>(computer picks the word "fireball")</p>
       <p>Computer: _ _ _ _ _ _ _ _</p>
@@ -33,13 +33,13 @@
       <p>Computer says "Congratulations! You figured out my word in 9 guesses and had 3 lives left!"</p>
     </code>
     <h2>Starting Materials</h2>
-      <p>Start with an empty BYOB project.</p>
+      <p>Start with an empty project.</p>
       <p>You can use this <a href="http://bjc.berkeley.edu/resources/wordlists/words-1000.txt">word list</a> as your computer player's word bank.  Feel free to add / remove words or build a new list as well.</p>
 
-    <h2>Tips and Thoughts</h2>
-    <img style="float: right;" src="/bjc-r/img/web/NOTFOUND.png" origsrc="http://bjc.berkeley.edu/resources/images/byob/wordlist-import.png"><ul><li>To read a list from a text file: save the file in an easily-accessible location (such as your desktop).  Open BYOB and create an empty list.  Check the box beside your new list to have it appear in the display area.  There will be a little handle on the bottom-right side of the list display -- <i>right click (or Command + click on a Mac)</i> the handle and you should see a dropdown menu, including an item that says "import."  Select import, find your file, and open it.  Each line of the text file will be imported as a new element in the list.</li>
+    <h2>Tips and Thoughts</h2><ul>
+      <li>To read a list from a text file: save the file in an easily-accessible location (such as your desktop).  Open Snap<em>!</em> and create an empty list in a global variable.  Make sure the box next to the variable is checked to have it appear on the stage.  Right-click or control-click the list on stage and you should see a dropdown menu, including an item that says "import."  Select import, find your file, and open it.  Each line of the text file will be imported as a new item in the list.</li>
     <li>What do you think should happen if the computer doesn't know any words that are the length of the one specified by the user? Make sure to account for this in your program and leave comments justifying your design decision.</li>
     <li>What do you think should happen if the player guesses a letter that they've already guessed? Make sure to account for this as well and leave comments justifying your design decision.</li>
-    <li>You can let the player start with any number of lives.</li>
-</ul><h2>Extra for Experts</h2>
-    <p>Give your program the capability to print the words on the screen using sprites.  BYOB includes several sets of letters that can be used as costumes for your sprites in the <code>Letters</code> directory. Try to make it so that the word that's being printed is always centered, regardless of the length.  You can assume that words won't be longer than 10 characters.</p>   </body></html>
+    <li>You can let the player start with any number of lives.   </li>
+    </ul>
+</body></html>

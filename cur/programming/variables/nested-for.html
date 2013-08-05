@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+   <head>
+      <!-- put the following in exactly --><script type="text/javascript" src="../../../admin/bjc-loader.js"></script>
+      <title>Nested FORs</title>
+      <!--ORIGINAL NAME: Repeat Until-->
+   </head>
+   <body>
+   <p>The ability to change the name of the <code>for</code> variable isn't just to make your program self-documenting, although that would be a good reason by itself. But changing the variable name is crucial for <em>nesting </em><code>for</code> blocks, like this:</p>
+   <p><img src="../../../img/prog/pentastar-script.png" width="212" height="242" alt="pentastar script"> <img src="../../../img/prog/pentastar.png" width="460" height="370" alt="pentastar"></p>
+   <p>The overall structure of this picture is an invisible (because the pen is up while it's traced out) pentagonal spiral. Here are the last few sides of that spiral:</p>
+   <p><img src="../../../img/prog/pentastar-visible.png" width="460" height="370" alt="pentagonal spiral visible"></p>
+   <p>At each vertex (or corner) of that spiral, the script draws a visible (pen down) star-shaped spiral. The script has to keep track of the length of the next pentagon-spiral side and also the length of the next star-spiral side. So it's important that we used two different variable names, <code>pentalen</code> for the pentagon-spiral length and <code>starlen</code> for the star-spiral length.</p>
+   <p>By the way, if you're impatient with how long it takes for Snap! to draw these pictures, find the grey warp block in the Control palette and put the entire script inside it:</p>
+   <p><img src="../../../img/prog/warp.png" width="213" height="269" alt="warp"></p>
+   <p>Predict what the following script will do before you try it. (Write down everything it will say, in the right order.)</p>
+   <p><img src="../../../img/prog/sayjoinfor.png" width="225" height="134" alt="sayjoinfor"></p>
+   <p>Optional open-ended problem: We've been drawing spirals by repeating a <code>move</code>-and-<code>turn</code> sequence with a varying <code>move</code> length and a constant <code>turn</code> angle. What kinds of pictures will you get if you use a constant <code>move</code> and a varying <code>turn</code>? Don't decide too quickly that you've exhausted the possibilities; you can get an infinite variety of shapes! (And draw at least 300 repetitions in each experiment.)</p>
+   </body>
+</html>

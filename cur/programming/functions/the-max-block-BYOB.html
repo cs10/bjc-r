@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> The Max block </title>
+		<!--ORIGINAL NAME: The Max Block-->
+	</head>
+	<body>
+		We will now make a different kind of block -- a <em>reporter</em> block. To demonstrate this, we will make a block called <tt>max</tt> that takes two numbers as input and reports the bigger value (the maximum).
+		<br>
+		<br>
+		<img width="146" vspace="0" hspace="0" height="70" border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/max-block-executed-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/ExecuteMax.jpg">
+		<br>
+		<br>
+		<ol>
+			<li>
+				Click <tt>Make a block</tt> and select the <tt>Operators</tt> tab. We want a reporter block. This will give the block its round shape as shown above. As the name implies, reporter blocks can report a value. In the image below, you can see that we used the <tt>%</tt> shortcut for making input variables.
+				<br>
+				<br>
+			</li>
+			<img width="323" vspace="0" hspace="0" height="383" border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/max-make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/maxMakeABlock.jpg">
+			<br>
+			<li>
+				This should give you a blank <tt>Block editor</tt>. Notice the words <tt>report: something</tt>. You can either type where it says <tt>something</tt>, or you can drag other blocks there. We need to figure out what should be reported.
+				<br>
+			</li>
+			<br>
+			<img width="441" vspace="0" hspace="0" height="409" border="0" title="Block editor for the 'max' function" alt="Block editor for the 'max' function" src="/bjc-r/img/prog/max-empty-block-editor-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/maxBlockEditor.jpg">
+			<br>
+			<br>
+			To keep track of the value to be reported, we are going to make another variable:
+			<br>
+			<br>
+			Use a <tt>Script Variables</tt> block. You can click on the name of the variable and change it to <tt>bigger value</tt>.
+			<br>
+			<br>
+			<img width="442" vspace="0" hspace="0" height="409" border="0" src="/bjc-r/img/prog/max-of-2-numbers-code.png" alt="Max" title="Max" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/max.jpg">
+			<br>
+			<br>
+			We can use an <tt>if/else</tt> block to set the variable <tt>bigger value</tt> to either <tt>x</tt> or <tt>y</tt>.
+			<br>
+			Drag a <tt>set</tt> block into the <tt>Block Editor</tt> from the regular variables menu.
+			<br>
+			You can click on the down arrow on the <tt>set</tt> block to select <tt>bigger value</tt>.
+			<br>
+			Then, you will drag the <tt>bigger value</tt> variable into the box next to <tt>report</tt>.
+			<br>
+			Now, click <tt>OK</tt> and try the block out!
+			<br>
+		</ol>
+	</body>
+</html>

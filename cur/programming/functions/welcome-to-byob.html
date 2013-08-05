@@ -1,58 +1,140 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>
-	Welcome to BYOB!
-</title><!--ORIGINAL NAME: Welcome to BYOB!--></head><body>
-As you have seen, Scratch is a powerful language that has a substantial repository of useful blocks for a variety of purposes. However, as you may have noticed, Scratch does not have all the blocks that you may need, and often, it would prove useful if we could create new blocks. <br><br>
-Enter BYOB, a language based on Scratch, with the added ability to create new blocks. To get started on BYOB, click on this little guy in your dock: 
-<div style="margin-left: 40px;">
-	<img vspace="0" hspace="0" border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/Alonzo-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/Alonzo.jpg"></div>
-<br>
-His name is Alonzo, and he is the mascot of BYOB. If you would like to work on BYOB at home, you can download it at <a href="http://byob.berkeley.edu">http://byob.berkeley.edu</a>. 
-<h2>
-	Make Your Own Block: A Tutorial
-</h2>
-We are going to teach the computer how to draw a square using a block named <tt>draw square</tt>. Please follow the steps below: <br><ol><li>Click on <tt>make a block</tt> at the bottom of the variables tab (or right-click on the scripting area and choose "<tt>make a block</tt>") <br><div style="margin-left: 40px;">
-		<img width="98" vspace="0" hspace="0" height="44" border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlock.jpg"></div>
-	</li>
-	<li>This will open up the <tt>make a block</tt> dialog box. Now, you get to choose which tab the block should go into. Our block is going to draw a square, so let us choose <tt>Motion</tt>.<br><div style="margin-left: 40px;">
-		<img width="324" vspace="0" hspace="0" height="380" border="0" title="'make a block' dialog box" alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockDialog.jpg"><br></div>
-	</li>
-	<br><li>When we selected <tt>Motion</tt>, the block became blue. We now have the option of making blocks of different shapes. Right now, however, we are just going to make a (regular) command block.<br><br><div style="margin-left: 40px;">
-		<img width="322" vspace="0" hspace="0" height="370" border="0" title="Make a command block" alt="Make a command block" src="/bjc-r/img/prog/make-a-block-draw-square-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquare.jpg"><br></div>
-	</li>
-	<br><li>When we click <tt>OK</tt>, we should see the block editor below. (For now, do not worry about the <tt>atomic</tt> check box.) <br><br><div style="margin-left: 40px;">
-		<img width="436" vspace="0" hspace="0" height="405" border="0" src="/bjc-r/img/prog/empty-draw-square-BYOB.jpg" alt="Block Editor for 'draw square'" title="Block Editor for 'draw square'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EmptyDrawSquare.jpg"><br></div>
-	</li>
-	<br><li>Use the blocks from the regular menus to create a script that draws a square, as shown below. <br><br><div style="margin-left: 40px;">
-		<img width="142" vspace="0" hspace="0" height="127" border="0" title="Script to draw a square" alt="Script to draw a square" src="/bjc-r/img/prog/draw-square-code-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquareCode.gif"><br></div>
-	</li>
-		<br><li>When you click <tt>OK</tt>, you should be able to use this block as if it were a regular block. Since you created the block as a <tt>Motion</tt> block, it will end up at the bottom of the <tt>Motion</tt> tab. <br><br><div style="margin-left: 40px;">
-		<img width="79" vspace="0" hspace="0" height="48" border="0" title="Using the 'draw square' block" alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareNoArgs.gif"><br></div>
-	</li>
+<html>
+	<head>
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> Welcome to BYOB! </title><!--ORIGINAL NAME: Welcome to BYOB!-->
+	</head>
+	<body>
+		As you have seen, Scratch is a powerful language that has a substantial repository of useful blocks for a variety of purposes. However, as you may have noticed, Scratch does not have all the blocks that you may need, and often, it would prove useful if we could create new blocks.
 		<br>
-	Congratulations! You have just created your own block! Go on and take a bow. :-) 
-</ol><h2>
-	Improving the <tt>draw square</tt> block
-</h2>
-You have created a block that draws a square, but it only draws a square where each side is of length <tt>100</tt> steps. It would be great if we could specify how long we wanted each side to be. We will edit the block to accept an <em>argument</em> (or <em>input</em>), which tells it the length of the square it has to draw. 
-<ol><li>We are going to go back and edit the block. Right-click on the new block and select <tt>edit</tt> to go back to the block editor. <br><br></li>
-	<div style="margin-left: 40px;">
-		<img width="159" vspace="0" hspace="0" height="119" border="0" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EditCurrentBlock.jpg"><br></div>
-	
-	<br><li>In the <tt>Block Editor</tt>, notice that when you move the mouse over the top row of the new block, some plus signs (<tt>+</tt>) show up. When you click on these plus signs, you can add more text or arguments. When you click on the text between the plus signs, you can delete or modify that text. Click on the plus sign at the far right as shown below: <br></li>
-		<br><div style="margin-left: 40px;">
-		<img width="444" vspace="0" hspace="0" height="412" border="0" title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquarePlus.jpg"><br></div>
-	
-		<br><li>When you click on the plus sign on the far right, you should get the following dialog box. With this dialog box, we can select if we want to add input (orange) or more text (blue). We want to add the input <tt>size</tt>, so we type <tt>size</tt>, select <tt>Input Name</tt> and click <tt>OK</tt>.<br></li>
-		<br><div style="margin-left: 40px;">
-		<img width="316" vspace="0" hspace="0" height="208" border="0" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/AddArgument.jpg"><br></div>
-	<li>Now, we have a variable inside our block definition. <br><br></li>
-	<div style="margin-left: 40px;">
-		<img width="170" vspace="0" hspace="0" height="133" border="0" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/prog/draw-square-code-with-size-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSize.gif"><br></div>
-		<br><li>Drag the variable <tt>size</tt> down into the move block. Whenever we need a new copy of a variable, we just grab the copy from that variable in the top row.<br><br></li>
-	<div style="margin-left: 40px;">
-		<img width="170" vspace="0" hspace="0" height="137" border="0" title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/prog/draw-square-code-size-in-body-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSizeInBody.jpg"><br></div>
-		<br><li>When we click <tt>OK</tt>, we wll see that our <tt>draw square</tt> block now takes an argument. We can put different numbers in the blank and draw squares of different sizes!<br></li>
-	<br><div style="margin-left: 40px;">
-		<img width="110" vspace="0" hspace="0" height="48" border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif"></div>
-</ol></body></html>
+		<br>
+		Enter BYOB, a language based on Scratch, with the added ability to create new blocks. To get started on BYOB, click on this little guy in your dock:
+		<div style="margin-left: 40px;">
+			<img vspace="0" hspace="0" border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/Alonzo-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/Alonzo.jpg">
+		</div>
+		<br>
+		His name is Alonzo, and he is the mascot of BYOB. If you would like to work on BYOB at home, you can download it at <a href="http://byob.berkeley.edu">http://byob.berkeley.edu</a>. <h2> Make Your Own Block: A Tutorial </h2>
+		We are going to teach the computer how to draw a square using a block named <tt>draw square</tt>. Please follow the steps below:
+		<br>
+		<ol>
+			<li>
+				Click on <tt>make a block</tt> at the bottom of the variables tab (or right-click on the scripting area and choose "<tt>make a block</tt>")
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="98" vspace="0" hspace="0" height="44" border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlock.jpg">
+				</div>
+			</li>
+			<li>
+				This will open up the <tt>make a block</tt> dialog box. Now, you get to choose which tab the block should go into. Our block is going to draw a square, so let us choose <tt>Motion</tt>.
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="324" vspace="0" hspace="0" height="380" border="0" title="'make a block' dialog box" alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockDialog.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When we selected <tt>Motion</tt>, the block became blue. We now have the option of making blocks of different shapes. Right now, however, we are just going to make a (regular) command block.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="322" vspace="0" hspace="0" height="370" border="0" title="Make a command block" alt="Make a command block" src="/bjc-r/img/prog/make-a-block-draw-square-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquare.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When we click <tt>OK</tt>, we should see the block editor below. (For now, do not worry about the <tt>atomic</tt> check box.)
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="436" vspace="0" hspace="0" height="405" border="0" src="/bjc-r/img/prog/empty-draw-square-BYOB.jpg" alt="Block Editor for 'draw square'" title="Block Editor for 'draw square'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EmptyDrawSquare.jpg">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				Use the blocks from the regular menus to create a script that draws a square, as shown below.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="142" vspace="0" hspace="0" height="127" border="0" title="Script to draw a square" alt="Script to draw a square" src="/bjc-r/img/prog/draw-square-code-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquareCode.gif">
+					<br>
+				</div>
+			</li>
+			<br>
+			<li>
+				When you click <tt>OK</tt>, you should be able to use this block as if it were a regular block. Since you created the block as a <tt>Motion</tt> block, it will end up at the bottom of the <tt>Motion</tt> tab.
+				<br>
+				<br>
+				<div style="margin-left: 40px;">
+					<img width="79" vspace="0" hspace="0" height="48" border="0" title="Using the 'draw square' block" alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareNoArgs.gif">
+					<br>
+				</div>
+			</li>
+			<br>
+			Congratulations! You have just created your own block! Go on and take a bow. :-)
+		</ol><h2> Improving the <tt>draw square</tt> block </h2>
+		You have created a block that draws a square, but it only draws a square where each side is of length <tt>100</tt> steps. It would be great if we could specify how long we wanted each side to be. We will edit the block to accept an <em>argument</em> (or <em>input</em>), which tells it the length of the square it has to draw.
+		<ol>
+			<li>
+				We are going to go back and edit the block. Right-click on the new block and select <tt>edit</tt> to go back to the block editor.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="159" vspace="0" hspace="0" height="119" border="0" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EditCurrentBlock.jpg">
+				<br>
+			</div>
+
+			<br>
+			<li>
+				In the <tt>Block Editor</tt>, notice that when you move the mouse over the top row of the new block, some plus signs (<tt>+</tt>) show up. When you click on these plus signs, you can add more text or arguments. When you click on the text between the plus signs, you can delete or modify that text. Click on the plus sign at the far right as shown below:
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="444" vspace="0" hspace="0" height="412" border="0" title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquarePlus.jpg">
+				<br>
+			</div>
+
+			<br>
+			<li>
+				When you click on the plus sign on the far right, you should get the following dialog box. With this dialog box, we can select if we want to add input (orange) or more text (blue). We want to add the input <tt>size</tt>, so we type <tt>size</tt>, select <tt>Input Name</tt> and click <tt>OK</tt>.
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="316" vspace="0" hspace="0" height="208" border="0" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/AddArgument.jpg">
+				<br>
+			</div>
+			<li>
+				Now, we have a variable inside our block definition.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="170" vspace="0" hspace="0" height="133" border="0" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/prog/draw-square-code-with-size-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSize.gif">
+				<br>
+			</div>
+			<br>
+			<li>
+				Drag the variable <tt>size</tt> down into the move block. Whenever we need a new copy of a variable, we just grab the copy from that variable in the top row.
+				<br>
+				<br>
+			</li>
+			<div style="margin-left: 40px;">
+				<img width="170" vspace="0" hspace="0" height="137" border="0" title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/prog/draw-square-code-size-in-body-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSizeInBody.jpg">
+				<br>
+			</div>
+			<br>
+			<li>
+				When we click <tt>OK</tt>, we wll see that our <tt>draw square</tt> block now takes an argument. We can put different numbers in the blank and draw squares of different sizes!
+				<br>
+			</li>
+			<br>
+			<div style="margin-left: 40px;">
+				<img width="110" vspace="0" hspace="0" height="48" border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
+			</div>
+		</ol>
+	</body>
+</html>

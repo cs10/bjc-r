@@ -21,15 +21,13 @@ function MC(data, location, questionNumber) {
 	var rii = this.interaction.attr("responseIdentifier");
 	this.responseDec = $('.responseDeclaration[identifier="' + rii + '"]');
 	
+
+	// save this MC dom element
+	this.multipleChoice = $(location);
+	
 	// make a copy of the template
 	var template = this.getTemplate();
-	
-	$(location).html(template);
-	
-	// save this MC dom element
-	// this.multipleChoice = $($(".MultipleChoice")[this.num]);
-	var myDom = $("." + this.myClass).last();
-	this.multipleChoice = myDom;
+	this.multipleChoice.html(template);
 
 	//boolean to prevent shuffling after each answer submit
 	this.previouslyRendered = false;

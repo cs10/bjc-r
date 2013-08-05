@@ -1,0 +1,40 @@
+title: Topic 5: Collecting Data into Lists
+{
+h2: Big Ideas
+// big-idea: Understand the meaning of Turing Completeness.
+big-idea: Understand the concept of recursion.
+big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
+
+//	video: Programming Paradigms (Dan Garcia) [https://coursesharing.org/courses/6/lectures/13]
+	video: Recursion 1 [https://coursesharing.org/courses/6/lectures/17]
+	video: Social Implications 1 [http://youtu.be/v_tOSw-vhug]
+	reading: Blown to Bits, Chapter 3 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf]
+
+h2: Activities
+learning-goal: Practice writing and reading functions with different input types.
+learning-goal: Determine how to break problems down into individual functions.
+learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
+learning-goal: Develop the techniques and functions to draw a game board.
+
+heading: Introduction to Lists
+	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
+	 resource: What good are lists?  [/bjc-r/cur/programming/lists/hof/what-good-are-lists.html]
+	 resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
+	 resource: Choosing some items from a list [/bjc-r/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
+	 resource: Combining all the items of a list [/bjc-r/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
+	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
+	 resource: More on composition of higher order functions [/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
+	 resource: When you really have to loop [/bjc-r/cur/programming/lists/hof/when-you-really-have-to-loop.html]
+	
+//heading: Lists and Sentences: The Index Variable Pattern
+//	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
+	
+heading: List Mutation
+	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
+	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
+
+	
+heading: Homework
+	homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+	
+}

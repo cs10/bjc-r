@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Global variables</title><script type="text/javascript" src="../../../admin/bjc-loader.js"></script>
+</head>
+
+<body>
+<p>Sometimes it's not good enough to remember a value inside one script. Instead, you need the value available everywhere in your project.  The classic example is the score in a video game; even when no script is running, the score should be remembered.</p>
+<p>There was a time, in the early history of programming languages, when all variables were global. This led to a lot of bugs, because different parts of the program would use the same name for different purposes and erase each others' saved values. So don't use global variables as your first choice; think whether a script variable or a <code>for</code> block (which makes a variable local to just that block) would work instead.</p>
+<p>To make a global variable, you must go to the Variables palette and click on the <code>Make a variable</code> button (not a block -- you can't put it into a script!):</p>
+<p><img src="../../../img/prog/makeavar.png" width="223" height="109" alt="make a variable button" /></p>
+<p>You will be prompted to give your variable a name. After you do that, you'll see an orange variable oval in the Variables palette:</p>
+<p><img src="../../../img/prog/myvar.png" width="223" height="163" alt="my-var button" /></p>
+<p>This can be dragged into scripts just like the orange variable ovals in the <code>for</code> block and the <code>script variables</code> block.</p>
+<p>The checkbox to the left of the variable block determines whether or not the value of the variable is displayed on the stage. The variable <em>watcher </em>(which is what that display is called) can be useful for debugging, or can be displayed permanently so that the user of your project can see the score, or whatever you have in the variable. By right-clicking on the watcher, you can change the format in which it appears on the screen.</p>
+<p>Try this: Experiment with using a <em>slider</em> watcher to change the value of a numeric variable.</p>
+<p>When you make a global variable, you also get a &quot;Delete a variable&quot; button that can be used for the obvious purpose.☺</p>
+</body>
+</html>

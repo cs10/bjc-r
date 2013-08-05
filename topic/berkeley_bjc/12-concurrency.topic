@@ -1,0 +1,52 @@
+title: Topic 12: Concurrency
+{
+h2: Big Ideas
+big-idea: Understand the basic components of any computer
+big-idea: Understand Moore's Law impact on the development of the processors
+big-idea: Understand parallelism and its limitations in computing
+big-idea: Explore the history and development of encryption techniques
+
+	video: Concurrency [https://coursesharing.org/courses/6/lectures/16]
+	reading: Blown to Bits: Chapter 5 Part 1 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt1.pdf]
+	reading: Blown to Bits: Chapter 5 Part 2 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt2.pdf]
+	reading: Blown to Bits: Chapter 5 Part 3 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt3.pdf]
+
+h2: Activities
+In Scratch/BYOB what are the issues/facilities to do parallel work, and how does the machine work?
+
+learning-goal: A single sprite has control blocks which appear to respond in parallel (e.g., multiple "when green flag, do...", "when space is clicked, do...", "when I receive broadcast", etc.)
+learning-goal: Multiple sprites only exacerbate the problem, and race conditions could occur (e.g., what if multiple sprites tried to paint the screen their color all at the same time?)
+learning-goal: What happens when multiple signals are sent to the same "when I receive broadcast" block, do all get through? (yes if Broadcast and wait; no, but consistent, if Broadcast and Edit->Thread Safe Scripts checked; no, but inconsistent, if Edit->Thread Safe Scripts unchecked)
+learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
+learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
+
+
+heading: Background: concurrency without the computer
+	resource: Card Sorting [/bjc-r/cur/programming/sorting/cards/card-sorting.html]
+	group: Card Sorting: Discussion [/bjc-r/cur/programming/sorting/cards/card-sorting-discuss.html]
+	resource: Card Sorting: Let's do it [/bjc-r/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
+	resource: Card Sorting: Reflect [/bjc-r/cur/programming/sorting/cards/card-sorting-reflect.html]
+	forum: Concurrency in real life... [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=2022]
+	//   Share a non-computer, real-life example in which the serial portion of some task is smallest (i.e., embarassingly parallel) and greatest (i.e., most difficult to parallelize)
+	
+heading: Two heads are better than one.
+	resource: Scratch Machine Concepts [/bjc-r/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
+	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-1.html]
+	resource: Scratch Debug [/bjc-r/cur/programming/concurrency/scratch/scratch-debug.html]
+	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-1.html]
+
+heading: Scratch... don't all talk at once!
+	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-2.html]
+	resource: Scratch Modify [/bjc-r/cur/programming/concurrency/scratch/scratch-modify.html] 
+	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
+	//quiz: Quiz
+	resource: These are the possible values [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-answer.html]
+	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-2.html]
+
+heading: Scratch... some details to form a mental model
+	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-3.html]
+	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-3.html] 
+	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-3.html]
+
+
+}

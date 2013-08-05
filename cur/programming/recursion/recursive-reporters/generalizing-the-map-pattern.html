@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<title>Generalizing the Map Pattern</title>
+</head>
+
+<body>
+<p><img src="/bjc-r/img/recur/reporters/plurals.png" width="342" height="176" alt="plurals" /></p>
+<p><img src="/bjc-r/img/recur/reporters/squares.png" width="424" height="170" alt="squares" />
+</p>
+<p><img src="/bjc-r/img/recur/reporters/exaggerate.png" width="452" height="79" alt="exaggerate" /><br /><img src="/bjc-r/img/recur/reporters/exaggerate-wordlist.png" width="384" height="159" alt="exaggerate-wordlist" /><br />
+<img src="/bjc-r/img/recur/reporters/exaggerate-word.png" width="202" height="351" alt="exaggerate word" />
+</p>
+<p><code>Plurals</code>, <code>squares</code>, and <code>exaggerate wordlist</code> all have almost identical scripts:</p>
+<p><img src="/bjc-r/img/recur/reporters/map-examples.png" width="820" height="144" alt="map-pattern examples" /></p>
+<p>The only difference is the circled part above: the particular function that's applied to <code>item 1 of</code> the input list. By now you know very well how to generalize a pattern by adding another input to the procedure:</p>
+<p><img src="/bjc-r/img/recur/reporters/map-start.png" width="350" height="153" alt="map definition without function call" /></p>
+<p>But what do we put in the first input slot of<code> in front of</code>?</p>
+<p>There are two little details you have to learn to finish this definition. The first is that the <code>function</code> input has to be of Reporter type. You already know how to set an input to be of some other type, such as Number or List. It's the same for Reporter:</p>
+<p><img src="/bjc-r/img/recur/reporters/reporter-type.png" width="523" height="404" alt="reporter type declaration" /></p>
+<p>The Greek letter λ that appears next to the word <code>function</code> in the orange oval is a type reminder, just like the︙for lists.</p>
+<p>Now you have to know how to apply the function to <code>item 1 of data</code>. Find the <code>call</code> block in the Control palette and click on its right arrowhead to give it a second input slot. Then fill it in like this:</p>
+<p><img src="/bjc-r/img/recur/reporters/map.png" width="447" height="176" alt="map definition" /></p>
+<p>That's it! Your first higher order function.</p>
+<p>(The version in the Snap<em>!</em> tool library is more complicated because it allows more than one input list. The actual code is kind of messy—not mysterious, just messy. It makes a single list a special case, which it then uses inside itself. There's no need for you to read it, but feel free if you don't mind mess.)</p>
+<p>The <code>call</code> block finds empty input slots in its function input and fills them in with the given input values. In this case, there's only one input value, so it will fill all empty slots. If you'd given more input values, then the number of empty slots would have to equal the number of input values, and they'd be filled in left to right.</p>
+<p>Everyone else thinks that higher order functions are <em>way too hard and scary </em>for beginning computer science students. But, once you understand recursion, and understand generalizing a procedure by adding an input, they're really no big deal.</p>
+<hr />
+<p>Occasionally a problem comes up that doesn't <em>exactly </em>match the map pattern, but comes close. In that case, you can't use the <code>map</code> HOF, but your understanding of the recursive map pattern will still help. Here's an example you've seen before:</p>
+<p><img src="../../../../img/recur/reporters/odds.png" width="468" height="254" alt="odd numbered items" /></p>
+<blockquote>
+  <p>☞ Fill in the blanks: This script is just like the map pattern except for ______ (base case) and _____ (in the recursive case).</p>
+  <p>☞ Define this block:</p>
+  <p><img src="../../../../img/recur/reporters/pairup.png" width="335" height="116" alt="pairup example" /></p>
+</blockquote>
+</body>
+</html>

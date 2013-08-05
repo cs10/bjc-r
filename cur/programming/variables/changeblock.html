@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>The CHANGE block</title><script type="text/javascript" src="../../../admin/bjc-loader.js"></script>
+</head>
+
+<body>
+<p>Suppose we didn't have the <code>for</code> block. We could do the equivalent using a <code>repeat</code> block:
+</p>
+<p><img src="../../../img/prog/fake-for.png" width="214" height="144" alt="simulate FOR with REPEAT" /></p>
+<p>Focus your attention on the last block in the script, the <code>set</code> block. Each time through the <code>repeat</code> loop, this block takes the current value of <nobr><code>my-var</code></nobr>, adds 1 to it, and makes that the <em>new</em> value of <code>my-var</code>.</p>
+<p>This process of adding 1 to a variable is so common that there is an abbreviation for it:</p>
+<p><img src="../../../img/prog/change.png" width="148" height="25" alt="change my-var by 1" /></p>
+<p>It's a common mistake to get confused between <code>set</code> and <code>change</code>. The way to avoid confusion is to remember that <code>set</code> is the fundamental block for giving a variable a value, and that <code>change</code> abbreviates <em>two </em>references to the variable: getting the old value and setting a new value. Or, if you want, you can just not use <code>change</code> at all.</p>
+<p>The script below has a bug in it; the last block is <code>change</code> instead of <code>set</code> as it should be. Make a list of the first ten values that <code>my-var</code> will have as the script runs.</p>
+<p><img src="../../../img/prog/buggy-fake-for.png" width="239" height="144" alt="buggy verstion of earlier script" /></p>
+<p>Fix the script so that it still uses <code>change</code>, but it works as expected. (You don't have to add any blocks.)</p>
+</body>
+</html>

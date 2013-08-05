@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> Transforming each item of a list</title>
       
@@ -13,36 +13,45 @@
    <body>
 
 <p><br>In the last activity we made this list of nouns:<br>
-<img width="159" vspace="0" hspace="0" height="234" border="0" title="giraffe, elephant, pizza, etc." alt="giraffe, elephant, pizza, etc." src="../../../../img/list/hof/nouns.png"/>
+<img width="159" vspace="0" hspace="0" height="234" border="0" title="giraffe, elephant, pizza, etc." alt="giraffe, elephant, pizza, etc." src="/bjc-r/img/list/hof/nouns.png"/>
 
 </p>Now suppose we'd like to be able to vary our noun phrases by sometimes using one of these nouns in the plural. So we need a way to add the letter &quot;s&quot; to each item of the list. Find the <b>map</b> block near the bottom of the Variables palette and use it this way:<br>
-<img width="409" vspace="0" hspace="0" height="140" border="0" title="map ((join () (s))) over (nouns)" alt="map ((join () (s))) over (nouns)" src="../../../../img/list/hof/map-join-s.png"/>
+<img width="409" vspace="0" hspace="0" height="140" border="0" title="map ((join () (s))) over (nouns)" alt="map ((join () (s))) over (nouns)" src="/bjc-r/img/list/hof/map-join-s.png"/>
 
-<p>Snap! limits the size of list displays in speech balloons, so you only see the first three items of the result in this picture, but you can tell by the vertical slider and the &quot;length: 7&quot; that all seven elements are really in the result. If you want to see them all, put the result in a variable with its watcher checkbox checked. You can expand the screen area of a list watcher by pulling down its lower right corner, like this:<br>
-<img width="568" vspace="0" hspace="0" height="218" border="0" title="giraffes, elephants, pizzas, etc." alt="giraffes, elephants, pizzas, etc." src="../../../../img/list/hof/plurals.png"/>
+<p>Snap! limits the size of list displays in speech balloons, so you only see the first three items of the result in this picture, but you can tell by the vertical slider and the &quot;length: 7&quot; that all seven elements are really in the result. If you want to see them all, drag down the bottom right corner of the list. <br>
+<img width="457" vspace="0" hspace="0" height="218" border="0" title="giraffes, elephants, pizzas, etc." alt="giraffes, elephants, pizzas, etc." src="/bjc-r/img/list/hof/bignouns.png"/>
 
-<br><br>The first input to the <b>map</b> block has a form you haven't seen before this:<br>
-<img width="131" vspace="0" hspace="0" height="20" border="0" title="the MAP block" alt="the MAP block" src="../../../../img/list/hof/mapblock.png"/>
+<br><br>
+The first input to the <code>map</code> block has a form you haven't seen before this:<br>
+<img width="131" vspace="0" hspace="0" height="20" border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>
 
-</p>The grey ring means that the input should be a <i>function. </i>What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <b>join </b>block into the <b>map</b> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <b>join</b>ing.
-<br>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <b>join</b>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.
+</p>
+<p>The grey ring means that the input should be a <i>function. </i>What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <code>join </code>block into the <code>map</code> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <code>join</code>ing.
+  </p>
+<p>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <code>join</code>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.
+  
+</p>
+<p><br><b>Try this: </b>Modify your <code>noun phrase</code> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;
 
-<p><br><b>Try this: </b>Modify your <b>noun phrase</b> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;
-
-</p><br>Here are some more examples of using <b>map</b> to compute some function of every item of a list:<br>
-<img width="568" vspace="0" hspace="0" height="218" border="0" title="map 3x+7" alt="map 3x+7" src="../../../../img/list/hof/3x_7.png" /><p>
-<img width="568" vspace="0" hspace="0" height="218" border="0" title="map letter 1 of" alt="map letter 1 of" src="../../../../img/list/hof/ywd.png"/></p>
-<img width="568" vspace="0" hspace="0" height="218" border="0" title="map x * x" alt="map x * x" src="../../../../img/list/hof/squares.png"/>
+</p>
+<p><br>
+  Here are some more examples of using <code>map</code> to compute some function of every item of a list:</p>
+<p><img width="568" vspace="0" hspace="0" height="218" border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/list/hof/3x_7.png" /></p>
+<p>
+<img width="568" vspace="0" hspace="0" height="218" border="0" title="map letter 1 of" alt="map letter 1 of" src="/bjc-r/img/list/hof/ywd.png"/></p>
+<img width="568" vspace="0" hspace="0" height="218" border="0" title="map x * x" alt="map x * x" src="/bjc-r/img/list/hof/squares.png"/>
 
 <p>In that third example, there are two empty boxes in the function, so it's &#x2610;&times;&#x2610;, which squares each number.
 
 <p><br><b>Try this: <br></b>
 In the last activity we made a list of Beatles:<br>
-<img width="400" vspace="0" hspace="0" height="65" border="0" title="list (list (John) (Lennon)) (list (Paul) (McCartney)) etc." alt="list (list (John) (Lennon)) (list (Paul) (McCartney)) etc." src="../../../../img/list/hof/Beatles.png"/>
-</p>Use <b>map</b> and this list to get a list of just the first names of the Beatles.<br>
-<img width="157" vspace="0" hspace="0" height="165" border="0" title="John, Paul, George, Ringo" alt="John, Paul, George, Ringo" src="../../../../img/list/hof/jpgr.png"/>
+<img width="400" vspace="0" hspace="0" height="65" border="0" title="list (list (John) (Lennon)) (list (Paul) (McCartney)) etc." alt="list (list (John) (Lennon)) (list (Paul) (McCartney)) etc." src="/bjc-r/img/list/hof/Beatles.png"/>
+</p>
+Use <code>map</code> and this list to get a list of just the first names of the Beatles.<br>
+<img width="157" vspace="0" hspace="0" height="165" border="0" title="John, Paul, George, Ringo" alt="John, Paul, George, Ringo" src="/bjc-r/img/list/hof/jpgr.png"/>
 
-<p><br>A function that, like <b>map</b>, takes another function as an input is called a <i>higher order function. </i>In the next two activities you'll meet two more higher order functions.<br><br>
+<p><br>
+  A function that, like <code>map</code>, takes another function as an input is called a <i>higher order function. </i>In the next two activities you'll meet two more higher order functions.<br><br>
 
    </body>
 </html>

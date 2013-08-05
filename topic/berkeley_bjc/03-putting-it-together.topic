@@ -1,0 +1,24 @@
+title: Topic 3: Putting It Together
+
+{
+
+
+h2: Activities
+learning-goal: Practice with everything you know: control structures (if/else, for loops), randomness, variables, and graphics.
+
+
+
+heading: Number Guessing Game
+	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+	homework: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
+	
+heading: Rock, Paper, Scissors
+	quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
+	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
+	
+heading: MORE SOON
+
+//heading: Turn in your work
+	//submit: Submit: Loops and Variables 
+}

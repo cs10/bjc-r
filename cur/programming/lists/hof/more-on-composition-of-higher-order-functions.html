@@ -3,7 +3,7 @@
 
    <head>
       
-      <script type="text/javascript" src="../../../../admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
       
       <title> More on composition of higher order functions</title>
       
@@ -12,25 +12,29 @@
 
    <body>
 
-<br><img width="475" vspace="0" hspace="0" height="174" border="0" title="corrected definition of acronym" alt="corrected definition of acronym" src="../../../../img/list/hof/fixed-acronym.png"/>
+<br><img width="475" vspace="0" hspace="0" height="174" border="0" title="corrected definition of acronym" alt="corrected definition of acronym" src="/bjc-r/img/list/hof/fixed-acronym.png"/>
 
-<p>This is the corrected version of <b>acronym</b> that checks for words starting with a capital letter. Isn't it beautiful? It does a complicated job, so there's a lot packed in there, but think how much worse it would be if we didn't have lists to help organize such tasks. You'd take the text string <b>phrase</b> and write a loop to go through it, character by character, looking for spaces as word separators. Then you'd have to build up the result string, adding one letter at a time.
+<p>This is the corrected version of <code>acronym</code> that checks for words starting with a capital letter. Isn't it beautiful? It does a complicated job, so there's a lot packed in there, but think how much worse it would be if we didn't have lists to help organize such tasks. You'd take the text string <code>phrase</code> and write a loop to go through it, character by character, looking for spaces as word separators. Then you'd have to build up the result string, adding one letter at a time.
+</p>
+With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once. </i>You don't have to think, &quot;Find the first letter of the first word and operate on it, then increase the loop index until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word&quot; and so on. You can think, &quot;give me the first letters of all the words.&quot;
 
-</p>With <b>map</b>, <b>keep</b>, and <b>combine</b>, you can operate on the items of a list <i>all at once. </i>You don't have to think, &quot;Find the first letter of the first word and operate on it, then increase the loop index until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word&quot; and so on. You can think, &quot;give me the first letters of all the words.&quot;
+<br><br>
+(Instead, all that ugliness about looking for spaces is hidden inside the <code>sentence-&gt;list</code> block, where everyone writing an application about sentences can use it without having to reinvent it. This is another example of <i>abstraction, </i>which we mentioned right at the beginning as one of the central ideas of the course and of computer science in general.)
 
-<br><br>(Instead, all that ugliness about looking for spaces is hidden inside the <b>sentence-&gt;list</b> block, where everyone writing an application about sentences can use it without having to reinvent it. This is an example of <i>abstraction, </i>which we mentioned right at the beginning as one of the central ideas of the course and of computer science in general.)
-
-<p><br><br><b>Try this: <br></b>
-   - Write a <b>max</b> block that takes two numbers as inputs and reports the bigger one (either of them, if they're equal). Use it, and the list tools, to find the length of the longest word of a sentence.
-<br>   - Using that length to help, write a block that reports the longest word of a sentence (or the first word of that length, if there's a tie).
-<br>   - Write a <b>word-&gt;list</b> block that takes a word of text as input, and reports a list in which each item is a single letter from the word. To do this, you'll have to use a loop, along with the <b>add to list</b> block:<br>
-<img width="185" vspace="0" hspace="0" height="139" border="0" src="../../../../img/list/hof/partial-word-list.png" alt="partial script for word->list" title="partial script for word->list"/>
-<br>   - Imagine that you're writing a program to play Hangman. The program has thought of a secret word, and the user is trying to guess it. Write a <b>display word</b> block that takes two inputs, the secret word and a list of the letters guessed by the user so far. It should <b>say</b> the letters of the secret word, spaced out, with underscore characters replacing the letters not yet guessed:<br>
-<img width="602" vspace="0" hspace="0" height="99" border="0" src="../../../../img/list/hof/hang.png" alt="display word (potsticker) (e,t,a) -> _ _ t _ t _ _ _ e _" title="display word (potsticker) (e,t,a) -> _ _ t _ t _ _ _ e _"/>
-<br>(Use your <b>word-&gt;list</b> block on the secret word to get started.)
-<br>   - Write a reporter <b>exaggerate</b> that takes a sentence as input and reports an exaggerated version:<br>
-<img width="537" vspace="0" hspace="0" height="65" border="0" src="../../../../img/list/hof/exaggerate.png" alt="exaggerate (I had 6 really good potstickers for dinner.) -> I had 12 really great potstickers for dinner." title="exaggerate (I had 6 really good potstickers for dinner.) -> I had 12 really great potstickers for dinner."/>
-<br>It should replace &quot;good&quot; with &quot;great,&quot; &quot;bad&quot; with &quot;terrible,&quot; &quot;like&quot; with &quot;love,&quot; etc. And it should replace every number with twice the number.<br><br>  
-
-   </body>
+<p><br><br>
+  <b>Try this: </b>
+<p>- Write a <code>max</code> block that takes two numbers as inputs and reports the bigger one (either of them, if they're equal). Use it, and the list tools, to find the length of the longest word of a sentence.
+  
+<p>- Using that length to help, write a block that reports the longest word of a sentence (or the first word of that length, if there's a tie). 
+<p>- Write a <code>word-&gt;list</code> block that takes a word of text as input, and reports a list in which each item is a single letter from the word. To do this, you'll have to use a loop, along with the <code>add to list</code> block:<br>
+  <img width="185" vspace="0" hspace="0" height="139" border="0" src="/bjc-r/img/list/hof/partial-word-list.png" alt="partial script for word->list" title="partial script for word->list"/>
+  <p>- Imagine that you're writing a program to play Hangman. The program has thought of a secret word, and the user is trying to guess it. Write a <code>display word</code> block that takes two inputs, the secret word and a list of the letters guessed by the user so far. It should <code>say</code> the letters of the secret word, spaced out, with underscore characters replacing the letters not yet guessed:<br>
+  <img width="602" vspace="0" hspace="0" height="99" border="0" src="/bjc-r/img/list/hof/hang.png" alt="display word (potsticker) (e,t,a) -> _ _ t _ t _ _ _ e _" title="display word (potsticker) (e,t,a) -> _ _ t _ t _ _ _ e _"/>
+  <br>
+  (Use your <code>word-&gt;list</code> block on the secret word to get started.)
+  
+  <p>- Write a reporter <code>exaggerate</code> that takes a sentence as input and reports an exaggerated version:
+  <p><img width="537" vspace="0" hspace="0" height="65" border="0" src="/bjc-r/img/list/hof/exaggerate.png" alt="exaggerate (I had 6 really good potstickers for dinner.) -> I had 12 really great potstickers for dinner." title="exaggerate (I had 6 really good potstickers for dinner.) -> I had 12 really great potstickers for dinner."/>
+  <p>It should replace &quot;good&quot; with &quot;great,&quot; &quot;bad&quot; with &quot;terrible,&quot; &quot;like&quot; with &quot;love,&quot; etc. And it should replace every number with twice the number.<br><br>  
+  </body>
 </html>

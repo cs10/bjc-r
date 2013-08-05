@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+		<title>Mutation of Variables</title>
+	</head>
+
+	<body>
+		<p>
+			Suppose I have a global variable named <code>
+				foo</code>
+			, and I define the following two blocks:
+		</p>
+		<p><img src="/bjc-r/img/list/add5foo.png" width="133" height="68" alt="add 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/bjc-r/img/list/add20any.png" width="154" height="73" alt="add 20 to (var)" />
+		</p>
+		<p>
+			Now I run the following script:
+		</p>
+		<p><img src="/bjc-r/img/list/addscript.png" width="109" height="100" alt="call both blocks" />
+		</p>
+		<p>
+			Will the final value of foo be 100? 105? 120? or 125? Try it and see.
+		</p>
+		<hr />
+		<p>
+			Now do the following similar experiment, but with a list as the value of <code>
+				foo</code>
+			:
+		</p>
+		<p><img src="/bjc-r/img/list/append5foo.png" width="152" height="68" alt="append 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/bjc-r/img/list/append20var.png" width="175" height="73" alt="append 20 to (var)" />
+		</p>
+		<p><img src="/bjc-r/img/list/appendscript.png" width="158" height="103" alt="call both append blocks" />
+		</p>
+		<p>
+			What items will be in <code>
+				foo</code>
+			after running this script?
+		</p>
+		<hr />
+		<p>
+			Why do these two experiments give different results?
+		</p>
+		<p>
+			It's not surprising that the two blocks that specifically change the global variable <code>
+				foo</code>
+			succeed. But how come you can add a new item to a list passed into a block as input, whereas you can't change a numeric variable passed in as input?
+		</p>
+		<p>
+			Snap<em>!</em> is actually behaving consistently in these two cases. To understand why, you have to keep clear in your mind the difference between a <em>value</em>&ndash;a number, text string, Boolean (true/false), or list&ndash;and a <em>variable,</em> which is essentially a connection between a name and a value. (This is not precisely the definition of &quot;variable&quot; you'd learn in a programming language design course, but it's  close enough until you have to implement a programming language yourself.)
+		</p>
+		<p>
+			As in most programming languages, the inputs you provide to a block in a Snap<em>!</em> program are <em>values. </em>The block doesn't know how the value was provided: typed directly into an input slot, computed by a reporter dragged into the slot, or taken from a variable dragged into the slot.
+		</p>
+		<p>
+			If that went over your head because it's too abstract, consider this script:
+		</p>
+		<p><img src="/bjc-r/img/list/addfoo+3.png" width="157" height="86" alt="add 20 to (foo+3)" />
+		</p>
+		<p>
+			You wouldn't expect <em>that</em> to change the value of <code>
+				foo</code>
+			to&mdash; To what? 123? 117? It just doesn't make sense to expect this to change <code>
+				foo</code>
+			at all. The input to the <code>
+				add 20 to</code>
+			block is the number 103&ndash;the <em>value</em> of <img src="/bjc-r/img/list/foo+3.png" width="83" height="19" alt="foo+3" />&ndash;not the variable. The same is true in the original experiment; the input to <code>
+				add 20 to</code>
+			is the number 105 (because the <code>
+				add 5 to foo</code>
+			block specifically changed <code>
+				foo</code>
+			), not the variable <code>
+				foo</code>
+			itself.
+		</p>
+		<p>
+			The <code>
+				change</code>
+			block in the definition of <code>
+				add 20 to</code>
+			does change a variable: the variable it says it changes, namely <code>
+				var</code>
+			. That variable is local to the block's defining script, so changing it doesn't affect the rest of the program at all. Local variables are temporary; when the block finishes, the variable is gone.
+		</p>
+		<p>
+			What if the value of <code>
+				foo</code>
+			is a list? Unlike numbers, lists themselves are mutable. (<em>Variables</em> are mutable, too, which is why we're having this discussion, but only when the variable name itself appears in a <code>
+				set</code>
+			or <code>
+				change</code>
+			block.) After the two <code>
+				append</code>
+			blocks in the second experiment are run, the value associated with variable <code>
+				foo</code>
+			is <em>the same list </em>as it was before. But that list now has more elements. We say that it &quot;maintains its identity&quot; even though its contents have changed.
+		</p>
+	</body>
+</html>

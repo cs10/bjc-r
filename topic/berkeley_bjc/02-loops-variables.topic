@@ -1,0 +1,70 @@
+title: Topic 2: Loops, Variables, and Conditionals
+
+{
+h2: Big Ideas
+// big-idea: Explore the development of the 3D Graphics field
+// big-idea: Get a sense of the complexity and team work required to produce modern animated films.
+big-idea: Explore Abstraction as it relates to Computer Science
+big-idea: Understand and analyze some of the impact of the Internet on our culture
+big-idea: Use elementary control structures
+
+//	video: Video Lecture: 3D Graphics (Dan Garcia) [https://coursesharing.org/courses/6/lectures/10]
+	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+	video: Video Lecture: Video Games [https://coursesharing.org/courses/6/lectures/11]
+	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+//	reading: Animating a Blockbuster [http://www.wired.com/magazine/2010/05/process_pixar/]
+	reading: Justices Reject Ban on Violent Video Games for Children [http://www.nytimes.com/2011/06/28/us/28scotus.html?_r=1]
+
+h2: Activities
+learning-goal: Learn to use the movement and drawing commands in Snap! to draw complex images and geometric shapes.
+learning-goal: Learn to use variables that change dynamically within a program.
+learning-goal: Use layers of abstraction in programs to draw complex images.
+learning-goal: Learn how the X- Y- Coordinate plane maps to the stage.
+learning-goal: Use the <tt>if</tt> block in the context of random movement, number guessing, and the game, Rock, Paper, Scissors.
+learning-goal: Use the <tt>random</tt> number block to create randomness in a game.
+
+
+heading: Drawing
+	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
+	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
+	resource: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
+	resource: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+
+heading: Variables
+
+	resource: The FOR block [/bjc-r/cur/programming/variables/for.html]
+	resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
+	resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
+	resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
+	resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
+
+//	quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
+//	resource: Tempo [/bjc-r/cur/programming/variables/tempo.html]
+//	quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
+//	resource: Change how fast the tempo changes [/bjc-r/cur/programming/variables/change-how-fast-the-tempo-changes.html]
+//	resource: Variable Tutorial (Scales) [/bjc-r/cur/programming/variables/variable-tutorial-scales.html]
+//	resource: Common Bug - Set vs. Change [/bjc-r/cur/programming/variables/common-bug-set-vs-change.html]
+//	resource: (<i>Optional</i>) Exploring Regular Shapes [/bjc-r/cur/programming/variables/optional-exploring-regular-shapes.html]
+//	resource: Variable Sized Shapes [/bjc-r/cur/programming/variables/variable-sized-shapes.html]
+//	resource: Countdown [/bjc-r/cur/programming/variables/countdown.html]
+//	resource: Repeat Until [/bjc-r/cur/programming/variables/repeat-until.html]
+//	resource: (<i>Optional</i>) Practice with Repeat Until [/bjc-r/cur/programming/variables/optional-practice-with-repeat-until.html]
+//	resource: Draw a Squiral [/bjc-r/cur/programming/variables/draw-a-squiral.html]
+//	quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
+	
+	
+heading: Activities
+	resource: Draw a Picture in Scratch [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
+//	resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
+
+heading: The <tt>If</tt> Block
+	quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
+	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
+	
+heading: Random
+	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
+	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
+
+//heading: Turn in your work
+	//submit: Submit: Loops and Variables 
+}

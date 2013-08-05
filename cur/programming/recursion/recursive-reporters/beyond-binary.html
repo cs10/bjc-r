@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Beyond Binary</title>
+</head>
+
+<body>
+<p>Here's our solution:</p>
+<p><img src="/bjc-r/img/recur/reporters/tobinary.png" width="464" height="179" alt="decimal-&gt;binary" /></p>
+<p>The base case is that the number fits in a single bit—that is, it has to be less than 2. If so, the number itself, 0 or 1, is the desired output.</p>
+<p>In the recursive case, the rightmost bit of the result is the remainder of dividing the number by 2. That is, even numbers end with 0, and odd numbers end with 1. The rest of the result is a recursive call on the (integer) quotient of the number divided by 2. The combiner is <code>join</code> because we want to string the digits together. It may be surprising that we don't use an arithmetic operator, since we're working with numbers, but the desired result is a <em>numeral, </em>which is a visible representation of a number, rather than the numeric value itself. A numeral is a text string, so the combiner is a string operation.</p>
+<h3>Other Bases</h3>
+<p>There's no reason to limit ourselves to decimal (base 10) and binary (base 2). How about base 7?</p>
+<p><img src="/bjc-r/img/recur/reporters/base7example.png" width="185" height="63" alt="base7 of 9827 reports 40436" /></p>
+<p>The base 7 digits are 0‒6, and the digit positions represent powers of 7.</p>
+<blockquote>
+  <p>☞ Write the <code>base7</code> block. Then generalize the pattern with a <code>base</code> block that takes the base as a second input:</p>
+  <p><img src="/bjc-r/img/recur/reporters/base2.png" width="294" height="70" alt="9827 base 2" /><img src="/bjc-r/img/recur/reporters/base7.png" width="294" height="70" alt="9827 base 7" /><br>
+<img src="/bjc-r/img/recur/reporters/base8.png" width="294" height="70" alt="9827 base 8" /><img src="/bjc-r/img/recur/reporters/base10.png" width="294" height="70" alt="9827 base 10" /></p>
+  <p>☞ Optional for hotshots: Improve the <code>base</code> block so that it can go up to base 36 by using the letters <code>a</code>‒<code>z</code> as digits with values 10‒35.</p>
+  <h4><img src="/bjc-r/img/recur/reporters/common.png" width="294" height="70" alt="32562 base 15" /><img src="/bjc-r/img/recur/reporters/w00zy.png" width="294" height="70" alt="53749006 base 36" /></h4>
+  <p>☞ Write the inverse function <code>from base</code> that takes a (text) string of digits and a base as inputs, and reports the corresponding number (which Snap<em>!</em> will show in decimal, of course, but you're converting to a <em>number, </em>not to a string of digits). Again, bases above ten are optional.</p>
+  <p><img src="/bjc-r/img/recur/reporters/frombase.png" width="251" height="62" alt="frombase" /></p>
+</blockquote>
+</body>
+</html>
