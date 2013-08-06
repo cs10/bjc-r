@@ -17,6 +17,7 @@ bjc.secondarySetUp = function() {
 
 	// insert main div
 	$(document.body).wrapInner('<div id="full"></div>');
+	$("#full").append('<div id="full-bottom-bar"></div>');
 
 
 
@@ -225,7 +226,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	list_header.width(list.outerWidth());
 	list.slideToggle(0);
 
-	var b_list = list.clone();
+	/*var b_list = list.clone();
 	var b_list_header = list_header.clone();
 	b_list_header.click(
 			function() {
@@ -235,7 +236,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				b_list_header.html("Click here to navigate...");
 			}
 			$($(".steps")[1]).slideToggle(300);
-		});
+		});*/
 	/* b_list_header.click(
 	   function() {
    if (b_list_header.html() == "Click here to navigate...") {
@@ -251,15 +252,15 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
 	    bjc.addFrame();
 	} else {
-		var b_nav = $(document.createElement("div")).addClass("nav");
-		var b_list = list.clone();
+		var b_nav = $(document.createElement("div")).addClass("bottom-nav");
+		//var b_list = list.clone();
 		b_nav.append(b_backButton);
-		b_nav.append(b_list_header);
+		//b_nav.append(b_list_header);
 		b_nav.append(b_forwardButton);
-		b_nav.append(b_list);
+		//b_nav.append(b_list);
 		b_nav.append(background.clone());
-		$("#full").append(b_nav);
-        b_list_header.width(list.outerWidth());
+		$("#full-bottom-bar").append(b_nav);
+        //b_list_header.width(list.outerWidth());
 	}
 
         
