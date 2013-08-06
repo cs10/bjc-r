@@ -1,0 +1,17 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Extra for Experts : the fifth MapReduce ... Google, building a Google-like index</title><!--ORIGINAL NAME: Extra for Experts : the fifth MapReduce ... Google, building a Google-like index--></head><body><p>  The idea here is you've got a huge set of webpages (URLs) and webpage-content and you want to create a huge table indexed by each word that shows you what URL the word is in. Fill in the body for the <img src="/bjc-r/img/hof/mapper-block.gif" width="69" height="18" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> and <img src="/bjc-r/img/sys/reducer-block.png" width="87" height="18" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif"> for the <code> Google</code> sprite and test it. <em>Hint: This problem is very similar to WordCount</em>.</p>
+<table width="100%" border="1"><tbody><tr><th scope="col">Problem</th>
+    <th scope="col">Input</th>
+    <th scope="col">Map Domain</th>
+    <th scope="col">Map Range</th>
+    <th scope="col">Map Function</th>
+    <th scope="col">Binary reducer function</th>
+    <th scope="col">Output</th>
+  </tr><tr><td align="center">Google simulation! Given web pages (URLs) and data, create a massive reverse-lookup-table, that allows us to quickly query, given any single word, what webpages it was on.</td>
+    <td align="center">The input is a list of lists. The first element in each inner list is the web page address, the second element is the content of the webpage</td>
+    <td align="center">Two-element list, the web page address and the text of the web page</td>
+    <td align="center">A list of   lists, where the inner list has the word as the first element and all the URLs that have the word as followup elements. E.g., if the input were: <code>("hamlet" "to be or not to be")</code>, the output would be <code>((to hamlet) (be hamlet) (or hamlet) (not hamlet))</code></td>
+    <td align="center">For every unique word in the webpage, make a list of the word and the URL. Return a list of all these pairs.</td>
+    <td align="center">Take two lists of words and their counts and merge them. E.g., Given<code> ((to hamlet) (be hamlet) (or hamlet) (not hamlet))</code> and <code>((to webster) (wit webster))</code>, it would return <code>((to hamlet webster) (be hamlet) (or hamlet) (not hamlet) (wit webster))</code></td>
+    <td align="center">a single list of lists, with each inner list a unique word as the first element and the URLs that contain the word as the following elements.</td>
+  </tr></tbody></table></body></html>

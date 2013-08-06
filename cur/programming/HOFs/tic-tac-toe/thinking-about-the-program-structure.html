@@ -1,0 +1,7 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Thinking about the Program Structure</title><!--ORIGINAL NAME: Thinking about the Program Structure--></head><body>Remember that this block only represent the strategy in which the computer chooses the next move; we are not programming any visual parts at the moment. <br><br>Before we approach to make the strategy in BYOB, think about how do you play tic-tac-toe. We have many strategy rules that has priority over another. We will represent these rules with "if" statements:<br><br><ul><li>If there is a winning move, we take that move.</li>
+</ul><ul><li>If the opponent has a winning move, we move to the square that blocks it.</li>
+</ul><ul><li>If none of the above applies, then choose the best free square.</li>
+</ul><br>And if you're daring, you may also do this:<br><ul><li>If we can make a move that allows us to win on the next turn, we take that move.</li>
+  <li>If there is a move that the opponent can make that will make them win in two moves, then block it.</li>
+</ul>The last two allows the computer to play a perfect game of tic-tac-toe.<br><br>You can see that we are going to make many helper blocks to complete the strategy. We need to check each condition sequentially and make sure we get what we need to get. <br></body></html>

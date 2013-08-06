@@ -1,0 +1,12 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> Higher Order Functions </title><!--ORIGINAL NAME: Higher Order Functions--></head><body>
+<b>Higher Order Functions (HOFs)</b> are "higher order" because they are functions that take another function as an input. Here's a silly example just to show what we mean:  The function <b>call-with-5</b> takes a function as input, and reports the value you get by calling that function with the input value 5.  You can use any function as the input:
+
+<p></p><div style="text-align: center;"><img hspace="0" border="0" vspace="0" src="/bjc-r/img/hof/call-with-5-examples.png" title="example of a HOF" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/callwith5.png"></div>
+
+<p>It turns out that higher order functions are particularly useful along with lists.
+In this lesson we will mainly use three HOFs that take a function and a list as inputs: <b>Map</b>, <b>Keep</b>, and <b>Combine</b>. They are found in the "Variables" palette, with the other list blocks.  Even though we emphasize them, keep in mind that they aren't the only higher order functions; in fact, you can write your own.  All of the three main HOFs take a function and a list as inputs, and the function will somehow be applied to the list items.  The result varies depending on the the HOF.  
+
+</p><p></p><div style="text-align: center;"><img hspace="0" height="163" border="0" width="299" vspace="0" src="/bjc-r/img/hof/map-keep-combine-blocks.png" title="picture of HOF blocks in palette" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19-1.png"></div>
+
+<p>Unlike most of the Scratch list blocks, HOFs are all reporters.  If the reported value is a list, it's a newly constructed list; these blocks do <b><i>not</i></b> modify their input lists. This style of programming, in which existing values are not modified, is called <i>functional programming</i>.   </p></body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            The Snowball
+        </title><!--ORIGINAL NAME: The Snowball-->
+    </head>
+    <body>
+        <p>
+            Now for the big part of the algorithm!
+            Write a block <b>combine strings</b>, that takes in a list of strings and returns
+            a single string that combines the list in a specific way:
+        </p>
+
+        <ol>
+            <li>
+                First, your block will search through the list to identify should find the two
+                strings with the most overlap.
+            </li>
+            <li>
+                Throw out the two strings you found and combine these two strings into their
+                shortest superstring.
+            </li>
+            <li>
+                Now, the process should be repeated with the superstring and the list of
+                original strings that were not selected in the first step.  This list will have one
+                less string than in the first step.
+            </li>
+            <li>
+                When there is only one string left, it should be reported.
+            </li>
+        </ol>
+
+    </body>
+</html>
