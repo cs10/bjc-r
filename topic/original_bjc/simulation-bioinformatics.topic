@@ -1,0 +1,30 @@
+title: Simulation: BioInformatics
+{
+h2: Big Ideas
+big-idea: Learn about BioInformatics, the study of data in living creatures and systems.
+
+	video: What is BioInformatics? (youtube) [http://www.youtube.com/watch?v=xODTm4a6nsM]
+//	reading: Introduction to BioInfomatics [http://bscs.org/pdf/bioinformatics.pdf]
+
+h2: Activities
+learning-goal: Gain an appreciation for the importance of simulations in scientific discovery.
+learning-goal: Learn about some modern applications of scientific simulations.
+
+
+heading: Overview
+	resource: Introduction to Bioinformatics [/bjc-r/cur/social-context/areas/bioinformatics/introduction-to-biofinformatics.html]
+
+heading: The Computational Solution
+	resource: Overview [/bjc-r/cur/programming/strings/bioinformatics/overview.html]
+	resource: Substring [/bjc-r/cur/programming/strings/bioinformatics/substring.html]
+	resource: Overlap [/bjc-r/cur/programming/strings/bioinformatics/overlap.html]
+	resource: Shortest Common Superstring of 2 Strings [/bjc-r/cur/programming/strings/bioinformatics/shortest-common-superstring-of-2-strings.html]
+	resource: The Snowball [/bjc-r/cur/programming/strings/bioinformatics/the-snowball.html]
+
+heading: Debrief
+	resource: Discuss your solution [/bjc-r/cur/programming/strings/bioinformatics/discuss-your-solution.html]
+
+
+
+
+}
