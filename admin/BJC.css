@@ -972,7 +972,8 @@ blockquote {
 	margin-right:88px;
 	padding:0px;
 	line-height:1.2;
-        position: absolute;
+    position: absolute;
+	min-width: 250px;
 }
 
 .list_item {

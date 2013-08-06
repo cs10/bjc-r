@@ -3,6 +3,7 @@
 // TODO move MC-template into here as a string, oh well
 
 function MC(data, location, questionNumber) {
+	//data = data[0];
 	this.myClass = "MultipleChoice";
 			
 			
@@ -16,7 +17,7 @@ function MC(data, location, questionNumber) {
 	this.attempts = [];
 	this.states = [];
 
-	this.interaction = $(data);
+	this.interaction = data;
 	//this.responseDec = $($(".responseDeclaration")[this.num]);
 	var rii = this.interaction.attr("responseIdentifier");
 	this.responseDec = $('.responseDeclaration[identifier="' + rii + '"]');
@@ -27,8 +28,14 @@ function MC(data, location, questionNumber) {
 	
 	// make a copy of the template
 	var template = this.getTemplate();
-	this.multipleChoice.html(template);
-
+	this.multipleChoice = $(template).insertAfter(location);
+	
+	// save this MC dom element
+	// this.multipleChoice = $($(".MultipleChoice")[this.num]);
+	/*
+	var myDom = $("." + this.myClass).last();
+	this.multipleChoice = myDom;
+	*/
 	//boolean to prevent shuffling after each answer submit
 	this.previouslyRendered = false;
 	
@@ -202,7 +209,7 @@ MC.prototype.render = function() {
 	}
 	//turn this flag on so that the step does not shuffle again during this visit
 	this.previouslyRendered = true;
-
+	this.interaction.remove();
 	//this.node.view.eventManager.fire('contentRenderComplete', this.node.id, this.node);
 };
 

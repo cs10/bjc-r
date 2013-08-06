@@ -26,24 +26,21 @@ $(document).ready(buildQuestions);
 /**
  * Process each div with class assessment-data, start xmlhttp calls as necessary.
  */
-function buildQuestions() {	
-
+function buildQuestions() {
 	// we don't do english here!  datas!!! 
 	var qdatas = $("div.assessment-data");
 	var num = qdatas.length;
 
 	
 	for (var i = 0; i < num; i++) {
-		var qdata = qdatas.get(i);
-		var location = $('<div></div>');
-		$(qdata).after(location);
-		
-		if (qdata.hasAttribute("src")) {
-			var target = qdata.getAttribute("src");
+		var qdata = $(qdatas.get(i));
+		var location = $("<div></div>").insertAfter($(qdata));
+		if (qdata.attr("src")) {
+			var target = qdata.attr("src");
 			getRemoteQdata(target, location, i);
 			
 		} else {
-			buildQuestion(qdata, location);
+			buildQuestion(qdata, location, i, false);
 		}	
 	}
 	
@@ -60,13 +57,14 @@ function getRemoteQdata(target, location, questionNum) {
 			url : target,
 			type : "GET",
 			dataType : "html",
-			success : makeGetQdataCallback(location, questionNum)
-			});
+			success : makeGetRemoteQdataCallback(location, questionNum)
+				
+		});
 }
 
-function makeGetRemoteQdataCallback (location, questionNum) {
-	var callback = function(data) {
-		buildQuestion(data, location, questionNum);
+function makeGetRemoteQdataCallback(location, questionNum) {
+	var callback = function(data, a, b) {
+		buildQuestion(data, location, questionNum, true);
 	};
 	return callback;
 }
@@ -75,12 +73,15 @@ function makeGetRemoteQdataCallback (location, questionNum) {
 
 //qdata is a div with the relevant data
 //location is a div whose contents will be replaced with the question.
-function buildQuestion(qdata, location, questionNum)  {
-		var type = $(qdata).attr("type");
-		var question = getQInstance(type, qdata, location, questionNum);
-		question.loadContent();
-		question.render();
-		//mc.push(question);
+function buildQuestion(qdata, location, questionNum, fetched)  {
+	qdata = $(qdata).insertBefore(location);
+	console.log(qdata);
+	console.log(location);
+	var type = qdata.attr("type");
+	var question = getQInstance(type, qdata, location, questionNum);
+	question.loadContent();
+	question.render();
+	//mc.push(question);
 }
 
 /**
