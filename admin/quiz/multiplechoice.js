@@ -525,8 +525,8 @@ MC.prototype.getTemplate = function() {
 	"		</div>";
 
 
-// file is loaded, baby
-bjc.loaded['multiplechoice.js'] = true;
-
 };
 
+
+// file is loaded, baby
+bjc.loaded['multiplechoice'] = true;

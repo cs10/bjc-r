@@ -115,7 +115,7 @@ bjc.initialSetUp = function() {
 			}
 		} else {
 			console.log("waiting on stage " + stage_num);
-			setTimeout(proceedWhenComplete(stage_num, 100));
+			setTimeout(function() {proceedWhenComplete(stage_num)}, 100);
 		}
 	}
 
