@@ -1,0 +1,19 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Your third MapReduce : Love, All the Beatles song titles with the word "love" in it</title><!--ORIGINAL NAME: Your third MapReduce : Love, All the Beatles song titles with the word "love" in it--></head><body><p>Hopefully that last one wasn't too bad. This one is a little harder because you have to write both the 
+mapper and reducer. The idea is you've got a huge set of data and you need to keep only the ones that match. 
+Fill in the body for the <img src="/bjc-r/img/hof/mapper-block.gif" width="69" height="18" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> and <img src="/bjc-r/img/sys/reducer-block.png" width="87" height="18" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif"> for the <code> Love</code> sprite and test it.</p>
+   <table width="100%" border="1"><tbody><tr><th scope="col">Problem</th>
+       <th scope="col">Input</th>
+       <th scope="col">Map Domain</th>
+       <th scope="col">Map Range</th>
+       <th scope="col">Map Function</th>
+       <th scope="col">Binary reducer function</th>
+       <th scope="col">Output</th>
+     </tr><tr><td align="center">All the Beatles song titles with the word "love" in it. This is effectively a "filter" operation, removing all the list elements that don't match.</td>
+       <td align="center">All of the Beatles song titles, each song title a different list element</td>
+       <td align="center">Song title (sentence)</td>
+       <td align="center">a list of  the song title; or an empty list</td>
+       <td align="center">Look for the word "love" in the title, if it's there, return title as a one-element  list, otherwise return the empty list</td>
+       <td align="center">Merge all the lists together that the mappers (and other reducers) return into one big list</td>
+       <td align="center">Same form as the input: a list of song titles, except each one has the word "love" in it.</td>
+     </tr></tbody></table></body></html>
