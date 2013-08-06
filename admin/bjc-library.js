@@ -39,3 +39,6 @@ bjc.stripComments = function(line) {
 	return line;
 }
 
+
+
+bjc.loaded['bjc-library'] = true;
