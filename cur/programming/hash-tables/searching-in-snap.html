@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Bulding the search engine in Snap!
+        </title><!--ORIGINAL NAME: Searching in BYOB-->
+    </head>
+    <body>
+        And now, the moment you've all been waiting for: it's time to build our search engine!
+        <br>
+        <p>
+            Your goal is to create a search engine in BYOB that can index and search through a list of quotes. You can download the framework for the search engine <a href="http://veritas.eecs.berkeley.edu/courses/file.php/17/starting_points/search.ypr">here</a>, which will provide you with the data that your search engine should process as well as some helper functions.
+        </p>
+        <p style="text-align: center;"><img hspace="0" height="262" border="0" width="428" vspace="0" title="Quote search engine" alt="Quote search engine" src="/bjc-r/img/prog/quote-search-code.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/quote-search.png">
+            <br>
+        </p>
+        <span style="font-weight: bold;">Requirements</span>
+        <br style="font-weight: bold;">
+        <ol>
+            <li>
+                Start off with the <a href="http://veritas.eecs.berkeley.edu/courses/file.php/17/starting_points/search.ypr">basic framework</a> provided above.
+                <br>
+            </li>
+            <li>
+                <span style="text-decoration: underline;">Crawler</span>. The crawler will be provided to you. It will return a list with a separate source to be analyzed by your search engine in each element.
+                <br>
+            </li>
+            <li>
+                <span style="text-decoration: underline;">Indexer</span>. This is where most of the work is going to take place, and where most of the processing time will be spent. Create a keyword index that can be used to quickly determine which quotes contain which words. When the indexer finishes its execution, it should have produced an efficient keyword index that can be used by the Searcher. Use the hash table blocks to store the data in a way that can be searched quickly (perhaps using techniques from earlier in this lab). Remember, multiple quotes may include the same word and you need to be able to locate each quote that contains a search term. Parts of the indexer have been created for you, but you will need to set up the hash table and insert all of the data into it.
+                <br>
+            </li>
+            <li>
+                <span style="text-decoration: underline;">Searcher</span>. Add content to the "search for keyword" operator block that can query the index for a particular word and returns a list of all of the quotes that contain that word. The searcher should be able to perform multiple searches on the index without having to regenerate any of the information.
+                <br>
+            </li>
+            <li>
+                Additional requirement: add a special feature to either the indexer or searcher that improves your search engine (either by speeding it up or improving the quality of its results in some way). Be creative! Some ideas:
+                <br>
+            </li>
+            <ol>
+                <li>
+                    Rank the returned search results by the number of times the keyword appears in each book. For example, a book that contains the word "fireplace" 12 times would appear before a book that contains the word "fireplace" 5 times.
+                </li>
+                <li>
+                    Make it so that your search engine looks for <a href="http://en.wikipedia.org/wiki/Stemming">different forms of the same keyword</a>. One simpler form of this is called suffix stripping; with <a href="http://en.wikipedia.org/wiki/Stemming#Suffix_Stripping_Algorithms">suffix stripping</a>, a search for "player" would also check for words like "play," "played," and "plays."
+                </li>
+                <li>
+                    Remove all punctuation from words before inserting them into your index.
+                    <br>
+                </li>
+            </ol>
+        </ol>
+    </body>
+</html>
