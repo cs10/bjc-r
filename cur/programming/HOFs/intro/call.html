@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Call
+        </title><!--ORIGINAL NAME: "Call"-->
+    </head>
+    <body>
+        What's the point of turning a block into a datum?  It's that <i>eventually</i> we'll want to call the function represented by the block &mdash; to run, evaluate, or call the block.  (Those words all mean the same thing.)
+
+        <p>
+            This is where the <b>call</b> block comes in.  The <b>call</b> block, which is found in the Control palette, takes an encapsulated block and evaluates it.  If we put the block of 1+1 into the <b>call block</b>, 1+1 should now be evaluated and return 2.
+
+        </p><p></p>
+        <div style="text-align: center;"><img hspace="0" height="77" border="0" width="237" vspace="0" src="/bjc-r/img/hof/call-addition-block.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab20/Lab19-02.png">
+        </div>
+
+        <p>
+            It's not very interesting to call a block that always does the same thing.  We can take a block with <i>unfilled</i> input slots, and <b>call</b> it with the necessary input values provided.  To call a block with one or more input values, click the right-facing arrowhead at the end of the <b>call</b> block.  Here are some examples:
+
+        </p><p></p>
+        <div style="text-align: center;"><img hspace="0" border="0" vspace="0" src="/bjc-r/img/hof/the-block-calls-examples.png" title="CALL of blocks with unfilled slots" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/callslots.png">
+        </div>
+
+        <p>
+            The second example shows that the functions don't have to be <i>arithmetic</i> functions.  The third shows that if the block has more than one unfilled slot, and it's called with one input value, then the same value fills all the slots.  (We'll see later that you can give more than one input value in a <b>call</b> invocation.)
+
+        </p>
+        <p>
+            This may still not seem very interesting.  Why not just say 8+3, for example, instead of the first example of slot-filling?  These capabilities become interesting when we use <i>variables</i> rather than constant inputs, both for the function and for the input slot value.  We can write functions of functions, then call the input function with variable data.  We're about to see some examples.
+        </p>
+    </body>
+</html>
