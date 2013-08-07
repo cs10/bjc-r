@@ -17,6 +17,10 @@ heading: Rock, Paper, Scissors
 	quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
 	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
 	
+heading: Working with Dates
+	resource: Checking for leap years [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
+	
+	
 heading: MORE SOON
 
 //heading: Turn in your work
