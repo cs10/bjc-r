@@ -54,12 +54,13 @@ heading: Variables
 	
 	
 heading: Activities
-	resource: Draw a Picture in Scratch [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
+	resource: Draw a Picture in <span class="snap">snap</span> [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
 //	resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
 
 heading: The <tt>If</tt> Block
 	quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
 	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
+	resource: Checking for leap years [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
 	
 heading: Random
 	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]

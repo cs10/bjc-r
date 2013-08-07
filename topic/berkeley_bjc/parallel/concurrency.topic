@@ -26,8 +26,7 @@ heading: Background: concurrency without the computer
 	group: Card Sorting: Discussion [/bjc-r/cur/programming/sorting/cards/card-sorting-discuss.html]
 	resource: Card Sorting: Let's do it [/bjc-r/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
 	resource: Card Sorting: Reflect [/bjc-r/cur/programming/sorting/cards/card-sorting-reflect.html]
-	forum: Concurrency in real life... [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=2022]
-	//   Share a non-computer, real-life example in which the serial portion of some task is smallest (i.e., embarassingly parallel) and greatest (i.e., most difficult to parallelize)
+	forum: Concurrency in real life... [/bjc-r/cur/programming/concurrency/concurrency-in-real-life.html]
 	
 heading: Two heads are better than one.
 	resource: Scratch Machine Concepts [/bjc-r/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
