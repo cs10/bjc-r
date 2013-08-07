@@ -1015,9 +1015,9 @@ blockquote {
 }
 
 .step_frame {
-	width:90%;
-	height:75%;
-	position:absolute;
+	width:100%;
+	min-height:500px;
+	position:relative;
 	/*z-index:-1;*/
 	
 }

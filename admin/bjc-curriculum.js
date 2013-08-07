@@ -17,7 +17,7 @@ bjc.secondarySetUp = function() {
 
 	// insert main div
 	$(document.body).wrapInner('<div id="full"></div>');
-	$("#full").append('<div id="full-bottom-bar"></div>');
+	
 
 
 
@@ -252,6 +252,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
 	    bjc.addFrame();
 	} else {
+		$("#full").append('<div id="full-bottom-bar"></div>');
 		var b_nav = $(document.createElement("div")).addClass("bottom-nav");
 		//var b_list = list.clone();
 		b_nav.append(b_backButton);
@@ -269,6 +270,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 
 bjc.addFrame = function() {
 	var source = getParameterByName("src");
+	$("#full").append('<a href=' + source + ' target="_">Open page in new window</a><br><br>');
 	var frame = $(document.createElement("iframe")).attr({'src': source, 'class': 'step_frame'});
 	$("#full").append(frame);
 }
