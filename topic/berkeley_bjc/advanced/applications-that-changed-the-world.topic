@@ -1,0 +1,33 @@
+title: Applications that changed the world
+{
+h2: Big Ideas
+big-idea: Understand the basic components of the internet
+big-idea: Explore the effects of massive increases of data traveling over the internet
+
+	video: Sharing Multimedia on the Internet and Privacy [https://coursesharing.org/courses/6/lectures/20]
+	reading: Data Explosion Creates Revolution [http://www.sfgate.com/technology/dotcommentary/article/Web-2-0-Summit-Data-explosion-creates-revolution-2326463.php]
+
+h2: Activities
+
+learning-goal: Computer science is about more than computing prime numbers and solving equations. It has tremendous applications outside of the field of computing but has also created some fantastic new possibilities within the field as computing has evolved.
+learning-goal: In its short lifetime, computing has totally transformed the modern world.
+learning-goal: Become familiar with the anatomy of a search engine and how large amounts of data can be handled quickly.
+
+heading: How Life has Changed
+	resource: Apartment Hunting Throughout the Decades [/bjc-r/cur/social-context/apps/search/apartment-hunting-throughout-the-decades.html]
+	resource: How Technology has Change your Life [/bjc-r/cur/social-context/history/changes/how-technology-has-changed-your-life-discussion.html]
+
+
+heading: Example: Google
+	resource: Life Before Search [/bjc-r/cur/social-context/apps/search/life-before-search.html]
+	resource: How Google Works [/bjc-r/cur/social-context/apps/search/how-google-works.html]
+	resource: Search Takes a Team [/bjc-r/cur/social-context/apps/search/search-takes-a-team.html]
+	resource: Storing Data for Searching [/bjc-r/cur/programming/hash-tables/storing-data-for-searching.html]
+	resource: Practice: Working with Hash Tables [/bjc-r/cur/programming/hash-tables/practice-working-with-hash-tables.html]
+	resource: Storing Complex Data [/bjc-r/cur/programming/hash-tables/storing-complex-data.html]
+	resource: Searching in BYOB [/bjc-r/cur/programming/hash-tables/searching-in-byob.html]
+//TODO	resource: Searching in <span class="snap">snap</span> [/bjc-r/cur/programming/hash-tables/searching-in-snap.html]
+
+
+
+}

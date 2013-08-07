@@ -10,6 +10,7 @@ if ( typeof bjc === 'undefined') {
 	// if bjc-loader wasn't used, we need this.
 	bjc = {};
 	bjc.rootURL = "/bjc-r";
+	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
 }
 
 

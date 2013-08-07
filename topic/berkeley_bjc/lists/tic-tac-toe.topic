@@ -1,16 +1,14 @@
-title: Topic 6: Practicing with Lists
+title: Practicing with Lists: Tic-Tac-Toe
 {
 h2: Big Ideas
-// big-idea: Explore various methods of developing algorithms to solve problems
-// big-idea: Understand the role of encryption in securing documents and the dangers inherent in producing sensitive digital information as it relates to privacy and security concerns
 
-//	  video: Algorithms (Luke Segars) [https://coursesharing.org/courses/6/lectures/14]
-	  video: Recursion 2 [https://coursesharing.org/courses/6/lectures/19]
-	  video: Social Implications 2 [https://coursesharing.org/courses/6/lectures/20]
+
+	video: Recursion 2 [https://coursesharing.org/courses/6/lectures/19]
+	video: Social Implications 2 [https://coursesharing.org/courses/6/lectures/20]
 	reading: Blown to Bits, Chapter 4 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter4.pdf]
 
 h2: Activities
-le[/bjc-r/cur/programming/lists/hof/ttt/08-arning-goal: Get more practice with lists and higher order functions.
+learning-goal: Get more practice with lists and higher order functions used in combination.
 learning-goal: Develop a significant-sized project.
 
 heading: Tic-Tac-Toe strategy
