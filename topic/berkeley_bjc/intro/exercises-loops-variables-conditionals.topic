@@ -1,7 +1,6 @@
-title: Additional Exercises for Broadcast, Animations, and Music
+title: Additional Exercises for Loops, Variables, and Conditionals
 
 {
-
 
 raw-html: 
 <div style="{margin:20px 20%}"><i><b>
@@ -14,10 +13,9 @@ other students will benefit greatly from doing some of these</li>
 </ul>
 </b></i></div>
 
-
-
 h2: Exercises
 
-
+heading: Drawing
+	resource: Drawing the Olympic Rings [/bjc-r/cur/programming/intro/drawing/draw-olympic-rings.html]
 
 }

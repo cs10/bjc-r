@@ -66,6 +66,10 @@ heading: Random
 	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
 	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
 
+heading: Exercises
+	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
+	
+	
 //heading: Turn in your work
 	//submit: Submit: Loops and Variables 
 }
