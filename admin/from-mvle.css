@@ -1,15 +1,20 @@
 
 /* STYLING FOR ALL ASSESSMENT ITEM TYPES  (StudentCheck, Student Quiz, Teacher Check, TeacherQuiz, Brainstorm) */
-body {
-	/* font-family: "Lucida Sans Unicode", "Lucida Grande", Arial, "Gill Sans", Helvetica;	*/
-	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana,
-		"Gill Sans", sans-serif;
-	font-size: 100%;
-	/* text-align: center;
-	NATE REMOVED THis */
-	background-color: #FFF;
-	margin: 4px 5px;
+
+
+
+
+
+/* This override presents Firefox browser from drawing an ugly dotted line around the focus Input button */
+button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="button"]
+	 ::-moz-focus-inner,input[type="submit"]  ::-moz-focus-inner,input[type="file"]>input[type="button"]
+	 ::-moz-focus-inner {
+	border: none;
 }
+
+
+
+
 
 .title {
 	text-align: center;
@@ -19,83 +24,12 @@ body {
 	background-color: #FFE6C6;
 }
 
-img {
-	border: 0px;
-}
-
-/* This override presents Firefox browser from drawing an ugly dotted line around the focus Input button */
-button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="button"]
-	 ::-moz-focus-inner,input[type="submit"]  ::-moz-focus-inner,input[type="file"]>input[type="button"]
-	 ::-moz-focus-inner {
-	border: none;
-}
-
-h1 {
-	font-size: 2.0em;
-}
-
-h2 {
-	font-size: 1.5em;
-}
-
-h3 {
-	font-size: 1.4em;
-}
-
-h4 {
-	font-size: 1.2em;
-}
-
-h5 {
-	font-size: .9em;
-}
-
-h6 {
-	font-size: .8em;
-}
-
-p {
-	/* font-size: .8em;
-	NATE removed */
-	line-height: 120%;
-	padding: 0px;
-	margin: 0px 0 12px 0;
-}
-
-/*    This is the middle toned 88.236 palette  */
-.color1 {color:#164CBA;}   /* vibrant blue */
-.color2 {color:#6883BA;}   /* mid blue */
-.color3 {color:#919EBA;}   /* light blue */
-.color4 {color:#334B7B;}   /* dark blue */
-.color5 {color:#19253D;}   /* very dark blue */
-.color6 {color:#4E628B;}   /* mid gray slate */
-.color7 {color:#FF9D1E;}  /* bold orange */
-.color8 {color:#FFCE8E;}  /* mid tan */
-.color9 {color:#FFE6C6;}  /* light tan */
-.color10 {color:#a97e46;}  /* brown */
-.color11 {color:#543f23;}  /* dark red */
-.color12 {color:#bf9a6b;}   /* light brown */
-
-.bg1 {background-color:#164CBA;color:#FFF;}
-.bg2 {background-color:#6883BA;color:#000;}
-.bg3 {background-color:#919EBA;color:#000;}
-.bg4 {background-color:#334B7B;color:#FFF;}
-.bg5 {background-color:#19253D;color:#FFF;}
-.bg6 {background-color:#4E628B;color:#FFF;}
-.bg7 {background-color:#FF9D1E;color:#000;}
-.bg8 {background-color:#FFCE8E;color:#000;}
-.bg9 {background-color:#FFE6C6;color:#000;}
-.bg10 {background-color:#a97e46;color:#000;}
-.bg11 {background-color:#543f23;color:#FFF;}
-.bg12 {background-color:#bf9a6b;color:#000;}
-.bg13{background-color:#3399ff;color:#000;}
-
 
 
 .centeredDiv {
 	text-align: left;
 	padding: 1%;
-	margin: 0 auto;
+	margin: 0px auto;
 }
 
 .Question {
@@ -103,8 +37,8 @@ p {
 }
 
 .questionCountBox {
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 	-moz-border-radius-bottomleft:4px;
 	-moz-border-radius-bottomright:4px;
 	border-bottom-left-radius:4px;
@@ -130,7 +64,7 @@ p {
 	background-image: url(images/infoIcon.png);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	padding: 0;
+	padding: 0px;
 }
 
 .helpIcon a {
@@ -154,7 +88,7 @@ p {
 
 .feedbackDiv {
 	width: 85%;
-	margin: 10px auto 0 auto;
+	margin: 10px auto 0px auto;
 	text-align: center;
 	color: #19253D;
 }
@@ -195,10 +129,11 @@ p {
 }
 
 .buttonTable a {
-	vertical-align:center;
-	margin:0 10	px;
+	vertical-align: middle;
+	margin: 0px 10px;
 	padding: 5px 15px;
-	font: bold Verdana, Arial, sans-serif;
+	font-family: Verdana, Arial, sans-serif;
+	font-weight: bold;
 	font-size:.85em;
 	background-color:#1e69ff;
 	color: #FFF;
@@ -245,7 +180,7 @@ p {
 
 .infoBoxCenteredDiv, .assessmentTypeCenteredDiv {
 	background-image:url(images/BackgroundBlue600.png);
-	background-position:0 -400px;
+	background-position:0px -400px;
 	background-repeat:repeat-x;
 	background-color:#FFF;
 	width: 640px;
@@ -261,7 +196,7 @@ p {
 	font-size: 1.4em;
 	font-weight: bold;
 	color: #19253D;
-	margin: 25px 10px 0 10px;
+	margin: 25px 10px 0px 10px;
 	border-bottom: 1px ridge #CCFFFF;
 }
 
@@ -275,7 +210,7 @@ p {
 	color: #fff;
 	font-weight: bold;
 	font-size: .7em;
-	margin: 15px 0 0 10px;
+	margin: 15px 0px 0px 10px;
 	background-color:#999;
 	width:95%;
 	padding:2px 6px;
@@ -294,7 +229,7 @@ p {
 	font-size: .8em;
 	line-height: 135%;
 	padding: 0px;
-	margin: 15px 0 20px 40px;
+	margin: 15px 0px 20px 40px;
 }
 
 .stepDescription li, .assessmentDescription li, .assessmentDescription ol li {
@@ -309,9 +244,9 @@ p {
 
 .InfoBoxClose a {
 	display: block;
-	margin: 0 auto;
+	margin: 0px auto;
 	width: 9em;
-	padding: 5px 0;
+	padding: 5px 0px;
 	font: bold 100% Verdana, Arial, sans-serif;
 	text-transform: uppercase;
 	background: #6883BA;
@@ -333,21 +268,21 @@ p {
 	background-color: #CC0000;
 	color: #FFF;
 	padding: 0px 3px 1px 3px;
-	margin: 0;
+	margin: 0px;
 }
 
 .yellow {
 	background-color: #FFFF33;
 	color: #999;
 	padding: 0px 3px 1px 3px;
-	margin: 0;
+	margin: 0px;
 }
 
 .green {
 	background-color: #009900;
 	color: #FFF;
 	padding: 0px 3px 1px 3px;
-	margin: 0;
+	margin: 0px;
 }
 
 
@@ -358,28 +293,28 @@ p {
 .MultipleChoice .instructionsReminder {
 	float: right;
 	text-align: right;
-	margin: 2px 15px 0px 0;
+	margin: 2px 15px 0px 0px;
 	color: #333;
 	vertical-align: middle;
 }
 
 .MultipleChoice .currentQuestionBox {
-	margin: 0 auto;
-	padding: 10px 0;
+	margin: 0px auto;
+	padding: 10px 0px;
 	text-align: left;
 }
 
 .MultipleChoice .currentQuestionBox .leftColumn {
     float: left;
     width: 85%;
-    padding: 10px 0;
+    padding: 10px 0px;
     min-height: 300px;
 }
 
 .MultipleChoice .currentQuestionBox .rightColumn {
     float: right;
     width: 14%;
-    padding: 10px 0;
+    padding: 10px 0px;
     text-align: center;
     color: white;
     min-height: 300px;
@@ -390,7 +325,7 @@ p {
 .MultipleChoice .itemLabel {
 	font-size: .7em;
 	text-transform: uppercase;
-	margin: 5px 0 0 15px;
+	margin: 5px 0px 0px 15px;
 }
 
 .MultipleChoice .promptdiv {
@@ -513,8 +448,8 @@ p {
 .MultipleChoice .numberAttemptsDiv, .lastAttemptDiv {
 	display: inline;
 	font-size: .8em;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 }
 
 .MultipleChoice .buttonTable {

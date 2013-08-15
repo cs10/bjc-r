@@ -21,7 +21,7 @@ bjc.secondarySetUp = function() {
 
 
 
-	// create Title tag
+	// create Title tag, yo
 	if (getParameterByName("title") != "") {
 		document.title = getParameterByName("title");
 	}
@@ -32,6 +32,7 @@ bjc.secondarySetUp = function() {
 			$(".header").html(getParameterByName("title"));
 		}
 	}
+	document.body.style.marginTop = "60px";
 	document.title = $(".header").text();
 
 	// make the vocab box if necessary
@@ -97,7 +98,10 @@ bjc.secondarySetUp = function() {
 		    success: bjc.processLinks
 		});
 	}
-};
+	
+	
+	
+}; // close secondarysetup();
 
 
 /** Processes just the hyperlinked elements in this page,

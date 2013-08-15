@@ -45,6 +45,7 @@
 .bg10 {background-color:#a97e46;color:#000;}
 .bg11 {background-color:#543f23;color:#FFF;}
 .bg12 {background-color:#bf9a6b;color:#000;}
+.bg13{background-color:#3399ff;color:#000;}
 
 * {padding:0px; margin:0px;}
 
@@ -54,8 +55,7 @@ img {border:0px;}
 a:visited {color:#36BBCE;}
 
 #full {
-	margin: 60px 0px 0px 85px;
-	width: 90%;
+
 }
 
 #full-bottom-bar {
@@ -79,8 +79,28 @@ body {
 	font-size: 100%;
 	text-align: left;
 	background-color:#FFF;
-	font-color: black;
+	/* font-color: black;       ?property doesn't exist */
+	
+	margin-top: 110px;    
+	/*  top margin should be 60, but is higher to account for .header that will get added later, so adding it 
+	 *    doesn't flash the page downward
+	 * body top margin gets set to 60 in bjc-curriculum.js when .header gets added  */
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 85px; 
+	width: 90%;
 }
+
+/* from mvle.css
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana,
+		"Gill Sans", sans-serif;
+	font-size: 100%;
+	background-color: #FFF;
+	margin: 4px 5px;
+}
+*/
+
 
 form li div {
 	font:500 15px/1.7 "Times New Roman", Times, serif;
@@ -118,9 +138,18 @@ p {
 	/*font:1.1em "Times New Roman", Times, serif;*/
 	font:1em Arial, Helvetica, sans-serif;
 	padding:10px 0px;
-	line-height:140%; /* Added */
+	line-height:120%; /* Added */
 	vertical-align: bottom;
 }
+
+/* from mvle.css
+p {
+	line-height: 120%;
+	padding: 0px;
+	margin: 0px 0 12px 0;
+}
+*/
+
 
 p.right {text-align:right;}
 
@@ -210,6 +239,16 @@ h3 {font:900 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:1
 h4 {padding:10px 15px;}
 h5 {padding:10px 15px;}
 h6 {padding:10px 15px;}
+
+/* from mvle.css
+h1 {font-size: 2.0em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
+*/
+
 
 .header {
 	font:normal 1.5em Georgia, serif;
