@@ -18,7 +18,7 @@ bjc.rootURL = "/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
-bjc.paths.links = ["/admin/jquery-ui-1.10.2-smoothness.css", "/admin/BJC.css", "/admin/from-mvle.css"];
+bjc.paths.links = ["/admin/normalize.css", "/admin/jquery-ui-1.10.2-smoothness.css", "/admin/BJC.css", "/admin/from-mvle.css"];
 
 bjc.paths.scripts = [];
 bjc.paths.complete_funs = [];

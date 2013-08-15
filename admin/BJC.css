@@ -47,14 +47,17 @@
 .bg12 {background-color:#bf9a6b;color:#000;}
 .bg13{background-color:#3399ff;color:#000;}
 
+/*   brought in normalize.css to help with this?
+ * 
 * {padding:0px; margin:0px;}
-
 img {border:0px;}
 
+*/
 
 a:visited {color:#36BBCE;}
 
 #full {
+	/* moved margin stuff  to body */
 
 }
 
@@ -137,9 +140,10 @@ code {
 p {
 	/*font:1.1em "Times New Roman", Times, serif;*/
 	font:1em Arial, Helvetica, sans-serif;
-	padding:10px 0px;
-	line-height:120%; /* Added */
+
+	line-height:120%; 
 	vertical-align: bottom;
+	
 }
 
 /* from mvle.css
@@ -1065,7 +1069,7 @@ blockquote {
 	font-size:100%;
 	text-decoration:underline;
 	font-weight:bold;
-	background-image: url("/bjc-r/img/web/toolbar_home.png");
+	background-image: url("../img/web/toolbar_home.png");
 	background-size: contain;
 	background-repeat:no-repeat;
 	padding-left:20px;
@@ -1073,7 +1077,7 @@ blockquote {
 
 .current-step-link {
 	font-weight:bold;
-	background-image: url("/bjc-r/img/web/forward.png");
+	background-image: url("../img/web/forward.png");
 	background-size:contain;
 	background-repeat:no-repeat;
 	padding-left:20px;
