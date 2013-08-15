@@ -97,7 +97,7 @@ bjc.initialSetUp = function() {
 	function loadScripts(stage_num) {
 		var i;
 
-		console.log("starting script load stage " + stage_num);
+		//console.log("starting script load stage " + stage_num);
 		// load scripts
 		for ( i = 0; i < bjc.paths.scripts[stage_num].length; i++) {
 			tag = getTag("script", bjc.paths.scripts[stage_num][i], "text/javascript");
@@ -114,8 +114,8 @@ bjc.initialSetUp = function() {
 				loadScripts(stage_num + 1);
 			}
 		} else {
-			console.log("waiting on stage " + stage_num);
-			setTimeout(function() {proceedWhenComplete(stage_num)}, 100);
+			//console.log("waiting on stage " + stage_num);
+			setTimeout(function() {proceedWhenComplete(stage_num)}, 50);
 		}
 	}
 
