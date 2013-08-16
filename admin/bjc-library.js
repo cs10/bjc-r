@@ -4,6 +4,49 @@
  * CANNOT RELY ON JQUERY, YO
  */
 
+bjc.CORSproxy = "www.corsproxy.com";
+
+bjc.CORSCompliantServers = [];
+bjc.CORSCompliantServers.push("bjc.berkeley.edu");
+bjc.CORSCompliantServers.push("snap.berkeley.edu");
+
+
+////
+
+bjc.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
+
+// returns the current domain with a cors proxy if needed
+bjc.getSnapRunURL = function(targeturl) {
+
+	if (targeturl.substring(0, 7) == "http://") {
+		// pointing to some non-local resource... maybe a published cloud project?  do nothing!!
+		return targeturl;	
+			
+	} else {
+		// internal resource!
+		var finalurl = bjc.snapRunURLBase + "http://";
+		var currdom = document.domain;
+console.log(currdom);
+		// why not, for the devs out there...
+		if (currdom == "localhost") {
+			currdom = "bjc.berkeley.edu";
+		}
+		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
+			finalurl = finalurl + bjc.CORSproxy + "/";
+		}
+		finalurl = finalurl + currdom + targeturl;
+		
+		return finalurl;
+	}
+
+	
+
+	
+	
+		return currdom;
+
+}
+
 
 
 if ( typeof bjc === 'undefined') {

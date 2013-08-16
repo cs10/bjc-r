@@ -13,6 +13,8 @@ bjc['topic_list'] = new Array();
 
 //bjc['rootURL'] = bjc.rootURL;
 
+
+
 bjc.secondarySetUp = function() {
 
 	// insert main div
@@ -34,6 +36,15 @@ bjc.secondarySetUp = function() {
 	}
 	document.body.style.marginTop = "60px";
 	document.title = $(".header").text();
+
+
+	// fix snap links so they run snap
+	$("a.run").each(function(i) {
+		$(this).attr("target", "_blank");
+		$(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')))
+	});
+
+
 
 	// make the vocab box if necessary
 	if ($("span.vocab").length > 0) {
