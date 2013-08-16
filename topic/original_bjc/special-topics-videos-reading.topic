@@ -1,0 +1,63 @@
+title: Additional Topics: Selected Videos and Reading
+{
+
+h2: Artificial Intelligence
+big-idea: Explore the history and development of the artificial intelligence field
+big-idea: Explore areas where AI is being used to solve problems
+big-idea: Understand how computer scientists are trying to define if a machine "thinks"
+big-idea: Explore the development of the robotics field
+big-idea: Understand what IBM's Watson machine does and is
+
+	video: Artificial Intelligence [https://coursesharing.org/courses/6/lectures/22]
+	reading: What is IBM's Watson? [http://www.nytimes.com/2010/06/20/magazine/20Computer-t.html]
+	video: The great robot race [http://www.hulu.com/watch/23347]
+
+
+h2: The field of computer science
+big-idea: Explore reasons to join the computing sciences field
+big-idea: Learn about applications in science and engineering
+big-idea: Understand the role of simulations and computing science to help solve major problems such as : climate change, digitizing the human body, and curing cancer
+big-idea: Consider the ramifications of talking about and presenting developments in our computers and machines as approximating human life
+big-idea: Understand Alan Turing's contributions to computer science
+
+	video: Saving the world with computer science (Kathy Yellick) [https://coursesharing.org/courses/6/lectures/29]
+	reading: The first church of robotics [http://www.nytimes.com/2010/08/09/opinion/09lanier.html]
+	video: The Thinking Machine (youtube) [http://www.youtube.com/watch?v=4gzpd0irP58]
+	reading: Computer Pioneer Alan Turing [http://www.wired.com/thisdayintech/tag/turing-machine/]
+
+
+h2: The limits of computing
+big-idea: Explore problems that are unsolvable or at least have no known efficient solution with today's computers
+big-idea: Understand what mathematical relationships create problems that are unsolvable by computers
+big-idea: Understand what quantum computing is and means
+big-idea: Understand how a computer scientist determined checkers is a draw 
+
+	video: The limits of computing [https://coursesharing.org/courses/6/lectures/30]
+	reading: Computers solve checkers (and its a draw) [http://www.scientificamerican.com/article.cfm?id=computers-solve-checkers-its-a-draw]
+	reading: Why is quantum different? [http://www.scientificamerican.com/article.cfm?id=what-makes-a-quantum-comp]
+	reading: Quantum leap [http://money.cnn.com/2006/07/26/magazines/fortune/futureoftech_quantum.fortune/index.htm]
+	
+	
+h2: A look to the future
+big-idea: Explore future directions in computer science: quantum, DNA computing, biological computing.
+big-idea: Explore possible technological advances that will effect our lives over the next few decades
+big-idea: Explore historical roots of functional programming and lambda calculus
+
+	video: The future of computing (Dan Garcia) [https://coursesharing.org/courses/6/lectures/31]
+	reading: Twenty top predictions for life 100 years from now [http://www.bbc.co.uk/news/magazine-16536598]
+	video: Apple's 1987 "knowlege navigator" [http://www.youtube.com/watch?v=hb4AzF6wEoc]
+	video: Microsoft's idea on life in 2019 [http://www.youtube.com/watch?v=bwj2s_5e12U]
+	
+	
+	
+h2: Wrapping up
+	video: The Internet [https://coursesharing.org/courses/6/lectures/27]
+	reading: Blown to Bits: The conclusion [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter9.pdf]
+	video: Summary and Farewell from Berkeley [https://coursesharing.org/courses/6/lectures/32]
+
+	
+	
+	
+	
+
+}

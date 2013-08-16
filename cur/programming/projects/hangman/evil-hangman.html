@@ -1,48 +1,97 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Homework: Evil Hangman</title><!--ORIGINAL NAME: Homework (due later): Evil Hangman--></head><body>    
-    <h2>Your Mission</h2>
-    <p>You've discovered that your old hangman game was a bit too easy and all of the kids at school are making fun of you for it.  You come up with a brilliant but very secretive idea: you are going to modify your game into a new version that you've appropriately named <i>Evil Hangman</i>.</p>
-    <h2>Your Timeline</h2>
-    <p>This assignment is due at the end of the "Recursion I" lesson.</p>
-    <p>You can work with one other person on this assignment.  You only need to submit one solution.</p>
-    <h2>Additional Details</h2>
-    <p>Evil Hangman is played in exactly the same way as the original game; in fact, the player should have no idea that they're not playing the original game.  The difference, however, is that the computer is actually cheating to make the game as hard as possible for the player: it doesn't actually settle on a word until the very end of the game, but tries to keep the player in the dark for as long as possible.  Instead of picking a word at the very beginning a la regular hangman, it chooses a word but readily <i>changes to a different word if the player starts guessing letters correctly.</i>  A flow chart describing one possible approach below is available <a href="http://bjc.berkeley.edu/resources/designs/evil-hangman-flowchart.pdf">here</a>.</p>
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Homework: Evil Hangman
+        </title><!--ORIGINAL NAME: Homework (due later): Evil Hangman-->
+    </head>
+    <body>
+        <h2>Your Mission</h2>
+        <p>
+            You've discovered that your old hangman game was a bit too easy and all of the kids at school are making fun of you for it.  You come up with a brilliant but very secretive idea: you are going to modify your game into a new version that you've appropriately named <i>Evil Hangman</i>.
+        </p>
+        <h2>Your Timeline</h2>
+        <p>
+            This assignment is due at the end of the "Recursion I" lesson.
+        </p>
+        <p>
+            You can work with one other person on this assignment.  You only need to submit one solution.
+        </p>
+        <h2>Additional Details</h2>
+        <p>
+            Evil Hangman is played in exactly the same way as the original game; in fact, the player should have no idea that they're not playing the original game.  The difference, however, is that the computer is actually cheating to make the game as hard as possible for the player: it doesn't actually settle on a word until the very end of the game, but tries to keep the player in the dark for as long as possible.  Instead of picking a word at the very beginning a la regular hangman, it chooses a word but readily <i>changes to a different word if the player starts guessing letters correctly.</i> A flow chart describing one possible approach below is available <a href="http://bjc.berkeley.edu/resources/designs/evil-hangman-flowchart.pdf">here</a>.
+        </p>
 
-    <p>The dialog between the player and computer should look exactly the same as it did in your last assignment; in fact, it will probably be in your best interest to start from your project that you submitted as Homework 3.  We have also provided a few word lists, but you're welcome to use your own for testing if you prefer.  Remember to test your program on Word List 3 before convincing yourself that it completely works.</p>
+        <p>
+            The dialog between the player and computer should look exactly the same as it did in your last assignment; in fact, it will probably be in your best interest to start from your project that you submitted as Homework 3.  We have also provided a few word lists, but you're welcome to use your own for testing if you prefer.  Remember to test your program on Word List 3 before convincing yourself that it completely works.
+        </p>
 
-    <p>Note that you shouldn't worry about making your program work as efficiently as possible; you will not be graded on performance, only on correctness.</p>
-   
-    <h2>Gameplay Video</h2>
-    <p>We've <a href="http://youtu.be/j8ev3AzOsJA">recorded a video</a> of how our game looks when we run it.  <i>Remember that you are not being graded on how quickly your program runs -- there is a lot of extra work that has to go on behind the scenes so some slowdown is expected.</i></p>
+        <p>
+            Note that you shouldn't worry about making your program work as efficiently as possible; you will not be graded on performance, only on correctness.
+        </p>
 
- 
-    <h2>Starting Materials</h2>
-      <p>You can either start with your submission for HW2, <a href="http://bjc.berkeley.edu/resources/programs/byob/classic-hangman-solution.ypr">our solution to HW2</a>, or a blank BYOB project.</p>
-      <p>Here are some example word lists that you can use for testing:</p>
-      <ul><li><a href="http://bjc.berkeley.edu/resources/wordlists/words-500.txt">Word List 1</a> (500 words, good for testing)</li>
-        <li><a href="http://bjc.berkeley.edu/resources/wordlists/words-1000.txt">Word List 2</a> (1000 words, combination of speed and elusion)</li>
-  <li><a href="http://bjc.berkeley.edu/resources/wordlists/words-2000.txt">Word List 3</a> (2000 words, good for aggravating your friends)</li>
-      </ul><h2>Tips and Thoughts</h2>
-    <img style="float: right;" src="/bjc-r/img/web/NOTFOUND.png" origsrc="http://bjc.berkeley.edu/resources/images/byob/wordlist-import.png"><ul><li>To read a list from a text file: save the file in
- an easily-accessible location (such as your desktop).  Open BYOB and 
-create an empty list.  Check the box beside your new list to have it 
-appear in the display area.  There will be a little handle on the 
-bottom-right side of the list display -- <i>right click (or Command + click on a Mac)</i>
- the handle and you should see a dropdown menu, including an item that 
-says "import."  Select import, find your file, and open it.  Each line 
-of the text file will be imported as a new element in the list.</li>
-    <li> Check out the flow chart.  It describes one algorithm for getting the program working, although you're welcome to use others if they make more sense.</li>
-    <li> You should be able to reuse a lot of code from your first homework.  The main challenge for this project will likely be in designing your algorithms instead of writing tons of new blocks, so be sure to decide <i>how</i> you want your program to work before you start programming.</li>
-</ul><h2>Extra for Experts</h2>
-    <p>Try to make your Evil Hangman game as EVIL as possible.  Try to come up with an algorithm that will make the player guess as many letters as possible before letting them win.</p>
-    <p>Try to make your Evil Hangman game run as quickly as possible.  Designing effective algorithms will be your key tool in speeding up your program, and feel free to talk to your TA if you want to discuss your ideas.</p>
+        <h2>Gameplay Video</h2>
+        <p>
+            We've <a href="http://youtu.be/j8ev3AzOsJA">recorded a video</a> of how our game looks when we run it. <i>Remember that you are not being graded on how quickly your program runs -- there is a lot of extra work that has to go on behind the scenes so some slowdown is expected.</i>
+        </p>
 
-    <p style="font-size: small; font-style: italics">* = a "letter pattern" is the positions that will be revealed in a word if a particular letter is guessed.  For example, _ p p _ _ is one way to represent the letter pattern for "p" in the word "apple."</p>
+        <h2>Starting Materials</h2>
+        <p>
+            You can either start with your submission for HW2 or a blank BYOB project (your teacher may share a solution with you as well).
+        </p>
+        <p>
+            Here are some example word lists that you can use for testing:
+        </p>
+        <ul>
+            <li>
+                <a href="http://bjc.berkeley.edu/resources/wordlists/words-500.txt">Word List 1</a> (500 words, good for testing)
+            </li>
+            <li>
+                <a href="http://bjc.berkeley.edu/resources/wordlists/words-1000.txt">Word List 2</a> (1000 words, combination of speed and elusion)
+            </li>
+            <li>
+                <a href="http://bjc.berkeley.edu/resources/wordlists/words-2000.txt">Word List 3</a> (2000 words, good for aggravating your friends)
+            </li>
+        </ul><h2>Tips and Thoughts</h2>
+        <img style="float: right;" src="/bjc-r/img/web/NOTFOUND.png" origsrc="http://bjc.berkeley.edu/resources/images/byob/wordlist-import.png">
+        <ul>
+            <li>
+                To read a list from a text file: save the file in
+                an easily-accessible location (such as your desktop).  Open BYOB and
+                create an empty list.  Check the box beside your new list to have it
+                appear in the display area.  There will be a little handle on the
+                bottom-right side of the list display -- <i>right click (or Command + click on a Mac)</i>
+                the handle and you should see a dropdown menu, including an item that
+                says "import."  Select import, find your file, and open it.  Each line
+                of the text file will be imported as a new element in the list.
+            </li>
+            <li>
+                Check out the flow chart.  It describes one algorithm for getting the program working, although you're welcome to use others if they make more sense.
+            </li>
+            <li>
+                You should be able to reuse a lot of code from your first homework.  The main challenge for this project will likely be in designing your algorithms instead of writing tons of new blocks, so be sure to decide <i>how</i> you want your program to work before you start programming.
+            </li>
+        </ul><h2>Extra for Experts</h2>
+        <p>
+            Try to make your Evil Hangman game as EVIL as possible.  Try to come up with an algorithm that will make the player guess as many letters as possible before letting them win.
+        </p>
+        <p>
+            Try to make your Evil Hangman game run as quickly as possible.  Designing effective algorithms will be your key tool in speeding up your program, and feel free to talk to your TA if you want to discuss your ideas.
+        </p>
 
-    <p style="background-color: #BFFFC2;
-    border: 1px solid #428E46;
-    border-radius: 4px 4px 4px 4px;
-    font-size: small;
-    font-style: italic;
-    padding: 6px;
-    text-align: center;">This assignment is based on the "Evil Hangman" activity written by Keith Schwarz.  The original assignment is available on <a href="http://nifty.stanford.edu/2011/schwarz-evil-hangman/">Nifty Assignments</a>.</p>   </body></html>
+        <p style="font-size: small; font-style: italics">
+            * = a "letter pattern" is the positions that will be revealed in a word if a particular letter is guessed.  For example, _ p p _ _ is one way to represent the letter pattern for "p" in the word "apple."
+        </p>
+
+        <p style="background-color: #BFFFC2;
+        border: 1px solid #428E46;
+        border-radius: 4px 4px 4px 4px;
+        font-size: small;
+        font-style: italic;
+        padding: 6px;
+        text-align: center;">
+            This assignment is based on the "Evil Hangman" activity written by Keith Schwarz.  The original assignment is available on <a href="http://nifty.stanford.edu/2011/schwarz-evil-hangman/">Nifty Assignments</a>.
+        </p>
+    </body>
+</html>

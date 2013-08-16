@@ -45,17 +45,35 @@
 .bg10 {background-color:#a97e46;color:#000;}
 .bg11 {background-color:#543f23;color:#FFF;}
 .bg12 {background-color:#bf9a6b;color:#000;}
+.bg13{background-color:#3399ff;color:#000;}
 
+/*   brought in normalize.css to help with this?
+ * 
 * {padding:0px; margin:0px;}
-
 img {border:0px;}
 
+*/
 
 a:visited {color:#36BBCE;}
 
 #full {
-	margin: 60px 0px 45px 85px;
-	width: 90%;
+	/* moved margin stuff  to body */
+
+}
+
+#full-bottom-bar {
+	background-color:#ccc;
+	background-image: url("../img/gobo.gif");
+	background-repeat:no-repeat;
+	background-position:top left;
+	background-size:20px;
+	height:25px;
+	position:relative;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	z-index:9998;
+	margin-top:30px;
 }
 
 body {
@@ -64,8 +82,28 @@ body {
 	font-size: 100%;
 	text-align: left;
 	background-color:#FFF;
-	font-color: black;
+	/* font-color: black;       ?property doesn't exist */
+	
+	margin-top: 110px;    
+	/*  top margin should be 60, but is higher to account for .header that will get added later, so adding it 
+	 *    doesn't flash the page downward
+	 * body top margin gets set to 60 in bjc-curriculum.js when .header gets added  */
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 85px; 
+	width: 90%;
 }
+
+/* from mvle.css
+body {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana,
+		"Gill Sans", sans-serif;
+	font-size: 100%;
+	background-color: #FFF;
+	margin: 4px 5px;
+}
+*/
+
 
 form li div {
 	font:500 15px/1.7 "Times New Roman", Times, serif;
@@ -102,10 +140,20 @@ code {
 p {
 	/*font:1.1em "Times New Roman", Times, serif;*/
 	font:1em Arial, Helvetica, sans-serif;
-	padding:10px 0px;
-	line-height:140%; /* Added */
+
+	line-height:120%; 
 	vertical-align: bottom;
+	
 }
+
+/* from mvle.css
+p {
+	line-height: 120%;
+	padding: 0px;
+	margin: 0px 0 12px 0;
+}
+*/
+
 
 p.right {text-align:right;}
 
@@ -195,6 +243,16 @@ h3 {font:900 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:1
 h4 {padding:10px 15px;}
 h5 {padding:10px 15px;}
 h6 {padding:10px 15px;}
+
+/* from mvle.css
+h1 {font-size: 2.0em;}
+h2 {font-size: 1.5em;}
+h3 {font-size: 1.4em;}
+h4 {font-size: 1.2em;}
+h5 {font-size: .9em;}
+h6 {font-size: .8em;}
+*/
+
 
 .header {
 	font:normal 1.5em Georgia, serif;
@@ -926,11 +984,21 @@ blockquote {
 	float:right;
 	right:5px;
 	min-width:100px;
-	position:absolute;
-	z-index:9999;
+	position:relative;
+	z-index: 9999;
+	margin-left:10px;
 	/*border:solid;
 	border-radius:5px;
 	background-color:black;	*/
+}
+
+.bottom-nav {
+	float:right;
+	right:5px;
+	min-width:100px;
+	position:relative;
+	z-index: 9998;
+	bottom:0px;
 }
 
 .nav_background {
@@ -972,7 +1040,8 @@ blockquote {
 	margin-right:88px;
 	padding:0px;
 	line-height:1.2;
-        position: absolute;
+    position: absolute;
+	min-width: 250px;
 }
 
 .list_item {
@@ -989,9 +1058,9 @@ blockquote {
 }
 
 .step_frame {
-	width:90%;
-	height:75%;
-	position:absolute;
+	width:100%;
+	min-height:500px;
+	position:relative;
 	/*z-index:-1;*/
 	
 }
@@ -1000,7 +1069,7 @@ blockquote {
 	font-size:100%;
 	text-decoration:underline;
 	font-weight:bold;
-	background-image: url("/bjc-r/img/web/toolbar_home.png");
+	background-image: url("../img/web/toolbar_home.png");
 	background-size: contain;
 	background-repeat:no-repeat;
 	padding-left:20px;
@@ -1008,7 +1077,7 @@ blockquote {
 
 .current-step-link {
 	font-weight:bold;
-	background-image: url("/bjc-r/img/web/forward.png");
+	background-image: url("../img/web/forward.png");
 	background-size:contain;
 	background-repeat:no-repeat;
 	padding-left:20px;

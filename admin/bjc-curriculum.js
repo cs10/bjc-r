@@ -17,10 +17,11 @@ bjc.secondarySetUp = function() {
 
 	// insert main div
 	$(document.body).wrapInner('<div id="full"></div>');
+	
 
 
 
-	// create Title tag
+	// create Title tag, yo
 	if (getParameterByName("title") != "") {
 		document.title = getParameterByName("title");
 	}
@@ -31,6 +32,7 @@ bjc.secondarySetUp = function() {
 			$(".header").html(getParameterByName("title"));
 		}
 	}
+	document.body.style.marginTop = "60px";
 	document.title = $(".header").text();
 
 	// make the vocab box if necessary
@@ -96,7 +98,10 @@ bjc.secondarySetUp = function() {
 		    success: bjc.processLinks
 		});
 	}
-};
+	
+	
+	
+}; // close secondarysetup();
 
 
 /** Processes just the hyperlinked elements in this page,
@@ -109,19 +114,19 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	var num = 0;
 	var nav = $(document.createElement("div")).addClass("nav");
 	var backButton = $(document.createElement("a")).addClass("backbutton");
-        var b_backButton = $(document.createElement("a")).addClass("backbutton");
+    var b_backButton = $(document.createElement("a")).addClass("backbutton");
 	backButton.text("BACK");
 	backButton.button({disabled: true});
 	backButton.click(bjc.goBack);
-        b_backButton.text("BACK");
+    b_backButton.text("BACK");
 	b_backButton.button({disabled: true});
 	b_backButton.click(bjc.goBack);
 	var forwardButton = $(document.createElement("a")).addClass("forwardbutton");
-        var b_forwardButton = $(document.createElement("a")).addClass("forwardbutton");
+    var b_forwardButton = $(document.createElement("a")).addClass("forwardbutton");
 	forwardButton.text("FORWARD");
 	forwardButton.button({disabled: true});
 	forwardButton.click(bjc.goForward);
-        b_forwardButton.text("FORWARD");
+    b_forwardButton.text("FORWARD");
 	b_forwardButton.button({disabled: true});
 	b_forwardButton.click(bjc.goForward);
 	var list = $(document.createElement("ul")).attr({'class': 'steps'});
@@ -171,7 +176,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				if (num == (bjc.step - 1)) {
 					backButton.attr({'value': url});
 					backButton.button({disabled: false});
-                                        b_backButton.attr({'value': url});
+					b_backButton.attr({'value': url});
 					b_backButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
@@ -186,7 +191,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				} else if (num == (bjc.step + 1)) {
 					forwardButton.attr({'value': url});
 					forwardButton.button({disabled: false});
-                                        b_forwardButton.attr({'value': url});
+                    b_forwardButton.attr({'value': url});
 					b_forwardButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
@@ -221,53 +226,55 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	nav.append(list);
 	var background = $(document.createElement("div")).attr({'class': 'nav_background'});
 	nav.append(background);
-        $("#full").prepend(nav);
+    $("#full").prepend(nav);
 	list_header.width(list.outerWidth());
 	list.slideToggle(0);
 
-        var b_list = list.clone();
-        var b_list_header = list_header.clone();
-        b_list_header.click(
-                function() {
-		        if (b_list_header.html() == "Click here to navigate...") {
-			        b_list_header.html("Click again to close...");
-		        } else {
-			        b_list_header.html("Click here to navigate...");
-		        }
-		        $($(".steps")[1]).slideToggle(300);
-	        });
-        /* b_list_header.click(
-           function() {
-	   if (b_list_header.html() == "Click here to navigate...") {
-	   b_list_header.html("Click again to close...");
-                        $($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
-		} else {
-			b_list_header.html("Click here to navigate...");
-                        $($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
-		}
-	});*/
-        var b_nav = $(document.createElement("div")).addClass("nav");
-        var b_list = list.clone();
-        b_nav.append(b_backButton);
-	b_nav.append(b_list_header);
-	b_nav.append(b_forwardButton);
-	b_nav.append(b_list);
-	b_nav.append(background.clone());
-
+	/*var b_list = list.clone();
+	var b_list_header = list_header.clone();
+	b_list_header.click(
+			function() {
+			if (b_list_header.html() == "Click here to navigate...") {
+				b_list_header.html("Click again to close...");
+			} else {
+				b_list_header.html("Click here to navigate...");
+			}
+			$($(".steps")[1]).slideToggle(300);
+		});*/
+	/* b_list_header.click(
+	   function() {
+   if (b_list_header.html() == "Click here to navigate...") {
+   b_list_header.html("Click again to close...");
+					$($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
+	} else {
+		b_list_header.html("Click here to navigate...");
+					$($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
+	}
+});*/
+	
 	
 	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
-	        bjc.addFrame();
+	    bjc.addFrame();
+	} else {
+		$("#full").append('<div id="full-bottom-bar"></div>');
+		var b_nav = $(document.createElement("div")).addClass("bottom-nav");
+		//var b_list = list.clone();
+		b_nav.append(b_backButton);
+		//b_nav.append(b_list_header);
+		b_nav.append(b_forwardButton);
+		//b_nav.append(b_list);
+		b_nav.append(background.clone());
+		$("#full-bottom-bar").append(b_nav);
+        //b_list_header.width(list.outerWidth());
 	}
 
-        $("#full").append(b_nav);
-        b_list_header.width(list.outerWidth());
-
-
+        
 }
 
 
 bjc.addFrame = function() {
 	var source = getParameterByName("src");
+	$("#full").append('<a href=' + source + ' target="_">Open page in new window</a><br><br>');
 	var frame = $(document.createElement("iframe")).attr({'src': source, 'class': 'step_frame'});
 	$("#full").append(frame);
 }

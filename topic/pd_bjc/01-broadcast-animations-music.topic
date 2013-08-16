@@ -35,7 +35,7 @@ heading: Activities
 	resource: Make a movie [/bjc-r/cur/programming/intro/snap/make-a-movie.html]
 	
 heading: Game controls
-	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys-BYOB.html]
+	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
 	resource: Game of Tag [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
 	resource: Test Yourself: Detecting a key press [/bjc-r/cur/programming/intro/drawing/testkeypress.html]
 

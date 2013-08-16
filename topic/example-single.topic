@@ -11,7 +11,7 @@ heading: First: lets do this
 resource: This is a Resource [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
     resource: An indented item (no link) 
     	forum: Another (more) indented resource [/bjc-r/cur/programming/intro/drawing/game-of-tag.html] 
-quiz: This is a <b>Quiz</b> [/bjc-r/quiz/multiple-choice.html?quiz=example-multiple-choice-quiz.quiz]
+quiz: This is a <b>Quiz</b> [/bjc-r/cur/TEST/example-mixed-page.html]
 
 big-idea: Get comfortable with the Scratch user interface.
 //big-idea: Learn to use Broadcast blocks to communicate between sprites and make a movie.

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Your second MapReduce : Alpha, the first word in the dictionary
+        </title><!--ORIGINAL NAME: Your second MapReduce : Alpha, the first word in the dictionary-->
+    </head>
+    <body>
+        <p>
+            We're going to start easy and tell you how to write your mapper and reducer. 
+            In fact, this problem is so easy, it just requires you to write the reducer, 
+            since the mapper is the same as the identity 
+            <img src="/bjc-r/img/sys/id-block.gif"  alt="id" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/id.gif">! 
+            (I.e., the mapper just passes its input through, untouched, and the reducer has 
+            to do all the work!). Fill in the body for the 
+            <img src="/bjc-r/img/hof/mapper-block.gif"  alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> 
+            and <img src="/bjc-r/img/sys/reducer-block.gif"  alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif"> 
+            for the <code> Alpha</code> sprite and test it.
+        </p>
+        <table width="100%" border="1">
+            <tbody>
+                <tr>
+                    <th scope="col">Problem</th>
+                    <th scope="col">Input</th>
+                    <th scope="col">Map Domain</th>
+                    <th scope="col">Map Range</th>
+                    <th scope="col">Map Function</th>
+                    <th scope="col">Binary reducer function</th>
+                    <th scope="col">Output</th>
+                </tr>
+                <tr>
+                    <td align="center">The first word in the dictionary in all of Shakespeare's works</td>
+                    <td align="center">All of Shakespeare's works, each word a different list element</td>
+                    <td align="center">word</td>
+                    <td align="center">word</td>
+                    <td align="center">identity</td>
+                    <td align="center">Take two words and return the earlier word in the dictionary</td>
+                    <td align="center">a single word</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

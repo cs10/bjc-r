@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Your first MapReduce : a simple sum-of-squares (we did it for you)</title><!--ORIGINAL NAME: Your first MapReduce : a simple sum-of-squares (we did it for you)--></head><body><ul><li>We're going to start by showing you how we do a really easy one, and work up to some hard ones. This problem involves finding the sum of squares of some numbers. E.g., 1<sup>2</sup> + 20<sup>2</sup> + 3<sup>2</sup> + 10<sup>2</sup> = 510 (nice area code, eh?)</li>
+    </ul><table width="100%" border="1"><tbody><tr><th scope="col">Problem</th>
+        <th scope="col">Input</th>
+        <th scope="col">Map Domain</th>
+        <th scope="col">Map Range</th>
+        <th scope="col">Map Function</th>
+        <th scope="col">Binary reducer function</th>
+        <th scope="col">Output</th>
+      </tr><tr><td align="center">A sum of squares of numbers</td>
+        <td align="center">numbers, each one a different list element</td>
+        <td align="center">number</td>
+        <td align="center">number</td>
+        <td align="center">square</td>
+        <td align="center">+</td>
+        <td align="center">a single number</td>
+      </tr></tbody></table><p>...and here's what it looks like when we do it: </p>
+    <p align="center"><img src="/bjc-r/img/hof/map-reduce-sum-of-squares.png" width="331" height="105" alt="Sum-of-squares MapReduce" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/SumOfSquaresMR.png"></p>
+   Let's note a couple things:
+   <ul><li>First of all, both mapper and reducer are <em>reporter</em> blocks, so we need to wrap them in grey borders so they pass in the functions themselves as data, not the results of calling multiply and addition on two empty inputs (i.e., 0). We prefer this abbreviated style, but we could also have used the <img src="/bjc-r/img/hof/the-block.gif" width="98" height="16" alt="The _ Block" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/TheBlock.gif"> blocks and NOT used the gray borders like this (this should be review for you, btw).</li>
+</ul><p align="center"><img src="/bjc-r/img/hof/map-reduce-sum-of-squares-with-the-block.png" width="320" height="105" alt="Sum Of Squares using The Block" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/SumOfSquaresMRtheblock.png"></p>
+   <ul><li>The mapper should take a single number as input, but what we've used for simplicity is just the  <img src="/bjc-r/img/sys/multiply-block.png" width="49" height="18" alt="Multiply" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Multiply.gif"> block, which has two inputs. You also recall that BYOB, given a function of two inputs but with only one input (each element  in Map's input list in this case) will just copy the input to all the fields, making it a nice, effective square procedure.</li>
+     <li>As we go through more detailed examples, we're going to want to write a <em>mapper</em> and <em>reducer</em> funtions as separate and defined blocks, so for good code management, we're going to define a sprite per MapReduce problem, each of which has a <img src="/bjc-r/img/hof/mapper-block.gif" width="69" height="18" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> and <img src="/bjc-r/img/sys/reducer-block.png" width="87" height="18" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif">, with the answers already filled in. Once you understand what the problem is, first edit the  <img src="/bjc-r/img/hof/mapper-block.gif" width="69" height="18" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> block, delete its body, and see if you can recreate it. Once you've got a working <img src="/bjc-r/img/hof/mapper-block.gif" width="69" height="18" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif">, do the same with the <img src="/bjc-r/img/sys/reducer-block.png" width="87" height="18" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif">. That way, you'll always have a working system. Note that we've written  a lot of helper functions to make your life easier. Feel free to use the <code>Scripts</code> area of each sprite for debugging. When you're done with each of these, compare your answer with ours.</li>
+   </ul></body></html>
