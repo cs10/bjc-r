@@ -41,7 +41,7 @@ bjc.secondarySetUp = function() {
 	// fix snap links so they run snap
 	$("a.run").each(function(i) {
 		$(this).attr("target", "_blank");
-		$(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')))
+		$(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')));
 	});
 
 
