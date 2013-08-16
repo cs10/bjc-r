@@ -4,6 +4,19 @@
  * CANNOT RELY ON JQUERY, YO
  */
 
+if ( typeof bjc === 'undefined') {
+	// if bjc-loader wasn't used, we need this.
+	bjc = {};
+	bjc.rootURL = "/bjc-r";
+	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
+}
+
+
+
+
+/////////////////
+
+
 bjc.CORSproxy = "www.corsproxy.com";
 
 bjc.CORSCompliantServers = [];
@@ -46,16 +59,6 @@ console.log(currdom);
 		return currdom;
 
 }
-
-
-
-if ( typeof bjc === 'undefined') {
-	// if bjc-loader wasn't used, we need this.
-	bjc = {};
-	bjc.rootURL = "/bjc-r";
-	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
-}
-
 
 
 
