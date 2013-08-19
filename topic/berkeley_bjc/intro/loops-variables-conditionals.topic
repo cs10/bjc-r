@@ -63,8 +63,10 @@ heading: The <tt>If</tt> Block
 	resource: Checking for leap years [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
 	
 heading: Random
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
+	resource: The <tt>random</tt> Block [/bjc-r/cur/programming/random/the-random-block.html]
 	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
+	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage-solo.html]
+	resource: Keeping your Character on the Stage [/bjc-r/cur/programming/random/keeping-your-sprite-on-the-stage.html]
 
 heading: Exercises
 	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
