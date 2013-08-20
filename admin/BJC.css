@@ -645,25 +645,24 @@ blockquote {
 }
 	
 .quoteOrange {
-	padding:0px 15px;
-	margin:20px 0px 20px 0px;
+	padding:10px 15px;
+	margin: 15px;
 	width:80%;
 	border-left:12px solid #FF9D1E;
 	background-color:#FFCE8E;
 }
 	
 .quoteBlue {
-	padding:0px 15px;
-	margin: 20px 0px 20px 0px; /* Added/Updated */
+	padding:10px 15px;
+	margin: 15px;
 	width:80%;
-	color:#000;
 	border-left:12px solid #164cba;
 	background-color:#9999FF;
 }
 	
 .quoteBrown {
-	padding:0px 15px;
-	margin: 20px 0px 20px 0px; /* Added/Updated */
+	padding:10px 15px;
+	margin: 15px;
 	width:80%;
 	border-left:12px solid #bf9a6b;
 	background-color:#ddc8ad;
