@@ -25,8 +25,8 @@ heading: Playing with Sounds and Broadcasting
 //	resource:  Meowing: One at a time or in unison? [/bjc-r/cur/programming/intro/snap/meowing.html]
 
 	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/intro/snap/intro-play.html]
-	resource: Test Yourself: Go Bears! [/bjc-r/cur/programming/intro/snap/test-yourself-go-bears.html]
-	resource: Test Yourself: Different Ways to Broadcast [/bjc-r/cur/programming/intro/snap/diffways.html]
+	quiz: Test Yourself: Go Bears! [/bjc-r/cur/programming/intro/snap/test-yourself-go-bears.html]
+	quiz: Test Yourself: Different Ways to Broadcast [/bjc-r/cur/programming/intro/snap/diffways.html]
 //	resource: Single Step Mode [/bjc-r/cur/programming/intro/snap/single-step-mode.html]
 //	resource: Exporting and Importing Sprites [/bjc-r/cur/programming/intro/snap/exporting-and-importing-sprites.html]
 	
