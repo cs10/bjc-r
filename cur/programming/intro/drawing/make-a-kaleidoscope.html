@@ -11,9 +11,9 @@
     <body>
         <p>
             Explore <a class="run" href="/bjc-r/prog/graphics/kaleidoscope.xml">this drawing program</a> for a little bit.
-            You'll see a single sprite on the screen which.
-            Press the space bar and move the mouse&mdash;a little laggy, but serviceable.  Use the <tt>d</tt> (down), <tt>u</tt> (up), and <tt>c</tt> (clear) keys to change what gets drawn on the screen.
-            The script that causes the sprite to follow the screen is:
+            Press the space bar and move the mouse&mdash;the single sprite is a little laggy, but serviceable.  
+            Use the <tt>d</tt> (down), <tt>u</tt> (up), and <tt>c</tt> (clear) keys to change what gets drawn on the screen.
+            The script that causes the sprite to follow the pointer is:
 
         </p>
         <img class="center" src="/bjc-r/img/drawing/follow-mouse-when-space-bar-pressed.png" src="script to make sprite follow the mouse when the space bar is pressed" />
@@ -26,7 +26,7 @@
         <p>
             Your job is to make a (kind of) kaleidoscope, like:
         </p>
-        <img class= "center" src="/bjc-r/img/drawing/kaleidoscope.gif" alt="animation of a sort of a kaleidoscope" />
+        <img style="border:thick solid black" class= "center" src="/bjc-r/img/drawing/kaleidoscope.gif" alt="animation of a sort of a kaleidoscope" />
         <ul>
             <li>
                 You'll need four sprites: the easiest way to create them is to duplicate the one you have.  "Right-click" the
@@ -34,14 +34,21 @@
                 same scripts as the original.
             </li>
             <li>
-                You can change the color of each sprite by clicking the color input in the <img src="/bjc-r/img/blocks/set-red.png" />, choosing a color, and then clicking on the the block itself
+                You can change the color of each sprite by clicking the color input in that sprite's <img src="/bjc-r/img/blocks/set-red.png" /> block, 
+                choosing a color, and then clicking on the the block itself
                 (to run the block and actually set the color). Don't worry about matching the colors in the
                 animation exactly!
             </li>
             <li>
                 Pay close attention to what each of the other sprites is doing in the animation above.  You'll need
-                to modify the <tt>x</tt> and <tt>y</tt> using a simple formulas.  Hint: all the sprites are
+                to modify the <tt>x</tt> and <tt>y</tt> in each sprite's 
+                <img src="/bjc-r/img/blocks/go-to-x-y.png" alt="go to x y block"> block
+                using a simple formulas.  You'll find the 
+                <img src="/bjc-r/img/blocks/mouse-x.png" alt="mouse x block"> and <img src="/bjc-r/img/blocks/mouse-y.png" alt="mouse y block">
+                blocks in the "Sensing" tab group.
+                <div class="quoteBrown">Hint: all the sprites are
                 reflecting, in different ways, around the <tt>(x=0, y=0)</tt> stage center point.
+                </div>
             </li>
             <li>Once you figured it out, try out some <i>complicated</i> forumlas, and share with your classmates!</li>
         </ul>
