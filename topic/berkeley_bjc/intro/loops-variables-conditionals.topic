@@ -28,6 +28,8 @@ heading: Drawing
 	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
 	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
 	resource: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
+	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage-solo.html]
+	resource: Make a Kaleidoscope [/bjc-r/cur/programming/intro/drawing/make-a-kaleidoscope.html]
 	resource: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
 
 heading: Variables
@@ -65,7 +67,6 @@ heading: The <tt>If</tt> Block
 heading: Random
 	resource: The <tt>random</tt> Block [/bjc-r/cur/programming/random/the-random-block.html]
 	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage-solo.html]
 	resource: Keeping your Character on the Stage [/bjc-r/cur/programming/random/keeping-your-sprite-on-the-stage.html]
 
 heading: Exercises
