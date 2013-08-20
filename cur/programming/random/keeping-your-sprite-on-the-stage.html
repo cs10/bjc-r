@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Keeping your character visible (practice with <tt>if</tt>)
+        </title>
+    </head>
+    <body>
+
+        <p>
+            After a while, you'll notice that your randomly moving sprite will move off the screen.  Add to your script
+            so that the sprite stays <i>mostly</i> within 100 pixels of the center of the screen&mdash;that is, in a 200 by 200
+            square.  (It turns out that it is hard to ensure, using the motion blocks <tt>turn</tt> and <tt>move _ steps</tt>,
+            that the sprite stays <i>strictly</i> within a 200 by 200 pixel square.  For this activity, if the sprite heads out
+            in one step, you'll need to ensure that it doesn't go further out on subsequent steps).
+        </p>
+        <p>
+            You can do using an <tt>if</tt> block, and will find the the <img src="/bjc-r/img/blocks/x-position.png" alt="x position block" />, 
+            <img src="/bjc-r/img/blocks/y-position.png" alt="y position block" />, and 
+            <img src="/bjc-r/img/blocks/direction.png" alt="direction block" /> reporter blocks useful.
+        </p>
+
+        <p>
+            As a first task, make sure your character (mostly) doesn't go below the <tt>y = -100</tt> line&mdash;that
+            is, doesn't have a <tt>y position</tt> less than <tt>-100</tt>.
+            If the sprite is below the <tt>y = -100</tt> line, it should not go any lower.
+            That is, don't allow any directions that are between 90 and 180 degrees.  (If you
+            are using negative numbers for direction, you'll need to check for additional
+            values!)
+        </p>
+        <p>
+            If your find that your sprite is too low <b>and</b> will go lower on the current move, you can
+            either:
+
+        </p>
+        <ul>
+            <li>
+                simply not move this step, and have the sprite choose a new, random direction
+                on the next step.
+            </li>
+            <li>
+                use a turn statement to fix the direction, by flipping it so it points upward.</i>
+
+        </ul>
+        <p>
+            Test your solution long enough to ensure that your sprite
+            won't go below the <tt>y = -100</tt> line&mdash;or, won't continue once a move
+            takes it below.  One trick that might speed up testing: drag your sprite below
+            the <tt>y=-100</tt> line, and see if it only moves upwards.
+
+            To additionally help your testing, consider drawing a red 200 pixel by 200 pixel box on the screen, so you
+            can see if your sprite crosses it.
+        </p>
+        <img class="center" src="/bjc-r/img/drawing/draw-a-red-200x200-box.png"
+        alt="draw a red 200 by 200 box" />
+        </p>
+
+        <p>
+            You'll need to handle the other three directions as well:
+        </p>
+        <ul>
+
+            <li>
+                If the sprite is above the <tt>y = 100</tt> line, it should not go any higher.
+            </li>
+            <li>
+                If the sprite is to the left of the <tt>x = -100</tt> line, it should not go any farther left.
+            </li>
+            <li>
+                If the sprite is to the right of the <tt>x = 100</tt> line, it should not go any farther right.
+            </li>
+        </ul>
+        <p>
+
+    </body>
+</html>
