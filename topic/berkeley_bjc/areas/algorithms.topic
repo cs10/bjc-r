@@ -5,7 +5,7 @@ big-idea: Explore how to analyze algorithmic speed and understand various factor
 big-idea: Explore the implications of a world increasingly controlled by algorithms.
 
 	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
-	video: How Algorithms Shape Our World [http://www.youtube.com/watch?v=ENWVRcMGDoU]
+	video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
 
 h2: Activities
 learning-goal: Solidify understanding of what an algorithm is and why they’re important to computer science and other fields.
@@ -25,8 +25,8 @@ learning-goal: Hiding algorithmic details behind a layer of abstraction makes it
 	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
 	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
 	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
-	
-	
-	
-	
+
+
+
+
 }
