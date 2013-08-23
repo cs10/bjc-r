@@ -7,13 +7,16 @@
 		Using <a class="run" href="/bjc-r/prog/algorithms/algorithms-framework.xml" target="_blank">the framework provided</a>, implement a <span class="snap">snap</span> block in the <span style="font-weight: bold;">Unsorted</span> sprite that finds a number in a list of unsorted numbers using the strategy that we discussed. The block should accept the target number (the "needle") and a full list of numbers (the "haystack") as arguments, and return the index of the number's position in the list. What was the strategy we discussed for unsorted lists, and how could you implement it? Fill in a separate block for the sorted approach and implement it as well. Use the framework to determine how their running time changes as the list size increases. Which is faster for a list of size 5? 50? 500? 5000? Why do you think this is?
 		<br>
 		<br>
-		<div style="text-align: center;"><img border="0" width="244" vspace="0" hspace="0" height="89" title="Blocks to build" alt="Blocks to build" src="/bjc-r/img/list/find-number-in-list.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/finder-blocks.png">
-			<br>
-		</div>
 		<br>
-		<h3>Searching Unsorted Data</h3>Unsorted data doesn't give you a lot to work with. Your knowledge is limited to strictly the most obvious information: the numbers themselves. This makes strategy somewhat non-existent; the best you can do, on average, is to simply start at the beginning and search through the list one by one. This approach can become incredibly slow if we're dealing with a lot of data, but is actually fairly quick when working with smaller amounts of data. In addition, the block is relatively straightforward to create and doesn't require the data to be put into a particular order to work. The block should return the location of the number in the list, or zero if the number doesn't exist in the list.
+		<h3>Searching Unsorted Data</h3>
+        <img src="/bjr-r/img/list/find-unsorted.png" alt="Find Number In Unsorted List" width="" height="" border="0" align="left" />
+        <br />
+        Unsorted data doesn't give you a lot to work with. Your knowledge is limited to strictly the most obvious information: the numbers themselves. This makes strategy somewhat non-existent; the best you can do, on average, is to simply start at the beginning and search through the list one by one. This approach can become incredibly slow if we're dealing with a lot of data, but is actually fairly quick when working with smaller amounts of data. In addition, the block is relatively straightforward to create and doesn't require the data to be put into a particular order to work. The block should return the location of the number in the list, or zero if the number doesn't exist in the list.
 		<br>
-		<h3>Searching Sorted Data</h3><img border="0" width="558" vspace="0" hspace="0" height="452" style="float: right; display: inline;" src="/bjc-r/img/sys/binary-search-diagram.png" alt="Searching for Numbers" title="Searching for Numbers" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/binary-search.png">
+		<h3>Searching Sorted Data</h3>
+        <img src="/bjr-r/img/list/find-sorted.png" alt="Find Number In Sorted List" width="" height="" border="0" align="left" />
+        <br />
+        <img border="0" width="558" vspace="0" hspace="0" height="452" style="float: right; display: inline;" src="/bjc-r/img/sys/binary-search-diagram.png" alt="Searching for Numbers" title="Searching for Numbers" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/binary-search.png">
 		<br>
 		You could say that putting information in a particular order (lowest =&gt; highest, for example) actually <span style="font-style: italic;">creates new</span> information. Instead of being a simple list of numbers, sorting the information adds order and allows us to make additional assumptions that we weren't able to make before. This type of information is different from the numbers themselves: it is not stored in a variable or list, but becomes a <span style="font-style: italic;">property </span>of the information itself. We can use the property to reduce the number of checks we have to do to find a particular number. The trade-off to this, however, is that we need to sort the list (which takes time) before we can make use of the order.
 		<br>
