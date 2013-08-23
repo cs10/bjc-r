@@ -13,7 +13,7 @@
 		Let&rsquo;s implement a third block in our project that uses memoization to remember the location of numbers that have already been found. This block will be very similar to our the second block you built, the sorted number finder.
 		<br>
 		<br>
-		<div style="text-align: center;"><img border="0" width="313" vspace="0" hspace="0" height="31" title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
+		<div style="text-align: center;"><img title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
 			<br>
 		</div>
 		We&rsquo;ll use a list to keep track of the locations of numbers that we&rsquo;ve found already: the index of each element in the list will be the number we&rsquo;re looking for and the corresponding value will be the location where that number was found. If the value at a particular index is -1, that means that we haven&rsquo;t looked for the number yet and if the value is 0 then that means that the number doesn't exist in the list. Here is an algorithm describing how the new  block should progress using the new memoization list:
@@ -38,7 +38,7 @@
         <br />
 		Each value will now be computed a maximum of one time. Now that&rsquo;s fast!
         <br>
-        Consider the following questions:
+        Consider the following questions:<br /> 
         <ul>
         	<li>When is memoization most useful?</li>
         	<li>What are some trade-offs of using memorization?</li>
