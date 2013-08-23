@@ -13,14 +13,15 @@
 		Let&rsquo;s implement a third block in our project that uses memoization to remember the location of numbers that have already been found. This block will be very similar to our the second block you built, the sorted number finder.
 		<br>
 		<br>
-		<div style="text-align: center;"><img title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
+		<div style="text-align: center;">
+            <img title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/memoized.png">
 			<br>
 		</div>
 		We&rsquo;ll use a list to keep track of the locations of numbers that we&rsquo;ve found already: the index of each element in the list will be the number we&rsquo;re looking for and the corresponding value will be the location where that number was found. If the value at a particular index is -1, that means that we haven&rsquo;t looked for the number yet and if the value is 0 then that means that the number doesn't exist in the list. Here is an algorithm describing how the new  block should progress using the new memoization list:
 		<br>
 		<ol>
 			<li>
-				Start off setting all of the slots in <span style="font-style: italic;">memory </span>to -1 because we haven't found any numbers yet.
+				Start off setting all of the slots in <em>memory</em> to -1 because we haven't found any numbers yet.
 			</li>
 			<li>
 				Check the global list <em>memory</em> to determine if the number in question has already been found.
@@ -32,13 +33,13 @@
 				Find the number&rsquo;s location using the sorted technique we&rsquo;ve used in the past.
 			</li>
 			<li>
-				Save the location of the number in the <em>memory </em>list so that we don't have to go through this pain again.
+				Save the location of the number in the <em>memory</em> list so that we don't have to go through this pain again.
 			</li>
 		</ol>
         <br />
 		Each value will now be computed a maximum of one time. Now that&rsquo;s fast!
         <br>
-        Consider the following questions:<br /> 
+        Consider the following questions:<br />
         <ul>
         	<li>When is memoization most useful?</li>
         	<li>What are some trade-offs of using memorization?</li>
