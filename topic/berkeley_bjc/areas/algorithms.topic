@@ -5,7 +5,7 @@ big-idea: Explore how to analyze algorithmic speed and understand various factor
 big-idea: Explore the implications of a world increasingly controlled by algorithms.
 
 	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
-	video: How Algorithms Shape Our World [http://www.ted.com/talks/kevin_slavin_how_algorithms_shape_our_world.html]
+	video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
 
 h2: Activities
 learning-goal: Solidify understanding of what an algorithm is and why they’re important to computer science and other fields.
@@ -18,15 +18,15 @@ learning-goal: Hiding algorithmic details behind a layer of abstraction makes it
 	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 
 	forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
-//	forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
+	// forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
 	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
 	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
 	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
 	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
 	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
 	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
-	
-	
-	
-	
+
+
+
+
 }

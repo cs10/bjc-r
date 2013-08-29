@@ -18,8 +18,9 @@ bjc['topic_list'] = new Array();
 bjc.secondarySetUp = function() {
 
 	// insert main div
-	$(document.body).wrapInner('<div id="full"></div>');
-	
+    if ($("#full").length == 0) {
+        $(document.body).wrapInner('<div id="full"></div>');
+	}
 
 
 
@@ -28,7 +29,7 @@ bjc.secondarySetUp = function() {
 		document.title = getParameterByName("title");
 	}
 	var titleText = document.title;
-	if (titleText) {
+	if (titleText && $(".header").length == 0) {
 		$('<div class="header"></div>').prependTo($("#full")).html(titleText);
 		if (getParameterByName("title") != "") {
 			$(".header").html(getParameterByName("title"));
@@ -92,13 +93,21 @@ bjc.secondarySetUp = function() {
 
 	// should this page be rendered with the topic header (left, right buttons, etc)
 	bjc['step'] = parseInt(getParameterByName("step"));
-	if (getParameterByName("topic") != "") {
+    var temp = getParameterByName("topic");
+	if (temp != "" && !isNaN(bjc['step'])) {
+        console.log("stuff happening");
+        console.log(bjc['step']);
 		// we want to put the nav bar at the top!
 		if (getParameterByName("step") == "") {
 			// TODO -- this shouldn't happen, but we could intelligently find which
 			// step this should be
 		}
-		bjc['file'] = getParameterByName("topic");
+        if (typeof temp == "object") {
+            bjc['file'] = temp[1];
+        } else {
+            bjc['file'] = temp;
+        }
+		
 		$.ajax({
 		    url : bjc.rootURL + "/topic/" + bjc.file,
 		    type : "GET",
@@ -119,6 +128,22 @@ bjc.secondarySetUp = function() {
  *	and creates navigation buttons. 
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
+    var temp = getParameterByName("topic");
+    if (typeof temp == "object") {
+            bjc['file'] = temp[1];
+        } else {
+            bjc['file'] = temp;
+    }
+    var hidden = [];
+    var hiddenString = "";
+    temp = window.location.search.substring(1).split("&");
+    for (var i = 0; i < temp.length; i++) {
+        var temp2 = temp[i].split("=");
+        if (temp2[0].substring(0, 2) == "no" && temp2[1] == "true") {
+            hidden.push(temp2[0].substring(2));
+            hiddenString += ("&" + temp2[0] + "=" + temp2[1]);
+        }
+    }
 	var lines = data.split("\n");
 	var line;
 	var text;
@@ -150,14 +175,13 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	var list_header = $(document.createElement("div")).attr({'class': 'list_header'});
 	list_header.menu();
 	
-	
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
-		if (line.length > 1) {
+		if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file;
+				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -176,11 +200,11 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString;
 				} else if (url.indexOf("?") != -1) {
-					url += "&" + "topic=" + bjc.file + "&step=" + num;
+					url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString;
 				} else {
-					url += "?" + "topic=" + bjc.file + "&step=" + num;
+					url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString;
 				}
 				bjc['url_list'].push(url);
 				bjc['topic_list'].push(text);
