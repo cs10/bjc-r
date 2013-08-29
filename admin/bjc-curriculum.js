@@ -18,8 +18,9 @@ bjc['topic_list'] = new Array();
 bjc.secondarySetUp = function() {
 
 	// insert main div
-	$(document.body).wrapInner('<div id="full"></div>');
-	
+    if ($("#full").length == 0) {
+        $(document.body).wrapInner('<div id="full"></div>');
+	}
 
 
 
@@ -28,7 +29,7 @@ bjc.secondarySetUp = function() {
 		document.title = getParameterByName("title");
 	}
 	var titleText = document.title;
-	if (titleText) {
+	if (titleText && $(".header").length == 0) {
 		$('<div class="header"></div>').prependTo($("#full")).html(titleText);
 		if (getParameterByName("title") != "") {
 			$(".header").html(getParameterByName("title"));
@@ -92,13 +93,21 @@ bjc.secondarySetUp = function() {
 
 	// should this page be rendered with the topic header (left, right buttons, etc)
 	bjc['step'] = parseInt(getParameterByName("step"));
-	if (getParameterByName("topic") != "") {
+    var temp = getParameterByName("topic");
+	if (temp != "" && !isNaN(bjc['step'])) {
+        console.log("stuff happening");
+        console.log(bjc['step']);
 		// we want to put the nav bar at the top!
 		if (getParameterByName("step") == "") {
 			// TODO -- this shouldn't happen, but we could intelligently find which
 			// step this should be
 		}
-		bjc['file'] = getParameterByName("topic");
+        if (typeof temp == "object") {
+            bjc['file'] = temp[1];
+        } else {
+            bjc['file'] = temp;
+        }
+		
 		$.ajax({
 		    url : bjc.rootURL + "/topic/" + bjc.file,
 		    type : "GET",
@@ -119,6 +128,12 @@ bjc.secondarySetUp = function() {
  *	and creates navigation buttons. 
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
+    var temp = getParameterByName("topic");
+    if (typeof temp == "object") {
+            bjc['file'] = temp[1];
+        } else {
+            bjc['file'] = temp;
+    }
 	var lines = data.split("\n");
 	var line;
 	var text;

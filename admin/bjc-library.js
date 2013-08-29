@@ -65,14 +65,29 @@ console.log(currdom);
 //TODO put this in the bjc namespace
 /** Returns the value of the URL parameter associated with NAME. */
 function getParameterByName(name) {
-  name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
-  var regexS = "[\\?&]" + name + "=([^&#]*)";
-  var regex = new RegExp(regexS);
-  var results = regex.exec(window.location.search);
-  if(results == null)
-    return "";
-  else
-    return decodeURIComponent(results[1].replace(/\+/g, " "));
+	/*name = name.replace(/[\[]/, "\\\[").replace(/[\]]/, "\\\]");
+	var regexS = "[\\?&]" + name + "=([^&#]*)";
+	var regex = new RegExp(regexS);
+	var results = regex.exec(window.location.search);
+	var results = window.location.search.match(regex);
+	console.log(results);*/
+	var results = [];
+	var strings = window.location.search.substring(1).split("&");
+    for (var i = 0; i < strings.length; i++) {
+        var temp = strings[i].split("=");
+        if (temp[0] == name) {
+            results.push(temp[1]);
+        }
+    }
+	if(results.length == 0)
+        return "";
+	else if (results.length == 1) {
+        return results[0];
+	} else {
+        //console.log(decodeURIComponent(results[1].replace(/\+/g, " ")));
+        //return decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results;
+    }
 }
 
 

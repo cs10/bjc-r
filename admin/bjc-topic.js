@@ -49,6 +49,11 @@ var tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 bjc.renderFull = function(data, ignored1, ignored2) {
+    if (typeof getParameterByName("topic") == "object") {
+        bjc.file = getParameterByName("topic")[0];
+    } else {
+        bjc.file = getParameterByName("topic");
+    }
 	data = data.replace(/(\r)/gm,"");    // remove crazy windows linefeed characters
 	var lines = data.split("\n");
 	var line;
@@ -147,6 +152,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					} else {
 						url += "?" + "topic=" + bjc.file + "&step=" + num;
 					}
+                    console.log(url);
 					num += 1;
 					temp.attr({'href': url});
 					item.append(temp);
@@ -215,7 +221,11 @@ bjc.isTag = function(s) {
 
 
 if (getParameterByName("topic") != "") {
-	bjc.file = getParameterByName("topic");
+    if (typeof getParameterByName("topic") == "object") {
+        bjc.file = getParameterByName("topic")[0];
+    } else {
+        bjc.file = getParameterByName("topic");
+    }
 	$.ajax({
 		url : bjc.rootURL + "/topic/" + bjc.file,
 		type : "GET",
