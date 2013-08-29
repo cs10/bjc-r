@@ -38,6 +38,11 @@ Other lines get their own <div> with the class as specified in the string before
 Can also specify some actual html tags before the colon (e.g. h1)
 Anything in a [] is stuck as the target of a link
 
+You may hide particular classes by passing URL parameters.
+For instance, to hide all videos, simply add the parameter (without the quotes) "novideo=true".
+It'll end up looking something like this: 
+topic.html?topic=berkeley_bjc/intro/broadcast-animations-music.topic&novideo=true&noreading=true
+
  */
 
 /* The allowed tags for easy entry.
@@ -49,6 +54,21 @@ var tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 bjc.renderFull = function(data, ignored1, ignored2) {
+    if (typeof getParameterByName("topic") == "object") {
+        bjc.file = getParameterByName("topic")[0];
+    } else {
+        bjc.file = getParameterByName("topic");
+    }
+    var hidden = [];
+    var hiddenString = "";
+    temp = window.location.search.substring(1).split("&");
+    for (var i = 0; i < temp.length; i++) {
+        var temp2 = temp[i].split("=");
+        if (temp2[0].substring(0, 2) == "no" && temp2[1] == "true") {
+            hidden.push(temp2[0].substring(2));
+            hiddenString += ("&" + temp2[0] + "=" + temp2[1]);
+        }
+    }
 	data = data.replace(/(\r)/gm,"");    // remove crazy windows linefeed characters
 	var lines = data.split("\n");
 	var line;
@@ -66,7 +86,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
-		if (line.length > 0 && !raw) {
+		if (line.length > 0 && !raw && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
 			if (line.slice(0, 6) == "title:") {
 				//TODO pull out the html tags for the page title
 				$("div .header").html(line.slice(6));
@@ -147,6 +167,8 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					} else {
 						url += "?" + "topic=" + bjc.file + "&step=" + num;
 					}
+                    url += hiddenString;
+                    console.log(url);
 					num += 1;
 					temp.attr({'href': url});
 					item.append(temp);
@@ -215,7 +237,11 @@ bjc.isTag = function(s) {
 
 
 if (getParameterByName("topic") != "") {
-	bjc.file = getParameterByName("topic");
+    if (typeof getParameterByName("topic") == "object") {
+        bjc.file = getParameterByName("topic")[0];
+    } else {
+        bjc.file = getParameterByName("topic");
+    }
 	$.ajax({
 		url : bjc.rootURL + "/topic/" + bjc.file,
 		type : "GET",
