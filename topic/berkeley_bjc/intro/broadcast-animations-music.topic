@@ -41,7 +41,7 @@ heading: Game controls
 heading: Activities
 	resource: Electric Keyboard [/bjc-r/cur/programming/variables/electric-keyboard.html]
 	
-heading: Exercises
-	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
+//heading: Exercises
+//	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
 
 }
