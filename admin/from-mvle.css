@@ -34,7 +34,10 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 
 .Question {
     background-color: #FFFFFF;
+	margin-bottom: 15px;
+	margin-top: 15px;
     border: solid 1px #1e69ff;
+
 }
 
 .questionCountBox {
