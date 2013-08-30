@@ -509,6 +509,17 @@ img.center {
 	display: block;
 }
 	
+	
+img.indent {
+	margin-left: 10%;
+	display: block;
+}
+
+div.indent {
+	margin-left: 10%;
+}
+	
+	
 .centeredImages {
 	text-align:center;
 	margin:0 auto; 
