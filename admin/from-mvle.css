@@ -33,6 +33,10 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 }
 
 .Question {
+    background-color: #FFFFFF;
+	margin-bottom: 15px;
+	margin-top: 15px;
+    border: solid 1px #1e69ff;
 
 }
 
@@ -50,12 +54,15 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 	font-size: 1em;
 	/* text-transform: uppercase; */
 	padding: 5px 15px;
+    background-color: #1e69ff;
+    color: #FFFFFF;
 }
 
 .questionType tt {
 	/* looks OK in IE, too small in firefox, ug.  Firefox at 150% is about right, 130% in IE is right */
 	font-size: 135%;
 	font-weight: 500;
+    color: 
 }
 
 .helpIcon {
@@ -307,13 +314,13 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 .MultipleChoice .currentQuestionBox .leftColumn {
     float: left;
     width: 85%;
-    padding: 10px 0px;
+    padding: 10px 0px 10px 15px;
     min-height: 300px;
 }
 
 .MultipleChoice .currentQuestionBox .rightColumn {
     float: right;
-    width: 14%;
+    width: 12%;
     padding: 10px 0px;
     text-align: center;
     color: white;
@@ -458,7 +465,7 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 
 .MultipleChoice .buttonDiv {
     min-height: 31px;
-	background-color:#FF9D1E;
+	background-color: #FFFFFF;
 	
 }
 
