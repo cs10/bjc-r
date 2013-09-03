@@ -20,7 +20,11 @@ bjc.editURLs = function() {
         });
     });
     $("a").each(function() {
-        this.href = this.href + "&course=" + document.location.href.split("?")[0].split("/").pop();
+        if (document.location.href.indexOf("/bjc-r/course") == -1) {
+            this.href + "&course=" + document.location.href;
+        } else {
+            this.href = this.href + "&course=" + document.location.href.split("?")[0].split("/").pop();
+        }
     });
 }
 

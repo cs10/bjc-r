@@ -1100,5 +1100,22 @@ a.run {
 	padding-right: 13px;
 }
 
+li .course_link {
+    font-size:100%;
+    display:inline;
+    font-weight:bold;
+	padding-left:20px;
+}
+
+.course_link {
+    display:block;
+    margin-bottom: 10px;
+    font-size:large;
+    background-image: url("../img/web/globe.png");
+	background-size:contain;
+	background-repeat:no-repeat;
+	padding-left:25px;
+}
+
 
 
