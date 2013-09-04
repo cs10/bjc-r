@@ -21,6 +21,7 @@ bjc.CORSproxy = "www.corsproxy.com";
 
 bjc.CORSCompliantServers = [];
 bjc.CORSCompliantServers.push("bjc.berkeley.edu");
+bjc.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 bjc.CORSCompliantServers.push("snap.berkeley.edu");
 
 
