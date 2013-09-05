@@ -14,9 +14,7 @@
 // NOTE: this is built in bjc-library.js if not built here...
 var bjc = {};
 // rootURL also spec'ed in bjc-library.js
-var loc = window.location.pathname;
-var dir = loc.substring(0, loc.lastIndexOf('/'));
-bjc.rootURL = dir;
+bjc.rootURL = "/~cs10/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
