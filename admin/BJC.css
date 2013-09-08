@@ -125,10 +125,12 @@ em {
 	font-style:italic;
 }
 
+/* Should try to avoid tt; deprecated & unsupported tag */
 tt {
 	font-size:120%;
 	font-weight:580;
 	line-height:100%;
+    font-family: monospace;
 }
 	
 code {

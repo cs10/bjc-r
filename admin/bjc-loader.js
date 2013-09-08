@@ -14,7 +14,7 @@
 // NOTE: this is built in bjc-library.js if not built here...
 var bjc = {};
 // rootURL also spec'ed in bjc-library.js
-bjc.rootURL = "/~cs10/bjc-r";
+bjc.rootURL = "/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
@@ -122,4 +122,3 @@ bjc.initialSetUp = function() {
 };
 
 bjc.initialSetUp();
-
