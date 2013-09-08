@@ -40,7 +40,7 @@ bjc.getSnapRunURL = function(targeturl) {
 		// internal resource!
 		var finalurl = bjc.snapRunURLBase + "http://";
 		var currdom = document.domain;
-console.log(currdom);
+        // console.log(currdom);
 		// why not, for the devs out there...
 		if (currdom == "localhost") {
 			currdom = "bjc.berkeley.edu";
