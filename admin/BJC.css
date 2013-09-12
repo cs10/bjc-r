@@ -511,6 +511,9 @@ img.center {
 	display: block;
 }
 	
+img.inline {
+	vertical-align: top;
+}
 	
 img.indent {
 	margin-left: 10%;
