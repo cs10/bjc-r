@@ -54,6 +54,13 @@ var tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 bjc.renderFull = function(data, ignored1, ignored2) {
+    if (getParameterByName("course") != "") {
+        var course_link = getParameterByName("course");
+        if (course_link.indexOf("http://") == -1) {
+            course_link = "/bjc-r/course/" + course_link;
+        }
+        $("#full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Got to Main Course Page"));
+    }
     if (typeof getParameterByName("topic") == "object") {
         bjc.file = getParameterByName("topic")[0];
     } else {
@@ -83,6 +90,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 	var num = 0;
 	var indent = "";
 	var url = document.URL;
+    var course = getParameterByName("course");
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
@@ -167,8 +175,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 					} else {
 						url += "?" + "topic=" + bjc.file + "&step=" + num;
 					}
-                    url += hiddenString;
-                    console.log(url);
+                    url += hiddenString + "&course=" + course;
 					num += 1;
 					temp.attr({'href': url});
 					item.append(temp);
