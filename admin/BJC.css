@@ -57,6 +57,7 @@ img {border:0px;}
 a:visited {color:#36BBCE;}
 
 #full {
+	padding: 1em;
 	/* moved margin stuff  to body */
 
 }
