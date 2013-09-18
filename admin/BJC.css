@@ -126,10 +126,12 @@ em {
 	font-style:italic;
 }
 
+/* Should try to avoid tt; deprecated & unsupported tag */
 tt {
 	font-size:120%;
 	font-weight:580;
 	line-height:100%;
+    font-family: monospace;
 }
 	
 code {
@@ -1071,11 +1073,20 @@ blockquote {
 	font-weight: bold; 
 }
 
+/* This is a container element for the iframe */
+#cont {
+    width: 90%;
+    min-height: 500px;
+    height: 80%;
+    position: absolute;
+}
+/* iframe at the beginning of labs. */
 .step_frame {
 	width:100%;
-	min-height:500px;
-	position:relative;
-	/*z-index:-1;*/
+    height: 100%;
+    display: block;
+/*    position:relative;*/
+    /*z-index:-1;*/
 	
 }
 

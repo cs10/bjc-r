@@ -95,8 +95,8 @@ bjc.secondarySetUp = function() {
 	bjc['step'] = parseInt(getParameterByName("step"));
     var temp = getParameterByName("topic");
 	if (temp != "" && !isNaN(bjc['step'])) {
-        console.log("stuff happening");
-        console.log(bjc['step']);
+        // console.log("stuff happening");
+        // console.log(bjc['step']);
 		// we want to put the nav bar at the top!
 		if (getParameterByName("step") == "") {
 			// TODO -- this shouldn't happen, but we could intelligently find which
@@ -321,8 +321,9 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 bjc.addFrame = function() {
 	var source = getParameterByName("src");
 	$("#full").append('<a href=' + source + ' target="_">Open page in new window</a><br><br>');
+    $("#full").append('<div id="cont"></div>');
 	var frame = $(document.createElement("iframe")).attr({'src': source, 'class': 'step_frame'});
-	$("#full").append(frame);
+	$("#cont").append(frame);
 }
 
 bjc.goBack = function() {
