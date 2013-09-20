@@ -238,21 +238,13 @@ th {
 	font-size:16px;
 }
 
-h1 {padding:10px 0px;}
-h2 {font:900 26px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;}
-h3 {font:900 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;}
-h4 {padding:10px 15px;}
-h5 {padding:10px 15px;}
-h6 {padding:10px 15px;}
+h1 {padding:10px 0px; color: #000000; }
+h2 {font:900 26px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;	color: #000000;}
+h3 {font:900 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;	color: #000000;}
+h4 {padding:10px 15px;	color: #000000;}
+h5 {padding:10px 15px;	color: #000000;}
+h6 {padding:10px 15px;	color: #000000;}
 
-/* from mvle.css
-h1 {font-size: 2.0em;}
-h2 {font-size: 1.5em;}
-h3 {font-size: 1.4em;}
-h4 {font-size: 1.2em;}
-h5 {font-size: .9em;}
-h6 {font-size: .8em;}
-*/
 
 
 .header {
