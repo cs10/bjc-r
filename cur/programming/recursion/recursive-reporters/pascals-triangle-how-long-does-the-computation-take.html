@@ -9,7 +9,7 @@
 <body>
 <p>Here's our solution:
 </p>
-<p><img src="/bjc-r/img/recur/reporters/pascal-script.png" width="336" height="179" alt="pascal script" /></p>
+<p><img src="/bjc-r/img/recur/reporters/pascal-script.png" alt="pascal script" /></p>
 <p>If the desired position is at the left (<code>column=0</code>) or the right (<code>column=row</code>) end of a row, then the value is 1. That's the base case. In the recursive case, the desired value is the sum of two values in the previous row (the two recursive calls).</p>
 <p>This is like the other examples we've seen in that what's reported is the result from a combiner block, in this case <code>+</code>. But it's different in that the two things being combined are both recursive calls.</p>
 <p>Just how many recursive calls are needed to compute a value in Pascal's Triangle? In, let's say, the middle of row 10? (Values near an end of a row are faster to compute because they reach a base case quickly.)</p>
@@ -19,7 +19,7 @@
 <p>As a first approximation, pretend that the computation would never reach a base case until row 0. Then a value in row 10 will make two recursive calls into row 9. Each of those will make two recursive calls, for a total of four into row 8. Each of <em>those </em>makes two recursive calls, so there are eight calls into row 7, 16 into row 6, 32 into row 5, 64 into row 4, 128 into row 3, 256 into row 2, 512 into row 1, and 1024 into row 0! In reality the situation isn't quite so bad, because by row 5 you're already hitting the ends of the row. But still, roughly speaking, it takes something like 2<sup><em>n</em></sup> recursive calls to find a value near the middle of row <em>n</em> of the triangle.</p>
 <blockquote>
   <p>☞ Make a global variable called <code>count</code> and set it to 0. Modify your <code>pascal</code> script to keep count of recursive calls:</p>
-  <p><img src="/bjc-r/img/recur/reporters/pascal-count.png" width="336" height="201" alt="pascal script with counter" /></p>
+  <p><img src="/bjc-r/img/recur/reporters/pascal-count.png" alt="pascal script with counter" /></p>
   <p>How many calls are actually made when you compute <code>pascal 10 5</code>? <code>pascal 12 6</code>? (Don't forget to reset <code>count</code> to 0 for each experiment.) Make a guess for <code>pascal 14 7</code> and see how close you come.</p>
 </blockquote>
 <p>If all those recursive calls were really contributing new information to the result, then the slowness of this algorithm would be unfortunate but unavoidable. In fact, though, a lot of them are redundant. Consider these calls:</p>
