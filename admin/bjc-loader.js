@@ -28,7 +28,7 @@ bjc.paths.complete_funs = [];
 bjc.paths.scripts[0] = ["/admin/jquery-1.9.1.min.js", "/admin/bjc-library.js"];
 bjc.loaded['bjc-library']= false;
 bjc.paths.complete_funs[0] = function() {
-	return (( typeof jQuery == 'function') &&
+	return (( typeof jQuery == 'function') && 
 	        ( bjc.loaded['bjc-library'])
 	);
 }
@@ -41,7 +41,7 @@ bjc.paths.scripts[1] = ["/admin/jquery-ui.1.10.2.min.js", "/admin/quiz/multiplec
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
-	return ((bjc.loaded['multiplechoice'] ) &&
+	return ((bjc.loaded['multiplechoice'] ) && 
 	        (typeof jQuery.ui !== 'undefined')
 	);
 }
@@ -72,7 +72,7 @@ bjc.initialSetUp = function() {
 		tag.media = "screen";
 		headElement.appendChild(tag);
 	}
-
+	
 	// load scripts, starting at stage 0
 	loadScripts(0);
 
@@ -107,7 +107,7 @@ bjc.initialSetUp = function() {
 			proceedWhenComplete(stage_num);
 		}
 	}
-
+	
 	function proceedWhenComplete(stage_num) {
 		if (bjc.paths.complete_funs[stage_num]()) {
 			if ((stage_num + 1) < bjc.paths.scripts.length) {
@@ -122,3 +122,4 @@ bjc.initialSetUp = function() {
 };
 
 bjc.initialSetUp();
+
