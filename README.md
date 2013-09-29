@@ -24,7 +24,7 @@ server.__
 ### Mac OS X
 1. Run the following command to start the apache server.
 `sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist`
-NOTE: The Apache server will be persistant across restarts.
+NOTE: The Apache server will be persistent across restarts.
 2. Copy the `/bjc-r` directory to `/Library/WebServer/Documents/`
   (You may need administrator privileges to do this.)
 3. Navigate to `[http://localhot/bjc-r](http://localhot/bjc-r)` in a browser.
