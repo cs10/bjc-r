@@ -59,7 +59,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
         if (course_link.indexOf("http://") == -1) {
             course_link = "/bjc-r/course/" + course_link;
         }
-        $("#full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Got to Main Course Page"));
+        $("#full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Go to Main Course Page"));
     }
     if (typeof getParameterByName("topic") == "object") {
         bjc.file = getParameterByName("topic")[0];
