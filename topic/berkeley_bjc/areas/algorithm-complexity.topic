@@ -30,6 +30,6 @@ heading: Timing Experiments
 	resource: Logarithmic-Time [/bjc-r/cur/programming/algorithms/timing/logarithmic-time.html]
 
 heading: Homework
-	resource: Evil Hangman [/bjc-r/cur/programming/projects/hangman/evil-hangman.html]
+	assignment: Evil Hangman [/bjc-r/cur/programming/projects/hangman/evil-hangman.html]
 	
 }
