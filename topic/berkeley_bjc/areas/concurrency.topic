@@ -32,7 +32,7 @@ heading: Two heads are better than one.
 	resource: Snap! Machine Concepts [/bjc-r/cur/programming/concurrency/snap/snap-machine-concepts.html] 
 	resource: Snap! Play [/bjc-r/cur/programming/concurrency/snap/snap-play-1.html]
 	resource: Snap! Debug [/bjc-r/cur/programming/concurrency/snap/snap-debug.html]
-	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-1.html]
+	resource: Reflection [/bjc-r/cur/programming/concurrency/snap/reflection-snap-1.html]
 
 heading: Snap!... don't all talk at once!
 	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-2.html]
