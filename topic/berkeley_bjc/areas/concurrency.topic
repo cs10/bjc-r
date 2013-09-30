@@ -29,22 +29,22 @@ heading: Background: concurrency without the computer
 	forum: Concurrency in real life... [/bjc-r/cur/programming/concurrency/concurrency-in-real-life.html]
 	
 heading: Two heads are better than one.
-	resource: Scratch Machine Concepts [/bjc-r/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
-	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-1.html]
-	resource: Scratch Debug [/bjc-r/cur/programming/concurrency/scratch/scratch-debug.html]
+	resource: Snap! Machine Concepts [/bjc-r/cur/programming/concurrency/scratch/scratch-machine-concepts.html] 
+	resource: Snap! Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-1.html]
+	resource: Snap! Debug [/bjc-r/cur/programming/concurrency/scratch/scratch-debug.html]
 	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-1.html]
 
-heading: Scratch... don't all talk at once!
+heading: Snap!... don't all talk at once!
 	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-2.html]
-	resource: Scratch Modify [/bjc-r/cur/programming/concurrency/scratch/scratch-modify.html] 
+	resource: Snap! Modify [/bjc-r/cur/programming/concurrency/scratch/scratch-modify.html] 
 	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
 	//quiz: Quiz
 	resource: These are the possible values [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-answer.html]
-	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-2.html]
+	resource: Snap! Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-2.html]
 
-heading: Scratch... some details to form a mental model
+heading: Snap!... some details to form a mental model
 	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-3.html]
-	resource: Scratch Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-3.html] 
+	resource: Snap! Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-3.html] 
 	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-3.html]
 
 
