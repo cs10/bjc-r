@@ -35,7 +35,7 @@ heading: Two heads are better than one.
 	resource: Reflection [/bjc-r/cur/programming/concurrency/snap/reflection-snap-1.html]
 
 heading: Snap!... don't all talk at once!
-	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-2.html]
+	resource: Overview [/bjc-r/cur/programming/concurrency/snap/overview-snap-2.html]
 	resource: Snap! Modify [/bjc-r/cur/programming/concurrency/scratch/scratch-modify.html] 
 	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
 	//quiz: Quiz
