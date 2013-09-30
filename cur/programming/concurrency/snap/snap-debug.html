@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<!-- put the following in exactly -->
+  
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js">
+			
+		</script>
+  <title>Snap! Debug</title>
+
+  
+<!--ORIGINAL NAME: Snap! Debug-->
+</head><body>
+<p> When you put two "When green flag ..." hat blocks in the same
+sprite, both will run at the same time! Similarly, if multiple sprites
+all have "When green flag..." hat blocks, these will run concurrently
+as well. </p>
+
+<p>Open this Snap! file <code><a href="/bjc-r/prog/Snap/SerialVsParallelBuggy.xml">SerialVsParallelBuggy</a></code>,
+and click the green flag. Two things will get drawn: </p>
+
+<ul>
+
+  <li> You will see one 'serial' gold square sprite (ten pixels on a
+side) paint the area on the right by stamping itself. </li>
+  <li> You will also see two blue 'parallel' 10x10 sprites sharing the
+labor of painting the area on the left by stamping themselves. </li>
+</ul>
+
+<p> (Two screenshots are included below) The first thing to note is
+that the parallel side finished in exactly half the time of the serial
+side. Discuss with your partner why this is. </p>
+
+<p> The second thing to note is that there is a slight concurrency bug.
+The first blue squares for the 1 and 2 sprites appear not to get
+stamped. Fix this bug so that there are no missing stamps. </p>
+
+<p>First, a screenshot taken during computation.</p>
+
+<img style="width: 478px; height: 361px;" alt="parallel vs serial start" class="center" src="../../../../img/conc/parallel-vs-serial-start.png">
+<p>Second, a screenshot taken after computation has finished.</p>
+
+<img style="width: 480px; height: 361px;" alt="parallel vs serial end" class="center" src="../../../../img/conc/parallel-vs-serial-end.png">
+</body></html>
