@@ -1,7 +1,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Constant-Time</title><!--ORIGINAL NAME: Constant-Time--></head><body>
+<html><head>
+<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Constant-Time</title><!--ORIGINAL NAME: Constant-Time--></head><body>
 
-<p>&nbsp;&nbsp;&nbsp;&nbsp;In the timing experiments of the previous section, you may have noticed that the computer takes approximately the same time to increment a number, even though the number was made progressively larger. &Acirc;&nbsp;Computer scientists (programmers and theorists) thus call incrementing a number a <strong>constant-time</strong> operation. &Acirc;&nbsp;In fact, <em>any</em>&Acirc;&nbsp;basic arithmetic operation (addition, subtraction, multiplication, division, and exponentiation) is considered to be a constant-time operation.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Notice that we call these operations <em>constant-time</em>&Acirc;&nbsp;operations, but we don't actually say how much time they take. &Acirc;&nbsp;Different computers will take different amounts of time to perform the same operation. &Acirc;&nbsp;To report the exact time of any algorithm, we would have to also report the physical configurations of the computer that the algorithm was run on. &Acirc;&nbsp;This gets very difficult and annoying very fast, especially with the almost infinite variety of computers available today. &Acirc;&nbsp;Instead, we focus on how the running time of an algorithm scales as we scale its inputs to larger and larger sizes, because this is a property of the algorithm itself, and is independent of the computer that it is run on.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Why did the computer take approximately the same amount of time to increment a number, even though that number was getting larger? &Acirc;&nbsp;Think about how you would add one to a number, back from your elementary school days; this is similar to how a computer does its arithmetic (ignoring technical details). &Acirc;&nbsp;The elementary school way of adding numbers goes digit by digit, and so the amount of time it takes for you to add two numbers depends on how many digits each number has. &Acirc;&nbsp;As we doubled the number we were incrementing, we didn't consistently add digits to it, and so the computer took approximately the same time. &Acirc;&nbsp;Even as we began scaling the number by ten, the computer (and you!) takes a relatively really small amount of time to account for the extra digit, so the total time remains approximately constant.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Constant-time operations are the Holy Grail of computer science algorithms, and unfortunately, most algorithms are <em>not</em>&Acirc;&nbsp;constant-time, as we will soon see.</p>   </body></html>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In the timing experiments of the previous
+section, you may have noticed that the computer takes approximately the
+same time to increment a number, even though the number was made
+progressively larger.&nbsp; Computer scientists (programmers and
+theorists) thus call incrementing a number a <strong>constant-time</strong> operation.&nbsp; In fact, <em>any</em>
+basic arithmetic operation (addition, subtraction, multiplication,
+division, and exponentiation) is considered to be a constant-time
+operation.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Notice that we call these operations <em>constant-time</em>
+operations, but we don't actually say how much time they take.&nbsp;
+Different computers will take different amounts of time to perform the
+same operation.&nbsp; To report the exact time of any algorithm, we
+would have to also report the physical configurations of the computer
+that the algorithm was run on.&nbsp; This gets very difficult and
+annoying very fast, especially with the almost infinite variety of
+computers available today.&nbsp; Instead, we focus on how the running
+time of an algorithm scales as we scale its inputs to larger and larger
+sizes, because this is a property of the algorithm itself, and is
+independent of the computer that it is run on.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Why did the computer take approximately the
+same amount of time to increment a number, even though that number was
+getting larger?&nbsp; Think about how you would add one to a number,
+back from your elementary school days; this is similar to how a
+computer does its arithmetic (ignoring technical details).&nbsp; The
+elementary school way of adding numbers goes digit by digit, and so the
+amount of time it takes for you to add two numbers depends on how many
+digits each number has.&nbsp; As we doubled the number we were
+incrementing, we didn't consistently add digits to it, and so the
+computer took approximately the same time.&nbsp; Even as we began
+scaling the number by ten, the computer (and you!) takes a relatively
+really small amount of time to account for the extra digit, so the
+total time remains approximately constant.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Constant-time operations are the Holy Grail
+of computer science algorithms, and unfortunately, most algorithms are <em>not</em> constant-time, as we will soon see.</p>   </body></html>
