@@ -12,7 +12,7 @@ big-idea: Explore the history and development of encryption techniques
 	reading: Blown to Bits: Chapter 5 Part 3 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt3.pdf]
 
 h2: Activities
-In Scratch/BYOB what are the issues/facilities to do parallel work, and how does the machine work?
+In Snap! what are the issues/facilities to do parallel work, and how does the machine work?
 
 learning-goal: A single sprite has control blocks which appear to respond in parallel (e.g., multiple "when green flag, do...", "when space is clicked, do...", "when I receive broadcast", etc.)
 learning-goal: Multiple sprites only exacerbate the problem, and race conditions could occur (e.g., what if multiple sprites tried to paint the screen their color all at the same time?)
