@@ -43,9 +43,9 @@ heading: Snap!... don't all talk at once!
 	resource: Snap! Play [/bjc-r/cur/programming/concurrency/snap/snap-play-2.html]
 
 heading: Snap!... some details to form a mental model
-	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-3.html]
-	resource: Snap! Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-3.html] 
-	resource: Reflection [/bjc-r/cur/programming/concurrency/scratch/reflection-3.html]
+	resource: Overview [/bjc-r/cur/programming/concurrency/snap/overview-snap-3.html]
+	resource: Snap! Play [/bjc-r/cur/programming/concurrency/snap/snap-play-3.html] 
+	resource: Reflection [/bjc-r/cur/programming/concurrency/snap/reflection-snap-3.html]
 
 
 }
