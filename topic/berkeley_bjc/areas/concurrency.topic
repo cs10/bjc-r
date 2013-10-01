@@ -37,10 +37,10 @@ heading: Two heads are better than one.
 heading: Snap!... don't all talk at once!
 	resource: Overview [/bjc-r/cur/programming/concurrency/snap/overview-snap-2.html]
 	resource: Snap! Modify [/bjc-r/cur/programming/concurrency/snap/snap-modify.html] 
-	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-script.html]
+	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-script-snap.html]
 	//quiz: Quiz
-	resource: These are the possible values [/bjc-r/cur/programming/concurrency/scratch/read-and-finish-with-n-answer.html]
-	resource: Snap! Play [/bjc-r/cur/programming/concurrency/scratch/scratch-play-2.html]
+	resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-answer-snap.html]
+	resource: Snap! Play [/bjc-r/cur/programming/concurrency/snap/snap-play-2.html]
 
 heading: Snap!... some details to form a mental model
 	resource: Overview [/bjc-r/cur/programming/concurrency/scratch/overview-3.html]
