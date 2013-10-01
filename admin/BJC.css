@@ -911,7 +911,7 @@ blockquote {
 
 /* Begin items controlled primarily by .topic div */
 .quiz {background-image:url(../img/web/multiplechoice28.png);}
-.assignment {background-image:url(../img/web/note28.png);}
+.assignment, .homework {background-image:url(../img/web/note28.png);}
 .resource {background-image:url(../img/web/course-resources-32.png);}
 .forum {background-image:url(../img/web/pageLink.png);}
 .video {background-image:url(../img/web/slideshowIcon.png);}
