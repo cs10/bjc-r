@@ -13,14 +13,14 @@ learning-goal: See how patterns emerge from visualization
 learning-goal: Validate a hypothesis (question) using the computer
 
 heading: Forensic Analysis of GPS data
-        resource: Introduction [/cur/programming/data/introgps.html]
-        resource: The Data [/cur/programming/data/thedata.html]
-        resource: Practice: Pre-Processing Data [/cur/programming/data/preprocess.html]
-        resource: Practice: Visualizing Data [/cur/programming/data/visualizing.html]
-        resource: Practice: Drawing Conclusions [/cur/programming/data/conclusions.html]     
+        resource: Introduction [/bjc-r/cur/programming/data/introgps.html]
+        resource: The Data [/bjc-r/cur/programming/data/thedata.html]
+        resource: Practice: Pre-Processing Data [/bjc-r/cur/programming/data/preprocess.html]
+        resource: Practice: Visualizing Data [/bjc-r/cur/programming/data/visualizing.html]
+        resource: Practice: Drawing Conclusions [/bjc-r/cur/programming/data/conclusions.html]     
 
 heading: Spam vs Ham
-        resource: Introduction [/cur/programming/data/introspam.html]
-        resource: Text Messages [/cur/programming/data/spamdata.html]
-        resource: Practice: Filtering Spam [/cur/programming/data/filterspam.html]
+        resource: Introduction [/bjc-r/cur/programming/data/introspam.html]
+        resource: Text Messages [/bjc-r/cur/programming/data/spamdata.html]
+        resource: Practice: Filtering Spam [/bjc-r/cur/programming/data/filterspam.html]
 }
