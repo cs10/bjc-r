@@ -1,17 +1,13 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
-<html><head>
-<!-- put the following in exactly -->
-  
-  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
-  <title>Snap! Machine Concepts</title>
+<html><head><!-- put the following in exactly -->
+
 
   
-<!--ORIGINAL NAME: Snap! Machine Concepts-->
-</head><body>
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Snap! Machine Concepts</title><!--ORIGINAL NAME: Snap! Machine Concepts--></head><body>
 <p> Snap! supports parallelism! The programming environment is full
 of concurrency, implicit (two scripts both start when the green flag is
 clicked, or when they receive the same broadcast message), and explicit
-(the launch block). Let's first explore the explicit kind, then we'll
+(the launch block). Let's first explore the explicit kind, then we will
 play with the implicit kind a bit. </p>
 
 <p> Let's try to use concurrency for what it was meant for: <b>speed!</b>
@@ -21,27 +17,27 @@ play with the implicit kind a bit. </p>
 
 <ol>
 
-  <li> The first that Snap! is like a parent with lots of kids, the
+  <li> Snap! is like a parent with lots of kids, the
 parent wants to give the kids equal attention. So if there are 3 things
 happening at one time, Snap! will rotate among the three of them,
 giving each of them a chance to do their "thing" (e.g., complete one
-iteration of a loop, say). It will choose the same order every time, in
+iteration of a loop). It will choose the same order every time, in
 a very predictable way. This is known as time-sharing. </li>
   <li>
-The second is that Snap! has a speed governor so that projects
-run the same speed on different machines. It's obvious why that's
+Snap! has a speed governor so that projects
+can run at the same speed on different machines. It is obvious why that is
 important&#8212;imagine developing this great Pac Man game on your parent's
 slow computer and working very hard to get the timing just right so
-it's not too fast or slow. However, when you share it with others who
+it is not too fast or slow. However, when you share it with others who
 have faster machines, it runs too fast to play (because the other
 computers have a faster "heartbeat", the clock rate). So Snap! slows
-itself down on faster computers so that it always looks like it's
+itself down on faster computers so that it always looks like it is
 running on the same, slow, computer. The reason this is relevant in the
 discussion of concurrency is that (on the vast majority of computers)
 Snap! spends a lot of time just sitting there, waiting, so it has
 lots of idle "cycles" to handle multiple things running at the same
 time. </li>
-  <li> The third is that Snap! actually does NOT make use of more
+  <li> Snap! actually does NOT make use of more
 than one core (independent hardware computation unit), it runs
 everything in one core and time shares any parallel task on the single
 core. This gives Snap! much more control over its parallelism, since
