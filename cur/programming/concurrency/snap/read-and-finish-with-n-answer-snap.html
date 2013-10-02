@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head><!-- put the following in exactly -->
+
+	
+		
+		<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>These are the possible values.</title><!--ORIGINAL NAME: Quiz Answer Explained--></head><body>
+
+
+<p>The answer is: all the permutations of 1,2,3 where all three numbers
+are present (there are six of them) + all the permutations of 1,2,3
+where only two numbers are present (also six of these) + all the
+permutations of 1,2,3 where only one number is present (three
+possibilities) for a total of fifteen possibilities.</p> 
+  <ul>
+    <li>If
+all three numbers are present, it is as if we were deterministic. Here
+is how it could happen (for this example order, all 6 permutations are
+possible = {123, 132, 213, 231, 312, 321}): <ul> 
+      <li>finish starts empty</li> 
+      <li>1 reads finish (), joins its 1, finish is now 1.</li> 
+      <li>2 reads finish (1), joins its 2, finish is now 12.</li> 
+      <li>3 reads finish (12), joins its 3, finish is now 123.</li> 
+      <li>finish is 123</li> 
+    </ul>
+    </li> 
+    <li>If
+only two numbers were present, we had a race condition, and here is how
+it could happen (again, all 6 combinations and permutations are
+possible = {12, 21, 13, 31, 23, 32}): <ul> 
+        <li>finish starts empty</li> 
+        <li>3 reads finish () into its hold</li> 
+        <li>1 reads finish () into its hold</li> 
+        <li>3 joins its 3 to the number it held (), finish is now 3</li> 
+        <li>1 joins its 1 to the number it held () and sets finish to 1. The 3 is now lost, <em>clobbered</em> due to a race condition.</li> 
+        <li>2 reads finish (1), joins its 2, finish is now 12.</li> 
+        <li>finish is 12</li> 
+      </ul> 
+      </li> 
+      <li>If
+only one number were present, we also had a race condition, and here is
+how it could happen (again, all permutations possible = {1, 2, 3}): <ul> 
+        <li>finish starts empty</li> 
+        <li>1 reads finish () into its hold</li> 
+        <li>2 reads finish () into its hold</li> 
+        <li>3 reads finish () into its hold</li> 
+        <li>3 joins its 3, finish is now 3</li> 
+        <li>2 joins its 2 to the number it held () and sets finish to 2. The 3 is now lost, <em>clobbered</em> due to a race condition.</li> 
+        <li>1 joins its 1 to the number it held () and sets finish to 1. The 2 is now lost, <em>clobbered</em> due to a race condition.</li> 
+        <li>finish is 1</li> 
+      </ul> 
+      </li> 
+  </ul>
+
+	</body></html>

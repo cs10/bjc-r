@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<!-- put the following in exactly -->
+  
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+  <title>Snap! Play</title>
+
+  
+<!--ORIGINAL NAME: Snap! Play-->
+</head><body>
+<p align="center"><img alt="lauch tutorial code" src="../../../../img/lab-9/lauch-tutorial-code-snap.png" style="border: 3px solid ; width: 191px; height: 418px;"> </p>
+
+<p> First, to understand the idea of two things happening at once, open
+this Snap! file <code><a href="/bjc-r/prog/Snap/LaunchTutorial.xml">LaunchTutorial</a></code>
+(shown above). After you click the green flag, let it run for a bit,
+then hit the space bar once. Then hit it again, and again. Talk with
+your partner about what is happening, and why. </p>
+
+<p> (Answer: When you hit the green flag, the sprite starts off running
+in a
+circle, because it is moving and turning at the same time. Now,
+whenever
+you hit the space key the sprite's circles become wider because it is
+moving <em>more</em>
+than before, and it only does that because its MOVE <em>threads</em>
+are increasing, not the number of steps per single move. For example,
+Snap!
+initially gives equal time to its 2 "forever" children -- one that
+turns and one that moves 5 steps. So it is move, turn, move, turn,
+etc.,
+yielding a (360/15 =) 24-sided polygon with 5-step sides. The next time
+space bar is pressed, another "child" is born, so now the three
+equal-time children are: "turn", "move" and "move", yielding a 24-sided
+polygon with 10-step sides, or a "circle" of twice the size) </p>
+
+</body></html>

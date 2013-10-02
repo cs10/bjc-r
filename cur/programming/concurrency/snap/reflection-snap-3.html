@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<!-- put the following in exactly -->
+  
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+  <title>Reflection</title>
+
+  
+<!--ORIGINAL NAME: Reflection-->
+</head><body>
+When lots of broadcasts are coming through into a receive block,
+there are three possibilities:
+    <br>
+<ol>
+  <li>If you want <em>all</em> of them to take effect, use "<code>broadcast
+_ and wait</code>"</li>
+  <li>If you do not need all of them to take effect, but want to keep
+all of your inner data structures consistent, make sure you have <code>Edit-&gt;Thread
+Safe Scripts</code> checked.</li>
+
+    
+  <li>If you have Edit-&gt;Thread Safe Scripts unchecked, you cannot
+trust Snap! to preserve your Loop Invariants!</li>
+
+    
+  <li>Lesson: The first thing you should always do is check <code>Edit-&gt;Thread
+Safe Scripts</code>! </li>
+
+  
+</ol>
+
+
+</body></html>
