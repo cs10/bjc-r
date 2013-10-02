@@ -1,0 +1,26 @@
+title: Data and BIGDATA
+{
+h2: Big Ideas
+
+big-idea: Learn how to clean data for processing with the computer
+big-idea: Learn how clustering can help infer knowledge from data and answer questions
+big-idea: Learn how to use the computer in interaction with your own brain to draw conclusions from data
+big-idea: Experience how patterns can emerge from computational processing of data
+
+h2: Activities:
+learning-goal: Process data, normalize the values, and visualize them
+learning-goal: See how patterns emerge from visualization
+learning-goal: Validate a hypothesis (question) using the computer
+
+heading: Forensic Analysis of GPS data
+        resource: Introduction [/~cs10/labs/cur/data/introgps.html]
+        resource: The Data [/~cs10/labs/data/thedata.html]
+        resource: Practice: Pre-Processing Data [/~cs10/labs/data/preprocess.html]
+        resource: Practice: Visualizing Data [/~cs10/labs/data/visualizing.html]
+        resource: Practice: Drawing Conclusions [/~cs10/labs/data/conclusions.html]     
+
+heading: Spam vs Ham
+        resource: Introduction [/~cs10/labs/cur/data/introspam.html]
+        resource: Text Messages [/~cs10/labs/cur/labs/spamdata.html]
+        resource: Practice: Filtering Spam [/~cs10/labs/cur/data/filterspam.html]
+}
