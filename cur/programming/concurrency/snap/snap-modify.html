@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><head>
+<!-- put the following in exactly -->
+  
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+  <title>Snap! Modify</title>
+
+  
+<!--ORIGINAL NAME: Snap! Modify-->
+</head><body>
+<p> In the last Snap! exercise, it was a little artificial; the
+sprites were in lock step. Let's take a look at a similar project, <tt>
+<a href="/bjc-r/prog/Snap/Determinism.xml">Determinism</a></tt>. Here,
+four 60x60 sprites do the same thing (color the screen by stamping
+themselves through the <code>Fill Screen</code> command shown below),
+and once they finish, they add their name to the end of the <code>finish</code>
+variable. Run it a couple of times. Boring, right? That was because
+Snap! is still in lock step. </p>
+
+<p> Make a very small change to Fill Screen - have each sprite wait a
+random value between 1 and 1/10 seconds before stamping. (this involves
+the introduction of a very simple command right before the "stamp" call
+in <code>Fill Screen</code>: "wait (1 / (pick random [1] to [10]))
+secs"). Run it a few times; now what happens? (Answer: Four "threads"
+take off, and the slowest (i.e., last) color at each time step is that
+one who colors that 60x60 square). Save this project as a Snap! file
+called <code>NonDeterminism.xml</code>.
+</p>
+
+<img style="width: 215px; height: 188px;" class="center" alt="FillScreen defintion" src="../../../../img/lab-9/fill-screen-code-snap.png" origsrc="http://inst.eecs.berkeley.edu/%7Ecs10/fa10/lab/09/images/FillScreen.gif">
+</body></html>
