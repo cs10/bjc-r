@@ -27,7 +27,7 @@ server.__
 NOTE: The Apache server will be persistent across restarts.
 2. Copy the `/bjc-r` directory to `/Library/WebServer/Documents/`
   (You may need administrator privileges to do this.)
-3. Navigate to `[http://localhot/bjc-r](http://localhot/bjc-r)` in a browser.
+3. Navigate to [http://localhot/bjc-r](http://localhot/bjc-r) in a browser.
 4. To stop the sever from running do:
   `sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist`
   
