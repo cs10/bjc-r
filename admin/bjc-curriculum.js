@@ -22,8 +22,6 @@ bjc.secondarySetUp = function() {
         $(document.body).wrapInner('<div id="full"></div>');
 	}
 
-
-
 	// create Title tag, yo
 	if (getParameterByName("title") != "") {
 		document.title = getParameterByName("title");
@@ -37,6 +35,8 @@ bjc.secondarySetUp = function() {
 	}
 	document.body.style.marginTop = "60px";
 	document.title = $(".header").text();
+    
+    
 
 
 	// fix snap links so they run snap
@@ -95,8 +95,8 @@ bjc.secondarySetUp = function() {
 	bjc['step'] = parseInt(getParameterByName("step"));
     var temp = getParameterByName("topic");
 	if (temp != "" && !isNaN(bjc['step'])) {
-        console.log("stuff happening");
-        console.log(bjc['step']);
+        // console.log("stuff happening");
+        // console.log(bjc['step']);
 		// we want to put the nav bar at the top!
 		if (getParameterByName("step") == "") {
 			// TODO -- this shouldn't happen, but we could intelligently find which
@@ -144,6 +144,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             hiddenString += ("&" + temp2[0] + "=" + temp2[1]);
         }
     }
+    var course = getParameterByName("course");
 	var lines = data.split("\n");
 	var line;
 	var text;
@@ -181,7 +182,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString;
+				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -200,11 +201,11 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString;
+					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
 				} else if (url.indexOf("?") != -1) {
-					url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString;
+					url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
 				} else {
-					url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString;
+					url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
 				}
 				bjc['url_list'].push(url);
 				bjc['topic_list'].push(text);
@@ -242,6 +243,16 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 			}
 		}
 	}
+    
+    if (getParameterByName("course") != "") {
+        var course_link = getParameterByName("course");
+        if (course_link.indexOf("http://") == -1) {
+            course_link = "/bjc-r/course/" + course_link;
+        }
+        list_item = $(document.createElement("li")).attr({'class': 'list_item'});
+        list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Got to Main Course Page"));
+        list.prepend(list_item);
+    }
 	/*nav.hover(function() {
 			list.slideDown(500);
 	}, function() {
@@ -310,8 +321,9 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 bjc.addFrame = function() {
 	var source = getParameterByName("src");
 	$("#full").append('<a href=' + source + ' target="_">Open page in new window</a><br><br>');
+    $("#full").append('<div id="cont"></div>');
 	var frame = $(document.createElement("iframe")).attr({'src': source, 'class': 'step_frame'});
-	$("#full").append(frame);
+	$("#cont").append(frame);
 }
 
 bjc.goBack = function() {
