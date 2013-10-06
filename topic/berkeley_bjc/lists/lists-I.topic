@@ -2,7 +2,7 @@ title: Collecting Data into Lists
 {
 h2: Big Ideas
 // big-idea: Understand the meaning of Turing Completeness.
-big-idea: Understand the concept of recursion.
+// big-idea: Understand the concept of recursion.
 big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
 
 //	video: Programming Paradigms (Dan Garcia) [https://coursesharing.org/courses/6/lectures/13]
@@ -34,7 +34,6 @@ heading: List Mutation
 	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
 
 	
-heading: Homework
-	homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
 	
 }
