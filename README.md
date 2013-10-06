@@ -10,7 +10,7 @@ We have a simple directory structure for lab content.
 The main "production" server for labs is hosted at Berkeley, [here][main].
 
 However, the repository is setup so that any fork can be run using GitHub pages.
-The main BJC repo can be viewed in a live state, [here][gh], or you can use your own
+The main BJC repo can be viewed in a live state, [here](gh), or you can use your own
 fork by visiting the following url: `http://[username].github.io/bjc-r/`, where you
 replace `[username]` with your GitHub account name.
 
