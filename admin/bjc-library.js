@@ -48,6 +48,12 @@ console.log(currdom);
 		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
 			finalurl = finalurl + bjc.CORSproxy + "/";
 		}
+        if (targeturl.indexOf("..") != -1) {
+            var path = window.location.pathname;
+            path = path.split("?")[0];
+            path = path.substring(0, path.lastIndexOf("/") + 1)
+            currdom = currdom + path;
+        }
 		finalurl = finalurl + currdom + targeturl;
 		
 		return finalurl;
