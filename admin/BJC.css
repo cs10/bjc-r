@@ -141,7 +141,7 @@ code {
 p {
 	/*font:1.1em "Times New Roman", Times, serif;*/
 	font:1em Arial, Helvetica, sans-serif;
-
+	color: black;
 	line-height:120%; 
 	vertical-align: bottom;
 	
