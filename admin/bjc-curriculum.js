@@ -250,7 +250,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             course_link = "/bjc-r/course/" + course_link;
         }
         list_item = $(document.createElement("li")).attr({'class': 'list_item'});
-        list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Got to Main Course Page"));
+        list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
         list.prepend(list_item);
     }
 	/*nav.hover(function() {
