@@ -256,7 +256,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     if (getParameterByName("course") != "") {
         var course_link = getParameterByName("course");
         if (course_link.indexOf("http://") == -1) {
-            course_link = bjc.rootURL + "course/" + course_link;
+            course_link = bjc.rootURL + "/course/" + course_link;
         }
         list_item = $(document.createElement("li")).attr({'class': 'list_item'});
         list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
