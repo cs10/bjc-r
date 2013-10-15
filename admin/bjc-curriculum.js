@@ -202,10 +202,19 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
 					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
-				} else if (url.indexOf("?") != -1) {
-					url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
 				} else {
+				    if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
+					if (url[0] == "/") {
+					    url = bjc.rootURL + url;
+					} else {
+					    url = bjc.rootURL + "/" + url;
+					}
+				    }
+				    if (url.indexOf("?") != -1) {
+					url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
+				    } else {
 					url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
+				    }
 				}
 				bjc['url_list'].push(url);
 				bjc['topic_list'].push(text);
@@ -247,7 +256,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     if (getParameterByName("course") != "") {
         var course_link = getParameterByName("course");
         if (course_link.indexOf("http://") == -1) {
-            course_link = "/bjc-r/course/" + course_link;
+            course_link = bjc.rootURL + "/course/" + course_link;
         }
         list_item = $(document.createElement("li")).attr({'class': 'list_item'});
         list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
