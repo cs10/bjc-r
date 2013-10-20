@@ -1,26 +1,60 @@
 <!DOCTYPE html>
-<html><head>
-<!-- put the following in exactly -->
+<html>
+    <head>
+        <!-- put the following in exactly -->
 
-<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>A (Non-Video) Game</title><!--ORIGINAL NAME: A (Non-Video) Game--></head><body>
-	&nbsp;&nbsp;&nbsp;&nbsp;Let's play a number-guessing game (you have already seen this <a href="/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html">in lab 3</a>). &nbsp;<br><br>
-&nbsp;&nbsp;&nbsp;&nbsp;Between your partner and yourself, decide who
-will be person G, the guesser: the other person (person P, for picker)
-picks a number between 1 and 50.&nbsp; Person G asks person P questions
-to determine the chosen number; the only answers that person P can give
-are "yes" or "no".&nbsp; The guesser should try two different
-strategies to playing this game: <br><ol><li>Guessing in sequence: "Is the number 1?", "Is the number 2?", "Is the number 3?", and so on.<br><br></li>
-		<li>Guessing
-halfway:&nbsp; You know the number must be between 1 and 50, so you
-start off by asking "Is the number greater than 25?".&nbsp; If the
-answer is "yes", you instantly know that it must be between 26 and 100,
-so you ask "Is the number greater than 50?"; otherwise, the number must
-be between 1 and 25, so you ask "Is the number greater than 12?"&nbsp;
-Keep asking questions involving the halfway point.</li>
-	</ol>
-&nbsp;&nbsp;&nbsp;&nbsp;Play several (around 3) games: person P should
-pick a wide variety of numbers, while person G should use each strategy
-alternately.&nbsp; As you play each game, think about which strategy
-involves fewer questions.&nbsp; Which strategy would be better if, say,
-the guessing game involved numbers from 1 to 1000?&nbsp; From 1 to a
-million?&nbsp; Discuss why one strategy better than the other? </body></html>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            A (Non-Video) Game
+        </title><!--ORIGINAL NAME: A (Non-Video) Game-->
+    </head>
+    <body>
+        <p>
+            Let's play a number-guessing game (you have already <a href="/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html">seen this before</a>). &nbsp;
+        </p>
+        <p>
+            Between your partner and yourself, decide who
+            will be the <i>guesser</i> and the the <i>picker</i>.
+
+            The picker chooses a number between 1 and 50, privately.
+            The guesser's role is to determine what the number is, and
+            to that end asks the picker questions with the only possible answers
+            being "yes" or "no".
+        </p>
+        <p>
+            The guesser should try two different
+            strategies to playing this game:
+        </p>
+        <ol>
+            <li>
+                <u>Guessing in sequence</u>: "Is the number 1?",
+                "Is the number 2?", "Is the number 3?", and so on.
+            </li>
+            <li>
+                <u>Guessing halfway</u>: You know the number must be between 1 and 50, so you
+                start off by asking "Is the number greater than 25?". If the
+                answer is "yes", you instantly know that it must be between 26 and 50,
+                so you ask "Is the number greater than 37?" (that is, halfway between
+                26 and 50).
+                <br>
+                <br>
+                If the answer to the original question
+                was no, the number must
+                be between 1 and 25, so you ask "Is the number greater than 12?"
+            </li>
+        </ol>
+        <p>
+            Play several times.  The picker should
+            pick a wide variety of numbers, while the guesser should
+            use each strategy
+            alternately.
+        </p>
+        <p class="quoteGreen">
+            As you play each game, think about the ways in which one
+            strategy is better than the other.  Which strategy would be better if, say,
+            the guessing game involved numbers from 1 to 1000?  From 1 to a
+            million?  From 1 to 3?
+            <br><br>
+            Are there other stragtegies you can think of?</p>
+    </body>
+</html>
