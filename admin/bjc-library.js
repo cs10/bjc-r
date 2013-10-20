@@ -40,7 +40,7 @@ bjc.getSnapRunURL = function(targeturl) {
 		// internal resource!
 		var finalurl = bjc.snapRunURLBase + "http://";
 		var currdom = document.domain;
-console.log(currdom);
+        console.log(currdom);
 		// why not, for the devs out there...
 		if (currdom == "localhost") {
 			currdom = "bjc.berkeley.edu";
@@ -48,7 +48,7 @@ console.log(currdom);
 		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
 			finalurl = finalurl + bjc.CORSproxy + "/";
 		}
-        if (targeturl.indexOf("..") != -1) {
+        if (targeturl.indexOf("..") != -1 || targeturl.indexOf(bjc.rootURL) == -1) {
             var path = window.location.pathname;
             path = path.split("?")[0];
             path = path.substring(0, path.lastIndexOf("/") + 1)

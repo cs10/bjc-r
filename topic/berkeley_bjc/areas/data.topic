@@ -1,0 +1,26 @@
+title: Data and BIGDATA
+{
+h2: Big Ideas
+
+big-idea: Learn how to pre-process data for analysing it with the computer
+big-idea: Learn how clustering can help infer knowledge from data and answer questions
+big-idea: Learn how a computer can supplement your own thinking for drawing conclusions from data
+big-idea: Experience how patterns can emerge from computational processing of data
+
+h2: Activities:
+learning-goal: Process data, normalize the values, and visualize them
+learning-goal: See how patterns emerge from visualization
+learning-goal: Validate a hypothesis (question) using the computer
+
+heading: Forensic Analysis of GPS data
+        resource: Introduction [/bjc-r/cur/programming/data/introgps.html]
+        resource: The Data [/bjc-r/cur/programming/data/thedata.html]
+        resource: Practice: Pre-Processing Data [/bjc-r/cur/programming/data/preprocess.html]
+        resource: Practice: Visualizing Data [/bjc-r/cur/programming/data/visualizing.html]
+        resource: Practice: Drawing Conclusions [/bjc-r/cur/programming/data/conclusions.html]     
+
+heading: Spam vs Ham
+        resource: Introduction [/bjc-r/cur/programming/data/introspam.html]
+        resource: Text Messages [/bjc-r/cur/programming/data/spamdata.html]
+        resource: Practice: Filtering Spam [/bjc-r/cur/programming/data/filterspam.html]
+}

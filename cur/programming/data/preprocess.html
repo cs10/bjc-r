@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <!-- put the following in exactly -->
+    <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+    <title>Pre-Processing the GPS Data</title>
+  </head>
+  <body>
+    In subsequent steps of this lab, we will ask you to visualize and
+    work with the data in SNAP. There is no standard solution to
+    do this: It's different for every data set. With this data, we recommend
+    to perform two steps of what's typically
+    called <i>pre-processing</i>:<br>
+    <ol>
+      <li>Remove redundant values, i.e. get rid of information that
+        doesn't make any difference.</li>
+      <li>Center the coordinates so they can be visualized in an x/y-coordinate 
+        system. Data can be easily centered by subtracting
+        the mean of the data from all data points. <br>
+      </li>
+    </ol>
+    <br>
+    Here is an example:<br>
+    The values 123102, 123103, 123104 are only differ in the last digits, so they can be reduced to: 2, 3, 4.
+    For visualization, we can center (or "normalize") them by subtracting the mean (which is 3) from each value. The result is: -1, 0, 1.    
+    <br><br>
+    While you could do this in SNAP, using a text editor and a simple
+    calculator is probably an easier choice. So before you move on to
+    the next step, generate a text file that contains the interesting
+    part of the coordinates, centered, line-by-line.<br>
+    <br>
+  </body>
+</html>
