@@ -1,28 +1,87 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>A quick aside on writing lists on paper...</title><!--ORIGINAL NAME: Your fourth MapReduce : WordCount, a count of the number of times words appears--></head><body><p> This one is a quite a bit harder because of all the list manipulation. The idea is you've got a huge corpus of data and you want to count all the times words appear. Fill in the body for the <img src="/bjc-r/img/hof/mapper-block.gif" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif"> and <img src="/bjc-r/img/sys/reducer-block.png" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif"> for the <code> WordCount</code> sprite and test it.</p>
-   
-   <p>Remember the Midterm handout "Writing Scratch/BYOB code on Paper"? Well, we're going to add something to it. When you want to write a list of things,   write them with an open parenthesis, then the first item, second item, etc (separated by spaces) and when you're done,  put a closed parenthesis. If any of your items are a sentence, you have to put quotes around the sentence. So, for example, the list of three things:</p>
-   <p align="center"><img src="/bjc-r/img/sys/rights-list.png" alt="rights" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/rights.png"></p>
-   <p>...would be written as the equivalent 3-element-list: <code>(life liberty "pursuit of happiness")</code>. Similarly, a nested list just shows up as a nested set of parenthesis. E.g.,</p>
-   <p align="center"><img src="/bjc-r/img/list/list-within-list.png" alt="LoveHateThe" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/LoveHateThe.png"></p>
-<p>...would be written as <code>((Love 5) (Hate 4) (The 10))</code>. We mention this because we've used this short-cut below. Now, on to the problem.</p>
-<table width="100%" border="1"><tbody><tr><th scope="col">Problem</th>
-    <th scope="col">Input</th>
-    <th scope="col">Map Domain</th>
-    <th scope="col">Map Range</th>
-    <th scope="col">Map Function</th>
-    <th scope="col">Binary reducer function</th>
-    <th scope="col">Output</th>
-  </tr><tr><td align="center">For every word in Shakespeare's works, the number of times it occurs. E.g., <code>((Love 123) (Hate 4) (the 25231) etc)</code></td>
-    <td align="center">All of Shakespeare's works, each word a different list element</td>
-    <td align="center">word</td>
-    <td align="center">A list of a list of two elements, the word and 1. This is the same as the format of the final mapreduce output if shakespeare would have only written one word. E.g., <code>((Love 1))</code></td>
-    <td align="center">Make a list of a list of the input word and the number 1</td>
-    <td align="center">Take two lists of words and their counts and merge them. E.g., <code>((Hate 4) (Love 3))</code> and <code>((Love 2) (The 10))</code> merge to <code>((Love 5) (Hate 4) (The 10))</code></td>
-    <td align="center">a single list of lists, with each inner list a unique word and its count</td>
-  </tr></tbody></table><p>Here are some tips on how to get started with <em>WordCount</em>:</p>
-<ol><li>Start with the <code>mapper</code> as always.</li>
-  <li>We've provided the <code>MakeWordCount</code>, <code>GetCount-from-WordCount</code>, and <code>GetWord-from-WordCount</code> helpers. Use them as needed.</li>
-  <li>When writing your <code>reducer</code>, think about the general case of combining two lists as in the example above. <em>Hate</em> is only in the first list. <em>The</em> is only in the second list. <em>Love</em> is in both lists. How do you merge these two lists?</li>
-  <li>We found it useful to write the helper <code>GetCount-of-Word-()-from-List</code> ... feel free to use this when writing <code>reducer</code>, but make sure you could write this on your own too.</li>
-</ol></body></html>
+<html><head>
+<!-- put the following in exactly -->
+  
+  <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+  <title>A quick aside on writing lists on paper...</title>
+
+  
+<!--ORIGINAL NAME: Your fourth MapReduce : WordCount, a count of the number of times words appears-->
+</head><body>
+<p> This one is a quite a bit harder because of all the list
+manipulation. The idea is that you have a huge corpus of data and you
+want to count all the times specific words appear. Fill in the body for
+the <img src="/bjc-r/img/hof/mapper-block-snap.png" alt="mapper" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/mapper.gif">
+and <img src="/bjc-r/img/sys/reducer-block-snap.png" alt="reducer" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/reducer.gif">
+for the <code> WordCount</code> sprite and test it.</p>
+
+<p>Remember the Midterm handout "Writing Snap! code on Paper"? Well, we
+are going to add something to it. When you want to write a list of
+things, write them with an open parenthesis, then the first item,
+second item, etc. (separated by spaces) and when you are done, put a
+closed parenthesis. If any of your items are a sentence, you have to
+put quotes around the sentence. So, for example, the list of three
+things:</p>
+
+<p align="center"><img src="/bjc-r/img/sys/rights-list-snap.png" alt="rights" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/rights.png"></p>
+
+<p>...would be written as the equivalent 3-element-list: <code>(life
+liberty "pursuit of happiness")</code>. Similarly, a nested list just
+shows up as a nested set of parenthesis. e.g.,</p>
+
+<p align="center"><img src="/bjc-r/img/list/list-within-list-snap.png" alt="LoveHateThe" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/LoveHateThe.png"></p>
+
+<p>...would be written as <code>((Love 5)(Hate 4)(The 10))</code>.
+We mention this because we have used this short-cut below. Now, on to the
+problem.</p>
+
+<table border="1" width="100%">
+
+  <tbody>
+    <tr>
+      <th scope="col">Problem</th>
+      <th scope="col">Input</th>
+      <th scope="col">Map Domain</th>
+      <th scope="col">Map Range</th>
+      <th scope="col">Map Function</th>
+      <th scope="col">Binary reducer function</th>
+      <th scope="col">Output</th>
+    </tr>
+    <tr>
+      <td align="center">For every word in Shakespeare's works, the
+number of times it occurs. e.g., <code>((Love 123) (Hate 4) (the
+25231) etc)</code></td>
+      <td align="center">All of Shakespeare's works, each word a
+different list element</td>
+      <td align="center">word</td>
+      <td align="center">A list of a list of two elements, the word and
+1. This is the same as the format of the final mapreduce output if
+shakespeare would have only written one word. e.g., <code>((Love 1))</code></td>
+      <td align="center">Make a list of a list of the input word and
+the number 1</td>
+      <td align="center">Take two lists of words and their counts and
+merge them. E.g., <code>((Hate 4) (Love 3))</code> and <code>((Love
+2) (The 10))</code> merge to <code>((Love 5) (Hate 4) (The 10))</code></td>
+      <td align="center">a single list of lists, with each inner list a
+unique word and its count</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Here are some tips on how to get started with <em>WordCount</em>:</p>
+
+<ol>
+
+  <li>Start with the <code>mapper</code> as always.</li>
+  <li>We have provided the <code>MakeWordCount</code>, <code>GetCount-from-WordCount</code>,
+and <code>GetWord-from-WordCount</code> helpers. Use them as needed.</li>
+  <li>When writing your <code>reducer</code>, think about the general
+case of combining two lists as in the example above. <em>Hate</em> is
+only in the first list. <em>The</em> is only in the second list. <em>Love</em>
+is in both lists. How do you merge these two lists?</li>
+  <li>We found it useful to write the helper <code>GetCount-of-Word-()-from-List</code>
+... feel free to use this when writing <code>reducer</code>, but make
+sure you could write this on your own too.</li>
+</ol>
+
+</body></html>
