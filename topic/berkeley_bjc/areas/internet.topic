@@ -11,7 +11,7 @@ learning-goal: Invoke a Unix shell
 learning-goal: Use traceroute, whois, ping, telnet, and other commands to investigate the Internet
 learning-goal: Discuss issues in Internet privacy
 
-heading: Forensic Analysis of GPS data
+heading: Internet under the Hood
         resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
         resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/trace.html]
         resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
