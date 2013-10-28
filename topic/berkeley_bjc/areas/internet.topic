@@ -1,0 +1,24 @@
+title: The Internet
+{
+h2: Big Ideas
+
+big-idea: Learn how to do network commands on a Unix shell
+big-idea: Investigate the properties and architecture of the Internet using standard Unix commands
+big-idea: Learn about an important social impact of the Internet: Privacy issues
+
+h2: Activities:
+learning-goal: Invoke a Unix shell
+learning-goal: Use traceroute, whois, ping, telnet, and other commands to investigate the Internet
+learning-goal: Discuss issues in Internet privacy
+
+heading: Forensic Analysis of GPS data
+        resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
+        resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/preprocess.html]
+        resource: Practice: Telnet [/bjc-r/cur/programming/internet/visualizing.html]
+        resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/conclusions.html]     
+
+heading: Internet and Privacy
+        resource: Introduction [/bjc-r/cur/programming/internet/introprivacy.html]
+        resource: Practice: Twitter geo-tags [/bjc-r/cur/programming/internet/twittergeo.html]
+        resource: Discussion: Data Footprint [/bjc-r/cur/programming/data/privacy.html]
+}
