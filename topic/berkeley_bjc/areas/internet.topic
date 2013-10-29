@@ -16,9 +16,6 @@ heading: Internet under the Hood
         resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/trace.html]
         resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
         resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/speed.html]     
+        resource: Practice: Internet and Privacy [/bjc-r/cur/programming/internet/introprivacy.html]
 
-heading: Internet and Privacy
-        resource: Introduction [/bjc-r/cur/programming/internet/introprivacy.html]
-        resource: Practice: Twitter geo-tags [/bjc-r/cur/programming/internet/twittergeo.html]
-        resource: Discussion: Data Footprint [/bjc-r/cur/programming/data/privacy.html]
 }
