@@ -6,10 +6,10 @@ big-idea: Learn how to do network commands on a Unix shell
 big-idea: Investigate the properties and architecture of the Internet using standard Unix commands
 big-idea: Learn about an important social impact of the Internet: Privacy issues
 
-h2: Activities:
+h2: Activities
 learning-goal: Invoke a Unix shell
 learning-goal: Use traceroute, whois, ping, telnet, and other commands to investigate the Internet
-learning-goal: Discuss issues in Internet privacy
+learning-goal: Discuss challenges in Internet privacy
 
 heading: Internet under the Hood
         resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
