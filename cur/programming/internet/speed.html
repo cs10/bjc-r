@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <!-- put the following in exactly -->
+    <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+    <title>Connection Metrics</title>
+  </head>
+  <body>
+    There are two major connection properties: Latency and throughput.<br>
+    <h3>Latency</h3>
+    Latency is the time it takes to establish a connection. Latency is
+    influenced by hardware i.e. which connection device is used (e.g.,
+    wireless connections take longer than wired) and also other factors
+    such as the length of the route or latency bottlenecks in the route.
+    Latencies are easiest measured with the Linux tool <a
+      href="http://en.wikipedia.org/wiki/Ping_%28networking_utility%29">ping</a>.
+    Ping takes a hostname or IP address as a parameter and sends a small
+    test packet to the node that is echoed by it. Once the echo is
+    received time is measured. If the host does not send an echo back in
+    a reasonable time, a timeout is signaled indicating the host is
+    offline. This is repeated until the user presses CTRL+C. <br>
+    <br>
+    Go ahead and try:<br>
+    <br style="font-style: italic;">
+    <div style="margin-left: 40px;"><span style="font-style: italic;">ping
+        www.berkeley.edu</span><br style="font-style: italic;">
+      <span style="font-style: italic;">ping www.google.com</span><br
+        style="font-style: italic;">
+      <span style="font-style: italic;">ping australia.gov.au </span><br>
+    </div>
+    &nbsp;<br>
+    <span style="font-weight: bold; font-style: italic;"> </span><span
+      style="font-weight: bold;"></span>Ping can also be used on entire
+    networks. This is called broadcast ping, whereby all online hosts on
+    the Ethernet bus will respond. In order to ping your network you
+    need to find out the IP address of your own host and derive the
+    network IP. There are several ways to determine your own IP but the
+    easiest is way (when you are not behind a router) is to open your
+    browser to <span style="font-style: italic;">www.google.com</span>
+    and search for "my IP".&nbsp; The replace the last digit if the IP
+    (say XXX.YYY.ZZZ.001) address with 255. So if your IP address is
+    192.150.186.72, your replacement would be 192.150.186.255. Then you
+    execute:<br>
+    <br>
+    &nbsp;&nbsp; <span style="font-style: italic;">ping -b
+      XXX.YYY.ZZZ.255 </span><br>
+    <br>
+    Go ahead and try it! <br>
+    <br>
+    Note that this may not always work as some networks forbid the
+    broadcast ping or are configured differently. Nevertheless, for a
+    system administrator it's an easy way to test all the hosts along
+    the bus at once. <br>
+    <span style="font-weight: bold; font-style: italic;">&nbsp;<br>
+    </span>
+    <h3><span style="font-weight: bold; font-style: italic;"></span>Throughput<br>
+    </h3>
+    Throughput is much harder to measure. It also massively depends on
+    what other processes in your computer take bandwidth as well as what
+    other computer on the Ethernet use the bus. A simple way but not
+    necessarily very accurate way to measure bandwidth is provided by
+    the website <a href="http://www.speedtest.net">http://www.speedtest.net</a>.
+    Give it a quick try and answer the following questions:<br>
+    <ol>
+      <li>Run the speed test three times. How much did the throughput
+        vary?</li>
+      <li>Is upload speed different than download speed? If so, why?</li>
+      <li>Synchronize with your peers and measure the speed
+        concurrenlty. How much did it drop?</li>
+    </ol>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </body>
+</html>
