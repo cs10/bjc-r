@@ -1,11 +1,14 @@
 title: Practice with HOFs and Functions as Data
 {
 h2: Big Ideas
-big-idea: Functions as Data
+big-idea: There are more to HOFs than just map, keep, and combine.
+big-idea: Functions can be treated as data, just like strings, numbers, and lists.
+big-idea: Creating our own higher-order function blocks allows us to achieve a whole new level of generality in our programs.
 
 h2: Activities
-learning-goal: Develop ability to treat functions as data.
+learning-goal: Build non-HOF blocks to use as helper functions in larger HOFs problems.
 learning-goal: Complete complex, multi-step HOFs problems.
+learning-goal: Use HOFs to solve real-life problems, like minimizing or composing functions.
 
 	
     resource: Introduction [/bjc-r/topic/berkeley_bjc/hofs/hofs-practice-introduction.html]
