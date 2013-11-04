@@ -22,7 +22,9 @@ h3: Functions as Data
     resource: Call and Run [/bjc-r/topic/berkeley_bjc/hofs/using-call-and-run.html]
     resource: Generalize "List all" [/bjc-r/topic/berkeley_bjc/hofs/generalizing-list-all.html]
 
-h3: Betty Numbers
-    resource: Betty Numbers [/bjc-r/topic/berkeley_bjc/hofs/betty-numbers.html]
+h3: Minimizing Functions
     resource: I hope you remember your calculus [/bjc-r/topic/berkeley_bjc/hofs/minimize-function.html]
+    
+h3: Extra for Experts
+    resource: Compose, compose, compose... [/bjc-r/topic/berkeley_bjc/hofs/compose-over-list.html]
 }
