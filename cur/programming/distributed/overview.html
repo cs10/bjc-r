@@ -1,77 +1,105 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
-        <title>
-            Overview
-        </title><!--ORIGINAL NAME: Overview-->
-    </head>
-    <body>
+<html><head><!-- put the following in exactly -->
+
+    
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Overview</title><!--ORIGINAL NAME: Overview--></head><body>
         <ul>
             <li>
-                Distributed computing is a field where many computers (often geographically remote) are used to solve a single problem.
-                <ul>
+Distributed computing is a field where many computers (often
+geographically remote) are used to solve a single problem. <ul>
+                    <li> As you can imagine,
+the mechanisms of this are quite complicated. Traditionally,
+distributed programming has been difficult (at least compared to
+programming on a single computer with one core). </li>
+                    <li> The scientific
+community deeply cares&nbsp; about this issue because they often have
+so many computations that can only be done in a distributed way (e.g.
+simulating climate change). Very early distributed computing
+applications were all scientific in nature. </li>
                     <li>
-                        As you can imagine, the mechanisms of this are quite complicated, and traditionally, distributed programming has been difficult (at least compared to programming on a single computer with one core).
-                    </li>
-                    <li>
-                        The scientific community cares deeply about this issue, because they often have very large computations that can only be done in a distributed way (e.g., simulating climate change). Very early distibuted computing applications were all scientific in nature.
-                    </li>
-                    <li>
-                        More recently, <em>every</em> field has large datasets and compute jobs, from entertainment (Pixar rendering a frame from their latest movie) to medicine (protein folding) to finance (running simulations of a new purchasing strategy on all historic stock exchange data) to artificial intellgence (solving checkers) to business (Google needing to crawl and index and search the web).
-                    </li>
+                        More recently, <em>every</em>
+field has large datasets and computing jobs, from entertainment (Pixar
+rendering a frame from their latest movie) to medicine (protein
+folding), to finance (running simulations of a new purchasing strategy
+on all historic stock exchange data) to artificial intelligence
+(solving checkers), and to business (Google needing to crawl and index
+and search the web). </li>
                     <li>
                         Languages and tools and abstractions have improved greatly for distributed computations.
                     </li>
                     <li>
-                        At the end of the day, <em>Amdahl's law</em> tells us that in the perfect world, if we distribute the problem across N machines, we can solve the problem N times faster, but it's going to be hard to get that level of speedup because of serial fraction of code. Still, if N is on the order of a million and coders make every effort to reduce the serial fraction, that's  a pretty fast system!
-                    </li>
+                        At the end of the day, <em>Amdahl's law</em>
+tells us that in the perfect world, if we distribute the problem across
+N machines, we can solve the problem N times faster. However, it will
+be hard to get that level of speed-up because of serial fraction of
+code. Still, if N is on the order of a million and coders make every
+effort to reduce the serial fraction, that is a pretty fast system! </li>
                 </ul>
             </li>
             <li>
-                There are common <em>patterns</em> that have emerged (i.e., the best ways) to approach problems with computational resources which might be geographically distant.
+                Common <em>patterns</em> have emerged (i.e. the best ways) to approach problems with computational resources which might be geographically distant.
             </li>
             <li>
-                One of these is <em>MapReduce</em>, which has emerged as one remarkable abstraction for dealing with the difficulties of distributed computing.
+                One of these patterns is <em>MapReduce</em>, which has emerged as a remarkable abstraction for dealing with the difficulties of distributed computing.
                 <ul>
                     <li>
                         Researchers at Google wrote the seminal paper on it, and they use it extensively to take advantage of
-                        their massive datacenters to help them with their massive data needs. In our simplifaction of the
-                        process...
+                        their massive datacenters to help them with their massive data needs. In our simplification of the
+                        process --
                     </li>
                     <li>
-                        There is a <strong>Map</strong> phase where (sometimes very big) data is broken up into pieces and sent to machines with <em>mapping function</em>. Sometimes the mapping function is the identity (i.e., do nothing) function; take what is sent in and return it. The output of the mapper is the same as the input of the reducers. In our simplying abstraction, the mapping happens over a list of elements, which can be of any type (word, sentence, list, procedure, etc).
-                    </li>
+                        There is a <strong>Map</strong> phase where (sometimes very big) data is broken up into pieces and sent to machines with a <em>mapping function</em>.
+Sometimes the mapping function is the identity (i.e. do nothing)
+function; take what is sent in and return it. The output of the mapper
+is the same as the input of the reducers. In our simplifying
+abstraction, the mapping happens over a list of elements, which can be
+of any type (word, sentence, list, procedure, etc.). </li>
                     <li>
-                        There is a <strong>Reduce</strong> phase where all the results of the mappers are combined into one by a <em>reducing function</em>, which takes two adjacent pairs and replaces those with the reduction, and this process continues until there's only one element left.
-                    </li>
-                    <li>
-                        Note that the outputs of reductions are sent as input to other reducers, so in our simplifying abstraction, there are only two data types:
-                        <ol>
+                        There is a <strong>Reduce</strong> phase where all the results of the mappers are combined into one using a <em>reducing function</em>,
+which takes two adjacent pairs and replaces those values with the
+reduction of those two values. This process continues until there is
+only one element left. </li>
+                    <li> Note that the
+outputs of reductions are sent as input to other reducers, so in our
+simplifying abstraction, there are only two data types: <ol>
                             <li>
-                                The data type used in the list of input to the mappers. In the tables below, the <b>Input</b> is a list of this type. (E.g., if it's a <i>number</i>, then the input to the MapReduce is a list of <i>numbers</i>.)
+                                The data type used in the list of input to the mappers. In the tables below, the <b>Input</b> is a list of this type. (e.g., if the input is a <i>number</i>, then the input to the MapReduce is a list of <i>numbers</i>.)
                             </li>
                             <li>
-                                The data type that is the output of the reducers, shown as <b>Output</b> below, because it's reported value of the entire MapReduce process.  In this simplified model, this type is the same as the output of the mappers, which is the same as the input to the reducers.
-                            </li>
+                                The data type that is the output of the reducers, shown as <b>Output</b>
+below, is the reported value of the entire MapReduce process. In this
+simplified model, this type is the same as the output of the mappers,
+which is the same as the input to the reducers. </li>
                         </ol>
                     </li>
                     <li>
-                        Another way to think about it -- what if the original list were of length 1? The mapper would do its job, and return something. But, since it's the only mapper needed, its output has to match the desired output of the MapReduce call, so every mapper always has to return the same  output (type, formatting, etc) as is desired (from the result of the reducing phase).
+Another way to think about it -- what if the original list were of
+length 1? The mapper would do its job, and return something. But, since
+it is the only mapper needed, its output has to match the desired
+output of the MapReduce call, so every mapper always has to return the
+same output (type, formatting, etc.) as is desired (from the result of
+the reducing phase). </li>
+                    <li>
+                        Here is the most important part of this, so read the following over a few times so you understand: <strong>Thanks
+to Abstraction, running a MapReduce on your computer should be
+indistinguishable from running MapReduce on a cluster of a million
+computers (except hopefully the latter is faster). You do not need to
+worry about that when you are writing your MapReduce code. So for this
+lab, we are going to make sure you understand how to write MapReduce
+programs for one computer, and later when Snap! allows us to easily
+support automated, distributed computing, the internals of MapReduce
+will change to send your program to a cluster, but your programs will
+not have to!</strong>
                     </li>
                     <li>
-                        Here's the most important part of this, so read the following over a few times so you understand: <strong>Thanks to Abstraction, running a MapReduce on your computer should be indistinguishable from running MapReduce on a cluster of a million computers (except hopefully the latter is faster).  You shouldn't need to worry about that when you're writing your MapReduce code. So, for this lab, we're going to make sure you understand how to write MapReduce programs for one computer, and later when BYOB allows us to easily support automated, distributed computing, the internals of MapReduce will change to send your program to a cluster, but your programs won't have to!</strong>
-                    </li>
-                    <li>
-                        How does it work? It's exactly as we describe; we send the results of mapping over a list to a reducer (block
-                        interface and definition shown below).
-                    </li>
+How does it work? It is exactly as we describe -- we send the results
+of mapping over a list to a reducer (block interface and definition
+shown below). </li>
                 </ul>
             </li>
         </ul>
         <p align="center">
-            <img src="/bjc-r/img/distributed/mapreduce.gif"  alt="MapReduce Signature" origsrc="./CS10 Lab   Distributed Computing_files/MapReduceSignature.gif">
+            <img src="/bjc-r/img/distributed/mapreduce_snap.png" alt="MapReduce Signature" origsrc="./CS10 Lab   Distributed Computing_files/MapReduceSignature.gif">
             <br>
         </p>
-    </body>
-</html>
+    </body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Self Test: Nested Repeat
+        </title>
+    </head>
+	<body>
+
+		<!-- question 1 -->
+		<div class="assessment-data"
+		type="multiplechoice" identifier="triange-turning"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp1" shuffle="false" >
+			<div class="prompt">
+				<p>
+					How many times in total does the script below say "Hip"?
+				</p>
+				<img src="/bjc-r/img/prog/hip32.png"/>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					8
+				</div>
+				<div class="feedback">
+					How many times does: "say Hip for 2 secs" repeat?
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					2
+				</div>
+				<div class="feedback">
+					Don't forget about the outer repeat block.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					4
+				</div>
+				<div class="feedback">
+					Don't forget about the outer repeat black.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					6
+				</div>
+				<div class="feedback">
+					Correct! Each time through the inner repeat says it twice, and the outer repeat runs the inner one three times, for a total of 3*2=6.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp1">
+				<div class="correctResponse" identifier="c4"></div>
+			</div>
+		</div>
+
+		<!-- question 2 -->
+				<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp2" shuffle="false" >
+			<div class="prompt">
+				<p>
+					How many times in total does the same script say "Hooray"?
+				</p>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					6
+				</div>
+				<div class="feedback">
+					"Horray!" is only inside the outer repeat block.
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					3
+				</div>
+				<div class="feedback">
+					Correct!
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					1
+				</div>
+				<div class="feedback">
+					Don't forget about the repeat block.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					2
+				</div>
+				<div class="feedback">
+					How many times is the "say Horray! for 2 secs" block repeating?
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp2">
+				<div class="correctResponse" identifier="c2"></div>
+			</div>
+		</div>
+
+		<!-- question 3 -->
+				<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp3" shuffle="false" >
+			<div class="prompt">
+				<p>
+					How many times in total does the (different!) script below say "Hip"?
+				</p>
+				<img src="/bjc-r/img/prog/hip032.png"/>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					0
+				</div>
+				<div class="feedback">
+					Correct!
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					1
+				</div>
+				<div class="feedback">
+					Look at the outer repeat block.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					2
+				</div>
+				<div class="feedback">
+					Look at the outer repeat block.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					4
+				</div>
+				<div class="feedback">
+					Look at the outer repeat block.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp3">
+				<div class="correctResponse" identifier="c1"></div>
+			</div>
+		</div>
+	</body>
+</html>

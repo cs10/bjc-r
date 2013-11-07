@@ -1,0 +1,30 @@
+title: Practice with HOFs and Functions as Data
+{
+h2: Big Ideas
+big-idea: Functions as Data
+
+h2: Activities
+learning-goal: Develop ability to treat functions as data.
+learning-goal: Complete complex, multi-step HOFs problems.
+
+	
+    resource: Introduction [/bjc-r/topic/berkeley_bjc/hofs/hofs-practice-introduction.html]
+    resource: Warm-up [/bjc-r/topic/berkeley_bjc/hofs/hofs-practice-warmup.html]
+
+h3: Pandigital Numbers
+    resource: Pandigital Numbers [/bjc-r/topic/berkeley_bjc/hofs/pandigital-numbers.html]
+    
+h3: Factorions
+    resource: Factorions [/bjc-r/topic/berkeley_bjc/hofs/factorions.html]
+    
+h3: Functions as Data
+    resource: Functions as Data [/bjc-r/topic/berkeley_bjc/hofs/functions-as-data.html]
+    resource: Call and Run [/bjc-r/topic/berkeley_bjc/hofs/using-call-and-run.html]
+    resource: Generalize "List all" [/bjc-r/topic/berkeley_bjc/hofs/generalizing-list-all.html]
+
+h3: Minimizing Functions
+    resource: I hope you remember your calculus [/bjc-r/topic/berkeley_bjc/hofs/minimize-function.html]
+    
+h3: Extra for Experts
+    resource: Compose, compose, compose... [/bjc-r/topic/berkeley_bjc/hofs/compose-over-list.html]
+}
