@@ -25,7 +25,9 @@
 					8
 				</div>
 				<div class="feedback">
-					How many times does: "say Hip for 2 secs" repeat?
+					No, this is too large.  Check carefully each of the repeat
+					loops, and which loops the 
+					"say Hip for 2 secs" block is inside.
 				</div>
 			</div>
 			<div class="choice" identifier="c2">
@@ -33,16 +35,18 @@
 					2
 				</div>
 				<div class="feedback">
-					Don't forget about the outer repeat block.
+					The inner repeat block will call the "say Hip..." block twice, but 
+					don't forget about the outer repeat block!
 				</div>
 			</div>
 
 			<div class="choice" identifier="c3">
 				<div class="text">
-					4
+					3
 				</div>
 				<div class="feedback">
-					Don't forget about the outer repeat black.
+					Nope!  Look carefully at the repeat loops, and which loops the 
+                    "say Hip for 2 secs" block is inside.
 				</div>
 			</div>
 
@@ -68,6 +72,7 @@
 				<p>
 					How many times in total does the same script say "Hooray"?
 				</p>
+			    <img src="/bjc-r/img/prog/hip32.png"/>
 			</div>
 			<div class="choice" identifier="c1">
 				<div class="text">
@@ -91,7 +96,7 @@
 					1
 				</div>
 				<div class="feedback">
-					Don't forget about the repeat block.
+					No, the "say Hooray..." block is inside a "repeat" block!
 				</div>
 			</div>
 
@@ -100,7 +105,7 @@
 					2
 				</div>
 				<div class="feedback">
-					How many times is the "say Horray! for 2 secs" block repeating?
+					No, how many times is the "say Horray! for 2 secs" block repeating?
 				</div>
 			</div>
 			<div class="responseDeclaration" identifier="resp2">
@@ -115,7 +120,7 @@
 		responseIdentifier="resp3" shuffle="false" >
 			<div class="prompt">
 				<p>
-					How many times in total does the (different!) script below say "Hip"?
+					How many times in total does this <u>different</u> script say "Hip"?
 				</p>
 				<img src="/bjc-r/img/prog/hip032.png"/>
 			</div>
@@ -124,33 +129,38 @@
 					0
 				</div>
 				<div class="feedback">
-					Correct!
+					Correct!  The "repeat 0" block will ignore its inner blocks
+					completely.
 				</div>
 			</div>
 			<div class="choice" identifier="c2">
 				<div class="text">
-					1
+					2
 				</div>
 				<div class="feedback">
-					Look at the outer repeat block.
+					No; look carefully at the way the three repeat blocks
+					are nested.
 				</div>
 			</div>
 
 			<div class="choice" identifier="c3">
 				<div class="text">
-					2
+					3
 				</div>
 				<div class="feedback">
-					Look at the outer repeat block.
+					No; look carefully at the way the three repeat blocks
+                    are nested.
 				</div>
 			</div>
 
 			<div class="choice" identifier="c4">
 				<div class="text">
-					4
+					6
 				</div>
 				<div class="feedback">
-					Look at the outer repeat block.
+					No; look carefully at the outermost repeat block, with 
+					a 0 as its parameter.  That outer "repeat 0" block 
+					will run its inner blocks <b>zero</b> times.
 				</div>
 			</div>
 			<div class="responseDeclaration" identifier="resp3">
