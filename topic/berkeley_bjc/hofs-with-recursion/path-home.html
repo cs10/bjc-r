@@ -11,7 +11,7 @@
             is either a dead-end or has exactly 2 one-way
             paths: left and right. Your goal is to find out if there is a way home.
             You are presented with four new blocks, two predicates
-            and two reporter blocks (all take a place as an argument):
+            and two reporter blocks (all take a <img src="place-variable.png" alt="place"/> as an argument):
         </p>
         
         <ul>
@@ -46,13 +46,40 @@
         	Write <img src="path-home-place.png" alt="path home (place)"/>, which uses the four functions above and returns
             <img src="true.png" alt="true"/> if you can
 			get home following a (possibly zero) number of lefts and rights starting from <br/><img src="place-variable.png" alt="place"/>, and
-			<img src="false.png" alt="false"/> otherwise. Example:
+			<img src="false.png" alt="false"/> otherwise. There is a framework for this block under the "Going Home" sprite in the starter file.
+            You can write this block entirely with recursion - you won't need HOFs or iteration. Example:
         </p>
         
-        <p>
-        	<img src="forest-paths.png" alt="example forest paths"/>
-        </p>
+        <blockquote style="float:right;width:30%;font-size:small;">
+	        <h3>The Road Not Taken</h3>
+        	<p>Two roads diverged in a yellow wood,<br/>
+            And sorry I could not travel both<br/>
+            And be one traveler, long I stood<br/>
+            And looked down one as far as I could<br/>
+            To where it bent in the undergrowth;</p>
+             
+            <p>Then took the other, as just as fair,<br/>
+            And having perhaps the better claim,<br/>
+            Because it was grassy and wanted wear;<br/>
+            Though as for that the passing there<br/>
+            Had worn them really about the same,</p>
+             
+            <p>And both that morning equally lay<br/>
+            In leaves no step had trodden black.<br/>
+            Oh, I kept the first for another day!<br/>
+            Yet knowing how way leads on to way,<br/>
+            I doubted if I should ever come back.</p>
+             
+            <p>I shall be telling this with a sigh<br/>
+            Somewhere ages and ages hence:<br/>
+            Two roads diverged in a wood, and I—<br/>
+            I took the one less traveled by,<br/>
+            And that has made all the difference.</p>
+            <footer>- Robert Frost, 1920</footer>
+        </blockquote>
         
+        
+        <p><img src="forest-paths.png" alt="example forest paths"/></p>
         <ul>
         	<b><li><code>home?(7)</code> ==> <code>false</code></li>
             <li><code>home?(6)</code> ==> <code>true</code></li>
@@ -66,11 +93,6 @@
             <li><code>path-home(6)</code> ==> <code>true</code></li>
             <li><code>path-home(5)</code> ==> <code>false</code></li></b>
         </ul>
-        
-        <p>
-        	Fill in the block under the "Going Home" sprite in the starter file.
-            You can write this block entirely with recursion - you won't need HOFs or iteration.
-        </p>
         
    </body>
 </html>
