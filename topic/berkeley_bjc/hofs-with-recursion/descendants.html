@@ -1,0 +1,35 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Keep the dog away from the family tree...</title>
+      
+   </head>
+   <body>
+        <p>
+            We would now like a list of us and all our descendants in no particular order (i.e., our children,
+            their children, etc.) by writing the block <img src="me-and-my-descendants-person.png" alt="me-and-my-descendants (person)"/>.
+            This problem is harder than
+            <img src="ancestors-person.png" alt="ancestors (person)"/>
+            because we can have many children, but it is simpler because we only need a single
+            helper block <img src="children-person.png" alt="children (person)"/>
+            which reports a list of all our children (empty if we have no kids!). Examples:
+        </p>
+        
+        <p><img src="descendants-tree.png" alt="a tree of descendants"/></p>
+        
+        <ul>
+            <b><li><code>children(j)</code> ==> <code>(k l m)</code></li>
+            <li><code>children(p)</code> ==> <code>(s)</code></li>
+            <li><code>children(l)</code> ==> <code>()</code></li>
+            <li><code>me-and-my-descendants(j)</code> ==> <code>(j k l m n o p q r s)</code></li>
+            <li><code>me-and-my-descendants(k)</code> ==> <code>(k n o)</code></li>
+            <li><code>me-and-my-descendants(l)</code> ==> <code>(l)</code></li></b>
+        </ul>
+        
+        <p>
+            You can find a framework for the block under the "Descendants" sprite in the starter file.
+            <b>Do not use any iteration (loops) to complete this block </b> - you should only use recursion and/or HOFs.
+        </p>
+   </body>
+</html>

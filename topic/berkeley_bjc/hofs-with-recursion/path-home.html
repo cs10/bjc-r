@@ -1,0 +1,76 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Two roads diverged in a wood...</title>
+      
+   </head>
+   <body>
+        <p>
+            You’re lost in the forest. Every <img src="place-variable.png" alt="place"/> in the forest
+            is either a dead-end or has exactly 2 one-way
+            paths: left and right. Your goal is to find out if there is a way home.
+            You are presented with four new blocks, two predicates
+            and two reporter blocks (all take a place as an argument):
+        </p>
+        
+        <ul>
+            <li>
+            	<img src="home-place.png" alt="home (place)"/> reports <img src="true.png" alt="true"/> 
+                if the <img src="place-variable.png" alt="place"/> is your home, and <img src="false.png" alt="false"/> otherwise.
+            </li>
+            <li>
+            	<img src="dead-end-place.png" alt="dead-end (place)"/> returns <img src="true.png" alt="true"/> if the
+                <img src="place-variable.png" alt="place"/> is a dead-end (i.e. no paths from it).
+            </li>
+            <li>
+            	<img src="go-left-place.png" alt="go-left (place)"/> follow the <i>left</i> path, returning
+                a new <img src="place-variable.png" alt="place"/>.
+            </li>
+            <li>
+            	<img src="go-right-place.png" alt="go-right (place)"/> follows the <i>right</i> path, returning
+                a new <img src="place-variable.png" alt="place"/>.
+            </li>
+        </ul>
+        
+        <p>
+        	It is an error to <img src="go-left-place.png" alt="go-left (place)"/> or 
+            <img src="go-right-place.png" alt="go-right (place)"/>
+            if <img src="place-variable.png" alt="place"/> is a dead-end (because it has no paths!).
+            There is no way in this forest to follow a sequence of left paths and/or right paths and end up
+			where you started. I.e., there’s no way to walk in circles. Your home (if one exists) might be at a
+			dead-end or it might not. You might actually start your search at home.
+        </p>
+        
+        <p>
+        	Write <img src="path-home-place.png" alt="path home (place)"/>, which uses the four functions above and returns
+            <img src="true.png" alt="true"/> if you can
+			get home following a (possibly zero) number of lefts and rights starting from <br/><img src="place-variable.png" alt="place"/>, and
+			<img src="false.png" alt="false"/> otherwise. Example:
+        </p>
+        
+        <p>
+        	<img src="forest-paths.png" alt="example forest paths"/>
+        </p>
+        
+        <ul>
+        	<b><li><code>home?(7)</code> ==> <code>false</code></li>
+            <li><code>home?(6)</code> ==> <code>true</code></li>
+            <li><code>dead-end?(6)</code> ==> <code>false</code></li>
+            <li><code>dead-end?(3)</code> ==> <code>true</code></li>
+            <li><code>go-left(3)</code> ==> <code>ERROR</code></li>
+            <li><code>go-left(7)</code> ==> <code>5</code></li>
+            <li><code>go-right(2)</code> ==> <code>ERROR</code></li>
+            <li><code>go-right(6)</code> ==> <code>4</code></li>
+        	<li><code>path-home(7)</code> ==> <code>true</code></li>
+            <li><code>path-home(6)</code> ==> <code>true</code></li>
+            <li><code>path-home(5)</code> ==> <code>false</code></li></b>
+        </ul>
+        
+        <p>
+        	Fill in the block under the "Going Home" sprite in the starter file.
+            You can write this block entirely with recursion - you won't need HOFs or iteration.
+        </p>
+        
+   </body>
+</html>

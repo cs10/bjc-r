@@ -1,0 +1,97 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Respect the family...</title>
+      
+   </head>
+   <body>
+        <p>
+            You are interested in finding the number of a person’s ancestors, that is, them, their parents,
+            their parents' parents, etc. In their family, everyone has a unique name and couples are always
+            recorded together -- if you find one parent, you've found the other. You are provided with three
+            helper blocks (which access some global family tree):
+        </p>
+        
+        <ul>
+                <li>
+                    <img src="parents-found-person.png" alt="parents-found? (person)"/> reports <img src="true.png" alt="true"/>
+                    or <img src="false.png" alt="false"/> depending on whether the system has found that person's parents
+                    (mother <i>and</i> father) or not.
+                </li>
+                <li>
+                    <img src="mother-person.png" alt="mother (person)"/> reports that person's mother (a <img src="person-variable.png" alt="person"/>),
+                    if she was found (if she wasn't found, it's an error).
+                </li>
+                <li>
+                    <img src="father-person.png" alt="father (person)"/> reports that person's father (a <img src="person-variable.png" alt="person"/>),
+                    if he was found (if he wasn't found, it's an error).
+                </li>
+            </ul>
+            
+        <p>
+            Example family: In the diagram, mothers (b, d, f, h) are listed to the left of the fathers (c, e, g, i)
+        </p>
+        <p>
+            <img src="family-tree.png" alt="a family tree"/><br/>
+        </p>
+        <p>
+            a's parents were found: b and c (b is the mother, c is the father).<br/>
+            b's parents were found: d and e.<br/>
+            c's parents were found: f and g.<br/>
+            e's parents were found: h and i.<br/>
+            d, f, g, h and i's parents were not found in the family tree. 
+        </p>
+        
+        <p>Examples:</p>
+        <ul>
+            <li><img src="parents-found-e.png" alt="parents-found? (e)"/> reports <img src="false.png" alt="false"/>,
+                because we found e's parents, who are h and i.
+            </li>
+            <li><img src="parents-found-d.png" alt="parents-found? (d)"/> reports <img src="true.png" alt="true"/>,because we didn't find d's parents.</li>
+            <li>
+                <img src="mother-e.png" alt="mother (e)"/> reports h, because e's mother is h
+                (calling <img src="mother-blank.png" alt="mother ()"/> on d, f, g, h or i is an error).
+            </li>
+            <li>
+                <img src="father-e.png" alt="father (e)"/> reports i, because e's father is i
+                (calling <img src="father-blank.png" alt="father ()"/> on d, f, g, h or i is an error).
+            </li>
+        </ul>
+        
+        <p>
+            Fill in the blanks for the block <img src="ancestors-person.png" alt="ancestors (person"/> 
+            that <u>reports that person’s <b>total number</b> of
+            ancestors (counting themselves).</u> Examples:
+        </p>
+        <ul>
+            <li>
+                <img src="ancestors-a.png" alt="ancestors (a)"/> reports 9 (for a b c d e f g h i)
+            </li>
+            <li>
+                <img src="ancestors-b.png" alt="ancestors (b)"/> reports 5 (for b d e h i)
+            </li>
+            <li>
+                <img src="ancestors-c.png" alt="ancestors (c)"/> reports 3 (for c f g)
+            </li>
+            <li>
+                <img src="ancestors-d.png" alt="ancestors (d)"/> reports 1 (for d), etc...
+            </li>
+        </ul>
+        
+        <p>
+            Framework for this block is given in the "Ancestors" sprite in the starter file.
+            You <u>will not</u> need to use HOFs for this problem.
+        </p>
+        <p>
+            It's a bit annoying that this block counts us as one of our ancestors.
+            Write the block <img src="ancestors-without-self-person.png" alt="ancestors-without-self (person"/>
+            so that it returns the number of ancestors, <u>not
+            counting</u> the original person (e.g. <img src="ancestors-without-self-a.png" alt="ancestors-without-self (a)"/>
+            will report 8, instead of 9). It should only require subtle changes from the original
+            <img src="ancestors-person.png" alt="ancestors (person)"/> block.
+        </p>
+        
+        
+   </body>
+</html>
