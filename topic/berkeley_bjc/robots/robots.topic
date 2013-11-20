@@ -1,0 +1,18 @@
+title: Robots
+{
+h2: Big Ideas
+big-idea: Use HOFs in recursive functions to generalize functionality.
+
+h2: Activities
+learning-goal: Practice using HOFs to generalize recursive functions.
+
+    resource: Introduction [/bjc-r/topic/berkeley_bjc/robots/finch-introduction.html]
+    resource: The Finch's Capabilities [/bjc-r/topic/berkeley_bjc/robots/finch-capabilities.html]
+    resource: A Simple Remote Control [/bjc-r/topic/berkeley_bjc/robots/simple-finch-remote.html]
+    resource: A Better(?) Remote Control [/bjc-r/topic/berkeley_bjc/robots/better-finch-remote.html]
+    resource: Simon Says [/bjc-r/topic/berkeley_bjc/robots/finch-simon-says.html]
+    resource: I'm not an ambi-turner [/bjc-r/topic/berkeley_bjc/robots/finch-gestural-programmer.html]
+    
+h3: Extra for Experts
+    resource: Pong [/bjc-r/topic/berkeley_bjc/robots/finch-pong.html]
+}
