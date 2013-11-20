@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;
+        charset=ISO-8859-1">
+        <!-- put the following in exactly -->
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Classifying SPAM
+        </title>
+    </head>
+    <body>
+        <p>
+            Now that you know that the average length differs,  build a
+            simple classifier based on the number of words in a particular message.
+            That is, write a block that takes in a message and, based on how many
+            words it contains, returns either "ham" or "spam" as its classification.
+        </p>
+
+        <img class="center" alt="classify a message that evaluates to HAM"
+        src="/bjc-r/img/data/classify-by-number-of-words-HAM.png">
+        <br>
+        <br>
+        <img class="center" alt="classify a message that evaluates to SPAM"
+        src="/bjc-r/img/data/classify-by-number-of-words-SPAM.png">
+
+        <p>
+            Implement in <span class="snap">snap</span>, and use it to classify
+            the messages in our data.  You can use a regular loop to call your classify
+            on the second item in each row of the data, or you might use this
+            <i>faster</i> method using <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="the keep block">:
+        </p>
+
+        <img class="center" alt="using keep to apply a custom classify method to the data"src="/bjc-r/img/data/count-number-of-spam-messages-with-custom-classify.png">
+
+        <p>
+            Play around with different <i>threshold values</i>&mdash;
+            that is, the number of words above which you decide that a message is spam.
+        </p>
+        <p class="quoteOrange">
+            What was the best threshold you found?  How many messages did it classify incorrectly?
+
+        </p>
+
+    </body>
+</html>
