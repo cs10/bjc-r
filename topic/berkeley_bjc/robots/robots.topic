@@ -10,7 +10,7 @@ learning-goal: Read and understand code, and make modifications to it
     resource: Introduction [/bjc-r/topic/berkeley_bjc/robots/finch-introduction.html]
     resource: The Finch's Capabilities [/bjc-r/topic/berkeley_bjc/robots/finch-capabilities.html]
     resource: A Simple Remote Control [/bjc-r/topic/berkeley_bjc/robots/simple-finch-remote.html]
-    resource: A Better(?) Remote Control [/bjc-r/topic/berkeley_bjc/robots/better-finch-remote.html]
+    resource: A Better Remote Control [/bjc-r/topic/berkeley_bjc/robots/better-finch-remote.html]
     resource: Simon Says [/bjc-r/topic/berkeley_bjc/robots/finch-simon-says.html]
     resource: I'm not an ambi-turner [/bjc-r/topic/berkeley_bjc/robots/finch-gestural-programmer.html]
     
