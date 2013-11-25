@@ -204,9 +204,18 @@ input[type=text], input[type=password], textarea {
 	color:#e3e3e3;
 }
 
+/* Quiz Page Buttons */
 input[type=submit] {
-	font:500 18px Tahoma, Geneva, sans-serif;
-	color:#fff;
+    font-family: "Helvetic Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    border: 1px solid #000;
+    background-color: #36F;
+    color: #FFF;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+         -o-border-radius: 9px;
+            border-radius: 9px;
 }
 
 ul, ol {
@@ -1123,6 +1132,3 @@ li .course_link {
 	background-repeat:no-repeat;
 	padding-left:25px;
 }
-
-
-
