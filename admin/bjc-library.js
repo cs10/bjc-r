@@ -7,7 +7,7 @@
 if ( typeof bjc === 'undefined') {
 	// if bjc-loader wasn't used, we need this.
 	bjc = {};
-	bjc.rootURL = "/bjc-r";
+	{{ site.rootURL }} = "/bjc-r";
 	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
 }
 
@@ -48,7 +48,7 @@ bjc.getSnapRunURL = function(targeturl) {
 		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
 			finalurl = finalurl + bjc.CORSproxy + "/";
 		}
-        if (targeturl.indexOf("..") != -1 || targeturl.indexOf(bjc.rootURL) == -1) {
+        if (targeturl.indexOf("..") != -1 || targeturl.indexOf({{ site.rootURL }}) == -1) {
             var path = window.location.pathname;
             path = path.split("?")[0];
             path = path.substring(0, path.lastIndexOf("/") + 1)

@@ -11,7 +11,7 @@ bjc['url_list'] = new Array();
 // never gets used?
 bjc['topic_list'] = new Array();
 
-//bjc['rootURL'] = bjc.rootURL;
+//bjc['rootURL'] = {{ site.rootURL }};
 
 
 
@@ -33,10 +33,10 @@ bjc.secondarySetUp = function() {
 			$(".header").html(getParameterByName("title"));
 		}
 	}
-	document.body.style.marginTop = "60px";
+	document.body.style.marginTop = "60px"; // FIXME!
 	document.title = $(".header").text();
-    
-    
+
+
 
 
 	// fix snap links so they run snap
@@ -58,7 +58,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('term'))) {
 				this.setAttribute('term', this.innerHTML)
 			}
-			vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
+			vocabDiv.append('<a href="' + {{ site.rootURL }} + '/glossary/view.html?term=' + this.getAttribute('term')
 					+ '" target="_vocab">' + this.getAttribute('term') + '</a>');
 		});
 	}
@@ -72,7 +72,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('topic'))) {
 				this.setAttribute('topic', this.innerHTML)
 			};
-			helpDiv.append('<p><a href="' + bjc.rootURL + '/help/view.html?topic=' + this.getAttribute('topic')
+			helpDiv.append('<p><a href="' + {{ site.rootURL }} + '/help/view.html?topic=' + this.getAttribute('topic')
 				       + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
 		});
 	}
@@ -107,9 +107,9 @@ bjc.secondarySetUp = function() {
         } else {
             bjc['file'] = temp;
         }
-		
+
 		$.ajax({
-		    url : bjc.rootURL + "/topic/" + bjc.file,
+		    url : {{ site.rootURL }} + "/topic/" + bjc.file,
 		    type : "GET",
 		    dataType : "text",
 		    cache : false,
@@ -118,14 +118,14 @@ bjc.secondarySetUp = function() {
 		    success: bjc.processLinks
 		});
 	}
-	
-	
-	
+
+
+
 }; // close secondarysetup();
 
 
 /** Processes just the hyperlinked elements in this page,
- *	and creates navigation buttons. 
+ *	and creates navigation buttons.
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
     var temp = getParameterByName("topic");
@@ -175,14 +175,14 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	var hidden;
 	var list_header = $(document.createElement("div")).attr({'class': 'list_header'});
 	list_header.menu();
-	
+
 	for (var i = 0; i < lines.length; i++) {
 		line = lines[i];
 		line = bjc.stripComments(line);
 		if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
+				url = {{ site.rootURL }} + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -201,13 +201,13 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
+					url = {{ site.rootURL }} + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
 				} else {
-				    if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
+				    if (url.indexOf({{ site.rootURL }}) == -1 && url.indexOf("..") == -1) {
 					if (url[0] == "/") {
-					    url = bjc.rootURL + url;
+					    url = {{ site.rootURL }} + url;
 					} else {
-					    url = bjc.rootURL + "/" + url;
+					    url = {{ site.rootURL }} + "/" + url;
 					}
 				    }
 				    if (url.indexOf("?") != -1) {
@@ -225,14 +225,14 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 					b_backButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
-					
+
 				} else if (num == bjc.step) {
 					text = "<span class='current-step-link'>" + text + "</span>";
 					option = $(document.createElement("a")); //.attr({'href': url, 'selected': true});
 					option.html(text);
 					//list_header.html(text);
 					list_header.html("Click here to navigate...");
-					
+
 				} else if (num == (bjc.step + 1)) {
 					forwardButton.attr({'value': url});
 					forwardButton.button({disabled: false});
@@ -240,7 +240,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 					b_forwardButton.button({disabled: false});
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
-				
+
 				} else {
 					option = $(document.createElement("a")).attr({'href': url});
 					option.html(text);
@@ -252,11 +252,11 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 			}
 		}
 	}
-    
+
     if (getParameterByName("course") != "") {
         var course_link = getParameterByName("course");
         if (course_link.indexOf("http://") == -1) {
-            course_link = bjc.rootURL + "/course/" + course_link;
+            course_link = {{ site.rootURL }} + "/course/" + course_link;
         }
         list_item = $(document.createElement("li")).attr({'class': 'list_item'});
         list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
@@ -300,15 +300,15 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	   function() {
    if (b_list_header.html() == "Click here to navigate...") {
    b_list_header.html("Click again to close...");
-					$($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"}); 
+					$($(".steps")[1]).show({effect: "slide", duration: 300, direction: "down"});
 	} else {
 		b_list_header.html("Click here to navigate...");
 					$($(".steps")[1]).hide({effect: "slide", duration: 300, direction: "down"});
 	}
 });*/
-	
-	
-	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
+
+
+	if (document.URL.indexOf({{ site.rootURL }} + "/admin/empty-curriculum-page.html") != -1) {
 	    bjc.addFrame();
 	} else {
 		$("#full").append('<div id="full-bottom-bar"></div>');
@@ -323,7 +323,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         //b_list_header.width(list.outerWidth());
 	}
 
-        
+
 }
 
 

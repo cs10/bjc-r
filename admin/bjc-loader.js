@@ -6,7 +6,7 @@
 *   topic/topic.html
 *   quiz/view.html
 *
-* Also, the bjc object and bjc.rootURL is made in bjc-main.js as well, if this file isn't used.
+* Also, the bjc object and {{ site.rootURL }} is made in bjc-main.js as well, if this file isn't used.
 *
 */
 
@@ -14,7 +14,7 @@
 // NOTE: this is built in bjc-library.js if not built here...
 var bjc = {};
 // rootURL also spec'ed in bjc-library.js
-bjc.rootURL = "/bjc-r";
+{{ site.rootURL }} = "/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
@@ -82,7 +82,7 @@ bjc.initialSetUp = function() {
 		var tag;
 		tag = document.createElement(name);
 		if (src.substring(0, 7) !== "http://") {
-			src = bjc.rootURL + src;
+			src = {{ site.rootURL }} + src;
 		}
 		if (name === "link") {
 			tag.href = src;

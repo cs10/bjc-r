@@ -57,7 +57,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
     if (getParameterByName("course") != "") {
         var course_link = getParameterByName("course");
         if (course_link.indexOf("http://") == -1) {
-            course_link = bjc.rootURL + "/course/" + course_link;
+            course_link = {{ site.rootURL }} + "/course/" + course_link;
         }
         $("#full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Go to Main Course Page"));
     }
@@ -169,13 +169,13 @@ bjc.renderFull = function(data, ignored1, ignored2) {
                     temp.append(text);
                     url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
                     if (url.indexOf("http") != -1) {
-                        url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+                        url = {{ site.rootURL }} + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
                     } else {
-			if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
+			if (url.indexOf({{ site.rootURL }}) == -1 && url.indexOf("..") == -1) {
 			    if (url[0] == "/") {
-				url = bjc.rootURL + url;
+				url = {{ site.rootURL }} + url;
 			    } else {
-				url = bjc.rootURL + "/" + url;
+				url = {{ site.rootURL }} + "/" + url;
 			    }
 			}
 			if (url.indexOf("?") != -1) {
@@ -260,7 +260,7 @@ if (getParameterByName("topic") != "") {
         bjc.file = getParameterByName("topic");
     }
     $.ajax({
-        url : bjc.rootURL + "/topic/" + bjc.file,
+        url : {{ site.rootURL }} + "/topic/" + bjc.file,
         type : "GET",
         dataType : "text",
         cache : false,
