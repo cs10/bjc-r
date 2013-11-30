@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 5: Lists I
 {
 h2: Big Ideas
@@ -15,25 +18,25 @@ learning-goal: Gain experience working with a new data structure and the large r
 learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
-	resource: Make a List [/bjc-r/cur/programming/lists/intro/make-a-list.html]
+	resource: Make a List [{{ site.rootURL }}/cur/programming/lists/intro/make-a-list.html]
 	quiz: Weird Cases [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14006]
-	resource: Read a List of Names [/bjc-r/cur/programming/lists/intro/read-a-list-of-names.html]
-	resource: Process a List [/bjc-r/cur/programming/lists/intro/process-a-list.html]
-	resource: Practice with Index Variables [/bjc-r/cur/programming/lists/intro/practice-with-index-variables.html]
-	resource: Remove List Elements [/bjc-r/cur/programming/lists/intro/remove-list-elements.html]
+	resource: Read a List of Names [{{ site.rootURL }}/cur/programming/lists/intro/read-a-list-of-names.html]
+	resource: Process a List [{{ site.rootURL }}/cur/programming/lists/intro/process-a-list.html]
+	resource: Practice with Index Variables [{{ site.rootURL }}/cur/programming/lists/intro/practice-with-index-variables.html]
+	resource: Remove List Elements [{{ site.rootURL }}/cur/programming/lists/intro/remove-list-elements.html]
 	//quiz: Loops and Lists []
-	resource: Remove List Elements: Take Two [/bjc-r/cur/programming/lists/intro/remove-list-elements-take-two.html]
-	resource: Range of List Elements [/bjc-r/cur/programming/lists/intro/range-of-list-elements.html]
+	resource: Remove List Elements: Take Two [{{ site.rootURL }}/cur/programming/lists/intro/remove-list-elements-take-two.html]
+	resource: Range of List Elements [{{ site.rootURL }}/cur/programming/lists/intro/range-of-list-elements.html]
 	
 heading: Lists and Sentences: The Index Variable Pattern
-	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
+	resource: Processing a Sentence [{{ site.rootURL }}/cur/programming/lists/sentences/processing-a-sentence.html]
 	
 heading: Lists as Arguments
-	resource: Swap List Values [/bjc-r/cur/programming/lists/intro/swap-list-values.html]
-	resource: Check if a List is Sorted [/bjc-r/cur/programming/sorting/intro/check-if-a-list-is-sorted.html]
-	resource: Check if a List is Sorted: Hint [/bjc-r/cur/programming/sorting/intro/check-if-a-list-is-sorted-hint.html]
+	resource: Swap List Values [{{ site.rootURL }}/cur/programming/lists/intro/swap-list-values.html]
+	resource: Check if a List is Sorted [{{ site.rootURL }}/cur/programming/sorting/intro/check-if-a-list-is-sorted.html]
+	resource: Check if a List is Sorted: Hint [{{ site.rootURL }}/cur/programming/sorting/intro/check-if-a-list-is-sorted-hint.html]
 	
 heading: Homework
-	homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+	homework: (Due Later) Hangman Classic [{{ site.rootURL }}/cur/programming/projects/hangman/hangman-classic.html]
 	
 }

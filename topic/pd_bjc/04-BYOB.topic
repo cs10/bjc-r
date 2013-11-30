@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 4: Build Your Own Blocks
 {
 h2: Big Ideas
@@ -22,32 +25,32 @@ learning-goal: Discover how to:
 learning-goal: Employ blocks and data abstraction to break problems down into smaller problems and thus write more beautiful and elegant code.
 
 heading: Building a custom block
-	resource: Building your own blocks [/bjc-r/cur/programming/functions/building-your-own-blocks.html]
-	resource: Make a "draw polygon" Block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
-	resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block.html]
-	resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
+	resource: Building your own blocks [{{ site.rootURL }}/cur/programming/functions/building-your-own-blocks.html]
+	resource: Make a "draw polygon" Block [{{ site.rootURL }}/cur/programming/functions/make-a-draw-polygon-block.html]
+	resource: The Max Block [{{ site.rootURL }}/cur/programming/functions/the-max-block.html]
+	resource: Input types [{{ site.rootURL }}/cur/programming/functions/input-types.html]
 	//forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
-	resource: Do it: Composition of Functions [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
+	resource: Do it: Composition of Functions [{{ site.rootURL }}/cur/programming/functions/do-it-composition-of-functions.html]
 //	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
-	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
+	resource: Sum-thing's Up [{{ site.rootURL }}/cur/programming/loops/sum-things-up.html]
 	
 heading: Predicates
-	resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates.html]
-	resource: Predicates: Make a "Between" block [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+	resource: Predicates [{{ site.rootURL }}/cur/programming/functions/predicates/predicates.html]
+	resource: Predicates: Make a "Between" block [{{ site.rootURL }}/cur/programming/functions/predicates/predicates-make-a-between-block.html]
 	//forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
 	
 //heading: Variables
-//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+//	resource: Difference between Arguments/Input and Variables [{{ site.rootURL }}/cur/programming/functions/difference-between-arguments-input-and-variables.html]
 //	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
 //	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
 //	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+//	resource: Conflicts between regular variables and block variables [{{ site.rootURL }}/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
 	
 heading: Custom blocks make code easier to understand
-	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	resource: Simplifying a tic-tac-toe board drawer using custom blocks [{{ site.rootURL }}/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
 	
 heading: Activities
-	resource: Brick Wall [/bjc-r/cur/programming/abstraction/brick-wall.html]
+	resource: Brick Wall [{{ site.rootURL }}/cur/programming/abstraction/brick-wall.html]
 	
 
 

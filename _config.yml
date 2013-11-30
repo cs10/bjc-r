@@ -1,2 +1,4 @@
-rootURL: .
-destination: ./_site/bjc-r
+# When serving from the root of a server this should be blank.
+# (Normally it would be / but we've set things up oddly. :P)
+rootURL:
+destination: ./_site

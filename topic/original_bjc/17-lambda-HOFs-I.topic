@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 17: Lambda and Higher Order Functions (HOFs) I
 {
 h2: Big Ideas
@@ -14,39 +17,39 @@ h2: Activities
 learning-goal: Implement higher-order functions: map, keep, combine
 
 heading: Tools Sprite
-	resource: How to load the Tools Sprite [/bjc-r/cur/programming/snap/how-to-load-the-tools-sprite.html]
+	resource: How to load the Tools Sprite [{{ site.rootURL }}/cur/programming/snap/how-to-load-the-tools-sprite.html]
 
 
 heading: Introduction
 //	video: Watch this [http://snap.berkeley.edu/BYOB3-Tutorial2.mov]
-	resource: "The Block" [/bjc-r/cur/programming/HOFs/intro/the-block.html]
-	resource: "Call" [/bjc-r/cur/programming/HOFs/intro/call.html]
-	resource: Higher Order Functions [/bjc-r/cur/programming/HOFs/intro/higher-order-functions.html]
+	resource: "The Block" [{{ site.rootURL }}/cur/programming/HOFs/intro/the-block.html]
+	resource: "Call" [{{ site.rootURL }}/cur/programming/HOFs/intro/call.html]
+	resource: Higher Order Functions [{{ site.rootURL }}/cur/programming/HOFs/intro/higher-order-functions.html]
 
 
 heading: Map
-	resource: Introduction [/bjc-r/cur/programming/HOFs/map/introduction-to-map.html]
-	resource: Using Map [/bjc-r/cur/programming/HOFs/map/using-map.html]
-	resource: Transforming the Beatles [/bjc-r/cur/programming/HOFs/map/transforming-the-beatles.html]
-	resource: Exaggerating your sentences [/bjc-r/cur/programming/HOFs/map/exaggerating-your-sentences.html]
+	resource: Introduction [{{ site.rootURL }}/cur/programming/HOFs/map/introduction-to-map.html]
+	resource: Using Map [{{ site.rootURL }}/cur/programming/HOFs/map/using-map.html]
+	resource: Transforming the Beatles [{{ site.rootURL }}/cur/programming/HOFs/map/transforming-the-beatles.html]
+	resource: Exaggerating your sentences [{{ site.rootURL }}/cur/programming/HOFs/map/exaggerating-your-sentences.html]
 
 
 heading: Keep
-	resource: Using Keep [/bjc-r/cur/programming/HOFs/keep/using-keep.html]
-	resource: Count "ums" [/bjc-r/cur/programming/HOFs/keep/count-ums.html]
-	resource: Choose Beatles [/bjc-r/cur/programming/HOFs/keep/choose-beatles.html]
+	resource: Using Keep [{{ site.rootURL }}/cur/programming/HOFs/keep/using-keep.html]
+	resource: Count "ums" [{{ site.rootURL }}/cur/programming/HOFs/keep/count-ums.html]
+	resource: Choose Beatles [{{ site.rootURL }}/cur/programming/HOFs/keep/choose-beatles.html]
 
 
 heading: Combine
-	resource: Using Combine [/bjc-r/cur/programming/HOFs/combine/using-combine.html]
-	resource: Calculate your GPA [/bjc-r/cur/programming/HOFs/combine/calculate-your-gpa.html]
-	resource: Letter Count [/bjc-r/cur/programming/HOFs/combine/letter-count.html]
+	resource: Using Combine [{{ site.rootURL }}/cur/programming/HOFs/combine/using-combine.html]
+	resource: Calculate your GPA [{{ site.rootURL }}/cur/programming/HOFs/combine/calculate-your-gpa.html]
+	resource: Letter Count [{{ site.rootURL }}/cur/programming/HOFs/combine/letter-count.html]
 
 
 heading: Cascade
-	resource: Using Cascade [/bjc-r/cur/programming/HOFs/cascade/using-cascade.html]
-	resource: Factorials [/bjc-r/cur/programming/HOFs/cascade/factorials.html]
-	resource: Finding a Subword [/bjc-r/cur/programming/HOFs/cascade/finding-a-subword.html]
+	resource: Using Cascade [{{ site.rootURL }}/cur/programming/HOFs/cascade/using-cascade.html]
+	resource: Factorials [{{ site.rootURL }}/cur/programming/HOFs/cascade/factorials.html]
+	resource: Finding a Subword [{{ site.rootURL }}/cur/programming/HOFs/cascade/finding-a-subword.html]
 
 
 heading: Review

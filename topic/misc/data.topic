@@ -1,3 +1,6 @@
+---
+---
+
 title: Data 
 {
 
@@ -10,10 +13,10 @@ learning-goal: Process data, normalize the values, and visualize them
 learning-goal: Validate a hypothesis (question) using the computer
 
 heading: Spam vs Ham
-        resource: Introduction [/bjc-r/cur/programming/data/spam-ham/1-introduction.html]
-        resource: Text Messages [/bjc-r/cur/programming/data/spam-ham/2-the-data.html]
-        resource: Counting Words [/bjc-r/cur/programming/data/spam-ham/3-average-number-of-words.html]
-        resource: Predictions! [/bjc-r/cur/programming/data/spam-ham/4-predict-by-number-of-words.html]
-        resource: Further work [/bjc-r/cur/programming/data/spam-ham/5-further-work.html]
+        resource: Introduction [{{ site.rootURL }}/cur/programming/data/spam-ham/1-introduction.html]
+        resource: Text Messages [{{ site.rootURL }}/cur/programming/data/spam-ham/2-the-data.html]
+        resource: Counting Words [{{ site.rootURL }}/cur/programming/data/spam-ham/3-average-number-of-words.html]
+        resource: Predictions! [{{ site.rootURL }}/cur/programming/data/spam-ham/4-predict-by-number-of-words.html]
+        resource: Further work [{{ site.rootURL }}/cur/programming/data/spam-ham/5-further-work.html]
 
 }

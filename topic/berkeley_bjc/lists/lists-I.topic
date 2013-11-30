@@ -1,3 +1,6 @@
+---
+---
+
 title: Collecting Data into Lists
 {
 h2: Big Ideas
@@ -17,23 +20,23 @@ learning-goal: Gain experience working with a new data structure and the large r
 learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
-	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
-	 resource: What good are lists?  [/bjc-r/cur/programming/lists/hof/what-good-are-lists.html]
-	 resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
-	 resource: Choosing some items from a list [/bjc-r/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
-	 resource: Combining all the items of a list [/bjc-r/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
-	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
-	 resource: More on composition of higher order functions [/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
-	 resource: When you really have to loop [/bjc-r/cur/programming/lists/hof/when-you-really-have-to-loop.html]
+	 resource: Using the LIST block to make a list [{{ site.rootURL }}/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
+	 resource: What good are lists?  [{{ site.rootURL }}/cur/programming/lists/hof/what-good-are-lists.html]
+	 resource: Transforming each item of a list [{{ site.rootURL }}/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
+	 resource: Choosing some items from a list [{{ site.rootURL }}/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
+	 resource: Combining all the items of a list [{{ site.rootURL }}/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
+	 resource: Composing higher order functions to solve more complicated problems [{{ site.rootURL }}/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
+	 resource: More on composition of higher order functions [{{ site.rootURL }}/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
+	 resource: When you really have to loop [{{ site.rootURL }}/cur/programming/lists/hof/when-you-really-have-to-loop.html]
 	
 //heading: Lists and Sentences: The Index Variable Pattern
-//	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
+//	resource: Processing a Sentence [{{ site.rootURL }}/cur/programming/lists/sentences/processing-a-sentence.html]
 	
 heading: List Mutation
-	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
-	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
+	resource: Swap Two List Values [{{ site.rootURL }}/cur/programming/lists/intro/swap-two-list-values.html]
+	resource: Mutation of Variables [{{ site.rootURL }}/cur/programming/lists/mutation/mutate-vars.html]
 
 	
-homework: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+homework: (Due Later) Hangman Classic [{{ site.rootURL }}/cur/programming/projects/hangman/hangman-classic.html]
 	
 }

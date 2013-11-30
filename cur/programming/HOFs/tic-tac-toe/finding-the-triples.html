@@ -2,27 +2,27 @@
 ---
 
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> Finding the Triples </title><!--ORIGINAL NAME: Finding the Triples--></head><body>
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script><title> Finding the Triples </title><!--ORIGINAL NAME: Finding the Triples--></head><body>
 Now we have to convert our first board configuration into the triples we mentioned before.
 Our program will start with a list of all winning combinations:
 
 
-<p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/ttt-8-lists2.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT5.png"></div>
+<p></p><div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/hof/ttt-8-lists2.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT5.png"></div>
 <p>
 
 and a position such as:
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/TTT-list.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT2.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/hof/TTT-list.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT2.png"></div>
 <p>
 
 would return:
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/ttt-8-lists.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT4.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/hof/ttt-8-lists.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT4.png"></div>
 <p>
 
 
 In order for us to do this, we need to first find a way to "extract" the piece in a specific square.  If there is a piece in the square, the piece would be returned, and if there is no piece in the square, the it will return the square back.
 </p><p>
 So first of all, make a <i>substitute-letter</i> block that takes in a square and the position as inputs and returns a piece (X or O) or the square back.
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/substitute-letter-block.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT6.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/hof/substitute-letter-block.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT6.png"></div>
 <p>
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/substitute-letter-block2.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT7.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/hof/substitute-letter-block2.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT7.png"></div>
 <p>   </p></body></html>

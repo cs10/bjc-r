@@ -496,7 +496,7 @@ MC.prototype.getTemplate = function() {
 	"				</div>" +
 	"				<div class='rightColumn' class='bg2'>" +
 	"					<img src='" +
-	{{ site.rootURL }} +
+	"{{ site.rootURL }}" +
 	"/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
 	"				</div>" +
 	"			</div>" +

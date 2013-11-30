@@ -1,6 +1,9 @@
+---
+---
+
 /*
  * bjc-course.js
- * 
+ *
  * loaded on course pages.
  * can depend on jquery and bjc-library.js
  */
@@ -20,7 +23,7 @@ bjc.editURLs = function() {
         });
     });
     $("a").each(function() {
-        if (document.location.href.indexOf("/bjc-r/course") == -1) {
+        if (document.location.href.indexOf("{{ site.rootURL }}/course") == -1) {
             this.href + "&course=" + document.location.href;
         } else {
             this.href = this.href + "&course=" + document.location.href.split("?")[0].split("/").pop();
@@ -38,7 +41,7 @@ bjc.addTitle = function() {
 	$("#full").prepend($(document.createElement("div")).attr({"class":"header"}).html(document.title));
 
 }
- 
+
  $(document).ready(function() {
     bjc.editURLs();
     bjc.addTitle();

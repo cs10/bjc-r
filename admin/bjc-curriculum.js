@@ -11,7 +11,7 @@ bjc['url_list'] = new Array();
 // never gets used?
 bjc['topic_list'] = new Array();
 
-//bjc['rootURL'] = {{ site.rootURL }};
+//bjc['rootURL'] = bjc.rootURL;
 
 
 
@@ -33,7 +33,7 @@ bjc.secondarySetUp = function() {
 			$(".header").html(getParameterByName("title"));
 		}
 	}
-	document.body.style.marginTop = "60px"; // FIXME!
+	document.body.style.marginTop = "60px";
 	document.title = $(".header").text();
 
 
@@ -58,7 +58,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('term'))) {
 				this.setAttribute('term', this.innerHTML)
 			}
-			vocabDiv.append('<a href="' + {{ site.rootURL }} + '/glossary/view.html?term=' + this.getAttribute('term')
+			vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
 					+ '" target="_vocab">' + this.getAttribute('term') + '</a>');
 		});
 	}
@@ -72,7 +72,7 @@ bjc.secondarySetUp = function() {
 			if (!(this.getAttribute('topic'))) {
 				this.setAttribute('topic', this.innerHTML)
 			};
-			helpDiv.append('<p><a href="' + {{ site.rootURL }} + '/help/view.html?topic=' + this.getAttribute('topic')
+			helpDiv.append('<p><a href="' + bjc.rootURL + '/help/view.html?topic=' + this.getAttribute('topic')
 				       + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
 		});
 	}
@@ -109,7 +109,7 @@ bjc.secondarySetUp = function() {
         }
 
 		$.ajax({
-		    url : {{ site.rootURL }} + "/topic/" + bjc.file,
+		    url : bjc.rootURL + "/topic/" + bjc.file,
 		    type : "GET",
 		    dataType : "text",
 		    cache : false,
@@ -182,7 +182,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 		if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
 			if (line.indexOf("title:") != -1) {
 				/* Create a link back to the main topic. */
-				url = {{ site.rootURL }} + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
+				url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
 				text = line.slice(line.indexOf(":") + 1);
 				if (text.length > 35) {
 					text = text.slice(0, 35) + "...";
@@ -201,13 +201,13 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 				}
 				url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
 				if (url.indexOf("http") != -1) {
-					url = {{ site.rootURL }} + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
+					url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text + hiddenString + "&course=" + course;
 				} else {
-				    if (url.indexOf({{ site.rootURL }}) == -1 && url.indexOf("..") == -1) {
+				    if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
 					if (url[0] == "/") {
-					    url = {{ site.rootURL }} + url;
+					    url = bjc.rootURL + url;
 					} else {
-					    url = {{ site.rootURL }} + "/" + url;
+					    url = bjc.rootURL + "/" + url;
 					}
 				    }
 				    if (url.indexOf("?") != -1) {
@@ -256,7 +256,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     if (getParameterByName("course") != "") {
         var course_link = getParameterByName("course");
         if (course_link.indexOf("http://") == -1) {
-            course_link = {{ site.rootURL }} + "/course/" + course_link;
+            course_link = bjc.rootURL + "/course/" + course_link;
         }
         list_item = $(document.createElement("li")).attr({'class': 'list_item'});
         list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
@@ -308,7 +308,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 });*/
 
 
-	if (document.URL.indexOf({{ site.rootURL }} + "/admin/empty-curriculum-page.html") != -1) {
+	if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
 	    bjc.addFrame();
 	} else {
 		$("#full").append('<div id="full-bottom-bar"></div>');

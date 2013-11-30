@@ -1,3 +1,6 @@
+---
+---
+
 title: The Internet
 {
 h2: Big Ideas
@@ -12,10 +15,10 @@ learning-goal: Use traceroute, whois, ping, telnet, and other commands to invest
 learning-goal: Discuss challenges in Internet privacy
 
 heading: Internet under the Hood
-        resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
-        resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/trace.html]
-        resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
-        resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/speed.html]     
-        resource: Practice: Internet and Privacy [/bjc-r/cur/programming/internet/introprivacy.html]
+        resource: Introduction [{{ site.rootURL }}/cur/programming/internet/introshell.html]
+        resource: Practice: Traceroute and Whois [{{ site.rootURL }}/cur/programming/internet/trace.html]
+        resource: Practice: Telnet [{{ site.rootURL }}/cur/programming/internet/telnet.html]
+        resource: Practice: Ping and Speedtest [{{ site.rootURL }}/cur/programming/internet/speed.html]     
+        resource: Practice: Internet and Privacy [{{ site.rootURL }}/cur/programming/internet/introprivacy.html]
 
 }

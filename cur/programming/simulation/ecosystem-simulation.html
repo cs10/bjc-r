@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <!-- put the following in exactly --><script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script>
         <title>
             Ecosystem Equilibrium
         </title><!--ORIGINAL NAME: Ecosystem Simulation-->
@@ -23,7 +23,7 @@
                 As more time passes and the bear population gets smaller, the salmon population will start to increase again due to having fewer natural predators.
             </li>
         </ul>
-        <div style="text-align: center;"><img border="0" src="/bjc-r/img/sys/bears.jpg" alt="Bears eating Salmon" title="Bears eating Salmon" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Bears-2.jpg">
+        <div style="text-align: center;"><img border="0" src="{{ site.rootURL }}/img/sys/bears.jpg" alt="Bears eating Salmon" title="Bears eating Salmon" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Bears-2.jpg">
             <br>
         </div>
         In a perfectly stable ecosystem, this cycle can continue indefinitely. Of course, natural ecosystems are <span style="text-decoration: underline;">far</span> more complex than this simple example, but the relationship between species applies to complex ecosystems as well.
@@ -56,7 +56,7 @@
             </li>
         </ul>
         <p>
-            You can download the simulator <a href="/bjc-r/prog/BYOB/sharks-fish-simulator.ypr"><strong>here</strong></a>.
+            You can download the simulator <a href="{{ site.rootURL }}/prog/BYOB/sharks-fish-simulator.ypr"><strong>here</strong></a>.
         </p>
         <p>
             <strong>Step 1: Population Models</strong>
@@ -72,7 +72,7 @@
                 Notice the two sprites named <tt>Sharks</tt> and <tt>Fish</tt>. Each one of these sprites represents a different population type, and defines the model for the populations behavior on the stage.
             </li>
             <li>
-                Click on the Sharks sprite and look at the block attached to the <img border="0" src="/bjc-r/img/sys/when-i-receive-prepare.png" alt="Prepare Species Hat" title="Prepare Species Hat" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/prepare.png"> block. This set of rules defines how the shark population changes over time -- we'll try changing these later. Check out the <tt>Fish</tt> sprite and you'll see that the same block appears there.
+                Click on the Sharks sprite and look at the block attached to the <img border="0" src="{{ site.rootURL }}/img/sys/when-i-receive-prepare.png" alt="Prepare Species Hat" title="Prepare Species Hat" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/prepare.png"> block. This set of rules defines how the shark population changes over time -- we'll try changing these later. Check out the <tt>Fish</tt> sprite and you'll see that the same block appears there.
             </li>
             <li>
                 Run the simulator by clicking on the green flag and wait until the <tt>number of steps</tt> is <tt>10</tt> (note: it may take a long time for the simulator to run). Can you tell that the populations are behaving differently? Make observations but don't worry about recording anything -- you will be asked to make similar modifications later.
@@ -108,7 +108,7 @@
                 Duplicate one of the pre-existing sprites (<tt>Sharks</tt> or <tt>Fish</tt>) by right-clicking (option+click on Macs) and clicking <tt>duplicate</tt>. Change the name and icon to represent whatever species you'd like to create.
             </li>
             <li>
-                Edit the <img border="0" title="Initialize simulator" alt="Initialize simulator" src="/bjc-r/img/sys/initialize-simulator-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/initialize-simulator.png"> block and add an extra <tt>replace</tt> line to the end of the block with your species name as the final argument.
+                Edit the <img border="0" title="Initialize simulator" alt="Initialize simulator" src="{{ site.rootURL }}/img/sys/initialize-simulator-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/initialize-simulator.png"> block and add an extra <tt>replace</tt> line to the end of the block with your species name as the final argument.
             </li>
             <li>
                 Click on your species sprite and change the species name to the same name you used in Step 2. Then change the model as you see fit -- be creative and don't be afraid to experiment!  The guidelines provided below may prove useful.

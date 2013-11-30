@@ -6,7 +6,7 @@ function getQInstance(type, qdata, location,  i) {
 	if (type = "multiplechoice") {
 		return new MC(qdata, location, i);
 	}
-	
+
 }
 
 
@@ -27,28 +27,28 @@ $(document).ready(buildQuestions);
  * Process each div with class assessment-data, start xmlhttp calls as necessary.
  */
 function buildQuestions() {
-	// we don't do english here!  datas!!! 
+	// we don't do english here!  datas!!!
 	var qdatas = $("div.assessment-data");
 	var num = qdatas.length;
 
-	
+
 	for (var i = 0; i < num; i++) {
 		var qdata = $(qdatas.get(i));
 		var location = $("<div></div>").insertAfter($(qdata));
 		if (qdata.attr("src")) {
 			var target = qdata.attr("src");
 			getRemoteQdata(target, location, i);
-			
+
 		} else {
 			buildQuestion(qdata, location, i, false);
-		}	
+		}
 	}
-	
-	
+
+
 	// now, remove the purely data tags, how about?
 	$("div.assessment-data").remove();
 	//$("div.responseDeclaration").remove();
-	
+
 }
 
 // use a closure to keep around location and questionNum
@@ -58,7 +58,7 @@ function getRemoteQdata(target, location, questionNum) {
 			type : "GET",
 			dataType : "html",
 			success : makeGetRemoteQdataCallback(location, questionNum)
-				
+
 		});
 }
 
@@ -97,4 +97,3 @@ getParameterByName = function(name) {
 	else
 		return decodeURIComponent(results[1].replace(/\+/g, " "));
 }
-

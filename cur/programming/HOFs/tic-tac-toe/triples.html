@@ -2,11 +2,11 @@
 ---
 
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> Triples </title><!--ORIGINAL NAME: Triples--></head><body> When we look at a tic-tac-toe board, we look at each row, column, and diagonal. Essentially the question is "are there three squares in a line that contain two pieces that are mine with one square empty?" In fact nothing really matters about the game besides the potential winning combinations.
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script><title> Triples </title><!--ORIGINAL NAME: Triples--></head><body> When we look at a tic-tac-toe board, we look at each row, column, and diagonal. Essentially the question is "are there three squares in a line that contain two pieces that are mine with one square empty?" In fact nothing really matters about the game besides the potential winning combinations.
 <p> There are eight winning combinations in tic-tac-toe. By looking at our previous board: </p>
 <p></p>
-<div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/tic-tac-toe-board.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT1.png"></div>
+<div style="text-align: center;"><img border="0" title="There should be an image here" src="{{ site.rootURL }}/img/hof/tic-tac-toe-board.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT1.png"></div>
 <p> We can then make a list of all its winning combinations, or <span style="font-weight: bold;">triples</span> for short. </p>
 <p></p>
-<div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/ttt-8-lists.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT4.png"></div>
+<div style="text-align: center;"><img border="0" title="There should be an image here" src="{{ site.rootURL }}/img/hof/ttt-8-lists.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT4.png"></div>
 <p> Take a minute to convince yourself that this list is all you need to know about the corresponding board position. Once the strategy finds the triples for a board position, it never needs to look back at the original position again.</p>   </body></html>

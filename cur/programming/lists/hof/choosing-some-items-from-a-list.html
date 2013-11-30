@@ -6,7 +6,7 @@
    
    <head>
       
-      <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      <script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script>
       
       <title> Choosing some items from a list</title>
       
@@ -22,11 +22,11 @@ Yonkers, San Francisco, Oklahoma. Have you ever gotten stuck on the
 letter "A"? Oklahoma, Alabama, Asia, Alaska, America, Alameda... and so 
 on, forever.</p>
 How many states start and end with the same letter? To find out, we first need a list of all the states:<br>
-<img title="Alabama, Alaska, ... Wisconsin, Wyoming" alt="Alabama, Alaska, ... Wisconsin, Wyoming" src="/bjc-r/img/list/hof/states.png" border="0"/>
+<img title="Alabama, Alaska, ... Wisconsin, Wyoming" alt="Alabama, Alaska, ... Wisconsin, Wyoming" src="{{ site.rootURL }}/img/list/hof/states.png" border="0"/>
 
 <p>Now we want to select a subset of the states, namely the ones whose 
 first and last letters are the same. Here's the block we use for that:<br>
-<img title="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" alt="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" src="/bjc-r/img/list/hof/keepblock.png" border="0"/>
+<img title="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" alt="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" src="{{ site.rootURL }}/img/list/hof/keepblock.png" border="0"/>
 
 <p>Like <code>map</code>, the <code>keep</code> block has a function as its first input. 
 Notice, though, that this grey ring's inner boundary is hexagonal. 
@@ -34,10 +34,10 @@ This lets you know that you should use a <i>predicate </i>function,
 which means a function that reports <code>true</code> or <code>false</code>.
 
 </p>We want to know whether two things are equal:<br>
-<img title="&lt;&lt; &gt; = &lt; &gt;&gt;" alt="&lt;&lt; &gt; = &lt; &gt;&gt;" src="/bjc-r/img/list/hof/equalblock.png" border="0"/>
+<img title="&lt;&lt; &gt; = &lt; &gt;&gt;" alt="&lt;&lt; &gt; = &lt; &gt;&gt;" src="{{ site.rootURL }}/img/list/hof/equalblock.png" border="0"/>
 
 <p>The first letter of a word is letter number 1:<br>
-<img title="(LETTER (1) OF [])" alt="(LETTER (1) OF [])" src="/bjc-r/img/list/hof/firstletterblock.png" border="0"><br>
+<img title="(LETTER (1) OF [])" alt="(LETTER (1) OF [])" src="{{ site.rootURL }}/img/list/hof/firstletterblock.png" border="0"><br>
 (Note that we've deleted the word "world" that Snap! provides as a default 
 value, a hint about what kind of input is expected. The input slot must 
 be empty for our function-input notation to work.)
@@ -45,22 +45,22 @@ be empty for our function-input notation to work.)
 </p>
 <p>Finding the last letter is a little trickier; you find the length of 
   the text and use that number to select which letter you want:<br>
-  <img title="(LETTER (LENGTH OF []) OF [])" alt="(LETTER (LENGTH OF []) OF [])" src="/bjc-r/img/list/hof/lastletterblock.png" border="0"/>
+  <img title="(LETTER (LENGTH OF []) OF [])" alt="(LETTER (LENGTH OF []) OF [])" src="{{ site.rootURL }}/img/list/hof/lastletterblock.png" border="0"/>
   
   </p>
 <p>
   </p>
   Putting all these pieces together will give us the answer we want:<br>
-  <img title="KEEP ITEMS SUCH THAT (&lt;...&gt;) FROM (STATES)" alt="KEEP ITEMS SUCH THAT (&lt;...&gt;) FROM (STATES)" src="/bjc-r/img/list/hof/geography.png" border="0"/>
+  <img title="KEEP ITEMS SUCH THAT (&lt;...&gt;) FROM (STATES)" alt="KEEP ITEMS SUCH THAT (&lt;...&gt;) FROM (STATES)" src="{{ site.rootURL }}/img/list/hof/geography.png" border="0"/>
   <br>You can see from the "length: 4" in the result that there are four such states. The one you can't see in this picture is Ohio.
   
 </p>
 <p><br>But if you're playing Geography, the question you really want answered is 
 "Which states start with such-and-such a letter?" You can define a block
  that takes a letter as input and gives the answer to that question:<br>
-<img title="report (keep...) ..." alt="report (keep...) ..." src="/bjc-r/img/list/hof/state-starting.png" border="0"></p>
-<img title="states with P -&gt; pennsylvania" alt="states with P -&gt; pennsylvania" src="/bjc-r/img/list/hof/p-states.png" border="0"><p>
-<img title="states with S -&gt; south carolina, south dakota" alt="states with S -&gt; south carolina, south dakota" src="/bjc-r/img/list/hof/s-states.png" border="0"/>
+<img title="report (keep...) ..." alt="report (keep...) ..." src="{{ site.rootURL }}/img/list/hof/state-starting.png" border="0"></p>
+<img title="states with P -&gt; pennsylvania" alt="states with P -&gt; pennsylvania" src="{{ site.rootURL }}/img/list/hof/p-states.png" border="0"><p>
+<img title="states with S -&gt; south carolina, south dakota" alt="states with S -&gt; south carolina, south dakota" src="{{ site.rootURL }}/img/list/hof/s-states.png" border="0"/>
 
 <p><br><br><b>Try this: </b>
 <p>Write an expression that will select all the words of at least 

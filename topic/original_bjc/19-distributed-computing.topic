@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 19: Distributed Computing
 {
 h2: Big Ideas
@@ -18,18 +21,18 @@ learning-goal: MapReduce is a particularly nice example of a distributed computi
 
 
 heading: The <i>MapReduce</i> distributed computing pattern
-	resource: Overview [/bjc-r/cur/programming/distributed/overview.html]
+	resource: Overview [{{ site.rootURL }}/cur/programming/distributed/overview.html]
 	
 heading: Solving problems with MapReduce
-	resource: Getting started with MapReduce! [/bjc-r/cur/programming/distributed/getting-started-with-mapreduce.html]
-	resource: Your first MapReduce : a simple sum-of-squares (we did it for you) [/bjc-r/cur/programming/distributed/your-first-mapreduce-a-simple-sum-of-squares-we-did-it-for-you.html]
-	resource: Your second MapReduce : Alpha, the first word in the dictionary [/bjc-r/cur/programming/distributed/your-second-mapreduce-alpha-the-first-word-in-the-dictionary.html]
+	resource: Getting started with MapReduce! [{{ site.rootURL }}/cur/programming/distributed/getting-started-with-mapreduce.html]
+	resource: Your first MapReduce : a simple sum-of-squares (we did it for you) [{{ site.rootURL }}/cur/programming/distributed/your-first-mapreduce-a-simple-sum-of-squares-we-did-it-for-you.html]
+	resource: Your second MapReduce : Alpha, the first word in the dictionary [{{ site.rootURL }}/cur/programming/distributed/your-second-mapreduce-alpha-the-first-word-in-the-dictionary.html]
 	resource: What kind of pattern was alpha? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1970]
-	resource: Your third MapReduce : Love, All the Beatles song titles with the word "love" in it [/bjc-r/cur/programming/distributed/your-third-mapreduce-love-all-the-beatles-song-titles-with-the-word-love-in-it.html]
+	resource: Your third MapReduce : Love, All the Beatles song titles with the word "love" in it [{{ site.rootURL }}/cur/programming/distributed/your-third-mapreduce-love-all-the-beatles-song-titles-with-the-word-love-in-it.html]
 	resource: What kind of pattern was Love? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1972]
-	resource: Your fourth MapReduce : WordCount, a count of the number of times words appears [/bjc-r/cur/programming/distributed/your-fourth-mapreduce-wordcount-a-count-of-the-number-of-times-words-appears.html]
-	resource: Extra for Experts : the fifth MapReduce ... Google, building a Google-like index [/bjc-r/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
-	resource: Quiz Answers [/bjc-r/cur/programming/distributed/quiz-answers.html]
+	resource: Your fourth MapReduce : WordCount, a count of the number of times words appears [{{ site.rootURL }}/cur/programming/distributed/your-fourth-mapreduce-wordcount-a-count-of-the-number-of-times-words-appears.html]
+	resource: Extra for Experts : the fifth MapReduce ... Google, building a Google-like index [{{ site.rootURL }}/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
+	resource: Quiz Answers [{{ site.rootURL }}/cur/programming/distributed/quiz-answers.html]
 	
 
 

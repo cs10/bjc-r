@@ -1,3 +1,6 @@
+---
+---
+
 title: Loops, Variables, and Conditionals
 
 {
@@ -25,52 +28,52 @@ learning-goal: Use the <tt>random</tt> number block to create randomness in a ga
 
 
 heading: Drawing
-	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
-	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
-	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage-solo.html]
-	resource: Make a Kaleidoscope [/bjc-r/cur/programming/intro/drawing/make-a-kaleidoscope.html]
-	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+	resource: Experiment with drawing commands [{{ site.rootURL }}/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
+	resource: Experiment with Repeat [{{ site.rootURL }}/cur/programming/intro/drawing/experiment-with-repeat.html]
+	quiz: Test yourself: Total turning [{{ site.rootURL }}/cur/programming/intro/drawing/turning.html]
+	resource: Position on the Stage  [{{ site.rootURL }}/cur/programming/random/position-on-the-stage-solo.html]
+	resource: Make a Kaleidoscope [{{ site.rootURL }}/cur/programming/intro/drawing/make-a-kaleidoscope.html]
+	quiz: Test yourself: Repeat [{{ site.rootURL }}/cur/programming/intro/drawing/repeat-test.html]
 
 
 heading: Variables
 
-	resource: The FOR block [/bjc-r/cur/programming/variables/for.html]
-	resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
-	resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
-	resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
-	resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
+	resource: The FOR block [{{ site.rootURL }}/cur/programming/variables/for.html]
+	resource: Nested FORs [{{ site.rootURL }}/cur/programming/variables/nested-for.html]
+	resource: Script variables [{{ site.rootURL }}/cur/programming/variables/scriptvar.html]
+	resource: Global variables [{{ site.rootURL }}/cur/programming/variables/globals.html]
+	resource: The CHANGE block [{{ site.rootURL }}/cur/programming/variables/changeblock.html]
 
 //	quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
-//	resource: Tempo [/bjc-r/cur/programming/variables/tempo.html]
+//	resource: Tempo [{{ site.rootURL }}/cur/programming/variables/tempo.html]
 //	quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
-//	resource: Change how fast the tempo changes [/bjc-r/cur/programming/variables/change-how-fast-the-tempo-changes.html]
-//	resource: Variable Tutorial (Scales) [/bjc-r/cur/programming/variables/variable-tutorial-scales.html]
-//	resource: Common Bug - Set vs. Change [/bjc-r/cur/programming/variables/common-bug-set-vs-change.html]
-//	resource: (<i>Optional</i>) Exploring Regular Shapes [/bjc-r/cur/programming/variables/optional-exploring-regular-shapes.html]
-//	resource: Variable Sized Shapes [/bjc-r/cur/programming/variables/variable-sized-shapes.html]
-//	resource: Countdown [/bjc-r/cur/programming/variables/countdown.html]
-//	resource: Repeat Until [/bjc-r/cur/programming/variables/repeat-until.html]
-//	resource: (<i>Optional</i>) Practice with Repeat Until [/bjc-r/cur/programming/variables/optional-practice-with-repeat-until.html]
-//	resource: Draw a Squiral [/bjc-r/cur/programming/variables/draw-a-squiral.html]
+//	resource: Change how fast the tempo changes [{{ site.rootURL }}/cur/programming/variables/change-how-fast-the-tempo-changes.html]
+//	resource: Variable Tutorial (Scales) [{{ site.rootURL }}/cur/programming/variables/variable-tutorial-scales.html]
+//	resource: Common Bug - Set vs. Change [{{ site.rootURL }}/cur/programming/variables/common-bug-set-vs-change.html]
+//	resource: (<i>Optional</i>) Exploring Regular Shapes [{{ site.rootURL }}/cur/programming/variables/optional-exploring-regular-shapes.html]
+//	resource: Variable Sized Shapes [{{ site.rootURL }}/cur/programming/variables/variable-sized-shapes.html]
+//	resource: Countdown [{{ site.rootURL }}/cur/programming/variables/countdown.html]
+//	resource: Repeat Until [{{ site.rootURL }}/cur/programming/variables/repeat-until.html]
+//	resource: (<i>Optional</i>) Practice with Repeat Until [{{ site.rootURL }}/cur/programming/variables/optional-practice-with-repeat-until.html]
+//	resource: Draw a Squiral [{{ site.rootURL }}/cur/programming/variables/draw-a-squiral.html]
 //	quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
 	
 	
 heading: Activities
-	resource: Draw a Picture in <span class="snap">snap</span> [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
-//	resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
+	resource: Draw a Picture in <span class="snap">snap</span> [{{ site.rootURL }}/cur/programming/intro/drawing/draw-a-picture.html]
+//	resource: Countdown [{{ site.rootURL }}/cur/programming/variables/countdown-with-sprites.html]
 
 heading: The <tt>If</tt> Block
-	quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
-	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
-	resource: Checking for leap years [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
+	quiz: If: What would you expect? [{{ site.rootURL }}/cur/programming/conditionals/if-pretest.html]
+	resource: How many days are there in a given month? [{{ site.rootURL }}/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
+	resource: Checking for leap years [{{ site.rootURL }}/cur/programming/conditionals/dates/checking-for-leap-years.html]
 	
 heading: Random
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
-	resource: Randomly Moving Character [/bjc-r/cur/programming/random/randomly-moving-character.html]
+	resource: Position on the Stage  [{{ site.rootURL }}/cur/programming/random/position-on-the-stage.html]
+	resource: Randomly Moving Character [{{ site.rootURL }}/cur/programming/random/randomly-moving-character.html]
 
 //heading: Exercises
-//	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
+//	resource: End-of-Topic Exercises [{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
 	
 	
 //heading: Turn in your work

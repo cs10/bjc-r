@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title>Quadratic-Time</title><!--ORIGINAL NAME: Quadratic-Time--></head><body>
+<script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script><title>Quadratic-Time</title><!--ORIGINAL NAME: Quadratic-Time--></head><body>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;In the timing experiments of the previous
 section, you may have noticed that the running time of the block
 increases approximately by a factor of four when the size of the list
@@ -21,7 +21,7 @@ think about how many comparisons we have to do in the worst-case, for a
 list of length <tt>N</tt>.&nbsp; We compare the first number against <tt>(N - 1)</tt> numbers, the second number against <tt>(N - 2)</tt> numbers, the third number against <tt>(N - 3)</tt>
 numbers, and so on, until we reach the last number (if we're unlucky),
 which we have to compare against no other number.&nbsp; In total, we
-have to do <tt>(N - 1) + (N - 2) + (N - 3) + ... + 2 + 1</tt> total comparisons, which, <a href="/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html">according to Gauss</a>, is <tt>[N * (N - 1)]/2</tt> total comparisons, or <tt>(N<sup>2</sup> - N)/2</tt> total comparisons.&nbsp; For large values of <tt>N</tt>, the <tt>N<sup>2</sup></tt> term begins to eclipse the value of <tt>N</tt>:</p>
+have to do <tt>(N - 1) + (N - 2) + (N - 3) + ... + 2 + 1</tt> total comparisons, which, <a href="{{ site.rootURL }}/cur/programming/algorithms/competing-with-young-gauss.html">according to Gauss</a>, is <tt>[N * (N - 1)]/2</tt> total comparisons, or <tt>(N<sup>2</sup> - N)/2</tt> total comparisons.&nbsp; For large values of <tt>N</tt>, the <tt>N<sup>2</sup></tt> term begins to eclipse the value of <tt>N</tt>:</p>
 
 <table style="font-size: 1em; line-height: inherit; border-collapse: collapse;" id="t5m:" border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr style="text-align: left;"><td width="20%"><tt>N</tt></td>
 			<td width="20%"><tt>10</tt></td>

@@ -1,3 +1,6 @@
+---
+---
+
 title: Broadcast, Animations, and Music
 
 {
@@ -16,32 +19,32 @@ learning-goal: Get a <span class="snap">snap</span> account set up to save proje
 learning-goal: Learn to use key listeners to move the characters around the screen.
 
 heading: Exploring Snap!
-	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap.html]
-	resource: Make a Sprite sing [/bjc-r/cur/programming/intro/snap/make-a-sprite-sing.html]
-	resource: Blocks and scripts [/bjc-r/cur/programming/intro/snap/blocks-scripts.html]
-	resource: Hat blocks and command blocks [/bjc-r/cur/programming/intro/snap/hat-command.html]
+	resource: Welcome to <span class="snap">snap</span> [{{ site.rootURL }}/cur/programming/intro/snap/welcome-to-snap.html]
+	resource: Make a Sprite sing [{{ site.rootURL }}/cur/programming/intro/snap/make-a-sprite-sing.html]
+	resource: Blocks and scripts [{{ site.rootURL }}/cur/programming/intro/snap/blocks-scripts.html]
+	resource: Hat blocks and command blocks [{{ site.rootURL }}/cur/programming/intro/snap/hat-command.html]
 	
 heading: Playing with Sounds and Broadcasting
-//	resource:  Meowing: One at a time or in unison? [/bjc-r/cur/programming/intro/snap/meowing.html]
+//	resource:  Meowing: One at a time or in unison? [{{ site.rootURL }}/cur/programming/intro/snap/meowing.html]
 
-	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/intro/snap/intro-play.html]
-	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
-	quiz: Test Yourself: Different Ways to Broadcast [/bjc-r/cur/programming/intro/snap/different-ways-to-broadcast.html]
-//	resource: Single Step Mode [/bjc-r/cur/programming/intro/snap/single-step-mode.html]
-//	resource: Exporting and Importing Sprites [/bjc-r/cur/programming/intro/snap/exporting-and-importing-sprites.html]
+	resource: Experiment with a short <span class="snap">snap</span> play [{{ site.rootURL }}/cur/programming/intro/snap/intro-play.html]
+	quiz: Test Yourself: Go Team! [{{ site.rootURL }}/cur/programming/intro/snap/test-yourself-go-team.html]
+	quiz: Test Yourself: Different Ways to Broadcast [{{ site.rootURL }}/cur/programming/intro/snap/different-ways-to-broadcast.html]
+//	resource: Single Step Mode [{{ site.rootURL }}/cur/programming/intro/snap/single-step-mode.html]
+//	resource: Exporting and Importing Sprites [{{ site.rootURL }}/cur/programming/intro/snap/exporting-and-importing-sprites.html]
 	
 heading: Activities
-	resource: Make a movie [/bjc-r/cur/programming/intro/snap/make-a-movie.html]
+	resource: Make a movie [{{ site.rootURL }}/cur/programming/intro/snap/make-a-movie.html]
 	
 heading: Game controls
-	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
-	resource: Game of Tag [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
-	resource: Test Yourself: Detecting a key press [/bjc-r/cur/programming/intro/drawing/testkeypress.html]
+	resource: Moving with the Arrow Keys [{{ site.rootURL }}/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
+	resource: Game of Tag [{{ site.rootURL }}/cur/programming/intro/drawing/game-of-tag.html]
+	resource: Test Yourself: Detecting a key press [{{ site.rootURL }}/cur/programming/intro/drawing/testkeypress.html]
 
 heading: Activities
-	resource: Electric Keyboard [/bjc-r/cur/programming/variables/electric-keyboard.html]
+	resource: Electric Keyboard [{{ site.rootURL }}/cur/programming/variables/electric-keyboard.html]
 	
 //heading: Exercises
-//	resource: End-of-Topic Exercises [/bjc-r/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
+//	resource: End-of-Topic Exercises [{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/exercises-broadcast-animations-music.topic]
 
 }

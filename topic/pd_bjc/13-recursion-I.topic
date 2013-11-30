@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 13: Recursion
 {
 h2: Big Ideas
@@ -17,18 +20,18 @@ h2: &nbsp;
 big-idea: Make sure you watch the first recursion lecture (assigned last week) before doing this lab!
 
 heading: Tree Recursion
-	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-1.html]
-	resource: Recursive Tree Part 2 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-2.html]
-	resource: Recursive Tree Part 3 [/bjc-r/cur/programming/recursion/tree/treepart3.html]
-	resource: Self Test -- Understanding TREE inputs [/bjc-r/cur/programming/recursion/tree/selftest1.html]
-	resource: What was changed? [/bjc-r/cur/programming/recursion/tree/treechange.html]
-	resource: Vary your tree [/bjc-r/cur/programming/recursion/tree/vary-your-tree.html]
-	resource: Random Tree [/bjc-r/cur/programming/recursion/tree/random-tree.html]
-	resource: Base Cases [/bjc-r/cur/programming/recursion/tree/base-cases.html]
+	resource: Recursive Tree Part 1 [{{ site.rootURL }}/cur/programming/recursion/tree/recursive-tree-part-1.html]
+	resource: Recursive Tree Part 2 [{{ site.rootURL }}/cur/programming/recursion/tree/recursive-tree-part-2.html]
+	resource: Recursive Tree Part 3 [{{ site.rootURL }}/cur/programming/recursion/tree/treepart3.html]
+	resource: Self Test -- Understanding TREE inputs [{{ site.rootURL }}/cur/programming/recursion/tree/selftest1.html]
+	resource: What was changed? [{{ site.rootURL }}/cur/programming/recursion/tree/treechange.html]
+	resource: Vary your tree [{{ site.rootURL }}/cur/programming/recursion/tree/vary-your-tree.html]
+	resource: Random Tree [{{ site.rootURL }}/cur/programming/recursion/tree/random-tree.html]
+	resource: Base Cases [{{ site.rootURL }}/cur/programming/recursion/tree/base-cases.html]
 
 heading: Fractals
-	resource: Snowflake [/bjc-r/cur/programming/recursion/fractals/snowflake.html]
-	resource: C-Curve [/bjc-r/cur/programming/recursion/fractals/c-curve.html]
-	resource: Search for "Fractals in Nature" [/bjc-r/cur/programming/recursion/fractals/search-for-fractals-in-nature.html]
+	resource: Snowflake [{{ site.rootURL }}/cur/programming/recursion/fractals/snowflake.html]
+	resource: C-Curve [{{ site.rootURL }}/cur/programming/recursion/fractals/c-curve.html]
+	resource: Search for "Fractals in Nature" [{{ site.rootURL }}/cur/programming/recursion/fractals/search-for-fractals-in-nature.html]
 
 }

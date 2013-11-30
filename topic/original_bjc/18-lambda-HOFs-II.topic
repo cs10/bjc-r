@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 18: Lambda and HOFs II
 {
 h2: Big Ideas
@@ -13,18 +16,18 @@ h2: Activities
 learning-goal: Implement Tic-Tac-Toe using Higher-order functions
 
 heading: Tic tac toe
-	resource: Important Note!  [/bjc-r/cur/programming/HOFs/tic-tac-toe/important-note.html]
-	resource: Introduction [/bjc-r/cur/programming/HOFs/tic-tac-toe/introduction.html]
-	resource: Thinking about the Program Structure [/bjc-r/cur/programming/HOFs/tic-tac-toe/thinking-about-the-program-structure.html]
-	resource: Triples [/bjc-r/cur/programming/HOFs/tic-tac-toe/triples.html]
-	resource: Finding the Triples [/bjc-r/cur/programming/HOFs/tic-tac-toe/finding-the-triples.html]
-	resource: Finding the Triples (Cont') [/bjc-r/cur/programming/HOFs/tic-tac-toe/finding-the-triples-cont.html]
-	resource: Can the Computer Win on this Move? [/bjc-r/cur/programming/HOFs/tic-tac-toe/can-the-computer-win-on-this-move.html]
-	resource: Can the Computer Win on this Move? (Cont')  [/bjc-r/cur/programming/HOFs/tic-tac-toe/can-the-computer-win-on-this-move-cont.html]
-	resource: Blocking the Opponent  [/bjc-r/cur/programming/HOFs/tic-tac-toe/blocking-the-opponent.html]
-	resource: Best Free Square [/bjc-r/cur/programming/HOFs/tic-tac-toe/best-free-square.html]
-	resource: Finishing Up  [/bjc-r/cur/programming/HOFs/tic-tac-toe/finishing-up.html]
-	resource: Final Comments and Optional Exercises [/bjc-r/cur/programming/HOFs/tic-tac-toe/final-comments-and-optional-exercises.html]
+	resource: Important Note!  [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/important-note.html]
+	resource: Introduction [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/introduction.html]
+	resource: Thinking about the Program Structure [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/thinking-about-the-program-structure.html]
+	resource: Triples [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/triples.html]
+	resource: Finding the Triples [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/finding-the-triples.html]
+	resource: Finding the Triples (Cont') [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/finding-the-triples-cont.html]
+	resource: Can the Computer Win on this Move? [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/can-the-computer-win-on-this-move.html]
+	resource: Can the Computer Win on this Move? (Cont')  [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/can-the-computer-win-on-this-move-cont.html]
+	resource: Blocking the Opponent  [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/blocking-the-opponent.html]
+	resource: Best Free Square [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/best-free-square.html]
+	resource: Finishing Up  [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/finishing-up.html]
+	resource: Final Comments and Optional Exercises [{{ site.rootURL }}/cur/programming/HOFs/tic-tac-toe/final-comments-and-optional-exercises.html]
 
 
 

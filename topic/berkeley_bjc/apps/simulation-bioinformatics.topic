@@ -1,3 +1,6 @@
+---
+---
+
 title: Simulation: BioInformatics
 {
 h2: Big Ideas
@@ -12,17 +15,17 @@ learning-goal: Learn about some modern applications of scientific simulations.
 
 
 heading: Overview
-	resource: Introduction to Bioinformatics [/bjc-r/cur/social-context/areas/bioinformatics/introduction-to-biofinformatics.html]
+	resource: Introduction to Bioinformatics [{{ site.rootURL }}/cur/social-context/areas/bioinformatics/introduction-to-biofinformatics.html]
 
 heading: The Computational Solution
-	resource: Overview [/bjc-r/cur/programming/strings/bioinformatics/overview.html]
-	resource: Substring [/bjc-r/cur/programming/strings/bioinformatics/substring.html]
-	resource: Overlap [/bjc-r/cur/programming/strings/bioinformatics/overlap.html]
-	resource: Shortest Common Superstring of 2 Strings [/bjc-r/cur/programming/strings/bioinformatics/shortest-common-superstring-of-2-strings.html]
-	resource: The Snowball [/bjc-r/cur/programming/strings/bioinformatics/the-snowball.html]
+	resource: Overview [{{ site.rootURL }}/cur/programming/strings/bioinformatics/overview.html]
+	resource: Substring [{{ site.rootURL }}/cur/programming/strings/bioinformatics/substring.html]
+	resource: Overlap [{{ site.rootURL }}/cur/programming/strings/bioinformatics/overlap.html]
+	resource: Shortest Common Superstring of 2 Strings [{{ site.rootURL }}/cur/programming/strings/bioinformatics/shortest-common-superstring-of-2-strings.html]
+	resource: The Snowball [{{ site.rootURL }}/cur/programming/strings/bioinformatics/the-snowball.html]
 
 heading: Debrief
-	resource: Discuss your solution [/bjc-r/cur/programming/strings/bioinformatics/discuss-your-solution.html]
+	resource: Discuss your solution [{{ site.rootURL }}/cur/programming/strings/bioinformatics/discuss-your-solution.html]
 
 
 

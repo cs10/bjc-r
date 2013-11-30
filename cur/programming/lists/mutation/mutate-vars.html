@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+		<script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script>
 		<title>Mutation of Variables</title>
 	</head>
 
@@ -15,12 +15,12 @@
 				foo</code>
 			, and I define the following two blocks:
 		</p>
-		<p><img src="/bjc-r/img/list/add5foo.png" alt="add 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/bjc-r/img/list/add20any.png" alt="add 20 to (var)" />
+		<p><img src="{{ site.rootURL }}/img/list/add5foo.png" alt="add 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.rootURL }}/img/list/add20any.png" alt="add 20 to (var)" />
 		</p>
 		<p>
 			Now I run the following script:
 		</p>
-		<p><img src="/bjc-r/img/list/addscript.png" alt="call both blocks" />
+		<p><img src="{{ site.rootURL }}/img/list/addscript.png" alt="call both blocks" />
 		</p>
 		<p>
 			Will the final value of foo be 100? 105? 120? or 125? Try it and see.
@@ -31,9 +31,9 @@
 				foo</code>
 			:
 		</p>
-		<p><img src="/bjc-r/img/list/append5foo.png" alt="append 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="/bjc-r/img/list/append20var.png" alt="append 20 to (var)" />
+		<p><img src="{{ site.rootURL }}/img/list/append5foo.png" alt="append 5 to foo" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="{{ site.rootURL }}/img/list/append20var.png" alt="append 20 to (var)" />
 		</p>
-		<p><img src="/bjc-r/img/list/appendscript.png" alt="call both append blocks" />
+		<p><img src="{{ site.rootURL }}/img/list/appendscript.png" alt="call both append blocks" />
 		</p>
 		<p>
 			What items will be in <code>
@@ -58,7 +58,7 @@
 		<p>
 			If that went over your head because it's too abstract, consider this script:
 		</p>
-		<p><img src="/bjc-r/img/list/addfoo+3.png" alt="add 20 to (foo+3)" />
+		<p><img src="{{ site.rootURL }}/img/list/addfoo+3.png" alt="add 20 to (foo+3)" />
 		</p>
 		<p>
 			You wouldn't expect <em>that</em> to change the value of <code>
@@ -67,7 +67,7 @@
 				foo</code>
 			at all. The input to the <code>
 				add 20 to</code>
-			block is the number 103&ndash;the <em>value</em> of <img src="/bjc-r/img/list/foo+3.png" alt="foo+3" />&ndash;not the variable. The same is true in the original experiment; the input to <code>
+			block is the number 103&ndash;the <em>value</em> of <img src="{{ site.rootURL }}/img/list/foo+3.png" alt="foo+3" />&ndash;not the variable. The same is true in the original experiment; the input to <code>
 				add 20 to</code>
 			is the number 105 (because the <code>
 				add 5 to foo</code>

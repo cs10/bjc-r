@@ -5,7 +5,7 @@
 <html>
     <head>
         <!-- put the following in exactly -->
-        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <script type="text/javascript" src="{{ site.rootURL }}/admin/bjc-loader.js"></script>
         <title>
             Make a Kaleidoscope
         </title>
@@ -13,25 +13,25 @@
     </head>
     <body>
         <p>
-            Explore <a class="run" href="/bjc-r/prog/drawing/kaleidoscope.xml">this drawing program</a> for a little bit.
+            Explore <a class="run" href="{{ site.rootURL }}/prog/drawing/kaleidoscope.xml">this drawing program</a> for a little bit.
             Press the space bar and move the mouse&mdash;the single sprite is a little laggy, but serviceable.  
             Use the <tt>d</tt> (down), <tt>u</tt> (up), and <tt>c</tt> (clear) keys to change what gets drawn on the screen.
             The script that causes the sprite to follow the pointer is:
 
         </p>
-        <img class="center" src="/bjc-r/img/drawing/follow-mouse-when-space-bar-pressed.png" src="script to make sprite follow the mouse when the space bar is pressed" />
+        <img class="center" src="{{ site.rootURL }}/img/drawing/follow-mouse-when-space-bar-pressed.png" src="script to make sprite follow the mouse when the space bar is pressed" />
         <p>
-            The <img class="inline" src="/bjc-r/img/blocks/go-to-x-y.png" alt="go to x y block"> 
+            The <img class="inline" src="{{ site.rootURL }}/img/blocks/go-to-x-y.png" alt="go to x y block"> 
             block moves the sprite directly to a position on the
             stage, as you might have guessed.
-            The <img class="inline" src="/bjc-r/img/blocks/mouse-x.png" alt="mouse x block"> and 
-            <img class="inline" src="/bjc-r/img/blocks/mouse-y.png" alt="mouse y block">
+            The <img class="inline" src="{{ site.rootURL }}/img/blocks/mouse-x.png" alt="mouse x block"> and 
+            <img class="inline" src="{{ site.rootURL }}/img/blocks/mouse-y.png" alt="mouse y block">
             blocks are found in the "sensing" tab group, and report the current <tt>x</tt> and <tt>y</tt> position of the mouse pointer.
         </p>
         <p>
             Your job is to make a (kind of) kaleidoscope, like:
         </p>
-        <img style="border:thick solid black" class= "center" src="/bjc-r/img/drawing/kaleidoscope.gif" alt="animation of a sort of a kaleidoscope" />
+        <img style="border:thick solid black" class= "center" src="{{ site.rootURL }}/img/drawing/kaleidoscope.gif" alt="animation of a sort of a kaleidoscope" />
         <ul>
             <li>
                 You'll need four sprites: the easiest way to create them is to duplicate the one you have.  "Right-click" the
@@ -40,7 +40,7 @@
             </li>
             <li>
                 You can change the color of each sprite by clicking the color input in that sprite's 
-                <img class="inline" src="/bjc-r/img/blocks/set-red.png" alt="set pen color block"/> block, 
+                <img class="inline" src="{{ site.rootURL }}/img/blocks/set-red.png" alt="set pen color block"/> block, 
                 choosing a color, and then clicking on the the block itself
                 (to run the block and actually set the color). Don't worry about matching the colors in the
                 animation exactly!
@@ -48,18 +48,18 @@
             <li>
                 Pay close attention to what each of the other sprites is doing in the animation above.  You'll need
                 to modify the <tt>x</tt> and <tt>y</tt> in each sprite's 
-                <img class="inline" src="/bjc-r/img/blocks/go-to-x-y.png" alt="go to x y block"> block
+                <img class="inline" src="{{ site.rootURL }}/img/blocks/go-to-x-y.png" alt="go to x y block"> block
                 using a simple formulas.  
                 <div  style="text-indent:20px">
                 For instance,  
-                <img class="inline" src="/bjc-r/img/blocks/plus-7-mouse-x.png" alt="add 7 to mouse x">
+                <img class="inline" src="{{ site.rootURL }}/img/blocks/plus-7-mouse-x.png" alt="add 7 to mouse x">
                 will return a number that is <code>7</code> larger than 
-                <img class="inline" src="/bjc-r/img/blocks/mouse-x.png" alt="mouse x block"> 
+                <img class="inline" src="{{ site.rootURL }}/img/blocks/mouse-x.png" alt="mouse x block"> 
                 alone.
                 You'll find the 
-                <img class="inline" src="/bjc-r/img/blocks/mouse-x.png" alt="mouse x block"> and <img class="inline" src="/bjc-r/img/blocks/mouse-y.png" alt="mouse y block">
+                <img class="inline" src="{{ site.rootURL }}/img/blocks/mouse-x.png" alt="mouse x block"> and <img class="inline" src="{{ site.rootURL }}/img/blocks/mouse-y.png" alt="mouse y block">
                 blocks in the "Sensing" tab group, and math blocks (such as 
-                  <img class="inline" src="/bjc-r/img/blocks/minus.png" alt="minus">) in the "Operators" tab group.
+                  <img class="inline" src="{{ site.rootURL }}/img/blocks/minus.png" alt="minus">) in the "Operators" tab group.
                 </div>
                   
                 <div class="quoteBrown">Hint: all the sprites are

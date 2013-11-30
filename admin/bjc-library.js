@@ -1,13 +1,16 @@
+---
+---
+
 /*
  * Common functions for any bjc page
- * 
+ *
  * CANNOT RELY ON JQUERY, YO
  */
 
 if ( typeof bjc === 'undefined') {
 	// if bjc-loader wasn't used, we need this.
 	bjc = {};
-	{{ site.rootURL }} = "/bjc-r";
+	bjc.rootURL = "{{ site.rootURL }}";
 	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
 }
 
@@ -34,13 +37,13 @@ bjc.getSnapRunURL = function(targeturl) {
 
 	if (targeturl.substring(0, 7) == "http://") {
 		// pointing to some non-local resource... maybe a published cloud project?  do nothing!!
-		return targeturl;	
-			
+		return targeturl;
+
 	} else {
 		// internal resource!
 		var finalurl = bjc.snapRunURLBase + "http://";
 		var currdom = document.domain;
-        console.log(currdom);
+        // console.log(currdom);
 		// why not, for the devs out there...
 		if (currdom == "localhost") {
 			currdom = "bjc.berkeley.edu";
@@ -48,22 +51,22 @@ bjc.getSnapRunURL = function(targeturl) {
 		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
 			finalurl = finalurl + bjc.CORSproxy + "/";
 		}
-        if (targeturl.indexOf("..") != -1 || targeturl.indexOf({{ site.rootURL }}) == -1) {
+        if (targeturl.indexOf("..") != -1 || targeturl.indexOf(bjc.rootURL) == -1) {
             var path = window.location.pathname;
             path = path.split("?")[0];
             path = path.substring(0, path.lastIndexOf("/") + 1)
             currdom = currdom + path;
         }
 		finalurl = finalurl + currdom + targeturl;
-		
+
 		return finalurl;
 	}
 
-	
 
-	
-	
-		return currdom;
+
+
+
+    return currdom;
 
 }
 

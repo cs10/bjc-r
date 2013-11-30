@@ -1,3 +1,6 @@
+---
+---
+
 title: Additional Exercises for Loops, Variables, and Conditionals
 
 {
@@ -16,6 +19,6 @@ other students will benefit greatly from doing some of these</li>
 h2: Exercises
 
 heading: Drawing
-	resource: Drawing the Olympic Rings [/bjc-r/cur/programming/intro/drawing/draw-olympic-rings.html]
+	resource: Drawing the Olympic Rings [{{ site.rootURL }}/cur/programming/intro/drawing/draw-olympic-rings.html]
 
 }

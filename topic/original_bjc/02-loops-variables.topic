@@ -1,3 +1,6 @@
+---
+---
+
 title: Topic 2: Loops and Variables
 
 {
@@ -17,37 +20,37 @@ learning-goal: Learn to use variables that change dynamically within a program.
 learning-goal: Use layers of abstraction in programs to draw complex images.
 
 heading: Game controls
-	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
-	resource: Two characters running! [/bjc-r/cur/programming/intro/drawing/two-characters-running-BYOB.html]
-	resource: Game of TAG! [/bjc-r/cur/programming/intro/drawing/game-of-tag-BYOB.html]
+	resource: Moving with the Arrow Keys [{{ site.rootURL }}/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
+	resource: Two characters running! [{{ site.rootURL }}/cur/programming/intro/drawing/two-characters-running-BYOB.html]
+	resource: Game of TAG! [{{ site.rootURL }}/cur/programming/intro/drawing/game-of-tag-BYOB.html]
 	quiz: Test Yourself: Detecting a key press [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13920]
 	
 heading: Drawing
-	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands-BYOB.html]
-	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
+	resource: Experiment with drawing commands [{{ site.rootURL }}/cur/programming/intro/drawing/experiment-with-drawing-commands-BYOB.html]
+	resource: Experiment with Repeat [{{ site.rootURL }}/cur/programming/intro/drawing/experiment-with-repeat.html]
 	quiz: Turns [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13924]
 	quiz: Repeat [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13925]
 
 heading: Variables
 	quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
-	resource: Tempo [/bjc-r/cur/programming/variables/tempo.html]
+	resource: Tempo [{{ site.rootURL }}/cur/programming/variables/tempo.html]
 	quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
-	resource: Change how fast the tempo changes [/bjc-r/cur/programming/variables/change-how-fast-the-tempo-changes.html]
-	resource: Variable Tutorial (Scales) [/bjc-r/cur/programming/variables/variable-tutorial-scales.html]
-	resource: Common Bug - Set vs. Change [/bjc-r/cur/programming/variables/common-bug-set-vs-change.html]
-	resource: (<i>Optional</i>) Exploring Regular Shapes [/bjc-r/cur/programming/variables/optional-exploring-regular-shapes.html]
-	resource: Variable Sized Shapes [/bjc-r/cur/programming/variables/variable-sized-shapes.html]
-	resource: Countdown [/bjc-r/cur/programming/variables/countdown.html]
-	resource: Repeat Until [/bjc-r/cur/programming/variables/repeat-until.html]
-	resource: (<i>Optional</i>) Practice with Repeat Until [/bjc-r/cur/programming/variables/optional-practice-with-repeat-until.html]
-	resource: Draw a Squiral [/bjc-r/cur/programming/variables/draw-a-squiral.html]
+	resource: Change how fast the tempo changes [{{ site.rootURL }}/cur/programming/variables/change-how-fast-the-tempo-changes.html]
+	resource: Variable Tutorial (Scales) [{{ site.rootURL }}/cur/programming/variables/variable-tutorial-scales.html]
+	resource: Common Bug - Set vs. Change [{{ site.rootURL }}/cur/programming/variables/common-bug-set-vs-change.html]
+	resource: (<i>Optional</i>) Exploring Regular Shapes [{{ site.rootURL }}/cur/programming/variables/optional-exploring-regular-shapes.html]
+	resource: Variable Sized Shapes [{{ site.rootURL }}/cur/programming/variables/variable-sized-shapes.html]
+	resource: Countdown [{{ site.rootURL }}/cur/programming/variables/countdown.html]
+	resource: Repeat Until [{{ site.rootURL }}/cur/programming/variables/repeat-until.html]
+	resource: (<i>Optional</i>) Practice with Repeat Until [{{ site.rootURL }}/cur/programming/variables/optional-practice-with-repeat-until.html]
+	resource: Draw a Squiral [{{ site.rootURL }}/cur/programming/variables/draw-a-squiral.html]
 	quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
 
 	
 heading: Activities
-	resource: Draw a Picture in Scratch [/bjc-r/cur/programming/intro/drawing/draw-a-picture-in-scratch.html]
-	resource: Electric Keyboard [/bjc-r/cur/programming/variables/electric-keyboard.html]
-	resource: [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
+	resource: Draw a Picture in Scratch [{{ site.rootURL }}/cur/programming/intro/drawing/draw-a-picture-in-scratch.html]
+	resource: Electric Keyboard [{{ site.rootURL }}/cur/programming/variables/electric-keyboard.html]
+	resource: [{{ site.rootURL }}/cur/programming/variables/countdown-with-sprites.html]
 	
 //heading: Turn in your work
 	//submit: Submit: Loops and Variables 
