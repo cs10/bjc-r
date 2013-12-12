@@ -1,0 +1,69 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Generalizing "List all"</title>
+      
+   </head>
+   <body>
+        <p>
+            A few pages ago, we wrote the blocks
+        </p>
+        
+        <p>
+            <img src="../../../../img/hof/list-all-pandigital.png" alt="list all pandigital numbers between min and max"/>
+            <img src="../../../../img/hof/list-all-factorions.png" alt="list all factorions between min and max"/> <br/>
+        </p>
+        
+        <p>
+            The functionality of these blocks (and, probably, your implementations of them) bear a striking resemblance to one another.
+            Computer scientists love generalization, so let's make a block that can accomplish the duties of both
+            of the above blocks. Since the main difference between the two is what predicate they use, we'll add that as in input.
+            Hint: when writing the block below, <code>call</code> will be quite useful.
+        </p>
+        
+        <p>
+            <img src="../../../../img/hof/list-all-numbers-with-property.png" alt="list all numbers with property between min and max"/> <br/>
+        </p>
+        
+        <p>
+            Once you've written this block, try running it like this:
+        </p>   
+         
+        <p>
+            <img src="../../../../img/hof/list-all-numbers-with-property-pandigital.png" alt="list all numbers with property pandigital between min and max"/> <br/>
+            <br/> <img src="../../../../img/hof/list-all-numbers-with-property-factorion.png" alt="list all numbers with property factorion etween min and max"/> <br/>
+        </p>
+        
+        <p>
+            Does the output match the "list all" blocks from earlier?
+        </p>
+        
+        <p>
+            Now, imagine you're given a new predicate, such as:
+        </p>
+        
+        <p>
+            <img src="../../../../img/hof/is-even.png" alt="is number even?"/>
+        </p>
+        
+        <p>
+            and want to write the block
+        </p>
+        
+        <p>
+            <img src="../../../../img/hof/list-all-even-numbers.png" alt="list all even numbers between min and max"/>
+        </p>
+        
+        <p>
+            Wait! Doesn't this sound pretty familiar? This problem can be easily solved using the general block we just created
+            (you don't actually have to solve this one)
+        </p>
+        
+        <p>
+            The beauty of abstraction: build once, use over and over again! When we wrote the <code>list all numbers with property</code> block, we didn't know
+            that we'd ever want to list even numbers! But since we generalized properly, we were able to use the block to solve a future problem.
+        </p>
+        
+   </body>
+</html>

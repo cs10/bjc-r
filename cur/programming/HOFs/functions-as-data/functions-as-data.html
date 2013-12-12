@@ -1,0 +1,48 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Functions as Data</title>
+      
+   </head>
+   <body>
+        
+        <p>
+            Have you ever wondered why the blocks <code>map</code>, <code>keep</code>, and <code>combine</code> are called "higher-order functions" (HOFs)?
+            The reason we use this term is that these "higher-order functions" take functions (blocks) as inputs. They are "higher-order" because they
+            are functions that themselves operate on functions!
+        </p>
+        
+        <p>
+            What else can we pass into functions? Strings, lists, and numbers are a few examples. What are these things? They are types of <u>data</u>.
+            Since we can also pass functions into other functions, aren't they just like any other kind of data? In fact, they are!
+        </p>
+        
+        <p>
+            If functions are really just a kind of data, what can we do with them? Well, what can we do with other types of data?
+            We can assign them to variables, add them to lists, say them, and report them from reporter blocks.
+            We can do all of these things with functions, too!
+        </p>
+        
+        <p>
+            Take a look at the "HOFs" sprite in your starter file. The first thing you should see is
+            <br/> <img src="../../../../img/hof/function-as-variable.png" alt="set function-as-data to gray-border(_+_)"/> <br/>
+            Here, we are setting a variable to a function (in this case, the <code>plus</code> block). Notice anything special?
+            The <code>plus</code> block is inside a gray ring. You may recogize this from <code>map</code>, <code>keep</code>, and
+            <code>combine</code>. This gray border tells <span class='snap'>Snap</span> that the block inside should not be evaluated,
+            but stored as the block itself. If we didn't have the gray border, the variable would just be set to 0. The gray border can be
+            found in the green operators tab. Notice that there's one for each type of block: command, reporter, and predicate.
+        </p>
+        
+        <p>
+            Looking at the scripts for this sprite, you should also see how we can add functions to a list
+            <br/> <img src="../../../../img/hof/add-functions-to-list.png" alt="adding various functions to a list"/>
+            <img src="../../../../img/hof/list-of-functions.png" alt="resulting list"/> <br/>
+            say them
+            <br/> <img src="../../../../img/hof/say-a-function.png" alt="function in a say block"/> <br/>
+            and report them
+            <br/> <img src="../../../../img/hof/report-a-function.png" alt="function reporting a function"/> <br/>
+        </p>
+        
+   </body>
+</html>
