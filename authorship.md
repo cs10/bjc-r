@@ -1,10 +1,10 @@
 # Authorship
 
-## Taxonomy:
+## Hierarchy:
 
 * Course
 * Topic
-* Exercise
+* Activity/Page
 
 ## Writing Style
 There are a few tips for keeping a consistent tone with labs.
