@@ -4,30 +4,32 @@
 title: Practice with HOFs and Functions as Data
 {
 h2: Big Ideas
-big-idea: Functions as Data
+big-idea: There are more to HOFs than just map, keep, and combine.
+big-idea: Functions can be treated as data, just like strings, numbers, and lists.
+big-idea: Creating our own higher-order function blocks allows us to achieve a whole new level of generality in our programs.
 
 h2: Activities
-learning-goal: Develop ability to treat functions as data.
+learning-goal: Build non-HOF blocks to use as helper functions in larger HOFs problems.
 learning-goal: Complete complex, multi-step HOFs problems.
+learning-goal: Use HOFs to solve real-life problems, like minimizing or composing functions.
 
-	
-    resource: Introduction [{{ site.rootURL }}/topic/berkeley_bjc/hofs/hofs-practice-introduction.html]
-    resource: Warm-up [{{ site.rootURL }}/topic/berkeley_bjc/hofs/hofs-practice-warmup.html]
+    resource: Introduction [/bjc-r/cur/programming/hofs/functions-as-data/hofs-practice-introduction.html]
+    resource: Warm-up [/bjc-r/cur/programming/hofs/functions-as-data/hofs-practice-warmup.html]
 
 h3: Pandigital Numbers
-    resource: Pandigital Numbers [{{ site.rootURL }}/topic/berkeley_bjc/hofs/pandigital-numbers.html]
-    
+    resource: Pandigital Numbers [/bjc-r/cur/programming/hofs/functions-as-data/pandigital-numbers.html]
+
 h3: Factorions
-    resource: Factorions [{{ site.rootURL }}/topic/berkeley_bjc/hofs/factorions.html]
-    
+    resource: Factorions [/bjc-r/cur/programming/hofs/functions-as-data/factorions.html]
+
 h3: Functions as Data
-    resource: Functions as Data [{{ site.rootURL }}/topic/berkeley_bjc/hofs/functions-as-data.html]
-    resource: Call and Run [{{ site.rootURL }}/topic/berkeley_bjc/hofs/using-call-and-run.html]
-    resource: Generalize "List all" [{{ site.rootURL }}/topic/berkeley_bjc/hofs/generalizing-list-all.html]
+    resource: Functions as Data [/bjc-r/cur/programming/hofs/functions-as-data/functions-as-data.html]
+    resource: Call and Run [/bjc-r/cur/programming/hofs/functions-as-data/using-call-and-run.html]
+    resource: Generalize "List all" [/bjc-r/cur/programming/hofs/functions-as-data/generalizing-list-all.html]
 
 h3: Minimizing Functions
-    resource: I hope you remember your calculus [{{ site.rootURL }}/topic/berkeley_bjc/hofs/minimize-function.html]
-    
+    resource: I hope you remember your calculus [/bjc-r/cur/programming/hofs/functions-as-data/minimize-function.html]
+
 h3: Extra for Experts
-    resource: Compose, compose, compose... [{{ site.rootURL }}/topic/berkeley_bjc/hofs/compose-over-list.html]
+    resource: Compose, compose, compose... [/bjc-r/cur/programming/hofs/functions-as-data/compose-over-list.html]
 }
