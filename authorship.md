@@ -19,6 +19,7 @@ There are a few tips for keeping a consistent tone with labs.
 * Distinguish between programming concepts and Snap-isms.
 * __Contractions... idk...__
 * If you introduce a new (CS) word be sure the meaning is clear!
+* Spaces not tabs, end files with empty line.
 * More to come! :-)
 
 Despite the state of this document, proper punctuation, spelling and grammar 
@@ -28,6 +29,7 @@ There are a number of CSS features and things that make labs cool. We will
 update this soon to describe how to use them.
 
 * Inline Images
+* No grey background on images!!
 * Quizzes
 * Tips
 * Special Headings

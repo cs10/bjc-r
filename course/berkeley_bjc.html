@@ -1,115 +1,54 @@
 ---
+layout: course
+title: Beauty and Joy of Computing, Spring 2014
+course_id: berkeley_bjc
+topics:
+  - name: Welcome to Snap!
+    path: intro/broadcast-animations-music.topic
+  - name: Loops, Variables, and Conditionals
+    path: intro/loops-variables-conditionals.topic
+  - name: Putting it Together
+    path: intro/putting-it-together.topic
+  - name: Build Your Own Blocks
+    path: intro/building-blocks.topic
+  - name: Lists
+    path: lists/lists-I.topic
+  - name: Tic Tac Toe
+    path: lists/tic-tac-toe.topi
+  - name: Algorithms
+    path: areas/algorithms.topic
+  - name: Algorithm Complexity
+    path: areas/algorithm-complexity.topic
+  - name: Concurrency
+    path: areas/concurrency.topic
+  - name: Trees and Fractals using Recursion
+    path: recur/recursion-trees-fractals.topic
+  - name: Using Data
+    path: areas/data.topic
+  - name: Recursive Reporters
+    path: recur/recursive-reporters.topic
+  - name: The Internet
+    path: areas/internet.topic
+  - name: Practice with HOFs and Functions as Data
+    path: hofs/hofs-practice.topic
+  - name: HOFs with Recursion
+    path: hofs/hofs-with-recursion.topic
+  - name: Simulation in Science
+    path: apps/simulation-in-science.topic
+  - name: Simulation BioInformatics
+    path: apps/simulation-bioinformatics.topic
+  - name: Applications that changed the world
+    path: apps/applications-that-changed-the-world.topic
+  - name: Distributed Computing
+    path: areas/distributed-computing.topic
+  - name: Robots
+    path: robots/robots.topic
+  - name: Additional Videos and Readings
+    path: additional-videos-reading.topic
+
 ---
 
-<html>
-    <head>
-        <title>
-            Beauty and Joy of Computing, UC Berkeley
-        </title>
+<p>
+    This is CS10. Spring 2014. You're awesome!
+</p>
 
-        <!-- keep these libraries for any bjc course you write, add others as necessary -->
-        <script src="{{ site.rootURL }}/admin/jquery-1.9.1.min.js" type="text/javascript"></script>
-        <script src="{{ site.rootURL }}/admin/bjc-library.js" type="text/javascript"></script>
-        <script src="{{ site.rootURL }}/admin/bjc-course.js" type="text/javascript"></script>
-        <!-- keep these or not, whatever you want -->
-        <link href="{{ site.rootURL }}/admin/normalize.css" type="text/css" rel="stylesheet" media="screen">
-        <link href="{{ site.rootURL }}/admin/BJC.css" type="text/css" rel="stylesheet" media="screen">
-    </head>
-
-    <body>
-
-        <p>
-            This is the reference Beauty and Joy of Computing course at UC Berkeley as of Fall 2013.
-        </p>
-
-
-        <!-- topic_link's in this div will get novideo=true appended to their hrefs, woot  -->
-        <div class="topic_container" novideo="true" noreading="true">
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/broadcast-animations-music.topic">Topic 1: Broadcast, Animations, and Music</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/loops-variables-conditionals.topic">Topic 2: Loops, Variables, and Conditionals</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/putting-it-together.topic">Topic 3: Putting it Together</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/intro/building-blocks.topic">Topic 4: Build Your Own Blocks</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/lists/lists-I.topic">Topic 5: Lists</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/lists/tic-tac-toe.topic">Topic 6: Tic Tac Toe</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/algorithms.topic">Topic 7: Algorithms</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/algorithm-complexity.topic">Topic 8: Algorithm Complexity</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/concurrency.topic">Topic 9: Concurrency</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/recur/recursion-trees-fractals.topic">Topic 10: Trees and Fractals using Recursion</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/data.topic">Topic 11: Using Data</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/recur/recursive-reporters.topic">Topic 12: Recursive Reporters </a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/internet.topic">Topic 13: The Internet </a>
-            </div>
-
-		    <div class="topic_link">
-		        <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/hofs/hofs-practice.topic">Topic 14: Practice with HOFs and Functions as Data</a>
-		    </div>
-
-		    <div class="topic_link">
-		        <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/hofs/hofs-with-recursion.topic">Topic 15: HOFs with Recursion</a>
-		    </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/apps/simulation-in-science.topic">Topic 16: Simulation in Science</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/apps/simulation-bioinformatics.topic">Topic 17: Simulation: BioInformatics</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/apps/applications-that-changed-the-world.topic">Topic 18: Applications that changed the world</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/areas/distributed-computing.topic">Topic 19: Distributed Computing</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/robots/robots.topic">Topic 20: Robots</a>
-            </div>
-
-            <div class="topic_link">
-                <a href="{{ site.rootURL }}/topic/topic.html?topic=berkeley_bjc/additional-videos-reading.topic">Additional Videos and Readings</a>
-            </div>
-        </div>
-
-    </body>
-</html>
