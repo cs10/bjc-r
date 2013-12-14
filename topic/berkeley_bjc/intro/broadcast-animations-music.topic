@@ -36,7 +36,7 @@ heading: Activities
 heading: Game controls
 	resource: Moving with the Arrow Keys [/bjc-r/cur/programming/intro/drawing/moving-with-the-arrow-keys.html]
 	resource: Game of Tag [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
-	resource: Test Yourself: Detecting a key press [/bjc-r/cur/programming/intro/drawing/testkeypress.html]
+	quiz: Test Yourself: Detecting a key press [/bjc-r/cur/programming/intro/drawing/testkeypress-self-test.html]
 
 heading: Activities
 	resource: Electric Keyboard [/bjc-r/cur/programming/variables/electric-keyboard.html]
