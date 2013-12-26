@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<!-- topic_link's in this div will get novideo=true appended to their hrefs, woot  -->
+<div class="topic_container" novideo="true" noreading="true">
+    {% for topic in page.topics %}
+
+        <div class="topic_link">
+            <a href="{{ site.rootURL }}/topic/topic.html?topic={{ page.course_id }}/{{ topic.path }}">Topic {{ forloop.index }}: {{ topic.name }}</a>
+        </div>
+
+    {% endfor %}
+</div>
