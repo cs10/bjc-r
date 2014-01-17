@@ -146,7 +146,8 @@ p {
 	font:1em Arial, Helvetica, sans-serif;
 	color: black;
 	line-height:120%; 
-	vertical-align: bottom;
+	
+	/* vertical-align: bottom;   nate took this out so inline images do the right thing?*/
 	
 }
 
@@ -515,9 +516,10 @@ img.center {
 }
 	
 img.inline {
-	vertical-align: top;
+	/* this works if the text isn't also vertical-align'ed!  */
+	vertical-align: middle;
 }
-	
+
 img.indent {
 	margin-left: 10%;
 	display: block;
