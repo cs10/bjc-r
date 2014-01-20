@@ -1,0 +1,27 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Sprites: Sensor Blocks</title>
+   </head>
+   <body>
+        <p>
+        	<strong>6. Sensor Blocks</strong>
+        </p>
+        <p>
+        	You may have noticed a couple of blocks at the bottom of Motion palette. The (---insert image of x position block---) and (---insert image of y position block---) are called sensor blocks.
+        </p>
+        <p>
+        	Sensor blocks tell you something about the state of your program or computer. Click on the gray boxes to the left of these sensor blocks, and then look over to the stage. You will see that the values of these sensor blocks are displayed in the upper left corner of the stage.
+        </p>
+        <p>
+        	The (---insert image x position block---) and the (---insert image y position block---) will tell you the position of your sprite on the screen. Move the sprite around and the values of these blocks change.
+        </p>
+        <p>
+        	Besides looking to the stage for viewing the values of these sensor blocks, you always click on the sensor blocks in the palette, or drag them out to the scripting area and click on them there.
+        </p>
+        <p>
+        	You will see more sensing blocks in the future. Sensing blocks fall under a category of blocks that we call “reporters” because these blocks have something to report to you. These blocks will always be rounded (not rectangular shaped).
+        </p>
+    </body>
+</html)

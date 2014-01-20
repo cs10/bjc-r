@@ -1,0 +1,27 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Activity: Kaleidoscope</title>
+   </head>
+   <body>
+        <p>
+        	<strong>3. Follow that Mouse!</strong>
+        </p>
+        <p>
+        	What do you think the following script will do?
+        </p>
+        <p>
+        	INSERT IMAGE
+        </p>
+        <p>
+        	Hint: (MOUSE X IMAGE) and (MOUSE Y IMAGE) are sensor blocks, which tell you where the mouse is.
+        </p>
+        <p>
+        	Open the program (INSERT LINK) (click to run it). Did it follor your expectations?
+        </p>
+        <p>
+        	Drag the sprite to a different part of the screen while the program is running and see what happens!
+        </p>
+    </body>
+</html>

@@ -1,0 +1,30 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Exploring <em>Snap!</em>: Blocks</title>
+   </head>
+   <body>
+        <p>
+        	<strong>2. Blocks</strong>
+        </p>
+        <p>
+        	As you can see from the previous image, there are eight different colored tabs in the palette: Motion, Looks, Sound, Pen, Control, Sensing, Operators, Variables. In this lab, we will focus on the Motion, Sound, Pen, and Sensing tabs. You will learn about the other tabs in the next few labs!
+        </p>
+        <p>
+        	These tabs are an important organizational structure in <em>Snap!</em> because they are home to the various blocks that you will use to tell the computer what to do! The blocks are categorized under each tab based on what those blocks do.
+        </p>
+        <p>
+        	Let’s take a look at the Motion tab. Under this tab you will find a bunch of blocks that correspond to motion-like actions. For example, click on the (---insert image move 10 steps block---) block, drag it to the scripting area, and drop it anywhere in the scripting area.
+        </p>
+        <p>
+        	So now what?
+        </p>
+        <p>
+        	The block that you just dragged and dropped into the scripting area controls something that we call a sprite. The sprite will always be found in the Sprite Corral section of the <em>Snap!</em> window.
+        </p>
+        <p>
+        	Back to the scripting area, if you click on the (---insert image move 10 steps block---) you just put there, the sprite will move 10 steps. You can see this visually depicted by the sprite moving in the stage. You can vary in the input of the block i.e. the number 10, to change the number of steps you want to the sprite to move. See if you can figure out how to change the block input so that the sprite moves backwards!
+        </p>
+    </body>
+</html>
