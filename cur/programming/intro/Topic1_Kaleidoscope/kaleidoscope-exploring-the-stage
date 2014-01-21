@@ -1,0 +1,28 @@
+<html>
+   <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+      
+        <title>Activity: Kaleidoscope</title>
+   </head>
+   <body>
+        <p>
+        	<strong>1. Exploring the Stage: Position on the Stage</strong>
+        </p>
+        <p>
+        	A sprite occupies a position (x,y) on the stage where x represents the horizontal position, from -240 (left) to 240 (right), and y represents the vertical position, from -180 (bottom) to 180 (top). Here's a picture:
+        </p>
+        <p>
+            <img src="../../../../img/topic1/topic1_coordgrid.png" alt="Coordinate Grid"/>
+    	</p>
+    	<p>
+    		The black sprite is at the center of the stage, called the origin, with coordinates (0, 0). The green sprite is to the right of the origin, so its x position is positive. The green sprite is also below the origin, so its y position is negative. Each grid line above represents 20 steps, so the green sprite's coordinates are (140, -100). Take some time to make sure you understand this - discuss it with a classmate!
+    	</p>
+    	<p>
+    		<strong>QUIZ</strong>
+    		What are the coordinates of the red sprite?
+    	</p>
+    	<p>
+    		In your <em>Snap!</em> window, take a look at the blocks under the Motion tab. The majority of the blocks there will help you position your sprite on the stage. Explore and see what they do! Change the input values to see what happens.
+    	</p>
+    </body>
+</html>
