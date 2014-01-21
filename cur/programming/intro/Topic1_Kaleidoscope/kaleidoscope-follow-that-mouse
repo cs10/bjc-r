@@ -12,13 +12,13 @@
         	What do you think the following script will do?
         </p>
         <p>
-        	INSERT IMAGE
+        	<img src="../../../../img/topic1/topic1_followmousescript.png" alt="Follow That Mouse Script"/>
         </p>
         <p>
-        	Hint: (MOUSE X IMAGE) and (MOUSE Y IMAGE) are sensor blocks, which tell you where the mouse is.
+        	Hint: <img src="../../../../img/topic1/topic1_mousex.png" alt="Mouse X Sensor Block"/> and <img src="../../../../img/topic1/topic1_mousey.png" alt="Mouse Y Sensor Block"/> are sensor blocks, which tell you where the mouse is.
         </p>
         <p>
-        	Open the program (INSERT LINK) (click to run it). Did it follor your expectations?
+        	Open the program <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://bjc.eecs.berkeley.edu/bjc-r/prog/topic1/topic1_followthatmouse.xml" target="_blank">here</a> (click to run it). Did it follow your expectations?
         </p>
         <p>
         	Drag the sprite to a different part of the screen while the program is running and see what happens!

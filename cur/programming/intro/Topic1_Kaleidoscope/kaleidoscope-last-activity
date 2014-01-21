@@ -9,38 +9,38 @@
         	<strong>4. Kaleidoscope</strong>
         </p>
         <p>
-        	Let’s explore this (INSERT LINK) drawing program for a little bit. Press the spacebar to run the script, and move your mouse cursor over the stage of the Snap! window. While over the stage, use the d (down), u (up), and c (clear) keyboard keys to change what gets drawn on the screen. The script that causes the sprite to follow the pointer is:
+        	Let’s explore <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://bjc.eecs.berkeley.edu/bjc-r/prog/topic1/topic1_kaleidoscope.xml" target="_blank">this drawing program</a> for a little bit. Press the spacebar to run the script, and move your mouse cursor over the stage of the Snap! window. While over the stage, use the d (down), u (up), and c (clear) keyboard keys to change what gets drawn on the screen. The script that causes the sprite to follow the pointer is:
         </p>
         <p>
-        	INSERT IMAGE
+        	<img src="../../../../img/topic1/topic1_kaleidoscopescript.png" alt="Kaleidoscope Script"/>
         </p>
         <p>
-        	As you can see, this drawing program features more of the control blocks, in addition to the (---insert forever control block image---) first introduced in the Follow the Mouse activity. These particular control blocks essentially signal when a specific script should be run.
+        	As you can see, this drawing program features more of the control blocks, in addition to the <img src="../../../../img/topic1/topic1_forever.png" alt="Forever Block"/> first introduced in the Follow the Mouse activity. These particular control blocks essentially signal when a specific script should be run.
         </p>
         <p>
-        	In the script in the image above, basically just makes the sprite follow the mouse. The (---insert go to x y block image---) block moves the sprite directly to a position on the stage, as you might have guessed. The (---insert mouse x variable image---) and (---insert mouse variable image---) variables are found in the Sensing tab group, and report the current x and y position of the mouse pointer.
+        	In the script in the image above, basically just makes the sprite follow the mouse. The <img src="../../../../img/topic1/topic1_gotoxy.png" alt="Go to X Y Block"/> block moves the sprite directly to a position on the stage, as you might have guessed. The <img src="../../../../img/topic1/topic1_mousex.png" alt="Mouse X Sensor Block"/> and <img src="../../../../img/topic1/topic1_mousey.png" alt="Mouse Y Sensor Block"/> variables are found in the Sensing tab group, and report the current x and y position of the mouse pointer.
         </p>
         <p>
         	For this activity, your job is to make a (kind of) kaleidoscope, like:
         </p>
         <p>
-        	INSERT KALEIDOSCOPE GIF
+        	<img src="../../../../img/topic1/topic1_kaleidoscopegif.gif" alt="Kaleidoscope Activity"/>
         </p>
         <p>
         	Tips and Tricks:
         	<ol>
         		<li>
-        			You will need four sprites: the easiest way to create them is to duplicate the one you have. Right-click the only sprite in the sprite corral, and select “duplicate” from the context menu. Each duplicated sprite will have exactly the same scripts as the original. Refer back to the (---link to Bossing Your Sprites Around activity---) if you forget how to access an individual sprite’s scripting area.
+        			You will need four sprites: the easiest way to create them is to duplicate the one you have. Right-click the only sprite in the sprite corral, and select “duplicate” from the context menu. Each duplicated sprite will have exactly the same scripts as the original. Refer back to the <a href="/bjc=r/cur/programming/intro/topic1_intro/sprites-bossing-your-sprites-around.html"> Bossing Your Sprites Around</a> activity if you forget how to access an individual sprite’s scripting area.
         		</li>
         		<li>
-        			You can change the color of each sprite by clicking the color input in that sprite's (---insert set pen color to color image---) block (found under the Drawing tab), choosing a color, and then clicking on the the block itself (to run the block and actually set the color). Don't worry about matching the colors in the animation exactly!
+        			You can change the color of each sprite by clicking the color input in that sprite's <img src="../../../../img/topic1/topic1_setpentocolorx.png" alt="Set Pen to Color X Block"/> block (found under the Drawing tab), choosing a color, and then clicking on the the block itself (to run the block and actually set the color). Don't worry about matching the colors in the animation exactly!
         		</li>
         		<li>
-        			Pay close attention to what each of the other sprites is doing in the animation above. You will need to modify the x and y in each sprite's (---insert go to x y image---) block using simple formulas.
+        			Pay close attention to what each of the other sprites is doing in the animation above. You will need to modify the x and y in each sprite's <img src="../../../../img/topic1/topic1_gotoxy.png" alt="Go to X Y Block"/> block using simple formulas.
         		</li>
         			<ol>
         				<li>
-        					For instance, the (---insert (7 + mouse x variable) image---) will return a number that is 7 larger than (---insert mouse x variable image---) alone. You will find the (---insert mouse x variable image---) and (---insert mouse y variable image---)
+        					For instance, the <img src="../../../../img/topic1/topic1_plusmousex.png" alt="7 + MouseX"/> will return a number that is 7 larger than <img src="../../../../img/topic1/topic1_mousex.png" alt="Mouse X Sensor Block"/> alone. You will find the <img src="../../../../img/topic1/topic1_mousex.png" alt="Mouse X Sensor Block"/> and <img src="../../../../img/topic1/topic1_mousey.png" alt="Mouse Y Sensor Block"/> blocks under the Sensing tab. You will find the math blocks such as <img src="../../../../img/topic1/topic1_subtract.png" alt="Subtraction Block"/> under the Operators tab. We will explore the other blocks under the Operators tab in future labs.
         				</li>
         				<li>
         					Hint: All the sprites are reflecting in different ways around the (x=0, y=0) origin point of the stage.
