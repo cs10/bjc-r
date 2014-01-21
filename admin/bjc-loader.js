@@ -18,14 +18,14 @@ bjc.rootURL = "/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
-bjc.paths.links = ["/admin/normalize.css", "/admin/jquery-ui-1.10.2-smoothness.css", "/admin/BJC.css", "/admin/from-mvle.css"];
+bjc.paths.links = ["//cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css", "/admin/jquery-ui-1.10.2-smoothness.css", "/admin/BJC.css", "/admin/from-mvle.css"];
 
 bjc.paths.scripts = [];
 bjc.paths.complete_funs = [];
 
 ///////////////// stage 0
 //
-bjc.paths.scripts[0] = ["/admin/jquery-1.9.1.min.js", "/admin/bjc-library.js"];
+bjc.paths.scripts[0] = ["//code.jquery.com/jquery-1.10.2.min.js", "/admin/bjc-library.js"];
 bjc.loaded['bjc-library']= false;
 bjc.paths.complete_funs[0] = function() {
 	return (( typeof jQuery == 'function') && 
