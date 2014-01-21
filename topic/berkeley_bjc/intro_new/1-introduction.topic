@@ -1,4 +1,4 @@
-title: Introduction to Snap! (FORMERLY Broadcast, Animations, and Music)
+title: Welcome to Snap!
 
 {
 h2: Big Ideas
@@ -11,7 +11,7 @@ big-idea: Understand and analyze some of the impact of the internet on our cultu
 
 
 h2: Activities
-learning-goal: Familizarize yourself with the <span class="snap">snap</span> interface
+learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
 learning-goal: Make a <span class="snap">snap</span> account to save and load projects
 learning-goal: Make a sprite sing
 learning-goal: Learn to use the mouse to move sprites around the screen.
@@ -23,15 +23,15 @@ heading: Introduction to Snap!
 	1. Exploring Snap
 	resource: Overview of the Window [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-overview-of-window.html]
 	resource: Blocks [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-blocks.html]
-	resource: Scripts [/bjc-r/cur/programming/intro/topic_1/exploring-snap-scripts.html]
+	resource: Scripts [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-scripts.html]
 	
 	2. Sprites
 	resource: Multiple Sprites [/bjc-r/cur/programming/intro/topic1_intro/sprites-multiple-sprites.html]
 	resource: Costumes [/bjc-r/cur/programming/intro/topic1_intro/sprites-costumes.html]
-	resource: Bossing Your Sprites Around [/bjc-r/cur/programming/intro/topic_1/sprites-bossing-your-sprites-around.html]
+	resource: Bossing Your Sprites Around [/bjc-r/cur/programming/intro/topic1_intro/sprites-bossing-your-sprites-around.html]
 	resource: Sprite Direction [/bjc-r/cur/programming/intro/topic1_intro/sprites-sprite-direction.html]
 	quiz: Test Yourself [/bjc-r/cur/programming/intro/topic1_intro/sprites-test-yourself.html]
-	resource: Sensor Blocks [/bjc-r/cur/programming/intro/topic_1/sprites-sensor-blocks.html]
+	resource: Sensor Blocks [/bjc-r/cur/programming/intro/topic1_intro/sprites-sensor-blocks.html]
 	
 heading: Make a Sprite Sing
 	resource: Activity [/bjc-r/cur/programming/intro/topic1_makeaspritesing/sprite-sing-activity.html]
