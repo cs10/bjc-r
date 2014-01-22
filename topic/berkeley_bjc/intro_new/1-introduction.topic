@@ -22,8 +22,8 @@ heading: Introduction to Snap!
 	
 	resource: Overview of the Window [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-overview-of-window.html]
 	resource: Blocks [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-blocks.html]
-	resource: Scripts [/bjc-r/cur/programming/intro/topic_1/exploring-snap-scripts.html]
-	resource: Reporters [/bjc-r/cur/programming/intro/topic_1/sprites-reporters.html]
+	resource: Scripts [/bjc-r/cur/programming/intro/topic1_intro/exploring-snap-scripts.html]
+	resource: Reporters [/bjc-r/cur/programming/intro/topic1_intro/sprites-reporters.html]
 
 heading: Kaleidoscope
 	resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/topic1_kaleidoscope/kaleidoscope-exploring-the-stage.html]
