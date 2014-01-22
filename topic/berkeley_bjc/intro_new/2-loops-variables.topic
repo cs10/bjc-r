@@ -1,0 +1,39 @@
+title: Looping, Variables, and Custom Blocks 
+{
+
+
+learning-goal: Looping
+learning-goal: Variables
+learning-goal: Building Blocks
+
+heading: Repeating commands
+	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
+	quiz: Test yourself: Repeat (TODO - use new version) [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
+	quiz: Test yourself: Total turning (TODO - use new version) [/bjc-r/cur/programming/intro/drawing/turning.html]
+	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
+	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
+	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
+	quiz: Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html]
+	
+	//resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
+	
+heading: Variables (TODO -- add  quizzes and explanation, explain what a varaible is at all, etc.)
+	resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
+	resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
+	resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
+	
+	
+heading: Make a "draw polygon" block (simplify things, slow it down, paramters, etc., etc!)
+	resource: Building your own blocks [/bjc-r/cur/programming/functions/building-your-own-blocks.html]
+	resource: Make a "draw polygon" Block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
+	
+heading: Draw a pretty picture?
+
+heading: Words (say/ask, string processing, etc).
+
+heading: Make a play -- using a controller
+
+// MORE?
+
+}
