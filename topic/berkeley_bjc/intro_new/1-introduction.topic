@@ -1,4 +1,4 @@
-title: Introduction to Snap! (FORMERLY Broadcast, Animations, and Music)
+title: Wecolme to Snap!
 
 {
 h2: Big Ideas
@@ -11,7 +11,7 @@ big-idea: Understand and analyze some of the impact of the internet on our cultu
 
 
 h2: Activities
-learning-goal: Familizarize yourself with the <span class="snap">snap</span> interface
+learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
 learning-goal: Make a <span class="snap">snap</span> account to save and load projects
 learning-goal: Make a sprite sing
 learning-goal: Learn to use the mouse to move sprites around the screen.
