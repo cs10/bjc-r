@@ -1,39 +1,46 @@
-title: Looping, Variables, and Custom Blocks 
+title: Looping and Custom Blocks 
 {
 
 
-learning-goal: Looping
-learning-goal: Variables
-learning-goal: Building Blocks
+
 
 heading: Repeating commands
 	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
-	quiz: Test yourself: Repeat (TODO - use new version) [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html ]
 	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
-	quiz: Test yourself: Total turning (TODO - use new version) [/bjc-r/cur/programming/intro/drawing/turning.html]
+	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
 	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
 	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
 	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
-	quiz: Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html]
+	quiz: TODO Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html]
 	
 	//resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
 	
-heading: Variables (TODO -- add  quizzes and explanation, explain what a varaible is at all, etc.)
-	resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
-	resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
-	resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
-	
-	
-heading: Make a "draw polygon" block (simplify things, slow it down, paramters, etc., etc!)
-	resource: Building your own blocks [/bjc-r/cur/programming/functions/building-your-own-blocks.html]
-	resource: Make a "draw polygon" Block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
-	
-heading: Draw a pretty picture?
 
-heading: Words (say/ask, string processing, etc).
+heading: Making your own blocks
+	resource: TODO motivation...  (we had it before w/ broadcast/wait...  how can we motivate it now? square?)
+	resource: Making your first custom block [/bjc-r/cur/programming/functions/intro/tutorial-custom-blocks.html]
+	quiz: TODO Reinforcing ideas, or using it somehow
+	resource: TODO-JESS Make the monkey dance (framework code with several moves that a monkey sprite can do, and talking)
+	resource: Adding an input [/bjc-r/cur/programming/functions/intro/adding-a-simple-input.html]
+	resource: TODO inputs are like the counter in i.  think of them a s boxes that hold something (introduce 'varaiables' a bit) 
+	resource: TODO-JESS Make that monkey really get down (moves and 'say')
 
-heading: Make a play -- using a controller
+heading: Drawing interesting polygons
+	resource: TODO Make a "draw polygon" Block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
+	
+	resource: TODO Custom blocks that invoke custom blocks -- change max-of   -- remove sum of.  reword three-input. [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
+	quiz: TODO practice  composing functions (1/2 of Jessica's previous quiz?)
+	resource: TODO draw-flower  -> draw-flower-head, draw-stem, draw-leaf ... lots of parameters
+		
+	
+heading: Making things look good
+	resource: TODO random introduction, do something
+	quiz: TODO-JESS practice with random
+	resource: randomly moving character (do we want this here?  detracts from drawing flowers?) [/bjc-r/cur/programming/random/randomly-moving-character.html]
+	resource: TODO draw lots of flowers
+	resource: TODO task: draw a pretty picture
 
-// MORE?
+
 
 }
