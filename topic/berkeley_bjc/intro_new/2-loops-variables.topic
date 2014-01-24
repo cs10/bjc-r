@@ -6,7 +6,7 @@ title: Looping and Custom Blocks
 
 heading: Repeating commands
 	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
-	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html ]
+	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html]
 	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
 	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
 	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
