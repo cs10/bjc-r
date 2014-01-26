@@ -34,6 +34,7 @@ heading: Putting blocks together
 	
 	resource: Building with custom blocks: your first flower [/bjc-r/cur/programming/functions/intro/composing-blocks.html]
 	quiz: TODO practice  composing functions (1/2 of Jessica's previous quiz?)
+	quiz: Composing with "buggy" blocks [/bjc-r/cur/programming/functions/intro/buggy-house-and-square.html]
 	resource: TODO draw-flower  -> draw-flower-head, draw-stem, draw-leaf ... lots of parameters
 		
 	
