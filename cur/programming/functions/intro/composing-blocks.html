@@ -1,38 +1,53 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- put the following in exactly -->
-		<script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script><title> Composition of Functions </title>
+    <head>
+        <!-- put the following in exactly -->
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Composition of Blocks
+        </title>
 
-	</head>
-	<body>
-	    <p>
-		You can treat your custom-made blocks like any other block in snap.  
-		including using them within other block definitions.
-		</p>
-		<p>
-		    Remember the <img class="inline" src="/bjc-r/img/blocks/draw-square-empty-parameter.png">
-		    block?  Use it to draw the petals of a flower, like:
-		</p>
-		<img class="center" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals">
-		<p>If you look this flower, you'll see it has 6 squares drawn at equal angles around
-		    a full 360-degree rotation.</p>
-		    <p class="quoteOrange">
-		        Create the block <br>
-		        <img class="center" src="/bjc-r/img/drawing/draw-square-leaved-flower-empty-paramters.png"
-		        alt="block: draw square-leaved flower with [] leaves of size []">
-		        <br>
-                that will draw a square-leaved flower with any number of square-shaped petals with 
-                the specified size.  In this block, you will rotate between calls to 
-                <tt>draw square</tt> in a similar way as in the <tt>draw polygon</tt> blocks:
-                <img class="inline" src="/bjc-r/img/drawing/calculating-turn-angle-for-draw-flower.png"
-                alt="360 divided by the number of leaves">.                
-		    </p>
-		    
-		    An invocation of 
-		<img class="inline" src="/bjc-r/img/drawing/draw-square-leaved-flower-6-50-parameters.png"
-                alt="block: draw square-leaved flower with 6 leaves of size 50">
-                should draw the example picture above.
+    </head>
+    <body>
+        <p>
+            You can treat your custom-made blocks like any other block in snap, including
+            using them within other block you define.  In fact, bigger programming
+            tasks are usually best solved
+            by writing simple blocks that are used within slightly more complicated blocks,
+            which are in turn used
+            in even more complicated blocks, and so on.
+        </p>
+        <p class="quoteGreen">
 
-	</body>
+            We'll look more closely at this sort of <i>composition</i> of blocks
+            in a later topic, because it is important.
+        </p>
+        <p>
+            For now, remember the <img class="inline" src="/bjc-r/img/blocks/draw-square-empty-parameter.png">
+            block?  Use it to create a block that draws the petals of a flower, like:
+        </p>
+        <img class="center" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals">
+        <p>
+            If you look this flower, you'll see it has 6 squares drawn at equal angles around
+            a full 360-degree rotation.
+        </p>
+        <p class="quoteOrange">
+            Create the block
+            <br>
+            <img class="center" src="/bjc-r/img/drawing/draw-square-leaved-flower-empty-paramters.png"
+            alt="block: draw square-leaved flower with [] leaves of size []">
+            <br>
+            that will draw a square-leaved flower with any number of square-shaped petals with
+            the specified size.  In this block, you will turn the sprite between calls to
+            <tt>draw square</tt> in a way similar to that in the <tt>draw polygon</tt> blocks: 
+            using an angle of <img class="inline" src="/bjc-r/img/drawing/calculating-turn-angle-for-draw-flower.png"
+            alt="360 divided by the number of leaves">.
+        </p>
+
+        An invocation of
+        <img class="inline" src="/bjc-r/img/drawing/draw-square-leaved-flower-6-50-parameters.png"
+        alt="block: draw square-leaved flower with 6 leaves of size 50">
+        should draw the example picture above.
+
+    </body>
 </html>
