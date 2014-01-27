@@ -96,41 +96,47 @@
         responseIdentifier="resp1" shuffle="true" >
             <div class="prompt">
                 <p>
-                    Consider the following block definition to draw a house
+                    Consider the following block definition to draw a house; it uses a <b>correct</b><tt>draw square</tt> block, it will draw a house (with a flat roof)
+                    and a door at the lower right:
                 </p>
-    <img class="indent" src="/bjc-r/img/drawing/draw-house-code.png" alt="draw-house block definition">
-    <p>If it uses a <b>correct</b> <tt>draw square</tt> block, it will draw a house (with a flat roof)
-        and a door at the lower right:
-        </p>
-        <img class="indent" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture">
-        <p>What will be drawn if it uses the <b>buggy</b> <tt>draw square</tt> code above?</p>
+                <div class="indent">
+                    <a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> <img class="inline" src="/bjc-r/img/drawing/draw-house-code.png" alt="draw-house block definition using proper draw-square"> </a>
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture">
+                </div>
+
+                <p>
+                    What will be drawn if it uses the <b>buggy</b><tt>draw square</tt> code above?
+                </p>
+                <div class="indent">
+                    <a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> <img  src="/bjc-r/img/drawing/draw-house-code-buggy.png" alt="draw-house block definition using buggy draw-square"> </a>
+                </div>
             </div>
             <div class="choice" identifier="c1">
                 <div class="text">
-                     <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture correct">
-                        (The correct picture)
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture correct">
+                    (The correct picture)
 
                 </div>
                 <div class="feedback">
-                    No.  The bug definitely has an effect when the two squares are composed.  
+                    No.  The bug definitely has an effect when the two squares are composed.
                     By using a buggy block, <tt>draw house</tt> becomes buggy itself!
                 </div>
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">
-                    Because <tt>draw square</tt> is buggy, there is no way to predict what 
+                    Because <tt>draw square</tt> is buggy, there is no way to predict what
                     the picture will look like.
                 </div>
                 <div class="feedback">
                     Incorrect.  This buggy program, like most buggy programs, will predicably do the same <b>wrong</b>
-                    thing every time it is run.  Carefully "run" the program block by block in your head. 
+                    thing every time it is run.  Carefully "run" the program block by block in your head.
                 </div>
             </div>
 
             <div class="choice" identifier="c3">
                 <div class="text">
                     <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-buggy1.png" alt="draw-house picture upside down">
-                        (Flipped over)
+                    (Flipped over)
 
                 </div>
                 <div class="feedback">
@@ -141,15 +147,13 @@
 
             <div class="choice" identifier="c4">
                 <div class="text">
-              <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-buggy2.png" alt="draw-house picture upside down">
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-buggy2.png" alt="draw-house picture upside down">
 
                 </div>
                 <div class="feedback">
-                   Right!  
+                    Right!
                 </div>
             </div>
-
-
 
             <div class="responseDeclaration" identifier="resp1">
                 <div class="correctResponse" identifier="c4"></div>
