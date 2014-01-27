@@ -22,64 +22,87 @@
         </p>
         <ol>
             <li>
-                Right-click or control-click on the new block (either in the palette or in a script) and select <tt>edit</tt> to go back to the block editor.
-                <br>
-                <br>
+                <p>
+                    Right-click or control-click on the new block (either in the palette or in a script) and select <tt>edit</tt> to go back to the block editor.
+                </p>
+                <img  title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" >
+
             </li>
-            <div style="margin-left: 40px;">
-                <img border="0" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EditCurrentBlock.jpg">
-                <br>
-            </div>
+
+            <li>
+                <p>
+                    In the <tt>Block Editor</tt>, hover your cursor over the words and plus signs (<b><tt>+</tt></b>)
+                    in the top block.  (This top block is called a "hat" block because of the curved top.
+                    Hat blocks can never be in the middle of a script, only at the top).
+
+                </p>
+                <p>
+                    Clicking on a word will let you change that word; clicking on a <b><tt>+</tt></b>
+                    will let you add something in that position.
+
+                    We want to add an input at the end of the block, so click on the <b><tt>+</tt></b>
+                    at the end.
+
+                </p>
+
+                <img title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" >
+
+            </li>
+
+            <li>
+                <p>
+                    You should get the following dialog box.
+                </p>
+                <img title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block"
+                src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" >
+
+                <p>
+                    You have two choices about what you want to add or modify to the block definition:
+                    <ol>
+                        <li>
+                            <tt>Title text</tt> will let you add a regular word (or words) to the definition
+                        </li>
+                        <li>
+                            <tt>Input name</tt> will let you add an <i>input</i>.  This is the choice we want here.
+
+                        </li>
+                    </ol>
+                    We want to add an input named <tt>size</tt> to our block definition.  Type "size"
+                    in the input field, select <tt>Input Name</tt>, and click <tt>OK</tt>.
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Your block definition has changed.  Similar to the <tt>for</tt> block, you have an special orange "box"
+                    with the name that you gave it earlier.
+
+                </p>
+                <img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
+            </li>
+
+            <li>
+                <p>
+                    <span class="snap">snap</span> will fill the <tt>size</tt> input automatically for you whenever you use the <tt>draw square</tt>
+                    block in a program.
+                    In order to use the input within the <tt>draw square</tt>,
+
+                    drag the variable <tt>size</tt> down into the move block. Whenever you need a new copy of a variable,  just drag another down.  (If you have extra copies
+                    you want to get rid of, you can drag the input all the way to the palette at the left of the snap window.)
+                </p>
+                <img  title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif">
+            </li>
 
             <br>
             <li>
-                In the <tt>Block Editor</tt>, notice that when you move the mouse over the prototype of the custom block, the plus signs (<tt>+</tt>) between words change color when you point to them. When you click on these plus signs, you can add more text or inputs. When you click on the text between the plus signs, you can delete or modify that text. Click on the plus sign at the far right as shown below:
-                <br>
-            </li>
-            <br>
-            <div style="margin-left: 40px;">
-                <img border="0" title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquarePlus.jpg">
-                <br>
-            </div>
+                <p>
+                    When you click <tt>OK</tt>, you'll see that the <tt>draw square</tt> block now takes an argument. You can put different numbers in the blank and draw squares of different sizes.
 
-            <br>
-            <li>
-                When you click on the plus sign on the far right, you should get the following dialog box. With this dialog box, we can select if we want to add input (orange) or more text (blue). You want to add an input called <tt>size</tt>, so  type <tt>size</tt>, select <tt>Input Name</tt>, and click <tt>OK</tt>.
-                <br>
-            </li>
-            <br>
-            <div style="margin-left: 40px;">
-                <img border="0" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/AddArgument.jpg">
-                <br>
-            </div>
-            <li>
-                Now you have a variable inside your block definition, just like a script variable, but getting its value from the custom block's input slot.
-                <br>
-                <br>
-            </li>
-            <div style="margin-left: 40px;">
-                <img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSize.gif">
-                <br>
-            </div>
-            <br>
-            <li>
-                Drag the variable <tt>size</tt> down into the move block. Whenever you need a new copy of a variable,  just drag the copy from that variable in the prototype.
-                <br>
-                <br>
-            </li>
-            <div style="margin-left: 40px;">
-                <img  title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSizeInBody.jpg">
-                <br>
-            </div>
-            <br>
-            <li>
-                When you click <tt>OK</tt>, you'll see that the <tt>draw square</tt> block now takes an argument. You can put different numbers in the blank and draw squares of different sizes.
-                <br>
-            </li>
-            <br>
-            <div style="margin-left: 40px;">
+                </p>
                 <img border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
-            </div>
+
+            </li>
+
         </ol>
     </body>
 </html>
