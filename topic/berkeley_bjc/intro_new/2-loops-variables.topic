@@ -9,6 +9,8 @@ heading: Repeating commands
 	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html]
 	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
 	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
+	resource: Draw a star? [/bjc-r/cur/programming/loops/repeat-n/draw-regular-star.html]
+	quiz: Test yourself: More on turning [/bjc-r/cur/programming/intro/drawing/angles-self-test-2.html]
 	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
 	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
 	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
