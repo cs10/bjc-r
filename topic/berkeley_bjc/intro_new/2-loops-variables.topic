@@ -28,7 +28,7 @@ heading: Making your own blocks
 	//quiz: practice converting no-parameter blocks to parameterized-blocks.  draw-rectangle -> draw-rectangle (width) (height), etc
 	//resource: introduce varibles a bit here?
 	resource: Make a "draw polygon" block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
-	//resource: Monkey Dance! [/bjc/cur/programming/functions/intro/monkey-dance.html]
+	resource: Monkey Dance! [/bjc-r/cur/programming/functions/intro/monkey-dance.html]
 	
 	
 
