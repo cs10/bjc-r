@@ -9,8 +9,9 @@ resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html]
 resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
 resource: Functions using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
 resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
-quiz: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
-resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
-resource: Final Project: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
+quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
+resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing.html]
+//resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
 
 }
