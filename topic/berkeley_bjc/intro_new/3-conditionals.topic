@@ -1,28 +1,16 @@
-title: Conditional (FORMERLY Putting It Together)
+title: Conditionals
 
 {
 
+resource: Primer: Variables [/bjc-r/cur/programming/conditionals/variables-primer.html]
+resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
+resource: "If-then" Statements [/bjc-r/cur/programming/conditionals/if-then-statements.html]
+resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html]
+resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
+resource: Functions using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
+resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
+quiz: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+resource: Final Project: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
 
-h2: Activities
-learning-goal: Practice with everything you know: control structures (if/else, for loops), randomness, variables, and graphics.
-
-
-
-heading: Number Guessing Game
-	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
-	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
-	homework: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
-	
-heading: Rock, Paper, Scissors
-	quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
-	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
-	
-//heading: Working with Dates
-	
-	
-	
-heading: MORE SOON
-
-//heading: Turn in your work
-	//submit: Submit: Loops and Variables 
 }
