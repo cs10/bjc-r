@@ -1,0 +1,35 @@
+title: Wecolme to Snap!
+
+{
+h2: Big Ideas
+big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
+big-idea: Explore sequential programming
+big-idea: Understand and analyze some of the impact of the internet on our culture
+
+	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+
+
+h2: Activities
+learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
+learning-goal: Make a <span class="snap">snap</span> account to save and load projects
+learning-goal: Make a sprite sing
+learning-goal: Learn to use the mouse to move sprites around the screen.
+learning-goal: Make a Kaleidoscope
+
+heading: Introduction to Snap!
+	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
+	resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
+	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
+	resource: Scripts [/bjc-r/cur/programming/intro/snap/exploring-snap-scripts.html]
+	resource: Reporters [/bjc-r/cur/programming/intro/sprites/sprites-reporters.html]
+
+heading: Kaleidoscope
+	resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
+	resource: Experiment with Drawing Commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands2.html]
+	resource: Follow that Mouse! [/bjc-r/cur/programming/loops/forever/follow-that-mouse.html]
+	resource: Forever and a Day [/bjc-r/cur/programming/loops/forever/forever-and-a-day.html]
+    quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
+	resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
+
+}
