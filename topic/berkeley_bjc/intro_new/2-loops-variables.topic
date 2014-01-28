@@ -32,7 +32,7 @@ heading: Making your own blocks
 	
 	
 
-heading: Putting blocks together
+heading: Building complicated blocks with simple blocks
 	resource: Building with custom blocks: your first flower [/bjc-r/cur/programming/functions/intro/composing-blocks.html]
 	//quiz: TODO practice  composing functions (1/2 of Jessica's previous quiz?)
 	quiz: Composing with "buggy" blocks [/bjc-r/cur/programming/functions/intro/buggy-house-and-square.html]
