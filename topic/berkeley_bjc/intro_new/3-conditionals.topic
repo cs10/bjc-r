@@ -11,7 +11,8 @@ resource: Functions using if and if-else [/bjc-r/cur/programming/conditionals/if
 resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
 quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
 resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
-resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing.html]
+resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
 //resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
 
 }
