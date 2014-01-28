@@ -1135,3 +1135,17 @@ li .course_link {
 	background-repeat:no-repeat;
 	padding-left:25px;
 }
+
+
+table td{
+    font-size:14px;
+    padding:10px 8px;
+    border-style:solid;
+    border-width:1px;}
+
+table th{
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;}
