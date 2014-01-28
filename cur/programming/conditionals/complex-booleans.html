@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+	
+        <title>More Complex Boolean Expressions</title>
+    </head>
+    <body>
+	<p>
+	    We now know how to write simple "if-then" statements in Snap! So far, the conditional in our uses of the
+	    "if" block have been single built-in blocks (like <img class="inline" src="/bjc-r/img/blocks/equals.png"
+	    alt="="/>). Let's take a look at a few more complex examples:
+	</p>
+
+	<ul>
+	    <li>
+		"If I am hungry and with my friends, I will order pizza."
+	    </li>
+	    <li>
+		"If I see George and Lisa at the mall, I will say "hello" to them."
+	    </li>
+	    <li>
+		"If we are out of milk or eggs, to the store."
+	    </li>
+	    <li>
+		"If you are not enjoying the party, go home."
+	    </li>
+	</ul>
+
+	<p>
+	    Discuss with your neighbor how you might express these sentences in code. In particular, think about the
+	    condition part of each sentence, and what blocks you might need to write.
+	</p>
+	<p>
+	    In past examples, we've seen conditionals that contain a single predicate (<img class="inline"
+	    src="/bjc-r/img/blocks/equals.png" alt="="/>, <img class="inline" src="/bjc-r/img/blocks/less-than.png"
+	    alt="<"/>, etc.). We could write a single block for each of the above conditionals, but that might be a bit
+	    weird. In the first sentence, for example, this would entail writing an "am hungry and with friends?"
+	    predicate. This seems a little strange because the "am hungry" and the "with my friends" parts aren't
+	    necessarily related; it doesn't make sense to put them as a single predicate. So, instead, we might write
+	    separate "am hungry?" and "with friends?"  predicates and combine them in some way. This brings us to three
+	    special predicates: <code>and</code>, <code>or</code>, and <code>not</code>.
+	</p>
+
+	<p>
+	    <Code>And</Code>, <code>or</code>, and <code>not</code> are all predicates that take in other
+	    predicates. These three predicates behave in ways you might expect from their meanings in English. When will
+	    the phrase "I am hungry and with my friends" evaluate to true? Only when both "I am hungry" and "I am with
+	    my friends" are true. If I wasn't with my friends, the entire phrase would certainly be false. We often
+	    summarize the behavior of predicates like <code>and</code>, <code>or</code>, and <code>not</code> using what
+	    are called truth tables. Here is the truth table for <code>and</code>:
+	</p>
+			
+    </body>
+</html>
