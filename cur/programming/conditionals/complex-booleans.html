@@ -27,10 +27,6 @@
 	</ul>
 
 	<p>
-	    Discuss with your neighbor how you might express these sentences in code. In particular, think about the
-	    condition part of each sentence, and what blocks you might need to write.
-	</p>
-	<p>
 	    In past examples, we've seen conditionals that contain a single predicate (<img class="inline"
 	    src="/bjc-r/img/blocks/equals.png" alt="="/>, <img class="inline" src="/bjc-r/img/blocks/less-than.png"
 	    alt="<"/>, etc.). We could write a single block for each of the above conditionals, but that might be a bit
@@ -38,10 +34,11 @@
 	    predicate. This seems a little strange because the "am hungry" and the "with my friends" parts aren't
 	    necessarily related; it doesn't make sense to put them as a single predicate. So, instead, we might write
 	    separate "am hungry?" and "with friends?"  predicates and combine them in some way. This brings us to three
-	    special predicates: <code>and</code>, <code>or</code>, and <code>not</code> (<img class="inline"
-	    src="/bjc-r/img/blocks/and.png" alt="and"/>, <img class="inline" src="/bjc-r/img/blocks/or.png"
-	    alt="or"/>, and <img class="inline" src="/bjc-r/img/blocks/not.png" alt="not"/> in <span class="snap">snap</span>).
+	    special predicates: <code>and</code>, <code>or</code>, and <code>not</code>.
 	</p>
+	<p><img class="center" src="/bjc-r/img/blocks/and.png" alt="and"/></p>
+	<p><img class="center" src="/bjc-r/img/blocks/or.png" alt="or"/></p>
+	<p><img class="center" src="/bjc-r/img/blocks/not.png" alt="not"/></p>
 
 	<p>
 	    <Code>And</Code>, <code>or</code>, and <code>not</code> are all predicates that take in other
@@ -107,7 +104,7 @@
 	    </tr>
 	</table>
 
-	<p>
+	<p class="quoteorange">
 	    Do these definitions fit with what you'd expect from English? Something you should notice is that "A or B"
 	    is still true even if both A and B are true. You might be tempted to argue that "or" should be false in this
 	    case (consider the sentence "you may have hashbrowns or toast with your breakfast;" having both is generally
@@ -115,7 +112,7 @@
 	    that is, it includes the fourth case as true (think about the third example from earlier; if we were out of
 	    both eggs and milk, we'd almost certainly still want to go to the store). The exclusive version of "or,"
 	    often called <a href="http://en.wikipedia.org/wiki/Xor" target="blank">"xor,"</a> is available in many other programming
-	    languages, but it isn't included in Snap! Try writing it yourself!
+	    languages, but it isn't included in Snap!
 	</p>
 	
     </body>

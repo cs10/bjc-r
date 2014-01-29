@@ -20,6 +20,7 @@ resource: write thermostat  -- writing a block that is used elsewhere (get a inp
 heading: Combining Booleans
 
 resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
+resource: Script Variables [/bjc-r/cur/programming/variables/scriptvar.html]
 quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
 resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
 
