@@ -22,14 +22,14 @@ heading: Combining Booleans
 resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
 quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
 resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
-resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
 
 heading: Practice with Predicates
 //resource: motivation
 resource: introducing reporters -- how to make them, etc.   reference <have suffieicne funds>
-resource: Practice: <= [/bjc-r/cur/programming/functions/predicates/predicates.html] // chop out relevant pieces
-// and get /predicates/ge-soln.html and maybe clean up.
+resource: Practice: >= [/bjc-r/cur/programming/conditionals/predicates.html] // chop out relevant piees
+resource: Solutions to >= [/bjc-r/cur/programming/conditionals/ge-soln.html]
 resource: Practice: Between [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
 
 
 heading: Number Guessing
