@@ -11,9 +11,9 @@ resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/con
 resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html] //remove/replace some quiz questions
 resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
 resource: Predict what happens! [/bjc-r/cur/programming/conditionals/predict.html]
-resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
-	  examples with dates would be great.
-	  resource: Functions using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
+//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
+	  //examples with dates would be great.
+resource: Blocks using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
 // game of life here later?
 
 
