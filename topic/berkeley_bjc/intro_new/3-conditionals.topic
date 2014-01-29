@@ -26,7 +26,7 @@ resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-lea
 
 heading: Practice with Predicates
 //resource: motivation
-resource: introducing reporters -- how to make them, etc.   reference <have suffieicne funds>
+resource: Reporter Blocks [/bjc-r/cur/programming/functions/reporters.html]
 resource: Practice: >= [/bjc-r/cur/programming/conditionals/predicates.html] // chop out relevant piees
 resource: Solutions to >= [/bjc-r/cur/programming/conditionals/ge-soln.html]
 resource: Practice: Between [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
