@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+	
+        <title>More Complex Boolean Expressions</title>
+    </head>
+    <body>
+	<p>
+	    We now know how to write simple "if-then" statements in Snap! So far, the conditional in our uses of the
+	    "if" block have been single built-in blocks (like <img class="inline" src="/bjc-r/img/blocks/equals.png"
+	    alt="="/>). Let's take a look at a few more complex examples:
+	</p>
+
+	<ul>
+	    <li>
+		"If I am hungry and with my friends, I will order pizza."
+	    </li>
+	    <li>
+		"If I see George and Lisa at the mall, I will say "hello" to them."
+	    </li>
+	    <li>
+		"If we are out of milk or eggs, to the store."
+	    </li>
+	    <li>
+		"If you are not enjoying the party, go home."
+	    </li>
+	</ul>
+
+	<p>
+	    In past examples, we've seen conditionals that contain a single predicate (<img class="inline"
+	    src="/bjc-r/img/blocks/equals.png" alt="="/>, <img class="inline" src="/bjc-r/img/blocks/less-than.png"
+	    alt="<"/>, etc.). We could write a single block for each of the above conditionals, but that might be a bit
+	    weird. In the first sentence, for example, this would entail writing an "am hungry and with friends?"
+	    predicate. This seems a little strange because the "am hungry" and the "with my friends" parts aren't
+	    necessarily related; it doesn't make sense to put them as a single predicate. So, instead, we might write
+	    separate "am hungry?" and "with friends?"  predicates and combine them in some way. This brings us to three
+	    special predicates: <code>and</code>, <code>or</code>, and <code>not</code>.
+	</p>
+	<p><img class="center" src="/bjc-r/img/blocks/and.png" alt="and"/></p>
+	<p><img class="center" src="/bjc-r/img/blocks/or.png" alt="or"/></p>
+	<p><img class="center" src="/bjc-r/img/blocks/not.png" alt="not"/></p>
+
+	<p>
+	    <Code>And</Code>, <code>or</code>, and <code>not</code> are all predicates that take in other
+	    predicates. These three predicates behave in ways you might expect from their meanings in English. When will
+	    the phrase "I am hungry and with my friends" evaluate to true? Only when both "I am hungry" and "I am with
+	    my friends" are true. If I wasn't with my friends, the entire phrase would certainly be false. We often
+	    summarize the behavior of predicates like <code>and</code>, <code>or</code>, and <code>not</code> using what
+	    are called truth tables. Here is the truth table for <code>and</code>:
+	</p>
+
+	<table class="truthtable">
+	    <tr>
+		<th>A</th> <th>B</th> <th>A and B</th>
+	    </tr>
+	    <tr>
+		<td>F</td> <td>F</td> <td>F</td>
+	    </tr>
+	    <tr>
+		<td>F</td> <td>T</td> <td>F</td>
+	    </tr>
+	    <tr>
+		<td>T</td> <td>F</td> <td>F</td>
+	    </tr>
+	    <tr>
+		<td>T</td> <td>T</td> <td>T</td>
+	    </tr>
+	</table>
+
+	<p>
+	    Here, A and B are the two inputs to the <code>and</code> block. The <code>and</code> block only accepts
+	    boolean values, so A and B are either <code>true</code> (T) or <code>false</code> (F). Reading across each
+	    row tells us what <code>A and B</code> will output, given particular values of A and B.  Here are the truth
+	    tables for <code>or</code> and <code>not</code>:
+	</p>
+
+	<table class="truthtable">
+	    <tr>
+		<th>A</th> <th>B</th> <th>A or B</th>
+	    </tr>
+	    <tr>
+		<td>F</td> <td>F</td> <td>F</td>
+	    </tr>
+	    <tr>
+		<td>F</td> <td>T</td> <td>T</td>
+	    </tr>
+	    <tr>
+		<td>T</td> <td>F</td> <td>T</td>
+	    </tr>
+	    <tr>
+		<td>T</td> <td>T</td> <td>T</td>
+	    </tr>
+	</table>
+
+	<table class="truthtable">
+	    <tr>
+		<th>A</th> <th>not A</th>
+	    </tr>
+	    <tr>
+		<td>F</td> <td>T</td>
+	    </tr>
+	    <tr>
+		<td>T</td> <td>F</td>
+	    </tr>
+	</table>
+
+	<p class="quoteorange">
+	    Do these definitions fit with what you'd expect from English? Something you should notice is that "A or B"
+	    is still true even if both A and B are true. You might be tempted to argue that "or" should be false in this
+	    case (consider the sentence "you may have hashbrowns or toast with your breakfast;" having both is generally
+	    assumed not to be an option). However, when "or" is used in a conditional, we assume that it is "inclusive;"
+	    that is, it includes the fourth case as true (think about the third example from earlier; if we were out of
+	    both eggs and milk, we'd almost certainly still want to go to the store). The exclusive version of "or,"
+	    often called <a href="http://en.wikipedia.org/wiki/Xor" target="blank">"xor,"</a> is available in many other programming
+	    languages, but it isn't included in Snap!
+	</p>
+	
+    </body>
+</html>

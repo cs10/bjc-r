@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            Self Test: Total Turning
+        </title>
+    </head>
+    <body>
+
+        <!-- question 1 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="triange-turning"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp1" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether </em>(not per side) when you drew a triangle?
+                    (That is, ignore the <tt>move</tt> blocks and focus on only the <tt>turn</tt> blocks).
+                </p>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    60
+                </div>
+                <div class="feedback">
+                    No.  Add up the total amount the sprite turns over all three rotations.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    180
+                </div>
+                <div class="feedback">
+                    No.  When the turtle finishes drawing one side of the triangle,
+                    is it facing toward the inside of the triangle?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! Each turn was 120 degrees, and there were three turns, for a total of 3*120=360 degrees.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    480
+                </div>
+                <div class="feedback">
+                    Nope, too much!  Think about how many turns your sprite made.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether </em> when you drew a pentagon?
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    72
+                </div>
+                <div class="feedback">
+                    No, consider the amount the sprite turned for all five of the rotations.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    108
+                </div>
+                <div class="feedback">
+                    Which way did the sprite end up facing?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! The sprite made a complete revoluton.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    540
+                </div>
+                <div class="feedback">
+                    No, How many times did the sprite turn?
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        </div>
+    </body>
+</html>

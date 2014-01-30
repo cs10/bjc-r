@@ -1,0 +1,60 @@
+title: Abstraction and Testing  
+{
+
+
+heading: More work with reporters
+
+	resource: The Max Block [/bjc-r/cur/programming/functions/review-max-block.html]
+	resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
+	resource: Composition of Reporters [/bjc-r/cur/programming/functions/composition-of-reporters.html]
+	    // remove the make a block stuff in front.  Consider the (max of (x) (y) and (z)) definition below
+	    // add more 'exercises' to this, between the two that are there (last is too difficult)
+	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
+	    // turn into buggy version that the student debugs, etc
+	// More here (like end of chapter exercises).
+	
+	
+	// Custom blocks make code easier to understand
+	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	
+	
+//heading: Variables and custom blocks
+	// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+		// fix -- not a global variable, but a 
+
+
+//  the word "REGULAR" is wrong!!
+//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+		// if used, get rid of global
+//	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
+//	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
+//	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+
+heading: Testing your code
+	// stuff   pause all, etc
+	// assert!?
+
+
+heading: Abstraction
+	resource: Brick Wall [/bjc-r/cur/programming/abstraction/brick-wall.html]
+	
+	
+		
+	
+heading: Programs with Multiple Sprites
+	// NO EXAMPLES WITH BROADCAST AND WAIT if possible?  I guess you can explain it, and say
+	//   don't use it.
+	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/intro/snap/intro-play.html]
+	// remove intro li stuff.  etc.
+	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/drawing/game-of-tag.html]
+	quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/intro/snap/different-ways-to-broadcast.html]
+	    // watch out -- broadcast and wait is in here!
+	// green flag?
+	// concurrency -- with keyboard input?  
+	// global variables --> emphasize that only to used in multiple sprite applications to share state
+	   // to pass inputs w/ broadcast TO OTHER SPRITES.
+	   // more on scope
+
+
+}

@@ -1,7 +1,7 @@
 /*
  * bjc-course.js
  * 
- * loaded in course pages.
+ * loaded on course pages.
  * can depend on jquery and bjc-library.js
  */
 

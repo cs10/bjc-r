@@ -75,6 +75,7 @@ a:visited {color:#36BBCE;}
 	width:100%;
 	z-index:9998;
 	margin-top:30px;
+    clear:both;
 }
 
 body {
@@ -145,7 +146,8 @@ p {
 	font:1em Arial, Helvetica, sans-serif;
 	color: black;
 	line-height:120%; 
-	vertical-align: bottom;
+	
+	/* vertical-align: bottom;   nate took this out so inline images do the right thing?*/
 	
 }
 
@@ -204,9 +206,18 @@ input[type=text], input[type=password], textarea {
 	color:#e3e3e3;
 }
 
+/* Quiz Page Buttons */
 input[type=submit] {
-	font:500 18px Tahoma, Geneva, sans-serif;
-	color:#fff;
+    font-family: "Helvetic Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    border: 1px solid #000;
+    background-color: #36F;
+    color: #FFF;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+         -o-border-radius: 9px;
+            border-radius: 9px;
 }
 
 ul, ol {
@@ -505,9 +516,10 @@ img.center {
 }
 	
 img.inline {
-	vertical-align: top;
+	/* this works if the text isn't also vertical-align'ed!  */
+	vertical-align: middle;
 }
-	
+
 img.indent {
 	margin-left: 10%;
 	display: block;
@@ -1125,4 +1137,20 @@ li .course_link {
 }
 
 
+.truthtable {
+    display:inline-block;
+    padding:10px;
+}
 
+.truthtable td {
+    font-size:14px;
+    padding:10px 8px;
+    border-style:solid;
+    border-width:1px;}
+
+.truthtable th {
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px;}

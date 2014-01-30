@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <!-- put the following in exactly -->
+    <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+    <title>Playing with Routes</title>
+  </head>
+  <body>
+    Let's go on to investigate the structure of the Internet. <br>
+    <h3>Traceroute</h3>
+    First, we are going to enumerate the nodes an Internet request takes
+    when we connect to it. The program available to do that is called <a
+      href="http://en.wikipedia.org/wiki/Traceroute">traceroute</a>. The
+    program takes many options but for this lab we only need one: The
+    target computer. So let's go ahead and try it:<br>
+    <br>
+    <img style=" width: 891px; height: 298px;" alt="trace route example"
+      src="traceroute.png"><br>
+    <br>
+    This output tells us that the example request from a<span
+      style="font-style: italic;"> sodabread.icsi.berkeley.edu</span>
+    went through 12 nodes. It also tells us that the actual destination
+    <span style="font-style: italic;">www.google.com</span> was never
+    reached. Instead we were redirected to a computer called
+    nuq04s19-in-f17 in the domain <span style="font-style: italic;">1e100.net</span>.
+    This is not unusual, since the service <span style="font-style:
+      italic;">www.google.com</span> with it's billions of users every
+    day could not be hosted by a single computer. In addition to the
+    nodes, we also see times in ms. These indicate 3 samples of latency
+    measurements the tool did to on it's way to the end host. <br>
+    <br>
+    A note: Sometimes, tracing the route does not succeed completely.
+    You will see three stars <span style="font-style: italic;">* * *</span>
+    if that happens. If a route seems to take too long, press CTRL+C
+    together to abort.<br>
+    <br>
+    On Linux machines, <code>traceroute</code> often needs to be
+    invoked as <code>/usr/sbin/traceroute</code>. Under Windows, the
+    command is <code>tracert</code>. Your TA or lab assistant can help
+    you with that.<br>
+    <br>
+    Now, use traceroute to answer the following questions. be sure to
+    note down your answers either on a sheet of paper or in the <a
+      target="new"
+href="https://docs.google.com/forms/d/1Gvz7ksamBR3v_YKlu_UMN8IbJzKjkyoOvE9BgEwFRSY/viewform">Google
+      Form</a>:<br>
+    <ol>
+      <li>How long is the routing trace to: www.facebook.com,
+        www.cnn.com, www.berkeley.edu, www.stanford.edu, www.cas.cn, and
+        www.berlin.de?</li>
+      <li>Pick a traced route from above and compare to your lab
+        neighbor. Are they different? If so, how?<br>
+      </li>
+      <li>Choose a computer (either from above or on your own) that is
+        some distance away and traceroute it three times. Does the
+        output differ? [it usually would]<br>
+      </li>
+      <li>Pick several hosts in California,&nbsp; in the US (but not in
+        CA), and overseas and trace the routes.&nbsp;</li>
+      <ul>
+        <li>Can you say that routes are longer based on geographical
+          distance? <br>
+        </li>
+        <li>What about latency vs geographical distance?</li>
+        <li>Does the route follow a geographically-sensible path, i.e.
+          is every node coming closer to the target in geographical
+          distance? <br>
+        </li>
+      </ul>
+      <li>How long was your shortest route ever measured in the above
+        experiments?</li>
+    </ol>
+    <br>
+    After all this work, on to a fun one. Try this:<br>
+    <br>
+    <code>/usr/sbin/traceroute 216.81.59.173</code> <br>
+    <br>
+    <h3>Whois</h3>
+    By now, you must have started wondering who all these nodes belong
+    to. Fortunately, there is a way to find out: The <a
+      href="http://en.wikipedia.org/wiki/Whois">whois</a> program allows
+    querying the the top-level domain name registrar to find out the
+    administrator (provider) and the owner of a domain. With the default
+    options, the program will only work with .com, .net, .edu, and .org
+    domains. If you are interested, you can use the command <code>man
+      whois</code> to find out how to query other top-level domains (use
+    arrow keys to scroll, press q to quit). Note, that the whois program
+    takes a domain, not a hostname. So <code>whois www.berkeley.edu</code>
+    will not result in any useful information, the query should be <code>whois
+
+      berkeley.edu</code>. A typical output looks like this:<br>
+    <img style=" width: 760px; height: 871px;" alt="whois berkeley.edu
+      output" src="whois.png"><br>
+    <br>
+    More interestingly, you can use whois on IP addresses. In that case,
+    whois will query the domain that the IP address belongs to
+    automatically. For example, try a <span style="font-style: italic;">whois
+
+
+
+
+
+
+
+
+      128.32.136.3</span>. A note: whois output can be quite long. Keep
+    in mind that you can scroll in a commend line console by using
+    either the scroll bars, your mouse wheel, or the SHIFT+PGUP and
+    SHIFT+PGDOWN keys.<br>
+    <br>
+    Now use whois to answer the following questions:<br>
+    <ol>
+      <li>Who do the nodes belong to in the above shown www.google.com
+        traceroute?</li>
+      <li>How many legal entities can see your search queries packets
+        (e.g. we are not asking for nodes but companies or individuals
+        owning them)?</li>
+    </ol>
+    <br>
+    <br>
+    &nbsp;<br>
+    <br>
+  </body>
+</html>

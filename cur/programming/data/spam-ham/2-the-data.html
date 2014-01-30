@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;
+        charset=ISO-8859-1">
+        <!-- put the following in exactly -->
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>
+            The Data
+        </title>
+    </head>
+    <body>
+        <p>
+            You are going to work with a set of 500 real text
+            messages, part of a collection recorded and collected by T.
+            Almeida and J. Hidalgo (<a
+            href="http://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection">original
+            source</a>).
+        </p>
+        <p>
+            Two typical lines in our data look like this:
+
+            <table id="tableBlue" width="80%">
+                <tr>
+                    <td>ham</td>
+                    <td>Fair enough, anything going on?</td>
+                </tr>
+                <tr>
+                    <td>spam</td>
+                    <td>SMS. ac
+                    Sptv: The New Jersey Devils and the Detroit Red Wings play Ice
+                    Hockey. Correct or Incorrect? End? Reply END SPTV</td>
+                </tr>
+            </table>
+        </p>
+
+        <p>
+            The raw data is <a href="hamspam500.txt">here</a>,
+            but we've made a
+            <a class="run" href="/bjc-r/prog/data/spam-ham.xml">starter <span class="snap">snap</span> project</a>
+
+            which you should open now.
+            The text massages are in variable called <code>datasheet</code> that is
+            a list of rows (like a row in the above table).  Each row is also
+            a list, but with only two elements: the first is the word <i>spam</i> or <i>ham</i>,
+            and the second is the contents of the message. 
+             Be aware that this is real-world data with very casual
+            langauge (we've already removed the messages with language that was
+            <i>too</i> casual for a school assignment!)
+        </p>
+        <p class="quoteOrange">
+            We will call that first word&mdash;spam or ham&mdash;
+            the <i>ground truth classification</i>.  That is, at some point
+            an actual human decided whether this message was spam or ham, and we'll consider
+            this to be "the truth".  In this way, we can see how good our
+            program is at classifying a message, based only on its contents,
+             by comparing it this value.  
+             You might actually disagree with some of the "truth" classifications
+            that are in the file; if so, feel free to change them (and be ready to justify
+            your belief to others!)
+                 </p>
+<p>Out of the 500 messages, how many are ham?</p>
+
+    </body>
+</html>

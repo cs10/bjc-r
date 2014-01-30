@@ -1,0 +1,17 @@
+title: Advanced HOFs Problems: Recursion and HOFs
+{
+h2: Big Ideas
+big-idea: Use HOFs in recursive functions to generalize functionality.
+
+h2: Activities
+learning-goal: Practice using HOFs to generalize recursive functions.
+
+    resource: Introduction [/bjc-r/cur/programming/HOFs/hofs-with-recursion/hofs-with-recursion-introduction.html]
+    resource: Respect the family... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/ancestors.html]
+    resource: Keep the dog away from the family tree... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/descendants.html]
+    resource: Two roads diverged in a wood... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/path-home.html]
+    resource: Two Many roads diverged in a wood... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/generalized-path-home.html]
+    
+h3: Extra for Experts
+    resource: Strawberry Fields Forever [/bjc-r/cur/programming/HOFs/hofs-with-recursion/strawberry-fields.html]
+}
