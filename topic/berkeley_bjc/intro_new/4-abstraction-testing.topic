@@ -29,7 +29,7 @@ heading: Programs with Multiple Sprites
 	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
 	quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
     resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html] 
-    resource: Global Variables [/bjc-r/cur/programming/varaibles/global-variables.html]
+    resource: Global Variables [/bjc-r/cur/programming/variables/global-variables.html]
        
 //heading: Variables and custom blocks
 	// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
