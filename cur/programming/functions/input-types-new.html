@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Input Types</title>
+        <!--ORIGINAL NAME: Input types-->
+    </head>
+    <body>
+        <p>
+            The <tt>max</tt> block has an unexpected behavior. We wanted it to work only for numbers. Yet, you can type text in!
+        </p>
+        <br>
+        <div style="margin-left: 40px;">
+            <img border="0" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png">
+        <br>
+        </div>
+        <br>
+        <p>
+            To remedy this behavior we can specify the input type that should be used in our block.
+            Now we are going to limit the <tt>max</tt> block to accept only numbers as arguments. 
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Open the <tt>Block Editor</tt> for the <tt>max</tt> block and click on the input <tt>x</tt>.
+                </p>
+                <br>
+                <div style="margin-left: 40px;">
+                    <img src="/bjc-r/img/sys/edit-input-variable-x-BYOB.jpg" alt="Editing input 'x'">
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Then, click on the right arrow in the pop-up box shown above. This will open the dialog box shown below.
+                    This allows us to specify the shape of the slot. We want a numbers-only slot (as shown selected below).
+                    We can also specify that we want the variable to have a <em>default</em> value; this is similar to blocks
+                    like <tt>move</tt> that always start out with the default value <tt>10</tt>.
+                </p>
+            <br>
+            <div style="margin-left: 40px;">
+                <img border="0" src="/bjc-r/img/prog/x-long-dialog.png" alt="Input Type" title="Input Type">
+                <br>
+            </div>
+            </li>
+            <br>
+            <li>
+                <p>
+                    Modify both the <tt>x</tt> and <tt>y</tt> variables to take only numbers and to have the default values of <tt>5</tt>
+                    and <tt>10</tt>, respectively. Your <tt>Block Editor</tt> should then look like this, with the default values shown in the header.
+                </p>
+                <br>
+                <div style="margin-left: 40px;">
+                    <img border="0" src="/bjc-r/img/prog/max-defaults.png" alt="Default Values">
+                    <br>
+                </div>
+            </li>
+            <br>
+            <li>
+                <p>
+                    When you click <tt>OK</tt>, you should be able to see your block in the <tt>Operators</tt> tab, with the default values filled in.
+                    Also, note that you will no longer be able to enter text.
+                </p>
+                <br>
+                <div style="margin-left: 40px;">
+                    <img border="0" src="/bjc-r/img/prog/max-of-5-and-10.png" alt="'max' block with defaults">
+                    <br>
+                </div>
+            </li>
+        </ol>
+        <p>
+            <em>Note</em>: Even if we specify an input type for a block it could still receive improper values when a variable is passed in as its
+             argument (snap! won’t constantly check if the variable’s type is the same as the block’s input type).
+             As such, input types should only be used as an organizational tool to keep you thinking about what the domain (input values) of your blocks should be.
+        </p>
+</body>
+</html>
