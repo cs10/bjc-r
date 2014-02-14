@@ -1,6 +1,5 @@
 
-
-// TODO move MC-template into here as a string, oh well
+/* Represents a multiple choice question. */ 
 
 function MC(data, location, questionNumber) {
 	//data = data[0];
@@ -118,15 +117,10 @@ MC.prototype.render = function() {
 		//$('.MultipleChoice').html(pageTemplate);
 
 		/* set the question type title */
-		//if (this.num == 0) {
 		this.multipleChoice.find('.questionType').html('Question ' + (this.num + 1));
-		//} else {
-		//this.multipleChoice.find('.questionType').html('');
-		//}
 	}
 
-	/* render the prompt
-	 */
+	/* render the prompt */
 	this.multipleChoice.find('.promptDiv').html(this.content.prompt);
 
 	/* remove buttons */
