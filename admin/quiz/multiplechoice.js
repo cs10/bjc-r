@@ -494,11 +494,6 @@ MC.prototype.getTemplate = function() {
 	"					<div class='radiobuttondiv'></div>" +
 	"					<div class='feedbackdiv'></div>" +
 	"				</div>" +
-	"				<div class='rightColumn' class='bg2'>" +
-	"					<img src='" +
-	bjc.rootURL +
-	"/img/multi_choice.png' alt='Robot Art Open Response'  border='0' />" +
-	"				</div>" +
 	"			</div>" +
 	"			<div class='clearBoth'></div>" +
 	"			<div ='interactionBox'>" +
