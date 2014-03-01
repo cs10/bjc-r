@@ -169,7 +169,8 @@ bjc.renderFull = function(data, ignored1, ignored2) {
                     temp.append(text);
                     url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
                     if (url.indexOf("http") != -1) {
-                        url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+                        url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file
+			    + "&step=" + num + "&title=" + text;
                     } else {
 			if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
 			    if (url[0] == "/") {
@@ -280,5 +281,4 @@ if (getParameterByName("topic") != "") {
   if no colon at all, just put no class on the div
   
 */
-
 

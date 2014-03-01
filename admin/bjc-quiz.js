@@ -3,8 +3,10 @@
 function getQInstance(type, qdata, location,  i) {
 	// switch would be nicer here...
 	// based on value of 'type' attribute in the div with class=asessment-data
-	if (type = "multiplechoice") {
-		return new MC(qdata, location, i);
+	if (type == "multiplechoice") {
+	    return new MC(qdata, location, i);
+	} else if (type == "inline-multiplechoice") {
+	    return new IMC(qdata, location, i);
 	}
 	
 }
