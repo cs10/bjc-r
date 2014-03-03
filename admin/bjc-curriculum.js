@@ -7,7 +7,7 @@
 
 bjc['file'] = "";
 bjc['step'] = "";
-
+bjc['url_list'] = new Array();
 
 bjc.secondarySetUp = function() {
 
@@ -207,6 +207,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 			url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
 		    }
 		}
+		bjc['url_list'].push(url);
 		if (num == (bjc.step - 1)) {
 		    backButton.attr({'value': url});
 		    backButton.button({disabled: false});
