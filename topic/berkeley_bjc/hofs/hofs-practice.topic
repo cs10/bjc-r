@@ -28,6 +28,6 @@ h3: Functions as Data
 h3: Minimizing Functions
     resource: I hope you remember your calculus [/bjc-r/cur/programming/HOFs/functions-as-data/minimize-function.html]
     
-h3: Extra for Experienced
+h3: Extra for Experience
     resource: Compose, compose, compose... [/bjc-r/cur/programming/HOFs/functions-as-data/compose-over-list.html]
 }
