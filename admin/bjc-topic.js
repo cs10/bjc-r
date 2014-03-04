@@ -48,7 +48,6 @@ bjc['file'] = "";
 /* The allowed tags for easy entry.
  * e.g.   h1: Some Text [maybe/a/link/too]
  */
-//TODO put in bjc namespace
 bjc.tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
