@@ -48,8 +48,7 @@ bjc['file'] = "";
 /* The allowed tags for easy entry.
  * e.g.   h1: Some Text [maybe/a/link/too]
  */
-//TODO put in bjc namespace
-var tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
+bjc.tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 
@@ -169,7 +168,8 @@ bjc.renderFull = function(data, ignored1, ignored2) {
                     temp.append(text);
                     url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
                     if (url.indexOf("http") != -1) {
-                        url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file + "&step=" + num + "&title=" + text;
+                        url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" + url + "&" + "topic=" + bjc.file
+			    + "&step=" + num + "&title=" + text;
                     } else {
 			if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
 			    if (url[0] == "/") {
@@ -189,8 +189,6 @@ bjc.renderFull = function(data, ignored1, ignored2) {
                     num += 1;
                     temp.attr({'href': url});
                     item.append(temp);
-                    //url_list.push(url);
-                    //topic_list.push(text);
                 } else {
                     item.append(line.slice(line.indexOf(":") + 1));
                 }
@@ -218,9 +216,6 @@ bjc.renderFull = function(data, ignored1, ignored2) {
 
 
 
-
-
-
 /* Returns the indent class of this string,
  * depending on how far it has been indented
  * on the line. */
@@ -242,13 +237,7 @@ bjc.indentString = function(s) {
 
 /* Returns true iff S is an allowed html tag. */
 bjc.isTag = function(s) {
-    var n = tags.length;
-    for (var i = 0; i < n; i++) {
-        if (s == tags[i]) {
-            return true;
-        }
-    }
-    return false;
+    return bjc.tags.indexOf(s) > -1;
 }
 
 
@@ -272,11 +261,6 @@ if (getParameterByName("topic") != "") {
 }
 
 
-
-
-//document.functionsReady = true;
-
-
 /*
   Error checking (do this after building page, so it won't slow it down?)
 
@@ -295,8 +279,5 @@ if (getParameterByName("topic") != "") {
   
   if no colon at all, just put no class on the div
   
-  
-  
 */
-
 

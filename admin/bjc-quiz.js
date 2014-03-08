@@ -3,8 +3,10 @@
 function getQInstance(type, qdata, location,  i) {
 	// switch would be nicer here...
 	// based on value of 'type' attribute in the div with class=asessment-data
-	if (type = "multiplechoice") {
-		return new MC(qdata, location, i);
+	if (type == "multiplechoice") {
+	    return new MC(qdata, location, i);
+	} else if (type == "inline-multiplechoice") {
+	    return new IMC(qdata, location, i);
 	}
 	
 }
@@ -47,7 +49,6 @@ function buildQuestions() {
 	
 	// now, remove the purely data tags, how about?
 	$("div.assessment-data").remove();
-	//$("div.responseDeclaration").remove();
 	
 }
 
@@ -71,8 +72,8 @@ function makeGetRemoteQdataCallback(location, questionNum) {
 
 
 
-//qdata is a div with the relevant data
-//location is a div whose contents will be replaced with the question.
+// qdata is a div with the relevant data
+// location is a div whose contents will be replaced with the question.
 function buildQuestion(qdata, location, questionNum, fetched)  {
 	qdata = $(qdata).insertBefore(location);
 	console.log(qdata);
@@ -81,7 +82,6 @@ function buildQuestion(qdata, location, questionNum, fetched)  {
 	var question = getQInstance(type, qdata, location, questionNum);
 	question.loadContent();
 	question.render();
-	//mc.push(question);
 }
 
 /**

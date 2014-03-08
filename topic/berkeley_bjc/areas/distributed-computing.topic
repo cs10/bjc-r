@@ -28,7 +28,7 @@ heading: Solving Problems With MapReduce
 	resource: Your Third MapReduce: Love, All the Beatles song titles with the word "love" in it. [/bjc-r/cur/programming/distributed/your-third-mapreduce-love-all-the-beatles-song-titles-with-the-word-love-in-it.html]
 	quiz: What kind of pattern was Love? [/bjc-r/cur/programming/distributed/what-kind-of-pattern-was-love.html]
 	resource: Your Fourth MapReduce: WordCount, a count of the number of times words appears. [/bjc-r/cur/programming/distributed/your-fourth-mapreduce-wordcount-a-count-of-the-number-of-times-words-appears.html]
-	resource: Extra for Experts: The Fifth MapReduce ... Google, building a Google-like index. [/bjc-r/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
+	resource: Extra for Experience: The Fifth MapReduce ... Google, building a Google-like index. [/bjc-r/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
 	//resource: Quiz Answers [/bjc-r/cur/programming/distributed/quiz-answers.html]
 	
 
