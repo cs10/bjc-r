@@ -64,9 +64,9 @@ a:visited {color:#36BBCE;}
 
 #full-bottom-bar {
 	background-color:#ccc;
-	background-image: url("../img/gobo.gif");
+	background-image: url("../img/costumes/alonzo.gif");
 	background-repeat:no-repeat;
-	background-position:top left;
+	background-position: 1px 2px;
 	background-size:20px;
 	height:25px;
 	position:relative;

@@ -280,6 +280,9 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	b_nav.append(background.clone());
 	$("#full-bottom-bar").append(b_nav);
     }
+    bjc.moveAlonzo(bjc.url_list.length, bjc.step,
+		   $("#full-bottom-bar").css("width").slice(0, -2) - b_backButton.css("width").slice(0, -2) -
+		   b_forwardButton.css("width").slice(0, -2), $("#full-bottom-bar").css("width").slice(0, -2) - 0);
 
     
 }
@@ -299,6 +302,21 @@ bjc.goBack = function() {
 
 bjc.goForward = function() {
     window.location.href = bjc['url_list'][bjc.step + 1];
+}
+
+bjc.moveAlonzo = function(total, current, width, totalWidth) {
+    var result;
+    if (current < total - 1) {
+	width = width * .98
+	result = Math.round((current * (width / (total - 1)) + 1) / totalWidth * 100);
+	result = result + "%";
+	result = result + " 2px";
+    } else {
+	result = width - 37;
+	result = result + "px";
+    }
+    result = result + " 2px";
+    $("#full-bottom-bar").css("background-position", result)
 }
 
 
