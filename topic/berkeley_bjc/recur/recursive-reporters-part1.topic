@@ -1,0 +1,45 @@
+title: Recursive Reporters
+{
+h2: Big Ideas
+big-idea: Relating recursion in programming with inductive function definition
+
+//	video: Recursion II [https://coursesharing.org/courses/6/lectures/19]
+	video: Take-home midterm exam Wednesday!
+	video: AI [https://coursesharing.org/courses/6/lectures/22]
+	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
+
+h2: Activities
+
+learning-goal: Understand how reporters use combiners instead of sequences.
+learning-goal: Practice planning and coding recursive reporters.
+learning-goal: Implement higher order functions.
+
+
+heading: Introduction
+	 resource: Recursive Reporters: Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
+
+heading: Some simple ones
+	 resource: Plurals of Words [/bjc-r/cur/programming/recursion/recursive-reporters/plurals-of-words.html]
+
+heading: Pascal's Triangle
+	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle.html]
+	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-algorithm.html]
+	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-hint.html]
+	 resource: How long does this computation take? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
+
+
+heading: List Recursion	 
+	 resource: Even numbers [/bjc-r/cur/programming/recursion/recursive-reporters/even-number-filter.html]
+
+
+heading: Subsets
+	 resource: Subsets of a Set [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set.html]
+	 resource: Subset hints [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-hint.html]
+	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-and-efficiency.html]
+	 resource: Fast Subsets [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-fast-soln.html]
+
+
+heading: Sorting
+	 resource: Sorting a List [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting.html]
+
+}

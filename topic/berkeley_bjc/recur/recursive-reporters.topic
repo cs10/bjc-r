@@ -14,10 +14,10 @@ learning-goal: Understand how reporters use combiners instead of sequences.
 learning-goal: Practice planning and coding recursive reporters.
 learning-goal: Implement higher order functions.
 
-big-idea: Recursive Reporters:
 
 heading: Number representation
-	resource: Recursive Reporters: Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
+	resource: Recursive Reporters [/bjc-r/cur/programming/recursion/recursive-reporters/recursive-reporters-intro.html]
+	resource: Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
 	resource: A Hint on Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers-hint.html]
 	resource: Beyond Binary [/bjc-r/cur/programming/recursion/recursive-reporters/beyond-binary.html]
 
