@@ -305,12 +305,13 @@ bjc.goForward = function() {
 }
 
 bjc.moveAlonzo = function(total, current, width, totalWidth) {
+    console.log(current);
+    console.log(total);
     var result;
     if (current < total - 1) {
 	width = width * .98
 	result = Math.round((current * (width / (total - 1)) + 1) / totalWidth * 100);
 	result = result + "%";
-	result = result + " 2px";
     } else {
 	result = width - 37;
 	result = result + "px";
