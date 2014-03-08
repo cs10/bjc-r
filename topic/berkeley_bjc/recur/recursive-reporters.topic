@@ -31,6 +31,7 @@ big-idea: Here are the ones you haven't seen before:
 
 heading: Sorting
 	 resource: Sorting a List [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting.html]
+	 resource: Self test: Sorting a List [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting-selftest.html]
 
 heading: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set.html]

@@ -16,15 +16,15 @@ learning-goal: Implement higher order functions.
 
 
 heading: Introduction
-	 resource: Recursive Reporters: Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
+	 resource: Recursive Reporters [/bjc-r/cur/programming/recursion/recursive-reporters/recursive-reporters-intro.html]
 
 heading: Some simple ones
 	 resource: Plurals of Words [/bjc-r/cur/programming/recursion/recursive-reporters/plurals-of-words.html]
 
 heading: Pascal's Triangle
 	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle.html]
-	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-algorithm.html]
-	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-hint.html]
+	 //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-algorithm.html]
+	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-selftest.html]
 	 resource: How long does this computation take? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
 
@@ -34,12 +34,13 @@ heading: List Recursion
 
 heading: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set.html]
-	 resource: Subset hints [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-hint.html]
+	 resource: Subset hints [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-self-test.html]
 	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-and-efficiency.html]
 	 resource: Fast Subsets [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-fast-soln.html]
 
 
 heading: Sorting
-	 resource: Sorting a List [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting.html]
+	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting-even-odd.html]
+	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting-merge.html]
 
 }
