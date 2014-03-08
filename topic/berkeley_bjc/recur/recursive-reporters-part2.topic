@@ -1,0 +1,24 @@
+title: Advanced Practice with Recursive Reporters
+{
+
+h2: Activities
+
+learning-goal: Work with number representations using recursive functions
+learning-goal: Practice with HOFs + recursion
+learning-goal: Understand inner workings of map and keep
+
+heading: Number representation
+	 resource: Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers.html]
+	 resource: A Hint on Binary Numbers [/bjc-r/cur/programming/recursion/recursive-reporters/binary-numbers-hint.html]
+	 resource: Beyond Binary [/bjc-r/cur/programming/recursion/recursive-reporters/beyond-binary.html]
+
+
+heading: Ice Cream Shop Menu
+	 resource: At the Ice Cream Shop [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-shop.html]
+	 resource: Formal Parameters [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-formal-parameters.html]
+	 resource: Menu hints [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-hint.html]
+
+
+heading: Recursive Map
+	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/recursion/recursive-reporters/generalizing-the-map-pattern.html]
+}

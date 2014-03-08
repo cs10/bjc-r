@@ -12,6 +12,6 @@ learning-goal: Practice using HOFs to generalize recursive functions.
     resource: Two roads diverged in a wood... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/path-home.html]
     resource: Two Many roads diverged in a wood... [/bjc-r/cur/programming/HOFs/hofs-with-recursion/generalized-path-home.html]
     
-h3: Extra for Experts
+h3: Extra for Experience
     resource: Strawberry Fields Forever [/bjc-r/cur/programming/HOFs/hofs-with-recursion/strawberry-fields.html]
 }

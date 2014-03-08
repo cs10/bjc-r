@@ -472,3 +472,11 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 .MultipleChoiceData {
 	display: none
 }
+
+.InlineMultipleChoice div {
+    display: inline-block;
+}
+
+.InlineMultipleChoice .inline-prompt {
+    
+}
