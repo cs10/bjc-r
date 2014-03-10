@@ -13,12 +13,15 @@ heading: Number representation
 	 resource: Beyond Binary [/bjc-r/cur/programming/recursion/recursive-reporters/beyond-binary.html]
 
 
+heading: Recursively-defined HOFs
+	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/recursion/recursive-reporters/generalizing-the-map-pattern.html]
+	 resource: Generalizing Keep, Combine, and Sort [/bjc-r/cur/programming/recursion/recursive-reporters/generalize-keep-combine-sort.html]
+
 heading: Ice Cream Shop Menu
 	 resource: At the Ice Cream Shop [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-shop.html]
 	 resource: Formal Parameters [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-formal-parameters.html]
 	 resource: Menu hints [/bjc-r/cur/programming/recursion/recursive-reporters/ice-cream-hint.html]
 
 
-heading: Recursive Map
-	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/recursion/recursive-reporters/generalizing-the-map-pattern.html]
+
 }
