@@ -319,7 +319,8 @@ $('html').click(function(event) {
  * the combined width of the two nav buttons.
  */
 bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
-    var width = totalWidth - buttonWidth;
+    //var width = totalWidth - buttonWidth;
+    var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2));
     var result;
     if (currentStep < numSteps - 1) {
 	width *= .98
@@ -327,7 +328,8 @@ bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
     } else {
 	var picWidth = $("#full-bottom-bar").css("background-size");
 	picWidth = picWidth.slice(0, picWidth.indexOf("px"));
-	result = width - Number(picWidth) - 8 * Number($('.backbutton').css("margin-left").slice(0, -2)) + "px";
+	result = width - Number(picWidth) - 4 + "px";
+	console.log(result);
     }
     result = result + " 2px";
     $("#full-bottom-bar").css("background-position", result)
