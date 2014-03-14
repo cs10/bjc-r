@@ -280,9 +280,11 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	b_nav.append(background.clone());
 	$("#full-bottom-bar").append(b_nav);
     }
+
     bjc.moveAlonzo(bjc.url_list.length, bjc.step,
-		   $("#full-bottom-bar").css("width").slice(0, -2) - b_backButton.css("width").slice(0, -2) -
-		   b_forwardButton.css("width").slice(0, -2), $("#full-bottom-bar").css("width").slice(0, -2) - 0);
+		   Number($("#full-bottom-bar").css("width").slice(0, -2)), 
+		   Number(b_backButton.css("width").slice(0, -2)) +
+		   Number(b_forwardButton.css("width").slice(0, -2)));
 
     
 }
@@ -304,17 +306,28 @@ bjc.goForward = function() {
     window.location.href = bjc['url_list'][bjc.step + 1];
 }
 
-bjc.moveAlonzo = function(total, current, width, totalWidth) {
-    console.log(current);
-    console.log(total);
+/* Hides the dropdown when a user clicks somewhere else. */
+$('html').click(function(event) {
+    if (!$(event.target).is($('.list_header')[0])) {
+	$($(".steps")[0]).slideUp(300);
+    }
+});
+
+/* Positions alonzo along the bottom of the lab page, signifying the student's progress.
+ * numSteps is the total number of steps in the lab, currentStep is the number of the
+ * current step, totalWidth is the width of the entire bottom bar, and buttonWidth is
+ * the combined width of the two nav buttons.
+ */
+bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
+    var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2));
     var result;
-    if (current < total - 1) {
-	width = width * .98
-	result = Math.round((current * (width / (total - 1)) + 1) / totalWidth * 100);
-	result = result + "%";
+    if (currentStep < numSteps - 1) {
+	width *= .98
+	result = Math.round((currentStep * (width / (numSteps - 1)) + 1) / totalWidth * 100) + "%";
     } else {
-	result = width - 37;
-	result = result + "px";
+	var picWidth = $("#full-bottom-bar").css("background-size");
+	picWidth = picWidth.slice(0, picWidth.indexOf("px"));
+	result = width - Number(picWidth) - 4 + "px"; // the 4 is just to add a bit of space
     }
     result = result + " 2px";
     $("#full-bottom-bar").css("background-position", result)
