@@ -1131,9 +1131,9 @@ li .course_link {
     margin-bottom: 10px;
     font-size:large;
     background-image: url("../img/web/globe.png");
-	background-size:contain;
-	background-repeat:no-repeat;
-	padding-left:25px;
+    background-size:contain;
+    background-repeat:no-repeat;
+    padding-left:25px;
 }
 
 
@@ -1157,9 +1157,7 @@ li .course_link {
 
 .code-vid {
   text-align: center;
-}
-caption.code-vid {
   font-size: .8em;
   font-style: italic;
-
+  font-color: #707070;
 }
