@@ -1,8 +1,8 @@
 /**
  * based on:
- * 
+ *
  * Copyright (c) 2006 Encore Research Group, University of Toronto
- * 
+ *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
  * License as published by the Free Software Foundation; either
@@ -18,7 +18,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-/* THESE STYLES ARE USED GLOBALLY WITHIN ALL UCCP PROJECTS  */	
+/* THESE STYLES ARE USED GLOBALLY WITHIN ALL UCCP PROJECTS  */
 
 .color1 {color:#164CBA;}   /* vibrant blue */
 .color2 {color:#6883BA;}   /* mid blue */
@@ -48,7 +48,7 @@
 .bg13{background-color:#3399ff;color:#000;}
 
 /*   brought in normalize.css to help with this?
- * 
+ *
 * {padding:0px; margin:0px;}
 img {border:0px;}
 
@@ -85,14 +85,14 @@ body {
 	text-align: left;
 	background-color:#FFF;
 	/* font-color: black;       ?property doesn't exist */
-	
-	margin-top: 110px;    
-	/*  top margin should be 60, but is higher to account for .header that will get added later, so adding it 
+
+	margin-top: 110px;
+	/*  top margin should be 60, but is higher to account for .header that will get added later, so adding it
 	 *    doesn't flash the page downward
 	 * body top margin gets set to 60 in bjc-curriculum.js when .header gets added  */
 	margin-right: 0px;
 	margin-bottom: 0px;
-	margin-left: 85px; 
+	margin-left: 85px;
 	width: 90%;
 }
 
@@ -134,7 +134,7 @@ tt {
 	line-height:100%;
 	font-family: monospace;
 }
-	
+
 code {
 	font-size:120%;
 	font-weight:580;
@@ -145,10 +145,10 @@ p {
 	/*font:1.1em "Times New Roman", Times, serif;*/
 	font:1em Arial, Helvetica, sans-serif;
 	color: black;
-	line-height:120%; 
-	
+	line-height:120%;
+
 	/* vertical-align: bottom;   nate took this out so inline images do the right thing?*/
-	
+
 }
 
 /* from mvle.css
@@ -166,7 +166,7 @@ p.right {text-align:right;}
 	font-style:italic;
 	color:#0000CC;
 }
-	
+
 .help {
 	color:#DC143C;
 	font-style:italic;
@@ -270,7 +270,7 @@ h6 {padding:10px 15px;	color: #000000;}
 	margin:0px 0px 20px 0px;
 	text-align:left;
 	letter-spacing:1.2px;
-	
+
 }
 
 /* arg. not image please... */
@@ -292,11 +292,11 @@ h6 {padding:10px 15px;	color: #000000;}
 	-moz-border-radius-bottomright:8px;
 	border:1px solid #666;
 }
-	
+
 .redFlag p {
 	font-size:inherit
-} 
-	
+}
+
 .redFlag.right {
 	float:right;
 	margin-right:10px;
@@ -323,7 +323,7 @@ h6 {padding:10px 15px;	color: #000000;}
 table .pre {
 	line-height: 1em;
 }
-	
+
 pre {
 	font:600 .9em "Courier New", Courier, monospace;
 	color:#333;
@@ -344,7 +344,7 @@ pre.veryTightText, pre .veryTightText {
 	letter-spacing:-1px;
 }
 
-	
+
 pre.width20 {width:20%;margin-left:75px;}
 pre.width30 {width:30%; margin-left:75px;}
 pre.width40 {width:40%; margin-left:75px;}
@@ -373,7 +373,7 @@ pre.width80 {width:80%; margin-left:75px;}
 
 #summaryTable p {
 	padding:6px;
-}	
+}
 
 #tableSummary {
 	border-collapse:collapse;
@@ -384,21 +384,21 @@ pre.width80 {width:80%; margin-left:75px;}
 	vertical-align:top;
 	top:0;
 }
-	
+
 #tableSummary th {
 	font-weight:bold;
 }
 
 #tableSummary p {
 	padding:6px;
-}	
-	
+}
+
 #tableBlue {
 	border-collapse:collapse;
 	margin:10px 15px;
 	background-color:#ccccff;
 }
-	
+
 #tableBlue th {
 	border:1px solid #6666FF;
 	vertical-align:top;
@@ -407,7 +407,7 @@ pre.width80 {width:80%; margin-left:75px;}
 	padding:2px 10px;
 	font-weight: 600;
 }
-	
+
 #tableBlue td {
 	border:1px solid #6666FF;
 	vertical-align:top;
@@ -422,35 +422,35 @@ pre.width80 {width:80%; margin-left:75px;}
 }
 
 #tableCenter {
-	margin: 0 auto;	
+	margin: 0 auto;
 	border-collapse: collapse;
 	border:1px solid #333;
 	font-family:"Arial", sans-serif;
 	background-color: #F0F8FF;
 }
-	
-#tableCenter th {	
+
+#tableCenter th {
 	padding: 5px 10px;
 	font-size: 0.9em;
 	font-weight: 600;
 	border-bottom: 2px solid #808080;
 	background-color: #B0E0E6;
 }
-	
-#tableCenter td { 
-	
+
+#tableCenter td {
+
 	font-size: .8em;
 	letter-spacing: 0.1em;
 	padding: 20px;
 }
-	
-	
+
+
 #tableClear {
 	border-collapse:collapse;
 	margin:0 0 0 50px;
 	background-color:#FFF;
 }
-	
+
 #tableClear td {
 	border:0;
 	vertical-align:top;
@@ -467,19 +467,19 @@ pre.width80 {width:80%; margin-left:75px;}
 	border-bottom:2px solid #999;
 	border-left:12px solid #999;
 }
-	
+
 #tableTight {
 	border-collapse:collapse;
 	margin:0 0 0 5px;
 	background-color:#FFF;
 }
-	
+
 #tableTight td {
 	border:0;
 	vertical-align:top;
 	padding:0px;
 }
-	
+
 #tableTight	pre {
 	font:.85em Courier, monospace;
 	color:#000;
@@ -507,14 +507,14 @@ pre.width80 {width:80%; margin-left:75px;}
 	text-align:center;
 	margin:0 auto;
 }
-	
-	
+
+
 img.center {
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 }
-	
+
 img.inline {
 	/* this works if the text isn't also vertical-align'ed!  */
 	vertical-align: middle;
@@ -528,17 +528,17 @@ img.indent {
 div.indent {
 	margin-left: 10%;
 }
-	
-	
+
+
 .centeredImages {
 	text-align:center;
-	margin:0 auto; 
+	margin:0 auto;
 }
-		
+
 .centeredImages img {
 	margin: 0 10px;
 }
-	
+
 .clearFloats {
 	clear:both;
 }
@@ -578,16 +578,16 @@ div.indent {
 .tryit a:hover {color:#919EBA;}
 
 .instructionsIcon {
-	width: 16px;  
-    height: 16px; 
-    background-image:url(../img/web/infoIcon.png);  
+	width: 16px;
+    height: 16px;
+    background-image:url(../img/web/infoIcon.png);
 	background-repeat: no-repeat;
 	text-decoration:none;
 	outline:none;
 }
 
 .instructionsIcon:hover {
-	background-image:url(../img/web/infoIconRollover.png);  
+	background-image:url(../img/web/infoIconRollover.png);
 	background-repeat: no-repeat;
 }
 
@@ -595,32 +595,32 @@ div.indent {
 	margin-left:35px;
 	padding: 0px 50px 5px 30px;
 	background-image:url(../img/web/lightning.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	background-position:0px 12px;
 }
 
 #selfCheckIntro {
 	width:650px;
 }
-	
+
 #selfCheckIntro .Intro1 {
 	color:red;
 }
-	
+
 #selfCheckIntro .Intro2{
 	font-size:90%;
 }
-	
+
 .selfCheckQuestion {
-	font-size:14px; 
-	font-family:Verdana, Arial,Helvetica; 
+	font-size:14px;
+	font-family:Verdana, Arial,Helvetica;
 	text-align:left;
-	width:650px; 
-	margin:10px 0 15px 0 ; 
-	color:#0000FF; 
+	width:650px;
+	margin:10px 0 15px 0 ;
+	color:#0000FF;
 	line-height:120%;
 }
-	
+
 blockquote {
 	background: #fbfbac;
 	font-family: Georgia, "Times New Roman", Times, serif;
@@ -636,7 +636,7 @@ blockquote {
 	font-size:110%;
 	line-height:100%;
 }
-			
+
 #brainstorm table {
 	border-collapse:collapse;
 	border:2px solid #000066;
@@ -649,14 +649,14 @@ blockquote {
 	text-transform:uppercase;
 	color:#CCFFCC;
 }
-	
+
 #brainstorm td {
 	font-size:80%;
 	vertical-align:top;
 	padding: 5px 10px;
 	border:1px solid #666;
 }
-	
+
 #brainstorm table code {
 	display:block;
 	margin:10px 0 0 0;
@@ -664,7 +664,7 @@ blockquote {
 	font-weight:normal;
 	line-height:80%;
 }
-	
+
 .quoteOrange {
 	padding:10px 15px;
 	margin: 15px;
@@ -672,7 +672,7 @@ blockquote {
 	border-left:12px solid #FF9D1E;
 	background-color:#FFCE8E;
 }
-	
+
 .quoteBlue {
 	padding:10px 15px;
 	margin: 15px;
@@ -680,7 +680,7 @@ blockquote {
 	border-left:12px solid #164cba;
 	background-color:#9999FF;
 }
-	
+
 .quoteBrown {
 	padding:10px 15px;
 	margin: 15px;
@@ -688,7 +688,7 @@ blockquote {
 	border-left:12px solid #bf9a6b;
 	background-color:#ddc8ad;
 }
-	
+
 .quoteGreen {
 	padding:10px 15px;
 	margin: 15px;
@@ -696,7 +696,7 @@ blockquote {
 	border-left:12px solid #669933;
 	background-color:#99CC66;
 }
-	
+
 .slideshowLink {
 	margin: 0 5px;
 	padding-left:20px;
@@ -704,7 +704,7 @@ blockquote {
 	color:#CC3333;
 	text-decoration:none;
 	background-image:url(../img/web/slideshowIcon.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	font-weight:bold;
 }
 
@@ -715,7 +715,7 @@ blockquote {
 .pageLink {
 	background-image:url(../img/web/pageLink.png);
 	background-position:top right;
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	margin-right:4px;
 	margin-left:2px;
 	padding-right:22px;
@@ -726,9 +726,9 @@ blockquote {
 
 #mainCol {
 	margin-right:20%;
-	text-align:left;	
+	text-align:left;
 }
-	
+
 #marginCol {
 	float:right;
 	text-align:left;
@@ -745,13 +745,13 @@ blockquote {
 	background-image:url(../img/sys/Alonzo-BYOB.jpg);
 	background-size:25%;
 	background-repeat:no-repeat;
-} 
+}
 
 #marginCol a:hover {
 	background-color:#FFFF33;
 }
-	
-#marginCol .top25 {margin-top:25px;}	
+
+#marginCol .top25 {margin-top:25px;}
 #marginCol .top50 {margin-top:50px;}
 #marginCol .top75 {margin-top:75px;}
 #marginCol .top100 {margin-top:100px;}
@@ -792,7 +792,7 @@ blockquote {
 	padding:45px 5px 5px 5px;
 	font-weight:bold;
 	background-image:url(../img/web/special-key-32.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	/* background-color:#C7C7FF; /* Added */
 	background-position:10px 10px;
 }
@@ -804,23 +804,23 @@ blockquote {
 	padding:40px 0 10px 0;
 	font-weight:bold;
 	background-image:url(../img/web/special-dictionary-32.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	background-position:10px 10px;
 	/* background-color:#C7C7C7; /* Added */
 }
-	
+
 #marginCol .vocab a:link, #marginCol .vocab a:visited {
 	display:block;
 	padding:2px;
 	margin:10px 4px 8px 10px;
 	border-right:3px solid transparent;
-}	
-	
+}
+
 #marginCol .vocab a:hover {
 	background-color:#FFFF33;
 	border-right:3px solid #666;
-}	
-	
+}
+
 #marginCol .help {
 	font-family:Tahoma, Geneva, serif;
 	border-color:#666;
@@ -829,7 +829,7 @@ blockquote {
 	font-weight:normal;
 	padding:36px 0 12px 0;
 	background-image:url(../img/web/helpicon22.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	background-position:10px 10px;
 	/* background-color:#FFCE8E;*/
 }
@@ -841,19 +841,19 @@ blockquote {
 	padding:0;
 	margin:10px 4px 6px 5px;
 }
-	
+
 #marginCol .help a:link, #marginCol .help a:visited {
 	display:block;
 	padding:2px;
 	margin:2px 4px 5px 5px;
 	border-right:3px solid transparent;
-}	
-	
+}
+
 #marginCol .help a:hover {
 	background-color:#FFFF33;
 	border-right:3px solid #666;
-}	
-	
+}
+
 #marginCol .warning {
 	border-color:#330033;
 	color:#000;
@@ -861,7 +861,7 @@ blockquote {
 	padding:40px 0 0px 0;
 	font-weight:bold;
 	background-image:url(../img/web/special-warning-32.png);
-	background-repeat:no-repeat; 
+	background-repeat:no-repeat;
 	background-position:10px 10px;
 	/* background-color:#BF9A6B; */
 }
@@ -893,13 +893,13 @@ blockquote {
 	border:1px solid #666;
 	outline:none;
 }
-    
+
 #buttonClose a:hover{
 	background: #FFCC00;
 	color:#333;
 }
-	
-	
+
+
 /* New classes from the original_bjc file.
  * All items below pertain to the "topic" class.
  */
@@ -939,7 +939,7 @@ blockquote {
 	font-weight:bold;
 	font-size:large;
 	text-decoration:underline;
-	padding-left:0px;	
+	padding-left:0px;
 }
 
 
@@ -1074,7 +1074,7 @@ blockquote {
 	margin-top:2px;
 	font-size:10pt;
 	display: inline-block;
-	font-weight: bold; 
+	font-weight: bold;
 }
 
 /* This is a container element for the iframe */
@@ -1091,7 +1091,7 @@ blockquote {
     display: block;
 /*    position:relative;*/
     /*z-index:-1;*/
-	
+
 }
 
 .main-topic-link {
@@ -1154,3 +1154,7 @@ li .course_link {
     padding:10px 5px;
     border-style:solid;
     border-width:1px;}
+
+.code-vid {
+  text-align: center;
+}
