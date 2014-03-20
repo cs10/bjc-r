@@ -1158,3 +1158,8 @@ li .course_link {
 .code-vid {
   text-align: center;
 }
+caption.code-vid {
+  font-size: .8em;
+  font-style: italic;
+
+}
