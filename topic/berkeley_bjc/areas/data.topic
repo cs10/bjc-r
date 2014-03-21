@@ -1,4 +1,4 @@
-title: Data and BIGDATA
+title: Working with Data
 {
 h2: Big Ideas
 
@@ -12,15 +12,21 @@ learning-goal: Process data, normalize the values, and visualize them
 learning-goal: See how patterns emerge from visualization
 learning-goal: Validate a hypothesis (question) using the computer
 
-heading: Forensic Analysis of GPS data
-        resource: Introduction [/bjc-r/cur/programming/data/introgps.html]
-        resource: The Data [/bjc-r/cur/programming/data/thedata.html]
-        resource: Practice: Pre-Processing Data [/bjc-r/cur/programming/data/preprocess.html]
-        resource: Practice: Visualizing Data [/bjc-r/cur/programming/data/visualizing.html]
-        resource: Practice: Drawing Conclusions [/bjc-r/cur/programming/data/conclusions.html]     
-
 heading: Spam vs Ham
-        resource: Introduction [/bjc-r/cur/programming/data/introspam.html]
-        resource: Text Messages [/bjc-r/cur/programming/data/spamdata.html]
-        resource: Practice: Filtering Spam [/bjc-r/cur/programming/data/filterspam.html]
+        resource: Introduction [/bjc-r/cur/programming/data/spam-ham/1-introduction.html]
+        resource: Text Messages [/bjc-r/cur/programming/data/spam-ham/2-the-data.html]
+        resource: Counting Words [/bjc-r/cur/programming/data/spam-ham/3-average-number-of-words.html]
+        resource: Predictions! [/bjc-r/cur/programming/data/spam-ham/4-predict-by-number-of-words.html]
+        resource: Further work [/bjc-r/cur/programming/data/spam-ham/5-further-work.html]
+
+
+heading: Forensic Analysis of GPS data
+        resource: Introduction [/bjc-r/cur/programming/data/gps-digital-forensics/introgps.html]
+        resource: The Data [/bjc-r/cur/programming/data/gps-digital-forensics/thedata.html]
+        resource: Practice: Pre-Processing Data [/bjc-r/cur/programming/data/gps-digital-forensics/preprocess.html]
+        resource: Practice: Visualizing Data [/bjc-r/cur/programming/data/gps-digital-forensics/visualizing.html]
+        resource: Clustering [/bjc-r/cur/programming/data/gps-digital-forensics/clustering.html]
+        resource: Practice: Drawing Conclusions [/bjc-r/cur/programming/data/gps-digital-forensics/conclusions.html]     
+
+
 }
