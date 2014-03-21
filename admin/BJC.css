@@ -58,13 +58,12 @@ a:visited {color:#36BBCE;}
 
 #full {
     padding: 1em;
-    /* moved margin stuff  to body */
-
+    /* moved margin stuff to body */
 }
 
 #full-bottom-bar {
     background-color:#ccc;
-    background-image: url("../img/costumes/alonzo.gif");
+    background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
     background-repeat:no-repeat;
     background-position: 1px 2px;
     background-size:20px;
@@ -87,8 +86,8 @@ body {
     /* font-color: black;       ?property doesn't exist */
 
     margin-top: 110px;
-    /*  top margin should be 60, but is higher to account for .header that will get added later, so adding it
-     *    doesn't flash the page downward
+    /* top margin should be 60, but is higher to account for .header that will get added later, so adding it
+     * doesn't flash the page downward
      * body top margin gets set to 60 in bjc-curriculum.js when .header gets added  */
     margin-right: 0px;
     margin-bottom: 0px;
@@ -546,7 +545,7 @@ div.indent {
 .tryit {
     width:500px;
     margin: 20px 0px 20px 0px; /* Added/Updated */
-    background-image:url(../img/web/doit_background.png);
+    background-image:url(../img/web/doit_background.png); /* FIXME */
     background-position:-10px -3px;
     background-color:#164CBA;
     border:1px solid #000099;
@@ -580,21 +579,21 @@ div.indent {
 .instructionsIcon {
     width: 16px;
     height: 16px;
-    background-image:url(../img/web/infoIcon.png);
+    background-image:url(../img/web/infoIcon.png); /* FIXME */
     background-repeat: no-repeat;
     text-decoration:none;
     outline:none;
 }
 
 .instructionsIcon:hover {
-    background-image:url(../img/web/infoIconRollover.png);
+    background-image:url(../img/web/infoIconRollover.png); /* FIXME */
     background-repeat: no-repeat;
 }
 
 .step {
     margin-left:35px;
     padding: 0px 50px 5px 30px;
-    background-image:url(../img/web/lightning.png);
+    background-image:url(../img/web/lightning.png); /* FIXME */
     background-repeat:no-repeat;
     background-position:0px 12px;
 }
@@ -703,7 +702,7 @@ blockquote {
     padding-right:2px;
     color:#CC3333;
     text-decoration:none;
-    background-image:url(../img/web/slideshowIcon.png);
+    background-image:url(../img/web/slideshowIcon.png); /* FIXME */
     background-repeat:no-repeat;
     font-weight:bold;
 }
@@ -713,7 +712,7 @@ blockquote {
 }
 
 .pageLink {
-    background-image:url(../img/web/pageLink.png);
+    background-image:url(../img/web/pageLink.png); /* FIXME */
     background-position:top right;
     background-repeat:no-repeat;
     margin-right:4px;
@@ -742,7 +741,7 @@ blockquote {
     padding-bottom:8px; /* Added */
     background-position:10px 10px;
     /* Testing out image stuff: */
-    background-image:url(../img/sys/Alonzo-BYOB.jpg);
+    background-image:url(../img/sys/Alonzo-BYOB.jpg); /* FIXME */
     background-size:25%;
     background-repeat:no-repeat;
 }
@@ -791,7 +790,7 @@ blockquote {
     font-size:.8em;
     padding:45px 5px 5px 5px;
     font-weight:bold;
-    background-image:url(../img/web/special-key-32.png);
+    background-image:url(../img/web/special-key-32.png); /* FIXME */
     background-repeat:no-repeat;
     /* background-color:#C7C7FF; /* Added */
     background-position:10px 10px;
@@ -803,7 +802,7 @@ blockquote {
     font-size:.8em;
     padding:40px 0 10px 0;
     font-weight:bold;
-    background-image:url(../img/web/special-dictionary-32.png);
+    background-image:url(../img/web/special-dictionary-32.png); /* FIXME */
     background-repeat:no-repeat;
     background-position:10px 10px;
     /* background-color:#C7C7C7; /* Added */
@@ -828,7 +827,7 @@ blockquote {
     font-size:.82em;
     font-weight:normal;
     padding:36px 0 12px 0;
-    background-image:url(../img/web/helpicon22.png);
+    background-image:url(../img/web/helpicon22.png); /* FIXME */
     background-repeat:no-repeat;
     background-position:10px 10px;
     /* background-color:#FFCE8E;*/
@@ -922,12 +921,12 @@ blockquote {
 }
 
 /* Begin items controlled primarily by .topic div */
-.quiz {background-image:url(../img/web/multiplechoice28.png);}
-.assignment, .homework {background-image:url(../img/web/note28.png);}
-.resource {background-image:url(../img/web/course-resources-32.png);}
-.forum {background-image:url(../img/web/pageLink.png);}
-.video {background-image:url(../img/web/slideshowIcon.png);}
-.extresource {background-image:url(../img/web/display28.png);}
+.quiz {background-image:url(../img/web/multiplechoice28.png);} /* FIXME */
+.assignment, .homework {background-image:url(../img/web/note28.png);} /* FIXME */
+.resource {background-image:url(../img/web/course-resources-32.png);} /* FIXME */
+.forum {background-image:url(../img/web/pageLink.png);} /* FIXME */
+.video {background-image:url(../img/web/slideshowIcon.png);} /* FIXME */
+.extresource {background-image:url(../img/web/display28.png);} /* FIXME */
 .reading{background-image:url(../img/web/emblem_library.png);} /* http://findicons.com/icon/93370/emblem_library?id=274277 */
 .group{background-image:url(../img/web/user_group.png);} /* http://findicons.com/icon/66444/user_group?id=66460 */
 /* End items controlled by .topic div */
@@ -1098,7 +1097,7 @@ blockquote {
     font-size:100%;
     text-decoration:underline;
     font-weight:bold;
-    background-image: url("../img/web/toolbar_home.png");
+    background-image: url("../img/web/toolbar_home.png"); /* FIXME */
     background-size: contain;
     background-repeat:no-repeat;
     padding-left:20px;
@@ -1106,7 +1105,7 @@ blockquote {
 
 .current-step-link {
     font-weight:bold;
-    background-image: url("../img/web/forward.png");
+    background-image: url("../img/web/forward.png"); /* FIXME */
     background-size:contain;
     background-repeat:no-repeat;
     padding-left:20px;
@@ -1115,7 +1114,7 @@ blockquote {
 
 
 a.run {
-    background: url("../img/web/external-link.png") center right no-repeat;
+    background: url("../img/web/external-link.png") center right no-repeat; /* FIXME */
     padding-right: 13px;
 }
 
@@ -1130,7 +1129,7 @@ li .course_link {
     display:block;
     margin-bottom: 10px;
     font-size:large;
-    background-image: url("../img/web/globe.png");
+    background-image: url("../img/web/globe.png"); /* FIXME */
     background-size:contain;
     background-repeat:no-repeat;
     padding-left:25px;
@@ -1146,19 +1145,18 @@ li .course_link {
     font-size:14px;
     padding:10px 8px;
     border-style:solid;
-    border-width:1px;}
+    border-width:1px; }
 
 .truthtable th {
     font-size:14px;
     font-weight:normal;
     padding:10px 5px;
     border-style:solid;
-    border-width:1px;}
+    border-width:1px; }
 
 .code-vid {
   text-align: center;
   font-size: .8em;
   font-style: italic;
-  color: #808080
-  ;
+  color: #808080;
 }
