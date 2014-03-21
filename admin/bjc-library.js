@@ -24,6 +24,7 @@ bjc.CORSCompliantServers.push("bjc.berkeley.edu");
 bjc.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 bjc.CORSCompliantServers.push("snap.berkeley.edu");
 bjc.CORSCompliantServers.push("inst.eecs.berkeley.edu");
+bjc.CORSCompliantServers.push("cs10.berkeley.edu");
 
 
 ////
