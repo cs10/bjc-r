@@ -595,7 +595,7 @@ div.indent {
     padding: 0px 50px 5px 30px;
     background-image:url(../img/web/lightning.png); /* FIXME */
     background-repeat:no-repeat;
-    background-position:0px 12px;
+    background-position:0px 0px;
 }
 
 #selfCheckIntro {
