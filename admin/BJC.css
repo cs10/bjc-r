@@ -569,7 +569,7 @@ div.indent {
     font-size:.8em;
     line-height:135%;
     letter-spacing:.5px;
-    color:#FFF;
+    color: #FFF;
     font-family: Arial, Helvetica, Arial;
 }
 
@@ -606,7 +606,7 @@ div.indent {
     color:red;
 }
 
-#selfCheckIntro .Intro2{
+#selfCheckIntro .Intro2 {
     font-size:90%;
 }
 
