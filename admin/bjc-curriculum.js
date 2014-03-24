@@ -18,14 +18,16 @@ bjc.secondarySetUp = function() {
 
     // create Title tag, yo
     if (getParameterByName("title") != "") {
-	document.title = getParameterByName("title");
+	document.title = decodeURIComponent(getParameterByName("title"));
     }
     var titleText = document.title;
     if (titleText && $(".header").length == 0) {
 	$('<div class="header"></div>').prependTo($("#full")).html(titleText);
-	if (getParameterByName("title") != "") {
-	    $(".header").html(getParameterByName("title"));
-	}
+
+	// I don't think this does anything. If nothing breaks I'll remove it.
+	/* if (getParameterByName("title") != "") {
+	    $(".header").html(titleText);
+	}*/
     }
     document.body.style.marginTop = "60px";
     document.title = $(".header").text();
@@ -279,12 +281,12 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 	b_nav.append(b_forwardButton);
 	b_nav.append(background.clone());
 	$("#full-bottom-bar").append(b_nav);
-    }
 
-    bjc.moveAlonzo(bjc.url_list.length, bjc.step,
-		   Number($("#full-bottom-bar").css("width").slice(0, -2)), 
-		   Number(b_backButton.css("width").slice(0, -2)) +
-		   Number(b_forwardButton.css("width").slice(0, -2)));
+	bjc.moveAlonzo(bjc.url_list.length, bjc.step,
+		       Number($("#full-bottom-bar").css("width").slice(0, -2)), 
+		       Number(b_backButton.css("width").slice(0, -2)) +
+		       Number(b_forwardButton.css("width").slice(0, -2)));
+    }
 
     
 }
