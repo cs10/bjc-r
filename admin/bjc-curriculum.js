@@ -4,30 +4,50 @@
  * This is borrowed from UCCP APCSA work
  */
 
+// Global Vars for page sections
+var TOPNAV, HEADER, DROPDOWN, BUTTONS;
+TOPNAV = 'top-nav';
+HEADER = 'header';
+DROPDOWN = 'nav';
+BUTTONS = '';
+
+function makeDiv(cls) {
+    return '<div class="' + cls + '"></div>';
+}
+
 bjc['file'] = "";
 bjc['step'] = "";
 bjc['url_list'] = new Array();
 
+
 bjc.secondarySetUp = function() {
 
     // insert main div
-    if ($("#full").length == 0) {
+    if ($("#full").length === 0) {
         $(document.body).wrapInner('<div id="full"></div>');
     }
+    
+    if ($('.' + TOPNAV).length === 0) {
+        $(document.body).prepend(makeDiv(TOPNAV));
+    }
+    
+    var nav_div = $('.' + TOPNAV);
 
     // create Title tag, yo
     if (getParameterByName("title") != "") {
-    document.title = getParameterByName("title");
+        document.title = getParameterByName("title");
     }
+    
     var titleText = document.title;
     if (titleText && $(".header").length == 0) {
-        $('<div class="header"></div>').prependTo(document.body).html(titleText);
+        $(makeDiv(HEADER)).prependTo(nav_div).html(titleText);
         if (getParameterByName("title") != "") {
             $(".header").html(getParameterByName("title"));
         }
     }
+    
     // FIXME -- should just be in css...
-    document.body.style.marginTop = "60px";
+    document.body.style.marginTop = "0";
     // FIXME -- this is bad if the title contains HTML chars...
     document.title = $(".header").text();
 
@@ -37,7 +57,6 @@ bjc.secondarySetUp = function() {
         $(this).attr("target", "_blank");
         $(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')));
     });
-
 
 
     // make the vocab box if necessary
@@ -74,14 +93,14 @@ bjc.secondarySetUp = function() {
     // these are the 4 class of divs that matter.
     var marginSelector = ["div.key", "div.warning", "div.help", "div.vocab"];
     if ($(marginSelector.join(',')).length > 0) {
-    // add the two columns.
-    $('#full').wrapInner('<div id="mainCol"></div>').prepend('<div id="marginCol"></div>');
-    // this moves the divs over.  Perhaps it could do some smarter ordering
-    // always put vocab at the bottom, for instance.
-    var marginCol = $("#marginCol").get(0);
-    $.each(marginSelector, function(i, divclass) {
-        $(divclass).appendTo(marginCol);
-    });
+        // add the two columns.
+        $('#full').wrapInner('<div id="mainCol"></div>').prepend('<div id="marginCol"></div>');
+        // this moves the divs over.  Perhaps it could do some smarter ordering
+        // always put vocab at the bottom, for instance.
+        var marginCol = $("#marginCol").get(0);
+        $.each(marginSelector, function(i, divclass) {
+            $(divclass).appendTo(marginCol);
+        });
     }
 
     // should this page be rendered with the topic header (left, right buttons, etc)
@@ -89,22 +108,22 @@ bjc.secondarySetUp = function() {
     var temp = getParameterByName("topic");
     if (temp != "" && !isNaN(bjc['step'])) {
         if (getParameterByName("step") == "") {
-        // TODO -- this shouldn't happen, but we could intelligently find which
-        // step this should be
-    }
+            // TODO -- this shouldn't happen, but we could intelligently find 
+            // which step this should be
+        }
         if (typeof temp == "object") {
             bjc['file'] = temp[1];
         } else {
             bjc['file'] = temp;
         }
     
-    $.ajax({
-        url : bjc.rootURL + "/topic/" + bjc.file,
-        type : "GET",
-        dataType : "text",
-        cache : false,
-        success: bjc.processLinks
-    });
+        $.ajax({
+            url : bjc.rootURL + "/topic/" + bjc.file,
+            type : "GET",
+            dataType : "text",
+            cache : true, // cache the topic page.
+            success: bjc.processLinks
+        });
     }
     
     
@@ -113,8 +132,9 @@ bjc.secondarySetUp = function() {
 
 
 /** 
- *  Processes just the hyperlinked elements in this page,
- *  and creates navigation buttons. 
+ *  Processes just the hyperlinked elements in the topic file,
+ *  and creates navigation buttons.
+ *  FIXME: This should share code with BJC topic!
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
     var temp = getParameterByName("topic");
@@ -127,17 +147,20 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     var hidden = [];
     var hiddenString = "";
     
+    // URL Options
     temp = window.location.search.substring(1).split("&");
     
     for (var i = 0; i < temp.length; i++) {
-        var temp2 = temp[i].split("=");
-        if (temp2[0].substring(0, 2) == "no" && temp2[1] == "true") {
-            hidden.push(temp2[0].substring(2));
-            hiddenString += ("&" + temp2[0] + "=" + temp2[1]);
+        var param = temp[i].split("="); // param = [OPTION, VALUE]
+        if (param[0].substring(0, 2) == "no" && param[1] == "true") {
+            hidden.push(param[0].substring(2));
+            hiddenString += ("&" + temp[i]);
         }
     } // end for loop
     
+    // TODO: Refactor multiple vars...
     var course = getParameterByName("course");
+    var nav_div = $('.' + TOPNAV);
     var lines = data.split("\n");
     var line;
     var text;
@@ -166,12 +189,15 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     var url = document.URL;
     var list_item;
     var hidden;
-    var list_header = $(document.createElement("div")).attr({'class': 'list_header'});
+    var list_header = $(document.createElement("div")).attr(
+        {'class': 'list_header'});
     list_header.menu();
     
     for (var i = 0; i < lines.length; i++) {
         line = lines[i];
         line = bjc.stripComments(line);
+        // TODO: Refactor
+        // TODO: Add continue condition instead of giant if.
         if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
             if (line.indexOf("title:") != -1) {
                 /* Create a link back to the main topic. */
@@ -268,7 +294,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     nav.append(list);
     var background = $(document.createElement("div")).attr({'class': 'nav_background'});
     nav.append(background);
-    $("#full").prepend(nav);
+    
+    nav_div.append(nav);
     list_header.width(list.outerWidth());
     list.slideToggle(0);    
     
@@ -289,7 +316,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
            Number(b_backButton.css("width").slice(0, -2)) +
            Number(b_forwardButton.css("width").slice(0, -2)));
 
-}
+} // end processLinks()
 
 
 bjc.addFrame = function() {

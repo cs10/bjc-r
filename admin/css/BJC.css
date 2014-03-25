@@ -20,55 +20,36 @@
 
 a:visited {color:#36BBCE;}
 
-#full {
+body {
+    font-family: "Lucida Grande", "Lucida San Unicode", "Gill Sans", Helvetica, Arial;
+    font-size: 100%;
+    text-align: left;
+    background-color: #FFF;
+    margin: 0;
+    width: 100%;
+}
+
+.full, #full {
     padding: 1em;
-    /* moved margin stuff to body */
+    width: 90%;
+    margin: 4em auto;
 }
 
 #full-bottom-bar {
-    background-color:#ccc;
+    background-color: #ccc;
     background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: 1px 2px;
-    background-size:20px;
-    height:25px;
+    background-size: 20px;
+    height: 25px;
     position:relative;
-    bottom:0px;
-    left:0px;
+    bottom: 0;
+    left: 0;
     width:100%;
     z-index:9998;
     margin-top:30px;
     clear:both;
 }
-
-body {
-    font-family: "Lucida Grande", "Lucida San Unicode", "Gill Sans", Helvetica, Arial;
-    /* font-family: "Times New Roman", Times, serif; */
-    font-size: 100%;
-    text-align: left;
-    background-color:#FFF;
-    /* font-color: black;       ?property doesn't exist */
-
-    margin-top: 110px;
-    /* top margin should be 60, but is higher to account for .header that will get added later, so adding it
-     * doesn't flash the page downward
-     * body top margin gets set to 60 in bjc-curriculum.js when .header gets added  */
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 85px;
-    width: 90%;
-}
-
-/* from mvle.css
-body {
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana,
-        "Gill Sans", sans-serif;
-    font-size: 100%;
-    background-color: #FFF;
-    margin: 4px 5px;
-}
-*/
-
 
 form li div {
     font:500 15px/1.7 "Times New Roman", Times, serif;
@@ -88,14 +69,14 @@ em {
 /* Should try to avoid tt; deprecated & unsupported tag */
 tt {
     font-size:120%;
-    font-weight:580;
+    font-weight: 600;
     line-height:100%;
     font-family: monospace;
 }
 
 code {
     font-size:120%;
-    font-weight:580;
+    font-weight: 600;
     line-height:100%;
 }
 
@@ -104,19 +85,7 @@ p {
     font:1em Arial, Helvetica, sans-serif;
     color: black;
     line-height:120%;
-
-    /* vertical-align: bottom;   nate took this out so inline images do the right thing?*/
-
 }
-
-/* from mvle.css
-p {
-    line-height: 120%;
-    padding: 0px;
-    margin: 0px 0 12px 0;
-}
-*/
-
 
 p.right {text-align:right;}
 
@@ -130,38 +99,12 @@ p.right {text-align:right;}
     font-style:italic;
 }
 
-.width40 {width:40%;}
-.width50 {width:50%;}
-.width60 {width:60%;}
-.width70 {width:70%;}
-.width80 {width:80%;}
-.width90 {width:90%;}
-
-.marginleft25 {margin-left:25px;}
-.marginleft50 {margin-left:50px;}
-.marginleft75 {margin-left:75px;}
-.marginleft100 {margin-left:100px;}
-.marginleft125 {margin-left:125px;}
-.marginleft150 {margin-left:150px;}
-.marginleft200 {margin-left:200px;}
-
 form label {
     font-family:Tahoma, Geneva, sans-serif;
 }
 
-/***** made this the same as tt
-code {
-    font:700 .9em "Courier New", Courier, monospace;
-}
-*/
-
 input[type=text], input[type=password], textarea {
     font: 12px "Courier New", Courier, monospace;
-}
-
-#class_nav_bar {
-    font:17px Helvetica, Arial, sans-serif;
-    color:#e3e3e3;
 }
 
 /* Quiz Page Buttons */
@@ -187,7 +130,7 @@ ul, ol {
     color:#000033;
     line-height:130%;
     padding:5px 15px 5px 5px;
-    margin:15px 15px 15px 0px; /* Added */
+    margin:15px 15px 15px  0; /* Added */
     border:1px solid #3399ff;
 }
 
@@ -209,27 +152,128 @@ th {
     font-size:16px;
 }
 
-h1 {padding:10px 0px; color: #000000; }
-h2 {font:900 26px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;    color: #000000;}
-h3 {font:900 18px "Palatino Linotype", "Book Antiqua", Palatino, serif;padding:10px 0px;    color: #000000;}
-h4 {padding:10px 15px;    color: #000000;}
-h5 {padding:10px 15px;    color: #000000;}
-h6 {padding:10px 15px;    color: #000000;}
+h1 {
+  padding: 10px 0;
+  color: #000;
+}
+h2, h3 {
+  font: 900 26px "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+  padding:10px 0;
+  color: #000;
+}
 
+h4, h5, h6 {
+  padding: 10px 15px;
+  color: #000;
+}
 
+/** PAGE HEADERS *************************************************************/
+#class_nav_bar {
+    font:17px Helvetica, Arial, sans-serif;
+    color:#e3e3e3;
+}
+
+.top-nav {
+  background: #FFF;
+  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+  position: fixed;
+  top: 0;
+  margin: 0;
+  box-shadow: 5px 5px 5px grey;
+  width: 100%;
+  padding: 0;
+  height: 4em;
+}
 
 .header {
-    font:normal 1.5em Georgia, serif;
-    font-variant:small-caps;
-    font-weight:bold;
-    color:#666;
-    border-bottom:3px solid #ccc;
-    width:99.5%;
-    margin:0px 0px 20px 0px;
-    text-align:left;
+    font: normal 2em Georgia, serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #666;
+    /* border-bottom:3px solid #ccc; */
+    /* width: 99.5%;*/
+    margin: auto 5%;
+    left: 5%;
+    vertical-align: middle;
+    text-align: left;
     letter-spacing:1.2px;
-
 }
+
+.nav {
+    float:right;
+    right:5px;
+    min-width:100px;
+    position:relative;
+    z-index: 9999;
+    margin-left:10px;
+    /*border:solid;
+    border-radius:5px;
+    background-color:black;    */
+}
+
+.bottom-nav {
+    float:right;
+    right:5px;
+    min-width:100px;
+    position:relative;
+    z-index: 9998;
+    bottom: 0;
+}
+
+.nav_background {
+    visibility: hidden;   /* nate screwed this up, so then he hid it, lol */
+    border:solid;
+    border-radius:5px;
+    background-color:black;
+    z-index:-8;
+    position: absolute;
+    top:  0;
+    left:  0;
+    width:100%;
+    height:20px;
+}
+
+.backbutton {
+    font-size:7pt;
+    vertical-align: top;
+    margin: 2px;
+}
+
+.forwardbutton {
+    font-size: 7pt;
+    vertical-align: top;
+    margin: 2px;
+}
+
+.steps {
+    margin-left:64px;
+    margin-right:88px;
+    padding: 0;
+    line-height:1.2;
+    position: absolute;
+    min-width: 250px;
+}
+
+.list_item {
+    font-size:10pt;
+}
+
+.list_header {
+    margin-left:10px;
+    margin-right:10px;
+    margin-top:2px;
+    font-size:10pt;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* END PAGE HEADER SECTION ***************************************************/
 
 /* arg. not image please... */
 .center {text-align:center;margin:0 auto;}
@@ -240,7 +284,7 @@ h6 {padding:10px 15px;    color: #000000;}
     text-align:left; /* Added/Updated */
     line-height:1.4em;
     width: 500px; /* Added */
-    margin:20px 0px 20px 0px; /* Added */
+    margin:20px  0 20px  0; /* Added */
     padding:6px;
     background-color:#FFCCCC;
     color:#660000;
@@ -301,19 +345,6 @@ pre.tightText, pre .tightText {
 pre.veryTightText, pre .veryTightText {
     letter-spacing:-1px;
 }
-
-
-pre.width20 {width:20%;margin-left:75px;}
-pre.width30 {width:30%; margin-left:75px;}
-pre.width40 {width:40%; margin-left:75px;}
-pre.width50 {width:50%; margin-left:75px;}
-pre.width60 {width:60%; margin-left:75px;}
-pre.width70 {width:70%; margin-left:75px;}
-pre.width80 {width:80%; margin-left:75px;}
-
-
-
-
 
 #summaryTable {
     border-collapse:collapse;
@@ -376,7 +407,7 @@ pre.width80 {width:80%; margin-left:75px;}
 
 #tableBlue ul {
     border:none;
-    margin:0px;
+    margin: 0;
 }
 
 #tableCenter {
@@ -435,7 +466,7 @@ pre.width80 {width:80%; margin-left:75px;}
 #tableTight td {
     border:0;
     vertical-align:top;
-    padding:0px;
+    padding: 0;
 }
 
 #tableTight    pre {
@@ -503,7 +534,7 @@ div.indent {
 
 .tryit {
     width:500px;
-    margin: 20px 0px 20px 0px; /* Added/Updated */
+    margin: 20px  0 20px  0; /* Added/Updated */
     background-image:url(../img/web/doit_background.png); /* FIXME */
     background-position:-10px -3px;
     background-color:#164CBA;
@@ -551,10 +582,10 @@ div.indent {
 
 .step {
     margin-left:35px;
-    padding: 0px 50px 5px 30px;
+    padding:  0 50px 5px 30px;
     background-image:url(../img/web/lightning.png); /* FIXME */
     background-repeat:no-repeat;
-    background-position:0px 0px;
+    background-position: 0  0;
 }
 
 #selfCheckIntro {
@@ -679,156 +710,6 @@ blockquote {
     padding-right:22px;
 }
 
-/* STYLES FOR MARGINALIA ELEMENTS IN RIGHT COLUMN*/
-
-
-#mainCol {
-    margin-right:20%;
-    text-align:left;
-}
-
-#marginCol {
-    float:right;
-    text-align:left;
-    width:17%;
-    min-height:540px;
-    background-color:#9999FF; /* Added */
-    border-top-left-radius:12px; /* Added and modified */
-    border-bottom-left-radius:12px; /* Added */
-    -moz-border-radius-topleft:12px; /* Added */
-    -moz-border-radius-bottomleft:12px; /* Added */
-    padding-bottom:8px; /* Added */
-    background-position:10px 10px;
-    /* Testing out image stuff: */
-    background-image:url(../img/sys/Alonzo-BYOB.jpg); /* FIXME */
-    background-size:25%;
-    background-repeat:no-repeat;
-}
-
-#marginCol a:hover {
-    background-color:#FFFF33;
-}
-
-#marginCol .top25 {margin-top:25px;}
-#marginCol .top50 {margin-top:50px;}
-#marginCol .top75 {margin-top:75px;}
-#marginCol .top100 {margin-top:100px;}
-#marginCol .top125 {margin-top:125px;}
-#marginCol .top150 {margin-top:150px;}
-#marginCol .top175 {margin-top:175px;}
-#marginCol .top200 {margin-top:200px;}
-#marginCol .top225 {margin-top:225px;}
-#marginCol .top250 {margin-top:250px;}
-#marginCol .top275 {margin-top:275px;}
-#marginCol .top300 {margin-top:300px;}
-#marginCol .top325 {margin-top:325px;}
-#marginCol .top350 {margin-top:350px;}
-#marginCol .top375 {margin-top:375px;}
-#marginCol .top400 {margin-top:400px;}
-#marginCol .top425 {margin-top:425px;}
-#marginCol .top450 {margin-top:450px;}
-#marginCol .top475 {margin-top:475px;}
-#marginCol .top500 {margin-top:500px;}
-
-#marginCol div { /*Added to make margin elements more general */
-    border-radius:8px;
-    -moz-border-radius:8px;
-    -webkit-border-radius:8px;
-    margin-left:10px;
-    margin-right:8px;
-    margin-bottom:6px;
-    border-style:solid;
-    border-width:2px;
-    background-color: #C7C7FF;
-}
-
-#marginCol .key {
-    /* border-color: #990000;*/
-    border-color:#164CBA;
-    color:#000;
-    font-size:.8em;
-    padding:45px 5px 5px 5px;
-    font-weight:bold;
-    background-image:url(../img/web/special-key-32.png); /* FIXME */
-    background-repeat:no-repeat;
-    /* background-color:#C7C7FF; /* Added */
-    background-position:10px 10px;
-}
-
-#marginCol .vocab {
-    border-color: #666;
-    color:#0000CC;
-    font-size:.8em;
-    padding:40px 0 10px 0;
-    font-weight:bold;
-    background-image:url(../img/web/special-dictionary-32.png); /* FIXME */
-    background-repeat:no-repeat;
-    background-position:10px 10px;
-    /* background-color:#C7C7C7; /* Added */
-}
-
-#marginCol .vocab a:link, #marginCol .vocab a:visited {
-    display:block;
-    padding:2px;
-    margin:10px 4px 8px 10px;
-    border-right:3px solid transparent;
-}
-
-#marginCol .vocab a:hover {
-    background-color:#FFFF33;
-    border-right:3px solid #666;
-}
-
-#marginCol .help {
-    font-family:Tahoma, Geneva, serif;
-    border-color:#666;
-    color:#0000CC;
-    font-size:.82em;
-    font-weight:normal;
-    padding:36px 0 12px 0;
-    background-image:url(../img/web/helpicon22.png); /* FIXME */
-    background-repeat:no-repeat;
-    background-position:10px 10px;
-    /* background-color:#FFCE8E;*/
-}
-
-#marginCol .help p {
-    font-size:inherit;
-    color:#333;
-    font-size:inherit;
-    padding:0;
-    margin:10px 4px 6px 5px;
-}
-
-#marginCol .help a:link, #marginCol .help a:visited {
-    display:block;
-    padding:2px;
-    margin:2px 4px 5px 5px;
-    border-right:3px solid transparent;
-}
-
-#marginCol .help a:hover {
-    background-color:#FFFF33;
-    border-right:3px solid #666;
-}
-
-#marginCol .warning {
-    border-color:#330033;
-    color:#000;
-    font-size:.8em;
-    padding:40px 0 0px 0;
-    font-weight:bold;
-    background-image:url(../img/web/special-warning-32.png);
-    background-repeat:no-repeat;
-    background-position:10px 10px;
-    /* background-color:#BF9A6B; */
-}
-
-#marginCol .warning p {
-    padding:0;
-    margin:10px 4px 8px 10px;
-}
-
 #buttonClose {
     text-align:center;
     margin:30px auto;
@@ -855,7 +736,7 @@ blockquote {
 #buttonClose a:hover{
     background: #FFCC00;
     color:#333;
-}
+}*/
 
 
 /* New classes from the original_bjc file.
@@ -876,7 +757,7 @@ blockquote {
     /*background-size:18px 18px;*/
     background-size: contain;
     padding-left:35px;
-    margin:5px 0px 5px 0px;
+    margin:5px  0 5px  0;
 }
 
 /* Begin items controlled primarily by .topic div */
@@ -897,15 +778,15 @@ blockquote {
     font-weight:bold;
     font-size:large;
     text-decoration:underline;
-    padding-left:0px;
+    padding-left: 0;
 }
 
 
 .topic .label {
     margin-top:20px;
     margin-bottom:12px;
-    padding-left:0px;
-    padding-left:0px;
+    padding-left: 0;
+    padding-left: 0;
 }
 
 /* List-related items
@@ -913,17 +794,17 @@ blockquote {
  */
 .topic .bigideas {
     font-weight:bold;
-    padding-left:0px;
-    margin:0px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .topic .learninggoals {
     font-weight:bold;
-    padding-left:0px;
+    padding-left: 0;
 }
 
 /* Formatting stuff */
-.topic .indent0 {margin-left:0px}
+.topic .indent0 {margin-left: 0}
 .topic .indent1 {margin-left:20px}
 .topic .indent2 {margin-left:40px}
 .topic .indent3 {margin-left:60px}
@@ -935,14 +816,13 @@ blockquote {
     font-weight:bold;
     font-size:large;
     text-decoration:underline;
-    padding-left:0px;
+    padding-left: 0;
     padding-top: 10px;
 }
 
 /* Inserts the logo using the proper formatting.
  * Insert using "<span class="snap">snap</span>"
  */
-
 .snap:first-letter {
     font-variant: normal;
 }
@@ -956,83 +836,6 @@ blockquote {
 .snap:after {
     content:"!";
     font-style: italic;
-}
-
-.nav {
-    float:right;
-    right:5px;
-    min-width:100px;
-    position:relative;
-    z-index: 9999;
-    margin-left:10px;
-    /*border:solid;
-    border-radius:5px;
-    background-color:black;    */
-}
-
-.bottom-nav {
-    float:right;
-    right:5px;
-    min-width:100px;
-    position:relative;
-    z-index: 9998;
-    bottom:0px;
-}
-
-.nav_background {
-    visibility: hidden;   /* nate screwed this up, so then he hid it, lol */
-    border:solid;
-    border-radius:5px;
-    background-color:black;
-    z-index:-8;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width:100%;
-    height:20px;
-}
-
-/*.nav:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}*/
-
-
-.backbutton {
-    font-size:7pt;
-    vertical-align: top;
-    margin: 2px;
-}
-
-.forwardbutton {
-    font-size:7pt;
-    vertical-align: top;
-    margin: 2px;
-}
-
-.steps {
-    margin-left:64px;
-    margin-right:88px;
-    padding:0px;
-    line-height:1.2;
-    position: absolute;
-    min-width: 250px;
-}
-
-.list_item {
-    font-size:10pt;
-}
-
-.list_header {
-    margin-left:10px;
-    margin-right:10px;
-    margin-top:2px;
-    font-size:10pt;
-    display: inline-block;
-    font-weight: bold;
 }
 
 /* This is a container element for the iframe */
@@ -1070,9 +873,7 @@ blockquote {
     padding-left:20px;
 }
 
-
-
-a.run {
+.run {
     background: url("../img/web/external-link.png") center right no-repeat; /* FIXME */
     padding-right: 13px;
 }
