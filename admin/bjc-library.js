@@ -109,5 +109,25 @@ bjc.stripComments = function(line) {
 	return line;
 }
 
+/** Google Analytics Tracking -- Currently not in use for BJC-R.
+ *  Each new repo should get their own GA token, and setup and then swap these
+ *  values. To make use of this code, the two ga() functions need to be called
+ *  on each page that is loaded, which means this file must be loaded. 
+ */
+bjc.GACode = 'UA-47210910-3';
+bjc.GAurl = 'berkeley.edu';
+bjc.GAfun =  function(i,s,o,g,r,a,m) {
+    i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  };
+
+bjc.GA = function() {
+        bjc.GAfun(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    }
+// GA Function Calls -- these do the real work!: 
+// ga('create', bjc.GACode, bjc.GAUrl);
+// ga('send', 'pageview');
+
 
 bjc.loaded['bjc-library'] = true;
