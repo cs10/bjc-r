@@ -19,20 +19,20 @@ bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
 bjc.paths.links = [];
-bjc.paths.links.push('//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
-bjc.paths.links.push('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
-bjc.paths.links.push("/admin/BJC.css");
-bjc.paths.links.push("/admin/from-mvle.css");
+bjc.paths.links.push('http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
+bjc.paths.links.push('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
+bjc.paths.links.push("/admin/css/from-mvle.css");
+bjc.paths.links.push("/admin/css/BJC.css");
 
 bjc.paths.scripts = [];
 bjc.paths.complete_funs = [];
 
 ///////////////// stage 0
 //
-bjc.paths.scripts[0] = ["/admin/jquery-1.9.1.min.js", "/admin/bjc-library.js"];
+bjc.paths.scripts[0] = ["/admin/js/jquery-1.9.1.min.js", "/admin/bjc-library.js"];
 bjc.loaded['bjc-library'] = false;
 bjc.paths.complete_funs[0] = function() {
-return (( typeof jQuery == 'function') && 
+return (( typeof jQuery === 'function') && 
         ( bjc.loaded['bjc-library'])
     );
 }
@@ -41,8 +41,8 @@ return (( typeof jQuery == 'function') &&
 ////////// stage 1
 // all these scripts depend on jquery, loaded in stage 0
 // all quiz item types should get loaded here
-bjc.paths.scripts[1] = ["/admin/jquery-ui.1.10.2.min.js", "/admin/quiz/multiplechoice.js", "/admin/quiz/inline-multiplechoice.js"];
-
+bjc.paths.scripts[1] = ["/admin/js/jquery-ui.1.10.2.min.js", "/admin/quiz/multiplechoice.js"];
+// "/admin/quiz/inline-multiplechoice.js" -- file doesn't exist.
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
 	return ((bjc.loaded['multiplechoice'] ) && 

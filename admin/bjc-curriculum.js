@@ -1,7 +1,6 @@
-/**
- *
+/** BJC-CURRICULUM
  * sets up a BJC curriculum page -- either local or external.
- * Uses jquery.
+ * Uses jquery, jquery-ui.
  * This is borrowed from UCCP APCSA work
  */
 
@@ -22,53 +21,53 @@ bjc.secondarySetUp = function() {
     }
     var titleText = document.title;
     if (titleText && $(".header").length == 0) {
-	$('<div class="header"></div>').prependTo($("#full")).html(titleText);
-	if (getParameterByName("title") != "") {
-	    $(".header").html(getParameterByName("title"));
-	}
+        $('<div class="header"></div>').prependTo(document.body).html(titleText);
+        if (getParameterByName("title") != "") {
+            $(".header").html(getParameterByName("title"));
+        }
     }
+    // FIXME -- should just be in css...
     document.body.style.marginTop = "60px";
+    // FIXME -- this is bad if the title contains HTML chars...
     document.title = $(".header").text();
-    
-    
 
 
     // fix snap links so they run snap
     $("a.run").each(function(i) {
-	$(this).attr("target", "_blank");
-	$(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')));
+        $(this).attr("target", "_blank");
+        $(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')));
     });
 
 
 
     // make the vocab box if necessary
     if ($("span.vocab").length > 0) {
-	if ($("div.vocab").length == 0) {
-	    // it might already exist, in order to have a 'topX' class inserted.
-	    $("#full").append('<div class="vocab"></div>');
-	}
-	var vocabDiv = $("div.vocab");
-	$("span.vocab").each(function(i) {
-	    if (!(this.getAttribute('term'))) {
-		this.setAttribute('term', this.innerHTML)
-	    }
-	    vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
-			    + '" target="_vocab">' + this.getAttribute('term') + '</a>');
-	});
+        if ($("div.vocab").length == 0) {
+            // it might already exist, in order to have a 'topX' class inserted.
+            $("#full").append('<div class="vocab"></div>');
+        }
+        var vocabDiv = $("div.vocab");
+        $("span.vocab").each(function(i) {
+            if (!(this.getAttribute('term'))) {
+                this.setAttribute('term', this.innerHTML)
+            }
+            vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
+            + '" target="_vocab">' + this.getAttribute('term') + '</a>');
+        });
     }
 
     // make the help box if necessary
     var helpSpans = $("span.help");
     if (helpSpans.length > 0) {
-	$("#full").append('<div class="help"></div>');
-	var helpDiv = $("div.help");
-	helpSpans.each(function(i) {
-	    if (!(this.getAttribute('topic'))) {
-		this.setAttribute('topic', this.innerHTML)
-	    };
-	    helpDiv.append('<p><a href="' + bjc.rootURL + '/help/view.html?topic=' + this.getAttribute('topic')
-			   + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
-	});
+        $("#full").append('<div class="help"></div>');
+        var helpDiv = $("div.help");
+        helpSpans.each(function(i) {
+            if (!(this.getAttribute('topic'))) {
+                this.setAttribute('topic', this.innerHTML)
+            };
+            helpDiv.append('<p><a href="' + bjc.rootURL + '/help/view.html?topic=' + this.getAttribute('topic')
+            + '" target="_help">' + this.getAttribute('topic') + '</a></p>');
+        });
     }
 
     // move anything that belongs in to the margin there, if necessary
@@ -89,7 +88,7 @@ bjc.secondarySetUp = function() {
     bjc['step'] = parseInt(getParameterByName("step"));
     var temp = getParameterByName("topic");
     if (temp != "" && !isNaN(bjc['step'])) {
-	if (getParameterByName("step") == "") {
+        if (getParameterByName("step") == "") {
 	    // TODO -- this shouldn't happen, but we could intelligently find which
 	    // step this should be
 	}
@@ -113,8 +112,9 @@ bjc.secondarySetUp = function() {
 }; // close secondarysetup();
 
 
-/** Processes just the hyperlinked elements in this page,
- *	and creates navigation buttons. 
+/** 
+ *  Processes just the hyperlinked elements in this page,
+ *  and creates navigation buttons. 
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
     var temp = getParameterByName("topic");
@@ -308,27 +308,31 @@ bjc.goForward = function() {
 
 /* Hides the dropdown when a user clicks somewhere else. */
 $('html').click(function(event) {
-    if (!$(event.target).is($('.list_header')[0])) {
-	$($(".steps")[0]).slideUp(300);
+    if (!$(event.target).is( $('.list_header')[0] )) {
+        $( $(".steps")[0] ).slideUp(300);
     }
 });
 
-/* Positions alonzo along the bottom of the lab page, signifying the student's progress.
- * numSteps is the total number of steps in the lab, currentStep is the number of the
- * current step, totalWidth is the width of the entire bottom bar, and buttonWidth is
- * the combined width of the two nav buttons.
+/** Positions an image along the bottom of the lab page, signifying progress.
+ *  numSteps is the total number of steps in the lab
+ *  currentStep is the number of the current step
+ *  totalWidth is the width of the entire bottom bar
+ *  buttonWidth is the combined width of the two nav buttons.
  */
 bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
-    var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2));
-    var result;
+    var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2)),
+        result;
+    
     if (currentStep < numSteps - 1) {
-	width *= .98
-	result = Math.round((currentStep * (width / (numSteps - 1)) + 1) / totalWidth * 100) + "%";
+        width *= .98;
+        result = Math.round((currentStep * (width / (numSteps - 1)) + 1) / totalWidth * 100) + "%";
     } else {
-	var picWidth = $("#full-bottom-bar").css("background-size");
-	picWidth = picWidth.slice(0, picWidth.indexOf("px"));
-	result = width - Number(picWidth) - 4 + "px"; // the 4 is just to add a bit of space
+        var picWidth = $("#full-bottom-bar").css("background-size");
+        picWidth = picWidth.slice(0, picWidth.indexOf("px"));
+        // the 4 is just to add a bit of space
+        result = width - Number(picWidth) - 4 + "px"; 
     }
+    
     result = result + " 2px";
     $("#full-bottom-bar").css("background-position", result)
 }

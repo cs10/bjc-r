@@ -2,7 +2,6 @@
 
 var termParam = getParameterByName("term");
 var termWord = "";
-console.log("yoyo")
 
 if (termParam !== "") {
 	file = termParam + ".body"; 
