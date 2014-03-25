@@ -4,15 +4,12 @@
  * CANNOT RELY ON JQUERY, YO
  */
 
-if ( typeof bjc === 'undefined') {
-	// if bjc-loader wasn't used, we need this.
-	bjc = {};
-	bjc.rootURL = "/bjc-r";
-	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
+if (typeof bjc === 'undefined') {
+    // if bjc-loader wasn't used, we need this.
+    bjc = {};
+    bjc.rootURL = "/bjc-r";
+    bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
 }
-
-
-
 
 /////////////////
 
@@ -24,6 +21,7 @@ bjc.CORSCompliantServers.push("bjc.berkeley.edu");
 bjc.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 bjc.CORSCompliantServers.push("snap.berkeley.edu");
 bjc.CORSCompliantServers.push("inst.eecs.berkeley.edu");
+bjc.CORSCompliantServers.push("cs10.berkeley.edu");
 
 
 ////
