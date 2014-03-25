@@ -70,7 +70,7 @@
     font-weight:bold;
     background-image:url(../img/web/special-key-32.png); FIXME
     background-repeat:no-repeat;
-    /* background-color:#C7C7FF;
+    /* background-color:#C7C7FF; */
     background-position:10px 10px;
 }
 
@@ -146,3 +146,10 @@
     padding:0;
     margin:10px 4px 8px 10px;
 }
+
+/* OTHERS */
+#class_nav_bar {
+    font:17px Helvetica, Arial, sans-serif;
+    color:#e3e3e3;
+}
+

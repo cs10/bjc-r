@@ -32,14 +32,15 @@ body {
 .full, #full {
     padding: 1em;
     width: 90%;
-    margin: 4em auto;
+    margin: 4em auto 1em;
 }
 
 #full-bottom-bar {
-    background-color: #ccc;
+    background-color: #CCC;
     background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
     background-repeat: no-repeat;
     background-position: 1px 2px;
+    border-radius: 20px;
     background-size: 20px;
     height: 25px;
     position:relative;
@@ -55,7 +56,7 @@ form li div {
     font:500 15px/1.7 "Times New Roman", Times, serif;
 }
 
-form>h2, form>ol>li {
+form > h2, form > ol > li {
     color:#999;
     font:500 30px Tahoma, Geneva, sans-serif;
 }
@@ -75,14 +76,14 @@ tt {
 }
 
 code {
-    font-size:120%;
+    font-size: 120%;
     font-weight: 600;
-    line-height:100%;
+    line-height: 100%;
 }
 
 p {
     /*font:1.1em "Times New Roman", Times, serif;*/
-    font:1em Arial, Helvetica, sans-serif;
+    font: 1em Arial, Helvetica, sans-serif;
     color: black;
     line-height:120%;
 }
@@ -168,53 +169,48 @@ h4, h5, h6 {
 }
 
 /** PAGE HEADERS *************************************************************/
-#class_nav_bar {
-    font:17px Helvetica, Arial, sans-serif;
-    color:#e3e3e3;
-}
 
 .top-nav {
   background: #FFF;
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(47%,rgba(246,246,246,1)), color-stop(100%,rgba(237,237,237,1))); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* IE10+ */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(246,246,246,1) 47%,rgba(237,237,237,1) 100%); /* W3C */
+  background: -moz-linear-gradient(top,  #FFF 0%, #F8F8F8 47%,  #F0F0F0 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(47%, #F8F8F8), color-stop(100%, #F0F0F0)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Chrome10+, Safari5.1+ */
+  background: -o-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* IE10+ */
+  background: linear-gradient(to bottom, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
   position: fixed;
   top: 0;
   margin: 0;
-  box-shadow: 5px 5px 5px grey;
+  box-shadow: 0 5px 10px #CCC;
   width: 100%;
-  padding: 0;
-  height: 4em;
+  padding: .3em;
+  min-height: 3em;
+  height: auto;
 }
 
+/* Contains the page title text */
 .header {
-    font: normal 2em Georgia, serif;
+    font: bold 1.5em Georgia, serif;
     font-variant: small-caps;
-    font-weight: bold;
     color: #666;
-    /* border-bottom:3px solid #ccc; */
-    /* width: 99.5%;*/
-    margin: auto 5%;
-    left: 5%;
-    vertical-align: middle;
+    float: left;
+    max-width: 70%;
+    margin: 1% 3% 1% 5%;
+    /*vertical-align: middle;*/
     text-align: left;
-    letter-spacing:1.2px;
+    letter-spacing: 1.2px;
 }
+
 
 .nav {
-    float:right;
-    right:5px;
-    min-width:100px;
-    position:relative;
+    float: right;
+    margin: 1% 5%;
+    vertical-align: middle;
+    max-width: 30%;
+    min-width: 300px;
+    position: relative;
     z-index: 9999;
-    margin-left:10px;
-    /*border:solid;
-    border-radius:5px;
-    background-color:black;    */
 }
 
 .bottom-nav {
@@ -239,23 +235,17 @@ h4, h5, h6 {
     height:20px;
 }
 
-.backbutton {
-    font-size:7pt;
-    vertical-align: top;
-    margin: 2px;
-}
-
-.forwardbutton {
-    font-size: 7pt;
-    vertical-align: top;
-    margin: 2px;
+.backbutton, .forwardbutton {
+    font-size: .6em;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    vertical-align: middle;
+    padding: 4px;
 }
 
 .steps {
-    margin-left:64px;
-    margin-right:88px;
     padding: 0;
-    line-height:1.2;
+    line-height: 1.2em;
     position: absolute;
     min-width: 250px;
 }
@@ -446,7 +436,7 @@ pre.veryTightText, pre .veryTightText {
     padding:5px;
 }
 
-#tableClear    pre {
+#tableClear pre {
     font:400 .85em "Courier New", Courier, monospace;
     white-space:pre;
     padding:10px;
@@ -469,7 +459,7 @@ pre.veryTightText, pre .veryTightText {
     padding: 0;
 }
 
-#tableTight    pre {
+#tableTight pre {
     font:.85em Courier, monospace;
     color:#000;
     letter-spacing:-1px;
@@ -736,7 +726,7 @@ blockquote {
 #buttonClose a:hover{
     background: #FFCC00;
     color:#333;
-}*/
+}
 
 
 /* New classes from the original_bjc file.
@@ -744,13 +734,14 @@ blockquote {
  */
 
 .topic {
-    margin-bottom:60px;
-    border: 2px solid #ccc;
+    margin-bottom: 30px;
+    border: 2px solid #CCC;
+    border-radius: 4px;
     padding:20px;
     display:inline-block;
 }
 
-/* Most items in the syllabus page */
+/* Most items in the course page */
 .topic div {
     background-repeat:no-repeat;
     background-position:left;

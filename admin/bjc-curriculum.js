@@ -11,7 +11,12 @@ HEADER = 'header';
 DROPDOWN = 'nav';
 BUTTONS = '';
 
+var topNav = "<div class='top-nav'><div class='header'></div>" +
+             "<div class='nav'><div class='backbutton '></div>" +
+             "<div class='forwardbutton '></div></div></div>";
+
 function makeDiv(cls) {
+    // FIXME: Just use jQuery and build stuff more easily...
     return '<div class="' + cls + '"></div>';
 }
 
@@ -30,8 +35,6 @@ bjc.secondarySetUp = function() {
     if ($('.' + TOPNAV).length === 0) {
         $(document.body).prepend(makeDiv(TOPNAV));
     }
-    
-    var nav_div = $('.' + TOPNAV);
 
     // create Title tag, yo
     if (getParameterByName("title") != "") {
@@ -39,6 +42,7 @@ bjc.secondarySetUp = function() {
     }
     
     var titleText = document.title;
+    var nav_div = $('.' + TOPNAV);
     if (titleText && $(".header").length == 0) {
         $(makeDiv(HEADER)).prependTo(nav_div).html(titleText);
         if (getParameterByName("title") != "") {
@@ -46,10 +50,9 @@ bjc.secondarySetUp = function() {
         }
     }
     
-    // FIXME -- should just be in css...
+    // FIXME -- should just be in css...?
     document.body.style.marginTop = "0";
-    // FIXME -- this is bad if the title contains HTML chars...
-    document.title = $(".header").text();
+    document.title = $(".header").text(); // Strips HTML from Header
 
 
     // fix snap links so they run snap
@@ -106,8 +109,8 @@ bjc.secondarySetUp = function() {
     // should this page be rendered with the topic header (left, right buttons, etc)
     bjc['step'] = parseInt(getParameterByName("step"));
     var temp = getParameterByName("topic");
-    if (temp != "" && !isNaN(bjc['step'])) {
-        if (getParameterByName("step") == "") {
+    if (temp !== "" && !isNaN(bjc['step'])) {
+        if (getParameterByName("step") === "") {
             // TODO -- this shouldn't happen, but we could intelligently find 
             // which step this should be
         }
@@ -125,8 +128,6 @@ bjc.secondarySetUp = function() {
             success: bjc.processLinks
         });
     }
-    
-    
     
 }; // close secondarysetup();
 
@@ -196,117 +197,122 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     for (var i = 0; i < lines.length; i++) {
         line = lines[i];
         line = bjc.stripComments(line);
+        
         // TODO: Refactor
-        // TODO: Add continue condition instead of giant if.
-        if (line.length > 1 && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
-            if (line.indexOf("title:") != -1) {
-                /* Create a link back to the main topic. */
-                url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
-                text = line.slice(line.indexOf(":") + 1);
-                if (text.length > 35) {
-                    text = text.slice(0, 35) + "...";
-                }
-                text = "<span class='main-topic-link'>" + text + "</span>";
-                option = $(document.createElement("a")).attr({'href': url});
-                option.html(text);
-                list_item = $(document.createElement("li")).attr({'class': 'list_item'});
-                list_item.append(option);
-                list.prepend(list_item);
+        var cond = line.length <= 1 || (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) !== -1);
+        if (cond) {
+            continue;
+        }
+        
+        // Line is a title.
+        if (line.indexOf("title:") !== -1) {
+            /* Create a link back to the main topic. */
+            url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
+            text = line.slice(line.indexOf(":") + 1);
+            
+            if (text.length > 35) {
+                text = text.slice(0, 32) + "...";
             }
-            if (line.indexOf("[") != -1) {
-                text = line.slice(line.indexOf(":") + 1, line.indexOf("["))
-                if (text.length > 35) {
-                    text = text.slice(0, 35) + "...";
-                }
-                url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
-                if (url.indexOf("http") != -1) {
-                    url = bjc.rootURL + "/admin/empty-curriculum-page.html" + "?" + "src=" +
-                    url + "&" + "topic=" + bjc.file + "&step=" + num +
-                    "&title=" + text + hiddenString + "&course=" + course;
-                } else {
-                    if (url.indexOf(bjc.rootURL) == -1 && url.indexOf("..") == -1) {
-                        if (url[0] == "/") {
-                            url = bjc.rootURL + url;
-                        } else {
-                            url = bjc.rootURL + "/" + url;
-                        }
-                    }
-                    if (url.indexOf("?") != -1) {
-                        url += "&" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
-                    } else {
-                        url += "?" + "topic=" + bjc.file + "&step=" + num + hiddenString + "&course=" + course;
-                    }
-                }
-                bjc['url_list'].push(url);
-                if (num == (bjc.step - 1)) {
-                    backButton.attr({'value': url});
-                    backButton.button({disabled: false});
-                    b_backButton.attr({'value': url});
-                    b_backButton.button({disabled: false});
-                    option = $(document.createElement("a")).attr({'href': url});
-                    option.html(text);
-                } else if (num == bjc.step) {
-                    text = "<span class='current-step-link'>" + text + "</span>";
-                    option = $(document.createElement("a"));
-                    option.html(text);
-                    list_header.html("Click here to navigate...");
-                } else if (num == (bjc.step + 1)) {
-                    forwardButton.attr({'value': url});
-                    forwardButton.button({disabled: false});
-                    b_forwardButton.attr({'value': url});
-                    b_forwardButton.button({disabled: false});
-                    option = $(document.createElement("a")).attr({'href': url});
-                    option.html(text);
-                } else {
-                    option = $(document.createElement("a")).attr({'href': url});
-                    option.html(text);
-                }
-                list_item = $(document.createElement("li")).attr({'class': 'list_item'});
-                list_item.append(option);
-                list.append(list_item);
-                num = num + 1;
+            
+            text = "<span class='main-topic-link'>" + text + "</span>";
+            option = $(document.createElement("a")).attr(
+                {'href': url});
+            option.html(text);
+            list_item = $(document.createElement("li")).attr(
+                {'class': 'list_item'});
+            list_item.append(option);
+            list.prepend(list_item);
+            
+            continue;
+        }
+        
+        // Line contains a link
+        if (line.indexOf("[") !== -1) {
+            text = line.slice(line.indexOf(":") + 1, line.indexOf("["));
+            
+            if (text.length > 35) { // Truncate Long Titles
+                text = text.slice(0, 32) + "...";
             }
+            
+            url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
+            if (url.indexOf("http") !== -1) {
+                url = bjc.rootURL + "/admin/empty-curriculum-page.html" +
+                     "?" + "src=" +  url + "&" + "topic=" + bjc.file +
+                     "&step=" + num + "&title=" + text + hiddenString +
+                     "&course=" + course;
+            } else {
+                if (url.indexOf(bjc.rootURL) === -1 && 
+                    url.indexOf("..") === -1) {
+                    url = bjc.rootURL + (url[0] === "/" ? "" : "/") + url;
+                }
+                url += url.indexOf("?") !== -1 ? "&" : "?" ;
+                url += "topic=" + bjc.file + "&step=" + num + hiddenString;
+                url += "&course=" + course;
+            }
+            bjc['url_list'].push(url);
+            
+            // TODO: Refactor Button code out.
+            if (num === (bjc.step - 1)) {
+                backButton.attr({'value': url});
+                backButton.button({disabled: false});
+                b_backButton.attr({'value': url});
+                b_backButton.button({disabled: false});
+            } else if (num == bjc.step) {
+                text = "<span class='current-step-link'>" + text + "</span>";
+                // FIXME -- why does this only work here?
+                list_header.html("Click here to navigate...");
+            } else if (num == (bjc.step + 1)) {
+                forwardButton.attr({'value': url});
+                forwardButton.button({disabled: false});
+                b_forwardButton.attr({'value': url});
+                b_forwardButton.button({disabled: false});
+            }
+            
+            option = $(document.createElement("a")).attr({'href': url});
+            option.html(text);
+            
+            list_item = $(document.createElement("li")).attr({'class': 'list_item'});
+            list_item.append(option);
+            list.append(list_item);
+            num += 1;
         }
     } // end for loop
     
-    if (getParameterByName("course") != "") {
-        var course_link = getParameterByName("course");
-        if (course_link.indexOf("http://") == -1) {
+    var course_link = getParameterByName("course");
+    if (course_link !== "") {
+        if (course_link.indexOf("http://") === -1) {
             course_link = bjc.rootURL + "/course/" + course_link;
         }
-        list_item = $(document.createElement("li")).attr({'class': 'list_item'});
-        list_item.append($(document.createElement("a")).attr({"class": "course_link", "href": course_link}).html("Go to Main Course Page"));
+        list_item = $(document.createElement("li")).attr(
+            {'class': 'list_item'});
+        list_item.append($(document.createElement("a")).attr(
+            {"class": "course_link", "href": course_link} ).html(
+            "Go to Main Course Page"));
         list.prepend(list_item);
     }
 
-    list_header.click(function() {
-        // FIXME -- make text a variable.
-        if (list_header.html() === "Click here to navigate...") {
-            list_header.html("Click again to close...");
-        } else {
-            list_header.html("Click here to navigate...");
-        }
-        $($(".steps")[0]).slideToggle(300);
-    });
+    list_header.click(navDropdownToggle);
     nav.append(backButton);
     nav.append(list_header);
-    nav.append(forwardButton);
     nav.append(list);
-    var background = $(document.createElement("div")).attr({'class': 'nav_background'});
-    nav.append(background);
+    nav.append(forwardButton);
+    // var background = $(document.createElement("div")).attr(
+    //     {'class': 'nav_background'});
+    // nav.append(background);
     
     nav_div.append(nav);
     list_header.width(list.outerWidth());
     list.slideToggle(0);    
     
-    if (document.URL.indexOf(bjc.rootURL + "/admin/empty-curriculum-page.html") != -1) {
+    if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
+        // DO SOMETHING when loading from an empty curriculum page
         bjc.addFrame();
     } else {
         $("#full").append('<div id="full-bottom-bar"></div>');
         var b_nav = $(document.createElement("div")).addClass("bottom-nav");
         b_nav.append(b_backButton);
         b_nav.append(b_forwardButton);
-        b_nav.append(background.clone());
+        // b_nav.append(background.clone());
         $("#full-bottom-bar").append(b_nav);
     }
 
@@ -336,6 +342,19 @@ bjc.goForward = function() {
 }
 
 /* Hides the dropdown when a user clicks somewhere else. */
+function navDropdownToggle() {
+    // FIXME -- make text a variable.
+    var list_header = $('.list_header'),
+        close_state = "Click here to navigate...",
+        open_state = "Click anywhere to close...";
+    if (list_header.html() === close_state) {
+        list_header.html(open_state);
+    } else {
+        list_header.html(close_state);
+    }
+    $($(".steps")[0]).slideToggle(300);
+}
+
 $('html').click(function(event) {
     if (!$(event.target).is( $('.list_header')[0] )) {
         $( $(".steps")[0] ).slideUp(300);
