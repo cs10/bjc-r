@@ -18,42 +18,6 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
  */
 
-/* THESE STYLES ARE USED GLOBALLY WITHIN ALL UCCP PROJECTS  */
-
-.color1 {color:#164CBA;}   /* vibrant blue */
-.color2 {color:#6883BA;}   /* mid blue */
-.color3 {color:#919EBA;}   /* light blue */
-.color4 {color:#334B7B;}   /* dark blue */
-.color5 {color:#19253D;}   /* very dark blue */
-.color6 {color:#4E628B;}  /* mid gray blue */
-.color7 {color:#FF9D1E;}  /* bold orange */
-.color8 {color:#FFCE8E;}  /* mid tan */
-.color9 {color:#FFE6C6;}  /* light tan */
-.color10 {color:#a97e46;}  /* brown */
-.color11 {color:#543f23;}  /* dark red */
-.color12 {color:#bf9a6b;}  /* light brown */
-
-.bg1 {background-color:#164CBA;color:#FFF;}
-.bg2 {background-color:#6883BA;color:#000;}
-.bg3 {background-color:#919EBA;color:#000;}
-.bg4 {background-color:#334B7B;color:#FFF;}
-.bg5 {background-color:#19253D;color:#FFF;}
-.bg6 {background-color:#4E628B;color:#FFF;}
-.bg7 {background-color:#FFCE8E;color:#000;}
-.bg8 {background-color:#FF9D1E;color:#000;}
-.bg9 {background-color:#FFE6C6;color:#000;}
-.bg10 {background-color:#a97e46;color:#000;}
-.bg11 {background-color:#543f23;color:#FFF;}
-.bg12 {background-color:#bf9a6b;color:#000;}
-.bg13{background-color:#3399ff;color:#000;}
-
-/*   brought in normalize.css to help with this?
- *
-* {padding:0px; margin:0px;}
-img {border:0px;}
-
-*/
-
 a:visited {color:#36BBCE;}
 
 #full {
@@ -113,11 +77,6 @@ form li div {
 form>h2, form>ol>li {
     color:#999;
     font:500 30px Tahoma, Geneva, sans-serif;
-}
-
-.faint {
-    color:#777;
-    font:12px Tahoma, Geneva, sans-serif;
 }
 
 em {

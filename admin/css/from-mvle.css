@@ -62,7 +62,6 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 	/* looks OK in IE, too small in firefox, ug.  Firefox at 150% is about right, 130% in IE is right */
 	font-size: 135%;
 	font-weight: 500;
-    color: 
 }
 
 .helpIcon {
@@ -429,7 +428,7 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 	border-left:4px solid #999;
 	padding-left:6px;
 	margin-left:30px;
-	
+
 }
 
 .MultipleChoice input * {
@@ -466,7 +465,7 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 .MultipleChoice .buttonDiv {
     min-height: 31px;
 	background-color: #FFFFFF;
-	
+
 }
 
 .MultipleChoiceData {
@@ -478,5 +477,5 @@ button  ::-moz-focus-inner,input[type="reset"]  ::-moz-focus-inner,input[type="b
 }
 
 .InlineMultipleChoice .inline-prompt {
-    
+
 }
