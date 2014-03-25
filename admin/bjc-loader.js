@@ -22,7 +22,7 @@ bjc.paths.links = [];
 bjc.paths.links.push('http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
 bjc.paths.links.push('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
 bjc.paths.links.push("/admin/css/from-mvle.css");
-bjc.paths.links.push("/admin/css/bootstrap.css");
+// bjc.paths.links.push("/admin/css/bootstrap.css");
 bjc.paths.links.push("/admin/css/BJC.css");
 
 bjc.paths.scripts = [];
