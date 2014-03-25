@@ -210,9 +210,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
             text = line.slice(line.indexOf(":") + 1);
             
-            if (text.length > 35) {
-                text = text.slice(0, 32) + "...";
-            }
+            text = truncate($.trim(text), 35);
             
             text = "<span class='main-topic-link'>" + text + "</span>";
             option = $(document.createElement("a")).attr(
@@ -230,9 +228,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         if (line.indexOf("[") !== -1) {
             text = line.slice(line.indexOf(":") + 1, line.indexOf("["));
             
-            if (text.length > 35) { // Truncate Long Titles
-                text = text.slice(0, 32) + "...";
-            }
+            text = truncate($.trim(text), 35);
             
             url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
             if (url.indexOf("http") !== -1) {
@@ -271,7 +267,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             option = $(document.createElement("a")).attr({'href': url});
             option.html(text);
             
-            list_item = $(document.createElement("li")).attr({'class': 'list_item'});
+            list_item = $(document.createElement("li")).attr(
+                {'class': 'list_item'});
             list_item.append(option);
             list.append(list_item);
             num += 1;
@@ -341,9 +338,25 @@ bjc.goForward = function() {
     window.location.href = bjc['url_list'][bjc.step + 1];
 }
 
+/** Truncate a STR to an output of N chars.
+ *  N does NOT include any HTML characters in the string.
+ */
+function truncate(str, n) {
+    // Ensure string is 'proper' HTML for .text() call.
+    var clean = $('<p>' + str + '</p>').text();
+    
+    if (clean.length > n) {
+        // TODO: Shorten string to end on whole words?
+        // TODO: Be smarter about stripping from HTML content??
+        // TODO: Make … a unicode char?
+        return clean.slice(0, n - 1) + '…';
+    }
+    
+    return str; // return the HTML content if possible.
+}
+
 /* Hides the dropdown when a user clicks somewhere else. */
 function navDropdownToggle() {
-    // FIXME -- make text a variable.
     var list_header = $('.list_header'),
         close_state = "Click here to navigate...",
         open_state = "Click anywhere to close...";
