@@ -120,9 +120,9 @@ bjc.truncate = (function(str, n) {
     
     // TODO: Shorten string to end on whole words?
     // TODO: Be smarter about stripping from HTML content??
-    // TODO: Make … a unicode char?
+    // &#8230; is a unicode ellipses
     if (clean.length > n) {
-        return clean.slice(0, n - 1) + '…';
+        return clean.slice(0, n - 1) + '&#8230;';
     }
     
     return str; // return the HTML content if possible.

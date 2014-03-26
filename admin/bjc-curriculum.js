@@ -4,24 +4,9 @@
  * This is borrowed from UCCP APCSA work
  */
 
-// Global Vars for page sections
-var TOPNAV, HEADER, DROPDOWN, BUTTONS;
-TOPNAV = 'top-nav';
-HEADER = 'header';
-DROPDOWN = 'nav';
-BUTTONS = '';
-
-var topNav = "<div class='top-nav'><div class='header'></div>" +
-             "<div class='nav'><div class='backbutton '></div>" +
-             "<div class='forwardbutton '></div></div></div>";
-
-function makeDiv(cls) {
-    // FIXME: Just use jQuery and build stuff more easily...
-    return '<div class="' + cls + '"></div>';
-}
 
 bjc['file'] = "";
-bjc['step'] = "";
+bjc['step'] = NaN;
 bjc['url_list'] = new Array();
 
 
@@ -32,31 +17,30 @@ bjc.secondarySetUp = function() {
         $(document.body).wrapInner('<div id="full"></div>');
     }
     
-    if ($('.' + TOPNAV).length === 0) {
-        $(document.body).prepend(makeDiv(TOPNAV));
-    }
-
+    // Create the header section and nav buttons
+    bjc.createTitleNav();
+    
     // create Title tag, yo
     if (getParameterByName("title") != "") {
         document.title = decodeURIComponent(getParameterByName("title"));
     }
     
+    // Set the header title to the page title.
     var titleText = document.title;
-    var nav_div = $('.' + TOPNAV);
-    if (titleText && $(".header").length == 0) {
-        $(makeDiv(HEADER)).prependTo(nav_div).html(titleText);
+    if (titleText) { // && $(".header").length === 0 // this shouldn't happen.
+        $('.header').html(titleText);
         // I don't think this does anything. If nothing breaks I'll remove it.
         // if (getParameterByName("title") != "") {
         //     $(".header").html(titleText);
         // }
     }
     
-    
     // FIXME -- should just be in css...?
     document.body.style.marginTop = "0";
-    document.title = $(".header").text(); // Strips HTML from Header
-
-
+    // Clean up document title if it contains HTML
+    document.title = $(".header").text();
+    
+    
     // fix snap links so they run snap
     $("a.run").each(function(i) {
         $(this).attr("target", "_blank");
@@ -75,8 +59,9 @@ bjc.secondarySetUp = function() {
             if (!(this.getAttribute('term'))) {
                 this.setAttribute('term', this.innerHTML)
             }
-            vocabDiv.append('<a href="' + bjc.rootURL + '/glossary/view.html?term=' + this.getAttribute('term')
-            + '" target="_vocab">' + this.getAttribute('term') + '</a>');
+            vocabDiv.append('<a href="' + bjc.rootURL +
+                '/glossary/view.html?term=' + this.getAttribute('term')
+                + '" target="_vocab">' + this.getAttribute('term') + '</a>');
         });
     }
 
@@ -99,7 +84,8 @@ bjc.secondarySetUp = function() {
     var marginSelector = ["div.key", "div.warning", "div.help", "div.vocab"];
     if ($(marginSelector.join(',')).length > 0) {
         // add the two columns.
-        $('#full').wrapInner('<div id="mainCol"></div>').prepend('<div id="marginCol"></div>');
+        $('#full').wrapInner('<div id="mainCol"></div>').prepend(
+            '<div id="marginCol"></div>');
         // this moves the divs over.  Perhaps it could do some smarter ordering
         // always put vocab at the bottom, for instance.
         var marginCol = $("#marginCol").get(0);
@@ -108,29 +94,34 @@ bjc.secondarySetUp = function() {
         });
     }
 
-    // should this page be rendered with the topic header (left, right buttons, etc)
-    bjc['step'] = parseInt(getParameterByName("step"));
-    var temp = getParameterByName("topic");
-    if (temp !== "" && !isNaN(bjc['step'])) {
-        if (getParameterByName("step") === "") {
-            // TODO -- this shouldn't happen, but we could intelligently find 
-            // which step this should be
-        }
-        if (typeof temp == "object") {
-            bjc['file'] = temp[1];
-        } else {
-            bjc['file'] = temp;
-        }
-    
-        $.ajax({
-            url : bjc.rootURL + "/topic/" + bjc.file,
-            type : "GET",
-            dataType : "text",
-            cache : true, // cache the topic page.
-            success: bjc.processLinks
-        });
+    // Get the topic file and step from the URL
+    bjc.step = parseInt(getParameterByName("step"));
+    var topicFile = getParameterByName("topic");
+
+    // We don't have a topic file, so we should exit.
+    if (topicFile === "" || isNaN(bjc['step'])) {
+        return;
     }
     
+    if (getParameterByName("step") === "") {
+        // TODO -- this shouldn't happen, but we could intelligently find 
+        // which step this should be
+    }
+    
+    
+    if (typeof topicFile == "object") {
+        bjc['file'] = topicFile[1];
+    } else {
+        bjc['file'] = topicFile;
+    }
+    
+    $.ajax({
+        url : bjc.rootURL + "/topic/" + bjc.file,
+        type : "GET",
+        dataType : "text",
+        cache : true, // cache the topic page.
+        success: bjc.processLinks
+    });
 }; // close secondarysetup();
 
 
@@ -140,6 +131,7 @@ bjc.secondarySetUp = function() {
  *  FIXME: This should share code with BJC topic!
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
+    // FIXME -- why do this again???
     var temp = getParameterByName("topic");
     if (typeof temp == "object") {
         bjc['file'] = temp[1];
@@ -161,47 +153,42 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         }
     } // end for loop
     
+    /*
+<div class="dropdown">
+  <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
+    Dropdown
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
+  </ul>
+</div>
+    
+    */
+    
     // TODO: Refactor multiple vars...
     var textLength = 35;
     var course = getParameterByName("course");
-    var nav_div = $('.' + TOPNAV);
     var lines = data.split("\n");
     var line;
     var text;
     var num = 0;
-    var nav = $(document.createElement("div")).addClass("nav");
-    var backButton = $(document.createElement("a")).addClass("backbutton");
-    var b_backButton = $(document.createElement("a")).addClass("backbutton");
-    backButton.text("BACK");
-    backButton.button({disabled: true});
-    backButton.click(bjc.goBack);
-    b_backButton.text("BACK");
-    b_backButton.button({disabled: true});
-    b_backButton.click(bjc.goBack);
-    var forwardButton = $(document.createElement("a")).addClass("forwardbutton");
-    var b_forwardButton = $(document.createElement("a")).addClass("forwardbutton");
-    forwardButton.text("FORWARD");
-    forwardButton.button({disabled: true});
-    forwardButton.click(bjc.goForward);
-    b_forwardButton.text("FORWARD");
-    b_forwardButton.button({disabled: true});
-    b_forwardButton.click(bjc.goForward);
-    var list = $(document.createElement("ul")).attr({'class': 'steps'});
-    list.menu();
-    list.menu("collapse");
+    var list = $(document.createElement("ul")).attr(
+        {'class': 'dropdown-menu dropdown-menu-right', 
+         'role' : "menu",  'aria-labelledby' : "dropdownMenu1"});
     var option;
     var url = document.URL;
     var list_item;
-    // var hidden;
-    var list_header = $(document.createElement("div")).attr(
-        {'class': 'list_header'});
-    list_header.menu();
     
     for (var i = 0; i < lines.length; i++) {
         line = lines[i];
         line = bjc.stripComments($.trim(line));
         
-        // TODO: Refactor
+        // FIXME: Refactor
         var cond = line.length <= 1 || (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) !== -1);
         if (cond) {
             continue;
@@ -210,18 +197,23 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         // Line is a title.
         if (line.indexOf("title:") !== -1) {
             /* Create a link back to the main topic. */
-            url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
+            url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file +
+                  hiddenString + "&course=" + course;
             
             text = line.slice(line.indexOf(":") + 1);
             text = bjc.truncate($.trim(text), textLength);
             
             text = "<span class='main-topic-link'>" + text + "</span>";
+            // TODO: Lots of code duplication here.
             option = $(document.createElement("a")).attr(
-                {'href': url});
+                {'href': url, 'role': 'menuituem'});
             option.html(text);
             list_item = $(document.createElement("li")).attr(
-                {'class': 'list_item'});
+                {'class': 'list_item', 'role' : 'presentation'});
             list_item.append(option);
+            var separator = $(document.createElement("li")).attr(
+                {'class': 'divider list_item', 'role' : 'presentation'});
+            list.prepend(separator);
             list.prepend(list_item);
             
             continue;
@@ -258,26 +250,17 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         
         bjc['url_list'].push(url);
         
-        // TODO: Refactor Button code out.
-        if (num === (bjc.step - 1)) {
-            backButton.attr( {'value': url} );
-            backButton.button( {disabled: false} );
-            b_backButton.attr( {'value': url} );
-            b_backButton.button( {disabled: false} );
-        } else if (num === bjc.step) {
+        // Make the current step have an arrow in the dropdown menu
+        if (num === bjc.step) {
             text = "<span class='current-step-link'>" + text + "</span>";
-        } else if (num === (bjc.step + 1)) {
-            forwardButton.attr( {'value': url} );
-            forwardButton.button( {disabled: false} );
-            b_forwardButton.attr( {'value': url} );
-            b_forwardButton.button( {disabled: false} );
         }
-        
-        option = $(document.createElement("a")).attr( {'href': url} );
+
+        option = $(document.createElement("a")).attr(
+            {'href': url, 'role' : 'menuitem'});
         option.html(text);
         
         list_item = $(document.createElement("li")).attr(
-            {'class': 'list_item'});
+            {'class': 'list_item', 'role' : 'presentation'});
         list_item.append(option);
         list.append(list_item);
         num += 1;
@@ -296,39 +279,44 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         list.prepend(list_item);
     }
 
+    // BUILD THE DROPDOWN MENU -- Uses Bootstrap 3
+    // TODO: Refactor to be in a function
+    bjc.setButtonURLs();
+    var dropwon, list_header, caret;
+    // Container div for the whole menu (title + links)
+    dropdown = $(document.createElement("div")).attr( {'class': 'dropdown inline btn'});
+    // Caret for the dropdown menu
+    caret = $(document.createElement("span")).attr( {'class': 'caret'} );
+    // build the list header
+    list_header = $(document.createElement("div")).attr(
+        {'class': 'btn btn-default dropdown-toggle',
+         'type' : 'button', 'data-toggle' : "dropdown" });
+    // Set Header Text and click function
     list_header.html("Click here to navigate...");
     list_header.click(bjc.navDropdownToggle);
+    list_header.append(caret);
+    // Insert dropdown items IN ORDER. 
+    dropdown.append(list_header);
+    dropdown.append(list);
+    console.log(dropdown);
+    console.log($('.top-nav .nav'));
+    console.log($('.top-nav .nav .backbutton'));
     
-    nav.append(backButton);
-    nav.append(list_header);
-    nav.append(list);
-    nav.append(forwardButton);
-    // var background = $(document.createElement("div")).attr(
-    //     {'class': 'nav_background'});
-    // nav.append(background);
+    // Insert into the top div only.
+    dropdown.insertAfter($('.top-nav .nav .backbutton'));
     
-    nav_div.append(nav);
-    
-    list_header.width(list.outerWidth());
-    list.slideToggle(0);    
+    // list_header.width(list.outerWidth());
+    // list.slideToggle(0);    
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
     }
-    
-    $(document.body).append('<div class="full-bottom-bar"></div>');
-    var b_nav = $(document.createElement("div")).addClass("bottom-nav");
-    b_nav.append(b_backButton);
-    b_nav.append(b_forwardButton);
-    // b_nav.append(background.clone());
-    $(".full-bottom-bar").append(b_nav);
 
     // FIXME -- RENAME, parameter check
-    bjc.moveAlonzo(bjc.url_list.length, bjc.step,
-           Number($(".full-bottom-bar").css("width").slice(0, -2)), 
-           Number(b_backButton.css("width").slice(0, -2)) +
-           Number(b_forwardButton.css("width").slice(0, -2)));
+    bjc.moveAlonzo(bjc.url_list.length, bjc.step);
+
 } // end processLinks()
+
 
 // Create an iframe when loading from an empty curriculum page
 // Used for embedded content. (Videos, books, etc)
@@ -345,20 +333,103 @@ bjc.addFrame = (function() {
     $("#cont").append(frame);
 });
 
-bjc.createNavButtons = (function() {
+
+bjc.createTitleNav = function() {
+    var topHTML = "<div class='top-nav'><div class='header'></div></div>";
+    var botHTML = "<div class='full-bottom-bar'></div>";
+    var navHTML = "<div class='nav btn-group'></div>";
+    var topNav = $('.top-nav');
+    var botNav = $('.full-bottom-bar');
+    var buttons = "<a class='btn btn-default backbutton arrow'>&larr;</a>" +
+                   "<a class='btn btn-default forwardbutton arrow'>&rarr;</a>";
     
-});
+    if (topNav.length === 0) {
+        $(document.body).prepend(topHTML);
+        topNav = $('.top-nav');
+        topNav.append(navHTML);
+    }
+    
+    // Don't add anything else if we don't know the step...
+    if (isNaN(bjc.step)) {
+        return;
+    }
 
-bjc.goBack = (function() {
+    if (botNav.length === 0) {
+        $(document.body).append(botHTML);
+        botNav = $('.full-bottom-bar');
+        botNav.append(navHTML);
+    }
+        
+    var forward = $('.forwardbutton'),
+        back   = $('.backbutton');
+        
+    var buttonsExist = forward.length === 2 && back.length === 2;
+    
+    if (!buttonsExist && !isNaN(bjc.step)) {
+        $('.nav').append(buttons);
+    }
+};
+
+// Create the Forward and Backward buttons, properly disabling them when needed
+bjc.setButtonURLs = function() {
+    // No dropdowns for places that don't have a step.
+    if (isNaN(bjc.step)) {
+        return;
+    }
+    
+    var forward = $('.forwardbutton'),
+        back    = $('.backbutton');
+        
+    var buttonsExist = forward.length === 2 && back.length === 2;
+    
+    if (!buttonsExist) {
+        bjc.createTitleNav();
+        // Grab the freshly minted buttons. MMM, tasty!
+        forward = $('.forwardbutton');
+        back    = $('.backbutton');
+    }
+    
+    // Disable the back button
+    if (bjc.step === 0) {
+        console.log('back')
+        back.each(function(i, item) {
+            console.log(item);
+            $(this).addClass('disabled');
+            $(this).attr('href', '#')
+        });
+    } else {
+        back.each(function(i, item) {
+            $(this).removeClass('disabled');
+            $(this).attr('href', bjc.url_list[bjc.step - 1])
+            $(this).click(bjc.goBack);
+        });
+    }
+    
+    // Disable the forward button
+    if (bjc.step >= bjc.url_list.length - 1) {
+        forward.each(function(i, item) {
+            $(this).addClass('disabled');
+            $(this).attr('href', '#')
+        });
+    } else {
+        forward.each(function(i, item) {
+            $(this).removeClass('disabled');
+            $(this).attr('href', bjc.url_list[bjc.step + 1])
+            $(this).click(bjc.goForward);
+        });
+    }
+};
+
+bjc.goBack = function() {
     window.location.href = bjc['url_list'][bjc.step - 1];
-});
+};
 
-bjc.goForward = (function() {
+bjc.goForward = function() {
     window.location.href = bjc['url_list'][bjc.step + 1];
-});
+};
 
 /* Hides the dropdown when a user clicks somewhere else. */
-bjc.navDropdownToggle = (function() {
+bjc.navDropdownToggle = function() {
     var list_header = $('.list_header'),
         close_state = "Click here to navigate...",
         open_state = "Click anywhere to close...";
@@ -368,7 +439,7 @@ bjc.navDropdownToggle = (function() {
         list_header.html(close_state);
     }
     $($(".steps")[0]).slideToggle(300);
-});
+};
 
 /** Positions an image along the bottom of the lab page, signifying progress.
  *  numSteps is the total number of steps in the lab
@@ -376,8 +447,10 @@ bjc.navDropdownToggle = (function() {
  *  totalWidth is the width of the entire bottom bar
  *  buttonWidth is the combined width of the two nav buttons.
  */
-bjc.moveAlonzo = (function(numSteps, currentStep, totalWidth, buttonWidth) {
-    var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2)),
+bjc.moveAlonzo = function(numSteps, currentStep ) {
+    var totalWidth = Number($(".full-bottom-bar").css("width").slice(0, -2)),
+        buttons = Number($('.full-bottom-bar .nav').css('width').slice(0, -2)),
+        width = totalWidth - buttons,
         result; // result stores left-offset of background image.
     
     if (currentStep < numSteps - 1) {
@@ -393,7 +466,7 @@ bjc.moveAlonzo = (function(numSteps, currentStep, totalWidth, buttonWidth) {
     
     result = result + " 2px";
     $(".full-bottom-bar").css("background-position", result);
-});
+};
 
 /* Create an event to collapse dropdown menu when mouse is clicked anywhere */
 $('html').click(function(event) {

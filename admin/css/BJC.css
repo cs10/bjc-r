@@ -20,6 +20,9 @@
 
 a:visited {color:#36BBCE;}
 
+html {
+  font-size: 1em; /* Fix for weird bootstrap */
+}
 body {
     font-family: "Lucida Grande", "Lucida San Unicode", "Gill Sans", Helvetica, Arial;
     font-size: 100%;
@@ -151,6 +154,10 @@ h4, h5, h6 {
   color: #000;
 }
 
+/* Physically disables clicking on a link which LOOKS disabled. */
+a[disabled] {
+  pointer-events: none;
+}
 /** PAGE HEADERS *************************************************************/
 
 .top-nav {
@@ -180,7 +187,7 @@ h4, h5, h6 {
     float: left;
     max-width: 65%;
     margin: 1% 3% 1% 5%;
-    /*vertical-align: middle;*/
+    vertical-align: middle;
     text-align: left;
     letter-spacing: 1.2px;
     word-wrap: break-word;
@@ -189,7 +196,7 @@ h4, h5, h6 {
 /* dropdown menu on curriculum / topic pages */
 .nav {
     float: right;
-    margin: 1% 5% 1% 2%;
+    margin: .1% 5% .1% 2%;
     vertical-align: middle;
     /*max-width: 50%;*/
     min-width: 300px;
@@ -200,58 +207,21 @@ h4, h5, h6 {
 /* END PAGE HEADER SECTION ***************************************************/
 
 /* PAGE NAV SECTION **********************************************************/
-.steps {
-    padding: 0;
-    left: 64px;
-    line-height: 1.2em;
-    position: absolute;
-    min-width: 250px;
-    z-index: 9999; /* if dropdown is above Forward Button (small screens) */
+.inline {
+  display: inline;
 }
-
 .list_item {
     font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .list_header {
     margin: 2px 10px 0 10px;
-    font-size:10pt;
-    display: inline-block;
+    font-size: 10pt;
+    display: inline;
     font-weight: bold;
-}
-
-.bottom-nav {
-    float: right;
-    right: 10px;
-    min-width: 100px;
-    position:relative;
-    z-index: 9998;
-    vertical-align: middle;
-    margin: 0;
-    bottom: 0;
-}
-
-.nav_background {
-    visibility: hidden;   /* nate screwed this up, so then he hid it, lol */
-    border:solid;
-    border-radius:5px;
-    background-color:black;
-    z-index:-8;
-    position: absolute;
-    top:  0;
-    left:  0;
-    width: 100%;
-    height: 20px;
-}
-
-.backbutton, .forwardbutton {
-    font-size: .6em;
-    border: 1px solid #AAA;
-    border-radius: 5px;
-    vertical-align: middle;
-    bottom: 0;
-    margin: 4px;
-    padding: 4px;
 }
 
 .full-bottom-bar {
@@ -266,6 +236,24 @@ h4, h5, h6 {
     /*position: relative;*/
     width: 90%;
     margin: 1em 5%;
+}
+
+/*.backbutton, .forwardbutton {
+    font-size: .6em;
+    border: 1px solid #AAA;
+    border-radius: 5px;
+    vertical-align: middle;
+    bottom: 0;
+    margin: 4px;
+    padding: 4px;
+}*/
+
+.arrow { /* For Buttons with arrows instead of words. */
+  font-weight: 900;
+/*  font-size: 1em;
+  border-radius: 1.5em;
+*/  margin: 1px;
+  padding: 1px;
 }
 /* END PAGE NAV SECTION ******************************************************/
 
