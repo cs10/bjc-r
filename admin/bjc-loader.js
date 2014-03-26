@@ -37,7 +37,7 @@ return (( typeof jQuery == 'function') &&
 ////////// stage 1
 // all these scripts depend on jquery, loaded in stage 0
 // all quiz item types should get loaded here
-bjc.paths.scripts[1] = ["/admin/jquery-ui.1.10.2.min.js", "/admin/quiz/multiplechoice.js", "/admin/quiz/inline-multiplechoice.js"];
+bjc.paths.scripts[1] = ["/admin/jquery-ui.1.10.2.min.js", "/admin/quiz/multiplechoice.js"];
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
