@@ -208,8 +208,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         if (line.indexOf("title:") !== -1) {
             /* Create a link back to the main topic. */
             url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
-            text = line.slice(line.indexOf(":") + 1);
             
+            text = line.slice(line.indexOf(":") + 1);
             text = truncate($.trim(text), 35);
             
             text = "<span class='main-topic-link'>" + text + "</span>";
@@ -226,8 +226,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         
         // Line contains a link
         if (line.indexOf("[") !== -1) {
+            // Grab the link title between : and [ 
             text = line.slice(line.indexOf(":") + 1, line.indexOf("["));
-            
             text = truncate($.trim(text), 35);
             
             url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
@@ -249,22 +249,22 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             
             // TODO: Refactor Button code out.
             if (num === (bjc.step - 1)) {
-                backButton.attr({'value': url});
-                backButton.button({disabled: false});
-                b_backButton.attr({'value': url});
-                b_backButton.button({disabled: false});
-            } else if (num == bjc.step) {
+                backButton.attr( {'value': url} );
+                backButton.button( {disabled: false} );
+                b_backButton.attr( {'value': url} );
+                b_backButton.button( {disabled: false} );
+            } else if (num === bjc.step) {
                 text = "<span class='current-step-link'>" + text + "</span>";
                 // FIXME -- why does this only work here?
                 list_header.html("Click here to navigate...");
-            } else if (num == (bjc.step + 1)) {
-                forwardButton.attr({'value': url});
-                forwardButton.button({disabled: false});
-                b_forwardButton.attr({'value': url});
-                b_forwardButton.button({disabled: false});
+            } else if (num === (bjc.step + 1)) {
+                forwardButton.attr( {'value': url} );
+                forwardButton.button( {disabled: false} );
+                b_forwardButton.attr( {'value': url} );
+                b_forwardButton.button( {disabled: false} );
             }
             
-            option = $(document.createElement("a")).attr({'href': url});
+            option = $(document.createElement("a")).attr( {'href': url} );
             option.html(text);
             
             list_item = $(document.createElement("li")).attr(
