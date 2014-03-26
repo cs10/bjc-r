@@ -202,6 +202,7 @@ h4, h5, h6 {
 /* PAGE NAV SECTION **********************************************************/
 .steps {
     padding: 0;
+    left: 64px;
     line-height: 1.2em;
     position: absolute;
     min-width: 250px;
@@ -253,29 +254,18 @@ h4, h5, h6 {
     padding: 4px;
 }
 
-#full-bottom-bar {
+.full-bottom-bar {
     /*background-color: #CCC;*/
-    background: #FFF;
-    background: -moz-linear-gradient(top,  #FFF 0%, #F8F8F8 47%,  #F0F0F0 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(47%, #F8F8F8), color-stop(100%, #F0F0F0)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Chrome10+, Safari5.1+ */
-    background: -o-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* IE10+ */
-    background: linear-gradient(to bottom, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0); /* IE6-9 */
+    background: #CCC;
     background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
     background-repeat: no-repeat;
     background-position: 1px 2px;
     border-radius: 20px;
     background-size: 20px;
     height: 25px;
-    position:relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index:9998;
-    /*margin-top:30px;*/
-    clear: both;
+    /*position: relative;*/
+    width: 90%;
+    margin: 1em 5%;
 }
 /* END PAGE NAV SECTION ******************************************************/
 

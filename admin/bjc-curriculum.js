@@ -162,6 +162,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     } // end for loop
     
     // TODO: Refactor multiple vars...
+    var textLength = 35;
     var course = getParameterByName("course");
     var nav_div = $('.' + TOPNAV);
     var lines = data.split("\n");
@@ -191,14 +192,14 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     var option;
     var url = document.URL;
     var list_item;
-    var hidden;
+    // var hidden;
     var list_header = $(document.createElement("div")).attr(
         {'class': 'list_header'});
     list_header.menu();
     
     for (var i = 0; i < lines.length; i++) {
         line = lines[i];
-        line = bjc.stripComments(line);
+        line = bjc.stripComments($.trim(line));
         
         // TODO: Refactor
         var cond = line.length <= 1 || (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) !== -1);
@@ -212,7 +213,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             url = bjc.rootURL + "/topic/topic.html?topic=" + bjc.file + hiddenString + "&course=" + course;
             
             text = line.slice(line.indexOf(":") + 1);
-            text = truncate($.trim(text), 35);
+            text = bjc.truncate($.trim(text), textLength);
             
             text = "<span class='main-topic-link'>" + text + "</span>";
             option = $(document.createElement("a")).attr(
@@ -226,54 +227,60 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             continue;
         }
         
-        // Line contains a link
-        if (line.indexOf("[") !== -1) {
-            // Grab the link title between : and [ 
-            text = line.slice(line.indexOf(":") + 1, line.indexOf("["));
-            text = truncate($.trim(text), 35);
-            
-            url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
-            if (url.indexOf("http") !== -1) {
-                url = bjc.rootURL + "/admin/empty-curriculum-page.html" +
-                     "?" + "src=" +  url + "&" + "topic=" + bjc.file +
-                     "&step=" + num + "&title=" + text + hiddenString +
-                     "&course=" + course;
-            } else {
-                if (url.indexOf(bjc.rootURL) === -1 && 
-                    url.indexOf("..") === -1) {
-                    url = bjc.rootURL + (url[0] === "/" ? "" : "/") + url;
-                }
-                url += url.indexOf("?") !== -1 ? "&" : "?" ;
-                url += "topic=" + bjc.file + "&step=" + num + hiddenString;
-                url += "&course=" + course;
-            }
-            bjc['url_list'].push(url);
-            
-            // TODO: Refactor Button code out.
-            if (num === (bjc.step - 1)) {
-                backButton.attr( {'value': url} );
-                backButton.button( {disabled: false} );
-                b_backButton.attr( {'value': url} );
-                b_backButton.button( {disabled: false} );
-            } else if (num === bjc.step) {
-                text = "<span class='current-step-link'>" + text + "</span>";
-                // FIXME -- why does this only work here?
-            } else if (num === (bjc.step + 1)) {
-                forwardButton.attr( {'value': url} );
-                forwardButton.button( {disabled: false} );
-                b_forwardButton.attr( {'value': url} );
-                b_forwardButton.button( {disabled: false} );
-            }
-            
-            option = $(document.createElement("a")).attr( {'href': url} );
-            option.html(text);
-            
-            list_item = $(document.createElement("li")).attr(
-                {'class': 'list_item'});
-            list_item.append(option);
-            list.append(list_item);
-            num += 1;
+        // TODO: Before checking for links in a title.
+        // If we don't have a link, skip this line.
+        var hasLink = line.indexOf("[") !== -1;
+        if (!hasLink) {
+            continue; 
         }
+        
+        // Grab the link title between : and [ 
+        text = line.slice(line.indexOf(":") + 1, line.indexOf("["));
+        text = bjc.truncate($.trim(text), textLength);
+        // Grab the link betweem [ and ]
+        url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
+        
+        // Content References an external resource
+        if (url.indexOf("http") !== -1) {
+            url = bjc.rootURL + "/admin/empty-curriculum-page.html" +
+                 "?" + "src=" +  url + "&" + "topic=" + bjc.file +
+                 "&step=" + num + "&title=" + text + hiddenString +
+                 "&course=" + course;
+        } else {
+            if (url.indexOf(bjc.rootURL) === -1 && 
+                url.indexOf("..") === -1) {
+                url = bjc.rootURL + (url[0] === "/" ? "" : "/") + url;
+            }
+            url += url.indexOf("?") !== -1 ? "&" : "?" ;
+            url += "topic=" + bjc.file + "&step=" + num + hiddenString;
+            url += "&course=" + course;
+        }
+        
+        bjc['url_list'].push(url);
+        
+        // TODO: Refactor Button code out.
+        if (num === (bjc.step - 1)) {
+            backButton.attr( {'value': url} );
+            backButton.button( {disabled: false} );
+            b_backButton.attr( {'value': url} );
+            b_backButton.button( {disabled: false} );
+        } else if (num === bjc.step) {
+            text = "<span class='current-step-link'>" + text + "</span>";
+        } else if (num === (bjc.step + 1)) {
+            forwardButton.attr( {'value': url} );
+            forwardButton.button( {disabled: false} );
+            b_forwardButton.attr( {'value': url} );
+            b_forwardButton.button( {disabled: false} );
+        }
+        
+        option = $(document.createElement("a")).attr( {'href': url} );
+        option.html(text);
+        
+        list_item = $(document.createElement("li")).attr(
+            {'class': 'list_item'});
+        list_item.append(option);
+        list.append(list_item);
+        num += 1;
     } // end for loop
     
     var course_link = getParameterByName("course");
@@ -291,6 +298,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 
     list_header.html("Click here to navigate...");
     list_header.click(bjc.navDropdownToggle);
+    
     nav.append(backButton);
     nav.append(list_header);
     nav.append(list);
@@ -300,63 +308,54 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     // nav.append(background);
     
     nav_div.append(nav);
+    
     list_header.width(list.outerWidth());
     list.slideToggle(0);    
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
-    } else {
-        $("#full").append('<div id="full-bottom-bar"></div>');
-        var b_nav = $(document.createElement("div")).addClass("bottom-nav");
-        b_nav.append(b_backButton);
-        b_nav.append(b_forwardButton);
-        // b_nav.append(background.clone());
-        $("#full-bottom-bar").append(b_nav);
     }
+    
+    $(document.body).append('<div class="full-bottom-bar"></div>');
+    var b_nav = $(document.createElement("div")).addClass("bottom-nav");
+    b_nav.append(b_backButton);
+    b_nav.append(b_forwardButton);
+    // b_nav.append(background.clone());
+    $(".full-bottom-bar").append(b_nav);
 
     // FIXME -- RENAME, parameter check
     bjc.moveAlonzo(bjc.url_list.length, bjc.step,
-           Number($("#full-bottom-bar").css("width").slice(0, -2)), 
+           Number($(".full-bottom-bar").css("width").slice(0, -2)), 
            Number(b_backButton.css("width").slice(0, -2)) +
            Number(b_forwardButton.css("width").slice(0, -2)));
 } // end processLinks()
 
 // Create an iframe when loading from an empty curriculum page
 // Used for embedded content. (Videos, books, etc)
-bjc.addFrame = function() {
+bjc.addFrame = (function() {
     var source = getParameterByName("src");
+    
     $("#full").append('<a href=' + source + 
         ' target="_">Open page in new window</a><br /><br />');
     $("#full").append('<div id="cont"></div>');
+    
     var frame = $(document.createElement("iframe")).attr(
         {'src': source, 'class': 'step_frame'} );
+    
     $("#cont").append(frame);
-}
+});
 
-bjc.goBack = function() {
+bjc.createNavButtons = (function() {
+    
+});
+
+bjc.goBack = (function() {
     window.location.href = bjc['url_list'][bjc.step - 1];
-}
+});
 
-bjc.goForward = function() {
+bjc.goForward = (function() {
     window.location.href = bjc['url_list'][bjc.step + 1];
-}
-
-/** Truncate a STR to an output of N chars.
- *  N does NOT include any HTML characters in the string.
- */
-function truncate(str, n) {
-    // Ensure string is 'proper' HTML for .text() call.
-    var clean = $('<p>' + str + '</p>').text();
-    
-    if (clean.length > n) {
-        // TODO: Shorten string to end on whole words?
-        // TODO: Be smarter about stripping from HTML content??
-        // TODO: Make … a unicode char?
-        return clean.slice(0, n - 1) + '…';
-    }
-    
-    return str; // return the HTML content if possible.
-}
+});
 
 /* Hides the dropdown when a user clicks somewhere else. */
 bjc.navDropdownToggle = (function() {
@@ -377,23 +376,24 @@ bjc.navDropdownToggle = (function() {
  *  totalWidth is the width of the entire bottom bar
  *  buttonWidth is the combined width of the two nav buttons.
  */
-bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
+bjc.moveAlonzo = (function(numSteps, currentStep, totalWidth, buttonWidth) {
     var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2)),
         result; // result stores left-offset of background image.
     
     if (currentStep < numSteps - 1) {
         width *= .98;
-        result = Math.round((currentStep * (width / (numSteps - 1)) + 1) / totalWidth * 100) + "%";
+        result = (currentStep * (width / (numSteps - 1)) + 1) / totalWidth;
+        result = (result * 100) + "%";
     } else {
-        var picWidth = $("#full-bottom-bar").css("background-size");
+        var picWidth = $(".full-bottom-bar").css("background-size");
         picWidth = picWidth.slice(0, picWidth.indexOf("px"));
         // the 4 is just to add a bit of space
         result = width - Number(picWidth) - 4 + "px"; 
     }
     
     result = result + " 2px";
-    $("#full-bottom-bar").css("background-position", result)
-}
+    $(".full-bottom-bar").css("background-position", result);
+});
 
 /* Create an event to collapse dropdown menu when mouse is clicked anywhere */
 $('html').click(function(event) {
@@ -402,4 +402,5 @@ $('html').click(function(event) {
     }
 });
 
+// Setup the nav and parse the topic file. 
 $(document).ready(bjc.secondarySetUp);
