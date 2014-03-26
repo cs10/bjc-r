@@ -38,17 +38,19 @@ bjc.secondarySetUp = function() {
 
     // create Title tag, yo
     if (getParameterByName("title") != "") {
-        document.title = getParameterByName("title");
+        document.title = decodeURIComponent(getParameterByName("title"));
     }
     
     var titleText = document.title;
     var nav_div = $('.' + TOPNAV);
     if (titleText && $(".header").length == 0) {
         $(makeDiv(HEADER)).prependTo(nav_div).html(titleText);
-        if (getParameterByName("title") != "") {
-            $(".header").html(getParameterByName("title"));
-        }
+        // I don't think this does anything. If nothing breaks I'll remove it.
+        // if (getParameterByName("title") != "") {
+        //     $(".header").html(titleText);
+        // }
     }
+    
     
     // FIXME -- should just be in css...?
     document.body.style.marginTop = "0";
@@ -256,7 +258,6 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             } else if (num === bjc.step) {
                 text = "<span class='current-step-link'>" + text + "</span>";
                 // FIXME -- why does this only work here?
-                list_header.html("Click here to navigate...");
             } else if (num === (bjc.step + 1)) {
                 forwardButton.attr( {'value': url} );
                 forwardButton.button( {disabled: false} );
@@ -288,7 +289,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         list.prepend(list_item);
     }
 
-    list_header.click(navDropdownToggle);
+    list_header.html("Click here to navigate...");
+    list_header.click(bjc.navDropdownToggle);
     nav.append(backButton);
     nav.append(list_header);
     nav.append(list);
@@ -302,7 +304,6 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     list.slideToggle(0);    
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
-        // DO SOMETHING when loading from an empty curriculum page
         bjc.addFrame();
     } else {
         $("#full").append('<div id="full-bottom-bar"></div>');
@@ -318,15 +319,17 @@ bjc.processLinks = function(data, ignored1, ignored2) {
            Number($("#full-bottom-bar").css("width").slice(0, -2)), 
            Number(b_backButton.css("width").slice(0, -2)) +
            Number(b_forwardButton.css("width").slice(0, -2)));
-
 } // end processLinks()
 
-
+// Create an iframe when loading from an empty curriculum page
+// Used for embedded content. (Videos, books, etc)
 bjc.addFrame = function() {
     var source = getParameterByName("src");
-    $("#full").append('<a href=' + source + ' target="_">Open page in new window</a><br><br>');
+    $("#full").append('<a href=' + source + 
+        ' target="_">Open page in new window</a><br /><br />');
     $("#full").append('<div id="cont"></div>');
-    var frame = $(document.createElement("iframe")).attr({'src': source, 'class': 'step_frame'});
+    var frame = $(document.createElement("iframe")).attr(
+        {'src': source, 'class': 'step_frame'} );
     $("#cont").append(frame);
 }
 
@@ -356,7 +359,7 @@ function truncate(str, n) {
 }
 
 /* Hides the dropdown when a user clicks somewhere else. */
-function navDropdownToggle() {
+bjc.navDropdownToggle = (function() {
     var list_header = $('.list_header'),
         close_state = "Click here to navigate...",
         open_state = "Click anywhere to close...";
@@ -366,12 +369,6 @@ function navDropdownToggle() {
         list_header.html(close_state);
     }
     $($(".steps")[0]).slideToggle(300);
-}
-
-$('html').click(function(event) {
-    if (!$(event.target).is( $('.list_header')[0] )) {
-        $( $(".steps")[0] ).slideUp(300);
-    }
 });
 
 /** Positions an image along the bottom of the lab page, signifying progress.
@@ -382,7 +379,7 @@ $('html').click(function(event) {
  */
 bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
     var width = totalWidth - Number($('.bottom-nav').css('width').slice(0, -2)),
-        result;
+        result; // result stores left-offset of background image.
     
     if (currentStep < numSteps - 1) {
         width *= .98;
@@ -398,5 +395,11 @@ bjc.moveAlonzo = function(numSteps, currentStep, totalWidth, buttonWidth) {
     $("#full-bottom-bar").css("background-position", result)
 }
 
+/* Create an event to collapse dropdown menu when mouse is clicked anywhere */
+$('html').click(function(event) {
+    if (!$(event.target).is( $('.list_header')[0] )) {
+        $( $(".steps")[0] ).slideUp(300);
+    }
+});
 
 $(document).ready(bjc.secondarySetUp);
