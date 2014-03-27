@@ -131,19 +131,19 @@ bjc.secondarySetUp = function() {
  *  FIXME: This should share code with BJC topic!
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
-    // FIXME -- why do this again???
-    var temp = getParameterByName("topic");
-    if (typeof temp == "object") {
-        bjc['file'] = temp[1];
-    } else {
-        bjc['file'] = temp;
-    }
-    
+    // This is handled above...
+    // var temp = getParameterByName("topic");
+    // if (typeof temp == "object") {
+    //     bjc['file'] = temp[1];
+    // } else {
+    //     bjc['file'] = temp;
+    // }
+
     var hidden = [];
     var hiddenString = "";
     
     // URL Options
-    temp = window.location.search.substring(1).split("&");
+    var temp = window.location.search.substring(1).split("&");
     
     for (var i = 0; i < temp.length; i++) {
         var param = temp[i].split("="); // param = [OPTION, VALUE]
@@ -153,46 +153,25 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         }
     } // end for loop
     
-    /*
-<div class="dropdown">
-  <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Another action</a></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Something else here</a></li>
-    <li role="presentation" class="divider"></li>
-    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Separated link</a></li>
-  </ul>
-</div>
-    
-    */
-    
     // TODO: Refactor multiple vars...
     var textLength = 35;
     var course = getParameterByName("course");
     var lines = data.split("\n");
-    var line;
-    var text;
     var num = 0;
+    var url = document.URL;
     var list = $(document.createElement("ul")).attr(
         {'class': 'dropdown-menu dropdown-menu-right', 
-         'role' : "menu",  'aria-labelledby' : "dropdownMenu1"});
+         'role' : "menu",  'aria-labelledby' : "Topic-Navigation-Meu"});
     var option;
-    var url = document.URL;
+    var text;
     var list_item;
     
     for (var i = 0; i < lines.length; i++) {
-        line = lines[i];
-        line = bjc.stripComments($.trim(line));
+        var line = bjc.stripComments($.trim(lines[i]));
         
-        // FIXME: Refactor
-        var cond = line.length <= 1 || (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) !== -1);
-        if (cond) {
-            continue;
-        }
+        // Skip is this line is hidden in URL params.
+        var used = hidden.indexOf(line.slice(0, line.indexOf(":"))) === -1;
+        if (!used) continue;
         
         // Line is a title.
         if (line.indexOf("title:") !== -1) {
@@ -206,7 +185,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             text = "<span class='main-topic-link'>" + text + "</span>";
             // TODO: Lots of code duplication here.
             option = $(document.createElement("a")).attr(
-                {'href': url, 'role': 'menuituem'});
+                {'href': url, 'role': 'presentation'});
             option.html(text);
             list_item = $(document.createElement("li")).attr(
                 {'class': 'list_item', 'role' : 'presentation'});
@@ -221,7 +200,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         
         // TODO: Before checking for links in a title.
         // If we don't have a link, skip this line.
-        var hasLink = line.indexOf("[") !== -1;
+        var hasLink = line.indexOf("[") !== -1 && line.indexOf("]") !== -1;
         if (!hasLink) {
             continue; 
         }
@@ -266,16 +245,17 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         num += 1;
     } // end for loop
     
-    var course_link = getParameterByName("course");
-    if (course_link !== "") {
-        if (course_link.indexOf("http://") === -1) {
-            course_link = bjc.rootURL + "/course/" + course_link;
+    if (course !== "") {
+        if (course.indexOf("http://") === -1) {
+            course = bjc.rootURL + "/course/" + course;
         }
+        var course_text = $(document.createElement('span')).attr(
+            {'class' : 'course_link_list'});
+        course_text.html("Go to Main Course Page");
         list_item = $(document.createElement("li")).attr(
-            {'class': 'list_item'});
+            {'class': 'list_item', 'role' : 'presentation'});
         list_item.append($(document.createElement("a")).attr(
-            {"class": "course_link", "href": course_link} ).html(
-            "Go to Main Course Page"));
+            {"href": course}).html(course_text));
         list.prepend(list_item);
     }
 
@@ -284,7 +264,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     bjc.setButtonURLs();
     var dropwon, list_header, caret;
     // Container div for the whole menu (title + links)
-    dropdown = $(document.createElement("div")).attr( {'class': 'dropdown inline btn'});
+    dropdown = $(document.createElement("div")).attr(
+        {'class': 'dropdown inline'});
     // Caret for the dropdown menu
     caret = $(document.createElement("span")).attr( {'class': 'caret'} );
     // build the list header
@@ -298,15 +279,11 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     // Insert dropdown items IN ORDER. 
     dropdown.append(list_header);
     dropdown.append(list);
-    console.log(dropdown);
-    console.log($('.top-nav .nav'));
-    console.log($('.top-nav .nav .backbutton'));
     
     // Insert into the top div only.
     dropdown.insertAfter($('.top-nav .nav .backbutton'));
     
-    // list_header.width(list.outerWidth());
-    // list.slideToggle(0);    
+    list_header.width(list.outerWidth());
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
