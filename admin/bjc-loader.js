@@ -6,7 +6,7 @@
 *   topic/topic.html
 *   quiz/view.html
 *
-* Also, the bjc object and bjc.rootURL is made in bjc-main.js as well, if this file isn't used.
+*  Also, the bjc object and bjc.rootURL is made in bjc-library.js as well
 *
 */
 
@@ -20,7 +20,7 @@ bjc.loaded = {};  // keys are true if that file is loaded.
 bjc.paths = {};
 bjc.paths.links = [];
 bjc.paths.links.push("/admin/css/bootstrap.min.css"); // FIXME -- CDN
-// bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
+bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
 bjc.paths.links.push("/admin/css/from-mvle.css");
 bjc.paths.links.push("/admin/css/BJC.css");
 
@@ -49,6 +49,7 @@ bjc.paths.scripts[1] = [];
 bjc.paths.scripts[1].push("/admin/bjc-curriculum.js");  
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
 bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
+//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js
 bjc.paths.scripts[1].push("/admin/bjc-course.js");
 
 bjc.loaded['multiplechoice'] = false;
@@ -86,6 +87,11 @@ bjc.initialSetUp = (function() {
     // load scripts, starting at stage 0
     loadScripts(0);
 
+    // Load Google Analytics
+    if (bjc.loaded['bjc-library']) {
+        bjc.GA();
+    }
+    
     function getTag(name, src, type) {
 		var tag;
 		tag = document.createElement(name);

@@ -1,4 +1,6 @@
-
+/* BJC-GLOSSARY
+ * Depends on jQuery, bjc-library
+ */
 
 var termParam = getParameterByName("term");
 var termWord = "";
@@ -8,23 +10,23 @@ if (termParam !== "") {
 	termWord = filename2term(termParam);
 	
 	$.ajax({
-		url:	bjc.rootURL + "/glossary/" + file,
-		type:	"GET",
-		dataType:	"text",
-		data:	myData,
-		cache:	true,
-		success:	renderTerm,
-		error:	error_function
+		url: bjc.rootURL + "/glossary/" + file,
+		type: "GET",
+		dataType: "text",
+		data: myData,
+		cache: true,
+		success: renderTerm,
+		error: error_function
 		});
 } else {
 	$.ajax({
-		url:	bjc.rootURL + "/glossary/",
-		type:	"GET",
-		dataType:	"text",
-		data:	myData,
-		cache:	true,
-		success:	renderIndex,
-		error:	error_function
+		url: bjc.rootURL + "/glossary/",
+		type: "GET",
+		dataType: "text",
+		data: myData,
+		cache: true,
+		success: renderIndex,
+		error: error_function
 		});
 }
 

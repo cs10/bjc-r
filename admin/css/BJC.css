@@ -216,6 +216,7 @@ a[disabled] {
     max-width: 50%;
     min-width: 350px;
     z-index: 9999;
+    height: auto;
 }
 
 .header, .nav-btns {
@@ -223,7 +224,8 @@ a[disabled] {
   font-weight: 900;
   position: relative;
   margin: 14pt 5% 1% 2%;
-  vertical-align: middle;
+  padding: 0;
+  vertical-align: top;
 }
 /** Buttons at the bottom right */
 .bottom-nav {
@@ -240,8 +242,16 @@ a[disabled] {
 }
 .arrow { /* For Buttons with arrows instead of words. */
     border-radius: .5em;
-    border-color: #888;
+    font-variant: small-caps;
 }
+/* Add arrows to each button */
+/*.backbutton:before {
+    content: '\2190 ';
+}
+.forwardbutton:after {
+    content: ' \2192';
+}*/
+
 /* END NAV SECTION ***********************************************************/
 
 /* PAGE DROPDOWN SECTION ******************************************************/
@@ -251,7 +261,6 @@ a[disabled] {
 }
 .dropdown-menu {
     margin-top: 5px; /* should be equal to padding on list_header */
-    border-color: #888;
 }
 .list_item {
     font-size: 10pt;
@@ -261,17 +270,20 @@ a[disabled] {
 }
 
 .list_header, .arrow {
+    vertical-align: top;
     line-height: 1em;
     margin: 0;
     padding: 5px;
     text-align: left;
     font-size: 10pt;
-    display:  inline;
+    display: inline;
     font-weight: 900;
+    border-color: #888;
+    font: 'Helvetica';
 }
 
 .list_header {
-    border-radius: 0;
+    border-radius: 0; /* No round coners on dropdowns between buttons */
 }
 
 /* TODO: Create a real .list-bg class */

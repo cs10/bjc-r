@@ -267,10 +267,6 @@ bjc.setupTitle = function() {
     var titleText = document.title;
     if (titleText) { // && $(".header").length === 0 // this shouldn't happen.
         $('.header').html(titleText);
-        // I don't think this does anything. If nothing breaks I'll remove it.
-        // if (getParameterByName("title") != "") {
-        //     $(".header").html(titleText);
-        // }
     }
     
     // FIXME -- should just be in css...?
@@ -289,8 +285,8 @@ bjc.createTitleNav = function() {
         navHTML = "<div class='nav-btns btn-group'></div>",
         topNav = $('.top-nav'),
         botNav = $('.full-bottom-bar'),
-        buttons = "<a class='btn btn-default backbutton arrow'>&larr;</a>" +
-                   "<a class='btn btn-default forwardbutton arrow'>&rarr;</a>";
+        buttons = "<a class='btn btn-default backbutton arrow'>back</a>" +
+                   "<a class='btn btn-default forwardbutton arrow'>forward</a>";
     
     if (topNav.length === 0) {
         $(document.body).prepend(topHTML);

@@ -121,12 +121,16 @@ bjc.GAfun =  function(i,s,o,g,r,a,m) {
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   };
 
+// Load Google Analytics, but check if the script is on the page.
 bjc.GA = function() {
-        bjc.GAfun(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+       if (typeof ga !== 'undefined') {
+           bjc.GAfun(window,document,'script',
+           '//www.google-analytics.com/analytics.js','ga');
+           // GA Function Calls -- these do the real work!: 
+           ga('create', bjc.GACode, bjc.GAUrl);
+           ga('send', 'pageview');
+       }
     }
-// GA Function Calls -- these do the real work!: 
-// ga('create', bjc.GACode, bjc.GAUrl);
-// ga('send', 'pageview');
 
 /** Truncate a STR to an output of N chars.
  *  N does NOT include any HTML characters in the string.
