@@ -192,10 +192,10 @@ a[disabled] {
     background: #CCC;
     background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
     background-repeat: no-repeat;
-    background-position: 1px 2px;
+    background-position: 2px 2px;
     border-radius: 20px;
-    background-size: 20px;
-    height: 30px;
+    background-size: 26px;
+    height: 2em;
     /*position: relative;*/
     width: 90%;
     margin: 1em 5%;
@@ -217,7 +217,7 @@ a[disabled] {
 }
 
 /* Contains Nav Buttons and Dropdown Menu */
-.nav {
+.nav-btns {
     float: right;
     margin: 1% 5% 1% 2%;
     vertical-align: middle;
@@ -229,8 +229,12 @@ a[disabled] {
     font-weight: 900;
 }
 
+/** Buttons at the bottom right */
 .bottom-nav {
-
+    float: right;
+    margin: 4px;
+    vertical-align: middle;
+    text-align: right;
 }
 
 /* BUTTON CLASSES */
@@ -238,9 +242,15 @@ a[disabled] {
 .btn-group > .btn {
     float: none;
 }
+.arrow { /* For Buttons with arrows instead of words. */
+    border-radius: .5em;
+}
 /* END NAV SECTION ***********************************************************/
 
 /* PAGE DROPDOWN SECTION ******************************************************/
+.dropdown-menu {
+    margin-top: 5; /* should be equal to padding on list_header */
+}
 .list_item {
     font-size: 10pt;
     padding: 0;
@@ -250,6 +260,7 @@ a[disabled] {
 
 .list_header, .arrow {
     line-height: 1em;
+    margin: 0;
     padding: 5px;
     text-align: left;
     font-size: 10pt;
@@ -259,10 +270,6 @@ a[disabled] {
 
 .list_header {
     border-radius: 0;
-}
-
-.arrow { /* For Buttons with arrows instead of words. */
-    border-radius: .5em;
 }
 
 .course_link_list {
@@ -280,8 +287,8 @@ a[disabled] {
     background-image: url("../img/web/globe.png"); /* FIXME */
     background-size:contain;
     background-repeat: no-repeat;
-/*      padding-left: 25px;
-*/}
+    padding-left: 25px;
+}
 .main-topic-link {
       font-size: 100%;
       text-decoration: underline;

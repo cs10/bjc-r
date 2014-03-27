@@ -267,14 +267,14 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     dropdown = $(document.createElement("div")).attr(
         {'class': 'dropdown inline'});
     // Caret for the dropdown menu
-    caret = $(document.createElement("span")).attr( {'class': 'caret'} );
+    caret = $(document.createElement("span")).attr({'class': 'caret'});
+    nav_text = $(document.createElement('span')).html('Click here to navigate...');
     // build the list header
     list_header = $(document.createElement("div")).attr(
         {'class': 'btn btn-default dropdown-toggle list_header',
          'type' : 'button', 'data-toggle' : "dropdown" });
-    dropdown.width(list.width());
-    // Set Header Text and click function
-    list_header.html("Click here to navigate...   ");
+    list_header.append(nav_text);
+    $('.list_header').width(262);
     // list_header.click(bjc.navDropdownToggle);
     list_header.append(caret);
     // Insert dropdown items IN ORDER. 
@@ -282,7 +282,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     dropdown.append(list);
     
     // Insert into the top div only.
-    dropdown.insertAfter($('.top-nav .nav .backbutton'));
+    dropdown.insertAfter($('.top-nav .nav-btns .backbutton'));
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
@@ -312,8 +312,9 @@ bjc.addFrame = (function() {
 
 bjc.createTitleNav = function() {
     var topHTML = "<div class='top-nav'><div class='header'></div></div>";
-    var botHTML = "<div class='full-bottom-bar'></div>";
-    var navHTML = "<div class='nav btn-group'></div>";
+    var botHTML = "<div class='full-bottom-bar'><div class='bottom-nav" +
+                      " btn-group'></div></div>";
+    var navHTML = "<div class='nav-btns btn-group'></div>";
     var topNav = $('.top-nav');
     var botNav = $('.full-bottom-bar');
     var buttons = "<a class='btn btn-default backbutton arrow'>&larr;</a>" +
@@ -333,7 +334,7 @@ bjc.createTitleNav = function() {
     if (botNav.length === 0) {
         $(document.body).append(botHTML);
         botNav = $('.full-bottom-bar');
-        botNav.append(navHTML);
+        //botNav.append(navHTML);
     }
         
     var forward = $('.forwardbutton'),
@@ -342,7 +343,8 @@ bjc.createTitleNav = function() {
     var buttonsExist = forward.length === 2 && back.length === 2;
     
     if (!buttonsExist && !isNaN(bjc.step)) {
-        $('.nav').append(buttons);
+        $('.nav-btns').append(buttons);
+        $('.bottom-nav').append(buttons);
     }
 };
 
@@ -427,8 +429,8 @@ $('html').click(function(event) {
  *  buttonWidth is the combined width of the two nav buttons.
  */
 bjc.moveAlonzo = function(numSteps, currentStep ) {
-    var totalWidth = Number($(".full-bottom-bar").css("width").slice(0, -2)),
-        buttons = Number($('.full-bottom-bar .nav').css('width').slice(0, -2)),
+    var totalWidth = Number($(".full-bottom-bar").width()),
+        buttons = Number($('.bottom-nav').width()),
         width = totalWidth - buttons,
         result; // result stores left-offset of background image.
     
