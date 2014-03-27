@@ -23,7 +23,8 @@ bjc.paths.links = [];
 //bjc.paths.links.push('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
 // bjc.paths.links.push('/admin/css/normalize.css');
 // bjc.paths.links.push('/admin/css/jquery-ui-1.10.2-smoothness.css');
-bjc.paths.links.push("/admin/css/bootstrap.css");
+bjc.paths.links.push("/admin/css/bootstrap.min.css"); // FIXME -- CDN
+bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
 bjc.paths.links.push("/admin/css/from-mvle.css");
 bjc.paths.links.push("/admin/css/BJC.css");
 
@@ -33,7 +34,8 @@ bjc.paths.complete_funs = [];
 ///////////////// stage 0
 //
 bjc.paths.scripts[0] = [];
-bjc.paths.scripts[0].push("/admin/js/jquery-1.9.1.min.js"); // FIXME -- CDN
+bjc.paths.scripts[0].push("/admin/js/jquery-1.11.0.min.js"); // FIXME -- CDN
+// //cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js
 bjc.paths.scripts[0].push("/admin/bjc-library.js");
 
 bjc.loaded['bjc-library'] = false;
@@ -50,6 +52,7 @@ bjc.paths.complete_funs[0] = function () {
 bjc.paths.scripts[1] = [];
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
 bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
+bjc.paths.scripts[1].push("/admin/bjc-course.js");
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {

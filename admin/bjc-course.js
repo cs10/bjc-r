@@ -41,5 +41,5 @@ bjc.addTitle = function() {
  
  $(document).ready(function() {
     bjc.editURLs();
-    bjc.addTitle();
+    // bjc.addTitle();
  });
