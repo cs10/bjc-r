@@ -50,10 +50,10 @@ bjc.paths.complete_funs[0] = function () {
 // all these scripts depend on jquery, loaded in stage 0
 // all quiz item types should get loaded here
 bjc.paths.scripts[1] = [];
+bjc.paths.scripts[1].push("/admin/bjc-curriculum.js");  
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
 bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
 bjc.paths.scripts[1].push("/admin/bjc-course.js");
-bjc.paths.scripts[1].push("/admin/bjc-curriculum.js");
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
@@ -121,10 +121,6 @@ bjc.initialSetUp = (function() {
 
     function proceedWhenComplete(stage_num) {
         if (bjc.paths.complete_funs[stage_num]()) {
-            // This is a purely visual optimization
-            if (stage_num === 1) {
-                bjc.setupTitle();
-            }
             if ((stage_num + 1) < bjc.paths.scripts.length) {
                 loadScripts(stage_num + 1);
             }

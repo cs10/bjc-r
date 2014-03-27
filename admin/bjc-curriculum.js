@@ -17,6 +17,8 @@ bjc.url_list = new Array();
 
 
 bjc.secondarySetUp = function() {
+    
+    bjc.setupTitle();
 
     // fix snap links so they run snap
     $("a.run").each(function(i) {
@@ -178,9 +180,10 @@ bjc.processLinks = function(data, ignored1, ignored2) {
                  "&course=" + course;
         } else {
             if (url.indexOf(bjc.rootURL) === -1 && url.indexOf("..") === -1) {
-                url = bjc.rootURL + (url[0] === "/" ? "" : "/") + url;
+                url = bjc.rootURL + (url[0] === "/" ? '' : "/") + url;
             }
-            url += url.indexOf("?") !== -1 ? "&" : "?" ;
+            //TODO: Does this matter?
+            url += url.indexOf("?") !== -1 ? "&" : "?";
             url += "topic=" + bjc.file + "&step=" + num + hiddenString;
             url += "&course=" + course;
         }
@@ -201,11 +204,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         if (course.indexOf("http://") === -1) {
             course = bjc.rootURL + "/course/" + course;
         }
-        // FIXME
-        var course_text = "<span class='course-link-list'>" + bjc.goMain +
-                          "</span>";
-        
-        list_item = bjc.dropdownItem(course_text, course);
+        text = "<span class='course-link-list'>" + bjc.goMain + "</span>";      
+        list_item = bjc.dropdownItem(text, course);
         list.prepend(list_item);
     }
 
@@ -242,9 +242,17 @@ bjc.addFrame = (function() {
 // Setup the entire page title. This includes creating any HTML elements.
 // This should be called EARLY in the load process!
 bjc.setupTitle = function() {
+    if (typeof bjc.titleSet !== 'undefined' && bjc.titleSet) {
+        return;
+    }
     // Create #full before adding stuff.
     if ($("#full").length === 0) {
         $(document.body).wrapInner('<div id="full"></div>');
+    }
+    
+    // Work around when things are oddly loaded...
+    if ($('.top-nav').length !== 0) {
+        $('.top-nav').remove();
     }
     
     // Create the header section and nav buttons
@@ -269,6 +277,8 @@ bjc.setupTitle = function() {
     document.body.style.marginTop = "0";
     // Clean up document title if it contains HTML
     document.title = $(".header").text();
+    
+    bjc.titleSet = true;
 }
 
 // Create the 'sticky' title header at the top of each page.
@@ -431,7 +441,7 @@ $('html').click(function(event) {
  *  totalWidth is the width of the entire bottom bar
  *  buttonWidth is the combined width of the two nav buttons.
  */
-bjc.indicateProgress = function(numSteps, currentStep ) {
+bjc.indicateProgress = function(numSteps, currentStep) {
     var totalWidth = $(".full-bottom-bar").width(),
         buttons = $('.bottom-nav').width(),
         width = totalWidth - buttons,

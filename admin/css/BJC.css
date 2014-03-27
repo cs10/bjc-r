@@ -63,14 +63,13 @@ tt {
 }
 
 code {
-    font-size: 120%;
     font-weight: 600;
     line-height: 100%;
 }
 
 p {
     /*font:1.1em "Times New Roman", Times, serif;*/
-    font: 1em Arial, Helvetica, sans-serif;
+    font: 1em Helvetica, Arial, sans-serif;
     color: black;
     line-height:120%;
 }
@@ -78,12 +77,12 @@ p {
 p.right {text-align:right;}
 
 .vocab {
-    font-style:italic;
-    color:#0000CC;
+    font-style: italic;
+    color: #00C;
 }
 
 form label {
-    font-family:Tahoma, Geneva, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
 }
 
 input[type=text], input[type=password], textarea {
@@ -188,15 +187,13 @@ a[disabled] {
 }
 
 .full-bottom-bar {
-    /*background-color: #CCC;*/
     background: #CCC;
-    background-image: url("../img/costumes/alonzo.gif"); /* FIXME */
+    background-image: url("../img/progress.gif"); /* FIXME */
     background-repeat: no-repeat;
     background-position: 2px 2px;
     border-radius: 20px;
     background-size: 26px;
     height: 2em;
-    /*position: relative;*/
     width: 90%;
     margin: 1em 5%;
     padding: 5px;
@@ -288,7 +285,7 @@ a[disabled] {
 .course-link-list {
     font-size: 100%;
     font-weight: bold;
-    background-image: url("../img/web/globe.png"); /* FIXME */
+    background-image: url("../img/globe.png");
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 20px;
@@ -297,14 +294,14 @@ a[disabled] {
       font-size: 100%;
       text-decoration: underline;
       font-weight: bold;
-      background-image: url("../img/web/toolbar_home.png"); /* FIXME */
+      background-image: url("../img/toolbar_home.png");
       background-size: contain;
       background-repeat: no-repeat;
       padding-left: 20px;
 }
 .current-step-link {
       font-weight: bold;
-      background-image: url("../img/web/forward.png"); /* FIXME */
+      background-image: url("../img/forward.png");
       background-size: contain;
       background-repeat: no-repeat;
       padding-left: 20px;
@@ -315,7 +312,7 @@ a[disabled] {
     display: block;
     margin-bottom: 10px;
     font-size: large;
-    background-image: url("../img/web/globe.png"); /* FIXME */
+    background-image: url("../img/globe.png");
     background-size:contain;
     background-repeat: no-repeat;
     padding-left: 25px;
@@ -589,7 +586,7 @@ div.indent {
 .tryit {
     width:500px;
     margin: 20px  0 20px  0; /* Added/Updated */
-    background-image:url(../img/web/doit_background.png); /* FIXME */
+    background-image:url('../img/doit_background.png');
     background-position:-10px -3px;
     background-color:#164CBA;
     border:1px solid #000099;
@@ -623,21 +620,21 @@ div.indent {
 .instructionsIcon {
     width: 16px;
     height: 16px;
-    background-image:url(../img/web/infoIcon.png); /* FIXME */
+    background-image:url('../img/infoIcon.png');
     background-repeat: no-repeat;
     text-decoration:none;
     outline:none;
 }
 
 .instructionsIcon:hover {
-    background-image:url(../img/web/infoIconRollover.png); /* FIXME */
+    background-image:url('../img/infoIconRollover.png');
     background-repeat: no-repeat;
 }
 
 .step {
     margin-left:35px;
     padding:  0 50px 5px 30px;
-    background-image:url(../img/web/lightning.png); /* FIXME */
+    background-image:url('../img/lightning.png');
     background-repeat:no-repeat;
     background-position: 0  0;
 }
@@ -738,7 +735,7 @@ div.indent {
     padding-right:2px;
     color:#CC3333;
     text-decoration:none;
-    background-image:url(../img/web/slideshowIcon.png); /* FIXME */
+    background-image:url(../img/slideshowIcon.png); /* FIXME */
     background-repeat:no-repeat;
     font-weight:bold;
 }
@@ -748,7 +745,7 @@ div.indent {
 }
 
 .pageLink {
-    background-image:url(../img/web/pageLink.png); /* FIXME */
+    background-image:url(../img/pageLink.png); /* FIXME */
     background-position:top right;
     background-repeat:no-repeat;
     margin-right:4px;
@@ -808,14 +805,14 @@ div.indent {
 }
 
 /* Begin items controlled primarily by .topic div */
-.quiz {background-image:url(../img/web/multiplechoice28.png);} /* FIXME */
-.assignment, .homework {background-image:url(../img/web/note28.png);} /* FIXME */
-.resource {background-image:url(../img/web/course-resources-32.png);} /* FIXME */
-.forum {background-image:url(../img/web/pageLink.png);} /* FIXME */
-.video {background-image:url(../img/web/slideshowIcon.png);} /* FIXME */
-.extresource {background-image:url(../img/web/display28.png);} /* FIXME */
-.reading{background-image:url(../img/web/emblem_library.png);} /* http://findicons.com/icon/93370/emblem_library?id=274277 */
-.group{background-image:url(../img/web/user_group.png);} /* http://findicons.com/icon/66444/user_group?id=66460 */
+.quiz {background-image:url(../img/multiplechoice28.png);} /* FIXME */
+.assignment, .homework {background-image:url(../img/note28.png);} /* FIXME */
+.resource {background-image:url(../img/course-resources-32.png);} /* FIXME */
+.forum {background-image:url(../img/pageLink.png);} /* FIXME */
+.video {background-image:url(../img/slideshowIcon.png);} /* FIXME */
+.extresource {background-image:url(../img/display28.png);} /* FIXME */
+.reading{background-image:url(../img/emblem_library.png);} /* http://findicons.com/icon/93370/emblem_library?id=274277 */
+.group{background-image:url(../img/user_group.png);} /* http://findicons.com/icon/66444/user_group?id=66460 */
 /* End items controlled by .topic div */
 
 /* Other items, which partially override .topic div */
@@ -901,7 +898,7 @@ div.indent {
 }
 
 .run {
-    background: url("../img/web/external-link.png") center right no-repeat; /* FIXME */
+    background: url("../img/external-link.png") center right no-repeat; /* FIXME */
     padding-right: 13px;
 }
 
