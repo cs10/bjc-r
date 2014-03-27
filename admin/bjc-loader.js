@@ -19,10 +19,6 @@ bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
 bjc.paths.links = [];
-//bjc.paths.links.push('http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
-//bjc.paths.links.push('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
-// bjc.paths.links.push('/admin/css/normalize.css');
-// bjc.paths.links.push('/admin/css/jquery-ui-1.10.2-smoothness.css');
 bjc.paths.links.push("/admin/css/bootstrap.min.css"); // FIXME -- CDN
 // bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
 bjc.paths.links.push("/admin/css/from-mvle.css");

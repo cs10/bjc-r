@@ -30,7 +30,7 @@ bjc.CORSCompliantServers.push("cs10.berkeley.edu");
 bjc.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
 
 // returns the current domain with a cors proxy if needed
-bjc.getSnapRunURL = (function(targeturl) {
+bjc.getSnapRunURL = function(targeturl) {
 
     if (targeturl === null) { 
         return;
@@ -66,8 +66,7 @@ bjc.getSnapRunURL = (function(targeturl) {
     finalurl = finalurl + currdom + targeturl;
 
     return finalurl;
-});
-
+};
 
 
 //TODO put this in the bjc namespace
@@ -87,7 +86,7 @@ function getParameterByName(name) {
             results.push(temp[1]);
         }
     }
-	if(results.length == 0)
+	if (results.length == 0)
         return "";
 	else if (results.length == 1) {
         return results[0];
@@ -100,19 +99,39 @@ function getParameterByName(name) {
 
 
 /** Strips comments off the line. */
-bjc.stripComments = (function(line) {
+bjc.stripComments = function(line) {
     var index = line.indexOf("//");
     
     if (index !== -1 && line[index - 1] !== ":") {
         line = line.slice(0, index);
     }
     return line;
-});
+};
+
+/** Google Analytics Tracking -- Currently not in use for BJC-R.
+ *  Each new repo should get their own GA token, and setup and then swap these
+ *  values. To make use of this code, the two ga() functions need to be called
+ *  on each page that is loaded, which means this file must be loaded. 
+ */
+bjc.GACode = 'UA-47210910-3';
+bjc.GAurl = 'berkeley.edu';
+bjc.GAfun =  function(i,s,o,g,r,a,m) {
+    i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  };
+
+bjc.GA = function() {
+        bjc.GAfun(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    }
+// GA Function Calls -- these do the real work!: 
+// ga('create', bjc.GACode, bjc.GAUrl);
+// ga('send', 'pageview');
 
 /** Truncate a STR to an output of N chars.
  *  N does NOT include any HTML characters in the string.
  */
-bjc.truncate = (function(str, n) {
+bjc.truncate = function(str, n) {
     // Ensure string is 'proper' HTML by putting it in a div, then extracting.
     var clean = document.createElement('div');
     clean.innerHTML = str;
@@ -126,6 +145,6 @@ bjc.truncate = (function(str, n) {
     }
     
     return str; // return the HTML content if possible.
-});
+};
 
 bjc.loaded['bjc-library'] = true;
