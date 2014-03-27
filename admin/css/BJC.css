@@ -248,8 +248,12 @@ a[disabled] {
 /* END NAV SECTION ***********************************************************/
 
 /* PAGE DROPDOWN SECTION ******************************************************/
+/* Give space to caret in dropdown menus */
+.caret {
+    margin-left: 15px; /* FIXME, hacky. */
+}
 .dropdown-menu {
-    margin-top: 5; /* should be equal to padding on list_header */
+    margin-top: 5px; /* should be equal to padding on list_header */
 }
 .list_item {
     font-size: 10pt;
@@ -272,22 +276,22 @@ a[disabled] {
     border-radius: 0;
 }
 
-.course_link_list {
+/* TODO: Create a real .list-bg class */
+.list-bg {
+    font-weight: bold;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 100%;
+}
+
+.course-link-list {
     font-size: 100%;
     font-weight: bold;
     background-image: url("../img/web/globe.png"); /* FIXME */
     background-size: contain;
     background-repeat: no-repeat;
     padding-left: 20px;
-}
-.course_link {
-    display: block;
-    margin-bottom: 10px;
-    font-size: large;
-    background-image: url("../img/web/globe.png"); /* FIXME */
-    background-size:contain;
-    background-repeat: no-repeat;
-    padding-left: 25px;
 }
 .main-topic-link {
       font-size: 100%;
@@ -307,6 +311,15 @@ a[disabled] {
 }
 /* END PAGE DROPDWON SECTION *************************************************/
 
+.course_link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+    background-image: url("../img/web/globe.png"); /* FIXME */
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
 
 .help {
     color:#DC143C;

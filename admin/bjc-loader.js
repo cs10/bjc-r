@@ -53,6 +53,7 @@ bjc.paths.scripts[1] = [];
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
 bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
 bjc.paths.scripts[1].push("/admin/bjc-course.js");
+bjc.paths.scripts[1].push("/admin/bjc-curriculum.js");
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
@@ -65,7 +66,7 @@ bjc.paths.complete_funs[1] = function() {
 /////////  stage 2
 // bjc-quiz.js depends on each of the quiz item types having loaded
 // bjc-curriculum depends on jquery-ui
-bjc.paths.scripts[2] = ["/admin/bjc-quiz.js", "/admin/bjc-curriculum.js"];
+bjc.paths.scripts[2] = ["/admin/bjc-quiz.js"];
 bjc.paths.complete_funs[2] = function() {
 	// the last stage, no need to ever wait
 	return true;
@@ -119,15 +120,18 @@ bjc.initialSetUp = (function() {
 	}
 
     function proceedWhenComplete(stage_num) {
-		if (bjc.paths.complete_funs[stage_num]()) {
-			if ((stage_num + 1) < bjc.paths.scripts.length) {
-				loadScripts(stage_num + 1);
-			}
-		} else {
-			//console.log("waiting on stage " + stage_num);
-			setTimeout(function() {proceedWhenComplete(stage_num)}, 50);
-		}
-	}
+        if (bjc.paths.complete_funs[stage_num]()) {
+            // This is a purely visual optimization
+            if (stage_num === 1) {
+                bjc.setupTitle();
+            }
+            if ((stage_num + 1) < bjc.paths.scripts.length) {
+                loadScripts(stage_num + 1);
+            }
+        } else {
+            setTimeout(function() {proceedWhenComplete(stage_num)}, 50);
+        }
+    }
 });
 
 bjc.initialSetUp();

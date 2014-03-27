@@ -3,50 +3,26 @@
  * Uses jquery, jquery-ui.
  * This is borrowed from UCCP APCSA work
  */
+// TODO: These need to be moved to a better place:
+// These are common strings that need not be build and should be reused!
+bjc.goMain = 'Go to Main Course Page';
+// &#8230; is ellipsis
+bjc.clickNav = 'Click here to navigate&#8230; &nbsp;&nbsp;';
+bjc.bootstrapSep = '<li class="divider list_item" role="presentation"></li>';
+bjc.bootstrapCaret = '<span class="caret"></span>';
 
-
-bjc['file'] = "";
-bjc['step'] = NaN;
-bjc['url_list'] = new Array();
+bjc.file = "";
+bjc.step = NaN;
+bjc.url_list = new Array();
 
 
 bjc.secondarySetUp = function() {
 
-    // insert main div
-    if ($("#full").length === 0) {
-        $(document.body).wrapInner('<div id="full"></div>');
-    }
-    
-    // Create the header section and nav buttons
-    bjc.createTitleNav();
-    
-    // create Title tag, yo
-    if (getParameterByName("title") != "") {
-        document.title = decodeURIComponent(getParameterByName("title"));
-    }
-    
-    // Set the header title to the page title.
-    var titleText = document.title;
-    if (titleText) { // && $(".header").length === 0 // this shouldn't happen.
-        $('.header').html(titleText);
-        // I don't think this does anything. If nothing breaks I'll remove it.
-        // if (getParameterByName("title") != "") {
-        //     $(".header").html(titleText);
-        // }
-    }
-    
-    // FIXME -- should just be in css...?
-    document.body.style.marginTop = "0";
-    // Clean up document title if it contains HTML
-    document.title = $(".header").text();
-    
-    
     // fix snap links so they run snap
     $("a.run").each(function(i) {
         $(this).attr("target", "_blank");
         $(this).attr('href', bjc.getSnapRunURL(this.getAttribute('href')));
     });
-
 
     // make the vocab box if necessary
     if ($("span.vocab").length > 0) {
@@ -108,11 +84,10 @@ bjc.secondarySetUp = function() {
         // which step this should be
     }
     
-    
     if (typeof topicFile == "object") {
-        bjc['file'] = topicFile[1];
+        bjc.file = topicFile[1];
     } else {
-        bjc['file'] = topicFile;
+        bjc.file = topicFile;
     }
     
     $.ajax({
@@ -124,21 +99,12 @@ bjc.secondarySetUp = function() {
     });
 }; // close secondarysetup();
 
-
 /** 
  *  Processes just the hyperlinked elements in the topic file,
  *  and creates navigation buttons.
  *  FIXME: This should share code with BJC topic!
  */
 bjc.processLinks = function(data, ignored1, ignored2) {
-    // This is handled above...
-    // var temp = getParameterByName("topic");
-    // if (typeof temp == "object") {
-    //     bjc['file'] = temp[1];
-    // } else {
-    //     bjc['file'] = temp;
-    // }
-
     var hidden = [];
     var hiddenString = "";
     
@@ -162,7 +128,6 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     var list = $(document.createElement("ul")).attr(
         {'class': 'dropdown-menu dropdown-menu-right', 
          'role' : "menu",  'aria-labelledby' : "Topic-Navigation-Meu"});
-    var option;
     var text;
     var list_item;
     
@@ -182,23 +147,17 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             text = line.slice(line.indexOf(":") + 1);
             text = bjc.truncate($.trim(text), textLength);
             
+            // Create a special Title link and add a separator.
             text = "<span class='main-topic-link'>" + text + "</span>";
-            // TODO: Lots of code duplication here.
-            option = $(document.createElement("a")).attr(
-                {'href': url, 'role': 'presentation'});
-            option.html(text);
-            list_item = $(document.createElement("li")).attr(
-                {'class': 'list_item', 'role' : 'presentation'});
-            list_item.append(option);
-            var separator = $(document.createElement("li")).attr(
-                {'class': 'divider list_item', 'role' : 'presentation'});
-            list.prepend(separator);
+            list_item = bjc.dropdownItem(text, url);
+            // Note: Add to top of list!
+            list.prepend(bjc.bootstrapSep);
             list.prepend(list_item);
             
             continue;
         }
         
-        // TODO: Before checking for links in a title.
+        // TODO:  Check if we have a title for this link?
         // If we don't have a link, skip this line.
         var hasLink = line.indexOf("[") !== -1 && line.indexOf("]") !== -1;
         if (!hasLink) {
@@ -218,8 +177,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
                  "&step=" + num + "&title=" + text + hiddenString +
                  "&course=" + course;
         } else {
-            if (url.indexOf(bjc.rootURL) === -1 && 
-                url.indexOf("..") === -1) {
+            if (url.indexOf(bjc.rootURL) === -1 && url.indexOf("..") === -1) {
                 url = bjc.rootURL + (url[0] === "/" ? "" : "/") + url;
             }
             url += url.indexOf("?") !== -1 ? "&" : "?" ;
@@ -227,20 +185,14 @@ bjc.processLinks = function(data, ignored1, ignored2) {
             url += "&course=" + course;
         }
         
-        bjc['url_list'].push(url);
+        bjc.url_list.push(url);
         
         // Make the current step have an arrow in the dropdown menu
         if (num === bjc.step) {
             text = "<span class='current-step-link'>" + text + "</span>";
         }
 
-        option = $(document.createElement("a")).attr(
-            {'href': url, 'role' : 'menuitem'});
-        option.html(text);
-        
-        list_item = $(document.createElement("li")).attr(
-            {'class': 'list_item', 'role' : 'presentation'});
-        list_item.append(option);
+        list_item = bjc.dropdownItem(text, url);
         list.append(list_item);
         num += 1;
     } // end for loop
@@ -249,47 +201,25 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         if (course.indexOf("http://") === -1) {
             course = bjc.rootURL + "/course/" + course;
         }
-        var course_text = $(document.createElement('span')).attr(
-            {'class' : 'course_link_list'});
-        course_text.html("Go to Main Course Page");
-        list_item = $(document.createElement("li")).attr(
-            {'class': 'list_item', 'role' : 'presentation'});
-        list_item.append($(document.createElement("a")).attr(
-            {"href": course}).html(course_text));
+        // FIXME
+        var course_text = "<span class='course-link-list'>" + bjc.goMain +
+                          "</span>";
+        
+        list_item = bjc.dropdownItem(course_text, course);
         list.prepend(list_item);
     }
 
-    // BUILD THE DROPDOWN MENU -- Uses Bootstrap 3
-    // TODO: Refactor to be in a function
+    // Setup the nav button links and build the dropdown.
     bjc.setButtonURLs();
-    var dropwon, list_header, caret;
-    // Container div for the whole menu (title + links)
-    dropdown = $(document.createElement("div")).attr(
-        {'class': 'dropdown inline'});
-    // Caret for the dropdown menu
-    caret = $(document.createElement("span")).attr({'class': 'caret'});
-    nav_text = $(document.createElement('span')).html('Click here to navigate...');
-    // build the list header
-    list_header = $(document.createElement("div")).attr(
-        {'class': 'btn btn-default dropdown-toggle list_header',
-         'type' : 'button', 'data-toggle' : "dropdown" });
-    list_header.append(nav_text);
-    $('.list_header').width(262);
-    // list_header.click(bjc.navDropdownToggle);
-    list_header.append(caret);
-    // Insert dropdown items IN ORDER. 
-    dropdown.append(list_header);
+    bjc.buildDropdown();
+    var dropdown = $('.top-nav .nav-btns .dropdown');
     dropdown.append(list);
-    
-    // Insert into the top div only.
-    dropdown.insertAfter($('.top-nav .nav-btns .backbutton'));
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
     }
 
-    // FIXME -- RENAME, parameter check
-    bjc.moveAlonzo(bjc.url_list.length, bjc.step);
+    bjc.indicateProgress(bjc.url_list.length, bjc.step);
 
 } // end processLinks()
 
@@ -309,15 +239,47 @@ bjc.addFrame = (function() {
     $("#cont").append(frame);
 });
 
+// Setup the entire page title. This includes creating any HTML elements.
+// This should be called EARLY in the load process!
+bjc.setupTitle = function() {
+    // Create #full before adding stuff.
+    if ($("#full").length === 0) {
+        $(document.body).wrapInner('<div id="full"></div>');
+    }
+    
+    // Create the header section and nav buttons
+    bjc.createTitleNav();
+    
+    // create Title tag, yo
+    if (getParameterByName("title") != "") {
+        document.title = decodeURIComponent(getParameterByName("title"));
+    }
+    
+    // Set the header title to the page title.
+    var titleText = document.title;
+    if (titleText) { // && $(".header").length === 0 // this shouldn't happen.
+        $('.header').html(titleText);
+        // I don't think this does anything. If nothing breaks I'll remove it.
+        // if (getParameterByName("title") != "") {
+        //     $(".header").html(titleText);
+        // }
+    }
+    
+    // FIXME -- should just be in css...?
+    document.body.style.marginTop = "0";
+    // Clean up document title if it contains HTML
+    document.title = $(".header").text();
+}
 
+// Create the 'sticky' title header at the top of each page.
 bjc.createTitleNav = function() {
-    var topHTML = "<div class='top-nav'><div class='header'></div></div>";
-    var botHTML = "<div class='full-bottom-bar'><div class='bottom-nav" +
-                      " btn-group'></div></div>";
-    var navHTML = "<div class='nav-btns btn-group'></div>";
-    var topNav = $('.top-nav');
-    var botNav = $('.full-bottom-bar');
-    var buttons = "<a class='btn btn-default backbutton arrow'>&larr;</a>" +
+    var topHTML = "<div class='top-nav'><div class='header'></div></div>",
+        botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
+                      "btn-group'></div></div>",
+        navHTML = "<div class='nav-btns btn-group'></div>",
+        topNav = $('.top-nav'),
+        botNav = $('.full-bottom-bar'),
+        buttons = "<a class='btn btn-default backbutton arrow'>&larr;</a>" +
                    "<a class='btn btn-default forwardbutton arrow'>&rarr;</a>";
     
     if (topNav.length === 0) {
@@ -347,6 +309,45 @@ bjc.createTitleNav = function() {
         $('.bottom-nav').append(buttons);
     }
 };
+
+// Create the navigation dropdown
+bjc.buildDropdown = function() {
+    var dropwon, list_header, nav_text;
+    // Container div for the whole menu (title + links)
+    dropdown = $(document.createElement("div")).attr(
+        {'class': 'dropdown inline'});
+    
+    // span not completely necessary, but might help with width issues.
+    nav_text = $(document.createElement('span')).html(bjc.clickNav);
+    
+    // build the list header
+    list_header = $(document.createElement("div")).attr(
+        {'class': 'btn btn-default dropdown-toggle list_header',
+         'type' : 'button', 'data-toggle' : "dropdown" }); 
+    list_header.append(nav_text);
+    list_header.append(bjc.bootstrapCaret);
+    
+    // Add Header to dropdown 
+    dropdown.append(list_header);
+    
+    // Insert into the top div AFTER the backbutton.
+    dropdown.insertAfter($('.top-nav .nav-btns .backbutton'));
+}
+
+/** Build an item for the navigation dropdown
+ *  Takes in TEXT and a URL and reutrns a list item to be added
+ *  too an existing dropdown */
+bjc.dropdownItem = function(text, url) {
+    var link, item;
+    // li container
+    item = $(document.createElement("li")).attr(
+        {'class': 'list_item', 'role' : 'presentation'});
+    link = $(document.createElement("a")).attr(
+        {'href': url, 'role' : 'menuitem'});
+    link.html(text);
+    item.append(link);
+    return item;
+}
 
 // Create the Forward and Backward buttons, properly disabling them when needed
 bjc.setButtonURLs = function() {
@@ -404,18 +405,20 @@ bjc.goForward = function() {
     window.location.href = bjc.url_list[bjc.step + 1];
 };
 
-/* Hides the dropdown when a user clicks somewhere else. */
-bjc.navDropdownToggle = function() {
-    var list_header = $('.list_header'),
-        caret = '<span class="caret"></span>',
-        close_state = "Click here to navigate...   " + caret,
-        open_state = "Click anywhere to close...   " + caret;
-    if (list_header.html() === close_state) {
-        list_header.html(open_state);
-    } else {
-        list_header.html(close_state);
-    }
-};
+/* Hides the dropdown when a user clicks somewhere else. 
+ * CURRENTLY BUGGY AND UNUSED... Do we need this still?
+ */
+// bjc.navDropdownToggle = function() {
+//     var list_header = $('.list_header'),
+//         caret = '<span class="caret"></span>',
+//         close_state = "Click here to navigate...   " + caret,
+//         open_state = "Click anywhere to close...   " + caret;
+//     if (list_header.html() === close_state) {
+//         list_header.html(open_state);
+//     } else {
+//         list_header.html(close_state);
+//     }
+// };
 
 /* Create an event to collapse dropdown menu when mouse is clicked anywhere */
 $('html').click(function(event) {
@@ -428,21 +431,22 @@ $('html').click(function(event) {
  *  totalWidth is the width of the entire bottom bar
  *  buttonWidth is the combined width of the two nav buttons.
  */
-bjc.moveAlonzo = function(numSteps, currentStep ) {
-    var totalWidth = Number($(".full-bottom-bar").width()),
-        buttons = Number($('.bottom-nav').width()),
+bjc.indicateProgress = function(numSteps, currentStep ) {
+    var totalWidth = $(".full-bottom-bar").width(),
+        buttons = $('.bottom-nav').width(),
         width = totalWidth - buttons,
         result; // result stores left-offset of background image.
-    
+
     if (currentStep < numSteps - 1) {
-        width *= .98;
         result = (currentStep * (width / (numSteps - 1)) + 1) / totalWidth;
-        result = (result * 100) + "%";
+        // Result is always a min of 1%.
+        result = (result < .01) ? 1 : result * 100;
+        result = result + "%";
     } else {
         var picWidth = $(".full-bottom-bar").css("background-size");
-        picWidth = picWidth.slice(0, picWidth.indexOf("px"));
+        picWidth = Number(picWidth.slice(0, picWidth.indexOf("px")));
         // the 4 is just to add a bit of space
-        result = width - Number(picWidth) - 4 + "px"; 
+        result = width - picWidth - 4 + "px"; 
     }
     
     result = result + " 2px";
@@ -451,5 +455,4 @@ bjc.moveAlonzo = function(numSteps, currentStep ) {
 
 // Setup the nav and parse the topic file. 
 $(document).ready(bjc.secondarySetUp);
-// $(document).ready(bjc.dropdownClick);
 
