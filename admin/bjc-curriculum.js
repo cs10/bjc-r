@@ -270,11 +270,12 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     caret = $(document.createElement("span")).attr( {'class': 'caret'} );
     // build the list header
     list_header = $(document.createElement("div")).attr(
-        {'class': 'btn btn-default dropdown-toggle',
+        {'class': 'btn btn-default dropdown-toggle list_header',
          'type' : 'button', 'data-toggle' : "dropdown" });
+    dropdown.width(list.width());
     // Set Header Text and click function
-    list_header.html("Click here to navigate...");
-    list_header.click(bjc.navDropdownToggle);
+    list_header.html("Click here to navigate...   ");
+    // list_header.click(bjc.navDropdownToggle);
     list_header.append(caret);
     // Insert dropdown items IN ORDER. 
     dropdown.append(list_header);
@@ -282,8 +283,6 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     
     // Insert into the top div only.
     dropdown.insertAfter($('.top-nav .nav .backbutton'));
-    
-    list_header.width(list.outerWidth());
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
         bjc.addFrame();
@@ -368,9 +367,7 @@ bjc.setButtonURLs = function() {
     
     // Disable the back button
     if (bjc.step === 0) {
-        console.log('back')
         back.each(function(i, item) {
-            console.log(item);
             $(this).addClass('disabled');
             $(this).attr('href', '#')
         });
@@ -398,25 +395,30 @@ bjc.setButtonURLs = function() {
 };
 
 bjc.goBack = function() {
-    window.location.href = bjc['url_list'][bjc.step - 1];
+    window.location.href = bjc.url_list[bjc.step - 1];
 };
 
 bjc.goForward = function() {
-    window.location.href = bjc['url_list'][bjc.step + 1];
+    window.location.href = bjc.url_list[bjc.step + 1];
 };
 
 /* Hides the dropdown when a user clicks somewhere else. */
 bjc.navDropdownToggle = function() {
     var list_header = $('.list_header'),
-        close_state = "Click here to navigate...",
-        open_state = "Click anywhere to close...";
+        caret = '<span class="caret"></span>',
+        close_state = "Click here to navigate...   " + caret,
+        open_state = "Click anywhere to close...   " + caret;
     if (list_header.html() === close_state) {
         list_header.html(open_state);
     } else {
         list_header.html(close_state);
     }
-    $($(".steps")[0]).slideToggle(300);
 };
+
+/* Create an event to collapse dropdown menu when mouse is clicked anywhere */
+$('html').click(function(event) {
+    //bjc.navDropdownToggle();
+});
 
 /** Positions an image along the bottom of the lab page, signifying progress.
  *  numSteps is the total number of steps in the lab
@@ -445,12 +447,7 @@ bjc.moveAlonzo = function(numSteps, currentStep ) {
     $(".full-bottom-bar").css("background-position", result);
 };
 
-/* Create an event to collapse dropdown menu when mouse is clicked anywhere */
-$('html').click(function(event) {
-    if (!$(event.target).is( $('.list_header')[0] )) {
-        $( $(".steps")[0] ).slideUp(300);
-    }
-});
-
 // Setup the nav and parse the topic file. 
 $(document).ready(bjc.secondarySetUp);
+// $(document).ready(bjc.dropdownClick);
+

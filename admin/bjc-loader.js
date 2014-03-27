@@ -24,7 +24,7 @@ bjc.paths.links = [];
 // bjc.paths.links.push('/admin/css/normalize.css');
 // bjc.paths.links.push('/admin/css/jquery-ui-1.10.2-smoothness.css');
 bjc.paths.links.push("/admin/css/bootstrap.min.css"); // FIXME -- CDN
-bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
+// bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
 bjc.paths.links.push("/admin/css/from-mvle.css");
 bjc.paths.links.push("/admin/css/BJC.css");
 
