@@ -225,7 +225,7 @@ a[disabled] {
   position: relative;
   margin: 14pt 5% 1% 2%;
   padding: 0;
-  vertical-align: top;
+  vertical-align: topleft;
 }
 /** Buttons at the bottom right */
 .bottom-nav {

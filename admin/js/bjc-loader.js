@@ -32,7 +32,7 @@ bjc.paths.complete_funs = [];
 bjc.paths.scripts[0] = [];
 bjc.paths.scripts[0].push("/admin/js/jquery-1.11.0.min.js"); // FIXME -- CDN
 // //cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js
-bjc.paths.scripts[0].push("/admin/bjc-library.js");
+bjc.paths.scripts[0].push("/admin/js/bjc-library.js");
 
 bjc.loaded['bjc-library'] = false;
 bjc.paths.complete_funs[0] = function () {
@@ -46,11 +46,11 @@ bjc.paths.complete_funs[0] = function () {
 // all these scripts depend on jquery, loaded in stage 0
 // all quiz item types should get loaded here
 bjc.paths.scripts[1] = [];
-bjc.paths.scripts[1].push("/admin/bjc-curriculum.js");  
+bjc.paths.scripts[1].push("/admin/js/bjc-curriculum.js");  
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
 bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
 //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js
-bjc.paths.scripts[1].push("/admin/bjc-course.js");
+bjc.paths.scripts[1].push("/admin/js/bjc-course.js");
 
 bjc.loaded['multiplechoice'] = false;
 bjc.paths.complete_funs[1] = function() {
@@ -63,7 +63,7 @@ bjc.paths.complete_funs[1] = function() {
 /////////  stage 2
 // bjc-quiz.js depends on each of the quiz item types having loaded
 // bjc-curriculum depends on jquery-ui
-bjc.paths.scripts[2] = ["/admin/bjc-quiz.js"];
+bjc.paths.scripts[2] = ["/admin/js/bjc-quiz.js"];
 bjc.paths.complete_funs[2] = function() {
 	// the last stage, no need to ever wait
 	return true;
