@@ -212,7 +212,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     // Setup the nav button links and build the dropdown.
     bjc.setButtonURLs();
     bjc.buildDropdown();
-    var dropdown = $('.top-nav .nav-btns .dropdown');
+    // FIXME -- will break on pages with multiple dropdowns (future)
+    var dropdown = $('.dropdown');
     dropdown.append(list);
     
     if (document.URL.indexOf("empty-curriculum-page.html") !== -1) {
@@ -251,8 +252,8 @@ bjc.setupTitle = function() {
     }
     
     // Work around when things are oddly loaded...
-    if ($('.top-nav').length !== 0) {
-        $('.top-nav').remove();
+    if ($('.navbar-default').length !== 0) {
+        $('.navbar-default').remove();
     }
     
     // Create the header section and nav buttons
@@ -265,32 +266,32 @@ bjc.setupTitle = function() {
     
     // Set the header title to the page title.
     var titleText = document.title;
-    if (titleText) { // && $(".header").length === 0 // this shouldn't happen.
-        $('.header').html(titleText);
+    if (titleText) {
+        $('.navbar-brand').html(titleText);
     }
     
     // FIXME -- should just be in css...?
     document.body.style.marginTop = "0";
     // Clean up document title if it contains HTML
-    document.title = $(".header").text();
+    document.title = $(".navbar-brand").text();
     
     bjc.titleSet = true;
 }
 
 // Create the 'sticky' title header at the top of each page.
 bjc.createTitleNav = function() {
-    var topHTML = "<div class='top-nav'><div class='header'></div></div>",
+    var topHTML = '<nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Brand</a></div></div></nav>',
         botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
                       "btn-group'></div></div>",
-        navHTML = "<div class='nav-btns btn-group'></div>",
-        topNav = $('.top-nav'),
+        navHTML = '<div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right nav-btns btn-group"></ul></div>',
+        topNav = $('.navbar-default .container-fluid'),
         botNav = $('.full-bottom-bar'),
         buttons = "<a class='btn btn-default backbutton arrow'>back</a>" +
                    "<a class='btn btn-default forwardbutton arrow'>forward</a>";
     
     if (topNav.length === 0) {
         $(document.body).prepend(topHTML);
-        topNav = $('.top-nav');
+        topNav = $('.navbar-default');
         topNav.append(navHTML);
     }
     
@@ -308,11 +309,11 @@ bjc.createTitleNav = function() {
     var forward = $('.forwardbutton'),
         back   = $('.backbutton');
         
-    var buttonsExist = forward.length === 2 && back.length === 2;
+    var buttonsExist = forward.length !== 0 && back.length !== 0;
     
     if (!buttonsExist && !isNaN(bjc.step)) {
-        $('.nav-btns').append(buttons);
-        $('.bottom-nav').append(buttons);
+        $('.navbar-right').append(buttons);
+        // $('.bottom-nav').append(buttons);
     }
 };
 
@@ -327,8 +328,8 @@ bjc.buildDropdown = function() {
     nav_text = $(document.createElement('span')).html(bjc.clickNav);
     
     // build the list header
-    list_header = $(document.createElement("div")).attr(
-        {'class': 'btn btn-default dropdown-toggle list_header',
+    list_header = $(document.createElement("button")).attr(
+        {'class': 'btn btn-default dropdown-toggle btn-group list_header',
          'type' : 'button', 'data-toggle' : "dropdown" }); 
     list_header.append(nav_text);
     list_header.append(bjc.bootstrapCaret);
@@ -337,7 +338,7 @@ bjc.buildDropdown = function() {
     dropdown.append(list_header);
     
     // Insert into the top div AFTER the backbutton.
-    dropdown.insertAfter($('.top-nav .nav-btns .backbutton'));
+    dropdown.insertAfter($('.navbar-default .navbar-right .backbutton'));
 }
 
 /** Build an item for the navigation dropdown
@@ -427,9 +428,9 @@ bjc.goForward = function() {
 // };
 
 /* Create an event to collapse dropdown menu when mouse is clicked anywhere */
-$('html').click(function(event) {
-    //bjc.navDropdownToggle();
-});
+// $('html').click(function(event) {
+//     //bjc.navDropdownToggle();
+// });
 
 /** Positions an image along the bottom of the lab page, signifying progress.
  *  numSteps is the total number of steps in the lab
