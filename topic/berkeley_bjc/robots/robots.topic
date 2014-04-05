@@ -14,6 +14,6 @@ learning-goal: Read and understand code, and make modifications to it
     resource: Simon Says [/bjc-r/cur/programming/robots/finch-simon-says.html]
     resource: I'm not an ambi-turner [/bjc-r/cur/programming/robots/finch-gestural-programmer.html]
     
-h3: Extra for Experts
+h3: Extra for Experience
     resource: Pong [/bjc-r/cur/programming/robots/finch-pong.html]
 }

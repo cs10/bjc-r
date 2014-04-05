@@ -34,15 +34,17 @@
         </p>
 
         <p>
-            The raw data is <a href="hamspam500.txt">here</a>,
+            The raw data is <a href="spam-ham-500.txt">here</a>,
             but we've made a
             <a class="run" href="/bjc-r/prog/data/spam-ham.xml">starter <span class="snap">snap</span> project</a>
 
-            which you should open now.
-            The text massages are in variable called <code>datasheet</code> that is
-            a list of rows (like a row in the above table).  Each row is also
-            a list, but with only two elements: the first is the word <i>spam</i> or <i>ham</i>,
-            and the second is the contents of the message. 
+            which you should open now.  It has a script that you can run
+            to import the text data (from the above link), split it line by
+            line and then into a list with two entries, and then store it into 
+            a variable <code>datasheet</code>:</p>
+            
+          <img class="indent" src="/bjc-r/img/data/spam-ham-datasheet-watcher.png" alt="spam-ham data watcher variable">  
+            <p> 
              Be aware that this is real-world data with very casual
             langauge (we've already removed the messages with language that was
             <i>too</i> casual for a school assignment!)
@@ -58,7 +60,7 @@
             that are in the file; if so, feel free to change them (and be ready to justify
             your belief to others!)
                  </p>
-<p>Out of the 500 messages, how many are ham?</p>
+<p>Out of the 500 messages, how many are ham?  Write a script to find out.</p>
 
     </body>
 </html>

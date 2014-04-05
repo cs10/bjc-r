@@ -1,28 +1,41 @@
-title: Conditional (FORMERLY Putting It Together)
+title: Conditionals
 
 {
 
+heading: Conditional Blocks
 
-h2: Activities
-learning-goal: Practice with everything you know: control structures (if/else, for loops), randomness, variables, and graphics.
+//resource: Primer: Variables [/bjc-r/cur/programming/conditionals/variables-primer.html]
+resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
+	  //have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
+//resource: "If-then" Statements [/bjc-r/cur/programming/conditionals/if-then-statements.html] // combine with introduction
+resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html] //remove/replace some quiz questions
+resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
+resource: Predict what happens! [/bjc-r/cur/programming/conditionals/predict.html]
+//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
+	  //examples with dates would be great.
+resource: Blocks using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
+// game of life here later?
 
 
+heading: Combining Booleans
 
-heading: Number Guessing Game
-	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
-	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
-	homework: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
-	
-heading: Rock, Paper, Scissors
-	quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
-	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
-	
-//heading: Working with Dates
-	
-	
-	
-heading: MORE SOON
+resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
+resource: Script Variables [/bjc-r/cur/programming/variables/scriptvar.html]
+quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
 
-//heading: Turn in your work
-	//submit: Submit: Loops and Variables 
+heading: Practice with Predicates
+//resource: motivation
+resource: Reporter Blocks [/bjc-r/cur/programming/functions/reporters.html]
+resource: Practice: >= [/bjc-r/cur/programming/conditionals/predicates.html] // chop out relevant piees
+resource: Solutions to >= [/bjc-r/cur/programming/conditionals/ge-soln.html]
+resource: Practice: Between [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
+
+
+heading: Number Guessing
+resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+//resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
+
 }

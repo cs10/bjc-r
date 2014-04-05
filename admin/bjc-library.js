@@ -4,15 +4,12 @@
  * CANNOT RELY ON JQUERY, YO
  */
 
-if ( typeof bjc === 'undefined') {
-	// if bjc-loader wasn't used, we need this.
-	bjc = {};
-	bjc.rootURL = "/bjc-r";
-	bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
+if (typeof bjc === 'undefined') {
+    // if bjc-loader wasn't used, we need this.
+    bjc = {};
+    bjc.rootURL = "/bjc-r";
+    bjc.loaded = {};   // needs to be defined, even though unused if bjc_loader isn't run
 }
-
-
-
 
 /////////////////
 
@@ -23,6 +20,8 @@ bjc.CORSCompliantServers = [];
 bjc.CORSCompliantServers.push("bjc.berkeley.edu");
 bjc.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 bjc.CORSCompliantServers.push("snap.berkeley.edu");
+bjc.CORSCompliantServers.push("inst.eecs.berkeley.edu");
+bjc.CORSCompliantServers.push("cs10.berkeley.edu");
 
 
 ////
@@ -30,40 +29,40 @@ bjc.CORSCompliantServers.push("snap.berkeley.edu");
 bjc.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
 
 // returns the current domain with a cors proxy if needed
+
 bjc.getSnapRunURL = function(targeturl) {
 
-	if (targeturl.substring(0, 7) == "http://") {
-		// pointing to some non-local resource... maybe a published cloud project?  do nothing!!
-		return targeturl;	
-			
-	} else {
-		// internal resource!
-		var finalurl = bjc.snapRunURLBase + "http://";
-		var currdom = document.domain;
-        console.log(currdom);
-		// why not, for the devs out there...
-		if (currdom == "localhost") {
-			currdom = "bjc.berkeley.edu";
+	if (targeturl != null) {   
+
+		if (targeturl.substring(0, 7) == "http://") {
+			// pointing to some non-local resource... maybe a published cloud project?  do nothing!!
+			return targeturl;
+
+		} else {
+			// internal resource!
+			var finalurl = bjc.snapRunURLBase + "http://";
+			var currdom = document.domain;
+			console.log(currdom);
+			// why not, for the devs out there...
+			if (currdom == "localhost") {
+				currdom = "bjc.berkeley.edu";
+			}
+			if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
+				finalurl = finalurl + bjc.CORSproxy + "/";
+			}
+			if (targeturl.indexOf("..") != -1 || targeturl.indexOf(bjc.rootURL) == -1) {
+				var path = window.location.pathname;
+				path = path.split("?")[0];
+				path = path.substring(0, path.lastIndexOf("/") + 1)
+				currdom = currdom + path;
+			}
+			finalurl = finalurl + currdom + targeturl;
+
+			return finalurl;
 		}
-		if (bjc.CORSCompliantServers.indexOf(currdom) == -1) {
-			finalurl = finalurl + bjc.CORSproxy + "/";
-		}
-        if (targeturl.indexOf("..") != -1 || targeturl.indexOf(bjc.rootURL) == -1) {
-            var path = window.location.pathname;
-            path = path.split("?")[0];
-            path = path.substring(0, path.lastIndexOf("/") + 1)
-            currdom = currdom + path;
-        }
-		finalurl = finalurl + currdom + targeturl;
-		
-		return finalurl;
 	}
 
-	
-
-	
-	
-		return currdom;
+	return currdom;
 
 }
 
@@ -86,7 +85,7 @@ function getParameterByName(name) {
             results.push(temp[1]);
         }
     }
-	if(results.length == 0)
+	if (results.length == 0)
         return "";
 	else if (results.length == 1) {
         return results[0];
@@ -108,6 +107,25 @@ bjc.stripComments = function(line) {
 	return line;
 }
 
+/** Google Analytics Tracking -- Currently not in use for BJC-R.
+ *  Each new repo should get their own GA token, and setup and then swap these
+ *  values. To make use of this code, the two ga() functions need to be called
+ *  on each page that is loaded, which means this file must be loaded. 
+ */
+bjc.GACode = 'UA-47210910-3';
+bjc.GAurl = 'berkeley.edu';
+bjc.GAfun =  function(i,s,o,g,r,a,m) {
+    i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  };
+
+bjc.GA = function() {
+        bjc.GAfun(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    }
+// GA Function Calls -- these do the real work!: 
+// ga('create', bjc.GACode, bjc.GAUrl);
+// ga('send', 'pageview');
 
 
 bjc.loaded['bjc-library'] = true;

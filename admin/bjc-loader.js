@@ -18,7 +18,11 @@ bjc.rootURL = "/bjc-r";
 bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
-bjc.paths.links = ["/admin/normalize.css", "/admin/jquery-ui-1.10.2-smoothness.css", "/admin/BJC.css", "/admin/from-mvle.css"];
+bjc.paths.links = [];
+bjc.paths.links.push('//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
+bjc.paths.links.push('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
+bjc.paths.links.push("/admin/BJC.css");
+bjc.paths.links.push("/admin/from-mvle.css");
 
 bjc.paths.scripts = [];
 bjc.paths.complete_funs = [];
@@ -26,11 +30,11 @@ bjc.paths.complete_funs = [];
 ///////////////// stage 0
 //
 bjc.paths.scripts[0] = ["/admin/jquery-1.9.1.min.js", "/admin/bjc-library.js"];
-bjc.loaded['bjc-library']= false;
+bjc.loaded['bjc-library'] = false;
 bjc.paths.complete_funs[0] = function() {
-	return (( typeof jQuery == 'function') && 
-	        ( bjc.loaded['bjc-library'])
-	);
+return (( typeof jQuery == 'function') && 
+        ( bjc.loaded['bjc-library'])
+    );
 }
 
 

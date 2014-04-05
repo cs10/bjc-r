@@ -4,207 +4,111 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
         <title>
-            Self Test: Test Yourself Total Turning
+            Self Test: Total Turning
         </title>
     </head>
-	<body>
+    <body>
 
-		<!-- question 1 -->
-		<div class="assessment-data"
-		type="multiplechoice" identifier="triange-turning"
-		hasinlinefeedback="true" maxchoices="1"
-		responseIdentifier="resp1" shuffle="false" >
-			<div class="prompt">
-				<p>
-					Through how many degrees did your sprite turn <em>altogether </em>(not per side) when you drew a triangle?
-				</p>
-			</div>
-			<div class="choice" identifier="c1">
-				<div class="text">
-					180
-				</div>
-				<div class="feedback">
-					Think about whether you need to total the external or internal angles of the triange.
-				</div>
-			</div>
-			<div class="choice" identifier="c2">
-				<div class="text">
-					360
-				</div>
-				<div class="feedback">
-					Correct! Each turn was 120 degrees, and there were three turns, for a total of 3*120=360 degrees.
-				</div>
-			</div>
+        <!-- question 1 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="triange-turning"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp1" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether </em>(not per side) when you drew a triangle?
+                    (That is, ignore the <tt>move</tt> blocks and focus on only the <tt>turn</tt> blocks).
+                </p>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    60
+                </div>
+                <div class="feedback">
+                    No.  Add up the total amount the sprite turns over all three rotations.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    180
+                </div>
+                <div class="feedback">
+                    No.  When the turtle finishes drawing one side of the triangle,
+                    is it facing toward the inside of the triangle?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! Each turn was 120 degrees, and there were three turns, for a total of 3*120=360 degrees.
+                </div>
+            </div>
 
-			<div class="choice" identifier="c3">
-				<div class="text">
-					480
-				</div>
-				<div class="feedback">
-					Think about how many turns your sprite made.
-				</div>
-			</div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    480
+                </div>
+                <div class="feedback">
+                    Nope, too much!  Think about how many turns your sprite made.
+                </div>
+            </div>
 
-			<div class="choice" identifier="c4">
-				<div class="text">
-					720
-				</div>
-				<div class="feedback">
-					Think about how many turns your sprite made.
-				</div>
-			</div>
-			<div class="responseDeclaration" identifier="resp1">
-				<div class="correctResponse" identifier="c2"></div>
-			</div>
-		</div>
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
 
-		<!-- question 2 -->
-				<div class="assessment-data"
-		type="multiplechoice" identifier="pentagon"
-		hasinlinefeedback="true" maxchoices="1"
-		responseIdentifier="resp2" shuffle="false" >
-			<div class="prompt">
-				<p>
-					Through how many degrees did your sprite turn <em>altogether </em> when you drew a pentagon?
-				</p>
-			</div>
-			<div class="choice" identifier="c1">
-				<div class="text">
-					360
-				</div>
-				<div class="feedback">
-					Correct! The sprite made a complete revoluton.
-				</div>
-			</div>
-			<div class="choice" identifier="c2">
-				<div class="text">
-					180
-				</div>
-				<div class="feedback">
-					Did it end up facing the other dirrection?
-				</div>
-			</div>
+        <!-- question 2 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether </em> when you drew a pentagon?
+                </p>
+            </div>
 
-			<div class="choice" identifier="c3">
-				<div class="text">
-					90
-				</div>
-				<div class="feedback">
-					Which way did the sprite end up facing?
-				</div>
-			</div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    72
+                </div>
+                <div class="feedback">
+                    No, consider the amount the sprite turned for all five of the rotations.
+                </div>
+            </div>
 
-			<div class="choice" identifier="c4">
-				<div class="text">
-					720
-				</div>
-				<div class="feedback">
-					How many times did the sprite turn?
-				</div>
-			</div>
-			<div class="responseDeclaration" identifier="resp2">
-				<div class="correctResponse" identifier="c1"></div>
-			</div>
-		</div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    108
+                </div>
+                <div class="feedback">
+                    Which way did the sprite end up facing?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! The sprite made a complete revoluton.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    540
+                </div>
+                <div class="feedback">
+                    No, How many times did the sprite turn?
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
 
-		<!-- question 3 -->
-				<div class="assessment-data"
-		type="multiplechoice" identifier="pentagon"
-		hasinlinefeedback="true" maxchoices="1"
-		responseIdentifier="resp3" shuffle="false" >
-			<div class="prompt">
-				<p>
-					Through how many degrees did your sprite turn <em>altogether </em> when you drew a five-pointed star?
-				</p>
-			</div>
-			<div class="choice" identifier="c1">
-				<div class="text">
-					90
-				</div>
-				<div class="feedback">
-					Did your sprite make a full turn?
-				</div>
-			</div>
-			<div class="choice" identifier="c2">
-				<div class="text">
-					180
-				</div>
-				<div class="feedback">
-					Did your sprite make a full turn?
-				</div>
-			</div>
-
-			<div class="choice" identifier="c3">
-				<div class="text">
-					360
-				</div>
-				<div class="feedback">
-					How many times did the sprite turn?
-				</div>
-			</div>
-
-			<div class="choice" identifier="c4">
-				<div class="text">
-					720
-				</div>
-				<div class="feedback">
-					Correct! Polygons that don't intersect themselves require a total turning of 360 degrees — one full circle. Stars turn all the way around more than once. Try using something like a pencil (flat on the table) to simulate a sprite tracing the path of a star.
-				</div>
-			</div>
-			<div class="responseDeclaration" identifier="resp3">
-				<div class="correctResponse" identifier="c4"></div>
-			</div>
-		</div>
-
-				<!-- question 4 -->
-				<div class="assessment-data"
-		type="multiplechoice" identifier="pentagon"
-		hasinlinefeedback="true" maxchoices="1"
-		responseIdentifier="resp4" shuffle="false" >
-			<div class="prompt">
-				<p>
-					What is the <em>smallest </em> number you can put into the numeric input of the repeat block below to produce the picture shown?
-				</p>
-				<img src="/bjc-r/img/prog/nonagon-script.png"/>
-				<img src="/bjc-r/img/prog/nonagon.png"/>
-			</div>
-			<div class="choice" identifier="c1">
-				<div class="text">
-					2
-				</div>
-				<div class="feedback">
-					Think about how many corners the star has.
-				</div>
-			</div>
-			<div class="choice" identifier="c2">
-				<div class="text">
-					5
-				</div>
-				<div class="feedback">
-					Think about how many corners the star has.
-				</div>
-			</div>
-
-			<div class="choice" identifier="c3">
-				<div class="text">
-					9
-				</div>
-				<div class="feedback">
-					Correct! The figure is a nine-pointed star.
-				</div>
-			</div>
-
-			<div class="choice" identifier="c4">
-				<div class="text">
-					7
-				</div>
-				<div class="feedback">
-					Think about how many corners the star has.
-				</div>
-			</div>
-			<div class="responseDeclaration" identifier="resp4">
-				<div class="correctResponse" identifier="c3"></div>
-			</div>
-		</div>
-	</body>
+        </div>
+    </body>
 </html>
