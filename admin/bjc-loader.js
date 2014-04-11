@@ -19,8 +19,8 @@ bjc.loaded = {};  // keys are true if that file is loaded.
 
 bjc.paths = {};
 bjc.paths.links = [];
-bjc.paths.links.push('//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
-bjc.paths.links.push('//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
+bjc.paths.links.push('http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css');
+bjc.paths.links.push('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/themes/smoothness/jquery-ui.min.css');
 bjc.paths.links.push("/admin/BJC.css");
 bjc.paths.links.push("/admin/from-mvle.css");
 
