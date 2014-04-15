@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	</style>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Conditionals</title>
+    </head>
+    <body>
+      	<h2><b>Conditionals</b></h2>
+	  	<p>
+	  		In Python, conditional statements consist of "if", "if-else", and "if-elif-else": <br>
+	  		<table style="width:800px;">
+			<tr>
+				<td>
+					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do something
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image29.png" alt="if condition"/></td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do something
+		else:
+			do something else
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image21.png" alt="if condition"/></td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do thing 1
+		elif (condition2):
+			do thing 2
+		else:
+			do something else
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image28.png" alt="if condition"/></td>
+  			</tr>
+	  		</table>
+	  	</p>
+		<p>
+			For example: <br> (Don't worry too much of what def means for now, that is how you define a new function in Python. We will go more in-depth later.)
+
+	<pre><blockquote><code>
+	def hi(x):
+		if (x % 2 == 0):
+			print("Hello, your number was even")
+		else:
+			print("Hello, your number was odd")
+	>>> x = 6 <br>
+	>>> hi(x) <br>
+	Hello, your number was even <br>
+	>>> hi(9) <br>
+	Hello, your number was odd <br>
+	</code></blockquote></pre>
+		</p>
+
+	  	<p>
+	  		<pre><blockquote><code>
+  	# Returns true if X is 0 or odd, otherwise returns false. <br>
+	def check_zero_or_odd(x):
+		if (x % 2 == 0):
+			return True
+		elif (x == 0):
+			return True
+		else:
+			return False
+	>>> x = 0 <br>
+  	>>>	check_zero_or_odd(x) <br>
+  	True <br>
+  	>>> x += 1 <br>
+  	>>> check_zero_or_odd(x) <br>
+  	True <br>
+  	>>> x += 3 <br>
+  	>>> check_zero_or_odd(x) <br>
+  	False <br>
+  		</code></blockquote></pre>
+		</p>
+    </body>
+</html>

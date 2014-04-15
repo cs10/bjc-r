@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+		<script type="text/javascript">
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	    function setImageVisible(id, visible) {
+    		var img = document.getElementById(id);
+    		img.style.visibility = (visible ? 'visible' : 'hidden');
+		}
+		</script>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Recursion</title>
+    </head>
+    <body>
+      	<p>
+      		<h2><b>Recursion</b></h2>
+	  	</p>
+	  	<p>
+	  		There is no difference in syntax when using recursion in Python or <span class="snap">snap</span> If you know how to write a function properly in Python, all you need to do is call the function again. Let's get some practice writing functions using recursion.
+
+	  		Write a function <code>factorial(n)</code>.
+
+	  		<code><blockquote>
+	  		>>>factorial(5) <br>
+	  		120 <br>
+	  		>>>factorial(2) <br>
+	  		2
+	  		</blockquote></code>
+	  		<a href="#" onclick="toggle_visibility('factorial');">Click here to show answer</a>
+			<div id="factorial" style="display:none">
+		  		<pre><code><blockquotes>
+	def factorial(n):
+		if n <= 0:
+			return 1
+		else:
+			return n * factorial(n - 1)
+		  		</blockquote></code></pre>
+	  		</div>
+		</p>
+		<p>
+			Now, write <code>fib(n)</code> which returns the nth number in the Fibonacci sequence with an initial index of 1. (i.e. 1 is the first number in the sequence; 1, 1, 2, 3, 5, 8, 13, 21, 34 . . . )
+
+			<code><blockquote>
+	  		>>>fib(6) <br>
+	  		8 <br>
+	  		>>>fib(8) <br>
+	  		21 <br>
+	  		>>>fib(2) <br>
+	  		1
+	  		</blockquote></code>
+	  		<a href="#" onclick="toggle_visibility('fib');">Click here to show answer</a>
+			<div id="fib" style="display:none">
+	  		<pre><code><blockquote>
+	def fib(n):
+		if n <= 2:
+			return 1
+		else:
+			return fib(n - 1) + fib(n - 2)
+			</blockquote></code></pre>
+		</p>
+    </body>
+</html>
