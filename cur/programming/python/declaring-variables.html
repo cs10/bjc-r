@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Declaring Variables</title>
+    </head>
+    <body>
+    <p>     	
+      	In <span class="snap">snap</span>, we created variables by using the <img class="inline" src="/bjc-r/img/variables/make-a-variable.png" alt="make-a-variable"/> button. In Python, we do not explicitly declare a variable in code. Rather, variables are created when they are assigned to a certain value:
+ 	</p> 
+
+	<p>
+		<img class="inline" src="/bjc-r/img/variables/set-block.png" alt="set-block"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 0</code>
+	</p>
+
+	<p>
+		We can change the value of <code class="prettify lang-python linenums">x</code> by setting it equal to a different value:
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-5.png" alt="set-x-to-5"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 5</code>
+
+	</p>
+
+	<p>
+		Or by using the different operators:		
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-add-exp.png" alt="set-x-to-add-exp"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 5 + 3</code>
+
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-mult-exp.png" alt="set-x-to-mult-exp"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 5 * 3</code>
+
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-mod-exp.png" alt="set-x-to-mod-exp"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 5 % 3</code>
+
+	</p>
+
+	<p>
+		Just like in <span class="snap">snap</span>, you can use multiple operators at the same time:		
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-nested-exp.png" alt="set-x-to-nested-exp"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = 5 + 4 * 3</code>
+
+	</p>
+
+	<p>
+		Python automatically uses order of operations to evaluate expressions with multiple operators. In the example above, Python will first evaluate <code class="prettify lang-python linenums">4 * 3</code>, which equals <code class="prettify lang-python linenums">12</code>, and then evaluate <code class="prettify lang-python linenums">5 * 12</code>. In the example above, <code class="prettify lang-python linenums">x</code> equals <code class="prettify lang-python linenums">17</code>. If you want to change the order in Python, use parentheses:	
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/set-x-to-nested-exp-2.png" alt="set-x-to-nested-exp-2"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = (5 + 4) * 3</code>
+
+	</p>
+
+	<p>
+		Another important block we used with variables was the <img class="inline" src="/bjc-r/img/blocks/change.png" alt="change"/> block. In Python, we do this a little differently:		
+	</p>
+
+	<p>
+		Notice that <img class="inline" src="/bjc-r/img/blocks/change.png" alt="change"/> and <img class="inline" src="/bjc-r/img/python/change-x-with-set-block.png" alt="change-x-with-set-block"/> are equivalent. Python follows the structure of this second block to change the value of a variable.	
+	</p>
+
+	<p>
+	    <img class="inline" src="/bjc-r/img/python/change-x-to-8.png" alt="change-x-to-8"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<img class="inline" src="/bjc-r/img/python/set-x-to-x-plus-8.png" alt="set-x-to-x-plus-8"/>&nbsp;&nbsp;&#8680;&nbsp;&nbsp;<code class="prettify lang-python linenums">x = x + 8</code>
+
+	</p>
+
+	<br />
+	<br />
+
+	<p>
+		<center> Helpful chart for operators: </center>		
+	</p>
+
+	<p>
+	    <img class="center" src="/bjc-r/img/python/chart-of-operators.png"/>
+	</p>
+
+    </body>
+</html>
