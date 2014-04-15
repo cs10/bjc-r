@@ -1,0 +1,299 @@
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+	
+        <title>Self-test: Variables and Primitive Expressions</title>
+    </head>
+    <body>
+	<h3>Quiz: What would Python print?</h3>
+	
+	
+	<!-- Question 1 -->
+	<div class="assessment-data" type="multiplechoice" identifier=">4 + 3 * 8 / 2"
+             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="false">
+            
+            <div class="prompt">		
+                <code class="prettify lang-python linenums">>>> 4 + 3 * 8 / 2</code>
+            </div>
+            
+            <div class="choice" identifier="28">
+                <div class="text">
+                    <code class="prettify lang-python linenums">28</code>
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="16">
+                <div class="text">
+                    <code class="prettify lang-python linenums">16</code>
+                </div>
+                <div class="feedback">
+                    Good job! In Python, all expressions are evaluated using order of operations.
+                    <br />
+                    <code class="prettify lang-python linenums">>>> 4 + 3 * 8 / 2</code>
+                    <br />
+                    <code class="prettify lang-python linenums">16</code>
+                    <br />
+                    <code class="prettify lang-python linenums">>>></code>
+                </div>
+            </div>
+            
+            <div class="choice" identifier="14">
+                <div class="text">
+		            <code class="prettify lang-python linenums">14</code>
+                </div>
+                <div class="feedback">
+		            Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="Error">
+                <div class="text">
+                    Error
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+	   
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="16"></div>
+            </div>
+	</div>
+
+	<!-- Question 2 -->
+	<div class="assessment-data" type="multiplechoice" identifier=">x = 12"
+             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="false">
+            
+            <div class="prompt">		
+                <code class="prettify lang-python linenums">>>> x = 12</code>
+            </div>
+            
+            <div class="choice" identifier="12">
+                <div class="text">
+                    <code class="prettify lang-python linenums">12</code>
+                </div>
+                <div class="feedback">
+                    Try again! This one is a little tricky.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="x">
+                <div class="text">
+		              <code class="prettify lang-python linenums">x</code>
+                </div>
+                <div class="feedback">
+		              Not quite! Try again.
+                </div>
+            </div>
+
+            <div class="choice" identifier="None">
+                <div class="text">
+                      <code class="prettify lang-python linenums">None</code> (nothing)
+                </div>
+                <div class="feedback">
+                    Good job! In Python, an assignment statement is not considered an expression so it has no return value.
+                    <br />
+                    <code class="prettify lang-python linenums">>>> x = 12</code>
+                    <br />
+                    <code class="prettify lang-python linenums">>>></code>
+                </div>
+            </div>
+
+            <div class="choice" identifier="Error">
+                <div class="text">
+                    Error
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="None"></div>
+            </div>
+	</div>
+
+	<!-- Question 3 -->
+	<div class="assessment-data" type="multiplechoice" identifier=">x = 12 + 8"
+             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="false">
+            
+            <div class="prompt">		
+                <code class="prettify lang-python linenums">>>> x = 12 + 8</code>
+            </div>
+            
+            <div class="choice" identifier="x">
+                <div class="text">
+                      <code class="prettify lang-python linenums">x</code>
+                </div>
+                <div class="feedback">
+                      Not quite! Try again.
+                </div>
+            </div>
+
+            <div class="choice" identifier="20">
+                <div class="text">
+                    <code class="prettify lang-python linenums">20</code>
+                </div>
+                <div class="feedback">
+                    Try again! This one is a little tricky.
+                </div>
+            </div>
+
+            <div class="choice" identifier="None">
+                <div class="text">
+                      <code class="prettify lang-python linenums">None</code> (nothing)
+                </div>
+                <div class="feedback">
+                    Good job! Even though there is an expression involved here, this is still an assignment statement, so just like the problem above, there is no return value.
+                    <br />
+                    <code class="prettify lang-python linenums">>>> x = 12 + 8</code>
+                    <br />
+                    <code class="prettify lang-python linenums">>>></code>
+                </div>
+            </div>
+
+            <div class="choice" identifier="Error">
+                <div class="text">
+                    Error
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+	   
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="None"></div>
+            </div>
+	</div>
+
+	<!-- Question 4 -->
+	<div class="assessment-data" type="multiplechoice" identifier="Print z"
+             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri4" shuffle="false">
+            
+            <div class="prompt">		
+                <code class="prettify lang-python linenums">>>> x = 2</code>
+                <br />
+                <code class="prettify lang-python linenums">>>> y = x</code>
+                <br />
+                <code class="prettify lang-python linenums">>>> x = 7</code>
+                <br />
+                <code class="prettify lang-python linenums">>>> x = x + y</code>
+                <br />
+                <code class="prettify lang-python linenums">>>> print(z)</code>
+            </div>
+            
+            <div class="choice" identifier="14">
+                <div class="text">
+                    <code class="prettify lang-python linenums">14</code>
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="9">
+                <div class="text">
+                    <code class="prettify lang-python linenums">9</code>
+                </div>
+                <div class="feedback">
+                    Good job!
+                    <br />
+                    <code class="prettify lang-python linenums">>>> print(z)</code>
+                    <br />
+                    <code class="prettify lang-python linenums">9</code>
+                    <br />
+                    <code class="prettify lang-python linenums">>>> </code>
+                </div>
+            </div>
+
+            <div class="choice" identifier="x + y">
+                <div class="text">
+                    <code class="prettify lang-python linenums">x + y</code>
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="Error">
+                <div class="text">
+                    Error
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+	   
+            <div class="responseDeclaration" identifier="ri4">
+                <div class="correctResponse" identifier="9"></div>
+            </div>
+	</div>
+
+	<!-- Question 5 -->
+	<div class="assessment-data" type="multiplechoice" identifier="x + 3"
+             hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri5" shuffle="false">
+            
+            <div class="prompt">		
+                <code class="prettify lang-python linenums">>>> x + 3</code>
+            </div>
+            
+            <div class="choice" identifier="3">
+                <div class="text">
+                    <code class="prettify lang-python linenums">3</code>
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="x + 3">
+                <div class="text">
+                    <code class="prettify lang-python linenums">x + 3</code>
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+            
+            <div class="choice" identifier="None">
+                <div class="text">
+                      <code class="prettify lang-python linenums">None</code> (nothing)
+                </div>
+                <div class="feedback">
+                    Try again!
+                </div>
+            </div>
+
+            <div class="choice" identifier="Error">
+                <div class="text">
+                    Error
+                </div>
+                <div class="feedback">
+                    Good job! Every time you use a variable, you have to declare it first by assigning it to some value. When Python tries to evaluate the above expression, it doesn't know what the value of x is, and so it will return an error message.
+                    <br />
+                    <code class="prettify lang-python linenums">>>> x + 3</code>
+                    <br />
+                    <code class="prettify lang-python linenums">Traceback (most recent call last):</code>
+                    <br />
+                    <code class="prettify lang-python linenums">  File "<stdin>", line 1, in <module></code>
+                    <br />
+                    <code class="prettify lang-python linenums">NameError: name 'x' is not defined</code>
+                    <br />
+                    <code class="prettify lang-python linenums">>>> </code>
+                </div>
+            </div>
+
+	   
+            <div class="responseDeclaration" identifier="ri5">
+                <div class="correctResponse" identifier="Error"></div>
+            </div>
+	</div>
+    </body>
+</html>
+
