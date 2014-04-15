@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
-	<style> 
-	.container {
-		float:left;
-		margin-right: 100px;
-	}
-	.first {
-		display: block;
-		text-indent: 30px;
-	}
-	.second{
-		display: block;
-		text-indent: 60px;
-	}
-	</style>
+
     <head>
+		<script type="text/javascript">
+	    function toggle_visibility(id) {
+	       var e = document.getElementById(id);
+	       if(e.style.display == 'block')
+	          e.style.display = 'none';
+	       else
+	          e.style.display = 'block';
+	    }
+	    function setImageVisible(id, visible) {
+    		var img = document.getElementById(id);
+    		img.style.visibility = (visible ? 'visible' : 'hidden');
+		}
+		</script>
         <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
         <title>Recursion</title>
     </head>
@@ -31,17 +31,18 @@
 	  		>>>factorial(5) <br>
 	  		120 <br>
 	  		>>>factorial(2) <br>
-	  		2 <br><br>
-	  		</blockquotes></code>
-	  		<div class="container"><code><blockquotes>
-		  		def factorial(n): <br>
-		  			<span class="first">if n <= 0:</span>
-		  			<span class="second">return 1</span>
-		  			<span class="first">else:</span>
-		  			<span class="second">return n * factorial(n - 1)</span>
-	  		</blockquote></code></div>
-
-	  		<img src="../../../../img/python/image00.png" alt="factorial"/>
+	  		2
+	  		</blockquote></code>
+	  		<a href="#" onclick="toggle_visibility('factorial');">Click here to show answer</a>
+			<div id="factorial" style="display:none">
+		  		<pre><code><blockquotes>
+	def factorial(n):
+		if n <= 0:
+			return 1
+		else:
+			return n * factorial(n - 1)
+		  		</blockquote></code></pre>
+	  		</div>
 		</p>
 		<p>
 			Now, write <code>fib(n)</code> which returns the nth number in the Fibonacci sequence with an initial index of 1. (i.e. 1 is the first number in the sequence; 1, 1, 2, 3, 5, 8, 13, 21, 34 . . . )
@@ -52,18 +53,17 @@
 	  		>>>fib(8) <br>
 	  		21 <br>
 	  		>>>fib(2) <br>
-	  		1 <br><br>
-	  		</blockquotes></code>
-
-			<div class="container"><code><blockquote>
-				def fib(n): <br>
-					<span class="first">if n <= 2:</span>
-					<span class="second">return 1</span>
-					<span class="first">else:</span>
-					<span class="second">return fib(n - 1) + fib(n - 2)</span>
-			</blockquote></code></div>
-
-			<img src="../../../../img/python/image09.png" alt="fibonacci"/>
+	  		1
+	  		</blockquote></code>
+	  		<a href="#" onclick="toggle_visibility('fib');">Click here to show answer</a>
+			<div id="fib" style="display:none">
+	  		<pre><code><blockquote>
+	def fib(n):
+		if n <= 2:
+			return 1
+		else:
+			return fib(n - 1) + fib(n - 2)
+			</blockquote></code></pre>
 		</p>
     </body>
 </html>

@@ -11,7 +11,7 @@
       		<b>PART ONE: HEAD</b>
 	  	</p>
 	  	<p>
-	  		To define a function in Python, you first need to make a head. It looks generally like this:
+	  		To define a function in Python, you first need to make a head. It generally looks like this:
 			<code><blockquote>def function_name():</blockquote></code>
 			Try making a sum function, which will add two numbers (x and y) and output their sum. 
 			Start with a "def statement" (underlined).
@@ -19,7 +19,7 @@
 			"def" is the first thing we write when defining a function. We always write "def". It is Python's way of saying how the following function will be defined. This is analogous to <img src="../../../../img/python/image20.png" alt="make a block"/> button in <span class="snap">snap</span>
 		</p>
 		<p>
-			You can (usually) choose any function name you want. We could have used "add" or "add_two_numbers", or something else. Note the space between the "def" and the function name. That one space is <em><b>essential</b></em> to the syntax. 
+			You can choose almost any function name you want. We could have used "add" or "add_two_numbers", or something else. Note the space between the "def" and the function name. That one space is <em><b>essential</b></em> to the syntax. 
 		</p>
 		<p>
 			Our function will have two parameters, x and y. You can make a function with as many or as little parameters as you want. We start by opening a parenthesis following the function name. Then, name your variables, and separate them with a comma and possibly a space, although spaces are not necessary in separation. Close your parameters with a closing parenthesis.<br><br>For a function with zero parameters, just use an opening and closing pair of parentheses like this: ()
@@ -33,15 +33,11 @@
 
 			The most important thing to do when starting off the body is indenting (4 spaces or 1 tab).	<br>
 			Then, begin writing your code. Go ahead and fill in the rest of the line. So, we have something like this:<br>
-			<style>
-			div {
-				text-indent: 30px;
-			}
-			</style>
-			<code><blockquote>
-				def sum(x, y): <br>
-					<div>return x + y</div><br>
-			</blockquote></code>
+
+			<pre><code><blockquote>
+		def sum(x, y):
+			return x + y
+			</blockquote></code></pre>
 
 			Return ends our function (as we learned previously), and outputs the value that follows. So in this case, the function returns x + y. If the function reaches a return statement, then no lines below it will be executed. The current sum function is very simple, try writing sum with a temporary variable, called total. 
 

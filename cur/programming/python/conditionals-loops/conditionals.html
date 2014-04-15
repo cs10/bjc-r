@@ -1,24 +1,7 @@
 <!DOCTYPE html>
 <html>
-	<style> 
-	.container1{
-		float:left;
-		margin-right: 138px;
-	}
-	.container {
-		float:left;
-		margin-right: 100px;
-	}
-	.first {
-		display: block;
-		text-indent: 30px;
-	}
-	.second{
-		display: block;
-		text-indent: 60px;
-	}
-	</style>
     <head>
+	</style>
         <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
         <title>Conditionals</title>
     </head>
@@ -26,70 +9,79 @@
       	<h2><b>Conditionals</b></h2>
 	  	<p>
 	  		In Python, conditional statements consist of "if", "if-else", and "if-elif-else": <br>
-	  		<div class="container1"><code><blockquote>
-	  			if (condition): <br>
-	  			<span class="first">do something</span>
-	  		</blockquote></code></div>
-	  		<img src="../../../../img/python/image29.png" alt="if condition"/>
+	  		<table style="width:800px;">
+			<tr>
+				<td>
+					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do something
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image29.png" alt="if condition"/></td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do something
+		else:
+			do something else
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image21.png" alt="if condition"/></td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<pre><code class="prettify lang-python linenums">
+		if (condition):
+		 	do thing 1
+		elif (condition2):
+			do thing 2
+		else:
+			do something else
+					</code></pre>
+  				</td>
+  				<td><img src="../../../../img/python/image28.png" alt="if condition"/></td>
+  			</tr>
+	  		</table>
 	  	</p>
-	  	<p>
-	  		<div class="container"><code><blockquote>
-	  			if (condition): <br>
-	  			<span class="first">do something</span>
-	  			else: <br>
-	  			<span class="first">do something else</span>
-	  		</blockquote></code></div>
-	  		<img src="../../../../img/python/image21.png" alt="if-else condition"/>
-		</p>
-	  	<p>
-	  		<div class="container"><code><blockquote>
-	  			if (condition): <br>
-	  			<span class="first">do thing 1</span>
-	  			elif (condition2): <br>
-	  			<span class="first">do thing 2</span>
-	  			else:
-	  			<span class="first">do something else</span>
-	  		</blockquote></code></div>
-	  		<img src="../../../../img/python/image28.png" alt="if-elif-else condition"/>
-		</p>
 		<p>
 			For example: <br> (Don't worry too much of what def means for now, that is how you define a new function in Python. We will go more in-depth later.)
 
-			<blockquote><code>
-				def hi(x):
-				<span class="first">if (x % 2 == 0):</span>
-				<span class="second">print("Hello, your number was even")</span>
-				<span class="first">else:</span>
-				<span class="second">print("Hello, your number was odd")</span><br>
-			
-			>>> x = 6 <br>
-	  		>>> hi(x) <br>
-	  		Hello, your number was even <br>
-	  		>>> hi(9) <br>
-	  		Hello, your number was odd <br>
-	  		</code></blockquote>
-	  	</p>
+	<pre><blockquote><code>
+	def hi(x):
+		if (x % 2 == 0):
+			print("Hello, your number was even")
+		else:
+			print("Hello, your number was odd")
+	>>> x = 6 <br>
+	>>> hi(x) <br>
+	Hello, your number was even <br>
+	>>> hi(9) <br>
+	Hello, your number was odd <br>
+	</code></blockquote></pre>
+		</p>
 
 	  	<p>
-	  		<blockquote><code>
-	  			# Returns true if X is 0 or odd, otherwise returns false. <br>
-				def check_zero_or_odd(x):
-				<span class="first">if (x % 2 == 0):</span>
-				<span class="second">return True</span>
-				<span class="first">elif (x == 0):</span>
-				<span class="second">return True</span>
-				<span class="first">else:</span>
-				<span class="second">return False</span>
-			>>> x = 0 <br>
-	  		>>>	check_zero_or_odd(x) <br>
-	  		True <br>
-	  		>>> x += 1 <br>
-	  		>>> check_zero_or_odd(x) <br>
-	  		True <br>
-	  		>>> x += 3 <br>
-	  		>>> check_zero_or_odd(x) <br>
-	  		False <br>
-	  		</code></blockquote>
+	  		<pre><blockquote><code>
+  	# Returns true if X is 0 or odd, otherwise returns false. <br>
+	def check_zero_or_odd(x):
+		if (x % 2 == 0):
+			return True
+		elif (x == 0):
+			return True
+		else:
+			return False
+	>>> x = 0 <br>
+  	>>>	check_zero_or_odd(x) <br>
+  	True <br>
+  	>>> x += 1 <br>
+  	>>> check_zero_or_odd(x) <br>
+  	True <br>
+  	>>> x += 3 <br>
+  	>>> check_zero_or_odd(x) <br>
+  	False <br>
+  		</code></blockquote></pre>
 		</p>
     </body>
 </html>

@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <style>
+      table,th,td {
+      border:1px solid black;
+      border-collapse:collapse;}
+      th,td {
+      padding:5px;}
+      th {
+      text-align:left;}
+      </style>
         <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
         <title>Variable and Primative Expressions</title>
     </head>
@@ -8,79 +17,71 @@
       	<p>
       		<h2><b> Declaring Variables </b></h2><br>
       		In <span class="snap">snap</span>, we created variables by using the "Make a Variable" button. In Python, we don't explicitly declare a variable in code. Rather, variables are created when they are assigned to a certain value:<br><br>
-      		<blockquote><code class="prettify lang-python linenums">x = 0</code> is the same as <img src="../../../../img/python/image30.png" alt="x = 0"/></blockquote><br><br>
+      		<blockquote><img src="../../../../img/python/image30.png" alt="x = 0"/> is the same as <code class="prettify lang-python linenums">x = 0</code></blockquote><br><br>
       		We can change the value of x by setting it equal to a different value:<br><br>
-      		<blockquote><code class="prettify lang-python linenums">x = 5</code> is the same as <img src="../../../../img/python/image01.png" alt="x = 5"/></blockquote><br><br>
+      		<blockquote><img src="../../../../img/python/image01.png" alt="x = 5"/> is the same as <code class="prettify lang-python linenums">x = 5</code></blockquote><br><br>
       		Or by using different operators:<br><br>
-      		<blockquote><code class="prettify lang-python linenums">x = 5 + 3</code> is the same as <img src="../../../../img/python/image06.png" alt="x = 5 + 3"/><br><br>
-      		<code class="prettify lang-python linenums">x = 5 * 3</code> is the same as <img src="../../../../img/python/image31.png" alt="x = 5 * 3"/><br><br>
-      		<code class="prettify lang-python linenums">x = 5 % 3</code> is the same as <img src="../../../../img/python/image32.png" alt="x = 5 mod 3"/></blockquote><br><br>
+      		<blockquote><img src="../../../../img/python/image06.png" alt="x = 5 + 3"/> is the same as <code class="prettify lang-python linenums">x = 5 + 3</code><br><br>
+      		<img src="../../../../img/python/image31.png" alt="x = 5 * 3"/> is the same as <code class="prettify lang-python linenums">x = 5 * 3</code><br><br>
+      		<img src="../../../../img/python/image32.png" alt="x = 5 mod 3"/> is the same as <code class="prettify lang-python linenums">x = 5 % 3</code></blockquote><br><br>
       		Just like in <span class="snap">snap</span>, you can use multiple operators at the same time:<br>
 
-      		<blockquote><code class="prettify lang-python linenums">x = 5 + 4 * 3</code> is the same as <img src="../../../../img/python/image27.png" alt="x = 5 + 4 * 3"/></blockquote><br>
+      		<blockquote><img src="../../../../img/python/image27.png" alt="x = 5 + 4 * 3"/> is the same as <code class="prettify lang-python linenums">x = 5 + 4 * 3</code></blockquote><br>
       	<p>
       		Python automatically uses order of operations to evaluate expressions with multiple operators. In the example above, Python will first evaluate 4 * 3, which equals 12, and then evaluate 5 + 12. In the example above, x equals 17. If you want to change the order in Python, use parentheses:<br><br>
       		
-      		<blockquote><code class="prettify lang-python linenums">x = (5 + 4) * 3</code> is the same as <img src="../../../../img/python/image03.png" alt="x = (5 + 4) * 3"/></blockquote><br>
+      		<blockquote><img src="../../../../img/python/image03.png" alt="x = (5 + 4) * 3"/> is the same as <code class="prettify lang-python linenums">x = (5 + 4) * 3</code></blockquote><br>
       	</p>
       	<p>
       		Another important block we used with variables was the <img src="../../../../img/python/image02.png" alt="change by 1"/> block. In Python, it is done a little differently.
       		Notice that <img src="../../../../img/python/image03.png" alt="x = (5 + 4) * 3"/> and <img src="../../../../img/python/image11.png" alt="x = x + 1"/> are equivalent. Python follows the structure of this second block to change the value of a variable.<br><br>
-      		<blockquote><code class="prettify lang-python linenums">x = x + 8</code> is the same as <img src="../../../../img/python/image22.png" alt="x = x + 8"/> and <img src="../../../../img/python/image23.png" alt="x = x + 8"/> <i><b><br>(Quick Tip:</b></i> <code>x = x + 8</code> is the same as <code>x += 8)</code></blockquote><br>
-				<style>
-				table,th,td {
-				border:1px solid black;
-				border-collapse:collapse;}
-				th,td {
-				padding:5px;}
-				th {
-				text-align:left;}
-				</style>
+      		<blockquote><img src="../../../../img/python/image22.png" alt="x = x + 8"/> and <img src="../../../../img/python/image23.png" alt="x = x + 8"/> are the same as <code class="prettify lang-python linenums">x = x + 8</code><i><b><br>(Quick Tip:</b></i> <code>x = x + 8</code> is the same as <code>x += 8)</code></blockquote><br>
+
       		<blockquote><table style="width:300px">
       			<tr>
       				<th>Operators</th>
+                              <th><span class="snap">snap</span></th>
       				<th>Python</th>
-      				<th><span class="snap">snap</span></th>
       			</th>
       			<tr>
       				<td>Addition</td>
+                              <td><img src="../../../../img/python/image19.png" alt="x + y"/></td>
       				<td><code>x + y</code></td>
-      				<td><img src="../../../../img/python/image19.png" alt="x + y"/></td>
       			</tr>
       			<tr>
       				<td>Subtraction</td>
+                              <td><img src="../../../../img/python/image10.png" alt="x - y"/></td>
       				<td><code>x - y</code></td>
-      				<td><img src="../../../../img/python/image10.png" alt="x - y"/></td>
       			</tr>
       			<tr>
       				<td>Multiplication</td>
+                              <td><img src="../../../../img/python/image05.png" alt="x * y"/></td>
       				<td><code>x * y</code></td>
-      				<td><img src="../../../../img/python/image05.png" alt="x * y"/></td>
       			</tr>
       			<tr>
       				<td>Division</td>
+                              <td><img src="../../../../img/python/image16.png" alt="x / y"/></td>
       				<td><code>x / y</code></td>
-      				<td><img src="../../../../img/python/image16.png" alt="x / y"/></td>
       			</tr>
       			<tr>
       				<td>Modulo</td>
+                              <td><img src="../../../../img/python/image25.png" alt="x mod y"/></td>
       				<td><code>x % y</code></td>
-      				<td><img src="../../../../img/python/image25.png" alt="x mod y"/></td>
       			</tr>
       			<tr>
       				<td>Less Than</td>
+                              <td><img src="../../../../img/python/image12.png" alt="x < y"/></td>
       				<td><code>x < y</code></td>
-      				<td><img src="../../../../img/python/image12.png" alt="x < y"/></td>
       			</tr>
       			<tr>
       				<td>Greater Than</td>
+                              <td><img src="../../../../img/python/image18.png" alt="x > y"/></td>
       				<td><code>x > y</code></td>
-      				<td><img src="../../../../img/python/image18.png" alt="x > y"/></td>
       			</tr>
       			<tr>
       				<td>Equals</td>
+                              <td><img src="../../../../img/python/image15.png" alt="x = y"/></td>
       				<td><code>x == y</code></td>
-      				<td><img src="../../../../img/python/image15.png" alt="x = y"/></td>
       			</tr>
       		</table></blockquote>
 	  	</p>

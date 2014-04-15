@@ -1,19 +1,5 @@
 <!DOCTYPE html>
-<html>
-	<style> 
-	.container {
-		float:left;
-		margin-right: 100px;
-	}
-	.first {
-		display: block;
-		text-indent: 30px;
-	}
-	.second{
-		display: block;
-		text-indent: 60px;
-	}
-	</style>
+<html>	
     <head>
         <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
         <title>Introduction to Python</title>
@@ -32,15 +18,21 @@
 	  	</p>
 	  	<p>
 		  	<h><b> Example </b></h>
-	  		Let's take a look at this simple max function in Python<br>
-	  		<div class="container"><code><blockquote>
-			def max(x, y):<br>		
-    			<span class="first">if x > y:</span>
-        		<span class="second">return x</span>
-    			<span class="first">else:</span>
-        		<span class="second">return y</span>
-			</blockquote></code></div>
-			<img src="../../../../img/python/image13.png" alt="max function"/>
+	  		Let's take a look at this simple max function in Python<br><br>
+	  		<table style="width:500px">
+	  			<tr>
+	  				<td><img src="../../../../img/python/image13.png" alt="max function"/></td>
+	  				<td>
+	  					<pre><code><blockquote>
+	def max(x, y):
+		if (x > y):
+			return x
+		else:
+			return y
+						</blockquote></code></pre>
+					</td>
+	  			</tr>
+	  		</table>
 	  	</p>
 	  	<p>
 	  		Look at how they are <b>very</b> similar! The code is practically identical, line by line, only with some special Python syntax. Even the structures of both functions are identical. Notice how the two <span class="snap">snap</span> "report" blocks are nested inside the if/else block, and how the "return" statements in Python are indented within the if/else statement. These functions accomplish and communicate the same thing, but are implemented in two different languages. 
