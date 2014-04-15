@@ -12,15 +12,18 @@
 
 
 // NOTE: this is built in bjc-library.js if not built here...
-var bjc = {};
-// rootURL also spec'ed in bjc-library.js
-bjc.rootURL = "/bjc-r";
-bjc.loaded = {};  // keys are true if that file is loaded.
+if (typeof bjc === 'undefined') {
+    bjc = {};
+    bjc.rootURL = "/bjc-r"; // TODO: Make this dynamic?
+    // needs to be defined, even though unused if bjc_loader isn't run
+    bjc.loaded = {};
+}
+
 
 bjc.paths = {};
 bjc.paths.links = [];
 bjc.paths.links.push("/admin/css/bootstrap.min.css"); // FIXME -- CDN
-bjc.paths.links.push("/admin/css/bootstrap-theme.min.css");
+bjc.paths.links.push("/admin/css/bootstrap-theme.min.css"); // FIXME -- CDN
 bjc.paths.links.push("/admin/css/from-mvle.css");
 bjc.paths.links.push("/admin/css/BJC.css");
 
@@ -30,7 +33,7 @@ bjc.paths.complete_funs = [];
 ///////////////// stage 0
 //
 bjc.paths.scripts[0] = [];
-bjc.paths.scripts[0].push("/admin/js/jquery-1.11.0.min.js"); // FIXME -- CDN
+bjc.paths.scripts[0].push("/admin/js/jquery-1.11.0.min.js");
 // //cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js
 bjc.paths.scripts[0].push("/admin/js/bjc-library.js");
 
@@ -48,7 +51,7 @@ bjc.paths.complete_funs[0] = function () {
 bjc.paths.scripts[1] = [];
 bjc.paths.scripts[1].push("/admin/js/bjc-curriculum.js");  
 bjc.paths.scripts[1].push("/admin/quiz/multiplechoice.js");
-bjc.paths.scripts[1].push("/admin/js/bootstrap.js"); // FIXME -- CDN
+bjc.paths.scripts[1].push("/admin/js/bootstrap.min.js");
 //cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js
 bjc.paths.scripts[1].push("/admin/js/bjc-course.js");
 

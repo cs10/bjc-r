@@ -151,4 +151,10 @@ bjc.truncate = function(str, n) {
     return str; // return the HTML content if possible.
 };
 
+/**
+ */
+bjc.getPageType = function() {
+    var url = window.url
+}
+
 bjc.loaded['bjc-library'] = true;
