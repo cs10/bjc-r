@@ -1,0 +1,44 @@
+title: Besides Blocks: Too Many Tweets!
+{
+h2: Big Ideas
+big-idea: FIXME -- Computational Thinking
+big-idea: FIXME -- You're Awesome!
+big-idea: FIXME -- #EverythingIsAwesome!
+
+h2: Activities
+learning-goal: FIXME
+learning-goal: FIXME 
+learning-goal: FIXME
+
+heading: Introduction to Python
+    resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/python/]
+    resource: Overview of the Window [/bjc-r/cur/programming/python/]
+    resource: Blocks [/bjc-r/cur/programming/python/]
+    resource: Scripts [/bjc-r/cur/programming/python/]
+    resource: Reporters [/bjc-r/cur/programming/pythonl]
+
+heading: Making Functions In Python
+    resource: A [/bjc-r/cur/programming/python]
+    resource: B [/bjc-r/cur/programming/python]
+    resource: C [/bjc-r/cur/programming/python]
+    resource: D [/bjc-r/cur/programming/python]
+    quiz: E [/bjc-r/cur/programming/python]
+    resource: F [/bjc-r/cur/programming/python]
+
+heading: Graphics in Python
+    resource: A [/bjc-r/cur/programming/python]
+    resource: B [/bjc-r/cur/programming/python]
+    resource: C [/bjc-r/cur/programming/python]
+    resource: D [/bjc-r/cur/programming/python]
+    quiz: E [/bjc-r/cur/programming/python]
+    resource: F [/bjc-r/cur/programming/python]
+
+heading: It's a bit <code>String</code>y!
+    resource: A [/bjc-r/cur/programming/python]
+    resource: B [/bjc-r/cur/programming/python]
+    resource: C [/bjc-r/cur/programming/python]
+    resource: D [/bjc-r/cur/programming/python]
+    quiz: E [/bjc-r/cur/programming/python]
+    resource: F [/bjc-r/cur/programming/python]
+
+}
