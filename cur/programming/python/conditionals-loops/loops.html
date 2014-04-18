@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
+        <title>Loops</title>
+    </head>
+    <body>
+	  	<p>
+	  		There are two essential kinds of loop in (also in most of other text programming languages as well) Python, they are For-Loop and While-Loop.
+	  	</p>
+	  	<p>
+	  		<table>
+	  			<tr>
+	  				<td><img src="../../../../img/python/for1to10.png" alt="for-loop"/></td>
+	  				<td>
+	  					<pre><code><blockquote>
+		for i in range(x, y):
+			do something
+	  					</blockquote></code></pre>
+	  			</tr>
+	  		</table>
+	  	</p>
+	  	<p>
+	  		<code># this for-loop will "do something" y times, unless specified.</code><br><br>
+	  		<b>Note:</b> <br><br> The range function can also be written with one argument like this: <code>range(y):</code><br><br>
+	  		Also, there are many ways that we can utilize a for-loop. Let's consider a list, just like in <span class="snap">snap</span>. Let's call this list <code>lst</code>.<br> Then we can also do this with a for-loop: <code>for i in lst:</code><br><br>
+	  		There are other cool things we can do with a for-loop, you will learn these tools as you become more familiar with Python.
+	  	</p>
+	  	<p><hr/>
+	  		<table>
+	  			<tr>
+	  				<td><img src="../../../../img/python/repeatuntilnot.png" alt="repeat-until"/></td>
+	  				<td>
+	  					<pre><code><blockquote>
+	while (condition):
+		do something
+	  					</blockquote></code></pre>
+	  			</tr>
+	  		</table>
+		</p>
+		<p>
+			<code># this while-loop will "do something" as long as "condition" remains true.</code><br><br>
+			<hr>
+			Let's take a look at some examples:<br>
+			<pre><code><blockquote>
+def add_one_n_times(n):
+	if (n < 0):
+		return n
+	else:
+		result = 0
+		for i in range(n):
+			result += 1
+		return result
+			</blockquote></code></pre>
+			<code>
+			# If you notice the "report block in <span class="snap">snap</span>, we can't attach anything <br>
+			# after that block. That is because it will terminate the function <br>
+			# immediately after that statement is executed. The concept is the same <br>
+			# in Python, after the "return" statement is executed, the whole function <br>
+			# terminates. 		
+			</code>
+			<blockquote><code>
+			>>> add_one_n_times(-5):<br>
+			-5 <br>
+			>>> add_one_n_time(5):<br>
+			5 <br>
+			</code></blockquote>
+		</p>
+		<p>
+			Let's write another function <code>min(x, y, z)</code> using only a while loop. Note that this function will only work for <b>all positive values</b>.
+
+			<pre><blockquote><code>
+def min(x, y, z):
+	m = 0
+	while (x != 0 and y != 0 and z != 0):
+		x -= 1
+		y -= 1
+		z -= 1
+		m += 1
+	return m
+			</code></blockquote></pre>
+		</p>
+		<p>
+			Quick Quiz: (discuss with your partner, verify with TA for answer)<br>
+			1. How can we write <code>add_one_n_times(n)</code> using a while loop instead of a for loop. <br>
+			2. What is the difference between a while loop in Python and a repeat until in <span class="snap">snap</span>?<br>
+		</p>
+    </body>
+</html>
