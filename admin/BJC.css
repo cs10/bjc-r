@@ -521,7 +521,7 @@ img.inline {
 
 img.indent {
     margin-left: 10%;
-    display: block;
+    /* display: block;  */
 }
 
 div.indent {
