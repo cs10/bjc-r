@@ -14,15 +14,15 @@ learning-goal: Implement a recursive algorithm to countdown from a number
 learning-goal: Using our understanding of a base case and recursive calls, write recursive algorithms to say numbers in a range, draw a squiral, and sum digits
 
 heading: Recursion Warmup
-	resource: Recursion in a Nutshell [/bjc-r/cur/programming/recursion/warmup/recursion-in-a-nutshell.html]
-	resource: Practice: Aibohphobia [/bjc-r/cur/programming/recursion/warmup/practice-aibohphobia.html]
-	resource: Practice: Adding a range of numbers to a list [/bjc-r/cur/programming/recursion/warmup/practice-adding-a-range-of-numbers-to-a-list.html]
-	resource: Practice: Performing recursive operations on lists [/bjc-r/cur/programming/recursion/warmup/practice-performing-recursive-operations-on-lists.html]
+	resource: Recursion in a Nutshell [/bjc-r/cur/programming/recur/warmup/recursion-in-a-nutshell.html]
+	resource: Practice: Aibohphobia [/bjc-r/cur/programming/recur/warmup/practice-aibohphobia.html]
+	resource: Practice: Adding a range of numbers to a list [/bjc-r/cur/programming/recur/warmup/practice-adding-a-range-of-numbers-to-a-list.html]
+	resource: Practice: Performing recursive operations on lists [/bjc-r/cur/programming/recur/warmup/practice-performing-recursive-operations-on-lists.html]
 
 
 heading: Applications of Recursion
-	resource: Flood Fill [/bjc-r/cur/programming/recursion/applications/flood-fill-byob.html]
-	resource: A Prime Opportunity [/bjc-r/cur/programming/recursion/applications/a-prime-opportunity.html]
+	resource: Flood Fill [/bjc-r/cur/programming/recur/applications/flood-fill-byob.html]
+	resource: A Prime Opportunity [/bjc-r/cur/programming/recur/applications/a-prime-opportunity.html]
 
 
 
