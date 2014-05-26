@@ -27,7 +27,7 @@ heading: Pascal's Triangle
 	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-hint.html]
 	 resource: How long does this computation take? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
-big-idea: Here are the ones you haven't seen before:
+// big-idea: Here are the ones you haven't seen before:
 
 heading: Sorting
 	 resource: Sorting a List [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting.html]
