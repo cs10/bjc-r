@@ -1,4 +1,18 @@
 /*
+ * 
+ * 
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+/*
  * bjc-course.js
  * 
  * loaded on course pages.

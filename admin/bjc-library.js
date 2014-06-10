@@ -1,4 +1,17 @@
 /*
+ * 
+ * 
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+/*
  * Common functions for any bjc page
  * 
  * CANNOT RELY ON JQUERY, YO

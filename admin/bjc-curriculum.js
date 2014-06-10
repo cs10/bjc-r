@@ -1,3 +1,16 @@
+/*
+ * 
+ * 
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
 /**
  *
  * sets up a BJC curriculum page -- either local or external.

@@ -1,4 +1,18 @@
 /*
+ * 
+ * 
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+/*
 * Used by curriculum pages (/cur) to insert script and link tags.
 *
 * The functionality here is duplicated in other html pages as well, using static scripts
