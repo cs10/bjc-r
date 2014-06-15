@@ -1,23 +1,37 @@
 /** BJC-CURRICULUM
  * sets up a BJC curriculum page -- either local or external.
- * Uses jquery, jquery-ui.
- * This is borrowed from UCCP APCSA work
+ * Uses jquery, and some bootstrap.
  */
+
+
 // TODO: These need to be moved to a better place:
 // These are common strings that need not be build and should be reused!
-bjc.goMain = 'Go to Main Course Page';
+bjc.selectors = {};
+bjc.fragments = {};
+bjc.strings = {};
+bjc.goMain = 'Go to the Course Page';
 // &#8230; is ellipsis
-bjc.clickNav = 'Click here to navigate&#8230; &nbsp;&nbsp;';
+bjc.clickNav = 'Click here to navigate&#8230;&nbsp;&nbsp;';
+// 
 bjc.bootstrapSep = '<li class="divider list_item" role="presentation"></li>';
 bjc.bootstrapCaret = '<span class="caret"></span>';
+bjc.bsdropdownButton = '';
+// LLAB selectors for common page elements
+bjc.FULL = '#full';
+bjc.NAVSELECT = '#llab-nav';
+bjc.PROGRESS = '.full-bottom-bar';
+
 
 bjc.file = "";
 bjc.step = NaN;
 bjc.url_list = new Array();
 
 
-bjc.secondarySetUp = function() {
+bjc.secondarySetUp = function() { 
     
+    bjc.step = parseInt(getParameterByName("step"));
+
+    // Currently title requires bjc.step work work properly.
     bjc.setupTitle();
 
     // fix snap links so they run snap
@@ -73,7 +87,6 @@ bjc.secondarySetUp = function() {
     }
 
     // Get the topic file and step from the URL
-    bjc.step = parseInt(getParameterByName("step"));
     var topicFile = getParameterByName("topic");
 
     // We don't have a topic file, so we should exit.
@@ -243,6 +256,7 @@ bjc.addFrame = (function() {
 // Setup the entire page title. This includes creating any HTML elements.
 // This should be called EARLY in the load process!
 bjc.setupTitle = function() {
+    $(document.head).append('<meta name="viewport" content="width=device-width, initial-scale=1">');
     if (typeof bjc.titleSet !== 'undefined' && bjc.titleSet) {
         return;
     }
@@ -252,8 +266,8 @@ bjc.setupTitle = function() {
     }
     
     // Work around when things are oddly loaded...
-    if ($('.navbar-default').length !== 0) {
-        $('.navbar-default').remove();
+    if ($(bjc.NAVSELECT).length !== 0) {
+        $(bjc.NAVSELECT).remove();
     }
     
     // Create the header section and nav buttons
@@ -270,52 +284,53 @@ bjc.setupTitle = function() {
         $('.navbar-brand').html(titleText);
     }
     
-    // FIXME -- should just be in css...?
-    document.body.style.marginTop = "0";
     // Clean up document title if it contains HTML
     document.title = $(".navbar-brand").text();
+    
+    // FIXME -- should just be in css...?
+    // document.body.style.marginTop = "0"; // In CSS - remove. 
+    // FIXME -- Not great on widnow resize
+    
+    document.body.style.paddingTop = $('nav')[0].clientHeight;
     
     bjc.titleSet = true;
 }
 
 // Create the 'sticky' title header at the top of each page.
 bjc.createTitleNav = function() {
-    var topHTML = '<nav class="navbar navbar-default navbar-fixed-top" role="navigation"><div class="container-fluid"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="#">Brand</a></div></div></nav>',
+    var topHTML = ('' +
+    '<nav id="llab-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">' +
+     '<div class="nav navbar-nav"><div class="navbar-header">' +
+     '<a class="navbar-brand" href="#"></a></div></div></nav>'),
         botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
                       "btn-group'></div></div>",
-        navHTML = '<div class="collapse navbar-collapse"><ul class="nav navbar-nav navbar-right nav-btns btn-group"></ul></div>',
-        topNav = $('.navbar-default .container-fluid'),
-        botNav = $('.full-bottom-bar'),
+        navHTML = '<div class="nav navbar-nav navbar-right">' +
+                  '<ul class="nav-btns btn-group"></ul></div>',
+        topNav = $(bjc.NAVSELECT),
         buttons = "<a class='btn btn-default backbutton arrow'>back</a>" +
                    "<a class='btn btn-default forwardbutton arrow'>forward</a>";
     
     if (topNav.length === 0) {
         $(document.body).prepend(topHTML);
-        topNav = $('.navbar-default');
+        topNav = $(bjc.NAVSELECT);
         topNav.append(navHTML);
     }
     
     // Don't add anything else if we don't know the step...
+    // FIXME -- this requires a step as a URL param currently.
+    // FUTURE - We should separate the rest of this function if necessary.
     if (isNaN(bjc.step)) {
         return;
     }
-
-    if (botNav.length === 0) {
-        $(document.body).append(botHTML);
-        botNav = $('.full-bottom-bar');
-        //botNav.append(navHTML);
-    }
-        
-    var forward = $('.forwardbutton'),
-        back   = $('.backbutton');
-        
-    var buttonsExist = forward.length !== 0 && back.length !== 0;
     
-    if (!buttonsExist && !isNaN(bjc.step)) {
-        $('.navbar-right').append(buttons);
-        // $('.bottom-nav').append(buttons);
+    $('.nav-btns').append(buttons);
+    if ($(bjc.PROGRESS).length === 0) {
+        $(document.body).append(botHTML);
     }
+
+    bjc.setButtonURLs();
 };
+
 
 // Create the navigation dropdown
 bjc.buildDropdown = function() {
@@ -358,18 +373,22 @@ bjc.dropdownItem = function(text, url) {
 
 // Create the Forward and Backward buttons, properly disabling them when needed
 bjc.setButtonURLs = function() {
+
     // No dropdowns for places that don't have a step.
     if (isNaN(bjc.step)) {
         return;
     }
     
+    // TODO REFACTOR THIS
     var forward = $('.forwardbutton'),
         back    = $('.backbutton');
         
-    var buttonsExist = forward.length === 2 && back.length === 2;
+    var buttonsExist = forward.length !== 0 && back.length !== 0;
     
     if (!buttonsExist) {
-        bjc.createTitleNav();
+        if ($(bjc.NAVSELECT) !== 0) {
+            bjc.createTitleNav();
+        }
         // Grab the freshly minted buttons. MMM, tasty!
         forward = $('.forwardbutton');
         back    = $('.backbutton');
@@ -404,6 +423,7 @@ bjc.setButtonURLs = function() {
     }
 };
 
+// TODO: Update page content and push URL onto browser back button
 bjc.goBack = function() {
     window.location.href = bjc.url_list[bjc.step - 1];
 };
@@ -432,32 +452,32 @@ bjc.goForward = function() {
 //     //bjc.navDropdownToggle();
 // });
 
-/** Positions an image along the bottom of the lab page, signifying progress.
+
+/** 
+ *  Positions an image along the bottom of the lab page, signifying progress.
  *  numSteps is the total number of steps in the lab
  *  currentStep is the number of the current step
  *  totalWidth is the width of the entire bottom bar
  *  buttonWidth is the combined width of the two nav buttons.
  */
 bjc.indicateProgress = function(numSteps, currentStep) {
-    var totalWidth = $(".full-bottom-bar").width(),
-        buttons = $('.bottom-nav').width(),
-        width = totalWidth - buttons,
+    var width = $(bjc.PROGRESS).width(),
         result; // result stores left-offset of background image.
 
     if (currentStep < numSteps - 1) {
-        result = (currentStep * (width / (numSteps - 1)) + 1) / totalWidth;
+        result = (currentStep * (width / (numSteps - 1)) + 1) / (width - 10);
         // Result is always a min of 1%.
-        result = (result < .01) ? 1 : result * 100;
+        result = (result < .01) ? 1 : (result * 100);
         result = result + "%";
     } else {
-        var picWidth = $(".full-bottom-bar").css("background-size");
+        var picWidth = $(bjc.PROGRESS).css("background-size");
         picWidth = Number(picWidth.slice(0, picWidth.indexOf("px")));
         // the 4 is just to add a bit of space
         result = width - picWidth - 4 + "px"; 
     }
     
     result = result + " 2px";
-    $(".full-bottom-bar").css("background-position", result);
+    $(bjc.PROGRESS).css("background-position", result);
 };
 
 // Setup the nav and parse the topic file. 

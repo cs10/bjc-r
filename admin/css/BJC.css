@@ -30,13 +30,17 @@ body {
     text-align: left;
     background-color: #FFF;
     margin: 0;
+    padding: 60px 0 0 0; /* paddingTop is reset by JS on title load. */
     width: 100%;
 }
 
 .full, #full {
     padding: 1em;
     width: 90%;
-    margin: 4em auto 1em;
+    margin: 1em auto 1em;
+}
+nav { 
+    left: 5%;
 }
 
 form li div {
@@ -74,7 +78,9 @@ p {
     line-height:120%;
 }
 
-p.right {text-align:right;}
+p.right {
+  text-align:right;
+}
 
 .vocab {
     font-style: italic;
@@ -103,9 +109,9 @@ input[type=submit] {
             border-radius: 9px;
 }
 
-ul, ol {
+/* ul */
+ol {
     font:.9em "Palatino Linotype", "Book Antiqua", Palatino, serif;
-    border-bottom:1px dotted #999;
     font-weight:inherit;
     /* width:85%; */
     display:inline-block;
@@ -116,9 +122,9 @@ ul, ol {
     border: 1px solid #3399ff;
 }
 
-ul li, ol li {
+/*ul li, ol li {
     padding: 5px;
-    margin-left: 35px; /* WHY? This causes problems in some places... */
+    margin-left: 35px; /* WHY? This causes problems in some places...
 }
 
 li ul, li ol {
@@ -126,7 +132,7 @@ li ul, li ol {
     margin-bottom: 5px;
     border: none;
     display: block;
-}
+}*/
 
 th {
     font-weight:normal;
@@ -166,6 +172,7 @@ a[disabled] {
 }
 
 /** PAGE NAV (TOP AND BOTTOM) ************************************************/
+#llab-nav,
 .top-nav {
   background: #FFF;
   background: -moz-linear-gradient(top,  #FFF 0%, #F8F8F8 47%,  #F0F0F0 100%); /* FF3.6+ */
@@ -199,15 +206,14 @@ a[disabled] {
 }
 
 /* Contains the page title text */
+.navbar-brand,
 .header {
     font: bold 1.5em Georgia, serif;
     font-variant: small-caps;
     color: #666;
-    float: left;
-    max-width: 65%;
     text-align: left;
-    letter-spacing: 1.2px;
-    word-wrap: break-word;
+    letter-spacing: 1.5px;
+    
 }
 
 /* Contains Nav Buttons and Dropdown Menu */
@@ -382,7 +388,7 @@ a[disabled] {
     clear:left;
 }
 
-.strike{
+.strike {
     text-decoration: line-through;
 }
 
@@ -887,6 +893,7 @@ div.indent {
 .snap {
     text-transform: capitalize;
     font-variant: small-caps;
+    font-style: normal;
     font-family: "Times New Roman", Times, serif;
 }
 

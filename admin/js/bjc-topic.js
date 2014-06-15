@@ -95,9 +95,8 @@ bjc.renderFull = function(data, ignored1, ignored2) {
         line = bjc.stripComments(line);
         if (line.length > 0 && !raw && (hidden.indexOf($.trim(line.slice(0, line.indexOf(":")))) == -1)) {
             if (line.slice(0, 6) == "title:") {
-                //TODO pull out the html tags for the page title
-                $("div .header").html(line.slice(6));
-                document.title = $("div .header").text();
+                $('.navbar-brand').html(line.slice(6));
+                document.title = $('.navbar-brand').text();
                 learningGoal = false;
                 bigIdea = false;
             } else if (line.slice(0, 8) == "raw-html") {
