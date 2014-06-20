@@ -1,3 +1,18 @@
+/*
+ * 
+ * 
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ * 
+ * 
+ * 
+ * 
+ */
+
+
+
+
+
 /**
  * based on:
  *
@@ -581,7 +596,7 @@ img.inline {
 
 img.indent {
     margin-left: 10%;
-    display: block;
+    /* display: block;  */
 }
 
 div.indent {

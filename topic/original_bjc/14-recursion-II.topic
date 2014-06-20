@@ -13,19 +13,19 @@ learning-goal: Implement a recursive algorithm to countdown from a number
 learning-goal: Using our understanding of a base case and recursive calls, write recursive algorithms to say numbers in a range, draw a squiral, and sum digits
 
 heading: Linear Recursion
-	resource: Countdown [/bjc-r/cur/programming/recursion/recursion-ii/countdown.html]
-	resource: The non-recursive Countdown [/bjc-r/cur/programming/recursion/recursion-ii/the-non-recursive-countdown.html]
-	resource: Tracing a Recursive Function [/bjc-r/cur/programming/recursion/recursion-ii/tracing-a-recursive-function.html]
+	resource: Countdown [/bjc-r/cur/programming/recur/recursion-ii/countdown.html]
+	resource: The non-recursive Countdown [/bjc-r/cur/programming/recur/recursion-ii/the-non-recursive-countdown.html]
+	resource: Tracing a Recursive Function [/bjc-r/cur/programming/recur/recursion-ii/tracing-a-recursive-function.html]
 	quiz: Where is the base case? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1866]
 	quiz: Tracing code on paper [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1867]
-	resource: Write a program that says numbers in a range [/bjc-r/cur/programming/recursion/recursion-ii/write-a-program-that-says-numbers-in-a-range.html]
+	resource: Write a program that says numbers in a range [/bjc-r/cur/programming/recur/recursion-ii/write-a-program-that-says-numbers-in-a-range.html]
 	quiz: Considering Exceptional Cases in the Range Function [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1869]
 
 heading: Practice going from iteration to recursion and back
-	resource: Making a recursive squirral [/bjc-r/cur/programming/recursion/recursion-ii/make-a-recursive-squiral.html]
-//	resource: Square each number [/bjc-r/cur/programming/recursion/recursion-ii/example-square-each-number.html]
-	resource: Write a recursive block to add the digits in a number [/bjc-r/cur/programming/recursion/recursion-ii/write-a-recursive-block-to-add-the-digits-in-a-number.html]
-//	resource: SOULUTION -- Write a recursive block to add the digits in a number [/bjc-r/cur/programming/recursion/recursion-ii/solution-recursive-block-to-add-the-digits-in-a-number.html]
+	resource: Making a recursive squirral [/bjc-r/cur/programming/recur/recursion-ii/make-a-recursive-squiral.html]
+//	resource: Square each number [/bjc-r/cur/programming/recur/recursion-ii/example-square-each-number.html]
+	resource: Write a recursive block to add the digits in a number [/bjc-r/cur/programming/recur/recursion-ii/write-a-recursive-block-to-add-the-digits-in-a-number.html]
+//	resource: SOULUTION -- Write a recursive block to add the digits in a number [/bjc-r/cur/programming/recur/recursion-ii/solution-recursive-block-to-add-the-digits-in-a-number.html]
 
 
 }
