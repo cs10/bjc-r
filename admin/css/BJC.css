@@ -90,7 +90,7 @@ p {
     /*font:1.1em "Times New Roman", Times, serif;*/
     font: 1em Helvetica, Arial, sans-serif;
     color: black;
-    line-height:120%;
+    line-height: 120%;
 }
 
 p.right {
@@ -190,21 +190,16 @@ a[disabled] {
 #llab-nav,
 .top-nav {
   background: #FFF;
-  background: -moz-linear-gradient(top,  #FFF 0%, #F8F8F8 47%,  #F0F0F0 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #FFF), color-stop(47%, #F8F8F8), color-stop(100%, #F0F0F0)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top,  #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Chrome10+, Safari5.1+ */
-  background: -o-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* IE10+ */
-  background: linear-gradient(to bottom, #FFF 0%, #F8F8F8 47%, #F0F0F0 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0); /* IE6-9 */
+
   position: fixed;
   top: 0;
   margin: 0 0 1em 0;
   box-shadow: 0 5px 10px #CCC;
   width: 100%;
-  padding: .2em;
+  padding: .5em;
   min-height: 3em;
   height: auto;
+  vertical-align: middle;
 }
 
 .full-bottom-bar {
@@ -228,30 +223,45 @@ a[disabled] {
     color: #666;
     text-align: left;
     letter-spacing: 1.5px;
-    
+    width: 60%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar-toggle {
+  border-radius: 0;
+  display: inline;
+  position: inherit;
+  float: none;
+  margin: 0; 
 }
 
 /* Contains Nav Buttons and Dropdown Menu */
+.navbar-right {
+  padding-right: 5%;
+}
+
 .nav-btns {
     float: right;
-    max-width: 50%;
-    min-width: 350px;
     z-index: 9999;
-    height: auto;
+    max-width: 40%;
+    min-width: 200px;
+    height: 22px;
+    padding: 4px;
+    border: #888;
 }
 
 .header, .nav-btns {
   line-height: 1em;
   font-weight: 900;
   position: relative;
-  margin: 14pt 5% 1% 2%;
-  padding: 0;
-  vertical-align: topleft;
 }
+
 /** Buttons at the bottom right */
 .bottom-nav {
     float: right;
-    margin: 4px;
+    margin: 5px;
     vertical-align: middle;
     text-align: right;
 }
@@ -262,7 +272,7 @@ a[disabled] {
     float: none;
 }
 .arrow { /* For Buttons with arrows instead of words. */
-    border-radius: .5em;
+    border-radius: 4px;
     font-variant: small-caps;
 }
 /* Add arrows to each button */
@@ -291,16 +301,13 @@ a[disabled] {
 }
 
 .list_header, .arrow {
-    vertical-align: top;
     line-height: 1em;
     margin: 0;
-    padding: 5px;
+    padding: 8px; /* to match hamburger button */
     text-align: left;
-    font-size: 10pt;
-    display: inline;
+    font-size: 12pt;
     font-weight: 900;
     border-color: #888;
-    font: 'Helvetica';
 }
 
 .list_header {

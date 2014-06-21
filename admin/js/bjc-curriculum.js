@@ -15,7 +15,7 @@ bjc.clickNav = 'Click here to navigate&#8230;&nbsp;&nbsp;';
 // 
 bjc.bootstrapSep = '<li class="divider list_item" role="presentation"></li>';
 bjc.bootstrapCaret = '<span class="caret"></span>';
-bjc.bsdropdownButton = '';
+bjc.bsdropdownButton = '<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>';
 // LLAB selectors for common page elements
 bjc.FULL = '#full';
 bjc.NAVSELECT = '#llab-nav';
@@ -134,23 +134,24 @@ bjc.processLinks = function(data, ignored1, ignored2) {
         }
     } // end for loop
     
-    // TODO: Refactor multiple vars...
-    var textLength = 35;
-    var course = getParameterByName("course");
-    var lines = data.split("\n");
-    var num = 0;
-    var url = document.URL;
-    var list = $(document.createElement("ul")).attr(
+    var textLength = 35,
+        course = getParameterByName("course"),
+        lines = data.split("\n"),
+        num = 0,
+        url = document.URL,
+        list = $(document.createElement("ul")).attr(
         {'class': 'dropdown-menu dropdown-menu-right', 
-         'role' : "menu",  'aria-labelledby' : "Topic-Navigation-Meu"});
-    var text;
-    var list_item;
+         'role' : "menu",  'aria-labelledby' : "Topic-Navigation-Meu"}),
+        text,
+        list_item,
+        line,
+        used;
     
     for (var i = 0; i < lines.length; i++) {
-        var line = bjc.stripComments($.trim(lines[i]));
+        line = bjc.stripComments($.trim(lines[i]));
         
         // Skip is this line is hidden in URL params.
-        var used = hidden.indexOf(line.slice(0, line.indexOf(":"))) === -1;
+        used = hidden.indexOf(line.slice(0, line.indexOf(":"))) === -1;
         if (!used) continue;
         
         // Line is a title.
@@ -240,7 +241,7 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 
 // Create an iframe when loading from an empty curriculum page
 // Used for embedded content. (Videos, books, etc)
-bjc.addFrame = (function() {
+bjc.addFrame = function() {
     var source = getParameterByName("src");
     
     $("#full").append('<a href=' + source + 
@@ -251,7 +252,7 @@ bjc.addFrame = (function() {
         {'src': source, 'class': 'step_frame'} );
     
     $("#cont").append(frame);
-});
+};
 
 // Setup the entire page title. This includes creating any HTML elements.
 // This should be called EARLY in the load process!
@@ -343,15 +344,15 @@ bjc.buildDropdown = function() {
     nav_text = $(document.createElement('span')).html(bjc.clickNav);
     
     // build the list header
-    list_header = $(document.createElement("button")).attr(
-        {'class': 'btn btn-default dropdown-toggle btn-group list_header',
+    list_header = $(document.createElement("button")).attr( // 
+        {'class': 'navbar-toggle btn btn-default dropdown-toggle list_header',
          'type' : 'button', 'data-toggle' : "dropdown" }); 
-    list_header.append(nav_text);
-    list_header.append(bjc.bootstrapCaret);
+    // list_header.append(nav_text);
+    // list_header.append(bjc.bootstrapCaret);
+    list_header.append(bjc.bsdropdownButton);
     
     // Add Header to dropdown 
     dropdown.append(list_header);
-    
     // Insert into the top div AFTER the backbutton.
     dropdown.insertAfter($('.navbar-default .navbar-right .backbutton'));
 }
