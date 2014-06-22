@@ -301,7 +301,7 @@ bjc.setupTitle = function() {
 bjc.createTitleNav = function() {
     var topHTML = ('' +
     '<nav id="llab-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">' +
-     '<div class="nav navbar-nav"><div class="navbar-brand">' +
+     '<div class="nav navbar-nav navbar-left"><div class="navbar-brand">' +
      '</div></div></nav>'),
         botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
                       "btn-group'></div></div>",

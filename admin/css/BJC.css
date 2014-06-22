@@ -229,9 +229,14 @@ a[disabled] {
     text-overflow: ellipsis;
 }
 
-.navbar-nav {
-  width: 50%; /* For setting title width */
+.navbar-left {
+  width: 70%; /* For setting title width */
 }
+
+.navbar-right {
+  width: 30%; /* For setting title width */
+}
+
 .navbar-toggle {
   border-radius: 0;
   display: inline;
