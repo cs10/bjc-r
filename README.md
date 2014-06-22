@@ -1,5 +1,5 @@
-bjc-course
-==========
+# bjc-r
+
 
 The Beauty and Joy of Computing labs resource repository.
 
@@ -8,6 +8,9 @@ We have a simple directory structure for lab content.
 
 ## Viewing the Site
 The main "production" server for labs is hosted at Berkeley, [here][main].
+
+We also sometimes use CS10 students as lab rats, and you can view beta labs on 
+the CS10 [site][cs10].
 
 However, the repository is setup so that any fork can be run using GitHub pages.
 The main BJC repo can be viewed in a live state, [here](gh), or you can use your own
@@ -23,25 +26,32 @@ for a couple different platforms.
 __No matter the platform, you should server files from `/bjc-r/` at the root of your
 server.__
 ### Mac OS X
-1. Run the following command to start the apache server.
-`sudo launchctl load -w /System/Library/LaunchDaemons/org.apache.httpd.plist`
-NOTE: The Apache server will be persistent across restarts.
-2. Copy the `/bjc-r` directory to `/Library/WebServer/Documents/`
-  (You may need administrator privileges to do this.)
+The easiest way to setup a server is to use a simple, built-in Python server.
+1. `cd` into one level above the `bjc-r` directory.
+2. In a separate window run `python -m SimpleHTTPServer` (for Python 2) or `python3 -m http.server` for Python 3.
 3. Navigate to [http://localhost/bjc-r](http://localhost/bjc-r) in a browser.
-4. To stop the sever from running do:
-  `sudo launchctl unload -w /System/Library/LaunchDaemons/org.apache.httpd.plist`
+4. That's it! :)
 
 ### Windows
 
 
 ## Contributing
+A basic guide on writing labs is, [here][authorship].
+To contribute:
+1. Create your own fork of `bjc-r`.
+2. Optionally: Create a new branch for your feature.
+3. Work away!
+4. Create a pull request.
+5. Get feedback on the pull request and make changes as needed.
+6. Be super awesome! :)
 
 ## License
 [CC-BY-NC-SA 3.0][cc]
+
 ![CC_IMG][cc_img]
 
-
-[main]:http://bjc.eecs.berkeley.edu/bjc-r/
-[cc]:http://creativecommons.org/licenses/by-nc-sa/3.0/
-[cc_img]:http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png
+[authorship]: authorship.md
+[cs10]: http://cs10.berkeley.edu/labs
+[main]: http://bjc.eecs.berkeley.edu/bjc-r/
+[cc]: http://creativecommons.org/licenses/by-nc-sa/3.0/
+[cc_img]: http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png

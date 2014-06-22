@@ -483,17 +483,17 @@ MC.prototype.postRender = function() {
 
 // BEAUTIOUS
 MC.prototype.getTemplate = function() {
-    return "<div class='MultipleChoice Question bg7'>" +
-	"			<div class='questionCountBox bg8'>" +
+    return "<div class='MultipleChoice Question'>" +
+	"			<div class='questionCountBox'>" +
 	"				<div class='questionTable'>" +
-	"					<div class='questionType color1'>" +
+	"					<div class='questionType'>" +
 	"						Multiple Choice" +
 	"					</div>" +
 	"				</div>" +
 	"			</div>" +
 	"			<!-- end of questionCountBox -->" +
 	"			<div class='currentQuestionBox'>" +
-	"				<div class='leftColumn' class='bg8'>" +
+	"				<div class='leftColumn'>" +
 	"					<div class='promptDiv'></div>" +
 	"					<div class='radiobuttondiv'></div>" +
 	"					<div class='feedbackdiv'></div>" +

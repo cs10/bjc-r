@@ -1,0 +1,155 @@
+/* THIS FILE CONTAINS CSS THAT CURRENTLY ISNT IN USE. */
+
+/* STYLES FOR MARGINALIA ELEMENTS IN RIGHT COLUMN*/
+#mainCol {
+    margin-right:20%;
+    text-align:left;
+}
+
+#marginCol {
+    float:right;
+    text-align:left;
+    width:17%;
+    min-height:540px;
+    background-color:#9999FF;
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
+    -moz-border-radius-topleft:12px;
+    -moz-border-radius-bottomleft:12px;
+    padding-bottom:8px;
+    background-position:10px 10px;
+    background-image:url(../img/sys/Alonzo-BYOB.jpg); FIXME
+    background-size:25%;
+    background-repeat:no-repeat;
+}
+
+#marginCol a:hover {
+    background-color:#FFFF33;
+}
+
+#marginCol .top25 {margin-top:25px;}
+#marginCol .top50 {margin-top:50px;}
+#marginCol .top75 {margin-top:75px;}
+#marginCol .top100 {margin-top:100px;}
+#marginCol .top125 {margin-top:125px;}
+#marginCol .top150 {margin-top:150px;}
+#marginCol .top175 {margin-top:175px;}
+#marginCol .top200 {margin-top:200px;}
+#marginCol .top225 {margin-top:225px;}
+#marginCol .top250 {margin-top:250px;}
+#marginCol .top275 {margin-top:275px;}
+#marginCol .top300 {margin-top:300px;}
+#marginCol .top325 {margin-top:325px;}
+#marginCol .top350 {margin-top:350px;}
+#marginCol .top375 {margin-top:375px;}
+#marginCol .top400 {margin-top:400px;}
+#marginCol .top425 {margin-top:425px;}
+#marginCol .top450 {margin-top:450px;}
+#marginCol .top475 {margin-top:475px;}
+#marginCol .top500 {margin-top:500px;}
+
+/*Added to make margin elements more general */
+
+#marginCol div {
+    border-radius:8px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;
+    margin-left:10px;
+    margin-right:8px;
+    margin-bottom:6px;
+    border-style:solid;
+    border-width:2px;
+    background-color: #C7C7FF;
+}
+
+#marginCol .key {
+    border-color:#164CBA;
+    color:#000;
+    font-size:.8em;
+    padding:45px 5px 5px 5px;
+    font-weight:bold;
+    background-image:url(../img/web/special-key-32.png); FIXME
+    background-repeat:no-repeat;
+    /* background-color:#C7C7FF; */
+    background-position:10px 10px;
+}
+
+#marginCol .vocab {
+    border-color: #666;
+    color:#0000CC;
+    font-size:.8em;
+    padding:40px 0 10px 0;
+    font-weight:bold;
+    background-image:url(../img/web/special-dictionary-32.png);
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+    /* background-color:#C7C7C7; */
+}
+
+#marginCol .vocab a:link, #marginCol .vocab a:visited {
+    display:block;
+    padding:2px;
+    margin:10px 4px 8px 10px;
+    border-right:3px solid transparent;
+}
+
+#marginCol .vocab a:hover {
+    background-color:#FFFF33;
+    border-right:3px solid #666;
+}
+
+#marginCol .help {
+    font-family:Tahoma, Geneva, serif;
+    border-color:#666;
+    color:#0000CC;
+    font-size:.82em;
+    font-weight:normal;
+    padding:36px 0 12px 0;
+    background-image:url(../img/web/helpicon22.png);
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+}
+
+#marginCol .help p {
+    font-size:inherit;
+    color:#333;
+    font-size:inherit;
+    padding:0;
+    margin:10px 4px 6px 5px;
+}
+
+#marginCol .help a:link, #marginCol .help a:visited {
+    display:block;
+    padding:2px;
+    margin:2px 4px 5px 5px;
+    border-right:3px solid transparent;
+}
+
+#marginCol .help a:hover {
+    background-color:#FFFF33;
+    border-right:3px solid #666;
+}
+
+#marginCol .warning {
+    border-color:#330033;
+    color:#000;
+    font-size:.8em;
+    padding:40px 0  0 0;
+    font-weight:bold;
+    background-image:url(../img/web/special-warning-32.png);
+    background-repeat:no-repeat;
+    background-position:10px 10px;
+    /* background-color:#BF9A6B; */
+}
+
+#marginCol .warning p {
+    padding:0;
+    margin:10px 4px 8px 10px;
+}
+
+/* OTHERS */
+#class_nav_bar {
+    font:17px Helvetica, Arial, sans-serif;
+    color:#e3e3e3;
+}
+
