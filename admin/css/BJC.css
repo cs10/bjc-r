@@ -123,9 +123,9 @@ input[type=submit] {
             border-radius: 9px;
 }
 
-/* ul */
-ol {
-    font:.9em "Palatino Linotype", "Book Antiqua", Palatino, serif;
+/* FIXME --- poorly performant. */
+#full ul, #full ol {
+    font: .9em "Palatino Linotype", "Book Antiqua", 'Palatino', serif;
     font-weight:inherit;
     /* width:85%; */
     display:inline-block;
@@ -136,9 +136,9 @@ ol {
     border: 1px solid #3399ff;
 }
 
-/*ul li, ol li {
+ul li, ol li {
     padding: 5px;
-    margin-left: 35px; /* WHY? This causes problems in some places...
+    margin-left: 35px; /* WHY? This causes problems in some places... */
 }
 
 li ul, li ol {
@@ -146,7 +146,7 @@ li ul, li ol {
     margin-bottom: 5px;
     border: none;
     display: block;
-}*/
+}
 
 th {
     font-weight:normal;
