@@ -300,9 +300,8 @@ bjc.setupTitle = function() {
 // Create the 'sticky' title header at the top of each page.
 bjc.createTitleNav = function() {
     var topHTML = ('' +
-    '<nav id="llab-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">' +
-     '<div class="nav navbar-nav navbar-left"><div class="navbar-brand">' +
-     '</div></div></nav>'),
+        '<nav id="llab-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">' +
+        '<div class="nav navbar-nav navbar-left navbar-brand"></div></nav>'),
         botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
                       "btn-group'></div></div>",
         navHTML = '<div class="nav navbar-nav navbar-right">' +
