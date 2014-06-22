@@ -1,12 +1,12 @@
 /*
- * 
- * 
+ *
+ *
  *
  * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
- * 
- * 
- * 
- * 
+ *
+ *
+ *
+ *
  */
 
 
@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    font-family: Helvetica, "Lucida Grande", "Lucida San Unicode", "Gill Sans", Arial;
+    font-family: "Helvetica Neue", Helvetica, "Gill Sans", Arial;
     font-size: 1em;
     text-align: left;
     background-color: #FFF;
@@ -54,8 +54,8 @@ body {
     width: 90%;
     margin: 1em auto 1em;
 }
-nav { 
-    left: 5%;
+nav {
+    padding: 1% 5% 1% 5%;
 }
 
 form li div {
@@ -68,16 +68,15 @@ form > h2, form > ol > li {
 }
 
 em {
-    color:#000;
-    font-weight:900;
-    font-style:italic;
+    font-weight: 900;
+    font-style: italic;
 }
 
 /* Should try to avoid tt; deprecated & unsupported tag */
 tt {
-    font-size:120%;
+    font-size: 120%;
     font-weight: 600;
-    line-height:100%;
+    line-height: 100%;
     font-family: monospace;
 }
 
@@ -158,6 +157,7 @@ h1 {
   padding: 10px 0;
   color: #000;
 }
+
 h2, h3 {
   font: 900 26px "Palatino Linotype", "Book Antiqua", "Palatino", serif;
   padding:10px 0;
@@ -190,7 +190,6 @@ a[disabled] {
 #llab-nav,
 .top-nav {
   background: #FFF;
-
   position: fixed;
   top: 0;
   margin: 0 0 1em 0;
@@ -223,33 +222,41 @@ a[disabled] {
     color: #666;
     text-align: left;
     letter-spacing: 1.5px;
-    width: 60%;
+    max-width: 60%;
+    min-width: 50%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
+.navbar-nav {
+  width: 50%; /* For setting title width */
+}
 .navbar-toggle {
   border-radius: 0;
   display: inline;
   position: inherit;
   float: none;
-  margin: 0; 
+  margin: 0;
+  border: #888;
 }
 
 /* Contains Nav Buttons and Dropdown Menu */
 .navbar-right {
   padding-right: 5%;
 }
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  border: 1px solid #888 !important; /* FIXME */
+}
 
 .nav-btns {
     float: right;
     z-index: 9999;
     max-width: 40%;
-    min-width: 200px;
-    height: 22px;
+    min-width: 15em;
     padding: 4px;
-    border: #888;
 }
 
 .header, .nav-btns {
@@ -271,10 +278,7 @@ a[disabled] {
 .btn-group > .btn {
     float: none;
 }
-.arrow { /* For Buttons with arrows instead of words. */
-    border-radius: 4px;
-    font-variant: small-caps;
-}
+
 /* Add arrows to each button */
 /*.backbutton:before {
     content: '\2190 ';
@@ -291,7 +295,7 @@ a[disabled] {
     margin-left: 15px; /* FIXME, hacky. */
 }
 .dropdown-menu {
-    margin-top: 5px; /* should be equal to padding on list_header */
+    margin-top: 8px; /* should be equal to padding on list_header */
 }
 .list_item {
     font-size: 10pt;
@@ -301,13 +305,19 @@ a[disabled] {
 }
 
 .list_header, .arrow {
-    line-height: 1em;
+    height: 2em;
     margin: 0;
-    padding: 8px; /* to match hamburger button */
-    text-align: left;
+    text-align: center;
     font-size: 12pt;
     font-weight: 900;
     border-color: #888;
+}
+
+.arrow { /* For Buttons with arrows instead of words. */
+    border-radius: 4px;
+    font-variant: small-caps;
+    width: 5em;
+    padding: 3px; /* center text in buttons */
 }
 
 .list_header {
