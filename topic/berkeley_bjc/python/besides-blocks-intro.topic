@@ -2,7 +2,7 @@ title: Besides Blocks: Intro to Python
 {
 h2: Big Ideas
 big-idea: Computational Thinking can be used in any programming language.
-big-idea: You're Awesome!
+big-idea: Python and Snap! are awesome languages which coexist.
 big-idea: #EverythingIsAwesome!
 
 // h2: Activities
@@ -25,8 +25,5 @@ heading: Functions and Recursion
 
 heading: String Manipulation
     resource: String Manipulation [/bjc-r/cur/programming/python/string/string-mani.html]
-
-// heading: Turtle Graphics
-//    resource:
 
 }
