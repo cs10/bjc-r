@@ -235,7 +235,8 @@ bjc.processLinks = function(data, ignored1, ignored2) {
     }
 
     bjc.indicateProgress(bjc.url_list.length, bjc.step);
-
+    
+    bjc.addFeedback(document.title, bjc.file, course);
 } // end processLinks()
 
 
@@ -452,6 +453,15 @@ bjc.goForward = function() {
 //     //bjc.navDropdownToggle();
 // });
 
+bjc.addFeedback = function(title, topic, course) {
+    var html = '<div class="feedback" style="padding:4px;margin:0 auto;right:5%;position:fixed">        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#fdbk">             Send us feedback!         </button>         <div id="fdbk" class="panel-primary panel-collapse collapse">              <div class="panel-body">                  <iframe src="https://getfeedback.com/r/sPesM45m?PAGE=pageRep?TOPIC=topicRep?COURSE=courseRep"                  width="300" height="180"></iframe>             </div>          </div>     </div>';
+    
+    html = html.replace(/pageRep/g, encodeURIComponent(title));
+    html = html.replace(/topicRep/g, encodeURIComponent(topic));
+    html = html.replace(/courseRep/g, encodeURIComponent(course));
+    
+    $(document.body).append(html);
+}
 
 /** 
  *  Positions an image along the bottom of the lab page, signifying progress.
