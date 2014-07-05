@@ -69,7 +69,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
         if (course_link.indexOf("http://") == -1) {
             course_link = bjc.rootURL + "/course/" + course_link;
         }
-        $("#full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Go to Main Course Page"));
+        $(".full").append($(document.createElement("a")).attr({"class":"course_link", "href": course_link}).html("Go to Main Course Page"));
     }
     if (typeof getParameterByName("topic") == "object") {
         bjc.file = getParameterByName("topic")[0];
@@ -115,7 +115,7 @@ bjc.renderFull = function(data, ignored1, ignored2) {
             } else if (line.slice(0,1) == "{") {
                 in_topic = true;
                 topic = $(document.createElement("div")).attr({'class': 'topic'});
-                $("#full").append(topic);
+                $(".full").append(topic);
                 learningGoal = false;
                 bigIdea = false;
             } else if (line.slice(0, 6) == "topic:") {
