@@ -210,7 +210,8 @@ a[disabled] {
     background-size: 26px;
     height: 2em;
     width: 90%;
-    margin: 1em 5% 2.6em 5%;
+    /* note extra bottom height is for the feedback button */
+    margin: 1em 5% 3.5em 5%;
     padding: 5px;
 }
 

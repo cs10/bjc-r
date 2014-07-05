@@ -454,13 +454,22 @@ bjc.goForward = function() {
 // });
 
 bjc.addFeedback = function(title, topic, course) {
-    var html = '<div class="feedback" style="padding:4px;margin:0 auto;right:5%;position:fixed">        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#fdbk">             Send us feedback!         </button>         <div id="fdbk" class="panel-primary panel-collapse collapse">              <div class="panel-body">                  <iframe src="https://getfeedback.com/r/sPesM45m?PAGE=pageRep?TOPIC=topicRep?COURSE=courseRep"                  width="300" height="180"></iframe>             </div>          </div>     </div>';
+    // NOTE: This is a hack to make HTML dev easy...
+    // TODO: Remove before production!
+    $.ajax({
+        async: true,
+        cache: false,
+        dataType: 'html',
+        url: '/bjc-r/admin/survey.html',
+        success: appendSurvey
+    });
     
-    html = html.replace(/pageRep/g, encodeURIComponent(title));
-    html = html.replace(/topicRep/g, encodeURIComponent(topic));
-    html = html.replace(/courseRep/g, encodeURIComponent(course));
-    
-    $(document.body).append(html);
+    function appendSurvey(content, unused, unused1) {
+        content.replace(/pageRep/g, encodeURIComponent(title));
+        content.replace(/topicRep/g, encodeURIComponent(topic));
+        content.replace(/courseRep/g, encodeURIComponent(course));
+        $(document.body).append(content);
+    }
 }
 
 /** 
