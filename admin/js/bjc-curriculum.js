@@ -17,14 +17,14 @@ bjc.bootstrapSep = '<li class="divider list_item" role="presentation"></li>';
 bjc.bootstrapCaret = '<span class="caret"></span>';
 bjc.bsdropdownButton = '<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>';
 // LLAB selectors for common page elements
-bjc.FULL = '#full';
-bjc.NAVSELECT = '#llab-nav';
+bjc.FULL = '.full';
+bjc.NAVSELECT = '.llab-nav';
 bjc.PROGRESS = '.full-bottom-bar';
 
 
 bjc.file = "";
 bjc.step = NaN;
-bjc.url_list = new Array();
+bjc.url_list = [];
 
 
 bjc.secondarySetUp = function() { 
@@ -42,9 +42,9 @@ bjc.secondarySetUp = function() {
 
     // make the vocab box if necessary
     if ($("span.vocab").length > 0) {
-        if ($("div.vocab").length == 0) {
+        if ($("div.vocab").length === 0) {
             // it might already exist, in order to have a 'topX' class inserted.
-            $("#full").append('<div class="vocab"></div>');
+            $(".full").append('<div class="vocab"></div>');
         }
         var vocabDiv = $("div.vocab");
         $("span.vocab").each(function(i) {
@@ -60,7 +60,7 @@ bjc.secondarySetUp = function() {
     // make the help box if necessary
     var helpSpans = $("span.help");
     if (helpSpans.length > 0) {
-        $("#full").append('<div class="help"></div>');
+        $(".full").append('<div class="help"></div>');
         var helpDiv = $("div.help");
         helpSpans.each(function(i) {
             if (!(this.getAttribute('topic'))) {
@@ -76,7 +76,7 @@ bjc.secondarySetUp = function() {
     var marginSelector = ["div.key", "div.warning", "div.help", "div.vocab"];
     if ($(marginSelector.join(',')).length > 0) {
         // add the two columns.
-        $('#full').wrapInner('<div id="mainCol"></div>').prepend(
+        $('.full').wrapInner('<div id="mainCol"></div>').prepend(
             '<div id="marginCol"></div>');
         // this moves the divs over.  Perhaps it could do some smarter ordering
         // always put vocab at the bottom, for instance.
@@ -245,9 +245,9 @@ bjc.processLinks = function(data, ignored1, ignored2) {
 bjc.addFrame = function() {
     var source = getParameterByName("src");
     
-    $("#full").append('<a href=' + source + 
+    $(".full").append('<a href=' + source + 
         ' target="_">Open page in new window</a><br /><br />');
-    $("#full").append('<div id="cont"></div>');
+    $(".full").append('<div id="cont"></div>');
     
     var frame = $(document.createElement("iframe")).attr(
         {'src': source, 'class': 'step_frame'} );
@@ -258,13 +258,15 @@ bjc.addFrame = function() {
 // Setup the entire page title. This includes creating any HTML elements.
 // This should be called EARLY in the load process!
 bjc.setupTitle = function() {
-    $(document.head).append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+    
+    // $(document.head).append('<meta name="viewport" content="width=device-width, initial-scale=1">');
+    
     if (typeof bjc.titleSet !== 'undefined' && bjc.titleSet) {
         return;
     }
-    // Create #full before adding stuff.
-    if ($("#full").length === 0) {
-        $(document.body).wrapInner('<div id="full"></div>');
+    // Create .full before adding stuff.
+    if ($(".full").length === 0) {
+        $(document.body).wrapInner('<div class="full"></div>');
     }
     
     // Work around when things are oddly loaded...
@@ -289,19 +291,15 @@ bjc.setupTitle = function() {
     // Clean up document title if it contains HTML
     document.title = $(".navbar-brand").text();
     
-    // FIXME -- should just be in css...?
-    // document.body.style.marginTop = "0"; // In CSS - remove. 
     // FIXME -- Not great on widnow resize
-    
-    document.body.style.paddingTop = $('nav')[0].clientHeight;
-    
+    $(document.body).css('padding-top', $('.llab-nav').height());
     bjc.titleSet = true;
 }
 
 // Create the 'sticky' title header at the top of each page.
 bjc.createTitleNav = function() {
     var topHTML = ('' +
-        '<nav id="llab-nav" class="navbar navbar-default navbar-fixed-top" role="navigation">' +
+        '<nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">' +
         '<div class="nav navbar-nav navbar-left navbar-brand"></div></nav>'),
         botHTML = "<div class='full-bottom-bar'><div class='bottom-nav " +
                       "btn-group'></div></div>",
@@ -344,7 +342,7 @@ bjc.buildDropdown = function() {
     nav_text = $(document.createElement('span')).html(bjc.clickNav);
     
     // build the list header
-    list_header = $(document.createElement("button")).attr( // 
+    list_header = $(document.createElement("button")).attr(
         {'class': 'navbar-toggle btn btn-default dropdown-toggle list_header',
          'type' : 'button', 'data-toggle' : "dropdown" }); 
     // list_header.append(nav_text);
@@ -404,7 +402,7 @@ bjc.setButtonURLs = function() {
     } else {
         back.each(function(i, item) {
             $(this).removeClass('disabled');
-            $(this).attr('href', bjc.url_list[bjc.step - 1])
+            $(this).attr('href', bjc.url_list[bjc.step - 1]);
             $(this).click(bjc.goBack);
         });
     }
@@ -413,7 +411,7 @@ bjc.setButtonURLs = function() {
     if (bjc.step >= bjc.url_list.length - 1) {
         forward.each(function(i, item) {
             $(this).addClass('disabled');
-            $(this).attr('href', '#')
+            $(this).attr('href', '#');
         });
     } else {
         forward.each(function(i, item) {
@@ -454,22 +452,35 @@ bjc.goForward = function() {
 // });
 
 bjc.addFeedback = function(title, topic, course) {
-    // NOTE: This is a hack to make HTML dev easy...
-    // TODO: Remove before production!
-    $.ajax({
-        async: true,
-        cache: false,
-        dataType: 'html',
-        url: '/bjc-r/admin/survey.html',
-        success: appendSurvey
-    });
-    
-    function appendSurvey(content, unused, unused1) {
-        content.replace(/pageRep/g, encodeURIComponent(title));
-        content.replace(/topicRep/g, encodeURIComponent(topic));
-        content.replace(/courseRep/g, encodeURIComponent(course));
-        $(document.body).append(content);
+    // Prevent Button on small devices
+    if (screen.width < 1024) {
+        return;
     }
+    
+    var surveyURL = 'https://getfeedback.com/r/sPesM45m?PAGE=pageRep&TOPIC=topicRep&COURSE=courseRep';
+    surveyURL = surveyURL.replace(/pageRep/g, encodeURIComponent(title))
+                          .replace(/topicRep/g, encodeURIComponent(topic))
+                          .replace(/courseRep/g, encodeURIComponent(course));
+
+    // TODO: Make this config
+    var button = $(document.createElement('button')).attr(
+            {   'class': 'btn btn-primary feedback-button',
+                'type': 'button',
+                'data-toggle': "collapse",
+                'data-target': "#fdbk" }).text('Feedback'),
+        frame = $(document.createElement('iframe')).attr( 
+            {   'frameborder': "0",
+                'width': "300",
+                'height': "200",
+                'src': surveyURL }),
+        innerDiv = $(document.createElement('div')).attr(
+            {   'id': "fdbk",
+                'class': "collapse feedback-panel well"
+            }).html(frame),
+        feedback = $(document.createElement('div')).attr(
+            {'class' : 'page-feedback'}).append(button, innerDiv);
+
+    $(document.body).append(feedback);
 }
 
 /** 

@@ -49,7 +49,7 @@ body {
     width: 100%;
 }
 
-.full, #full {
+.full, .full {
     padding: 1em;
     width: 90%;
     margin: 1em auto 1em;
@@ -124,7 +124,7 @@ input[type=submit] {
 }
 
 /* FIXME --- poorly performant. */
-#full ul, #full ol {
+.full ul, .full ol {
     font: .9em "Palatino Linotype", "Book Antiqua", 'Palatino', serif;
     font-weight:inherit;
     /* width:85%; */
@@ -187,8 +187,7 @@ a[disabled] {
 }
 
 /** PAGE NAV (TOP AND BOTTOM) ************************************************/
-#llab-nav,
-.top-nav {
+.llab-nav {
   background: #FFF;
   position: fixed;
   top: 0;
@@ -364,6 +363,22 @@ a[disabled] {
       padding-left: 20px;
 }
 /* END PAGE DROPDWON SECTION *************************************************/
+/******* FEEDBACK BUTTON ON BOTTOM RIGHT */
+.page-feedback {
+    padding: 4px;
+    float: right;
+    right: 1%;
+    bottom: 0;
+    z-index: 100;
+    text-align: right;
+    position: fixed;
+}
+
+.feedback-button {
+    margin: .5em 1em;
+}
+
+
 
 .course_link {
     display: block;
@@ -983,4 +998,19 @@ div.indent {
   font-size: .8em;
   font-style: italic;
   color: #808080;
+}
+/******** SMALLL DEVICE STUFF *****/
+@media (max-width: 1024px) {
+  .full {
+    width: 98%;
+  }
+  .navbar-header {
+    font-size: 1em;
+  }
+  .llab-nav {
+    position: static;
+  }
+  .page-feedback {
+    display: none;
+  }
 }
