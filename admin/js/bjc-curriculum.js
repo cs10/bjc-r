@@ -468,18 +468,29 @@ bjc.addFeedback = function(title, topic, course) {
                 'type': 'button',
                 'data-toggle': "collapse",
                 'data-target': "#fdbk" }).text('Feedback'),
-        frame = $(document.createElement('iframe')).attr( 
-            {   'frameborder': "0",
-                'width': "300",
-                'height': "200",
-                'src': surveyURL }),
         innerDiv = $(document.createElement('div')).attr(
             {   'id': "fdbk",
                 'class': "collapse feedback-panel well"
-            }).html(frame),
+            }),
         feedback = $(document.createElement('div')).attr(
             {'class' : 'page-feedback'}).append(button, innerDiv);
 
+    // Delay inserting a frame until the button is clicked.
+    // Reason 1: Performance
+    // Reason 2: GetFeedback tracks "opens" and each load is an open
+    button.click('click', function(event) {
+        if ($('#feedback-frame').length === 0) {
+            var frame = $(document.createElement('iframe')).attr( 
+            {   
+                'frameborder': "0",
+                'id': 'feedback-frame',
+                'width': "300",
+                'height': "200",
+                'src': surveyURL
+            });
+            $('#fdbk').append(frame);
+        }
+    });
     $(document.body).append(feedback);
 }
 
