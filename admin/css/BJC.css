@@ -1010,7 +1010,7 @@ div.indent {
   .llab-nav {
     position: static;
   }
-  .page-feedback {
-    display: none;
+  .page-feedback .btn {
+    padding: none;
   }
 }
