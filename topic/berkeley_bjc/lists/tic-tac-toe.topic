@@ -19,7 +19,7 @@ heading: Tic-Tac-Toe strategy
 	 resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
 	 resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
 	 resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
-	 resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html]
+	 //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
 	 resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
 
 }

@@ -1,0 +1,1016 @@
+/*
+ *
+ *
+ *
+ * DO NOT MAKE CHANGES HERE; MASTERS ARE NOW IN LLAB REPO
+ *
+ *
+ *
+ *
+ */
+
+
+
+
+
+/**
+ * based on:
+ *
+ * Copyright (c) 2006 Encore Research Group, University of Toronto
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU Lesser General Public
+ * License as published by the Free Software Foundation; either
+ * version 2.1 of the License, or (at your option) any later version.
+ *
+ * This library is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public
+ * License along with this library; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+ */
+
+a:visited {color:#36BBCE;}
+
+html {
+  font-size: 1em; /* Fix for weird bootstrap */
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "Gill Sans", Arial;
+    font-size: 1em;
+    text-align: left;
+    background-color: #FFF;
+    margin: 0;
+    padding: 60px 0 0 0; /* paddingTop is reset by JS on title load. */
+    width: 100%;
+}
+
+.full, .full {
+    padding: 1em;
+    width: 90%;
+    margin: 1em auto 1em;
+}
+nav {
+    padding: 1% 5% 1% 5%;
+}
+
+form li div {
+    font:500 15px/1.7 "Times New Roman", Times, serif;
+}
+
+form > h2, form > ol > li {
+    color:#999;
+    font:500 30px Tahoma, Geneva, sans-serif;
+}
+
+em {
+    font-weight: 900;
+    font-style: italic;
+}
+
+/* Should try to avoid tt; deprecated & unsupported tag */
+tt {
+    font-size: 120%;
+    font-weight: 600;
+    line-height: 100%;
+    font-family: monospace;
+}
+
+code {
+    font-weight: 600;
+    line-height: 100%;
+}
+
+p {
+    /*font:1.1em "Times New Roman", Times, serif;*/
+    font: 1em Helvetica, Arial, sans-serif;
+    color: black;
+    line-height: 120%;
+}
+
+p.right {
+  text-align:right;
+}
+
+.vocab {
+    font-style: italic;
+    color: #00C;
+}
+
+form label {
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+input[type=text], input[type=password], textarea {
+    font: 12px "Courier New", Courier, monospace;
+}
+
+/* Quiz Page Buttons */
+input[type=submit] {
+    font-family: "Helvetic Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    border: 1px solid #000;
+    background-color: #36F;
+    color: #FFF;
+    -webkit-border-radius: 9px;
+       -moz-border-radius: 9px;
+         -o-border-radius: 9px;
+            border-radius: 9px;
+}
+
+/* FIXME --- poorly performant. */
+.full ul, .full ol {
+    font: .9em "Palatino Linotype", "Book Antiqua", 'Palatino', serif;
+    font-weight:inherit;
+    /* width:85%; */
+    display:inline-block;
+    color:#000033;
+    line-height:130%;
+    padding: 5px 15px 5px 5px;
+    margin: 15px 15px 15px  0; /* Added */
+    border: 1px solid #3399ff;
+}
+
+ul li, ol li {
+    padding: 5px;
+    margin-left: 35px; /* WHY? This causes problems in some places... */
+}
+
+li ul, li ol {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: none;
+    display: block;
+}
+
+th {
+    font-weight:normal;
+    font-size:16px;
+}
+
+h1 {
+  padding: 10px 0;
+  color: #000;
+}
+
+h2, h3 {
+  font: 900 26px "Palatino Linotype", "Book Antiqua", "Palatino", serif;
+  padding:10px 0;
+  color: #000;
+}
+
+h4, h5, h6 {
+  padding: 10px 15px;
+  color: #000;
+}
+
+blockquote {
+    background: #fbfbac;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-style: italic;
+    width: 880px;
+    padding: 15px;
+}
+
+/* Physically disables clicking on a link which LOOKS disabled. */
+a[disabled] {
+  pointer-events: none;
+}
+
+.inline {
+  display: inline;
+}
+
+/** PAGE NAV (TOP AND BOTTOM) ************************************************/
+.llab-nav {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  margin: 0 0 1em 0;
+  box-shadow: 0 5px 10px #CCC;
+  width: 100%;
+  padding: .5em;
+  min-height: 3em;
+  height: auto;
+  vertical-align: middle;
+}
+
+.full-bottom-bar {
+    background: #CCC;
+    background-image: url("../img/progress.gif"); /* FIXME */
+    background-repeat: no-repeat;
+    background-position: 2px 2px;
+    border-radius: 20px;
+    background-size: 26px;
+    height: 2em;
+    width: 90%;
+    /* note extra bottom height is for the feedback button */
+    margin: 1em 5% 3.5em 5%;
+    padding: 5px;
+}
+
+/* Contains the page title text */
+.navbar-brand,
+.header {
+    font: bold 1.5em Georgia, serif;
+    font-variant: small-caps;
+    color: #666;
+    text-align: left;
+    letter-spacing: 1.5px;
+    max-width: 60%;
+    min-width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.navbar-left {
+  width: 70%; /* For setting title width */
+}
+
+.navbar-right {
+  width: 30%; /* For setting title width */
+}
+
+.navbar-toggle {
+  border-radius: 0;
+  display: inline;
+  position: inherit;
+  float: none;
+  margin: 0;
+  border: #888;
+}
+
+/* Contains Nav Buttons and Dropdown Menu */
+.navbar-right {
+  padding-right: 5%;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  border: 1px solid #888 !important; /* FIXME */
+}
+
+.nav-btns {
+    float: right;
+    z-index: 9999;
+    max-width: 40%;
+    min-width: 15em;
+    padding: 4px;
+}
+
+.header, .nav-btns {
+  line-height: 1em;
+  font-weight: 900;
+  position: relative;
+}
+
+/** Buttons at the bottom right */
+.bottom-nav {
+    float: right;
+    margin: 5px;
+    vertical-align: middle;
+    text-align: right;
+}
+
+/* BUTTON CLASSES */
+/* Overrides default bootstrap which conflicts with right float dropdown. */
+.btn-group > .btn {
+    float: none;
+}
+
+/* Add arrows to each button */
+/*.backbutton:before {
+    content: '\2190 ';
+}
+.forwardbutton:after {
+    content: ' \2192';
+}*/
+
+/* END NAV SECTION ***********************************************************/
+
+/* PAGE DROPDOWN SECTION ******************************************************/
+/* Give space to caret in dropdown menus */
+.caret {
+    margin-left: 15px; /* FIXME, hacky. */
+}
+.dropdown-menu {
+    margin-top: 8px; /* should be equal to padding on list_header */
+}
+.list_item {
+    font-size: 10pt;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.list_header, .arrow {
+    height: 2em;
+    margin: 0;
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 900;
+    border-color: #888;
+}
+
+.arrow { /* For Buttons with arrows instead of words. */
+    border-radius: 4px;
+    font-variant: small-caps;
+    width: 5em;
+    padding: 3px; /* center text in buttons */
+}
+
+.list_header {
+    border-radius: 0; /* No round coners on dropdowns between buttons */
+}
+
+/* TODO: Create a real .list-bg class */
+.list-bg {
+    font-weight: bold;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    font-size: 100%;
+}
+
+.course-link-list {
+    font-size: 100%;
+    font-weight: bold;
+    background-image: url("../img/globe.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.main-topic-link {
+      font-size: 100%;
+      text-decoration: underline;
+      font-weight: bold;
+      background-image: url("../img/toolbar_home.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+}
+.current-step-link {
+      font-weight: bold;
+      background-image: url("../img/forward.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      padding-left: 20px;
+}
+/* END PAGE DROPDWON SECTION *************************************************/
+/******* FEEDBACK BUTTON ON BOTTOM RIGHT */
+.page-feedback {
+    padding: 4px;
+    float: right;
+    right: 1%;
+    bottom: 0;
+    z-index: 100;
+    text-align: right;
+    position: fixed;
+}
+
+.feedback-button {
+    margin: .5em 1em;
+}
+
+
+
+.course_link {
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+    background-image: url("../img/globe.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-left: 25px;
+}
+
+.help {
+    color:#DC143C;
+    font-style:italic;
+}
+
+/* arg. not image please... */
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.redFlag {
+    font-size:.95em;
+    font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-align:left; /* Added/Updated */
+    line-height:1.4em;
+    width: 500px; /* Added */
+    margin:20px  0 20px  0; /* Added */
+    padding:6px;
+    background-color:#FFCCCC;
+    color:#660000;
+    border-top-left-radius:8px; /* Added */
+    border-bottom-right-radius:8px;
+    -moz-border-radius-topleft:8px;
+    -moz-border-radius-bottomright:8px;
+    border:1px solid #666;
+}
+
+.redFlag p {
+    font-size:inherit
+}
+
+.redFlag.right {
+    float:right;
+    margin-right:10px;
+}
+
+.redFlag.left {
+    float:left;
+    margin-left:10px;
+}
+
+.floatClear {
+    clear:both;
+    margin:0;
+}
+
+.floatClearLeft {
+    clear:left;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+table .pre {
+    line-height: 1em;
+}
+
+pre {
+    font:600 .9em "Courier New", Courier, monospace;
+    color:#333;
+    white-space:pre;
+    padding:10px;
+    margin:15px;
+    border-top:2px solid #999;
+    border-right:2px solid #999;
+    border-bottom:2px solid #999;
+    border-left:12px solid #999;
+}
+
+pre.tightText, pre .tightText {
+    letter-spacing:-.8px;
+}
+
+pre.veryTightText, pre .veryTightText {
+    letter-spacing:-1px;
+}
+
+#summaryTable {
+    border-collapse:collapse;
+    border:2px dotted #ccc;
+    width:75%;
+    margin:0 auto 10px auto;
+    text-align:center;
+    vertical-align:top;
+    top:0;
+}
+
+#summaryTable th {
+    font-weight:bold;
+}
+
+#summaryTable p {
+    padding:6px;
+}
+
+#tableSummary {
+    border-collapse:collapse;
+    border:2px dotted #ccc;
+    width:75%;
+    margin:0 auto 10px auto;
+    text-align:center;
+    vertical-align:top;
+    top:0;
+}
+
+#tableSummary th {
+    font-weight:bold;
+}
+
+#tableSummary p {
+    padding:6px;
+}
+
+#tableBlue {
+    border-collapse:collapse;
+    margin:10px 15px;
+    background-color:#ccccff;
+}
+
+#tableBlue th {
+    border:1px solid #6666FF;
+    vertical-align:top;
+    text-align:left;
+    font:.8em "Times New Roman", Times;
+    padding:2px 10px;
+    font-weight: 600;
+}
+
+#tableBlue td {
+    border:1px solid #6666FF;
+    vertical-align:top;
+    font:1em "Times New Roman", Times;
+    padding:5px 10px;
+        vertical-align:top;
+}
+
+#tableBlue ul {
+    border:none;
+    margin: 0;
+}
+
+#tableCenter {
+    margin: 0 auto;
+    border-collapse: collapse;
+    border:1px solid #333;
+    font-family:"Arial", sans-serif;
+    background-color: #F0F8FF;
+}
+
+#tableCenter th {
+    padding: 5px 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    border-bottom: 2px solid #808080;
+    background-color: #B0E0E6;
+}
+
+#tableCenter td {
+
+    font-size: .8em;
+    letter-spacing: 0.1em;
+    padding: 20px;
+}
+
+
+#tableClear {
+    border-collapse:collapse;
+    margin:0 0 0 50px;
+    background-color:#FFF;
+}
+
+#tableClear td {
+    border:0;
+    vertical-align:top;
+    padding:5px;
+}
+
+#tableClear pre {
+    font:400 .85em "Courier New", Courier, monospace;
+    white-space:pre;
+    padding:10px;
+    margin:5px;
+    border-top:2px solid #999;
+    border-right:2px solid #999;
+    border-bottom:2px solid #999;
+    border-left:12px solid #999;
+}
+
+#tableTight {
+    border-collapse:collapse;
+    margin:0 0 0 5px;
+    background-color:#FFF;
+}
+
+#tableTight td {
+    border:0;
+    vertical-align:top;
+    padding: 0;
+}
+
+#tableTight pre {
+    font:.85em Courier, monospace;
+    color:#000;
+    letter-spacing:-1px;
+    white-space:pre;
+    padding:5px;
+    margin:5px;
+    border-top:2px solid #999;
+    border-right:2px solid #999;
+    border-bottom:2px solid #999;
+    border-left:12px solid #999;
+}
+
+.imageRight {
+    float:right;
+    margin:0 20px 15px 15px;
+}
+
+.imageLeft {
+    float:left;
+    margin:0 15px 15px 20px;
+}
+
+.imageCenter {
+    text-align:center;
+    margin:0 auto;
+}
+
+
+img.center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+img.inline {
+    /* this works if the text isn't also vertical-align'ed!  */
+    vertical-align: middle;
+}
+
+img.indent {
+    margin-left: 10%;
+    /* display: block;  */
+}
+
+div.indent {
+    margin-left: 10%;
+}
+
+
+.centeredImages {
+    text-align:center;
+    margin:0 auto;
+}
+
+.centeredImages img {
+    margin: 0 10px;
+}
+
+.clearFloats {
+    clear:both;
+}
+
+.tryit {
+    width:500px;
+    margin: 20px  0 20px  0; /* Added/Updated */
+    background-image:url('../img/doit_background.png');
+    background-position:-10px -3px;
+    background-color:#164CBA;
+    border:1px solid #000099;
+    border-top-left-radius:16px; /* Added */
+    border-bottom-right-radius:16px;
+    -moz-border-radius-topleft:16px;
+    -moz-border-radius-bottomright:16px;
+    /* border-radius:10px; */
+}
+
+.tryit .vocab {
+    font-style:italic;
+    letter-spacing:.6px;
+    padding:0 2px;
+    font-weight:bold;
+}
+
+.tryit p {
+    padding:22px 22px 8px 8px;
+    text-align:left;
+    font-size:.8em;
+    line-height:135%;
+    letter-spacing:.5px;
+    color: #FFF;
+    font-family: Arial, Helvetica, Arial;
+}
+
+.tryit a:link, .tryit a:visited {color:#FFE6C6;}
+.tryit a:hover {color:#919EBA;}
+
+.instructionsIcon {
+    width: 16px;
+    height: 16px;
+    background-image:url('../img/infoIcon.png');
+    background-repeat: no-repeat;
+    text-decoration:none;
+    outline:none;
+}
+
+.instructionsIcon:hover {
+    background-image:url('../img/infoIconRollover.png');
+    background-repeat: no-repeat;
+}
+
+.step {
+    margin-left:35px;
+    padding:  0 50px 5px 30px;
+    background-image:url('../img/lightning.png');
+    background-repeat:no-repeat;
+    background-position: 0  0;
+}
+
+#selfCheckIntro {
+    width:650px;
+}
+
+#selfCheckIntro .Intro1 {
+    color:red;
+}
+
+#selfCheckIntro .Intro2 {
+    font-size:90%;
+}
+
+.selfCheckQuestion {
+    font-size:14px;
+    font-family:Verdana, Arial,Helvetica;
+    text-align:left;
+    width:650px;
+    margin:10px 0 15px 0 ;
+    color:#0000FF;
+    line-height:120%;
+}
+
+#brainstorm p {
+    margin:5px auto;
+    padding:0;
+    color:#000099;
+    font-size:110%;
+    line-height:100%;
+}
+
+#brainstorm table {
+    border-collapse:collapse;
+    border:2px solid #000066;
+    color:#CCFFCC;
+    background-color:#333;
+    margin:10px auto;
+}
+
+#brainstorm strong {
+    text-transform:uppercase;
+    color:#CCFFCC;
+}
+
+#brainstorm td {
+    font-size:80%;
+    vertical-align:top;
+    padding: 5px 10px;
+    border:1px solid #666;
+}
+
+#brainstorm table code {
+    display:block;
+    margin:10px 0 0 0;
+    font-size:95%;
+    font-weight:normal;
+    line-height:80%;
+}
+
+.quoteOrange {
+    padding:10px 15px;
+    margin: 15px;
+    width:80%;
+    border-left:12px solid #FF9D1E;
+    background-color:#FFCE8E;
+}
+
+.quoteBlue {
+    padding:10px 15px;
+    margin: 15px;
+    width:80%;
+    border-left:12px solid #164cba;
+    background-color:#9999FF;
+}
+
+.quoteBrown {
+    padding:10px 15px;
+    margin: 15px;
+    width:80%;
+    border-left:12px solid #bf9a6b;
+    background-color:#ddc8ad;
+}
+
+.quoteGreen {
+    padding:10px 15px;
+    margin: 15px;
+    width:80%;
+    border-left:12px solid #669933;
+    background-color:#99CC66;
+}
+
+.slideshowLink {
+    margin: 0 5px;
+    padding-left:20px;
+    padding-right:2px;
+    color:#CC3333;
+    text-decoration:none;
+    background-image:url(../img/slideshowIcon.png); /* FIXME */
+    background-repeat:no-repeat;
+    font-weight:bold;
+}
+
+.slideshowLink:hover{
+    background-color:#FFFF00;
+}
+
+.pageLink {
+    background-image:url(../img/pageLink.png); /* FIXME */
+    background-position:top right;
+    background-repeat:no-repeat;
+    margin-right:4px;
+    margin-left:2px;
+    padding-right:22px;
+}
+
+#buttonClose {
+    text-align:center;
+    margin:30px auto;
+}
+
+#buttonClose a {
+    display:block;
+    margin:0 auto;
+    width:9em;
+    padding:3px 0;
+    font: bold 80% Verdana,Arial,sans-serif;
+    text-transform:uppercase;
+    background: #6883BA;
+    color: #333;
+    text-decoration:none;
+    text-align:center;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    border:1px solid #666;
+    outline:none;
+}
+
+#buttonClose a:hover{
+    background: #FFCC00;
+    color:#333;
+}
+
+
+/* New classes from the original_bjc file.
+ * All items below pertain to the "topic" class.
+ */
+
+.topic {
+    margin-bottom: 30px;
+    border: 2px solid #CCC;
+    border-radius: 4px;
+    padding:20px;
+    display:inline-block;
+}
+
+/* Most items in the course page */
+.topic div {
+    background-repeat:no-repeat;
+    background-position:left;
+    /*background-size:18px 18px;*/
+    background-size: contain;
+    padding-left:35px;
+    margin:5px  0 5px  0;
+}
+
+/* Begin items controlled primarily by .topic div */
+.quiz {background-image:url(../img/multiplechoice28.png);} /* FIXME */
+.assignment, .homework {background-image:url(../img/note28.png);} /* FIXME */
+.resource {background-image:url(../img/course-resources-32.png);} /* FIXME */
+.forum {background-image:url(../img/pageLink.png);} /* FIXME */
+.video {background-image:url(../img/slideshowIcon.png);} /* FIXME */
+.extresource {background-image:url(../img/display28.png);} /* FIXME */
+.reading{background-image:url(../img/emblem_library.png);} /* http://findicons.com/icon/93370/emblem_library?id=274277 */
+.group{background-image:url(../img/user_group.png);} /* http://findicons.com/icon/66444/user_group?id=66460 */
+/* End items controlled by .topic div */
+
+/* Other items, which partially override .topic div */
+
+/* Headings */
+.topic .topic_header {
+    font-weight:bold;
+    font-size:large;
+    text-decoration:underline;
+    padding-left: 0;
+}
+
+
+.topic .label {
+    margin-top:20px;
+    margin-bottom:12px;
+    padding-left: 0;
+    padding-left: 0;
+}
+
+/* List-related items
+ * bigIdeas and learninggoals are being treated identically at the moment.
+ */
+.topic .bigideas {
+    font-weight:bold;
+    padding-left: 0;
+    margin: 0;
+}
+
+.topic .learninggoals {
+    font-weight:bold;
+    padding-left: 0;
+}
+
+/* Formatting stuff */
+.topic .indent0 {margin-left: 0}
+.topic .indent1 {margin-left:20px}
+.topic .indent2 {margin-left:40px}
+.topic .indent3 {margin-left:60px}
+
+
+/* This is for the curriculum page with links to other topic pages.
+ * Do not place inside a topic div. */
+.topic_link {
+    font-weight:bold;
+    font-size:large;
+    text-decoration:underline;
+    padding-left: 0;
+    padding-top: 10px;
+}
+
+/* Inserts the logo using the proper formatting.
+ * Insert using "<span class="snap">snap</span>"
+ */
+.snap:first-letter {
+    font-variant: normal;
+}
+
+.snap {
+    text-transform: capitalize;
+    font-variant: small-caps;
+    font-style: normal;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.snap:after {
+    content:"!";
+    font-style: italic;
+}
+
+/* This is a container element for the iframe */
+#cont {
+    width: 90%;
+    min-height: 500px;
+    height: 80%;
+    position: absolute;
+}
+
+/* iframe at the beginning of labs. */
+.step_frame {
+    width:100%;
+    height: 100%;
+    display: block;
+}
+
+.run {
+    background: url("../img/external-link.png") center right no-repeat; /* FIXME */
+    padding-right: 13px;
+}
+
+.truthtable {
+    display:inline-block;
+    padding:10px;
+}
+
+.truthtable td {
+    font-size:14px;
+    padding:10px 8px;
+    border-style:solid;
+    border-width:1px; }
+
+.truthtable th {
+    font-size:14px;
+    font-weight:normal;
+    padding:10px 5px;
+    border-style:solid;
+    border-width:1px; }
+
+.code-vid {
+  text-align: center;
+  font-size: .8em;
+  font-style: italic;
+  color: #808080;
+}
+/******** SMALLL DEVICE STUFF *****/
+@media (max-width: 1024px) {
+  .full {
+    width: 98%;
+  }
+  .navbar-header {
+    font-size: 1em;
+  }
+  .llab-nav {
+    position: static;
+  }
+  .page-feedback .btn {
+    padding: none;
+  }
+}
