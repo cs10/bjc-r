@@ -4,7 +4,7 @@
 <p>&nbsp;&nbsp;&nbsp;&nbsp;In the experiments in the previous section,
 we concluded that the "non-Gauss" block had a linear runtime, while the
 "Gauss" block had a constant runtime.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;Both blocks were answering the same question: I have a list of numbers from <tt>1</tt> to <tt>max</tt>,
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Both blocks were answering the same question: I have a list of numbers from <code>1</code> to <code>max</code>,
 and I want to know what the total of these numbers is.&nbsp; The
 "non-Gauss" block is a great first attempt at solving the problem, and
 works rather fast even for large lists.&nbsp; However, its main
@@ -13,7 +13,7 @@ of the input, and so the longer the list, the longer you will have to
 wait to get an answer.&nbsp; The "Gauss" block, however, does not have
 to go through the numbers in the list; all it ever needs, every time,
 is one piece of information: the length of the list, which (in this
-case) is also the value of <tt>max</tt>.&nbsp; Once you give it this
+case) is also the value of <code>max</code>.&nbsp; Once you give it this
 information, it will always perform the same number of arithmetic
 operations, regardless of whether the list is 10 elements long or 10
 million, and that instantly makes it the better algorithm.</p><p>&nbsp;&nbsp;&nbsp;&nbsp;Many

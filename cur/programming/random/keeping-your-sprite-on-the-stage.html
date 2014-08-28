@@ -3,7 +3,7 @@
     <head>
         <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
         <title>
-            Keeping your character visible (practice with <tt>if</tt>)
+            Keeping your character visible (practice with <code>if</code>)
         </title>
     </head>
     <body>
@@ -11,20 +11,20 @@
         <p>
             After a while, you'll notice that your randomly moving sprite will move off the screen.  Add to your script
             so that the sprite stays <i>mostly</i> within 100 pixels of the center of the screen&mdash;that is, in a 200 by 200
-            square.  (It turns out that it is hard to ensure, using the motion blocks <tt>turn</tt> and <tt>move _ steps</tt>,
+            square.  (It turns out that it is hard to ensure, using the motion blocks <code>turn</code> and <code>move _ steps</code>,
             that the sprite stays <i>strictly</i> within a 200 by 200 pixel square.  For this activity, if the sprite heads out
             in one step, you'll need to ensure that it doesn't go further out on subsequent steps).
         </p>
         <p>
-            You can do using an <tt>if</tt> block, and will find the the <img src="/bjc-r/img/blocks/x-position.png" alt="x position block" />, 
+            You can do using an <code>if</code> block, and will find the the <img src="/bjc-r/img/blocks/x-position.png" alt="x position block" />, 
             <img src="/bjc-r/img/blocks/y-position.png" alt="y position block" />, and 
             <img src="/bjc-r/img/blocks/direction.png" alt="direction block" /> reporter blocks useful.
         </p>
 
         <p>
-            As a first task, make sure your character (mostly) doesn't go below the <tt>y = -100</tt> line&mdash;that
-            is, doesn't have a <tt>y position</tt> less than <tt>-100</tt>.
-            If the sprite is below the <tt>y = -100</tt> line, it should not go any lower.
+            As a first task, make sure your character (mostly) doesn't go below the <code>y = -100</code> line&mdash;that
+            is, doesn't have a <code>y position</code> less than <code>-100</code>.
+            If the sprite is below the <code>y = -100</code> line, it should not go any lower.
             That is, don't allow any directions that are between 90 and 180 degrees.  (If you
             are using negative numbers for direction, you'll need to check for additional
             values!)
@@ -45,9 +45,9 @@
         </ul>
         <p>
             Test your solution long enough to ensure that your sprite
-            won't go below the <tt>y = -100</tt> line&mdash;or, won't continue once a move
+            won't go below the <code>y = -100</code> line&mdash;or, won't continue once a move
             takes it below.  One trick that might speed up testing: drag your sprite below
-            the <tt>y=-100</tt> line, and see if it only moves upwards.
+            the <code>y=-100</code> line, and see if it only moves upwards.
 
             To additionally help your testing, consider drawing a red 200 pixel by 200 pixel box on the screen, so you
             can see if your sprite crosses it.
@@ -62,13 +62,13 @@
         <ul>
 
             <li>
-                If the sprite is above the <tt>y = 100</tt> line, it should not go any higher.
+                If the sprite is above the <code>y = 100</code> line, it should not go any higher.
             </li>
             <li>
-                If the sprite is to the left of the <tt>x = -100</tt> line, it should not go any farther left.
+                If the sprite is to the left of the <code>x = -100</code> line, it should not go any farther left.
             </li>
             <li>
-                If the sprite is to the right of the <tt>x = 100</tt> line, it should not go any farther right.
+                If the sprite is to the right of the <code>x = 100</code> line, it should not go any farther right.
             </li>
         </ul>
         <p>

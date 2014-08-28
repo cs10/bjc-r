@@ -11,7 +11,7 @@ big-idea: Understand and analyze some of the impact of the internet on our cultu
 
 h2: Activities
 learning-goal: Get comfortable with the <span class="snap">snap</span> user interface.
-learning-goal: Learn to use <tt>Broadcast</tt> blocks to communicate between sprites and make a movie.
+learning-goal: Learn to use <code>Broadcast</code> blocks to communicate between sprites and make a movie.
 learning-goal: Get a <span class="snap">snap</span> account set up to save projects.
 learning-goal: Learn to use key listeners to move the characters around the screen.
 

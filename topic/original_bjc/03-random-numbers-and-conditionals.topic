@@ -14,15 +14,15 @@ h2: Activities
 learning-goal: Review what variables are.
 learning-goal: Review how <var>change</var> and <var>set</var> affect variables.
 learning-goal: Learn how the X- Y- Coordinate plane maps to the stage.
-learning-goal: Implement the <tt>if</tt> block in the context of random movement, number guessing, and the game, Rock, Paper, Scissors.
-learning-goal: Implement the <tt>random</tt> number block to create randomness in a game.
+learning-goal: Implement the <code>if</code> block in the context of random movement, number guessing, and the game, Rock, Paper, Scissors.
+learning-goal: Implement the <code>random</code> number block to create randomness in a game.
 
 
 heading: Review: 'Change' versus 'Set'
 	resource: Reviewing Variables [/bjc-r/cur/programming/variables/reviewing-variables.html]
 	quiz: Changing Variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13954]
 
-heading: The <tt>If</tt> Block
+heading: The <code>If</code> Block
 	quiz: If: What would you expect? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13956]
 	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-BYOB.html]
 	

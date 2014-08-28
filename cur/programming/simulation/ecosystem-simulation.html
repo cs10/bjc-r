@@ -66,13 +66,13 @@
                 Open the simulator project in BYOB.
             </li>
             <li>
-                Notice the two sprites named <tt>Sharks</tt> and <tt>Fish</tt>. Each one of these sprites represents a different population type, and defines the model for the populations behavior on the stage.
+                Notice the two sprites named <code>Sharks</code> and <code>Fish</code>. Each one of these sprites represents a different population type, and defines the model for the populations behavior on the stage.
             </li>
             <li>
-                Click on the Sharks sprite and look at the block attached to the <img border="0" src="/bjc-r/img/sys/when-i-receive-prepare.png" alt="Prepare Species Hat" title="Prepare Species Hat" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/prepare.png"> block. This set of rules defines how the shark population changes over time -- we'll try changing these later. Check out the <tt>Fish</tt> sprite and you'll see that the same block appears there.
+                Click on the Sharks sprite and look at the block attached to the <img border="0" src="/bjc-r/img/sys/when-i-receive-prepare.png" alt="Prepare Species Hat" title="Prepare Species Hat" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/prepare.png"> block. This set of rules defines how the shark population changes over time -- we'll try changing these later. Check out the <code>Fish</code> sprite and you'll see that the same block appears there.
             </li>
             <li>
-                Run the simulator by clicking on the green flag and wait until the <tt>number of steps</tt> is <tt>10</tt> (note: it may take a long time for the simulator to run). Can you tell that the populations are behaving differently? Make observations but don't worry about recording anything -- you will be asked to make similar modifications later.
+                Run the simulator by clicking on the green flag and wait until the <code>number of steps</code> is <code>10</code> (note: it may take a long time for the simulator to run). Can you tell that the populations are behaving differently? Make observations but don't worry about recording anything -- you will be asked to make similar modifications later.
                 <br>
             </li>
         </ol>
@@ -84,7 +84,7 @@
         </p>
         <ol>
             <li>
-                Click on the <tt>Sharks</tt> sprite and change the <tt>chance of reproduction</tt> to 90% and eliminate the possibility of death by overcrowding.
+                Click on the <code>Sharks</code> sprite and change the <code>chance of reproduction</code> to 90% and eliminate the possibility of death by overcrowding.
                 <br>
             </li>
             <li>
@@ -102,10 +102,10 @@
         <br>
         <ol>
             <li>
-                Duplicate one of the pre-existing sprites (<tt>Sharks</tt> or <tt>Fish</tt>) by right-clicking (option+click on Macs) and clicking <tt>duplicate</tt>. Change the name and icon to represent whatever species you'd like to create.
+                Duplicate one of the pre-existing sprites (<code>Sharks</code> or <code>Fish</code>) by right-clicking (option+click on Macs) and clicking <code>duplicate</code>. Change the name and icon to represent whatever species you'd like to create.
             </li>
             <li>
-                Edit the <img border="0" title="Initialize simulator" alt="Initialize simulator" src="/bjc-r/img/sys/initialize-simulator-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/initialize-simulator.png"> block and add an extra <tt>replace</tt> line to the end of the block with your species name as the final argument.
+                Edit the <img border="0" title="Initialize simulator" alt="Initialize simulator" src="/bjc-r/img/sys/initialize-simulator-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/initialize-simulator.png"> block and add an extra <code>replace</code> line to the end of the block with your species name as the final argument.
             </li>
             <li>
                 Click on your species sprite and change the species name to the same name you used in Step 2. Then change the model as you see fit -- be creative and don't be afraid to experiment!  The guidelines provided below may prove useful.
@@ -116,16 +116,16 @@
         <br>
         <ol>
             <li>
-                The chance of reproduction for each species can be adjusted by changing the value of the <tt>chance of reproduction</tt> variable in each sprite. A different rate can be specified for each species type, but every member of the species has the same chance of reproduction (unless you change that in a rule, such as giving a shark who is near fish a higher chance of reproduction).
+                The chance of reproduction for each species can be adjusted by changing the value of the <code>chance of reproduction</code> variable in each sprite. A different rate can be specified for each species type, but every member of the species has the same chance of reproduction (unless you change that in a rule, such as giving a shark who is near fish a higher chance of reproduction).
             </li>
             <li>
                 The simulator takes a long time to start up because it is organizing the data in a way that allows the actual time steps to be completed more quickly. You'll have to be patient while it loads.
             </li>
             <li>
-                You can create a totally new species by duplicating one of the preexisting species, changing the species name, and adding its new name to the <tt>population types</tt> list in the <tt>World</tt> sprite. Remember to add some members of that species to the initial grid! Look in the <tt>initialize simulator</tt> block to do that.
+                You can create a totally new species by duplicating one of the preexisting species, changing the species name, and adding its new name to the <code>population types</code> list in the <code>World</code> sprite. Remember to add some members of that species to the initial grid! Look in the <code>initialize simulator</code> block to do that.
             </li>
             <li>
-                The population model (<tt>rules</tt>) can be assigned by adding new blocks to each species' <tt>rules </tt>list.  You can add as many rules as you like. Try reading through the rules -- it should be fairly straightforward what each rule is doing, and comments have been provided as well.
+                The population model (<code>rules</code>) can be assigned by adding new blocks to each species' <code>rules </code>list.  You can add as many rules as you like. Try reading through the rules -- it should be fairly straightforward what each rule is doing, and comments have been provided as well.
             </li>
         </ol>
     </body>

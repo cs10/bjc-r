@@ -20,8 +20,8 @@ learning-goal: Learn to use the movement and drawing commands in Snap! to draw c
 learning-goal: Learn to use variables that change dynamically within a program.
 learning-goal: Use layers of abstraction in programs to draw complex images.
 learning-goal: Learn how the X- Y- Coordinate plane maps to the stage.
-learning-goal: Use the <tt>if</tt> block in the context of random movement, number guessing, and the game, Rock, Paper, Scissors.
-learning-goal: Use the <tt>random</tt> number block to create randomness in a game.
+learning-goal: Use the <code>if</code> block in the context of random movement, number guessing, and the game, Rock, Paper, Scissors.
+learning-goal: Use the <code>random</code> number block to create randomness in a game.
 
 
 heading: Drawing
@@ -60,7 +60,7 @@ heading: Activities
 	resource: Draw a Picture in <span class="snap">snap</span> [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
 //	resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
 
-heading: The <tt>If</tt> Block
+heading: The <code>If</code> Block
 	quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
 	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
 	resource: Checking for leap years [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]

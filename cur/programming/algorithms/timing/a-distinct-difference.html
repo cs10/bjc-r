@@ -22,7 +22,7 @@ time taking a number from the list and comparing it with all of the
 following numbers.<br><br><strong>Step 4.</strong> If I am done with all of the numbers in the list, I stop and tell the user that the numbers <em>are</em> distinct.
 <p> Take a moment to understand the algorithm, and ask any questions
 that you may have. Using the algorithm above, complete the body of the
-following block in the <tt>Variables</tt> menu:</p> <br><div style="margin-left: 40px;"><img style="width: 219px; height: 32px;" src="../../../../img/list/are-numbers-distinct-block.png" title="are the numbers in 'list' distinct?" alt="are the numbers in 'list' distinct?" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/AreDistinctBlock.gif"><br><br></div>
+following block in the <code>Variables</code> menu:</p> <br><div style="margin-left: 40px;"><img style="width: 219px; height: 32px;" src="../../../../img/list/are-numbers-distinct-block.png" title="are the numbers in 'list' distinct?" alt="are the numbers in 'list' distinct?" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/AreDistinctBlock.gif"><br><br></div>
 <p> Once we are done with the block, we need to figure out the <strong>worst-case</strong>
 running time of the algorithm: how long will this algorithm take on the
 worst possible input? By "worst", we mean an input that will cause the
@@ -32,14 +32,14 @@ algorithm, for example, what is the worst possible input?</p>
 <p> Well, since the algorithm only ever stops partway if the numbers in
 the list are not distinct, we need a list whose numbers are distinct,
 so that the algorithm will have to look at all the numbers in the list.
-We already have one such list: the list of numbers from <tt>1</tt> to <tt>max</tt>! (This is turning out to be quite a useful list.) Let's use it!</p>
-<p> Replace the "Gauss" block from the previous section with the <tt>are the numbers of list distinct?</tt> block that you just made. The list that we are going to test is the <tt>numbers</tt>
+We already have one such list: the list of numbers from <code>1</code> to <code>max</code>! (This is turning out to be quite a useful list.) Let's use it!</p>
+<p> Replace the "Gauss" block from the previous section with the <code>are the numbers of list distinct?</code> block that you just made. The list that we are going to test is the <code>numbers</code>
 list, as we explained above. (Also, modify what Alonzo says at the very
 end of the script to subtract the extra second that he uses to tell us
 whether the numbers in the list are distinct.)</p>
-<p> Run the timing script with <tt>max</tt> set to <tt>10</tt>. Again, run the script a few times to get an idea of the average time the computer takes to determine if the numbers in the <tt>numbers</tt> list is distinct.</p>
-<p> Repeat the experiment with <tt>max</tt> set to <tt>20</tt>, <tt>40</tt>, and <tt>100</tt>.
+<p> Run the timing script with <code>max</code> set to <code>10</code>. Again, run the script a few times to get an idea of the average time the computer takes to determine if the numbers in the <code>numbers</code> list is distinct.</p>
+<p> Repeat the experiment with <code>max</code> set to <code>20</code>, <code>40</code>, and <code>100</code>.
 What happens to the running time of the block when the size of the list
 is doubled? What happens when the size of the list is scaled by a
 factor of 10? (If you have quite a bit of time, you may want to try and
-see how long the algorithm takes with <tt>max</tt> set to <tt>1000</tt>.)</p>   </body></html>
+see how long the algorithm takes with <code>max</code> set to <code>1000</code>.)</p>   </body></html>
