@@ -1,10 +1,22 @@
 # bjc-r
 
-
 The Beauty and Joy of Computing labs resource repository.
 
-## Basic Structure
-We have a simple directory structure for lab content.
+## Cloning this Repo
+* llab submodule
+
+`git clone --recoursive`
+
+OR
+```
+git submoduke init
+git submodule update
+```
+
+```
+git pull
+git submodule update
+```
 
 ## Viewing the Site
 The main "production" server for labs is hosted at Berkeley, [here][main].
@@ -29,14 +41,14 @@ server.__
 The easiest way to setup a server is to use a simple, built-in Python server.
 1. `cd` into one level above the `bjc-r` directory.
 2. In a separate window run `python -m SimpleHTTPServer` (for Python 2) or `python3 -m http.server` for Python 3.
-3. Navigate to [http://localhost/bjc-r](http://localhost/bjc-r) in a browser.
+3. Navigate to [http://localhost:8000/bjc-r](http://localhost:8000/bjc-r) in a browser.
 4. That's it! :)
 
 ### Windows
 
 
 ## Contributing
-A basic guide on writing labs is, [here][authorship].
+A basic guide on writing labs is, [here][authorship]. However, for the most part, all you need to do is write some HTML.
 To contribute:
 1. Create your own fork of `bjc-r`.
 2. Optionally: Create a new branch for your feature.
@@ -44,6 +56,8 @@ To contribute:
 4. Create a pull request.
 5. Get feedback on the pull request and make changes as needed.
 6. Be super awesome! :)
+
+Of course, submitting issues is always welcome and encouraged! These issues can be bugs, questions, improvements or anything you'd like to share.
 
 ## License
 [CC-BY-NC-SA 3.0][cc]
