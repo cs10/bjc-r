@@ -31,7 +31,7 @@ heading: Pascal's Triangle
 
 heading: Sorting
 	 resource: Sorting a List [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting.html]
-	 resource: Self test: Sorting a List [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
+	 quiz: Self test: Sorting a List [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
 
 heading: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
