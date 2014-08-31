@@ -27,8 +27,8 @@ learning-goal: Use the <code>random</code> number block to create randomness in 
 heading: Drawing
 	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
 	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
-	resource: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
-	resource: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
+	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
 
 heading: Variables
 
