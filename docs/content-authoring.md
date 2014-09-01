@@ -3,8 +3,8 @@
 ## Hierarchy:
 
 * Course
-* Topic
-* Activity/Page
+    * Topic
+        * Curriculum Page
 
 ## Writing Style
 There are a few tips for keeping a consistent tone with labs.
@@ -45,7 +45,6 @@ Basic Directories:
 
 (Those which are bolded are most important.)
 
-* `assess`   -- Don't use.
 * `course`   -- Contains 'classes'
 * `cur`      -- __Contains lab content, as HTML or Markdown files__
 * `glossary` -- Not Used.
