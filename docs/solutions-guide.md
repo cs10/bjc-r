@@ -18,12 +18,13 @@ This guide will serve as a reference for authoring lab solutions and for other S
       * Follow the DRY Rule: Don't Repeat Yourself
       * Use abstraction! (You learned that on day one.)
       * As an example:
+
       ```python
       if (condition):
           report True
-     else:
+      else:
          report False
-    ```
+      ```
     should be simply `report condition`
 
 
