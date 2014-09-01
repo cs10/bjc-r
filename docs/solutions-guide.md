@@ -6,7 +6,7 @@ This guide will serve as a reference for authoring lab solutions and for other S
     Most labs will have a few exercises in them, which means a few separate solution files per lab. An exercise may be more than one question if those questions are related to each other. The reason is that we might change only 1 exercise in a lab, or use the same problem in multiple labs.
 2. Avoid referring to labs by number!
     Use the __title__ of each lab as the reference to a topic. The ordering of labs can often change, so avoiding numbers will help everyone's sanity in the future.
-3. Comment you code.
+3. Comment on your code.
     Not everything needs a comment, but it is often helpful to explain "why" and "how" decisions were made. Solutions are meant to be a learning tool so it's definitely good to explain concepts to students. You should especially use comments when a piece of code seems complicated or a little advanced, or if it's a solution for a newly introduced concept.
 4. Don't use concepts which haven't been taught.
     For example, you shouldn't use recursion if a student hasn't learned recursion yet.
