@@ -25,7 +25,10 @@ This guide will serve as a reference for authoring lab solutions and for other S
          report False
     ```
     should be simply `report condition`
-    
+
+
+***
+
 #### Resources For Good Style
 These aren't Snap<i>!</i> or BJC specific, but the principles are good.
 ##### _The Zen of Python_
