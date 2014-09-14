@@ -1,6 +1,6 @@
 # Lab Solutions & BJC Coding Style
 
-This guide will serve as a reference for authoring lab solutions and for other Snap<i>!</i> code used in labs. Remember, that these are _guidelines_. If you have good judgement as to why "breaking" one of these is better for __students__, then follow that logic.
+This guide will serve as a reference for authoring lab solutions and for other <span class="snap">snap</span>  code used in labs. Remember, that these are _guidelines_. If you have good judgement as to why "breaking" one of these is better for __students__, then follow that logic.
 
 1. Keep to 1 solution file per "exercise".
     Most labs will have a few exercises in them, which means a few separate solution files per lab. An exercise may be more than one question if those questions are related to each other. The reason is that we might change only 1 exercise in a lab, or use the same problem in multiple labs.
@@ -31,7 +31,7 @@ This guide will serve as a reference for authoring lab solutions and for other S
 ***
 
 #### Resources For Good Style
-These aren't Snap<i>!</i> or BJC specific, but the principles are good.
+These aren't <span class="snap">snap</span>  or BJC specific, but the principles are good.
 ##### _The Zen of Python_
 obtained by typing `import this` in a Python interpreter.
 ```
