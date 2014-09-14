@@ -1,4 +1,4 @@
-title: Welcome to Snap!
+title: Welcome to <span class="snap">snap</span> 
 
 {
 h2: Big Ideas
@@ -17,7 +17,7 @@ learning-goal: Make a sprite sing
 learning-goal: Learn to use the mouse to move sprites around the screen.
 learning-goal: Make a Kaleidoscope
 
-heading: Introduction to Snap!
+heading: Introduction to <span class="snap">snap</span> 
 	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/topic1_intro/welcome-to-snap.html]
 	
 	1. Exploring Snap
