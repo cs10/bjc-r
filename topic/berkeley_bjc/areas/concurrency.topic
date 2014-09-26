@@ -39,8 +39,8 @@ heading: <span class="snap">snap</span> ... don't all talk at once!
 	resource: Determinism vs. Non-determinism [/bjc-r/cur/programming/concurrency/snap/snap-modify.html] 
 	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-script-snap.html]
 	//quiz: Quiz
-	resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-answer-snap.html]
 	resource: Race Conditions in <span class="snap">snap</span>  [/bjc-r/cur/programming/concurrency/snap/snap-play-2.html]
+	resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-answer-snap.html]
 
 heading: <span class="snap">snap</span> ... some details to form a mental model
 	resource: Overview: Broadcasts [/bjc-r/cur/programming/concurrency/snap/overview-snap-3.html]
