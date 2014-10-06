@@ -14,7 +14,7 @@
 	<p>(There's no reason the items have to be numbers, as long as we have some way to order them, like the <code>&lt;</code> operator for numbers. But numbers are easiest to talk about in this context.)</p>
 	<p>There are many different sorting algorithms. But the best one for recursively generated lists, and probably the most elegant, is called <em>mergesort. </em>Here's the idea in a nutshell: Divide the list in half; recursively sort each half; then merge the two sorted sublists. The base case is that an empty list or a one-item list is already sorted.</p>
 	<p>The easiest way to divide a list in half turns out to be putting the odd-indexed items (first, third, fifth, etc.) in one half and the even-indexed items (second, fourth, sixth, etc.) in the other.</p>
-	<p class="quoteOrange">
+	<p class="alert quoteOrange">
 	    Note: this will <em>not</em> return the numbers whose <em>values</em> are even/odd, but those whose <em>positions</em> are even/odd.
 	    For example, <code>evens((5, 6, 2, 4, 3, 9))</code> will report <code>(6, 4, 9)</code> and not <code>(6, 2, 4)</code>.
 	</p>
