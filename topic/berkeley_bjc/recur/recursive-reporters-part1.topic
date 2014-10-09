@@ -17,6 +17,7 @@ learning-goal: Implement higher order functions.
 
 heading: Introduction
 	 resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
+	 resource: Examples of Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recusive-reporters-examples.html]
 
 heading: Some simple ones
 	 resource: Plurals of Words [/bjc-r/cur/programming/recur/recursive-reporters/plurals-of-words.html]
