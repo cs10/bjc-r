@@ -6,11 +6,11 @@
     </head>
     <body>
 	<p>
-	    One of the very first things we did in <span class="snap">snap</span> was move our sprite across and stage and draw shapes. We can do the same thing in Python with Turtle Graphics. First we need to import the Turtle module so that we can use it in terminal. To do this, type <code class="prettify lang-python linenums">import turtle</code> into the terminal and press enter.
+	    One of the very first things we did in <span class="snap">snap</span> was move our sprite across and stage and draw shapes. We can do the same thing in Python with Turtle Graphics. First we need to import the Turtle module so that we can use it in terminal. To do this, type <code class="">import turtle</code> into the terminal and press enter.
 	</p>
 
 	<p>
-	    Next, let&#8217;s familiarize ourselves to some of the commands we can use with the turtle module. If we want to see the location of our turtle &#40;or &quot;sprite&quot;&#41; on the stage, we use the <code class="prettify lang-python linenums">position</code> function. Type <code class="prettify lang-python linenums">turtle.position()</code> into terminal. This should return an x and y coordinate.
+	    Next, let&#8217;s familiarize ourselves to some of the commands we can use with the turtle module. If we want to see the location of our turtle &#40;or &quot;sprite&quot;&#41; on the stage, we use the <code class="">position</code> function. Type <code class="">turtle.position()</code> into terminal. This should return an x and y coordinate.
 	</p>
 
 	<!-- 
@@ -21,59 +21,59 @@
 
 	<p>
 		<br />
-		<code class="prettify lang-python linenums">>>> turtle.position()</code>
+		<code class="">>>> turtle.position()</code>
 		<br />
-		<code class="prettify lang-python linenums">(0.00,0.00)</code>
+		<code class="">(0.00,0.00)</code>
 		<br />
-		<code class="prettify lang-python linenums">>>> </code>
-		<br />
-		<br />
-	</p>
-
-	<p>
-	  	Now let&#8217;s try to move our turtle across the stage. Use the <code class="prettify lang-python linenums">forward</code> and <code class="prettify lang-python linenums">backward</code> functions by typing <code class="prettify lang-python linenums">turtle.forward(25)</code> or <code class="prettify lang-python linenums">turtle.backward(25)</code> into terminal. You can move the turtle by using different values instead of 25. You can even use negative numbers! You can also use the position function that you just learned above to keep track of where your turtle is after you move it. Try it out!
-	</p>
-
-	<p>
-		<br />
-		<code class="prettify lang-python linenums">>>> turtle.forward(25)</code>
-		<br />
-		<code class="prettify lang-python linenums">>>> </code>
-		<br />
-		<br />
-		<br />
-		<code class="prettify lang-python linenums">>>> turtle.forward(25)</code>
-		<br />
-		<code class="prettify lang-python linenums">>>> turtle.backward(25)</code>
-		<br />
-		<code class="prettify lang-python linenums">>>> </code>
+		<code class="">>>> </code>
 		<br />
 		<br />
 	</p>
 
 	<p>
-	  	You might have noticed that so far, we&#8217;ve only moved our turtle back and forth. We can start moving the turtle all across the stage by changing the angles. Use the <code class="prettify lang-python linenums">right</code> and <code class="prettify lang-python linenums">left</code> functions and specify an angle to change the turtle&#8217;s direction. Type <code class="prettify lang-python linenums">turtle.right(90)</code> or <code class="prettify lang-python linenums">turtle.left(90)</code> into terminal and then try to move your turtle. Can you try to draw a square? A pentagon?
+	  	Now let&#8217;s try to move our turtle across the stage. Use the <code class="">forward</code> and <code class="">backward</code> functions by typing <code class="">turtle.forward(25)</code> or <code class="">turtle.backward(25)</code> into terminal. You can move the turtle by using different values instead of 25. You can even use negative numbers! You can also use the position function that you just learned above to keep track of where your turtle is after you move it. Try it out!
 	</p>
 
 	<p>
 		<br />
-		<code class="prettify lang-python linenums">>>> turtle.right(90)</code>
+		<code class="">>>> turtle.forward(25)</code>
 		<br />
-		<code class="prettify lang-python linenums">>>> </code>
+		<code class="">>>> </code>
 		<br />
 		<br />
 		<br />
-		<code class="prettify lang-python linenums">>>> turtle.right(90)</code>
+		<code class="">>>> turtle.forward(25)</code>
 		<br />
-		<code class="prettify lang-python linenums">>>> turtle.left(90)</code>
+		<code class="">>>> turtle.backward(25)</code>
 		<br />
-		<code class="prettify lang-python linenums">>>> </code>
+		<code class="">>>> </code>
 		<br />
 		<br />
 	</p>
 
 	<p>
-	  	Some other helpful functions that you can use are <code class="prettify lang-python linenums">turtle.clear()</code> which clears the stage, <code class="prettify lang-python linenums">turtle.setx(x)</code> which changes the x position to the <code class="prettify lang-python linenums">x</code>-value specified, <code class="prettify lang-python linenums">turtle.sety(y)</code> which changes the y position to the <code class="prettify lang-python linenums">y</code>-value specified, and <code class="prettify lang-python linenums">turtle.setpos(x, y)</code> which changes both the <code class="prettify lang-python linenums">x</code> and <code class="prettify lang-python linenums">y</code> positions of the turtle at the same time.
+	  	You might have noticed that so far, we&#8217;ve only moved our turtle back and forth. We can start moving the turtle all across the stage by changing the angles. Use the <code class="">right</code> and <code class="">left</code> functions and specify an angle to change the turtle&#8217;s direction. Type <code class="">turtle.right(90)</code> or <code class="">turtle.left(90)</code> into terminal and then try to move your turtle. Can you try to draw a square? A pentagon?
+	</p>
+
+	<p>
+		<br />
+		<code class="">>>> turtle.right(90)</code>
+		<br />
+		<code class="">>>> </code>
+		<br />
+		<br />
+		<br />
+		<code class="">>>> turtle.right(90)</code>
+		<br />
+		<code class="">>>> turtle.left(90)</code>
+		<br />
+		<code class="">>>> </code>
+		<br />
+		<br />
+	</p>
+
+	<p>
+	  	Some other helpful functions that you can use are <code class="">turtle.clear()</code> which clears the stage, <code class="">turtle.setx(x)</code> which changes the x position to the <code class="">x</code>-value specified, <code class="">turtle.sety(y)</code> which changes the y position to the <code class="">y</code>-value specified, and <code class="">turtle.setpos(x, y)</code> which changes both the <code class="">x</code> and <code class="">y</code> positions of the turtle at the same time.
 	</p>
 
     </body>
