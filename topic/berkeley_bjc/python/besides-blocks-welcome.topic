@@ -15,6 +15,7 @@ heading: Introduction to Python
     resource: Welcome to Besides Blocks Lab! [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
     resource: Saying vs. Printing [/bjc-r/cur/programming/python/intro/saying-vs-printing.html]
     resource: Python Syntax [/bjc-r/cur/programming/python/syntax/var-primitive.html]
+    quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
 
 heading: Conditionals and Loops
     resource: Conditionals [/bjc-r/cur/programming/python/conditionals-loops/conditionals.html]
