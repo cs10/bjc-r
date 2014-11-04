@@ -11,7 +11,7 @@ We use a project called "llab" to be able to display the lab content nicely. It'
 
 OR
 ```
-git submoduke init
+git submodule init
 git submodule update
 ```
 
