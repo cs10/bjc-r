@@ -1,0 +1,31 @@
+title: Besides Blocks: Welcome to Python!
+{
+h2: Big Ideas
+big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
+big-idea: Python and <span class="snap">snap</span> are awesome languages which coexist. 
+big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
+big-idea: Text based languages are just as power as visual languages and come with their own set of pros and cons.
+
+h2: Activities
+learning-goal: Start playing with Python by using the command line.
+learning-goal: Learn the basics of Python syntax and write a few simple programs.
+learning-goal: You should be comfortable with basic math and "string" operations.
+
+heading: Introduction to Python
+    resource: Welcome to Besides Blocks Lab! [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
+    resource: Saying vs. Printing [/bjc-r/cur/programming/python/intro/saying-vs-printing.html]
+    resource: Python Syntax [/bjc-r/cur/programming/python/syntax/var-primitive.html]
+    quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
+
+heading: Conditionals and Loops
+    resource: Conditionals [/bjc-r/cur/programming/python/conditionals-loops/conditionals.html]
+    resource: Loops [/bjc-r/cur/programming/python/conditionals-loops/loops.html]
+
+heading: Functions and Recursion
+    resource: Functions in Python [/bjc-r/cur/programming/python/def-functions-recursion/function.html]
+    resource: Recursion [/bjc-r/cur/programming/python/def-functions-recursion/recursion.html]
+
+heading: String Manipulation
+    resource: String Manipulation [/bjc-r/cur/programming/python/string/string-mani.html]
+
+}
