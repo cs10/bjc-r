@@ -111,7 +111,7 @@ def palindrome(string):
 import sys
 import time
 
-functionList =  ["first_even_nums", "exponent", "reverse_string", "palindrome"]
+functionList =  ["first_even_nums", "exponent", "reverse_string", "palindrome", "run_tests"]
 
 def main(argv):
 
@@ -186,6 +186,35 @@ def main(argv):
                     sys.exit(1)
             print ("Your palindrome function passed all  of our test!!! \nCongrats you've finished your first lab in Python!!!")
             sys.exit(0)
+
+        # Runs All Tests #
+        elif (case == 4):
+
+            # Exercise 2 #
+            for triple in [(10, 0, 1), (5, 3, 125), (2, 10, 1024), (9, 2, 81)]:
+                    if (exponent(triple[0], triple[1]) != triple[2]):
+                        print ("Your exponent function failed on the test case: \n" + "exponent(" + str(triple[0]) + ", " + str(triple[1]) + ")\n")
+                        sys.exit(1)
+            print ("Your exponent function passed all of our test cases!!!")
+            
+            # Exercsie 3 #
+            for tple in [("Alonzo", "oznolA"), ("abcdefghijklmnopqrstuvwxyz", "zyxwvutsrqponmlkjihgfedcba"), ("hello world", "dlrow olleh")]:
+                    value = reverse_string(tple[0])
+                    if (value != tple[1]):
+                        print ("Your reverse_string function failed on the test case: " + tple[0] + "\nIt returned the string: " + str(value))
+                        sys.exit(1)
+            print ("Your reverse_string function passed all  of our test!!!")
+            
+            # Exercise 4 #    
+            for tple in [("racecar", True), ("google", False), ("poop", True), ("alonzo", False)]:
+                    value = palindrome(tple[0])
+                    if (value != tple[1]):
+                        print ("Your palindrome function failed on the test case: " + tple[0] + "\nIt returned the boolean: " + str(value))
+                        sys.exit(1)
+            print ("Your palindrome function passed all  of our test!!! \nCongrats you've finished your first lab in Python!!!")
+            print ("\nCongrats You've passed all our Tests!!!\nPlease show this to your TA to get checked off for this lab.")
+             
+
         
             
 if __name__ == "__main__":
