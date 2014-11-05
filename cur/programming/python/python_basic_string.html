@@ -55,7 +55,7 @@
               <tr>
                   <td>
                       <p><pre><code>
->>>name[0]
+>> >name[0]
 'A'
                     </code></pre></p>
                   </td>
@@ -74,9 +74,9 @@
               <tr>
                   <td>
                       <p><pre><code>
->>>name[len(name) - 1]
+>>> name[len(name) - 1]
 'o'
->>>name[-1]
+>>> name[-1]
 'o'
                     </code></pre></p>
                   </td>
@@ -92,7 +92,7 @@
               <tr>
                   <td>
                       <p><pre><code>
->>>name + " says hello"
+>>> name + " says hello"
 'Alonzo says hello'
                     </code></pre></p>
                   </td>
@@ -112,9 +112,11 @@
 'Alo'
 >>> name[3:]
 'nzo'
+>>> name[:3] + name[3:]
+'Alonzo'
         </code></pre></p>
         <p class="alert quoteOrange">
-             Substring<code>[start:end]</code> returns the letters in the word from <code>start</code> to <code>end-1</code> (notice this is exactly how <code>range(x, y)</code> worked.  The upper index value is not included), so always be careful with your indexing when using the substring and range functions.
+             Substring <code>[start:end]</code> returns the letters in the word from <code>start</code> to <code>end-1</code> (notice this is exactly how <code>range(x, y)</code> worked.  The upper index value is not included), so always be careful with your indexing when using the substring and range functions.
         </p>
         <h3>Exercise 3</h3>
         <p>
