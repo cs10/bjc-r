@@ -5,131 +5,131 @@
         <title>Basic String Manipulation</title>
     </head>
     <body>
-    	<p>
-    		In this section we will discuss the basic ways that strings (i.e. words and sentences) can be manipulated in python. To get started, open up the python interpreter like we did earlier on in the lab (if you forgot, simply enter <code>python3</code> into the shell).  To create a string, set a variable to text enclosed in quotes as shown below (notice that assigning a variable does not return it's value, we must do that seperately):
-    	</p>
-    	<table style="width:auto; table-height:200px">
-  			<tr>
-  				<td>
-  					<p><pre><code>
+        <p>
+            In this section we will discuss the basic ways that strings (i.e. words and sentences) can be manipulated in python. To get started, open up the python interpreter like we did earlier on in the lab (if you forgot, simply enter <code>python3</code> into the shell).  To create a string, set a variable to text enclosed in quotes as shown below (notice that assigning a variable does not return it's value, we must do that seperately):
+        </p>
+        <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>> name = "Alonzo"
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/set_name_to_alonzo.png"/>
-				</td>
-  			</tr>
-  			<tr>
-  				<td>
-  					<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/set_name_to_alonzo.png"/>
+                </td>
+              </tr>
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>> name                  
 "Alonzo"
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/name.png"/>
-				</td>
-			</tr>
-  		</table>
-  		<p>
-  			Next, set a variable called name to your name (or the name of someone else).  We can then use the len() function to get the length of the variable:
-  		</p>
-  		<table style="width:auto; table-height:200px">
-  			<tr>
-  				<td>
-  					<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/name.png"/>
+                </td>
+            </tr>
+          </table>
+          <p>
+              Next, set a variable called name to your name (or the name of someone else).  We can then use the len() function to get the length of the variable:
+          </p>
+          <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>> name = "Alonzo"
 >>>len(name)
 6
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/lengthofname.png"/>
-				</td>
-  			</tr>
-  		</table>
-  		<p>
-  			To access certain letters of a string we can do the following:
-  		</p>
-  		<table style="width:auto; table-height:200px">
-  			<tr>
-  				<td>
-  					<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/lengthofname.png"/>
+                </td>
+              </tr>
+          </table>
+          <p>
+              To access certain letters of a string we can do the following:
+          </p>
+          <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>>name[0]
 'A'
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/letter1_of_name.png"/>
-				</td>
-  			</tr>
-  		</table>
-  		<p class="alert quoteBlue">
-  			Notice that the output letter is actually surrounded in single quotes (<code>'A'</code>). We can also make strings using single quotes.  The most important thing to notice is that the first letter is located at the "0th" position.  Unlike in <span class="snap">snap</span> where the first letter was simply letter 1 of word, in python the first letter is at position 0.  Having the first element at the 0th position is called <b>"0 indexing"</b> and is very common in all other programming languages.   
-  		</p>
-  		<p>
-  			To get the <b>last letter</b> of a string we can do one of the following in python:
-  		</p>
-  		<table style="width:auto; table-height:200px">
-  			<tr>
-  				<td>
-  					<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/letter1_of_name.png"/>
+                </td>
+              </tr>
+          </table>
+          <p class="alert quoteBlue">
+              Notice that the output letter is actually surrounded in single quotes (<code>'A'</code>). We can also make strings using single quotes.  The most important thing to notice is that the first letter is located at the "0th" position.  Unlike in <span class="snap">snap</span> where the first letter was simply letter 1 of word, in python the first letter is at position 0.  Having the first element at the 0th position is called <b>"0 indexing"</b> and is very common in all other programming languages.   
+          </p>
+          <p>
+              To get the <b>last letter</b> of a string we can do one of the following in python:
+          </p>
+          <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>>name[len(name) - 1]
 'o'
 >>>name[-1]
 'o'
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/letterLengthOf_name.png"/>
-				</td>
-  			</tr>
-  		</table>
-  		<p>
-  			To join strings together (aka <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.merriam-webster.com%2Fdictionary%2Fconcatenate&sa=D&sntz=1&usg=AFQjCNH2OV_JvGvcrrzfvj45Wf--C6vmhQ" target="_blank">concatenate</a> them) in python we can do the following:
-  		</p>
-  		<table style="width:auto; table-height:200px">
-  			<tr>
-  				<td>
-  					<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/letterLengthOf_name.png"/>
+                </td>
+              </tr>
+          </table>
+          <p>
+              To join strings together (aka <a href="http://www.google.com/url?q=http%3A%2F%2Fwww.merriam-webster.com%2Fdictionary%2Fconcatenate&sa=D&sntz=1&usg=AFQjCNH2OV_JvGvcrrzfvj45Wf--C6vmhQ" target="_blank">concatenate</a> them) in python we can do the following:
+          </p>
+          <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code>
 >>>name + " says hello"
 'Alonzo says hello'
-					</code></pre></p>
-  				</td>
-  				<td>
-  					<img src="/bjc-r/img/python/join_name_alonzo.png"/>
-				</td>
-  			</tr>
-  		</table>
-  		<h3>Substrings</h3>
-  		<p>
-  			In Python we can also easily create substrings of a string by using some special Python syntax as a shown below (note that <span class="snap">snap</span> does not have a defualt function to do this):
-  		</p>
-  		<p><pre><code>
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/join_name_alonzo.png"/>
+                </td>
+              </tr>
+          </table>
+          <h3>Substrings</h3>
+          <p>
+              In Python we can also easily create substrings of a string by using some special Python syntax as a shown below (note that <span class="snap">snap</span> does not have a defualt function to do this):
+          </p>
+          <p><pre><code>
 >>> name[1:5]
 'lonz'
 >>> name[:3]
 'Alo'
 >>> name[3:]
 'nzo'
-		</code></pre></p>
-		<p class="alert quoteOrange">
-			 Substring<code>[start:end]</code> returns the letters in the word from <code>start</code> to <code>end-1</code> (notice this is exactly how <code>range(x, y)</code> worked.  The upper index value is not included), so always be careful with your indexing when using the substring and range functions.
-		</p>
-		<h3>Exercise 3</h3>
-		<p>
-			Find exercise 3 in the virus.py file and modify the function <code>reverse_string(string)</code> that takes in a string and puts it in the reverse order as shown below:
-		</p>
-		<p><pre><code>
+        </code></pre></p>
+        <p class="alert quoteOrange">
+             Substring<code>[start:end]</code> returns the letters in the word from <code>start</code> to <code>end-1</code> (notice this is exactly how <code>range(x, y)</code> worked.  The upper index value is not included), so always be careful with your indexing when using the substring and range functions.
+        </p>
+        <h3>Exercise 3</h3>
+        <p>
+            Find exercise 3 in the virus.py file and modify the function <code>reverse_string(string)</code> that takes in a string and puts it in the reverse order as shown below:
+        </p>
+        <p><pre><code>
 >>> reverse_string("Alonzo")
 'oznolA'
 
-		</code></pre></p>
-		<p class="alert quoteGreen">
-			You'll want to use some sort of loop, along with some of the things that you've learned about strings in this section.  When you think your function works, run the tests that we have provided by entering the following command into the shell:
-		</p>
-		<p><pre><code>
+        </code></pre></p>
+        <p class="alert quoteGreen">
+            You'll want to use some sort of loop, along with some of the things that you've learned about strings in this section.  When you think your function works, run the tests that we have provided by entering the following command into the shell:
+        </p>
+        <p><pre><code>
 python3 virus.py reverse_string
-		</code></pre></p>
+        </code></pre></p>
     </body>
 </html>
