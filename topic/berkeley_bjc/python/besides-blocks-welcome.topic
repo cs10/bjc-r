@@ -12,20 +12,23 @@ learning-goal: Learn the basics of Python syntax and write a few simple programs
 learning-goal: You should be comfortable with basic math and "string" operations.
 
 heading: Introduction to Python
-    resource: Welcome to Besides Blocks Lab! [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
-    resource: Saying vs. Printing [/bjc-r/cur/programming/python/intro/saying-vs-printing.html]
-    resource: Python Syntax [/bjc-r/cur/programming/python/syntax/var-primitive.html]
-    quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
+    resource: Welcome to Besides Blocks Lab 1: An Introduction to Python [/bjc-r/cur/programming/python/introduction_to_besides_blocks.html]
+    resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_shell_and_python.html]
+    
+heading: Math and Variables
+	resource: Variables and Primative Expressions [bjc-r/cur/programming/python/python_syntax_and_operators.html]
+	quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
 
-heading: Conditionals and Loops
-    resource: Conditionals [/bjc-r/cur/programming/python/conditionals-loops/conditionals.html]
-    resource: Loops [/bjc-r/cur/programming/python/conditionals-loops/loops.html]
+heading: Running Python Scripts
+    resource: Running a script from the Command Line [/bjc-r/cur/programming/python/running_script_from_command_line.html]
+    resource: Finding A Bar [/bjc-r/cur/programming/python/finding_a_bar.html]
 
-heading: Functions and Recursion
-    resource: Functions in Python [/bjc-r/cur/programming/python/def-functions-recursion/function.html]
-    resource: Recursion [/bjc-r/cur/programming/python/def-functions-recursion/recursion.html]
+heading: Defining Functions and Loops
+	resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/define_simple_function.html]
+	resource: Printing and While Loops [/bjc-r/cur/programming/python/printing_while_loops.html]
 
-heading: String Manipulation
-    resource: String Manipulation [/bjc-r/cur/programming/python/string/string-mani.html]
+heading: String Manipulation, Conditionals, and Recursion
+	resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
+	resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
 
 }
