@@ -20,17 +20,38 @@ numbers, and so on, until we reach the last number (if we're unlucky),
 which we have to compare against no other number.&nbsp; In total, we
 have to do <code>(N - 1) + (N - 2) + (N - 3) + ... + 2 + 1</code> total comparisons, which, <a href="/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html">according to Gauss</a>, is <code>[N * (N - 1)]/2</code> total comparisons, or <code>(N<sup>2</sup> - N)/2</code> total comparisons.&nbsp; For large values of <code>N</code>, the <code>N<sup>2</sup></code> term begins to eclipse the value of <code>N</code>:</p>
 
-<table style="font-size: 1em; line-height: inherit; border-collapse: collapse;" id="t5m:" border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr style="text-align: left;"><td width="20%"><code>N</code></td>
-			<td width="20%"><code>10</code></td>
-			<td width="20%"><code>100</code></td>
-			<td width="20%"><code>1000</code></td>
-			<td width="20%"><code>10000</code></td>
-		</tr><tr style="text-align: left;"><td width="20%"><code>N<sup>2</sup></code></td>
-			<td width="20%"><code>100</code></td>
-			<td width="20%"><code>10000</code></td>
-			<td width="20%"><code>1000000</code></td>
-			<td width="20%"><code>100000000</code></td>
-		</tr></tbody></table><p>&nbsp;&nbsp;&nbsp;&nbsp;The difference between <code>N<sup>2</sup></code> and <code>N</code> is more pronounced for even larger values of <code>N</code>.&nbsp; Since we only care about the runtime of algorithms for really large inputs, we say that the contribution of the <code>N</code> term is essentially negligible, and that the runtime of the algorithm varies as <code>N<sup>2</sup></code>.</p>
+<!-- blank n n^2-->
+<table style="font-size: 1em; line-height: inherit; border-collapse: collapse;" id="t5m:" border="1" cellpadding="3" cellspacing="0" width="100%"> <tbody><tr style="text-align: left;">
+  <caption align="left">Quadratic Time</caption>
+  <tr>
+  	<th>Size of input</th>
+    <th><code> N </code></th>
+    <th><code>N<sup>2</sup></code></th>
+  </tr>
+  <tr>
+    <td>N = 10</td>
+    <td>10</td>
+    <td>100</td>
+  </tr>
+    <tr>
+    <td>N = 100</td>
+    <td>100</td>
+    <td>10,000</tr>
+  </tr>
+    <tr>
+    <td>N = 1,000</td>
+    <td>1,000</td>
+    <td>1,000,000</td>
+  </tr>
+    <tr>
+    <td>N = 10,000</td>
+    <td>10,000</td>
+    <td>100,000,000</td>
+  </tr>
+</table>
+
+
+		<p>&nbsp;&nbsp;&nbsp;&nbsp; The difference between <code>N<sup>2</sup></code> and <code>N</code> is more pronounced for even larger values of <code>N</code>.&nbsp; Since we only care about the runtime of algorithms for really large inputs, we say that the contribution of the <code>N</code> term is essentially negligible, and that the runtime of the algorithm varies as <code>N<sup>2</sup></code>.</p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;You may find the approximation of <code>(N<sup>2</sup> - N)/2</code> as <code>N<sup>2</sup></code>
 a bit shocking (mathematicians definitely do); however, in computer
 science, we make many such approximations because we don't want to
