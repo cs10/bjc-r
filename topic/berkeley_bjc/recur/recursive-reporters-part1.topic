@@ -25,12 +25,12 @@ heading: Some simple ones
 heading: Pascal's Triangle
 	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle.html]
 	 //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-algorithm.html]
-	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-selftest.html]
-	 resource: How long does this computation take? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
+	 resource: Computing a Number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-selftest.html]
+	 resource: How Long Does This Computation Take? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
 
-heading: List Recursion	 
-	 resource: Even numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
+heading: List Recursion
+	 resource: Even Numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
 
 
 heading: Subsets
