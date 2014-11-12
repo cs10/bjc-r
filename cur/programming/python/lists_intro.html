@@ -2,28 +2,96 @@
 <html>
     <head>
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Introduction to Lists</title>
+        <title>Introduction to Python Lists</title>
     </head>
     <body>
     	<h3>Baisc List Operations</h3>
     	<p class="alert quoteBlue">
     		A basic list can be constructed with comma separated elements between square brackets. These lists can be of any length and can contain any type or mix of data (strings, numbers, etc.)
     	</p>
-    	<table style="width:80%">
+    	<table style="width:100%">
             <tr>
                 <td>
                     <pre><code>
-def max(x, y):
-    if (x > y):
-        return x
-    else:
-        return y
+>>> names = ["John", "Paul", "George", "Pete"]
                     </code></pre>
                 </td>
                 <td>
-                    <img src="/~cs10/labs/img/python/max.png" alt="max function"/>
+                    <img src="/bjc-r/img/python/snap_names_set.png"/>
                 </td>
             </tr>
         </table>
+        <p>
+        	Lists, like strings, can be assigned to variables. They can also be accessed one item at a time using the familiar square bracket notation.
+        </p>
+		<table style="width:100%">
+        	<tr>
+            	<td>
+                	<pre><code>
+>>> names[0]
+'John'
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_names_item.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+        	The length of a list is important and can be retrieved using the built-in len() function. This same function can also be used for strings.
+        </p>
+        <table style="width:100%">
+        	<tr>
+            	<td>
+                	<pre><code>
+>>> len(names)
+4
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_len_names.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+        	To join two lists together <b>(concatenate)</b>, use the "+" operator. This returns a new list containing all items of both lists.
+        </p>
+        <table style="width:100%">
+        	<tr>
+            	<td>
+                	<pre><code>
+>>> names = ["John", "Paul"] + ["George", "Pete"]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_names_append.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:100%">
+        	<tr>
+            	<td>
+                	<pre><code>
+>>> names
+["John", "Paul", "George", "Pete"]                    
+					</code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_names.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+        	<b>Note:</b> the order in which the two lists were added, is preserved. Subsets of lists can also be retrieved. This requires the same notation used with strings.
+        </p>
+        <p><pre><code>
+>>> names[1:3]
+["Paul", "George"]
+>>> names[2:]
+["George", "Pete"]
+        </code></pre></p>
+        <p class="alert quoteGreen">
+        	As with strings, the colon ":" without a number on either side returns a sublist extending completely to either the beginning or end of the list.
+        </p>
     </body>
 </html>

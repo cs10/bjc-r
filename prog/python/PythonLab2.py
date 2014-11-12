@@ -18,6 +18,12 @@ Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
 """
 Place the first odd number at the back of the input list. 
 Do not return a new list.
+
+>>> input = [10, 2, 4, 7, 6, 7, 8, 9]
+>>> push_odd_back(input)
+>>> input
+[10, 2, 4, 6, 7, 8, 9, 7]
+
 """
 
 def push_odd_back(lst):

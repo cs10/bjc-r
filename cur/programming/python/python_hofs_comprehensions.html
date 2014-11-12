@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>HOFs in Python</title>
+    </head>
+    <body>
+        <h3>Map in Python</h3>
+        <p>
+            Just like in <span class="snap">Snap</span>, Python allows us to operate on all of the items of a list by using Higher Order Functions (HOFs).  In python we can perform a map operation that squares all of the numbers in a list by using the following syntax:
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 2, 3]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/set_my_list_snap.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> [x * x for x in my_list]                          
+[1, 4, 9]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_map_square.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            Above you can see that the python code is very similar to the <span class="snap">Snap</span> code.  Instead of having a multiply function with two blanks, as in the <span class="snap">Snap</span> version of map, we have <code>x * x</code> and we then specify that <code>x in my_list</code>.  As a result, we see that we multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number.  <b>Note:</b> In both <span class="snap">Snap</span> and Python, map returns a new list and does not modify the old list.
+        </p>
+        <p>
+            To generalize this map-like functionality (also know as a <b>list comprehension</b>) we can use the following syntax to apply any function to the items of our list:
+        </p>
+        <p><pre><code>
+>>> [function(x) for x in my_list]
+        </code></pre></p>
+        <h3>Keep in Python</h3>
+        <p>
+            In Python, keep has syntax that is similar to Python's map:
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 1, 2, 3, 5, 9]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/longer_my_list.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> [x for x in my_list if x < 3]
+[1, 1, 2]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/keep_less_than3.png"/>
+                </td>
+            </tr>
+        </table>
+        <h3>Using Map and Keep Together</h3>
+        <p>
+            Python also has some nice syntax that allows us to perform map and keep at the same time (you can also do this in <span class="snap">Snap</span>, but it's a little bit messy as shown to the right):
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 1, 2, 3, 5, 9]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/longer_my_list.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> [x + 5 for x in my_list if x <  3] 
+[6, 6, 7]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/map_with_keep.png"/>
+                </td>
+            </tr>
+        </table>
+        <h3>Exercise 3.1: Substitute Base</h3>
+        <p>
+            Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted:
+        </p>
+        <p><pre><code>
+>>> substitute_base("AAGTTAGTCA", "A", "C")
+"CCGTTCGTCG"
+        </code></pre></p>
+        <h3>Exercise 3.2: Substitue Sequences</h3>
+        <p>
+            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use HOFs here):
+        </p>
+        <p><pre><code>
+>>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
+>>> substitue_sequence(sequences, "A", "C")
+["CCGTTCGTCC", "CTCGCGTCCGCCCGC", CCGTTCCGCTG"]
+        </code></pre></p>
+    </body>
+    <p class="alert quoteGreen">
+        You can test these functions using the same command as in previous exercises, just replace the fucntion number with either 3.1 or 3.2
+    </p>
+</html>
