@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Python Iterators</title>
+    </head>
+    <body>
+        <h3>Lists as Iterators</h3>
+        <p>
+            Recall the <code>for</code> loop introduced in the previous lab. Unlike the <code>for</code> loop in <span class="snap">Snap</span>, Python requires an <b>iterable</b>. An iterable is an object which can be easily turned into a special list called an <b>iterator</b>. An iterator is a list of numbers used by the index variable i. This index will take on each value of the iterable (list) in sequence.
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+for i in range(0,5):
+    print(i)
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_for_say.png"/>
+                </td>
+            </tr>
+        </table>
+        <p class="alert quoteBlue">
+        Python lists are also iterables and thus can be used as iterators by a <code>for</code> loop! This allows the index variable to take on any desired values, numerical or otherwise!
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> names = ["Larry", "Curly", "Moe"]
+>>> for item in names:
+...	    print("Hello " + item)
+Hello Larry
+Hello Curly
+Hello Moe
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_for_list.png"/>
+                </td>
+            </tr>
+        </table>
+            <p>
+            Many data types in Python are iterables. Including strings!
+            </p>
+            <p><pre><code>
+>>> chant = "Go Bears!"
+>>> for letter in chant:
+...     print(letter)
+G
+O
+
+B
+E
+A
+R
+S
+!
+            </code></pre></p>
+    </body>
+</html>
