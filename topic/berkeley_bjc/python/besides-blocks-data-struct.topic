@@ -4,30 +4,32 @@ h2: Big Ideas
 big-idea: Data Structures are a way to help programmers organize items in ways which are easier to manipulate and understand.
 big-idea: Lists are a basic data structure which exist in just about every language.
 big-idea: "Key-Value Pairs" are a very easy way to create simple relationships among different data.
+big-idea: Python dictionaries utilize key-value pairs to make organizing certain kinds of data much more effecient.
 
 h2: Activities
 learning-goal: Get more practice writing functions in Python.
 learning-goal: Manipulate simple data structures and their data.
-learning-goal: Learn how to use key-value pairs and their usefulness.
+learning-goal: Learn how to use key-value pairs and why they are useful.
+learning-goal: Solve problems with Python lists and dictionaries.
 
-heading: Introduction to Python
-    resource: Welcome to Besides Blocks: An Introduction to Python [/bjc-r/cur/programming/python/introduction_to_besides_blocks.html]
-    resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_shell_and_python.html]
-    
-heading: Math and Variables
-    resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/python_syntax_and_operators.html]
-    quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
+heading: Introduction to Python Data Structures
+    resource: Welcome to Besides Blocks Lab [/bjc-r/cur/programming/python/intro_besides_blocks_data_structs.html]
+    resource: Introduction to Python Lists [/bjc-r/cur/programming/python/lists_intro.html]
 
-heading: Running Python Scripts
-    resource: Running a script from the Command Line [/bjc-r/cur/programming/python/running_script_from_command_line.html]
-    resource: Finding A Bar [/bjc-r/cur/programming/python/finding_a_bar.html]
+heading: Mutability and List Functions in Python
+    resource: List Mutability [/bjc-r/cur/programming/python/list_mutability.html]
+    resource: List Functions [/bjc-r/cur/programming/python/list_functions.html]
+    resource: Iterators [/bjc-r/cur/programming/python/not_here_cuz_max_is_lazy.html]
+    resource: Getting Ready to Program [/bjc-r/cur/programming/python/data_structs_getting_setup.html]
+    resource: 2D Lists [/bjc-r/cur/programming/python/2D_lists.html]
 
-heading: Defining Functions and Loops
-    resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/define_simple_function.html]
-    resource: Printing and While Loops [/bjc-r/cur/programming/python/printing_while_loops.html]
+heading: Higher Order Functions in Python
+    resource: HOFs in Python [/bjc-r/cur/programming/python/python_hofs_comprehensions.html]
+    resource: Trying to Combine in Python [/bjc-r/cur/programming/python/trying_combine.html]
 
-heading: String Manipulation, Conditionals, and Recursion
-    resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
-    resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
+heading: Python Dictionaries
+    resource: Comparing Dictionaries and Lists [/bjc-r/cur/programming/python/comparing_dicts_lists.html]
+    resource: Using Python Dictionaries [/bjc-r/cur/programming/python/using_dictionaries.html]
+    resource: 2D Dictionaries [/bjc-r/cur/programming/python/2D_dictionaries.html]
 
 }
