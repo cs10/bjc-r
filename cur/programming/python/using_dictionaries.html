@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Using Python Dictionaries</title>
+    </head>
+    <body>
+        <h3>How to use Dictionaries</h3>
+        <p>
+        Below you will see how to use dictionaries to represent something like a gradebook.  Remember that dictionaries contain (key, value) pairs, where every key must be unique.  Make sure to pay close attention to how you can create, access, and remove dictionary entries.
+        </p>
+        <ol>
+            <li>
+                <p>
+                To create an empty dictionary, assign a variable to a set of braces:
+                </p>
+                <p><pre><code>
+>>> grades = {}
+                </code></pre></p>
+            </li>
+            <li>
+            <p>
+                To add an entry to your dictionary, use this syntax (remember if you are using a string for your keys, they must be in quotes):
+            </p>
+            <p><pre><code>
+>>> grades["Bob"] = 85
+>>> grades
+{"Bob": 85}
+>>> grades["Alice"] = 90
+>>> grades["Eve"] = 100
+>>> grades
+{"Bob": 85, "Alice": 90, "Eve": 100}
+            </code></pre></p>
+            </li>
+            <li>
+                <p>
+                To return a value for a given key:
+                </p>
+                <p><pre><code>
+>>> grades["Alice"]
+90
+                </code></pre></p>
+            </li>
+            <li>
+                <p>
+                To remove an entry:
+                </p>
+                <p><pre><code>
+>>> grades.pop("Bob") # just like .pop() for lists
+85
+>>> grades
+{"Alice": 90, "Eve": 100}
+                </code></pre></p>
+            </li>
+            <li>
+                <p>
+                To get either all keys or all values as a list:
+                </p>
+                <p><pre><code>
+>>> grades.keys( )
+["Alice", "Eve"]
+>>> grades.values( )
+[90, 100]
+                </code></pre></p>
+            </li>
+            <li>
+                <p>
+                    Before accessing a dictionary value always check if the key you are providing exists in the dictionary, otherwise you will get an error:
+                </p>
+                <p><pre><code>
+>>> "Alice" in grades
+True
+>>> "Bob" in grades
+False
+>>> grades["Bob"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'Bob'
+                </code></pre></p>
+            </li>
+        </ol>
+        <p class="alert qutoeOrange">
+            We can see that if we try to access a dictionary with a key that doesn't exist we get a key error.  Any type of error is very bad and will immediately stop the program from running, so always check if a key exists in a dictionary before accessing the dictionary with a key (unless you're absolutely sure it's there.   An easy way to do this is to use my_dict.keys() which returns a list of all of the keys in the dictionary, as explained above).
+        </p>
+        <p class="alert quoteBlue">      
+Search online to find more helpful dictionary methods!  Here is the python documentation:  https://docs.python.org/3.4/tutorial/datastructures.html#dictionaries
+        </p>
+        <h3>Exercise 5: Base Frequency</h3>
+        <p>
+            Given a DNA sequence string, calculate the frequency of each base pair (i.e. the number of times that each letter appears in the sequence).  Test this function using function number 5.
+        </p>
+        <p><pre><code>
+>>> base_freq("AAGTTAGTCA")
+{"A": 4, "C": 1, "G": 2, "T": 3}
+        </code></pre></p>
+        <p>
+            <b>Note:</b> you can easily add to the value stored in a dictionary by using the following trick:
+        </p>
+        <p><pre><code>
+>>> grades
+{"Alice": 90, "Eve": 100}
+>>> grades["Alice"] += 5
+>>> grades
+{"Alice": 95, "Eve": 100}
+        </code></pre></p>
+        <h3>Challenge Exercise 2: Most Frequent Sequence</h3>
+        <p>
+            Find the most frequent sub-sequence of base pairs of a given length.  Using a dictionary will make your life a lot easier!  Test this exercise with function number C2 (yeah we know it's not actually a number, but just go with it).
+        </p>
+        <p><pre><code>
+>>> most_freq_seq("AAGTTAGTCA", 3)
+"AGT"
+        </code></pre></p>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Trying to Combine in Python</title>
+    </head>
+    <body>
+        <h3>What about Combine?</h3>
+        <p>
+            Unlike in <span class="snap">Snap</span>, combine as a function is not very friendly to use in Python (it's actually called <code>reduce</code>), so we won't be talking about it here, but if you want to find out more, here is a <a href="https://www.google.com/url?q=https%3A%2F%2Fdocs.python.org%2F3%2Flibrary%2Ffunctools.html%23functools.reduce&sa=D&sntz=1&usg=AFQjCNGchNyIqMgqJk5rI0s3RSs2xCCg-g" target="_blank">link to the Python documentation</a> for <code>reduce</code> (note that you must <code>import functools</code> to use <code>reduce</code>). 
+        </p>
+        <h3>Exercise 4: Combine</h3>
+        <p>
+        A better way to combine the items of a list is by using a for loop that you write yourself.  Try writing your own version of combine in Python that takes in a list of numbers OR strings and returns the combined result (hint: think about what the + operator does for strings and for numbers):
+        </p>
+        <p><pre><code>
+>>> nums = [1, 2, 3, 4, 5]
+>>> strings = ["hello ", "my ", "name ", "is ", "someone?"]
+>>> combine(nums)
+15
+>>> combine(strings)
+"hello my name is someone?"
+        </code></pre></p>
+        <p>
+        You can test this function by using function number 4.
+        </p>
+    </body>
+</html>

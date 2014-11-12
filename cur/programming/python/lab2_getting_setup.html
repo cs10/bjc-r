@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Getting Ready to Program</title>
+    </head>
+    <body>
+        <h3>Starter File</h3>
+        <p class="alert quoteBlue">
+            Refer to the previous lab for instructions on how to open and use a shell application (terminal for Mac/Linux users and the CMD command prompt for Windows users).  Once you have a shell up and running, <code>cd</code> into your documents directory and use <code>mkdir PythonLab2</code> to create a new directory called PythonLab2.  Save this <a href="/bjc-r/prog/python/PythonLab2.py">starter file</a> to the PythonLab2 directory you just made (right click the link and "save as").  Then use <code>cd PythonLab2</code> to enter your newly created directory, enabling you to run the starter file.
+        </p>
+        <h3>Exercise 1: Push First Odd Back</h3>
+        <p>
+            Fill out the function <code>push_odd_back</code> under exercise 1 in the starter file.  This function should place the first odd number at the back of the input list. 
+Do not return a new list - in fact this function shouldn't return anything, it should only modify the input list (remember when we talked about mutability a few pages back?).
+        </p>
+        <p><pre><code>
+>>> input = [10, 2, 4, 7, 6, 7, 8, 9]
+>>> push_odd_back(input)
+>>> input
+[10, 2, 4, 6, 7, 8, 9, 7]
+        </code></pre></p>
+        <p>
+            To test this function using our tests enter the command:
+        </p>
+        <p><pre><code>
+python3 PythonLab2.py 1
+        </code></pre></p>
+        <h3>Challenge Exercise 1: merge</h3>
+        <p>
+            Write the function <code>merge</code>, found in the challenge exercise section of the starter file.  This should recursively merge two sorted lists into a single sorted list.  To test this function enter:
+        </p>
+        <p><pre><code>
+python3 PythonLab2.py C1
+        </code></pre></p>
+    </body>
+</html>

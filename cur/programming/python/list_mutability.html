@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>List Mutability</title>
+    </head>
+    <body>
+        <p>
+            Unlike strings, bracket notation can also be used to change individual items of a list.
+        </p>
+        <table style="width:80%">
+                <tr>
+                    <td>
+                        <pre><code>
+>>> names[3] = "Ringo"
+                        </code></pre>
+                    </td>
+                    <td>
+                        <img src="/~cs10/labs/img/python/snap_names_replace.png"/>
+                    </td>
+                </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> names
+["John", "Paul", "George", "Ringo"]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/~cs10/labs/img/python/snap_names_repor2.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            Changing lists needs to be done with care. In Python, when a list is "copied" to another variable, the list is not actually replicated, both variables now simply point to the same list.
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> beatles = names
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/~cs10/labs/img/python/snap_beatles_set.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> beatles
+["John", "Paul", "George", "Ringo"]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/~cs10/labs/img/python/snap_beatles_report.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            When an item (a.k.a element) of beatles is changed, the associated names list is also changed.
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> beatles[2] = "Alonzo"
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/~cs10/labs/img/python/snap_beatles_replace.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> beatles
+["John", "Paul", "Alonzo", "Ringo"]
+>>> names
+["John", "Paul", "Alonzo", "Ringo"]
+
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/~cs10/labs/img/python/snap_beatles_report2.png"/>
+                </td>
+            </tr>
+        </table>
+        <p class="alert quoteOrange">
+            This is an important property of Python. Mutability is the ability for certain types of data to be changed without entirely recreating it. This is important for python to run programs both quickly and efficiently. 
+        </p>
+        <p class="alert quoteBlue">
+            Mutability varies between different data types in Python. A list is <b>mutable</b>, as demonstrated above. Conversely, a string is not mutable <b>(immutable)</b>. Modifying a string creates a new one as demonstrated here:
+        </p>
+        <p><pre><code>
+>>> a = "potato"
+>>> b = a
+>>> a += a
+>>> a
+"potatopotato"
+>>> b
+"potato"
+        </code></pre></p>
+        <p>
+    To make a true separate copy of a list, use the "[:]" operator. This copies every item into a new list.
+        </p>
+        <p><pre><code>
+>>> your_music = ["Billy Jean", "Day Tripper", "Bohemian Rhapsody"]
+>>> my_music = your_music[:]
+>>> my_music
+["Billy Jean", "Day Tripper", "Bohemian Rhapsody"]
+	`  </code></pre></p>
+        <p>
+[Note: Please don't try this at home. Copying music is illegal. This demonstration was done using a professional programmer on a closed course.]
+        </p>
+        <p>
+If an item of the original list is modified, the copy remains unchanged.
+        </p>
+        <p><pre><code>
+>>> your_music[1] = "Time"
+>>> your_music
+["Billy Jean", "Time", "Bohemian Rhapsody"]
+>>> my_music
+["Billy Jean", "Day Tripper", "Bohemian Rhapsody"]
+        </code></pre></p>
+        <p>
+Even though an entry of your_music is modified, my_music remains as it was originally copied. 
+        </p>
+    </body>
+</html>
