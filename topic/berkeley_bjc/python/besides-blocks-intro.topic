@@ -14,7 +14,7 @@ big-idea: #EverythingIsAwesome!
 // learning-goal: FIXME
 
 heading: Introduction to Python
-    resource: Welcome to Besides Blocks Lab! (Part 1) [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
+    resource: Welcome to Besides Blocks! (Part 1) [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
     resource: Saying vs. Printing [/bjc-r/cur/programming/python/intro/saying-vs-printing.html]
     resource: Python Syntax [/bjc-r/cur/programming/python/syntax/var-primitive.html]
 

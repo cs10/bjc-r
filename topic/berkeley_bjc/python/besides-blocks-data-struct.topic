@@ -13,7 +13,7 @@ learning-goal: Learn how to use key-value pairs and why they are useful.
 learning-goal: Solve problems with Python lists and dictionaries.
 
 heading: Introduction to Python Data Structures
-    resource: Welcome to Besides Blocks Lab [/bjc-r/cur/programming/python/intro_besides_blocks_data_structs.html]
+    resource: Welcome to Besides Blocks [/bjc-r/cur/programming/python/intro_besides_blocks_data_structs.html]
     resource: Introduction to Python Lists [/bjc-r/cur/programming/python/lists_intro.html]
 
 heading: Mutability and List Functions in Python

@@ -1,5 +1,5 @@
 """
-Welcome to Besides Blocks Lab 2: Data Structures in Python.
+Welcome to Besides Blocks 2: Data Structures in Python.
 
 In this lab you will explore how to manipulate Python data structures 
 in a way that allows you to efficiently process data.  Many of the excercises
