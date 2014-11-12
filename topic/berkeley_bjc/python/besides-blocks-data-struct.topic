@@ -19,7 +19,7 @@ heading: Introduction to Python Data Structures
 heading: Mutability and List Functions in Python
     resource: List Mutability [/bjc-r/cur/programming/python/list_mutability.html]
     resource: List Functions [/bjc-r/cur/programming/python/list_functions.html]
-    // resource: Iterators [/bjc-r/cur/programming/python/not_here_cuz_max_is_lazy.html]
+    resource: Iterators [/bjc-r/cur/programming/python/python_iterators.html]
     resource: Getting Ready to Program [/bjc-r/cur/programming/python/data_structs_getting_setup.html]
     resource: 2D Lists [/bjc-r/cur/programming/python/2D_lists.html]
 
