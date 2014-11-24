@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>The Natural Language ToolKit</title>
+    </head>
+    <body>
+
+    <p class="alert alert-danger">
+            This section provides information regarding how to run nltk. The computers in the lab do not have ntlk and its accompanying libraries installed. The easy way to do go this lab is to either use the python data analysis browser application of <a href="http://wakari.io">wakari.io</a>, or you can download the <a href="https://store.continuum.io/cshop/anaconda/">anaconda program</a>, which installs a full scientific stack of python on a mac.
+    </p>
+
+
+
+    <p>
+    If you read the article, you will see that Matt used the first 35,000 lyrics of each artist. For the sake of simplicity, I am going to used the artist Jay Z as the subject of our analysis. So lets get go collect the first 35,000 words of Jay Z lyrical catalog.
+</p><p>
+	How are we going to do this you might ask? Well first off go to your favorite search engine and search for Jay Z lyrics. On the other hand, you can actually use the rap annotation site genius(<a href="http://rap.genius.com/">http://rap.genius.com/</a>) to get all that information and then some. According to Genius, Jay Z has a lot of songs. On average, most rap songs are usually set with 3 verses containing sixteen bars, or sixteen sentences each. 
+	</p>
+
+	<p><pre>
+	<code> 
+>> 35000/(16 * 3) 
+729
+	</code>
+	</pre></p>
+
+	<p>
+	So if 16 by 3 = 48, and 48 goes into 35000 gives approximately 729 songs. That can't be right, even though Jay Z is prolific, he hasn't written 700+ songs. So I must have gotten my understanding wrong.
+	</p>
+
+	<p>
+	I proceeded under the false assumption that each lyric was a sentence. Now I can see that each lyric must mean each word instead. This brings me to an essential quality of a good problem solver and Computer Scientist, the ability to embrace failure. More on that later. So lets go back an re-analyse the numbers. I need to figure out how many words are in the average rap bar?
+</p><p>
+	In order to solve this we need to basically find every instance of Jay Z's lyric, scrape them off the internet, and then start number crunching on them. To make this process faster, I have already built something called a webscraper and scraped all his lyrics till Holy Grail. Hopefully that gives us more than enough data to get to 35,000 words. 
+</p>
+
+    <p style="clear:both" class="alert quoteBlue">
+Before we go any further, let's make a directory that will hold our python data files. We can enter the command <code>mkdir PythonDataLab</code> in our terminal to create a directory called PythonDataLab. Now that we have made this new directory enter the command cd PythonDataLab to go to the directory. 
+	</p>
+
+<p>
+	The lyrics I scraped off the internet have been compressed in the zip file named <a href="/bjc-r/prog/python/JayZ.zip">JayZ.zip.</a> Go ahead an unpack this file to our PythonDataLab folder. Take a look inside, you will see its made up of a bunch of text files. Take sometime and go through some the text file to see what they look like. For example the file JayZ_The Black Album_99 Problems.txt contains the lyrics to 99 problems.
+</p><p>
+	Now that we have these files, we are going to use some python packages (a package is also known as a library) to help us. The python natural language toolkit (NLTK) is one of the more popular python libraries that people use for natural langugage processing. In fact, Matt Daniels used it for his hip-hop vocabulary. You can learn more about NLTK here, <a href="http://www.nltk.org/book/"> http://www.nltk.org/book/ </a>. So lets import the toolkit. Go ahead a fire up python in terminal. To import any package in python, you type in the keyword <code>import</code>, followed by the name of the toolkit.
+	</p>
+	<pre>
+		<code> >> import nltk</code>
+	</pre>
+
+	<p>
+	The nltk library has a lot of functions associated with it. The one we are going to use in partcular is called a Corpus reader. If you look up the definition of a corpus, you will see that it is just a collection of written text. The JayZ folder contains a corpora of Jay Z lyrics. The great thing about nltk is that it comes with built-in support for dozens of corpora. For example, NLTK includes a small selection of texts from the <a href="https://www.gutenberg.org/">Project Gutenberg</a>, which contains some 25,000 free electronic books. To see some of these books we can run the following query
+	</p>
+
+	<p><pre>
+		<code>
+>> nltk.corpus.gutenberg.fileids()
+
+['austen-emma.txt',
+'austen-persuasion.txt',
+'austen-sense.txt',
+'bible-kjv.txt',
+'blake-poems.txt',
+'bryant-stories.txt',
+'burgess-busterbrown.txt',
+'carroll-alice.txt',
+'chesterton-ball.txt',
+'chesterton-brown.txt',
+'chesterton-thursday.txt',
+'edgeworth-parents.txt',
+'melville-moby_dick.txt',
+'milton-paradise.txt',
+'shakespeare-caesar.txt',
+'shakespeare-hamlet.txt',
+'shakespeare-macbeth.txt',
+'whitman-leaves.txt']
+		</code>
+	</pre></p>
+
+<p class="alert quoteOrange">
+    Notice that inorder for us to use the functions associated with <code>nltk</code> package, we have to put the <code>nameofpackage</code> followed a <b>'.'</b> dot operator, then the name of the function we need. This is the usual python formalism. <br>
+    <code>NameOfPackage.function</code>
+</p>
+
+	<p>Ah, there is Shakespeare's Macbeth, Hamlet, as well as Julius Cesar. There is also the King James version of the bible as well as Jane Austen's Emma. So lets get on to making our JayZ corpus.</p>
+
+	<p style="clear:both" class="alert quoteBlue">
+	Depending on whether ntlk books have been downloaded before on the computer you are on, your query may not successfuly complete. If your query doesn't give you some of these books, enter the command <code>nltk.download()</code> This will open a window, or show a command list in your python environment. Go ahead and download the corpora if you would like to play around with it. Otherwise, feel free to skip, as we will build our own corpora.
+	</p>
+    </body>
+</html>
