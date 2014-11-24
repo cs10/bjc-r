@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Literary Corpus</title>
+    </head>
+    <body>
+     <p class="alert alert-danger">
+            This section deals with the creation of our Jay Z hiphop anthology corpus.
+    </p>
+
+    <p>
+    	
+    	Now it's time to seriously write some code. Start by right clicking on this <a href="/bjc-r/prog/python/lexical_diversity.py">link</a> and select save as. Make sure to save this file to the PythonDataLab directory. Head back to the shell and enter the ls command to make sure that the file made it into our PythonDataLab directory.
+    </p>
+  <p>
+  <pre>
+		<code>
+>> from nltk.corpus import PlaintextCorpusReader
+>> corpus_root = 'JayZ'
+>> wordlist = PlaintextCorpusReader(corpus_root, '.*')
+		</code>
+	</pre>	
+  </p>
+  
+  	<p>
+  		Based on my perusal of the nltk book, I know that there is a plaintext corpus reading function named <code>PlaintextCorpusReader</code> that I can use to make my corpus. So from nltk corpus function, which I access through the '<code>.</code>' (dot) operator, I import PlaintextCorpusReader from nltk.corpus. I create a variable that I name <code>corpus_root</code> and assign the folder. <code>corpus_root = 'JayZ'</code>
+	</p>
+	<p> 
+		I then call the plain text corpus reader function with the root location and the token "<code>'.*'</code>" that means grab every file in that folder.
+		<code>wordlist = PlaintextCorpusReader(corpus_root, '.*')</code>
+	</p>
+		
+	
+	<p>	
+		I have adapted a function from nltk to reading in my corpus, <code>create_corpus</code>. The definition for this function can be found in the lyric_analysis.py file.  In order to make this function work, we will need to get some additional libraries of functions. In this case, we will need the regular expressions library named "<code>re</code>". So the first thing we need to do is import that package.
+	</p>
+	<p>
+  <pre>
+		<code>
+>> import re
+>> the_corpus = create_corpus(wordlist, [])
+		</code>
+	</pre>	
+  </p>
+
+	<p>
+		Now <code>the_corpus</code> contains all the lyrics. I wrote the <code>create_corpus</code> function in a way that shows what lyrics were read in. You should have a similar output to the one below.
+	</p>
+
+	<p>
+		<pre>
+			<code>
+>> the_corpus = create_corpus(wordlist, [])
+JayZ_American Gangster_American Dreamin.txt
+JayZ_American Gangster_American Gangster.txt
+JayZ_American Gangster_Blue Magic.txt
+JayZ_American Gangster_Fallin.txt
+JayZ_American Gangster_Hello Brooklyn 20.txt
+JayZ_American Gangster_I Know.txt
+...
+			</code>
+		</pre>
+	</p>
+	<p>
+		The series of words that make up Jay Z's lyrics is now represented by a data structure type list, named <code>the_corpus</code>. This list data structure is the same exact computational mental model that we have already acquired with the list data structure we are already familiar with in <i>Snap!</i>. Hopefully, you are beginning to gain a better understanding of how all the computational thinking skills you acquired in your learning of <i>Snap!</i> carries over to solving any computation problem realized in any programming language.
+	</p>
+
+	
+	
+    </body>
+</html>
