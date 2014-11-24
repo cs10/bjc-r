@@ -1,0 +1,33 @@
+title: Besides Blocks: Welcome to Data in Python!
+{
+h2: Big Ideas
+big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
+big-idea: Python is a language for scientific computing. 
+big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
+big-idea: Python is well suited for text analysis because of its powerful nltk (Natural Language processing) toolkit.
+
+h2: Activities
+learning-goal: Investigate an idea in literary corpora.
+learning-goal: Learn the basics of Python text analysis and data manipulation.
+learning-goal: You should be comfortable with elementary techniques of natural language processing.
+
+heading: Introduction to Data in Python
+    resource: Welcome to computational lyrical analysis using python [/bjc-r/cur/programming/python/python_data_intro.html]
+
+heading: Introduction to NLTK package
+    resource: Getting familiar with the Natural Language Toolkit [/bjc-r/cur/programming/python/python_data_2.html]
+
+heading: Creating a Jay Z Corpus
+    resource: Corpus Reader [/bjc-r/cur/programming/python/python_data_3.html]
+  
+heading: Frequency Analysis
+    resource: Determine the number of unique words used within an artist's first 35,000 lyrics [/bjc-r/cur/programming/python/python_data_4.html] 
+
+heading: Data crunching versus gaining insight? When Data Science runs amok
+    resource: Lets investigate basketball concepts in the corpora [/bjc-r/cur/programming/python/python_data_5.html]
+
+
+heading: Conclusion
+	resource: Concluding Survey [/bjc-r/cur/programming/python/outro-survey.html]
+
+}
