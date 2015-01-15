@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>2D Dictionaries in Python</title>
+    </head>
+    <body>
+        <h3>Even more Dimensions...</h3>
+        <p>      
+            After reading the title to this page you might be a little afraid of what's to come.  Don't be!  Just how we can have lists inside of lists, we can also have dictionaries inside of dictionaries.  The important thing to note is that a key in a dictionary cannot be a dictionary itself (<b>only immutable objects can be dictionary keys</b>.  so things like strings and numbers are okay as keys, but lists and dictionaries are not).  However, this does not stop us from having the values of a dictionary be dictionaries. Shown below is an example of how you can make a 2D dictionary:
+        </p>
+        <p><pre><code>
+>>> alonzo = {"age": 10, "height": 42, "weight": 175, "instrument ": "fiddle" }
+>>> turing = {"age": 41, "height": 70 "weight": 160, "instrument": "theremin"}
+>>> bertha = {"age": 32, "height": 97, "weight": 587, "instrument": "cello"}
+>>> tinkerB = {"age":100, "height": 4, "weight": 0.5, "instrument": "cello"}
+>>> banditos = {"Alonzo": alonzo, "Turing": turing, "Bertha": bertha, "TinkerB": tinkerB}
+        </code></pre></p>
+        <p>
+        To return the sub-dictionary representing Alonzo's attributes we do:
+        </p>
+        <p><pre><code>
+>>> banditos["Alonzo"]
+{"age": 10, "height": 42, "weight": 175, "instrument ": "fiddle" }
+        </code></pre></p>
+        <p>
+            To return a specific trait of Alonzo's we do:
+        </p>
+        <p><pre><code>
+>> banditos["Alonzo"]["age"]
+10
+        </code></pre></p>
+        <p>
+            We can also assign values to the sub-dictionary in a similar way:
+        </p>
+        <p><pre><code>
+>>> banditos["Alonzo"]["age"] = 15
+>>> banditos["Alonzo"]["age"]
+15
+        </code></pre></p>
+        <h3>Exercise 6: Find Players</h3>
+        <p>
+            Given a dictionary of people, like the one above, returns a new dictionary that contains only the people who play a certain instrument.  You can test this exercise with function number 6.
+        </p>
+        <p><pre><code>
+>>> find_players(banditos, "cello")
+{"Bertha": {"age": 32, "height": 97, "weight": 587, "instrument": "cello"}, "TinkerB": {"age":100, "height": 4, "weight": 0.5, "instrument": "cello"}}
+        </code></pre></p>
+        <h3>Challenge Exercise 3: Most Popular Friend</h3>
+        <p>
+            It's time for a cringeworthy highschool favorite. Your class decides to rank everyone in the class in order of preference. As class nerd, you've been assigned the task of finding the most popular student. Given a dictionary of each student and a corresponding dictionary of their preferences, write a function that returns a student with the lowest average score.  Test this function with function number C3.
+        </p>
+        <p><pre><code>
+>>> alice_ratings = {"alonzo": 1, "bob": 3, "turing" : 2}
+>>> bob_ratings = {"alice": 1, "alonzo": 2, "turing": 3}
+>>> alonzo_ratings = {"alice": 3, "bob": 2, "turing": 1}
+>>> turing_ratings = {"alice": 2, "alonzo": 1 "bob": 3}
+>>> friends = {"alice": alice_ratings, "bob": bob_ratings, "alonzo": alonzo_ratings, "turing": turing_ratings}
+>>> most_popular(friends)
+"alonzo"
+        </code></pre></p>
+        <p class="alert quoteGreen">
+            Well you've survived another Python lab, congratulations!  To run all of the tests enter the following command:
+        </p>
+        <p><pre><code>
+python3 PythonLab2.py All
+        </code></pre></p>
+    </body>
+</html>

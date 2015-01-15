@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>What Is Pascal's Triangle?</title>
+</head>
+
+<body>
+<p>Perhaps you remember this picture from a high school math class:</p>
+<p align="center">1<br />
+1&nbsp;&nbsp;1<br />
+1&nbsp;&nbsp;2&nbsp;&nbsp;1<br />
+1&nbsp;&nbsp;3&nbsp;&nbsp;3&nbsp;&nbsp;1<br />
+1&nbsp;&nbsp;4&nbsp;&nbsp;6&nbsp;&nbsp;4&nbsp;&nbsp;1<br />
+1&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;5&nbsp;&nbsp;1<br />
+1&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;1<br />︙</p>
+<p>This is <em>Pascal's Triangle, </em>named (among Europeans and their cultural descendents) after the mathematician Blaise Pascal, who published a detailed study of the triangle in 1653, although the earliest surviving reference to the triangle comes from the Hindu mathematician Pingala, who lived some time around the 4th to 2nd century BCE.</p>
+<p>Each number in the triangle is the sum of the two numbers above it:</p>
+<p align="center"><img src="/bjc-r/img/recur/reporters/pascal-rule.png" alt="5+10=15" /></p>
+<p align="left">In this example, 15 = 10+5. The numbers at the ends of each row, which don't have two numbers above them, are always 1.</p>
+<p align="left">We're going to want to refer to positions within the triangle by row and column numbers, so it may be easier to think about these positions if you align the columns this way:</p>
+<blockquote>
+                    <p align="left">1<br />
+                      1&nbsp;&nbsp;&nbsp;1<br />
+                      1&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;1<br />
+                      1&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;1<br />
+                      1&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;1<br />
+                      1&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;10&nbsp;&nbsp;10&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;1<br />
+                      1&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;15&nbsp;&nbsp;20&nbsp;&nbsp;15&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;1</p>
+</blockquote>
+<p align="left">The rows and columns are numbered starting from 0, not 1, so the picture shows rows 0‒6. The numbers in column 1 are equal to their row number.</p>
+<p align="left">(Hate math? Skip the rest of this page.)</p>
+<p align="left">The numbers in Pascal's triangle turn up in several different mathematical contexts. In algebra you probably studied the <em>binomial expansion </em>that expresses (<em>a</em>+<em>b</em>)<sup><em>n</em></sup> in terms of powers of <em>a</em> and <em>b</em> using numbers from the <em>n</em>th row:</p>
+<p align="center">(<em>a</em>+<em>b</em>)<sup><em>5</em></sup> = <strong>1</strong><em>a</em><sup><em>5</em></sup> + <strong>5</strong><em>a</em><sup>4</sup><em>b</em> + <strong>10</strong><em>a</em><sup>3</sup><em>b</em><sup>2</sup> + <strong>10</strong><em>a</em><sup>2</sup><em>b</em><sup>3</sup> + <strong>5</strong><em>a</em><em>b</em><sup>4</sup> + <strong>1</strong><em>b</em><sup>5</sup></p>
+<p align="left">In the study of <em>combinatorics, </em>numbers from Pascal's Triangle tell you how many ways you can choose <em>column</em> items from a set of <em>row </em>items. For example, if you want to choose two people from  Adele, Brian, Cindy, David, Evelyn, and Frank, there are 15 (row 6, column 2) ways to do it: Adele and Brian, Adele and Cindy, ... Evelyn and Frank.</p>
+</body>
+</html>

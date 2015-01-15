@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>2D Lists in Python</title>
+    </head>
+    <body>
+        <h3>Another Dimension</h3>
+        <p>
+            Recall the Lists 2: Tic Tac Toe Lab. To create a more computer-appropriate representation of the board, a list of winning triples was created. This list of lists allowed for a more comprehensive representation of the board. Creating nested lists can be useful when designing everything from user accounts to game boards. 
+        </p>
+        <p class="alert quoteBlue">
+        A list within another list is called 2-Dimensional (2D). And just like in a 2D cartesian graph, retrieving an element requires two index values (essentially "the x and y position").
+        </p>
+        <p><pre><code>
+>>> produce = ["kale", "spinach", "sprouts"]
+>>> fruit = ["olives", "tomatoes", "avocado"]
+>>> cart = [produce, fruit]
+>>> cart
+[ ["kale", "spinach", "sprouts"], ["olives", "tomatoes", "avocado"]]
+        </code></pre></p>
+        <p>
+            The first and second list can be retrieved normally using the known notation.
+        </p>
+        <p><pre><code>
+>>> cart[0]
+["kale", "spinach", "sprouts"]
+        </code></pre></p>
+        <p>
+            To access a deeper item, simply add the second relevant index as demonstrated.
+        </p>
+        <p><pre><code>
+>>> cart[0][2]
+'sprouts'
+        </code></pre></p>
+        <p>
+            Hopefully this is relatively intuitive. The first index returns the internal list, and the second index then looks into that retrieved list. All of the previously mentioned list functions still operate on 2D lists:
+        </p>
+        <p><pre><code>
+>>> cart[0][2] = "cabbage"
+>>> cart
+[ ["kale", "spinach", "cabbage"], ["olives", "tomatoes", "avocado"]]
+        </code></pre></p>
+        <h3>Exercise 2: Flatten List</h3>
+        <p>
+            Now that you have some experience with lists in Python, try writing a function that takes a list of lists (2D) and returns all the items of each list concatenated together into one new list as shown below:
+        </p>
+        <p><pre><code>
+>>> flatten([["a", "b"],["c", "d", "e"], ["f"]])
+["a", "b", "c", "d", "e", "f"]
+        </code></pre></p>
+        <p>
+            To test this function enter:
+        </p>
+        <p><pre><code>
+python3 PythonLab2.py 2
+        </code></pre></p>
+    </body>
+</html>

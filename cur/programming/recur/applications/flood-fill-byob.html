@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Background
+        </title><!--ORIGINAL NAME: Flood fill-->
+    </head>
+    <body>
+        "Flood fill" is the name of the technique used by the paint bucket in most graphics programs. It is reasonably easy to implement recursively, and is an example of something that is far simpler to implement recursively than iteratively.<span style="font-style: italic;"></span> The method starts at a particular point in a grid, and spreads in each direction (left, right, up, down) until it reaches a defined barrier of some sort.
+        <br>
+        <br>
+        For example, in Microsoft Paint, when a user clicks on an image with the paint bucket tool, the location of the click will be the starting point, or <span style="font-style: italic;">source</span>, of the flood. The flood will proceed outward from that point in each direction (one direction at a time) <span style="font-style: italic;">unless the space that it would occupy is a different color than the current space</span> (this is the <em>barrier condition</em>).  Each point that is colored then attempts to expand into the points surrounding it using the same method.
+        <br>
+        <span style="font-style: italic;">
+            <br>
+        </span>
+        <div style="text-align: center;">
+            <span style="font-style: italic;"><img border="0" src="/bjc-r/img/sys/process-grid-visual.png" alt="Fill in a region of an image" title="Fill in a region of an image" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/process.png"></span>
+            <br>
+            <span style="font-style: italic;"></span>
+        </div><span style="font-style: italic;"></span><span style="font-style: italic;">
+            <br>
+        </span>
+        <h2>Goal</h2>Using the provided helper blocks, create a recursive block that will update the <span style="font-style: italic;">image</span> grid with the appropriate colors for each cell. Cells should be updated one at a time and the entire image should be redrawn after each cell is updated so that the progress of the flood can be visualized.
+        <br>
+        <div style="text-align: center; width: 70%; margin: 0pt auto;"><img border="0" src="/bjc-r/img/prog/cell-helper-blocks.png" alt="Helper blocks" title="Helper blocks" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/helpers.png">
+            <object >
+                <param name="movie" value="http://www.youtube.com/v/daXq03ql37o&amp;hl=en&amp;fs=1">
+                <param name="allowFullScreen" value="true">
+                <param name="allowscriptaccess" value="always">
+                <embed src="http://www.youtube.com/v/daXq03ql37o&amp;hl=en&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true"></embed>
+            </object>
+        </div>
+        <br>
+        You should <a href="/bjc-r/prog/BYOB/floodfill.ypr">download</a> a set of helper functions that will take care of miscellaneous tasks like drawing, generating a random image, and establishing the image format in a list. You will also be provided with the prototype for a block, <img border="0" src="/bjc-r/img/prog/flood-screen.png" alt="Flood block" title="Flood block" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/flood-screen.png">. Provide a body for this block that will start a flood fill and terminate once all of the necessary cells have been filled. The block should be able to start at any red cell in the grid. When called, the block should run until the image has been converted according to the method described above.
+        <br>
+        <h2>Additional Information</h2><span style="font-weight: bold;">Image Format</span>
+        <br>
+        <img border="0" src="/bjc-r/img/list/board-list.png" style="float: right;" alt="List format" title="List format" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/list.png">The information for the image is stored in a list, with each element in the list representing a row and each character representing the color of a particular pixel.
+        <br>
+        <br>
+        <div style="text-align: left;">
+            P = red (a path that the flood can pass through, painting on its way)
+            <br>
+        </div>
+        W = green (a wall that acts as a barrier for the flood)
+        <br>
+        Y = yellow (a path that's already been visited)
+        <br>
+        <br>
+        <div style="text-align: center;">
+            <div style="text-align: left;">
+                <br>
+            </div>
+            <br>
+            <br>
+        </div><span style="font-style: italic;"></span>
+    </body>
+</html>

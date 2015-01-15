@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<!-- put the following in exactly -->
-		<script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script><title> The Max block </title>
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title> The Max block </title>
 		<!--ORIGINAL NAME: The Max Block-->
 	</head>
 	<body>
-		We will now make a different kind of block -- a <em>reporter</em>. To demonstrate this, you will make a block called <tt>max</tt> that takes two numbers as input and reports the bigger value (the maximum).
+		We will now make a different kind of block -- a <em>reporter</em>. To demonstrate this, you will make a block called <code>max</code> that takes two numbers as input and reports the bigger value (the maximum).
 		<br>
 		<br>
 		<img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/max-block-executed-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/ExecuteMax.jpg">
@@ -14,21 +14,21 @@
 		<br>
 		<ol>
 			<li>
-				Click <tt>Make a block</tt> and select the <tt>Operators</tt> palette. We want a reporter block. This will give the block its round shape as shown above. As the name implies, reporter blocks can report a value. In the image below, you can see that we used names starting with the <tt>%</tt> character as a shortcut for making input variables.
+				Click <code>Make a block</code> and select the <code>Operators</code> palette. We want a reporter block. This will give the block its round shape as shown above. As the name implies, reporter blocks can report a value. In the image below, you can see that we used names starting with the <code>%</code> character as a shortcut for making input variables.
 				 Note: Usually, we want you to use meaningful variable names, so that your code will be self-documenting. But in this case, the inputs are two arbitrary numbers that don't have any special meaning inside the <code>max</code> block, so it's okay to use <code>x</code> and <code>y</code>.<br>
 				<br>
 			</li>
 			<img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/max-make-a-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/maxMakeABlock.jpg">
 			<br><br>
 			<li>
-			This should give you a blank <tt>Block editor</tt>. Notice that this time the script below the hat block already has a block in it, the <code>report</code> block from the Control palette. In order for your reporter block to report a value, you put that value (or an expression that produces the value) in the input slot of a <code>report</code> block. Note also that there is no tab at the bottom of the report block; when this block is run, it ends the script. There can be more than one report block in a script, as you'll see shortly, but only one of them can be run each time through the script.<br><br>
+			This should give you a blank <code>Block editor</code>. Notice that this time the script below the hat block already has a block in it, the <code>report</code> block from the Control palette. In order for your reporter block to report a value, you put that value (or an expression that produces the value) in the input slot of a <code>report</code> block. Note also that there is no tab at the bottom of the report block; when this block is run, it ends the script. There can be more than one report block in a script, as you'll see shortly, but only one of them can be run each time through the script.<br><br>
 			<img border="0" title="Block editor for the 'max' function" alt="Block editor for the 'max' function" src="/bjc-r/img/prog/maxeditor.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Max/maxBlockEditor.jpg">
 			<br>
 			<br>
 		  </li>
-			<li>You want to report one of the two input values, either <code>x</code> or <code>y</code>, depending on which is bigger. (If they have the same value, it doesn't matter which you report!) Use an <tt>if/else</tt> block to achieve this:<br><br><img src="/bjc-r/img/prog/maxscript.png" alt="script for max block"></li>
+			<li>You want to report one of the two input values, either <code>x</code> or <code>y</code>, depending on which is bigger. (If they have the same value, it doesn't matter which you report!) Use an <code>if/else</code> block to achieve this:<br><br><img src="/bjc-r/img/prog/maxscript.png" alt="script for max block"></li>
 			<li>Now click OK and try out yout block.</li>
 		</ol>
-		<p>Note: Be sure to test both cases of the <tt>if/else</tt> block. Also, note the <code>Apply</code> button at the bottom; this defines your custom block, like OK, but leaves the editor window open. It's really useful for debugging.</p>
+		<p>Note: Be sure to test both cases of the <code>if/else</code> block. Also, note the <code>Apply</code> button at the bottom; this defines your custom block, like OK, but leaves the editor window open. It's really useful for debugging.</p>
 	</body>
 </html>

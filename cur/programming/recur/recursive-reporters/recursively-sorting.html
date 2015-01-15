@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Sorting a List</title>
+</head>
+
+<body>
+<p>Suppose we have a list of numbers like this:</p>
+<p><img src="/bjc-r/img/recur/reporters/unsortlist.png" alt="7, 8, 1, 9, 8, 2, 7" /></p>
+<p>What we want is a list of the same numbers, in ascending order:</p>
+<p><img src="../../../../img/recur/reporters/sortlist.png" alt="1, 2, 7, 7, 8, 8, 9" /></p>
+<p>(There's no reason the items have to be numbers, as long as we have some way to order them, like the <code>&lt;</code> operator for numbers. But numbers are easiest to talk about in this context.)</p>
+<p>There are many different sorting algorithms. But the best one for recursively generated lists, and probably the most elegant, is called <em>mergesort. </em>Here's the idea in a nutshell: Divide the list in half; recursively sort each half; then merge the two sorted sublists. The base case is that an empty list or a one-item list is already sorted.</p>
+<p>The easiest way to divide a list in half turns out to be putting the odd-numbered items in one half and the even-numbered items in the other. You do this with a recursion that skips over an item each time:</p>
+<p><img src="../../../../img/recur/reporters/odds.png" alt="odd items" /></p>
+<p><img src="../../../../img/recur/reporters/evenitems.png" alt="even items" /></p>
+<p>All the work here, basically, is done by the <img src="../../../../img/recur/reporters/bfbf.png" alt="all but first of all but first of" /> in <code>odd numbered items</code>. This skips the second item and makes the recursive call on items 3 through the end of the list. Note that <code>even numbered items</code> is not <em>directly </em>recursive; it calls <code>odd numbered items</code>, not itself.</p>
+<blockquote>
+  <p>☞ Why does <code>odd numbered items</code> need two base cases?</p>
+  <p>☞ Write a version of <code>even numbered items</code> that calls itself recursively instead of using <code>odd numbered items</code>.</p>
+  <p>☞ Can you write a version of <code>odd numbered items</code> that uses (the original) <code>even numbered items</code> instead of calling itself recursively? That structure (A calls B, B calls A) is called <em>mutual recursion.</em></p>
+</blockquote>
+<p>Now that we've solved the split-in-half problem, the remaining challenge is to merge two sorted lists into a single in-order list:</p>
+<p><img src="../../../../img/recur/reporters/merge.png" alt="merge" /></p>
+<blockquote>
+  <p>☞ Finish this definition by filling the <code>else</code> slot.</p>
+  <p>☞ Do you have to check for the two first items being equal? Why or why not?</p>
+</blockquote>
+<p>And here's the <code>sort</code> block that uses these pieces:</p>
+<p><img src="../../../../img/recur/reporters/sort.png" alt="sort script" /></p>
+<p><img src="../../../../img/recur/reporters/sort-ex.png" alt="sort example" /></p>
+</body>
+</html>

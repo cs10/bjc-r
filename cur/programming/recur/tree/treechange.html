@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Self Test: What Was Changed?
+        </title>
+    </head>
+    
+    <body>
+        <p>
+            We took the following program and changed it in a bunch of different  ways. Then we ran the program with different values of <code>size</code> and
+            <code>level</code>.
+            Your goal is to figure out what we changed in the code to produce each image! Note: We can change the input (the size and the number of levels) 
+            without changing the code in the block. The original code and picture (right) are shown below.
+        </p>
+        
+        <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree.png"/>
+        <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree-level5.jpg"/>
+        
+        
+         <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="asymmetric"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri1" shuffle="false">
+        
+            <div class="prompt">
+                <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree-slanted-left.jpg"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    Nice!
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Not quite. Notice how the branches are now tilted differently from those in the original image.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work out.</b>
+                </div>
+                <div class="feedback">
+                    Not quite. There are still the same number of branches at each stage.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c0"></div>
+            </div>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="5-branches"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri2" shuffle="false">
+        
+            <div class="prompt">
+                <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/full-recursive-tree3.jpg"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    We do change angles here, those are not the only changes we make. Where did those other extra come from?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    The scale factor looks pretty similar to the original.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work out.</b>
+                </div>
+                <div class="feedback">
+                    Correct! There are now five recursive calls (branches).
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="assessment-data" type="multiplechoice" identifier="growing-tree"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri3" shuffle="false">
+        
+            <div class="prompt">
+                <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/full-recursive-tree2.jpg"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    The angles look pretty similar to the original.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Right! At each stage, the branches are getting longer.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work out.</b>
+                </div>
+                <div class="feedback">
+                    Not quite! There are the same number of branches, and the angles haven't changed.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+    
+        <!-- Question 4 -->
+        <div class="assessment-data" type="multiplechoice" identifier="not-shrinking-tree"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri4" shuffle="false">
+        
+            <div class="prompt">
+                <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/normal-recursive-tree-without-scaling.jpg"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    The angles look pretty similar to the original.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    Right! At each stage, the branches are staying the same length, rather than shrinking.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work out.</b>
+                </div>
+                <div class="feedback">
+                    Not quite! There are the same number of branches, and the angles haven't changed.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri4">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="assessment-data" type="multiplechoice" identifier="square-tree"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri5" shuffle="false">
+        
+            <div class="prompt">
+                <img title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/letter-I-tree.jpg"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>We changed the turn amount between each branch.</b>
+                </div>
+                <div class="feedback">
+                    Correct! The turning angles are 90 degrees in this case.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>We changed the scaling factor (how much the length decreases each time).</b>
+                </div>
+                <div class="feedback">
+                    It's a bit hard to tell, but the scale factor is the same as the original.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>We added additional recursive calls to the function and other angle stuff to make it all work out.</b>
+                </div>
+                <div class="feedback">
+                    Not quite! There are the same number of branches in this tree.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri5">
+                <div class="correctResponse" identifier="c0"></div>
+            </div>
+        </div>
+        
+    </body>
+</html>

@@ -1,8 +1,11 @@
+// NOTE: This is from Spring 2014 and isn't being used current
+// Please see the "welcome" topic instead.
+
 title: Besides Blocks: Intro to Python
 {
 h2: Big Ideas
 big-idea: Computational Thinking can be used in any programming language.
-big-idea: You're Awesome!
+big-idea: Python and <span class="snap">snap</span>  are awesome languages which coexist.
 big-idea: #EverythingIsAwesome!
 
 // h2: Activities
@@ -11,7 +14,7 @@ big-idea: #EverythingIsAwesome!
 // learning-goal: FIXME
 
 heading: Introduction to Python
-    resource: Welcome to Besides Blocks Lab! (Part 1) [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
+    resource: Welcome to Besides Blocks! (Part 1) [/bjc-r/cur/programming/python/intro/map-blocks-to-text.html]
     resource: Saying vs. Printing [/bjc-r/cur/programming/python/intro/saying-vs-printing.html]
     resource: Python Syntax [/bjc-r/cur/programming/python/syntax/var-primitive.html]
 
@@ -25,8 +28,5 @@ heading: Functions and Recursion
 
 heading: String Manipulation
     resource: String Manipulation [/bjc-r/cur/programming/python/string/string-mani.html]
-
-// heading: Turtle Graphics
-//    resource:
 
 }

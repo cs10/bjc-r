@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Plurals of Words</title>
+</head>
+
+<body>
+<p>We want a block that will take a <em>list of words </em> as input, and report a list of the plurals of those words.</p>
+<p>You already know how to do this with a higher order function, and that's how you <em>will </em>do it in real life, but just for this lesson, pretend you don't know about HOFs and think about how to do it recursively.</p>
+<hr />
+<p>Actually, if you're on the ball, you won't have to think very hard about it, because we showed you this block as an example in the first lesson about recursive reporters:</p>
+<p><img src="/bjc-r/img/recur/reporters/plurals.png" alt="plurals bloc" /></p>
+<p>(By the way, we know it's a vast oversimplification to say that adding an &quot;s&quot; forms the plural, but this is Computer Science class, not English class.)</p>
+<p>The big idea here is that you can divide a list into its first item and all the rest of the items, form the plural of the first one, and make a recursive call for the rest. The <code>in front of</code> block probably looks strange when you first see it, with its asymmetrical inputs (one item, one list), but it's exactly the combiner we need to put the plural of the first word and the plurals of the rest of the words back together.</p>
+<hr />
+<p>Do the following exercises using recursion, not HOFs.</p>
+<p>☞ Make a <code>squares</code> block that takes a list of numbers as input, and reports a list of the squares of the numbers.</p>
+<p><img src="/bjc-r/img/recur/reporters/squares-ex.png" alt="squares example" /></p>
+<p>☞ Make an <code>exaggerate</code> block that takes a sentence as input, and reports a sentence in which every number in the input is doubled, &quot;good&quot; is replaced by &quot;great,&quot; &quot;bad&quot; is replaced by &quot;terrible,&quot; &quot;like&quot; is replaced by &quot;love,&quot; and &quot;dislike&quot; is replaced by &quot;hate.&quot; Hint: You'll almost certainly find the <code>all but first word of ()</code> and <code>first word of ()</code> blocks useful. You can find these in the "Words, sentences" library (click the "file" icon, select "Libraries..."). Another hint: You'll probably want a helper function that exaggerates a single word.</p>
+<p><img src="/bjc-r/img/recur/reporters/ex-ex.png" alt="exaggerate example" /></p>
+</body>
+</html>

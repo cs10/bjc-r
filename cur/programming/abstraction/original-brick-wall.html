@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script><title>Brick Wall</title><!--ORIGINAL NAME: Brick Wall-->
+		<!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Brick Wall</title><!--ORIGINAL NAME: Brick Wall-->
 	</head>
 	<body>
 		Sometimes, when we write programs and scripts, it feels like we have hit a brick wall! (This is a good sign - it is supposed to be hard.) For homework, you are going to draw this brick wall.
@@ -37,14 +37,14 @@
 			</li>
 			<ul>
 				<li>
-					The <tt>Draw Brick</tt> block, which draws a single brick. (Hint: a brick is drawn by setting the pen size to about 10)
+					The <code>Draw Brick</code> block, which draws a single brick. (Hint: a brick is drawn by setting the pen size to about 10)
 					<br>
 				</li>
 				<li>
-					The <tt>Draw Small Brick</tt> block, which draws the small brick for the edges of row B. Note that this brick will <em>not</em> be exactly half as long as the full brick. Part of this homework is figuring out how long the "small brick" should be.
+					The <code>Draw Small Brick</code> block, which draws the small brick for the edges of row B. Note that this brick will <em>not</em> be exactly half as long as the full brick. Part of this homework is figuring out how long the "small brick" should be.
 				</li>
 				<li>
-					The <tt>Draw Space</tt> block, which draws a space between each brick or small brick.
+					The <code>Draw Space</code> block, which draws a space between each brick or small brick.
 				</li>
 			</ul>
 		</ul>
@@ -64,22 +64,22 @@
 			</li>
 			<ul>
 				<li>
-					The <tt>Initialize Pen</tt> block, which should initialize the pen color and size.
+					The <code>Initialize Pen</code> block, which should initialize the pen color and size.
 				</li>
 				<li>
-					The <tt>Initialize Character Position and Direction</tt> block, which should initialize the position and direction of the character.
+					The <code>Initialize Character Position and Direction</code> block, which should initialize the position and direction of the character.
 				</li>
 				<li>
-					The <tt>Draw Row A</tt> block, which should draw a single copy of Row A.
+					The <code>Draw Row A</code> block, which should draw a single copy of Row A.
 				</li>
 				<li>
-					The <tt>Draw Row B</tt> block, which should draw a single copy of Row B.
+					The <code>Draw Row B</code> block, which should draw a single copy of Row B.
 				</li>
 				<li>
-					The <tt>Transition between Row A and B with __ space</tt> block, which should transition between the end of Row A and the beginning of Row B, leaving a space as wide as the number of pixels specified by the input argument.
+					The <code>Transition between Row A and B with __ space</code> block, which should transition between the end of Row A and the beginning of Row B, leaving a space as wide as the number of pixels specified by the input argument.
 				</li>
 				<li>
-					The <tt>Transition between Row B and A with __ space</tt> block, which should transition between the end of Row B and the beginning of Row A, leaving a space as wide as the number of pixels specified by the input argument.
+					The <code>Transition between Row B and A with __ space</code> block, which should transition between the end of Row B and the beginning of Row A, leaving a space as wide as the number of pixels specified by the input argument.
 				</li>
 			</ul>
 		</ul>
@@ -91,7 +91,7 @@
 				You will put together the full brick wall using only the functionality provided by the middle level of abstraction.
 			</li>
 			<li>
-				This level of abstraction contains only the <tt>Draw a Brick Wall with __ rows</tt> block, which draws a brick wall with the specified number of rows.
+				This level of abstraction contains only the <code>Draw a Brick Wall with __ rows</code> block, which draws a brick wall with the specified number of rows.
 			</li>
 		</ul>
 		In summary, you should implement the following blocks:
@@ -104,6 +104,6 @@
 		<br>
 		<em>Note</em>: Whenever you need to refer to a fixed number, such as the width of a brick, use a global variable. This is generally considered good style, because you can use the same variable in multiple places in your program, and you only need to change the value of the variable to change it in multiple places at once, to tune up the appearance of your wall. 
 		<h2>Upload and Submit</h2>
-		Once you are done, upload your  solution as a file called <tt>Brick-Wall</tt> and submit.
+		Once you are done, upload your  solution as a file called <code>Brick-Wall</code> and submit.
 	</body>
 </html>

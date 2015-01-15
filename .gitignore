@@ -3,3 +3,6 @@
 *~
 *#*#*
 *Thumbs.db*
+.project
+.tm_properties
+.gitmodules

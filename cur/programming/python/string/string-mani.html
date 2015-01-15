@@ -1,131 +1,131 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script type="text/javascript" src="/bjc-r/admin/bjc-loader.js"></script>
-        <title>String</title>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Strings</title>
     </head>
     <body>
-	  	<p>
-	  		In Python, there is something called "string". It's not the kind of string that you might think of. A string in Python is a way of representing text. A string is denoted by "" or ''. Either one will work. Why then, should there be 2 notations? Here's why: "That's a book!" and ' "He said hello" '. The first one is an example of having the literal apostrophe as a string, the second one is an example of having the literal quotation marks as a string.
-	  	</p>
-	  	<p>
-	  		To declare a string, you just simply do <code>arr = "Hello World!"</code>
-	  		<h4><b>Below are some built-in functions in Python for string:</b></h4>
-	  		<blockquote><code>
-	  			>>> arr <br>
-				'Hello World!'<br>
-				>>> print(arr)<br>
-				Hello World!<br>
-				>>> "AA" + "AA"<br>
-				'AAAA'<br>
-				>>> "AA" * 2 <br>
-				'AAAA'<br>
-				>>> print(len("Hi"))<br>
-				2 <br>
-				>>> print(arr.count("r"))<br>
-				1 <br>
-				>>> print(arr.index("e"))<br>
-				1 <br>
-				>>> intro = "Hello, My name is Python"<br>
-				>>> intro.replace("Python", "Snap!")<br>
-				'Hello, My name is Snap!'<br>
-				>>> "replbced".replace("b", "a")<br>
-				'replaced'<br>
-	  		</code></blockquote>
-	  	</p>
-	  	<p>
-	  		<h4><b>Slicing a String</b></h4>
-	  		<blockquote><code>
-	  			word = "Hello World!"<br><br>
+          <p>
+              In Python, there is something called "string". It's not the kind of string that you might think of. A string in Python is a way of representing text. A string is denoted by "" or ''. Either one will work. Why then, should there be 2 notations? Here's why: "That's a book!" and ' "He said hello" '. The first one is an example of having the literal apostrophe as a string, the second one is an example of having the literal quotation marks as a string.
+          </p>
+          <p>
+              To declare a string, you just simply do <code>arr = "Hello World!"</code>
+              <h4><b>Below are some built-in functions in Python for string:</b></h4>
+              <pre><code>
+>>> arr 
+'Hello World!'
+>>> print(arr)
+Hello World!
+>>> "AA" + "AA"
+'AAAA'
+>>> "AA" * 2 
+'AAAA'
+>>> print(len("Hi"))
+2 
+>>> print(arr.count("r"))
+1 
+>>> print(arr.index("r"))
+8 
+>>> intro = "Hello, My name is Python"
+>>> intro.replace("Python", "<span class="snap">snap</span> ")
+'Hello, My name is <span class="snap">snap</span> '
+>>> "replbced".replace("b", "a")
+'replaced'
+              </code></pre>
+          </p>
+          <p>
+              <h4><b>Slicing a String</b></h4>
+              <pre><code>
+word = "Hello World!"
 
-				word[start:end]		# items start to end-1 <br>
-				word[start:]		# items start to the rest of the string <br> 
-				word[:end]			# items from the beginning to end-1 <br>
-				word[:]				# a copy of the whole string <br><br>
+word[start:end]     # items start to end-1
+word[start:]        # items start to the rest of the string 
+word[:end]          # items from the beginning to end-1
+word[:]             # a copy of the whole string
 
-	  			Remember! Everything starts from 0 in Python! <br><br>
+# Remember! Everything starts from 0 in Python!
 
-				>>> print(word[:3])<br>
-				Hel <br>
-				>>> print(word[-3:])<br>
-				ld! <br>
-				>>> print(word[3:])<br>
-				lo World! <br>
-				>>> print(word[:-3])<br>
-				Hello Wor <br>
-				>>> print(word[100:101]) <br>
-				(returns a blank string) <br>
-	  		</code></blockquote>
-	  	</p>
-	  	<p>
-	  		<h4>Here are more string functionality in Python</h4>
-	  		<pre><blockquote><code>
+>>> print(word[:3]
+Hel
+>>> print(word[-3:]
+ld!
+>>> print(word[3:]
+lo World!
+>>> print(word[:-3]
+Hello Wor
+>>> print(word[100:101])
+(returns a blank string)
+              </code></pre>
+          </p>
+          <p>
+              <h4>Here are more string functionality in Python</h4>
+              <pre><code>
 >>> "x" in "xyz"
 True 
 >>> "xyz" in "x"
 False 
 >>> word = "hi, my name"
 >>> word.split(",")
-['hi', ' my name']	# this is a list, just like how Snap! has lists. 
+['hi', ' my name']    # this is a list, just like how <span class="snap">snap</span>  has lists. 
 >>> "ABC".lower()
 'abc'
 >>> "abc".upper()
 'ABC'
 >>> for word in "Hello":
-	print(word)
+    print(word)
 H
 e
 l
 l
 o
-	  		</code></blockquote></pre>
-	  	</p>
-	  	<p>
-	  		<h4>Practice Problems </h4>
-	  		<hr>
-	  		<blockquote><code>
-			def extra_end(str):<br>
-			"""Given a string, return a new string made of 3 copies <br>
-			of the last 2 chars of STR. The string length will be <br>
-			at least 2. <br>
-			>>> extra_end('Hello')<br>
-			'lololo'<br>
-			>>> extra_end('ab')<br>
-			'ababab'<br>
-			>>> extra_end('Hi')<br>
-			'HiHiHi'<br>
-			"""<br>
-			"***Your Code Here***"<br>
-			</code></blockquote>
-			<hr>
-			<blockquote><code>
-			def cat_dog(str):<br>
-			"""Return True if the string "cat" and "dog" appear the <br>
-			same number of times in the given string STR. <br>
-			>>>cat_dog('catdog')<br>
-			True <br>
-			>>>cat_dog('catcat') <br>
-			False <br>
-			>>>cat_dog('1cat1cadodog')<br>
-			True <br>
-			3"""<br>
-			"***Your Code Here ***"<br>
-			</code></blockquote>
-			<hr>
-			<blockquote><code>
-			def count_code(word):<br>
-			"""Return the number of times that the string "code"<br>
-			appears anywhere in the given WORD, except we'll accept <br>
-			any letter for the 'd', so "cope" and "cooe" count. <br>
-			>>>count_code('aaacodebbb')<br>
-			1 <br>
-			>>>count_code('codexxcode')<br>
-			2 <br>
-			>>>count_code('cozexxcope')<br>
-			2 <br>
-			"""<br>
-			"***Your Code Here ***" <br>
-			</code></blockquote>
-	  	</p>
+              </code></pre>
+          </p>
+          <p>
+              <h4>Practice Problems </h4>
+              <hr>
+              <pre><code>
+def extra_end(word):
+"""Given a string, return a new string made of 3 copies 
+of the last 2 chars of WORD. The string length will be 
+at least 2. 
+>>> extra_end('Hello')
+'lololo'
+>>> extra_end('ab')
+'ababab'
+>>> extra_end('Hi')
+'HiHiHi'
+"""
+"***Your Code Here***"
+            </code></pre>
+            <hr>
+            <pre><code>
+def cat_dog(word):
+"""Return True if the string "cat" and "dog" appear the 
+same number of times in the given string WORD. 
+>>>cat_dog('catdog')
+True 
+>>>cat_dog('catcat') 
+False 
+>>>cat_dog('1cat1cadodog')
+True 
+3"""
+"***Your Code Here ***"
+            </code></pre>
+            <hr>
+            <pre><code>
+def count_code(word):
+"""Return the number of times that the string "code"
+appears anywhere in the given WORD, except we'll accept 
+any letter for the 'd', so "cope" and "cooe" count. 
+>>>count_code('aaacodebbb')
+1 
+>>>count_code('codexxcode')
+2 
+>>>count_code('cozexxcope')
+2 
+"""
+"***Your Code Here ***" 
+            </code></pre>
+          </p>
     </body>
 </html>

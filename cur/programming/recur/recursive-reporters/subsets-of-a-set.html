@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Subsets of a Set</title>
+</head>
+
+<body>
+<p>We want to list all the subsets of a given set.</p>
+<p>A <em>set </em>is an unordered collection of unique things.</p>
+<p><em>Unordered </em>means that {Apple, Orange, Banana} is the same set as {Banana, Apple, Orange}.</p>
+<p><em>Unique </em>means that you can't have two of the same thing in a set. Officially, you can write {Apple, Orange, Apple, Banana} and it's the same set as in the previous paragraph, but we'll make the simplifying assumption that there will be no duplicates in the representation of a set.</p>
+<p>We, of course, represent a set as a list of its <em>elements</em>, which is the official name for the things in a set. A list is an ordered sequence—you can meaningfully ask &quot;what is the third item of this list?&quot; But we'll agree that when using a list to represent a set, order doesn't count.</p>
+<hr />
+<p>A <em>subset </em>of a set is a set all of whose elements are elements of the original set. So, starting with the set {Apple, Orange, Banana} we can find one-element subsets such as {Banana} and two-element subsets such as {Apple, Banana}. We also consider the original set {Apple, Orange, Banana} to be a subset of itself, and so is the <em>empty set </em>{} with no elements.</p>
+<blockquote>
+  <p>☞ Write down all the subsets of {Apple, Orange, Banana}. How many are there?</p>
+</blockquote>
+<p>You're going to write the block <code>subsets</code> that takes a set (a list) as input, and reports a <em>list of lists </em>in which each item is a subset of the input list.</p>
+<p><img src="/bjc-r/img/recur/reporters/subset-example.png" alt="subsets of {Apple, Orange, Banana}" /></p>
+<p>It doesn't matter in what order the subsets appear in the output list, but each subset must appear exactly once.</p>
+<blockquote>
+  <p>☞ If you prefer to solve puzzles without hints, write <code>subsets</code> now. It's a bit harder than the other examples before this one.</p>
+</blockquote>
+</body>
+</html>

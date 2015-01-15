@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+	<title>Binary Numbers</title>
+    </head>
+
+    <body>
+
+	<p>If there's one thing everyone knows about computers, it's that they think in zeros and ones. As you know by now, the whole point of computer science is <em>abstraction, </em>so that you can program and use computers without ever having to deal with their low-level circuitry. Still, for some reason the people who made up the AP curriculum standards think you should know about binary numbers.</p>
+	<p>As you know, in plain old decimal numbers, each digit <em>position </em>represents a power of 10, starting with 1 (which is 10<sup>0</sup>)
+	    on the right, and multiplying by 10 as you move left.  So, for example, 9827 is, from right to left,</p>
+	<p align="center">7 &times;  10<sup>0</sup> + 2 &times;  10<sup>1</sup> + 8 &times;  10<sup>2</sup> + 9 &times;  10<sup>3</sup></p>
+	<p align="left">Binary uses the same positional idea, but with powers of two instead of powers of ten.</p>
+	<p align="left">Our goal is to write a reporter <code>decimal-&gt;binary</code> that takes a (decimal) number as input, and reports a string of zeros and ones that represent the same number in binary:</p>
+	<p align="left"><img src="/bjc-r/img/recur/reporters/9827.png" alt="decimal-&gt;binary of 9827" /></p>
+	<p align="left">To solve this problem, you're going to have to know how to do integer division the way you did it in third grade, before you knew about fractions: 17 ÷ 5 = <strong>3 remainder 2</strong>. Here's how to do that in Snap<em>!</em>:</p>
+	<p align="left"><img src="/bjc-r/img/recur/reporters/quotient.png" alt="quotient" /><img src="/bjc-r/img/recur/reporters/mod.png" alt="mod" /></p>
+	<p align="left">In the Operators palette there's a block <code>sqrt of</code> in which the word <code>sqrt</code> is part of a menu of mathematical operations. From that menu, choose <code>floor</code> to get the integer part of the quotient. (It's called &quot;floor&quot; because it's the nearest integer <em>smaller than </em>its input, as opposed to <code>round</code>, which finds the nearest integer whether smaller or larger.) &quot;Mod&quot; is short for <em>modulo, </em>which is the fancy mathematical name for remainder.</p>
+	<blockquote>
+	    <p align="left">☞ If you prefer to solve puzzles without hints, try writing <code>decimal-&gt;binary</code> before reading the next page.</p>
+	</blockquote>
+    </body>
+</html>

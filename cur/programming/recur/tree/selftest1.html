@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Self Test: Understanding Tree Inputs
+        </title>
+    </head>
+
+    <body>
+    
+        <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="number-of-levels"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri1" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                    Someone wrote the following code to draw a tree. When they drew the
+                    picture in the center, what number did they put in for the levels
+                    argument? In other words, what goes in the blank in the code on the
+                    right?
+                </p>
+                <img src="../../../../img/lab-10/tree-code-snap.png" alt="There should be an image here" title="There should be an image here"/>
+                <img src="/bjc-r/img/recur/tree-level5.jpg" alt="There should be an image here" title="There should be an image here"/>
+                <img src="/bjc-r/img/recur/tree-size-100-call.gif" alt="tree toplevel script"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>0</b>
+                </div>
+                <div class="feedback">
+                    Not quite. How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>1</b>
+                </div>
+                <div class="feedback">
+                    Not quite. How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>4</b>
+                </div>
+                <div class="feedback">
+                    Not quite. How many different sizes of line segment are in the picture?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    <b>5</b>
+                </div>
+                <div class="feedback">
+                    Nice! There are indeed five different levels present in the tree.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c5"></div>
+            </div>
+        </div>
+    
+    
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="negative-size"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri2" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                    <div> What would happen if you changed the argument <strong><code>size</code></strong> to be -100?</div>
+                </p>
+                <img src="../../../../img/lab-10/tree-code-snap.png" alt="There should be an image here" title="There should be an image here"/>
+                &nbsp &nbsp
+                <img src="/bjc-r/img/recur/tree-size-100-call.gif" alt="tree toplevel script"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>The program will never stop running and a lot of different branches will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    The program will stop. Try running walking through the function step-by-step using the given arguments.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>It will never stop running and only a single branch will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    The program will stop. Try running walking through the function step-by-step using the given arguments.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>Nothing - it will work just like if the same positive value was provided.</b>
+                </div>
+                <div class="feedback">
+                    Not quite. What happens when we plug in a negative value to the <code>move</code> block?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                </div>
+                <div class="feedback">
+                    Nice! Inputting negative values to the move block will make the sprite move <em>backwards</em>.
+                </div>
+            </div>
+            
+                        <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>Nothing will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    Something will be drawn. Try running walking through the function step-by-step using the given arguments.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="assessment-data" type="multiplechoice" identifier="negative-levels"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri3" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                    <div> What would happen if you changed the argument <strong><code>levels</code></strong> to be -4?</div>
+                </p>
+                <img src="../../../../img/lab-10/tree-code-snap.png" alt="There should be an image here" title="There should be an image here"/>
+                &nbsp &nbsp
+                <img src="/bjc-r/img/recur/tree-size-100-call.gif" alt="tree toplevel script"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>The program will never stop running and a lot of different branches will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    You're correct that the program will never stop running. Try walking through the code step-by-step to see exactly what happens.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>It will never stop running and there will be no forks in the version of the tree that is drawn.</b>
+                </div>
+                <div class="feedback">
+                    Correct! The function will never hit the <code>levels = 0</code> case, and will only ever make the first call to itself.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <b>Nothing - it will work just like if the same positive value was provided.</b>
+                </div>
+                <div class="feedback">
+                    Not quite. Will the <code>repeat until</code> loop's condition ever be true?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <b>The image will be flipped upside down but will otherwise look the same.</b>
+                </div>
+                <div class="feedback">
+                    Not quite. Will the <code>repeat until</code> loop's condition ever be true?
+                </div>
+            </div>
+            
+                        <div class="choice" identifier="c4">
+                <div class="text">
+                    <b>Nothing will be drawn.</b>
+                </div>
+                <div class="feedback">
+                    Something will be drawn.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+    
+    </body>
+</html>

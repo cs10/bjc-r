@@ -12,7 +12,7 @@ big-idea: Understand and analyze some the impact of the internet on our culture
 
 h2: Activities
 learning-goal: Get comfortable with the Scratch user interface.
-learning-goal: Learn to use <tt>Broadcast</tt> blocks to communicate between sprites and make a movie.
+learning-goal: Learn to use <code>Broadcast</code> blocks to communicate between sprites and make a movie.
 learning-goal: Get experience debugging using single-step.
 learning-goal: Learn to download, remix and re-post projects on the Scratch website.
 

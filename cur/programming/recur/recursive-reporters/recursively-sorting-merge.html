@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+	<title>Sorting a List</title>
+    </head>
+
+    <body>
+	<p>Now that we've solved the split-in-half problem, the remaining challenge is to merge two sorted lists into a single in-order list:</p>
+	<p><img src="../../../../img/recur/reporters/merge.png" alt="merge" /></p>
+	<blockquote>
+	    <p>☞ Finish this definition by filling the <code>else</code> slot.</p>
+	    <p>☞ Do you have to check for the two first items being equal? Why or why not?</p>
+	</blockquote>
+	<p>And here's the <code>sort</code> block that uses these pieces:</p>
+	<p><img src="../../../../img/recur/reporters/sort.png" alt="sort script" /></p>
+	<p><img src="../../../../img/recur/reporters/sort-ex.png" alt="sort example" /></p>
+
+
+	<!-- Question -->
+        <div class="assessment-data" type="multiplechoice" identifier="mc1"
+             hasinlinefeedback="true" maxchoices="1"
+             responseIdentifier="resp1" shuffle="false">
+            
+            <div class="prompt">
+                <p>
+                    The block that actually does the work of putting the items in order is
+                </p>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    <b>sort</b>
+                </div>
+                <div class="feedback">
+                    Not quite. How does sort use merge and odd numbered items?
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <b>merge</b>
+                </div>
+                <div class="feedback">
+                    You got it! Merge is where the elements of each half is sorted to be in ascending order. Then, sort uses merge to put both halfs together. 
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <b>odd/even numbered items</b>
+                </div>
+                <div class="feedback">
+                    Not quite. What is the purpose of this block?
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+    </body>
+</html>

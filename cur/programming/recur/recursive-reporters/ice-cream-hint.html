@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Menu hints</title>
+</head>
+
+<body>
+<p>1, Don't write a solution that depends on the specific example of the ice cream choices. Your <code>menu</code> block should work for any number of categories (size, flavor, cone or cup, sundae syrup, whipped cream or not, nuts or not, ...) and any number of possibilities per category (kiddie, tiny, small, medium small, medium, medium large, large, extra large, elephantine, gargantuan, infinite...).  It turns out to be <em>easier, </em>more fun, and more useful to find a general solution.</p>
+<p>2. As in the <code>subsets</code> problem, the recursive call will be on <code>all but first of</code> the list of choices. So, let's say you have the menu list for flavors and holders (cone or cup), starting with <code>chocolate pudding cone</code>, <code>chocolate pudding cup</code>, <code>pumpkin cone</code>, etc. How would you combine one of those, say <code>chocolate pudding cone</code>, with the three sizes?</p>
+<p>3. Okay, if you can combine <em>one </em>recursive-call choice with the three sizes, how would you apply that method to <em>all </em>the choices? (Think higher order functions.)</p>
+<p>4. Don't forget what you learned in the previous lesson about formal parameters; reread the example on that page if it's not vivid in your mind.</p>
+<p>5. The desired result is a <em>list of sentences </em>(text strings). What should you report in the base case? Think about the <code>subsets</code> block, but really <em>think </em>about it; don't just copy code from it.</p>
+<p>6. You can make your program more efficient by computing the recursive call only once, as in <code>subsets</code>.</p>
+<p>☞ Now write the code. We're not providing a solution, so if you get stuck, work with other students.</p>
+</body>
+</html>

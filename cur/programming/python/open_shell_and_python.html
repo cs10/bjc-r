@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Opening a Command Prompt and Python</title>
+    </head>
+    <body>
+        <p class="alert alert-danger">
+            This section provides information regarding how to run python and use a command prompt on your computer.  We've done our best to provide information for all major operating systems (although it's easier on some systems than on others).
+        </p>
+        <h3>On Mac OS X:</h3>
+        <p>
+            The Terminal window is like a text-based version of your computer. From here, many common actions, like creating or navigating folders and launching applications, can be performed via the command line. On Mac and Linux, the Terminal application can be accessed from the Applications folder or using a quick-search function.  Look for this image:
+        </p>
+        <p>
+            <img style="float:left;" class="noblur" src="/bjc-r/img/python/terminal_image.png">
+        </p>
+        <h3>On Windows</h3>
+        <p>
+            Windows allows you to perform many common actions, like creating or navigating folders and launching applications, from what is called the CMD command prompt.  Do a search for for cmd.exe on your computer. <b>Note:</b> Python may not be set up properly on windows. If you are unable to get python to work from the command line (as explained below) here is a <a href="https://docs.python.org/3.4/faq/windows.html" target="_blank">link</a> that will help you get things set up.
+        </p>
+        <h3>Running Python</h3>
+        <p>
+            The next step is to open the Python "interpreter". On the command line type <code>python3</code> and hit the <code>return</code> key. The "3" indicates the version of python we will be using in this lab.  You should see something similar to the following:
+        </p>
+        <p><pre><code>
+Alonzos-MacBook:~ alonzo$ python3
+Python 3.4.0 (v3.4.0:04f714765c13, Month DD YYYY, HH:MM:SS) 
+[GCC X.X.X] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+        </code></pre></p>
+        <br />
+        <p class="alert quoteBlue"><strong>Note</strong>: The version of Python being used in this lab is Python 3.4. On your own computer, you may not have version 3.4. Try loading just <code>python</code> if you don't have version 3. There are a few differences with Python 2.x, but everything in this lab should work well in both versions.</p>
+        <br />
+        <p>
+            The <code>>>></code> indicates where to enter python code. After typing a line of code, hitting the <code>Enter</code> key will tell the python interpreter to run the instruction.  Try typing the following into the interpreter:
+        </p>
+        <p><pre><code>
+>>> 3 + 5
+8
+        </code></pre></p>
+        <p>
+            If the text cursor is on a line beginning with <code>>>></code>, the command line window has an active python interpreter open. <b>From here you won't be able to run any other command.</b> To leave the python interpreter type the exit command <code>exit()</code> and hit the <code>Enter</code> key.
+        <p><pre><code>
+>>> exit()
+Alonzos-MacBook:~ alonzo$
+        </code></pre></p>
+        <p>
+            Any functions or variables created in the python interpreter are erased when the <code>exit()</code> command is run.
+        </p> 
+
+    </body>
+</html>

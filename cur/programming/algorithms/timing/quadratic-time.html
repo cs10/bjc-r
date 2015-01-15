@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-<script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script><title>Quadratic-Time</title><!--ORIGINAL NAME: Quadratic-Time--></head><body>
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Quadratic-Time</title><!--ORIGINAL NAME: Quadratic-Time--></head><body>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;In the timing experiments of the previous
 section, you may have noticed that the running time of the block
 increases approximately by a factor of four when the size of the list
@@ -11,27 +11,48 @@ In general, as we scale the size of the list by a certain amount, we
 also scale the running time of the block by the square of that
 amount.&nbsp; If we were to plot the running time of the block against
 the size of the list, we would get a parabola or a quadratic function,
-because as we move along a parabola, any increase in the <tt>x</tt>-coordinate corresponds to a squared increase in the <tt>y</tt>-coordinate.&nbsp; Algorithms similar to that used by this block are thus called <strong>quadratic-time</strong> algorithms. </p>
+because as we move along a parabola, any increase in the <code>x</code>-coordinate corresponds to a squared increase in the <code>y</code>-coordinate.&nbsp; Algorithms similar to that used by this block are thus called <strong>quadratic-time</strong> algorithms. </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Why does the algorithm that checks for the
 distinctness of elements in a list run in quadratic-time?&nbsp; Let's
 think about how many comparisons we have to do in the worst-case, for a
-list of length <tt>N</tt>.&nbsp; We compare the first number against <tt>(N - 1)</tt> numbers, the second number against <tt>(N - 2)</tt> numbers, the third number against <tt>(N - 3)</tt>
+list of length <code>N</code>.&nbsp; We compare the first number against <code>(N - 1)</code> numbers, the second number against <code>(N - 2)</code> numbers, the third number against <code>(N - 3)</code>
 numbers, and so on, until we reach the last number (if we're unlucky),
 which we have to compare against no other number.&nbsp; In total, we
-have to do <tt>(N - 1) + (N - 2) + (N - 3) + ... + 2 + 1</tt> total comparisons, which, <a href="/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html">according to Gauss</a>, is <tt>[N * (N - 1)]/2</tt> total comparisons, or <tt>(N<sup>2</sup> - N)/2</tt> total comparisons.&nbsp; For large values of <tt>N</tt>, the <tt>N<sup>2</sup></tt> term begins to eclipse the value of <tt>N</tt>:</p>
+have to do <code>(N - 1) + (N - 2) + (N - 3) + ... + 2 + 1</code> total comparisons, which, <a href="/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html">according to Gauss</a>, is <code>[N * (N - 1)]/2</code> total comparisons, or <code>(N<sup>2</sup> - N)/2</code> total comparisons.&nbsp; For large values of <code>N</code>, the <code>N<sup>2</sup></code> term begins to eclipse the value of <code>N</code>:</p>
 
-<table style="font-size: 1em; line-height: inherit; border-collapse: collapse;" id="t5m:" border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr style="text-align: left;"><td width="20%"><tt>N</tt></td>
-			<td width="20%"><tt>10</tt></td>
-			<td width="20%"><tt>100</tt></td>
-			<td width="20%"><tt>1000</tt></td>
-			<td width="20%"><tt>10000</tt></td>
-		</tr><tr style="text-align: left;"><td width="20%"><tt>N<sup>2</sup></tt></td>
-			<td width="20%"><tt>100</tt></td>
-			<td width="20%"><tt>10000</tt></td>
-			<td width="20%"><tt>1000000</tt></td>
-			<td width="20%"><tt>100000000</tt></td>
-		</tr></tbody></table><p>&nbsp;&nbsp;&nbsp;&nbsp;The difference between <tt>N<sup>2</sup></tt> and <tt>N</tt> is more pronounced for even larger values of <tt>N</tt>.&nbsp; Since we only care about the runtime of algorithms for really large inputs, we say that the contribution of the <tt>N</tt> term is essentially negligible, and that the runtime of the algorithm varies as <tt>N<sup>2</sup></tt>.</p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;You may find the approximation of <tt>(N<sup>2</sup> - N)/2</tt> as <tt>N<sup>2</sup></tt>
+<!-- blank n n^2-->
+<table style="font-size: 1em; line-height: inherit; border-collapse: collapse;" id="t5m:" border="1" cellpadding="3" cellspacing="0" width="100%"> <tbody><tr style="text-align: left;">
+  <caption align="left">Quadratic Time</caption>
+  <tr>
+  	<th>Size of input</th>
+    <th><code> N </code></th>
+    <th><code>N<sup>2</sup></code></th>
+  </tr>
+  <tr>
+    <td>N = 10</td>
+    <td>10</td>
+    <td>100</td>
+  </tr>
+    <tr>
+    <td>N = 100</td>
+    <td>100</td>
+    <td>10,000</tr>
+  </tr>
+    <tr>
+    <td>N = 1,000</td>
+    <td>1,000</td>
+    <td>1,000,000</td>
+  </tr>
+    <tr>
+    <td>N = 10,000</td>
+    <td>10,000</td>
+    <td>100,000,000</td>
+  </tr>
+</table>
+
+
+		<p>&nbsp;&nbsp;&nbsp;&nbsp; The difference between <code>N<sup>2</sup></code> and <code>N</code> is more pronounced for even larger values of <code>N</code>.&nbsp; Since we only care about the runtime of algorithms for really large inputs, we say that the contribution of the <code>N</code> term is essentially negligible, and that the runtime of the algorithm varies as <code>N<sup>2</sup></code>.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;You may find the approximation of <code>(N<sup>2</sup> - N)/2</code> as <code>N<sup>2</sup></code>
 a bit shocking (mathematicians definitely do); however, in computer
 science, we make many such approximations because we don't want to
 drown ourselves in too much detail, and also because this <strong>runtime analysis</strong>

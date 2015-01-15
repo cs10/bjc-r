@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+	<title>Even numbers</title>
+    </head>
+
+    <body>
+	<p>
+	    We want a block that takes a list of numbers as input, and reports a list of just the even numbers from the input.
+	</p>
+	<p>
+	    Once again, you already know how to write this block using the <code>
+		keep</code>
+	    HOF, but we're going to forget about HOFs for the moment and write it recursively:
+	</p>
+	<p><img src="/bjc-r/img/recur/reporters/evens.png" alt="evens" />
+	</p>
+	<p>
+	    Here there are <em>three </em>possible cases to consider, not just the usual base case or recursive case. There's still a base case, namely an empty input list, in which case we report an empty list. But there are <em>two </em>recursive cases, depending on whether or not the first item of the list is even. (There has to be a first item, if we're not in the base case.) The green Operators blocks above take the remainder on dividing the first number by 2, and see if that remainder is 0, in which case the number is even.
+	</p>
+	<p>
+	    If the first number is even, then we want to include that number in the result. So we report that number <code>
+		in front of</code>
+	    the recursive call on the rest of the numbers. If the first number isn't even, then we <em>don't </em>want to include it in the result, so we simply report the value reported by the recursive call.
+	</p>
+	<hr />
+	<p>
+	    Do the following exercises using recursion, not higher order functions.
+	</p>
+	<p>
+	    ☞ Write a block <code>
+		ends-e</code>
+	    that takes a list of words as input, and reports a list of those words from the input whose last letter is <code>
+		e</code>
+	    .
+	</p>
+	<p><img src="/bjc-r/img/recur/reporters/endse-ex.png" alt="ends-e example" />
+	</p>
+	<p>
+	    ☞ Write a block <code>
+		numbers</code>
+	    that takes a list of mixed words and numbers as input, and reports a list of just the numbers from the input list.
+	</p>
+	<p><img src="/bjc-r/img/recur/reporters/num-ex.png" alt="numbers example" />
+	</p>
+	<p>
+	    ☞ Generalize the pattern to make a <code>
+		keep items such that</code>
+	    block.
+	</p>
+	<hr />
+	<p>
+	    ☞ Write the <code>
+		combine with</code>
+	    block. Note: The base case will be a list with one item, not an empty list.
+	</p>
+	<p>
+	    ☞ Modify the <code>
+		sort</code>
+	    block you wrote earlier to take a comparison predicate as an input, so you can say
+	</p>
+	<p><img src="../../../../img/recur/reporters/sortusing.png" alt="sort (list) using (&gt;) to compare" />
+	</p>
+	<p>
+	    to sort numbers with the <em>largest</em> one coming first.
+	</p>
+    </body>
+</html>

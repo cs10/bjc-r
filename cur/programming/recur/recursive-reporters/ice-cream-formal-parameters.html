@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Formal Parameters</title>
+</head>
+
+<body>
+<p>Before you actually solve this problem, we have to make a slight detour to explain a notation we haven't used before.</p>
+<p>You're going to want to nest one higher order function call inside another:</p>
+<p><img src="/bjc-r/img/recur/reporters/mapmap.png" alt="map of map" /></p>
+<p>Inside the inner ring, there are two things an empty box might mean, an item from the inner list or an item from the outer list. For example, you want to find all the possible sums of numbers, one from each of two lists:</p>
+<p><img src="/bjc-r/img/recur/reporters/mapsum.png" alt="map of map of +" /></p>
+<p>Your intention here is that the left input of <code>+</code> should be one of 2, 3, or 4; the right input should be one of 50 or 60. But Snap<em>! </em>can't read your mind. What actually happens is that the inner <code>map</code> call puts one of 2, 3, or 4 into <em>both </em>empty input slots, so the only numbers in the result are 4, 6, and 8 (2+2, 3+3, and 4+4).</p>
+<p>In this situation you need a way to <em>name</em> the inputs to the two ringed functions. If you click the right arrow at the end of a ring, it looks like this:</p>
+<p><img src="/bjc-r/img/recur/reporters/mapinput.png" alt="map with input name" /></p>
+<p>The orange oval works just like a variable in a <code>script variables</code> block; you can change its name by clicking on it, and you can drag it into the function inside the ring. Now you can nest <code>map</code> blocks and be explicit about which value goes where:</p>
+<p><img src="/bjc-r/img/recur/reporters/mapsum-formal.png" alt="map of map of + with input names" /></p>
+<p>The result is a list of lists, rather than a list of six numbers, but at least they're the right numbers! Flattening the result is left as an exercise for the reader.</p>
+<p>The technical term for a function's input names is its <em>formal parameters, </em>or sometimes just &quot;parameters.&quot;</p>
+<blockquote>
+  <p>☞ Okay, if you're a no-hints person, write <code>menu</code>. Otherwise turn the page.</p>
+</blockquote>
+</body>
+</html>

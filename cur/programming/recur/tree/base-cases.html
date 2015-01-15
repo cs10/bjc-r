@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Base Cases</title><!--ORIGINAL NAME: Base Cases--></head><body><div style="text-align: center;">
+  <div style="text-align: left;">Now that you have some experience with recursion, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the end of this page.<br><ul>
+      <li>We always need a way to figure out that we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
+      <li>If this isn't the base case we think to ourselves "Woah &#8212; That seems complicated. I'll just do a small part of the problem and delegate to someone else". Here's what we do:<br></li>
+      <ul><li>draw the trunk of the tree (line 6), <br></li>
+        <li>position the sprite for the left sub-tree (line 7), <br></li>
+        <li>delegate to another copy of the tree block the drawing of the left sub-tree (line 8), </li>
+        <li>re-position the sprite for the right sub-tree (line 9),</li>
+        <li>delegate to another copy of the tree block the drawing of the right sub-tree (line 10),</li>
+        <li>re-position the sprite to retrace the trunk (line 11), and<br></li>
+        <li>retrace the trunk and leave the sprite exactly where it started out.
+      <br>
+  <br>
+        </li>
+      </ul></ul></div><img src="/bjc-r/img/lab-10/tree-with-base-case-snap.png" alt="tree with base case" title="Tree with base case" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/TreeWithbaseCase.jpg" border="0"></div>
+  </body></html>

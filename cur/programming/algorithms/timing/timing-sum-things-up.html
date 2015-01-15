@@ -2,48 +2,48 @@
 <html><head><!-- put the following in exactly -->
 
 	
-		<script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script><title>Timing Sum-thing's Up</title><!--ORIGINAL NAME: Sum-thing's Up--></head><body>
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Timing Sum-thing's Up</title><!--ORIGINAL NAME: Sum-thing's Up--></head><body>
 		<p>
 			We will now see an example where the runtime of an algorithm really does make a difference. 
 			Remember the game you played with young Gauss at the beginning of lab? 
-			We will implement the game in Snap!.
+			We will implement the game in <span class="snap">snap</span> .
 		</p>
 		<p>
 			<a href="/bjc-r/cur/programming/loops/sum-things-up.html">Earlier in the lab</a>, 
-			you made a block that returned the sum of numbers between <tt>1</tt> and <tt>max</tt>. 
-			In the <tt>Variables</tt> menu, you will see two blocks:
+			you made a block that returned the sum of numbers between <code>1</code> and <code>max</code>. 
+			In the <code>Variables</code> menu, you will see two blocks:
 		</p>
 		<div style="margin-left: 40px;">
 			<img style="width: 241px; height: 61px;" alt="add all numbers in list" src="../../../../img/list/add-numbers-to-list-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/AddBlocks.gif">
 		</div>
 		<p>
-			The first block sums up the numbers in the <tt>numbers</tt> list the normal, "non-Gauss" way: 
+			The first block sums up the numbers in the <code>numbers</code> list the normal, "non-Gauss" way: 
 			walking through the list and adding the numbers one by one. 
-			The second block sums up the numbers the "Gauss" way: using the formula <tt>(N + 1) * N/2</tt>, where, 
-			in this case, <tt>N</tt> is the same as <tt>max</tt>. 
+			The second block sums up the numbers the "Gauss" way: using the formula <code>(N + 1) * N/2</code>, where, 
+			in this case, <code>N</code> is the same as <code>max</code>. 
 			(<a href="/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html">How did we get this formula?</a>) 
 			Complete the bodies of these blocks.
 		</p>
 		<p>
 			Once you are done, drag the first block (the "non-Gauss" block) onto the stage and place it immediately after the 
-			<tt>add all numbers between 1 and max</tt> block. Also, move the <tt>reset timer</tt> block <em>after</em> 
-			the <tt>add all numbers between 1 and max</tt> block, since we only need to time how long the "non-Gauss" 
-			block takes to sum the numbers in the <tt>numbers</tt> list.
+			<code>add all numbers between 1 and max</code> block. Also, move the <code>reset timer</code> block <em>after</em> 
+			the <code>add all numbers between 1 and max</code> block, since we only need to time how long the "non-Gauss" 
+			block takes to sum the numbers in the <code>numbers</code> list.
 		</p>
 		<p>
-			Now, run the script with <tt>max</tt> set to <tt>10</tt>. Again, run it a few times to 
+			Now, run the script with <code>max</code> set to <code>10</code>. Again, run it a few times to 
 			get an idea of the average time the computer takes to sum the numbers up. 
-			Repeat the experiment with <tt>max</tt> set to <tt>20</tt>, <tt>40</tt>, 
-			<tt>100</tt>, and <tt>1000</tt>. Based on your observations, what kind of 
+			Repeat the experiment with <code>max</code> set to <code>20</code>, <code>40</code>, 
+			<code>100</code>, and <code>1000</code>. Based on your observations, what kind of 
 			runtime does the "non-Gauss" block have: constant, 
 			linear, or neither? Why do you think this is the case?
 		</p>
 		<p>
 			Replace the "non-Gauss" block with the "Gauss" block. 
-			Once more, run the script with <tt>max</tt> set to <tt>10</tt>. 
+			Once more, run the script with <code>max</code> set to <code>10</code>. 
 			Again, run it a few times to get an idea of the average time the 
 			computer takes to sum the numbers up. Repeat the experiment with 
-			<tt>max</tt> set to <tt>20</tt>, <tt>40</tt>, <tt>100</tt>, and <tt>1000</tt>. 
+			<code>max</code> set to <code>20</code>, <code>40</code>, <code>100</code>, and <code>1000</code>. 
 			Based on your observations, what kind of runtime does the 
 			"Gauss" block have: constant, linear, or neither? 
 			Why do you think this is the case?

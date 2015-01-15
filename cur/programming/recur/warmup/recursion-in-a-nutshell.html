@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Recursion in a Nutshell</title><!--ORIGINAL NAME: Recursion in a Nutshell--></head><body>
+
+We have spent the last couple of labs learning about recursion.  You have probably realized that the technique for <em>writing</em> recursive blocks is relatively straightforward, although the body of the block can be a bit tricky to figure out until you have gotten enough practice, or have worked through several examples of what the block should do.
+
+<br><br>
+
+When performing recursion, we try to reduce a large problem into a series of similar, smaller problems that can be solved in a similar ways.  In fact, it is often best if we can reduce the large problem into a collection of <em>trivially small</em> problems.  For example, finding the <a href="http://en.wikipedia.org/wiki/Factorial">factorial</a> of a number is an operation that is often written recursively because each solution builds off of the solution before it (5! = 4! * 5; 12! = 11! * 12).  It can be written recursively as a set of trivially small problems (each step only multiplies two numbers) that build up to a significant solution.
+
+<br><br><img border="0" src="/bjc-r/img/recur/factorial.png" alt="The factorial block in BYOB" title="The factorial block in BYOB" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/factorial.png"><br><br>
+
+The process for writing recursive functions can be summarized in a few steps:
+<ol><li><strong>Determine the <em>base case.</em></strong>  The base case is the simplest possible solution to the overall problem. In the example of the factorial, it is simple to find the answer when the number provided is <code>1</code>: the answer will always be 1.  <em>Every recursive problem has a base case</em> -- sometimes it will be straightforward and other times, it may require a little more thought.  What would be the base case for the following recursive problems?<br><ul><li>Searching through a list for the first occurrence of a particular number and replacing it with zero.</li>
+<li>Counting the number of elements in a list.</li>
+<li>Computing X<sup>Y</sup>, where X and Y can both be specified as arguments to the block.</li>
+</ul></li><li><strong>Choose a more complicated example.</strong> Continuing our work on the factorial problem, we will consider <img border="0" title="Factorial of 10" alt="Factorial of 10" src="/bjc-r/img/recur/factorial-of-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/factorial_10.png">.  We could choose any number here: 3, 5, 100, 24481, as long as it is not the base case.  Hint: sometimes choosing values right next to the base case (2, in this case) makes it harder to detect the relationship in step 3, but any value outside of the base case will do.</li>
+
+<li><strong>Consider an example that is <em>slightly simpler</em> (closer to the base case) than the complicated example.</strong> <img border="0" title="Factorial of 9" alt="Factorial of 9" src="/bjc-r/img/recur/factorial-of-9.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/factorial_9.png"> might work here.  Assuming that we can get the answer to <img border="0" title="Factorial of 9" alt="Factorial of 9" src="/bjc-r/img/recur/factorial-of-9.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/factorial_9.png">, how would we use its solution to help us find <img border="0" title="Factorial of 10" alt="Factorial of 10" src="/bjc-r/img/recur/factorial-of-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/factorial_10.png">?  Figuring this out will allow us to determine the "relationship" between solutions, which is a pivotal point in writing a recursive function. In this case, 10! = 9! * 10, which shows a clear relationship that we can represent in BYOB.</li>
+</ol></body></html>

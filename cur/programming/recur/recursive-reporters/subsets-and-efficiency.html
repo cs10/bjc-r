@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+<title>Subsets and Efficiency</title>
+</head>
+
+<body>
+<p>Does your solution look like this?</p>
+<p><img src="/bjc-r/img/recur/reporters/subset-slow.png" alt="slow solution" /></p>
+<p>The trickiest part is working out what to report in the base case. You're always supposed to report a <em>list of subsets. </em>The empty set has one subset, namely itself. So you report a list containing the empty set (an empty list, in other words).</p>
+<p>For the recursive case, the hints noted that the set {Apple, Orange, Banana} has four subsets that include Apple:</p>
+
+  <table width="100%">
+    <tr>
+      <td width=25%>{Apple}</td>
+      <td width=25%>{Apple, Orange}</td>
+      <td width=25%>{Apple, Banana}</td>
+      <td width=25%><p>{Apple, Orange, Banana}</p></td>
+    </tr>
+  </table>
+
+<p>and four subsets that don't:</p>
+
+  <table width="100%">
+    <tr>
+      <td width=25%>{}</td>
+      <td width=25%>{Orange}</td>
+      <td width=25%>{Banana}</td>
+      <td width=25%>{Orange, Banana}</td>
+    </tr>
+  </table>
+
+<p>Each Apple-containing subset is the same as the one below it, but with Apple inserted. And, most important, the ones that don't contain Apple can be found by a recursive call, <code>(subsets (all but first of (set)))</code>.</p>
+<p>As usual in recursive reporters, there's a combining block, in this case <code>append</code>, which strings together the items of two (in this case) input lists. To find the complete result, append the no-Apple subsets with the result of putting Apple in front of each no-Apple subset.</p>
+<p>This solution should remind you of the <code>pascal</code> block, which makes two recursive calls and adds the results. But the <code>pascal</code> block makes two recursive calls <em>with different inputs. </em>This subsets implementation makes <em>the same </em>recursive call twice. That turns out to be really inefficient.</p>
+<blockquote>
+  <p>☞ Using a <code>count</code> variable, as you did for the <code>pascal</code> block, count how many recursive calls are made to find the 64 subsets of a six-element list.</p>
+  <p>☞ Figure out how to reduce the number of recursive calls by avoiding redundant calls.</p>
+</blockquote>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Self Test: Subsets
+        </title>
+    </head>
+    <body>
+            
+            <img src="/bjc-r/img/recur/reporters/subsets-framework.png"/>
+	    <p>
+		(you can find the <code>append</code> block by importing the "List utilities" library)
+	    </p>
+        
+        <!-- question 1 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="triange-turning"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp1" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    How many subsets does the empty set {} have?
+                </p>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    0
+                </div>
+                <div class="feedback">
+                    No. Remember, every subset is a subset of itself.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    1
+                </div>
+                <div class="feedback">
+                    Correct! The only subsets of the empty set are the empty set.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    2
+                </div>
+                <div class="feedback">
+                    No. Think about what the subsets would be.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    4
+                </div>
+                <div class="feedback">
+                    No. Think about what the subsets would be.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    What should subsets report in the base case?
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    A list containing a list with each item of the set. 
+                </div>
+                <div class="feedback">
+                    No. How many subsets does the empty set have? Remember, every set is the subset of itself.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    A list containing a list with the first item of the set.
+                </div>
+                <div class="feedback">
+                    No. How many subsets does the empty set have? Remember, every set is the subset of itself.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    A list containing an empty list.
+                </div>
+                <div class="feedback">
+                    Correct!
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    A list containing a list with randomly chosen items from the set.
+                </div>
+                <div class="feedback">
+                    No. How many subsets does the empty set have? Remember, every set is the subset of itself.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>
+
+                <!-- question 3 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="triange-turning"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp3" shuffle="false" >
+            <div class="prompt">
+                <p>
+                    How many subsets of {Apple, Orange, Banana} contain Apple?
+                </p>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    1 
+                </div>
+                <div class="feedback">
+                    No. Both {Apple, Banana} and {Apple} are subsets of {Apple, Orange, Banana}, so there is
+		    clearly more than one subset containing Apple.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    4
+                </div>
+                <div class="feedback">
+                   Correct! - [Apple]  [Apple, Orange]  [Apple, Banana]  [Apple, Orange, Banana]
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    6
+                </div>
+                <div class="feedback">
+                    No. Think about the individual subsets that would contain Apple.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    8
+                </div>
+                <div class="feedback">
+                    No. Could all subsets contain Apple?
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp3">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+        </div>
+    </body>
+</html>

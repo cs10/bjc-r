@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly -->
+
+
+
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Recursion</title><!--ORIGINAL NAME: Recursive Tree Part 1--></head><body>
+		<p>
+			Our goal is to draw a tree like this:
+			<br>
+		</p>
+		<img class="center" src="/bjc-r/img/recur/real-tree.jpg" alt="" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/nicetree.jpg" border="0">
+
+		<p>
+			but we'll start with a simpler version that shows the technique clearly, although less prettily:
+
+		</p>
+		<img class="center" src="/bjc-r/img/recur/normal-recursive-tree-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/fulltree.jpg" border="0">
+		<br>
+
+		<p>
+			The key to understanding this technique is to see that the tree is a <i>fractal,</i> that is, a picture that contains smaller versions of itself:
+			<br>
+		</p>
+		<img class="center" src="/bjc-r/img/recur/split-recursive-tree-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/splittree.jpg" border="0">
+		<p>
+			We're going to create a <code>tree</code> block in Snap<em>!</em>. It'll start with a <code>move</code> block to draw the trunk of the tree, then a <code>turn</code> block turning left, <i>then a <code>tree</code> block</i> to draw the left smaller tree, and so on.
+		</p>
+		<p>
+			"Wait!" you're probably thinking. "How can we use a <code>tree</code> block inside a <code>tree</code> block? It doesn't exist yet!" That's the big idea for this assignment.
+		</p>
+		<p>
+			We're going to work up to the complicated tree starting with very simple steps.
+		</p>
+		<p>
+			1. Make a <code>tree1</code> block (so named because it draws just one level of the tree) using this script: <br>
+		</p>
+		<img class="center" title="There should be an image here" alt="" src="/bjc-r/img/recur/tree1.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg" border="0">
+
+
+		<p>
+			This looks ridiculously simple, but trust us, it'll get interesting soon. When run, the script draws one tree branch, <i>and then moves the sprite back
+            to its original position.</i> That's going to be really important when we start using scripts within scripts; we always want to be able to assume that our
+            tree blocks leave the sprite in the same position and direction as it started in.
+		</p>
+		<p>
+			2. <strong>Point the sprite facing upward</strong>, and put the pen down. Then try <code>tree1 size 50</code>. You should get a result something like this: <br>
+	</p>
+		<img class="center" src="/bjc-r/img/recur/tree-level1-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1.jpg" border="0">
+
+		<p>
+			3. Make a <code>tree2</code> block that draws two levels. Actually, you're going to make two different versions of this, so call the first one <code>tree2a</code>.<br>
+		</p>
+		<img class="center" title="" alt="" src="/bjc-r/img/recur/tree2a.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg" border="0">
+
+		<p>
+			When run, it should give this result:
+			<br>
+		</p>
+		<img class="center" src="/bjc-r/img/recur/tree-level2.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2.jpg" border="0">
+
+		<p>
+At this rate you'll never be able to make the beautiful version of the
+tree in this century. In the next step, we'll discuss how to simplify
+this process. <br>
+    </p>
+		<p> Before going on, make sure that you can
+mentally trace through the code provided. Paying close attention to the
+forwards and turns is going to be important to see the big picture and
+understand the recursion. <br>
+    </p>
+	</body></html>

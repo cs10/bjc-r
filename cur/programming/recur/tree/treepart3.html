@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Recursive Tree Part 3</title></head><body>
+<p>Last time, we tried to generalize this pattern:</p>
+<p><img src="../../../../img/recur/tree2.png" alt="tree2">  &nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../img/recur/tree3.png" alt="tree3"> &nbsp;&nbsp;&nbsp;&nbsp;<img src="../../../../img/recur/tree4.png" alt="tree4"></p>
+<p>by making a single block that took the level number as an <em>input, </em>instead of as part of the block name:</p>
+<p><img src="../../../../img/recur/tree-nobase.png" alt="tree script first version"></p>
+<p>Unfortunately, it did not work:</p>
+<p><img src="../../../../img/recur/treefail.png" alt="picture of failing tree"></p>
+<p>The sprite draws smaller and smaller left branches, finally just
+spinning around in one place, without ever drawing a right branch.</p>
+<p>What went wrong? The problem is that the original numbered <code>tree</code> scripts <em>aren't </em>all the same. The first one, <code>tree1</code>, is different; it just draws a trunk, without any branches:</p>
+<p><img src="../../../../img/recur/tree1.png" alt="tree1 script" /></p>
+<p>So our all-in-one <code>tree</code> block has to do something different from what's now in the script for the case <code>levels=1</code>.</p>
+<p><img src="../../../../img/recur/tree.png" alt="correct tree script" /></p>
+<p>With this change, we can draw trees of any complexity. Here's a level-9 tree:</p>
+<p><img src="../../../../img/recur/tree9.png" alt="picture of tree on stage" /></p>
+<p>(Note: the amount of time required to draw the tree goes up very quickly with the number of levels, so we don't recommend trying 100 levels.)</p>
+<p>This general code pattern, with a simple <em>base case </em>that doesn't call the block itself, is typical of recursion. (<em>Recursion </em>is the name for a block that calls itself in its script.) There's a base case and a recursive case.</p>
+<p>Questions:</p>
+<p>1. What's the base case in the <code>tree</code> program?</p>
+<p>2. Sometimes you can make a recursive procedure more elegant by having a smaller base case. In our <code>tree</code> program, what would a &quot;zero level&quot; tree mean? Try rewriting <code>tree</code> so that the base case is <code>levels=0</code>.</p>
+<p>3.See if you can make a tree like the first picture in this activity:</p>
+<p><img src="../../../../img/recur/real-tree.jpg" alt="beautiful tree"></p>
+<p> It is different from what we have done so far because the smaller
+trees are drawn part way up the trunk, instead of at the top of the
+trunk, and because the pen color is green for the lowest-level branches
+(the <code>tree1</code>-like ones) and brown for the others. You do
+not have to get it exactly like the picture; just try to make a more
+realistic-looking tree. </p>
+</body></html>

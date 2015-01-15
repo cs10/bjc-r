@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Frequency Analysis</title>
+    </head>
+    <body>
+
+     <p class="alert alert-danger">
+            This section deals with mining of words through conditional frequency analysis and plotting data. 
+     </p>
+
+
+
+    <p>
+		We have finally gotten our Jay Z Corpus! The data that we collected has a 112,871 words. You can see for yourself by running the <code>len</code> (python function for figuring out the length of a list) on <code>the_corpus</code>. This is great, because we are interested in the first 35,000 words of the corpora, in order to recreate the data science experiment of the hip-hop vocabulary; which determines the number of unique words used within an artist's first 35,000 lyrics.
+		<pre><code> >>len(the_corpus) <br> 112871 </code></pre>
+		The corpus is stored in a list data structure, which lends itself to list manipulation techniques. You can see all the ways you can interact with a list in the python documentation here <a href="https://docs.python.org/2/tutorial/datastructures.html">https://docs.python.org/2/tutorial/datastructures.html</a>
+	</p>
+
+	 <p style="clear:both" class="alert quoteBlue">
+    Did you know that 80-90% of time spent on data projects is gathering data and putting it into a format you can analyze? Geez
+     </p>
+
+	<p>
+		Let's take a look inside <code>the_corpus</code>, to determine what the first 10 words are.
+	</p>
+	        <p><pre><code>
+>> the_corpus[:10] 
+['Dreamed',
+'of',
+'you',
+'this',
+'morning',
+'Then',
+'came',
+'the',
+'dawn',
+'and']
+        </code></pre></p>
+
+
+	<h2>Frequency Analysis</h2><sup><a href="#fn1" id="ref1">1</a></sup>
+	<p>
+	Here's a little secret: much of NLP (and data science, for that matter) boils down to counting things. If you've got a bunch of data that needs analyzin' but you don't know where to start, counting things is usually a good place to begin. Sure, you'll need to figure out exactly what you want to count, how to count it, and what to do with the counts, but if you're lost and don't know what to do, just start counting. 
+    </p>
+
+    <p>
+    	Lets slice the corpus down to the first 35,000 words.
+    </p>
+
+    <pre>
+    	<code> >> the_corpus[:35000]</code>
+    </pre>
+
+    <p>
+    	We can now go ahead an figure out the number of unique words used in Jay Z's first 35,000 lyrics. An astute observer will notice that we have not done any data cleaning. For example, take a look inside a slice of the corpus, the last 10 words <code>the_corpus[34990:35000]</code>, <code>['calm', 'your', 'boys', 'Cause', 'I', 'm', 'findin', 'it', 'a', 'little']</code>, you will see it has treated the contraction "I'm" as two separate words. While this is kind of correct, "m," is not a recognized english word. Below is the function that calculates lexical diversity
+    </p>
+
+    <p><pre><code>
+def lexical_diversity(my_text_data):
+	word_count = len(my_text_data)
+	vocab_size = len(set(my_text_data))
+	diversity_score = word_count / vocab_size
+	return diversity_score
+    </code></pre></p>
+
+    <p>
+    If we call our function on the Jay Z sliced corpus, it should give us a score. 
+    <pre><code>>>lexical_diversity(the_corpus[:35000])<br> 6</code></pre> The lexical diversity of Jay Z's first 35,000 lyrics is 6
+    </p>
+
+	<h3>Exercise - Have your own fun, who is more apt with the word, Jane Austen or Jay Z?</h3>
+          <p>
+              You can find the code we have written so far in <a a href="/~cs10/labs/prog/python/lexical_diversity.py">Lexical_Diversity.py</a>	 file. Write your own code, to figure out the lexical diversity of the King James Bible and  Jane Austen's Emma, as compared to Jay Z's.
+
+          </p>
+           <p>
+              Write a function that determines the # of unique words used in King James Bible, Jane Austen's Emma and Jay Z's corpus. The function <code>NumberOfUniqueWords(SomeCorpus)</code> takes one argument (a corpus) and returns the computed result. Below are a few example inputs. 
+
+          </p>
+           <p><pre><code>
+>>> NumberOfUniqueWords(emma[:35000])
+3449
+>>> NumberOfUniqueWords(the_corpus[:35000])
+1036
+        </code></pre></p>
+        
+
+	<sup id="fn1">1. Some of this content has been adapted from Charlie Greenbacker's <a href="https://github.com/charlieg/A-Smattering-of-NLP-in-Python">"A smattering of NLP in python</a><a href="#ref1" title="Jump back to footnote 1 in the text."></a></sup>
+	
+    </body>
+</html>

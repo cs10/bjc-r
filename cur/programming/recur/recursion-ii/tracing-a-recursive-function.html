@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title>Tracing a Recursive Function</title><!--ORIGINAL NAME: Tracing a Recursive Function-->
+    </head>
+    <body>
+        What really happens when we call the function below with the argument 3?
+        <br>
+        <img border="0" src="/bjc-r/img/recur/say-numbers-3-to-0-block.gif" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Tracing/Recursive_Call_3.gif">
+        <br>
+        <br>
+        The flow chart below attempts to show what actually happens! The arrows are numbered to show the sequence of events. We didn't show the sequence of events within each function because we assume you feel comfortable tracing the individual functions.
+        <br>
+        <ul>
+            <li>
+                The functions have the argument "x" replaced by the actual value.
+                <br>
+            </li>
+            <li>
+                The black arrows show "delegation" to another COPY of the function (i.e. a recursive call)
+                <br>
+            </li>
+            <li>
+                The white arrows show the return of control to the calling function. If the caller had any lines after the recursive call, those would be executed. Later we will work with command blocks, and the white arrow will indicate the recursive call returning a value.<img border="0" src="/bjc-r/img/recur/reverse-say-number-recursion-trace2.jpg" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Tracing/RecursiontraceVersion2.jpg">
+                <br>
+            </li>
+        </ul>
+    </body>
+</html>

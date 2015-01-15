@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 	<head>
-		<script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script>
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<title>Brick Wall</title>
 	</head>
@@ -16,10 +16,10 @@
 			<span style="margin-left: 40px;"><img border="0" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/abstraction/brickwall/cat-wall.png" /></span>
 		</p>
 		<p>
-			Consider the above picture. A person sees a cartoon cat and a brick wall. The computer sees 0s and 1s. It would be very difficult (and time-consuming!) for a person to write out all the 0s and 1s needed to tell the computer how to draw the brick wall. A programming language, such as Snap!, makes it easier to tell the computer what to do. It masks away all the details of the 0s and 1s through a process called abstraction.
+			Consider the above picture. A person sees a cartoon cat and a brick wall. The computer sees 0s and 1s. It would be very difficult (and time-consuming!) for a person to write out all the 0s and 1s needed to tell the computer how to draw the brick wall. A programming language, such as <span class="snap">snap</span> , makes it easier to tell the computer what to do. It masks away all the details of the 0s and 1s through a process called abstraction.
 		</p>
 		<p>
-			While Snap! has lots of blocks for drawing and moving, it doesn't have anything about bricks. It wouldn't make sense to have one in general because most programs don't involve bricks. But ones that do could really use a <img src="/bjc-r/img/abstraction/brickwall/draw-brick.png" alt="draw-brick" /> block. <img src="/bjc-r/img/abstraction/brickwall/draw-brick.png" alt="draw-brick" /> is English and moves us even further away from having to talk like a computer. The process of moving from what the programming language gives you to a natural language (one that humans speak to communicate--in this case, English) is critical to a good abstraction.
+			While <span class="snap">snap</span>  has lots of blocks for drawing and moving, it doesn't have anything about bricks. It wouldn't make sense to have one in general because most programs don't involve bricks. But ones that do could really use a <img src="/bjc-r/img/abstraction/brickwall/draw-brick.png" alt="draw-brick" /> block. <img src="/bjc-r/img/abstraction/brickwall/draw-brick.png" alt="draw-brick" /> is English and moves us even further away from having to talk like a computer. The process of moving from what the programming language gives you to a natural language (one that humans speak to communicate--in this case, English) is critical to a good abstraction.
 		</p>
 		<p>
 			In this problem, you will build an abstraction for drawing a brick wall, first by creating <img src="/bjc-r/img/abstraction/brickwall/draw-brick.png" alt="draw-brick" />, then blocks for drawing rows, and ultimately the goal: <img src="/bjc-r/img/abstraction/brickwall/draw-brick-wall-num.png" alt="draw-brick-wall-n" />.
@@ -97,7 +97,7 @@
 		<p><img src="/bjc-r/img/abstraction/brickwall/abstraction-diagram-brick-wall-blocks.png" alt="abstraction" />
 		</p>
 		<p>
-			At the highest level of abstraction is drawing a whole brick wall. It depends on the next highest level, which provides the capability of drawing the two row types as well as positioning of the sprite doing the drawing. These depend on the next lowest level, which is the drawing of individual bricks and mortar. At the bottom level are the Snap! primitive blocks (i.e., the blocks that come with Snap!, not the ones you write) and initializing the pen, which determines pen size and color.
+			At the highest level of abstraction is drawing a whole brick wall. It depends on the next highest level, which provides the capability of drawing the two row types as well as positioning of the sprite doing the drawing. These depend on the next lowest level, which is the drawing of individual bricks and mortar. At the bottom level are the <span class="snap">snap</span> primitive blocks (i.e., the blocks that come with <span class="snap">snap</span>, not the ones you write) and initializing the pen, which determines pen size and color.
 		</p>
 		<h2>&nbsp;</h2>
 		<h2><strong>Exercises: Drawing the Brick Wall</strong> From the Bottom Up</h2>

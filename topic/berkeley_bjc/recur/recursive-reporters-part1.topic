@@ -16,31 +16,32 @@ learning-goal: Implement higher order functions.
 
 
 heading: Introduction
-	 resource: Recursive Reporters [/bjc-r/cur/programming/recursion/recursive-reporters/recursive-reporters-intro.html]
+	 resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
+	 resource: Examples of Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-examples.html]
 
 heading: Some simple ones
-	 resource: Plurals of Words [/bjc-r/cur/programming/recursion/recursive-reporters/plurals-of-words.html]
+	 resource: Plurals of Words [/bjc-r/cur/programming/recur/recursive-reporters/plurals-of-words.html]
 
 heading: Pascal's Triangle
-	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle.html]
-	 //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-algorithm.html]
-	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-selftest.html]
-	 resource: How long does this computation take? [/bjc-r/cur/programming/recursion/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
+	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle.html]
+	 //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-algorithm.html]
+	 resource: Computing a Number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-selftest.html]
+	 resource: How Long Does This Computation Take? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
 
-heading: List Recursion	 
-	 resource: Even numbers [/bjc-r/cur/programming/recursion/recursive-reporters/even-number-filter-without-generalization.html]
+heading: List Recursion
+	 resource: Even Numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
 
 
 heading: Subsets
-	 resource: Subsets of a Set [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set.html]
-	 resource: Subset hints [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-self-test.html]
-	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-and-efficiency.html]
-	 resource: Fast Subsets [/bjc-r/cur/programming/recursion/recursive-reporters/subsets-of-a-set-fast-soln.html]
+	 resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
+	 resource: Subset hints [/bjc-r/cur/programming/recur/recursive-reporters/subsets-self-test.html]
+	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recur/recursive-reporters/subsets-and-efficiency.html]
+	 resource: Fast Subsets [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set-fast-soln.html]
 
 
 heading: Sorting
-	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting-even-odd.html]
-	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recursion/recursive-reporters/recursively-sorting-merge.html]
+	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-even-odd.html]
+	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
 
 }

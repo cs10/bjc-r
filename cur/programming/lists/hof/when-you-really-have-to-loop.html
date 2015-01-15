@@ -2,7 +2,7 @@
 
     <head>
 
-        <script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 
         <title>
             When you really have to loop
@@ -15,7 +15,7 @@
         <p>
             Consider the following problem:
         </p>
-        <div class="quoteBrown">
+        <div class="alert quoteGreen">
             <p>
                 Write a predicate <code>increasing?</code> that takes a list of numbers as input, and outputs <code>true</code> if the numbers are in increasing order (equal neighbors are okay), or <code>false</code> otherwise.
             </p>
@@ -59,7 +59,7 @@
             minimum allowable value for the next item. If any item is smaller than that
             remembered value, <code>increasing?</code> reports <code>false</code>.
             If we make it to the end of the list without violating that requirement,
-            then <code>increasing? </code>reports <code>true</code>.
+            then <code>increasing?</code> reports <code>true</code>.
         </p>
         <p>
             Note that the <code>for each item</code> block has the word &quot;item&quot;
@@ -67,30 +67,30 @@
             that goes inside the C-slot, instead of using an empty input to
             represent the list item:
         </p>
-        <img class="indent"  src="/bjc-r/img/list/hof/increasing-item.png" alt="for each using item variable">
+        <img class="indent" src="/bjc-r/img/list/hof/increasing-item.png" alt="for each using item variable">
 
 
-        
+
         <p>You can work with the above script <a class="run" href="/bjc-r/prog/loop/increasing.xml">here</a>.</p>
 
         <h2>Try these</h2>
 
         <p class="step">
-            <b>Try this: </b>
+            <b>Try this:</b>
             Display a longish list using time instead of space on the screen
             by <img class="inline" src="/bjc-r/img/blocks/say-fragment.png" alt="say">ing each item for two seconds.
 
         </p>
         <p class="step">
-            <b>Try this: </b>Write an <code>expand</code> reporter that takes a sentence 
-            as input, and reports a sentence that's the same except 
-            that each number in the input is replaced by 
+            <b>Try this:</b> Write an <code>expand</code> reporter that takes a sentence
+            as input, and reports a sentence that's the same except
+            that each number in the input is replaced by
             that many copies of the following word:
             <br><br>
-            <img class="indent" border="0" src="/bjc-r/img/hof/expand-she-loves-you3-yeah-with-report.png" 
-            alt="she loves you 3 yeah -> she loves you yeah yeah yeah" 
+            <img class="indent" border="0" src="/bjc-r/img/hof/expand-she-loves-you3-yeah-with-report.png"
+            alt="she loves you 3 yeah -> she loves you yeah yeah yeah"
             title="she loves you 3 yeah -> she loves you yeah yeah yeah"/>
-       
+
         </p>
     </body>
 </html>

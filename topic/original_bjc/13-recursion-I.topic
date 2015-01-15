@@ -12,18 +12,18 @@ learning-goal: Explore the idea of representing a problem in terms of itself.
 learning-goal: Practice planning and coding recursive blocks.
 
 heading: Tree Recursion
-	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-1.html]
-	resource: Recursive Tree Part 2 [/bjc-r/cur/programming/recursion/tree/recursive-tree-part-2.html]
+	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/recur/tree/recursive-tree-part-1.html]
+	resource: Recursive Tree Part 2 [/bjc-r/cur/programming/recur/tree/recursive-tree-part-2.html]
 	quiz: Different Trees Self Test [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14135]
 	quiz: Different Versions of Tree [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14136]
 	quiz: What was changed? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=14137]
-	resource: Vary your tree [/bjc-r/cur/programming/recursion/tree/vary-your-tree.html]
-	resource: Random Tree [/bjc-r/cur/programming/recursion/tree/random-tree.html]
-	resource: Base Cases [/bjc-r/cur/programming/recursion/tree/base-cases.html]
+	resource: Vary your tree [/bjc-r/cur/programming/recur/tree/vary-your-tree.html]
+	resource: Random Tree [/bjc-r/cur/programming/recur/tree/random-tree.html]
+	resource: Base Cases [/bjc-r/cur/programming/recur/tree/base-cases.html]
 
 heading: Fractals
-	resource: Snowflake [/bjc-r/cur/programming/recursion/fractals/snowflake.html]
-	resource: C-Curve [/bjc-r/cur/programming/recursion/fractals/c-curve.html]
-	resource: Google "Fractals in Nature" [/bjc-r/cur/programming/recursion/fractals/google-fractals-in-nature.html]
+	resource: Snowflake [/bjc-r/cur/programming/recur/fractals/snowflake.html]
+	resource: C-Curve [/bjc-r/cur/programming/recur/fractals/c-curve.html]
+	resource: Google "Fractals in Nature" [/bjc-r/cur/programming/recur/fractals/google-fractals-in-nature.html]
 
 }

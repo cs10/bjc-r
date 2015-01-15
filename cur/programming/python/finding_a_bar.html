@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Finding a Bar</title>
+    </head>
+    <body>
+        <p>
+            Now it's time to seriously write some code. Start by right clicking on this <a href="/bjc-r/prog/python/virus.py">link</a> and select save as. Make sure to save this file to the PythonLab1 directory that we made earlier. Head back to the shell and enter the <code>ls</code> command to make sure that the file made it into our PythonLab1 directory.
+        </p>
+        <p><pre><code>
+Alonzos-MacBook:PythonLab1 alonzo$ ls
+virus.py
+        </code></pre></p>
+        <p>
+            First, take a look inside the <code>virus.py</code> file. We will be editing the python file in something called a text editor (guess what a text editor does...). There are many text editors available, (NotePad++, Emacs, Xcode, TextMate, etc.) but in this lab we'll be using SublimeText 3. If you're working on a lab computer, you can find Sublime in the Applications folder. Otherwise, any text editor (not Microsoft Word!) will do. 
+        </p>
+        <p class="alert quoteOrange">
+            Open up Sublime and then open virus.py. Make sure to read the comments at the top of the file and then take a brief glance at the code, but don't worry about it too much for right now. Also, make sure to set the variable called <code>your_name</code> just below the comments. For example, <code>your_name = "Alonzo"</code> (make sure your name is inside quotes as this is how Python designates text).
+        </p>
+        <p>
+            Head back to the shell and you can try running this file by entering <code>python3 virus.py</code> as shown below:
+        </p>
+        <p><pre><code>
+Alonzos-MacBook:PythonLab1 alonzo$ python3 virus.py
+        </code></pre></p>
+        <p>
+            Next try running the first exercise by entering <code>python3 virus.py first_even_nums 5</code> (if it's working this should print the first 5 even numbers, starting with the number 2):
+        </p>
+        <p><pre><code>
+Alonzos-MacBook:PythonLab1 alonzo$ python3 virus.py first_even_nums 5
+2
+4
+6
+8
+        </code></pre></p>
+        <p>
+            Uh oh...it looks like we've only printed the first 4 even numbers. Head back to Sublime and edit the function called <code>first_even_nums</code> so that we get the correct behavior:
+        </p>
+                <p><pre><code>
+Alonzos-MacBook:PythonLab1 alonzo$ python3 virus.py first_even_nums 5
+2
+4
+6
+8
+10
+        </code></pre></p>
+        <p class="alert quoteGreen">
+            On the next page you'll learn how to define functions of your own!
+        </p>
+    </body>
+</html>

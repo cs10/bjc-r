@@ -3,8 +3,8 @@
 
 
   
-  <script type="text/javascript" src="/bjc-r/admin/js/bjc-loader.js"></script><title>Snap! Machine Concepts</title><!--ORIGINAL NAME: Snap! Machine Concepts--></head><body>
-<p> Snap! supports parallelism! The programming environment is full
+  <script type="text/javascript" src="/bjc-r/llab/loader.js"></script><title><span class="snap">snap</span>  Machine Concepts</title><!--ORIGINAL NAME: <span class="snap">snap</span>  Machine Concepts--></head><body>
+<p> <span class="snap">snap</span>  supports parallelism! The programming environment is full
 of concurrency, implicit (two scripts both start when the green flag is
 clicked, or when they receive the same broadcast message), and explicit
 (the launch block). Let's first explore the explicit kind, then we will
@@ -17,34 +17,34 @@ play with the implicit kind a bit. </p>
 
 <ol>
 
-  <li> Snap! is like a parent with lots of kids, the
+  <li> <span class="snap">snap</span>  is like a parent with lots of kids, the
 parent wants to give the kids equal attention. So if there are 3 things
-happening at one time, Snap! will rotate among the three of them,
+happening at one time, <span class="snap">snap</span>  will rotate among the three of them,
 giving each of them a chance to do their "thing" (e.g., complete one
 iteration of a loop). It will choose the same order every time, in
 a very predictable way. This is known as time-sharing. </li>
   <li>
-Snap! has a speed governor so that projects
+<span class="snap">snap</span>  has a speed governor so that projects
 can run at the same speed on different machines. It is obvious why that is
 important&#8212;imagine developing this great Pac Man game on your parent's
 slow computer and working very hard to get the timing just right so
 it is not too fast or slow. However, when you share it with others who
 have faster machines, it runs too fast to play (because the other
-computers have a faster "heartbeat", the clock rate). So Snap! slows
+computers have a faster "heartbeat", the clock rate). So <span class="snap">snap</span>  slows
 itself down on faster computers so that it always looks like it is
 running on the same, slow, computer. The reason this is relevant in the
 discussion of concurrency is that (on the vast majority of computers)
-Snap! spends a lot of time just sitting there, waiting, so it has
+<span class="snap">snap</span>  spends a lot of time just sitting there, waiting, so it has
 lots of idle "cycles" to handle multiple things running at the same
 time. </li>
-  <li> Snap! actually does NOT make use of more
+  <li> <span class="snap">snap</span>  actually does NOT make use of more
 than one core (independent hardware computation unit), it runs
 everything in one core and time shares any parallel task on the single
-core. This gives Snap! much more control over its parallelism, since
+core. This gives <span class="snap">snap</span>  much more control over its parallelism, since
 once you decide to use two (or more) physical cores, you can no longer
 control when (or in what order) the computations will return, and you
 open up the standard Pandora's box of concurrency problems, like
-deadlock and race conditions. So your Snap! programs are insulated
+deadlock and race conditions. So your <span class="snap">snap</span>  programs are insulated
 from these realities, allowing you to have predictable parallelism
 (usually impossible) at the cost of being able to run really fast and
 make use of hardware resources. </li>
