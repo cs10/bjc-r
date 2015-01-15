@@ -11,13 +11,9 @@ if (typeof llab === 'undefined') {
  ***********************
  */
 
-// NOTE!!
-// You also need to specify the direct path to this file, in loader.js
-
 
 // if the website isn't at the root of the server, add the path here.
 // starting / means this is an absolute link, yo
-//llab.rootURL = "/llab-website-test/";
 llab.rootURL = "/bjc-r/";
 
 
@@ -33,9 +29,6 @@ llab.llab_path = llab.rootURL + llab.install_directory;
 // llab.paths.css_files.push('css/3.3.0/bootstrap-theme.min.css');
 llab.paths.css_files.push('css/3.3.0/bootstrap-compiled.min.css');
 llab.paths.css_files.push('css/default.css');
-// Syntax Highlighting
-llab.paths.css_files.push("css/tomorrow-night-blue.css");
-
 
 
 // courses -- path to folder containing courses.
