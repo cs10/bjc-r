@@ -28,7 +28,7 @@ llab.install_directory = "llab/";
 llab.llab_path = llab.rootURL + llab.install_directory;
 
 // reference your custom CSS files, from within llab install directory.
-//  Multiple CSS files is fine, include a separate push for each
+// Multiple CSS files is fine, include a separate push for each
 // llab.paths.css_files.push('css/3.3.0/bootstrap.min.css');
 // llab.paths.css_files.push('css/3.3.0/bootstrap-theme.min.css');
 llab.paths.css_files.push('css/3.3.0/bootstrap-compiled.min.css');
@@ -48,8 +48,6 @@ llab.topics_path = llab.rootURL + "topic/";
 //  used when referring to a topic page -- you could change this location
 llab.topic_launch_page = llab.llab_path + "html/topic.html";
 llab.alt_topic_page = llab.rootURL + "topic/topic.html";
-//  template used when building a topic (in topic.js)
-llab.empty_topic_page_path = llab.llab_path + "html/empty-topic-page.html";
 llab.empty_curriculum_page_path = llab.llab_path + "html/empty-curriculum-page.html";
 
 
