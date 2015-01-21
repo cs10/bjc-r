@@ -18,6 +18,7 @@ learning-goal: Learn to use the mouse to move sprites around the screen.
 learning-goal: Make a Kaleidoscope
 
 heading: Introduction to <span class="snap">snap</span>
+	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
 	resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
 	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
