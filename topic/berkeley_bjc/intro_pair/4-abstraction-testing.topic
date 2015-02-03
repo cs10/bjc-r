@@ -28,11 +28,10 @@ heading: Abstraction
 
 heading: Programs with Multiple Sprites
 
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
 	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
 	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
 	quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
   resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html]
   resource: Global Variables [/bjc-r/cur/programming/variables/global-variables.html]
 
@@ -43,7 +42,7 @@ heading: Programs with Multiple Sprites
 
 //  the word "REGULAR" is wrong!!
 //	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
-		// if used, get rid of global
+  // if used, get rid of global
 //	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
 //	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
 //	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
