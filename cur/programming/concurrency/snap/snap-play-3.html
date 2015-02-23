@@ -26,21 +26,13 @@ program is done running? This is called a <em>Loop Invariant</em>
 loop), and it is easy to prove this should always be the case. </li>
     </ul>
   </li>
-  <li> Make sure you have "<code>Edit-&gt;Thread Safe Scripts</code>"
-checked in the <span class="snap">snap</span>  menu. </li>
   <li> Hit the <code>r</code> key (for <strong>r</strong>eset), space
 bar (to broadcast <code>go</code> once), <code>w</code> key (to send
 three consecutive broadcast-and-waits of <code>go</code>), and <code>
 b </code> key (to send three consecutive broadcasts of <code> go</code>).
 Are all the values the same? Did you get what you expect? (No, the
 broadcasts should have incremented each number 3 times but it only
-incremented it once!) </li>
-  <li> Now uncheck <code>Edit-&gt;Thread Safe Scripts</code>, and reset
-the values of all 5 elements to 0. </li>
-  <li> Now reset, and try the <code> space</code>, <code> w</code>,<code>
-    </code> and <code> b </code> keys. What just happened? Did you
-get what you expect? (No, the broadcasts should have incremented each
-number 3 times, but it only incremented the first one!) </li>
+incremented them once for <code>b</code>! Why is that?) </li>
 </ul>
 
 </body></html>
