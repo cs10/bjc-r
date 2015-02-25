@@ -22,7 +22,7 @@ heading: Tree Recursion
     resource: Recursive Tree Part 3 [/bjc-r/cur/programming/recur/tree/treepart3.html]
     resource: Base Cases [/bjc-r/cur/programming/recur/tree/base-cases.html]
     quiz: Self Test -- Understanding TREE inputs [/bjc-r/cur/programming/recur/tree/selftest1.html]
-    resource: What was changed? [/bjc-r/cur/programming/recur/tree/treechange.html]
+    quiz: Self Test -- What was changed? [/bjc-r/cur/programming/recur/tree/treechange.html]
     resource: Vary your tree [/bjc-r/cur/programming/recur/tree/vary-your-tree.html]
     resource: Random Tree [/bjc-r/cur/programming/recur/tree/random-tree.html]
 
