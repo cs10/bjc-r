@@ -45,10 +45,13 @@
 			<b>This would be a good time to save your project.</b>
 		</p>
 		<p>
-		7. These blocks all look exactly the same, don't they? So it makes sense to wonder if we can't replace them all with a single <code>tree</code> block. Here's the big idea: We can write a <code>tree</code> block that uses itself in its own script <i>provided that it knows how many levels it's expected to draw!</i> So, in addition to the size input, it'll have a <code>levels</code> input: </p>
+		7. These blocks all look exactly the same, don't they? So it makes sense to wonder if we can't replace them all with a single <code>tree</code> block. Here's the big idea: We can write a <code>tree</code> block that uses itself in its own script <i>provided that it knows how many levels it's expected to draw!</i> So, in addition to the <code>size</code> input, it'll have a <code>levels</code> input: </p>
 		<p>
 		In the earlier steps, <code>tree3</code> used <code>tree2</code>; <code>tree2</code> used <code>tree1</code>. If you actually had the patience to work up to a <code>tree437</code> block, what block would it call for its two branches? To generalize the pattern, <code>tree</code> will use <code>tree</code>, but reducing the number of levels by 1:</p>
 		<p><img src="../../../../img/recur/tree-nobase.png" alt="recursive tree, first version"></p>
-		<p>Try this out. What happens? <em>Why </em>does it happen? When you know the answer, go to the next activity.</p>
+		<p>For example, given a <code>levels</code> input of 5, <code>tree</code> will call two trees with a <code>levels</code> input of 4. Those two trees in turn will each call two more trees with a <code>levels</code> input of 3. This pattern continues on and on, with the <code>levels</code> and <code>size</code> inputs getting smaller and smaller. Ideally, we want the <code>levels</code> input to eventually reach and finish at 1, signifying our most basic tree.</p>
+		<p>Now try the <code>tree</code> block. What happens? <em>Why </em>does it happen? When you know the answer, go to the next activity.
+		<br>
+		<em>Hint: Try to follow the <code>tree</code> block for a small <code>levels</code> input such as 3, and keep track of the decreasing <code>levels</code> input as you call more trees. Does the tree reach and finish at level 1, which is our most basic tree?</em></p>
 	</body>
 </html>
