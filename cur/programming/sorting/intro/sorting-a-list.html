@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Sorting a List</title><!--ORIGINAL NAME: Sorting a List--></head><body>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Sorting a List</title></head><body>
 
 In the rest of today's lab, we will tackle the problem of sorting a list: we have a list of numbers or letters, and we want to arrange them in a particular order.  We are going to look at one algorithm (out of many!) to sort a list of numbers or words.  Whenever we read a new algorithm, we need to step back and see the Big Picture: what task is this algorithm trying to accomplish, and how is it going to approach this task?  For this new sorting algorithm, the Big Picture is:
 
@@ -20,23 +20,23 @@ Let us attempt a step-by-step description of this algorithm:
 
 Below, we show the algorithm running on a particular list.  Make sure that you understand this algorithm before you proceed.  In the next step, you will be writing this program.
 
-<br><br><table width="100%" border="1"><tbody><tr><td width="20%" valign="top">Row 1 is sorted.<br><img border="0" title="Row 1 is sorted." alt="Row 1 is sorted." src="/bjc-r/img/list/insertion-sort-list-step1-BYOB.gif" origsrc='http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort01.gif"'><br>(<code>239</code> did not need to move.)
+<br><br><table width="100%" border="1"><tbody><tr><td width="20%" valign="top">Row 1 is sorted.<br><img border="0" title="Row 1 is sorted." alt="Row 1 is sorted." src="/bjc-r/img/list/insertion-sort-list-step1-BYOB.gif" ><br>(<code>239</code> did not need to move.)
 </td>
 
-<td width="20%" valign="top">Rows 1 and 2 are sorted.<br><img border="0" title="Rows 1 and 2 are sorted." alt="Rows 1 and 2 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort02.gif"><br>(<code>48</code> moved up 1 spot into its correct position.)<br><br></td>
+<td width="20%" valign="top">Rows 1 and 2 are sorted.<br><img border="0" title="Rows 1 and 2 are sorted." alt="Rows 1 and 2 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" ><br>(<code>48</code> moved up 1 spot into its correct position.)<br><br></td>
 
-<td width="20%" valign="top">Rows 1 through 3 are sorted.<br><img border="0" title="Rows 1 through 3 are sorted." alt="Rows 1 through 3 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort02.gif"><br>(<code>675</code> did not need to move.)<br></td>
+<td width="20%" valign="top">Rows 1 through 3 are sorted.<br><img border="0" title="Rows 1 through 3 are sorted." alt="Rows 1 through 3 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" ><br>(<code>675</code> did not need to move.)<br></td>
 
-<td width="20%" valign="top">Rows 1 through 4 are sorted.<br><img border="0" title="Rows 1 through 4 are sorted." alt="Rows 1 through 4 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort02.gif"><br>(<code>790</code> did not need to move.)<br></td>
+<td width="20%" valign="top">Rows 1 through 4 are sorted.<br><img border="0" title="Rows 1 through 4 are sorted." alt="Rows 1 through 4 are sorted." src="/bjc-r/img/list/insertion-sort-list-step2-BYOB.gif" ><br>(<code>790</code> did not need to move.)<br></td>
 
-<td width="20%" valign="top">Rows 1 through 5 are sorted.<br><img border="0" title="Rows 1 through 5 are sorted." alt="Rows 1 through 5 are sorted." src="/bjc-r/img/list/insertion-sort-list-step3-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort03.gif"><br>(<code>261</code> moved up 2 spots into its correct position.)<br></td>
-</tr><tr><td width="20%" valign="top">Rows 1 through 6 are sorted.<br><img border="0" title="Rows 1 through 6 are sorted." alt="Rows 1 through 6 are sorted." src="/bjc-r/img/list/insertion-sort-list-step4-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort04.gif"><br>(<code>430</code> moved up 2 spots into its correct position.)<br></td>
+<td width="20%" valign="top">Rows 1 through 5 are sorted.<br><img border="0" title="Rows 1 through 5 are sorted." alt="Rows 1 through 5 are sorted." src="/bjc-r/img/list/insertion-sort-list-step3-BYOB.gif" ><br>(<code>261</code> moved up 2 spots into its correct position.)<br></td>
+</tr><tr><td width="20%" valign="top">Rows 1 through 6 are sorted.<br><img border="0" title="Rows 1 through 6 are sorted." alt="Rows 1 through 6 are sorted." src="/bjc-r/img/list/insertion-sort-list-step4-BYOB.gif" ><br>(<code>430</code> moved up 2 spots into its correct position.)<br></td>
 
-<td width="20%" valign="top">Rows 1 through 7 are sorted.<br><img border="0" title="Rows 1 through 7 are sorted." alt="Rows 1 through 7 are sorted." src="/bjc-r/img/list/insertion-sort-list-step5-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort05.gif"><br>(<code>210</code> moved up 5 spots into its correct position.<br></td>
+<td width="20%" valign="top">Rows 1 through 7 are sorted.<br><img border="0" title="Rows 1 through 7 are sorted." alt="Rows 1 through 7 are sorted." src="/bjc-r/img/list/insertion-sort-list-step5-BYOB.gif" ><br>(<code>210</code> moved up 5 spots into its correct position.<br></td>
 
-<td width="20%" valign="top">Rows 1 through 8 are sorted.<br><img border="0" title="Rows 1 through 8 are sorted." alt="Rows 1 through 8 are sorted." src="/bjc-r/img/list/insertion-sort-list-step7-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort07.gif"><br>(<code>204</code> moved up 6 spots into its correct position.)<br></td>
+<td width="20%" valign="top">Rows 1 through 8 are sorted.<br><img border="0" title="Rows 1 through 8 are sorted." alt="Rows 1 through 8 are sorted." src="/bjc-r/img/list/insertion-sort-list-step7-BYOB.gif" ><br>(<code>204</code> moved up 6 spots into its correct position.)<br></td>
 
-<td width="20%" valign="top">Rows 1 through 9 are sorted.<br><img border="0" title="Rows 1 through 9 are sorted." alt="Rows 1 through 9 are sorted." src="/bjc-r/img/list/insertion-sort-list-step6-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort06.gif"><br>(<code>762</code> moved up 1 spot into its correct position.)<br></td>
+<td width="20%" valign="top">Rows 1 through 9 are sorted.<br><img border="0" title="Rows 1 through 9 are sorted." alt="Rows 1 through 9 are sorted." src="/bjc-r/img/list/insertion-sort-list-step6-BYOB.gif" ><br>(<code>762</code> moved up 1 spot into its correct position.)<br></td>
 
-<td width="20%" valign="top">Rows 1 through 10 are sorted.<br><img border="0" title="Rows 1 through 10 are sorted." alt="Rows 1 through 10 are sorted." src="/bjc-r/img/list/insertion-sort-list-step8-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab07/Sort/InsertionSort/Sort08.gif"><br>(<code>6</code> moved up 9 spots into its correct position.)<br></td>
+<td width="20%" valign="top">Rows 1 through 10 are sorted.<br><img border="0" title="Rows 1 through 10 are sorted." alt="Rows 1 through 10 are sorted." src="/bjc-r/img/list/insertion-sort-list-step8-BYOB.gif" ><br>(<code>6</code> moved up 9 spots into its correct position.)<br></td>
 </tr></tbody></table></body></html>
