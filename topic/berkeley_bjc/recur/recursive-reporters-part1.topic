@@ -17,7 +17,6 @@ learning-goal: Implement higher order functions.
 
 heading: Introduction
 	 resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
-	 resource: Examples of Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-examples.html]
 
 heading: Some simple ones
 	 resource: Plurals of Words [/bjc-r/cur/programming/recur/recursive-reporters/plurals-of-words.html]
@@ -33,15 +32,16 @@ heading: List Recursion
 	 resource: Even Numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
 
 
+heading: Sorting
+	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-even-odd.html]
+	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
+
+
 heading: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
 	 resource: Subset hints [/bjc-r/cur/programming/recur/recursive-reporters/subsets-self-test.html]
 	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recur/recursive-reporters/subsets-and-efficiency.html]
 	 resource: Fast Subsets [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set-fast-soln.html]
 
-
-heading: Sorting
-	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-even-odd.html]
-	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
 
 }
