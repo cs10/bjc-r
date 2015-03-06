@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Can the Computer Win on this Move? </title><!--ORIGINAL NAME: Can the Computer Win on this Move?--></head><body>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Can the Computer Win on this Move? </title></head><body>
 So because we are able to convert our board into triples, we can make a block that detects the computer's winning move. 
 <p>
 </p><p>
@@ -7,25 +7,25 @@ So because we are able to convert our board into triples, we can make a block th
 Now make a helper block called appearances that takes any inputs and return the number of times the input is an element in the list. 
 
 
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/appearances-block.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT12.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/appearances-block.png" title="There should be an image here" ></div>
 <p>
 
 We can use this block to detect how many pieces we have in a winning combination.  Using the appearances block, we can make the my-pair block (which is provided below) that takes in a winning triple and your piece as inputs.  
 
 
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-report-block.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT13.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-report-block.png" title="There should be an image here" ></div>
 <p>
 
 
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/opponent-block-code.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT14.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/opponent-block-code.png" title="There should be an image here" ></div>
 <p>
 
 The block returns <i>true</i> if there is two of your pieces in a winning triple AND if your opponent do not have a piece in the same winning triple.  (Meaning that your piece can win!)
 
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-block-output.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT15.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-block-output.png" title="There should be an image here" ></div>
 <p>
 
 The block should return <i>false</i>, otherwise.
 
-</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-block-output2.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT16.png"></div>
+</p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/my-pair-block-output2.png" title="There should be an image here" ></div>
 <p>   </p></body></html>

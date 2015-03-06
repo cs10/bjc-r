@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Base Cases</title><!--ORIGINAL NAME: Base Cases--></head><body><div style="text-align: center;">
-  <div style="text-align: left;">Now that you have some experience with recursion, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the end of this page.<br><ul>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Base Case and Recursive Case</title></head><body><div style="text-align: center;">
+  <div style="text-align: left;">For our <code>tree</code> block, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the end of this page.<br><ul>
       <li>We always need a way to figure out that we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
       <li>If this isn't the base case we think to ourselves "Woah &#8212; That seems complicated. I'll just do a small part of the problem and delegate to someone else". Here's what we do:<br></li>
       <ul><li>draw the trunk of the tree (line 6), <br></li>
@@ -9,9 +9,23 @@
         <li>re-position the sprite for the right sub-tree (line 9),</li>
         <li>delegate to another copy of the tree block the drawing of the right sub-tree (line 10),</li>
         <li>re-position the sprite to retrace the trunk (line 11), and<br></li>
-        <li>retrace the trunk and leave the sprite exactly where it started out.
-      <br>
-  <br>
-        </li>
-      </ul></ul></div><img src="/bjc-r/img/lab-10/tree-with-base-case-snap.png" alt="tree with base case" title="Tree with base case" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/TreeWithbaseCase.jpg" border="0"></div>
+        <li>retrace the trunk and leave the sprite exactly where it started out (line 12).</li>
+      </ul>
+      <li>Lines 6-12 are the <em>Recursive Case,</em> in which the block calls itself using recursion.</li>
+      <li>The <em>Recursive Case</em> also has to work <em>towards</em> the base case. This means that some input or other aspect of the recursive calls in the <em>Recursive Case</em> has to be changing such that the <em>Base Case</em> is eventually called. For our <code>tree</code> block, we are subtracting 1 from the <code>level</code> input of each recursive call, so that eventually the <code>level</code> input will reach a value of 1, which is the condition for our <em>Base Case</em>. If we cannot reach our <em>Base Case</em>, our block will keep recursively calling itself forever, getting stuck in what we call an <em>infinite loop</em>. This is what happened with our <code>tree</code> block before we modified it.</li>
+    </ul></div><img src="/bjc-r/img/lab-10/tree-with-base-case-snap.png" alt="tree with base case" title="Tree with base case" ></div>
+
+    <br>
+    <p>Questions:</p>
+    <p>1. What would happen if we ran our <code>tree</code> block with a <code>level</code> input of less than 1? Think about it before you try it out.</p>
+    <p>2. Sometimes you can make a recursive procedure more elegant by having a smaller base case. In our <code>tree</code> program, what would a &quot;zero level&quot; tree mean? Try rewriting <code>tree</code> so that the base case is <code>level=0</code>.</p>
+    <p>3. See if you can make a tree like the first picture in this activity:</p>
+    <p><img src="../../../../img/recur/real-tree.jpg" alt="beautiful tree"></p>
+    <p> It is different from what we have done so far because the smaller
+    trees are drawn part way up the trunk, instead of at the top of the
+    trunk, and because the pen color is green for the lowest-level branches
+    (the <code>tree1</code>-like ones) and brown for the others. You do
+    not have to get it exactly like the picture; just try to make a more
+    realistic-looking tree. </p>
+    
   </body></html>

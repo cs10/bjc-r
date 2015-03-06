@@ -7,7 +7,7 @@ We use a project called "llab" to be able to display the lab content nicely. It'
 
 (As an aside, if you're interested, you should definitely [check out llab][llab].)
 
-`git clone --recoursive`
+`git clone --recursive`
 
 OR
 ```
