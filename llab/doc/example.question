@@ -1,0 +1,59 @@
+<!--
+
+A X.question file contains only a <div class="assessment-data">...</div>.
+You can either put these in such a content page, or put them in
+a X.question file and reference it, in the content page, with
+    <div class="assessment-data" src="/path/to/X.question"></div>
+   
+In content pages, question-wide options can be specified as attributes/values
+on the 'assessment-data' div. Any attribute/values in a X.question file 
+(in the 'assessment-data' div) will serve as defaults, to be overridden 
+by any attributes/values present in the content page)
+
+ For instance: 
+       <div class="assessment-data"
+        type="multiplechoice" identifier="goteam"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri" shuffle="true"
+        ></div>
+(TODO)
+
+
+-->
+
+<div class="assessment-data"
+        type="multiplechoice" identifier="thisquiz"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="default" shuffle="true"
+        >
+
+        
+    <div class="prompt">
+        <p>
+            PROMPT_HTML
+        </p>
+    </div>
+
+    <div class="choice" identifier="c1">
+        <div class="text">
+            CHOICE_1_HTML
+        </div>
+        <div class="feedback">
+            FEEDBACK_HTML
+        </div>
+    </div>
+
+    <div class="choice" identifier="c2">
+        <div class="text">
+            CHOICE_2_HTML
+        </div>
+        <div class="feedback">
+            FEEDBACK_HTML
+        </div>
+    </div>
+
+    <div class="responseDeclaration" identifier="default">
+        <div class="correctResponse" identifier="c1"></div>
+    </div>
+
+</div>

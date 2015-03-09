@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <script type="text/javascript" src="[PATH-TO]/llab/loader.js"></script>
+        <title>Self-test: Your Awesome Quiz!</title>
+    </head>
+    <body>
+        <h3>Directions</h3>
+        <p></p>
+        <br />
+        <hr />
+        <!-- Question X -->
+        <div class="assessment-data" type="multiplechoice" identifier="What is the value of x?"
+            hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
+            <div class="prompt">
+                Put the question here.
+            </div>
+            <!-- Answer Options
+                There can be as many of these as you need. Make sure the
+                "identifier" for each question is unique!
+            -->
+            <div class="choice" identifier="c1">
+                <div class="text">2</div>
+                <div class="feedback">
+                    Think about the value of x after the first step.
+                </div>
+            </div>
+            <!-- Response ID
+                 Make sure each ID is unique, again!
+                 Keep these classes the same for multiple choice problems
+             -->
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+        <!-- More questions or text to follow... -->
+    </body>
+</html>
+

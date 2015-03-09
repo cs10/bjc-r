@@ -1,0 +1,36 @@
+{
+	"assessmentItem": {
+		"adaptive": false,
+		"identifier": "Brainstorm",
+		"interaction": {
+			"expectedLines": "3",
+			"prompt": "<p>After discussing it with your partner, decide what's your <i>favorite</i> restaurant in Berkeley.",
+			"responseIdentifier": "Brainstorm"
+		},
+		"timeDependent": false
+	},
+	"cannedResponses": [
+		{
+			"identifier": "qXkIvunlq2",
+			"name": "A Student",
+			"response": "Gregoire's is the best!"
+		}, {
+			"identifier": "sklwodf",
+			"name": "Samwise",
+			"response": "There is no good Mexican food in Berkeley..."
+		}
+	],
+	"displayName": "1",
+	"isGated": true,
+	"isInstantPollActive": false,
+	"isPollEnded": false,
+	"isAllowStudentReply": false,
+	"isRichTextEditorAllowed": false,
+	"starterSentence": {
+		"display": "0",
+		"sentence": ""
+	},
+	"title": "What is your favorite restaurant in Berkeley?",
+	"type": "Brainstorm",
+	"useServer": true
+}
