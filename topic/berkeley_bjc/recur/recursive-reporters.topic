@@ -17,8 +17,8 @@ learning-goal: Implement higher order functions.
 
 heading: Number representation
 	resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
-	resource: Binary Numbers [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers.html]
-	resource: A Hint on Binary Numbers [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers-hint.html]
+	resource: Numbers in Binary [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers.html]
+	resource: A Hint on Binary [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers-hint.html]
 	resource: Beyond Binary [/bjc-r/cur/programming/recur/recursive-reporters/beyond-binary.html]
 
 heading: Pascal's Triangle
