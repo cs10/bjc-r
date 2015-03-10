@@ -1,0 +1,82 @@
+/* show 'loading' stuff for brainstorm data divs  */
+.brainstorm-data {
+	height: 150px;
+	background-image: url("../img/icon-loading.gif"), url("../img/brainstorm-background.png");
+	background-position: center;
+	background-repeat:no-repeat;
+	border-color: #000000;
+	border-width: thin;
+	border-style: solid;
+}
+
+/* hide brainstorm data itself */
+.brainstorm-data > * {
+	display:none;
+}
+
+/* class when couldn't get remote brainstorm data. fugly. */
+.brainstorm-get-remote-data-error {
+	background-color: #CC0000;
+}
+
+/* initial */
+.brainstorm {
+	display: none;
+	border-color: #000000;
+	border-width: thin;
+	border-style: solid;
+	position: relative;
+	border-top-width: medium;
+}
+
+
+.brainstorm > .settings {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+
+.brainstorm > .title {
+	display: none;     /* gets set in BRAINSTORM constructor if title is present */
+	border-style: none;
+	border-bottom: thin solid #000000;
+	background-color: #FF9D1E;
+	font-size: larger;
+	font-weight: bolder;
+	font-family: sans-serif;
+	width: inherit;
+	top: 0px;
+	text-align: left;
+	padding-right: 48px;   
+	padding-left: 10px;
+	
+	min-height: 38px;   /* 48px - 5 top and -5 bottom */	
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+
+.brainstorm > .prompt {
+	padding: 10px 10px;
+}
+
+.brainstorm > .input {
+
+	padding: 10px 10%;
+	/* margin-left: auto;
+	margin-right: auto;
+	*/
+	background-color: #FBF9EE;
+}
+
+.brainstorm > .input > .inputarea {
+	width: 80%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.brainstorm > .responses {
+	display: none;
+}
