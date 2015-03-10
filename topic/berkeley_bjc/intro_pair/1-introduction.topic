@@ -38,7 +38,7 @@ heading: Kaleidoscope
   quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
 	resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
 
-h2: Formerly Topic 2: Loops and Building your own Blocks
+h1: Formerly Topic 2: Loops and Building your own Blocks
 
 heading: Repeating commands
 	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
