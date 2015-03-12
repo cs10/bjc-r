@@ -50,3 +50,14 @@ heading: Some simple ones
 	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/recur/recursive-reporters/generalizing-the-map-pattern.html]
 	 resource: Even numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter.html]
 }
+
+
+
+
+
+%%%%%%%%%%%%%%%
+
+
+In algebra you probably studied the <em>binomial expansion </em>that expresses (<em>a</em>+<em>b</em>)<sup><em>n</em></sup> in terms of powers of <em>a</em> and <em>b</em> using numbers from the <em>n</em>th row:</p>
+<p align="center">(<em>a</em>+<em>b</em>)<sup><em>5</em></sup> = <strong>1</strong><em>a</em><sup><em>5</em></sup> + <strong>5</strong><em>a</em><sup>4</sup><em>b</em> + <strong>10</strong><em>a</em><sup>3</sup><em>b</em><sup>2</sup> + <strong>10</strong><em>a</em><sup>2</sup><em>b</em><sup>3</sup> + <strong>5</strong><em>a</em><em>b</em><sup>4</sup> + <strong>1</strong><em>b</em><sup>5</sup></p>
+<p align="left">
