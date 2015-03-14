@@ -12,8 +12,9 @@ learning-goal: Use HOFs to solve real-life problems, like minimizing or composin
 
 
 h3: A Little Practice
-    resource: Introduction [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction.html]
-    resource: Warm-up [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-warmup.html]
+    resource: Introduction and Warm-up [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction-and-warmup.html]
+    // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction.html] 
+    // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-warmup.html]
 
 h3: Factorions
     resource: Factorions [/bjc-r/cur/programming/HOFs/functions-as-data/factorions.html]
