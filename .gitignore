@@ -6,6 +6,4 @@
 .project
 .tm_properties
 .gitmodules
-*.xml
-
-*.xml
+dwsync.*
