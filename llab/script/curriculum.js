@@ -110,7 +110,6 @@ llab.secondarySetUp = function() {
         css.rel = "stylesheet";
         var js = getTag('script', jsFile, 'text/javascript'); // onload function
         $(js).attr({'onload': 'llab.highlightSyntax()'});
-        // Using $ to append to head causes onload not to be fired...
         document.head.appendChild(css);
         document.head.appendChild(js);
     }
@@ -119,6 +118,7 @@ llab.secondarySetUp = function() {
 
 
 llab.highlightSyntax = function() {
+    console.log('highlight called');
     $('pre code').each(function(i, block) {
         // Trim the extra whitespace in HTML files.
         block.innerHTML = block.innerHTML.trim();

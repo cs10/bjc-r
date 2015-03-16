@@ -1,5 +1,9 @@
-.project
 .DS_Store
+.DS_store
+*~
+*#*#*
+*Thumbs.db*
+.project
 .tm_properties
 .gitmodules
-*~
+dwsync.xml
