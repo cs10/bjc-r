@@ -1,0 +1,97 @@
+title: Conditionals
+
+{
+
+h1: Formerly Topic 3: Conditionals and Variables
+
+heading: Conditional Blocks
+
+//resource: Primer: Variables [/bjc-r/cur/programming/conditionals/variables-primer.html]
+resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
+	  //have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
+//resource: "If-then" Statements [/bjc-r/cur/programming/conditionals/if-then-statements.html] // combine with introduction
+resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html] //remove/replace some quiz questions
+resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
+resource: Predict what happens! [/bjc-r/cur/programming/conditionals/predict.html]
+resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
+	  //examples with dates would be great.
+resource: Blocks using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
+// game of life here later?
+
+
+heading: Combining Booleans
+
+resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
+resource: Script Variables [/bjc-r/cur/programming/variables/scriptvar.html]
+quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
+
+heading: Practice with Predicates
+//resource: motivation
+resource: Reporter Blocks [/bjc-r/cur/programming/functions/reporters.html]
+resource: Practice: >= [/bjc-r/cur/programming/conditionals/predicates.html] // chop out relevant piees
+resource: Solutions to >= [/bjc-r/cur/programming/conditionals/ge-soln.html]
+resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+resource: Practice: Between [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
+
+
+heading: Number Guessing
+resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+//resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
+
+
+h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
+
+heading: More work with reporters
+
+	resource: The Max Block [/bjc-r/cur/programming/functions/review-max-block.html]
+	resource: Input types [/bjc-r/cur/programming/functions/input-types-new.html]
+	resource: Composition of Reporters [/bjc-r/cur/programming/functions/composition-of-reporters.html]
+	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up-debug.html]
+
+heading: Custom blocks make code easier to understand
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	resource: Valid-Date? [/bjc-r/cur/programming/conditionals/valid-date.html]
+
+heading: Testing your code
+
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+  resource: Simple Debugging [/bjc-r/cur/programming/debugging/simple-debugging-house.html]
+  resource: The Check Block [/bjc-r/cur/programming/debugging/the-check-block.html]
+  //resource: Using The Check Block [/bjc-r/cur/programming/debugging/using-the-check-block.html]
+
+heading: Abstraction
+
+	resource: Brick Wall [/bjc-r/cur/programming/abstraction/new-brick-wall.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+
+heading: Programs with Multiple Sprites
+
+	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
+	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
+	quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+  resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html]
+  resource: Global Variables [/bjc-r/cur/programming/variables/global-variables.html]
+
+//heading: Variables and custom blocks
+	// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+		// fix -- not a global variable, but a
+
+
+//  the word "REGULAR" is wrong!!
+//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+  // if used, get rid of global
+//	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
+//	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
+//	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+
+
+}
