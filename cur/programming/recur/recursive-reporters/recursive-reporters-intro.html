@@ -7,19 +7,15 @@
     </head>
 
     <body>
-
-    <p class="alert alert-danger">
-        <strong>Warning: the material in this lab is quite challenging. It is <em>highly</em> recommended
-                that you work with a partner.</strong>
-    </p>
-
-    <p>So far, all our examples of recursion have been
-        <em>command</em> blocks, whose scripts have a structure like this:</p>
+<p>So far, all our examples of recursion have been
+    <em>command</em> blocks, whose scripts have a structure like this:</p>
     <p><img src="/bjc-r/img/recur/reporters/rec-command.png" alt="recursive command pattern" /></p>
     <p>There can be any number of recursive calls interspersed with other commands in the script.</p>
-    <p>Reporters are slightly trickier, because a reporter can only report <em>one </em>value. So you can't do this:</p>
+    <p>Reporters are different, because a reporter can only report <em>one </em>value. So you can't do this:</p>
+    <!--This sidenote is not a complete solution. Mary needs to fix this so it won't overlap text.-->
+    <span class="sidenote">Optional exercise for hotshots:<br />How did we make this picture?</span>
     <p><img src="/bjc-r/img/recur/reporters/bad-rec-reporter.png" alt="bad (multi-report) recursive reporter pattern" /></p>
-    <p>(In fact, Snap<em>!</em> won't let you stack <code>report</code> blocks; since <code>report</code> ends the script, there is no connection tab below the block and you can't put anything directly below it. Optional exercise for hotshots: How did we make that picture?)</p>
+    <p>(In fact, Snap<em>!</em> won't let you stack <code>report</code> blocks; since <code>report</code> ends the script, there is no connection tab below the block and you can't put anything directly below it.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p>Instead, most of the time a recursive reporter call will be inside a <em>combiner</em> that attaches the result of the recursive call to some other value:</p>
     <p><img src="/bjc-r/img/recur/reporters/rec-reporter.png" alt="correct recursive reporter pattern with combiner" /></p>
     <p>The combiner can be an arithmetic operator such as <code>+</code> or <code>&times;</code>:</p>
@@ -28,12 +24,11 @@
     <p><img src="/bjc-r/img/recur/reporters/list-to-sentence.png" alt="list-&gt;sentence" /></p>
     <p>or a list operator such as <code>append</code> or <code>in front of</code>:</p>
     <p><img src="/bjc-r/img/recur/reporters/plurals.png" alt="plurals" /></p>
-    <p>Note: On rare occasions, the recursive call <em>does</em> appear directly inside the <code>report</code>:</p>
-    <p><img src="/bjc-r/img/recur/reporters/piglatin.png" alt="piglatin" /></p>
-    <p>But almost always, you won't go wrong if you start by thinking about what combining block to use.</p>
-    <p class="alert quoteBlue">
-        ☞ Don't go on until you understand what those four example scripts do, and how they do it.
-    </p>
+	<p class="alert quoteBlue"> ☞ Don't go on until you understand what those three example scripts do, and how they do it. </p>
+	<p class="alert quoteYellow">Note: On rare occasions, the recursive call <em>does</em> appear directly inside the <code>report</code>:<br />
+    <img src="/bjc-r/img/recur/reporters/piglatin.png" alt="piglatin" /><br />
+    But almost always, you won't go wrong if you start by thinking about what combining block to use.</p>    
 
-    </body>
+    
+</body>
 </html>
