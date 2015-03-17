@@ -11,9 +11,8 @@
     <em>command</em> blocks, whose scripts have a structure like this:</p>
     <p><img src="/bjc-r/img/recur/reporters/rec-command.png" alt="recursive command pattern" /></p>
     <p>There can be any number of recursive calls interspersed with other commands in the script.</p>
-    <p>Reporters are different, because a reporter can only report <em>one </em>value. So you can't do this:</p>
-    <!--This sidenote is not a complete solution. Mary needs to fix this so it won't overlap text.-->
-    <span class="sidenote">Optional exercise for hotshots:<br />How did we make this picture?</span>
+	<p>Reporters are different, because a reporter can only report <em>one </em>value. So you can't do this:</p>
+    <div><div class="sidenote">Optional exercise for hotshots:<br />How did we make this picture?</div></div>
     <p><img src="/bjc-r/img/recur/reporters/bad-rec-reporter.png" alt="bad (multi-report) recursive reporter pattern" /></p>
     <p>(In fact, Snap<em>!</em> won't let you stack <code>report</code> blocks; since <code>report</code> ends the script, there is no connection tab below the block and you can't put anything directly below it.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
     <p>Instead, most of the time a recursive reporter call will be inside a <em>combiner</em> that attaches the result of the recursive call to some other value:</p>
