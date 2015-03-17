@@ -584,8 +584,6 @@ img.indent, div.indent {
   margin: 5px 0;
 }
 
-<<<<<<< HEAD
-=======
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   float: right;
@@ -604,7 +602,6 @@ img.indent, div.indent {
 }
 
 
->>>>>>> origin/gh-pages
 /** ICON CLASSES **/
 /* Begin items controlled primarily by .topic div */
 .quiz {
