@@ -550,7 +550,7 @@ img.indent, div.indent {
 }
 
 /** Common Styling to highlighted sections */
-.quoteOrange, .quoteGreen, .quoteBlue {
+.quoteOrange, .quoteYellow, .quoteGreen, .quoteBlue {
   padding: 10px 15px;
   margin: 10px 2%;
   width: 96%;
@@ -562,6 +562,11 @@ img.indent, div.indent {
 .quoteOrange { /* FIXME, name needed */
   border-left: 12px solid #FF9D1E;
   background-color: #FFCE8E;
+}
+
+.quoteYellow { /* FIXME, name needed */
+  border-left: 12px solid #e4e47d;
+  background-color: #F1F1BC;
 }
 
 .quoteBlue { /* FIXME, name needed */
@@ -586,12 +591,19 @@ img.indent, div.indent {
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+<<<<<<< HEAD
   float: right;
   margin-right: 10%;
   margin-left: 1em;
   /* position: absolute; */
   /* right: 0; */
   /* top: auto; /* default */
+=======
+  margin-right: 10%;
+  position: absolute;
+  right: 0;
+  top: auto; /* default */
+>>>>>>> parent of 50f717e... foo
   width: 20%;
   padding: 10px;
   background-color: #F3F0B3
@@ -712,6 +724,7 @@ img.indent, div.indent {
 /* .snap inserts the logo using the proper formatting.
 * Insert using "<span class="snap">snap</span>"
 */
+
 .snap:first-letter {
   font-variant: normal;
 }
