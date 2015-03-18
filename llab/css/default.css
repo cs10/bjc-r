@@ -591,10 +591,19 @@ img.indent, div.indent {
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+<<<<<<< HEAD
+  float: right;
+  margin-right: 10%;
+  margin-left: 1em;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+=======
   margin-right: 10%;
   position: absolute;
   right: 0;
   top: auto; /* default */
+>>>>>>> parent of 50f717e... foo
   width: 20%;
   padding: 10px;
   background-color: #F3F0B3
