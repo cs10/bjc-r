@@ -1,25 +1,24 @@
-title: Welcome to <span class="snap">snap</span>
+title: Introduction to <span class="snap">snap</span>
 
 {
-h1: Formerly Topic 1: Introduction to <span class="snap">snap</span>
+//h1: Formerly Topic 1: Introduction to <span class="snap">snap</span>
 
-Mary says, I'm concerned that these "big ideas" and "activities" are a boring and useless way to start off the course. If we have to do something like this for schoolish reasons, could we make it shorter and more meaningful to someone who doesn't know what this stuff is? The only thing that isn't incomprehensible without prior knowledge or boring-sounding is the very last thing, make a kaleidoscope.
+//Move this stuff to the TG --MF
+//h2: Big Ideas
+//big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
+//big-idea: Explore sequential programming
+//big-idea: Understand and analyze some of the impact of the internet on our culture
 
-h2: Big Ideas
-big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
-big-idea: Explore sequential programming
-big-idea: Understand and analyze some of the impact of the internet on our culture
+//What is up with these? --MF
+//	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+//	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
-	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
-	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
-
-
-h2: Activities
-learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
-learning-goal: Make a <span class="snap">snap</span> account to save and load projects
-learning-goal: Make a sprite sing
-learning-goal: Learn to use the mouse to move sprites around the screen.
-learning-goal: Make a Kaleidoscope
+//h2: Activities
+//learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
+//learning-goal: Make a <span class="snap">snap</span> account to save and load projects
+//learning-goal: Make a sprite sing
+//learning-goal: Learn to use the mouse to move sprites around the screen.
+//learning-goal: Make a Kaleidoscope
 
 heading: Introduction to <span class="snap">snap</span>
 	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
@@ -40,7 +39,7 @@ heading: Kaleidoscope
   quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
 	resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
 
-h1: Formerly Topic 2: Loops and Building your own Blocks
+//h1: Formerly Topic 2: Loops and Building your own Blocks
 
 heading: Repeating commands
 	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
