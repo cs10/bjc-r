@@ -23,7 +23,7 @@ title: Introduction to <span class="snap">snap</span>
 heading: Introduction to <span class="snap">snap</span>
 	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
 	resource: Getting Started [/bjc-r/cur/programming/intro/snap/getting-started.html]
-	resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
+	//resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
 	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Scripts [/bjc-r/cur/programming/intro/snap/exploring-snap-scripts.html]
