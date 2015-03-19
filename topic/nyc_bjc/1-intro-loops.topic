@@ -20,17 +20,15 @@ title: Introduction to <span class="snap">snap</span>
 //learning-goal: Learn to use the mouse to move sprites around the screen.
 //learning-goal: Make a Kaleidoscope
 
-heading: Introduction to <span class="snap">snap</span>
-	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
-	resource: Getting Started [/bjc-r/cur/programming/intro/snap/getting-started.html]
-	//resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
-	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
+heading: Welcome to <span class="snap">snap</span>
+	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/what-is-snap.html]
+	resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/accessing-snap.html] 
+	resource: Using the Interface [/bjc-r/cur/programming/1-introduction/using-the-interface.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
-	resource: Scripts [/bjc-r/cur/programming/intro/snap/exploring-snap-scripts.html]
+	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/creating-scripts.html]
 	resource: Reporters [/bjc-r/cur/programming/intro/sprites/sprites-reporters.html]
 
-heading: Kaleidoscope
-	//resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
+heading: Kaleidoscope //resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
   resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 	resource: Experiment with Drawing Commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands2.html]
 	resource: Follow that Mouse! [/bjc-r/cur/programming/loops/forever/follow-that-mouse.html]
@@ -51,9 +49,8 @@ heading: Repeating commands
 	quiz: Test yourself: More on turning [/bjc-r/cur/programming/intro/drawing/angles-self-test-2.html]
 	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
 	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
-	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
-	//quiz: TODO Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html]
-	
+	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html] 
+	//quiz: TODO Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html] 
 	//resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
 	
 
@@ -63,8 +60,8 @@ heading: Making your own blocks
 	resource: Making your first custom block [/bjc-r/cur/programming/functions/intro/tutorial-custom-blocks.html]
 	//resource: Motivate parameters ( draw-square-100 -> draw-square (width) )
 	resource: Adding an input [/bjc-r/cur/programming/functions/intro/adding-a-simple-input.html]
-	//	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
-		// eh?  how to use the ui.  if we use it here, remove the 'input type' stuff.
+	//	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983] 
+	// eh?  how to use the ui.  if we use it here, remove the 'input type' stuff.
 	//resource: TODO a list of simple blocks to make, to practice on.  draw-triangle(size), etc 
 	//quiz: practice converting no-parameter blocks to parameterized-blocks.  draw-rectangle -> draw-rectangle (width) (height), etc
 	// naming inputs
