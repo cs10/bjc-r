@@ -20,21 +20,24 @@ title: Introduction to <span class="snap">snap</span>
 //learning-goal: Learn to use the mouse to move sprites around the screen.
 //learning-goal: Make a Kaleidoscope
 
-heading: Welcome to <span class="snap">snap</span>
-	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/what-is-snap.html]
+heading: Getting Started
+	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
+	resource: What is <span class="snap">snap</span>? [/bjc-r/cur/programming/1-introduction/what-is-snap.html]
 	resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/accessing-snap.html] 
-	resource: Using the Interface [/bjc-r/cur/programming/1-introduction/using-the-interface.html]
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/getting-to-know-the-interface.html]
+	resource: Blocks [/bjc-r/cur/programming/1-introduction/blocks.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/creating-scripts.html]
-	resource: Reporters [/bjc-r/cur/programming/intro/sprites/sprites-reporters.html]
+	resource: Reporters [/bjc-r/cur/programming/1-introduction/sprites-reporters.html]
 
-heading: Kaleidoscope //resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+heading: Kaleidoscope
+ 	raw-html: <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 	resource: Experiment with Drawing Commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands2.html]
 	resource: Follow that Mouse! [/bjc-r/cur/programming/loops/forever/follow-that-mouse.html]
 	resource: Forever and a Day [/bjc-r/cur/programming/loops/forever/forever-and-a-day.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
-  quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
+  	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+  	quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
 	resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
 
 //h1: Formerly Topic 2: Loops and Building your own Blocks
@@ -44,39 +47,26 @@ heading: Repeating commands
 	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html]
 	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
 	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
+	raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Draw a star? [/bjc-r/cur/programming/loops/repeat-n/draw-regular-star.html]
 	quiz: Test yourself: More on turning [/bjc-r/cur/programming/intro/drawing/angles-self-test-2.html]
 	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
 	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
 	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html] 
-	//quiz: TODO Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html] 
-	//resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
-	
 
 heading: Making your own blocks
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-	//resource: TODO motivation...  (we had it before w/ broadcast/wait...  how can we motivate it now? square?)
 	resource: Making your first custom block [/bjc-r/cur/programming/functions/intro/tutorial-custom-blocks.html]
-	//resource: Motivate parameters ( draw-square-100 -> draw-square (width) )
 	resource: Adding an input [/bjc-r/cur/programming/functions/intro/adding-a-simple-input.html]
-	//	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983] 
-	// eh?  how to use the ui.  if we use it here, remove the 'input type' stuff.
-	//resource: TODO a list of simple blocks to make, to practice on.  draw-triangle(size), etc 
-	//quiz: practice converting no-parameter blocks to parameterized-blocks.  draw-rectangle -> draw-rectangle (width) (height), etc
-	// naming inputs
-	      // example from old topic 4: forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
-	//resource: introduce varibles a bit here?
+ 	raw-html: <img src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif" class="imageRight" alt="Accepting Inputs" />
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
 	resource: Make a "draw polygon" block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
 	resource: Bug Dance! [/bjc-r/cur/programming/functions/intro/bug-dance.html]
 	
-	
-
 heading: Building complicated blocks with simple blocks
  	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
 	resource: Building with custom blocks: your first flower [/bjc-r/cur/programming/functions/intro/composing-blocks.html]
-	//quiz: TODO practice  composing functions (1/2 of Jessica's previous quiz?)
 	quiz: Composing with "buggy" blocks [/bjc-r/cur/programming/functions/intro/buggy-house-and-square.html]
 	resource: Draw a flower [/bjc-r/cur/programming/functions/intro/draw-a-flower.html]
 		
