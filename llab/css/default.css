@@ -271,6 +271,7 @@ a[disabled] {
 }
 
 .full-bottom-bar {
+  clear:both;
   background: #003A70;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
@@ -598,6 +599,7 @@ img.indent, div.indent {
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
   float: right;
   margin-right: 20px;
   margin-left: 1em;

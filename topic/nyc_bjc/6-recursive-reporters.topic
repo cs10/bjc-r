@@ -14,9 +14,11 @@ learning-goal: Understand how reporters use combiners instead of sequences.
 learning-goal: Practice planning and coding recursive reporters.
 learning-goal: Implement higher order functions.
 
-
-heading: Number representation
+heading: Getting Started
+	 resource: Getting Started (Al) [/bjc-r/cur/programming/recur/recursive-reporters/getting-started.html]
+	 resource: Getting Started (Brian) [/bjc-r/cur/programming/recur/recursive-reporters/gs-bh.html]
 	resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
+heading: Number representation
 	resource: Numbers in Binary [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers.html]
 	resource: A Hint on Binary [/bjc-r/cur/programming/recur/recursive-reporters/binary-numbers-hint.html]
 	resource: Beyond Binary [/bjc-r/cur/programming/recur/recursive-reporters/beyond-binary.html]
@@ -31,7 +33,7 @@ heading: Pascal's Triangle
 
 heading: Sorting
 	 resource: Sorting a List [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting.html]
-	 quiz: Self test: Sorting a List [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
+	 resource: Sorting a List: Merge [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
 
 heading: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
@@ -51,13 +53,3 @@ heading: Some simple ones
 	 resource: Even numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter.html]
 }
 
-
-
-
-
-%%%%%%%%%%%%%%%
-
-
-In algebra you probably studied the <em>binomial expansion </em>that expresses (<em>a</em>+<em>b</em>)<sup><em>n</em></sup> in terms of powers of <em>a</em> and <em>b</em> using numbers from the <em>n</em>th row:</p>
-<p align="center">(<em>a</em>+<em>b</em>)<sup><em>5</em></sup> = <strong>1</strong><em>a</em><sup><em>5</em></sup> + <strong>5</strong><em>a</em><sup>4</sup><em>b</em> + <strong>10</strong><em>a</em><sup>3</sup><em>b</em><sup>2</sup> + <strong>10</strong><em>a</em><sup>2</sup><em>b</em><sup>3</sup> + <strong>5</strong><em>a</em><em>b</em><sup>4</sup> + <strong>1</strong><em>b</em><sup>5</sup></p>
-<p align="left">
