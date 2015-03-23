@@ -598,6 +598,7 @@ img.indent, div.indent {
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
   float: right;
   margin-right: 20px;
   margin-left: 1em;
