@@ -271,6 +271,7 @@ a[disabled] {
 }
 
 .full-bottom-bar {
+  clear:both;
   background: #003A70;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
