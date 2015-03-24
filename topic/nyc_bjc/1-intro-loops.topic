@@ -17,8 +17,8 @@ heading: Getting Started
 
 heading: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-	resource: Experiment with Drawing Commands [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/experiment-with-drawing-commands2.html]
 	resource: The Forever Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever.html]
   	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
   	quiz: We Won't Test You Forever [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever-self-test.html]

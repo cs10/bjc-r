@@ -672,6 +672,11 @@ div {
 
 .block {height: 2em;}
 
+.bigBlock {height: 6%;}
+
+.script {height: 18%;}
+
+
 /** ICON CLASSES **/
 /* Begin items controlled primarily by .topic div */
 .quiz {
