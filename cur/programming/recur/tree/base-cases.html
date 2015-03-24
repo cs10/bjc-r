@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Base Cases</title><!--ORIGINAL NAME: Base Cases--></head><body><div style="text-align: center;"></div>
   <div style="text-align: left;">For our <code>tree</code> block, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the right.<br></div>
-<table>
-<tr><td>
+<img src="/bjc-r/img/recur/tree-with-base-case.png" class="imageRight" alt="tree block with base case and numbered lines">
   <ul>
       <li>We always need a way to figure out that we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
       <li>If this isn't the base case we think to ourselves "Whoa &#8212; That seems complicated. I'll just do a small part of the problem and delegate to someone else". Here's what we do:<br></li>
@@ -16,8 +15,7 @@
       </ul>
       <li>Lines 6-12 are the <em>Recursive Case,</em> in which the block calls itself using recursion.</li>
       <li>The <em>Recursive Case</em> also has to work <em>towards</em> the base case. This means that some input or other aspect of the recursive calls in the <em>Recursive Case</em> has to be changing such that the <em>Base Case</em> is eventually called. For our <code>tree</code> block, we are subtracting 1 from the <code>level</code> input of each recursive call, so that eventually the <code>level</code> input will reach a value of 1, which is the condition for our <em>Base Case</em>. If we cannot reach our <em>Base Case</em>, our block will keep recursively calling itself forever, getting stuck in what we call an <em>infinite loop</em>. This is what happened with our <code>tree</code> block before we modified it.</li>
-    </ul></td>
-    <td valign="top"><img src="/bjc-r/img/recur/tree-with-base-case.png" alt="tree block with base case and numbered lines"></td></tr></table>
+    </ul>
 
     <br>
     <p>Questions:</p>
