@@ -24,7 +24,7 @@
 <p>Now you have to know how to apply the function to <code>item 1 of data</code>. Find the <code>call</code> block in the Control palette and click on its right arrowhead to give it a second input slot. Then fill it in like this:</p>
 <p><img src="/bjc-r/img/recur/reporters/map.png" alt="map definition" /></p>
 <p>That's it! Your first higher order function.</p>
-<p>(The version in the Snap<em>!</em> tool library is more complicated because it allows more than one input list. The actual code is kind of messy—not mysterious, just messy. It makes a single list a special case, which it then uses inside itself. There's no need for you to read it, but feel free if you don't mind mess.)</p>
+<p class="alert quoteYellow">(The version in the Snap<em>!</em> tool library is more complicated because it allows more than one input list. The actual code is kind of messy—not mysterious, just messy. It makes a single list a special case, which it then uses inside itself. There's no need for you to read it, but feel free if you don't mind mess.)</p>
 <p>The <code>call</code> block finds empty input slots in its function input and fills them in with the given input values. In this case, there's only one input value, so it will fill all empty slots. If you'd given more input values, then the number of empty slots would have to equal the number of input values, and they'd be filled in left to right.</p>
 <p>Everyone else thinks that higher order functions are <em>way too hard and scary </em>for beginning computer science students. But, once you understand recursion, and understand generalizing a procedure by adding an input, they're really no big deal.</p>
 <hr />
