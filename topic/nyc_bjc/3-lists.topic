@@ -31,6 +31,13 @@ heading: Introduction to Lists
 	
 //heading: Lists and Sentences: The Index Variable Pattern
 //	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
+
+heading: Magic Squares
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-magic-square/getting-started.html]
+	 resource: Introducing Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples.html]
+	 resource: Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-2.html]
+	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-3.html]
+	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/2-magic-square/finishing-touches.html]	
 	
 heading: List Mutation
 	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
