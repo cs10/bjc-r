@@ -1,94 +1,56 @@
 title: Introduction to <span class="snap">snap</span>
 
 {
-//h1: Formerly Topic 1: Introduction to <span class="snap">snap</span>
-
-//Move this stuff to the TG --MF
-//h2: Big Ideas
-//big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
-//big-idea: Explore sequential programming
-//big-idea: Understand and analyze some of the impact of the internet on our culture
-
 //What's up with these? --MF
 //	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
-//h2: Activities
-//learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
-//learning-goal: Make a <span class="snap">snap</span> account to save and load projects
-//learning-goal: Make a sprite sing
-//learning-goal: Learn to use the mouse to move sprites around the screen.
-//learning-goal: Make a Kaleidoscope
-
-heading: Introduction to <span class="snap">snap</span>
-	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
-	resource: Getting Started [/bjc-r/cur/programming/intro/snap/getting-started.html]
-	//resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
-	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
+heading: Getting Started
+	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
+	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-getting-started/what-is-snap.html]
+	resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-getting-started/accessing-snap.html] 
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-getting-started/getting-to-know-the-interface.html]
+	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-getting-started/motion-blocks.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
-	resource: Scripts [/bjc-r/cur/programming/intro/snap/exploring-snap-scripts.html]
-	resource: Reporters [/bjc-r/cur/programming/intro/sprites/sprites-reporters.html]
+	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-getting-started/creating-scripts.html]
+	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-getting-started/reporters.html]
 
 heading: Kaleidoscope
-	//resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-	resource: Experiment with Drawing Commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands2.html]
-	resource: Follow that Mouse! [/bjc-r/cur/programming/loops/forever/follow-that-mouse.html]
-	resource: Forever and a Day [/bjc-r/cur/programming/loops/forever/forever-and-a-day.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
-  quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
-	resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
+ 	raw-html: <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+  	quiz: Check Your Understanding: Looping and Sprite Direction [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever-self-test.html]
+resource: Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/kaleidoscope-small.html]
 
-//h1: Formerly Topic 2: Loops and Building your own Blocks
+heading: Repeating Commands
+	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-repeat-block.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+	quiz: Check Your Understanding: Using the Repeat Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/repeat-self-test.html]
+	raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
+	resource: A New Way to Loop [/bjc-r/cur/programming/1-introduction/3-repeating-commands/introduction-to-for.html]
+	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
 
-heading: Repeating commands
-	resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
-	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html]
-	resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
-	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-	resource: Draw a star? [/bjc-r/cur/programming/loops/repeat-n/draw-regular-star.html]
-	quiz: Test yourself: More on turning [/bjc-r/cur/programming/intro/drawing/angles-self-test-2.html]
-	resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
-	resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
-	resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
-	//quiz: TODO Test Yourself: FOR [/bjc-r/cur/programming/loops/for/test-yourself-for.html]
+heading: Making Your Own Blocks
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/tutorial-custom-blocks.html]
+	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-a-simple-input.html]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+	resource: Make a "Draw Polygon" Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
+	resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
-	//resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
-	
-
-heading: Making your own blocks
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-	//resource: TODO motivation...  (we had it before w/ broadcast/wait...  how can we motivate it now? square?)
-	resource: Making your first custom block [/bjc-r/cur/programming/functions/intro/tutorial-custom-blocks.html]
-	//resource: Motivate parameters ( draw-square-100 -> draw-square (width) )
-	resource: Adding an input [/bjc-r/cur/programming/functions/intro/adding-a-simple-input.html]
-	//	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
-		// eh?  how to use the ui.  if we use it here, remove the 'input type' stuff.
-	//resource: TODO a list of simple blocks to make, to practice on.  draw-triangle(size), etc 
-	//quiz: practice converting no-parameter blocks to parameterized-blocks.  draw-rectangle -> draw-rectangle (width) (height), etc
-	// naming inputs
-	      // example from old topic 4: forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
-	//resource: introduce varibles a bit here?
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	resource: Make a "draw polygon" block [/bjc-r/cur/programming/functions/make-a-draw-polygon-block.html]
-	resource: Bug Dance! [/bjc-r/cur/programming/functions/intro/bug-dance.html]
-	
-	
-
-heading: Building complicated blocks with simple blocks
- 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
-	resource: Building with custom blocks: your first flower [/bjc-r/cur/programming/functions/intro/composing-blocks.html]
-	//quiz: TODO practice  composing functions (1/2 of Jessica's previous quiz?)
-	quiz: Composing with "buggy" blocks [/bjc-r/cur/programming/functions/intro/buggy-house-and-square.html]
-	resource: Draw a flower [/bjc-r/cur/programming/functions/intro/draw-a-flower.html]
+heading: Building Complicated Blocks with Simple Blocks
+ 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
+ 	raw-html: <img src="http://localhost/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
+	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/composing-blocks.html]
+	quiz: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square.html]
+	resource: Draw a flower [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		
-	
-heading: Using randomness
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
-	resource: The random block [/bjc-r/cur/programming/random/the-random-block.html]
-	resource: Moving a sprite randomly around the screen  [/bjc-r/cur/programming/random/randomly-moving-character.html]
-	quiz: Understanding The Random Block [/bjc-r/cur/programming/random/Test-Yourself-random.html]
-	resource: Draw a field of flowers [/bjc-r/cur/programming/functions/draw-field-of-flowers.html]
+heading: Using Randomness
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
+	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
+	resource: Moving a Sprite Randomly [/bjc-r/cur/programming/1-introduction/6-using-randomness/randomly-moving-character.html]
+	quiz: Understanding The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/Test-Yourself-random.html]
+	resource: Draw a Field of Flowers [/bjc-r/cur/programming/1-introduction/6-using-randomness/draw-field-of-flowers.html]
 
 }

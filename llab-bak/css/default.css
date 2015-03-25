@@ -91,10 +91,10 @@ h2, h3, .title-small-screen, .header-serif, .title, .navbar-title {
   font-family: 'Freight Text Pro', 'Baskerville', 'Georgia', 'Times', serif;
 }
 
-/* Freight isn't my favorite at small sizes */
+/* Freight isn't my favorite at small sizes
 .full ul, .full ol, blockquote, .serif {
   font-family: 'Baskerville', 'Georgia', 'Times', serif;
-}
+} Mary didn't like this font. */
 
 body { /* default Sans Serif Stack */
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -166,11 +166,11 @@ nav {
 .full ul, .full ol {
   font-size: 1em;
   font-weight: inherit;
-  display:inline-block;
-  color: #004;
+  /* display:inline-block; Commented out because it was breaking my styles --Mary Fries 3/19/15 */ 
+  /* color: #004; --Mary Fries 3/20/15 */ 
   padding: 5px 15px 5px 5px;
-  margin: 15px 15px 15px  0; /* Added */
-  border: 2px solid #39F;
+  /*margin: 0px 15px 15px  0; /* Added */
+  /*border: 2px solid #39F; /* This was driving Mary nuts, so I cut it out. 3/18/15 */
   border-radius: 6px;
 }
 
@@ -191,10 +191,16 @@ above rules override these without it.
   border: none;
 }
 
-li > ul, li > ol {
-  margin: 5px auto;
+/*ul > ul, ol > ol,
+ul > ol, ol > ul { /* Added by Mary Fries, March 2015
   border: none;
+}*/
+
+li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
+  margin: 5px auto;
   display: block;
+  list-style-type:lower-alpha;
+  line-height:none;
 }
 
 th {
@@ -265,6 +271,7 @@ a[disabled] {
 }
 
 .full-bottom-bar {
+  clear:both;
   background: #003A70;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
@@ -587,12 +594,14 @@ img.indent, div.indent {
   background-size: 1em;
   padding-left: 35px;
   margin: 5px 0;
+  padding-bottom:0;
 }
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
   float: right;
-  margin-right: 10%;
+  margin-right: 20px;
   margin-left: 1em;
   /* position: absolute; */
   /* right: 0; */
@@ -605,6 +614,67 @@ img.indent, div.indent {
 .leftFloat {
   float: left;
 }
+
+/** BJC4NYC elements added by Mary Fries, March 2015 **/
+div {
+	padding-bottom: .5em;
+}
+
+.forYouToDo, .dialogue, .takeItFurther {/* Shared Box Formatting */
+  padding: 1em;
+  margin-bottom: .5em;  
+}
+
+.forYouToDo:before, .dialogue:before, .takeItFurther:before { /* Shared Heading Formatting */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.forYouToDo {
+  background-color: #edf4e6;
+  margin-bottom: .5em;  
+}
+
+.forYouToDo:before {
+  content: "For You To Do";
+}
+
+.dialogue {
+  background-color: #ecf4fb;
+}
+
+.dialogue:before {
+  content: "Thinking with Your Mind... Out Loud and in Action";
+}
+
+.dialogue > div {
+  padding-left: 5em;
+  text-indent: -3em;
+}
+
+.dialogue > div.stagedir{
+  font-style: italic;
+  text-align: center;
+}
+
+.dialogue > div > span {
+  font-weight: bold;
+}
+
+.takeItFurther {
+  background-color: #e4cde3;
+}
+
+.takeItFurther:before {
+  content: "Take It Further";
+}
+
+.block {height: 2em;}
+
+.bigBlock {height: 6%;}
+
+.script {height: 18%;}
 
 
 /** ICON CLASSES **/

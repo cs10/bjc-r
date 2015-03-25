@@ -23,7 +23,7 @@
 		</p>
 		<img class="center" src="/bjc-r/img/recur/split-recursive-tree-BYOB.jpg" alt="" title="" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/splittree.jpg" border="0">
 		<p>
-			We're going to create a <code>tree</code> block in Snap<em>!</em>. It'll start with a <code>move</code> block to draw the trunk of the tree, then a <code>turn</code> block turning left, <i>then a <code>tree</code> block</i> to draw the left smaller tree, and so on.
+			We're going to create a <code>tree</code> block in Snap<em>!</em>. It'll start with a <code>move</code> block to draw the trunk of the tree, then a <code>turn</code> block turning left, <i>then a <code>tree</code> block</i>&thinsp; to draw the left smaller tree, and so on.
 		</p>
 		<p>
 			"Wait!" you're probably thinking. "How can we use a <code>tree</code> block inside a <code>tree</code> block? It doesn't exist yet!" That's the big idea for this assignment.
@@ -34,6 +34,7 @@
 		<p>
 			1. Make a <code>tree1</code> block (so named because it draws just one level of the tree) using this script: <br>
 		</p>
+        <div><div class="sidenote">The empty input in the <code>-</code> block doesn't get anything put in it from a list; we aren't using higher order functions here.  This just says to move <code>-size</code> steps.</div></div>
 		<img class="center" title="There should be an image here" alt="" src="/bjc-r/img/recur/tree1.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg" border="0">
 
 
@@ -65,7 +66,7 @@ this process. <br>
     </p>
 		<p> Before going on, make sure that you can
 mentally trace through the code provided. Paying close attention to the
-forwards and turns is going to be important to see the big picture and
+<code>move</code>s and <code>turn</code>s is going to be important to see the big picture and
 understand the recursion. <br>
     </p>
 	</body></html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<script src="/bjc-r/llab/loader.js"></script>
+	<title>Getting Started (Al)</title>
+    <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body>
+<p>Until now, you&rsquo;ve built and worked with recursive command blocks. But you can also use recursion in reporters. Thinking and programming with recursive reporters will give you a new tool that often lets you simplify complicated scripts. </p>
+
+<ol>
+<li>These ml blocks take a whole number as input. Build them and figure out what each does.
+<p><img src="/bjc-r/img/recur/reporters/ml-a.jpg" alt="recursive ML" width="263" height="154" align="top">
+<div><div class="sidenote">You get <code>reverse</code> by
+downloading list utilities
+from the library.</div></div>
+<img src="/bjc-r/img/recur/reporters/ml1.jpg" width="163" height="74" alt="ml1"> </p></p></li>
+<li><div class="alert quoteGreen"><p><strong>Minds in Action</strong>  Episode 1</p>
+<p><em>Derman is staring at this table:</em>
+<table width="200" border="1">
+  
+  <tr>
+    <th scope="col">Input&nbsp;</th>
+    <th scope="col">Output&nbsp;</th>
+  </tr>
+  <tr>
+    <td>0&nbsp;</td>
+    <td>3&nbsp;</td>
+  </tr>
+  <tr>
+    <td>1&nbsp;</td>
+    <td>5&nbsp;</td>
+  </tr>
+  <tr>
+    <td>2&nbsp;</td>
+    <td>7&nbsp;</td>
+  </tr>
+  <tr>
+    <td>3&nbsp;</td>
+    <td>9&nbsp;</td>
+  </tr>
+  <tr>
+    <td>4&nbsp;</td>
+    <td>11&nbsp;</td>
+  </tr>
+  <tr>
+    <td>5&nbsp;</td>
+    <td>13&nbsp;</td>
+  </tr>
+</table>
+
+  </p>
+    <p>T<small>ONY</small>: I have a reporter that will match this table. Each output is 2 times the input plus 3, so</p>
+<p><img src="/bjc-r/img/recur/reporters/T.jpg" width="178" height="74" alt="T(n)=2n+3"></p>
+<p>Just to be sure, I’ll try it:</p>
+<div><div class="sidenote">What exactly is Tony’s
+checker block doing?</div></div>
+<p><img src="/bjc-r/img/recur/reporters/map-T.jpg" width="193" height="30" alt="map T over ML(5)"></p>
+<p>Is Tony right?</p></div></li>
+<li><div class="alert quoteGreen"><p><strong>Minds in Action</strong>  Episode 2</p>
+<p><em>Sasha is looking at Derman’s table from Exercise 2.</em></p>
+<div><div class="sidenote">Derman: Yours is more
+complicated.
+Sasha: But that pattern
+was easier to spot (for me).</div></div>
+<p>SASHA: I see another way to match the table. You can do it with a recursive reporter. The base case is 3, and each output is obtained
+from the previous output by adding 2. Like this:</p>
+<p><img src="/bjc-r/img/recur/reporters/sasha.jpg" width="209" height="153" alt="Sasha's version"></p>
+<p>Check Sasha's work.</p></div></li>
+<li><p>Build Sasha-like (recursive) reporters that agree with each
+of these blocks on whole numbers.</p>
+  <p><img src="/bjc-r/img/recur/reporters/q4a.png"  alt="2n+7"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q4b.png" alt="2n+5"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q4c.png" alt="n^2+1"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q4d.png" alt="n^2+2"></p></li>
+<li><p>In problem 4, you can check your blocks against the ones in the problem for a long time, but you can’t check them for <em>all</em> numbers. Are there any numbers for which there isn’t a match?</p></li>
+<li><p>Build Tony-like reporters that agree with each of these blocks on whole numbers.</p>
+  <p><img src="/bjc-r/img/recur/reporters/q6a.jpg" width="210" height="153" alt="q6a"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q6b.jpg" width="210" height="153" alt="q6b"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q6c.jpg" width="207" height="153" alt="q6c"></p>
+  <p><img src="/bjc-r/img/recur/reporters/q6d.jpg" width="259" height="153" alt="q6d"></p>
+</li></ol>
+</body>
+</html>

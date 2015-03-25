@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+        <title>Repeating commands</title>
+        <!--ORIGINAL NAME: Repeat Until-->
+    </head>
+    <body>
+		<h2>The <code>For</code> Block</h2>
+
+<img  class="indent" src="/bjc-r/img/blocks/for.png" alt="for">
+
+        <p>
+            The numbers in the <code>for</code> block work as you probably think they do: the inner script is run enough times to count from the left number (1) to the right number (10).  As with the <code>repeat</code> block, you can change the numbersit comes with by default to change the way the block repeats.
+        </p>
+        <p>
+            What's new to you here, though, is the orange oval with <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> in it.By using this <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, your inner blocks can know which time through the loop they are currently on.  Here's how:
+        </p>
+        <p class="alert quoteBlue">
+            The <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> block is a <strong>variable</strong> that acts like a counter.  You use it any place you would use a number, and it will report the value that it currently holds.<br />
+            
+            Think of the <em>variable</em> like a box with a name&mdash;this one has the name <code>i</code>. This box is made for you by the <img class="inline" src="/bjc-r/img/prog/for.png" alt="for"> block, and holds a different number each time through the loop.  The first time it will hold <code>1</code>, or whatever is the left number in the <code>for</code> block.<br/>
+            
+            You use it by dragging <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> from the <i>source</i> within the <code>for</code> block down to the slot in which you will use it.
+        </p>
+
+        <p>
+            For instance:
+        </p>
+
+            <img class="indent" src="/bjc-r/img/looping/for-loop-drag-i.gif">
+
+        <p>
+            is the equivalent of
+        </p>
+
+            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png">
+
+<!-- Former page break --MF OLD NOTE: WE REALLY NEED TO GIVE THEM A PROGRAMMING TASK, NOT THIS STUFF -->
+
+        <p>
+            Click on the script below to load it in a new <span class="snap">snap</span> window:
+        </p>
+        <a class="run" href="/bjc-r/prog/loop/draw-squirral.xml"> <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"> </a>
+
+        <p>
+            Note that we changed the name of the variable, by clicking on the orange oval <em>without </em>dragging it.
+        </p>
+        <p>
+            This shape is called a &quot;squiral&quot; &mdash; a square spiral.
+            Do you see why it spirals outward?
+            The length value in the  <img class="inline" src="/bjc-r/img/blocks/move.png"> varies between repetitions.</p>
+
+        <div class="forYouToDo">
+			<ol>
+            	<li>Try changing the turning angle to other numbers: 92, 126, etc.</li>
+            	<li>
+                	Try changing the turning angle and the move length to see how close you can get to a smooth spiral:<br />
+                	<img class="center" src="/bjc-r/img/prog/spiral.png" alt="spiral">
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
