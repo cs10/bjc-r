@@ -1,27 +1,27 @@
 title: Lists
 {
-h1: Formerly Topic 5: Collecting Data into Lists
+// h1: Formerly Topic 5: Collecting Data into Lists
 
-h2: Big Ideas
+// h2: Big Ideas
 // big-idea: Understand the meaning of Turing Completeness.
 // big-idea: Understand the concept of recursion.
-big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
+// big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
 
 //	video: Programming Paradigms (Dan Garcia) [https://coursesharing.org/courses/6/lectures/13]
-	video: Recursion 1 [https://coursesharing.org/courses/6/lectures/17]
-	video: Social Implications 1 [http://youtu.be/v_tOSw-vhug]
-	reading: Blown to Bits, Chapter 3 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf]
+//	video: Recursion 1 [https://coursesharing.org/courses/6/lectures/17]
+//	video: Social Implications 1 [http://youtu.be/v_tOSw-vhug]
+//	reading: Blown to Bits, Chapter 3 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf]
 
-h2: Activities
-learning-goal: Practice writing and reading functions with different input types.
-learning-goal: Determine how to break problems down into individual functions.
-learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
-learning-goal: Develop the techniques and functions to draw a game board.
+// h2: Activities
+// learning-goal: Practice writing and reading functions with different input types.
+// learning-goal: Determine how to break problems down into individual functions.
+// learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
+// learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
-	 resource: Getting Started [/bjc-r/cur/3-lists/1-working-with-lists/getting-started.html]
-	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
-	 resource: What good are lists?  [/bjc-r/cur/programming/lists/hof/what-good-are-lists.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-working-with-lists/getting-started.html]
+	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/using-the-LIST-block-to-make-a-list.html]
+	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-working-with-lists/why-use-lists.html]
 	 resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
 	 resource: Choosing some items from a list [/bjc-r/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
 	 resource: Combining all the items of a list [/bjc-r/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
@@ -39,17 +39,17 @@ heading: List Mutation
 	
 assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
 
-h1: Formerly Topic 13: Practicing with Lists: Tic-Tac-Toe
-h2: Big Ideas
+// h1: Formerly Topic 13: Practicing with Lists: Tic-Tac-Toe
+// h2: Big Ideas
 
 
-	video: Recursion 2 [https://coursesharing.org/courses/6/lectures/19]
-	video: Social Implications 2 [https://coursesharing.org/courses/6/lectures/20]
-	reading: Blown to Bits, Chapter 4 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter4.pdf]
+// 	video: Recursion 2 [https://coursesharing.org/courses/6/lectures/19]
+// 	video: Social Implications 2 [https://coursesharing.org/courses/6/lectures/20]
+// 	reading: Blown to Bits, Chapter 4 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter4.pdf]
 
-h2: Activities
-learning-goal: Get more practice with lists and higher order functions used in combination.
-learning-goal: Develop a significant-sized project.
+// h2: Activities
+// learning-goal: Get more practice with lists and higher order functions used in combination.
+// learning-goal: Develop a significant-sized project.
 
 heading: Tic-Tac-Toe strategy
 	 resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
