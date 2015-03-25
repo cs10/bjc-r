@@ -19,6 +19,7 @@ learning-goal: Gain experience working with a new data structure and the large r
 learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
+	 resource: Getting Started [/bjc-r/cur/3-lists/1-working-with-lists/getting-started.html]
 	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
 	 resource: What good are lists?  [/bjc-r/cur/programming/lists/hof/what-good-are-lists.html]
 	 resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
