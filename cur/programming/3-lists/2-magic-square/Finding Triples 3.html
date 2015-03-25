@@ -1,39 +1,32 @@
-<!DOCTYPE html><html>
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title> Listing All The Triples</title>
+    </head> 
 
+    <body>
+    	<h2>Listing All The Triples</h2>
 
-   <head>
-      
-      <script src="/bjc-r/llab/loader.js"></script>
-      
-      <title> Listing All The Triples</title>
-      
-   </head> 
+        <div>Here's one version of the <code>lookup</code> reporter from the previous page. It uses the higher-order function <code>map</code>:</div>
 
+        <div><img src="/bjc-r/img/3-lists/lookup_reporter.png" class="indent" alt="code for lookup reporter"></div>
 
-   <body>
+        <div>When using <code>map</code>, a new list is built the same size as <code>locations</code>. Each member of the new list is the result of the <code>item</code> block.</div>
 
-  <p>Here's one version of the <code>lookup</code> reporter from the previous page. It uses the higher-order function <code>map</code>:</p>
+        <div>How is this helpful? Now you can pull any set of 3 numbers from the list of 9 numbers, on demand.</div>
 
-  <div><img src="/bjc-r/img/3-lists/lookup_reporter.png" alt="code for lookup reporter"></div>
+        <div>And, you have a handy list of triples you'd like to know about: <img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></div>
+        <div class="forYouToDo">
+            <ol>
+            	<li> 
+                	Write <code>all-triples</code> that takes <code>square</code>, a set of 9 numbers, and reports a list of eight triples, the values in <code>square</code> for each row, column, and diagonal. Remember that <code>triples</code> is a global variable that can be used anywhere.<br />
+					<img src="/bjc-r/img/3-lists/all_triples_1.png" style="height:20em;" class="indent" alt="output from all-triples"><br />
+            		The output from <code>all-triples</code> can be a little hard to read. It's a list of 8 smaller lists, each with 3 elements.
+             	</li>
+                <li> Write a description of how you could take this information and determine whether the original 9 numbers form a magic square. </li>
 
-  <p>When using <code>map</code>, a new list is built the same size as <code>locations</code>. Each member of the new list is the result of the <code>item</code> block.</p>
-
-  <p>How is this helpful? Now you can pull any set of 3 numbers from the list of 9 numbers, on demand.</p>
-
-  <p>And, you have a handy list of triples you'd like to know about: <img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
-
-
-<ol>
-  <li> Write <code>all-triples</code> that takes <code>square</code>, a set of 9 numbers, and reports a list of eight triples, the values in <code>square</code> for each row, column, and diagonal. Remember that <code>triples</code> is a global variable that can be used anywhere.
-
-  <div><img src="/bjc-r/img/3-lists/all_triples_1.png" style="height:50%;" alt="output from all-triples"></div>
-
- </li>
-</ol>
-
-<p> The output from <code>all-triples</code> can be a little hard to read. It's a list of 8 smaller lists, each with 3 elements. </p>
-
-<ol start="2">
-  <li> Write a description of how you could take this information and determine whether the original 9 numbers form a magic square. </li>
-</ol>
-</body></html>
+            </ol>
+        </div>
+	</body>
+</html>
