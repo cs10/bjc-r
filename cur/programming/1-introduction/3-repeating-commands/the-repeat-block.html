@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Repeating Commands</title>
+        <!--ORIGINAL NAME: "Experiment with Repeat" and then "Don't repeat yourself; Let <span class="snap">snap</span> do
+            it for you"-->
+    </head>
+    <body>
+        <h2>The <code>Repeat</code> Block</h2>
+
+        <!-- Mary: We decided not to use the videos. 
+        <div class="code-vid">
+            <iframe width="560" height="315" src="//www.youtube.com/embed/jsUN0NV5RfQ" frameborder="0" allowfullscreen></iframe><br />
+            <span class="caption">Thanks to <a href="http://code.org">code.org</a> for this video!</span>
+        </div>-->
+
+        <div class="sidenote">
+        	<div>You can click on this script to open  it in <span class="snap">snap</span> in another window.  This is indicated by the little <img class="inline" src="/bjc-r/img/web/external-link.png"> icon that follows it.</div>
+    	</div>
+
+        <div>We can use the <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> block to make drawing shapes easier. The script below draws a square.</div>
+
+        <div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/prog/prog-create-square-code-BYOB.gif" alt="Square example image" title="Square example image"> </a></div>
+
+        <div class="forYouToDo">
+            <ol>
+                <li>There are three different numeric values in the script&mdash;<code>4</code>, <code>100</code>, and <code>90</code>&mdash;that you can think of as <strong>parameters</strong> that change the resulting picture. Play with the script to understand how each number contributes to the "squareness" of the shape that is drawn.</li>
+
+                <div class="sidenote">
+                    <div>A regular polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
+                </div>
+                
+                <!-- This is cute, but I don't think it's needed, and the code is too much for this early in the course. --MF
+                <a class="run" href="/bjc-r/prog/loop/draw-square-and-squiggle.xml">
+                <img class="center" src="/bjc-r/img/looping/drawing-regular-polygons.gif" alt="drawing a square and squiggle" />
+                </a> -->
+            	<li>
+                	Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes:
+                    <ul>
+                        <li>Equilateral Triangle</li>
+                        <li>Pentagon</li>
+                        <li>Hexagon</li>
+                        <li>Octagon</li>
+                    </ul>
+                </li>
+                <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>
+                <li>
+                	What number you can put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown?<br/ >
+                    <img src="/bjc-r/img/prog/nonagon-script.png"/>
+					<img src="/bjc-r/img/prog/nonagon.png"/>
+                </li>
+            </ol>
+        </div>
+                    
+        <div class="takeItFurther">
+        	<ul>
+                <li>As you draw regular polygons with more and more sides, you are getting closer and closer to a circle.  Is there a point at which is actually, mathematically a circle?</li>
+            	<li>
+                	<div class="sidenote">
+                    	<div>
+                        	A regular star is closely related to a pentagon, and a turning angle of 360 &divide; 5 = 72&deg; draws a regular pentagon.<br /><br />
+                        	Use the <code>turn</code> block <em>before</em> the <code>repeat</code> block so that the star isn't drawn tilted, but don't worry about this until you have the other <code>turn</code> block figured out.
+             			</div>
+                    </div>
+                    Complete the code below to draw a star.<br/>
+                    <div class="indent">
+                        <a class="run" href="/bjc-r/prog/drawing/draw-star-fill-in.xml">
+	                        <img  src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" alt="drawing a star to fill in" />
+    	                    <img src="/bjc-r/img/drawing/draw-star-picture.png" alt="drawn star">
+                        </a>
+                    </div>
+                </li>
+                <li>Through how many degrees did your sprite turn altogether when you drew the five-pointed star?</li>
+            </ul>
+        </div>
+		<div> It is also possible to <em>nest</em> one <code>repeat</code> block inside another. Since <span class="snap">snap</span> processes scripts from top to bottom, the first <code>repeat</code> will begin first, and the second <code>repeat</code> will have to complete its entire process before the process of the first <code>repeat</code> is called again.</div>
+        <div class="forYouToDo">
+            <ol start="5">
+            	<li>
+                	Consider this script:<br />
+                    <img src="/bjc-r/img/prog/hip32.png" class="indent">
+                    <ul>
+                        <li>How many times in total does the script say "Hip"?</li>
+                        <li>How many times in total does the script say "Hooray"?</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+	</body>
+</html>

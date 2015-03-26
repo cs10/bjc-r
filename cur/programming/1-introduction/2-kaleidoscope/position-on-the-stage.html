@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Kaleidoscope</title>
+    </head>
+    <body>
+		<h2>Position on the Stage</h2>
+
+        <div>
+   	The stage starts out blank white. You can change its background to show the (<em>x</em>, <em>y</em>) coordinates, if you like. in the usual way where <em>x</em> represents the horizontal position, from -240 (left) to 240 (right), and <em>y</em> represents the vertical position, from -180 (bottom) to 180 (top). Here's a picture:</div>
+        <div class="sidenote">
+            <div>
+                To make the <span class="snap">snap</span> stage look like this:
+                <ol>
+                    <li>In the <a href="/bjc-r/cur/programming/1-introduction/1-getting-started/getting-to-know-the-interface.html">Sprite Corral</a>, select the Stage.</li>
+                    <li>Then, choose "Backgrounds" from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> .</li>
+                    <li>And choose "xy-grid.gif".</li>
+                </ol>
+            </div>
+        </div>
+      	<div><img src="/bjc-r/img/1-introduction/snap-coord-grid.png" class="indent" alt="Coordinate Grid"/></div>
+        <div>Just like in algebra, the center of the stage is called the origin and has coordinates (0, 0). The black sprite above is to the right of the origin, so its <em>x</em> position is positive. Since it is also below the origin, its <em>y</em> position is negative. Here, each grid line represents 20 steps.</div>
+        <div>Unlike in algebra, the numbers naming each direction start with 0 at the top. The black sprite above is pointing to the right, so its direction is 90.</div>
+        <div><img src="/bjc-r/img/1-introduction/point-in-direction.png" class="indent script" alt="Coordinate Grid"/></div>
+    	<div class="forYouToDo">
+      		<ol>
+            	<li>What are the coordinates of the black sprite above?</li>
+                <li>
+                    Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
+                    <img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent bigBlock" alt="Move 10 Steps Block"/>&nbsp;
+                    <img src="/bjc-r/img/1-introduction/turn-right-15.png" class="bigBlock" alt="Turn Right 15 Degrees Block"/>&nbsp;
+                    <img src="/bjc-r/img/1-introduction/clear.png" class="bigBlock" alt="Clear Block"/>&nbsp;
+                    and <img src="/bjc-r/img/1-introduction/pen-down.png" class="bigBlock" alt="Pen Up Block"/>.
+                </li>
+                <li>
+                	This script was designed to create a pentagon, but it has a bug. Try to guess what it does instead. What would you change to fix this script?<br/>
+                	<img src="/bjc-r/img/1-introduction/forever-4.png" class="indent script" alt="penDown, forever (turn CW 10 deg, change x by 10)">
+                </li>
+            </ol>
+        </div>
+        <div>
+            Reminders:
+            <ul>
+                <li>Once the pen is down, it stays down even in a different script. If you want your script to move the sprite  without leaving a trace, use the <code>pen up</code> block to &quot;lift the pen.&quot; </li>
+                <li>If you want, you can use <a href="/bjc-r/cur/programming/1-introduction/1-getting-started/sprites-reporters.html"><em>watchers</em></a> to show the direction of the sprite or its <em>x</em> and <em>y</em> coordinates.</li>
+            </ul>
+        </div>
+    </body>
+</html>
