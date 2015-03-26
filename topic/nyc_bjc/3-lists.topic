@@ -1,4 +1,4 @@
-title: Lists
+1-title: Lists
 {
 // h1: Formerly Topic 5: Collecting Data into Lists
 
@@ -19,15 +19,15 @@ title: Lists
 // learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-working-with-lists/getting-started.html]
-	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/using-the-LIST-block-to-make-a-list.html]
-	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-working-with-lists/why-use-lists.html]
-	 resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
-	 resource: Choosing some items from a list [/bjc-r/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
-	 resource: Combining all the items of a list [/bjc-r/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
-	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
-	 resource: More on composition of higher order functions [/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
-	 resource: When you really have to loop [/bjc-r/cur/programming/lists/hof/when-you-really-have-to-loop.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-working-with-lists/1-getting-started.html]
+	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/2-using-the-LIST-block-to-make-a-list.html]
+	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-working-with-lists/3-why-use-lists.html]
+	 resource: Transforming each item of a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/4-transforming-each-item-of-a-list.html]
+	 resource: Choosing some items from a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/5-choosing-some-items-from-a-list.html]
+	 resource: Combining all the items of a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/6-combining-all-the-items-of-a-list.html]
+	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/3-lists/1-working-with-lists/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
+	 resource: More on composition of higher order functions [/bjc-r/cur/programming/3-lists/1-working-with-lists/8-more-on-composition-of-higher-order-functions.html]
+	 resource: When you really have to loop [/bjc-r/cur/programming/3-lists/1-working-with-lists/9-when-you-really-have-to-loop.html]
 	
 //heading: Lists and Sentences: The Index Variable Pattern
 //	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
