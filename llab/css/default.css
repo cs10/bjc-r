@@ -670,12 +670,25 @@ div {
   content: "Take It Further";
 }
 
+/* Other Random Things added by Mary */
+
 .block {height: 2em;}
 
 .bigBlock {height: 6%;}
 
 .script {height: 18%;}
 
+code {
+  background: none;
+  /* color: #00FFFF; */
+  font-family: courier;
+  font-size: 1.1em;
+}
+
+.anchor {
+   padding-top: 65px;
+   margin-top: -65px;
+}
 
 /** ICON CLASSES **/
 /* Begin items controlled primarily by .topic div */
