@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            The <code>random</code> Block
+        </title><!--ORIGINAL NAME: Randomly Moving Character-->
+    </head>
+    <body>
+        <p>
+            We can generate a random number between any two whole numbers using the <code>random</code> block:
+        </p>
+        <div style="text-align: center;">
+            <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg">
+        </div>
+        <p>
+            This block generates numbers with about equal likelihood, and can generate
+            the both the lower and upper bounds that you give it.  So, 
+            <img src="/bjc-r/img/blocks/pick-random-1-to-10.png" alt="pick random" />
+            can generate 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10.
+            
+        </p>
+        <p>
+            This block (and others with round edges) is a <strong>reporter</strong> block&mdash;it <em>reports</em> a value. 
+            Use this block inside other blocks that take an input:
+        </p>
+
+        <div style="text-align: center;">
+            <img  border="0" title="Random Everywhere" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
+        </div>
+
+
+        <p>
+            <a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This program</a>
+            simulates a six sided die that rolls every time you click on it.  
+            (You can look in the <code>Costumes</code> area&mdash;click the tab 
+            above the script&mdash;to see the six costumes that the random 
+            number is using).
+        </p>
+    </body>
+</html>

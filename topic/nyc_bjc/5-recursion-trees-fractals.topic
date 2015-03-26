@@ -27,6 +27,8 @@ heading: Trees in a Forest
     resource: A Forest [/bjc-r/cur/programming/recur/tree/forest.html]
 
 heading: Fractals
+    resource: Triangle Fractal #1 [/bjc-r/cur/programming/recur/fractals/triangle-fractal-1.html]
+    resource: Triangle Fractal #2 [/bjc-r/cur/programming/recur/fractals/triangle-fractal-2.html]
     resource: Snowflake [/bjc-r/cur/programming/recur/fractals/snowflake.html]
     resource: C-Curve [/bjc-r/cur/programming/recur/fractals/c-curve.html]
     resource: Search for "Fractals in Nature" [/bjc-r/cur/programming/recur/fractals/search-for-fractals-in-nature.html]
