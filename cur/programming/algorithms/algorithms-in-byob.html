@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Algorithms in BYOB</title><!--ORIGINAL NAME: Algorithms in BYOB-->
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Algorithms in BYOB</title>
 	</head>
 	<body>
 		Using <a href="/bjc-r/prog/BYOB/algorithms-framework.ypr">the framework provided</a>, implement a BYOB block in the <span style="font-weight: bold;">Unsorted</span> sprite that finds a number in a list of unsorted numbers using the strategy that we discussed. The block should accept the target number (the "needle") and a full list of numbers (the "haystack") as arguments, and return the index of the number&#128;&#153;s position in the list. What was the strategy we discussed for unsorted lists, and how could you implement it in BYOB? Fill in a separate block for the sorted approach and implement it as well. Use the framework to determine how their running time changes as the list size increases. Which is faster for a list of size 5? 50? 500? 5000? Why do you think this is?
 		<br>
 		<br>
-		<div style="text-align: center;"><img border="0" title="Blocks to build" alt="Blocks to build" src="/bjc-r/img/list/find-number-in-list.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/finder-blocks.png">
+		<div style="text-align: center;"><img border="0" title="Blocks to build" alt="Blocks to build" src="/bjc-r/img/list/find-number-in-list.png"/>
 			<br>
 		</div>
 		<br>
 		<h3>Searching Unsorted Data</h3>Unsorted data doesn't give you a lot to work with. Your knowledge is limited to strictly the most obvious information: the numbers themselves. This makes strategy somewhat non-existent; the best you can do, on average, is to simply start at the beginning and search through the list one by one. This approach can become incredibly slow if we're dealing with a lot of data, but is actually fairly quick when working with smaller amounts of data. In addition, the block is relatively straightforward to create and doesn't require the data to be put into a particular order to work. The block should return the location of the number in the list, or zero if the number doesn't exist in the list.
 		<br>
-		<h3>Searching Sorted Data</h3><img border="0" style="float: right; display: inline;" src="/bjc-r/img/sys/binary-search-diagram.png" alt="Searching for Numbers" title="Searching for Numbers" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/binary-search.png">
+		<h3>Searching Sorted Data</h3><img src="/bjc-r/img/sys/binary-search-diagram.png" alt="Searching for Numbers" title="Searching for Numbers" >
 		<br>
 		You could say that putting information in a particular order (lowest =&gt; highest, for example) actually <span style="font-style: italic;">creates new</span> information. Instead of being a simple list of numbers, sorting the information adds order and allows us to make additional assumptions that we weren't able to make before. This type of information is different from the numbers themselves: it is not stored in a variable or list, but becomes a <span style="font-style: italic;">property </span>of the information itself. We can use the property to reduce the number of checks we have to do to find a particular number. The trade-off to this, however, is that we need to sort the list (which takes time) before we can make use of the order.
 		<br>
 		<br>
-		The provided framework includes <img border="0" title="Sort" alt="Sort" src="/bjc-r/img/list/sort-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/sort.png">, which will allow you to sort a list. Sorting the list will take a decently long time, so we'll want to do it as few times as possible. How many times will you need to sort the list for each test run?
+		The provided framework includes <img border="0" title="Sort" alt="Sort" src="/bjc-r/img/list/sort-block.png" />, which will allow you to sort a list. Sorting the list will take a decently long time, so we'll want to do it as few times as possible. How many times will you need to sort the list for each test run?
 		<br>
 		<br>
 		Searching through sorted data, while faster, also requires a more complicated block. We won't need to search through every space in the list anymore -- we can assume that many of them won't work. We can keep track of the range of numbers in a list that are a possible solution to the problem (see diagram) by recording the minimum and maximum slots that could possibly contain our number. This range should shrink after each guess because you can throw away the half of the numbers on the wrong side of the center point. Here's how things should generally work:
