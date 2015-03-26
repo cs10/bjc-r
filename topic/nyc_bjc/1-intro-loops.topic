@@ -16,7 +16,7 @@ heading: Getting Started
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-getting-started/reporters.html]
 
 heading: Kaleidoscope
- 	raw-html: <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+ 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
 	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
@@ -25,10 +25,9 @@ resource: Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/kal
 
 heading: Repeating Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-repeat-block.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	quiz: Check Your Understanding: Using the Repeat Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/repeat-self-test.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
-	resource: A New Way to Loop [/bjc-r/cur/programming/1-introduction/3-repeating-commands/introduction-to-for.html]
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
 
 heading: Making Your Own Blocks
