@@ -16,16 +16,18 @@
         </div>-->
 
         <div class="sidenote">
-        	<div>You can click on this script to open  it in <span class="snap">snap</span> in another window.  This is indicated by the little <img class="inline" src="/bjc-r/img/web/external-link.png"> icon that follows it.</div>
+        	<div>The little <img class="inline" src="/bjc-r/img/web/external-link.png"> icon next to this script means that you can click to open it in another window.</div>
     	</div>
 
-        <div>We can use the <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> block to make drawing shapes easier. The script below draws a square.</div>
+        <div>This script draws a square.</div>
 
         <div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/prog/prog-create-square-code-BYOB.gif" alt="Square example image" title="Square example image"> </a></div>
+       The <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> block certainly makes the script shorter and simpler to construct, but that is not what's most important about it. The <em>structure</em> is clearer when we see <code>repeat 4 (move 100, turn 90)</code> than when we see <code>move 100, turn 90, move 100, turn 90, move 100, turn 90, move 100, turn 90</code>. 
 
         <div class="forYouToDo">
             <ol>
-                <li>There are three different numeric values in the script&mdash;<code>4</code>, <code>100</code>, and <code>90</code>&mdash;that you can think of as <strong>parameters</strong> that change the resulting picture. Play with the script to understand how each number contributes to the "squareness" of the shape that is drawn.</li>
+                <li>The three numbers in the script&mdash;<code>4</code>, <code>100</code>, and <code>90</code>&mdash; are <strong>parameters</strong> that determine the resulting behavior. Play with each number to see how it contributes to the "squareness" of the shape that is drawn. Even try using negatives of these numbers to see what happens.</li>
+                <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
 
                 <div class="sidenote">
                     <div>A regular polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
@@ -36,8 +38,8 @@
                 <img class="center" src="/bjc-r/img/looping/drawing-regular-polygons.gif" alt="drawing a square and squiggle" />
                 </a> -->
             	<li>
-                	Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes:
-                    <ul>
+                	Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes <em>using the smallest number of lines</em>:
+<ul>
                         <li>Equilateral Triangle</li>
                         <li>Pentagon</li>
                         <li>Hexagon</li>
@@ -46,7 +48,7 @@
                 </li>
                 <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>
                 <li>
-                	What number you can put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown?<br/ >
+                	What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown?<br/ >
                     <img src="/bjc-r/img/prog/nonagon-script.png"/>
 					<img src="/bjc-r/img/prog/nonagon.png"/>
                 </li>
@@ -55,28 +57,21 @@
                     
         <div class="takeItFurther">
         	<ul>
-                <li>As you draw regular polygons with more and more sides, you are getting closer and closer to a circle.  Is there a point at which is actually, mathematically a circle?</li>
+                <li>Figure out what turning angles to use in scripts that draw a 12-sided or 36-sided polygon and make small enough sides so that these can fit on the stage. With more and more sides, these get closer and closer to a circle. Is there a point at which the result <em>is</em> a circle?</li>
             	<li>
-                	<div class="sidenote">
-                    	<div>
-                        	A regular star is closely related to a pentagon, and a turning angle of 360 &divide; 5 = 72&deg; draws a regular pentagon.<br /><br />
-                        	Use the <code>turn</code> block <em>before</em> the <code>repeat</code> block so that the star isn't drawn tilted, but don't worry about this until you have the other <code>turn</code> block figured out.
-             			</div>
-                    </div>
-                    Complete the code below to draw a star.<br/>
+                	The code in problem 5 created a regular 9-pointed star. Through how many degrees did the sprite turn altogether to draw that star?
+                    <li> Adjust the numbers in that script to get a regular 5-pointed star. </li>
                     <div class="indent">
-                        <a class="run" href="/bjc-r/prog/drawing/draw-star-fill-in.xml">
-	                        <img  src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" alt="drawing a star to fill in" />
-    	                    <img src="/bjc-r/img/drawing/draw-star-picture.png" alt="drawn star">
-                        </a>
+                        <img src="/bjc-r/img/drawing/draw-star-picture.png" alt="drawn star">
                     </div>
                 </li>
                 <li>Through how many degrees did your sprite turn altogether when you drew the five-pointed star?</li>
+                <li>Find a starting direction so that the star sits "straight."</li>
             </ul>
         </div>
 		<div> It is also possible to <em>nest</em> one <code>repeat</code> block inside another. Since <span class="snap">snap</span> processes scripts from top to bottom, the first <code>repeat</code> will begin first, and the second <code>repeat</code> will have to complete its entire process before the process of the first <code>repeat</code> is called again.</div>
         <div class="forYouToDo">
-            <ol start="5">
+            <ol start="6">
             	<li>
                 	Consider this script:<br />
                     <img src="/bjc-r/img/prog/hip32.png" class="indent">
@@ -84,6 +79,14 @@
                         <li>How many times in total does the script say "Hip"?</li>
                         <li>How many times in total does the script say "Hooray"?</li>
                     </ul>
+                </li>
+                <li> Here is another script that has nested <code>repeat</code> blocks. <br />
+                    <img src="/bjc-r/img/1-introduction/square-in-square.png" class="indent" style="height:44em;">
+                <ul>
+                        <li>Sketch on paper what you expect it to do. </li>
+                        <li>Build it and try it out.</li>
+                        <li>Embed <em>one more</em> <code>repeat</code> in the same way.</li>
+                  </ul>
                 </li>
             </ol>
         </div>

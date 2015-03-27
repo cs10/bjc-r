@@ -7,7 +7,7 @@
 		<h2>Position on the Stage</h2>
 
         <div>
-You already know how to determine the (<em>x</em>, <em>y</em>) coordinates of the sprite. You can, if you like, also change the appearance of the stage to show the axes (or other backgrounds). The picture below shows the stage decorated by axes and a grid. It also gives the coordinates of the four points that are on the axes and farthest from the origin but still visible on the stage.</div>
+You can change the appearance of the stage to show the axes (or other backgrounds). The picture below shows the stage with axes and a grid. The background also shows the coordinates of the four points on the axes that are farthest from the origin but still visible on the stage.</div>
         <div class="sidenote">
             <div>
                 To make the <span class="snap">snap</span> stage look like this:
@@ -19,27 +19,27 @@ You already know how to determine the (<em>x</em>, <em>y</em>) coordinates of th
             </div>
         </div>
       	<div><img src="/bjc-r/img/1-introduction/snap-coord-grid.png" class="indent" alt="Coordinate Grid"/></div>
-        <div>Coordinate systems for computer screens do not all work the way we expect in algebra, but <span class="snap">snap</span>'s  does. In the picture above, the tip of the sprite's arrowhead is to the right of the origin, so its <em>x</em> position is positive. Since it is also below the origin, its <em>y</em> position is negative.</div>
-        <div><em>Unlike</em> the common mathematical convention, the numbers naming <em>direction</em> start with 0 at the top ("north") and count degrees going clockwise. The black sprite above is pointing to the "east," so its direction is 90.</div>
+        <div>Coordinate systems for computer screens do not all work the way we expect in algebra, but <span class="snap">snap</span> 's  does. <em>Unlike</em> the common mathematical convention, the numbers naming <em>direction</em> start with 0 at the top ("north") and count degrees going clockwise. The black sprite above is pointing to the "east," so its direction is 90.</div>
         <div><img src="/bjc-r/img/1-introduction/point-in-direction.png" class="indent script" alt="Coordinate Grid"/></div>
     	<div class="forYouToDo">
       		<ol>
-            	<li>What are the coordinates of the black sprite above?</li>
+            	<li>Change the background on your stage so that you see the coordinates. Then experiment with your sprite to make sure you see <em>which part of the sprite</em> the coordinates are describing. </li>
+                <li>What are the coordinates of the black sprite above?</li>
                 <li>
-                    Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
+                    Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that, with one click, draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
                     <img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent bigBlock" alt="Move 10 Steps Block"/>&nbsp;
                     <img src="/bjc-r/img/1-introduction/turn-right-15.png" class="bigBlock" alt="Turn Right 15 Degrees Block"/>&nbsp;
                     <img src="/bjc-r/img/1-introduction/clear.png" class="bigBlock" alt="Clear Block"/>&nbsp;
                     and <img src="/bjc-r/img/1-introduction/pen-down.png" class="bigBlock" alt="Pen Up Block"/>.
                 </li>
                 <li>
-                	This script was designed to create a pentagon, but it has a bug. Try to guess what it does instead. What would you change to fix this script?<br/>
+                	This script was intended to create a pentagon, but it has bugs. Without building it, try to figure out what it does instead. Then build it and try it out. What change(s) would fix this script?<br/>
                 	<img src="/bjc-r/img/1-introduction/forever-4.png" class="indent script" alt="penDown, forever (turn CW 10 deg, change x by 10)">
                 </li>
             </ol>
         </div>
         <div>
-            Reminders:
+            Useful notes:
             <ul>
                 <li>Once the pen is down, it stays down even in a different script. If you want your script to move the sprite  without leaving a trace, use the <code>pen up</code> block to &quot;lift the pen.&quot; </li>
                 <li>If you want, you can use <a href="/bjc-r/cur/programming/1-introduction/1-getting-started/sprites-reporters.html"><em>watchers</em></a> to show the direction of the sprite or its <em>x</em> and <em>y</em> coordinates.</li>
