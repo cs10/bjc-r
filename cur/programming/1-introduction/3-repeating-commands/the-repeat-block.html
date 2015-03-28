@@ -22,10 +22,12 @@
         <div>This script draws a square.</div>
 
         <div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/prog/prog-create-square-code-BYOB.gif" alt="Square example image" title="Square example image"> </a></div>
-       The <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> block certainly makes the script shorter and simpler to construct, but that is not what's most important about it. The <em>structure</em> is clearer when we see <code>repeat 4 (move 100, turn 90)</code> than when we see <code>move 100, turn 90, move 100, turn 90, move 100, turn 90, move 100, turn 90</code>. 
-
+    <div>The <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> block certainly makes the script shorter and simpler to construct, but that is not what's <em>most</em> important about it. </div>
+       <div>The structure&mdash;the logic of the script&mdash;is clearer when we see <code>repeat 4 (move 100, turn 90)</code> than when we see <code>move 100, turn 90, move 100, turn 90, move 100, turn 90, move 100, turn 90</code>. Making the logic clear is essential for good coding for lots of reasons, including making it easier to catch bugs. In that long list, we'd have to count the parts to see if it's right and you can imagine how easy it would be to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one.
+         
+       </div>
         <div class="forYouToDo">
-            <ol>
+      <ol>
                 <li>The three numbers in the script&mdash;<code>4</code>, <code>100</code>, and <code>90</code>&mdash; are <strong>parameters</strong> that determine the resulting behavior. Play with each number to see how it contributes to the "squareness" of the shape that is drawn. Even try using negatives of these numbers to see what happens.</li>
                 <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
 
@@ -48,7 +50,7 @@
                 </li>
                 <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>
                 <li>
-                	What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown?<br/ >
+      What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown?<br/ >
                     <img src="/bjc-r/img/prog/nonagon-script.png"/>
 					<img src="/bjc-r/img/prog/nonagon.png"/>
                 </li>
@@ -60,12 +62,12 @@
                 <li>Figure out what turning angles to use in scripts that draw a 12-sided or 36-sided polygon and make small enough sides so that these can fit on the stage. With more and more sides, these get closer and closer to a circle. Is there a point at which the result <em>is</em> a circle?</li>
             	<li>
                 	The code in problem 5 created a regular 9-pointed star. Through how many degrees did the sprite turn altogether to draw that star?
-                    <li> Adjust the numbers in that script to get a regular 5-pointed star. </li>
+              <li> Adjust the numbers in that script to get a regular 5-pointed star. </li>
                     <div class="indent">
                         <img src="/bjc-r/img/drawing/draw-star-picture.png" alt="drawn star">
                     </div>
                 </li>
-                <li>Through how many degrees did your sprite turn altogether when you drew the five-pointed star?</li>
+  <li>Through how many degrees did your sprite turn altogether when you drew the five-pointed star?</li>
                 <li>Find a starting direction so that the star sits "straight."</li>
             </ul>
         </div>
@@ -81,9 +83,10 @@
                     </ul>
                 </li>
                 <li> Here is another script that has nested <code>repeat</code> blocks. <br />
-                    <img src="/bjc-r/img/1-introduction/square-in-square.png" class="indent" style="height:44em;">
-                <ul>
-                        <li>Sketch on paper what you expect it to do. </li>
+                  <img src="/bjc-r/img/1-introduction/square-in-square.png" class="indent" style="height:44em;">
+                <ul><div class="sidenote">
+        	<div><img src="/bjc-r/img/1-introduction/square-fractal2.png" class="indent"></div></div>
+                        <li>Sketch on paper what you expect it to do. </li> 
                         <li>Build it and try it out.</li>
                         <li>Embed <em>one more</em> <code>repeat</code> in the same way.</li>
                   </ul>
