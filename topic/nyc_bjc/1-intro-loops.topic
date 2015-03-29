@@ -8,12 +8,13 @@ title: Introduction to <span class="snap">snap</span>
 heading: Getting Started
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
 	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-getting-started/what-is-snap.html]
-	resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-getting-started/accessing-snap.html] 
-	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-getting-started/getting-to-know-the-interface.html]
-	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-getting-started/motion-blocks.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
+	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-getting-started/motion-blocks.html]
+	// resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-getting-started/accessing-snap.html] 
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-getting-started/getting-to-know-the-interface.html]
 	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-getting-started/creating-scripts.html]
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-getting-started/reporters.html]
+	resource: Saving your work [/bjc-r/cur/programming/1-introduction/1-getting-started/saving-your-work.html]
 
 heading: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
