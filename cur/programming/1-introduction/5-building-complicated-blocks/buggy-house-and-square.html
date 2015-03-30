@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- put the following in exactly -->
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>
-            Composing with "buggy" custom blocks
-        </title>
-
+        <title>Building Complicated Blocks with Simple Blocks</title>
     </head>
     <body>
-
-        <p>
-            A "buggy" program is one that doesn't work right.  You would say that it contains
-            one or more "bugs", which are parts of the program that do something other
-            that what the programmer intended.
-        </p>
-
-        <p>
-            Consider the following implementation of <code>draw square</code>:
-        </p>
+    	<h2>Composing with "Buggy" Custom Blocks</h2>
+	    <p>A "buggy" program is one that doesn't work right.  You would say that it contains one or more "bugs", which are parts of the program that do something other that what the programmer intended.</p>
+        <p>Consider the following implementation of <code>draw square</code>: </p>
         <img class="indent" src="/bjc-r/img/drawing/draw-square-buggy-code.png" alt="buggy draw square custom block">
-        <p>
-            This block <i>will</i> draw a square correctly, but there is a bug: a sneaky one
-            that will only show itself when you use inside other, more complicated custom blocks.
-        </p>
+        <p>This block <em>will</em> draw a square correctly, but there is a bug: a sneaky one that will only show itself when you use inside other, more complicated custom blocks.</p>
 
         <!-- question 1 -->
         <div class="assessment-data"
@@ -77,7 +63,7 @@
             <div class="choice" identifier="c5">
                 <div class="text">
                     The buggy <code>draw square</code> block doesn't finish with the drawing turtle
-                    pointing in the right direction..
+                    pointing in the right direction.
                 </div>
                 <div class="feedback">
                     Right! If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end, all would be well.
@@ -105,7 +91,7 @@
                 </div>
 
                 <p>
-                    What will be drawn if it uses the <b>buggy</b> <code>draw square</code> code above?
+                    What will be drawn if it uses the <b>buggy</b> <code>draw square</code> code shown at the top of the page?
                 </p>
                 <div class="indent">
                     <a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> <img  src="/bjc-r/img/drawing/draw-house-code-buggy.png" alt="draw-house block definition using buggy draw-square"> </a>

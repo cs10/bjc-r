@@ -21,12 +21,12 @@ heading: Kaleidoscope
 	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
 	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-  	quiz: Check Your Understanding: Looping and Sprite Direction [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever-self-test.html]
+  	quiz: Understanding Looping and Sprite Direction [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever-self-test.html]
 resource: Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/kaleidoscope-small.html]
 
 heading: Repeating Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-repeat-block.html]
-	quiz: Check Your Understanding: Using the Repeat Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/repeat-self-test.html]
+	quiz: Understanding the Repeat Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/repeat-self-test.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
@@ -36,20 +36,19 @@ heading: Making Your Own Blocks
 	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/tutorial-custom-blocks.html]
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-a-simple-input.html]
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-	resource: Make a "Draw Polygon" Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
+	resource: Make a <code>Draw Polygon</code> Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
 	resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
 heading: Building Complicated Blocks with Simple Blocks
  	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
  	raw-html: <img src="http://localhost/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/composing-blocks.html]
-	quiz: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square.html]
-	resource: Draw a flower [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
+	quiz: Understanding Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square.html]
+	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		
 heading: Using Randomness
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
 	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
-	resource: Moving a Sprite Randomly [/bjc-r/cur/programming/1-introduction/6-using-randomness/randomly-moving-character.html]
 	quiz: Understanding The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/Test-Yourself-random.html]
 	resource: Draw a Field of Flowers [/bjc-r/cur/programming/1-introduction/6-using-randomness/draw-field-of-flowers.html]
 

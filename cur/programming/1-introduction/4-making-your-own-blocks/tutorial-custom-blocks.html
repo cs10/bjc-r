@@ -1,124 +1,57 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- put the following in exactly --><script type="text/javascript"
-        src="/bjc-r/llab/loader.js"></script>
-        <title>
-            Your first custom block
-        </title><!--ORIGINAL NAME: Welcome to BYOB!-->
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Making Your Own Blocks</title>
     </head>
     <body>
-        <p class="code-vid">
+        <!--<p class="code-vid">
           <iframe width="560" height="315" src="//www.youtube.com/embed/8T5acEwfJbw" frameborder="0" allowfullscreen></iframe>
           <br />
           Thanks to <a href="http://code.org">code.org</a> for this video!
-        </p>
-        <p>
-            We are going to teach the computer how to draw a square using a block
-            named <code>draw square</code>. Please follow the steps below:
-        </p>
-        <ol>
-            <li>
-                <p>
-                    Click on <code>make a block</code> at the bottom of the <code>Variables</code> palette
-                    (or right-click or control-click on the scripting area background and choose "<code>make a block</code>").
-                </p>
-                <img alt="'make a block'" src="/bjc-r/img/sys/MakeABlock-BYOB.jpg" >
-
-            </li>
-
-            <li>
-                <p>
-                    This will open up the <code>Make a block</code> dialog box.  There are several
-                    steps that you'll do here, corresponding to each
-                    area of the dialog.
-                    Now, you get to choose which tab the block should go into.
-                    Our block is going to draw a square, so let us choose <code>Motion</code>.
-                    (Note: A very common mistake is to omit this step. If you do forget,
-                    your block will become a gray Other block, in the Variables palette.)
-
-                </p>
-                <img  alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" >
-            </li>
-
-            <li>
-
-                <p>
-                    First, at the top of the dialog, you should select in which palette the block will
-                    be place.  This block  is going to draw a square, so choose <code>Motion</code>.  The <code>Motion</code> tab should highlight in blue, as in the picture below.
-                </p>
-                <p>
-                    Second, you'll want to enter a title for the block in the edit field.
-                    Type <code>draw square</code>, which should show up as in the picture below.
-                </p>
-
-                <p>
-                    Third, you have the  option of making blocks of different shapes,
-                    corresponding to the <code>Command</code>, <code>Reporter</code>,
-                    and <code>Predicate</code> icons.  By default the <code>Command</code> icon is
-                    selected, and this is the one you want.   (You will learn about
-                    the other shapes of custom blocks in the next topic).
-                </p>
-                <p>
-                    Fourth, there are two radio buttons that you can safely ignore.  You will
-                    almost always want to keep <code>for all sprites</code> selected in this course.
-                </p>
-
-                <img  alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" >
-
-                <p>
-                    Click <code>OK</code>.
-                </p>
-
-            </li>
-
-            <li>
-                <p>
-                    After you click <code>OK</code>, a dialog titled <code>Block Editor</code>
-                    will appear.
-                </p>
-
-                <img src="/bjc-r/img/prog/empty-draw-square-BYOB.png" alt="Block Editor for 'draw square'" >
-                <p>
-                    Inside the
-                    you will see a specially shaped block with the title of the
-                    custom block that you are creating.  This kind of block is
-                    called a "hat" block, and it indicates a starting place for the
-                    <code>draw square</code> script.
-                </p>
-                <p>
-                    You can treat this dialog like you do the scripting area of the main
-                    <span class="snap">snap</span> window.  Drag blocks here from the palette
-                    to define the script that will run when your custom block is used.
-                </p>
-
-            </li>
-
-            <li>
-                <p>
-                    Use the blocks from the Control and Motion palettes to create a
-                    script that draws a square, as shown below.
-                </p>
-
-                <img  alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" >
-
-            </li>
-
-            <li>
-                <p>
-                    When you click <code>OK</code>, you should be able to use this block as if it
-                    were a regular block. Since you created the block as a <code>Motion</code>
-                    block, it will end up at the bottom of the <code>Motion</code> tab.
-                </p>
-
-                <img  alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" >
-
-            </li>
-        </ol>
-
-        <p>
-            Congratulations! You have just created your first custom block.
-        </p>
-
+        </p>-->
+        <h2>Your First Custom Block</h2>
+        <p>We are going to teach the computer how to draw a square using a block named <code>draw square</code>. Please follow the steps below:</p>
+        <div class="forYouToDo">
+            <ol>
+                <li>
+					<img alt="'make a block'" src="/bjc-r/img/1-introduction/make-a-block.png" class="imageRight" />
+                    Click on "Make a block" at the bottom of the "Variables" palette (or right-click or control-click on the scripting area background and choose "Make a block").    
+                </li>
+                <li>
+                    <p>This will open up the "Make a block" dialog box.  There are several steps that you'll do here, corresponding to each area of the dialog. Now, you get to choose which tab the block should go into. Our block is going to draw a square, so let us choose "Motion". (Note: A very common mistake is to omit this step. If you do forget, your block will become a gray Other block, in the Variables palette.)</p>
+                    <img  alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" >
+                </li>
+    
+                <li>
+                    <p>First, at the top of the dialog, you should select in which palette the block will be place.  This block  is going to draw a square, so choose "Motion".  The "Motion" tab should highlight in blue, as in the picture below.</p>
+                    <p>Second, you'll want to enter a title for the block in the edit field. Type "draw square", which should show up as in the picture below.</p>
+                    <p>Third, you have the  option of making blocks of different shapes, corresponding to the "Command", "Reporter", and "Predicate" icons. By default, the "Command" icon is selected, and this is the one you want. (You will learn about the other shapes of custom blocks soon).</p>
+                    <p>Fourth, there are two radio buttons that you can safely ignore.  You will almost always want to keep "for all sprites" selected in this course.</p>
+                    <p>Click "OK".</p>
+                    <img  alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" >
+                </li>
+    
+                <li>
+                    <p>After you click "OK", a dialog titled "Block Editor" will appear.</p>
+                    <img src="/bjc-r/img/prog/empty-draw-square-BYOB.png" alt="Block Editor for 'draw square'" >
+                    <p>Inside the you will see a specially shaped block with the title of the custom block that you are creating. This kind of block is called a "hat" block, and it indicates a starting place for the <code>draw square</code> script.
+                    </p>
+                    <p>You can treat this dialog like you do the scripting area of the main <span class="snap">snap</span> window.  Drag blocks here from the palette to define the script that will run when your custom block is used.
+                    </p>
+                </li>
+    
+                <li>
+                    <p>Use the blocks from the "Control" and "Motion" palettes to create a script that draws a square, as shown below.</p>
+                    <img  alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" >
+                </li>
+    
+                <li>
+                    <p>When you click "OK", you should be able to use this block as if it were a regular block. Since you created the block as a "Motion" block, it will end up at the bottom of the "Motion" tab.</p>
+                    <img alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" />
+                </li>
+            </ol>
+        </div>
+        <p>Congratulations! You have just created your first custom block.</p>
     </body>
 </html>
