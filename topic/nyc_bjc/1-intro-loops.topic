@@ -5,16 +5,16 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 //	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
-heading: Getting Started
+heading: Introduction
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
-	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-getting-started/what-is-snap.html]
+	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
-	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-getting-started/motion-blocks.html]
-	// resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-getting-started/accessing-snap.html] 
-	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-getting-started/getting-to-know-the-interface.html]
-	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-getting-started/creating-scripts.html]
-	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-getting-started/reporters.html]
-	resource: Saving your work [/bjc-r/cur/programming/1-introduction/1-getting-started/saving-your-work.html]
+	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks.html]
+	// resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-introduction/accessing-snap.html] 
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface.html]
+	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts.html]
+	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
+	resource: Saving your work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
 
 heading: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
