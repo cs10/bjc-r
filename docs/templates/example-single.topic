@@ -10,7 +10,7 @@ learning-goal: Understand and analyze some the impact of the internet on our cul
 heading: First: lets do this
 resource: This is a Resource [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
     resource: An indented item (no link) 
-    	forum: Another (more) indented resource [/bjc-r/cur/programming/intro/drawing/game-of-tag.html] 
+      forum: Another (more) indented resource [/bjc-r/cur/programming/intro/drawing/game-of-tag.html] 
 quiz: This is a <b>Quiz</b> [/bjc-r/cur/TEST/example-mixed-page.html]
 
 big-idea: Get comfortable with the Scratch user interface.
@@ -29,8 +29,8 @@ This line doesn't have a class, but is still indented properly.
 
 raw-html:
 <img src="/bjc-r/img/web/NOTFOUND.png"
-	alt="This is the logo of the topic that you are looking at">
-	</img>
+  alt="This is the logo of the topic that you are looking at">
+  </img>
 
 This line doesn't have a class.
 

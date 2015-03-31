@@ -3,10 +3,10 @@ title: Recursive Reporters
 h2: Big Ideas
 big-idea: Relating recursion in programming with inductive function definition
 
-//	video: Recursion II [https://coursesharing.org/courses/6/lectures/19]
-	video: Take-home midterm exam Wednesday!
-	video: AI [https://coursesharing.org/courses/6/lectures/22]
-	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
+//  video: Recursion II [https://coursesharing.org/courses/6/lectures/19]
+  video: Take-home midterm exam Wednesday!
+  video: AI [https://coursesharing.org/courses/6/lectures/22]
+  reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
 
 h2: Activities
 
@@ -16,32 +16,32 @@ learning-goal: Implement higher order functions.
 
 
 heading: Introduction
-	 resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
+   resource: Recursive Reporters [/bjc-r/cur/programming/recur/recursive-reporters/recursive-reporters-intro.html]
 
 heading: Some simple ones
-	 resource: Plurals of Words [/bjc-r/cur/programming/recur/recursive-reporters/plurals-of-words.html]
+   resource: Plurals of Words [/bjc-r/cur/programming/recur/recursive-reporters/plurals-of-words.html]
 
 heading: Pascal's Triangle
-	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle.html]
-	 //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-algorithm.html]
-	 resource: Computing a Number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-selftest.html]
-	 resource: How Long Does This Computation Take? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
+   resource: What is Pascal's Triangle? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle.html]
+   //resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-algorithm.html]
+   resource: Computing a Number in Pascal's Triangle [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-selftest.html]
+   resource: How Long Does This Computation Take? [/bjc-r/cur/programming/recur/recursive-reporters/pascals-triangle-how-long-does-the-computation-take.html]
 
 
 heading: List Recursion
-	 resource: Even Numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
+   resource: Even Numbers [/bjc-r/cur/programming/recur/recursive-reporters/even-number-filter-without-generalization.html]
 
 
 heading: Sorting
-	 resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-even-odd.html]
-	 resource: Sorting a List: Merging [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
+   resource: Sorting a List: Even and Odd [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-even-odd.html]
+   resource: Sorting a List: Merging [/bjc-r/cur/programming/recur/recursive-reporters/recursively-sorting-merge.html]
 
 
 heading: Subsets
-	 resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
-	 resource: Subset hints [/bjc-r/cur/programming/recur/recursive-reporters/subsets-self-test.html]
-	 resource: Subsets and Efficiency [/bjc-r/cur/programming/recur/recursive-reporters/subsets-and-efficiency.html]
-	 resource: Fast Subsets [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set-fast-soln.html]
+   resource: Subsets of a Set [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set.html]
+   resource: Subset hints [/bjc-r/cur/programming/recur/recursive-reporters/subsets-self-test.html]
+   resource: Subsets and Efficiency [/bjc-r/cur/programming/recur/recursive-reporters/subsets-and-efficiency.html]
+   resource: Fast Subsets [/bjc-r/cur/programming/recur/recursive-reporters/subsets-of-a-set-fast-soln.html]
 
 
 }

@@ -7,13 +7,13 @@ h2: Activities
 learning-goal: Understand how to connect the finch robot to <span class="snap">snap</span>
 learning-goal: Read and understand code, and make modifications to it
 
-    resource: Introduction [/bjc-r/cur/programming/robots/finch-introduction.html]
-    resource: The Finch's Capabilities [/bjc-r/cur/programming/robots/finch-capabilities.html]
-    resource: A Simple Remote Control [/bjc-r/cur/programming/robots/simple-finch-remote.html]
-    resource: A Better Remote Control [/bjc-r/cur/programming/robots/better-finch-remote.html]
-    resource: Simon Says [/bjc-r/cur/programming/robots/finch-simon-says.html]
-    resource: I'm not an ambi-turner [/bjc-r/cur/programming/robots/finch-gestural-programmer.html]
-    
+  resource: Introduction [/bjc-r/cur/programming/robots/finch-introduction.html]
+  resource: The Finch's Capabilities [/bjc-r/cur/programming/robots/finch-capabilities.html]
+  resource: A Simple Remote Control [/bjc-r/cur/programming/robots/simple-finch-remote.html]
+  resource: A Better Remote Control [/bjc-r/cur/programming/robots/better-finch-remote.html]
+  resource: Simon Says [/bjc-r/cur/programming/robots/finch-simon-says.html]
+  resource: I'm not an ambi-turner [/bjc-r/cur/programming/robots/finch-gestural-programmer.html]
+
 h3: Extra for Experience
-    resource: Pong [/bjc-r/cur/programming/robots/finch-pong.html]
+  resource: Pong [/bjc-r/cur/programming/robots/finch-pong.html]
 }

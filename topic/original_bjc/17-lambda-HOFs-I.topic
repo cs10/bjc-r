@@ -6,51 +6,51 @@ big-idea: Explore the use of high-order functions : map, keep, combine
 big-idea: Explore information freedom and digital expression on the internet and the challenges and tensions related to protecting speech
 big-idea: Understand the policy and social consequences of the massive explosion of information stored and transmitted as bits in the context of controlling, banning and allowing various forms of speech
 
-	video: Lambda and HOFs I [https://coursesharing.org/courses/6/lectures/24]
-	reading: Blown to Bits, Chapter 7 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter7.pdf]
+  video: Lambda and HOFs I [https://coursesharing.org/courses/6/lectures/24]
+  reading: Blown to Bits, Chapter 7 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter7.pdf]
 
 h2: Activities
 
 learning-goal: Implement higher-order functions: map, keep, combine
 
 heading: Tools Sprite
-	resource: How to load the Tools Sprite [/bjc-r/cur/programming/snap/how-to-load-the-tools-sprite.html]
+  resource: How to load the Tools Sprite [/bjc-r/cur/programming/snap/how-to-load-the-tools-sprite.html]
 
 
 heading: Introduction
-//	video: Watch this [http://snap.berkeley.edu/BYOB3-Tutorial2.mov]
-	resource: "The Block" [/bjc-r/cur/programming/HOFs/intro/the-block.html]
-	resource: "Call" [/bjc-r/cur/programming/HOFs/intro/call.html]
-	resource: Higher Order Functions [/bjc-r/cur/programming/HOFs/intro/higher-order-functions.html]
+//  video: Watch this [http://snap.berkeley.edu/BYOB3-Tutorial2.mov]
+  resource: "The Block" [/bjc-r/cur/programming/HOFs/intro/the-block.html]
+  resource: "Call" [/bjc-r/cur/programming/HOFs/intro/call.html]
+  resource: Higher Order Functions [/bjc-r/cur/programming/HOFs/intro/higher-order-functions.html]
 
 
 heading: Map
-	resource: Introduction [/bjc-r/cur/programming/HOFs/map/introduction-to-map.html]
-	resource: Using Map [/bjc-r/cur/programming/HOFs/map/using-map.html]
-	resource: Transforming the Beatles [/bjc-r/cur/programming/HOFs/map/transforming-the-beatles.html]
-	resource: Exaggerating your sentences [/bjc-r/cur/programming/HOFs/map/exaggerating-your-sentences.html]
+  resource: Introduction [/bjc-r/cur/programming/HOFs/map/introduction-to-map.html]
+  resource: Using Map [/bjc-r/cur/programming/HOFs/map/using-map.html]
+  resource: Transforming the Beatles [/bjc-r/cur/programming/HOFs/map/transforming-the-beatles.html]
+  resource: Exaggerating your sentences [/bjc-r/cur/programming/HOFs/map/exaggerating-your-sentences.html]
 
 
 heading: Keep
-	resource: Using Keep [/bjc-r/cur/programming/HOFs/keep/using-keep.html]
-	resource: Count "ums" [/bjc-r/cur/programming/HOFs/keep/count-ums.html]
-	resource: Choose Beatles [/bjc-r/cur/programming/HOFs/keep/choose-beatles.html]
+  resource: Using Keep [/bjc-r/cur/programming/HOFs/keep/using-keep.html]
+  resource: Count "ums" [/bjc-r/cur/programming/HOFs/keep/count-ums.html]
+  resource: Choose Beatles [/bjc-r/cur/programming/HOFs/keep/choose-beatles.html]
 
 
 heading: Combine
-	resource: Using Combine [/bjc-r/cur/programming/HOFs/combine/using-combine.html]
-	resource: Calculate your GPA [/bjc-r/cur/programming/HOFs/combine/calculate-your-gpa.html]
-	resource: Letter Count [/bjc-r/cur/programming/HOFs/combine/letter-count.html]
+  resource: Using Combine [/bjc-r/cur/programming/HOFs/combine/using-combine.html]
+  resource: Calculate your GPA [/bjc-r/cur/programming/HOFs/combine/calculate-your-gpa.html]
+  resource: Letter Count [/bjc-r/cur/programming/HOFs/combine/letter-count.html]
 
 
 heading: Cascade
-	resource: Using Cascade [/bjc-r/cur/programming/HOFs/cascade/using-cascade.html]
-	resource: Factorials [/bjc-r/cur/programming/HOFs/cascade/factorials.html]
-	resource: Finding a Subword [/bjc-r/cur/programming/HOFs/cascade/finding-a-subword.html]
+  resource: Using Cascade [/bjc-r/cur/programming/HOFs/cascade/using-cascade.html]
+  resource: Factorials [/bjc-r/cur/programming/HOFs/cascade/factorials.html]
+  resource: Finding a Subword [/bjc-r/cur/programming/HOFs/cascade/finding-a-subword.html]
 
 
 heading: Review
-	resource: Quick Review [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1946]
-	resource: Quick Review 2 [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1947]
+  resource: Quick Review [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1946]
+  resource: Quick Review 2 [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1947]
 
 }

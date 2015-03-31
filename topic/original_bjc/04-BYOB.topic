@@ -6,47 +6,47 @@ big-idea: Explore the relationship between Functional Programming and Parallelis
 big-idea: Explore historical roots of functional programming and lambda calculus
 big-idea: Consider the importance and economic value of software companies on the economy
 
-	video: Functions [https://coursesharing.org/courses/6/lectures/12]
-	video: Program or be Programmed [http://www.youtube.com/embed/JKAzZocdQ1Y]
-	reading: Why Software Is Eating The World [http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html]
+  video: Functions [https://coursesharing.org/courses/6/lectures/12]
+  video: Program or be Programmed [http://www.youtube.com/embed/JKAzZocdQ1Y]
+  reading: Why Software Is Eating The World [http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html]
 
 h2: Activities
 learning-goal: Discover how to use the BYOB block interface to:
-		Create different shaped blocks.
-		Create inputs of different types
-		Create inputs with initial values
+    Create different shaped blocks.
+    Create inputs of different types
+    Create inputs with initial values
 learning-goal: Employ blocks and data abstraction to break problems down into smaller problems and thus write more beautiful and elegant code.
 learning-goal: Explore some of the complexities of managing block variables.
 
 
 heading: The Basics of BYOB
-	resource: Welcome to BYOB! [/bjc-r/cur/programming/functions/welcome-to-byob.html]
-	resource: Make a "Draw Shape" Block [/bjc-r/cur/programming/functions/make-a-draw-shape-block.html]
-	resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block-BYOB.html]
-	resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
-	//forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
-	resource: Do it: Composition of Functions [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
-	quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
-	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
-	
+  resource: Welcome to BYOB! [/bjc-r/cur/programming/functions/welcome-to-byob.html]
+  resource: Make a "Draw Shape" Block [/bjc-r/cur/programming/functions/make-a-draw-shape-block.html]
+  resource: The Max Block [/bjc-r/cur/programming/functions/the-max-block-BYOB.html]
+  resource: Input types [/bjc-r/cur/programming/functions/input-types.html]
+  //forum: Describe a bug in the 'max' block [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1737]
+  resource: Do it: Composition of Functions [/bjc-r/cur/programming/functions/do-it-composition-of-functions.html]
+  quiz: How was this made? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13983]
+  resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up.html]
+  
 heading: Predicates
-	resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates-BYOB.html]
-	resource: Predicates: Make a "Between" block [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
-	//forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
-	
+  resource: Predicates [/bjc-r/cur/programming/functions/predicates/predicates-BYOB.html]
+  resource: Predicates: Make a "Between" block [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
+  //forum: Variable Names in Between [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1743]
+  
 heading: Variables
-	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
-	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
-	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
-	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
-	
+  resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+  quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
+  quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
+  quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+  resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+  
 heading: Functions make code easier to understand
-	resource: Simplifying a tic-tac-toe board drawer using functions [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
-	
+  resource: Simplifying a tic-tac-toe board drawer using functions [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+  
 heading: Activities
-	resource: Brick Wall [/bjc-r/cur/programming/abstraction/original-brick-wall.html]
-	
-// submission stuff	
+  resource: Brick Wall [/bjc-r/cur/programming/abstraction/original-brick-wall.html]
+  
+// submission stuff  
 
 }

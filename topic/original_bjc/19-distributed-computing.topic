@@ -6,9 +6,9 @@ big-idea: Explore the kinds of problems that need to be solved with concurrency 
 big-idea: Understand the connection of MapReduce(higher-order function!) to concurrency applications.
 big-idea: Understand what cloud computing means and what it is providing in terms of services to computing industry
 
-	video: Distributed Computing (Dan Garcia) [https://coursesharing.org/courses/6/lectures/25]
-	video: What is cloud computing (youtube) [http://www.youtube.com/watch?v=hjrdThuwpZ0]
-	reading: A view of cloud computing [http://cacm.acm.org/magazines/2010/4/81493-a-view-of-cloud-computing/fulltext]
+  video: Distributed Computing (Dan Garcia) [https://coursesharing.org/courses/6/lectures/25]
+  video: What is cloud computing (youtube) [http://www.youtube.com/watch?v=hjrdThuwpZ0]
+  reading: A view of cloud computing [http://cacm.acm.org/magazines/2010/4/81493-a-view-of-cloud-computing/fulltext]
 
 
 h2: Activities
@@ -18,19 +18,19 @@ learning-goal: MapReduce is a particularly nice example of a distributed computi
 
 
 heading: The <i>MapReduce</i> distributed computing pattern
-	resource: Overview [/bjc-r/cur/programming/distributed/overview.html]
-	
+  resource: Overview [/bjc-r/cur/programming/distributed/overview.html]
+  
 heading: Solving problems with MapReduce
-	resource: Getting started with MapReduce! [/bjc-r/cur/programming/distributed/getting-started-with-mapreduce.html]
-	resource: Your first MapReduce : a simple sum-of-squares (we did it for you) [/bjc-r/cur/programming/distributed/your-first-mapreduce-a-simple-sum-of-squares-we-did-it-for-you.html]
-	resource: Your second MapReduce : Alpha, the first word in the dictionary [/bjc-r/cur/programming/distributed/your-second-mapreduce-alpha-the-first-word-in-the-dictionary.html]
-	resource: What kind of pattern was alpha? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1970]
-	resource: Your third MapReduce : Love, All the Beatles song titles with the word "love" in it [/bjc-r/cur/programming/distributed/your-third-mapreduce-love-all-the-beatles-song-titles-with-the-word-love-in-it.html]
-	resource: What kind of pattern was Love? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1972]
-	resource: Your fourth MapReduce : WordCount, a count of the number of times words appears [/bjc-r/cur/programming/distributed/your-fourth-mapreduce-wordcount-a-count-of-the-number-of-times-words-appears.html]
-	resource: Extra for Experience : the fifth MapReduce ... Google, building a Google-like index [/bjc-r/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
-	resource: Quiz Answers [/bjc-r/cur/programming/distributed/quiz-answers.html]
-	
+  resource: Getting started with MapReduce! [/bjc-r/cur/programming/distributed/getting-started-with-mapreduce.html]
+  resource: Your first MapReduce : a simple sum-of-squares (we did it for you) [/bjc-r/cur/programming/distributed/your-first-mapreduce-a-simple-sum-of-squares-we-did-it-for-you.html]
+  resource: Your second MapReduce : Alpha, the first word in the dictionary [/bjc-r/cur/programming/distributed/your-second-mapreduce-alpha-the-first-word-in-the-dictionary.html]
+  resource: What kind of pattern was alpha? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1970]
+  resource: Your third MapReduce : Love, All the Beatles song titles with the word "love" in it [/bjc-r/cur/programming/distributed/your-third-mapreduce-love-all-the-beatles-song-titles-with-the-word-love-in-it.html]
+  resource: What kind of pattern was Love? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=1972]
+  resource: Your fourth MapReduce : WordCount, a count of the number of times words appears [/bjc-r/cur/programming/distributed/your-fourth-mapreduce-wordcount-a-count-of-the-number-of-times-words-appears.html]
+  resource: Extra for Experience : the fifth MapReduce ... Google, building a Google-like index [/bjc-r/cur/programming/distributed/extra-for-experts-the-fifth-mapreduce-google-building-a-google-like-index.html]
+  resource: Quiz Answers [/bjc-r/cur/programming/distributed/quiz-answers.html]
+  
 
 
 

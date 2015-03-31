@@ -6,9 +6,9 @@ big-idea: Learn game design techniques for developing games with a purpose.
 big-idea: Learn about the Supreme Court's ruling on violence in video games
 big-idea: Consider Kinect's impact on gaming and everyday activities
 
-	video: Video Games (Dan Garcia) [https://coursesharing.org/courses/6/lectures/11]
-	reading: Designing Games With a Purpose [http://dl.acm.org/ft_gateway.cfm?id=1378719&amp;ftid=566560&amp;dwn=1&amp;CFID=77095219&amp;CFTOKEN=69774295]
-	reading: Kinect's future: A game controller in everything [http://www.msnbc.msn.com/id/40077373/ns/technology_and_science-games/]
+  video: Video Games (Dan Garcia) [https://coursesharing.org/courses/6/lectures/11]
+  reading: Designing Games With a Purpose [http://dl.acm.org/ft_gateway.cfm?id=1378719&amp;ftid=566560&amp;dwn=1&amp;CFID=77095219&amp;CFTOKEN=69774295]
+  reading: Kinect's future: A game controller in everything [http://www.msnbc.msn.com/id/40077373/ns/technology_and_science-games/]
 
 h2: Activities
 learning-goal: Review what variables are.
@@ -19,26 +19,26 @@ learning-goal: Implement the <code>random</code> number block to create randomne
 
 
 heading: Review: 'Change' versus 'Set'
-	resource: Reviewing Variables [/bjc-r/cur/programming/variables/reviewing-variables.html]
-	quiz: Changing Variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13954]
+  resource: Reviewing Variables [/bjc-r/cur/programming/variables/reviewing-variables.html]
+  quiz: Changing Variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13954]
 
 heading: The <code>If</code> Block
-	quiz: If: What would you expect? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13956]
-	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-BYOB.html]
-	
+  quiz: If: What would you expect? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13956]
+  resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month-BYOB.html]
+  
 heading: Random
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
-	resource: Randomly Moving Character [/bjc-r/cur/programming/random/random-block-and-randomly-moving-character.html]
+  resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
+  resource: Randomly Moving Character [/bjc-r/cur/programming/random/random-block-and-randomly-moving-character.html]
 
 heading: Number Guessing Game
-	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
-	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
-	assignment: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
-	
+  resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+  resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+  assignment: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
+  
 heading: Rock, Paper, Scissors
-	quiz: Rock, Paper, Scissors: Choices [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13965]
-	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
-	
-// submission stuff	
+  quiz: Rock, Paper, Scissors: Choices [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13965]
+  resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
+  
+// submission stuff  
 
 }
