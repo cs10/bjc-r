@@ -6,8 +6,8 @@
     </head>
     <body>
     	<h2>The <code>Random</code> Block</h2>
-        <p>We can generate a random number between any two whole numbers using the <code>random</code> block: <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"></p>
-        <p>This block generates numbers with about equal likelihood, and can generate the both the lower and upper bounds that you give it. So, <img src="/bjc-r/img/blocks/pick-random-1-to-10.png" alt="pick random" /> can generate 1, 2, 3, 4, 5, 6, 7, 8, 9, and 10. This block (and others with round edges) is a <strong>reporter</strong> block&mdash;it <em>reports</em> a value. Use this block inside other blocks that take an input. Here are some examples:</p>
+        <p>You can use the <code>random</code> block to generate a random number within a range defined by two whole numbers. For example, each time this block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates, with about equal likelihood, one number ranging from 1 through 10.</p>
+    Like other <strong>reporter</strong> blocks, this <em>reports</em> a value that you can use inside other blocks that take an input. Here are some examples:</p>
         <img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
         <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This program</a> simulates a six sided die that rolls every time you click on it. (You can look in the "Costumes" area&mdash;click the tab above the script&mdash;to see the six costumes that the random number is using).</p>
         <div class="forYouToDo" id="first">
@@ -18,8 +18,11 @@
          				<li>Make sure the sprite can travel in any direction.</li>
             			<li>How does your sprite's actions change if you have it move a fixed, rather than random, amount each time?  </li>
             			<li>Keep the pen for your sprite down, and you'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
+                        <li>Have another sprite chase that sprite but not quite catch it. It might point towards it and move more slowly or might point <em>almost</em> towards it but veer away by some random amount.</li>
                     </ul>
                 </li>
+                <li>Build a script like this, and see if you can make it sound a bit more musical. <br />
+                <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" width="378" height="62" alt="repeat 5 times play a random note"></li>
             </ol>
         </div>
     </body>
