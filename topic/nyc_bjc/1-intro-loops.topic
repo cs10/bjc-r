@@ -8,12 +8,10 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 heading: Introduction
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
 	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]
-	//resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks.html]
-	// resource: Accessing Snap [/bjc-r/cur/programming/1-introduction/1-introduction/accessing-snap.html] 
 	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface.html]
 	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-intro.html?1]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
 	resource: Saving your work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
 
@@ -33,22 +31,20 @@ heading: Repeating Commands
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
 
 heading: Making Your Own Blocks
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/tutorial-custom-blocks.html]
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-a-simple-input.html]
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Make a <code>Draw Polygon</code> Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
 	resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
 heading: Building Complicated Blocks with Simple Blocks
- 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
  	raw-html: <img src="http://localhost/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/composing-blocks.html]
 	quiz: Understanding Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square.html]
 	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		
 heading: Using Randomness
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
 	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
 	quiz: Understanding The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/Test-Yourself-random.html]
 	resource: Draw a Field of Flowers [/bjc-r/cur/programming/1-introduction/6-using-randomness/draw-field-of-flowers.html]
