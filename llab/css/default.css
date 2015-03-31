@@ -451,7 +451,7 @@ img.indent, div.indent {
 }
 
 /** Common Styling to highlighted sections */
-.quoteOrange, .quoteRed, .quoteGreen, .quoteBlue {
+.quoteOrange, .quoteRed, .quoteGreen, .quoteBlue, .quoteYellow {
   padding: 10px 15px;
   margin: 10px 2%;
   width: 96%;
@@ -477,6 +477,11 @@ img.indent, div.indent {
 .quoteGreen { /* FIXME, name needed */
   border-left: 12px solid #693;
   background-color: #9C6;
+}
+
+.quoteYellow { /* FIXME, name needed */
+  border-left: 12px solid #e4e47d;
+  background-color: #F1F1BC;
 }
 
 /* Most items in the course page */
