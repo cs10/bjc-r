@@ -24,7 +24,8 @@
         	Sometimes, though, you want to do <em>almost</em> the same thing for a certain number of times, but with a slight variation. For instance:
             <ul>
                 <li>You  want the script to tell the sprite to draw 20 squares on the stage, each square larger than the previous.</li>
-                <!-- any more here, yo? -->
+                <li>You  want the script to tell the sprite to draw 12 regular polygons, each with one more side than the previous.</li>
+              <!-- any more here, yo? -->
             </ul>
         </div>
 
@@ -33,18 +34,13 @@
         </div>
 
         <div>
-            Many such situations can be handled by the <code>for</code> block near the bottom of the Control palette:
-            <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for"><br />
-            The numbers in the <code>for</code> block work as you probably think they do: the inner script is run enough times to count from the left number (1) to the right number (10).  As with the <code>repeat</code> block, you can change the numbers it comes with by default to change the way the block repeats.
-        </div>
+            The <code>for</code> block (near the bottom of the Control palette) is often useful for situations like this:
+      <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for"><br />
+            The numbers in the <code>for</code> block work as you might expect: the <code>for</code> block counts by 1 from the first number to the second one, running the script inside the &quot;C&quot; each time.   
+    </div>
         <div>
-            What's new here, though, is the orange oval with <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> in it. By using this <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, your inner blocks can know which time through the loop they are currently on. Here's how:
-        </div>
-        <div class="alert quoteBlue">
-	        The <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> block is a <em>variable</em> that acts like a counter.  You use it any place you would use a number, and it will report the value that it currently holds.<br />
-            Think of the variable like a box with a name&mdash;this one has the name <em>i</em>. This box is made for you by the <code>for</code> block, and holds a different number each time through the loop.  The first time it will hold the left number in the <code>for</code> block (1 in the block above) and it will increment by 1 from there.<br/>
-            You use the <img class="inline" src="/bjc-r/img/blocks/variable-i.png"> block by dragging it from the source within the <code>for</code> block down to the slot in which you will use it.
-        </div>
+           As the <code>for</code> block counts, it also keeps track of the number with a variable, the orange oval  <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, which you can use in those inner blocks. To use that <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, drag it where you'd like it to go.
+</div>
 
         <div>
             For instance:<br />
@@ -54,22 +50,38 @@
         </div>
 
 
+        
 <!-- Former page break --MF OLD NOTE: WE REALLY NEED TO GIVE THEM A PROGRAMMING TASK, NOT THIS STUFF -->
 
         <div class="forYouToDo">
             <div>
-                <div class="sidenote">Note that we changed the name of the variable by clicking on the orange oval <em>without </em>dragging it.</div>
-		        Click on the script below to load it in a new <span class="snap">snap</span> window:<br />
-                <a class="run" href="/bjc-r/prog/loop/draw-squirral.xml"> <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"> </a><br />
+                <div class="sidenote">To change the name of the variable from <code>i</code> to <code>length</code>, click on the orange oval <em>without </em>dragging it. After you've changed the name, drag it where you want to use it.</div>
+		        Build this script and try it out.<br />
+               <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"><br />
                 This shape is called a &quot;squiral&quot; &mdash; a square spiral. Do you see why it spirals outward? The length value in the  <img class="inline" src="/bjc-r/img/blocks/move.png"> varies between repetitions.
                 <ol>
-                    <li>Try changing the turning angle to other numbers: 92, 126, etc.</li>
+                    <li>Try switching the order of the 100  and the 1 second in the <code>for</code>block. What is the result?</li>
+                    <li>Try changing the turning angle to other numbers like 92, 126, etc.</li>
                     <li>
                         Try changing the turning angle and the move length to see how close you can get to a smooth spiral:<br />
                         <img class="center" src="/bjc-r/img/prog/spiral.png" alt="spiral">
                     </li>
+                    <li>The example above shows a script that counts from 1 to 10. Build it and modify it so that it counts 0, 2, 4, 6, 8... up to 30.</li>
+                    <li>Build a script that counts backwards from 100 to 0 by 10s (that is, 100, 90, 80, etc.).</li>
+                    
                 </ol>
             </div>
         </div>
+        <div class="takeItFurther">
+            <div>      
+            	<ol>
+          		   <li>Build a script that nested squares, like this: <br /> 
+                   <img class="center" src="/bjc-r/img/1-introduction/nested-squares.png" alt="nested squares">
+         		   </li>
+                   <li>Build a script that counts from 3.14 to 0.14 and then back again.</li>
+            	</ol>
+            </div>
+        </div>  
+        
     </body>
 </html>
