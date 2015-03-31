@@ -24,7 +24,7 @@ git submodule update
 ## Viewing the Site
 The main "production" server for labs is hosted at Berkeley, [here][main].
 
-We also sometimes use CS10 students as lab rats, and you can view beta labs on 
+We also sometimes use CS10 students as lab rats, and you can view beta labs on
 the CS10 [site][cs10].
 
 However, the repository is setup so that any fork can be run using GitHub pages.
@@ -34,11 +34,18 @@ The main BJC repo can be viewed in a live state, [here](gh), or you can use your
 While GitHub pages are convenient, you'll likely want to run your own web server
 to make debugging changes much more quick and easy. In order to view the labs, you'll need to have an Apache server running on your machine. Here are some simple instructions for a couple different platforms.
 
-__No matter the platform, you should server files from `/bjc-r/` at the root of your server.__
+__No matter the platform, you should serve files from `/bjc-r/` at the root of your server.__
+This might not be convenient in all cases. So, you have a few options:
+1. Use a Git hook to do a find-and-replace when copying files to the destination.
+2. In your fork, replace all "absolute" paths (e.g. `/bjc-r/...`), with relative ones. You could also use a simple script to do this.
+
+
 ### Mac OS X and Unix
 The easiest way to setup a server is to use a simple, built-in Python server.
 1. `cd` into one level above the `bjc-r` directory.
-2. In a separate window run `python -m SimpleHTTPServer` (for Python 2) or `python3 -m http.server` for Python 3.
+2. In a separate window run
+	`python -m SimpleHTTPServer` (for Python 2) or
+	`python3 -m http.server` for Python 3.
 3. Navigate to [http://localhost:8000/bjc-r][localhost] in a browser.
 4. That's it! :)
 
@@ -58,7 +65,7 @@ To contribute:
 Of course, submitting issues is always welcome and encouraged! These issues can be bugs, questions, improvements or anything you'd like to share.
 
 ## License
-[CC-BY-NC-SA 3.0][cc]
+[CC-BY-NC-SA 4.0][cc]
 
 ![CC_IMG][cc_img]
 
