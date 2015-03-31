@@ -632,11 +632,11 @@ div {
 }
 
 .forYouToDo {
-  background-color: #edf4e6;
+  background-color: #d2e3be; /*#edf4e6; */
   margin-bottom: .5em;  
 }
 
-.forYouToDo:before {
+.forYouToDo#first:before {
   content: "For You To Do";
 }
 
@@ -645,7 +645,7 @@ div {
 }
 
 .dialogue:before {
-  content: "Thinking with Your Mind... Out Loud and in Action";
+  content: "Thinking Out Loud";
 }
 
 .dialogue > div {
