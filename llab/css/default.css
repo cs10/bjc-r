@@ -608,7 +608,7 @@ img.indent, div.indent {
   /* top: auto; /* default */
   width: 20%;
   padding: 10px;
-  background-color: #F3F0B3
+  background-color: #fff8ad; /* #F3F0B3; */
 }
 
 .leftFloat {
@@ -632,7 +632,7 @@ div {
 }
 
 .forYouToDo {
-  background-color: #d2e3be; /*#edf4e6; */
+  background-color: #d2e3be; /* #edf4e6; */
   margin-bottom: .5em;  
 }
 
@@ -641,7 +641,7 @@ div {
 }
 
 .dialogue {
-  background-color: #ecf4fb;
+  background-color: #cce4f6; /* #ecf4fb; */
 }
 
 .dialogue:before {
