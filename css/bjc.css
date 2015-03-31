@@ -1,6 +1,5 @@
-
-ul > ul, ol > ol,
-ul > ol, ol > ul { /* Added by Mary Fries, March 2015 */
+.full ul ul, ol ol,
+.full ul ol, ol ul { /* Added by Mary Fries, March 2015 */
   border: none;
 }
 
@@ -12,6 +11,7 @@ li > ul, li > ol { /* Edited by Mary Fries, March 2015 */
 }
 
 /** Side Notes **/
+/* TODO: This is not very responsive... */
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   font-size: .9em;
   float: right;
@@ -96,9 +96,9 @@ div {
 .script { height: 18%; }
 
 code {
-  background: none;
-  /* color: #00FFFF; */
-  font-family: courier;
+  /* background: none; */
+  /* color: #00FFFF;   */
+  /* font-family: courier; */
   font-size: 1.1em;
 }
 
@@ -107,4 +107,9 @@ code {
    margin-top: -65px;
 }
 
-
+/* Generic no-border class to override specifc elements.
+   Commonly used w/ <blockqoutes> in cases where it doesn't look good.
+ */
+.no-border {
+  border: none;
+}

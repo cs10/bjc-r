@@ -4,6 +4,10 @@ code, pre, tt, kbd, samp {
   font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', 'Monaco', Courier, monospace;
 }
 
+code {
+  background: none;
+}
+
 h1, h4, h5, h6, .header-sans {
   font-family: 'VAG Rounded Light', 'VAG Rounded', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: normal;
@@ -860,25 +864,6 @@ img.indent, div.indent {
     max-width: 100%;
   }
 }
-
-/* Identify "Retina" and High-Res Screens  */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* use the lighter weight font */
-  code, pre, tt, kbd, samp {
-    font-weight: 100;
-  }
-
-  @font-face { /* Used for all code elements */
-    font-family: 'Source Code Pro';
-    src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Light.eot');
-    src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Light.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/SourceCodePro/WOFF/OTF/SourceCodePro-Light.otf.woff') format('woff'),
-         url('../fonts/SourceCodePro/WOFF/TTF/SourceCodePro-Light.ttf.woff')  format('truetype');
-    font-weight: 100;
-    font-style: normal;
-  }
-}
-
 
 /* * * * * FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* DO NOT LOAD EXTRA FONTS WE WONT USE */
