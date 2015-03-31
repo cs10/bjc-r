@@ -7,13 +7,13 @@
     <body>
     	<h2>Composition of Blocks</h2>
         <img class="imageRight" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals">
-        <p>You can treat your custom-made blocks like any other block in snap, including using them within other block you define.  In fact, bigger programming tasks are usually best solved by writing simple blocks that are used within slightly more complicated blocks, which are in turn used in even more complicated blocks, and so on.</p>
-        <p>We'll look more closely at this sort of <em>composition</em> of blocks later on, because it is important. For now, remember the <img class="inline" src="/bjc-r/img/blocks/draw-square-empty-parameter.png"> block?  Use it to create a block that draws the petals of a flower, like the one shown here.</p>
-        <p>If you look this flower, you'll see it has 6 squares drawn at equal angles around a full 360-degree rotation.
-        </p>
-        <div class="forYouToDo">
+        <p>You can treat your custom-made blocks like any other block in snap, including using them within other blocks you define. You've already done that at least once when you wrote <code>house</code>. </p>
+        <p>In fact, the <em>best</em> way to solve bigger programming tasks is usually by writing simple blocks that are used within slightly more complicated blocks, which are in turn used in even more complicated blocks, and so on. When you build blocks made of other blocks you've built, this is called <strong>composition</strong> of blocks.</p>
+        <p>You will practice this a bit more here, and we'll look more closely at this sort of composition of blocks later on, because it is an important idea in computer science.</p>
+        
+		<div class="forYouToDo" id="first">
             <ol>
-            	<li>Create the block <img class="inline" src="/bjc-r/img/drawing/draw-square-leaved-flower-empty-paramters.png" alt="block: draw square-leaved flower with [] leaves of size []"> that will draw a square-leaved flower with any number of square-shaped petals with the specified size.  In this block, you will turn the sprite between calls to <code>draw square</code> in a way similar to that in the <code>draw polygon</code> blocks: using an angle of <img class="inline" src="/bjc-r/img/drawing/calculating-turn-angle-for-draw-flower.png" alt="360 divided by the number of leaves">. Calling <img class="inline" src="/bjc-r/img/drawing/draw-square-leaved-flower-6-50-parameters.png" alt="block: draw square-leaved flower with 6 leaves of size 50"> should draw the example picture above.</li>
+            	<li>Use the <img class="block" src="/bjc-r/img/blocks/draw-square-empty-parameter.png"> block to create a block <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-empty-parameters.png" alt="360 divided by the number of petals"> that will draw a  flower with square petals, like the one shown here, but with any specified number of square-shaped petals of the specified size.  Calling <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-6-50-parameters.png" alt="block: draw a flower with 6 petals of size 50"> should draw the example picture above.</li>
             </ol>
         </div>
     </body>

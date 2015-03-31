@@ -12,7 +12,7 @@
         	For the general text, please wrap everything in "div" tags. Intent code with 4 spaces (one tab) with each new level. Images are also wrapped in "div" tags. Images can be placed on either side using class="imageRight" and class="imageLeft" in the "div" tag.
         </div>
 
-        <div class="forYouToDo">
+        <div class="forYouToDo" id="first">
             <div>
                 This is a made with a div within a div. The class of the surrounding div is "forYouToDo".<br />
                 <ol>
@@ -29,6 +29,13 @@
                 </ol>
             </div>
         </div>
+
+        <div class="forYouToDo">
+        	<ol start="4">
+            	<li>To avoid having the title "For You To Do" appear several times on the same page, use id="first" for the first instance of class="forYouToDo" and not in the others. (Note: ID is used for something that only appears once; we are IDing that one as the first one.)</li>
+                <li>Note that this second For You To Do also differs in that the &lt;ol&gt; tag has start="4" inside it so that the list starts in the right place.</li>
+            </ol>
+        </div> 
 
         <div><div class="sidenote">Side notes contain content that is interesting or potentially helpful but not essential.</div></div>
 
@@ -54,10 +61,17 @@
             <div>
                 Here is a list of other formatting we can use:<br />
                 <ul>
-                    <li>Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block.</li>
+                    <li>
+                    	Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block: <img src="/bjc-r/img/1-introduction/pen-down.png" class="block"/>. 
+                        <ul>
+                            <li>Note: The <code>code</code> tag has been used all over the place in the previous version of BJC. Please try to keep it to only actual code blocks.</li>
+                            <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a <span class="snap">snap</span> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
+                        </ul>
+                    </li>                   
                     <li>Use the "strong" tag for <strong>bold</strong>. Introduce <strong>new terms</strong> using the strong tag.</li>
                     <li>Use the "em" tag for <em>italics</em>. The "em" tag is for <em>em</em>phasis.</li>
                     <!-- block (code tag) vs. palette (quotes) vs. variable (italics, but even if block?) vs. new term (bold)-->
+                    <li>References to text in the app (such as the "OK" button or the "Motion" palette) should be in quotes.</li>
                 </ul>
         	</div>
         </div>
@@ -70,7 +84,7 @@
         <div class="alert quoteOrange">Orange Box - etc.</div>
         <div class="alert quoteYellow">Yellow Box - same thing ;)</div>
 		<div>
-        	(If we like the look, we can reintegrated them, but for now, let's change each one over to our own styles above. I asked, and these didn't have much specific meaning in previous BJC versions.)
+        	(If we like the look, we can reintegrate them, but for now, let's change each one over to our own styles above. I asked, and these didn't have much specific meaning in previous BJC versions.)
         </div>
     </body>
 </html>

@@ -487,6 +487,7 @@ img.indent, div.indent {
   background-size: 1em;
   padding-left: 35px;
   margin: 5px 0;
+  padding-bottom:0;
 }
 
 /** ICON CLASSES **/

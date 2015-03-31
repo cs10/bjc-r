@@ -6,10 +6,13 @@
     </head>
     <body>
     	<h2>Composing with "Buggy" Custom Blocks</h2>
-	    <p>A "buggy" program is one that doesn't work right.  You would say that it contains one or more "bugs", which are parts of the program that do something other that what the programmer intended.</p>
-        <p>Consider the following implementation of <code>draw square</code>: </p>
-        <img class="indent" src="/bjc-r/img/drawing/draw-square-buggy-code.png" alt="buggy draw square custom block">
-        <p>This block <em>will</em> draw a square correctly, but there is a bug: a sneaky one that will only show itself when you use inside other, more complicated custom blocks.</p>
+	    <p>A <strong>buggy</strong> program is one that doesn't work correctly.  It contains one or more <strong>bugs</strong>,  parts of the program that don't do what the programmer intended (or that cause some other part of the program not to behave as intended).</p>
+	    <p>Here is an example. A programmer intended to draw five squares in a row, like this, <img src="/bjc-r/img/1-introduction/5-squares-in-row.png" width="107" height="35" alt="five squares in a row"> and built this script.</p><br />
+        <img class="indent" src="/bjc-r/img/1-introduction/5-squares-in-row-script.png" alt="buggy draw square custom block">
+        <p>Of course, it needed a <code>draw a square</code> block, so the programmer created this definition.</p>
+        <p><img src="/bjc-r/img/1-introduction/state-non-transparent-square.png" width="186" height="208" alt="draw a square block"></p>
+        
+        <p> Instead of getting the desired picture <img src="/bjc-r/img/1-introduction/5-squares-in-row.png" width="107" height="35" alt="five squares in a row">, this program draws  <img src="/bjc-r/img/1-introduction/4-squares-around-square.png" width="68" height="66" alt="4 squares around a square"></p>.  
 
         <!-- question 1 -->
         <div class="assessment-data"
@@ -18,12 +21,20 @@
         responseIdentifier="resp1" shuffle="true" >
             <div class="prompt">
                 <p>
-                    What is the bug?
+                    What is the bug? 
                 </p>
+            </div>
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    The <code>repeat</code> block code needs to be more complicated.
+                </div>
+                <div class="feedback">
+                    Well, that <em>could</em> solve the problem, but there is an easier fix. Not always, but often, when it seems like it's necessary to make things more complicated, there is an easier fix.
+                </div>
             </div>
             <div class="choice" identifier="c1">
                 <div class="text">
-                    The buggy <code>draw square</code> block will draw a square of the wrong size.
+                    The <code>draw a square</code> block  draws a square of the wrong size.
                 </div>
                 <div class="feedback">
                     No, each side is the correct length.
@@ -31,7 +42,7 @@
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">
-                    The buggy <code>draw square</code> block won't draw 4 sides in the shape of a square.
+                    The  <code>draw a square</code> block won't draw 4 sides in the shape of a square.
                 </div>
                 <div class="feedback">
                     No, the square looks correct when it is drawn by itself.
@@ -40,33 +51,30 @@
 
             <div class="choice" identifier="c3">
                 <div class="text">
-                    That block actually works correctly!
+                    The <code>draw a square</code> block actually works correctly!
                 </div>
                 <div class="feedback">
-                    While the square will be drawn with the correct size and shape, the problem arises with
-                    it the way it leaves the drawing turtle when it finishes.  Compare it with the correct <code>draw square</code>
+                    Only sort of... The <code>draw a square</code> block draws a square of the correct size and shape, but causes a problem that the <code>repeat</code> script doesn't expect.
                     block.
                 </div>
             </div>
 
             <div class="choice" identifier="c4">
                 <div class="text">
-                    The buggy <code>draw square</code> block doesn't return the drawing turtle in the right position
+                    The <code>draw square</code> block doesn't return the sprite to the correct location
                     when it is done.
                 </div>
                 <div class="feedback">
-                    No, not quite. Something is wrong with the drawing turtle when the block finishes; but it is in the
-                    right position.
+                    The sprite's <em>location</em> is correct, but something else is wrong about the way the sprite has been left at the end of <code>draw a square</code>.
                 </div>
             </div>
 
             <div class="choice" identifier="c5">
                 <div class="text">
-                    The buggy <code>draw square</code> block doesn't finish with the drawing turtle
-                    pointing in the right direction.
+                    The  <code>draw a square</code> block leaves the sprite facing  the wrong direction.
                 </div>
                 <div class="feedback">
-                    Right! If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end, all would be well.
+                    Right! Because the <code>draw a square</code> block doesn't leave the sprite facing the same way as when it started, the the <code>repeat</code> script moves in different directions each time <code>draw a square</code> draws a square. If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end of <code>draw a square</code>, all would be well.
                 </div>
             </div>
 
