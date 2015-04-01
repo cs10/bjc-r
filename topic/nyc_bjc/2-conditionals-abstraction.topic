@@ -2,7 +2,7 @@ title: Conditionals
 
 {
 
-h1: Formerly Topic 3: Conditionals and Variables
+//h1: Formerly Topic 3: Conditionals and Variables
 
 heading: Conditional Blocks
 
@@ -45,7 +45,7 @@ resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guess
 //resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
 
 
-h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
+//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
 heading: More work with reporters
 

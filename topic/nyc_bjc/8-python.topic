@@ -1,17 +1,17 @@
 title: Python
 {
-h1: Topic 15: Besides Blocks: Welcome to Python!
+//h1: Topic 15: Besides Blocks: Welcome to Python!
 
-h2: Big Ideas
-big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
-big-idea: Python and <span class="snap">snap</span> are awesome languages which coexist. 
-big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
-big-idea: Text based languages are just as power as visual languages and come with their own set of pros and cons.
+//h2: Big Ideas
+//big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
+//big-idea: Python and <span class="snap">snap</span> are awesome languages which coexist. 
+//big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
+//big-idea: Text based languages are just as power as visual languages and come with their own set of pros and cons.
 
-h2: Activities
-learning-goal: Start playing with Python by using the command line.
-learning-goal: Learn the basics of Python syntax and write a few simple programs.
-learning-goal: You should be comfortable with basic math and "string" operations.
+//h2: Activities
+//learning-goal: Start playing with Python by using the command line.
+//learning-goal: Learn the basics of Python syntax and write a few simple programs.
+//learning-goal: You should be comfortable with basic math and "string" operations.
 
 heading: Introduction to Python
     resource: Background Survey [/bjc-r/cur/programming/python/intro-survey.html]
@@ -35,19 +35,19 @@ heading: String Manipulation, Conditionals, and Recursion
 	resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
 
 
-h1: Formerly Topic 16: Besides Blocks: Data Structures and Python
+//h1: Formerly Topic 16: Besides Blocks: Data Structures and Python
 
-h2: Big Ideas
-big-idea: Data Structures are a way to help programmers organize items in ways which are easier to manipulate and understand.
-big-idea: Lists are a basic data structure which exist in just about every language.
-big-idea: "Key-Value Pairs" are a very easy way to create simple relationships among different data.
-big-idea: Python dictionaries utilize key-value pairs to make organizing certain kinds of data much more effecient.
+//h2: Big Ideas
+//big-idea: Data Structures are a way to help programmers organize items in ways which are easier to manipulate and understand.
+//big-idea: Lists are a basic data structure which exist in just about every language.
+//big-idea: "Key-Value Pairs" are a very easy way to create simple relationships among different data.
+//big-idea: Python dictionaries utilize key-value pairs to make organizing certain kinds of data much more effecient.
 
-h2: Activities
-learning-goal: Get more practice writing functions in Python.
-learning-goal: Manipulate simple data structures and their data.
-learning-goal: Learn how to use key-value pairs and why they are useful.
-learning-goal: Solve problems with Python lists and dictionaries.
+//h2: Activities
+//learning-goal: Get more practice writing functions in Python.
+//learning-goal: Manipulate simple data structures and their data.
+//learning-goal: Learn how to use key-value pairs and why they are useful.
+//learning-goal: Solve problems with Python lists and dictionaries.
 
 heading: Introduction to Python Data Structures
     resource: Welcome to Besides Blocks [/bjc-r/cur/programming/python/intro_besides_blocks_data_structs.html]
@@ -70,18 +70,18 @@ heading: Python Dictionaries
     resource: 2D Dictionaries [/bjc-r/cur/programming/python/2D_dictionaries.html]
 
 
-h1: Formerly Topic 17: Besides Blocks: Welcome to Data in Python!
+//h1: Formerly Topic 17: Besides Blocks: Welcome to Data in Python!
 
-h2: Big Ideas
-big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
-big-idea: Python is a language for scientific computing. 
-big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
-big-idea: Python is well suited for text analysis because of its powerful nltk (Natural Language processing) toolkit.
+//h2: Big Ideas
+//big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
+//big-idea: Python is a language for scientific computing. 
+//big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
+//big-idea: Python is well suited for text analysis because of its powerful nltk (Natural Language processing) toolkit.
 
-h2: Activities
-learning-goal: Investigate an idea in literary corpora.
-learning-goal: Learn the basics of Python text analysis and data manipulation.
-learning-goal: You should be comfortable with elementary techniques of natural language processing.
+//h2: Activities
+//learning-goal: Investigate an idea in literary corpora.
+//learning-goal: Learn the basics of Python text analysis and data manipulation.
+//learning-goal: You should be comfortable with elementary techniques of natural language processing.
 
 heading: Introduction to Data in Python
     resource: Welcome to computational lyrical analysis using python [/bjc-r/cur/programming/python/python_data_intro.html]
