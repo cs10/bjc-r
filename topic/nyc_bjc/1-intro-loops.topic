@@ -13,14 +13,14 @@ heading: Lab 1: Introduction
 	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
-	resource: Saving your work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
+	resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
 
 heading: Lab 2: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/forever.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/the-forever-block.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-	resource: Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/kaleidoscope-small.html]
+	resource: Make a Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/make-a-kaleidoscope.html]
 
 heading: Lab 3: Repeating Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-repeat-block.html]
@@ -30,15 +30,15 @@ heading: Lab 3: Repeating Commands
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
 
 heading: Lab 4: Making Your Own Blocks
-	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/tutorial-custom-blocks.html]
-	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-a-simple-input.html]
+	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
+	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-an-input.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Developing and Editing Blocks [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/developing-and-editing-blocks.html]
 	//resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
 heading: Lab 5: Building Complicated Blocks with Simple Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
-	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/composing-blocks.html]
+	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/building-a-custom-block.html]
 	quiz: Check: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		

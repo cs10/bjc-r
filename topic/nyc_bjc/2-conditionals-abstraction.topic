@@ -9,6 +9,7 @@ heading: Lab 1: Conditional Blocks
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
 		  //have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
 		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] // combine with introduction
+	raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
 	resource: Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] //remove/replace some quiz questions
 	resource: <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-and-if-else.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
@@ -29,7 +30,7 @@ heading: Lab 2: Combining Booleans
 heading: Lab 3: Practice with Predicates
 		//resource: motivation
 	resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
-	resource: Practice: >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates.html] // chop out relevant piees
+	resource: Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates.html] // chop out relevant piees
 	resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/ge-soln.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Predicates: Make a <code>Between</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates-make-a-between-block.html]
@@ -39,27 +40,27 @@ heading: Lab 3: Practice with Predicates
 heading: Lab 4: Number Guessing
 	resource: Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/number-guessing-game-v1-0.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-	resource: More number guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/number-guessing-game-v2-0.html]
+	resource: More Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/number-guessing-game-v2-0.html]
 		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 
 
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
 heading: Lab 5: More Work with Reporters
-	resource: The Max Block [/bjc-r/cur/programming/functions/review-max-block.html]
-	resource: Input types [/bjc-r/cur/programming/functions/input-types-new.html]
+	resource: The <code>Max</code> Block [/bjc-r/cur/programming/functions/review-max-block.html]
+	resource: Input Types [/bjc-r/cur/programming/functions/input-types-new.html]
 	resource: Composition of Reporters [/bjc-r/cur/programming/functions/composition-of-reporters.html]
 	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up-debug.html]
 
 heading: Lab 6: Custom Blocks Make Code Easier to Understand
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
 	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/valid-date.html]
 
 heading: Lab 7: Testing Your Code
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
   	resource: Simple Debugging [/bjc-r/cur/programming/debugging/simple-debugging-house.html]
-  	resource: The Check Block [/bjc-r/cur/programming/debugging/the-check-block.html]
+  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/debugging/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/debugging/using-the-check-block.html]
 
 heading: Lab 8: Abstraction
@@ -67,7 +68,7 @@ heading: Lab 8: Abstraction
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
 
 heading: Lab 9: Programs with Multiple Sprites
-	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
+	resource: Experiment with a Short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
 	quiz: Check: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
 	quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
