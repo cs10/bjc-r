@@ -1,25 +1,103 @@
+/**
+* based on:
+*
+* Copyright (c) 2006 Encore Research Group, University of Toronto
+*
+* This library is free software; you can redistribute it and/or
+* modify it under the terms of the GNU Lesser General Public
+* License as published by the Free Software Foundation; either
+* version 2.1 of the License, or (at your option) any later version.
+*
+* This library is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* Lesser General Public License for more details.
+*
+* You should have received a copy of the GNU Lesser General Public
+* License along with this library; if not, write to the Free Software
+* Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
+*/ 
+
+/* * * * * FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* DO NOT LOAD EXTRA FONTS WE WONT USE */
+@font-face { /* Used for all code elements */
+  font-family: 'SourceCodePro Light';
+  src: url(../fonts/SourceCodePro/EOT/SourceCodePro-Light.eot);
+  src: url(../fonts/SourceCodePro/EOT/SourceCodePro-Light.eot?#iefix) format(embedded-opentype),
+       url(../fonts/SourceCodePro/WOFF/OTF/SourceCodePro-Light.otf.woff) format(woff),
+       url(../fonts/SourceCodePro/WOFF/TTF/SourceCodePro-Light.ttf.woff)  format(truetype),
+       url(../fonts/SourceCodePro/SVG/SourceCodePro-Light.svg) format(svg);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /* Default Sans Font */
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
+       url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'),
+       url('../fonts/opensans/OpenSans-Regular-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /* Sans Headers */
+  font-family: 'VAG Rounded Light';
+  src: url(../fonts/vagrounded/VAGRoundedStd-Light.eot);
+  src: url(../fonts/vagrounded/VAGRoundedStd-Light.eot?#iefix) format(embedded-opentype),
+       url(../fonts/vagrounded/VAGRoundedStd-Light.woff) format(woff),
+       url(../fonts/vagrounded/VAGRoundedStd-Light.ttf)  format(truetype),
+       url(../fonts/vagrounded/VAGRoundedStd-Light.svg) format(svg);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /* All Serif Elements */
+  font-family: 'Freight Text Pro';
+  src: url(../fonts/FreightTextPro/FreightTextProBook.otf);
+/*  src: url(../fonts/FreightTextPro/FreightTextProBook.eot?#iefix) format(embedded-opentype),
+       url(../fonts/FreightTextPro/FreightTextProBook.otf.woff) format(woff),
+       url(../fonts/FreightTextPro/FreightTextProBook.ttf.woff)  format(truetype),
+       url(../fonts/FreightTextPro/FreightTextProBook.svg) format(svg);*/
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { /* All Serif Elements */
+  font-family: 'Freight Text Pro';
+  src: url(../fonts/FreightTextPro/FreightTextProBold.otf);
+/*  src: url(../fonts/FreightTextPro/FreightTextProBook.eot?#iefix) format(embedded-opentype),
+       url(../fonts/FreightTextPro/FreightTextProBook.otf.woff) format(woff),
+       url(../fonts/FreightTextPro/FreightTextProBook.ttf.woff)  format(truetype),
+       url(../fonts/FreightTextPro/FreightTextProBook.svg) format(svg);*/
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* * * * END FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* FONT STYLES FOR ELEMENTS */
 /* Override Bootstrap */
 code, pre, tt, kbd, samp {
-  font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', 'Monaco', Courier, monospace;
-}
-
-code {
-  background: none;
+  font-family: 'SourceCodePro Light', 'Andale Mono', 'Menlo', 'Monaco', Courier, monospace;
 }
 
 h1, h4, h5, h6, .header-sans {
-  font-family: 'VAG Rounded Light', 'VAG Rounded', 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: 'VAG Rounded Light', 'VAG Rounded', 'Helvetica Neue' Helvetica sans-serif;
   font-weight: normal;
 }
 
-.full ul, .full ol, blockquote, .serif, .dropdown-header,
 h2, h3, .title-small-screen, .header-serif, .title, .navbar-title {
   font-family: 'Freight Text Pro', 'Baskerville', 'Georgia', 'Times', serif;
 }
 
+/* Freight isn't my favorite at small sizes
+.full ul, .full ol, blockquote, .serif {
+  font-family: 'Baskerville', 'Georgia', 'Times', serif;
+} Mary didn't like this font. */
+
 body { /* default Sans Serif Stack */
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
 /* END FONT SETTINGS */
@@ -88,15 +166,17 @@ nav {
 .full ul, .full ol {
   font-size: 1em;
   font-weight: inherit;
-  display:inline-block;
-  color: #004;
-  margin: 18px;
-  border: 2px solid #39F;
+  /* display:inline-block; Commented out because it was breaking my styles --Mary Fries 3/19/15 */ 
+  /* color: #004; --Mary Fries 3/20/15 */ 
+  padding: 5px 15px 5px 5px;
+  /*margin: 0px 15px 15px  0; /* Added */
+  /*border: 2px solid #39F; /* This was driving Mary nuts, so I cut it out. 3/18/15 */
   border-radius: 6px;
 }
 
 ul > li, ol > li {
   padding: 5px;
+  margin-left: 35px; /* WHY? This causes problems in some places... */
 }
 
 /*
@@ -111,10 +191,16 @@ above rules override these without it.
   border: none;
 }
 
-li > ul, li > ol {
-  margin: 5px auto;
+/*ul > ul, ol > ol,
+ul > ol, ol > ul { /* Added by Mary Fries, March 2015
   border: none;
+}*/
+
+li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
+  margin: 5px auto;
   display: block;
+  list-style-type:lower-alpha;
+  line-height:none;
 }
 
 th {
@@ -185,6 +271,7 @@ a[disabled] {
 }
 
 .full-bottom-bar {
+  clear:both;
   background: #003A70;
   opacity: 0.85;
   filter: alpha(opacity=85); /* For IE8 and earlier */
@@ -206,8 +293,8 @@ a[disabled] {
   width: 80%; /* For setting title width */
 }
 
-.navbar-right { /* Contains Nav Buttons and Dropdown Menu */
-  width: 20%;  /* For setting title width */
+.navbar-right {/* Contains Nav Buttons and Dropdown Menu */
+  width: 20%; /* For setting title width */
 }
 
 .navbar-toggle {
@@ -256,19 +343,23 @@ a[disabled] {
   padding: 2px; /* FIXME -- value is weird */
   font-size: .76em;
 }
+
+.arrow {/* For Buttons with arrows instead of words. */
+  border-radius: 8px;
+  font-variant: small-caps;
+  width: 3em;
+  padding: 3px; /* center text in buttons */
+}
+
 /* END NAV SECTION ***********************************************************/
 
 /* PAGE DROPDOWN SECTION ******************************************************/
 /* Give space to caret in dropdown menus */
 /* FIXME -- standardize class names! */
 .dropdown-menu {
-  margin-top: 6px; /* should be equal to padding on list_header */
+  margin-top: 8px; /* should be equal to padding on list_header */
   overflow-y: scroll; /* scroll menu on small screens */
-  width: auto;
-  white-space: nowrap;
-  overflow-x: hidden;  /* Text truncation */
-  text-overflow: ellipsis;
-  /* max- height + width set using JS on page load. */
+  /* NOTE: max-height is set via jQuery when the dropdown is created. */
 }
 .list_item {
   font-size: 10pt;
@@ -277,16 +368,6 @@ a[disabled] {
   text-align: left;
 }
 
-/* nested class necessary to override padding */
-.list_item.dropdown-header {
-  color: #222;
-  text-transform: capitalize;
-  padding: 3px 10px;
-  font-size: 13px;
-  font-weight: 600;
-}
-
-/* Button to toggle the menu */
 .list_header, .arrow {
   height: 2em;
   margin: 0;
@@ -294,18 +375,10 @@ a[disabled] {
   font-size: 12pt;
   font-weight: 900;
   border-color: #888;
-  border-radius: 0; /* No round coners on dropdowns between buttons */
 }
 
 .list_header {
   border-radius: 0; /* No round coners on dropdowns between buttons */
-}
-
-.arrow {/* For Buttons with arrows instead of words. */
-  border-radius: 8px;
-  font-variant: small-caps;
-  width: 3em;
-  padding: 3px; /* center text in buttons */
 }
 
 /* Dropdown menu items with icons */
@@ -395,7 +468,7 @@ pre > code.hljs {
 .course_link {
   display: block;
   margin-bottom: 10px;
-  font-size: 120%;
+  font-size: large;
   background-image: url(../img/globe.png);
   background-size: contain;
   background-repeat: no-repeat;
@@ -406,6 +479,10 @@ pre > code.hljs {
 .center {
   text-align: center;
   margin: 0 auto;
+}
+
+.floatClearLeft {
+  clear: left;
 }
 
 .strike {
@@ -427,6 +504,7 @@ table .pre {
   margin: 0 15px 15px 20px;
 }
 
+.imageCenter,
 img.center {
   margin-left: auto;
   margin-right: auto;
@@ -442,6 +520,34 @@ img.indent, div.indent {
   margin-left: 10%;
 }
 
+.centeredImages {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.centeredImages img {
+  margin: 0 10px;
+}
+
+.floatClear,
+.clearFloat {
+  clear: both;
+}
+
+.instructionsIcon {
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/infoIcon.png);
+  background-repeat: no-repeat;
+  text-decoration: none;
+  outline: none;
+}
+
+.instructionsIcon:hover {
+  background-image: url(../img/infoIconRollover.png);
+  background-repeat: no-repeat;
+}
+
 .step {
   margin-left: 35px;
   padding: 0 50px 5px 30px;
@@ -451,7 +557,7 @@ img.indent, div.indent {
 }
 
 /** Common Styling to highlighted sections */
-.quoteOrange, .quoteRed, .quoteGreen, .quoteBlue, .quoteYellow {
+.quoteOrange, .quoteYellow, .quoteGreen, .quoteBlue {
   padding: 10px 15px;
   margin: 10px 2%;
   width: 96%;
@@ -460,13 +566,14 @@ img.indent, div.indent {
           box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
 }
 
-.quoteRed { /* FIXME, name needed */
-  border-left: 12px solid #C11;
-}
-
 .quoteOrange { /* FIXME, name needed */
   border-left: 12px solid #FF9D1E;
   background-color: #FFCE8E;
+}
+
+.quoteYellow { /* FIXME, name needed */
+  border-left: 12px solid #e4e47d;
+  background-color: #F1F1BC;
 }
 
 .quoteBlue { /* FIXME, name needed */
@@ -479,11 +586,6 @@ img.indent, div.indent {
   background-color: #9C6;
 }
 
-.quoteYellow { /* FIXME, name needed */
-  border-left: 12px solid #e4e47d;
-  background-color: #F1F1BC;
-}
-
 /* Most items in the course page */
 /** FIXME -- poorly performant, applies to all divs within */
 .topic > div {
@@ -493,6 +595,108 @@ img.indent, div.indent {
   padding-left: 35px;
   margin: 5px 0;
   padding-bottom:0;
+}
+
+/** Side Notes **/
+.sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #fff8ad; /* #F3F0B3; */
+  clear:both;
+}
+
+.leftFloat {
+  float: left;
+}
+
+/** BJC4NYC elements added by Mary Fries, March 2015 **/
+div {
+	padding-bottom: .5em;
+}
+
+.forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
+  padding: 1em;
+  margin-bottom: .5em;  
+}
+
+.forYouToDo:before, .dialogue:before, .takeItFurther:before { /* Shared Heading Formatting */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.forYouToDo {
+  background-color: #d2e3be; /* #edf4e6; */
+  margin-bottom: .5em;  
+}
+
+.forYouToDo#first:before {
+  content: "For You To Do";
+}
+
+.dialogue {
+  background-color: #cce4f6; /* #ecf4fb; */
+}
+
+.dialogue:before {
+  content: "Thinking Out Loud";
+}
+
+.dialogue > div {
+  padding-left: 5em;
+  text-indent: -3em;
+}
+
+.dialogue > div.stagedir{
+  font-style: italic;
+  text-align: center;
+}
+
+.dialogue > div > span {
+  font-weight: bold;
+}
+
+.takeItFurther {
+  background-color: #e4cde3;
+}
+
+.takeItFurther:before {
+  content: "Take It Further";
+}
+
+.takeNote {
+  background-color: #fcc589;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+/* Other Random Things added by Mary */
+
+.block {height: 2em;}
+
+.bigBlock {width: 6%;}
+
+.script {width: 18%;}
+
+code {
+  background: none;
+  /* color: #00FFFF; */
+  font-family: courier;
+  font-size: 1.1em;
+}
+
+.anchor {
+   padding-top: 65px;
+   margin-top: -65px;
 }
 
 /** ICON CLASSES **/
@@ -536,11 +740,13 @@ img.indent, div.indent {
 /* Other items, which partially override .topic div */
 
 /* Headings */
-.topic_header {
+.topic .topic_header {
+  font-weight: bold;
   font-size: large;
   text-decoration: underline;
   padding-left: 0;
 }
+
 
 .topic .label {
   margin-top: 20px;
@@ -550,8 +756,8 @@ img.indent, div.indent {
 }
 
 /* List-related items
- * bigIdeas and learninggoals are being treated identically at the moment.
- */
+* bigIdeas and learninggoals are being treated identically at the moment.
+*/
 .bigideas,
 .learninggoals {
   font-weight: 400;
@@ -582,6 +788,7 @@ img.indent, div.indent {
   padding-top: 10px;
 }
 
+
 /* iframe at the beginning of labs, for embedded content. */
 .content-embed {
   border: 0;
@@ -602,6 +809,7 @@ img.indent, div.indent {
 /* .snap inserts the logo using the proper formatting.
 * Insert using "<span class="snap">snap</span>"
 */
+
 .snap:first-letter {
   font-variant: normal;
 }
@@ -639,13 +847,11 @@ img.indent, div.indent {
 }
 
 .code-vid {
-  max-width: 100%;
   text-align: center;
   font-size: .8em;
   font-style: italic;
   color: #808080;
 }
-
 /***************************************/
 /** LLAB QUIZ STYLING */
 .feedbackDiv {
@@ -810,7 +1016,6 @@ img.indent, div.indent {
 /********************************/
 /*** END QUIZ CSS               */
 /********************************/
-
 /******* SMALL DEVICE STUFF *****/
 @media (max-width: 768px) {
   body {
@@ -871,56 +1076,6 @@ img.indent, div.indent {
   }
 }
 
-/* * * * * FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* DO NOT LOAD EXTRA FONTS WE WONT USE */
-@font-face { /* Used for all code elements */
-  font-family: 'Source Code Pro';
-  src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Regular.eot');
-  src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SourceCodePro/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'),
-       url('../fonts/SourceCodePro/WOFF/TTF/SourceCodePro-Regular.ttf.woff') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face { /* Default Sans Font */
-  font-family: 'Open Sans';
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
-       url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face { /* Sans Headers */
-  font-family: 'VAG Rounded Light';
-  src: url('../fonts/vagrounded/VAGRoundedStd-Light.eot');
-  src: url('../fonts/vagrounded/VAGRoundedStd-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/vagrounded/VAGRoundedStd-Light.woff') format('woff'),
-       url('../fonts/vagrounded/VAGRoundedStd-Light.ttf')  format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face { /* All Serif Elements */
-  font-family: 'Freight Text Pro';
-  src: url('../fonts/FreightTextPro/FreightTextProBook.otf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face { /* All Serif Elements */
-  font-family: 'Freight Text Pro';
-  src: url('../fonts/FreightTextPro/FreightTextProBold.otf');
-  font-weight: bold;
-  font-style: normal;
-}
-
-/* * * * END FONTS * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
-/**************** *************************** ************/
 /**************** TO BE REMOVED OR REFACTORED ************/
 /* THESE ARE USED IN TWO FILES
 * We should move these to those two locations, or try to fix them

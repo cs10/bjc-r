@@ -75,8 +75,8 @@ MC.prototype.loadContent = function() {
 
 //gets and returns a choice object given the choice's identifier
 MC.prototype.getChoiceByIdentifier = function(identifier) {
-    var i = 0;
-    for (; i < this.choices.length; i++) {
+    var i;
+    for (i = 0; i < this.choices.length; i++) {
         if (this.removeSpace(this.choices[i].identifier) == identifier) {
             return this.choices[i];
         }
@@ -479,7 +479,7 @@ MC.prototype.postRender = function() {
 
 
 // BEAUTIOUS
-MC.prototype.getTemplate = function() {
+MC.prototype.getTemplate = function(num) {
     return "<div class='panel panel-primary MultipleChoice Question'>" +
         "		<div class='panel-heading questionType'>" +
         "			Multiple Choice" +
