@@ -32,8 +32,8 @@ heading: Lab 3: Practice with Predicates
 	resource: Practice: >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates.html] // chop out relevant piees
 	resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/ge-soln.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-	resource: Practice: Between [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates-make-a-between-block.html]
-	resource: Practice with complex booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/complex-booleans-practice.html]
+	resource: Predicates: Make a <code>Between</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates-make-a-between-block.html]
+	resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/complex-booleans-practice.html]
 
 
 heading: Lab 4: Number Guessing
