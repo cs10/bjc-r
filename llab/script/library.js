@@ -20,6 +20,7 @@ llab.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("snap.berkeley.edu");
 llab.CORSCompliantServers.push("inst.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("cs10.berkeley.edu");
+llab.CORSCompliantServers.push("localhost");
 
 
 //// TODO: Move this to config? Or refactor?
