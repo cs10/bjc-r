@@ -5,100 +5,40 @@
         <title>Booleans</title>
     </head>
     <body>
-	<p>
+	<p> 
 	    You already know what <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  does. </p>
-    <p> Here is a script that uses that along with two new blocks. <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" width="242" height="89" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
-    <p>Make a prediction about what this will do and then build it and try it out.</p>
+        <div class="sidenote">There is nothing in this script that should make its behavior depend on the mouse speed, but it does act a bit differently when the mouse moves quickly than when it moves slowly. Come up with a theory about why.</div>
+    <p> Here is a script that uses that along with two new blocks, the <code>if</code> block and the <code>distance to</code> block. <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" width="242" height="89" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
+    <p>First try to analyze this and predict what it will do. Then build it and try it out. </p>
     
           
         
-       <p> In order to represent the yes/no nature of condition phrases, we need a special type of value called a
-	    Boolean (named after the great logician <a href="http://en.wikipedia.org/wiki/George_Boole"
-	    target="blank">George Boole</a>). There are only two possible boolean values: <code>true</code>
-	    and <code>false</code> (which correspond to "yes" and "no"). These are represented in <span class="snap">snap</span>  by the blocks
+       <p>The <code>if</code> block sets a <strong>condition</strong>. The script checks <code>forever</code> to see <code>if</code> that condition <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" width="212" height="22" alt="distance to mouse less than 20"> is true, and only if it is does the sprite follow the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" width="202" height="25" alt="go to mouse x and mouse y">. If <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" width="212" height="22" alt="distance to mouse less than 20"> is <img src="/bjc-r/img/blocks/false.png"
+	    alt="false"/>, the sprite is not instructed to move. </p>
+       
+       <p>Computer scientists refer to blocks like <code>if</code> as <strong>conditionals</strong>. Blocks that report <code>true</code> when a condition is met and  <code>false</code> when it is not met are called "predicates." These two special values,  <code>true</code> and <code>false</code>, are called 
+	    Boolean values (named after the great logician <a href="http://en.wikipedia.org/wiki/George_Boole"
+	    target="blank">George Boole</a>).  These values are represented in <span class="snap">snap</span>  by the blocks
 	    <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png"
-	    alt="false"/>. Blocks that report <code>true</code> or <code>false</code> are called "predicates."
-	</p>
+	    alt="false"/>. 
+	   </p>
 
 	<p>
 	    <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
 	</p>
 
 	<p>
-	    These functions represent the yes/no questions we were discussing earlier. Predicate functions in <span class="snap">snap</span>  will
-	    always have the pointed, hexagonal shape (like this: <img src="/bjc-r/img/cond/demo-predicate-block.png"
-	    alt="a predicate block"/>).
+	    These functions are like yes/no questions. Predicate functions in <span class="snap">snap</span>  will
+	    always have the pointed, hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png"
+	    alt="a predicate block"/>.
 	</p>
-	<p>
-	    Let's take a look at a few simple predicates that are built in to <span class="snap">snap</span>   Most of
-	    these can be found on the green "operators" tab.
-	</p>
-
-	<h3>Quiz: what does each expression return?</h3>
-
-
-       
-       <!-- Question 1 -->
-       <div class="assessment-data" type="multiplechoice" identifier="3 + 1 = 4"
-        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri4" shuffle="false">
+    <div class="forYouToDo">
+        <ol ></li> <div class="sidenote">Some of the predicates, like <code>turbo mode?</code>, will not yet make sense, but you are likely to be able to make a good guess about several of them.</div>
+        <li> Look in the "Sensing" and "Operations" tabs, find the <em>predicate</em> blocks, and see if you can figure out what they might do. </li>
+        <li> Look in the "Control" tab to find what other <em>conditionals</em> are there. Talk with your pair programming partner about how you think those might be used.
         
-            <div class="prompt">
-                <img src="/bjc-r/img/cond/3-plus-1-equals-4.png" alt="3 + 1 = 4"/>
-            </div>
-            
-            <div class="choice" identifier="true">
-                <div class="text">
-                    <img src="/bjc-r/img/blocks/true.png" alt="true"/>
-                </div>
-                <div class="feedback">
-		    Correct!
-                </div>
-            </div>
-                        
-            <div class="choice" identifier="false">
-                <div class="text">
-                    <img src="/bjc-r/img/blocks/false.png" alt="true"/>
-                </div>
-                <div class="feedback">
-                    Sorry. Try clicking the block to see what it reports!
-                </div>
-            </div>
-        
-            <div class="responseDeclaration" identifier="ri4">
-                <div class="correctResponse" identifier="true"></div>
-            </div>
-       </div>
-
-       <!-- Question 2 -->
-       <div class="assessment-data" type="multiplechoice" identifier="3 = 2"
-        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="false">
-        
-            <div class="prompt">
-                <img src="/bjc-r/img/cond/length-of-computer-equals-8.png" alt="3 > 9"/>
-            </div>
-            
-            <div class="choice" identifier="true">
-                <div class="text">
-                    <img src="/bjc-r/img/blocks/true.png" alt="true"/>
-                </div>
-                <div class="feedback">
-		    Correct!
-                </div>
-            </div>
-                        
-            <div class="choice" identifier="false">
-                <div class="text">
-                    <img src="/bjc-r/img/blocks/false.png" alt="true"/>
-                </div>
-                <div class="feedback">
-                    Sorry! Try writing this in <span class="snap">snap</span> and see what happens when you click it!
-                </div>
-            </div>
-        
-            <div class="responseDeclaration" identifier="ri3">
-                <div class="correctResponse" identifier="true"></div>
-            </div>
-       </div>
-
+        </ol>
+        </div>
+	
     </body>
 </html>
