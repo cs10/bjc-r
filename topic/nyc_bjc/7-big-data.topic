@@ -1,25 +1,25 @@
-title: Big Data
+title: Unit 7: Big Data//Map Reduce/Projects and AP Test
 {
-h1: Formerly Topic 9: Concurrency
-h2: Big Ideas
-big-idea: Understand the basic components of any computer
-big-idea: Understand Moore's Law impact on the development of the processors
-big-idea: Understand parallelism and its limitations in computing
-big-idea: Explore the history and development of encryption techniques
+//h1: Formerly Topic 9: Concurrency
+//h2: Big Ideas
+//big-idea: Understand the basic components of any computer
+//big-idea: Understand Moore's Law impact on the development of the processors
+//big-idea: Understand parallelism and its limitations in computing
+//big-idea: Explore the history and development of encryption techniques
 
-	video: Concurrency [https://coursesharing.org/courses/6/lectures/16]
-	reading: Blown to Bits: Chapter 5 Part 1 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt1.pdf]
-	reading: Blown to Bits: Chapter 5 Part 2 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt2.pdf]
-	reading: Blown to Bits: Chapter 5 Part 3 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt3.pdf]
+//	video: Concurrency [https://coursesharing.org/courses/6/lectures/16]
+//	reading: Blown to Bits: Chapter 5 Part 1 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt1.pdf]
+//	reading: Blown to Bits: Chapter 5 Part 2 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt2.pdf]
+//	reading: Blown to Bits: Chapter 5 Part 3 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt3.pdf]
 
-h2: Activities
-In <span class="snap">snap</span>  what are the issues/facilities to do parallel work, and how does the machine work?
+//h2: Activities
+//In <span class="snap">snap</span>  what are the issues/facilities to do parallel work, and how does the machine work?
 
-learning-goal: A single sprite has control blocks which appear to respond in parallel (e.g., multiple "when green flag, do...", "when space is clicked, do...", "when I receive broadcast", etc.)
-learning-goal: Multiple sprites only exacerbate the problem, and race conditions could occur (e.g., what if multiple sprites tried to paint the screen their color all at the same time?)
-learning-goal: What happens when multiple signals are sent to the same "when I receive broadcast" block, do all get through? (yes if Broadcast and wait; no, but consistent, if Broadcast and Edit->Thread Safe Scripts checked; no, but inconsistent, if Edit->Thread Safe Scripts unchecked)
-learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
-learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
+//learning-goal: A single sprite has control blocks which appear to respond in parallel (e.g., multiple "when green flag, do...", "when space is clicked, do...", "when I receive broadcast", etc.)
+//learning-goal: Multiple sprites only exacerbate the problem, and race conditions could occur (e.g., what if multiple sprites tried to paint the screen their color all at the same time?)
+//learning-goal: What happens when multiple signals are sent to the same "when I receive broadcast" block, do all get through? (yes if Broadcast and wait; no, but consistent, if Broadcast and Edit->Thread Safe Scripts checked; no, but inconsistent, if Edit->Thread Safe Scripts unchecked)
+//learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
+//learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
 
 
 heading: Background: concurrency without the computer

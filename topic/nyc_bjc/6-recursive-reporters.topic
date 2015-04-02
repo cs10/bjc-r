@@ -1,18 +1,18 @@
-title: Recursive Reporters
+title: Unit 6: Recursive Reporters
 {
-h2: Big Ideas
-big-idea: Relating recursion in programming with inductive function definition
+//h2: Big Ideas
+//big-idea: Relating recursion in programming with inductive function definition
 
 //	video: Recursion II [https://coursesharing.org/courses/6/lectures/19]
-	video: Take-home midterm exam Wednesday!
-	video: AI [https://coursesharing.org/courses/6/lectures/22]
-	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
+//		video: Take-home midterm exam Wednesday!
+//	video: AI [https://coursesharing.org/courses/6/lectures/22]
+//	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
 
-h2: Activities
+//h2: Activities
 
-learning-goal: Understand how reporters use combiners instead of sequences.
-learning-goal: Practice planning and coding recursive reporters.
-learning-goal: Implement higher order functions.
+//learning-goal: Understand how reporters use combiners instead of sequences.
+//learning-goal: Practice planning and coding recursive reporters.
+//learning-goal: Implement higher order functions.
 
 heading: Getting Started
 	 resource: Getting Started (Al) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/getting-started.html]

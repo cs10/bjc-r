@@ -603,12 +603,14 @@ img.indent, div.indent {
   float: right;
   margin-right: 20px;
   margin-left: 1em;
+  margin-bottom: 20px;
   /* position: absolute; */
   /* right: 0; */
   /* top: auto; /* default */
   width: 20%;
   padding: 10px;
   background-color: #fff8ad; /* #F3F0B3; */
+  clear:both;
 }
 
 .leftFloat {
@@ -620,7 +622,7 @@ div {
 	padding-bottom: .5em;
 }
 
-.forYouToDo, .dialogue, .takeItFurther {/* Shared Box Formatting */
+.forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;  
 }
@@ -669,6 +671,13 @@ div {
 .takeItFurther:before {
   content: "Take It Further";
 }
+
+.takeNote {
+  background-color: #fcc589;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+ }
 
 /* Other Random Things added by Mary */
 
@@ -831,7 +840,7 @@ code {
 
 .truthtable th {
   font-size: 14px;
-  font-weight: normal;
+  font-weight: bold;
   padding: 10px 5px;
   border-style: solid;
   border-width: 1px;

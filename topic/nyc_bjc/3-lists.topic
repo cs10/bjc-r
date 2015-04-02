@@ -1,4 +1,4 @@
-title: Lists
+title: Unit 3: Lists
 {
 // h1: Formerly Topic 5: Collecting Data into Lists
 
@@ -28,7 +28,7 @@ heading: Introduction to Lists
 	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/3-lists/1-working-with-lists/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
 	 resource: More on composition of higher order functions [/bjc-r/cur/programming/3-lists/1-working-with-lists/8-more-on-composition-of-higher-order-functions.html]
 	 resource: When you really have to loop [/bjc-r/cur/programming/3-lists/1-working-with-lists/9-when-you-really-have-to-loop.html]
-	
+
 //heading: Lists and Sentences: The Index Variable Pattern
 //	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
 
@@ -37,13 +37,13 @@ heading: Magic Squares
 	 resource: Introducing Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples.html]
 	 resource: Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-2.html]
 	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-3.html]
-	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/2-magic-square/finishing-touches.html]	
-	
+	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/2-magic-square/finishing-touches.html]
+
 heading: List Mutation
 	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
 	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
 
-	
+
 assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
 
 // h1: Formerly Topic 13: Practicing with Lists: Tic-Tac-Toe
