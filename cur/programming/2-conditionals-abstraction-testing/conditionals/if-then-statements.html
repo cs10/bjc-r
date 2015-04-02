@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+	
+        <title>"If-then" Statements</title>
+    </head>
+    <body>
+	<p>
+	    Now that you've thought about the above examples, let's go over the pieces you'd need for one of them. In
+	    the banking example, you'll need to write code to ask for the user's input, withdraw money from an account,
+	    deposit money into an account, and to display the balance to the user. Returning to the question we
+	    mentioned earlier, will we always want to run all of these pieces every time we run the program? The answer
+	    should be "no." For example, if the user chooses to display their balance, we certainly don't want to run
+	    the code that withdraws money from their account. This idea can be represented in the form of conditional,
+	    or "if-then," statements. The banking example can be expressed as follows:
+	</p>
+
+	<ul>
+	    <li>
+		Ask the user what they'd like to do.
+	    </li>
+	    <li>
+		<strong>If</strong> the user selects "withdraw," <strong>then</strong> ask them how much to withdraw and subtract that amount from their account.
+	    </li>
+	    <li>
+		<strong>If</strong> the user selects "deposit," <strong>then</strong> ask them how much to deposit and add that amount to their account.
+	    </li>
+	    <li>
+		<strong>If</strong> the user selects "display balance," <strong>then</strong> look up their balance and display it.
+	    </li>
+	</ul>
+	<p>
+	    Notice how the three latter bullets all follow the same format: "if <strong>A</strong>,
+	    then <strong>B</strong>," where <strong>A</strong> and <strong>B</strong> are both phrases. Do you notice
+	    anything special about the <strong>A</strong> phrases and the <strong>B</strong> phrases in the above
+	    examples? All of the <strong>A</strong> phrases (between "if" and "then") can be thought of like yes/no
+	    questions. For example, "If the user selects 'withdraw'" can be re-phrased as "Did the user select
+	    'withdraw?'," to which the answer should always be "yes" or "no." On the other hand, the <strong>B</strong> phrases (after
+	    "then") all are more like series of commands, telling the program what to do.
+	</p>
+    </body>
+</html>

@@ -7,7 +7,7 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 heading: Conditional Blocks
 
 //resource: Primer: Variables [/bjc-r/cur/programming/conditionals/variables-primer.html]
-resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
+//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
 	  //have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
 //resource: "If-then" Statements [/bjc-r/cur/programming/conditionals/if-then-statements.html] // combine with introduction
 resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html] //remove/replace some quiz questions

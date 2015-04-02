@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+	
+        <title>Booleans</title>
+    </head>
+    <body>
+	<p>
+	    You already know what <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  does. </p>
+    <p> Here is a script that uses that along with two new blocks. <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" width="242" height="89" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
+    <p>Make a prediction about what this will do and then build it and try it out.</p>
+    
+          
+        
+       <p> In order to represent the yes/no nature of condition phrases, we need a special type of value called a
+	    Boolean (named after the great logician <a href="http://en.wikipedia.org/wiki/George_Boole"
+	    target="blank">George Boole</a>). There are only two possible boolean values: <code>true</code>
+	    and <code>false</code> (which correspond to "yes" and "no"). These are represented in <span class="snap">snap</span>  by the blocks
+	    <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png"
+	    alt="false"/>. Blocks that report <code>true</code> or <code>false</code> are called "predicates."
+	</p>
+
+	<p>
+	    <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
+	</p>
+
+	<p>
+	    These functions represent the yes/no questions we were discussing earlier. Predicate functions in <span class="snap">snap</span>  will
+	    always have the pointed, hexagonal shape (like this: <img src="/bjc-r/img/cond/demo-predicate-block.png"
+	    alt="a predicate block"/>).
+	</p>
+	<p>
+	    Let's take a look at a few simple predicates that are built in to <span class="snap">snap</span>   Most of
+	    these can be found on the green "operators" tab.
+	</p>
+
+	<h3>Quiz: what does each expression return?</h3>
+
+
+       
+       <!-- Question 1 -->
+       <div class="assessment-data" type="multiplechoice" identifier="3 + 1 = 4"
+        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri4" shuffle="false">
+        
+            <div class="prompt">
+                <img src="/bjc-r/img/cond/3-plus-1-equals-4.png" alt="3 + 1 = 4"/>
+            </div>
+            
+            <div class="choice" identifier="true">
+                <div class="text">
+                    <img src="/bjc-r/img/blocks/true.png" alt="true"/>
+                </div>
+                <div class="feedback">
+		    Correct!
+                </div>
+            </div>
+                        
+            <div class="choice" identifier="false">
+                <div class="text">
+                    <img src="/bjc-r/img/blocks/false.png" alt="true"/>
+                </div>
+                <div class="feedback">
+                    Sorry. Try clicking the block to see what it reports!
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri4">
+                <div class="correctResponse" identifier="true"></div>
+            </div>
+       </div>
+
+       <!-- Question 2 -->
+       <div class="assessment-data" type="multiplechoice" identifier="3 = 2"
+        hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="false">
+        
+            <div class="prompt">
+                <img src="/bjc-r/img/cond/length-of-computer-equals-8.png" alt="3 > 9"/>
+            </div>
+            
+            <div class="choice" identifier="true">
+                <div class="text">
+                    <img src="/bjc-r/img/blocks/true.png" alt="true"/>
+                </div>
+                <div class="feedback">
+		    Correct!
+                </div>
+            </div>
+                        
+            <div class="choice" identifier="false">
+                <div class="text">
+                    <img src="/bjc-r/img/blocks/false.png" alt="true"/>
+                </div>
+                <div class="feedback">
+                    Sorry! Try writing this in <span class="snap">snap</span> and see what happens when you click it!
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="true"></div>
+            </div>
+       </div>
+
+    </body>
+</html>
