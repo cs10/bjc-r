@@ -683,9 +683,9 @@ div {
 
 .block {height: 2em;}
 
-.bigBlock {height: 6%;}
+.bigBlock {width: 6%;}
 
-.script {height: 18%;}
+.script {width: 18%;}
 
 code {
   background: none;
