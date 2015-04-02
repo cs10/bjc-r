@@ -6,43 +6,43 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 
 heading: Conditional Blocks
 
-//resource: Primer: Variables [/bjc-r/cur/programming/conditionals/variables-primer.html]
-resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/conditionals/conditionals-intro.html]
+//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
+//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
 	  //have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
-//resource: "If-then" Statements [/bjc-r/cur/programming/conditionals/if-then-statements.html] // combine with introduction
-resource: Booleans [/bjc-r/cur/programming/conditionals/booleans.html] //remove/replace some quiz questions
-resource: If and If-else [/bjc-r/cur/programming/conditionals/if-and-if-else.html]
-resource: Predict what happens! [/bjc-r/cur/programming/conditionals/predict.html]
+//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] // combine with introduction
+resource: Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/booleans.html] //remove/replace some quiz questions
+resource: If and If-else [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-and-if-else.html]
+resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/predict.html]
 resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 //resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 	  //examples with dates would be great.
-resource: Blocks using if and if-else [/bjc-r/cur/programming/conditionals/if-else-examples.html]
+resource: Blocks using if and if-else [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-else-examples.html]
 // game of life here later?
 
 
 heading: Combining Booleans
 
-resource: More complex boolean expressions [/bjc-r/cur/programming/conditionals/complex-booleans.html]
+resource: More complex boolean expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/complex-booleans.html]
 resource: Script Variables [/bjc-r/cur/programming/variables/scriptvar.html]
-quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/conditionals/complex-booleans-self-test.html]
+quiz: Self-test: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/complex-booleans-self-test.html]
 resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
-resource: Leap Year? [/bjc-r/cur/programming/conditionals/dates/checking-for-leap-years.html]
+resource: Leap Year? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/dates/checking-for-leap-years.html]
 
 heading: Practice with Predicates
 //resource: motivation
 resource: Reporter Blocks [/bjc-r/cur/programming/functions/reporters.html]
-resource: Practice: >= [/bjc-r/cur/programming/conditionals/predicates.html] // chop out relevant piees
-resource: Solutions to >= [/bjc-r/cur/programming/conditionals/ge-soln.html]
+resource: Practice: >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/predicates.html] // chop out relevant piees
+resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/ge-soln.html]
 resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 resource: Practice: Between [/bjc-r/cur/programming/functions/predicates/predicates-make-a-between-block.html]
-resource: Practice with complex booleans [/bjc-r/cur/programming/conditionals/complex-booleans-practice.html]
+resource: Practice with complex booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/complex-booleans-practice.html]
 
 
 heading: Number Guessing
-resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+resource: Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/number-guessing-game-v1-0.html]
 resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
-//resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
+resource: More number guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/number-guessing-game-v2-0.html]
+//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 
 
 //h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
@@ -57,7 +57,7 @@ heading: More work with reporters
 heading: Custom blocks make code easier to understand
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
 	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
-	resource: Valid-Date? [/bjc-r/cur/programming/conditionals/valid-date.html]
+	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/valid-date.html]
 
 heading: Testing your code
 

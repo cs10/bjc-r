@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+	
+        <title>If and If-else</title>
+    </head>
+    <body>
+	<p>
+	    Now that we have the idea of predicates under our belt, we can finally express full "if-then" statements,
+	    such as "if the weather is nice, you should go outside." This can be expressed
+	    in <span class='snap'>snap</span> using the <img class="inline" src="/bjc-r/img/blocks/if.png" alt="if"/>
+	    block. Notice how the first slot is shaped just like a predicate block. <code>if</code> blocks only know how
+	    to handle yes/no questions, so you should only ever put predicate blocks into this slot. The C-shaped part
+	    of the <code>if</code> block is where you put the commands that should be run if the condition is
+	    true. Let's take a look at an example:
+	</p>
+
+	<p>
+	    <img class="center" src="/bjc-r/img/cond/mood.png"/>
+	</p>
+
+	<p>
+	    In the above example, we had several possible cases to consider. However, in many situations, there are only
+	    two main cases. Take for example, the following sentence: "If a number is divisible by 2, it is
+	    even. Otherwise it is odd." For these situations we have the <img class="inline"
+	    src="/bjc-r/img/blocks/if-else.png" alt="if-else"/> block. It works like this:
+	</p>
+
+	<p>
+	    <img class="center" src="/bjc-r/img/cond/even-or-odd.png"/>
+	</p>
+
+	<p>
+	    Here, we didn't need to have an additional "if," because all whole numbers are either even or odd. If the
+	    boolean expression (<code>x mod 2 = 0</code>) evaluates to <code>false</code>, we know that the number is not even and
+	    thus must be odd.
+	</p>
+	<p class="quoteorange">
+	    If you haven't seen the <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block before,
+	    it reports the remainder (or "modulus") when the first input is divided by the second. For example, <code>5
+	    mod 2</code> reports <code>1</code> because <code>5 / 2 = 2 remainder 1</code>. This block is especially
+	    useful for checking whether a number is divisible by another, because the remainder will be
+	    0. <img class="inline" src="/bjc-r/img/cond/x-mod-2-equals-0.png" alt="(x mod 2) = 0"/> is the same as
+	    asking if <code>x</code> is divisible by 2 (i.e. that <code>x</code> is even).
+	</p>
+    </body>
+</html>

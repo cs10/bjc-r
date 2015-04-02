@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+	
+        <title>Booleans</title>
+    </head>
+    <body>
+	<p> 
+	    You already know what <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  does. </p>
+        <div class="sidenote">There is nothing in this script that should make its behavior depend on the mouse speed, but it does act a bit differently when the mouse moves quickly than when it moves slowly. Come up with a theory about why.</div>
+    <p> Here is a script that uses that along with two new blocks, the <code>if</code> block and the <code>distance to</code> block. <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" width="242" height="89" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
+    <p>First try to analyze this and predict what it will do. Then build it and try it out. </p>
+    
+          
+        
+       <p>The <code>if</code> block sets a <strong>condition</strong>. The script checks <code>forever</code> to see <code>if</code> that condition <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" width="212" height="22" alt="distance to mouse less than 20"> is true, and only if it is does the sprite follow the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" width="202" height="25" alt="go to mouse x and mouse y">. If <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" width="212" height="22" alt="distance to mouse less than 20"> is <img src="/bjc-r/img/blocks/false.png"
+	    alt="false"/>, the sprite is not instructed to move. </p>
+       
+       <p>Computer scientists refer to blocks like <code>if</code> as <strong>conditionals</strong>. Blocks that report <code>true</code> when a condition is met and  <code>false</code> when it is not met are called "predicates." These two special values,  <code>true</code> and <code>false</code>, are called 
+	    Boolean values (named after the great logician <a href="http://en.wikipedia.org/wiki/George_Boole"
+	    target="blank">George Boole</a>).  These values are represented in <span class="snap">snap</span>  by the blocks
+	    <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png"
+	    alt="false"/>. 
+	   </p>
+
+	<p>
+	    <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
+	</p>
+
+	<p>
+	    These functions are like yes/no questions. Predicate functions in <span class="snap">snap</span>  will
+	    always have the pointed, hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png"
+	    alt="a predicate block"/>.
+	</p>
+    <div class="forYouToDo">
+        <ol ></li> <div class="sidenote">Some of the predicates, like <code>turbo mode?</code>, will not yet make sense, but you are likely to be able to make a good guess about several of them.</div>
+        <li> Look in the "Sensing" and "Operations" tabs, find the <em>predicate</em> blocks, and see if you can figure out what they might do. </li>
+        <li> Look in the "Control" tab to find what other <em>conditionals</em> are there. Talk with your pair programming partner about how you think those might be used.
+        
+        </ol>
+        </div>
+	
+    </body>
+</html>

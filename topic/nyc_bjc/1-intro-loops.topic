@@ -33,8 +33,8 @@ heading: Lab 4: Making Your Own Blocks
 	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/tutorial-custom-blocks.html]
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-a-simple-input.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-	resource: Make a <code>Draw Polygon</code> Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
-	resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
+	resource: Some Projects Developing and Editing Blocks [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/make-a-draw-polygon-block.html]
+	//resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
 heading: Lab 5: Building Complicated Blocks with Simple Blocks
  	raw-html: <img src="http://localhost/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
