@@ -1,0 +1,69 @@
+<!-- MC Question w/ 4 answers and feedback. -->
+<div class="assessment-data" type="multiplechoice" shuffle>
+    <!-- multiple-select ="false" is optional. -->
+    <div class="prompt">
+        Put the question here.
+        This can include any html you want!
+    </div>
+    <div class="answer">
+        <div class="text">A. This is the answer option.</div>
+        <div class="feedback">Custom Feedback for this option.</div>
+    </div>
+    <div class="answer" correct>
+        <div class="text">B. This is the answer option.</div>
+        <div class="feedback">Custom Feedback for this option.</div>
+    </div>
+    <div class="answer">
+        <div class="text">C. This is the answer option.</div>
+        <div class="feedback">Custom Feedback for this option.</div>
+    </div>
+    <div class="answer">
+        <div class="text">D. This is the answer option.</div>
+        <div class="feedback">Custom Feedback for this option.</div>
+    </div>
+    <!-- Question level feedback shows below answer items. -->
+    <div class="feeback" correct>
+        Generic Feedback
+    </div>
+    <div class="feeback" incorrect>
+        <!-- The incorrect tag is optional.
+             Question level feedback is by default for incorrect answers. -->
+        Feedback
+    </div>
+</div>
+
+<!-- ************************************ -->
+<!-- FREE RESPONSE -->
+<!-- MC Question w/ 4 answers and feedback. -->
+<div class="assessment-data" type="fillin">
+    <div class="prompt">
+        Fill in the following ___ blank which is represented by 3 or more
+        underscores.
+    </div>
+    <div class="answer" max-length="10" width="X"
+         pattern="/regex/i"></div>
+    <!-- Question level feedback shows below answer items. -->
+    <div class="feeback" correct>
+        Generic Feedback
+    </div>
+    <div class="feeback" pattern="/optional/i">
+        <!-- The pattern is optional and it will be displayed whenever the answer  -->
+        Feedback
+    </div>
+</div>
+
+<!-- Feedback Tags:
+* Support:
+    We normalize whitespace:
+        - .trim()
+        - everything is separated by ' '
+* correct - displays whenever the answer is correct
+* incorrect (or no additional tags) - displays whenever the answer is incorrect
+    If a pattern is matched, then this will NOT be displayed.
+    To fix this specify a pattern like /.*/
+* pattern="/regex/" - if an answer matches this then the feedback is displayed.
+    If a pattern is matched, then the feedback option is displayed regardless
+    of correct or incorrect status.
+* Correct and incorrect answer
+
+ -->
