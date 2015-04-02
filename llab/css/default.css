@@ -622,7 +622,7 @@ div {
 	padding-bottom: .5em;
 }
 
-.forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
+.forYouToDo, .dialogue, .takeItFurther, .takeNote, .apStandards {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;  
 }
@@ -679,6 +679,10 @@ div {
   margin-right: auto;
  }
 
+.apStandards {
+  background-color: #aaffff;
+}
+	
 /* Other Random Things added by Mary */
 
 .block {height: 2em;}
