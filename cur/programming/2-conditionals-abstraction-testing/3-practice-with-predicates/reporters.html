@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+	
+	<title>Defining reporter blocks</title>
+    </head>
+    <body>
+	<p>
+	    So far, all of the blocks you've defined have been "command" blocks. These actual carry out an action that
+	    affects the state of the program. For example, the <code>move</code> block makes the sprite move, and
+	    the <code>say</code> block makes the sprite say something. We call these effects "side effects."
+	</p>
+
+	<p>
+	    Sometimes, we aren't interested in any side effects, and just want a block that performs a calculation for
+	    us. These are called "reporters," because rather than causing the program to do something, they simply give
+	    us back a value. Many blocks on the "operators" palette are reporters. Here are just a few:
+	</p>
+
+	<img class="center" src="/bjc-r/img/building-blocks/some-reporters.png" alt="a portion of the 'operators'
+	palette"/>
+
+	<p>
+	    Notice how all of these are rounded, and can't be attached directly to other blocks. Because of this, we
+	    need to use them in combination with other blocks, like <code>say</code> or <code>set</code>. For example:
+	</p>
+
+	<img class="center" src="/bjc-r/img/cond/say-4-plus-7.png" alt="say (4 + 7)"/>
+
+	<p>
+	    (I'm sure you've been doing things like this since you started using <span class="snap">snap</span>)
+	</p>
+
+	<p>
+	    Let's learn how to make our own reporter blocks!
+	</p>
+
+	<ol>
+	    <li>
+		The first step is, as usual, to select "make a block" from the bottom of the "variables" palette.
+	    </li>
+
+	    <li>
+		Next, we'll select "reporter" rather than the usual "command."
+		<p><img src="/bjc-r/img/building-blocks/make-a-reporter.png" alt="select reporter as block type"/></p>
+		Note: you don't have to necessarily put all reporters in the "operators" palette; it's just the most
+		frequent place for them.
+	    </li>
+	    <li>
+		Once you give your block a name and click "OK," your block definition will look something like this:
+		<p><img src="/bjc-r/img/building-blocks/my-first-reporter.png" alt="empty reporter body"/></p> Notice
+		that <img class="inline" src="/bjc-r/img/blocks/report.png" alt="report ()"/> has automatically been
+		added to the block definition. This is to remind you that all reporter blocks <em>must</em> report a value.
+	    </li>
+	    <li>
+		Fill in the body with whatever you want, and you're done!
+	    </li>
+	</ol>
+
+	<p>
+	    Let's take a look at an example:
+	</p>
+
+	<img src="/bjc-r/img/building-blocks/square-of-x.png" alt="square(x) block definition"/> 
+
+	<p>
+	    This block will take in a parameter <code>x</code>, and report <code>x<sup>2</sup></code>.
+	</p>
+
+	<p>
+	    Here's a more complex example, using <code>if</code>:
+	</p>
+
+	<img src="/bjc-r/img/building-blocks/homemade-abs.png" alt="homemade absolute value block"/>
+
+	<p>
+	    This block is a home-made version of the <code>abs</code> (absolute value) block that we saw earlier. Notice
+	    that it contains two <code>report</code> blocks. Reporter blocks can have as many <code>report</code>s as
+	    you want/need.
+	</p>
+
+	<p>
+	    Let's try writing our own reporter block! Try writing a <code>max</code> block that takes in two numbers and
+	    reports the larger of the two. Hint: you'll need to use <code>if</code>.
+	</p>
+	<img src="/bjc-r/img/building-blocks/max-block.png" alt="empty max(x, y) block definition"/>
+
+	<p>
+	    Here's a more complex block that we wrote. Predict what it will report when run with inputs "hello" and 5.
+	</p>
+	<img src="/bjc-r/img/building-blocks/join-word-n-times.png" alt="mysterious block definition"/>
+
+	<p>
+	    "Predicates" are special kinds of reporter blocks that only report <code>true</code>
+	    or <code>false</code>. You'll see in the next slide how to write them.
+	</p>
+
+    </body>
+</html>

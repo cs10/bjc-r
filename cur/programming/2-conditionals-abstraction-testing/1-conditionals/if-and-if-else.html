@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 1: Conditional Blocks</title>
+    </head>
+    <body>
+		<h2><code>If</code> and <code>If-else</code></h2>
+        <p>Now that we have the idea of predicates under our belt, we can finally express full "if-then" statements, such as "if the weather is nice, you should go outside." This can be expressed in <span class='snap'>snap</span> using the <img class="inline" src="/bjc-r/img/blocks/if.png" alt="if"/> block. Notice how the first slot is shaped just like a predicate block. <code>if</code> blocks only know how to handle yes/no questions, so you should only ever put predicate blocks into this slot. The C-shaped part of the <code>if</code> block is where you put the commands that should be run if the condition is true. Let's take a look at an example: </p>
+		<img class="center" src="/bjc-r/img/cond/mood.png"/>
+		<p>In the above example, we had several possible cases to consider. However, in many situations, there are only two main cases. Take for example, the following sentence: "If a number is divisible by 2, it is even. Otherwise it is odd." For these situations we have the <img class="inline" src="/bjc-r/img/blocks/if-else.png" alt="if-else"/> block. It works like this:</p>
+		<img class="center" src="/bjc-r/img/cond/even-or-odd.png"/>
+		<p>Here, we didn't need to have an additional "if," because all whole numbers are either even or odd. If the boolean expression (<code>x mod 2 = 0</code>) evaluates to <code>false</code>, we know that the number is not even and thus must be odd.</p>
+		<div class="takeNote">If you haven't seen the <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block before, it reports the remainder (or "modulus") when the first input is divided by the second. For example, <code>5 mod 2</code> reports 1 because 5 &divide; 2 = 2 remainder 1. This block is especially useful for checking whether a number is divisible by another, because the remainder will be 0. <img class="inline" src="/bjc-r/img/cond/x-mod-2-equals-0.png" alt="(x mod 2) = 0"/> is the same as asking if <em>x</em> is divisible by 2 (i.e. whether <em>x</em> is even).</div>
+        <div class="forYouToDo" id="first">
+			<p>Below are several blocks that use <code>if</code> and <code>if-else</code>. Predict what each one will do and discuss it with your neighbor. Once you've done so, you try running each of the blocks, which can be found <a class="run" href="/bjc-r/prog/conditionals/predict-if-functions.xml">here</a>.</p>
+			<div class="sidenote"><div>You'll notice that a couple of the scripts below use the <img class="inline" src="/bjc-r/img/blocks/abs.png" alt="abs ()"/> block. This block actually allows you to use many different mathematical functions. It shows up in the palette as <img class="inline" src="/bjc-r/img/blocks/sqrt-of-10.png" alt="sqrt (10)"/>. Just click the drop-down menu to select which function to use. "abs" is short for "absolute value." In case you're not already familiar, the absolute value of a number is just that number turned positive. For example, <code>abs(10)</code> is just 10, while <code>abs(-2.5)</code> is 2.5.</div></div>
+            <ol>
+            	<li><img src="/bjc-r/img/cond/back-and-forth.png" alt="a mysterious block" /></li>
+                <li><img src="/bjc-r/img/cond/back-and-forth-no-abs.png" alt="a mysterious block"/></li>
+				<li><img src="/bjc-r/img/cond/crenellation.png" alt="a mysterious block"/></li>
+        		<li><img src="/bjc-r/img/cond/dvd-player-screen-saver.png" alt="a mysterious block"/></li>
+        	</ol>
+        </div>
+    </body>
+</html>
