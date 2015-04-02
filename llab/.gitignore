@@ -1,11 +1,9 @@
-.project
 .DS_Store
+.DS_store
+*~
+*#*#*
+*Thumbs.db*
+.project
 .tm_properties
 .gitmodules
-*~
-.idea
-node_modules
-*.log
-# Dreamweaver
-_notes
 dwsync.xml

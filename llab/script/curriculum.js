@@ -20,11 +20,63 @@ llab.secondarySetUp = function() {
 
     // This stuff should only happen on curriculum pages
 
+    // llab.step = parseInt(llab.getQueryParameter("step"));
+
     // fix snap links so they run snap
     $("a.run").each(function(i) {
         $(this).attr("target", "_blank");
         $(this).attr('href', llab.getSnapRunURL(this.getAttribute('href')));
     });
+
+    // make the vocab box if necessary
+    // FIXME -- performance
+    if ($("span.vocab").length > 0) {
+        if ($("div.vocab").length === 0) {
+            // it might already exist, in order to have a 'topX' class inserted.
+            $(FULL).append('<div class="vocab"></div>');
+        }
+        var vocabDiv = $("div.vocab");
+        $("span.vocab").each(function(i) {
+            if (!(this.getAttribute('term'))) {
+                this.setAttribute('term', this.innerHTML);
+            }
+            vocabDiv.append('<a href="' + llab.rootURL +
+                '/glossary/view.html?term=' + this.getAttribute('term') +
+                '" target="_vocab">' + this.getAttribute('term') + '</a>');
+        });
+    }
+
+    // make the help box if necessary
+    // FIXME -- performance
+    var helpSpans = $("span.help");
+    if (helpSpans.length > 0) {
+        // TODO clean this up
+        $(FULL).append('<div class="help"></div>');
+        var helpDiv = $("div.help");
+        helpSpans.each(function(i) {
+            if (!(this.getAttribute('topic'))) {
+                this.setAttribute('topic', this.innerHTML);
+            }
+            helpDiv.append('<p><a href="' + llab.rootURL +
+            '/help/view.html?topic=' + this.getAttribute('topic') +
+            '" target="_help">' + this.getAttribute('topic') + '</a></p>');
+        });
+    }
+
+    // move anything that belongs in to the margin there, if necessary
+    // these are the 4 class of divs that matter.
+    // FIXME -- poor performace
+    var marginSelector = ["div.key", "div.warning", "div.help", "div.vocab"];
+    if ($(marginSelector.join(',')).length > 0) {
+        // add the two columns.
+        $(FULL).wrapInner('<div id="mainCol"></div>').prepend('<div id="marginCol"></div>');
+        // this moves the divs over.  Perhaps it could do some smarter ordering
+        // always put vocab at the bottom, for instance.
+        var marginCol = $("#marginCol").get(0);
+        $.each(marginSelector, function(i, divclass) {
+            $(divclass).appendTo(marginCol);
+        });
+    }
 
     // Get the topic file and step from the URL
     llab.file = llab.getQueryParameter("topic");
@@ -34,7 +86,6 @@ llab.secondarySetUp = function() {
         return;
     }
 
-    // TODO: Migrate to newer ajax call.
     var ajaxURL = llab.rootURL + "topic/" + llab.file;
     $.ajax({
         url: ajaxURL,
@@ -51,7 +102,6 @@ llab.secondarySetUp = function() {
         }
     });
 
-    // TODO: Make a function.
     var codeElements = $('pre code');
     if (codeElements.length) {
         var cssFile = llab.paths.css_files.syntax_highlights;
@@ -60,7 +110,6 @@ llab.secondarySetUp = function() {
         css.rel = "stylesheet";
         var js = getTag('script', jsFile, 'text/javascript'); // onload function
         $(js).attr({'onload': 'llab.highlightSyntax()'});
-        // Using $ to append to head causes onload not to be fired...
         document.head.appendChild(css);
         document.head.appendChild(js);
     }
@@ -69,6 +118,7 @@ llab.secondarySetUp = function() {
 
 
 llab.highlightSyntax = function() {
+    console.log('highlight called');
     $('pre code').each(function(i, block) {
         // Trim the extra whitespace in HTML files.
         block.innerHTML = block.innerHTML.trim();
@@ -100,6 +150,7 @@ llab.processLinks = function(data, status, jqXHR) {
     // FIXME -- duplicate query parameters?
     var params = llab.getURLParameters(),
         course = params.course || '',
+        maxItemLen = 35,  // TODO: Replace this with CSS.
         topicArray = data.split("\n"),
         url = document.URL,
         // TODO: Move this to a dropdown function
@@ -110,7 +161,6 @@ llab.processLinks = function(data, status, jqXHR) {
         ddItem,
         line,
         isHidden,
-        isHeading,
         lineClass,
         i = 0,
         len = topicArray.length,
@@ -130,8 +180,8 @@ llab.processLinks = function(data, status, jqXHR) {
         urlClose = line.indexOf(']');
 
         // Skip is this line is hidden in URL params.
-        lineClass = $.trim(line.slice(0, sepIndex));
-        isHidden = params.hasOwnProperty('no' + lineClass);
+        lineClass = line.slice(0, sepIndex);
+        isHidden = params.hasOwnProperty('no' + $.trim(lineClass));
         if (isHidden || !line) { continue; }
 
         // Line is a title; Create a link back to the main topic.
@@ -139,7 +189,7 @@ llab.processLinks = function(data, status, jqXHR) {
             url = llab.topic_launch_page + "?" + llab.QS.stringify(params);
 
             itemContent = line.slice(sepIndex + 1);
-            itemContent = $.trim(itemContent);
+            itemContent = llab.truncate($.trim(itemContent), maxItemLen);
 
             // Create a special Title link and add a separator.
             itemContent = llab.spanTag(itemContent, 'main-topic-link');
@@ -151,23 +201,13 @@ llab.processLinks = function(data, status, jqXHR) {
             continue;
         }
 
-        // Line is a heading in a topic file, so create menu heading
-        isHeading = lineClass == 'heading';
-        if (isHeading) {
-            itemContent = line.slice(sepIndex + 1);
-            itemContent = $.trim(itemContent);
-            ddItem = llab.dropdownItem(itemContent);
-            ddItem.addClass('dropdown-header');
-            list.append(ddItem);
-        }
-
         // If we don't have a link, skip this line.
         hasLink = urlOpen !== -1 && urlClose !== -1;
         if (!hasLink) { continue; }
 
         // Grab the link title between : [
         itemContent = line.slice(sepIndex + 1, urlOpen);
-        itemContent = $.trim(itemContent);
+        itemContent = llab.truncate($.trim(itemContent), maxItemLen);
         // Grab the link betweem [ and ]
         url = line.slice(urlOpen + 1, urlClose);
         pageCount += 1;
@@ -198,7 +238,6 @@ llab.processLinks = function(data, status, jqXHR) {
 
         ddItem = llab.dropdownItem(itemContent, url);
         list.append(ddItem);
-        console.log(list);
     } // end for loop
 
     if (course) {
@@ -216,8 +255,7 @@ llab.processLinks = function(data, status, jqXHR) {
     $('.dropdown').append(list);
     // Set the max-height of the dropdown list to not exceed window height
     // This is particularly important for smaller screens.
-    $('.dropdown-menu').css('max-height', $(window).height() * 0.8);
-    $('.dropdown-menu').css('max-width', Math.min($(window).width() * 0.8, 450));
+    $('.dropdown-menu').css('max-height', $(window).height() - 50);
 
 
     // FIXME -- this doesn't belong here.
@@ -357,19 +395,14 @@ llab.buildDropdown = function() {
  *  Takes in TEXT and a URL and reutrns a list item to be added
  *  too an existing dropdown */
 llab.dropdownItem = function(text, url) {
-    var item, link;
+    var link, item;
     // li container
     item = $(document.createElement("li")).attr(
         {'class': 'list_item', 'role' : 'presentation'});
-    if (url) {
-        link = $(document.createElement("a")).attr(
-            {'href': url, 'role' : 'menuitem'});
-        link.html(text);
-        item.append(link);
-    } else {
-        item.html(text);
-    }
-
+    link = $(document.createElement("a")).attr(
+        {'href': url, 'role' : 'menuitem'});
+    link.html(text);
+    item.append(link);
     return item;
 };
 
