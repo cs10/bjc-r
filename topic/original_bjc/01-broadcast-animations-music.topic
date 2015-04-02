@@ -5,8 +5,8 @@ h2: Big Ideas
 big-idea: Explore Abstraction as it relates to Computer Science
 big-idea: Understand and analyze some the impact of the internet on our culture
 
-	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
-	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+  video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+  reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
 
 
@@ -17,25 +17,25 @@ learning-goal: Get experience debugging using single-step.
 learning-goal: Learn to download, remix and re-post projects on the Scratch website.
 
 heading: Exploring Scratch
-	resource: Welcome to Scratch [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
-	resource: Make a Sprite sing! [/bjc-r/cur/programming/intro/scratch/make-a-sprite-sing.html]
-	resource: The Scratch workspace [/bjc-r/cur/programming/intro/scratch/the-scratch-workspace.html]
-	resource: Some Starting Scratch Lingo [/bjc-r/cur/programming/intro/scratch/some-starting-scratch-lingo.html]
-	
+  resource: Welcome to Scratch [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
+  resource: Make a Sprite sing! [/bjc-r/cur/programming/intro/scratch/make-a-sprite-sing.html]
+  resource: The Scratch workspace [/bjc-r/cur/programming/intro/scratch/the-scratch-workspace.html]
+  resource: Some Starting Scratch Lingo [/bjc-r/cur/programming/intro/scratch/some-starting-scratch-lingo.html]
+  
 heading: Playing with Sounds and Broadcasting
-	resource:  Meowing: One at a time or in unison? [/bjc-r/cur/programming/intro/scratch/meowing-one-at-a-time-or-in-unison-.html]
-	//resource:  Meowing: One at a time or in unison? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=4048]
-	resource: Single Step Mode [/bjc-r/cur/programming/intro/scratch/single-step-mode.html]
-	resource: Experiment with a short Scratch play [/bjc-r/cur/programming/intro/scratch/experiment-with-a-short-scratch-play.html]
-	quiz: Test Yourself: Go Bears! [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13901]
-	quiz: Test Yourself: Different Ways to Broadcast [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13902]
-	resource: Exporting and Importing Sprites [/bjc-r/cur/programming/intro/scratch/exporting-and-importing-sprites.html]
-	
+  resource:  Meowing: One at a time or in unison? [/bjc-r/cur/programming/intro/scratch/meowing-one-at-a-time-or-in-unison-.html]
+  //resource:  Meowing: One at a time or in unison? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=4048]
+  resource: Single Step Mode [/bjc-r/cur/programming/intro/scratch/single-step-mode.html]
+  resource: Experiment with a short Scratch play [/bjc-r/cur/programming/intro/scratch/experiment-with-a-short-scratch-play.html]
+  quiz: Test Yourself: Go Bears! [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13901]
+  quiz: Test Yourself: Different Ways to Broadcast [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13902]
+  resource: Exporting and Importing Sprites [/bjc-r/cur/programming/intro/scratch/exporting-and-importing-sprites.html]
+  
 heading: Activities
-	resource: Using Scratch at home and Exploring the Scratch site [/bjc-r/cur/programming/intro/scratch/using-scratch-at-home-and-exploring-the-scratch-site.html]
-	resource: Re-mixing Scratch Projects [/bjc-r/cur/programming/intro/scratch/re-mixing-scratch-projects.html]
-	resource: Make a movie [/bjc-r/cur/programming/intro/scratch/make-a-movie.html]
-	
+  resource: Using Scratch at home and Exploring the Scratch site [/bjc-r/cur/programming/intro/scratch/using-scratch-at-home-and-exploring-the-scratch-site.html]
+  resource: Re-mixing Scratch Projects [/bjc-r/cur/programming/intro/scratch/re-mixing-scratch-projects.html]
+  resource: Make a movie [/bjc-r/cur/programming/intro/scratch/make-a-movie.html]
+  
 //heading: Turn in your work
-	//submit: Submit: Broadcast, Animations, and Music! 
+  //submit: Submit: Broadcast, Animations, and Music! 
 }

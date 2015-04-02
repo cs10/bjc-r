@@ -17,19 +17,19 @@ h3: A Little Practice
     // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-warmup.html]
 
 h3: Factorions
-    resource: Factorions [/bjc-r/cur/programming/HOFs/functions-as-data/factorions.html]
-    
+  resource: Factorions [/bjc-r/cur/programming/HOFs/functions-as-data/factorions.html]
+  
 h3: Functions as Data
-    resource: Functions as Data [/bjc-r/cur/programming/HOFs/functions-as-data/functions-as-data.html]
-    resource: Call and Run [/bjc-r/cur/programming/HOFs/functions-as-data/using-call-and-run.html]
+  resource: Functions as Data [/bjc-r/cur/programming/HOFs/functions-as-data/functions-as-data.html]
+  resource: Call and Run [/bjc-r/cur/programming/HOFs/functions-as-data/using-call-and-run.html]
 
 h3: Fun with Numbers
-    resource: Pandigital Numbers [/bjc-r/cur/programming/HOFs/functions-as-data/pandigital-numbers.html]
-    resource: Generalize "List all" [/bjc-r/cur/programming/HOFs/functions-as-data/generalizing-list-all.html]
+  resource: Pandigital Numbers [/bjc-r/cur/programming/HOFs/functions-as-data/pandigital-numbers.html]
+  resource: Generalize "List all" [/bjc-r/cur/programming/HOFs/functions-as-data/generalizing-list-all.html]
 
 h3: Minimizing Functions
-    resource: I hope you remember your calculus [/bjc-r/cur/programming/HOFs/functions-as-data/minimize-function.html]
-    
+  resource: I hope you remember your calculus [/bjc-r/cur/programming/HOFs/functions-as-data/minimize-function.html]
+  
 h3: Extra for Experience
-    resource: Compose, compose, compose... [/bjc-r/cur/programming/HOFs/functions-as-data/compose-over-list.html]
+  resource: Compose, compose, compose... [/bjc-r/cur/programming/HOFs/functions-as-data/compose-over-list.html]
 }

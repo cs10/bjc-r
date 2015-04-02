@@ -4,49 +4,49 @@ title: Abstraction and Testing
 
 heading: More work with reporters
 
-	resource: The Max Block [/bjc-r/cur/programming/functions/review-max-block.html]
-	resource: Input types [/bjc-r/cur/programming/functions/input-types-new.html]
-	resource: Composition of Reporters [/bjc-r/cur/programming/functions/composition-of-reporters.html]
-	resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up-debug.html]
+  resource: The Max Block [/bjc-r/cur/programming/functions/review-max-block.html]
+  resource: Input types [/bjc-r/cur/programming/functions/input-types-new.html]
+  resource: Composition of Reporters [/bjc-r/cur/programming/functions/composition-of-reporters.html]
+  resource: Sum-thing's Up [/bjc-r/cur/programming/loops/sum-things-up-debug.html]
 
 heading: Custom blocks make code easier to understand
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-	resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
-	resource: Valid-Date? [/bjc-r/cur/programming/conditionals/valid-date.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+  resource: Simplifying a tic-tac-toe board drawer using custom blocks [/bjc-r/cur/programming/functions/simplifying-a-tic-tac-toe-board-drawer-using-functions.html]
+  resource: Valid-Date? [/bjc-r/cur/programming/conditionals/valid-date.html]
 
 heading: Testing your code
 
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
   resource: Simple Debugging [/bjc-r/cur/programming/debugging/simple-debugging-house.html]
   resource: The Check Block [/bjc-r/cur/programming/debugging/the-check-block.html]
   //resource: Using The Check Block [/bjc-r/cur/programming/debugging/using-the-check-block.html]
 
 heading: Abstraction
 
-	resource: Brick Wall [/bjc-r/cur/programming/abstraction/new-brick-wall.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+  resource: Brick Wall [/bjc-r/cur/programming/abstraction/new-brick-wall.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 
 heading: Programs with Multiple Sprites
 
-	resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
-	quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
-	quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+  resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
+  quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
+  quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
   resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html]
   resource: Global Variables [/bjc-r/cur/programming/variables/global-variables.html]
 
 //heading: Variables and custom blocks
-	// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-		// fix -- not a global variable, but a
+  // quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+  // fix -- not a global variable, but a
 
 
 //  the word "REGULAR" is wrong!!
-//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
+//  resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
   // if used, get rid of global
-//	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
-//	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
-//	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
+//  quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
+//  quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
+//  quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
+//  resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
 
 
 

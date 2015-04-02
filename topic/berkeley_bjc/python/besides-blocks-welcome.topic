@@ -18,19 +18,19 @@ heading: Introduction to Python
     resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_shell_and_python.html]
     
 heading: Math and Variables
-	resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/python_syntax_and_operators.html]
-	quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
+  resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/python_syntax_and_operators.html]
+  quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
 
 heading: Running Python Scripts
     resource: Running a script from the Command Line [/bjc-r/cur/programming/python/running_script_from_command_line.html]
     resource: Finding A Bar [/bjc-r/cur/programming/python/finding_a_bar.html]
 
 heading: Defining Functions and Loops
-	resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/define_simple_function.html]
-	resource: Printing and While Loops [/bjc-r/cur/programming/python/printing_while_loops.html]
+  resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/define_simple_function.html]
+  resource: Printing and While Loops [/bjc-r/cur/programming/python/printing_while_loops.html]
 
 heading: String Manipulation, Conditionals, and Recursion
-	resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
-	resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
+  resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
+  resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
 
 }

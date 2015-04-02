@@ -6,27 +6,27 @@ learning-goal: Learn about some modern applications of scientific simulations.
 
 
 heading: Real-world simulations
-	resource: Why we simulate [/bjc-r/cur/social-context/areas/simulation/why-we-simulate.html]
-	resource: Climate Change / Global Warming [/bjc-r/cur/social-context/areas/simulation/climate-change-global-warming.html]
-	resource: The Big Bang and the Beginning of the Universe [/bjc-r/cur/social-context/areas/simulation/the-big-bang-and-the-beginning-of-the-universe.html]
-	resource: The Formation of Life on Earth [/bjc-r/cur/social-context/areas/simulation/the-formation-of-life-on-earth.html]
-	resource: Collisions between Galaxies [/bjc-r/cur/social-context/areas/simulation/collisions-between-galaxies.html]
-	resource: Space Shuttle / Jet / Car Design [/bjc-r/cur/social-context/areas/simulation/space-shuttle-jet-car-design.html]
-	resource: Medical Student Training [/bjc-r/cur/social-context/areas/simulation/medical-student-training.html]
-	quiz: Simulation today [/bjc-r/cur/social-context/areas/simulation/quiz-which-activity-benefits-the-least.html]
-	
+  resource: Why we simulate [/bjc-r/cur/social-context/areas/simulation/why-we-simulate.html]
+  resource: Climate Change / Global Warming [/bjc-r/cur/social-context/areas/simulation/climate-change-global-warming.html]
+  resource: The Big Bang and the Beginning of the Universe [/bjc-r/cur/social-context/areas/simulation/the-big-bang-and-the-beginning-of-the-universe.html]
+  resource: The Formation of Life on Earth [/bjc-r/cur/social-context/areas/simulation/the-formation-of-life-on-earth.html]
+  resource: Collisions between Galaxies [/bjc-r/cur/social-context/areas/simulation/collisions-between-galaxies.html]
+  resource: Space Shuttle / Jet / Car Design [/bjc-r/cur/social-context/areas/simulation/space-shuttle-jet-car-design.html]
+  resource: Medical Student Training [/bjc-r/cur/social-context/areas/simulation/medical-student-training.html]
+  quiz: Simulation today [/bjc-r/cur/social-context/areas/simulation/quiz-which-activity-benefits-the-least.html]
+  
 heading: Writing simulations
-	resource: Ecosystem Simulations [/bjc-r/cur/programming/simulation/ecosystem-simulation.html]
-	resource: Gregory the Chatbot [/bjc-r/cur/programming/simulation/gregory-the-chatbot.html]
-	resource: Gregory's Code [/bjc-r/cur/programming/simulation/gregorys-code.html]
-	resource: Challenges with Gregory [/bjc-r/cur/programming/simulation/challenges-with-gregory.html]
-	
-	
-	
-	
-	 
+  resource: Ecosystem Simulations [/bjc-r/cur/programming/simulation/ecosystem-simulation.html]
+  resource: Gregory the Chatbot [/bjc-r/cur/programming/simulation/gregory-the-chatbot.html]
+  resource: Gregory's Code [/bjc-r/cur/programming/simulation/gregorys-code.html]
+  resource: Challenges with Gregory [/bjc-r/cur/programming/simulation/challenges-with-gregory.html]
+  
+  
+  
+  
+   
  
 
-	
+  
 
 }

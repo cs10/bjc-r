@@ -4,8 +4,8 @@ h2: Big Ideas
 big-idea: Explore how to analyze algorithmic speed and understand various factors that contribute to slow or fast runtimes.
 big-idea: Explore the implications of a world increasingly controlled by algorithms.
 
-	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
-	video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
+  video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
+  video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
 
 h2: Activities
 learning-goal: Solidify understanding of what an algorithm is and why they're important to computer science and other fields.
@@ -15,18 +15,16 @@ learning-goal: Practice implementing algorithms that were discussed verbally.
 learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
-	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
+  resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 
-	forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
-	// forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
-	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
-	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
-	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
-	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
-	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
-	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
-
-
+  forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
+  // forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
+  resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
+  // resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
+  // resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
+  resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
+  resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
+  resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
 
 
 }

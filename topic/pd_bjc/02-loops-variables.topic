@@ -8,12 +8,12 @@ big-idea: Explore Abstraction as it relates to Computer Science
 big-idea: Understand and analyze some of the impact of the Internet on our culture
 big-idea: Use elementary control structures
 
-//	video: Video Lecture: 3D Graphics (Dan Garcia) [https://coursesharing.org/courses/6/lectures/10]
-	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
-	video: Video Lecture: Video Games [https://coursesharing.org/courses/6/lectures/11]
-	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
-//	reading: Animating a Blockbuster [http://www.wired.com/magazine/2010/05/process_pixar/]
-	reading: Justices Reject Ban on Violent Video Games for Children [http://www.nytimes.com/2011/06/28/us/28scotus.html?_r=1]
+//  video: Video Lecture: 3D Graphics (Dan Garcia) [https://coursesharing.org/courses/6/lectures/10]
+  video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
+  video: Video Lecture: Video Games [https://coursesharing.org/courses/6/lectures/11]
+  reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+//  reading: Animating a Blockbuster [http://www.wired.com/magazine/2010/05/process_pixar/]
+  reading: Justices Reject Ban on Violent Video Games for Children [http://www.nytimes.com/2011/06/28/us/28scotus.html?_r=1]
 
 h2: Activities
 learning-goal: Learn to use the movement and drawing commands in <span class="snap">snap</span>  to draw complex images and geometric shapes.
@@ -25,55 +25,55 @@ learning-goal: Use the <code>random</code> number block to create randomness in 
 
 
 heading: Drawing
-	resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
-	resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
-	quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
-	quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
+  resource: Experiment with drawing commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands.html]
+  resource: Experiment with Repeat [/bjc-r/cur/programming/intro/drawing/experiment-with-repeat.html]
+  quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/turning.html]
+  quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-test.html]
 
 heading: Variables
 
-	resource: The FOR block [/bjc-r/cur/programming/variables/for.html]
-	resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
-	resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
-	resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
-	resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
+  resource: The FOR block [/bjc-r/cur/programming/variables/for.html]
+  resource: Nested FORs [/bjc-r/cur/programming/variables/nested-for.html]
+  resource: Script variables [/bjc-r/cur/programming/variables/scriptvar.html]
+  resource: Global variables [/bjc-r/cur/programming/variables/globals.html]
+  resource: The CHANGE block [/bjc-r/cur/programming/variables/changeblock.html]
 
-//	quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
-//	resource: Tempo [/bjc-r/cur/programming/variables/tempo.html]
-//	quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
-//	resource: Change how fast the tempo changes [/bjc-r/cur/programming/variables/change-how-fast-the-tempo-changes.html]
-//	resource: Variable Tutorial (Scales) [/bjc-r/cur/programming/variables/variable-tutorial-scales.html]
-//	resource: Common Bug - Set vs. Change [/bjc-r/cur/programming/variables/common-bug-set-vs-change.html]
-//	resource: (<i>Optional</i>) Exploring Regular Shapes [/bjc-r/cur/programming/variables/optional-exploring-regular-shapes.html]
-//	resource: Variable Sized Shapes [/bjc-r/cur/programming/variables/variable-sized-shapes.html]
-//	resource: Countdown [/bjc-r/cur/programming/variables/countdown.html]
-//	resource: Repeat Until [/bjc-r/cur/programming/variables/repeat-until.html]
-//	resource: (<i>Optional</i>) Practice with Repeat Until [/bjc-r/cur/programming/variables/optional-practice-with-repeat-until.html]
-//	resource: Draw a Squiral [/bjc-r/cur/programming/variables/draw-a-squiral.html]
-//	quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
-	
-	
+//  quiz:  Which one goes faster? [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13927]
+//  resource: Tempo [/bjc-r/cur/programming/variables/tempo.html]
+//  quiz: Increasing the tempo [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13929]
+//  resource: Change how fast the tempo changes [/bjc-r/cur/programming/variables/change-how-fast-the-tempo-changes.html]
+//  resource: Variable Tutorial (Scales) [/bjc-r/cur/programming/variables/variable-tutorial-scales.html]
+//  resource: Common Bug - Set vs. Change [/bjc-r/cur/programming/variables/common-bug-set-vs-change.html]
+//  resource: (<i>Optional</i>) Exploring Regular Shapes [/bjc-r/cur/programming/variables/optional-exploring-regular-shapes.html]
+//  resource: Variable Sized Shapes [/bjc-r/cur/programming/variables/variable-sized-shapes.html]
+//  resource: Countdown [/bjc-r/cur/programming/variables/countdown.html]
+//  resource: Repeat Until [/bjc-r/cur/programming/variables/repeat-until.html]
+//  resource: (<i>Optional</i>) Practice with Repeat Until [/bjc-r/cur/programming/variables/optional-practice-with-repeat-until.html]
+//  resource: Draw a Squiral [/bjc-r/cur/programming/variables/draw-a-squiral.html]
+//  quiz: Non-numeric variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13939]
+  
+  
 heading: Activities
-	resource: Draw a Picture in Scratch [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
-//	resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
+  resource: Draw a Picture in Scratch [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
+//  resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
 
 heading: The <code>If</code> Block
-	quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
-	resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
-	
+  quiz: If: What would you expect? [/bjc-r/cur/programming/conditionals/if-pretest.html]
+  resource: How many days are there in a given month? [/bjc-r/cur/programming/conditionals/how-many-days-are-there-in-a-given-month.html]
+  
 heading: Random
-	resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
-	resource: Randomly Moving Character [/bjc-r/cur/programming/random/random-block-and-randomly-moving-character.html]
+  resource: Position on the Stage  [/bjc-r/cur/programming/random/position-on-the-stage.html]
+  resource: Randomly Moving Character [/bjc-r/cur/programming/random/random-block-and-randomly-moving-character.html]
 
 heading: Number Guessing Game
-	resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
-	resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
-	assignment: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
-	
+  resource: Number-Guessing Game v1.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
+  resource: Number-Guessing Game v2.0 [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
+  assignment: Homework (due later): Word Guessing [/bjc-r/cur/programming/projects/hangman/word-guessing.html]
+  
 heading: Rock, Paper, Scissors
-	quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
-	resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
-	
+  quiz: Rock, Paper, Scissors: Choices [/bjc-r/cur/programming/conditionals/preview-rps.html]
+  resource: Rock, Paper, Scissors [/bjc-r/cur/programming/conditionals/rock-paper-scissors.html]
+  
 //heading: Turn in your work
-	//submit: Submit: Loops and Variables 
+  //submit: Submit: Loops and Variables 
 }
