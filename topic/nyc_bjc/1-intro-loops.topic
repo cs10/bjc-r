@@ -37,7 +37,7 @@ heading: Lab 4: Making Your Own Blocks
 	//resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
 heading: Lab 5: Building Complicated Blocks with Simple Blocks
- 	raw-html: <img src="http://localhost/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
+ 	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/composing-blocks.html]
 	quiz: Check: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
