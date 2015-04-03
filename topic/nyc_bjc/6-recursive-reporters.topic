@@ -25,7 +25,7 @@ heading: Number representation
 
 heading: Pascal's Triangle
 	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle.html]
-	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-algorithm.html]
+//	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-algorithm.html]
 	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-hint.html]
 	 resource: How long does this computation take? [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-how-long-does-the-computation-take.html]
 
