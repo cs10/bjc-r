@@ -15,8 +15,8 @@ title: Unit 6: Recursive Reporters
 //learning-goal: Implement higher order functions.
 
 heading: Introduction
-	 resource: Getting Started (Al) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/getting-started.html]
-	 resource: Getting Started (Brian) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/gs-bh.html]
+//	 resource: Getting Started (Al) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/getting-started.html]
+	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/1-gs/gs-bh.html]
 	resource: Recursive Reporters [/bjc-r/cur/programming/6-recursive-reporters/1-gs/recursive-reporters-intro.html]
 heading: Number representation
 	resource: Numbers in Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/binary-numbers.html]
