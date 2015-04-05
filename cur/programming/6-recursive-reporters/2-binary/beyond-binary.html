@@ -32,5 +32,13 @@
  <li>Write the inverse function <code>from base</code> that takes a (text) string of digits and a base as inputs, and reports the corresponding number (which Snap<em>!</em> will show in decimal, of course, but you're converting to a <em>number, </em>not to a string of digits). Again, bases above ten are optional.
   <p><img src="/bjc-r/img/6-recursive-reporters/frombase.png" alt="frombase" /></p>
 </li></ol></div>
+<div class="takeNote">
+<p>A useful thing to remember during the AP test is that 2<sup>10</sup>=1024&#8776;10<sup>3</sup>.  So a 3- or 4-digit number in decimal will be around 10 bits; a 5- or 6-digit number will be about 20 bits, and so on.  This can help eliminate multiple-guess answers that are wildly off.</p></div>
+<div class="takeItFurther"><p>Long ago, when computer circuits were very unreliable, some computers used a representation called <em>biquinary,</em> which used decimal digits, each of which was represented using five bits, of which exactly two had to be 1, and the other three had to be 0.  The five bits represented the values 0, 1, 2, 4, and 7.  (Yes, that's a strange set of bit values.  Bear with us.)
+<div class="forYouToDo">
+        	<ol start="5"><li>Check that each of the values from 1 to 9 can be represented as the sum of two of those bit values in exactly one way.</li>
+<li>There's exactly one more possible set of two of those five bit values; that one represents zero.  What are those two bits?</li>
+<li>How does this help solve the problem of unreliable circuits?</li></ol></div>            
+
 </body>
 </html>

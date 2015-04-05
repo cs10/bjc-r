@@ -19,6 +19,7 @@ heading: Introduction
 	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/1-gs/gs-bh.html]
 	resource: Recursive Reporters [/bjc-r/cur/programming/6-recursive-reporters/1-gs/recursive-reporters-intro.html]
 heading: Number representation
+	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/2-binary/gs.html]
 	resource: Numbers in Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/binary-numbers.html]
 	resource: A Hint on Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/binary-numbers-hint.html]
 	resource: Beyond Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/beyond-binary.html]
