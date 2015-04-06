@@ -17,7 +17,7 @@ title: Unit 4: Algorithm Complexity
 //learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 //learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
-heading: Algorithms
+heading: Lab 1: Algorithms
 	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 
 	forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
@@ -44,11 +44,11 @@ heading: Algorithms
 //learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
 //learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
-heading: Algorithm Complexity
+heading: Lab 2: Algorithm Complexity
 	resource: A (non-video) Game [/bjc-r/cur/programming/algorithms/a-non-video-game.html]
 	resource: Competing with Young Gauss [/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html]
 
-heading: Timing Experiments
+heading: Lab 3: Timing Experiments
 	resource: Time is of the Es-sense [/bjc-r/cur/programming/algorithms/timing/time-is-of-the-es-sense.html]
 	resource: Do You Have Time to Add? [/bjc-r/cur/programming/algorithms/timing/do-you-have-time-to-add.html] 
 	resource: Constant-Time [/bjc-r/cur/programming/algorithms/timing/constant-time.html]
