@@ -12,7 +12,7 @@ llab.loaded = llab.loaded || {};
 
 /////////////////
 // TODO: ALL CORS SETTINGS SHOULD BE MOVED TO THE CONFIG FILE.
-llab.CORSproxy = "www.corsproxy.com";
+llab.CORSproxy = "bjcredir.herokuapp.com";
 
 llab.CORSCompliantServers = [];
 llab.CORSCompliantServers.push("bjc.berkeley.edu");
