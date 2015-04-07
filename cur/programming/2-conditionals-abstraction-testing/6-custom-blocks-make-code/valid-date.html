@@ -1,27 +1,19 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
-		<title> Valid-Date? </title><!--ORIGINAL NAME: Input types-->
-	</head>
-	<body>
-        <p>
-            The procedure shown below checks whether its arguments represent a valid date
-            in the Gregorian calendar (the one we use in the United States).  The calendar was instituted in 1582, so only dates
-            in that year or in the future are legal. Simplify the valid-date block and make it more readable by defining and using
-            well-named helper procedures (hint: Is leap year?). When you are done, there should be more code than when you started,
-            but it should be easier to understand.
-        </p>
-        
-        <a class="run" href="/bjc-r/prog/building-blocks/valid-date.xml">
-        
-            <img class="center" alt="messy code for valid-date" src="/bjc-r/img/building-blocks/valid-date-messy-code.png" >
-            
-        </a>
-        
-        <p>
-            <em>Important:</em> as this example shows there can be huge benefits to using our own custom blocks.  The process in this exercise is aptly 
-            referred to as functional decomposition, whereby we break a larger function into smaller pieces and then reassemble the original function.
-            This is one important way that we can build abstractions as the larger function (valid-date?) doesn't need to know what the functions that compose
-            it do, it can just assume that they work.
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 6: Custom Blocks Make Code Easier to Understand</title>
+    </head>
+    <body>
+		<h2>Valid-Date?</h2>
+        <div class="forYouToDo" id="class">
+	        <p>The procedure shown below checks whether its arguments represent a valid date in the Gregorian calendar (the one we use in the United States).  The calendar was instituted in	1582, so only dates in that year or in the future are legal.</p>
+        	<ol>
+            	<li>Simplify the valid-date block and make it more readable by defining and using well-named helper procedures (hint: Is leap year?). When you are done, there should be more code than when you started, but it should be easier to understand.</li>
+            </ol>
+        <a class="run" href="/bjc-r/prog/building-blocks/valid-date.xml"><img class="indent" alt="messy code for valid-date" src="/bjc-r/img/building-blocks/valid-date-messy-code.png" /></a>
+                </div>
+		<div class="takeNote"><em>Important:</em> as this example shows there can be huge benefits to using our own custom blocks.  The process in this exercise is aptly referred to as functional decomposition, whereby we break a larger function into smaller pieces and then reassemble the original function. This is one important way that we can build abstractions as the larger function (valid-date?) doesn't need to know what the functions that compose it do, it can just assume that they work.</div>
+    </body>
+</html>
             

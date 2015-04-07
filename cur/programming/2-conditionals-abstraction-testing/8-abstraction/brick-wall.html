@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 8: Abstraction</title>
+    </head>
+    <body>
+		<h2>Brick Wall</h2>
+        <p>Sometimes, when we write programs and scripts, it feels like we have hit a brick wall.  (This is a good sign; if a project isn't hard, you're not stretching your mind!)  Now, you are going to draw this brick wall:</p>
+		<img border="0" class="indent" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/abstraction/new-brickwall/wall.png" />
+        
+        <h3>Abstraction</h3>
+		<p>While <span class="snap">snap</span> has lots of blocks for drawing and moving, it doesn't have anything about bricks. It wouldn't make sense to have one in general because most programs don't involve bricks. But ones that do could really use a <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" /> block. <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" \="" }="" alt="draw-brick" /> moves us away from having to talk in the computer's terms and closer to using the terms of the problem we're trying to solve. The process of moving from what the programming language gives you to a natural language (one that humans speak to communicate) is critical to a good abstraction.</p>
+		<p>In this problem, you will build an abstraction for drawing a brick wall, first by creating <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" />, then blocks for drawing rows, and ultimately the goal: <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="draw-brick-wall-n" />.</p>
+        
+        <h3>Drawing One Brick</h3>
+        <p>A brick is a solid red rectangle ("brick red," i.e., not a bright primary-color red but somewhat darker).  There's no <code>draw rectangle</code> block in <span class="snap">snap</span>, but we can fake it by thinking of a rectangle as a very thick line.  You know how to draw a line, with the <code>move</code> block. In the "Pen" palette there's a <code>set pen size</code> block. We can use it to draw a thick line:</p>
+        <img border="0" class="indent" title="code for brick" alt="Code for draw brick" src="/bjc-r/img/abstraction/new-brickwall/draw-brick-code.png" />
+        <div class="forYouToDo" class="first">
+        	<ol>
+            	<li>
+                	<p>Try out this block. Notice that your brick has rounded ends.  These ends stick out beyond the length of the line you asked to draw.  Here's a picture of the rounded brick with a regular line (pen size 1) inside it:</p>
+					<img border="0" class="indent" title="round brick" alt="Round brick" src="/bjc-r/img/abstraction/new-brickwall/round-brick.png" />
+        			<p>These rounded ends are very pretty when drawing most pictures, but they don't look like bricks, and they make thinking about lengths in this project too complicated. So for this project, you're going to turn off the rounded ends.</p>
+                </li>
+                <li>Click on the settings button (<img src="/bjc-r/img/sys/settings.png" alt="settings button" />) in the toolbar, and turn on the "Flat line ends" setting.</li>
+            </ol>
+        </div>
+        
+        <h3>Using Problem Decomposition to Write an Abstraction</h3>
+		<p> Consider this line of code that was used to create the brick wall:</p>
+		<img class="indent" src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-7.png" alt="draw-brick-wall-7" />
+		<p> If you were to ask a mason to make a brick wall with seven rows, he would surely understand your meaning and make it happen. A computer, however, doesn't know what that means, so you have to fill in the details. This means going from the abstract (draw a brick wall) to the concrete (pardon the pun), which involves problem decomposition.</p>
+		<p>A quick observation shows that there are two kinds of rows of bricks:</p>
+		<ul>
+			<li><strong>Row A</strong>: <img border="0" title="Row A" alt="Row A" src="/bjc-r/img/abstraction/new-brickwall/row-a.png" /></li>
+			<li><strong>Row B</strong>: <img border="0" title="Row B" alt="Row B" src="/bjc-r/img/abstraction/new-brickwall/row-b.png" /></li>
+		</ul>
+        <div class="forYouToDo">
+        	<ol start="3">
+            	<li>Make blocks <img src="/bjc-r/img/abstraction/new-brickwall/rowa-block.png" alt="Row A" /> and <img src="/bjc-r/img/abstraction/new-brickwall/rowb-block.png" alt="Row B" />.</li>
+            	<li>Think about what helper blocks besides <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" .> you might want.</li>
+            </ol>
+        </div>
+        <p>It's possible to go overboard on abstraction so that you have a gazillion blocks and it's hard to find where the work actually gets done.  But, on the other hand, sometimes it's useful to make a custom block even if its definition is just one primitive block. For example, to draw the <em>mortar</em> (the white space) between blocks in a row, all you have to do (since the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> block picks up the pen at the end of its script) is move forward:</p>
+        <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps">
+        <p>You could just use that <b>move</b> block inside your <b>Row A</b> block. But you might instead want to define a <b>Draw Mortar</b> block. Why? Maybe later you'll decide that four steps is the wrong thickness for mortar, and you'd rather have five steps. If there are a dozen <b>Move</b> blocks scattered through your program to draw mortar, you might not find them all. With a <b>Draw Mortar</b> block, you can just change its definition, and all the mortar in your picture will be changed.</p>
+        <div class="forYouToDo">
+        	<ol start="5">
+            	<li>
+                	<p>Notice that the two kinds of rows should be exactly the same length.  Your first try at drawing a Row B will probably be a little too long. Why? Row A has six whole bricks. Row B has five whole bricks plus two half-bricks, which adds up to six whole bricks. To understand the bug, think about the amount of <em>mortar</em> in each kind of row.</p>
+					<p>How are you going to fix it? Should a Row B have different-size bricks, different-size mortar gaps, or different-size half-bricks? If you're not sure, try all the possibilities and see which looks right in the finished wall. (There's really only one good answer.)</p>
+                </li>
+                <div class="sidenote">How do you know if a number is odd? You'll find the <img src="/bjc-r/img/blocks/mod.png" alt="Mod" /> block helpful.</div>
+                <li>Once you have the two kinds of rows the same length, you can write the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="Draw a Brick Wall with ( ) Rows" /> block.  Remember that it should work for both even and odd numbers of rows, which means that sometimes you'll have to draw an extra Row A.</li>
+            </ol>
+        </div>
+        <div class="takeItFurther">
+            <ol start="7">
+                <li>
+                	<p>After you've drawn the picture at the top of this page, add more
+        inputs to the <code>Draw a Brick Wall</code> block:</p>
+        			<ol>
+                    	<li>Length of the wall (how many bricks)</li>
+				        <li>Length of a brick</li>
+				        <li>Mortar thickness</li>
+                    </ol>
+                    <p>Add these one at a time, not all at once!  When you modify the length of a brick, that should also change the length of a half-brick. When you modify the mortar thickness, that should also change the distance between rows (since that's mortar too).</p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
