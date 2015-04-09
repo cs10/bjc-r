@@ -1,7 +1,7 @@
 /* FONT STYLES FOR ELEMENTS */
 /* Override Bootstrap */
 code, pre, tt, kbd, samp {
-  font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', 'Monaco', Courier, monospace;
+  font-family: 'Source Code Pro', 'Andale Mono', 'Menlo', Courier, monospace;
 }
 
 h1, h4, h5, h6, .header-sans {
@@ -12,7 +12,7 @@ h1, h4, h5, h6, .header-sans {
 h2, h3, blockquote,
 .serif, .dropdown-header,
 .title-small-screen, .header-serif, .title, .navbar-title {
-  font-family: 'Freight Text Pro', 'Baskerville', 'Georgia', 'Times', serif;
+  font-family: 'Freight Text Pro', Georgia, Times, serif;
 }
 
 html, body { /* default Sans Serif Stack */
