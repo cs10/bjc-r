@@ -4,9 +4,10 @@
 	
 		
 		<script src="/bjc-r/llab/loader.js"></script>
-        <script> window.newtext='<img src="/bjc-r/img/5-recursion/tri-frac-1-lev-3-in-4.png" />What&rsquo;s the orange part?';</script><title>Triangle Fractal #1</title><!--ORIGINAL NAME: Random Tree--></head>
+        <script> window.newtext='<img src="/bjc-r/img/5-recursion/tri-frac-1-lev-3-in-4.png" />What&rsquo;s the orange part?';</script><title>More Fractals</title><!--ORIGINAL NAME: Random Tree--></head>
 		<h2>Triangle Fractal #1</h2>
-		<p>☞ Remember how to draw an equilateral triangle? Write a block that takes a size as input and draws a triangle. (We aren't going to use that block itself on this page, but you're going to write a more complicated riff on triangles, so first you have to know how the simple one works.)</p>
+ <div class="forYouToDo" id="first">
+            <div><ol><li>		<p>Remember how to draw an equilateral triangle? Write a block that takes a size as input and draws a triangle. (We aren't going to use that block itself on this page, but you're going to write a more complicated riff on triangles, so first you have to know how the simple one works.)</p></li></ol></div></div>
 		<p>You're going to build a fractal, like the <code>tree</code> fractal in that you specify a size and a <em>level,</em> and higher levels make more complicated pictures:</p>
 		<p><img src="/bjc-r/img/5-recursion/tri-frac-1-head.png" width="349" height="64" alt="triangle fractal #1: size (___) , level (___)"></p>
         <p>At level 1, the result of calling the block should be an equilateral triangle:</p>
@@ -16,12 +17,14 @@
         <p><a id="hintbutton" onClick="document.getElementById('hintbutton').innerHTML='(Don&rsquo;t forget about <code>tree2a</code> vs. <code> tree2</code>.)';">(Don't click unless you really, really need a super big hint.)</a></p>
         <p>Here are levels 3 and 4:</p>
         <p><img src="/bjc-r/img/5-recursion/tri-frac-1-level-3.png" width="264" height="268" alt="level 3 picture"><img src="/bjc-r/img/5-recursion/tri-frac-1-level-4.png" width="264" height="268" alt="level 4 picture"></p>
-        <p>☞ Okay, finish writing the code. Then try a pretty big level number, 9 or 10, inside a <code>WARP</code> block.</p>
+  <div class="forYouToDo">
+            <div> <ol start="2"><li>      <p>Okay, finish writing the code. Then try a pretty big level number, 9 or 10, inside a <code>warp</code> block.</p>
         <p><a id="hintbutton2" onClick="document.getElementById('hintbutton2').innerHTML=window.newtext;">(Don't click unless you need an even bigger hint!)</a>
-        </p>
-        <p>TAKE IT FURTHER</p>
+        </p></li></ol></div></div>
+       <div class="takeItFurther">
+            <div>
         <p>Your finished product should have produced a shape sort of like this:</p>
         <p><img src="/bjc-r/img/5-recursion/fourtri.png" width="300" height="297" alt="four triangles"></p>
-        <p>but with lots of small line segments instead of the grey parts. This should suggest an alternate way to make the shape: Level 1 is a triangle, level 2 is three level-1 versions arrayed around an empty triangle, etc. Write the code for that and compare the two results.</p>
+        <p>but with lots of small line segments instead of the grey parts. This should suggest an alternate way to make the shape: Level 1 is a triangle, level 2 is three level-1 versions arrayed around an empty triangle, etc. Write the code for that and compare the two results.</p></div></div>
         </body>
 </html>

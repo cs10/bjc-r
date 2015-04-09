@@ -3,10 +3,11 @@
 <head>
 <script src="/bjc-r/llab/loader.js"></script>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Beyond Binary</title>
+<title>Number representation</title>
 </head>
 
 <body>
+<h2>Beyond Binary</h2>
 <p>Here's our solution:</p>
 <p><img src="/bjc-r/img/6-recursive-reporters/tobinary.png" alt="decimal-&gt;binary" /></p>
 <p>The base case is that the number fits in a single bit—that is, it has to be less than 2. If so, the number itself, 0 or 1, is the desired output.</p>
@@ -15,14 +16,29 @@
 <p>There's no reason to limit ourselves to decimal (base 10) and binary (base 2). How about base 7?</p>
 <p><img src="/bjc-r/img/6-recursive-reporters/base7example.png" alt="base7 of 9827 reports 40436" /></p>
 <p>The base 7 digits are 0‒6, and the digit positions represent powers of 7.</p>
-<blockquote>
-  <p>☞ Write the <code>base7</code> block. Then generalize the pattern with a <code>base</code> block that takes the base as a second input:</p>
+<div class="forYouToDo" id="first">
+            <div><ol><li>Write the <code>base7</code> block.</li>
+<li>Generalize the pattern with a <code>base</code> block that takes the base as a second input:
   <p><img src="/bjc-r/img/6-recursive-reporters/base2.png" alt="9827 base 2" /><img src="/bjc-r/img/6-recursive-reporters/base7.png" alt="9827 base 7" /><br>
-<img src="/bjc-r/img/6-recursive-reporters/base8.png" alt="9827 base 8" /><img src="/bjc-r/img/6-recursive-reporters/base10.png" alt="9827 base 10" /></p>
-  <p class="alert quoteYellow">☞ Take It Further: Improve the <code>base</code> block so that it can go up to base 36 by using the letters <code>a</code>‒<code>z</code> as digits with values 10‒35.</p>
-  <h4><img src="/bjc-r/img/6-recursive-reporters/common.png" alt="32562 base 15" /><img src="/bjc-r/img/6-recursive-reporters/w00zy.png" alt="53749006 base 36" /></h4>
-  <p>☞ Write the inverse function <code>from base</code> that takes a (text) string of digits and a base as inputs, and reports the corresponding number (which Snap<em>!</em> will show in decimal, of course, but you're converting to a <em>number, </em>not to a string of digits). Again, bases above ten are optional.</p>
+<img src="/bjc-r/img/6-recursive-reporters/base8.png" alt="9827 base 8" /><img src="/bjc-r/img/6-recursive-reporters/base10.png" alt="9827 base 10" /></p></li></ol></div></div>
+<div class="takeItFurther">
+            <div>Improve the <code>base</code> block so that it can go up to base 36 by using the letters <code>a</code>‒<code>z</code> as digits with values 10‒35.
+  <img src="/bjc-r/img/6-recursive-reporters/common.png" alt="32562 base 15" /><img src="/bjc-r/img/6-recursive-reporters/w00zy.png" alt="53749006 base 36" /></div>
+            </div>
+            <p>Another thing the AP people want you to know is that using a power of two as the base gives a shorthand for the binary representation
+  — each digit represents a certain number of bits. Commonly used bases are octal (base 8), in which each digit represents three bits, and hexadecimal (base 16), in which each digit represents four bits.
+ <div class="forYouToDo">
+        	<ol start="3"><li>What do we mean by "represents" above?  Why does this work?  Discuss with other students and make sure you all have the same idea.</li>       
+ <li>Write the inverse function <code>from base</code> that takes a (text) string of digits and a base as inputs, and reports the corresponding number (which Snap<em>!</em> will show in decimal, of course, but you're converting to a <em>number, </em>not to a string of digits). Again, bases above ten are optional.
   <p><img src="/bjc-r/img/6-recursive-reporters/frombase.png" alt="frombase" /></p>
-</blockquote>
+</li></ol></div>
+<div class="takeNote">
+<p>A useful thing to remember during the AP test is that 2<sup>10</sup>=1024&#8776;10<sup>3</sup>.  So a 3- or 4-digit number in decimal will be around 10 bits; a 5- or 6-digit number will be about 20 bits, and so on.  This can help eliminate multiple-guess answers that are wildly off.</p></div>
+<div class="takeItFurther"><p>Long ago, when computer circuits were very unreliable, some computers used a representation called <em>biquinary,</em> which used decimal digits, each of which was represented using five bits, of which exactly two had to be 1, and the other three had to be 0.  The five bits represented the values 0, 1, 2, 4, and 7.  (Yes, that's a strange set of bit values.  Bear with us.)
+<div class="forYouToDo">
+        	<ol start="5"><li>Check that each of the values from 1 to 9 can be represented as the sum of two of those bit values in exactly one way.</li>
+<li>There's exactly one more possible set of two of those five bit values; that one represents zero.  What are those two bits?</li>
+<li>How does this help solve the problem of unreliable circuits?</li></ol></div>            
+
 </body>
 </html>

@@ -23,7 +23,6 @@ llab.CORSCompliantServers.push("cs10.berkeley.edu");
 llab.CORSCompliantServers.push("localhost");
 llab.CORSCompliantServers.push("0.0.0.0");
 
-
 //// TODO: Move this to config? Or refactor?
 
 llab.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
@@ -42,7 +41,7 @@ llab.getSnapRunURL = function(targeturl) {
     var finalurl = llab.snapRunURLBase;
     var currdom = document.domain;
     if (currdom == "localhost") {
-        currdom = 'http://' + currdom + ":" + window.location.port;
+        // currdom = 'http://' + currdom + ":" + window.location.port;
     }
     if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
         finalurl += llab.CORSproxy;
