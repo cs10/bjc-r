@@ -11,8 +11,6 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   line-height: none; /* hmm. */
 }
 
-
-
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   font-size: .9em;
@@ -31,9 +29,9 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
 
 
 /** BJC4NYC elements added by Mary Fries, March 2015 **/
-div {
-	padding-bottom: .5em;
-}
+/*div {
+  padding-bottom: .5em;
+}*/
 
 .forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
   padding: 1em;
