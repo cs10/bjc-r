@@ -51,8 +51,7 @@ div {
   margin-bottom: .5em;
 }
 
-.forYouToDo#first:before {
-  /* Note: #first breaks a lot of existing pages. */
+.forYouToDo:nth-of-type(1):before {
   content: "For You To Do";
 }
 
