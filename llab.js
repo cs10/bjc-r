@@ -29,6 +29,8 @@ llab.llab_path = llab.rootURL + llab.install_directory;
 // llab.paths.css_files.push('css/3.3.0/bootstrap-theme.min.css');
 llab.paths.css_files.push('css/3.3.0/bootstrap-compiled.min.css');
 llab.paths.css_files.push('css/default.css');
+// In /bjc-r/css
+llab.paths.css_files.push('../css/bjc.css');
 
 
 // courses -- path to folder containing courses.
