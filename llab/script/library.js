@@ -12,7 +12,7 @@ llab.loaded = llab.loaded || {};
 
 /////////////////
 // TODO: ALL CORS SETTINGS SHOULD BE MOVED TO THE CONFIG FILE.
-llab.CORSproxy = "www.corsproxy.com";
+llab.CORSproxy = "https://bjcredir.herokuapp.com/";
 
 llab.CORSCompliantServers = [];
 llab.CORSCompliantServers.push("bjc.berkeley.edu");
@@ -20,6 +20,8 @@ llab.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("snap.berkeley.edu");
 llab.CORSCompliantServers.push("inst.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("cs10.berkeley.edu");
+llab.CORSCompliantServers.push("localhost");
+llab.CORSCompliantServers.push("0.0.0.0");
 
 
 //// TODO: Move this to config? Or refactor?
@@ -29,39 +31,32 @@ llab.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
 // returns the current domain with a cors proxy if needed
 
 llab.getSnapRunURL = function(targeturl) {
-    // FIXME -- this check shouldn't be needed!
-    if (targeturl === null) {
-        return '';
-    }
+    if (!targeturl) { return ''; }
 
-    // FIXME -- HTTPS URLS!!!
-    if (targeturl.substring(0, 7) === "http://") {
+    if (targeturl.indexOf('http') == 0 || targeturl.indexOf('//') == 0) {
         // pointing to some non-local resource...  do nothing!!
         return targeturl;
-    } else {
-        // internal resource!
-        var finalurl = llab.snapRunURLBase + "http://";
-        var currdom = document.domain;
-        // why not, for the devs out there...
-        // TODO: Move localhost and aliases to the CORS list.
-        if (currdom == "localhost") {
-            currdom = "bjc.berkeley.edu";
-        }
-        if (llab.CORSCompliantServers.indexOf(currdom) === -1) {
-            finalurl += llab.CORSproxy + "/";
-        }
-        if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
-            var path = window.location.pathname;
-            path = path.split("?")[0];
-            path = path.substring(0, path.lastIndexOf("/") + 1);
-            currdom += path;
-        }
-        finalurl = finalurl + currdom + targeturl;
-
-        return finalurl;
     }
-};
 
+    // internal resource!
+    var finalurl = llab.snapRunURLBase;
+    var currdom = document.domain;
+    if (currdom == "localhost") {
+        currdom = 'http://' + currdom + ":" + window.location.port;
+    }
+    if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
+        finalurl += llab.CORSproxy;
+    }
+    if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
+        var path = window.location.pathname;
+        path = path.split("?")[0];
+        path = path.substring(0, path.lastIndexOf("/") + 1);
+        currdom = window.location.protocol + '//' + currdom + path;
+    }
+    finalurl = finalurl + currdom + targeturl;
+
+    return finalurl;
+};
 
 
 /** Returns the value of the URL parameter associated with NAME. */
@@ -74,9 +69,10 @@ llab.getQueryParameter = function(paramName) {
     }
 };
 
-/** Strips comments off the line. */
+/** Strips comments off the line in a topic file. */
 llab.stripComments = function(line) {
     var index = line.indexOf("//");
+    // the second condition makes this ignore urls (http://...)
     if (index !== -1 && line[index - 1] !== ":") {
         line = line.slice(0, index);
     }
@@ -277,6 +273,24 @@ llab.eraseCookie = function(name) {
 
 llab.spanTag = function(content, className) {
     return '<span class="' + className + '">' + content + '</span>'
+}
+
+// Cool array level operations
+llab.any = function(A) {
+    return A.reduce(function(x, y) {return x || y });
+}
+
+llab.all = function(A) {
+    return A.reduce(function(x, y) {return x && y });
+}
+
+llab.which = function(A) {
+    for (i = 0; i < A.length; i++) {
+        if (A[i]) {
+            return i;
+        }
+    }
+    return -1;
 }
 
 

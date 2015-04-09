@@ -1,0 +1,46 @@
+// This is the old-style topic files, used to represent full topic pages.  Any
+// html will be embedded inside -- see "raw-html" -- or in the 
+// topic.html file used across all topic pages.  (New-style topic will be data
+// embedded inside html pages, like other llab components).
+// Reference this style using topic.html?topic=/path/to/example.topic
+
+
+title: This is an <i>example</i> topic.
+
+{
+topic: This is the Topic's Heading
+
+
+learning-goal: Explore <u>Abstraction</u> as it relates to Computer Science
+learning-goal: Understand and analyze some the impact of the internet on our culture
+
+heading: First: lets do this
+resource: This is a Resource [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
+    resource: An indented item (no link) 
+      forum: Another (more) indented resource [/bjc-r/cur/programming/intro/drawing/game-of-tag.html] 
+quiz: This is a <b>Quiz</b> [/bjc-r/cur/TEST/example-mixed-page.html]
+
+big-idea: Get comfortable with the Scratch user interface.
+//big-idea: Learn to use Broadcast blocks to communicate between sprites and make a movie.
+big-idea: Get experience <b>debugging</b> using single-step.
+big-idea: Learn to download, remix and re-post projects on the Scratch website.
+
+heading: Second section
+extresource: This is an <b>External Resource</b> [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
+video: This is a Video [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+
+heading: Third section <b>is the very very best!</b> // a comment at the end of a line
+resource: This is a Resource [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
+
+This line doesn't have a class, but is still indented properly.
+
+raw-html:
+<img src="/bjc-r/img/web/NOTFOUND.png"
+  alt="This is the logo of the topic that you are looking at">
+  </img>
+
+This line doesn't have a class.
+
+resource: This title isssssssssssssreallllllllllllly longgggggggggggggggggg [/bjc-r/cur/programming/intro/scratch/welcome-to-scratch.html]
+
+}
