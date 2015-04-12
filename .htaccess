@@ -1,4 +1,4 @@
-Header set Access-Control-Allow-Origin *
+Header set Access-Control-Allow-Origin *.berkeley.edu
 
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/xml
@@ -26,8 +26,8 @@ BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 # Proxies should not deliver wrong content
 Header append Vary User-Agent env=!dont-vary
 
-ExpiresActive On
-ExpiresDefault "access plus 10 weeks"
-ExpiresByType text/html "access plus 10 days"
-ExpiresByType text/css "access plus 10 days"
-ExpiresByType application/javascript "access plus 10 days"
+#ExpiresActive On
+#ExpiresDefault "access plus 10 weeks"
+#ExpiresByType text/html "access plus 10 days"
+#ExpiresByType text/css "access plus 10 days"
+#ExpiresByType application/javascript "access plus 10 days"
