@@ -5,7 +5,7 @@ big-idea: Define functional programming
 big-idea: Explore the relationship between Functional Programming and Parallelism
 big-idea: Explore historical roots of functional programming and lambda calculus
 
-  video: Lambda and HOFs II [https://coursesharing.org/courses/6/lectures/26]
+//   video: Lambda and HOFs II [https://coursesharing.org/courses/6/lectures/26]
   reading: Blown to Bits, Chapter 8 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter8.pdf]
 
 h2: Activities

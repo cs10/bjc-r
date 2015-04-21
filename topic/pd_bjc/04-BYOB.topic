@@ -8,8 +8,8 @@ big-idea: Explore historical roots of functional programming and lambda calculus
 big-idea: Explore programming paradigms: functional, imperative, object-oriented, and declarative.
 // big-idea: Consider the importance and economic value of software companies on the economy.
 
-  video: Functions [https://coursesharing.org/courses/6/lectures/12]
-  video: Programming Paradigms [https://coursesharing.org/courses/6/lectures/13]
+//   video: Functions [https://coursesharing.org/courses/6/lectures/12]
+//   video: Programming Paradigms [https://coursesharing.org/courses/6/lectures/13]
   video: Program or be Programmed [http://www.youtube.com/embed/JKAzZocdQ1Y]
   reading: Blown To Bits: Chapter 2 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter2.pdf]
   reading: Why Software Is Eating The World [http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html]

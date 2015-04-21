@@ -6,7 +6,7 @@ big-idea: Understand Moore's Law impact on the development of the processors
 big-idea: Understand parallelism and its limitations in computing
 big-idea: Explore the history and development of encryption techniques
 
-  video: Concurrency [https://coursesharing.org/courses/6/lectures/16]
+//   video: Concurrency [https://coursesharing.org/courses/6/lectures/16]
   reading: Blown to Bits: Chapter 5 Part 1 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt1.pdf]
   reading: Blown to Bits: Chapter 5 Part 2 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt2.pdf]
   reading: Blown to Bits: Chapter 5 Part 3 [http://inst.eecs.berkeley.edu/~cs10/sp12/readings/BtB5-pt3.pdf]

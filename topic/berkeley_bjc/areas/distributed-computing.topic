@@ -6,7 +6,7 @@ big-idea: Explore the kind of problems that need to be solved with concurrency a
 big-idea: Understand the connection of MapReduce(higher-order function!) to concurrency applications.
 big-idea: Understand what cloud computing means and what it is providing in terms of services to computing industry.
 
-  video: Distributed Computing (Dan Garcia) [https://coursesharing.org/courses/6/lectures/25]
+//   video: Distributed Computing (Dan Garcia) [https://coursesharing.org/courses/6/lectures/25]
   video: What is cloud computing (youtube) [http://www.youtube.com/watch?v=hjrdThuwpZ0]
   reading: A view of cloud computing [http://cacm.acm.org/magazines/2010/4/81493-a-view-of-cloud-computing/fulltext]
 

@@ -6,7 +6,7 @@ big-idea: Explore the relationship between Functional Programming and Parallelis
 big-idea: Explore historical roots of functional programming and lambda calculus
 big-idea: Consider the importance and economic value of software companies on the economy
 
-  video: Functions [https://coursesharing.org/courses/6/lectures/12]
+//   video: Functions [https://coursesharing.org/courses/6/lectures/12]
   video: Program or be Programmed [http://www.youtube.com/embed/JKAzZocdQ1Y]
   reading: Why Software Is Eating The World [http://online.wsj.com/article/SB10001424053111903480904576512250915629460.html]
 

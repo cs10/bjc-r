@@ -4,7 +4,7 @@ h2: Big Ideas
 big-idea: Explore various methods of developing algorithms to solve problems
 big-idea: Understand the role of encryption in securing documents and the dangers inherent in producing sensitive digital information as it relates to privacy and security concerns
 
-  video: Algorithms (Luke Segars) [https://coursesharing.org/courses/6/lectures/14]
+//   video: Algorithms (Luke Segars) [https://coursesharing.org/courses/6/lectures/14]
   reading: Blown to Bits, Chapter 3 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter3.pdf]
 
 h2: Activities

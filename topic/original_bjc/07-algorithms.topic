@@ -4,7 +4,7 @@ h2: Big Ideas
 big-idea: Explore how to analyze algorithmic speed and understand various factors that contribute to slow or fast runtimes.
 big-idea: Explore the implications of a world increasingly controlled by algorithms.
 
-  video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
+//   video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
   video: How Algorithms Shape Our World [http://www.ted.com/talks/kevin_slavin_how_algorithms_shape_our_world.html]
 
 h2: Activities

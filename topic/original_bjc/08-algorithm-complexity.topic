@@ -4,7 +4,7 @@ h2: Big Ideas
 big-idea: Explore the implications of computing and technology on our culture and institutions
 big-idea: Understand Moore's law and the technical limitations and hurdles the hardware industry is facing as it develops the next generation of computers
 
-  video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
+//   video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
   reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
   reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
 
