@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 2: Combining Booleans</title>
+    </head>
+    <body>
+		<h2>Script Variables</h2>
+        <p>Sometimes you need a variable in your script, but you don&rsquo;t want it to step through consecutive integer values as in the <code>for</code> block. A more general way to handle variables uses the block</p>
+		<img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" />
+		<p>to create a variable, and the block</p>
+		<img src="/bjc-r/img/prog/set.png" alt="set" />
+		<p>to give that variable a value. Both of these blocks are in the Variables palette. Here&rsquo;s an example:</p>
+		<img src="/bjc-r/img/prog/randompoly.png" alt="random polygon" />
+		<p>The <code>script variables</code> block creates a variable called <code>sides</code> (click on the orange &quot;<code>a</code>&quot; to change the name) that can be used throughout this script. (Each time you click the green flag, a new variable is created, and it exists only during that time through the script.) The <code>set</code> block says what value the variable should have. In this case, <span class="snap">snap</span>  will pick a random integer value between 3 and 10 (inclusive). (The <code>pick random</code> block is in the Operators palette; note that we changed the first input from 1 to 3.) The script will draw a regular polygon with that number of sides. The value of <code>sides</code> is used twice, first in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and again in computing the angle through which to <code>turn</code> for each side.</p>
+        <div class="forYouToDo" id="first">
+            <p>Try running the script (by clicking the green flag) several times to see what shapes it draws.</p>
+            <ol>
+                <li>Self-test question: Why did we start the range of possible random numbers at 3?</li>
+                <li>Self-test question: Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+            </ol>
+        </div>
+        <p>We needed the script variable in this script because the randomly chosen number is used twice. If it had been used only once, we could have put the <code>pick random</code> block directly in the script, like this:</p>
+        <img src="/bjc-r/img/prog/repeat-random.png" alt="repeat (pick random)" />
+        <div class="forYouToDo">
+            <ol start="3">
+                <li>
+                    <p>Try to explain before you run the script below what could go wrong if we just put the <code>pick random</code> block in the script twice:</p>
+                    <img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
+                </li>
+            </ol>
+        </div>
+        <p>Another place where script variables can be useful is in a program that interacts with the user.</p>
+        <img src="/bjc-r/img/prog/converse.png" alt="conversation with ASK AND WAIT" />
+        <p>This script uses several blocks we haven&rsquo;t used before.  The <code>ask and wait</code> command and the <code>answer</code> reporter are in the Sensing palette. <code>Join</code> is in Operators. If you run the script you should be able to figure out what they do.</p>
+        <p>Note that this script has <em>two </em>script variables. The <code>script variables</code> block has a little right-facing arrowhead at the end:</p>
+        <img src="/bjc-r/img/prog/arrowhead.png" alt="arrowhead in block" />
+        <p>If you click the arrowhead, a second orange variable oval will appear. Also, there will be left- and right-facing arrowheads. You can click these to adjust the number of variables you need.</p>
+        <p>The join block also has arrowheads to control the number of input slots it has. In the text string inputs, both in <code>join</code> and in the <code>ask</code> blocks, the pale brown raised dots represent spaces. The brown dots don&rsquo;t appear in the text on the stage when the script is run. They&rsquo;re in the input slots so that you can easily see if there are multiple spaces in a row:</p>
+        <img src="/bjc-r/img/prog/multispace.png" alt="text input with multiple spaces in a row" />
+        <p>and also so that you can distinguish between a completely empty input slot and one that has a space in it:</p>
+        <img src="/bjc-r/img/prog/emptyspace.png" alt="empty input text vs. space" />
+        <!-- The below line seems to enforce bad programming habits.. why is it here?
+        <!-- <p>Test yourself: Actually, that conversation script could have been made using just one variable. Which one, and how would you do it?</p> -->
+	</body>
+</html>

@@ -1,22 +1,23 @@
-title: Algorithms
+title: Unit 4: Algorithm Complexity
 {
-h1: Formerly Topic 6: Algorithms
+//h1: Formerly Topic 6: Algorithms
 
-h2: Big Ideas
-big-idea: Explore how to analyze algorithmic speed and understand various factors that contribute to slow or fast runtimes.
-big-idea: Explore the implications of a world increasingly controlled by algorithms.
+//h2: Big Ideas
+//big-idea: Explore how to analyze algorithmic speed and understand various factors that contribute to slow or fast runtimes.
+//big-idea: Explore the implications of a world increasingly controlled by algorithms.
 
-	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
-	video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
+//	video: Algorithms [https://coursesharing.org/courses/6/lectures/14]
+//	video: How Algorithms Shape Our World [http://www.youtube.com/embed/ENWVRcMGDoU]
 
-h2: Activities
-learning-goal: Solidify understanding of what an algorithm is and why they're important to computer science and other fields.
-learning-goal: Gain a basic understanding of why certain algorithms perform better than others.
-learning-goal: There's often more than one way to solve the same problem. Certain solutions will be superior to others, but very often choosing a solution will require evaluating a list of trade-offs relevant to your particular situation.
-learning-goal: Practice implementing algorithms that were discussed verbally.
-learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
-learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
+//h2: Activities
+//learning-goal: Solidify understanding of what an algorithm is and why they're important to computer science and other fields.
+//learning-goal: Gain a basic understanding of why certain algorithms perform better than others.
+//learning-goal: There's often more than one way to solve the same problem. Certain solutions will be superior to others, but very often choosing a solution will require evaluating a list of trade-offs relevant to your particular situation.
+//learning-goal: Practice implementing algorithms that were discussed verbally.
+//learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
+//learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
+heading: Lab 1: Algorithms
 	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 
 	forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
@@ -29,25 +30,25 @@ learning-goal: Hiding algorithmic details behind a layer of abstraction makes it
 	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
 
 
-h1: Formerly Topic 7: Algorithm Complexity
+//h1: Formerly Topic 7: Algorithm Complexity
 
-h2: Big Ideas
-big-idea: Explore the implications of computing and technology on our culture and institutions
-big-idea: Understand Moore's law and the technical limitations and hurdles the hardware industry is facing as it develops the next generation of computers
+//h2: Big Ideas
+//big-idea: Explore the implications of computing and technology on our culture and institutions
+//big-idea: Understand Moore's law and the technical limitations and hurdles the hardware industry is facing as it develops the next generation of computers
 
-	video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
-	reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
-	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
+//	video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
+//	reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
+//	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
 
-h2: Activities
-learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
-learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
+//h2: Activities
+//learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
+//learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
-heading: Introduction
+heading: Lab 2: Algorithm Complexity
 	resource: A (non-video) Game [/bjc-r/cur/programming/algorithms/a-non-video-game.html]
 	resource: Competing with Young Gauss [/bjc-r/cur/programming/algorithms/competing-with-young-gauss.html]
 
-heading: Timing Experiments
+heading: Lab 3: Timing Experiments
 	resource: Time is of the Es-sense [/bjc-r/cur/programming/algorithms/timing/time-is-of-the-es-sense.html]
 	resource: Do You Have Time to Add? [/bjc-r/cur/programming/algorithms/timing/do-you-have-time-to-add.html] 
 	resource: Constant-Time [/bjc-r/cur/programming/algorithms/timing/constant-time.html]

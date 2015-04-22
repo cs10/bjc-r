@@ -1,53 +1,57 @@
-title: Recursive Reporters
+title: Unit 6: Recursive Reporters
 {
-h2: Big Ideas
-big-idea: Relating recursion in programming with inductive function definition
+//h2: Big Ideas
+//big-idea: Relating recursion in programming with inductive function definition
 
 //	video: Recursion II [https://coursesharing.org/courses/6/lectures/19]
-	video: Take-home midterm exam Wednesday!
-	video: AI [https://coursesharing.org/courses/6/lectures/22]
-	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
+//		video: Take-home midterm exam Wednesday!
+//	video: AI [https://coursesharing.org/courses/6/lectures/22]
+//	reading: Blown to Bits, Chapter 6 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter6.pdf]
 
-h2: Activities
+//h2: Activities
 
-learning-goal: Understand how reporters use combiners instead of sequences.
-learning-goal: Practice planning and coding recursive reporters.
-learning-goal: Implement higher order functions.
+//learning-goal: Understand how reporters use combiners instead of sequences.
+//learning-goal: Practice planning and coding recursive reporters.
+//learning-goal: Implement higher order functions.
 
-heading: Getting Started
-	 resource: Getting Started (Al) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/getting-started.html]
-	 resource: Getting Started (Brian) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/gs-bh.html]
+heading: Lab 1: Introduction
+//	 resource: Getting Started (Al) [/bjc-r/cur/programming/6-recursive-reporters/1-gs/getting-started.html]
+	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/1-gs/gs-bh.html]
 	resource: Recursive Reporters [/bjc-r/cur/programming/6-recursive-reporters/1-gs/recursive-reporters-intro.html]
-heading: Number representation
-	resource: Numbers in Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/binary-numbers.html]
-	resource: A Hint on Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/binary-numbers-hint.html]
-	resource: Beyond Binary [/bjc-r/cur/programming/6-recursive-reporters/2-binary/beyond-binary.html]
 
-heading: Pascal's Triangle
-	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle.html]
-	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-algorithm.html]
-	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-hint.html]
-	 resource: How long does this computation take? [/bjc-r/cur/programming/6-recursive-reporters/3-pascal/pascals-triangle-how-long-does-the-computation-take.html]
+heading: Lab 2: Pascal's Triangle
+ 	raw-html: <img src="/bjc-r/img/6-recursive-reporters/pascal-rule.png" class="imageRight" alt="Pascal's Triangle" />
+	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/gs.html]
+	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle.html]
+//	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle-algorithm.html]
+	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle-hint.html]
+	 resource: How long does this computation take? [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle-how-long-does-the-computation-take.html]
+
+heading: Lab 3: Number representation
+	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/3-binary/gs.html]
+	resource: Numbers in Binary [/bjc-r/cur/programming/6-recursive-reporters/3-binary/binary-numbers.html]
+	resource: A Hint on Binary [/bjc-r/cur/programming/6-recursive-reporters/3-binary/binary-numbers-hint.html]
+	resource: Beyond Binary [/bjc-r/cur/programming/6-recursive-reporters/3-binary/beyond-binary.html]
 
 // big-idea: Here are the ones you haven't seen before:
 
-heading: Sorting
+heading: Lab 4: Sorting
 	 resource: Sorting a List [/bjc-r/cur/programming/6-recursive-reporters/4-sorting/recursively-sorting.html]
 	 resource: Sorting a List: Merge [/bjc-r/cur/programming/6-recursive-reporters/4-sorting/recursively-sorting-merge.html]
 
-heading: Subsets
+heading: Lab 5: Subsets
 	 resource: Subsets of a Set [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-of-a-set.html]
 	 resource: Subset hints [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-of-a-set-hint.html]
 	 resource: Subsets and Efficiency [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-and-efficiency.html]
 	 resource: Fast Subsets [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-of-a-set-fast-soln.html]
 
-heading: Ice Cream Shop Menu
+heading: Lab 6: Take It Further: Menu
 	 resource: At the Ice Cream Shop [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-shop.html]
 	 resource: Formal Parameters [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-formal-parameters.html]
 	 resource: Menu hints [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-hint.html]
 
 
-heading: Some simple ones
+heading: Lab 7: Some simple ones
 	 resource: Plurals of Words [/bjc-r/cur/programming/6-recursive-reporters/7-simple/plurals-of-words.html]
 	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/6-recursive-reporters/7-simple/generalizing-the-map-pattern.html]
 	 resource: Even numbers [/bjc-r/cur/programming/6-recursive-reporters/7-simple/even-number-filter.html]

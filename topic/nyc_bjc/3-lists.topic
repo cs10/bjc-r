@@ -1,4 +1,4 @@
-1-title: Lists
+title: Unit 3: Lists
 {
 // h1: Formerly Topic 5: Collecting Data into Lists
 
@@ -18,32 +18,36 @@
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
-heading: Introduction to Lists
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-working-with-lists/1-getting-started.html]
-	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/2-using-the-LIST-block-to-make-a-list.html]
-	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-working-with-lists/3-why-use-lists.html]
-	 resource: Transforming each item of a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/4-transforming-each-item-of-a-list.html]
-	 resource: Choosing some items from a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/5-choosing-some-items-from-a-list.html]
-	 resource: Combining all the items of a list [/bjc-r/cur/programming/3-lists/1-working-with-lists/6-combining-all-the-items-of-a-list.html]
-	 resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/3-lists/1-working-with-lists/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
-	 resource: More on composition of higher order functions [/bjc-r/cur/programming/3-lists/1-working-with-lists/8-more-on-composition-of-higher-order-functions.html]
-	 resource: When you really have to loop [/bjc-r/cur/programming/3-lists/1-working-with-lists/9-when-you-really-have-to-loop.html]
-	
+heading: Lab 1: Introduction to Lists
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
+	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-using-the-LIST-block-to-make-a-list.html]
+	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-why-use-lists.html]
+
+heading: Lab 2: List Operations
+	 resource: Transforming each item of a list [/bjc-r/cur/programming/3-lists/2-list-operations/4-transforming-each-item-of-a-list.html]
+	 resource: Choosing some items from a list [/bjc-r/cur/programming/3-lists/2-list-operations/5-choosing-some-items-from-a-list.html]
+	 resource: Combining all the items of a list [/bjc-r/cur/programming/3-lists/2-list-operations/6-combining-all-the-items-of-a-list.html]
+	 
+heading: Lab 3: Using Higher-Order Functions
+	 resource: Building an acronym generator [/bjc-r/cur/programming/3-lists/3-using-hof/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
+	 resource: The power of higher-order functions [/bjc-r/cur/programming/3-lists/3-using-hof/8-more-on-composition-of-higher-order-functions.html]
+	 resource: When you really have to loop [/bjc-r/cur/programming/3-lists/3-using-hof/9-when-you-really-have-to-loop.html]
+
 //heading: Lists and Sentences: The Index Variable Pattern
 //	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
 
-heading: Magic Squares
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-magic-square/getting-started.html]
-	 resource: Introducing Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples.html]
-	 resource: Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-2.html]
-	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/2-magic-square/finding-triples-3.html]
-	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/2-magic-square/finishing-touches.html]	
-	
-heading: List Mutation
-	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
-	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
+heading: Lab 4: Magic Squares
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/getting-started.html]
+	 resource: Introducing Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples.html]
+	 resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-2.html]
+	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
+	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/finishing-touches.html]
 
-	
+// heading: List Mutation  // this has moved to Chapter 4
+//	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
+//	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
+
+
 assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
 
 // h1: Formerly Topic 13: Practicing with Lists: Tic-Tac-Toe
@@ -58,15 +62,15 @@ assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman
 // learning-goal: Get more practice with lists and higher order functions used in combination.
 // learning-goal: Develop a significant-sized project.
 
-heading: Tic-Tac-Toe strategy
-	 resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
-	 resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
-	 resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
-	 resource: Finding Triples (Continued) [/bjc-r/cur/programming/lists/hof/ttt/04-triples2.html]
-	 resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
-	 resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
-	 resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
+// heading: Tic-Tac-Toe strategy // this has moved to Chapter 4
+//	 resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
+//	 resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
+//	 resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
+//	 resource: Finding Triples (Continued) [/bjc-r/cur/programming/lists/hof/ttt/04-triples2.html]
+//	 resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
+//	 resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
+//	 resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
 	 //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
-	 resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
+//	 resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
 
 }

@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>BJC 4 Style Guide</title>
+    </head>
+    <body>
+        <h2>We'll Start out with "h2" Tags with Title Case at the Highest Level Because "h1" is Just Massive</h2>
+        <h3>Then We Can Use "h3" for Sub-Headings</h3>
+        <h4>And "h4" for Sub-Sub-Headings (if we ever need them)</h4>
+		<img class="imageRight" src="/bjc-r/img/pictures/Carl_Friedrich_Gauss.jpg" alt="an image on the right">
+        <div>
+        	UCB has corrected me: 
+            <ul>
+            	<li>For the general text, leave things wrapped in "p" tags. Use "div" tags for any of the colorful styles below or for groups of multiplethings (like text and an image, etc.).</li>
+                <li>Images <em>do not need</em> to be wrapped in "div" tags. Images can be placed on either side using class="imageRight" or class="imageLeft" in the "img" tag.</li>
+            </ul>
+        </div>
+        <p>Intent code with 4 spaces (one tab) with each new level.</p>
+        <p>Use &lt;span class="snap"&gt;snap&lt;/span&gt; to write <span class="snap">snap</span></p>
+        <div>
+        	Links to things down below (like in TG): 
+            <ul>
+            	<li><a href="#picture">How to Make an Picture of Blocks</a></li>
+            	<li><a href="#animation">How to Make an Animation</a></li>
+            	<li><a href="#script">How to Link to a Script</a></li>
+            </ul>
+        </div>
+        <p>"Getting Started" is an optional (for us&mdash;it's required for students) <em>HTML page</em> at the beginning of each lab. "Take it Further" is a <em>page element</em> that we can (optionally) place at the end of each lab or wherever makes sense.</p>
+        <div class="forYouToDo" id="first">
+            <div>
+                This is a made with a div within a div. The class of the surrounding div is "forYouToDo".<br />
+                <ol>
+                    <li>Read this and your dog will be happy:<br />
+                        <ol>
+                            <li>Sub-pr0blem 1</li>
+                            <li>Sub-probl3m 2</li>
+                        </ol>
+                    </li>
+                    <li>Then think about how to code this picture: <br />
+                    <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" alt="this is a picture. isn't it nice? ;)"></li>
+                    <li>Un Otro Problemo... et cetero...</li>
+                     
+                </ol>
+            </div>
+        </div>
+
+        <div class="forYouToDo">
+        	<ol start="4">
+            	<li>To avoid having the title "For You To Do" appear several times on the same page, use id="first" for the first instance of class="forYouToDo" and not in the others. (Note: ID is used for something that only appears once; we are IDing that one as the first one.)</li>
+                <li>Note that this second For You To Do also differs in that the &lt;ol&gt; tag has start="4" inside it so that the list starts in the right place.</li>
+            </ol>
+        </div> 
+
+        <div><div class="sidenote">Side notes contain content that is interesting or potentially helpful but not essential. They do seem to require a "div" within a "div".</div></div>
+
+		<div class="dialogue">
+            <div>
+            	<span>Mary:</span> says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff says some stuff
+            </div>
+            <div>
+            	<span>Brian:</span> says some stuff says some stuff says some stuff says some stuff says some stuff 
+            </div>
+			<div class="stagedir">
+				Brian does a bug dance.
+			</div>
+            <div>
+            	<span>Mary:</span> says some stuff
+            </div>
+            <div>
+            	<span>Paul:</span> says some stuff says some stuff says some stuff 
+            </div>
+        </div>
+
+		<div class="takeNote">
+        	Brian asked for this box. It's purpose is "take note of this important point."
+        </div>
+        
+        <div class="takeItFurther">
+            <div>
+                Here is a list of other formatting we can use:<br />
+                <ul>
+                    <li>
+                    	Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block: <img src="/bjc-r/img/1-introduction/pen-down.png" class="block"/>. 
+                        <ul>
+                            <li>Note: The <code>code</code> tag has been used all over the place in the previous version of BJC. Please try to keep it to only actual code blocks.</li>
+                            <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a <span class="snap">snap</span> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
+                        </ul>
+                    </li>                   
+                    <li>Use the "strong" tag for <strong>bold</strong>. Introduce <strong>new terms</strong> using the strong tag.</li>
+                    <li>Use the "em" tag for <em>italics</em>. The "em" tag is for <em>em</em>phasis.</li>
+                    <!-- block (code tag) vs. palette (quotes) vs. variable (italics, but even if block?) vs. new term (bold)-->
+                    <li>References to text in the app (such as the "OK" button or the "Motion" palette) should be in quotes.</li>
+                </ul>
+        	</div>
+        </div>
+
+        <p> 
+        	Let's not use the following colored boxes at all:
+        </p>
+        <div class="alert quoteBlue">Blue Box - determine the meaning of these elements on a case by case basis and use one of our styles above instead.</div>
+        <div class="alert quoteGreen">Green Box - use EDC version</div>
+        <div class="alert quoteOrange">Orange Box - etc.</div>
+        <div class="alert quoteYellow">Yellow Box - same thing ;)</div>
+		<p>
+        	(If we like the look, we can reintegrate them, but for now, let's change each one over to our own styles above. I asked, and these didn't have much specific meaning in previous BJC versions.)
+        </p>
+
+        <h3><a name="picture"></a>How to Make an Picture of Blocks</h3>
+        <div>
+        	<ol>
+            	<li>Build the script you want in <span class="snap">snap</span></li>
+                <li>Choose "Zoom blocks" from the settings menu and enter "10"</li>
+                <li>Scroll around to locate the script</li>
+                <li>Right click the script and choose "script pic..."</li>
+                <li>Save the file to the unit's <em>new</em> image directory, e.g. /bjc-r/img/3-lists</li>
+            </ol>
+        </div>
+
+        <h3><a name="animation"></a>How to Make an Animation</h3>
+        <p>See <a href="https://www.youtube.com/watch?v=MD9wiyBlJ9Y" target="_blank">https://www.youtube.com/watch?v=MD9wiyBlJ9Y
+</a> (A higher version of Adobe looks to be required. Ask for support from Mary as needed.)</p>
+
+        <h3><a name="script"></a>How to Link to a Script</h3>
+        <div>
+        	<ol>
+            	<li>Build the script you want in <span class="snap">snap</span></li>
+                <li>Choose "Export script" from the file menu</li>
+                <li>Save the XML file to the unit's <em>new</em> lab content directory, e.g. /bjc-r/cur/programming/3-lists/2-magic-square</li>
+                <li>
+                	In the lab page HTML file where you want to link, place a picture of the script wrapped with an "a href" tag linking to the XML file with class="run" in the "a href" tag. For example:<br />
+                	<a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/prog/prog-create-square-code-BYOB.gif" alt="Square example image" title="Square example image"> </a>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 4: Making Your Own Blocks</title>
+    </head>
+    <body>
+        <h2>Adding an Input</h2>
+        <p>You have created blocks that draw a square, a triangle, and a house, but only of one size. You can edit these to let you give your block an <em>input</em> (just as the <code>move</code> block takes an input) that tells your blocks what size you want.</p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <p>To edit a block, right-click (or control-click) on it (either in the palette or in a script) and select "edit" to put it back in the block editor.</p>
+                    <img  title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block.png" >
+                </li>
+                <li>   
+                    <p>In the "Block Editor," hover your cursor over the words and plus signs (<b>+</b>) in the hat block.</p>
+                    <p>Clicking on a word will let you change that word; clicking on a <b>+</b> will let you add something in that position. You want to add an input after the title, so click on the <b>+</b> at the end.</p>
+                    <img  alt="draw square editor" src="/bjc-r/img/sys/draw-square-block-editor.png" >
+                </li>
+                <li>
+                    <p>You should get the following dialog box.</p><div class="sidenote">
+            <div>Another common word for <em>input</em> in mathematics and computer science is <em>argument</em>. </div>
+        </div>
+                    <img title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature.png" >
+                    <p>You have two choices about what you want to add or modify to the block definition: </p>
+                    <ol>
+                        <li>"Title text" (unselected in the picture above) will let you add a word or words to the block's title. For example, if you wanted to change the name of the block from <code>draw square</code> to <code>draw square picture</code> you'd click on "Title text" and type the word "picture" into the text box.</li>
+                        <li>"Input name" (selected in the picture above) will let you add an <i>input</i>. This is what you want now, and is selected by default any time you open this dialog.</li>
+                    </ol>
+                    <p>Give the input a name that makes its meaning clear to any reader: <code>size</code> or <code>sideLength</code> would be good.  Type that name in the input field and click "OK."</p>
+                </li></ol></div>
+                <div>
+                Your block title has changed: there is now a variable named <code>size</code> at the end of the title.</p>
+                    <img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
+                </div>
+                
+                
+                <div class="forYouToDo"> <ol start="4">
+                <li> <div class="sidenote"> <div>This is exactly what you did when you used the variable in the <code>for</code> block.</div> </div>
+            
+                    <p>To use the <code>size</code> variable within the <code>draw square</code> block, drag the variable <code>size</code> down into the move block. Whenever you need a new copy of a variable, just drag another down.  </p>
+                    
+                    <img  title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif">
+                </li>
+                <li> <div class="sidenote"> <div>If you have extra copies of a block or variable or script that you want to get rid of, you can drag it all the way to the palette at the left of the <span class="snap">snap</span> window.</div> </div>
+                    <p>When you click "OK", you'll see that the <code>draw square</code> block in the scripting area now takes an argument. Run this script with a few different inputs to check that it works.</p>
+                    <img border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
+                </li>
+                <li>Now edit your <code>triangle</code> and <code>house</code> blocks so that you can draw houses of any size you specify as input.
+            </ol>
+        </div>
+    </body>
+</html>

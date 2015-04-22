@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 9 Check: Broadcasts</title>
+    </head>
+    <body>
+
+        <div class="assessment-data" type="multiplechoice" identifier="goteam"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri" shuffle="true"
+        >
+            <div class="prompt">
+                <p>
+                    Without trying this in <span class="snap">snap</span>, try to answer the following question:
+                    <br />
+                    <br />
+                    What does the following set of scripts do when the <code>Turn1</code> message is broadcast?
+                </p>
+                <p><img src="/bjc-r/img/prog/receive-turn1-broadcast.png"  alt="receive turn1 broadcast script" />&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <img src="/bjc-r/img/prog/receive-turn2-broadcast.png"  alt="receive turn2 broadcast script" />
+                  </p>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Team!&quot; and then stops.
+                </div>
+                <div class="feedback">
+                    No, the <code>broadcast Turn1 and wait</code> block after the <code>say Team! ...</code> block will execute.  <span class="snap">snap</span>  will blindly follow its script.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    The sprite repeatedly says &quot;Go!&quot; and then &quot;Team!&quot; until you hit the red Stop button.
+                </div>
+                <div class="feedback">
+                    <p>
+                        Right!
+                        Here, we see an <em>infinite loop,</em> or a never-ending loop. 
+                        Whenever this happens in Snap<em>!</em>, we can always stop it by 
+                        pressing the Stop button at the top right of the window, just above the stage.
+                    </p>
+                    <p>
+                        Why does this happen? Well, when you the <code>Turn1</code> message is first broadcast,
+                        the sprite says <code> Go!</code>
+                        for half a second, and then broadcasts a <code>Turn2</code> message.
+                    </p>
+                    <p>
+                        If there is any character that has a script that responds to the <code>Turn2</code>
+                        message, it will perform that script. 
+                        In this case, the same sprite has a script that responds to the <code>Turn2</code>
+                        message, and so it will run the corresponding script. It says <code>Team!</code>
+                        and then broadcasts a <code>Turn1</code>
+                        message. But, it also has a script that responds to the <code>Turn1</code>
+                        message, which in turn sends a <code>Turn2</code>
+                        message, and so on. This continues until the scripts are forced to stop.
+                    </p>
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    Nothing happens - the script does not work.
+                </div>
+                <div class="feedback">
+                    No, the script here definitely does something when receiving the <code>Turn1</code> script.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Team!&quot;, repeating a few times, and then stops by itself.
+                </div>
+                <div class="feedback">
+                    No.  The computer can't just decide to stop itself; rather, it will blindly follow the script.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+		<!-- play sound but don't wait -->
+        <div class="assessment-data" type="multiplechoice" identifier="how-many-times1"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri1" shuffle="false"
+        >
+
+            <div class="prompt">
+                <p>
+                    How many times will you hear the sound when you run the script below?
+                </p>
+
+                <img class="indent" src="/bjc-r/img/prog/done4.png" alt="Play sound and wait" title="Play sound and wait"  />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    	0
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	1
+                </div>
+                <div class="feedback">
+                    No; consider the meaning of "until done" in the block.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	4
+                </div>
+                <div class="feedback">
+                    Right!
+                </div>
+            </div>
+            <div class="choice" identifier="c8">
+                <div class="text">
+                    	8
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c4"></div>
+            </div>
+        </div>
+
+        <!-- play sound but don't wait -->
+        <div class="assessment-data" type="multiplechoice" identifier="how-many-times2"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri2" shuffle="false">
+
+            <div class="prompt">
+                <p>
+                    How many times will you hear the sound when you run the script below?
+                </p>
+
+                <img class="indent" src="/bjc-r/img/prog/play4.png" alt="Play sound without wait" title="Play sound without wait"  />
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    	0
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	1
+                </div>
+                <div class="feedback">
+                    Right; because the <code>play sound</code> blocks don't wait for the previous block to finish the playing,
+                    it will sound as if all four sounds are played simultaneously.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	4
+                </div>
+                <div class="feedback">
+                    No; although each block is playing the sound, each will play it (nearly) simultaneously, because they won't wait "until [the previous block is] done" .
+                </div>
+            </div>
+            <div class="choice" identifier="c8">
+                <div class="text">
+                    	8
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        <!-- broadcast but no wait  -->
+        <div class="assessment-data" type="multiplechoice" identifier="how-many-times4"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri4" shuffle="false"
+        >
+
+            <div class="prompt">
+                <p>
+                    How many times will you hear the note 60 play when you click on the green flag?
+                </p>
+                <div class="indent">
+                    <img alt="Broadcast without wait" title="Broadcast without wait" src="/bjc-r/img/prog/bc4.png"  />
+                    <img src="/bjc-r/img/prog/play3script.png" alt="When I receive playnotes, play note 60 3x times" /><p>
+                </div>
+
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    	0
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	1
+                </div>
+                <div class="feedback">
+                    Nope.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    	3
+                </div>
+                <div class="feedback">
+                    Correct; because each broadcast won't wait before it lets the next block run, you
+                    will hear each invocation of the <code>when I receive "playnotes"</code> block set at
+                    the same time.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	4
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c8">
+                <div class="text">
+                    	8
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c12">
+                <div class="text">
+                    	12
+                </div>
+                <div class="feedback">
+                    No; because each broadcast won't wait before it lets the next block run, you
+                    will hear each invocation of the <code>when I receive "playnotes"</code> block set at
+                    the same time.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri4">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>
+
+        <!-- three jump broadcast -->
+        <div class="assessment-data" type="multiplechoice" identifier="how-many-times5"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri10" shuffle="false">
+
+            <div class="prompt">
+                <p>How many times will the sound be played when
+                  you click the green flag?</p>
+
+                <div class="indent">
+                    <img src="/bjc-r/img/prog/flagalpha.png"
+                      alt="Chain of broadcasts" title="Chain of broadcasts" />
+                    <img src="/bjc-r/img/prog/alphabeta.png"  />
+                    <img src="/bjc-r/img/prog/betaplay.png"  />
+
+                </div>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    	0
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	1
+                </div>
+                <div class="feedback">
+                    Right!
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    	2
+                </div>
+                <div class="feedback">
+                    Nope.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	4
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri10">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <!-- three jump broadcast -->
+        <div class="assessment-data" type="multiplechoice" identifier="how-many-times6"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri5" shuffle="false">
+
+            <div class="prompt">
+                <p>
+                    How many times will the sound  be played when you click the green flag?
+                </p>
+
+                <div class="indent">
+                    <img src="/bjc-r/img/prog/flagalpha.png"
+                      alt="Chain of broadcasts" title="Chain of broadcasts" />
+                    <img src="/bjc-r/img/prog/betaplay.png"  />
+
+                </div>
+            </div>
+
+            <div class="choice" identifier="c0">
+                <div class="text">
+                    	0
+                </div>
+                <div class="feedback">
+                    Correct!
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	1
+                </div>
+                <div class="feedback">
+                    No; look carefully at the chain of broadcast blocks.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    	2
+                </div>
+                <div class="feedback">
+                    Nope.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	4
+                </div>
+                <div class="feedback">
+                    No.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri5">
+                <div class="correctResponse" identifier="c0"></div>
+            </div>
+        </div>
+
+
+    </body>
+</html>

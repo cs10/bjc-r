@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 7: Testing Your Code</title>
+    </head>
+    <body>
+		<h2>The Check Block</h2>
+        <p>What happens, however, if our code does not give us a visual representation of our output (such as a picture of a house) and we are receiving wrong results?  These cases can be a bit trickier to debug yet there are tools at our disposal. Enter the Check Block: </p>
+        <img class="indent" alt="check block" src="/bjc-r/img/debugging/check-block.png">
+        <p><strong>You must import tools to access the check block.</strong> This block works by first evaluating the predicate block passed into the diamond shaped slot, which will return either a true or false value.  If this predicate returns true then the check block executes the commands within the C-shaped area and then pauses all of the scripts currently running.  To unpause these scripts click on the yellow button at the top right of your screen (<img class="inline" alt="play button" src="/bjc-r/img/sys/play-button.png">).  Pictured below is an easy example of how you can use the check block to debug your code:</p>
+        <a class="run" href="/bjc-r/prog/debugging/sum-of-nums-check-block.xml"><img class="indent" alt="sum of nums with check block" src="/bjc-r/img/debugging/sum-range-check-block.png"></a>
+        <p>This script should look familiar to you as it is in fact identical to a buggy version of <img class="inline" alt="sum of nums in range" src="/bjc-r/img/blocks/sum-of-numbers-between-1-and-10.png">. Notice that the check block will pause the script if it detects that we have gone through more than one cycle of the loop (<img class="inline" alt="i greater than 1" src="/bjc-r/img/blocks/i-greater-than-1.png">) but the sum has not become greater than two (<img class="inline" alt="sum not greater than 1" src="/bjc-r/img/blocks/not-sum-greater-2.png">).  We would expect that after going through the loop twice the sum varaible should be at least three (1 + 2).</p>
+        <div class="forYouToDo" id="first">
+        	<ol><li>Try running the script above to see what happens (click on the picture to go to the code). You should notice that the sum variable shows on the stage and that its value is set to two, not three or more as expected. </li></ol>
+        </div>
+        <div class="takeNote">As such by using the check block, we can conclude that there is something wrong with how we are changing the value of our sum.  This might then lead us to realize that we have a set block within in the loop instead of a change block enabling us to correct the problem.</div>
+    </body>
+</html>
+            

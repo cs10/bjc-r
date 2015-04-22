@@ -2,16 +2,16 @@
 <html>
 	<head>
 		<!-- put the following in exactly -->
-		<script src="/bjc-r/llab/loader.js"></script><title>C-Curve</title>
+		<script src="/bjc-r/llab/loader.js"></script><title>More Fractals</title>
 		<!--ORIGINAL NAME: C-Curve-->
 	</head>
 	<body>
-		We can make very, very complex images by just repeating the same shape multiple times. You'll be writing the recursive function to draw the c-curve. Below the base case is that the sprite draws a single line. The sprite starts facing right and faces right at the end. This fractal also does not return to the same place between recursive calls. The base case has the sprite start on the left and go to the right. (Hint - the direction that the sprite points at the end is important! It should point in the same direction it did at the beginning of the recursive call.)<br>
-		<div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/5-recursion/c-curve-level0.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/C-Curve/ccurve0.gif">
-			<br>
-			<br>
+    <h2>The C-Curve Fractal</h2>
+	<p>Another beautiful recursive shape is the C-curve. As in the snowflake algorithm, the base case is that the sprite draws a single line segment. The sprite starts facing right and faces right at the end. In this algorithm, the sprite does not return to the starting place after each recursive call. The base case has the sprite start on the left and go to the right. (Hint: The direction that the sprite points at the end is important! It should point in the same direction it did at the beginning of the recursive call.)<br>
+	<div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/5-recursion/c-curve-level0.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/C-Curve/ccurve0.gif">
+			
 		</div>
-		In the next level,  start facing right and end facing right but repeat the previous level twice (red and blue below).<br>
+		In the next level,  start facing right and end facing right but repeat the previous level twice (red and blue below).  You'll have to think about how much smaller than the <code>size</code> input the size of the recursive calls should be.<br>
 		<div style="margin-left: 40px;"><img border="0" src="/bjc-r/img/5-recursion/c-curve-level1.gif" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/C-Curve/ccurve1.gif">
 			<br>
 		</div>
@@ -23,7 +23,7 @@
 			<br>
 		</div>
 		<p><br>
-		In the next level,  start facing right and end facing right but repeat the previous level twice (red and blue below). This continues for each of the following levels, but you should probably focus on the trying to think through the first few levels. </p>
+		In the next level,  start facing right and end facing right but repeat the previous level twice (red and blue below). And so on, for any number of levels. </p>
 		<p>If it's helpful to you, use the same technique we showed in writing the tree program: Start with a <code>flake1</code> block that handles the base case, then write a <code>flake2</code> block, then <code>flake3</code>, and so on until you understand the pattern.<br>
     </p>
 		<div style="margin-left: 40px;">
