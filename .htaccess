@@ -1,5 +1,7 @@
+# Basic CORS Header to allow serving images / files
 Header set Access-Control-Allow-Origin *
 
+# Compression of Files
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/xml
 AddOutputFilterByType DEFLATE text/html
@@ -16,6 +18,10 @@ AddOutputFilterByType DEFLATE application/x-httpd-eruby
 
 SetOutputFilter DEFLATE
 
+# Proxies should not alter user agent string
+Header set Vary User-Agent env=!dont-vary
+
+# Don't try to gzip or proxy these file types.
 SetEnvIfNoCase Request_URI \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
 SetEnvIfNoCase Request_URI \.(?:pdf|avi|mov|mp3|mp4|rm)$ no-gzip dont-vary
 
@@ -23,11 +29,13 @@ BrowserMatch ^Mozilla/4 gzip-only-text/html
 BrowserMatch ^Mozilla/4\.0[678] no-gzip
 BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
 
-# Proxies should not deliver wrong content
-Header append Vary User-Agent env=!dont-vary
-
-ExpiresActive On
-ExpiresDefault "access plus 10 weeks"
-ExpiresByType text/html "access plus 10 days"
-ExpiresByType text/css "access plus 10 days"
-ExpiresByType application/javascript "access plus 10 days"
+# TODO: Put this in <if> condition.
+# CacheDefaultExpire is a standard module.
+# Otherwise use in the meantime... <IfModule  mod_expires.c></IfModule>
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresDefault "access plus 10 weeks"
+    ExpiresByType text/html "access plus 10 days"
+    ExpiresByType text/css "access plus 10 days"
+    ExpiresByType application/javascript "access plus 10 days"
+</IfModule>
