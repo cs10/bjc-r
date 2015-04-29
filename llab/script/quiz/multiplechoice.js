@@ -75,8 +75,8 @@ MC.prototype.loadContent = function() {
 
 //gets and returns a choice object given the choice's identifier
 MC.prototype.getChoiceByIdentifier = function(identifier) {
-    var i;
-    for (i = 0; i < this.choices.length; i++) {
+    var i = 0;
+    for (; i < this.choices.length; i++) {
         if (this.removeSpace(this.choices[i].identifier) == identifier) {
             return this.choices[i];
         }
@@ -263,6 +263,8 @@ MC.prototype.selectedInSavedState = function(choiceId) {
  * TODO: Move this to a generic place for LLAB (library?)
  */
 if (!Array.shuffle) {
+    // FIXME -- wtf if with this for loop?
+    // Document sources
     Array.prototype.shuffle = function() {
         var rnd, tmp, i;
         for (i = this.length; i; rnd = parseInt(Math.random() * i), tmp = this[--i], this[i] = this[rnd], this[rnd] = tmp) {}
@@ -479,7 +481,7 @@ MC.prototype.postRender = function() {
 
 
 // BEAUTIOUS
-MC.prototype.getTemplate = function(num) {
+MC.prototype.getTemplate = function() {
     return "<div class='panel panel-primary MultipleChoice Question'>" +
         "		<div class='panel-heading questionType'>" +
         "			Multiple Choice" +

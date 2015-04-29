@@ -30,10 +30,9 @@ function buildQuestions() {
     var qdatas = $("div.assessment-data");
     var num = qdatas.length;
 
-
     for (var i = 0; i < num; i++) {
         var qdata = $(qdatas.get(i));
-        var location = $("<div></div>").insertAfter($(qdata));
+        var location = $("<div>").insertAfter($(qdata));
         if (qdata.attr("src")) {
             var target = qdata.attr("src");
             getRemoteQdata(target, location, i);
@@ -43,7 +42,6 @@ function buildQuestions() {
         }
     }
 
-
     // now, remove the purely data tags, how about?
     $("div.assessment-data").remove();
 
@@ -51,13 +49,12 @@ function buildQuestions() {
 
 // use a closure to keep around location and questionNum
 function getRemoteQdata(target, location, questionNum) {
-        $.ajax({
-            url : target,
-            type : "GET",
-            dataType : "html",
-            success : makeGetRemoteQdataCallback(location, questionNum)
-
-        });
+    $.ajax({
+        url : target,
+        type : "GET",
+        dataType : "html",
+        success : makeGetRemoteQdataCallback(location, questionNum)
+    });
 }
 
 function makeGetRemoteQdataCallback(location, questionNum) {
@@ -78,5 +75,4 @@ function buildQuestion(qdata, location, questionNum, fetched)  {
     question.loadContent();
     question.render();
 }
-
 

@@ -9,8 +9,8 @@ heading: Lab 1: Introduction
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
 	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]
 	resource: Getting Started: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks.html]
-	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface.html]
 	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts.html]
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-intro.html]
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
 	resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
