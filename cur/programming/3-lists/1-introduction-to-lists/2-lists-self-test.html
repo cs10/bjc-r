@@ -18,7 +18,8 @@
         responseIdentifier="resp1" shuffle="true">
             <div class="prompt">
                 <p>
-                    Which of the following blocks will report a list of length 3?
+                    Which of the following blocks will report a list of length 3?<br>
+                    Choose <strong>all</strong> that apply.
                 </p>
             </div>
 
@@ -84,7 +85,55 @@
             </div>
         </div>
 
+        <!-- question 2-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="abe"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Which of the following scripts will produce this: <img border="0" src="/bjc-r/img/3-lists/abelincoln.gif" alt="sprite saying Abraham then Lincoln" title="sprite saying Abraham then Lincoln">? (In the script, the sprite says Abraham Lincoln only once.)<br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
 
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check1abec1.png" alt="for each item, say 1 sec" title="for each item, say 1 sec">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check1abec2.png" alt="say list" title="say list">
+                </div>
+                <div class="feedback">
+                    No, when a sprite says a list, we see a visual representation of the list.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check1abec3.png" alt="Abraham Lincoln as item 1" title="Abraham Lincoln as item 1">
+                </div>
+                <div class="feedback">
+                    No, here, the sprite only says one item. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check1abec4.png" alt="say item 1 of first names then say item 1 of last names" title="say item 1 of first names then say item 1 of last names">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
 
    </body>
 </html>
