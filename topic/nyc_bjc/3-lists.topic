@@ -20,7 +20,7 @@ title: Unit 3: Lists
 
 heading: Lab 1: Introduction to Lists
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
-	 resource: Using the LIST block to make a list [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-using-the-LIST-block-to-make-a-list.html]
+     quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-lists-self-test.html]
 	 resource: Why use lists?  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-why-use-lists.html]
 
 heading: Lab 2: List Operations
