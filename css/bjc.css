@@ -90,6 +90,20 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin-right: auto;
  }
 
+/** BJC4NYC elements added by Mary Fries, May 2015 **/
+div.saveAs img {
+  position: relative;
+  z-index:1;
+}
+
+div.saveAs span.text {
+  position: absolute; 
+  margin-left: 182px;/*19.7em;*/
+  padding-top: 1.6em;
+  z-index:2;
+  color: #333;
+}
+
 /* Other Random Things added by Mary */
 
 .block {height: 2em;}
