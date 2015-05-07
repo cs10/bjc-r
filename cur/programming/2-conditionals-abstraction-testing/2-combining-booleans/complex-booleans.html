@@ -6,18 +6,27 @@
     </head>
     <body>
 		<h2>More Complex Boolean Expressions</h2>
-    	<div>
-            <p>We now know how to write simple "if-then" statements in <span class="snap">snap</span>  So far, the conditional in our uses of the <code>if</code> block have been single built-in blocks (like <img class="inline" src="/bjc-r/img/blocks/equals.png" alt="="/>). Let's take a look at a few more complex examples:</p>
-            <ul>
-                <li>"If I am hungry and with my friends, I will order pizza."</li>
-                <li>"If I see George and Lisa at the mall, I will say "hello" to them."</li>
-                <li>"If we are out of milk or eggs, to the store."</li>
-                <li>"If you are not enjoying the party, go home."</li>
+    	<div class="forYouToDo">
+    	  <div> <ol> 
+          <li> Load <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=Whats%20My%20Rule%3F">this project</a> and experiment with  <img src="/bjc-r/img/2-conditionals-abstraction-testing/What'sMyRule? Script 270 × 68 pixels.png" alt="what's my rule script"> to discover the rule. </li>
+          <li> Then edit the <code>What's my rule?</code> block and change it to say "yup" only to numbers between 10 and 20.</li>
+          <li> Use <img class="block" src="/bjc-r/img/blocks/or.png" alt="or"/> instead of <img class="block" src="/bjc-r/img/blocks/and.png" alt="and"/> to make a block that says "yup" only to numbers that are less than 10 or greater than 20.</li>
+            
+        </ol>  </div></div>
+         
+        <div>
+            We combine predicates (blocks that output <code>true</code> or <code>false</code>) not just for number games. 
+            
+                <li>"If I am hungry <em>and</em>  I am with my friends, I will order pizza." <img class="block" src="/bjc-r/img/blocks/and.png" alt="and"/> If I'm hungry but not with friends, or if I'm with friends but not hungry, I <em>won't</em> order pizza.</li>
+          <li>"If we are out of milk or eggs, I will go to the store." <img class="block" src="/bjc-r/img/blocks/or.png" alt="or"/> We don't need to be out of milk <em>and</em> eggs. Being out of either milk <em>or</em> eggs is enough. </li>
+                <li> <img src="/bjc-r/img/2-conditionals-abstraction-testing/If either sprite touching edge or space key pressed 499 × 97 pixels.png" width="499" height="97" alt="If either the spirte is touching the edge or the space key is pressed, make the sprite turn 180 degrees">
+                <li>"If you are not enjoying the party, go home." <img class="block" src="/bjc-r/img/blocks/not.png" alt="not"/></li>
             </ul>
         </div>
-        <p>In past examples, we've seen conditionals that contain a single predicate (<img class="block" src="/bjc-r/img/blocks/equals.png" alt="="/>, <img class="inline" src="/bjc-r/img/blocks/less-than.png" alt="<"/>, etc.). We could write a single block for each of the above conditionals, but that might be a bit weird. In the first sentence, for example, this would entail writing an "am hungry and with friends?" predicate. This seems a little strange because the "am hungry" and the "with my friends" parts aren't necessarily related; it doesn't make sense to put them as a single predicate. So, instead, we might write separate "am hungry?" and "with friends?"  predicates and combine them in some way. This brings us to three special predicates: <img class="block" src="/bjc-r/img/blocks/and.png" alt="and"/>, <img class="block" src="/bjc-r/img/blocks/or.png" alt="or"/>, and <img class="block" src="/bjc-r/img/blocks/not.png" alt="not"/>.</p>
+        
+MID STREAM IN EDITS
 
-		<p><Code>And</Code>, <code>or</code>, and <code>not</code> are all predicates that take in other predicates. These three predicates behave in ways you might expect from their meanings in English. When will the phrase "I am hungry and with my friends" evaluate to true? Only when both "I am hungry" and "I am with my friends" are true. If I wasn't with my friends, the entire phrase would certainly be false. We often summarize the behavior of predicates like <code>and</code>, <code>or</code>, and <code>not</code> using what are called "truth tables." Here is the truth table for <code>and</code>:</p>
+<p><Code>And</Code>, <code>or</code>, and <code>not</code> are all predicates that take in other predicates. These three predicates behave in ways you might expect from their meanings in English. When will the phrase "I am hungry and with my friends" evaluate to true? Only when both "I am hungry" and "I am with my friends" are true. If I wasn't with my friends, the entire phrase would certainly be false. We often summarize the behavior of predicates like <code>and</code>, <code>or</code>, and <code>not</code> using what are called "truth tables." Here is the truth table for <code>and</code>:</p>
 
         <table class="truthtable">
             <tr>

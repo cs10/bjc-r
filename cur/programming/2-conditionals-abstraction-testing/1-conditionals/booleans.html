@@ -13,19 +13,17 @@
             <li>First  analyze this new script and predict what it <em>should</em> do.</li>
             <li> In actuality, it doesn't behave exactly as it &quot;should.&quot; Nothing in the script should make its behavior depend on  mouse speed, but speed does matter. Build it and experiment with it. Then come up with a theory to explain the behavior you see.</li>
           </ol></div>
-    	<p>The <code>if</code> block sets a <strong>condition</strong>. The script checks continuously to see if that condition <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is true.  The sprite follows the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" class="block" alt="go to mouse x and mouse y"> only if <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is <img src="/bjc-r/img/blocks/true.png" alt="true"/>. Otherwise, the sprite is not instructed to move. </p>
-       <p>Blocks, like <code>if</code>, that set conditions about when some code is to run (or stop) are called <strong>conditionals</strong>. Blocks, like <code>greater than</code>, that report <code>true</code> when a condition is met and <code>false</code> when it is not met are called "predicates." </p>
+    	<p>The script checks "forever" to see <code>if</code>  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is true.  If it is, the sprite follows the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" class="block" alt="go to mouse x and mouse y"> contained inside the <code>if</code>. If  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is not <img src="/bjc-r/img/blocks/true.png" alt="true"/>, the sprite is not instructed to move. Blocks, like <code>if</code>, that specify the conditions that control when some code is to run are called <strong>conditionals</strong>. </p>
 
-		<img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
-
-		<p>Predicate  functions are like yes/no questions.  In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. The two special values, <code>true</code>  and <code>false</code>,  are represented in <span class="snap">snap</span>  by the blocks <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png" alt="false"/>. They are called Boolean values, named after the great logician George Boole. </p>
         <div class="forYouToDo">
         	<div class="sidenote">
-       	    <div>Some  predicates, like <code>turbo mode?</code>, will not yet make sense, but you are likely to be able to make a good guess about many others.</div></div>
+       	    <div> Blocks, like <code>greater than</code>, that report <code>true</code> when a condition is met and <code>false</code> when it is not met are called "predicates." <p> <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/></p> In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </div></div>
             <ol start="3">
             	<li>Look in the "Sensing" and "Operations" tabs, find the <em>predicate</em> blocks, and talk with your pair programmer about what you think they might be useful for. </li>
             	<li>Look in the "Control" tab to find what other <em>conditionals</em> are there. Again discuss how you think you might use these.</li>
             </ol>
         </div>
+        <div class="takeNote">
+       	    <div> Predicate functions are like questions that can be answered with <code>true</code> or <code>false</code>. The two special values  are represented in <span class="snap">snap</span>  by the blocks <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png" alt="false"/>. They are called Boolean values, named after the great logician George Boole. Some  predicates, like <code>turbo mode?</code>, will not yet make sense, but you are likely to be able to make a good guess about many others.</div></div>
     </body>
 </html>
