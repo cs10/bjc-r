@@ -29,6 +29,8 @@ llab.llab_path = llab.rootURL + llab.install_directory;
 // llab.paths.css_files.push('css/3.3.0/bootstrap-theme.min.css');
 llab.paths.css_files.push('css/3.3.0/bootstrap-compiled.min.css');
 llab.paths.css_files.push('css/default.css');
+// In /bjc-r/css
+llab.paths.css_files.push('../css/bjc.css');
 
 
 // courses -- path to folder containing courses.
@@ -45,7 +47,8 @@ llab.empty_curriculum_page_path = llab.llab_path + "html/empty-curriculum-page.h
 
 
 // google analytics tokens
-llab.GACode = 'UA-47210910-3';
+// llab.GACode = 'UA-47210910-3' -- CS10 Code;
+llab.GACode = 'UA-57857730-3'
 llab.GAurl  = document.hostname;
 
 

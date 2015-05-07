@@ -1,0 +1,126 @@
+.full ul, .full ol {
+  display:block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
+  color: inherit; /* reset the color */
+  /*margin: 0px 15px 15px  0; /* Added */
+  border: none; /* EDC change. */
+}
+
+li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
+  margin: 5px auto;
+  list-style-type: lower-alpha;
+  line-height: none; /* hmm. */
+}
+
+/** Side Notes **/
+.sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #FFF8AD; /* #F3F0B3; */
+  clear:both;
+}
+
+
+/** BJC4NYC elements added by Mary Fries, March 2015 **/
+/*div {
+  padding-bottom: .5em;
+}*/
+
+.forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
+  padding: 1em;
+  margin-bottom: .5em;
+}
+
+.forYouToDo:before, .dialogue:before, .takeItFurther:before { /* Shared Heading Formatting */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.forYouToDo {
+  background-color: #d2e3be; /* #edf4e6; */
+  margin-bottom: .5em;
+}
+
+.forYouToDo:nth-of-type(1):before {
+  content: "For You To Do";
+}
+
+.dialogue {
+  background-color: #cce4f6; /* #ecf4fb; */
+}
+
+.dialogue:before {
+  content: "Thinking Out Loud";
+}
+
+.dialogue > div {
+  padding-left: 5em;
+  text-indent: -3em;
+}
+
+.dialogue > div.stagedir {
+  font-style: italic;
+  text-align: center;
+}
+
+.dialogue > div > span {
+  font-weight: bold;
+}
+
+.takeItFurther {
+  background-color: #e4cde3;
+}
+
+.takeItFurther:before {
+  content: "Take It Further";
+}
+
+.takeNote {
+  background-color: #fcc589;
+  width:90%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+/** BJC4NYC elements added by Mary Fries, May 2015 **/
+div.saveAs img {
+  position: relative;
+  z-index:1;
+}
+
+div.saveAs span.text {
+  position: absolute; 
+  margin-left: 182px;/*19.7em;*/
+  padding-top: 1.6em;
+  z-index:2;
+  color: #333;
+}
+
+/* Other Random Things added by Mary */
+
+.block {height: 2em;}
+
+.bigBlock {height: 6%;}
+
+.script {height: 18%;}
+
+code {
+  /* color: #00FFFF; */
+/*  font-family: courier;
+*/  font-size: 1.1em;
+}
+
+.anchor {
+   padding-top: 65px;
+   margin-top: -65px;
+}
+
+
