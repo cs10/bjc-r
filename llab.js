@@ -25,9 +25,8 @@ llab.llab_path = llab.rootURL + llab.install_directory;
 
 // reference your custom CSS files, from within llab install directory.
 // Multiple CSS files is fine, include a separate push for each
-// llab.paths.css_files.push('css/3.3.0/bootstrap.min.css');
-// llab.paths.css_files.push('css/3.3.0/bootstrap-theme.min.css');
-llab.paths.css_files.push('css/3.3.0/bootstrap-compiled.min.css');
+llab.paths.css_files.push('css/3.3.4/bootstrap.min.css');
+llab.paths.css_files.push('css/3.3.4/bootstrap-theme.min.css');
 llab.paths.css_files.push('css/default.css');
 
 
