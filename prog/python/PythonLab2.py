@@ -1,12 +1,12 @@
 """
 Welcome to Besides Blocks 2: Data Structures in Python.
 
-In this lab you will explore how to manipulate Python data structures 
-in a way that allows you to efficiently process data.  Many of the excercises
-are challenging and you will most likely need to spend some time thinking about 
-how to appoach each problem (particularly the challenge problems).  This is 
-not because we are mean, we just want you to learn a lot! So definitely try to 
-have fun with this.  Weclome to data structures.
+In this lab you will explore how to manipulate Python data structures
+in a way that allows you to efficiently process data.  Many of the exercises
+are challenging and you will most likely need to spend some time thinking about
+how to approach each problem (particularly the challenge problems).  This is
+not because we are mean, we just want you to learn a lot! So definitely try to
+have fun with this.  Welcome to data structures.
 
 Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
 
@@ -16,7 +16,7 @@ Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
 # Exercise 1 #
 ##############
 """
-Place the first odd number at the back of the input list. 
+Place the first odd number at the back of the input list.
 Do not return a new list.
 
 >>> input = [10, 2, 4, 7, 6, 7, 8, 9]
@@ -27,14 +27,14 @@ Do not return a new list.
 """
 
 def push_odd_back(lst):
-	return lst
+    return lst
 
 
 ##############
 # Exercise 2 #
 ##############
 """
-Takes a list of lists and returns all the items of each list 
+Takes a list of lists and returns all the items of each list
 concatenated together into one new list (turns a 2D list into a 1D list).
 
 >>> flatten([["a", "b"], ["c", "d", "e"], ["f"]])
@@ -43,13 +43,13 @@ concatenated together into one new list (turns a 2D list into a 1D list).
 """
 
 def flatten(lst):
-	return lst
+    return lst
 
 ###########################
 # Exercise 3 Part 1 (3.1) #
 ###########################
 """
-Takes as input a string representing a DNA sequence, a base to be substituted, 
+Takes as input a string representing a DNA sequence, a base to be substituted,
 and a base that is to take the place of the base being substituted.  Returns
 a string with the proper base substituted.
 
@@ -59,16 +59,16 @@ a string with the proper base substituted.
 """
 
 def substitute_base(sequence, old, new):
-	return sequence
+    return sequence
 
 
 ###########################
 # Exercise 3 Part 2 (3.2) #
 ###########################
 """
-Takes as input a list of strings representing DNA sequences, a base 
-to be substituted (old), and a base that is to take the place of the base 
-being substituted (new).  This function should return a list of DNA sequences 
+Takes as input a list of strings representing DNA sequences, a base
+to be substituted (old), and a base that is to take the place of the base
+being substituted (new).  This function should return a list of DNA sequences
 with the proper base substituted in each sequence (make sure to use HOFs here).
 
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
@@ -78,14 +78,14 @@ with the proper base substituted in each sequence (make sure to use HOFs here).
 """
 
 def substitue_sequences(sequences, old, new):
-	return sequences
+    return sequences
 
 
 ##############
 # Exercise 4 #
 ##############
 """
-Takes in a list of numbers OR strings and returns the combined result 
+Takes in a list of numbers OR strings and returns the combined result
 (hint: think about what the + operator does for strings and for numbers).
 
 >>> nums = [1, 2, 3, 4, 5]
@@ -98,14 +98,14 @@ Takes in a list of numbers OR strings and returns the combined result
 """
 
 def combine(lst):
-	return lst
+    return lst
 
 
 ##############
 # Exercise 5 #
 ##############
 """
-Given a DNA sequence string, calculate the frequency of each 
+Given a DNA sequence string, calculate the frequency of each
 base pair (i.e. the number of times that each letter appears in the sequence).
 
 >>> base_freq("AAGTTAGTCA")
@@ -114,14 +114,14 @@ base pair (i.e. the number of times that each letter appears in the sequence).
 """
 
 def base_freq(sequence):
-	return sequence
+    return sequence
 
 
 ##############
 # Exercise 6 #
 ##############
 """
-Given a dictionary of people (band), like the one below, returns a 
+Given a dictionary of people (band), like the one below, returns a
 new dictionary that contains only the people who play a certain instrument.
 
 >>> alonzo = {"age": 10, "height": 42, "weight": 175, "instrument ": "fiddle" }
@@ -134,8 +134,8 @@ new dictionary that contains only the people who play a certain instrument.
 
 """
 
-def find_players(band, insturment):
-	return band
+def find_players(band, instrument):
+    return band
 
 
 ######################################
@@ -153,8 +153,8 @@ Recursively merge two sorted lists into one sorted list
 
 """
 
-def merge(A, B):
-	return A + B
+def merge(a, b):
+    return a + b
 
 
 ###############
@@ -168,14 +168,14 @@ Find the most frequent sub-sequence of base pairs of a given length.
 """
 
 def most_freq_seq(sequence, length):
-	return sequence
+    return sequence
 
 
 ###############
 # Challenge 3 #
 ###############
 """
-Given a dictionary of each student and a corresponding dictionary 
+Given a dictionary of each student and a corresponding dictionary
 of their preferences, returns a student with the lowest average score.
 
 >>> alice_ratings = {"alonzo": 1, "bob": 3, "turing" : 2}
@@ -189,9 +189,7 @@ of their preferences, returns a student with the lowest average score.
 """
 
 def most_popular(friends):
-	return friends
-
-
+    return friends
 
 
 
@@ -207,7 +205,18 @@ import sys
 
 def main(argv):
 
-    functionDict =  {"1": test_EX1, "2": test_EX2, "3.1": test_EX31, "3.2": test_EX32, "4": test_EX4, "5": test_EX5, "6": test_EX6, "C1": test_C1, "C2": test_C2, "C3": test_C3, "All": "All"}
+    functionDict =  {"1": test_EX1,
+                     "2": test_EX2,
+                     "3": test_EX3,
+                     "3.1": test_EX31,
+                     "3.2": test_EX32,
+                     "4": test_EX4,
+                     "5": test_EX5,
+                     "6": test_EX6,
+                     "C1": test_C1,
+                     "C2": test_C2,
+                     "C3": test_C3,
+                     "All": "All" }
 
     arguments = argv[1:]
     numArgs = len(arguments)
@@ -238,7 +247,7 @@ def main(argv):
             if (0 in test_set):
                 print("**** One or more of your exercises did not pass our tests :( ****\n")
             else:
-            	print("**** All of your exercises passed our tests!!! ****\n")
+                print("**** All of your exercises passed our tests!!! ****\n")
             test_set = set()
             test_set.add(test_C1())
             test_set.add(test_C2())
@@ -285,6 +294,11 @@ def test_EX32():
         return function_fail_output("substitute_sequences", "substitute_sequences(['AAGTTAGTCA', 'CTCGAGTCCGAAAGC', 'AAGTTCCGACTG'], 'A', 'C')", test)
     else:
         return function_pass_output("substitute_sequences")
+
+# Text exercises 3.1 and 3.2 #
+def test_EX3():
+    test_EX31()
+    test_EX32()
 
 # Test exercise 4 #
 def test_EX4():
@@ -360,7 +374,7 @@ def function_fail_output(func_name, test_case, return_val):
 
 def function_pass_output(func_name):
     print("Your " + str(func_name) + " function passed all our tests!!!\n")
-    return 1      
-            
+    return 1
+
 if __name__ == "__main__":
     main(sys.argv)

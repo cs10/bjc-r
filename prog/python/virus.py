@@ -11,10 +11,10 @@ We will also make comments in the code by doing the following:
 IMPORTANT STUFF:
 
 In this file is basic 'skeleton code' for many of the exercises that you will be
-asked to complete in this lab.  Try to put you answers in the correct section 
+asked to complete in this lab.  Try to put you answers in the correct section
 that we have designated by reading the comments.  Things should be in order so just
-scroll down the page as you go through the lab exercises.  At the bottom of the 
-page you'll find code that you should not edit.  Feel free to take a look at it 
+scroll down the page as you go through the lab exercises.  At the bottom of the
+page you'll find code that you should not edit.  Feel free to take a look at it
 and see if you can figure out what it's doing.  Good Luck and don't worry this
 file isn't actually a computer virus...but then again how much do yo trust us?
 
@@ -30,13 +30,13 @@ your_name = ""
 def first_even_nums(x):
     for num in range(1, x):
         print (2 * num)
-        
+
 ########################
 # Exercise 2: exponent #
 ########################
 
 """
-should return the value of num raised to power. Examples 
+should return the value of num raised to power. Examples
 shown below:
 >>>exponent(10, 0)
 1
@@ -52,7 +52,7 @@ def exponent(num, power):
     # make sure to change the return statement.
     return 0
 
-##############    
+##############
 # Exercise 3 #
 ##############
 
@@ -60,7 +60,7 @@ def exponent(num, power):
 Modify the function reverse_string that takes in a string and returns
 the string in reversed order.
 
->>>> reverse_string('Alonzo') 
+>>>> reverse_string('Alonzo')
 'oznolA'
 
 >>> reverse_string('abcdefghijklmnopqrstuvwxyz')
@@ -74,7 +74,7 @@ def reverse_string(string):
     # write your code below this comment.
     # make sure to change the return statement.
     return string
-    
+
 ##########################
 # Exercise 4: palindrome #
 ##########################
@@ -83,10 +83,10 @@ def reverse_string(string):
 Modify the function palindrome that takes in a string and returns
 True if the string is a palindrome and False otherwise.
 
->>> palindrome("racecar") 
-True 
+>>> palindrome("racecar")
+True
 >>> palindrome("google")
-False 
+False
 >>> palindrome("poop")
 True
 >>> palindrome("alonzo")
@@ -166,7 +166,7 @@ def main(argv):
                     sys.exit(1)
             print ("Your exponent function passed all of our test cases!!!")
             sys.exit(0)
-            
+
         # Exercise 3 #
         elif (case == 2):
             for tple in [("Alonzo", "oznolA"), ("abcdefghijklmnopqrstuvwxyz", "zyxwvutsrqponmlkjihgfedcba"), ("hello world", "dlrow olleh")]:
@@ -176,7 +176,7 @@ def main(argv):
                     sys.exit(1)
             print ("Your reverse_string function passed all  of our test!!!")
             sys.exit(0)
-            
+
         # Exercise 4 #
         elif (case == 3):
             for tple in [("racecar", True), ("google", False), ("poop", True), ("alonzo", False)]:
@@ -196,16 +196,16 @@ def main(argv):
                         print ("Your exponent function failed on the test case: \n" + "exponent(" + str(triple[0]) + ", " + str(triple[1]) + ")\n")
                         sys.exit(1)
             print ("Your exponent function passed all of our test cases!!!")
-            
-            # Exercsie 3 #
+
+            # Exercise 3 #
             for tple in [("Alonzo", "oznolA"), ("abcdefghijklmnopqrstuvwxyz", "zyxwvutsrqponmlkjihgfedcba"), ("hello world", "dlrow olleh")]:
                     value = reverse_string(tple[0])
                     if (value != tple[1]):
                         print ("Your reverse_string function failed on the test case: " + tple[0] + "\nIt returned the string: " + str(value))
                         sys.exit(1)
             print ("Your reverse_string function passed all  of our test!!!")
-            
-            # Exercise 4 #    
+
+            # Exercise 4 #
             for tple in [("racecar", True), ("google", False), ("poop", True), ("alonzo", False)]:
                     value = palindrome(tple[0])
                     if (value != tple[1]):
@@ -213,9 +213,9 @@ def main(argv):
                         sys.exit(1)
             print ("Your palindrome function passed all  of our test!!! \nCongrats you've finished your first lab in Python!!!")
             print ("\nCongrats You've passed all our Tests!!!\nPlease show this to your TA to get checked off for this lab.")
-             
 
-        
-            
+
+
+
 if __name__ == "__main__":
     main(sys.argv)

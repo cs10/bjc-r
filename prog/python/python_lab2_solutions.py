@@ -1,12 +1,12 @@
 """
 Welcome to Besides Blocks 2: Data Structures in Python.
 
-In this lab you will explore how to manipulate Python data structures 
-in a way that allows you to efficiently process data.  Many of the excercises
-are challenging and you will most likely need to spend some time thinking about 
-how to appoach each problem (particularly the challenge problems).  This is 
-not because we are mean, we just want you to learn a lot! So definitely try to 
-have fun with this.  Weclome to data structures.
+In this lab you will explore how to manipulate Python data structures
+in a way that allows you to efficiently process data.  Many of the exercises
+are challenging and you will most likely need to spend some time thinking about
+how to approach each problem (particularly the challenge problems).  This is
+not because we are mean, we just want you to learn a lot! So definitely try to
+have fun with this.  Welcome to data structures.
 
 Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
 
@@ -16,23 +16,23 @@ Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
 # Exercise 1 #
 ##############
 """
-Place the first odd number at the back of the input list. 
+Place the first odd number at the back of the input list.
 Do not return a new list.
 """
 
 def push_odd_back(lst):
-	i = 0
-	while (lst[i] % 2 != 1):
-		i += 1
-	odd_item = lst.pop(i)
-	lst.append(odd_item)
+    i = 0
+    while (lst[i] % 2 != 1):
+        i += 1
+    odd_item = lst.pop(i)
+    lst.append(odd_item)
 
 
 ##############
 # Exercise 2 #
 ##############
 """
-Takes a list of lists and returns all the items of each list 
+Takes a list of lists and returns all the items of each list
 concatenated together into one new list (turns a 2D list into a 1D list).
 
 >>> flatten([["a", "b"], ["c", "d", "e"], ["f"]])
@@ -41,16 +41,16 @@ concatenated together into one new list (turns a 2D list into a 1D list).
 """
 
 def flatten(lst):
-	result = []
-	for sub_list in lst:
-		result += sub_list
-	return result
+    result = []
+    for sub_list in lst:
+        result += sub_list
+    return result
 
 ###########################
 # Exercise 3 Part 1 (3.1) #
 ###########################
 """
-Takes as input a string representing a DNA sequence, a base to be substituted, 
+Takes as input a string representing a DNA sequence, a base to be substituted,
 and a base that is to take the place of the base being substituted.  Returns
 a string with the proper base substituted.
 
@@ -60,22 +60,22 @@ a string with the proper base substituted.
 """
 
 def substitute_base(sequence, old, new):
-	result = ""
-	for base in sequence:
-		if base == old:
-			result += new
-		else:
-			result += base
-	return result
+    result = ""
+    for base in sequence:
+        if base == old:
+            result += new
+        else:
+            result += base
+    return result
 
 
 ###########################
 # Exercise 3 Part 2 (3.2) #
 ###########################
 """
-Takes as input a list of strings representing DNA sequences, a base 
-to be substituted (old), and a base that is to take the place of the base 
-being substituted (new).  This function should return a list of DNA sequences 
+Takes as input a list of strings representing DNA sequences, a base
+to be substituted (old), and a base that is to take the place of the base
+being substituted (new).  This function should return a list of DNA sequences
 with the proper base substituted in each sequence (make sure to use HOFs here).
 
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
@@ -85,14 +85,14 @@ with the proper base substituted in each sequence (make sure to use HOFs here).
 """
 
 def substitue_sequences(sequences, old, new):
-	return [substitute_base(seq, old, new) for seq in sequences]
+    return [substitute_base(seq, old, new) for seq in sequences]
 
 
 ##############
 # Exercise 4 #
 ##############
 """
-Takes in a list of numbers OR strings and returns the combined result 
+Takes in a list of numbers OR strings and returns the combined result
 (hint: think about what the + operator does for strings and for numbers).
 
 >>> nums = [1, 2, 3, 4, 5]
@@ -119,7 +119,7 @@ def combine(lst):
 # Exercise 5 #
 ##############
 """
-Given a DNA sequence string, calculate the frequency of each 
+Given a DNA sequence string, calculate the frequency of each
 base pair (i.e. the number of times that each letter appears in the sequence).
 
 >>> base_freq("AAGTTAGTCA")
@@ -128,20 +128,20 @@ base pair (i.e. the number of times that each letter appears in the sequence).
 """
 
 def base_freq(sequence):
-	freq = {}
-	for base in sequence:
-		if (base in freq):
-			freq[base] += 1
-		else:
-			freq[base] = 1
-	return freq
+    freq = {}
+    for base in sequence:
+        if (base in freq):
+            freq[base] += 1
+        else:
+            freq[base] = 1
+    return freq
 
 
 ##############
 # Exercise 6 #
 ##############
 """
-Given a dictionary of people (band), like the one below, returns a 
+Given a dictionary of people (band), like the one below, returns a
 new dictionary that contains only the people who play a certain instrument.
 
 >>> alonzo = {"age": 10, "height": 42, "weight": 175, "instrument ": "fiddle" }
@@ -155,11 +155,11 @@ new dictionary that contains only the people who play a certain instrument.
 """
 
 def find_players(band, instrument):
-	new_band = {}
-	for player in band.keys():
-		if (band[player]["instrument"] == instrument):
-			new_band[player] = band[player]
-	return new_band
+    new_band = {}
+    for player in band.keys():
+        if (band[player]["instrument"] == instrument):
+            new_band[player] = band[player]
+    return new_band
 
 
 ######################################
@@ -178,14 +178,14 @@ Recursively merge two sorted lists into one sorted list
 """
 
 def merge(A, B):
-	if (len(A) == 0):
-		return B
-	if (len(B) == 0):
-		return A
-	if (A[0] < B[0]):
-		return [A[0]] + merge(A[1:], B)
-	else:
-		return [B[0]] + merge(A, B[1:])
+    if (len(A) == 0):
+        return B
+    if (len(B) == 0):
+        return A
+    if (A[0] < B[0]):
+        return [A[0]] + merge(A[1:], B)
+    else:
+        return [B[0]] + merge(A, B[1:])
 
 
 
@@ -200,30 +200,30 @@ Find the most frequent sub-sequence of base pairs of a given length.
 """
 
 def most_freq_seq(sequence, length):
-	freq = {}
-	i = 0
-	while (i < len(sequence)-length):
-		sub_seq = sequence[i:i+length]
-		if (sub_seq in freq):
-			freq[sub_seq] += 1
-		else:
-			freq[sub_seq] = 1
-		i += 1
-	most_common_seq = None
-	highest_freq = None
-	for seq in freq.keys():
-		seq_freq = freq[seq]
-		if (most_common_seq == None or highest_freq < seq_freq):
-			most_common_seq = seq
-			highest_freq = seq_freq
-	return most_common_seq
+    freq = {}
+    i = 0
+    while (i < len(sequence)-length):
+        sub_seq = sequence[i:i+length]
+        if (sub_seq in freq):
+            freq[sub_seq] += 1
+        else:
+            freq[sub_seq] = 1
+        i += 1
+    most_common_seq = None
+    highest_freq = None
+    for seq in freq.keys():
+        seq_freq = freq[seq]
+        if (most_common_seq == None or highest_freq < seq_freq):
+            most_common_seq = seq
+            highest_freq = seq_freq
+    return most_common_seq
 
 
 ###############
 # Challenge 3 #
 ###############
 """
-Given a dictionary of each student and a corresponding dictionary 
+Given a dictionary of each student and a corresponding dictionary
 of their preferences, returns a student with the lowest average score.
 
 >>> alice_ratings = {"alonzo": 1, "bob": 3, "turing" : 2}
@@ -237,21 +237,21 @@ of their preferences, returns a student with the lowest average score.
 """
 
 def most_popular(friends):
-	popularity = {}
-	for f1 in friends.keys():
-		for f2 in friends[f1].keys():
-			if (f2 in popularity):
-				popularity[f2] += friends[f1][f2]
-			else:
-				popularity[f2] = friends[f1][f2]
-	lowest_score = None
-	best_friend = None
-	for friend in popularity.keys():
-		friend_score = popularity[friend]
-		if (lowest_score == None or lowest_score > friend_score):
-			lowest_score = friend_score
-			best_friend = friend
-	return best_friend
+    popularity = {}
+    for f1 in friends.keys():
+        for f2 in friends[f1].keys():
+            if (f2 in popularity):
+                popularity[f2] += friends[f1][f2]
+            else:
+                popularity[f2] = friends[f1][f2]
+    lowest_score = None
+    best_friend = None
+    for friend in popularity.keys():
+        friend_score = popularity[friend]
+        if (lowest_score == None or lowest_score > friend_score):
+            lowest_score = friend_score
+            best_friend = friend
+    return best_friend
 
 
 
@@ -269,7 +269,18 @@ import sys
 
 def main(argv):
 
-    functionDict =  {"1": test_EX1, "2": test_EX2, "3.1": test_EX31, "3.2": test_EX32, "4": test_EX4, "5": test_EX5, "6": test_EX6, "C1": test_C1, "C2": test_C2, "C3": test_C3, "All": "All"}
+    functionDict =  {"1": test_EX1,
+                     "2": test_EX2,
+                     "3": test_EX3,
+                     "3.1": test_EX31,
+                     "3.2": test_EX32,
+                     "4": test_EX4,
+                     "5": test_EX5,
+                     "6": test_EX6,
+                     "C1": test_C1,
+                     "C2": test_C2,
+                     "C3": test_C3,
+                     "All": "All" }
 
     arguments = argv[1:]
     numArgs = len(arguments)
@@ -348,6 +359,11 @@ def test_EX32():
     else:
         return function_pass_output("substitute_sequences")
 
+# Text exercises 3.1 and 3.2 #
+def test_EX3():
+    test_EX31()
+    test_EX32()
+
 # Test exercise 4 #
 def test_EX4():
     nums = [1, 2, 3, 4, 5]
@@ -422,8 +438,8 @@ def function_fail_output(func_name, test_case, return_val):
 
 def function_pass_output(func_name):
     print("Your " + str(func_name) + " function passed all our tests!!!\n")
-    return 1      
-            
+    return 1
+
 if __name__ == "__main__":
     main(sys.argv)
 
