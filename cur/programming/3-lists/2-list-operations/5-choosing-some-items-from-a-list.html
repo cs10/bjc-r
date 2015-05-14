@@ -12,20 +12,17 @@
 
    <body>
 
-<p><br>You've probably played Geography, the game in which one player says 
+<p><br>You may have played Geography, the game in which one player says 
 a place name and the next player has to name another place whose first 
 letter is the last letter of the previous place: Newark, Kentucky, 
 Yonkers, San Francisco, Oklahoma. Have you ever gotten stuck on the 
 letter "A"? Oklahoma, Alabama, Asia, Alaska, America, Alameda... and so 
 on, forever.</p>
-How many states start and end with the same letter? To find out, we first need a list of all the states:<br>
 
-Click on the script below to see it in <span class="snap">snap</span><br>
-        	<a class="run" href="/bjc-r/prog/3-lists/geography.xml"> <img border="0" src="/bjc-r/img/3-lists/states.png" alt="Alabama, Alaska, ... Wisconsin, Wyoming" title="Alabama, Alaska, ... Wisconsin, Wyoming" /> </a> <br>
-            Customize the lists by adding your own nouns, verbs, and so on.
+How many states start and end with the same letter? To find out, we first need a list of all the states. Click on the script.<br>
+<a class="run" href="/bjc-r/prog/3-lists/U3Lab2States.xml"> <img border="0" src="/bjc-r/img/3-lists/states.png" alt="Alabama, Alaska, ... Wisconsin, Wyoming" title="Alabama, Alaska, ... Wisconsin, Wyoming" /> </a> <br>
 
-<p>Now we want to select a subset of the states, namely the ones whose 
-first and last letters are the same. Here's the block we use for that:<br>
+<p>Now we want to select and keep just the states whose first and last letters are the same. Here's the block we use for that:<br>
 <img title="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" alt="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" src="/bjc-r/img/list/hof/keepblock.png" border="0"/>
 
 <p>Like <code>map</code>, the <code>keep</code> block has a function as its first input. 
