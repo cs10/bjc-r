@@ -5,7 +5,7 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 //	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
-heading: <span class="snap">snap</span> Lab 1: Introduction
+heading: Programming Lab 1: Introduction
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
 	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]
 	resource: Getting Started: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks.html]
@@ -15,34 +15,34 @@ heading: <span class="snap">snap</span> Lab 1: Introduction
 	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
 	resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
 
-heading: <span class="snap">snap</span> Lab 2: Kaleidoscope
+heading: Programming Lab 2: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Position on the Stage [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/position-on-the-stage.html]
 	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/the-forever-block.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 	resource: Make a Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-kaleidoscope/make-a-kaleidoscope.html]
 
-heading: <span class="snap">snap</span> Lab 3: Repeating Commands
+heading: Programming Lab 3: Repeating Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-repeat-block.html]
 	quiz: Check: Using the Repeat Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/repeat-self-test.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-repeating-commands/the-for-block.html]
 
-heading: <span class="snap">snap</span> Lab 4: Making Your Own Blocks
+heading: Programming Lab 4: Making Your Own Blocks
 	resource: Making a Custom Block [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-an-input.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Developing and Editing Blocks [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/developing-and-editing-blocks.html]
 	//resource: Bug Dance! [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
 	
-heading: <span class="snap">snap</span> Lab 5: Building Complicated Blocks with Simple Blocks
+heading: Programming Lab 5: Building Complicated Blocks with Simple Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	resource: Building a Custom Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/building-a-custom-block.html]
 	quiz: Check: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		
-heading: <span class="snap">snap</span> Lab 6: Using Randomness
+heading: Programming Lab 6: Using Randomness
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
 	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
 	quiz: Check: The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/random-self-test.html]
