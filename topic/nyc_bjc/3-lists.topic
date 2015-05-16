@@ -24,7 +24,8 @@ heading: Lab 1: Introduction to Lists
 	 resource: Sentence Builder  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-sentence-builder.html]
 
 heading: Lab 2: List Operations
-	 resource: Transforming each item of a list [/bjc-r/cur/programming/3-lists/2-list-operations/4-transforming-each-item-of-a-list.html]
+	 resource: Getting Started: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started-map.html]
+     //quiz: Check: Map [/bjc-r/cur/programming/3-lists/2-list-operations/5-map-self-test.html]
 	 resource: Choosing some items from a list [/bjc-r/cur/programming/3-lists/2-list-operations/5-choosing-some-items-from-a-list.html]
 	 resource: Combining all the items of a list [/bjc-r/cur/programming/3-lists/2-list-operations/6-combining-all-the-items-of-a-list.html]
 	 
