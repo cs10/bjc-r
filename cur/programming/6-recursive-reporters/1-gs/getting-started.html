@@ -3,16 +3,17 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<script src="/bjc-r/llab/loader.js"></script>
-	<title>Getting Started (Al)</title>
+	<title>Introduction</title>
     <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
     </head>
 
 <body>
-<p>Until now, you&rsquo;ve built and worked with recursive <em>command</em> blocks. But you can also use recursion in <em>reporters</em>. Thinking and programming with recursive reporters will give you a new tool that often lets you simplify complicated scripts. </p>
+<h2>Getting Started</h2>
+<p>Until now, you&rsquo;ve built and worked with recursive <em>command</em> blocks. But you can also use recursion in <em>reporters</em>. Thinking and programming with recursive reporters will give you a new tool that often helps you solve otherwise complicated problems. </p>
 
 <div class="forYouToDo" id="first"><ol>
 <li>This block takes two whole numbers as input. Download it and figure out what it does.
-  <p><a class="run" href="/bjc-r/cur/programming/6-recursive-reporters/1-gs/rangefrom.xml"><img src="/bjc-r/img/6-recursive-reporters/rangefrom.png" alt="range from ( ) to ( )"></a></p></p></li>
+  <p><a class="run" href="/bjc-r/cur/programming/6-recursive-reporters/1-gs/rangefrom.xml"><img src="/bjc-r/img/6-recursive-reporters/rangefrom.png" alt="range from ( ) to ( )"></a></p></li>
 <li><div class="dialogue"><div><div class="stagedir">Episode 1</div>
 <div class="stagedir"><em>Derman is staring at this table:</em>
 <table width="200" border="1">
@@ -47,24 +48,25 @@
   </tr>
 </table>
 
-  </div></div>
-    <span>Mary:</span> I have a reporter that will match this table. Each output is 2 times the input plus 3, so</p>
-<p><img src="/bjc-r/img/6-recursive-reporters/T.jpg" width="178" height="74" alt="T(n)=2n+3"></p>
-<p>Just to be sure, I’ll try it:</p>
-<div><div class="sidenote">What exactly is Tony’s
-checker block doing?</div></div>
-<p><img src="/bjc-r/img/6-recursive-reporters/map-T.jpg" width="193" height="30" alt="map T over ML(5)"></p>
-<p>Is Tony right?</p></div></li>
-<li><div class="alert quoteGreen"><p><strong>Minds in Action</strong>  Episode 2</p>
-<p><em>Sasha is looking at Derman’s table from Exercise 2.</em></p>
-<div><div class="sidenote">Derman: Yours is more
-complicated.
-Sasha: But that pattern
+  </div><br />
+    <span>Tony:</span> I have a reporter that will match this table. Each output is 2 times the input plus 3, so<br />
+<img src="/bjc-r/img/6-recursive-reporters/2n+3.png" alt="2n+3"><br />
+<div class="sidenote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;What exactly is Tony’s
+checker block doing?</div>
+<span> </span>Just to be sure, I’ll try it:<br />
+<img src="/bjc-r/img/6-recursive-reporters/map-2n+3.png"  alt="map 2n+3 over [0,5]">
+<div class="stagedir">Is Tony right?</div></div></li>
+<p>&nbsp;</p>
+<li><div class="dialogue"><div><div class="stagedir">Episode 2</div>
+<div class="stagedir"><em>Sasha is looking at Derman’s table from Exercise 2.</em><p>&nbsp;</p>
+
+<div><div class="sidenote">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Derman:</strong> Yours is more
+complicated.<br />
+<strong>Sasha:</strong> But that pattern
 was easier to spot (for me).</div></div>
-<p>SASHA: I see another way to match the table. You can do it with a recursive reporter. The base case is 3, and each output is obtained
-from the previous output by adding 2. Like this:</p>
-<p><img src="/bjc-r/img/6-recursive-reporters/sasha.jpg" width="209" height="153" alt="Sasha's version"></p>
-<p>Check Sasha's work.</p></div></li>
+<div><span><strong>Sasha:</strong></span> I see another way to match the table. If you look down the Output column, each number is two more than the one above it.  The only special case is the first row, which doesn't <em>have</em> a row above it, so we have to build in explicitly the fact that if the input is 0 the output should be 3:<br />
+<img src="/bjc-r/img/6-recursive-reporters/sasha.png" alt="Sasha's version"></p>
+<div class="stagedir">Check Sasha's work.</div></div></li>
 <li><p>Build Sasha-like (recursive) reporters that agree with each
 of these blocks on whole numbers.</p>
   <p><img src="/bjc-r/img/6-recursive-reporters/q4a.png"  alt="2n+7"></p>
@@ -73,10 +75,22 @@ of these blocks on whole numbers.</p>
   <p><img src="/bjc-r/img/6-recursive-reporters/q4d.png" alt="n^2+2"></p></li>
 <li><p>In problem 4, you can check your blocks against the ones in the problem for a long time, but you can’t check them for <em>all</em> numbers. Are there any numbers for which there isn’t a match?</p></li>
 <li><p>Build Tony-like reporters that agree with each of these blocks on whole numbers.</p>
-  <p><img src="/bjc-r/img/6-recursive-reporters/q6a.jpg" width="210" height="153" alt="q6a"></p>
-  <p><img src="/bjc-r/img/6-recursive-reporters/q6b.jpg" width="210" height="153" alt="q6b"></p>
-  <p><img src="/bjc-r/img/6-recursive-reporters/q6c.jpg" width="207" height="153" alt="q6c"></p>
-  <p><img src="/bjc-r/img/6-recursive-reporters/q6d.jpg" width="259" height="153" alt="q6d"></p>
-</li></ol>
+  <p><img src="/bjc-r/img/6-recursive-reporters/q6a.jpg"  alt="q6a"></p>
+  <p><img src="/bjc-r/img/6-recursive-reporters/q6b.jpg"  alt="q6b"></p>
+  <p><img src="/bjc-r/img/6-recursive-reporters/q6c.jpg"  alt="q6c"></p>
+  <p><img src="/bjc-r/img/6-recursive-reporters/q6d.jpg"  alt="q6d"></p>
+</li></ol></div>
+<p>Experiment with these two blocks, using short input lists, to see what they do:</p>
+<a class="run" href="/bjc-r/cur/programming/6-recursive-reporters/1-gs/sayeach.xml"><p><img src="/bjc-r/img/6-recursive-reporters/sayeach.png" alt="say each item of list (command)"></p>
+<p><img src="/bjc-r/img/6-recursive-reporters/stringtogether.png" alt="string items together from (reporter)"></p></a>
+<div class="forYouToDo">
+<p><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" /></p>
+<ol start="7"><li>What's the biggest difference between the two blocks?</li>
+<li>What are some similarities between them?</li>
+<li>What does <code>all but first of</code> do?</li>
+<li>Fill in the empty parts of the following definition so that the block reports a sentence containing all the whole numbers from <code>a</code> to <code>b</code>.  Note that this question does <em>not</em> involve a list.
+<p><img src="/bjc-r/img/6-recursive-reporters/iota.png" width="248" height="143" alt="numbers from A to B"><img src="/bjc-r/img/6-recursive-reporters/numbers-result.png" alt="numbers from (4) to (12) --&gt;  4 5 6 7 8 9 10 11 12"></p>
+</li>
+</ol>
 </body>
 </html>
