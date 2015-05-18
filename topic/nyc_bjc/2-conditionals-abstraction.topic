@@ -13,7 +13,7 @@ heading: Lab 1: Conditional Blocks
 	resource: Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] //remove/replace some quiz questions
 	resource: <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-and-if-else.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		 //examples with dates would be great.
 	resource: Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples.html]
@@ -22,8 +22,8 @@ heading: Lab 1: Conditional Blocks
 heading: Lab 2: Combining Booleans
 	resource: More Complex Boolean Expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans.html]
 	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/script-variables.html]
-	quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans-self-test.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+	// quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans-self-test.html]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/checking-for-leap-years.html]
 
 heading: Lab 3: Practice with Predicates
@@ -31,7 +31,7 @@ heading: Lab 3: Practice with Predicates
 	resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
 	resource: Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates.html] // chop out relevant piees
 	resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/ge-soln.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
 	resource: Predicates: Make a <code>Between</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates-make-a-between-block.html]
 	resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/complex-booleans-practice.html]
 
@@ -51,12 +51,12 @@ heading: Lab 5: More Work with Reporters
 	resource: Sum-thing's Up [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-more-work-with-reporters/sum-things-up.html]
 
 heading: Lab 6: Custom Blocks Make Code Easier to Understand
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
 	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
 	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/valid-date.html]
 
 heading: Lab 7: Testing Your Code
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
   	resource: Simple Debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/simple-debugging-house.html]
   	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
@@ -69,7 +69,7 @@ heading: Lab 9: Programs with Multiple Sprites
 	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
 	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
 		//quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/quiz-different-ways-to-broadcast.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
+	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
 	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
 	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 

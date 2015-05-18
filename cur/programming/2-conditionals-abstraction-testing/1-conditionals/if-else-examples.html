@@ -3,18 +3,19 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 1: Conditional Blocks</title>
-    </head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
     <body>
 		<h2>Blocks Using <code>If</code> and <code>If-else</code></h2>
     
     
         <div class="forYouToDo" id="first">
-            <ol>
+           
+          <ol>
                 
-               <li>Make a <img class="inline" src="/bjc-r/img/cond/letter-grade.png" alt="letter grade ()"/> block that takes in a percentage and makes the sprite say the associated letter grade. For example, <img class="inline" src="/bjc-r/img/cond/letter-grade-74.png" alt="letter grade (74)"/> might say "C."</li> <li>Make a <img class="inline" src="/bjc-r/img/cond/traffic-signal.png" alt="traffic signal ()"/> block that when given a light color, makes the sprite say the appropriate action. For example <img class="inline" src="/bjc-r/img/cond/traffic-signal-green.png" alt="traffic signal ('green')"/> should say "go!"</li>
-                
-              <li>Make a <img class="inline" src="/bjc-r/img/cond/state-of-water.png" alt="state of water ()"/> block that takes in a temperature and says whether water will be liquid, solid, or gas.</li>
-            </ol>
+              <li>Make a <img class="inline" src="/bjc-r/img/cond/state-of-water.png" alt="state of water ()"/> block that takes in a temperature and says whether water will be liquid, solid, or gas at that temperature.</li>
+            <li>Make a <img class="inline" src="/bjc-r/img/cond/traffic-signal.png" alt="traffic signal ()"/> block that when given the words "red," "yellow," or "green," makes the sprite say the appropriate action. For example <img class="inline" src="/bjc-r/img/cond/traffic-signal-green.png" alt="traffic signal ('green')"/> should make the sprite say "go."</li>
+
+          </ol>
         </div>
         <div class="takeItFurther">
             <div> <ol start="4"> <li> Edit your traffic signal block to change the sprite's costume to show the correct color light. You can find a set of stoplight costumes <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=Stoplights">here</a>. <p>  
@@ -25,22 +26,32 @@
                                               
           </div></div>
           
-          <div class="forYouToDo">
+          <div class="forYouToDo"> <div class="sidenote">Special <span class="snap">snap</span> libraries can always be loaded from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/>.</div>
+          For this project, you will need to load <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">the words&amp;sentences library</a>.
             <ol start="5">
-                <li>Experiment with the blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter n of word 142&nbsp;&times;&nbsp;27 pixels.png" alt="letter n of word">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/join 117&nbsp;&times;&nbsp;27 pixels.png" alt="join">, and  <img src="/bjc-r/img/2-conditionals-abstraction-testing/length of 118&nbsp;&times;&nbsp;27 pixels.png" alt="length of"> to be sure you know how they behave. Here are some suggested experiments. You might try othe experimentrs, too.<br />
+                <li>Experiment with the blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter n of word 142&nbsp;&times;&nbsp;27 pixels.png" alt="letter n of word">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/join 117&nbsp;&times;&nbsp;27 pixels.png" alt="join">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of 169 × 27 pixels.png" alt="last letter of"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of 231 × 27 pixels.png" alt="all but last letter of"> to be sure you know how they behave. Here are some suggested experiments. You might try othe experiments, too.<br />
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 2 of butterflies 205&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 2 of butterflies"><img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 7 of fly 155&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 7 of fly"><img src="/bjc-r/img/2-conditionals-abstraction-testing/letter minus2 of fly 160&nbsp;&times;&nbsp;27 pixels.png" alt="letter minus2 of fly"> <br />
-                <img src="/bjc-r/img/2-conditionals-abstraction-testing/join boss es 147&nbsp;&times;&nbsp;27 pixels.png"  alt="join boss es"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/join how are you 185&nbsp;&times;&nbsp;27 pixels.png" alt="join how are you"> <br />
-                <img src="/bjc-r/img/2-conditionals-abstraction-testing/length of word butterfly 162&nbsp;&times;&nbsp;27 pixels.png"  alt="length of the word butterfly"><img src="/bjc-r/img/2-conditionals-abstraction-testing/length of join how are you 287�נ33 pixels.png"  alt="length of join how are you"><img src="/bjc-r/img/2-conditionals-abstraction-testing/length of how are you 191�נ27 pixels.png" alt="length of how are you"> <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter that is the length of butterfly into the word butterflies 335&nbsp;&times;&nbsp;33 pixels.png" " alt="letter that is the length of butterfly into butterlies"><img src="/bjc-r/img/2-conditionals-abstraction-testing/letter that is the length of a word into that word 347&nbsp;&times;&nbsp;33 pixels.png" alt="letter that is the length of a word into that same word"> </li>
-                <li>The goal is to build a block that takes a noun as input and outputs the correct plural of the noun.  <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boy (with result) 190�נ40 pixels.png"  alt="suffix S boy (with result)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boss (with result) 214�נ40 pixels.png"  alt="suffix S boss (with result)"><br /> 
-                  Here's a block that works for those cases, but doesn't work correctly for the word &quot;box.&quot; <img src="/bjc-r/img/2-conditionals-abstraction-testing/Suffix S box (with result) 190�נ40 pixels).png"  alt="suffix s box (with wrong result)"><br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Suffix S v1 438�נ207 pixels.png"  alt="Suffix S, not yet good enough"> <br /> 
-                  Edit this block to make it work for box and fox. </li>
-                <li>List several words that it still gets wrong. Organize those words into <em>categories</em> so that you can tackle one category (like &quot;ends with x&quot;) at a time. Then edit the block to make it work for at least one of those categories. </li>
+                
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of butterfly 255 × 27 pixels.png" alt="all but last letter of butterfly"><img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of all but last letter of brush 372 × 33 pixels.png" alt="last letter of all but last letter of brush"> <br />
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/join boss es 147&nbsp;&times;&nbsp;27 pixels.png"  alt="join boss es">
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/join t all but first letter of when 343 × 33 pixels.png" alt="join t all but first letter of when"> <div class="sidenote">You might also try that <code>join t all but first letter of</code> experiment  with the words &quot;where&quot; and &quot;what&quot; and &quot;wherefore.&quot; </div></li>
+                <li>The goal now is to build a block that takes a noun as input and outputs the correct plural of the noun.  <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boy (with result) 190 × 40 pixels.png"  alt="suffix S boy (with result)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boss (with result) 214 × 40 pixels.png"  alt="suffix S boss (with result)"><br /> 
+                  Here's one way to start building that block. <br />
+                  <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S 306 × 201 pixels.png"  alt="Suffix S, not yet good enough"><div class="sidenote">Choose the <em>reporter</em> button when you make the <code> suffix s </code> block. <br /> 
+                    <img src="/bjc-r/img/building-blocks/make-a-reporter.png" alt="select reporter as block type"/></div><br /> 
+                  It  works perfectly for those cases, but doesn't work correctly for the word &quot;box.&quot; <img src="/bjc-r/img/2-conditionals-abstraction-testing/Suffix S box (with result) 190 × 40 pixels).png"  alt="suffix s box (with wrong result)">. <br /> Edit the block to make it work for words that end with x. </li> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" />
+                <li> <div class="sidenote">The idea of building a separate block to handle one special case and then incorporating that block in the bigger procedure isn't necessary for very simple cases (like &quot;ends with x&quot;) that you test for only once. In more complex cases, like &quot;ends with h,&quot; building your code in modules is extremely helpful in keeping your code clear and helping you debug it.</div> 
+                List several words that it still gets wrong. Organize those words into <em>categories</em> according to their last letter. Then make a separate block that is a &quot;specialist&quot; designed to work for one category. <br /> 
+                For example, you might make the block   <img src="/bjc-r/img/2-conditionals-abstraction-testing/Suffix S for words ending in h (with result) 425 × 40 pixels.png" alt="suffix s (for words ending in h) with result"> for words that end with h. Your specialist can be completely wrong about words that don't fit its specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix s (for words ending with h) with wrong result for case (wrong input) 423 × 40 pixels).png" alt="suffix s (for words ending with h) with wrong result for case (wrong input) "> (&quot;case&quot; does not end in h), but it should work correctly for words that do fit its specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix s (for words ending with h) with correct result for crash 433 × 40 pixels).png" alt="suffix s (for words ending with h) with correct  result for the word crash">. Test it for a variety of words to make sure it works the way you want.</li>
+                <li>When you trust your new specialist block, edit the original <code> suffix s </code> block to use your new specialist.  Test the revised <code>suffix S</code> block to make sure it still works for all the words it used to work for, and also the new ones.  </li>
             </ol>
 </div>
         <div class="takeItFurther">
-            <div> <ol start="8"> <li> TO BE REPLACED BY extension to require multiple predicates.</li></ol>
+            <div> <ol start="9"> <li> Extend <code>suffix S</code> so that it works properly for at least these words: butterfly (and other words that end with y), crutch, match, wish (and other words that end with h).</li>
+            <li> If you know another language, build a block that takes a pronoun and verb as input and outputs the correct form of that verb.  For example: <img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for nosotros comer 587 × 40 pixels.png" Ωalt="conjugate verb (Spanish) for nosotros comer"><img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for yo tocar 501 × 40 pixels.png" Ωalt="conjugate verb (Spanish) for yo tocar"></li>
+            </ol>
                                               
-          </div></div>
+    </div></div>
     </body>
 </html>
 
