@@ -45,15 +45,16 @@ heading: Lab 5: Subsets
 	 resource: Subsets and Efficiency [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-and-efficiency.html]
 	 resource: Fast Subsets [/bjc-r/cur/programming/6-recursive-reporters/5-subsets/subsets-of-a-set-fast-soln.html]
 
-heading: Lab 6: Take It Further: Menu
+heading: Lab 6: Some simple ones
+	 resource: Plurals of Words [/bjc-r/cur/programming/6-recursive-reporters/7-simple/plurals-of-words.html]
+	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/6-recursive-reporters/7-simple/generalizing-the-map-pattern.html]
+	 resource: Even numbers [/bjc-r/cur/programming/6-recursive-reporters/7-simple/even-number-filter.html]
+
+
+heading: Investigation (Take It Further): Menu
 	 resource: At the Ice Cream Shop [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-shop.html]
 	 resource: Formal Parameters [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-formal-parameters.html]
 	 resource: Menu hints [/bjc-r/cur/programming/6-recursive-reporters/6-icecream/ice-cream-hint.html]
 
-
-heading: Lab 7: Some simple ones
-	 resource: Plurals of Words [/bjc-r/cur/programming/6-recursive-reporters/7-simple/plurals-of-words.html]
-	 resource: Generalizing the Map Pattern [/bjc-r/cur/programming/6-recursive-reporters/7-simple/generalizing-the-map-pattern.html]
-	 resource: Even numbers [/bjc-r/cur/programming/6-recursive-reporters/7-simple/even-number-filter.html]
 }
 
