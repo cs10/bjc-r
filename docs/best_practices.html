@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>BJC4NYC Best Practices</title>
+    </head>
+    <body>
+        <h2>Best Practices for Coding HTML on BJC4NYC</h2>
+        <div class="sidenote">See also <a href="/bjc-r/docs/style_guide.html">Style Guide</a>.</div>
+        <p>This page was drafted up by Mary after losing a morning to troubleshooting HTML errors. There isn't necesarily one right way to tab nested tags in an HTML file, but we should have some way to make consistent and legible code to share with each other. I'm suggesting the way I do it as a coding guideline. Please read (critique if you must) and follow these guidelines. Thanks, :) Mary</p>
+            
+        <ol>
+            <li>Write tidy code with <strong>legible formatting</strong>:
+                <ul style="list-style:disc">
+                    <li>Use carriage returns to break up code blocks&mdash;not blocks of text;</li>
+                    <li>Use tabs to nest tags within tags (i.e. level of nested tags; e.g. look at the code for this page or this <a href="http://www.scriptingmaster.com/html/making-html-readable.asp" target="_blank">simple example</a>);</li>
+                    <li>When in doubt, think of our teammates trying to read and troubleshoot the code. :)</li>
+                </ul>
+            </li>
+            <li>Check for <strong>good HTML</strong> before committing:
+                <ul style="list-style:disc">
+                  <li>See that all opened tags are closed (except &lt;img /&gt; and &lt;br /&gt; which have a closure bar at the end)&mdash;especially likely to be an issue with a lot of nesting (good tab formatting helps greatly here);</li>
+                  <li>Check that the whole page looks right in multiple browsers (can skip for text-only edits, but not for edits that involve formatting).</li>
+                </ul>
+            </li>
+            <li><strong>Follow our <a href="/bjc-r/docs/style_guide.html">Style Guide</a></strong>:
+                <ul style="list-style:disc">
+                    <li>Copy the HTML and CSS from the Style Guide or from other instances (less-safe, as it could have been modified)</li>
+                    <li>
+                        Use adaptations from the Style Guide to add features&mdash;not to replicate ones that aren't working. If something from the Style Guide isn't working, fix it, log an issue on <a href="http://github.com/" target="_blank">GitHub</a>, or get help from someone.  Please do <em>not</em> build a non-extensible workaround when something that should be working isn't.<br />
+                        For example:
+                        <ul style="list-style:square">
+                            <li>
+                                <strong>ex 1:</strong> <code>&lt;div&gt;&lt;span&gt;&lt;strong&gt;Sasha:&lt;/strong&gt;&lt;/span&gt; I see another way...</code><br />
+                                In our <code>&lt;div class="dialogue"&gt;</code> tag, the <code>&lt;div&gt;</code> tag is for each new character or stage direction. The <code>&lt;span&gt;</code> tag within one of these <code>&lt;div&gt;</code> tags is designed <em>specifically</em> to put the bold (i.e. "strong") styling on the character's name. If it doesn't, this is a sign that something is wrong with the HTML. In cases like this, please fix the problem or alert someone else to the issue; don't apply the desired formatting manually as the underlying bug could cause problems later.
+                            </li>
+                            <li> 
+                                <strong>ex 2:</strong> <code>&lt;div class="sidenote"&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; What exactly is Tony's &lt;code&gt;map&lt;/code&gt; block doing?&lt;/div&gt; </code><br>
+                                Here, having to insert a whole bunch of spaces to make the sticky note work is a clue that there is a problem. Please fix it, track it, or pass it on.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+            	<strong>Use server-friendly filenames</strong>. <strong>No fancy symbolic characters</strong> (like "?") and <strong>no spaces</strong> (use "_" instead)
+            	<ul style="list-style:disc"><li>e.g. instead of "SpaceKeyPressed? 214 &times; 28 pixels.png" use "SpaceKeyPressed_214x28.png" (note the letter x instead of the times sign)</li></ul>
+            </li>
+        </ol>   
+    </body>
+</html>
