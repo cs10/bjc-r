@@ -27,11 +27,17 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   clear:both;
 }
 
-
-/** BJC4NYC elements added by Mary Fries, March 2015 **/
-/*div {
-  padding-bottom: .5em;
-}*/
+.sidenoteBig { /* added by Mary Fries on 5/19/15 based on above */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  width: 40%;
+  padding: 10px;
+  background-color: #FFF8AD;
+  clear:both;
+}
 
 .forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
   padding: 1em;
@@ -49,7 +55,7 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin-bottom: .5em;
 }
 
-.forYouToDo:nth-of-type(1):before {
+.forYouToDo#first:before {
   content: "For You To Do";
 }
 
