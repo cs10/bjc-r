@@ -18,31 +18,42 @@ title: Unit 3: Lists
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
-heading: Lab 1: Introduction to Lists
+heading: Programming Lab 1: Introduction to Lists
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
      quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-lists-self-test.html]
 	 resource: Sentence Builder  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-sentence-builder.html]
 
-heading: Lab 2: List Operations
+heading: Programming Lab 2: List Operations
 	 resource: Getting Started: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started-map.html]
 	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/5-keep.html]
 	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/6-combine.html]
 	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/7-hof-self-test.html]
 
-heading: Lab 3: Using Higher-Order Functions
-	 resource: Building an acronym generator [/bjc-r/cur/programming/3-lists/3-using-hof/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
-	 resource: The power of higher-order functions [/bjc-r/cur/programming/3-lists/3-using-hof/8-more-on-composition-of-higher-order-functions.html]
+heading: Programming Lab 3: Using Higher-Order Functions
+	 resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/7-composing-higher-order-functions.html]
+	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/8-acronym-generator.html]
 	 resource: When you really have to loop [/bjc-r/cur/programming/3-lists/3-using-hof/9-when-you-really-have-to-loop.html]
 
 //heading: Lists and Sentences: The Index Variable Pattern
-//	resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
 
-heading: Lab 4: Magic Squares
+heading: Programming Lab 4: Magic Squares
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/getting-started.html]
 	 resource: Introducing Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples.html]
 	 resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-2.html]
 	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
 	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/finishing-touches.html]
+
+heading: Social Implications Lab 5: Search and Data Part I
+ 	 resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
+	 resource: Spam and Ham [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-and-ham.html]
+
+heading: Investigations
+	 resource: Processing a Sentence (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
+ 	 resource: Longest Word (Use after Lab 3) [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
+ 	 resource: Display Word (Use after Lab 3) [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
+ 	 resource: Exaggerate (Use after Lab 3) [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
+
+
 
 // heading: List Mutation  // this has moved to Chapter 4
 //	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
