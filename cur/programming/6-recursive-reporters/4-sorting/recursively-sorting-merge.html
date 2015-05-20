@@ -37,7 +37,7 @@
                     <b>sort</b>
                 </div>
                 <div class="feedback">
-                    Not quite. How does sort use merge and odd numbered items?
+                    Not quite. How does sort use merge and odd/even numbered items?
                 </div>
             </div>
             
@@ -46,7 +46,7 @@
                     <b>merge</b>
                 </div>
                 <div class="feedback">
-                    You got it! Merge is where the elements of each half is sorted to be in ascending order. Then, sort uses merge to put both halfs together. 
+                    You got it! Merge is where two elements are compared, with the smaller element coming first in the reported list.
                 </div>
             </div>
             
@@ -63,6 +63,10 @@
                 <div class="correctResponse" identifier="c1"></div>
             </div>
         </div>
-
+<div class="takeItFurther">
+<p>Make a 500-item list of random numbers, and then sort the list using the sort algorithm you designed earlier in this lab, and again using merge sort, keeping track of the timings: </p>
+<p><img src="/bjc-r/img/6-recursive-reporters/compare-times.png" alt="script to compare timings"></p>
+<p>In that script we've renamed <code>sort</code> to <code>merge&nbsp;sort</code>, and used the name <code>your&nbsp;sort</code> for the one you wrote earlier.  <code>Biglist</code>, <code>your-time</code>, and <code>merge-time</code> are global variables.</p>
+<p>Most likely, mergesort will take less than four seconds, while the one you wrote earlier will take more than 15 seconds. That's because we're betting your earlier one positions one number at a time in the sorted list, whereas mergesort cuts the list into two half-size lists and sorts them separately, which is inherently more efficient. If you make the input list ten times as long, a one-at-a-time sort will take 100 times as long to compute the result, whereas mergesort will only take about 30 times as long.</p></div>
     </body>
 </html>

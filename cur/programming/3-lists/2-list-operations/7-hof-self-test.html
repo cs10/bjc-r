@@ -1,0 +1,321 @@
+<html>
+
+
+   <head>
+      
+      <script src="/bjc-r/llab/loader.js"></script>
+      
+      <title>Lab 2 Check: Map, Keep, and Combine</title>
+      
+   </head> 
+
+
+   <body>
+   
+   Click on any of the images below to open a new <span class="snap">snap</span> file.<br>
+   <a class="run" href="/bjc-r/prog/3-lists/U3Lab2Check.xml"> <img border="0" src="/bjc-r/img/3-lists/squares.png" alt="list of squares 1,4,9,...,225" title="list of squares 1,4,9,...,225" /> <br> <img border="0" src="/bjc-r/img/3-lists/words_numbers.png" alt="list of mix of words and numbers" title="list of mix of words and numbers" /> <br> <img border="0" src="/bjc-r/img/3-lists/check1capitals.png" alt="set capitals to list of list(city,state)" title="set capitals to list of list(city,state)" /> </a>
+   
+        <!-- question 1-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares_mapkeepcombine"
+        hasinlinefeedback="true" maxchoices="8"
+        responseIdentifier="resp1" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use the list of squares: <br> <img border="0" src="/bjc-r/img/3-lists/squares.png" alt="list of squares 1,4,9,...,225" title="list of squares 1,4,9,...,225" /><br>
+                    Which of these expressions will report a <strong>list</strong>?<br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c1.png" title="map sqrt of() over squares" alt="map sqrt of() over squares" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep evens from squares" title="keep evens from squares">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with addition items of squares" title="combine with addition items of squares">
+                </div>
+                <div class="feedback">
+                    No. Combine takes two inputs at a time. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items last letter = 1 from squares" title="keep items last letter = 1 from squares">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map addition over squares" title="map addition over squares">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with join items of squares" title="combine with join items of squares">
+                </div>
+                <div class="feedback">
+                    No. <code>join</code>(1,4) will report 14. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map 0-() over squares" title="map 0-() over squares">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map subtraction over squares" title="map subtraction over squares">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+
+
+        <!-- question 2-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    The expressions in this problem are the same as you saw in question 1.<br>
+                    Which of these statements are <strong>true</strong>?<br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep evens from squares" title="keep evens from squares" /> reports a list with only even square numbers.
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with addition items of squares" title="combine with addition items of squares"> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map addition over squares" title="map addition over squares"> report the same result.
+                </div>
+                <div class="feedback">
+                    No, in <code>map</code>, the inputs into the two blanks are the same number.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items last letter = 1 from squares" title="keep items last letter = 1 from squares"> reports a list with the items 1, 16, 100, 121, 144, 169, and 196.
+                </div>
+                <div class="feedback">
+                    No. What is <code>length of</code> (16)? 
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with addition items of squares" title="combine with addition items of squares"> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with join items of squares" title="combine with join items of squares"> report the same result.
+                </div>
+                <div class="feedback">
+                    No, <code>join</code> treats its inputs like words, not like numbers.
+                </div>
+            </div>
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map 0-() over squares" title="map 0-() over squares"> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map subtraction over squares" title="map subtraction over squares"> both report a list with negative values.
+                </div>
+                <div class="feedback">
+                    No. One of these lists is made up of 15 items that are all the same.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- question 3-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="is_a_number"
+        hasinlinefeedback="true" maxchoices="3"
+        responseIdentifier="resp3" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use the list of words and numbers: <br><img border="0" src="/bjc-r/img/3-lists/words_numbers.png" alt="list of mix of words and numbers" title="list of mix of words and numbers" /><br>
+                    Which of these expressions produce the list with just the numbers: list(5, 34, 2, 305, 61)?<br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc1.png" alt="map(is()aNumber?)over(list of words and numbers)" title="map(is()aNumber?)over(list of words and numbers)">
+                </div>
+                <div class="feedback">
+                    No. The <code>Is a number?</code> block is a predicate, so it returns a Boolean.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc2.png" alt="keep(is()aNumber?)from(list of words and numbers)" title="keep(is()aNumber?)from(list of words and numbers)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc3.png" alt="keep(letter1of()<10)from(list of words and numbers)" title="keep(letter1of()<10)from(list of words and numbers)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp3">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- question 4-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="mapLetterVsItem"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp4" shuffle="true">
+            <div class="prompt">
+                <p>
+                    This question refers to these two lists:<br> <img border="0" src="/bjc-r/img/3-lists/words_numbers.png" alt="list of mix of words and numbers" title="list of mix of words and numbers" /><br> <img border="0" src="/bjc-r/img/3-lists/check1capitals.png" alt="set capitals to list of list(city,state)" title="set capitals to list of list(city,state)" /><br>
+                    Which of these statements are <strong>true</strong>?<br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc1.png" alt="map(letter1of())over(words and numbers)" title="map(letter1of())over(words and numbers)" /> reports the list (r, 5, b, i, 3, k, 2, 3, t, 6).
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc2.png" alt="map(item1of())over(words and numbers)" title="map(item1of())over(words and numbers)"> reports the list (rabbit).
+                </div>
+                <div class="feedback">
+                    No. The blank space is expecting a <strong>list</strong> as its input.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc3.png" alt="map(item1of())over(capitals)" title="map(item1of())over(capitals)"> reports the list (Augusta, Boise, Columbia, Des Moines).
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc4.png" alt="map(letter1of())over(capitals)" title="map(letter1of())over(capitals)"> reports the list (A, B, C, D).
+                </div>
+                <div class="feedback">
+                    No. You can find the first letter of a word, but not the first letter of a list.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc5.png" alt="map(allbutfirstof()over(capitals)" title="map(allbutfirstof()over(capitals)"> reports the list (Maine, Idaho, South Carolina, Iowa).
+                </div>
+                <div class="feedback">
+                    No. This is kind of a trick question. What gets reported is actually a list of lists. The output is: list (list(Maine), list(Idaho), list(South Carolina), list(Iowa)). 
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp4">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+
+
+
+        <!-- question 5-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="capitals_mapkeepcombine"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp5" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Which of the following expressions will report:<br> <img border="0" src="/bjc-r/img/3-lists/capital_sentences.png" alt="list of four sentences (Augusta, Maine is beautiful, etc.)" title="list of four sentences (Augusta, Maine is beautiful, etc.)"><br>
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2capsentencec1.png" alt="item 1 of item 1 of capitals" title="item 1 of item 1 of capitals" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2capsentencec2.png" alt="item 1 of item 1 of capitals" title="item 1 of item 1 of capitals">
+                </div>
+                <div class="feedback">
+                    No. The blanks in <code>join</code> are each filled by a list, not just a word.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2capsentencec3.png" alt="item last of item 2 of capitals" title="item last of item 2 of capitals">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp5">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+   </body>
+</html>

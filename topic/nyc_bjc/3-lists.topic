@@ -24,10 +24,11 @@ heading: Lab 1: Introduction to Lists
 	 resource: Sentence Builder  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-sentence-builder.html]
 
 heading: Lab 2: List Operations
-	 resource: Transforming each item of a list [/bjc-r/cur/programming/3-lists/2-list-operations/4-transforming-each-item-of-a-list.html]
-	 resource: Choosing some items from a list [/bjc-r/cur/programming/3-lists/2-list-operations/5-choosing-some-items-from-a-list.html]
-	 resource: Combining all the items of a list [/bjc-r/cur/programming/3-lists/2-list-operations/6-combining-all-the-items-of-a-list.html]
-	 
+	 resource: Getting Started: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started-map.html]
+	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/5-keep.html]
+	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/6-combine.html]
+	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/7-hof-self-test.html]
+
 heading: Lab 3: Using Higher-Order Functions
 	 resource: Building an acronym generator [/bjc-r/cur/programming/3-lists/3-using-hof/7-composing-higher-order-functions-to-solve-more-complicated-problems.html]
 	 resource: The power of higher-order functions [/bjc-r/cur/programming/3-lists/3-using-hof/8-more-on-composition-of-higher-order-functions.html]

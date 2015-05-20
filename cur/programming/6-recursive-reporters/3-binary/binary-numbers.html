@@ -5,6 +5,15 @@
 	<script src="/bjc-r/llab/loader.js"></script>
 	<title>Number representation</title>
     <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    .blue {
+	color: #2031BC;
+	font-weight: bold;
+}
+    .highlight {
+	background-color: #FF0;
+}
+    </style>
     </head>
 
     <body>
@@ -15,12 +24,13 @@
     
 	<p>In plain old decimal (base 10) notation, each digit's <em>position </em>represents a power of 10, starting with 1 (which is 10<sup>0</sup>)
 	    on the right, and multiplying by 10 as you move left.  So, for example, 9827 is, <em>from right to left,</em></p>
-	<p align="center">7 &times;  10<sup>0</sup> + 2 &times;  10<sup>1</sup> + 8 &times;  10<sup>2</sup> + 9 &times;  10<sup>3</sup></p>
-    <p align="left">(Why right to left?  Because the rightmost digit is always multiplied by 10<sup>0</sup>, but in a long number such as 432786149314152718281828459045 you can't tell what power of 10 to multiply the leftmost digit by, until you count from the right.)</p>
+	<p align="center">9 &times;  10<sup class="blue">3</sup> + 8 &times;  10<sup class="blue">2</sup> + 2 &times;  10<sup class="blue">1</sup> + 7 &times;  10<sup class="blue">0</sup><br /><img src="/bjc-r/img/6-recursive-reporters/r-to-l.png" width="300" height="72" alt="right-to-left arrow"></p>
+    <p align="left">(Why right to left?  Because the rightmost digit is always multiplied by 10<sup>0</sup>, but in a long number such as 432786149314152718281828459045 you can't tell what power of 10 to multiply the leftmost digit by, until you count up to it from the right.)</p>
 	<p align="left">Binary uses the same positional idea, but with powers of two instead of powers of ten.  So 10010 binary represents, from right to left,</p>
-    <p align="center">0 &times; 2<sup>0</sup> + 1 &times; 2<sup>1</sup> + 0 &times; 2<sup>2</sup> + 0 &times; 2<sup>3</sup> + 1 * 2<sup>4</sup> = 2 + 16 = 18 decimal.</p>
-	<p align="left">Our goal is to write a reporter <code>decimal-&gt;binary</code> that takes a <em>number</em> (which Snap<em>!</em> represents in decimal) as input, and reports a <em>string of zeros and ones</em> that represent the same number in binary:</p>
-<div><div class="sidenote">    <p align="left">(Snap<em>!</em> blurs the distinction between a number and a string of digits, allowing you to use text operators on numbers and arithmetic operators on strings of digits.  But for right now, don't do that; it'll be less confusing if you do arithmetic on the input, but combine the digits of the reported result using <code>join</code>.)</p></div></div>
+    <p align="center"><span class="highlight">1 * 2<sup class="blue">4</sup></span> + 0 &times; 2<sup class="blue">3</sup> + 0 &times; 2<sup class="blue">2</sup> + <span class="highlight">1 &times; 2<sup class="blue">1</sup></span> + 0 &times; 2<sup class="blue">0</sup> = 2 + 16 = 18 decimal<br /><img src="/bjc-r/img/6-recursive-reporters/r-to-l.png" width="400" height="72" alt="right-to-left arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<div><div class="sidenote"><p align="left">(Snap<em>!</em> blurs the distinction between a number and a string of digits, allowing you to use text operators on numbers and arithmetic operators on strings of digits.  But for right now, don't do that; it'll be less confusing if you do arithmetic on the input, but combine the digits of the reported result using <code>join</code>.)</p></div></div>
+<p align="left">Our goal is to write a reporter <code>decimal-&gt;binary</code> that takes a <em>number</em> (which Snap<em>!</em> represents in decimal) as input, and reports a <em>string of zeros and ones</em> that represent the same number in binary:</p>
+
 	<p align="left"><img src="/bjc-r/img/6-recursive-reporters/9827.png" alt="decimal-&gt;binary of 9827" /></p>
 	<p align="left">To solve this problem, you're going to have to know how to do integer division the way you did it in third grade, before you knew about fractions: 17 ÷ 5 is <strong>3 remainder 2</strong>. Here's how to do that in Snap<em>!</em>&thinsp;:</p>
 	<p align="left"><img src="/bjc-r/img/6-recursive-reporters/quotient.png" alt="quotient" /><img src="/bjc-r/img/6-recursive-reporters/mod.png" alt="mod" /></p>

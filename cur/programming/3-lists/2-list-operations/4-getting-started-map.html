@@ -1,0 +1,81 @@
+<html>
+
+
+   <head>
+
+      <script src="/bjc-r/llab/loader.js"></script>
+
+      <title>Lab 2: List Operations</title>
+
+   </head>
+
+
+   <body>
+	<h2>Getting Started: Map</h2>
+    
+    <p>Click here to get a fresh copy of the nouns list:<br>
+        <a class="run" href="/bjc-r/prog/3-lists/U3Lab2Map.xml"> <img border="0" src="/bjc-r/img/3-lists/nouns.png" alt="giraffe, elephant, pizza, etc." title="giraffe, elephant, pizza, etc." /> </a> <br>
+    </p>
+    
+    <div class="forYouToDo" id="first">
+    <ol>
+    	<img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" />
+        <li>Make <img border="0" src="/bjc-r/img/3-lists/map_join_s.png" alt="map (join _s) over nouns" title="map (join _s) over nouns" />
+        <ol>
+        	<li>What does this report?</li>
+        	<li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain what <code>map</code> is putting in the blank space you left in <code>join</code>.</li>
+            <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain what <code>map</code> is putting in the blank spaces here: <img border="0" src="/bjc-r/img/3-lists/map_join2.png" alt="map (join (2blanks)) over nouns" title="map (join (2blanks)) over nouns" /></li>
+        </ol></li>
+    </ol>
+    </div>
+    <div class="takeItFurther">
+    <ol start="2">
+        <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain what <code>map</code> is putting in each of the the blank spaces here: <img border="0" src="/bjc-r/img/3-lists/map_letter1_map_join.png" alt="map letter1 over (map(join _s) over nouns)" title="map letter1 over (map(join _s) over nouns)" /></li>
+        <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain what <code>map</code> is putting in the blank spaces here: <img border="0" src="/bjc-r/img/3-lists/map_lastletter_map_join.png" alt="map lastletter over (map(join _s) over nouns)" title="map lastletter over (map(join _s) over nouns)" /></li>
+    </ol>
+    </div>
+        
+        
+<!--
+<br><br>
+The first input to the <code>map</code> block has a form you haven't seen before this:<br>
+<img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>
+
+</p>
+<p>The grey ring means that the input should be a <i>function</i>. What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <code>join</code> block into the <code>map</code> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <code>join</code>ing.
+  </p>
+<p>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <code>join</code>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.
+
+</p>
+<p><br><b>Try this:</b> Modify your <code>noun phrase</code> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;
+
+</p>-->
+<div class="sidenote">The first input of <code>map</code> <img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>is inside a gray ring, which means the input is a <em>function</em>.<br> <code>map</code> is called a <em>higher order function</em> because it takes another function as an input.</div>
+
+<p>Alphie and Betty talk about some more examples of using <code>map</code> to compute some function of every item of a list:</p>    <div class="dialogue">
+    	<div><span>Betty:</span> That gray ring after the word "map" means a function goes in there. A function? Like in algebra? What about the function <em>f</em>(<em>n</em>) = 3<em>n</em> + 7?</div>
+        <div><span>Alphie:</span> I'll make 3<em>n</em> + 7. <em>(Tries to build it.)</em> Wait. I can't type <em>n</em>.</div>
+        <div><span>Betty:</span> We could make a new orange variable... Wait, or maybe we leave it blank, just like we did in <code>join</code>.</div>
+        <div><span>Alphie:</span> Ok, so far we have this.</div>
+        	<div class="stagedir"><img border="0" src="/bjc-r/img/3-lists/map_3x+7overempty.png" alt="map 3x+7 over nothing" title="map 3x+7 over nothing"></div>
+        <div><span>Betty:</span> Now we need a list of items to go in the blank space. That would be a list of values for <em>n</em>. So let's just pick some numbers, like 2, 0, and 7. </div>
+        	<div class="stagedir">Betty makes and clicks to see <img border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/3-lists/map3x+7.png" /></div>
+        <div><span>Alphie:</span> Let's see. 2 times 3 is 6. And then add 7. That's 13. Good, it worked!</div>
+    </div>
+    
+	<div class="forYouToDo">
+    <ol start="5">
+    	<li>For each of these problems, start with this block: <img border="0" src="/bjc-r/img/3-lists/map_over207.png" alt="map over list(2,0,7)" title="map over list(2,0,7)">
+       	<ol>
+        	<li>Write a function that would report the <strong>list</strong> 3, 1, 8. </li>
+            <li>Write a function that would report the <strong>list</strong> 4, 0, 14. </li>
+            <li>Write a function that would report the <strong>list</strong> 4, 0, 49. </li>
+        </ol></li>
+    </ol>
+    
+    Save.
+    </div>
+
+
+   </body>
+</html>

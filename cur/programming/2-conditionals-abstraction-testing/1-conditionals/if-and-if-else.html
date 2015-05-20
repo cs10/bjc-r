@@ -8,13 +8,13 @@
 		<h2><code>If</code> and <code>If-else</code></h2>
         <div class="forYouToDo" id="first">
         <ol> <div class="sidenote">
-          <div>When the sprite asks its question, you will see an "answer space" at the bottom of the stage. <img src="/bjc-r/img/2-conditionals-abstraction-testing/SpriteAskingQuestion,withAnswerBox.png" width="202" height="129" alt="Answer space on stage"> <p>Type your answer there and  click the check box (or hit return). </p></div></div>
+          <div>When the sprite asks its question, you will see an "answer space" at the bottom of the stage. <img src="/bjc-r/img/2-conditionals-abstraction-testing/SpriteAskingQuestion,withAnswerBox.png" alt="Answer space on stage"> <p>Type your answer there and  click the check box (or hit return). </p></div></div>
         <li>These two scripts are almost the same. Build them both, experiment with them, and explain the difference in their behavior. </li> 
-        <img src="/bjc-r/img/2-conditionals-abstraction-testing/DialogueScript2 297 × 230 pixels.png" width="297" height="230" alt="Ask &quot;Hi! How are you?&quot; If the answer is &quot;happy,&quot; say &quot;I'm glad.&quot; Else say &quot;oh.&quot;"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/DialogueScript3 297 × 213 pixels.png" width="297" height="213" alt="Ask &quot;Hi! How are you?&quot; If answer is &quot;happy&quot; say &quot;I'm glad.&quot; Say &quot;Oh...&quot;">
+        <img src="/bjc-r/img/2-conditionals-abstraction-testing/DialogueScript2_297x230px.png" alt="Ask &quot;Hi! How are you?&quot; If the answer is &quot;happy,&quot; say &quot;I'm glad.&quot; Else say &quot;oh.&quot;"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/DialogueScript3 297 × 213 pixels.png" alt="Ask &quot;Hi! How are you?&quot; If answer is &quot;happy&quot; say &quot;I'm glad.&quot; Say &quot;Oh...&quot;">
         <li> Here is another pair of scripts. Again, they are similar.  Build them. One does the wrong thing. Explain why.</li>
-        <img src="/bjc-r/img/2-conditionals-abstraction-testing/EvenOrOdd correct 163&nbsp;&times;&nbsp;148 pixels.png" width="163" height="148" alt="Even Or Odd with If Else"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/EvenOrOdd, incorrect 163&nbsp;&times;&nbsp;131 pixels.png" width="163" height="131" alt="Even Or Odd with just If">
+        <img src="/bjc-r/img/2-conditionals-abstraction-testing/EvenOrOdd correct 163&nbsp;&times;&nbsp;148 pixels.png" alt="Even Or Odd with If Else"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/EvenOrOdd, incorrect 163&nbsp;&times;&nbsp;131 pixels.png" alt="Even Or Odd with just If">
         
-        <div class="sidenote"><img class="inline" src="/bjc-r/img/2-conditionals-abstraction-testing/n mod 2 = 0, 138 × 23 pixels.png" width="138" height="23" alt="n mod 2 = 0"/> is the same as asking if <em>x</em> is divisible by 2 (i.e. whether <em>x</em> is even).</div>       
+        <div class="sidenote"><img class="inline" src="/bjc-r/img/2-conditionals-abstraction-testing/n mod 2 = 0, 138 × 23 pixels.png" alt="n mod 2 = 0"/> is the same as asking if <em>x</em> is divisible by 2 (i.e. whether <em>x</em> is even).</div>       
         <div class="takeNote">The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block  reports the remainder when the first input is divided by the second (and we are using only integers). For example, <code>14 mod 3</code> reports 2 because 14 &divide; 3 leaves a remainder of 2. When a number is divisible by another, the remainder is 0.</div>       
        
      
@@ -23,14 +23,17 @@
 <p>In that second example, we didn't need to have an additional "if," because all whole numbers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>, we know that the number is not even, so it must be odd.</p>
 		
 <div class="forYouToDo">
-<p>Below are several blocks that use <code>if</code> and <code>if-else</code>. Predict what each one will do and discuss it with your pair programmer. Afterward, try running each of the blocks, which can be found <a class="run" href="/bjc-r/prog/conditionals/predict-if-functions.xml">here</a>.</p>
-			<div class="sidenote"><div>Two of these scripts use the <img class="inline" src="/bjc-r/img/blocks/abs.png" alt="abs ()"/> block. This block offers several mathematical functions. In the palette, it shows up as <img class="inline" src="/bjc-r/img/blocks/sqrt-of-10.png" alt="sqrt (10)"/>. To select other functions, click the drop-down menu. "abs" is short for "absolute value." The absolute value of a number is that number's distance from zero. For example, <code>abs(-10)</code> and <code>abs(10)</code> are both 10.  <code>abs(-2.5)</code> is 2.5.</div></div>
+<p>Below are several blocks that use <code>if</code> and <code>if-else</code>. </p>
+<p>Predict what each one will do and discuss it with your pair programmer. <img class="imageRight" src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" /></p>
+<p>Afterward, try running each of the blocks, which can be found <a class="run" href="/bjc-r/prog/conditionals/predict-if-functions.xml">here</a>.</p>
+<div class="sidenote"><div>Two of these scripts use the <img class="inline" src="/bjc-r/img/blocks/abs.png" alt="abs ()"/> block. This block offers several mathematical functions. In the palette, it shows up as <img class="inline" src="/bjc-r/img/blocks/sqrt-of-10.png" alt="sqrt (10)"/>. To select other functions, click the drop-down menu. "abs" is short for "absolute value." The absolute value of a number is that number's distance from zero. For example, <code>abs(-10)</code> and <code>abs(10)</code> are both 10.  <code>abs(-2.5)</code> is 2.5.</div></div>
             <ol start="3">
             	<li><img src="/bjc-r/img/cond/back-and-forth.png" alt="a mysterious block" /></li>
                 <li><img src="/bjc-r/img/cond/back-and-forth-no-abs.png" alt="a mysterious block"/></li>
 				<li><img src="/bjc-r/img/cond/crenellation.png" alt="a mysterious block"/></li>
         		<li><img src="/bjc-r/img/cond/dvd-player-screen-saver.png" alt="a mysterious block"/></li>
         	</ol>
+            <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" />
         </div>
     </body>
 </html>
