@@ -1,0 +1,358 @@
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=latex 2012.6.30)  13 MAY 2015 16:46
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**gs.pascal.ac1.tex
+(./gs.pascal.ac1.tex
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2012-05-30, ngerman-x-2012-05-30, afrikaans, ancientgreek, ibycus, arabi
+c, armenian, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danis
+h, dutch, ukenglish, usenglishmax, esperanto, estonian, ethiopic, farsi, finnis
+h, french, friulan, galician, german, ngerman, swissgerman, monogreek, greek, h
+ungarian, icelandic, assamese, bengali, gujarati, hindi, kannada, malayalam, ma
+rathi, oriya, panjabi, tamil, telugu, indonesian, interlingua, irish, italian, 
+kurmanji, latin, latvian, lithuanian, mongolian, mongolianlmc, bokmal, nynorsk,
+ polish, portuguese, romanian, romansh, russian, sanskrit, serbian, serbianc, s
+lovak, slovenian, spanish, swedish, turkish, turkmen, ukrainian, uppersorbian, 
+welsh, loaded.
+(/Volumes/User and Time Machine/acuoco/Library/texmf/tex/latex/cme/cme.cls
+Document Class: cme 2014/12/27 v4.0 CME-style document format
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip41
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks14
+\ex@=\dimen102
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen103
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count79
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count80
+\leftroot@=\count81
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count82
+\DOTSCASE@=\count83
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen104
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count84
+\c@MaxMatrixCols=\count85
+\dotsspace@=\muskip10
+\c@parentequation=\count86
+\dspbrk@lvl=\count87
+\tag@help=\toks15
+\row@=\count88
+\column@=\count89
+\maxfields@=\count90
+\andhelp@=\toks16
+\eqnshift@=\dimen105
+\alignsep@=\dimen106
+\tagshift@=\dimen107
+\tagwidth@=\dimen108
+\totwidth@=\dimen109
+\lineht@=\dimen110
+\@envbody=\toks17
+\multlinegap=\skip42
+\multlinetaggap=\skip43
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2011/06/27 v1.7a multicolumn formatting (FMi)
+\c@tracingmulticols=\count91
+\mult@box=\box28
+\multicol@leftmargin=\dimen111
+\c@unbalance=\count92
+\c@collectmore=\count93
+\doublecol@number=\count94
+\multicoltolerance=\count95
+\multicolpretolerance=\count96
+\full@width=\dimen112
+\page@free=\dimen113
+\premulticols=\dimen114
+\postmulticols=\dimen115
+\multicolsep=\skip44
+\multicolbaselineskip=\skip45
+\partial@page=\box29
+\last@line=\box30
+\mult@rightbox=\box31
+\mult@grightbox=\box32
+\mult@gfirstbox=\box33
+\mult@firstbox=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\@tempa=\box50
+\@tempa=\box51
+\c@columnbadness=\count97
+\c@finalcolumnbadness=\count98
+\last@try=\dimen116
+\multicolovershoot=\dimen117
+\multicolundershoot=\dimen118
+\mult@nat@firstbox=\box52
+\colbreak@box=\box53
+\multicol@sort@counter=\count99
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\enitkv@toks@=\toks19
+\labelindent=\skip46
+\enit@outerparindent=\dimen119
+\enit@toks=\toks20
+\enit@inbox=\box54
+\enitdp@description=\count100
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks21
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/latex/todo/todo.sty
+Package: todo 2010/03/31 v2.4142 To-do list (Federico Garcia)
+\@todotoks=\toks22
+\c@todo=\count101
+)
+(/usr/local/texlive/2012/texmf-dist/tex/latex/oberdiek/letltxmacro.sty
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+)
+\trimheight=\dimen122
+\trimwidth=\dimen123
+\lefttextmargin=\dimen124
+\righttextmargin=\dimen125
+\titleshift=\dimen126
+\widetextwidth=\dimen127
+\standardskip=\skip47
+\typeareawidth=\dimen128
+\fullwidth=\dimen129
+\enitdp@snitemize=\count102
+\c@mcpart=\count103
+\c@part=\count104
+\c@chapter=\count105
+\c@section=\count106
+\c@subsection=\count107
+\c@subsubsection=\count108
+\@chapnumwidth=\dimen130
+\@numshift=\dimen131
+\@chaptitleshift=\dimen132
+\longarc=\skip48
+\c@thm=\count109
+\c@conj=\count110
+\c@princ=\count111
+\c@problem=\count112
+\@ignorebox=\box55
+\c@probpart=\count113
+\@programbox=\box56
+\@linebox=\box57
+\@commentwidthmin=\dimen133
+\@codelinewidthmin=\dimen134
+\@commentparindent=\dimen135
+\marginparshift=\dimen136
+\todocount=\count114
+\@measbox=\box58
+\maxdimen=\dimen137
+\mindimen=\dimen138
+)
+(/Volumes/User and Time Machine/acuoco/Library/texmf/tex/latex/cme/pft.sty
+Package: pft 2006/08/21 v2.1.0 EDC
+
+(/Volumes/User and Time Machine/acuoco/Library/texmf/tex/latex/cme/cmep-titlere
+f.sty
+Package: cmep-titleref 2007/03/08 v3.0A  CME Project-specific cross-references 
+with titles.
+) (/usr/local/texlive/2012/texmf-dist/tex/latex/cancel/cancel.sty
+Package: cancel 2000/03/12 v2.1 Cancel math terms
+)
+(/Volumes/User and Time Machine/acuoco/Library/texmf/tex/latex/cme/cmeplabels.s
+ty
+Package: cmeplabels 2006/08/21 v1.0.0 EDC
+)
+\c@dlgcount=\count115
+)
+(/Volumes/User and Time Machine/acuoco/Library/texmf/tex/latex/cme/edc-art.sty
+Package: edc-art 2008/09/04 v1.2 Place EPS art files
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/tokenizer/tokenizer.sty
+Package: tokenizer 2003/05/26
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+))
+(/usr/local/texlive/2012/texmf-dist/tex/generic/fltpoint/fltpoint.sty
+Package: fltpoint 2004/11/12 v1.1b floating point arithmetic
+
+(/usr/local/texlive/2012/texmf-dist/tex/generic/fltpoint/fltpoint.tex
+\fp@loopcount=\count116
+\fp@loopcountii=\count117
+\fp@result=\count118
+\fp@carryover=\count119
+\fp@tempcount=\count120
+\fp@tempcountii=\count121
+))
+\artwidth=\dimen139
+\artheight=\dimen140
+\hscale=\dimen141
+\vscale=\dimen142
+\vshift=\dimen143
+\zleftslop=\dimen144
+\zrightslop=\dimen145
+\ztopslop=\dimen146
+\zbottomslop=\dimen147
+\zartwidth=\dimen148
+\zartheight=\dimen149
+\zartscale=\dimen150
+\zmissingart=\count122
+\zbbstate=\count123
+\zreada=\read1
+)
+(./gs.pascal.ac1.aux)
+\openout1 = `gs.pascal.ac1.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+ 
+Starting front/backmatter 'Getting Started'.
+
+Overfull \hbox (123.0pt too wide) in paragraph at lines 20--20
+ [][][] 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <22> not available
+(Font)              size <20.74> substituted on input line 20.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <22> not available
+(Font)              size <20.74> substituted on input line 20.
+
+
+LaTeX Font Warning: Font shape `OT1/cmss/bx/n' in size <22> not available
+(Font)              size <20.74> substituted on input line 20.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+
+(/usr/local/texlive/2012/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 72.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 72.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead on input line 72.
+
+[1
+
+]
+File: binco.eps Graphic file (type eps)
+ <binco.eps> [2] (./gs.pascal.ac1.aux)
+
+LaTeX Font Warning: Size substitutions with differences
+(Font)              up to 1.26pt have occurred.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2903 strings out of 493489
+ 36848 string characters out of 3141349
+ 98996 words of memory out of 3000000
+ 6162 multiletter control sequences out of 15000+200000
+ 17108 words of font info for 63 fonts, out of 3000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 34i,12n,26p,408b,391s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on gs.pascal.ac1.dvi (2 pages, 4580 bytes).
