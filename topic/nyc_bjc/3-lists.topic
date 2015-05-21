@@ -24,7 +24,8 @@ heading: Programming Lab 1: Introduction to Lists
 	 resource: Sentence Builder  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-sentence-builder.html]
 
 heading: Programming Lab 2: List Operations
-	 resource: Getting Started: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started-map.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started.html]
+	 resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-map.html]
 	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/5-keep.html]
 	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/6-combine.html]
 	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/7-hof-self-test.html]
@@ -45,7 +46,7 @@ heading: Programming Lab 4: Magic Squares
 
 heading: Social Implications Lab 5: Search and Data Part I
  	 resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
-	 resource: Spam and Ham [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-and-ham.html]
+	 resource: Spam and Ham [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-introduction.html]
 
 heading: Investigations
 	 resource: Processing a Sentence (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
