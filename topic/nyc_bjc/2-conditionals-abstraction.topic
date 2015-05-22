@@ -56,23 +56,23 @@ heading: Lab 6: Custom Blocks Make Code Easier to Understand
 	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
 	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/valid-date.html]
 
-heading: Lab 7: Testing Your Code
+//heading: Lab 7: Testing Your Code
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
-  	resource: Simple Debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/simple-debugging-house.html]
-  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
+//  	resource: Simple Debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/simple-debugging-house.html]
+//  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
 
-heading: Lab 8: Abstraction
+heading: Lab 7: Abstraction
 	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/8-abstraction/brick-wall.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
+//	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
 
-heading: Lab 9: Programs with Multiple Sprites
-	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
-	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
+// heading: Lab 9: Programs with Multiple Sprites
+//	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
+//	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
 		//quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/quiz-different-ways-to-broadcast.html]
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
-	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
-	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
+//	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
+//	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 
 		//heading: Variables and custom blocks
 			// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
