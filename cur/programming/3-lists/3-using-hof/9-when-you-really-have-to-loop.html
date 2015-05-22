@@ -1,16 +1,47 @@
 <html>
-
     <head>
-
         <script src="/bjc-r/llab/loader.js"></script>
-
-        <title>
-            When you really have to loop
-        </title>
-
+        <title>Lab 3: Using Higher-Order Functions</title>
     </head>
 
     <body>
+    
+    <h2>When you really have to loop</h2>
+    
+    <div class="forYouToDo" id="first">
+    	<ol>
+        <li>Consider the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />. It returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok), or <code>false</code> otherwise.<br>
+        <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br>
+        <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
+        	<ol>
+            <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code></li>
+            <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code></li>
+            <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code></li>
+            </ol>
+        </li></ol>
+    </div>
+    
+    <div class="dialogue">
+      <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
+      <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
+      <div><span>Alphie:</span> Ok. We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... How would we know when to stop?</div>
+      <div><span>Betty:</span> Well, the last item would be item "length of list."</div>
+      <div><span>Alphie:</span> Ok. So then we would have a list of "true"s and "false"s. And then I guess </div>
+      <div><span>Betty:</span> I think it works, too. But... </div>
+          <div class="stagedir">They pause to think.</div>
+      <div><span>Alphie:</span> This is kind of a boring example, but I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
+      <div><span>Betty:</span> Let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
+          <div class="stagedir"><img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
+      <div><span>Alphie:</span> Then we add 10 to every item, so use <code>map</code>... The list we're mapping over is everything we kept, so let's just drag everything in the the <code>keep</code> block in there.</div>
+          <div class="stagedir"><img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
+      <div><span>Betty:</span> The last thing was to add all the numbers, right? So we'll use <code>combine with</code> addition, and our list is everything in the <code>map</code> block.</div>
+          <div class="stagedir"><img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
+    </div>
+
+        
+        
+        
+        
 
         <p>
             Consider the following problem:
