@@ -17,7 +17,7 @@ heading: Lab 1: Conditional Blocks
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		  //examples with dates would be great.
 	resource: Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
-	resource: Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
+	resource: More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
 		// game of life here later?
 	
 heading: Lab 2: Combining Booleans
