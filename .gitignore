@@ -10,3 +10,7 @@ dwsync.xml
 _notes
 
 cur/programming/recursion
+
+*.weproj
+
+cur/programming/algorithms/gwd_workspace.json
