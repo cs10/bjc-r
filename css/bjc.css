@@ -31,7 +31,6 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin-bottom: 20px;
   padding: 10px;
   background-color: #FF0000;
-
 }
 
 /** Side Notes **/
@@ -62,6 +61,15 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   clear:both;
 }
 
+/* IMG with no shaddow */
+img.noshaddow {
+  /* Better resizing of images for mobile devices */
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+  -ms-filter: none;
+  filter: none;
+}
+
+/* New div styles */
 .forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;
