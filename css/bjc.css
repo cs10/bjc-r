@@ -11,6 +11,29 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   line-height: none; /* hmm. */
 }
 
+/** Editor Notes **/
+.comment { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  /*display: none;*/
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  width: 20%;
+  padding: 10px;
+  background-color: #FF0000;
+  clear:both;
+}
+
+.todo {
+  /*display: none;*/
+  font-size: .9em;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #FF0000;
+
+}
+
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   font-size: .9em;
