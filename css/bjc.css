@@ -29,9 +29,15 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   /*display: none;*/
   font-size: .9em;
   margin-bottom: 20px;
-  padding: 5px;
+  padding: 10px;
   border: 10px solid red;
   background-color: #FFF;
+}
+
+.todo:before {
+  font-size: 18px;
+  font-weight: bold;
+  content: "Reviewer Comments:";
 }
 
 /** Side Notes **/
