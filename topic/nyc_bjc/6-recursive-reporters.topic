@@ -22,6 +22,7 @@ heading: Lab 1: Introduction
 heading: Lab 2: Pascal's Triangle
  	raw-html: <img src="/bjc-r/img/6-recursive-reporters/pascal-rule.png" class="imageRight" alt="Pascal's Triangle" />
 	 resource: Getting Started [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/gs.html]
+	 resource: Getting Started  Als version [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/gsac.html]
 	 resource: What is Pascal's Triangle? [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle.html]
 //	 resource: Computing a number in Pascal's Triangle [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle-algorithm.html]
 	 resource: Pascal's Triangle: Hints [/bjc-r/cur/programming/6-recursive-reporters/2-pascal/pascals-triangle-hint.html]
