@@ -17,10 +17,10 @@ title: Unit 4: Algorithm Complexity
 //learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 //learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
-heading: Lab 1: Algorithms
-	resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
-
-	forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
+heading: Lab 1: List Manipulation
+	// resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
+	resource: Getting Started [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/1-getting-started.html]
+	// forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
 	// forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
 	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
 	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
