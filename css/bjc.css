@@ -7,7 +7,7 @@
 
 li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin: 5px auto;
-  /*list-style-type: lower-alpha;*/
+  list-style-type: lower-alpha;
   line-height: none; /* hmm. */
 }
 
