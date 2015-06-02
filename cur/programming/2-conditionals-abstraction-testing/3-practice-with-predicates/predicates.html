@@ -6,48 +6,46 @@
     </head>
     <body>
 		<h2>Predicates</h2>
-        <p>
-	    <span class="snap">snap</span> has a "greater than" operator (<code>&gt;</code>), an "equal" operator (<code>=</code>), and
-	    a "less than" operator (<code>&lt;</code>) built in, but doesn't have a "greater than or equal to" (<code>&gt;=</code>)
-	    operator.
-	</p>
-	<p><img src="/bjc-r/img/prog/5ge3.png" alt="5 &gt;= 3"><img src="/bjc-r/img/prog/5ge5.png" alt="5 &gt;=
-	5"><img src="/bjc-r/img/prog/3ge5.png" alt="3 &gt;= 5">
-	</p>
-	<div class="forYouToDo">
-        <ol> 
-           <li> Build <code>>=</code> and test it well to make sure it does what you expect. Here are three things worth knowing.
-             <ol>
-	    <li>
-		When you type the title of this block in the initial <code> Make a block</code> dialog, make sure that you choose the hexagonal <code> predicate</code> block shape.
-	    </li>
-	    <li>
-		<div class="sidenote">Operators like <img src="/bjc-r/img/2-conditionals-abstraction-testing/a times b 94 × 27 pixels.png" alt="a times b">  that stand in between their two inputs are called <em><u>in</u>fix</em> operators. Operators like <img src="/bjc-r/img/2-conditionals-abstraction-testing/sqrt of 120 × 28 pixels.png" alt="sqrt of"> that stand their inputs are called <em><u>pre</u>fix</em> operators. When we write <em>n</em>! to mean &quot;<em>n</em> factorial,&quot; the &quot;!&quot; is a <em><u>post</u>fix</em> operator&mdash;it comes after its input <img src="/bjc-r/img/2-conditionals-abstraction-testing/postfix factorial 47&nbsp;&times;&nbsp;27 pixels.png" width="47" height="27" alt="n factorial">.</div> 
-		Because you want the block's name 
-		<code>
-		    &gt;=
-		</code>
-		to go between the two input slots you'll have to use the left plus sign in the Block
-		Editor. 
-	    </li>
-	    <li>
-		You'll probably find the Boolean operators helpful, although they're not entirely necessary:
-		<br>
-		<br>
-		<img src="/bjc-r/img/prog/Booleans.png" alt="and, or, not blocks">
-	    </li>
-	   
-	</ol>
-         There are several correct ways to do this! As long as your block gives the right <code> true</code> and <code> false</code> answers, it's correct.  </li>
-         <li>Here is one way to create a <code>factorial</code> block that takes a positive integer <em>n</em> and reports the value 1 x 2 x 3 x ... x (<em>n</em> - 1) x <em>n</em>. <br />
-         <img src="/bjc-r/img/2-conditionals-abstraction-testing/factorial script 226 × 258 pixels.png" alt="factorial script">
-         <ol>
-           <li>Create a block <code>triangular number n</code> that takes <em>n</em> as input and reports 1 + 2 + 3 + ... + (<em>n</em> - 1) + <em>n</em>.</li>
-         <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> that works this way: <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7.</li>
-         </ol>
-         </li>
-        </ol>
+        <div class="todo">
+            <ul>
+                <li>MF: I'm missing the whole "predicates are a special kind of reporter" piece here.</li>
+                <li>MF: I guess, overall, I'm missing a sense of where I'm going and why I'm doing this as a reader. I feel like I'm just reading "you'll use this later" content and doing lots of little tasks.</li>
+                <li>MF: Our students might not be familiar with factorials and may not be solid enough with algebra to be confident with the presentation of 2a.</li>
+            </ul>
         </div>
-
-</body>
+        <p>
+            <span class="snap">snap</span> has a "greater than" operator (<code>&gt;</code>), an "equal" operator (<code>=</code>), and
+            a "less than" operator (<code>&lt;</code>) built in, but doesn't have a "greater than or equal to" (<code>&gt;=</code>)
+            operator.
+        </p>
+		<img src="/bjc-r/img/prog/5ge3.png" alt="5 &gt;= 3"><img src="/bjc-r/img/prog/5ge5.png" alt="5 &gt;=
+	5"><img src="/bjc-r/img/prog/3ge5.png" alt="3 &gt;= 5">
+		<div class="forYouToDo">
+        	<ol>
+            	<li>
+                	Build <code>>=</code> and test it well to make sure it does what you expect. Here are three things worth knowing.
+                	<ol>
+					    <li>When you type the title of this block in the initial <code> Make a block</code> dialog, make sure that you choose the hexagonal <code> predicate</code> block shape.</li>
+	    				<li>
+							<div class="sidenote">Operators like <img src="/bjc-r/img/2-conditionals-abstraction-testing/a times b 94 × 27 pixels.png" alt="a times b">  that stand in between their two inputs are called <em><u>in</u>fix</em> operators. Operators like <img src="/bjc-r/img/2-conditionals-abstraction-testing/sqrt of 120 × 28 pixels.png" alt="sqrt of"> that stand their inputs are called <em><u>pre</u>fix</em> operators. When we write <em>n</em>! to mean &quot;<em>n</em> factorial,&quot; the &quot;!&quot; is a <em><u>post</u>fix</em> operator&mdash;it comes after its input <img src="/bjc-r/img/2-conditionals-abstraction-testing/postfix factorial 47&nbsp;&times;&nbsp;27 pixels.png" width="47" height="27" alt="n factorial">.</div> 
+							Because you want the block's name<code>&gt;=</code>to go between the two input slots you'll have to use the left plus sign in the Block Editor.</li>
+	    				<li>
+                        	You'll probably find the Boolean operators helpful, although they're not entirely necessary:<br />
+							<img src="/bjc-r/img/prog/Booleans.png" alt="and, or, not blocks">
+	    				</li>
+	   
+					</ol>
+         			There are several correct ways to do this! As long as your block gives the right <code> true</code> and <code> false</code> answers, it's correct.
+                </li>
+         		<li>
+                	Here is one way to create a <code>factorial</code> block that takes a positive integer <em>n</em> and reports the value 1 &times; 2 &times; 3 &times; ... &times; (<em>n</em> - 1) &times; <em>n</em>. <br />
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/factorial script 226 × 258 pixels.png" alt="factorial script">
+                    <ol>
+                    	<li>Create a block <code>triangular number n</code> that takes <em>n</em> as input and reports 1 + 2 + 3 + ... + (<em>n</em> - 1) + <em>n</em>.</li>
+                        <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> that works this way: <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7.</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+    </body>
 </html>
