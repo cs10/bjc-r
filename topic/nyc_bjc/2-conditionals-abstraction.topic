@@ -4,9 +4,9 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 
 		//h1: Formerly Topic 3: Conditionals and Variables
 
-	raw-html: <div class="todo"><ul><li>MF: The folder structure for this unit needs attention as it does not match the unit structure on this page. The brick wall project listed under Lab 7 here is in the Lab 8 folder. And the files in the Lab 9 folder don't appear to be anywhere.</li></ul></div>
+//	raw-html: <div class="todo"><ul><li>MF: The folder structure for this unit needs attention as it does not match the unit structure on this page. The brick wall project listed under Lab 7 here is in the Lab 8 folder. And the files in the Lab 9 folder don't appear to be anywhere. JANE FIXED THIS AND COMMENTED IT OUT. HOPE THAT'S OK!</li></ul></div>
        
-heading: Lab 1: Conditional Blocks
+heading: Programming Lab 1: Conditional Blocks
 		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
 		//have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
@@ -22,14 +22,14 @@ heading: Lab 1: Conditional Blocks
 	resource: More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
 		// game of life here later?
 	
-heading: Lab 2: Combining Booleans
+heading: Programming Lab 2: Combining Booleans
 	resource: More Complex Boolean Expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans.html]
 	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/script-variables.html]
 	// quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans-self-test.html]
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/checking-for-leap-years.html]
 
-heading: Lab 3: Practice with Predicates
+heading: Programming Lab 3: Practice with Predicates
 		//resource: motivation
 	resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
 	resource: Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates.html] // chop out relevant piees
@@ -38,25 +38,28 @@ heading: Lab 3: Practice with Predicates
 	resource: Predicates: Make a <code>Between</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/predicates-make-a-between-block.html]
 	resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/complex-booleans-practice.html]
 
-heading: Lab 4: Number Guessing
+heading: Programming Lab 4: Number Guessing
 	resource: Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-number-guessing/number-guessing.html]
 		//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
 		//resource: More Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-number-guessing/more-number-guessing.html]
 		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 		
 
+heading: Social Implications Lab 5: Media, Sharing, and Copyright
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-media-sharing-copyright/big-questions.html]
+
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
-heading: Lab 5: More Work with Reporters
-	resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-more-work-with-reporters/the-max-block.html]
-	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-more-work-with-reporters/input-types.html]
-	resource: Composition of Reporters [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-more-work-with-reporters/composition-of-reporters.html]
-	resource: Sum-thing's Up [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-more-work-with-reporters/sum-things-up.html]
+heading: Programming Lab 6: More Work with Reporters
+	resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-more-work-with-reporters/the-max-block.html]
+	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-more-work-with-reporters/input-types.html]
+	resource: Composition of Reporters [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-more-work-with-reporters/composition-of-reporters.html]
+	resource: Sum-thing's Up [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-more-work-with-reporters/sum-things-up.html]
 
-heading: Lab 6: Custom Blocks Make Code Easier to Understand
+heading: Programming Lab 7: Custom Blocks Make Code Easier to Understand
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
-	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-custom-blocks-make-code/valid-date.html]
+	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
+	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-custom-blocks-make-code/valid-date.html]
 
 //heading: Lab 7: Testing Your Code
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
@@ -64,7 +67,7 @@ heading: Lab 6: Custom Blocks Make Code Easier to Understand
 //  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
 
-heading: Lab 7: Abstraction
+heading: Programming Lab 8: Abstraction
 	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/8-abstraction/brick-wall.html]
 //	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
 
@@ -75,6 +78,16 @@ heading: Lab 7: Abstraction
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
 //	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
 //	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
+
+heading: Social Implications Lab 9: Innovations and Computing in Other Fields
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-innovations-other-fields/big-questions.html]
+
+heading: Investigations
+	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
+
+heading: Quarter 1 Project
+	resource: Assignment [/bjc-r/cur/programming/2-conditionals-abstraction-testing/quarter1-project/assignment.html]
+
 
 		//heading: Variables and custom blocks
 			// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
