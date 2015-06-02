@@ -4,6 +4,8 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 
 		//h1: Formerly Topic 3: Conditionals and Variables
 
+	raw-html: <div class="todo"><ul><li>MF: The folder structure for this unit needs attention as it does not match the unit structure on this page. The brick wall project listed under Lab 7 here is in the Lab 8 folder. And the files in the Lab 9 folder don't appear to be anywhere.</li></ul></div>
+       
 heading: Lab 1: Conditional Blocks
 		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
