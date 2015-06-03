@@ -19,21 +19,22 @@ title: Unit 3: Lists
 // learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Programming Lab 1: Introduction to Lists
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
-     quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-lists-self-test.html]
-	 resource: Sentence Builder  [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-sentence-builder.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html]
+	 resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/sentence-builder.html]
+	 resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/list-of-lists.html]
+     quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/lists-self-test.html]
 
 heading: Programming Lab 2: List Operations
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/4-getting-started.html]
-	 resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/4-map.html]
-	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/5-keep.html]
-	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/6-combine.html]
-	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/7-hof-self-test.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html]
+	 resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/map.html]
+	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/keep.html]
+	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/combine.html]
+	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/hof-self-test.html]
 
 heading: Programming Lab 3: Using Higher-Order Functions
-	 resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/7-composing-higher-order-functions.html]
-	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/8-acronym-generator.html]
-	 resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/9-when-you-really-have-to-loop.html]
+	 resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/composing-higher-order-functions.html]
+	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/acronym-generator.html]
+	 resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/when-you-really-have-to-loop.html]
 
 //heading: Lists and Sentences: The Index Variable Pattern
 
