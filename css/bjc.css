@@ -172,4 +172,11 @@ code {
    margin-top: -65px;
 }
 
+/*Fixing things that are in the main CSS -- WHY AREN'T THESE WORKING? */
+media="screen" a:visited {
+  color: #248694; /* was 36BBCE; */
+}
 
+media="screen" a {
+  color: #2a6496; /* was 428bca; */
+}
