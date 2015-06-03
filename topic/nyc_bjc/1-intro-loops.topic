@@ -5,6 +5,20 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 //	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 
+h3: In this unit, you will...
+big-idea: Write programs that draw designs, calculate, etc.
+big-idea: Understand and analyze the impact of the internet on our culture.
+
+heading: Programming Lab 1: Introduction (Mary's Dramatic New Draft)
+	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+	resource: Explore this Code [/bjc-r/cur/programming/1-introduction/1-introduction/explore-this-code.html]
+	resource: Using Snap [/bjc-r/cur/programming/1-introduction/1-introduction/using-snap.html]
+	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface_MF.html]
+	//resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work_MF.html]
+	//resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks_MF.html]
+	resource: Creating and Saving Scripts (Not ready for review) [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts_MF.html]
+	resource: Reporters (Move to L2 where's it's actually used and change to "Types of Blocks," a very brief intro to commands, reporters, and predicates that includes info on watchers too; then have more on all this in U2)  [/bjc-r/cur/programming/1-introduction/1-introduction/reporters_MF.html] 
+
 heading: Programming Lab 1: Introduction
 	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
 	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 1: Introduction</title>
+    </head>
+    <body>
+        <h2>Getting to Know the <span class="snap">snap</span> Interface</h2>
+        <!--<div class="todo">
+        	<ol>
+            	<li>Your comments can go here...</li>
+            </ol>
+        </div>-->
+        <p>Naming the sections of the <em><span class="snap">snap</span> </em> window makes it easy to refer to them.</p>
+        <img class="imageRight" src="/bjc-r/img/1-introduction/interface.jpg" alt="Snap! interface" title="Snap! interface">
+        
+        <h3>Tool Bar</h3>
+    	<p>The Toolbar at the top has buttons for:
+            <ul>
+                <li>the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> (for saving and loading your projects),</li>
+                <li>the Cloud menu <img src="/bjc-r/img/1-introduction/cloud_button.png" style="height:1.6em;" alt="Cloud button"/> (for accessing your <span class="snap">snap</span> account),</li>
+                <li>the Settings menu <img src="/bjc-r/img/1-introduction/settings_button.png" style="height:1.6em;" alt="settings button"/> (for advanced options),</li>
+                <li>stage resizing buttons (<img src="/bjc-r/img/1-introduction/screen-size_button.png" style="height:1.6em;" alt="screen-size button"/> and <img src="/bjc-r/img/1-introduction/full-screen_button.png" style="height:1.6em;" alt="full-screen button"/>),</li>
+                <li>and project control buttons (green flag <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>, pause <img src="/bjc-r/img/1-introduction/pause_button.png" style="height:1.6em;" alt="pause button"/>, and stop <img src="/bjc-r/img/1-introduction/stop_button.png" style="height:1.6em;" alt="stop button"/>).</li>
+                <li>The <span class="snap">snap</span> logo <img src="/bjc-r/img/1-introduction/Snap Logo.png" alt="Snap Logo"/> offers more information including the <a href="http://snap.berkeley.edu/SnapManual.pdf" target="_blank">the <span class="snap">snap</span> manual</a>. 
+            </ul>
+    	</p>
+        
+        <h3>Palette</h3>
+        <p>The <em>palette</em> contains the blocks that you use to tell the computer what to do. The blocks are organized into eight categories according to the kind of thing they do: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables. </p>
+        
+        <h3>Scripting Area</h3>
+        <p>You drag blocks to the Scripting Area to create scripts to control the computer. The script shown here has two blocks: <img class="inline" src="/bjc-r/img/blocks/when-greenflag-clicked.png" alt="when greenflag clicked" title="when greenflag clicked" />and <img class="inline" src="/bjc-r/img/blocks/say-Hello-World!.png" alt="say Hello World!" title="say Hello World!" /></p>
+
+        <h3>Stage</h3>
+        <p>The Stage is where <em>sprites</em>—little on-screen robots—act out the code you write. The sprite (<img class="noshaddow" src="/bjc-r/img/1-introduction/sprite.jpg" alt="sprite" title="sprite" />) in the picture above is saying "Hello World!" because that is what its script told it to do when the green flag was clicked. You can change the background design of your stage depending on what you want your program to do.</p>
+
+        <h3>Sprite Corral</h3>
+        <p>The Sprite Corral houses all of the sprites ad stages for the program. The program here has only one sprite and one stage. </p> 
+
+        <img class="imageRight" src="/bjc-r/img/1-introduction/motion-palette.jpg" alt="motion palette" title="motion palette" />   
+        <div class="forYouToDo" id="first">
+           	<p>Experiment with the interface.</p>
+            <ol> 
+				<li>Click on <img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps"> three or four times and watch the stage to see what the sprite does. </li>
+                <img class="imageRight" src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to Your Partner" title="Talk to Your Partner" />
+                <li>Click on <img class="inline" src="/bjc-r/img/blocks/turn-CW-15-degrees.png" alt="turn clockwise 15 degrees" title="turn clockwise 15 degrees"> a few times to see what happens. </li>
+                <li>What does <img class="inline" src="/bjc-r/img/blocks/go-to-x-y-0-0.png" alt="go to x:0 y:0" title="go to x:0 y:0"> do?</li>
+                <!--<li>What do the other blocks seem to do? </li>-->
+                <!--<li>Change the numbers in some of the blocks and see how that changes affects what the block does.</li>-->
+            </ol>
+        </div>
+
+        <!--<div class="sidenote">The <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down" title="pen down" /> block tells the computer to put the pen down on the virtual paper (the screen) so you can draw.</div>-->
+
+        <p>The sprite moved without leaving a trace. The command <img src="/bjc-r/img/intro/pen down.png" class="block" alt="pen down"> tells the sprite to set its penpoint down on the virtual paper the screen. </p>
+        <div class="forYouToDo">
+        	<ol start="4">
+		       	<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap">
+        		<li>Find <img src="/bjc-r/img/intro/pen down.png" class="block" alt="pen down">, click it, then try some of the <img src="/bjc-r/img/intro/move.png" class="block" alt="move.png"> and <img src="/bjc-r/img/intro/turn cw.png" class="block"  alt="turn cw"> blocks again. Try changing the numbers to see what that does.</li>
+                <!--<li>Create a script that clears the screen, putts the sprite in the center of the </li>-->
+                <div class="sidenote">Some blocks create changes on the stage. Other blocks report information right where they are. <img class="inline" src="http://localhost/bjc-r/img/topic1/xpos-bubble.png" alt="x position with bubble reporting 93" title="x position with bubble reporting 93" /></div>
+                <li>
+                	Click on the tabs in the palette menu to find each of these blocks. Click each one (maybe even more than once) to figure out what they do. Try changing their inputs (number, text, color, or key) too!<br />
+
+                    <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/think-Hmm...-for-2-secs.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/play-note-60-for-0.5-beats.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/set-pen-color.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/clear.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/wait-1-secs.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/key-space-pressed.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/sqrt-of-10.png" class="inline" alt="">
+                    <img src="/bjc-r/img/blocks/pick-random-1-to-10.png" class="inline" alt="">
+                </li>
+                <li>Drag the <img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps"> block to the scripting area, and experiment with the input to make the sprite move backwards.</li>
+            </ol>
+        </div>
+
+    </body>
+</html>
