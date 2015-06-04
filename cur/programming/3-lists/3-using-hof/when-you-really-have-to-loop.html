@@ -8,6 +8,13 @@
     
     <h2>When You Really Have to Loop</h2>
     
+    <div class="todo">
+    <ul>
+    	<li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
+        <li>JK: Any other suggestions for interesting problems here?</li>
+    </ul>
+    </div>
+    
     <div class="forYouToDo" id="first">
     	<ol>
         <li>Consider the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />. It returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok), or <code>false</code> otherwise.<br>
@@ -24,7 +31,7 @@
     <div class="dialogue">
       <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
       <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
-      <div><span>Alphie:</span> Ok. We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
+      <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
       <div><span>Betty:</span> So as we compare two items at a time, we end up with a list of "true"s and "false"s. And then we would check that list, and if there's even one "false" in there, then <code>increasing?</code> is false.</div>
       <div><span>Alphie:</span> Yeah, that works... </div>
           <div class="stagedir">They pause to think.</div>

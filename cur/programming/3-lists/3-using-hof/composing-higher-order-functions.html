@@ -16,7 +16,7 @@
 <div class="dialogue">
   <div><span>Alphie:</span> <code>Map</code> applies some function to each item of a list.</div>
   <div><span>Betty:</span> <code>Keep</code> lets you choose some items and not others.</div>
-  <div><span>Alphie:</span> And <code>combine</code> takes all the items and combines them into a single output somehow.</div>
+  <div><span>Alphie:</span> And <code>combine with</code> takes two items at a time and combines all the items into a single output.</div>
   <div><span>Betty:</span> Can you think of a situation where we would use all three of the functions together?</div>
       <div class="stagedir">They pause to think.</div>
   <div><span>Alphie:</span> This is kind of a boring example, but I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
@@ -31,7 +31,12 @@
 
 <div class="forYouToDo" id="first">
 <ol>
-	<li>Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's sales at the shop. <br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
+	<li><div class="sidenote">This problem doesn't need <code>keep</code>. What kind of code might need <code>keep</code>? One way might be to limit the coded message to upper case letters, so that anything that's not an upper case letter gets removed.</div>Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
+    <ol>
+    	<li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
+        <li>Use those blocks, along with <code>map</code> and <code>combine with</code> to decode this message.<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+    </ol></li>
+	<li>Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's sales at the shop. There are eight days shown here. <br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
     	<ul>
         	<li>The first number is the day's high temperature.</li>
             <li>The second is the number of popsicles sold.</li>
@@ -40,11 +45,6 @@
             <li>Ice cream cones sell for $3.75 each.</li>
         </ul>
         Use <code>map</code>, <code>keep</code>, and <code>combine with</code> together in a single block that calculates the total amount of money the shop made by selling popsicles and ice cream on the days when the high temperature was over 80 degrees.</li>
-	<li><div class="sidenote">This problem doesn't need <code>keep</code>. What kind of code might need <code>keep</code>? One way might be to limit the coded message to upper case letters, so that anything that's not an upper case letter gets removed.</div>Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
-    <ol>
-    	<li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
-        <li>Use these blocks, along with <code>map</code> and <code>combine with</code> to decode this message.<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
-    </ol></li>
 	<li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
 </ol>
 </div>
