@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 2: Combining Booleans</title>
+    </head>
+    <body>
+		<h2>Script Variables</h2>
+        <div class="todo">
+        	<ul>
+                <li>MF: I worry that the mathematics required on this page would be non-trivial for our students. What if they haven't had any geometry?</li>
+            </ul>
+        </div>
+        <p>Sometimes you want a variable in your script, and want to the value that you will use in your script. </p>
+        <p>Here is an example. To build it, use <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> (in the variables tab, of course) and click on the orange &quot;<code>a</code>&quot; to change the name to &quot;<code>sides</code>.&quot; Then, to set the value of  &quot;<code>sides</code>,&quot; use 
+		<img src="/bjc-r/img/prog/set.png" alt="set" /> and click on the down-arrow to select the variable &quot;<code>sides</code>.&quot;</p>
+		
+		<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
+
+    <div class="forYouToDo" id="first"> <div class="sidenote"> The <code>script variables</code> block creates a variable that can be used throughout this script. (It exists only while the script is running.) </div>
+      <p>Try running the script (by clicking the green flag) several times to see what shapes it draws.</p>
+        <ol>
+            <li>Self-test question: Why did we start the range of possible random numbers at 3?</li>
+            <li>Self-test question: Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+                <li>Challenge: Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using only multiples of 10.</li>
+        </ol>
+      </div>
+        <p><span class="sidenote">In this script, the value of <code>sides</code> is used twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle through which to <code>turn</code> for each side.</span> Why bother with the script variable? Why could we not just have written the code as in problem 4 below?</p>
+      <div class="forYouToDo">
+          <ol start="4">
+                <li>
+                    <p>Here, instead of setting a script variable, we just put the <code>pick random</code> block into the two places that the random number is needed. Before you build and run this script, try to figure out what could go wrong.</p>
+                    <img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
+                </li>
+            </ol>
+        </div>
+        <p>[[[EDITING STOPPED HERE]]] Another place where script variables can be useful is in a program that interacts with the user.</p>
+        <img src="/bjc-r/img/prog/converse.png" alt="conversation with ASK AND WAIT" />
+<p>Note that this script has <em>two </em>script variables. The <code>script variables</code> block has a little right-facing arrowhead at the end:</p>
+        <img src="/bjc-r/img/prog/arrowhead.png" alt="arrowhead in block" />
+        <p>If you click the arrowhead, a second orange variable oval will appear. Also, there will be left- and right-facing arrowheads. You can click these to adjust the number of variables you need.</p>
+        <p>The join block also has arrowheads to control the number of input slots it has. In the text string inputs, both in <code>join</code> and in the <code>ask</code> blocks, the pale brown raised dots represent spaces. The brown dots don&rsquo;t appear in the text on the stage when the script is run. They&rsquo;re in the input slots so that you can easily see if there are multiple spaces in a row:</p>
+        <img src="/bjc-r/img/prog/multispace.png" alt="text input with multiple spaces in a row" />
+        <p>and also so that you can distinguish between a completely empty input slot and one that has a space in it:</p>
+        <img src="/bjc-r/img/prog/emptyspace.png" alt="empty input text vs. space" />
+        <!-- The below line seems to enforce bad programming habits.. why is it here?
+        <!-- <p>Test yourself: Actually, that conversation script could have been made using just one variable. Which one, and how would you do it?</p> -->
+	</body>
+</html>

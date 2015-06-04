@@ -5,7 +5,7 @@
         <title>Lab 1: Conditional Blocks</title>
     </head>
     <body>
-		<h2>Getting Started</h2>
+		<h2>Booleans</h2>
         
         <div class="todo">
         <ul>
@@ -41,23 +41,20 @@
         </ul>
         </div>
         
-        <p>This code <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  appeared in  &lt;link to Lab XX&gt;. </p>
-<p>The following scripts use one new block,  <code>if-else</code>. Construct each of them and try them out.<br />
-  <img src="/bjc-r/img/2-conditionals-abstraction-testing/ForeverGoToMouseIfXpos<0PenRedElsePenGreen226x215.png" alt="Forever go to mouse pointer, if x position less than 0 set pen color to Red, else set pen color to green"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirection<90PenSize5ElsePenSize1_224x250.png" alt="If Direction less than 90 set Pen Size to 5 Else set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"></p>
-<p>Now try to create scripts that draw these pictures:</p>
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge1.png" width="132" height="126" alt="Challenge 2: circle with northwest circumference red and the rest green"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge4.png" alt="Circle with southeast circumference thin and the rest thick"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge3.png" alt="Circle with southwest corner thick and the rest thin"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge4.png"  alt="Circle with the southeast corner thin and the rest thick"></p>
-<p>And try to create a script that has this behavior.</p>
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ClockAnimation.gif" width="342" height="236" alt="Clock animation: draws circle with dots for each number and says &quot;another hour has passed&quot;"></p>
-<p>&nbsp;</p>
+        <p>You already know what <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  does. </p>
+    	<p>The following script uses two new blocks,  <code>if</code>  and  <code>distance to</code>: <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" style="height:100px;" class="indent" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
     	<div class="forYouToDo" id="first">
-<ol>
+        <ol>
             <li>First  analyze this new script and predict what it <em>should</em> do.</li>
             <li> In actuality, it doesn't behave exactly as it &quot;should.&quot; Nothing in the script should make its behavior depend on  mouse speed, but speed does matter. Build it and experiment with it. Then come up with a theory to explain the behavior you see.</li>
           </ol></div>
-    	<p>The script checks "forever" to see <code>if</code>  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is true.  If it is, the sprite follows the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" class="block" alt="go to mouse x and mouse y"> contained inside the <code>if</code>. If  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is not <img src="/bjc-r/img/blocks/true.png" alt="true"/>, the sprite is not instructed to move. Blocks, like <code>if</code>, that specify the conditions that control when some code is to run are called <strong>conditionals</strong>. Blocks, like <code>greater than</code>, that report <code>true</code> when a condition is met and <code>false</code> when it is not met are called "predicates." <p> <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/></p> In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </p> 
-     <div class="forYouToDo">           
+    	<p>The script checks "forever" to see <code>if</code>  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is true.  If it is, the sprite follows the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" class="block" alt="go to mouse x and mouse y"> contained inside the <code>if</code>. If  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is not <img src="/bjc-r/img/blocks/true.png" alt="true"/>, the sprite is not instructed to move. Blocks, like <code>if</code>, that specify the conditions that control when some code is to run are called <strong>conditionals</strong>. </p>
+
+        <div class="forYouToDo">
+        	<div class="sidenote">
+       	    <div> Blocks, like <code>greater than</code>, that report <code>true</code> when a condition is met and <code>false</code> when it is not met are called "predicates." <p> <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/></p> In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </div></div>
             <ol start="3">
-            	<li>Look in the "Sensing" and "Operators" tabs, find the <em>predicate</em> blocks, and talk with your pair programmer about what you think they might be useful for. </li>
+            	<li>Look in the "Sensing" and "Operations" tabs, find the <em>predicate</em> blocks, and talk with your pair programmer about what you think they might be useful for. </li>
             	<li>Look in the "Control" tab to find what other <em>conditionals</em> are there. Again discuss how you think you might use these.</li>
             </ol>
         </div>
