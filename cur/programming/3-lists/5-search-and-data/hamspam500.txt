@@ -43,7 +43,7 @@ ham	Fair enough, anything going on?
 ham	Yeah hopefully, if tyler can't do it I could maybe ask around a bit
 ham	U don't know how stubborn I am. I didn't even want to go to the hospital. I kept telling Mark I'm not a weak sucker. Hospitals are for weak suckers.
 ham	What you thinked about me. First time you saw me in class.
-ham nice car!
+ham	nice car!
 ham	K fyi x has a ride early tomorrow morning but he's crashing at our place tonight
 ham	Wow. I never realized that you were so embarassed by your accomodations. I thought you liked it, since i was doing the best i could and you always seemed so happy about "the cave". I'm sorry I didn't and don't have more to give. I'm sorry i offered. I'm sorry your room was so embarassing.
 spam	SMS. ac Sptv: The New Jersey Devils and the Detroit Red Wings play Ice Hockey. Correct or Incorrect? End? Reply END SPTV
@@ -494,7 +494,7 @@ ham	Probably gonna be here for a while, see you later tonight &lt;)
 ham	Or maybe my fat fingers just press all these buttons and it doesn't know what to do.
 ham	Ummmmmaah Many many happy returns of d day my dear sweet heart.. HAPPY BIRTHDAY dear
 ham	I am in tirupur da, once you started from office call me.
-ham OK.
+ham 	OK.
 spam	from www.Applausestore.com MonthlySubscription@50p/msg max6/month T&CsC web age16 2stop txt stop
 ham	A famous quote : when you develop the ability to listen to 'anything' unconditionally without losing your temper or self confidence, it means you are ......... 'MARRIED'
 ham	But am going to college pa. What to do. are else ill come there it self. Pa.
