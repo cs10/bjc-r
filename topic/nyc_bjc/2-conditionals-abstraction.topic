@@ -13,6 +13,7 @@ heading: Programming Lab 1: Conditional Blocks
 		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] // combine with introduction
 	raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
 	resource: Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] //remove/replace some quiz questions
+	resource: Conditional Blocks, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
 	resource: <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-and-if-else.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
@@ -21,6 +22,8 @@ heading: Programming Lab 1: Conditional Blocks
 	resource: Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
 	resource: More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
 		// game of life here later?
+		
+
 	
 heading: Programming Lab 2: Combining Booleans
 	resource: More Complex Boolean Expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-combining-booleans/complex-booleans.html]
