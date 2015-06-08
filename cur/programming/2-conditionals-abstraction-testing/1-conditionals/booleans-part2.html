@@ -2,51 +2,34 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 1: Conditional Blocks</title>
+        <title>Lab 1: Conditionals, Part 2</title>
     </head>
     <body>
 		<h2>Getting Started</h2>
         
-        <div class="todo">
-        <ul>
-        	<li>In #3, show the predicate blocks. And give some non-examples.</li>
-            <li>Let's us the term "procedures" for subroutines where appropriate.</li>
-            <li>
-            	We could:
-                  <ul>
-                    <li>We could introduce a few logic puzzles with if-then (maybe it could be in the TG as a lesson opener). Or a choose your own adventure style activity. </li>
-                    
-                    <li>Experiement with prediates and do a few problems and then do Bowen's idea before.</li>
-                  </ul>
-            </li>
-            <li>MF: Maybe students could write their own choose their own activity at the end of the lesson.</li>
-            <li>MF: Maybe we could keep the truth tables but put them in the lesson openers in the TG.</li>
-            <li>PG: One possitbility: start with the traffic light then go to the plurals.</li>
-        </ul>
-        </div>
-        
         <div class="forYouToDo" id="first">
-        <p>This code <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  appeared in  &lt;link to Lab XX&gt; and this code appeared in &lt;link to Lab XX&gt;<img src="/bjc-r/img/2-conditionals-abstraction-testing/repeat-until-direction-equals-90-move-1-turn-cw-1.png" alt="repeat-until-direction-equals-90-move-1-turn-clockwise-1">.</p>
-        <p>The following scripts use one new  block, <img src="/bjc-r/img/blocks/if-else.png" alt="if-else">, which you can find in the yellow Control tab, and <img src="/bjc-r/img/blocks/x-position.png" alt="x position"> and <img src="/bjc-r/img/blocks/direction.png" alt="direction">, which you can find in the blue Motion tab.</p>
+        <div class = "sidenote"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 any time that the sprite's <code>direction</code> is a multiple of 60&deg;. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> will be true only when the <code>direction</code> is 0, 60, 120, 180, 240, and 300. 
+              <p><em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. 
+                 So, when the sprite's direction is not a multiple of 60, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0 (and less than 60). For example, if the sprite is pointing in the direction 127&deg;, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.
+              </p> 
+                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7">  
+              <p>When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0.
+              </p> 
+                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">.
+              <p>
+                 In how many other directions will <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30-equals-0.png" width="278" height="34" alt="direction-mod-30-equals-0"> report <code>true</code>?
+              </p></div>
           <ol>
-            <li> To solve the puzzles in problem 2, you will need to build these scripts figure out how they work. Construct each script and puzzle out how it works.<br />
-              <div class = "sidenote"> When the sprite is pointing in the direction 127°, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7, because when you divide 127 by 60 the remainder is 7. <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7"> <br /> 
-    When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0 <br />
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">.<br /></div>
-    
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/ForeverGoToMouseIfXpos<0PenRedElsePenGreen315x217.png"alt="Forever, go to mouse x mouse y and if X position is less than 0 set pen color red else green"> 
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirection<90PenSize5ElsePenSize1_224x250.png" alt="If Direction less than 90 set Pen Size to 5 Else set Pen Size to 1"> 
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1">
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/ForeverIfDirection>180and<270SetColorRedElseGreenMove1Turn1.png" alt="Forever If Direction greater than 180 and direction less than 270 S et Color Red Else Green Move 1 Turn 1"><img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-if-direction=30or60-set-pen-size-10-set-color-blue-else-size-1-color-red-move-1-turn-1_465x318.png" alt="forever ((if-direction=30or60-set-pen-size-10-set-color-blue-else-size-1-color-red)-move-1-turn-1)"></li>
-            <li>Six puzzles: Create scripts (or modify ones you already have) to draw these pictures.</li>
-                
-    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge1.png" alt="Puzzle 1: circle with northwest circumference red and the rest green, sprite circling clockwise"> 
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge2.png" alt="Puzzle 2: Circle with southeast circumference thin and the rest thick, sprite circling clockwise"> 
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge3.png" alt="Puzzle 3: Circle with southwest corner thick and the rest thin, sprite circling clockwise"> 
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge4.png"  alt="Puzzle 4: Circle with the southeast corner thin and the rest thick, sprite circling clockwise">
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge5.png"  alt="Puzzle 5: thin green circumference with four thick red dots at north, west, south, and east, sprite facing counterclockwise">
-    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge6.png" alt="Puzzle 6: thin blue circumference with two very thick red dots in southeast at roughly four-o'clock and five-o'clock positions, sprite circling clockwise"></p>
-            <li>And try to create a script that has this behavior.</li>
+            <li>To solve the puzzles in problem 2, you will need to understand how these scripts work. Construct each script and puzzle out how it works. <img class="imageRight" src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />      
+              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Script-with-two-repeat-untils-and-mod.png" alt="Script"></p>
+            </li>
+            <li>Two puzzles: Create scripts (or modify ones you already have) to draw these pictures.
+            </li>
+                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge5.png"  alt="Puzzle 5: thin green circumference with four thick red dots at north, west, south, and east, sprite facing counterclockwise">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge6.png" alt="Puzzle 6: thin blue circumference with two very thick red dots in southeast at roughly four-o'clock and five-o'clock positions, sprite circling clockwise">
+                 </p>
+            <li>And try to create a script that has this behavior.
+            </li>
     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ClockAnimation.gif" alt="Clock animation: draws circle with dots for each number and says &quot;another hour has passed&quot;"></p></ol></div>
 
 
