@@ -41,7 +41,7 @@ heading: Programming Lab 3: Using Higher-Order Functions
 heading: Programming Lab 4: Magic Squares
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/getting-started.html]
 	 resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples.html]
-	 resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
+	 //resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
 	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/finishing-touches.html]
 
 heading: Social Implications Lab 5: Search and Data Part I
