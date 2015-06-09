@@ -71,6 +71,15 @@ li > ol {
   clear:both;
 }
 
+.endnote { /* added by Mary Fries on 6/9/15 based on above */
+  margin-right: 20px;
+  margin-left: 1em;
+  width: 90%;
+  background-color: #FFF8AD;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
 /* IMG with no shaddow */
 img.noshaddow {
   /* Better resizing of images for mobile devices */
@@ -80,12 +89,12 @@ img.noshaddow {
 }
 
 /* New div styles */
-.forYouToDo, .dialogue, .takeItFurther, .takeNote {/* Shared Box Formatting */
+.forYouToDo, .dialogue, .takeItFurther, .takeNote, .endnote {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;
 }
 
-.forYouToDo:before, .dialogue:before, .takeItFurther:before { /* Shared Heading Formatting */
+.forYouToDo:before, .dialogue:before, .takeItFurther:before, .endnote > div { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -148,6 +157,14 @@ div.saveAs img {
 div.saveAs span.text {
   position: absolute; 
   margin-left: 182px;/*19.7em;*/
+  padding-top: 1.6em;
+  z-index:2;
+  color: #333;
+}
+
+div.newProject span.text {
+  position: absolute; 
+  margin-left: 290px;/*19.7em;*/
   padding-top: 1.6em;
   z-index:2;
   color: #333;

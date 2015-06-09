@@ -22,7 +22,8 @@
         <p>Indent code with 4 spaces (one tab) with each new level.</p>
         <p>Use &lt;span class="snap"&gt;snap&lt;/span&gt; to write <span class="snap">snap</span></p>
     	<div class="comment">Comment Sidenote.</div>
-        <div class="sidenoteBig">A wider sidenote</div>
+        <div class="sidenoteBig">A wider sidenote (I added a new 90% width one for end of page summaries down below. --MF)</div>
+        <h3>How to....</h3>
         <div>
         	Links to things down below (like in TG): 
             <ul>
@@ -55,13 +56,25 @@
             	<li>To avoid having the title "For You To Do" appear several times on the same page, use id="first" for the first instance of class="forYouToDo" and not in the others. (Note: ID is used for something that only appears once; we are IDing that one as the first one.)</li>
                 <li>Note that this second For You To Do also differs in that the &lt;ol&gt; tag has start="4" inside it so that the list starts in the right place.</li>
                 <li>Here are a bunch of icons you can use to say certain things that we will say over and over again (it's probably nice to have these on the right and to let the text wrap around them.):</li>
-                <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" /> 
-                <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" />
-                <img class="imageRight" src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />
-                <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" />
-                <img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" /><br clear="all"/>
-                <li>This next one has text in it that you get to add so it requires a little extra HTML. (<em>Be sure to edit both 1. the text in the span and 2. the alt text for the image.</em>)</li>
-                <div class="saveAs"><span class="text">"U1Lab2Crayon"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" /></div>
+                <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+                <img class="imageRight" src="/bjc-r/img/icons/talk-to-your-partner.png" alt="Talk to Your Partner" title="Talk to Your Partner" />
+                <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
+                <img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Would be a Good Time to Save" title="Now Would be a Good Time to Save" />
+                <img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" /><br clear="all"/>
+                <li>These next two have text in them that you get to add so it requires a little extra HTML. (<em>Be sure to edit both 1. the text in the span and 2. the alt and title text for the image.</em>)</li>
+                <div class="saveAs"><span class="text">"U1Lab2Crayon"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" title="save your work as U1Lab2Crayon" /></div>
+                <div class="newProject">	<span class="text">"U1Lab2Crayon"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U1Lab2Crayon" title="Start a New Project called U1Lab2Crayon" /></div>
+                <li>Alternatively, we can also use these mini icons since those are kinda big... Just be sure to change their class to imageRight.</li>
+                <img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                <img class="imageLeft" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
+                <img class="imageLeft" src="/bjc-r/img/icons/talk-to-your-partner-mini.png" alt="Talk to Your Partner" title="Talk to Your Partner" />
+                <img class="imageLeft" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+                <img class="imageLeft" src="/bjc-r/img/icons/share-your-work-mini.png" alt="Share Your Work" title="Share Your Work" />
+                <img class="imageLeft" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                <img class="imageLeft" src="/bjc-r/img/icons/new-project-mini.png" alt="Start a New Project" title="Start a New Project" />
+                <img class="imageLeft" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" /><br clear="all"/>
             </ol>
         </div> 
 
@@ -108,6 +121,11 @@
         	</div>
         </div>
 
+        <div class="endnote">
+            <div>Summary</div>
+            Paul asked for this box. The idea is to use it for optional reading material that might summarize what they've been doing or for addtional, slightly off topic, but interesting material.
+        </div>
+        
         <p> 
         	Let's not use the following colored boxes at all:
         </p>
@@ -119,14 +137,14 @@
         	(If we like the look, we can reintegrate them, but for now, let's change each one over to our own styles above. I asked, and these didn't have much specific meaning in previous BJC versions.)
         </p>
 
-        <h3><a name="picture"></a>How to Make an Picture of Blocks</h3>
+        <h3><a name="picture"></a>How to Make a Picture of Blocks</h3>
         <div>
         	<ol>
             	<li>Build the script you want in <span class="snap">snap</span></li>
-                <li>If you want to make a big picture of a short script, choose "Zoom blocks" from the settings menu and enter "1.5"; otherwise just leave it at 1. Use "zoom 1" for single line blocks. In terms of file storage, if it's a script or a block with inputs that is likely not to be used again, please store the image in the unit image directory; if it's a blank block or a block with default inputs, then it should go in the "blocks" image directory.</li>
+                <li>If you want to make a big picture of a short script, choose "Zoom blocks" from the settings menu and enter "1.5"; otherwise, just leave it at "1" for single line blocks. </li>
                 <li>Scroll around to locate the script</li>
                 <li>Right click the script and choose "script pic..."</li>
-                <li>Save the file to the unit's <em>new</em> image directory, e.g. /bjc-r/img/3-lists</li>
+                <li>Save the file to the unit's <em>new</em> image directory, e.g. /bjc-r/img/3-lists or to a shared directory, as appropriate. (If it's a script or a block with inputs that is not likely to be used again, please store the image in the unit image directory; if it's a blank block or a block with default inputs, then it should go in the "blocks" image directory.)</li>
             </ol>
         </div>
 
