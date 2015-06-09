@@ -34,26 +34,9 @@
         </div>
         <p>"Getting Started" is an optional (for us&mdash;it's required for students) <em>HTML page</em> at the beginning of each lab. "Take it Further" is a <em>page element</em> that we can (optionally) place at the end of each lab or wherever makes sense.</p>
         <div class="forYouToDo" id="first">
-            <div>
-                This is a made with a div within a div. The class of the surrounding div is "forYouToDo".<br />
-                <ol>
-                    <li>Read this and your dog will be happy:<br />
-                        <ol>
-                            <li>Sub-pr0blem 1</li>
-                            <li>Sub-probl3m 2</li>
-                        </ol>
-                    </li>
-                    <li>Then think about how to code this picture: <br />
-                    <img src="/bjc-r/img/topic1/topic1_kaleidoscopegif.gif" alt="this is a picture. isn't it nice? ;)"></li>
-                    <li>Un Otro Problemo... et cetero...</li>
-                     
-                </ol>
-            </div>
-        </div>
-        
-        <div class="forYouToDo">
-        	<ol start="4">
-            	<li>To avoid having the title "For You To Do" appear several times on the same page, use id="first" for the first instance of class="forYouToDo" and not in the others. (Note: ID is used for something that only appears once; we are IDing that one as the first one.)</li>
+            This is a made with a div within a div. The class of the surrounding div is "forYouToDo".<br />
+            <ol>
+                <li>To avoid having the title "For You To Do" appear several times on the same page, use id="first" for the first instance of class="forYouToDo" and not in the others. (Note: ID is used for something that only appears once; we are IDing that one as the first one.)</li>
                 <li>Note that this second For You To Do also differs in that the &lt;ol&gt; tag has start="4" inside it so that the list starts in the right place.</li>
                 <li>Here are a bunch of icons you can use to say certain things that we will say over and over again (it's probably nice to have these on the right and to let the text wrap around them.):</li>
                 <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
@@ -103,22 +86,34 @@
         </div>
         
         <div class="takeItFurther">
-            <div>
-                Here is a list of other formatting we can use:<br />
-                <ul>
-                    <li>
-                    	Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block: <img src="/bjc-r/img/1-introduction/pen-down.png" class="block"/>. 
-                        <ul>
-                            <li>Note: The <code>code</code> tag has been used all over the place in the previous version of BJC. Please try to keep it to only actual code blocks.</li>
-                            <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a <span class="snap">snap</span> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
-                        </ul>
-                    </li>                   
-                    <li>Use the "strong" tag for <strong>bold</strong>. Introduce <strong>new terms</strong> using the strong tag.</li>
-                    <li>Use the "em" tag for <em>italics</em>. The "em" tag is for <em>em</em>phasis.</li>
-                    <!-- block (code tag) vs. palette (quotes) vs. variable (italics, but even if block?) vs. new term (bold)-->
-                    <li>References to text in the app (such as the "OK" button or the "Motion" palette) should be in quotes.</li>
-                </ul>
-        	</div>
+            <br clear="all" />Here is a list of other formatting we can use:<br />
+            <ol start="6">
+                <li>
+                    Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block: <img src="/bjc-r/img/1-introduction/pen-down.png" class="block"/>. 
+                    <ul>
+                        <li>Note: The <code>code</code> tag has been used all over the place in the previous version of BJC. Please try to keep it to only actual code blocks.</li>
+                        <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a <span class="snap">snap</span> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
+                    </ul>
+                </li>
+                <li> Syntax for <code>code</code> tags <em>and</em> alt/title text:
+                    <ul>
+                        <li>Use parentheses for numerical inputs and square brackets for groups of blocks.</li>
+                        <li>
+                        	For example:
+                            <ul>
+                                <li><code>repeat (4) [move (50) steps, turn CW (90) degrees]</code></li>
+                                <li>the <code> move () steps</code> block</li>
+                                <li><code>list (apple, orange, banana)</code></li>
+                            </ul>
+                        </li>
+                        <li>Do you have any examples that break or challenge this rule?</li>
+                    </ul>                 
+                </li>
+                <li>Use the "strong" tag for <strong>bold</strong>. Introduce <strong>new terms</strong> using the strong tag.</li>
+                <li>Use the "em" tag for <em>italics</em>. The "em" tag is for <em>em</em>phasis.</li>
+                <!-- block (code tag) vs. palette (quotes) vs. variable (italics, but even if block?) vs. new term (bold)-->
+                <li>References to text in the app (such as the "OK" button or the "Motion" palette) should be in quotes.</li>
+            </ol>
         </div>
 
         <div class="endnote">
