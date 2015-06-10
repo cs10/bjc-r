@@ -15,32 +15,31 @@
    
    <div class="todo">
    <ul>
-   	<li>JK: Clunky save as button is still there. Think of how to do that better.</li>
-    <li>JK: Really want to emphasize the difference between list and item in a list.</li>
+    <li>JK: #4 is still there, but may be deleted if the functionality of "length of" is changed in Snap.</li>
    </ul></div>
    
   <div class="forYouToDo" id="first">
       <p>Write down your observations.</p>
       <div class="sidenote">Find <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> in the Variables palette.</div>
-      <div class="sidenote">A <strong>list</strong> is a way to combine several values into one grouped value. It has a <strong>variadic input</strong> because you can vary the number of inputs. Use the left and right arrowheads to delete or add input slots.</div>
+      <div class="sidenote">A <strong>list</strong> combines several values into one grouped value. The list block has a <strong>variadic input</strong> because you can <em>vary</em> the number of inputs. Use the left and right arrowheads to delete or add input slots.</div>
       <ol>
         <li> Make <img border="0" src="/bjc-r/img/3-lists/gs1.png" class="script" alt="LIST block with capitals" title="LIST block with capitals">.<br>Describe what these do:
           <ol>
-              <li> <img border="0" src="/bjc-r/img/3-lists/gs1a.png" class="script" alt="ALL BUT FIRST block" title="ALL BUT FIRST block"> </li>
-              <li> <img border="0" src="/bjc-r/img/3-lists/gs1b.png" class="script" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
-              
-<li> <div class="todo"> AC: Can we put an ``item 1'' here as another thing to try?  This is often used in conjunction twith ``all but first''.
-    </div>              
-              
-              
-              
-              
+              <li> <img border="0" src="/bjc-r/img/3-lists/gs1a.png" alt="ALL BUT FIRST block" title="ALL BUT FIRST block"> </li>
+              <li> <img border="0" src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
+              <li> <img border="0" src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>
               
           </ol></li>
       <div class="sidenote">The gray rounded rectangle with red rounded rectangles inside is the visual representation of a list. Each red rectangle is one <strong>list item</strong>. <img border="0" src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div>
+      <div class="sidenote">An input slot that looks like <img border="0" src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
+
         <li> What is the difference between <img border="0" src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img border="0" src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
-        
-        <li> The red <code>length of</code> block returns the number of items in a <strong>list</strong>. For example, <img border="0" src="/bjc-r/img/3-lists/gs_length2.png" alt="length (Augusta, Boise)" title="length (Augusta, Boise)" /> returns 2. What do each of the following return?
+
+<br>        
+<div><img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
+<br>
+    
+        <li>The red <code>length of</code> block returns the number of items in a <strong>list</strong>. For example, <img border="0" src="/bjc-r/img/3-lists/gs_length2.png" alt="length (Augusta, Boise)" title="length (Augusta, Boise)" /> returns 2. What do each of the following return?
         	<ol>
             	<li><img border="0" src="/bjc-r/img/3-lists/gs_length0.png" alt="length (empty list)" title="length (empty list)" /></li>
                 <li><img border="0" src="/bjc-r/img/3-lists/gs_length_allbutfirst.png" alt="length (all but first (Augusta, Boise, Columbia))" title="length (all but first (Augusta, Boise, Columbia))" /></li>
@@ -49,41 +48,25 @@
         </li>
         
         <li> There is also a green <code>length of</code> block that returns the length of a <strong>word</strong>. One of the following blocks will return a value, the other one will give an <em>error</em>.<br><img border="0" src="/bjc-r/img/3-lists/gs_length_green.png" alt="green length (item2 of (Augusta, Boise))" title="green length (item2 of (Augusta, Boise))" /> <img border="0" src="/bjc-r/img/3-lists/gs_length_red.png" alt="red length (item2 of (Augusta, Boise))" title="red length (item2 of (Augusta, Boise))" /><br>Which one gives the error and why?
-  <div class="todo">
-   <ul>
-   	AC:  This is baffling.  
-   <ol>
-              <li> 
-    The red ``length of'' isn't a function but the green one is. How is a student to interpret the error when you apply length of to a word? 
-     <li>   The green one (with the same name) *is* a function.  It works on both words and lists.  Again, what is a student to think?
-     <li>  On the palette, the green ``length of'' has a dummy input "world".  Any reason?
-     
-   
-    </ol>  I know this is a Getting Started.  Hope it gets cleared up in the following.
-   
-   </ul></div>      
-        
-        
         </li>
+
+<br>        
+<div><img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
+<br>
+
         
         <li> Compare:
           <ol>
-              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_list.png" class="script" alt="say list block" title="say list block"></li>
-              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_any.png" class="script" alt="say any item block" title="say any item block"></li>
-              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_random.png" class="script" alt="say item (random 1 to 4) block" title="say item (random 1 to 4) block">
-              
-<div class="todo">
-   <ul>
-   	AC:  How about just "random 1 to 3"?       
-     </ul></div>           
-              
-              
-              
-              </li>
-              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_each.png" class="script" alt="say for each block" title="say for each block"><img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" /></li>
+              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_list.png" alt="say list block" title="say list block"></li>
+              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_any.png" alt="say any item block" title="say any item block"></li>
+              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_random.png" alt="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)"></li>
+              <li><img border="0" src="/bjc-r/img/3-lists/gs4say_each.png" class="script" alt="say for each block" title="say for each block"><img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /></li>
           </ol></li>   
-       <div class="saveAs"><span class="text">"U3Lab1Lists"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U3Lab1Lists" /></div>
       </ol>
+      <p><img class="imageLeft" src="/bjc-r/img/icons/save-now.png" alt="Now Would be a Good Time to Save" title="Now Would be a Good Time to Save" /></p>
+<br>
+<br>
+<br>
   </div>
   
   </body></html>
