@@ -22,6 +22,7 @@ heading: Programming Lab 1: Introduction to Lists
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html]
 	 resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/sentence-builder.html]
 	 resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/list-of-lists.html]
+	 resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/draw-shape.html]
      quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/lists-self-test.html]
 
 heading: Programming Lab 2: List Operations
@@ -49,6 +50,7 @@ heading: Social Implications Lab 5: Search and Data Part I
 	 resource: Spam and Ham [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-introduction.html]
 
 heading: Investigations
+	 resource: Building Musical Chords (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
 	 resource: Processing a Sentence (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
  	 resource: Longest Word (Use after Lab 3) [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
  	 resource: Display Word (Use after Lab 3) [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
