@@ -28,12 +28,15 @@
    
 	<div class="forYouToDo" id="first">
     <ol>
- 		<li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
-        <li>Experiment with list operations like <code>length of</code> and <code>item(1)of</code> to learn how they treat lists of lists. Then answer:
+ 		<li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
+        <li>Experiment with list operations like <code>length of</code> and <code>item () of</code> to learn how they treat lists of lists. Then answer:
        	<ol>
-        	<li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /> return 8 or 16?</li>
-            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> return 9:15 or the <strong>list</strong> (4:45, 7:30, 10:15)?</li> 
-            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> return 9:15, the <strong>list</strong> (9:15), or the <strong>list</strong> (4:45, 7:30, 10:15)?</li>
+        	<li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /> report 8 or 16?</li>
+            
+            <div class="sidenote">{4:45, 7:30, 10:15} is a text representation of <img border="0" src="/bjc-r/img/3-lists/output445-730-1015.png" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /></div>
+            
+            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> report 9:15 or the list {4:45, 7:30, 10:15}?</li> 
+            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> report 9:15, the list {9:15}, or {4:45, 7:30, 10:15}?</li>
         </ol>
         </li>
         <li>What will this report: <img border="0" src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">? Why?</li>
@@ -45,6 +48,13 @@
     <div class="dialogue">
         <div><span>Betty:</span> Our list of lists could have x- and y-coordinates for the position of a sprite, like this.</div>
         	<div class="stagedir">Betty makes: <img border="0" src="/bjc-r/img/3-lists/coordinates.png" alt="coordinates list ((50,120), (-20,40), etc)" title="coordinates list ((50,120), (-20,40), etc)"></div>
+            
+ <div class="comment">  AC:  Does this do what it's supposed to do?</div> 
+            
+            
+            
+            
+            
         <div><span>Alphie:</span> So then we want to go through each of the four lists and make the sprite go to (item 1, item 2) for each list. Let me try to build it.</div>
         	<div class="stagedir">Alphie makes <img border="0" src="/bjc-r/img/3-lists/coordinates_for.png" alt="script with for loop" title="script with for loop"></div>
         <div><span>Betty:</span> So when <code>i</code> is 1, the sprite goes to "item 1 of item 1" and "item 2 of item 1". Then <code>i</code> is 2, so the sprite goes to "item 1 of item 2" and "item 2 of item 2".</div>
@@ -56,7 +66,8 @@
         <li>Write the same procedure with <code>for each</code> by fixing this script:<br> <a class="run" href="/bjc-r/prog/3-lists/U3Lab1Coordinates.xml"><img border="0" src="/bjc-r/img/3-lists/coordinates_foreach.png" alt="script with for each" title="script with for each"></a></li>
     </ol>
 	</div>
-
+ <div class="comment">  AC:  I'mm not sure how to do this.</div> 
+            
 	<div class="takeItFurther">
     <ol start="5">
     	<li>Create a program that uses a list of lists.</li>
