@@ -12,18 +12,22 @@
 
    <body>
    
-   <h2>Finding Triples</h2>
+   <h2>Triples</h2>
+   
+   <p>There are several possible algorithms for checking to see if a list forms a magic square. Though the details might be different, your algorithm probably involved identifying three numbers at a time and adding them. Call these sets of three numbers "triples".</p>
    
    <div class="forYouToDo" id="first">
    <img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
    <ol>
-   		<li>How many triples do you have to check to see if a list is a magic square?</li>
-        <li>Make a list of lists, called <code>triple positions</code> that keeps track of the <em>positions</em> of the triples. Here's a start. The first item, the list (1, 4, 7) is identifying the <em>left column</em> in a 3-by-3 grid.<br><img border="0" src="/bjc-r/img/3-lists/magic_start_triples.png" alt="list that gives first triple (1,4,7)" title="list that gives first triple (1,4,7)" /></li>
-
+   		<li>Write a block that finds the sum of the middle row of <img src="/bjc-r/img/3-lists/square_12_13_14.png" alt="{12, 13, 14, 10, 18, 11, 17, 15, 16}" title="{12, 13, 14, 10, 18, 11, 17, 15, 16}" /></li>
+                
+        <li>If you didn't already, write the block that finds the sum of middle row using a block you previously made back in Lab 2: <code>lookup items () from ()</code>. Look <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noreading&noassignment" target="_blank">back at the problem</a> for instructions on importing the block to use for this project.</li>
+  
 <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+       
+        <li>Write a block that compares the sum of the middle row and the sum of the right column. Are they equal?</li>
 
-        <li><code>Triple positions</code> gives a list of the positions of the triples. Now make a red reporter block, called <code>triples in square ()</code> that returns the <em>numbers</em> from the potential magic square that are in those positions. Here's the beginning of <code>triples in square ()</code>.<br><img border="0" src="/bjc-r/img/3-lists/magic_triples_square.png" alt="red reporter: triples in square (square)" title="red reporter: triples in square (square)" /><br>Here's the beginning of the output for the square shown above:<br><img border="0" src="/bjc-r/img/3-lists/magic_firsttriples.png" alt="triples in square (12, 13, 14, etc) = (12, 10, 17)" title= "triples in square (12, 13, 14, etc) = (12, 10, 17)" /></li>
-        <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you can use this information to determine whether the original 9 numbers form a magic square.</li>
+        <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you might write a program that compares all of the sums necessary for checking a magic square.</li>
         
     </ol>
     </div>

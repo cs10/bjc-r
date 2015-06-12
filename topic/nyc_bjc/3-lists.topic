@@ -41,14 +41,24 @@ heading: Programming Lab 3: Using Higher-Order Functions
 
 heading: Programming Lab 4: Magic Squares
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/getting-started.html]
+	 resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/triples.html]
 	 resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples.html]
 	 //resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
 	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/finishing-touches.html]
 
 heading: Social Implications Lab 5: Search and Data Part I
  	 resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
-	 resource: Spam and Ham [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-introduction.html]
-
+	 resource: GPS Forensics: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/introgps.html]
+	 resource: GPS Forensics: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/visualizing.html]
+	 resource: GPS Forensics: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/clustering.html]
+	 resource: GPS Forensics: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/conclusions.html] 
+	 resource: Weather App: API and Scraping Data [/bjc-r/cur/programming/3-lists/5-search-and-data/weatherintro.html]
+	 resource: Spam and Ham: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-introduction.html]
+	 resource: Spam and Ham: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/2-the-data.html]
+	 resource: Spam and Ham: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/3-average-number-of-words.html]
+	 resource: Spam and Ham: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/4-predict-by-number-of-words.html]
+	 resource: Spam and Ham: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/5-further-work.html]
+	 
 heading: Investigations
 	 resource: Building Musical Chords (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
 	 resource: Processing a Sentence (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
