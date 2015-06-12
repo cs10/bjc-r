@@ -17,7 +17,7 @@
 
     <div class="dialogue">
         <div><span>Betty:</span> Our list of lists could have x- and y-coordinates for the position of the sprite. These coordinates should draw the letter A.</div>
-        	<div class="stagedir">Betty makes: <img border="0" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}"></div>
+        	<div class="stagedir">Betty clicks "Make a variable", names it "A", and builds: <img border="0" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}"></div>
             
         <div><span>Alphie:</span> So then we want to go through each of the eight lists and make the sprite go to (item 1, item 2) for each list. Let me try to build it.</div>
         	<div class="stagedir">Alphie makes <img border="0" src="/bjc-r/img/3-lists/A_attempt.png" alt="script with for i=1 to 8 {glide 1 secs to x:(item 1 of item 1 of A) y:(item 2 of item 1 of A)} then glide to (0, 0)" title="script with for i=1 to 8 {glide 1 secs to x:(item 1 of item 1 of A) y:(item 2 of item 1 of A)} then glide to (0, 0)"></div>
@@ -30,14 +30,17 @@
 	<div class="forYouToDo" id="first">
     <ol>
         <li>Finish Betty's procedure using <code>for each</code>:<br> <a class="run" href="/bjc-r/prog/3-lists/U3Lab1DrawShape.xml"><img border="0" src="/bjc-r/img/3-lists/A_foreach.png" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)"></a></li>
-        <li>Make a teal command block: <img border="0" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br>Notice that the input slot looks like <img border="0" src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> to show that a <em>list</em> value is expected. The animation below shows you how to specify the input type.<br> <img border="0" src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)"></li>
+        <li>Make a teal command block: <img border="0" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br>Notice that the input slot <img border="0" src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> shows that a <em>list</em> value is expected. This animation shows you how to specify the input type:<br> <img border="0" src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)"></li>
+        <div><img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
         <li>Finish making the <code>draw shape ()</code> block so that <img border="0" src="/bjc-r/img/3-lists/draw_shape_A.png" alt="draw shape (A)" title="draw shape (A)" /> produces the animation at the top of the page.</li>
     </ol>
 	</div>
             
 	<div class="takeItFurther">
     <ol start="4">
-    	<li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
+    	<div class="sidenote">Notice the use of abstraction. <img border="0" src="/bjc-r/img/3-lists/A-B-C.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
+        <li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
+        <li>If you made other letters, gather all the letters into a list of their own. Use <code>draw shape ()</code> to draw a message.<br><img border="0" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" /></li>
 	</ol></div>
 
 </body>

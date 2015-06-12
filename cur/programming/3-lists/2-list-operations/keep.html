@@ -39,7 +39,12 @@ Alphie and Betty discuss using <code>keep</code>: <img title="KEEP ITEMS SUCH TH
   <div><span>Alphie:</span> We want the last letter of each word. The last letter depends on the length of the word.</div>
   <div><span>Betty:</span> Oh, right, so we can do this.</div>
       <div class="stagedir"><img border="0" title="keep(letter_1=letter(length))from(states)" alt="keep(letter_1=letter(length))from(states)" src="/bjc-r/img/3-lists/keep_letter1equalsletter(length)from(states).png" /></div>
-  <div><span>Alphie:</span> Each item of states goes in the empty spaces. So, let's pick a state - "new york". Letter 1 of "new york" is "n".</div>
+
+  <div class="sidenote">The space in "new york" counts as a character. So "new york" has a length of 8 and the eighth letter is "k".</div> 
+
+  <div><span>Alphie:</span> Each item of <code>states</code> goes in the empty spaces. So, let's try an example. I'll pick a state - "new york". Letter 1 of "new york" is "n".</div>
+  
+  
   <div><span>Betty:</span> And that equals... Well, length of "new york" is 8, and letter 8 of "new york" is "k". The condition is false because "n" doesn't equal "k". So "new york" doesn't show up in the list. We'll keep only the states that have the same first and last letter.</div>
 </div>
 
@@ -47,6 +52,9 @@ Alphie and Betty discuss using <code>keep</code>: <img title="KEEP ITEMS SUCH TH
 <ol>
   <li>Define a block that will keep all the states that start with a given letter. Here's an example of the block in action:
   <img title="states with S -&gt; south carolina, south dakota" alt="states with S -&gt; south carolina, south dakota" src="/bjc-r/img/3-lists/s-states.png" border="0"/></li>
+
+<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+
   <li>Write an expression that will select all the states whose names are at least seven letters long.</li>
   <li>Fix this expression so that it selects the states whose first letter is a vowel: <img title="KEEP(vowels_contains_blank)from(states)" alt="KEEP(vowels_contains_blank)from(states)" src="/bjc-r/img/3-lists/keep_vowelsfromstates.png" border="0" /></li>
 </ol>
