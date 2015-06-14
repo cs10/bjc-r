@@ -17,9 +17,9 @@ heading: Programming Lab 1: Conditionals
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		  //examples with dates would be great.
-	resource: Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
-	resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
-	resource: More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1b.html]
+	resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
+	//resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
+	resource: Creating a block that knows how to spell plural nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1b.html]
 	resource: Still More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
 		// game of life here later?
 		
