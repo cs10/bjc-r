@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 1: Conditional Blocks</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+    <body>
+		<h2>Using <code>If</code> and <code>If-else</code></h2>
+        
+        <div class="todo">
+            <ul>
+                <li>JK: I suggest putting all the suffix stuff on a new page called "Plural Suffix" or something so that it's clear it's a bigger deal than just a single problem.</li>
+                <li>JK: Make it clearer that the snap project they load has the library loaded onto it.</li>
+                <li>Can we call it "plural" rather than "suffix?"</li>
+                <li>The order of these pages is problematic.</li> 
+            </ul>
+        </div>
+ 
+        <div class="forYouToDo" id="first">          
+            <ol>
+            	<li>Make a <img class="inline" src="/bjc-r/img/cond/state-of-water.png" alt="state of water ()"/> block that takes in a temperature and says whether water will be liquid, solid, or gas at that temperature.</li>
+                <li>Make a <img class="inline" src="/bjc-r/img/cond/traffic-signal.png" alt="traffic signal ()"/> block that when given the words "red," "yellow," or "green," makes the sprite say the appropriate action. For example <img class="inline" src="/bjc-r/img/cond/traffic-signal-green.png" alt="traffic signal ('green')"/> should make the sprite say "go."</li>
+                <li> 
+                    Edit your traffic signal block to change the sprite's costume to show the correct color light. You can find a set of stoplight costumes <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=Stoplights">here</a>.  
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/StoplightRed.png"   alt="Red stop light">  
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/StoplightYellow.png"  alt="Yellow stop light">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/StoplightGreen.png"alt="Green stop light">
+                </li>
+            <div class = "sidenote"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 any time that the sprite's <code>direction</code> is a multiple of 60&deg;. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> will be true only when the <code>direction</code> is 0, 60, 120, 180, 240, and 300. 
+              <p><em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. 
+                 So, when the sprite's direction is not a multiple of 60, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0 (and less than 60). For example, if the sprite is pointing in the direction 127&deg;, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.
+              </p> 
+                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7">  
+              <p>When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0.
+              </p> 
+                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">.
+              <p>
+                 In how many other directions will <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30-equals-0.png" width="278" height="34" alt="direction-mod-30-equals-0"> report <code>true</code>?
+              </p></div>
+         
+            <li>Construct each of these scripts and figure out how it works. You will use what you learn about these scripts to solve the puzzles in problem 2. <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />      
+              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Script-with-two-repeat-untils-and-mod.png" alt="Script"></p>
+            </li>
+            <li>Two puzzles: For each picture, create a script (or modify one you already have) that keeps the sprite moving in a circle drawing that picture.
+            </li>
+                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge5.png"  alt="Puzzle 5: thin green circumference with four thick red dots at north, west, south, and east, sprite facing counterclockwise">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge6.png" alt="Puzzle 6: thin blue circumference with two very thick red dots in southeast at roughly four-o'clock and five-o'clock positions, sprite circling clockwise">
+                 </p>
+            <li>And try to create a script that has this behavior.
+            </li>
+    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ClockAnimation.gif" alt="Clock animation: draws circle with dots for each number and says &quot;another hour has passed&quot;"></p>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther">
+            <ol start="7"> 
+                <li>Problems 5 and 6 can be solved with  conditionals or without. Whichever way you solved it, figure out how to solve it the other way.</li>
+                <li>In problem 6, the sprite always says "Another hour has passed." How boring! Make it say <em>what</em> time it has just reached, like this.</li>
+                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/clock.gif" width="184" height="174" alt="animated clock that says the hour"></p>
+            </ol>
+                                              
+        </div>
+        
+    </body>
+</html>
+
+
+
