@@ -21,9 +21,9 @@
         <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br>
         <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
         	<ol>
-            <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code></li>
-            <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code></li>
-            <li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code></li>
+            <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
+            <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code>.</li>
+            <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code>.</li>
             </ol>
         </li></ol>
     </div>
@@ -37,7 +37,7 @@
           <div class="stagedir">They pause to think.</div>
       <div><span>Betty:</span> I think we can do this better. We don't need to keep track of the item number because we don't care where the out-of-order numbers are. Also, we don't need the middle step of making a list of "true"s and "false"s. As soon as one of the comparisons is "false", we know <code>increasing?</code> is false. </div>
       <div><span>Alphie:</span> You're saying we don't care about the item number, just the item itself. So we could use a <code>for each</code> loop. For each item in the list, we compare it to... what? </div>
-      <div><span>Betty:</span> What if we make a variable that keeps track of the lowest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
+      <div><span>Betty:</span> What if we make a variable that keeps track of the highest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
       <div><span>Alphie:</span> Ok, here's what I have so far.</div>
           <div class="stagedir"><a class="run" href="/bjc-r/prog/3-lists/U3Lab3Increasing.xml"> <img border="0" title="increasing script (with mistake)" alt="increasing script (with mistake)" src="/bjc-r/img/3-lists/increasing_wrongscript.png" /> </a></div>
     </div>
@@ -47,7 +47,7 @@
     	<ol start="2">
         <li>Alphie and Betty's script contains a mistake! For example, their script gives this result:<br>
         <img border="0" title="increasing(1,7,4,10)=true" alt="increasing(1,7,4,10)=true" src="/bjc-r/img/3-lists/increasing_truemistake.png" /><br>
-        Click their script to open a new file and fix their code.</li>
+        Click their script to open their project and fix their code.</li>
         </ol>
     </div>
         

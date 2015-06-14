@@ -12,35 +12,45 @@
 
    <body>
    <h2>List of Lists</h2>
-   
-   <div class="todo">
-   <ul>
-   		<li>JK: I want a cool thing that students can do with this idea of using a list of lists to keep track of coordinates (or other variables), but I'm not sure what.</li>
-   </ul>
-   </div>
-   
-   <p>Lists can be items inside larger lists.<br>
-   Here's a list of world capitals: <img border="0" src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br>
-   A list of showtimes on the four screens of a movie theater: <img border="0" src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br>
-   A to-do list: <img border="0" src="/bjc-r/img/3-lists/list_list_todo.png" alt="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)" title="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)"/><br>
+      
+   <p>Lists can be items inside larger lists. Here's a list of world capitals, a list of showtimes on the four screens of a movie theater, and a to-do list.<br>
+   <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml"><img border="0" src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br>
+   <img border="0" src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br>
+   <img border="0" src="/bjc-r/img/3-lists/list_list_todo.png" alt="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)" title="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)"/></a>
    </p>
    
    
 	<div class="forYouToDo" id="first">
     <ol>
- 		<li><img src="/bjc-r/img/icons/talk-to-a-partner.png" alt="Talk to a Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
-        <li>Experiment with list operations like <code>length of</code> and <code>item(1)of</code> to learn how they treat lists of lists. Then answer:
+ 		<li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
+        <li>Experiment with list operations like <code>length of</code> and <code>item () of</code> to learn how they treat lists of lists. Then answer:
        	<ol>
-        	<li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /> return 8 or 16?</li>
-            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> return 9:15 or the <strong>list</strong> (4:45, 7:30, 10:15)?</li> 
-            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> return 9:15, the <strong>list</strong> (9:15), or the <strong>list</strong> (4:45, 7:30, 10:15)?</li>
+        	<li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /> report 8 or 16?</li>
+            
+            <div class="sidenote">{4:45, 7:30, 10:15} is one possible text representation of<br> <img border="0" src="/bjc-r/img/3-lists/output445-730-1015.png" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /></div>
+            
+            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> report 9:15 or the list {4:45, 7:30, 10:15}?</li> 
+            <li>Does <img border="0" src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> report 9:15, the list {9:15}, or {4:45, 7:30, 10:15}?</li>
         </ol>
         </li>
         <li>What will this report: <img border="0" src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">? Why?</li>
     </ol>
+<<<<<<< HEAD
     </div>
 	
 	<p>In the dialogue below, Alphie and Betty experiment by making a list of coordinates for a sprite to make this drawing:<br><img border="2" class="indent" src="/bjc-r/img/3-lists/draw_list_coordinates.gif" alt="sprite drawing by going to each set of coordinates" title="sprite drawing by going to each set of coordinates"></p>
+     <div class="comment">  AC:  This is just a test to see if I can make an animatiopn work.  Thanks, Paul.</div>   
+    
+    <br><img border="2" class="indent" src="/bjc-r/img/3-lists/boxpath.gif" alt="sprite drawing by going to each set of coordinates" title="sprite drawing by going to each set of coordinates"></p>
+    
+  
+    
+ 
+    
+  
+    
+    
+    
 
     <div class="dialogue">
         <div><span>Betty:</span> Our list of lists could have x- and y-coordinates for the position of a sprite, like this.</div>
@@ -56,23 +66,17 @@
         	<div class="stagedir">Alphie makes <img border="0" src="/bjc-r/img/3-lists/coordinates_for.png" alt="script with for loop" title="script with for loop"></div>
         <div><span>Betty:</span> So when <code>i</code> is 1, the sprite goes to "item 1 of item 1" and "item 2 of item 1". Then <code>i</code> is 2, so the sprite goes to "item 1 of item 2" and "item 2 of item 2".</div>
         <div><span>Alphie:</span> I wonder if there's a way to use <code>for each</code> here instead?</div>
+=======
+    <div><img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
+>>>>>>> origin/gh-pages
     </div>
     
-	<div class="forYouToDo">
+    <div class="takeItFurther">
     <ol start="4">
-        <li>Write the same procedure with <code>for each</code> by fixing this script:<br> <a class="run" href="/bjc-r/prog/3-lists/U3Lab1Coordinates.xml"><img border="0" src="/bjc-r/img/3-lists/coordinates_foreach.png" alt="script with for each" title="script with for each"></a></li>
+    	<li>Re-visit your sentence builder from the previous page. Make a variable "words" that is a list of lists:<br><img src="/bjc-r/img/3-lists/set_words.png" alt="set (words) to {nouns, verbs, adjectives, adverbs}" title="set (words) to {nouns, verbs, adjectives, adverbs}" /><br>Choose how you order the lists in "words" and make a sentence builder that uses this list of lists.</li>
     </ol>
-	</div>
- <div class="comment">  AC:  I'mm not sure how to do this.</div> 
-            
-	<div class="takeItFurther">
-    <ol start="5">
-    	<li>Create a program that uses a list of lists.</li>
-	</ol></div>
- <div class="todo">    AC:  I think this will be a recurring activity.  How about  start in a "database" routine here.  Itr's a list of lists where each sublist is like {name, age, age, email address, and so on}  The constructor puts them all in a big list of lists and the selectors extract  certain pieces. So "age, Bowen" outputs 75 and so on.  This can be greatly refined over the coruse.  </div>   
-    
-    
- 
+    </div>
+	
     
     
    </body>

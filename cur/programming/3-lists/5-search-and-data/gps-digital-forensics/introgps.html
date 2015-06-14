@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;
+        charset=ISO-8859-1">
+        <!-- put the following in exactly -->
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 5: Search and Data Part I</title>
+    </head>
+    <body>
+    
+    	<h2>GPS Data</h2>
+
+        <p>
+            A computer forensic specialist who works for a law enforcement agency might analyze GPS (global positioning system) data.
+        </p>
+
+        <p>
+            You have a set of GPS coordinates from a device the suspect used to communicate during the time of the crime. Use them to reconstruct the movements of the perpetrator.
+        </p>
+
+        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br> DDD.DDDDD&deg; (latitude), DDD.DDDDD&deg; (longitude)<br> If you search for "37.873808, -122.254173" in <a href="https://www.google.com/maps/place/37%C2%B052'25.7%22N+122%C2%B015'15.0%22W/@37.873808,-122.254173,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0m" target="_blank">Google Maps</a>, you can see the corresponding location, near the Greek Theater on the campus of U.C. Berkeley.</div>
+
+        <p>
+            Here are the coordinates:
+        </p>
+        <table id="tableBlue">
+            <tr>
+                <td>37.869050</td>
+                <td>-122.272050</td>
+            </tr>
+            <tr>
+                <td>37.869110</td>
+                <td>-122.271941</td>
+            </tr>
+            <tr>
+                <td>37.869116</td>
+                <td>-122.271957</td>
+            </tr>
+            <tr>
+                <td>37.869201</td>
+                <td>-122.272136</td>
+            </tr>
+            <tr>
+                <td>37.869118</td>
+                <td>-122.271967</td>
+            </tr>
+            <tr>
+                <td>37.869084</td>
+                <td>-122.271931</td>
+            </tr>
+            <tr>
+                <td>37.869192</td>
+                <td>-122.272132</td>
+            </tr>
+            <tr>
+                <td>37.869178</td>
+                <td>-122.272136</td>
+            </tr>
+            <tr>
+                <td>37.869102</td>
+                <td>-122.271957</td>
+            </tr>
+            <tr>
+                <td>37.868922</td>
+                <td>-122.272110</td>
+            </tr>
+        </table>
+
+	<div class="sidenote">It's not necessary, but if you are interested, read the following quick introduction on how GPS coordinates work: <a target="_blank" href="http://www.ehow.com/how_2209240_read-gps-coordinates.html">E-How Tutorial on GPS coordinates</a>.</div>
+        <p>The data given to you are 10 GPS coordinates, which can be used to determine a location on the Earth. Each row is a separate coordinate, consisting of two numbers, a latitude followed by a longitude. 
+        </p>
+        
+    
+    <p>
+    Most computer based mapping systems display this format for GPS coordinates. Positive values of latitude are north of
+    the equator, negative values to the south. <em>Most</em> programs (not all) use negative values for west longitude.
+    </p>
+    
+    
+    <h3>Making the data useful</h3>
+    
+    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br>
+    <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br>
+    When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.</p>
+    
+    <div class="forYouToDo" id="first">
+    <ol>
+    	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br>
+        When you run your script, you should see this:<br><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
+    </ol>
+    </div>
+    
+    <h3>Transform the data</h3>
+    
+    Transform these GPS coordinates into coordinates that will display nicely on this <em>x</em>-<em>y</em> grid. These  problems will go through one way to do this (there's more than one way).
+    
+    <div class="forYouToDo">
+    <ol start="2">
+      <div class="sidenote">Yes, subtracting -122.27 is the same as adding 122.27.</div>
+      <li>Every <em>x</em>-coordinate starts with "37.86" and every <em>y</em>-coordinate begins with "-122.27". This information is not helping us tell the points apart. Subtract 37.86 from every <em>x</em>-coordinate and subtract -122.27 from every <em>y</em>-coordinate.</li>
+      <li>Center the coordinates so they can be visualized in an x/y-coordinate 
+        system. Data can be easily centered by subtracting
+        the mean of the data from all data points. <br>
+      </li>
+    </ol>
+    </div>
+
+    </body>
+</html>
