@@ -6,23 +6,25 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 
 //	raw-html: <div class="todo"><ul><li>MF: The folder structure for this unit needs attention as it does not match the unit structure on this page. The brick wall project listed under Lab 7 here is in the Lab 8 folder. And the files in the Lab 9 folder don't appear to be anywhere. JANE FIXED THIS AND COMMENTED IT OUT. HOPE THAT'S OK!</li></ul></div>
        
-heading: Programming Lab 1: Conditionals
+heading: Programming Lab 1: Conditional Blocks
 		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
 		//have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
 		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] 
 		// combine with introduction raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
-	resource: Conditionals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] 
+	resource: Conditionals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/1-getting-started-with-conditionals.html] 
+	resource: Creating predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html]
 	    //remove/replace some quiz questions
-	resource: <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-and-if-else.html]
+	resource: Using many <code>If</code> and <code>If-else</code> blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/3-multiple-ifs.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		  //examples with dates would be great.
+	resource: Project: Developing a block that pluralizes nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
+	resource: Plurals project, continued [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/5-plurals2.html]
 	resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
 	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
-	resource: Creating a block that knows how to spell plural nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/plurals1.html]
-	resource: Still More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
+	
 		// game of life here later?
 		
 
