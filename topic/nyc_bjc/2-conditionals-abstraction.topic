@@ -10,16 +10,18 @@ heading: Programming Lab 1: Conditionals
 		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
 		//have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
-		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] // combine with introduction raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
-	resource: Conditionals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] //remove/replace some quiz questions
+		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] 
+		// combine with introduction raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
+	resource: Conditionals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans.html] 
+	    //remove/replace some quiz questions
 	resource: <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-and-if-else.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		  //examples with dates would be great.
 	resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
-	//resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
-	resource: Creating a block that knows how to spell plural nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1b.html]
+	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
+	resource: Creating a block that knows how to spell plural nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/plurals1.html]
 	resource: Still More Blocks Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples2.html]
 		// game of life here later?
 		
