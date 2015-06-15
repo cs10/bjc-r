@@ -19,10 +19,10 @@ heading: Programming Lab 1: Conditional Blocks
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
-		  //examples with dates would be great.
+		   //examples with dates would be great.
 	resource: Project: Developing a block that pluralizes nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
 	resource: Plurals project, continued [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/5-plurals2.html]
-	resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
+	    //resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
 	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
 	
 		// game of life here later?
