@@ -7,56 +7,50 @@
     <body>
 		<h2>Creating Predicates</h2>
         
-        <div class="todo">
-        <ul>
-      <!--<li>JK: #1 requires a lot of detailed typing. I suggest giving them that code pre-built because I feel like people will get caught up in the details. And you kind of want the two codes side-by-side to compare them. Also, people have to interpret the code in order to interact with it on the screen, so I think it's ok that they're not entering the information directly. Or, maybe give them the pieces to assemble together so that people see that the if-else block is a separate entity from an if block.
-            	<ul>
-                	<li>MF: I agree that a pre-built XML file is the right thing to provide here. Building these is a time-sink with little benefit.</li>
-                </ul>
-            </li>
-            <li>JK: I'm confused by information about mod showing up both in the sidenote and the orange box. They read similarly to me (though I get they're not saying exactly the same thing), and neither of them is a great introduction to mod (I think we can assume that this is the first time students and some teachers are encountering this idea).
-            	<ul>
-                	<li>MF: Yeah, we could definitely offer a <em>whole lab</em> on mod and it would be time well-spent both for mathematics and computer science learning.</li>
-                	<li>Team: maybe not so much of an emphasis on it at this point; maybe justa dialogue saying briefly "this is how you skip by 2's or 3's".</li>
-                    <li>Al: In a sidenote maybe we could just write out a long division problem</li>
-                    <li>AC: 14 &divide; 3</span> is 4.666&hellip;. I know this is picky, but it should say something like ``the remainder when 14 is divided by 3 is 2'' or even ``14=4&times;3 + 2''. And ``we are only using integers'' should be ``we are only using positive integers.''</li>
-            	</ul>
-    </li>
-            <li>JK: The text between the FYTD boxes is confusing. I initially read it to mean that we didn't need the "else" statement, which you do. It would make more sense if students ALSO saw the script built with the additional if and then saw that it does the same thing as the script with if/else.</li>
-            <li>AC: Is there any reason not to make these reporters rather than commands?</span></li>
-            <li>JK: I predict that no one will predict before #3. And I don't think they really need to. I think it's more fun to actually just run them, see what they do, then think about it. I think we should only ask them to predict when we really want them to predict.</li> -->
-            <li>JK: In the Teacher notes for this lab, I would suggest that teachers display their grid and show #3 and #4 if students don't get absolute value. And I would also suggest that they not TEACH absolute value (as they might in algebra) because it's really more about distance not the boring algebra stuff. <!--Actually, I might revise the sidenote and NOT talk about abs(-10) being 10 so much as showing a picture. Maybe say "-10 and 10 are both a distance of 10 from 0 so <code>abs of -10</code> and <code>abs of 10</code> are both 10" with a number line picture? --> 
-            </li>
-            <li>JK: Mystery3 requires some support, I think. Teachers definitely needed it during the NYC PD week. I might suggest keeping only 3, 4, and 6 on this page, and then actually moving #5 to the next page and sitting a little longer with it. Teachers had a hard time because they didn't know what mod meant. And even after they knew the block was saying "if divisible by 4", they didn't see WHAT was being divided by 4 (the counter). And they didn't know why the counter was going from 1 to 43. What helped them was to suggest they set the counter to 4, then 8, then ask things like "if it goes to 10, what would you expect?" Or, they could play with the mod - what would you expect if it were changed to mod 20? Maybe a problem could show this script except with i going from 1 to 4, then 1 to 11, then showing the result of going 1-43 and asking them to make it? And then maybe show a result with a different mod and ask them to produce that one too. <strong>PG: problem commented out below, but not yet moved to a new location. Problems renumbered to make sense.</strong></li>
-            <li>JK: Actually, I would make Mystery3 into a dialogue between Alphie and Betty. And they can say something like "this would be useful if you want something to happen every 3rd time" so that people see a more general use for mod.</li>
-            <li>Why does <span class="snap">snap</span> use "say" instead of "report"? <strong>PG: The difference may  come up in classes.  Explain this in a teacher note with something like: <code>say</code> tells <em>us</em> information by making the sprite display that information on the stage, but it does not report a value that another procedure can use. Report reports a value and, depending on what is done with the value, may or may not show that value to <em>us</em>.</strong></li>
-        </ul>
-</div>
         
         <div class="forYouToDo" id="first">
             <ol> 
-                
-<p>For an upcoming project, it will be useful to create a predicate that tests a letter to see if it is a vowel. It should work like this: </p>
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" width="216" height="118" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
-<p>There are many ways to create a block like this. Here are two correct ways. Discuss with your pair programmer to be sure you understand how each one works. Also decide which you find the clearer code. </p>
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-definition.png" width="217" height="423" alt="vowel definition">
-</p>
-<li> These two blocks are quite similar.  Build them both. Which one works properly?</li>
-                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if(incorrect).png" alt="Block title Even Or Odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]; say (join n with text is odd) for 1 second">
-                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if-else(correct).png" alt="Block title even or odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]  else [say  (join n with text is odd) for 1 second]">      
-                <div class="takeNote">
-                    <p><img class="inline" src="/bjc-r/img/2-conditionals-abstraction-testing/n mod 2 = 0, 138 × 23 pixels.png" alt="n mod 2 = 0"/> is the same as asking if <em>n</em> is divisible by 2 (i.e., whether <em>n</em> is even).</p>
-                    <p> The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block  reports the remainder when the first input is divided by the second (and we are using only positive integers). For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  alt="17 mod 5 reports 2"> because  when 17 is divided by 5, the remainder is 2. When one number divides another evenly, the remainder is 0. <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png" alt="15-mod-5-reporting-0"> </p>
-                    <p>In mathematics, we write: 17 (mod 5) &#x2261 2 and 15 (mod 5) &#x2261 0.</p>
-                </div>       	
+               <li> These two blocks are quite similar.  Build them both. Which one works properly?
+                    <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if(incorrect).png" alt="Block title Even Or Odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]; say (join n with text is odd) for 1 second">
+                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if-else(correct).png" alt="Block title even or odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]  else [say  (join n with text is odd) for 1 second]"></p>
+               </li>
+                   <div class="takeNote">
+                      <p><strong>mod: </strong>The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block  reports the remainder when the first input is divided by the second (and we are using only positive integers). For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  alt="17 mod 5 reports 2"> because  when 17 is divided by 5, the remainder is 2. </p>
+                     <p>&nbsp;</p>
+                      <p>When one number divides another evenly, the remainder is 0 <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png" alt="15-mod-5-reporting-0">.  So the predicate <img class="inline" src="/bjc-r/img/2-conditionals-abstraction-testing/n mod 2 = 0, 138 × 23 pixels.png" alt="n mod 2 = 0"/> reports <code>true</code> if <em>n</em> is divisible by 2 (i.e., if <em>n</em> is even) and <code>false</code> if <em>n</em> is odd.</p>
+                     <p>&nbsp;</p>
+                      <p>In mathematical notation, we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  alt="17 mod 5 reports 2"> as 17 (mod 5) &#x2261 2 and we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png" alt="15-mod-5-reporting-0"> as 15 (mod 5) &#x2261 0.</p>
+                   </div>
+               <li >For an upcoming project, it will be useful to create a predicate that tests a letter to see if it is a vowel. It should work like this: 
+                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
+               
+                 <p>There are many ways to create a block like this. Here is one way, started for you. Complete it, test it, and save it for future use. </p>
+                      <div class="sidenote">
+                            Notice that the block is defined with the hexagonal <strong>predicate</strong> shape because it outputs only <code>true</code> or <code>false</code>. You choose  the shape when you are first making the block. 
+                            <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/make-a-predicate-block.png"  alt="make a predicate block by choosing the correct shape"></p>
+                      </div>
+                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-definition.png" alt="vowel definition"></p>
+               </li>
             </ol>
         </div>
-<p>In problem 1, we needed several <code>if</code> statements because we were testing for several conditions. In problem 2, we need only one <code>if</code> because all integers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>, we know that the number is not even, so it must be odd.</p>
-<p>&nbsp;</p>
+        
+<p>In problem 1, we needed only one <code>if</code> statement, because all integers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>, we know that the number is not even, so it must be odd. But in problem 2, we needed several <code>if</code> statements because we were testing for several conditions. </p>
 		
 <div class="forYouToDo">
-<ol>
-            <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> To solve the puzzles in problems 5 and 6, you will need to understand how the <strong>predicates</strong> (the <code>true</code>/<code>false</code> tests) in the conditionals <code>if-else</code> and <code>repeat until</code> controls each of these scripts. Construct each script and analyze it with your pair programmer, experimenting with the conditions until you are sure you can explain exactly how this code does what it does.       
+<ol start="3">
+            <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                 <div class = "sidenote"> 
+                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 any time that the sprite's <code>direction</code> is a multiple of 60&deg;. So, the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> will be true only when the <code>direction</code> is 0, 60, 120, 180, 240, and 300. 
+                     <p><em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>.  So, when the sprite's direction is not a multiple of 60, 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0 (and less than 60). For example, if the sprite is pointing in the direction 127&deg;, 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.</p>
+                     <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7"> </p>
+                     <p>When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0. </p> 
+                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">.
+                     <p> In how many other directions will the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30-equals-0.png" width="278" height="34" alt="direction-mod-30-equals-0"> report <code>true</code>?
+                     </p>
+                </div>
+            To solve the puzzles in problems 5 and 6, you will need to understand how the <strong>predicates</strong> (the <code>true</code>/<code>false</code> tests) in the conditionals <code>if-else</code> and <code>repeat until</code> controls each of these scripts. Construct each script and analyze it with your pair programmer, experimenting with the conditions until you are sure you can explain exactly how this code does what it does.       
               <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Script-with-two-repeat-untils-and-mod.png" alt="Script"></p>
             </li>
             <li>Two puzzles: For each picture, create a script (or modify one you already have) that keeps the sprite moving in a circle drawing that picture.
@@ -71,11 +65,34 @@
     </div>
         
         <div class="takeItFurther">
-            <ol start="7"> 
-                <li>Problems 5 and 6 can be solved with  conditionals or without. Whichever way you solved it, figure out how to solve it the other way.</li>
+            <ol start="6"> 
+                <li>Problems 4 and 5 can be solved with  conditionals or without. Whichever way you solved it, figure out how to solve it the other way.</li>
                 <li>In problem 6, the sprite always says "Another hour has passed." How boring! Make it say <em>what</em> time it has just reached, like this.</li>
-                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/clock.gif" width="184" height="174" alt="animated clock that says the hour"></p>
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/clock.gif" alt="animated clock that says the hour"></p>
             </ol>
+          <p><strong>Take it <em>even further</em>!</strong></p>
+               <div class="takeNote">
+                  <p><strong>Data types: </strong> <span class="snap">snap</span> lets you manipulate a variety of <strong>data types</strong>. You have already manipulated <strong>numbers</strong> and <strong>strings</strong> (sets of characters like &quot;is even&quot; or &quot;is even&quot;).</p>
+                  <p>&nbsp;</p>
+                  <p> The next two problems use a new data type, <strong>lists</strong>, and show how useful lists can be. The problems are optional, just a first taste of an interesting new idea. In Unit 3, you will study <strong>lists</strong> in depth. </p>
+      </div>
+            <ol start="8">
+                <li> It would be convenient if we could just list the vowels and then test to see if a particular letter was in that list.  <span class="snap">snap</span> makes that a snap! Experiment with these blocks to see what they do. 
+                     <div class="sidenote">When you click on <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> the result you see is an artist's way of picturing a list inside the computer. Each item of the list is numbered and displayed and you are told how long the list is. 
+                        <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/just the list [a e i o u].png" alt="just the list a e i o u"></p>
+                        <p>To keep the display from being too large, a scroll bar lets you examine list elements that you can't see in the small picture. </p>
+                     </div> 
+                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> 
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains m 313 × 33 pixels.png" alt="list a e i o u contains m"> 
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains e 310 × 33 pixels.png" alt="list a e i o u contains e">
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-of-vowels-contains-randomly-picked-letter-of-pencil_666x39.png" alt="list of vowels contains randomly picked letter of pencil">
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/item-pick-random-1-to-7-of-list-I-you-he-she-etc_605x33.png" alt="item pick random element from list of I you he she it we they"></p>
+              </li>
+                <li>Here are two ways these blocks can be used in defining the block. As before, discuss with your pair programmer to be sure you understand how each one works. Also decide which <em>you</em> find  clearer.<br />
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v2).png" alt="is letter a vowel (v4)">
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v3).png"  alt="is letter a vowel (v3)"> 
+                </li>
+          </ol> 
         </div>
     </body>
 </html>

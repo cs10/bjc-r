@@ -9,40 +9,55 @@
         
         
           
-        <div class="forYouToDo"> 
-        	<div class="sidenote">Special <span class="snap">snap</span> libraries can always be loaded from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> under "Libraries...".</div>
-            For this project, you will need to load <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">the words&amp;sentences library</a>.
-            <ol start="4">
-                <li>
-                	Experiment with the blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter n of word 142&nbsp;&times;&nbsp;27 pixels.png" alt="letter n of word">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/join 117&nbsp;&times;&nbsp;27 pixels.png" alt="join">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of 169 × 27 pixels.png" alt="last letter of"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of 231 × 27 pixels.png" alt="all but last letter of"> to see how they behave. Here are some suggested experiments. You might try other experiments, too.<br />
-                	<img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 2 of butterflies 205&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 2 of butterflies"><img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 7 of fly 155&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 7 of fly"><img src="/bjc-r/img/2-conditionals-abstraction-testing/letter minus2 of fly 160&nbsp;&times;&nbsp;27 pixels.png" alt="letter minus2 of fly"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-pick-random-1-10-of-butterfly_395x33.png" alt="letter picked randomly from 1 to 10 of butterfly"><br />
-                	<img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of butterfly 255 × 27 pixels.png" alt="all but last letter of butterfly"><img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of all but last letter of brush 372 × 33 pixels.png" alt="last letter of all but last letter of brush"> <br />
+        <div class="forYouToDo" id="first"> 
+        	<div class="sidenote">You can load a <span class="snap">snap</span> library at any time from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> under &quot;Libraries...&quot;.</div>
+           <p> For this project, you will need to load the <strong>Words, sentences</strong> <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">library</a>. </p>
+      <ol>
+                <li> Experiment with the blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter n of word 142&nbsp;&times;&nbsp;27 pixels.png" alt="letter n of word">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/join 117&nbsp;&times;&nbsp;27 pixels.png" alt="join">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of 169 × 27 pixels.png" alt="last letter of"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of 231 × 27 pixels.png" alt="all but last letter of"> to see how they behave. 
+                     <p> Here are some suggested experiments. You might try other experiments, too.</p>
+                	<img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 2 of butterflies 205&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 2 of butterflies">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter 7 of fly 155&nbsp;&times;&nbsp;27 pixels.png"  alt="letter 7 of fly">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter minus2 of fly 160&nbsp;&times;&nbsp;27 pixels.png" alt="letter minus2 of fly"> 
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-pick-random-1-10-of-butterfly_395x33.png" alt="letter picked randomly from 1 to 10 of butterfly"><br />
+                	<img src="/bjc-r/img/2-conditionals-abstraction-testing/all but last letter of butterfly 255 × 27 pixels.png" alt="all but last letter of butterfly">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/last letter of all but last letter of brush 372 × 33 pixels.png" alt="last letter of all but last letter of brush"> <br />
                 	<img src="/bjc-r/img/2-conditionals-abstraction-testing/join boss es 147&nbsp;&times;&nbsp;27 pixels.png"  alt="join boss es">
                 	<img src="/bjc-r/img/2-conditionals-abstraction-testing/join t all but first letter of when 343 × 33 pixels.png" alt="join t all but first letter of when"> 
-                    <div class="sidenote">You might also try that <code>join t all but first letter of</code> experiment  with the words "where" and "what" and "wherefore." </div>
+                    <div class="sidenote">Try the <code>join t all but first letter of</code> code with the words &quot;where&quot; and &quot;what&quot; and &quot;wherefore,&quot; too. </div>
                 </li>
-                <li>
-                	The goal now is to build a block that takes a noun as input and outputs the correct plural of the noun.  <img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boy (with result) 190 × 40 pixels.png"  alt="suffix S boy (with result)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S boss (with result) 214 × 40 pixels.png"  alt="suffix S boss (with result)"><br /> 
-                  	Here's one way to start building that block. <br />
-                  	<img src="/bjc-r/img/2-conditionals-abstraction-testing/suffix S 306 × 201 pixels.png"  alt="Suffix S, not yet good enough">
+                <li>The goal now is to build a block that takes a noun as input and outputs the plural of the noun, spelled correctly.  
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-day-with-result.png"  alt="plural day (with result)">
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-boss-with-result.png"  alt="plural boss (with result)">
+                    <p> Here's one way to start building that block. </p>
+                  	<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-(script).png"  alt="plural-(script), first try"> </p>
                     <div class="sidenote">
-                    	Choose the <em>reporter</em> button when you make the <code> suffix S </code> block. <br /> 
-                    	<img src="/bjc-r/img/building-blocks/make-a-reporter.png" alt="select reporter as block type"/>
-                    </div><br /> 
-                  	It  works perfectly for those cases, but doesn't work correctly for the word "box." <img src="/bjc-r/img/2-conditionals-abstraction-testing/Suffix S box (with result) 190 × 40 pixels).png"  alt="suffix s box (with wrong result)">. <br /> 
-                    Edit the block to make it work for words that end with x. 
+                    	Choose the <em>reporter</em> button when you make the <code>plural</code> block. 
+                        <p> <img src="/bjc-r/img/building-blocks/make-a-reporter.png" alt="select reporter as block type"/> </p>
+                    </div>
+                    <p>Build this much and test it out on at least &quot;day&quot; and &quot;boss&quot; and &quot;medicine,&quot; to make sure it works correctly for those. If it does not, edit it to fix it.</p> </li>
+                    <li> Now try hard to find words for which this version of <code>plural</code> does <em>not</em> yet work correctly, and write down the words you find. <em>Organize that list</em>, sorting the words into categories according to their last letter. For example, some of the words it gets wrong will be words that end with the letter h. Try to find others it gets wrong. You will probably find other categories. </li>
+                        <div class="takeNote">
+                           <p><strong>Debugging: </strong>One important part of writing code that works is trying to &quot;break it,&quot; trying to find situations in which it does <em>not</em> work. This requires us to think of examples as diverse as possible, wild and exceptional cases. </p>
+                        </div>
+                 <li> It works perfectly for &quot;day&quot; and &quot;boss&quot; and &quot;medicine,&quot; but doesn't work correctly for the word &quot;box&quot; 
+                      <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-box-with-(wrong)-result.png"  alt="suffix s box (with wrong result)">. 
+                    <p> Edit your <code>plural</code> block to make it work for words that end with x. </p>
                 </li> 
                 <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" />
             </ol>
 		</div>
         
 		<div class="takeItFurther">
-        	<ol start="6"> 
-            	<li> If you know another language, build a block that takes a pronoun and verb as input and outputs the correct form of that verb.  For example: <img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for nosotros comer 587 × 40 pixels.png" Ωalt="conjugate verb (Spanish) for nosotros comer"><img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for yo tocar 501 × 40 pixels.png" Ωalt="conjugate verb (Spanish) for yo tocar"></li>
-                <div class="saveAs"><span class="text">"U2Lab1-SuffixS"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" /></div>
+        	<ol start="4"> 
+            	<li> If you know another language, build a block that takes a pronoun and verb as input and outputs the correct form of that verb.  
+                <p> For example: </p>
+                <p>  <img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for nosotros comer 587 × 40 pixels.png" alt="conjugate verb (Spanish) for nosotros comer">
+                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/conjugate verb (Spanish) for yo tocar 501 × 40 pixels.png" alt="conjugate verb (Spanish) for yo tocar"></p>
+                </li>
+                
             </ol>
         </div>
-        
+        <div class="saveAs"><span class="text">"U2Lab1-Plural"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" /></div>
     </body>
 </html>
 
