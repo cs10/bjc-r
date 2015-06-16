@@ -15,26 +15,32 @@
             <li>JK: At the very least, I would get rid of <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-of-vowels-contains-randomly-picked-letter-of-pencil_666x39.png" alt="list of vowels contains randomly picked letter of pencil"><img src="/bjc-r/img/2-conditionals-abstraction-testing/item-pick-random-1-to-7-of-list-I-you-he-she-etc_605x33.png" alt="item pick random element from list of I you he she it we they">. They'll see lists in Unit 3.</li> -->
         </ul>
         </div>
-           <p>In this lab, you will continue to improve your <code>suffix s</code> block so that it works correctly with more words. If you do not already have it, please reload it. (The suggested file name was <code>U2Lab1-Plural</code>.)  You will also need your list of words that <code>plural</code> did not pluralize correctly.</p>
+           <p>In this lab, you will continue to improve your <code>plural</code> block so that it works correctly with more words. If you do not already have it, please reload it. (The suggested file name was <code>U2Lab1-Plural</code>.)  You will also need your list of words that <code>plural</code> did not pluralize correctly.</p>
+           <div class="takeNote">
+              <p><strong>Abstraction: </strong> Creating an English plural has a lot of special cases. To some words, you add  <em>s</em>; to some words you add  <em>es</em>;  words like <em>calf</em> and <em>fly</em> become <em>calves</em> and <em>flies</em>, changing their final letters before adding <em>es</em>. And there are special cases to handle. The best way to program complicated jobs  is (generally) to break them into parts, handle each part separately with its own procedure (its own block), and then have the &quot;top-level&quot; block—in this case, <code>plural</code>, itself—show only the outline. That is, instead of coding every little detail—checking for each special case and handling it—directly in <code>plural</code>, it is cleaner and clearer to build a block that looks something like this, with each special case handled by block that specializes in that case only.</p>
+             <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-abstract-definition.png" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s"></p>
+              <p>Showing the structure of the method—just the overall strategy—in the &quot;top-level&quot; block and relegating the details to  separate blocks is one part of an important computer science idea called <strong>abstraction</strong>. This aspect of abstraction is  extremely helpful in keeping your code clear and helping you debug it. </p>
+           </div>
     
         <div class="forYouToDo" id="first">
            
           <ol>      <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" />
-              <li> 
-                       <div class="sidenote">The idea of building a separate block to handle one special case and then incorporating that block in the bigger procedure isn't necessary for very simple cases (like &quot;ends with x&quot;) that you test for only once. In more complex cases, like &quot;ends with h,&quot; building your code in modules is extremely helpful in keeping your code clear and helping you debug it.
-                       </div> 
-                   Make a block that &quot;specializes&quot; on just one category, words that end with the letter h.
-                     <p> You might name that block <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-bush-with-result.png" alt="plural (for words ending in h) with result">. </p>
-                     <p> This specialist block can be completely wrong about words that <em>don't</em> fit its specialty  <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-case-with-(wrong)result.png" alt="plural (for words ending with h) with wrong result for case (wrong input) "> (&quot;case&quot; does not end in h), but it should work correctly for words that do fit its specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-crash-with-result.png" alt="plural (for words ending with h) with correct  result for the word crash"><img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-moth-with-result.png" alt="suffix s (for words ending in h) with result for moth">. Test it for a variety of words to make sure it works the way you want.
+              <li> Make a block that &quot;specializes&quot; on just one category, words that end with the letter h.
+                     <p> You might name that block <code>plural (lastLetter=h)</code> as shown here, or <code>h-plural</code> if you prefer.</p>
+                     <p> This specialist block should work correctly for words that fit its specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-crutch-with-result.png" alt="plural (for words ending with h) with correct  result for the word crutch"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-moth-with-result.png" alt="suffix s (for words ending in h) with result for moth">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-bush-with-result.png" alt="plural (for words ending in h) with result"> but it can be completely wrong about words that <em>don't</em> fit its specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h-case-with-(wrong)result.png" alt="plural (for words ending with h) with wrong result for case (wrong input) ">. 
+                     <p> <code>plural (lastLetter=h)</code> doesn't have to work for &quot;case&quot; because &quot;case&quot; does not end in h, and so the <code>plural</code> block will never give &quot;case&quot; to <code>plural (lastLetter=h)</code>. </p>
+                     <p>Test it with a variety of words to make sure it works the way you want.</p>
                </li>
-               <li>When you trust your new specialist block, edit the original <code> plural</code> block to use your new specialist. Test the revised <code>plural</code> block to make sure it still works for all the words it used to work for, and also the new ones.  
-               </li>
-                
+               <li> When you trust your new specialist block, edit your original <code> plural</code> block to use your new specialist. Test your revised <code>plural</code> block to make sure it still works for all the words it used to work for, as well as the new ones.</li>
+               <li> Take the next step. Create <code>plural (lastLetter=y)</code> to handle words like this. 
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-tray-with-result.png"  alt="plural_y-tray-with-result">
+                   <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-sky-with-result.png" alt="plural_y-sky-with-result"></li>
+                   <p>As before, this specialist can make mistakes if asked to do a job that isn't its  specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-mouse-with-(wrong)result.png" alt="plural_y-mouse-with-(wrong)result">. <code>plural</code> will take care to give it only the cases it knows how to handle correctly.</p>
           </ol>
 </div>
           
 <div class="takeItFurther">
-            <div> <ol start="3"> <li> Extend <code>plural</code> so that it works properly for words that end with y and make sure that it still works for the other words that it used to work for.</li>
+            <div> <ol start="4"> <li> Extending <code>plural</code> handle more special cases will become easier when you know more about handling <strong>lists</strong> (Unit 3), but even now you know enough to extend it to some more cases. Use the idea of special-purpose blocks to help organize the cases and keep <code>plural</code> from becoming cluttered with details.</li>
             
             </ol>
                                               
