@@ -107,6 +107,7 @@ llab.paths.stage_complete_functions[2] = function() {
 // quiz.js depends on each of the quiz item types having loaded
 llab.paths.scripts[3] = [];
 llab.paths.scripts[3].push("script/quiz.js");
+llab.paths.scripts[3].push("//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML");
 // llab.paths.scripts[3].push("script/brainstorm.js");
 
 

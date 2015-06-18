@@ -182,8 +182,9 @@ div.newProject span.text {
 
 code {
   /* color: #00FFFF; */
-/*  font-family: courier;
-*/  font-size: 1.1em;
+  /*  font-family: courier; */
+  font-size: 1.1em;
+  padding: 0px;
 }
 
 .anchor {
@@ -191,11 +192,11 @@ code {
    margin-top: -65px;
 }
 
-/*Fixing things that are in the main CSS -- WHY AREN'T THESE WORKING? */
-media="screen" a:visited {
+/*Fixing things that are in the main CSS --darkening links for projectors */
+a:visited {
   color: #248694; /* was 36BBCE; */
 }
 
-media="screen" a {
+a {
   color: #2a6496; /* was 428bca; */
 }
