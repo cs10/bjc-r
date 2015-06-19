@@ -8,26 +8,15 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 h3: In this unit, you will...
 big-idea: Write programs that draw designs, calculate, etc.
 big-idea: Understand and analyze the impact of the internet on our culture.
+	
+	raw-html: <hr />
 
-heading: Programming Lab 1: Introduction (Mary's 6/3 Draft for PG Review)
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-	resource: Explore this Code [/bjc-r/cur/programming/1-introduction/1-introduction/explore-this-code.html]
-	resource: Using Snap [/bjc-r/cur/programming/1-introduction/1-introduction/using-snap.html]
-	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface_MF.html]
-	//resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work_MF.html]
-	//resource: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks_MF.html]
-	resource: Creating and Saving Scripts (Ran out of steam here...) [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts_MF.html]
-	resource: ((Reporters - Move to L2 where's it's actually used and change to "Types of Blocks," a very brief intro to commands, reporters, and predicates that includes info on watchers too; then have more on all this in U2))  [/bjc-r/cur/programming/1-introduction/1-introduction/reporters_MF.html] 
-
 heading: Programming Lab 1: Introduction
-	raw-html: <img src="/bjc-r/img/prog/script.png" class="imageRight" alt="Snap! Blocks" />
-	resource: What is <span class="snap">snap</span> ? [/bjc-r/cur/programming/1-introduction/1-introduction/what-is-snap.html]
-	resource: Getting Started: Motion Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/motion-blocks.html]
-	resource: Creating Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/creating-scripts.html]
-	resource: Getting to Know the Interface [/bjc-r/cur/programming/1-introduction/1-introduction/getting-to-know-the-interface.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-intro.html]
-	resource: Reporters [/bjc-r/cur/programming/1-introduction/1-introduction/reporters.html]
-	resource: Saving Your Work [/bjc-r/cur/programming/1-introduction/1-introduction/saving-your-work.html]
+	resource: Exploring Some Code [/bjc-r/cur/programming/1-introduction/1-introduction/explore-this-code.html]
+	resource: Using <span class="snap">snap</span> [/bjc-r/cur/programming/1-introduction/1-introduction/using-snap.html]
+	resource: The <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/the-snap-interface.html]
+	resource: Types of Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/types-of-blocks.html]
 
 heading: Programming Lab 2: Kaleidoscope
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
@@ -56,11 +45,14 @@ heading: Programming Lab 5: Building Complicated Blocks with Simple Blocks
 	quiz: Check: Composing with "Buggy" Blocks [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 	resource: Compose a <code>Draw a Flower</code> Block [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 		
-heading: Programming Lab 6: Using Randomness
+heading: Programming Lab 6: Computer Mathematics &mdash; Using Randomness and Modulus
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
 	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
 	quiz: Check: The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/random-self-test.html]
 	resource: Draw a Field of Flowers [/bjc-r/cur/programming/1-introduction/6-using-randomness/draw-field-of-flowers.html]
+	resource: Modular Arithmetic []
+	
+	raw-html: <hr />
 
 heading: Social Implications Lab 7: Privacy
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
@@ -70,6 +62,8 @@ heading: Social Implications Lab 7: Privacy
 heading: Social Implications Lab 8: Communication and Online Interactions
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/8-communication/big-questions.html]
 	resource: Innovations [/bjc-r/cur/programming/1-introduction/8-communication/innovations.html]
+
+	raw-html: <hr />
 
 heading: More Investigations
 	raw-html: Forthcoming student projects

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 1: Introduction</title>
+    </head>
+    <body>
+		<h2>Types of Blocks</h2>
+        <p>In <span class="snap">snap</span>, your work is saved online ("to the cloud").</p>
+        <div class="comment">MF: Not sure if we need to include saving <em>anywhere</em> since we have the "create a new file called" icons...</div>
+        <div class="forYouToDo" id="first">
+        	<ol>
+            	<li>If it's not open already, open <span class="snap">snap</span> by visiting <a href="http://snap.berkeley.edu/run" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a> .</li>
+                <li>
+                	Check if you are logged in by clicking the cloud button in the toolbar: <img class="button" src="/bjc-r/img/1-introduction/cloud_button.png" alt="Cloud button" title="Cloud button" />.
+                    <ul>
+                    	<li>Log in if you need to.</li>
+                        <li><a href="/bjc-r/cur/programming/1-introduction/1-introduction/using-snap.html">Create an account</a> if you have not done so already.</li>
+                    </ul>
+                </li>
+                <div class="sidenote">Any time you want to access this program, use the same File button <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> and select "Open..." to see a list of all your <span class="snap">snap</span> files.</div>
+                <li>To save your work, use the File button <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> in the tool bar, and choose "Save" or "Save as...". </li>
+                <li>Give your project a name that will help you remember what the project is.</li>
+                <div class="saveAs"><span class="text">"U1L1FixAltToo"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1L1FixAltToo" /></div>
+            </ol>
+        </div>
+        
+        <div>
+        	There are several kinds of blocks in <span class="snap">snap</span>:
+            <ul>
+                <li>
+                	<strong>Commands</strong>&mdash;blocks that carry out an action like drawing on the stage or having the sprite say something. Commands have the click-together groove and bump at the top and bottom.<br />
+                    Some examples:
+                    <img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps">
+                    <!--<img class="inline" src="/bjc-r/img/blocks/turn-CW-15-degrees.png" alt="turn clockwise 15 degrees" title="turn clockwise 15 degrees">-->	
+                    <img class="inline" src="/bjc-r/img/blocks/go-to-x-y-0-0.png" alt="go to x:0 y:0" title="go to x:0 y:0">
+                    <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" class="inline" alt="say Hello! for 2 secs" title="say Hello! for 2 secs" />
+                    <!--<img src="/bjc-r/img/blocks/think-Hmm...-for-2-secs.png" class="inline" alt="think Hmm... for 2 secs" title="think Hmm... for 2 secs" />-->
+                    <img src="/bjc-r/img/blocks/play-note-60-for-0.5-beats.png" class="inline" alt="play note 60 for 0.5 beats" title="play note 60 for 0.5 beats" />
+                    <!--<img src="/bjc-r/img/blocks/set-pen-color.png" class="inline" alt="set pen color to magenta" title="set pen color to magenta" />-->
+                    <img src="/bjc-r/img/blocks/clear.png" class="inline" alt="clear" title="clear" />
+                    <img src="/bjc-r/img/blocks/wait-1-secs.png" class="inline" alt="wait 1 secs" title="wait 1 secs" />
+                </li><br />
+                <li>
+                	<strong>Reporters</strong>&mdash;blocks that report information (such as the result of a calculation or the location of the mouse). Reporters are long with rounded ends.<br />
+                	Some examples:
+					<img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" />
+					<!--<img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="" />-->
+                    <img class="inline" src="/bjc-r/img/blocks/size.png" alt="size" title="size" />
+                    <img class="inline" src="/bjc-r/img/blocks/tempo.png" alt="tempo" title="tempo" />
+                    <!--<img class="inline" src="/bjc-r/img/blocks/message.png" alt="message" title="message" />
+                    <img class="inline" src="/bjc-r/img/blocks/answer.png" alt="answer" title="answer" />-->
+                    <!--<img class="inline" src="/bjc-r/img/blocks/timer.png" alt="timer" title="timer" />-->
+                    <!--<img class="inline" src="/bjc-r/img/1-introduction/5+7.png" alt="5 + 7" title="5 + 7" />-->
+                    <img class="inline" src="/bjc-r/img/1-introduction/round-3.14.png" alt="round 3.14" title="round 3.14" />
+                    <img class="inline" src="/bjc-r/img/blocks/sqrt-of-10.png" alt="sqrt of 10" title="sqrt of 10" />
+                    <img class="inline" src="/bjc-r/img/blocks/pick-random-1-to-10.png" alt="pick random 1 to 10" title="pick random 1 to 10" />
+                    <!--<img class="inline" src="/bjc-r/img/blocks/letter-1-of-world.png" alt="letter 1 of world" title="letter 1 of world" />->
+                    <!--<img class="inline" src="/bjc-r/img/blocks/length-of-world.png" alt="length of world" title="length of world" />-->
+                    <!--<img class="inline" src="/bjc-r/img/1-introduction/list-cat-dog-frog-rabbit.png" alt="list: cat, dog, frog, rabbit" title="list: cat, dog, frog, rabbit" />-->
+                    <br />
+                    Reporters are often used inside other blocks like this: <img class="inline" src="/bjc-r/img/cond/say-4-plus-7.png" alt="say 4 + 7" title="say 4 + 7" /><img class="inline" src="/bjc-r/img/1-introduction/play-note-pick-random-50-to-80-for-0.5-beats.png" alt="play note (pick random 50 to 80) for 0.5 beats" title="play note (pick random 50 to 80) for 0.5 beats" />
+                </li>
+            </ul>
+        </div>
+       
+        <p>The three oval-shaped blocks at the bottom of the Motion palette are called <strong>reporters</strong>.  Unlike the jigsaw-puzzle-shaped <strong>command</strong> blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
+        <p>The <img src="/bjc-r/img/topic1/topic1_xposition.png" alt="X Position Reporter" class="block"/> and <img src="/bjc-r/img/topic1/topic1_yposition.png" alt="Y Position Reporter" class="block"/> reporters tell you where the sprite is on the stage.  As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position.</p>
+        
+        
+       
+   		<div class="forYouToDo" id="first">
+            <ol>
+                <li>Try building and clicking a few command blocks with reporter blocks inside them like<img class="inline" src="/bjc-r/img/cond/say-4-plus-7.png" alt="say 4 + 7" title="say 4 + 7" /> and/or <img class="inline" src="/bjc-r/img/1-introduction/play-note-pick-random-50-to-80-for-0.5-beats.png" alt="play note (pick random 50 to 80) for 0.5 beats" title="play note (pick random 50 to 80) for 0.5 beats" />.</li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss what happens.</li>
+            </ol>
+        </div>
+        <div class="takeItFurther">
+		  <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+          <ol start="3">
+                <li><strong>Get creative!</strong> What other interesting ways can you combine reporter blocks and command blocks? <img src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />
+</li>
+            </ol>
+        </div>
+        
+                <div class="takeNote">
+					<div class="comment">pulled out of U2L1 and moved here</div>        
+					<div>
+                    	Reporter blocks can report many kinds of values. The <code>plus</code> block, for example, reports a number. <br /> 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/reporter-plus-reporting-10.gif" alt="plus block reporting the number 10"><br />
+                        Some reporter blocks, like <code>greater than</code> report only two special values: <img src="/bjc-r/img/blocks/true.png" alt="true"/>  when a condition is met and and <img src="/bjc-r/img/blocks/false.png" alt="false"/>  when it is not met. 
+                        <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
+                        <p> Reporters that report only <code>true</code> and <code>false</code> are called "predicates." In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </p> 
+                        <p> Other predicates you will often find useful <code>equals</code>, <code>not</code>, <code>and</code>, and <code>or</code> include  </p>
+                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/equals-reporting-true_293x44.png" alt="equals reporting true">
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-true-reports-false244x44.png" alt="not true, reporting false">
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-seven-plus-three-equals-12-reports-true_361x44.png" alt="not 7 plus 3 equals 12, reporting true">
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/7-plus-3-equals-12-OR-7-plus-3-less-than-12-reports-true_548x44.png" alt="a false statement or a true statement, reporting true"></p>
+                        Predicate functions are like questions that can be answered with <code>true</code> or <code>false</code>. These two special values  are  called Boolean values, named after the  logician George Boole. 
+                    </div>
+                </div>
+    
+    
+
+
+        <div>
+        	<p>Here are some special kinds of blocks:</p>
+            <ul>        
+                <li>
+                	<strong>Predicates</strong>&mdash;predicates are a special kind of reporter. Predicates behave like questions that can be answered with <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /> (which are themselves special predicates called booleans&mdash;more on that later). Predicates are hexagonal.<br />
+                    Some examples: 
+                    <!--<img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" />
+                    <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />-->
+                    <img src="/bjc-r/img/blocks/key-space-pressed.png" class="inline" alt="key space pressed?" title="key space pressed?" />
+                    <img class="inline" src="/bjc-r/img/1-introduction/7<3.png" alt="7 < 3" title="7 < 3" />
+                    <img class="inline" src="/bjc-r/img/blocks/mouse-down.png" alt="mouse down?" title="mouse down?" />
+                    <img class="inline" src="/bjc-r/img/blocks/is-5-a-number.png" alt="is 5 a number?" title="is 5 a number?" /><br />
+                    Predicates can be combined with reporters and other predicates to make more complicated predicates:
+                </li><br />
+                <li>
+                	<strong>Conditionals</strong>&mdash;conditionals are a special kind of command. Conditionals allow the code inside them to be performed <em>only if</em> the condition is true (and not if it is false). Conditionals are C-shaped or E-shaped and have the click-together grooves. <br />
+                    Some examples: 
+                    <img src="/bjc-r/img/blocks/if.png" class="inline" alt="if" title="if" />
+                    <img src="/bjc-r/img/blocks/if-else.png" class="inline" alt="if else" title="if else" />
+                    <img src="/bjc-r/img/blocks/repeat-until.png" class="inline" alt="repeat until" title="repeat until" /><br />
+                    Notice the hexagonal spaces? Predicates are used inside of conditionals. 
+                </li>
+<div class="todo">
+    <ul>
+        <li>Insert a problem about pedicates in conditionals. Maybe use <img class="" src="/bjc-r/img/1-introduction/top-half-bottom-half.png" alt="" title="" /></li>
+    </ul>
+</div>
+        
+                        <li>
+                	<strong>Loops</strong>&mdash;loops are also a special kind of command. Loops perform the code inside them a certain number of times. Loops are C-shaped and have the click-together grooves. <br />
+                    Some examples: 
+                    <img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" />
+                    <img src="/bjc-r/img/blocks/forever.png" class="inline" alt="forever" title="forever" />
+                    <img src="/bjc-r/img/blocks/repeat.png" class="inline" alt="repeat" title="repeat" /><br />
+                    You used <img src="/bjc-r/img/blocks/repeat-blank.png" class="inline" alt="repeat" title="repeat" />
+ when you explored the square script.
+                	<img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+                </li>
+            </ul>
+	    </div>
+        <div class="comment">MF: After the scripts that they've already built, I think we need something more challenging for the rest of this page, but I need to get out of the office and go have dinner. ;)</div>
+
+<div class="todo">
+    <ul>
+        <li>insert a problem using <img class="inline" src="/bjc-r/img/1-introduction/they-kept-talking.png" alt="say (they kept) for (1) secs, forever [say (talking) for (1) secs, say (and) for (1) secs]" title="say (they kept) for (1) secs, forever [say (talking) for (1) secs, say (and) for (1) secs]" /></li>
+    </ul>
+</div>
+                
+        	<p>Blocks in a script run in a specific order, from the top of the script to the bottom. Generally, <span class="snap">snap</span> waits until one block has finished its job before continuing on to the block below it. (One common exception is blocks that play sounds: a block's job can be to <em>start</em> the sound, which means the block below it will execute while the sound is still playing.)</p>	
+        
+<div class="takeItFurther">
+    <img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" /><br clear="all"/>
+    <div class="comment">Build a script with sound that does what the last paragraph says...</div>
+    <ol start="">
+        <li></li>
+    </ol>
+</div>
+        
+        <!--<div class="forYouToDo">
+            <div class="sidenote">You can build scripts by dragging blocks out from the palette on the left and snapping them together, or just by duplicating an existing script (using two-finger-click or left-click).</div>
+            <ol start="8">
+        		<li>If it isn't open already, click the script below to lanch it in <span class="snap">snap</span>:<br /><a class="run" href="bjc-r/prog/1-introduction/sound-sweep-up.xml"><img class="indent"src="/bjc-r/img/1-introduction/sound-sweep-up.png"/></a></li>
+                <li>Create a second script that says and plays the notes down from 70 to 40 when you press the down arrow.</li>
+	           	<li>
+                	Guess what this code does. Do not build it yet. Discuss with your partner and perhaps another pair.<br />
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <img class="indent" src="/bjc-r/img/1-introduction/change-sprite-size.png" /><br />
+            	</li>
+                <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                <li>After discussing your hypotheses, build the script and discuss what you think is happening.</li>
+                <li>Experiment more other numbers and other blocks.</li>
+            </ol>
+        </div>
+        <div class="takeItFurther">
+        <p>These problems go beyond the basic ideas of the course and may include topics from other subjects. They are often are challenging. Try them if you have extra time or just if you want to.</p>
+        <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" />
+        	<ol start="13">
+                <li>Code a script that says and plays the notes from 40 to 70 and then from 70 to 40.</li>
+            	<li>Code a similar script with just 3 blocks that counts from 1 to 10 (with no sound&mdash;just on the screen).</li>
+            	<li>Code a script rotates the arrowhead-shaped sprite 5 degrees 10 times.</li>
+            </ol>
+        </div>-->
+        
+	</body>
+</html>

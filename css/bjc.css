@@ -1,3 +1,23 @@
+/** Basic HTML **/
+
+.anchor {
+   padding-top: 65px;
+   margin-top: -65px;
+}
+
+/*Fixing things that are in the main CSS --darkening links for projectors */
+a:visited {
+  color: #248694; /* was 36BBCE; */
+}
+
+a {
+  color: #2a6496; /* was 428bca; */
+}
+
+h4 {
+  padding: 20px 0px 0px 0px;
+}
+
 .full ul, .full ol {
   display:block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
   color: inherit; /* reset the color */
@@ -94,7 +114,7 @@ img.noshaddow {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before, .dialogue:before, .takeItFurther:before, .endnote > div { /* Shared Heading Formatting */
+.forYouToDo:before, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment) { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -185,18 +205,4 @@ code {
   /*  font-family: courier; */
   font-size: 1.1em;
   padding: 0px;
-}
-
-.anchor {
-   padding-top: 65px;
-   margin-top: -65px;
-}
-
-/*Fixing things that are in the main CSS --darkening links for projectors */
-a:visited {
-  color: #248694; /* was 36BBCE; */
-}
-
-a {
-  color: #2a6496; /* was 428bca; */
 }
