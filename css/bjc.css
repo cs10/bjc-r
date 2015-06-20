@@ -177,7 +177,7 @@ div.saveAs img {
 div.saveAs span.text {
   position: absolute; 
   margin-left: 182px;/*19.7em;*/
-  padding-top: 1.6em;
+  padding-top: 1.05em;
   z-index:2;
   color: #333;
 }
@@ -185,7 +185,7 @@ div.saveAs span.text {
 div.newProject span.text {
   position: absolute; 
   margin-left: 290px;/*19.7em;*/
-  padding-top: 1.6em;
+  padding-top: 1.05em;
   z-index:2;
   color: #333;
 }
