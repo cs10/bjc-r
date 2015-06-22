@@ -1,0 +1,49 @@
+title: Welcome to <span class="snap">snap</span>
+
+{
+
+h2: Big Ideas
+  big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
+  big-idea: Explore sequential programming
+  big-idea: Understand and analyze some of the impact of the internet on our culture
+
+
+h2: Activities
+  learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
+  learning-goal: Make a <span class="snap">snap</span> account to save and load projects
+  learning-goal: Make a sprite sing
+  learning-goal: Learn to use the mouse to move sprites around the screen.
+  learning-goal: Make a Kaleidoscope
+
+heading: Introduction to <span class="snap">snap</span>
+  resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
+  resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
+  resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
+  resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+  resource: Scripts [/bjc-r/cur/programming/intro/snap/exploring-snap-scripts.html]
+  resource: Reporters [/bjc-r/cur/programming/intro/sprites/sprites-reporters.html]
+
+heading: Kaleidoscope
+  resource: Exploring the Stage: Position on the Stage [/bjc-r/cur/programming/intro/drawing/exploring-the-stage.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+  resource: Experiment with Drawing Commands [/bjc-r/cur/programming/intro/drawing/experiment-with-drawing-commands2.html]
+  resource: Follow that Mouse! [/bjc-r/cur/programming/loops/forever/follow-that-mouse.html]
+  resource: Forever and a Day [/bjc-r/cur/programming/loops/forever/forever-and-a-day.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
+  quiz: We Won't Test You Forever [/bjc-r/cur/programming/loops/forever/forever-self-test.html]
+  resource: Kaleidoscope [/bjc-r/cur/programming/intro/drawing/kaleidoscope-small.html]
+
+heading: Repeating commands
+  resource: Repeating commands [/bjc-r/cur/programming/loops/repeat-n/introduction-to-repeat-n.html]
+  quiz: Test yourself: Repeat [/bjc-r/cur/programming/intro/drawing/repeat-self-test.html]
+  resource: Drawing regular polygons [/bjc-r/cur/programming/loops/repeat-n/draw-regular-polygons-with-repeat.html]
+  quiz: Test yourself: Total turning [/bjc-r/cur/programming/intro/drawing/angles-self-test.html]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
+  resource: Draw a star? [/bjc-r/cur/programming/loops/repeat-n/draw-regular-star.html]
+  quiz: Test yourself: More on turning [/bjc-r/cur/programming/intro/drawing/angles-self-test-2.html]
+  resource: A new way to loop [/bjc-r/cur/programming/loops/for/introduction-to-for.html]
+  resource: The FOR block [/bjc-r/cur/programming/loops/for/for.html]
+  resource: Using the FOR block [/bjc-r/cur/programming/loops/for/using-for.html]
+
+}
