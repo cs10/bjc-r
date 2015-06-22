@@ -3,17 +3,16 @@ title: Welcome to <span class="snap">snap</span>
 {
 
 h2: Big Ideas
-  big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
-  big-idea: Explore sequential programming
-  big-idea: Understand and analyze some of the impact of the internet on our culture
-
+big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
+big-idea: Explore sequential programming
+big-idea: Understand and analyze some of the impact of the internet on our culture
 
 h2: Activities
-  learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
-  learning-goal: Make a <span class="snap">snap</span> account to save and load projects
-  learning-goal: Make a sprite sing
-  learning-goal: Learn to use the mouse to move sprites around the screen.
-  learning-goal: Make a Kaleidoscope
+learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
+learning-goal: Make a <span class="snap">snap</span> account to save and load projects
+learning-goal: Make a sprite sing
+learning-goal: Learn to use the mouse to move sprites around the screen.
+learning-goal: Make a Kaleidoscope
 
 heading: Introduction to <span class="snap">snap</span>
   resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
