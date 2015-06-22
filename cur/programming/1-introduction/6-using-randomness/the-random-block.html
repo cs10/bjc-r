@@ -25,5 +25,185 @@
                 <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" width="378" height="62" alt="repeat 5 times play a random note"></li>
             </ol>
         </div>
+        
+        
+        
+       	<div class="todo">
+            <ul>
+                <li>MF: The following used to be a separate page...</li>
+            </ul>
+        </div> 
+        
+        
+        
+        <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="understanding-of-random-greeting-block"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri1" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                    What does the following reporter block, Greeting, do?
+                </p>
+                <img src="/bjc-r/img/lab-2/random-greeting-block.png" alt="There should be an image here" title="Greeting Block"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	The sprite will say "Hey! You!" once.	
+                </div>
+                <div class="feedback">
+                    Incorrect. Understand what the say block does. In this case, "Hey!" will be said first, independently from "You!". "You!" will be said after "Hey!".
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    	The sprite will say "Hey!" and then "You!" once.	
+                </div>
+                <div class="feedback">
+                    Not necessarily. This is only true if the pick random block picks the number 1, which means that the repeat loop will only loop once. If this is so, then "Hey!" will be said for one second followed by "You!" said for one second.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    	The sprite will say "Hey!" a random number of times and "You!" a <i>different</i> random number of times.	
+                </div>
+                <div class="feedback">
+                    Not quite, but you are close! Make sure you understand that a repeat loop will do the same number of repeats to each block within it.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	The sprite will say "Hey!" and "You!" the <i>same</i> random number of times.	
+                </div>
+                <div class="feedback">
+                    Correct! The pick random block will randomly pick a number between 1 and 5 (the given parameters) and then loop that number of times.
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri1">
+                <div class="correctResponse" identifier="c4"></div>
+            </div>
+        </div>
+    
+    
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="not-plausible-outcome-of-addition-block"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri2" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                    Understand the following reporter block and then choose which of the following answers is <i>not</i> a plausible output.
+                </p>
+                <img src="/bjc-r/img/lab-2/random-addition.png" alt="There should be an image here" title="random addition block"/>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	16	
+                </div>
+                <div class="feedback">
+                    Incorrect. Think about why 16 is a plausible output. Hint: Look at the largest numbers each pick random block can pick.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    	8	
+                </div>
+                <div class="feedback">
+                    Incorrect. Make sure you understand the above code. 
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    	3	
+                </div>
+                <div class="feedback">
+                    Correct! Although the second pick random block can potentially select 3, the first pick random block has parameters of 4 and 9, which means that the sum will never be 3.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	12	
+                </div>
+                <div class="feedback">
+                    Incorrect. Make sure you understand what the above code does!
+                </div>
+            </div>
+        
+            <div class="responseDeclaration" identifier="ri2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>
+        
+        <!-- Question 3 -->
+        <div class="assessment-data" type="multiplechoice" identifier="plausible-output-of-letter-block"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri3" shuffle="false">
+        
+            <div class="prompt">
+                <p>
+                   Look at the following reporter block. Which of the following is a plausable output of this block?
+                </p>
+                <img src="/bjc-r/img/lab-2/random-letter-super.png" alt="There should be an image here" title="Supercalifragilisticexpialidocious"/>
+                
+                <p>
+                    Choose one:
+                </p>
+            </div>
+            
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    	c	
+                </div>
+                <div class="feedback">
+                    Correct! "c" is letter 6 of supercalifragilisticexpialidocious.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    	s	
+                </div>
+                <div class="feedback">
+                    Incorrect. Which letter value (1-34) is "s"? It may have multiple values as it is found in multiple places in the word, but it is not found within the given parameters.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    	a	
+                </div>
+                <div class="feedback">
+                    Incorrect. Which letter value (1-34) is "a"? It may have multiple values as it is found in multiple places in the word, but it is not found within the given parameters.
+                </div>
+            </div>
+            
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    	x	
+                </div>
+                <div class="feedback">
+                    Incorrect. Which letter value (1-34) is "x"? It is not found within the given parameters.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="ri3">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
     </body>
 </html>

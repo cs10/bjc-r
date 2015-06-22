@@ -27,10 +27,12 @@
                 <li>The three numbers in the script&mdash;4, 100, and 90&mdash;are <strong>parameters</strong> that determine the resulting behavior. Play with each number to see how it contributes to the "squareness" of the shape that is drawn. Even try using negatives of these numbers to see what happens.</li>
                 <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
 
-                <!-- This is cute, but I don't think it's needed, and the code is too much for this early in the course. --MF
-                <a class="run" href="/bjc-r/prog/loop/draw-square-and-squiggle.xml">
-                <img class="center" src="/bjc-r/img/looping/drawing-regular-polygons.gif" alt="drawing a square and squiggle" />
-                </a> -->
+                <div class="comment"> 
+                    This is cute, but I don't think it's needed, and the code is too much for this early in the course. --MF
+                    <a class="run" href="/bjc-r/prog/loop/draw-square-and-squiggle.xml">
+                    <img class="center" src="/bjc-r/img/looping/drawing-regular-polygons.gif" alt="drawing a square and squiggle" />
+                    </a>
+                </div>
             	<li>            	
 	                <div class="sidenote">
                     	<div>A regular polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
@@ -85,5 +87,119 @@
                 </li>
             </ol>
         </div>
-	</body>
+	
+    
+    	<div class="todo">
+            <ul>
+                <li>MF: The following used to be a separate page...</li>
+            </ul>
+        </div>
+        
+    <!-- question 1, formerly question 2 in angles-self-test.html-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether</em> when you drew a pentagon?
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    72
+                </div>
+                <div class="feedback">
+                    No, consider the amount the sprite turned for all five of the rotations.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    108
+                </div>
+                <div class="feedback">
+                    Which way did the sprite end up facing?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! The sprite made a complete revolution.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    540
+                </div>
+                <div class="feedback">
+                    No, How many times did the sprite turn?
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>       
+        
+        <!-- question 2, formerly question 3 -->
+		<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp3" shuffle="false" >
+			<div class="prompt">
+				<p>
+					How many times in total does this script say "Hip"?
+				</p>
+				<img src="/bjc-r/img/prog/hip032.png"/>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					0
+				</div>
+				<div class="feedback">
+					Correct!  The "repeat 0" block will ignore its inner blocks
+					completely.
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					2
+				</div>
+				<div class="feedback">
+					No; look carefully at the way the three repeat blocks
+					are nested.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					3
+				</div>
+				<div class="feedback">
+					No; look carefully at the way the three repeat blocks
+                    are nested.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					6
+				</div>
+				<div class="feedback">
+					No; look carefully at the outermost repeat block, with 
+					a 0 as its parameter.  That outer "repeat 0" block 
+					will run its inner blocks <b>zero</b> times.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp3">
+				<div class="correctResponse" identifier="c1"></div>
+			</div>
+		</div>
+    
+    
+    
+    </body>
 </html>
