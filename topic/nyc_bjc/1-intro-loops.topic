@@ -8,7 +8,7 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 h3: In this unit, you will...
 big-idea: Write computer programs that draw designs, calculate, and interact with the user.
 big-idea: Get familar with the <span class="snap">snap</span> programming interface.
-big-idea: Learn to use <em>loops</em> to repeat similar steps in a program.
+big-idea: Use loops to repeat similar steps in a program.
 big-idea: Learn about the mathmatics used in programming (random numbers, remainders, and true/false logic).
 big-idea: Understand and analyze the impact of the internet on our culture.
 	
@@ -46,7 +46,6 @@ heading: Programming Lab 4: Building Complicated Blocks with Simple Blocks
 heading: Programming Lab 5: Computer Mathematics &mdash; Using Randomness and Modulus
 	resource: Types of Blocks [/bjc-r/cur/programming/1-introduction/1-introduction/types-of-blocks.html]
 	resource: The <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-random-block.html]
-	quiz: Check: The Random Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/random-self-test.html]
 	resource: Draw a Field of Flowers [/bjc-r/cur/programming/1-introduction/6-using-randomness/draw-field-of-flowers.html]
 	resource: The <code>Mod</code> Block [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-mod-block.html]
 	resource: Logic Blocks [/bjc-r/cur/programming/1-introduction/6-using-randomness/logic-blocks.html]
