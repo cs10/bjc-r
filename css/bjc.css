@@ -60,7 +60,7 @@ li > ol {
 .todo:before {
   font-size: 18px;
   font-weight: bold;
-  content: "Reviewer Comments:";
+  content: "Reviewer Comments: ";
 }
 
 /** Side Notes **/

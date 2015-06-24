@@ -54,8 +54,11 @@ heading: Programming Lab 3: Building more complex blocks
 		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 		
 
-heading: Social Implications Lab 4: Media, Sharing, and Copyright
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-media-sharing-copyright/big-questions.html]
+heading: Social Implications Lab 4: Communication and Online Interactions
+	raw-html: <div class="todo">MF: I moved "Media, Sharing, and Copyright" to U1 and replaced it with "Communication and Online Interactions". Students might want to import images or sounds into their programs right away. --Mary</div>
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/8-communication/big-questions.html]
+	resource: Innovations [/bjc-r/cur/programming/1-introduction/8-communication/innovations.html]
+
 
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
@@ -86,7 +89,7 @@ heading: Programming Lab 6: Abstraction
 //	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 
 heading: Social Implications Lab 7: Innovations and Computing in Other Fields
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-innovations-other-fields/big-questions.html]
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-innovations-other-fields/big-questions.html]
 
 heading: Investigations
 	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
