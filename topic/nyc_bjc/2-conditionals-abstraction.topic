@@ -56,8 +56,8 @@ heading: Programming Lab 3: Building more complex blocks
 
 heading: Social Implications Lab 4: Communication and Online Interactions
 	raw-html: <div class="todo">MF: I moved "Media, Sharing, and Copyright" to U1 and replaced it with "Communication and Online Interactions". Students might want to import images or sounds into their programs right away. --Mary</div>
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/8-communication/big-questions.html]
-	resource: Innovations [/bjc-r/cur/programming/1-introduction/8-communication/innovations.html]
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/big-questions.html]
+	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/innovations.html]
 
 
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
