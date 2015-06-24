@@ -2,12 +2,13 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 2: Kaleidoscope</title>
+        <title>Lab 2: Drawing</title>
     </head>
     <body>
-		<h2>Position, Direction, and Watchers (Formerly: Position on the Stage)</h2>
+        <h2>Sprite Position and Direction (Formerly: Position on the Stage and also Position, Direction, and Watchers)</h2>
     	<div class="forYouToDo">
       		<ol>
+				<li>Create a new file that...</li>
             	<li>
                 	Change the background on your stage so that you see the axes and the sprite position and direction.  
                 	<ul>
@@ -15,7 +16,7 @@
                         	<div class="sidenote">There are also other backgrounds in the File menu that you can use for other projects.</div>
                             To see the axes:
                             <ol>
-                                <li>In the <a href="/bjc-r/cur/programming/1-introduction/1-introduction/the-snap-interface.html#window">Sprite Corral</a>, select the Stage.</li>
+                                <li>In the <a href="/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html#window">Sprite Corral</a>, select the Stage.</li>
                                 <li>Then, choose "Backgrounds" from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> .</li>
                                 <li>And choose "xy-grid.gif".</li>
                             </ol>
@@ -29,11 +30,13 @@
                     </ul>
                     Your stage should look like this. The picture below shows the stage with axes and a grid. The background also shows the coordinates of the four points on the axes that are farthest from the origin but still visible on the stage.
                     <img src="/bjc-r/img/1-introduction/snap-coord-grid.png" class="indent" alt="Coordinate Grid"/><br />
-                    <code>MF doesn't understand what this means:</code> Then experiment with your sprite to make sure you see <em>which part of the sprite</em> the coordinates are describing.
+                    <code>MF doesn't understand what this means:</code> Then experiment with your sprite to make sure you see <em>which part of the sprite</em> the coordinates are describing. <code>Mary, see red note below.</code>
 
                 </li>
-                <li>What are the coordinates of the black sprite above?</li>
-                <li>
+                <div class="comment">We need to be careful to be specific that the tip of the sprite arrow is the point in question. (that's what that thing above was supposed to address.</div>
+        		<li>What are the coordinates of the black sprite above?</li>
+                <div class="comment">MF: some of thie is repetative of what has been done already...</div>
+        		<li>
                     Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that, with one click, draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
                     <img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent block" alt="Move 10 Steps Block"/>&nbsp;
                     <img src="/bjc-r/img/1-introduction/turn-right-15.png" class="block" alt="Turn Right 15 Degrees Block"/>&nbsp;
