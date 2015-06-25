@@ -1,4 +1,4 @@
-Header set Access-Control-Allow-Origin *.berkeley.edu
+Header set Access-Control-Allow-Origin *
 
 AddOutputFilterByType DEFLATE text/plain
 AddOutputFilterByType DEFLATE text/xml
