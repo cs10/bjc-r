@@ -452,7 +452,7 @@ img.indent, div.indent {
   width: 96%;
   text-shadow: 0 1px 0 rgba(255, 255, 255, .2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
+		  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25), 0 1px 2px rgba(0, 0, 0, .05);
 }
 
 .quoteRed { /* FIXME, name needed */
@@ -787,66 +787,66 @@ img.indent, div.indent {
 
 /** END QUESTIONABLE STUFF */
 /********************************/
-/*** END QUIZ CSS               */
+/*** END QUIZ CSS			   */
 /********************************/
 
 /******* SMALL DEVICE STUFF *****/
 @media (max-width: 768px) {
   body {
-    width: 100%;
+	width: 100%;
   }
   .full {
-    width: 98%;
+	width: 98%;
   }
   .navbar-right > .btn-group > .arrow {
-    display: none;
+	display: none;
   }
   .navbar-toggle {
-    border: 6px;
+	border: 6px;
   }
   .navbar-right > .btn-group {
-    float: left;
-    padding: 0;
-    width: 100%;
+	float: left;
+	padding: 0;
+	width: 100%;
   }
   .navbar-right {
-    float: left;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
   }
   .dropdown-menu-right {
-    width: 100%;
+	width: 100%;
   }
   .navbar-left {
-    display: none;
-    width: 0;
+	display: none;
+	width: 0;
   }
   /* FIXME -- this shouldn't be this way, but it works. */
   .list_item {
-    color: #000;
+	color: #000;
   }
   /** Rounded corners for hamburger when it's the only button */
   .list_header {
-    border-radius: 6px;
+	border-radius: 6px;
   }
   /* Override display only, all other properties are set above */
   .title-small-screen {
-    display: block;
+	display: block;
   }
   .llab-nav {
-    position: fixed;
+	position: fixed;
   }
   .page-feedback {
-    display: none;
+	display: none;
   }
   .nav-btns.btn-group {
-    /* Buttons can take the whole top bar on small screens
-     * Main difference is for the dropdown menus to look nice when
-     * expanded */
-    width: 100%;
-    /* Override this setting so that width takes effect. */
-    max-width: 100%;
+	/* Buttons can take the whole top bar on small screens
+	 * Main difference is for the dropdown menus to look nice when
+	 * expanded */
+	width: 100%;
+	/* Override this setting so that width takes effect. */
+	max-width: 100%;
   }
 }
 
@@ -857,8 +857,8 @@ img.indent, div.indent {
   font-family: 'Source Code Pro';
   src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Regular.eot');
   src: url('../fonts/SourceCodePro/EOT/SourceCodePro-Regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/SourceCodePro/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'),
-       url('../fonts/SourceCodePro/WOFF/TTF/SourceCodePro-Regular.ttf.woff') format('truetype');
+	   url('../fonts/SourceCodePro/WOFF/OTF/SourceCodePro-Regular.otf.woff') format('woff'),
+	   url('../fonts/SourceCodePro/WOFF/TTF/SourceCodePro-Regular.ttf.woff') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
@@ -867,8 +867,8 @@ img.indent, div.indent {
   font-family: 'Open Sans';
   src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
   src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
-       url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype');
+	   url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'),
+	   url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -877,8 +877,8 @@ img.indent, div.indent {
   font-family: 'VAG Rounded Light';
   src: url('../fonts/vagrounded/VAGRoundedStd-Light.eot');
   src: url('../fonts/vagrounded/VAGRoundedStd-Light.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/vagrounded/VAGRoundedStd-Light.woff') format('woff'),
-       url('../fonts/vagrounded/VAGRoundedStd-Light.ttf')  format('truetype');
+	   url('../fonts/vagrounded/VAGRoundedStd-Light.woff') format('woff'),
+	   url('../fonts/vagrounded/VAGRoundedStd-Light.ttf')  format('truetype');
   font-weight: normal;
   font-style: normal;
 }
