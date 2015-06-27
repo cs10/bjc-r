@@ -32,9 +32,9 @@ heading: Progamming Lab 2 Drawing
 	resource: Making a Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-drawing/3-make-a-kaleidoscope.html]
 
 heading: Programming Lab 3: Looping Commands
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-forever-block.html]
-	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-repeat-block.html]
-	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-for-block.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-forever-block.html]
+	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-the-repeat-block.html]
+	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-for-block.html]
 
 	raw-html: <hr />
 
