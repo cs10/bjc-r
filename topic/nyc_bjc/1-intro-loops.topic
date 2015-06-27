@@ -13,6 +13,8 @@ big-idea: Understand your role in sharing media (both your own and that of other
 big-idea: Create programs inside other programs.
 big-idea: Learn about the mathmatics used in programming (random numbers, remainders, and logic).
 //big-idea: Understand and analyze the impact of the internet on our culture.
+
+	raw-html:<div class="todo">They already know about remainders.</div>
 	
 	raw-html: <hr />
 
