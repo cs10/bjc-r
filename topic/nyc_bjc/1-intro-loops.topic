@@ -1,74 +1,77 @@
 title: Unit 1: Introduction to <span class="snap">snap</span>
 
 {
-//What's up with these? --MF
-//	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
-//	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+
+	video: Video Lecture: Abstraction [https://coursesharing.org/courses/6/lectures/7]
 
 h3: In this unit, you will...
-big-idea: Write computer programs that draw designs, play music, animate, calculate, and interact with the user.
+big-idea: Design computer programs to draw designs, play music, animate, calculate, and interact with the user.
 big-idea: Get to know  the <span class="snap">snap</span> programming interface.
 big-idea: Use loops to repeat similar steps in a program.
-big-idea: Understand your role in sharing media (both your own and that of others).
 big-idea: Create programs inside other programs.
 big-idea: Learn about the mathmatics used in programming (random numbers, remainders, and logic).
-//big-idea: Understand and analyze the impact of the internet on our culture.
-	
-	raw-html: <hr />
-
-	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-
+big-idea: Understand and analyze the impact of the internet on our culture.
+		
 heading: Programming Lab 1: Introduction
+	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
+	raw-html: See also:  <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/math-and-variables-self-test.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Variables and Primitive Expressions: Declaring Variables</a> and <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/python_syntax_and_operators.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Self-test: Math and Variables</a>
 	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
-	resource: Saving and Naming Scripts [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-naming.html]
+	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
 	
 heading: Progamming Lab 2 Drawing
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
  	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-drawing/2-sprite-position-direction.html]
-	resource: Making a Kaleidoscope [/bjc-r/cur/programming/1-introduction/2-drawing/3-make-a-kaleidoscope.html]
-
+	resource: Pen, Motion, Looks, and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-pen-motion-looks-sound.html]
+	
 heading: Programming Lab 3: Looping Commands
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-forever-block.html]
-	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-repeat-block.html]
-	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/the-for-block.html]
+	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html]
+	resource: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-nesting-repeats.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-forever-block.html]
+	resource: The <code>For</code> Block (or do repeat until instead?) [/bjc-r/cur/programming/1-introduction/3-looping-commands/4-the-for-block.html]
 
 	raw-html: <hr />
 
-heading: Social Implications Lab 6: Copyright
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
+heading: Blown to Bits Chapter 1
+//	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
+	//resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
+	//resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
+	//resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
 
 	raw-html: <hr />
 
 heading: Programming Lab 4: Building and Debugging Your Own Blocks
-	resource: 1) "Making a Custom Block" (combine with next?) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
+	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a>
+    resource: 1) "Making a Custom Block" (combine with next?) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: 1) Making a Custom Block (h3: Adding an Input) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-an-input.html]
 	resource: 1) (Developing and Editing Blocks)  (combine with previous) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/developing-and-editing-blocks.html]
-	resource: 2) "Debugging Custom Blocks" (build like buggy-house-and-square-self-test.html)
+	rawhtml: See also: <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a>
+    resource: 2) "Debugging Custom Blocks" (build like buggy-house-and-square-self-test.html)
+	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a>
 	resource: 3) "Using Blocks within Blocks" (combine with next) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/building-a-custom-block.html]
 	resource: 3) (Build a <code>Draw a Flower</code> Block) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 	resource: 4) "Debugging Blocks within Blocks" [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 		
-heading: Programming Lab 5: Calculating with Code: Computer Mathematics &mdash; Using Randomness and Modulus (build "is it divisible by" blockchecker and "is it an integer" block:compare with the rounded version of itself.)
+heading: Programming Lab 5: Calculating with Code: 
+    raw-html: <div class="comment">Computer Mathematics &mdash; Using Randomness and Modulus (build "is it divisible by" blockchecker and "is it an integer" block:compare with the rounded version of itself.)</div>
 	resource: 1) "Types of Blocks" [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/types-of-blocks.html]
 	resource: 1) (The <code>Random</code> Block) (combine with previous) [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/the-random-block.html]
 	resource: 1) (Draw a Field of Flowers) [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/draw-field-of-flowers.html]
-	resource: 2) "The <code>Mod</code> Block"  [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-mod-block.html]
-	resource: 3) "Predicate Logic" (see also 2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html and 2-conditionals-abstraction-testing/2-script-variables/2-predicates.html)
+	resource: 2) The <code>Mod</code> Block  [/bjc-r/cur/programming/1-introduction/6-using-randomness/the-mod-block.html]
+	resource: 3) Predicate Logic [/bjc-r/cur/programming/1-introduction/6-using-randomness/predicate-logic.html]
+	raw-html: See also: <a href="2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html" target="_blank">creating-predicates</a> and <a href="/bic-r/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html" target="_blank">predicates</a>
 
-	raw-html: <hr />
+		raw-html: <hr />
 
-heading: Social Implications Lab 7: Privacy
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
-	resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
-	resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
-
-	raw-html: <hr />
-
-heading: Investigation
+heading: Project(s)
 	//raw-html: Forthcoming student projects
-	resource: Animating (adapt Bug Dance!) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/bug-dance.html]
+	resource: <span class="snap">snap</span> Hour of Code [http://snap.berkeley.edu/hoc]
+	resource: Kaleidoscope [/bjc-r/cur/programming/1-introduction/8-projects/make-a-kaleidoscope.html]
+	resource: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/8-projects/bug-dance.html]
+	
 }

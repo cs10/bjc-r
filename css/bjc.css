@@ -5,34 +5,30 @@
    margin-top: -65px;
 }
 
-/*Fixing things that are in the main CSS --darkening links for projectors */
-a:visited {
-  color: #248694; /* was 36BBCE; */
-}
+a:visited {  color: #248694; /* was 36BBCE; */}
 
-a {
-  color: #2a6496; /* was 428bca; */
-}
+a {  color: #2a6496; /* was 428bca; */}
 
-h4 {
-  padding: 20px 0px 0px 0px;
-}
+h4 {  padding: 20px 0px 0px 0px;}
 
 .full ul, .full ol {
-  display:block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
+  display: block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
   color: inherit; /* reset the color */
   /*margin: 0px 15px 15px  0; /* Added */
   border: none; /* EDC change. */
+  margin: 0px;
 }
+
+img.imageLeft {margin-bottom: 0px;}
+
+li {	padding: 2px;}
 
 li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin: 5px auto;
   line-height: none; /* hmm. */
 }
 
-li > ol {
-  list-style-type: lower-alpha;
-}
+li > ol {  list-style-type: lower-alpha;}
 
 /** Editor Notes **/
 .comment { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
@@ -94,13 +90,42 @@ li > ol {
 .endnote { /* added by Mary Fries on 6/9/15 based on above */
   margin-right: 20px;
   margin-left: 1em;
-  width: 90%;
+  width: 100%;
   background-color: #FFF8AD;
   margin-left: auto;
   margin-right: auto;
  }
 
-/* IMG with no shaddow */
+.sideHOM { /* added by Mary Fries on 6/25/15 based on .sidenote */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #FEC46C; /* #F3F0B3; */
+  clear:both;
+}
+
+.manual { /* added by Mary Fries on 6/25/15 based on .sidenote */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #e4cde3; /* #F3F0B3; */
+  clear:both;
+}
+
 img.noshaddow {
   /* Better resizing of images for mobile devices */
   -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
@@ -108,7 +133,6 @@ img.noshaddow {
   filter: none;
 }
 
-/* New div styles */
 .forYouToDo, .dialogue, .takeItFurther, .takeNote, .endnote {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;
@@ -125,17 +149,11 @@ img.noshaddow {
   margin-bottom: .5em;
 }
 
-.forYouToDo#first:before {
-  content: "For You To Do";
-}
+.forYouToDo#first:before {content: "For You To Do";}
 
-.dialogue {
-  background-color: #cce4f6; /* #ecf4fb; */
-}
+.dialogue {background-color: #cce4f6; /* #ecf4fb; */}
 
-.dialogue:before {
-  content: "Thinking Out Loud";
-}
+.dialogue:before {content: "Thinking Out Loud";}
 
 .dialogue > div {
   padding-left: 5em;
@@ -149,17 +167,11 @@ img.noshaddow {
   text-align: center;
 }
 
-.dialogue > div > span {
-  font-weight: bold;
-}
+.dialogue > div > span {  font-weight: bold;}
 
-.takeItFurther {
-  background-color: #e4cde3;
-}
+.takeItFurther {  background-color: #e4cde3;}
 
-.takeItFurther:before {
-  content: "Take It Further";
-}
+.takeItFurther:before {  content: "Take It Further";}
 
 .takeNote {
   background-color: #fcc589;

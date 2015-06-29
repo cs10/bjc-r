@@ -1,82 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 1: Introduction</title>
-    </head>
-    <body>
+	<head>
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Lab 1: Introduction</title>
+	</head>
+	<body>
 		<h2>Exploring <span class="snap">snap</span> Code</h2>
-        Let's dive right in! We'll discuss the details later...
-        <div class="forYouToDo" id="first">
-        	<ol>
-	            <img src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner" />
-                <li>
-	        	    <div class="sidenote">Bookmark or write down that link. You will need it every day.</div>
-                    Use the URL <a href="http://snap.berkeley.edu/run" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a> to launch <span class="snap">snap</span> in a new window (or tab).
-                </li>
-
+		Let's dive right in! We'll discuss the details later...
+		<div class="forYouToDo" id="first">
+			<ol>
+				<div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=4" target="_blank">Snap Manual pages 4-5</a>.</div>
+				<li><img src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner" /> Share one computer. Take turns typing and reading.</li>
 				<li>
-                	<p>
-                    	Build this script. There are instructions below.<br />
-                    	<img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-                    </p>
-                </li>
-                <li>
-                	Click on your script to run it and see what it does.</li>
-                <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Discuss what you see.
+					<div class="sideHOM">Bookmark or write down the <span class="snap">snap</span> link. You will need it every day.</div>
+					Use the URL <a href="http://snap.berkeley.edu/run" target="_blank"><strong>http://snap.berkeley.edu/run</strong></a> to launch <span class="snap">snap</span> in a new window (or tab).
 				</li>
-                <div class="endnote">
-                   <div>Instructions for Building a Script &nbsp; (Yellow boxes are optional reading.)</div>
-        			<p>Below is an animation showing how to build the required script. You can drag one block right underneath another to snap them together. The white bar that appears shows you where the block will go when you drop it.</p>
-                    <img class="indent" src="/bjc-r/img/1-introduction/Creating-a-script.gif" alt="Creating a script">
-                   	<ol type="a">
-                        <img class="imageRight" src="/bjc-r/img/1-introduction/motion-palette-categories.jpg" alt="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" title="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" />
-                        <li>Look through the eight palette categories shown at right to find each of the blocks you will need for the script.</li>
-                        <li>Drag them to the empty scripting area and snap them together. </li>
-                        <li>Adjust the numbers.</li>
-                    </ol>
-                </div>
+				
 				<li>
-	            	<img src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
-	                Discuss the behavior of this script with another pair. If your results are not the same, check your script to see if it is identical to the model shown above.
-                </li>
-            </ol>
-        </div>
-        
-        <h3>Pair Programming Swap</h3>        
-   		<img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap">
-        <p>In this course, you will use a technique that professional programmers call <a href="http://en.wikipedia.org/wiki/Pair_programming" target="_blank">pair programming</a>&mdash;writing computer programs in teams of two people. One partner writes the program; the other partner helps plan and helps catch errors. </p>
-        <p><em>Switch roles often</em>, aiming for equal time in each role. If you haven't swapped yet, swap now. <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap"> </p>
-        
-        <div class="comment">MF: Need to be claer about using pendown and clear etc.</div>
-        <div class="forYouToDo">
-        	<ol start="6">
-                <div class="sidenote">Reference for the script that draws a square:<br />
-                    <img src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" /></div>
-                <li><strong>Experiment!</strong> What happens if you...
-                    <ol>
-                        <li>Drag a <!--<img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" />--><code>clear</code> block onto the scripting area and click it?</li>
-                        <li>Change the number in the <!--<img class="inline" src="/bjc-r/img/blocks/move-steps.png" alt="move _ steps" title="move _ steps" />--><code>move</code> block?</li>
-                        <li>Change the number in the <!--<img class="inline" src="/bjc-r/img/blocks/turn-CW-degrees.png" alt="turn clockwise _ degrees" title="turn clockwise _ degrees" />--><code>turn clockwise</code> block?</li>
-                        <li>Change the number in the <img class="inline" src="/bjc-r/img/blocks/repeat.png" alt="repeat" title="repeat" /> block?</li>
-                    </ol>
-                </li>
-            	<li>
-                	Below are three other blocks that you may find useful while you are experimenting. Find them, and click on them to see what they do. 
-                    <p>
-                    	<img src="/bjc-r/img/1-introduction/go-to-x-0-y-0_186x36.png" alt="go to x 0 y 0">
-                		<img src="/bjc-r/img/1-introduction/point-in-direction-90_221x36.png" alt="point in direction 90"> 
-                        <img src="/bjc-r/img/1-introduction/set-pen-color-(default-red)_183x36.png" alt="set pen color dark red"> 
-                    </p>
-                </li>
-                <li>Modify the original code to create something different and <img src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" /> with another pair.</li>
-                        
-                <li>
-                	Change your script back to the original code and <img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" /> the stage. Discuss how each piece helps make the whole design. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br />
-                	<img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-                </li>
-          </ol>
-    </div>       
-    </body>
+					<p>
+						Build this script. There are instructions below. Then click on the script to see what it does.<br />
+						<img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+					</p>
+				</li>
+				<div class="endnote">
+					<div>Building a Script &nbsp; (Yellow boxes are optional reading.)</div>
+					<p>This animation shows how to build the script. Drag one block underneath another to snap them together. The white bar shows where the block will snap.</p>
+					<img class="indent" src="/bjc-r/img/1-introduction/Creating-a-script.gif" alt="Creating a script">
+					<div>Instructions</div>
+					<ol type="a">
+						<img class="imageRight" src="/bjc-r/img/1-introduction/motion-palette-categories.jpg" alt="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" title="Motion palette categories: Motion, Looks, Sound, Pen, Control, Sensing, Operators, and Variables" />
+						<li>Look through the eight palette categories shown at right to find each of the blocks you will need for the script.</li>
+						<li>Drag them to the empty scripting area and snap them together. </li>
+						<li>Adjust the numbers.</li>
+					</ol>
+				</div>
+				<li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Discuss what the script does and why.</li>
+				<li>
+					<img src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+					Discuss how each block in the code contributes to the overall behavior. 
+				</li>
+			</ol>
+	
+		</div>
+
+		
+		<h3>Pair Programming Swap</h3>		
+   		<img class="imageLeft" style="padding: 0px;" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap">
+		<p>In this course, you will use a technique that professional programmers call <a href="http://en.wikipedia.org/wiki/Pair_programming" target="_blank">pair programming</a>&mdash;writing computer programs in teams of two. One partner writes the program; the other partner helps plan and helps catch errors. </p>
+		<p><em>Switch roles often</em>, aiming for equal time in each role. If you haven't swapped yet, swap now. <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap"> </p>
+		
+	
+		<!--<div class="sidenote">Be sure to have the <img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" />. You might want to <img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" /> the stage. You can drag the spite (<img class="noshaddow" src="/bjc-r/img/1-introduction/sprite.png" alt="sprite" title="sprite" />) to a different place too. </div>-->
+		<div class="forYouToDo">
+			<ol start="6">
+				<div class="sidenote">In general, you need to press <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down" title="pen down" /> before you can draw. But here, you have already pressed it when you created the script.</div>
+				<div class="sidenote">Reference for the script that draws a square:<br />
+					<img src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" /></div>
+				<li><strong>Experiment!</strong> What happens if you...
+					<ol>
+						<li>Click the <img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" /> block in the Pen menu?</li>
+						<li>Change the number in the <img class="inline" src="/bjc-r/img/1-introduction/move-50.png" alt="move _ steps" title="move _ steps" />block and click the script again?</li>
+						<li>Change the number in the <img class="inline" src="/bjc-r/img/1-introduction/turn-right-90.png" alt="turn clockwise _ degrees" title="turn clockwise _ degrees" /> block and run it again?</li>
+						<li>Change the number in the <img class="inline" src="/bjc-r/img/1-introduction/repeat-4.png" alt="repeat" title="repeat" /> block?</li>
+					</ol>
+				</li>
+				<li>
+					Below are three other blocks that you may find useful while you are experimenting. Find them, and click on them to see what they do. 
+					<p>
+						<img src="/bjc-r/img/1-introduction/go-to-x-0-y-0_186x36.png" alt="go to x 0 y 0">
+						<img src="/bjc-r/img/1-introduction/point-in-direction-90_221x36.png" alt="point in direction 90"> 
+						<img src="/bjc-r/img/1-introduction/set-pen-color-(default-red)_183x36.png" alt="set pen color dark red"> 
+					</p>
+				</li>
+				<li>Modify the original code to create something different and <img src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" /> with another pair.</li>
+						
+				<!--<li>
+					Change your script back to the original code and <img class="inline" src="/bjc-r/img/blocks/clear.png" alt="clear" title="clear" /> the stage. Discuss how each piece helps make the whole design. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br />
+					<img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+				</li>-->
+		  </ol>
+	</div>	   
+	</body>
 </html>
 

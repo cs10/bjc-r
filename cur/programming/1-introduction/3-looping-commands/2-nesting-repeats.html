@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 3: Repeating Commands</title>
+    </head>
+    <body>
+        <h2>Nesting Repeats</h2>
+        
+		<p> It is also possible to <em>nest</em> one <code>repeat</code> block inside another. Since <span class="snap">snap</span> processes scripts from top to bottom, the first <code>repeat</code> will begin first, and the second <code>repeat</code> will have to complete its entire process before the process of the first <code>repeat</code> is called again.</p>
+        <div class="forYouToDo">
+            <ol start="11">
+            	<li>
+                	Predict what this script will do without building:<br />
+                    <img src="/bjc-r/img/prog/hip32.png" class="indent">
+                    <ul>
+                        <li>How many times in total will the script say "Hip"?</li>
+                        <li>How many times in total will the script say "Hooray"?</li>
+                    </ul>
+                </li>
+                <div class="comment">GitHub comment: You need to add a pen down block in step 12 so that you can see the result.<br />from BH:Also, 12c is pretty vague -- does it want a three-deep nesting, or another repeat after the inner repeat, or what? (Or is the point to have kids explore all these possibilities?)</div>
+        		<li> Here is another script that has nested <code>repeat</code> blocks. <br />
+		        	<img src="/bjc-r/img/1-introduction/square-in-square.png" class="indent" style="height:14em;">
+            	    <ul>
+		            	<!-- I don't quite understand why this image is here... <img src="/bjc-r/img/1-introduction/square-fractal2.png" class="imageRight" style="height:10em;" alt="Stop button"/>-->
+                        <li>Sketch on paper what you expect it to do. </li> 
+                        <li>Build it and try it out.</li>
+                        <li>Embed <em>one more</em> <code>repeat</code> in the same way.</li>
+                	</ul>
+                </li>
+            </ol>
+        </div>
+	
+    
+    	<div class="todo">
+            <ul>
+                <li>MF: The following used to be a separate page...</li>
+                <li>GitHub comment: More quizzes like this would be amazing!!!</li>
+            </ul>
+        </div>
+     
+    <!-- question 1, formerly question 2 in angles-self-test.html-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether</em> when you drew a pentagon?
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    72
+                </div>
+                <div class="feedback">
+                    No, consider the amount the sprite turned for all five of the rotations.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    108
+                </div>
+                <div class="feedback">
+                    Which way did the sprite end up facing?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! The sprite made a complete revolution.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    540
+                </div>
+                <div class="feedback">
+                    No, How many times did the sprite turn?
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>       
+        
+        <!-- question 2, formerly question 3 -->
+		<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp3" shuffle="false" >
+			<div class="prompt">
+				<p>
+					How many times in total does this script say "Hip"?
+				</p>
+				<img src="/bjc-r/img/prog/hip032.png"/>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					0
+				</div>
+				<div class="feedback">
+					Correct!  The "repeat 0" block will ignore its inner blocks
+					completely.
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					2
+				</div>
+				<div class="feedback">
+					No; look carefully at the way the three repeat blocks
+					are nested.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					3
+				</div>
+				<div class="feedback">
+					No; look carefully at the way the three repeat blocks
+                    are nested.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					6
+				</div>
+				<div class="feedback">
+					No; look carefully at the outermost repeat block, with 
+					a 0 as its parameter.  That outer "repeat 0" block 
+					will run its inner blocks <b>zero</b> times.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp3">
+				<div class="correctResponse" identifier="c1"></div>
+			</div>
+		</div>
+    
+    
+    
+    </body>
+</html>
