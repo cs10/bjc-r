@@ -6,12 +6,13 @@
     </head>
     <body>
 		<h2>Script Variables</h2>
-        <div class="todo">
+        <!-- <div class="todo">
         	<ul>
                 <li>MF: I worry that the mathematics required on this page would be non-trivial for our students. What if they haven't had any geometry?</li>
             </ul>
-        </div>
-        <p>Sometimes you will want a variable in your script, and will want to set its value. <div class="sidenote"> A script variable  exists only while the script is running. </div> </p>
+        </div> -->
+        <p>Sometimes you will want a variable in your script and will want to set its value. 
+    <div class="sidenote"> A script variable  exists only while the script is running. </div> </p>
         <div class="forYouToDo" id="first">
            <ol>
                <li> Create the following script, which draws polygons with a random number of sides. The video below shows how to create, name, and set the value of a script variable. </p>
@@ -24,20 +25,22 @@
      
       <p>Try running the script (by clicking the green flag) several times to see what shapes it draws.</p>
         
-            <li>Self-test question: Why does it make sense to start the range of possible random numbers at 3?</li>
-            <li>Self-test question: Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
-                <li>Challenge: Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using only multiples of 10.</li>
+            <li><strong>Self-test</strong>: Why does it make sense to start the range of possible random numbers at 3?</li>
+            <li><strong>Self-test</strong>: Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+            <li><strong>Challenge:</strong> Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using only multiples of 10.
+                <p>There are two ways to add a second script variable.  You could add a second <code>script variables</code> block like this 
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/script-variables-sides-script-variables-size.png" alt="script-variables-sides-script-variables-size"> or you could extend the one block, using the right-arrow <img src="/bjc-r/img/2-conditionals-abstraction-testing/second-script-variables-movie.gif" alt="adding a second script variable"></p>
+            </li>
         </ol>
 </div>
-        <p><span class="sidenote">In this script, the value of <code>sides</code> is used twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle through which to <code>turn</code> for each side.</span> Why bother with the script variable? Why could we not just have written the code as in problem 5 below?</p>
-      <div class="forYouToDo">
+        
+      <div class="forYouToDo"> <div class="sidenote">In this script, the value of <code>sides</code> is used twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle through which to <code>turn</code> for each side.</span> Why bother with the script variable? Why could we not just have written the code as in problem 5 below?</div>
           <ol start="5">
-                <li>
-                    <p>Here, instead of setting a script variable, we just put the <code>pick random</code> block into the two places that the random number is needed. Before you build and run this script, try to figure out what is likely to go wrong.</p>
-                    <img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
+                <li><strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
+                    <p><img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" /></p>
                 </li>
-            </ol>
-        </div>
+        </ol>
+</div>
         <p>Script variables can also be useful when a program that interacts with the user.</p>
         <img src="/bjc-r/img/prog/converse.png" alt="conversation with ASK AND WAIT" />
 <p>Note that this script has <em>two </em>script variables. The <code>script variables</code> block has a little right-arrow at the end:</p>

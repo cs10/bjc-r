@@ -45,20 +45,20 @@ heading: Blown to Bits Chapter 1
 
 heading: Programming Lab 4: Building and Debugging Your Own Blocks
 	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a>
-    resource: 1) "Making a Custom Block" (combine with next?) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
+	resource: 1) "Making a Custom Block" (combine with next?) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: 1) Making a Custom Block (h3: Adding an Input) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-an-input.html]
 	resource: 1) (Developing and Editing Blocks)  (combine with previous) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/developing-and-editing-blocks.html]
 	rawhtml: See also: <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a>
-    resource: 2) "Debugging Custom Blocks" (build like buggy-house-and-square-self-test.html)
+	resource: 2) "Debugging Custom Blocks" (build like buggy-house-and-square-self-test.html)
 	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a>
 	resource: 3) "Using Blocks within Blocks" (combine with next) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/building-a-custom-block.html]
 	resource: 3) (Build a <code>Draw a Flower</code> Block) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
 	resource: 4) "Debugging Blocks within Blocks" [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
 		
 heading: Programming Lab 5: Calculating with Code: 
-    raw-html: <div class="comment">Computer Mathematics &mdash; Using Randomness and Modulus (build "is it divisible by" blockchecker and "is it an integer" block:compare with the rounded version of itself.)</div>
+	raw-html: <div class="comment">Computer Mathematics &mdash; Using Randomness and Modulus (build "is it divisible by" blockchecker and "is it an integer" block:compare with the rounded version of itself.)</div>
 	resource: 1) "Types of Blocks" [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/types-of-blocks.html]
 	resource: 1) (The <code>Random</code> Block) (combine with previous) [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/the-random-block.html]
 	resource: 1) (Draw a Field of Flowers) [/bjc-r/cur/programming/1-introduction/5-calculating-with-code/draw-field-of-flowers.html]
