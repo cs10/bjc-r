@@ -12,24 +12,18 @@ big-idea: Create programs inside other programs.
 big-idea: Learn about the mathmatics used in programming (random numbers, remainders, and logic).
 big-idea: Understand and analyze the impact of the internet on our culture.
 		
-heading: Project(s)
- 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
-	You will choose one or more of these to do at some point during Unit 1
-	//raw-html: Forthcoming student projects
-	forum: Hour of Code: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
-	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/8-projects/make-a-kaleidoscope.html]
-	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/8-projects/bug-dance.html]
 
-	raw-html: <hr />
+heading: First day: Hour of Code
+	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
 	
 heading: Programming Lab 1: Introduction
+	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
 	raw-html: See also:  <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/math-and-variables-self-test.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Variables and Primitive Expressions: Declaring Variables</a> and <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/python_syntax_and_operators.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Self-test: Math and Variables</a>
 	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
 	
 heading: Progamming Lab 2 Drawing
-	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-drawing/2-sprite-position-direction.html]
 	resource: Pen, Motion, Looks, and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-pen-motion-looks-sound.html]
@@ -45,7 +39,7 @@ heading: Programming Lab 3: Looping Commands
 heading: Blown to Bits Chapter 1
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
+	group: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
 	//resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
 	//resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
 	//resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
@@ -73,6 +67,11 @@ heading: Programming Lab 6: Calculating with Code
 	resource: The <code>Mod</code> Block  [/bjc-r/cur/programming/1-introduction/6-calculating-with-code/2-the-mod-block.html]
 	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/6-calculating-with-code/3-predicate-logic.html]
 
-
+ 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+	raw-html: <hr />
+	
+heading: Investigations
+	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/8-projects/make-a-kaleidoscope.html]
+	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/8-projects/bug-dance.html]
 
 }
