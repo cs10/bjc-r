@@ -17,101 +17,31 @@
         		<div class="comment">Create an animation for this.</div>
                 <li>At the top of the "Variables" palette, click on <img class="" src="/bjc-r/img/1-introduction/make-a-variable.gif" alt="" title="" />, and create a variable named <code><em>x</em></code>.</li>
                 <li>Create a seccond variable, <code><em>y</em></code>, the same way.</li>
-                <li>Locate the <img class="inline" src="/bjc-r/img/blocks/set-()-to-(0).png" alt="Set _ to 0" title="Set _ to 0" />block in the Operations palette. This assigns the value 0 (or something else you choose) to the variable selected from the dropdown box.</li>
-            </ol>
-                <li>
-        
-        <div class="sidenote">By default, the <a href="">watcher</a> for your variable is on</div>
-        
-        <div class="comment">MF: the next bit is from python_syntax_and_operators.html</div>
-        
-                  We can change the value of x by setting it equal to a different value:
-                  <img src="/bjc-r/img/python/setx5.png" alt="x = 5"/> 
-                  Or by using different operators:<br><br>
-                  <img src="/bjc-r/img/python/setx5+3.png" alt="x = 5 + 3"/> is the same as <code>x = 5 + 3</code><br><br>
-                  <img src="/bjc-r/img/python/setx5x3.png" alt="x = 5 * 3"/> is the same as <code>x = 5 * 3</code><br><br>
-                  <img src="/bjc-r/img/python/setx5mod3.png" alt="x = 5 mod 3"/> is the same as <code>x = 5 % 3</code><br><br>
-                  Just like in <span class="snap">snap</span>, you can use multiple operators at the same time:<br>
-
-                  <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/> is the same as <code>x = 5 + 4 * 3</code>
-                  <br>
-            <p>
-                  Python automatically uses order of operations to evaluate expressions with multiple operators. In the example above, Python will first evaluate 4 * 3, which equals 12, and then evaluate 5 + 12. In the example above, x equals 17. If you want to change the order in Python, use parentheses:<br><br>
-
-                  <img src="/bjc-r/img/python/setx(5+4)x3.png" alt="x = (5 + 4) * 3"/> is the same as <code>x = (5 + 4) * 3</code><br>
-            </p>
-            <p>
-                  Another important block we used with variables was the <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> block. In Python, it is done a little differently.
-                  Notice that <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> and <img src="/bjc-r/img/python/setxx+1.png" alt="x = x + 1"/> are equivalent. Python follows the structure of this second block to change the value of a variable.<br><br>
-                  <img src="/bjc-r/img/python/setxx+8.png" alt="x = x + 8"/> and <img src="/bjc-r/img/python/changex8.png" alt="change x to 8"/> are the same as <code>x = x + 8</code><i><b><br>(Quick Tip:</b></i> <code>x = x + 8</code> is the same as <code>x += 8)</code><br>
-
-                  <p class="alert quoteBlue">
-                        Here's a quick summary of many of the useful operators in Python shown side by side with their <span class="snap">snap</span> equivalent.  We can see that Python operators like greater than or equal to  <code>>=</code>  can save us a lot of time when writing our code, since in <span class="snap">snap</span> we would have needed to drag out multiple blocks.
-                  </p>
-
-
-                  <table style="width:auto">
-                      <thead>
-                          <th><strong>Function</strong></th>
-                          <th><strong><span class="snap">snap</span></strong></th>
-                          <th><strong>Python</strong></th>
-                      </thead>
-                      <tr>
-                          <td>Addition</td>
-                          <td>
-                              <img src="/bjc-r/img/python/plus.png" alt="x + y"/>
-                          </td>
-                          <td><code>x + y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Subtraction</td>
-                          <td>
-                              <img src="/bjc-r/img/python/minus.png" alt="x - y"/>
-                          </td>
-                          <td><code>x - y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Multiplication</td>
-                          <td>
-                              <img src="/bjc-r/img/python/axb.png" alt="x * y"/>
-                          </td>
-                          <td><code>x * y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Division</td>
-                          <td>
-                              <img src="/bjc-r/img/python/divide.png" alt="x / y"/>
-                          </td>
-                          <td><code>x / y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Modulo</td>
-                          <td>
-                              <img src="/bjc-r/img/python/amodb.png" alt="x mod y"/>
-                          </td>
-                          <td><code>x % y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Less Than</td>
-                          <td>
-                              <img src="/bjc-r/img/python/lessthan.png" alt="x < y"/>
-                          </td>
-                          <td><code>x &lt; y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Greater Than</td>
-                          <td>
-                              <img src="/bjc-r/img/python/greaterthan.png" alt="x > y"/>
-                          </td>
-                          <td><code>x &gt; y</code></td>
-                      </tr>
-                      <tr>
-                          <td>Equals</td>
-                          <td>
-                              <img src="/bjc-r/img/python/equal.png" alt="x = y"/>
-                          </td>
-                          <td><code>x == y</code></td>
-                      </tr>
+                <li>Locate the <img class="inline" src="/bjc-r/img/blocks/set-()-to-(0).png" alt="Set _ to 0" title="Set _ to 0" />block in the Operations palette and drag it into the staging area. This block assigns the value 0 (or something else you choose) to the variable selected from the dropdown box.</li>
+                <li>Build each of these scripts and tta Discuss the value of <code><em>x</em></code> in each case.
+                	<ol>
+                        <li><img src="/bjc-r/img/python/setx5.png" alt="x = 5"/></li>
+                        <li><img src="/bjc-r/img/python/setx5+3.png" alt="x = 5 + 3"/></li>
+                        <li><img src="/bjc-r/img/python/setx5x3.png" alt="x = 5 * 3"/> </li>
+                        <li><img src="/bjc-r/img/python/setx5mod3.png" alt="x = 5 mod 3"/></li>
+                    </ol>
+                </li> 
+            	<div class="sidenote">By default, the <a href="">watcher</a> for your variable is on</div>
+                <div class="comment">MF: the next bit is from python_syntax_and_operators.html</div>
+                <div class="endnote">You can embded set variables equal to the value of a complicated expression. For exmple: <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/></div>
+				<li>tta Without using ssn, predict the value of <code><em>x</em></code> after running each of these scripts:
+                	<ol>
+                    	<li><img src="/bjc-r/img/python/setx(5+4)x3.png" alt="x = (5 + 4) * 3"/></li>
+                        <li>more, including with mutiple command blocks</li>
+                    </ol>
+                </li>
+            	<li>Another important block we use with variables was the <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> block. Notice that <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> and <img src="/bjc-r/img/python/setxx+1.png" alt="x = x + 1"/> are equivalent. ttp Discuss why.</li>
+                <li>Design an equivalent block to this: <img src="/bjc-r/img/python/setxx+8.png" alt="x = x + 8"/> </li>
+			</ol>
+                          
+            Do some review problems with these:
+            <img src="/bjc-r/img/python/amodb.png" alt="x mod y"/>
+                <table>
                       <tr>
                           <td>Not Equal</td>
                           <td>
@@ -119,11 +49,7 @@
                           </td>
                           <td><code>x != y</code></td>
                       </tr>
-                      <tr>
-                          <td>Not</td>
-                          <td><img src="/bjc-r/img/cond/not.png"/></td>
-                          <td><code>not x</code></td>
-                          </tr>
+                     
                       <tr>
                             <td>Greater Than or Equal To</td>
                             <td>
@@ -139,7 +65,7 @@
                             <td><code>x &lt;= y</code></td>
                         </tr>
                 </table>
-            </p>
+            </div>
             
             
             
@@ -156,6 +82,7 @@
         <span class="snap">snap</span> would work, and then try again.</p>
         <br />
         <hr />
+    <div class="comment">change images to snap scritps</div>
     <!-- Question 1 -->
     <div class="assessment-data" type="multiplechoice" identifier="What is the value of x?"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
@@ -294,7 +221,6 @@
             </div>
     </div>
        </li>
-                <li></li>
             </ol>
         </div> 
     </body>
