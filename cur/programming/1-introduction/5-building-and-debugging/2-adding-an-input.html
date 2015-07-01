@@ -2,11 +2,20 @@
 <html>
     <head>
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 4: Making Your Own Blocks</title>
+        <title>Lab 5: Building and Debugging Your Own Blocks</title>
     </head>
     <body>
-<!--        <h2>Adding an Input</h2>
-        <p>You have created blocks that draw a square, a triangle, and a house, but only of one size. You can edit these to let you give your block an <em>input</em> (just as the <code>move</code> block takes an input) that tells your blocks what size you want.</p>
+		<h2>Adding an Input</h2>
+        <div class="sidenote">
+        	You've seen many blocks that take an input variable:<br />
+        	<img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps"><br />
+			<img class="inline" src="/bjc-r/img/blocks/turn-CW-15-degrees.png" alt="turn clockwise 15 degrees" title="turn clockwise 15 degrees"><br />
+            <img class="inline" src="/bjc-r/img/blocks/go-to-x-y-0-0.png" alt="go to x:0 y:0" title="go to x:0 y:0"><br />
+            <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" class="inline" alt="say Hello! for 2 secs" title="say Hello! for 2 secs" /><br />
+            <img src="/bjc-r/img/blocks/think-Hmm...-for-2-secs.png" class="inline" alt="think Hmm... for 2 secs" title="think Hmm... for 2 secs" /><br />
+            <img src="/bjc-r/img/blocks/play-note-60-for-0.5-beats.png" class="inline" alt="play note 60 for 0.5 beats" title="play note 60 for 0.5 beats" />
+        </div>
+        <p>You have just created blocks that draw something (a square, a triangle, a house, etc.) of a certain size by giving your block an <em>input</em> that tells your blocks what size image you want to draw.</p>
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
@@ -31,7 +40,7 @@
                     <p>Give the input a name that makes its meaning clear to any reader: <code>size</code> or <code>sideLength</code> would be good.  Type that name in the input field and click "OK."</p>
                 </li></ol></div>
                 <div>
-                Your block title has changed: there is now a variable named <code>size</code> at the end of the title.</p>
+                Your block title has changed: there is now a variable named <code>size</code> at the end of the title.<br />
                     <img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
                 </div>
                 
@@ -48,13 +57,7 @@
                     <img border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
                 </li>
                 <li>Now edit your <code>triangle</code> and <code>house</code> blocks so that you can draw houses of any size you specify as input.
-            </ol>
-        </div>-->
-
-		<h3>Developing and Editing Blocks</h3>
-        <p>These projects are the kind where pair programming can be especially useful.</p>
-        <div class="forYouToDo" id="first">
-	        <ol>
+            
             	<li>Create a <code>draw polygon</code> block that takes two inputs:
 	            <img class="imageRight" src="/bjc-r/img/prog/polyblock.png" alt="draw polygon () sides of length ()">
                 <ul>
@@ -70,12 +73,13 @@
         
         <div class="takeItFurther">
             <div>
-                <ol start="2">
+                <ol type="A">
                     <li>
                         <a href="/bjc-r/cur/programming/1-introduction/3-looping-commands/2-the-repeat-block.html">Look back,</a> if you like, to see how you nested squares in squares. Figure out how to create a new procedure <code>nested polygons</code> with two or three levels of nesting, and inputs that tell how many <code>sides</code> and what side <code>length</code> to use. You might want also to add a third input that tells by what factor to reduce the size of the nested polygons so that you can easily experiment with different reductions.
                   </li>
+                    <div class="comment">MF: need to fix list CSS.</div>
                     <li>This whimsical project&mdash;making a creature dance&mdash;is about <em>editing someone else's blocks</em> to see how the program works, so that you can learn from the ideas and invent versions of your own.
-                      <ol>
+                      <ol style="list-style-type:lower-roman;">
                         <div class="sidenote">This project uses some blocks that you have not experimented with before. It also uses a new idea, the idea that you can change the look of a sprite by changing its <em>costume</em> At the top of the Scripting Area are three tabs: Scripts, Costumes, and Sounds. You can click on these to see wha's in them. </div> 
                          <li>Load this <a class="run" href="/bjc-r/prog/building-blocks/bug-dance-starter-with-sound.xml"><span class="snap">snap</span> project</a>. (Or, <a class="run" href="/bjc-r/prog/building-blocks/bug-dance-starter.xml">this</a> is the same thing without the big sound file). We've made some starter custom blocks for you, in the "Looks" palette.</li>
                          <li>Edit them to see what we've done.</li>
@@ -84,7 +88,8 @@
                          <li>Add inputs to your custom blocks to change your steps in interesting ways.</li>
                          <li>We've included several costumes in the project that you should use in new steps&mdash;look at how we used the costumes in the custom blocks we already created.</li>
                          <li>You could import your own sounds if you would like.  Go to the "Sounds" tab above the scripting area and drag a sound from your computer.</li>
-                  <li>After you and your pair programmer have worked out some ideas of your own,  look at what other programmers have done and chat.  If you see something nice, spend some time trying to incorporate that design into your program.</li> </ol> </li>
+                  <li>After you and your pair programmer have worked out some ideas of your own,  look at what other programmers have done and chat.  If you see something nice, spend some time trying to incorporate that design into your program.</li> </ol> 
+                  </li>
                 </ol>
             </div>
         </div>

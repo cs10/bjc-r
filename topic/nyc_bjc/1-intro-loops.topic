@@ -19,24 +19,43 @@ heading: First day: Hour of Code
 heading: Programming Lab 1: Introduction
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	raw-html: See also:  <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/math-and-variables-self-test.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Variables and Primitive Expressions: Declaring Variables</a> and <a href="https://inst.eecs.berkeley.edu/~cs10/labs/cur/programming/python/python_syntax_and_operators.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-welcome.topic&course=cs10_sp15.html&novideo&noreading&noassignment" target="_blank">Self-test: Math and Variables</a>
 	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
 	
-heading: Progamming Lab 2 Drawing
+heading: Progamming Lab 2: Graphics and Effects
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-drawing/2-sprite-position-direction.html]
-	resource: Pen, Motion, Looks, and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-pen-motion-looks-sound.html]
+	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-looks-sound.html]
 	
-heading: Programming Lab 3: Looping Commands
+heading: Programming Lab 3: Control Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html]
 	resource: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-nesting-repeats.html]
 	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-forever-block.html]
 	resource: The <code>For</code> Block (or do repeat until instead?) [/bjc-r/cur/programming/1-introduction/3-looping-commands/4-the-for-block.html]
 
-	raw-html: <hr />
+heading: Programming Lab 4: Block Types and Calculations
+	resource: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/1-commands-and-reporters.html]
+	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/2-predicate-logic.html]
+	resource: Sensing and Conditionals??
+	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/3-operators.html]
+	resource: Declaring Variables [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/4-declaring-variables.html]
+
+heading: Programming Lab 5: Building and Debugging Your Own Blocks
+	raw-html: <div class="comment">See also: <br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a><br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a><br >- <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a></div>
+	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/1-custom-blocks.html]
+ 	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
+	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
+	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/2-adding-an-input.html]
+	resource: Debugging Custom Blocks (build like <a href="/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html">Debugging Blocks within Blocks</a>)
+	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-a-custom-block.html]
+	resource: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
+		
+
+
+ 	raw-html: <hr />
 
 heading: Blown to Bits Chapter 1
+	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 //	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
 	group: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
@@ -44,30 +63,6 @@ heading: Blown to Bits Chapter 1
 	//resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
 	//resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
 
-	raw-html: <hr />
-
-heading: Programming Lab 4: Building and Debugging Your Own Blocks
-	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a>
-	resource: 1) "Making a Custom Block" (combine with next?) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html]
- 	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
-	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
-	resource: 2) Making a Custom Block (h3: Adding an Input) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/adding-an-input.html]
-	resource: 2) (Developing and Editing Blocks)  (combine with previous) [/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/developing-and-editing-blocks.html]
-	rawhtml: See also: <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a>
-	resource: 3) "Debugging Custom Blocks" (build like buggy-house-and-square-self-test.html)
-	raw-html: See also <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a>
-	resource: 4) "Using Blocks within Blocks" (combine with next) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/building-a-custom-block.html]
-	resource: 4) (Build a <code>Draw a Flower</code> Block) [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/draw-a-flower.html]
-	resource: 5) "Debugging Blocks within Blocks" [/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html]
-		
-heading: Programming Lab 5: Types of Blocks
-	resource: Commands and Reporters [/bjc-r/cur/programming/1-introduction/5-types-of-blocks/1-commands-and-reporters.html]
-
-heading: Programming Lab 6: Calculating with Code
-	resource: The <code>Mod</code> Block  [/bjc-r/cur/programming/1-introduction/6-calculating-with-code/2-the-mod-block.html]
-	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/6-calculating-with-code/3-predicate-logic.html]
-
- 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	raw-html: <hr />
 	
 heading: Investigations

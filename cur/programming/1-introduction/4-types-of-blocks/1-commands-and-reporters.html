@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 5: Calculating with Code</title>
+        <title>Lab 4: Block Types and Calculations</title>
     </head>
     <body>
 		<h2>Commands and Reporters</h2>
@@ -11,7 +11,7 @@
             There are several kinds of blocks in <span class="snap">snap</span>, each with a different shape. You have already worked with commands and reporters:
             <ul>
                 <li>
-                	<strong>Command blocks perform an action</strong> (like drawing on the stage or having the sprite say something). Commands have the click-together groove and bump at the top and bottom:<br />
+                	<strong><em>Command</em> blocks perform an action</strong> (like drawing on the stage or having the sprite say something). Commands have the click-together groove and bump at the top and bottom:<br />
                 	<p class="center">
                         <img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps">
                         <!--<img class="inline" src="/bjc-r/img/blocks/turn-CW-15-degrees.png" alt="turn clockwise 15 degrees" title="turn clockwise 15 degrees">-->	
@@ -26,7 +26,7 @@
                 </li>
                 <div class="comment">MF: check the block sizing on the <strong>for</strong> and <strong>forever</strong> block script pics.</div>
                 <li>
-                	<strong>Loops are a special kind of command.</strong>  Loops perform the code inside them a certain number of times. Loops are C-shaped and have the same click-together grooves as other commands: <br />
+                	<strong><em>Loops</em> are a special kind of command.</strong>  Loops perform the code inside them a certain number of times. Loops are C-shaped and have the same click-together grooves as other commands: <br />
 					<div class="sidenote">You may want to review the <a href="/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html"><!--<img src="/bjc-r/img/blocks/repeat-blank.png" class="inline" alt="repeat" title="repeat" />--><code>repeat</code> block</a>, the <a href="/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-forever-block.html"><code>forever</code> block</a>, or the <a href="/bjc-r/cur/programming/1-introduction/3-looping-commands/4-the-for-block.html">the <code>for</code> block</a>.</div>
                 	<p class="center">
                         <img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" />
@@ -35,7 +35,7 @@
                     </p>
                 </li>
                 <li>
-                	<strong>Reporter blocks report information</strong> (such as the result of a calculation or the location of the mouse). Reporters are long with rounded ends:<br />
+                	<strong><em>Reporter</em> blocks report information</strong> (such as the result of a calculation or the location of the mouse). Reporters are long with rounded ends:<br />
                 	<p class="center">
                         <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" />
                         <!--<img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="" />-->
@@ -309,69 +309,7 @@
                     <p>And, you could use <a class="run" href="/bjc-r/prog/drawing/draw-field-of-flowers-with-backgrounds.xml">this starter project</a>, which contains a few fun backgrounds.  To use them, click on the "Stage" sprite at the lower right of the <span class="snap">snap</span> window, select the "Costumes" tab at the top of the scripting area, and select the background that you want for your program.</p>
                 </li>
             </ol>
-        </div>
-
-
-
-
-       <h2>Watchers</h2>
-       <div class="comment">find other watcher content</div>
-       <p>The three oval-shaped reports at the bottom of the Motion palette have checkboxes for <strong>watchers</strong>.  Unlike the jigsaw-puzzle-shaped <strong>command</strong> blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
-        <p>The <img src="/bjc-r/img/topic1/topic1_xposition.png" alt="X Position Reporter" class="block"/> and <img src="/bjc-r/img/topic1/topic1_yposition.png" alt="Y Position Reporter" class="block"/> reporters tell you where the sprite is on the stage.  As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position.</p>
-        
-                <h2>Predicates</h2>    
-                <div class="takeNote">
-					<div class="comment">pulled out of U2L1 and moved here</div>        
-					<div>
-                    	Reporter blocks can report many kinds of values. The <code>plus</code> block, for example, reports a number. <br /> 
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/reporter-plus-reporting-10.gif" alt="plus block reporting the number 10"><br />
-                        Some reporter blocks, like <code>greater than</code> report only two special values: <img src="/bjc-r/img/blocks/true.png" alt="true"/>  when a condition is met and and <img src="/bjc-r/img/blocks/false.png" alt="false"/>  when it is not met. 
-                        <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
-                        <p> Reporters that report only <code>true</code> and <code>false</code> are called "predicates." In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </p> 
-                        <p> Other predicates you will often find useful <code>equals</code>, <code>not</code>, <code>and</code>, and <code>or</code> include  </p>
-                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/equals-reporting-true_293x44.png" alt="equals reporting true">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-true-reports-false244x44.png" alt="not true, reporting false">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-seven-plus-three-equals-12-reports-true_361x44.png" alt="not 7 plus 3 equals 12, reporting true">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/7-plus-3-equals-12-OR-7-plus-3-less-than-12-reports-true_548x44.png" alt="a false statement or a true statement, reporting true"></p>
-                        Predicate functions are like questions that can be answered with <code>true</code> or <code>false</code>. These two special values  are  called Boolean values, named after the  logician George Boole. 
-                    </div>
-                </div>
-    
-    
-
-
-        <div>
-        	<p>Here are some special kinds of blocks:</p>
-            <ul>        
-                <li>
-                	<strong>Predicates</strong>&mdash;predicates are a special kind of reporter. Predicates behave like questions that can be answered with <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /> (which are themselves special predicates called booleans&mdash;more on that later). Predicates are hexagonal.<br />
-                    Some examples: 
-                    <!--<img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" />
-                    <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />-->
-                    <img src="/bjc-r/img/blocks/key-space-pressed.png" class="inline" alt="key space pressed?" title="key space pressed?" />
-                    <img class="inline" src="/bjc-r/img/1-introduction/7<3.png" alt="7 < 3" title="7 < 3" />
-                    <img class="inline" src="/bjc-r/img/blocks/mouse-down.png" alt="mouse down?" title="mouse down?" />
-                    <img class="inline" src="/bjc-r/img/blocks/is-5-a-number.png" alt="is 5 a number?" title="is 5 a number?" /><br />
-                    Predicates can be combined with reporters and other predicates to make more complicated predicates:
-                </li><br />
-                <li>
-                	<strong>Conditionals</strong>&mdash;conditionals are a special kind of command. Conditionals allow the code inside them to be performed <em>only if</em> the condition is true (and not if it is false). Conditionals are C-shaped or E-shaped and have the click-together grooves. <br />
-                    Some examples: 
-                    <img src="/bjc-r/img/blocks/if.png" class="inline" alt="if" title="if" />
-                    <img src="/bjc-r/img/blocks/if-else.png" class="inline" alt="if else" title="if else" />
-                    <img src="/bjc-r/img/blocks/repeat-until.png" class="inline" alt="repeat until" title="repeat until" /><br />
-                    Notice the hexagonal spaces? Predicates are used inside of conditionals. 
-                </li>
-<div class="todo">
-    <ul>
-        <li>Insert a problem about pedicates in conditionals. Maybe use <img class="" src="/bjc-r/img/1-introduction/top-half-bottom-half.png" alt="" title="" /></li>
-    </ul>
-</div>
-        
-                       
-            </ul>
-	    </div>
-     
+        </div>     
         
 	</body>
 </html>
