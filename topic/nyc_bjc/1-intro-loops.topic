@@ -51,15 +51,23 @@ heading: Programming Lab 5: Building and Debugging Your Own Blocks
 	resource: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
 		
  	raw-html: <hr />
-
-heading: Blown to Bits Chapter 1
+	
+heading: Social Implications Lab 6: Introduction, Bits, Games and Violence, Blown to Bits Chapter 1
 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
-//	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/big-questions.html]
+	resource: Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
+	resource: Games and Violence [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/games-and-violence.html]
+	resource: Blown to Bits Chapter 1 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
+	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
 	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
-	group: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
-	//resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
-	//resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
-	//resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
+
+heading: Social Implications Lab 7: Privacy, Community and Online Interactions, Blown to Bits Chapter 2
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
+	resource: Blown to Bits Chapter 2 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
+	resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
+	resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
+
 
 	raw-html: <hr />
 	
