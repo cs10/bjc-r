@@ -54,19 +54,14 @@ heading: Programming Lab 3: Building more complex blocks
 		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 		
 
-heading: Social Implications Lab 4: Communication and Online Interactions
-	raw-html: <div class="todo">MF: I moved "Media, Sharing, and Copyright" to U1 and replaced it with "Communication and Online Interactions". Students might want to import images or sounds into their programs right away. --Mary</div>
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/big-questions.html]
-	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/innovations.html]
-
 
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
 // heading: Programming Lab 5: More Work with Reporters
 	
-heading: Programming Lab 5: Custom Blocks Make Code Easier to Understand
+heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
+	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
 	
 
 //heading: Lab 7: Testing Your Code
@@ -75,10 +70,10 @@ heading: Programming Lab 5: Custom Blocks Make Code Easier to Understand
 //  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
 
-heading: Programming Lab 6: Abstraction
-	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-abstraction/brick-wall.html]
+heading: Programming Lab 5: Abstraction
+	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
 //	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
-    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-abstraction/ge-soln.html]
+    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
 
 // heading: Lab 8: Programs with Multiple Sprites
 //	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
@@ -88,8 +83,19 @@ heading: Programming Lab 6: Abstraction
 //	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
 //	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 
-heading: Social Implications Lab 7: Innovations and Computing in Other Fields
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-innovations-other-fields/big-questions.html]
+heading: Social Implications Lab 6: Privacy, Blown to Bits Chapter 3
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/big-questions.html]
+	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/innovations.html]
+	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/btb-chapter3.html]
+
+
+heading: Social Implications Lab 7: Search, How the Internet Works, Blown to Bits Chapter 4
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
+ 	resource: Big Questions from formerly Unit 3 [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
+	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
+	resource: Search [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/search.html]
+	resource: Internet [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/internet.html]
+
 
 heading: Investigations
 	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]

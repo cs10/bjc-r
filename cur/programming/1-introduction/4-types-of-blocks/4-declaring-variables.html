@@ -14,22 +14,23 @@
         
         <div class="forYouToDo" id="first">
             <ol>
+            	<div class="sidenote">By default, the <a href="/bjc-r/cur/programming/1-introduction/2-drawing/2-sprite-position-direction.html#watchers">watcher</a> for your variable is on.</div>
         		<div class="comment">Create an animation for this.</div>
                 <li>At the top of the "Variables" palette, click on <img class="" src="/bjc-r/img/1-introduction/make-a-variable.gif" alt="" title="" />, and create a variable named <code><em>x</em></code>.</li>
-                <li>Create a seccond variable, <code><em>y</em></code>, the same way.</li>
                 <li>Locate the <img class="inline" src="/bjc-r/img/blocks/set-()-to-(0).png" alt="Set _ to 0" title="Set _ to 0" />block in the Operations palette and drag it into the staging area. This block assigns the value 0 (or something else you choose) to the variable selected from the dropdown box.</li>
-                <li>Build each of these scripts and tta Discuss the value of <code><em>x</em></code> in each case.
-                	<ol>
+                <li>
+                	Build each of the following scripts. Without using <span class="snap">snap</span>, discuss what the value of <code><em>x</em></code> will be after running each script.
+                	<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <ol>
                         <li><img src="/bjc-r/img/python/setx5.png" alt="x = 5"/></li>
                         <li><img src="/bjc-r/img/python/setx5+3.png" alt="x = 5 + 3"/></li>
                         <li><img src="/bjc-r/img/python/setx5x3.png" alt="x = 5 * 3"/> </li>
                         <li><img src="/bjc-r/img/python/setx5mod3.png" alt="x = 5 mod 3"/></li>
                     </ol>
                 </li> 
-            	<div class="sidenote">By default, the <a href="">watcher</a> for your variable is on</div>
                 <div class="comment">MF: the next bit is from python_syntax_and_operators.html</div>
-                <div class="endnote">You can embded set variables equal to the value of a complicated expression. For exmple: <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/></div>
-				<li>tta Without using ssn, predict the value of <code><em>x</em></code> after running each of these scripts:
+                <div class="endnote">You can set variables to hold the value of a complicated expression with multiple operations. For example: <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/></div>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Without using <span class="snap">snap</span>, predict the value of <code><em>x</em></code> after running each of these scripts:
                 	<ol>
                     	<li><img src="/bjc-r/img/python/setx(5+4)x3.png" alt="x = (5 + 4) * 3"/></li>
                         <li>more, including with mutiple command blocks</li>
@@ -87,21 +88,13 @@
     <div class="assessment-data" type="multiplechoice" identifier="What is the value of x?"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
         <div class="prompt">
-            What is the value of x, at the end of the script?
-            <br />
-            <pre><code class="lang-python">
->>> x = 3 + 2
->>> x = x - 3
->>> y = 5
->>> x = x + y
-            </code></pre>
+            What is the value of <code><em>x</em></code> at the end of this script?<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-01.png" alt="set x to 4 + 6, set x to x - 7, set y to 8, set x to x + y" title="set x to 4 + 6, set x to x - 7, set y to 8, set x to x + y" /><br clear="all"/>
         </div>
 
         <div class="choice" identifier="c1">
             <div class="text">2</div>
-            <div class="feedback">
-                Think about the value of x after the first step.
-            </div>
+            <div class="feedback">Think about the value of x after the first step.</div>
         </div>
         <div class="choice" identifier="c2">
             <div class="text">7</div>
@@ -109,15 +102,11 @@
         </div>
         <div class="choice" identifier="c3">
             <div class="text">5</div>
-            <div class="feedback">
-                Think about the value of x after the first step.
-            </div>
+            <div class="feedback">Think about the value of x after the first step.</div>
         </div>
         <div class="choice" identifier="c4">
             <div class="text">10</div>
-            <div class="feedback">
-                Think about the value of x after the first step.
-            </div>
+            <div class="feedback">Think about the value of x after the first step.</div>
         </div>
         <div class="responseDeclaration" identifier="ri1">
             <div class="correctResponse" identifier="c2"></div>
@@ -128,19 +117,12 @@
     <div class="assessment-data" type="multiplechoice" identifier="mod in python"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri2" shuffle="true">
         <div class="prompt">
-            What is the value of x?
-            <br />
-            <pre><code class="lang-python">
->>> y = 3
->>> z = 2
->>> x = y % z
-                </code></pre>
+			What is the value of <code><em>x</em></code> at the end of this script?<br />
+            <img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-02.png" alt="set y to 3, set z to 2, set x to y mod z" title="set y to 3, set z to 2, set x to y mod z" />
             </div>
             <div class="choice" identifier="c1">
                 <div class="text">2</div>
-                <div class="feedback">
-                    What operation does % perform?
-                </div>
+                <div class="feedback">What does <a href="/bjc-r/cur/programming/1-introduction/4-types-of-blocks/3-operators.html">mod</a> perform?</div>
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">1</div>
@@ -163,64 +145,37 @@
     <div class="assessment-data" type="multiplechoice" identifier="variable switching"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="false">
         <div class="prompt">
-            Switch the values of the variables x and y.
-            <br />
-            <pre><code class="lang-python">
->>> x = 3
->>> y = 7
+            <img class="imagLeft" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
+            Which script will switch the values of the variables <code><em>x</em></code> and <code><em>y</em></code>?
+            <div class="sidenote">Try making up starting values for <code><em>x</em></code> and <code><em>y</em></code> and work them through each script. For example, you could let: <br />
+            <p class="center">
+            	<code>x = 3</code><br />
+				<code class="center">y = 7</code>
+            </p>
             </code></pre>
+            </div>
         </div>
         <div class="choice" identifier="c1">
-            <div class="text">
-                <pre><code class="lang-python">
->>> x = x + y
->>> y = x - y
->>> x = x - y
-                </code></pre>
-            </div>
+            <div class="text"><img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-03.png" alt="set x to x + y, set y to x - y, set x to x - y" title="set x to x + y, set y to x - y, set x to x - y" /></div>
             <div class="feedback">Correct!</div>
         </div>
         <div class="choice" identifier="c2">
-            <div class="text">
-                <pre><code class="lang-python">
->>> x = x - y
->>> x = x + y
->>> y = x + y
-                    </code></pre>
-                </div>
-                <div class="feedback">
-                    Try again! This one is a little tricky.
-                </div>
-            </div>
-            <div class="choice" identifier="c3">
-                <div class="text">
-                    <pre><code class="lang-python">
->>> x = x + y
->>> y = x - y
->>> x = x + y
-                    </code></pre>
-                </div>
-                <div class="feedback">
-                    Incorrect. Check the final value of <code>x</code> and try again.
-                </div>
-            </div>
-            <div class="choice" identifier="c4">
-                <div class="text">
-                    <pre><code class="lang-python">
->>> x = x - y
->>> y = x - y
->>> x = x + y
-                    </code></pre>
-                </div>
-                <div class="feedback">
-                    Try running though a couple examples to see what's wrong.
-                </div>
-            </div>
-            <div class="responseDeclaration" identifier="ri3">
-                <div class="correctResponse" identifier="c1"></div>
-            </div>
+            <div class="text"><img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-04.png" alt="set x to x - y, set x to x + y, set y to x + y" title="set x to x - y, set x to x + y, set y to x + y" /></div>
+            <div class="feedback">Try again! This one is a little tricky.</div>
+        </div>
+        <div class="choice" identifier="c3">
+            <div class="text"><img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-05.png" alt="set x to x + y, set y to x - y, set x to x + y" title="set x to x + y, set y to x - y, set x to x + y" /></div>
+            <div class="feedback">Incorrect. Check the final value of <code>x</code> and try again.</div>
+        </div>
+        <div class="choice" identifier="c4">
+            <div class="text"><img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-06.png" alt="set x to x - y, set y to x - y, set x to x + y" title="set x to x - y, set y to x - y, set x to x + y" /></div>
+            <div class="feedback">Try running though a couple examples to see what's wrong.</div>
+        </div>
+        <div class="responseDeclaration" identifier="ri3">
+            <div class="correctResponse" identifier="c1"></div>
+        </div>
     </div>
-       </li>
+    			</li>
             </ol>
         </div> 
     </body>
