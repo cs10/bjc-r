@@ -38,7 +38,7 @@ heading: Programming Lab 4: Block Types and Calculations
 	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/2-predicate-logic.html]
 	resource: Sensing and Conditionals??
 	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/3-operators.html]
-	resource: Declaring Variables [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/4-declaring-variables.html]
+	quiz: Declaring Variables [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/4-declaring-variables.html]
 
 heading: Programming Lab 5: Building and Debugging Your Own Blocks
 	raw-html: <div class="comment">See also: <br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a><br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a><br >- <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a></div>
@@ -50,8 +50,6 @@ heading: Programming Lab 5: Building and Debugging Your Own Blocks
 	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-a-custom-block.html]
 	resource: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
 		
-
-
  	raw-html: <hr />
 
 heading: Blown to Bits Chapter 1
