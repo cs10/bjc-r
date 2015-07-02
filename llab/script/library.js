@@ -41,11 +41,11 @@ llab.getSnapRunURL = function(targeturl) {
 	var finalurl = llab.snapRunURLBase;
 	var currdom = document.domain;
 	if (currdom == "localhost") {
-		// currdom = 'http://' + currdom + ":" + window.location.port;
+		currdom = 'http://' + currdom + ":" + window.location.port;
 	}
-	if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
+	else if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
 		finalurl += llab.CORSproxy;
-	}
+	} 
 	if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
 		var path = window.location.pathname;
 		path = path.split("?")[0];
