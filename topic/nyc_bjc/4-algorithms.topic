@@ -63,23 +63,23 @@ heading: Lab 3: Timing Experiments
 
 	assignment: Evil Hangman [/bjc-r/cur/programming/projects/hangman/evil-hangman.html]
 
-heading: Social Implications Lab 5: Censorship and Regulation, Computing around the World, Computing in War, Blown to Bits Chapter 7 and 8
+heading: Social Implications Lab 5?: Censorship and Regulation, Computing around the World, Computing in War, Blown to Bits Chapter 7 and 8
 	 resource: Big Questions [/bjc-r/cur/programming/4-algorithms/5-censorship/big-questions.html]
-	 resource: Censorship and Regulation [/bjc-r/cur/programming/4-algorithms/5-censorship/censorship.html]
-	 resource: Computing around the World [/bjc-r/cur/programming/4-algorithms/5-censorship/computing-world.html]
-	 resource: Computing in War [/bjc-r/cur/programming/4-algorithms/5-censorship/computing-war.html]
-	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-chapter7.html]	 
-	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-chapter8.html]
+//	 resource: Censorship and Regulation [/bjc-r/cur/programming/4-algorithms/5-censorship/censorship.html]
+//	 resource: Computing around the World [/bjc-r/cur/programming/4-algorithms/5-censorship/computing-world.html]
+//	 resource: Computing in War [/bjc-r/cur/programming/4-algorithms/5-censorship/computing-war.html]
+//	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-chapter7.html]	 
+//	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-chapter8.html]
 
-heading: Social Implications Lab 6: Innovations, Computing in Other Fields, Computing in Work
+heading: Social Implications Lab 6?: Innovations, Computing in Other Fields, Computing in Work
 	 resource: Big Questions [/bjc-r/cur/programming/4-algorithms/6-innovations/big-questions.html]
-	 resource: Innovations [/bjc-r/cur/programming/4-algorithms/6-innovations/innovations.html]
-	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-algorithms/6-innovations/computing-other.html]
-	 resource: Computing in Work [/bjc-r/cur/programming/4-algorithms/6-innovations/computing-work.html]
+//	 resource: Innovations [/bjc-r/cur/programming/4-algorithms/6-innovations/innovations.html]
+//	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-algorithms/6-innovations/computing-other.html]
+//	 resource: Computing in Work [/bjc-r/cur/programming/4-algorithms/6-innovations/computing-work.html]
 
-heading: Social Implications Lab 7: Blown to Bits Conclusion
+heading: Social Implications Lab 7?: Blown to Bits Conclusion
 	 resource: Big Questions [/bjc-r/cur/programming/4-algorithms/7-conclusion/big-questions.html]
-	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-conclusion.html]	 
+//	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-algorithms/5-censorship/btb-conclusion.html]	 
 
 
 }

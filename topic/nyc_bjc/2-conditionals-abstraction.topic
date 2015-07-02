@@ -83,19 +83,22 @@ heading: Programming Lab 5: Abstraction
 //	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
 //	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 
-heading: Social Implications Lab 6: Privacy, Blown to Bits Chapter 3
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/big-questions.html]
-	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/innovations.html]
-	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-privacy/btb-chapter3.html]
+ 	raw-html: <hr />
+
+heading: Social Implications Lab 6: Bits and Information
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/big-questions.html]
+//	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/innovations.html]
+//	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/btb-chapter3.html]
 
 
-heading: Social Implications Lab 7: Search, How the Internet Works, Blown to Bits Chapter 4
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
- 	resource: Big Questions from formerly Unit 3 [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/search.html]
-	resource: Internet [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/internet.html]
+heading: Social Implications Lab 7: Search and How the Internet Works
+//	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
+ 	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
+//	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
+//	resource: Search [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/search.html]
+//	resource: Internet [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/internet.html]
 
+ 	raw-html: <hr />
 
 heading: Investigations
 	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
