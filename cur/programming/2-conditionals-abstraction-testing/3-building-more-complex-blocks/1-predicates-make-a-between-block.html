@@ -2,21 +2,29 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 3: Practice with Predicates</title>
+        <title>Lab 3: More complex programs</title>
     </head>
     <body>
-		<h2>Predicates: Make a <code>Between</code> Block</h2>
-        <div class="todo">
-            <ul>
-                <li>MF: This is such a short page; I would either add more or combine it (logically) with another page.</li>
-            </ul>
-        </div>
+		<h2>Abstraction</h2>
+        
         <div class="forYouToDo"> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" /> 
             <ol>
-                <li>
-                    Create a new predicate block that determines if a number is between two other numbers.  The block should return <code>true</code> if the first number is between the two numbers or if it is equal to either of the numbers. <br />
-                    <img class="indent" src="/bjc-r/img/prog/between.png" alt="'between' block" title="'between' block" />
-                </li>
+                <li>Using three blocks, <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile, with input for size">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of tiles (with inputs for number  and size of tiles)">, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles,size).png" alt="nxn-array-of-tiles(tiles,size)">, build a program that allows you to draw a square array of a specified number of square tiles of a specified size. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles"> draws this:
+                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" alt="3x3array-of-squares-on-stage"></p>
+                  <p>Test it to make sure that it can make 4x4 arrays and 5x5 arrays, and that the size of the tiles can be controlled.</p>
+              </li>
+                <li>The beginnings of a game. 
+                	<ol>
+                    	<li> Set your sprite to (-150, 150), clear the stage, and run 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles">. </li>
+                        <li> Now, build a reporter (you choose the name) that uses your <code>between?</code> block to report <strong>5</strong> if the sprite is dragged into the center cell and <strong>0</strong> if it is not in the center cell. Use <code>forever</code> to make it <em>keep</em> reporting as you drag the sprite around the stage. 
+                       	  <p>Click on Make a variable and name it <code>which tile?</code>. </p>
+                          <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Make-a-variable(tile).png" alt="Make a variable"></p>
+                          <p>That will automatically give you a watcher to display the location constantly.</p>
+                      </li>
+                        <li> Extend your reporter to report <strong>0</strong> only if the sprite is dragged entirely off the game board. </li>
+                        <li> Now extend it so that it report 1 for the top left tile, 2 for the top middle tile, 3 for the top right tile, and so on. 
+                        </li>
             </ol>
         </div>
     </body>
