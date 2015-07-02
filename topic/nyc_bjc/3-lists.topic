@@ -60,18 +60,18 @@ heading: Programming Lab 5: Data Part I
 
 heading: Social Implications Lab 6: Encryption and Security, Blown to Bits Chapter 5
 	 resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/big-questions.html]
-	 resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/encryption.html]
-	 resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/security.html]
-	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/public-key.html]
-	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/btb-chapter5.html]
+//	 resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/encryption.html]
+//	 resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/security.html]
+//	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/public-key.html]
+//	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/btb-chapter5.html]
 
 heading: Social Implications Lab 7: Copyright, Media and Sharing, Patents, Blown to Bits Chapter 6
-	 resource: Big Questions from Mary in Unit 1 [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
+//	 resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
 	 resource: Big Questions [/bjc-r/cur/programming/3-lists/7-copyright/big-questions.html]
-	 resource: Copyright [/bjc-r/cur/programming/3-lists/7-copyright/copyright.html]
-	 resource: Media [/bjc-r/cur/programming/3-lists/7-copyright/media.html]
-	 resource: Patents [/bjc-r/cur/programming/3-lists/7-copyright/patents.html]
-	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/3-lists/7-copyright/btb-chapter6.html]
+//	 resource: Copyright [/bjc-r/cur/programming/3-lists/7-copyright/copyright.html]
+//	 resource: Media [/bjc-r/cur/programming/3-lists/7-copyright/media.html]
+//	 resource: Patents [/bjc-r/cur/programming/3-lists/7-copyright/patents.html]
+//	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/3-lists/7-copyright/btb-chapter6.html]
 
 	 
 heading: Investigations
