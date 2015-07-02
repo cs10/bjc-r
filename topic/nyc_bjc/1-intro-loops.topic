@@ -13,14 +13,14 @@ big-idea: Learn about the mathmatics used in programming (random numbers, remain
 big-idea: Understand and analyze the impact of the internet on our culture.
 		
 
-heading: First day: Hour of Code
-	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
-	
 heading: Programming Lab 1: Introduction
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
 	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
+	
+heading: Hour of Code
+	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
 	
 heading: Progamming Lab 2: Graphics and Effects
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
