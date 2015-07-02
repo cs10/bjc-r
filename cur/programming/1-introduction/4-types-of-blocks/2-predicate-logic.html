@@ -2,69 +2,79 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 4: Block Types and Calculations</title>
+        <title>Unit 1 Lab 4: Block Types and Calculations</title>
     </head>
     <body>
         <h2>Predicate Logic</h2>
-        <div class="todo">
+        <!--<div class="todo">
             <ul>
-                <li>See also: <a href="../5-calculating-with-code/2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html" target="_blank">creating-predicates</a> and <a href="/bic-r/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html" target="_blank">predicates</a>
-        </li>
+                <li>See also: <a href="../5-calculating-with-code/2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html" target="_blank">creating-predicates</a> and <a href="/bic-r/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html" target="_blank">predicates</a></li>
+            </ul>
+        </div>-->
+        
+		<div class="sidenote">
+        	Reporter blocks can report many kinds of values. The <code>plus</code> block, for example, reports a number. <br />
+            <img src="/bjc-r/img/2-conditionals-abstraction-testing/reporter-plus-reporting-10.gif" alt="plus block reporting the number 10">
+        </div>        
+        
+        <p><img class="inline" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking"> Take turns reading.</p>
+
+        <div>
+            <ul>        
+                <li>
+                	<strong><em>Predicate</em> blocks are a special kind of <a href="/bjc-r/cur/programming/1-introduction/4-types-of-blocks/1-commands-and-reporters.html">reporter</a>.</strong> They evaluate a statement or question and always report either <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />. Predicates are hexagonal: 
+                    <p class="center">
+                        <img src="/bjc-r/img/1-introduction/key-space-pressed-reporting-salses.png" class="inline" alt="key space pressed? reporting false" title="key space pressed? reporting false" />
+                        <img class="inline" src="/bjc-r/img/1-introduction/7<3-reporting-false.png" alt="7 < 3" title="7 < 3" />
+                        <img class="inline" src="/bjc-r/img/1-introduction/mouse-down-reporting-false.png" alt="mouse down?" title="mouse down?" />
+                        <img class="inline" src="/bjc-r/img/1-introduction/is-5-a-number-reporting-true.png" alt="is 5 a number?" title="is 5 a number?" />
+                    </p>
+                    <ul>
+                    	<li><strong><em>Boolean</em> blocks are a special kind of predicate.</strong> They are the two kinds of reports a predicate can give: <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />.</li>
+                    </ul>
+                </li>
+
             </ul>
         </div>
         
-		<h2>Predicates</h2>    
-                <div class="takeNote">
-					<div class="comment">pulled out of U2L1 and moved here</div>        
-					<div>
-                    	Reporter blocks can report many kinds of values. The <code>plus</code> block, for example, reports a number. <br /> 
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/reporter-plus-reporting-10.gif" alt="plus block reporting the number 10"><br />
-                        Some reporter blocks, like <code>greater than</code> report only two special values: <img src="/bjc-r/img/blocks/true.png" alt="true"/>  when a condition is met and and <img src="/bjc-r/img/blocks/false.png" alt="false"/>  when it is not met. 
-                        <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/>
-                        <p> Reporters that report only <code>true</code> and <code>false</code> are called "predicates." In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </p> 
-                        <p> Other predicates you will often find useful <code>equals</code>, <code>not</code>, <code>and</code>, and <code>or</code> include  </p>
-                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/equals-reporting-true_293x44.png" alt="equals reporting true">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-true-reports-false244x44.png" alt="not true, reporting false">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-seven-plus-three-equals-12-reports-true_361x44.png" alt="not 7 plus 3 equals 12, reporting true">
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/7-plus-3-equals-12-OR-7-plus-3-less-than-12-reports-true_548x44.png" alt="a false statement or a true statement, reporting true"></p>
-                        Predicate functions are like questions that can be answered with <code>true</code> or <code>false</code>. These two special values  are  called Boolean values, named after the  logician George Boole. 
-                    </div>
-                </div>
-    
-    
+        <div class="endnote">These two special values are called <a href="https://en.wikipedia.org/wiki/Boolean_data_type" target="_blank">Boolean values</a>  named after the logician <a href="https://en.wikipedia.org/wiki/George_Boole" target="_blank">George Boole</a>.</div>
 
-
-        <div>
-        	<p>Here are some special kinds of blocks:</p>
-            <ul>        
-                <li>
-                	<strong>Predicates</strong>&mdash;predicates are a special kind of reporter. Predicates behave like questions that can be answered with <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /> (which are themselves special predicates called booleans&mdash;more on that later). Predicates are hexagonal.<br />
-                    Some examples: 
-                    <!--<img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" />
-                    <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />-->
-                    <img src="/bjc-r/img/blocks/key-space-pressed.png" class="inline" alt="key space pressed?" title="key space pressed?" />
-                    <img class="inline" src="/bjc-r/img/1-introduction/7<3.png" alt="7 < 3" title="7 < 3" />
-                    <img class="inline" src="/bjc-r/img/blocks/mouse-down.png" alt="mouse down?" title="mouse down?" />
-                    <img class="inline" src="/bjc-r/img/blocks/is-5-a-number.png" alt="is 5 a number?" title="is 5 a number?" /><br />
-                    Predicates can be combined with reporters and other predicates to make more complicated predicates:
-                </li><br />
-                <li>
-                	<strong>Conditionals</strong>&mdash;conditionals are a special kind of command. Conditionals allow the code inside them to be performed <em>only if</em> the condition is true (and not if it is false). Conditionals are C-shaped or E-shaped and have the click-together grooves. <br />
-                    Some examples: 
-                    <img src="/bjc-r/img/blocks/if.png" class="inline" alt="if" title="if" />
-                    <img src="/bjc-r/img/blocks/if-else.png" class="inline" alt="if else" title="if else" />
-                    <img src="/bjc-r/img/blocks/repeat-until.png" class="inline" alt="repeat until" title="repeat until" /><br />
-                    Notice the hexagonal spaces? Predicates are used inside of conditionals. 
-                </li>
-
-        <div class="forYouToDo">
-            <div class="comment">But with numbers not variables until after that page</div>
+        <div class="forYouToDo" id="first">
 			<ol>
+            	<div class="sidenote">Try to evaluate these without <span class="snap">snap</span>, and then check your answer with <span class="snap">snap</span>.</div>
+                <li>Determine what each of these predicates will report:
+                	<ol>
+                    	<li>not false</li>
+                    	<li>22 + 78 = 100</li>
+                    	<li>-37 > 34</li>
+                	</ol>
+                </li>
+            </ol>
+        </div>
+        
+        Predicates can be combined with other reporters and predicates to make more complicated predicates, but predicates always report a boolean<!-- (<img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />)-->. Other predicates you will often find useful include <img src="/bjc-r/img/python/equal.png" alt="equals block" title="equals block"/>, <img src="/bjc-r/img/python/lessthan.png" alt="less than block" title="less than block"/>, <img src="/bjc-r/img/python/greaterthan.png" alt="greater than block" title="greater than block"/>, <img src="/bjc-r/img/blocks/not.png" alt="not" title="not" />, <img src="/bjc-r/img/blocks/and.png" alt="and" title="and" />, and <img src="/bjc-r/img/blocks/or.png" alt="or" title="or" />.</p>
+        <p class="center">
+            <img src="/bjc-r/img/2-conditionals-abstraction-testing/equals-reporting-true_293x44.png" alt="equals reporting true">
+            <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-true-reports-false244x44.png" alt="not true, reporting false">
+            <img src="/bjc-r/img/2-conditionals-abstraction-testing/not-seven-plus-three-equals-12-reports-true_361x44.png" alt="not 7 plus 3 equals 12, reporting true">
+            <img src="/bjc-r/img/2-conditionals-abstraction-testing/7-plus-3-equals-12-OR-7-plus-3-less-than-12-reports-true_548x44.png" alt="a false statement or a true statement, reporting true">
+        </p>
+        <p></p>
+        
+        <div class="forYouToDo">
+			<ol start="2">
+                <li>Determine what each of these predicates will report:
+                	<ol>
+                    	<li>not (55 + 44 = 100)</li>
+                    	<li>(55 + 44 = 100) or (55 + 44 < 100)</li>
+                    	<li>4.7 = (round 4.7)</li>
+                	</ol>
+                </li>
                 <li> do something using these:
-                    <img src="/bjc-r/img/python/lessthan.png" alt="x < y"/>
-                    <img src="/bjc-r/img/python/greaterthan.png" alt="x > y"/>
-                    <img src="/bjc-r/img/python/equal.png" alt="x = y"/>
-                    <img src="/bjc-r/img/cond/not.png"/>
+                    <img src="/bjc-r/img/python/lessthan.png" alt="less than block" title="less than block"/>
+                    <img src="/bjc-r/img/python/greaterthan.png" alt="greater than block" title="greater than block"/>
+                    <img src="/bjc-r/img/python/equal.png" alt="equals block" title="equals block"/>
+                    <img src="/bjc-r/img/cond/not.png" alt="not" title="not" />
                 </li>
                 <li>
                 	and <table>
@@ -86,12 +96,43 @@
                     	</tr>
                 	</table>
                 </li>
-                <li>Insert a problem about pedicates in conditionals. Maybe use <img class="" src="/bjc-r/img/1-introduction/top-half-bottom-half.png" alt="" title="" /></li>
             </ol>
         </div>
 
-                       
-           </ul>
-	    </div>
+                
+        <h2>Sensing and Conditionals</h2>
+
+        <img class="imageRight" src="/bjc-r/img/" alt="Sensing palette" title="Sensing palette" />
+ 
+        <p>The sensing palette has a variety of <a href="">predicate</a> blocks.</p>
+        <div class="forYouToDo">
+            <ol>
+                <div class="sidenote">if you right-click or two-finger-click on any block, you can access "help" for more information about the block.</div>
+                <li>Find the following blocks, experiment, and see try to determine what they each do.</li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>
+
+        <h3>Conditionals</h3>
+        <p>
+        	<ul>
+            	<li>
+                	<strong><em>Conditionals</em> blocks are a special kind of <a href="/bjc-r/cur/programming/1-introduction/4-types-of-blocks/1-commands-and-reporters.html">command</a>.</strong> Conditionals allow the code inside them to be performed <em>only if</em> the condition is true. (The conidition is a <a href="">predicate</a>.) Conditionals are C-shaped or E-shaped and have the same click-together grooves as other <a href="">commands:</a><br /> 
+                    <p class="center">
+                        <img src="/bjc-r/img/blocks/if.png" class="inline" alt="if" title="if" />
+                        <img src="/bjc-r/img/blocks/if-else.png" class="inline" alt="if else" title="if else" />
+                        <img src="/bjc-r/img/blocks/repeat-until.png" class="inline" alt="repeat until" title="repeat until" />
+                    </p>
+                </li> 
+            </ul>
+        </p>
+        <div class="for you to do" id="first">
+        	<ol>
+                <li>Insert a problem about pedicates in conditionals. Maybe use <img class="" src="/bjc-r/img/1-introduction/top-half-bottom-half.png" alt="" title="" /></li>
+            </ol>
+        </div>                 
     </body>
 </html>

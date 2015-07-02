@@ -13,14 +13,14 @@ big-idea: Learn about the mathmatics used in programming (random numbers, remain
 big-idea: Understand and analyze the impact of the internet on our culture.
 		
 
-heading: First day: Hour of Code
-	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
-	
 heading: Programming Lab 1: Introduction
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
 	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
+	
+heading: Hour of Code
+	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
 	
 heading: Progamming Lab 2: Graphics and Effects
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
@@ -52,20 +52,14 @@ heading: Programming Lab 5: Building and Debugging Your Own Blocks
 		
  	raw-html: <hr />
 	
-heading: Social Implications Lab 6: Introduction, Bits, Games and Violence, Blown to Bits Chapter 1
+heading: Social Implications Lab 6: Bits, Games and Violence
 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/big-questions.html]
-	resource: Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
-	resource: Games and Violence [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/games-and-violence.html]
-	resource: Blown to Bits Chapter 1 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
-	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
-	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
+	resource: Seven Koans (Truths) About Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
 
-heading: Social Implications Lab 7: Privacy, Community and Online Interactions, Blown to Bits Chapter 2
+heading: Social Implications Lab 7: Privacy, Community and Online Interactions
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
-	resource: Blown to Bits Chapter 2 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
-	resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
-	resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
+	resource: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
 
 
 	raw-html: <hr />
