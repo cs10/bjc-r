@@ -11,9 +11,12 @@
             <ol>
                 <li>Using three blocks, <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile, with input for size">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of tiles (with inputs for number  and size of tiles)">, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles,size).png" alt="nxn-array-of-tiles(tiles,size)">, build a program that allows you to draw a square array of a specified number of square tiles of a specified size. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles"> draws this:
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" alt="3x3array-of-squares-on-stage"></p>
-                  <p>Test it to make sure that it can make 4x4 arrays and 5x5 arrays, and that the size of the tiles can be controlled.</p>
+                  <p>&nbsp;</p>
               </li>
-                <li>The beginnings of a game. 
+                <li>
+                  <p>Test it to make sure that it can make 4x4 arrays and 5x5 arrays, and that the size of the tiles can be controlled.</p>
+                </li>
+                <li>Build the beginnings of a game. 
                 	<ol>
                     	<li> Set your sprite to (-150, 150), clear the stage, and run 
                         <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles">. </li>
@@ -30,6 +33,14 @@
                    </ol>
                </li>
                <div class="takeNote">Notice that even though <code>display the tile</code> is the block that <em>says</em> what tile you are in, you don't have to change it at all when you improve <code>where?</code>. In a similar way, you will be able to improve the way that <code>display the tile</code> displays the information without changing the details of <code>where?</code>. Building separate blocks to specialize in separate functions is extremely valuable for clear, bug-free, improvable code. </div>
+          <li> Below is some code to draw a tic-tac-toe board. Your goal is to create blocks that make this code simpler. 
+          <p><img class="indent" src="/bjc-r/img/abstraction/complicated-tic-tac-toe.png" alt="Tic-Tac-Toe Board Drawer" title="Tic-Tac-Toe Board Drawer" /></p>
+		      <ul>
+                <li>Don't bother building it first. You may decide not to use it at all.</li>
+                <li>It's probably easiest to do this working with pen and paper, <em>not</em> while looking at this awful code! Perhaps notice how <em>you</em> draw a tic-tac-toe board.</li>
+                <li>Use the same strategy you used above: building meaningful sub-tasks. Let each sub-block <em>specialize</em> in a task. </li>
+                <li>Give your new sub-blocks names that say clearly what they do. Your goal is to make your code easy to read and understand. It could be wonderful if your resulting <code>draw tic-tac-toe board</code> reads naturally, like the language you would use to a person.</li>
+            </ul>
           </ol>
         </div>
     </body>
