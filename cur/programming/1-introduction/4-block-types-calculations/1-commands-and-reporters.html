@@ -27,12 +27,12 @@
                 <li style="list-style-type:none;">
                 	<ul>
                     	<li>
-                            <strong><em>Loops</em> are a special kind of command.</strong>  Loops perform the code inside them a certain number of times. Loops are C-shaped and have the same click-together grooves as other commands: <br />
                             <div class="sidenote">You may want to review these blocks: <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html"><!--<img src="/bjc-r/img/blocks/repeat-blank.png" class="inline" alt="repeat" title="repeat" />--><code>repeat</code></a>, <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html"><code>forever</code></a>, or <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html"><code>for</code></a>.</div>
+                            <strong><em>Loops</em> are a special kind of command.</strong>  Loops perform the code inside them a certain number of times. Loops are C-shaped and have the same click-together grooves as other commands: <br />
                             <p class="center">
-                                <img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" />
+                                <img src="/bjc-r/img/blocks/repeat.png" class="inline" alt="repeat" title="repeat" />
                                 <img src="/bjc-r/img/blocks/forever.png" class="inline" alt="forever" title="forever" />
-                                <img src="/bjc-r/img/blocks/repeat.png" class="inline" alt="repeat" title="repeat" /><br />
+                                <img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" /><br />
                             </p>
                 		</li>
                 	</ul>
@@ -63,60 +63,63 @@
    		<div class="forYouToDo" id="first">
             <ol>
                 <li>
-                	<div class="sidenoteBig">It's ok if you get different reports than those shown here. Discuss why that might happen.</div>
-                    If you click any block script, it will run. Click each of these reporter blocks in <span class="snap">snap</span> to see them report their information:<br />
+                    <div class="sidenoteBig">It's ok if you get different reports than those shown here. Discuss why that might happen.</div>
+                    If you click any block or script, it will run. Click each of these reporter blocks in <span class="snap">snap</span> to see them report their information:<br />
                 	<p class="center">
                     	<img class="inline" src="/bjc-r/img/1-introduction/size-reporting-100.png" alt="Size reporting 100" title="Size reporting 100" />
                     	<img class="" src="/bjc-r/img/1-introduction/pick-random-1-to-10-reporting-2.png" alt="Pick random 1 to 10 reporting 2" title="Pick random 1 to 10 reporting 2" />
 					</p>
 				</li>
-                <li>Find and try a few other reporters.</li>
-                <div class="endnote">Some reporters might not report interesting information right away.</div>
-                <li>Reporters are often used inside other blocks. Try building and running a few command blocks with reporter blocks inside them, like these:
+            	<div class="todo">MF: show a few more reporters reporting above and reporters in blocks below.</div>
+                <li>Reporters are often used inside other blocks including reporters and commands. Try building and running a few of these nested blocks:
                 	<p class="center">
                     	<img class="inline" src="/bjc-r/img/cond/say-4-plus-7.png" alt="say 4 + 7" title="say 4 + 7" /> <img class="inline" src="/bjc-r/img/1-introduction/play-note-pick-random-50-to-80-for-0.5-beats.png" alt="play note (pick random 50 to 80) for 0.5 beats" title="play note (pick random 50 to 80) for 0.5 beats" />
                     </p>
                 </li>
-                <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss <em>what happens</em> when you click these commands with reports inside them and <em>why</em>.</li>
-            </ol>
-        </div>
-        <div class="takeItFurther">
-          <ol type="A">
-                <li><strong>Get creative!</strong> What other interesting ways can you combine reporter blocks and command blocks? <img src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />
-</li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss <em>what happens</em> when you click these commands with reports nested inside them and <em>why</em>.</li>
             </ol>
         </div>
         
-        <!--from the-random-block.html-->
-        <h3>The <code>Random</code> Block</h3>
-        <p>You can use the <code>random</code> block to generate a random number within a range defined by two whole numbers. For example, each time this block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates, with about equal likelihood, one number ranging from 1 through 10.</p>
-    	<p>Like other <strong>reporter</strong> blocks, <code>random</code> <em>reports</em> a value that you can use inside other blocks that take an input. Here are some examples:</p>
-        <img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
-        <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This program</a> simulates a six sided die that rolls every time you click on it. (You can look in the "Costumes" area&mdash;click the tab above the script&mdash;to see the six costumes that the random number is using).</p>
-        <div class="forYouToDo" id="first">
-        	<ol>
+         
+    	<p>Like other reporter blocks, the <code>random</code> block a value that you can use inside other blocks:</p>
+		<div class="comment">MF: build and export each of these images separately with alts and titles.</div>
+        <div class="sidenoteBig">
+            <p>The <code>random</code> block generates a random number within a range (defined by two whole numbers). Each time the block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates one number ranging from 1 through 10 (with about equal likelihood).</p>
+            <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This simulation of a six sided die</a> "rolls" every time you click on it. (Look in the "Costumes" tab above the <a href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/1-the-snap-interface.html#window">scripting area</a> to see the six costumes that the sprite is using).</p>
+        </div>
+        <p class="center">
+        	<img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
+        </p>
+        <div class="forYouToDo">
+        	<ol start="4">
             	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep in mind:
                 	<ul>
 						<li>You'll want to use a <img src="/bjc-r/img/blocks/repeat.png" alt="repeat block" /> or <img src="/bjc-r/img/blocks/forever.png" alt="forever block" /> to keep your sprite moving continuously.</li>
-         				<li>Make sure the sprite can travel in any direction.</li>
-                        <li>Putting the pen down will help you keep track of what the sprite is doing. You'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
+         				<li>Consider the <a href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/2-sprite-position-direction.html">dimensions of the interface</a> to sure the sprite can travel in any direction.</li>
+                        <li>Put the pen down to help you keep track of what the sprite is doing. You'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
                     </ul>
                 </li>
-                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><strong>Experiment!</strong> How does your sprite's actions change if you have it move a fixed (rather than random) amount each time?  </li>
-    			<li>Have another sprite chase that sprite but not quite catch it. It might point towards it and move more slowly or it might point <em>almost</em> towards it but veer away by some random amount.</li>
-                <li>
-                	Build a script like this, and see if you can make it sound a bit more musical. <br />
-                    <img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-	                <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" style="height:50%;width:50%;" alt="repeat 5 times play a random note"></li>
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><strong>Experiment!</strong> How do your sprite's actions change if you move it a fixed (rather than random) amount each time?  </li>
+
             </ol>
         </div>
+
+		<div class="takeItFurther">
+        	<ol type="A">
+    			<li>Make another sprite chase the first sprite but not quite catch it. (It might point towards it and move more slowly or it might point <em>almost</em> towards it but veer away by some random amount.)</li>
+                <li>
+                	Build a script like this, but change it any way to like to make it sound more musical. <br />
+                    <img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+	                <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" style="height:50%;width:50%;" alt="repeat 5 times play a random note">
+                </li>
+                <li><strong>Get creative!</strong> What other interesting ways can you combine reporter blocks and command blocks? <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+
+</li>
+            </ol>
+		</div>
      
         <h3>Commands and Reporters Self-Check</h3>
-        <div class="todo">
-            <ul>
-                <li>MF: add another with commands</li>
-            </ul>
-        </div>
+        <div class="comment">MF: add another with commands</div>
         
         <p><strong>Test yourself!</strong> See what you have learned, and review what you missed.</p>
         <!-- Question 1 -->
@@ -126,9 +129,9 @@
         
             <div class="prompt">
                 <p>
-                    What does the following reporter block, Greeting, do?
+                    What will the following script do?
                 </p>
-                <img src="/bjc-r/img/lab-2/random-greeting-block.png" alt="There should be an image here" title="Greeting Block"/>
+                <img class="indent" src="/bjc-r/img/1-introduction/random-greeting-script.png" alt="repeat (pick random (1) to (10)) (say (Hey!) for (1) secs, say (You!) for (1) secs)" title="repeat (pick random (1) to (10)) (say (Hey!) for (1) secs, say (You!) for (1) secs)"/>
                 <p>
                     Choose one:
                 </p>
@@ -289,8 +292,6 @@
                 <div class="correctResponse" identifier="c1"></div>
             </div>
         </div>
-       
-
         
 	</body>
 </html>
