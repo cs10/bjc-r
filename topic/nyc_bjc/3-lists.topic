@@ -33,9 +33,8 @@ heading: Programming Lab 2: List Operations
 	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/hof-self-test.html]
 
 heading: Programming Lab 3: Using Higher-Order Functions
-     resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html]
-	  resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/composing-higher-order-functions.html]
-	  resource:  Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/composing-higher-order-functions.html]
+     resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/getting-started.html]
+	  resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/composing-higher-order-functions.html] 
 	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/acronym-generator.html]
 	 resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/when-you-really-have-to-loop.html]
 
