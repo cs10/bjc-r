@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 1 Lab 2: Graphics and Effects</title>
+	</head>
+	<body>
+		<h2>Sprite Position and Direction</h2>
+		<div class="comment">(include reporters (intro only) and watchers) (Formerly: Position on the Stage and also Position, Direction, and Watchers)</div>
+        <div class="comment">Need to support students in learning geometry of angles and diagonals</div>
+		<div class="forYouToDo">
+	  		<ol>
+				<li>Create a new file that...</li>
+				<li>
+					Change the background on your stage so that you see the axes and the sprite position and direction.  
+					<div class="comment">A sprite it NOT an arrowhead. That just shows where the sprite is. the sprite is just the marker for the programs attention. You can move it around, turn it, set the image that locates it. You can add more sprites and have them talk to each other.</div>
+					<ul>
+						<li>
+							<div class="sidenote">There are also other backgrounds in the File menu that you can use for other projects.</div>
+							To see the axes:
+							<ol>
+								<li>In the <a class="anchor" href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/1-the-snap-interface.html#window">Sprite Corral</a>, select the Stage.</li>
+								<li>Then, choose "Backgrounds" from the File menu <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> .</li>
+								<li>And choose "xy-grid.gif".</li>
+							</ol>
+						</li>
+						<li>
+							To see the sprite positions:
+							<ol>
+								<li><code>Insertinstructions to view watchers</code></li>
+							</ol>
+						</li>
+					</ul>
+					<div class="comment">insert image with labeled axes and a (+,-) in each quad</div>
+					<p>The axes of the stage in <span class="snap">snap</span> just are  the x-y-coordinate plane in algebra. The origin (0,0) is in the middle with only integers which divide the 2-dimensional space in.  In </p>
+					Your stage should look like this. The picture below shows the stage with axes and a grid. The background also shows the coordinates of the four points on the axes that are farthest from the origin but still visible on the stage.
+					<img src="/bjc-r/img/1-introduction/snap-coord-grid.png" class="indent" alt="Coordinate Grid"/><br />
+					<code>MF doesn't understand what this means:</code> Then experiment with your sprite to make sure you see <em>which part of the sprite</em> the coordinates are describing. <code>Mary, see red note below.</code>
+
+				</li>
+				<div class="comment">We need to be careful to be specific that the tip of the sprite arrow is the point in question. (that's what that thing above was supposed to address.</div>
+				<li>What are the coordinates of the black sprite above?</li>
+				<div class="comment">MF: some of thie is repetative of what has been done already...</div>
+				<li>
+					Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that, with one click, draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
+					<img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent block" alt="Move 10 Steps Block"/>&nbsp;
+					<img src="/bjc-r/img/1-introduction/turn-right-15.png" class="block" alt="Turn Right 15 Degrees Block"/>&nbsp;
+					<img src="/bjc-r/img/1-introduction/clear.png" class="block" alt="Clear Block"/>&nbsp;
+					and <img src="/bjc-r/img/1-introduction/pen-down.png" class="block" alt="Pen Up Block"/>.
+				</li>
+				<li>
+					This script was intended to create a pentagon, but it has bugs. Without building it, try to figure out what it does instead. Then build it and try it out. What change(s) would fix this script?<br/>
+					<img src="/bjc-r/img/1-introduction/forever-4.png" class="indent" style="height:100px;" alt="penDown, forever (turn CW 10 deg, change x by 10)">
+				</li>
+			</ol>
+		</div>
+		<div class="comment">These are each useful elsewhere: 1) on explore this code or the snap interface 2) this the watchers stuff whereever that all falls 3) as a sidenote with somthing on this page...</div>
+		<div>
+			Useful notes:
+			<ul>
+				<li>Once the pen is down, it stays down even in a different script. If you want your script to move the sprite  without leaving a trace, use the <code>pen up</code> block to &quot;lift the pen.&quot; </li>
+				<li>If you want, you can use <a href="/bjc-r/cur/programming/1-introduction/1-getting-started/reporters.html"><em>watchers</em></a> to show the direction of the sprite or its <em>x</em> and <em>y</em> coordinates.</li>
+				<li> Coordinate systems for computer screens do not all work the way we expect in algebra, but <span class="snap">snap</span>&rsquo;  does. <em>Unlike</em> the common mathematical convention, the numbers naming <em>direction</em> start with 0 at the top ("north") and count degrees going clockwise. The black sprite above is pointing to the "east," so its direction is 90. <br />
+		<img src="/bjc-r/img/1-introduction/point-in-direction.png" class="indent" style="height:100px;" alt="Coordinate Grid"/></li>
+			</ul>
+		</div>
+
+        <h2>Watchers<a name="watchers" class="anchor">&nbsp;</a></h2>
+		<img class="imageRight" src="/bjc-r/img/1-introduction/position-watchers.gif" alt="" title="" />
+        <p>The three oval-shaped <strong>reporters</strong> at the bottom of the Motion palette have checkboxes for <strong>watchers</strong>.  Unlike the jigsaw-puzzle-shaped <strong>command</strong> blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
+        <img class="imageRight" src="/bjc-r/img/1-introduction/watchers-on-stage.gif" alt="position and direction watchers on the stage" title="position and direction watchers on the stage" />
+        <p>If you click the reporters, they will tell you their value (in this case, who the sprite is positioned on the stage). If you check off the boxes next to them, their values will be displayed in a <strong>watcher</strong> on the stage. As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position.</p>
+        <p>There are reporters with checkboxes for watchers in several of the <span class="snap">snap</span> palettes.
+        
+        <div class="comment">moved from elsewhere (was in U1L1 at some point)</div>
+		<img src="/bjc-r/img/intro/motion-palette.png" class="imageRight" /> 
+		<div class="forYouToDo" style="width:100%;">
+			<ol>
+			  	<li>Click on the sprite on the stage, and drag it a bit to the right of the center of the stage.</li>
+				<li> Drag an <code>x position</code> block into the scripting area and click on it.  You should see a  speech balloon next to the block:<br />
+					<img src="/bjc-r/img/topic1/xpos-bubble.png" alt="X Position speech balloon"/>
+				</li>
+			  	<li>Now, drag the sprite to some new location on the stage and click on the <code>x position</code> block again.</li>
+			  	<li> You can create a <strong>watcher</strong> that sits on the stage and constantly displays the <em>x</em>-position of the sprite. In the palette, click on the gray box to the left of the <code>x position</code> block. Now drag the sprite around and see what that watcher says.
+<img src="/bjc-r/img/topic1/palette-checkbox.png" alt="X Position block's checkbox"/>
+					<img src="/bjc-r/img/topic1/watcher.png" alt="X Position stage watcher"/>
+					<div class="todo">JK: Teachers at the EDC BJC day had trouble with them. They suggested an animated gif to show this process rather than the two images here. They also didn't read the problem so they really didn't understand (these teachers kept not reading. But if teachers don't read, then students won't read.). I think they were confused because the first sentence explains what the watcher is, so they expected to have already known what the watcher is - maybe this is a matter of just switching the order of the sentences so that the first sentence is last.</div>
+				</li>
+				<li>Create watchers for <code>y position</code> and <code>direction</code>. Move the sprite around, using commands or just by dragging it with your mouse. Notice which values change and  which values <em>don't</em>.</li>
+			</ol>
+		</div>
+
+		<div class="takeItFurther">
+			<ol start="">
+				<li>Create a program with the x-y-grid in the background that labels each of the quadrants with the signs of their coordinates.</li>
+			</ol>
+		</div>
+
+	</body>
+</html>

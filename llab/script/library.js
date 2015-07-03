@@ -20,7 +20,6 @@ llab.CORSCompliantServers.push("bjc.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("snap.berkeley.edu");
 llab.CORSCompliantServers.push("inst.eecs.berkeley.edu");
 llab.CORSCompliantServers.push("cs10.berkeley.edu");
-llab.CORSCompliantServers.push("bjc.edc.org");
 llab.CORSCompliantServers.push("localhost");
 llab.CORSCompliantServers.push("0.0.0.0");
 
@@ -42,9 +41,9 @@ llab.getSnapRunURL = function(targeturl) {
 	var finalurl = llab.snapRunURLBase;
 	var currdom = document.domain;
 	if (currdom == "localhost") {
-		 currdom = 'http://' + currdom + ":" + window.location.port;
+		// currdom = 'http://' + currdom + ":" + window.location.port;
 	}
-	else if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
+	if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
 		finalurl += llab.CORSproxy;
 	}
 	if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {

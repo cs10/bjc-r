@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 3: Developing complex programs</title>
+    </head>
+    <body>
+		<h2>Input Types</h2>
+        <p>The <code>max</code> block has an unexpected behavior. It is intended to work only for numbers, yet you can type text into it! <img class="indent" border="0" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png"></p>
+        <p>You have already used <img src="/bjc-r/img/blocks/is-5-a-number.png" alt="is input a number"> to <em>check</em> for situations like this, but you can also define blocks in a way that <em>allows</em> only the appropriate input.</p>
+        
+        <div class="forYouToDo" id="first">
+        <p> 
+        <div class="sidenote">The words &quot;input&quot; and &quot;argument&quot; are often used interchangeably. Nobody is being disagreeable!</div> 
+        You can specify the input type that should be used in a block. For example, you can limit the <code>max</code> block to accept only numbers as arguments. 
+        
+      </p>
+            <ol>
+                <li>
+                    <p>Open the Block Editor for the <code>max</code> block and click on one of the input names (e.g., <code>x</code>). You whould get this pop-up box</p>
+                    <img class="indent" src="/bjc-r/img/sys/edit-input-variable-x-BYOB.jpg" alt="Editing input 'x'">
+                </li>
+                <li>
+                    <p>Then, click on the right-arrow in the pop-up box. The dialog box (shown below) lets you choose the input type you want. For this block, you want a numbers-only slot (shown selected below). As you can see, the <em>shape</em> of the slot tells people  what type of input the block accepts. </p>
+                    <p>You can also specify  a <em>default</em> value for the variable if you like. This is how the <code>move</code> block was defined always  to start as <img src="/bjc-r/img/blocks/move-10-steps.png" width="110" height="24" alt="move 10 steps"> with the default value 10, and not just <img src="/bjc-r/img/blocks/move-steps.png" width="100" height="24" alt="move steps"> with no default value specified.</p>
+                    <img border="0" src="/bjc-r/img/prog/x-long-dialog.png" alt="Input Type" title="Input Type">
+                </li>
+                <li>
+                    <p>
+                    Modify both the <code>x</code> and <code>y</code> variables to take only numbers and to have the default values of 5 and 10, respectively. Your Block Editor should then look like this, with the default values shown in the header: <div class="sidenote">Notice that the variable <em>names</em> are still <code>x</code> and <code>y</code>, even though the title line for the block looks different. It uses # to indicate that the input must be a number and it shows the default value that will be used.</div>
+                     </p>
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block-editor-max-block.png" alt="'max' block with defaults">
+                    <p>When you click OK, your block should look like this <img src="/bjc-r/img/blocks/max of 5 and 10.png" alt="max of 5 and 10"> in the Operators tab and we can no longer type text as input.</p>
+                </li>
+                	<div class="takeNote">
+          <p>When an input type is restricted, a block can still receive improper values. <img src="/bjc-r/img/2-conditionals-abstraction-testing/max of true and 10.png" alt="max of true and 10"> <span class="snap">snap</span> doesn’t constantly check to see what types are passed as values and indicate when those do not match a block’s input type. Specifying the input type is  an organizational tool to remind you what the domain (input values) of your blocks should be.</p>
+          <p>When you are writing a complicated program that  requires the user to input information&mdash;a number, their name, or something else&mdash;you will often want to check to make sure their information is the right kind, so that your program works properly.</p>
+        			</div>
+        		<li>Edit <img src="/bjc-r/img/2-conditionals-abstraction-testing/a-greater-than-or-equal-to-b.png" alt="a greater than or equal to b"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/postfix factorial 47&nbsp;&times;&nbsp;27 pixels.png" alt="n factorial"> and <code>between</code> and <code>integer?</code> to restrict their input values to numbers.</li>
+            </ol>
+        </div>
+        
+	</body>
+</html>

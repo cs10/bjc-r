@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 1 Lab 3: Control Commands</title>
+    </head>
+    <body>
+		<h2>The <code>For</code> Block</h2> <!--ORIGINAL NAME: Repeat Until-->
+		<div class="todo">
+            <ul>
+	            <li>This video was originally included here...
+                	<p class="code-vid">
+    	        		<iframe width="560" height="315" src="//www.youtube.com/embed/hYvcoRkAkOU" frameborder="0" allowfullscreen></iframe>
+        	    		<br />
+               			Thanks to <a href="http://code.org">code.org</a> for this video!
+            		</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div>Repeating a part of your program, <em>looping</em>, is a very common practice in programming.  There many ways to do it. You have already used two of them:</div>
+        
+        <div class="alert quoteBlue">
+            The <img class="inline" src="/bjc-r/img/blocks/forever.png"> block is appropriate if you want to loop the same behavior <em>forever</em>.<br />
+            The <img class="inline" src="/bjc-r/img/blocks/repeat.png"> block is appropriate if you want to loop the same behavior <em>a specific number of times</em>.
+        </div>
+        
+        <div>
+        	Sometimes, though, you want to do <em>almost</em> the same thing for a certain number of times, but with a slight variation. For instance:
+            <ul>
+                <li>You want the script to tell the sprite to draw 20 squares on the stage, each square larger than the previous.</li>
+                <li>You want the script to tell the sprite to draw 12 regular polygons, each with one more side than the previous.</li>
+              <!-- any more here, yo? -->
+            </ul>
+        </div>
+
+        <div class="sidenote">
+            <div><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />In the current version of <span class="snap">snap</span>, the <code>for</code> block isn't installed automatically. You will need to import it once for each new <span class="snap">snap</span> project in which you use it. To do so, click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" /> icon at the top of the screen and select "Import Tools".)</div>
+        </div>
+
+        <div>
+            The <code>for</code> block (near the bottom of the Control palette) is often useful for situations like this:
+      <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for"><br />
+            The numbers in the <code>for</code> block work as you might expect: the <code>for</code> block counts by 1 from the first number to the second one, running the script inside the &quot;C&quot; each time.   
+    </div>
+        <div>
+           As the <code>for</code> block counts, it also keeps track of the number with a variable, the orange oval  <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, which you can use in those inner blocks. To use that <img class="inline" src="/bjc-r/img/blocks/variable-i.png">, drag it where you'd like it to go.
+</div>
+
+        <div>
+            For instance:<br />
+            <img class="indent" src="/bjc-r/img/looping/for-loop-drag-i.gif"><br />
+            is the equivalent of<br />
+            <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png">
+        </div>
+
+
+        
+<!-- Former page break --MF OLD NOTE: WE REALLY NEED TO GIVE THEM A PROGRAMMING TASK, NOT THIS STUFF -->
+
+        <div class="forYouToDo" id="first">
+            <div>
+                <div class="sidenote">To change the name of the variable from <code>i</code> to <code>length</code>, click on the orange oval <em>without </em>dragging it. After you've changed the name, drag it where you want to use it.</div>
+                <ol>
+                    <li>
+                    	Build this script and try it out:<br />
+               			<img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"><br />
+                		This shape is called a &quot;squiral&quot; &mdash; a square spiral. Do you see why it spirals outward? The length value in the  <img class="inline" src="/bjc-r/img/blocks/move.png"> varies between repetitions.
+                    </li>
+                	<div class="comment">GitHub Comment: It's unclear in the For You To Do that you change from working with the spiral script to a counting script. Perhaps that transition could be more clear by breaking the section up more.</div>
+                    <li>Try switching the order of the 100  and the 1 in the <code>for</code> block. What is the result?</li>
+                    <li>Try changing the turning angle to other numbers such as 92, 126, etc.</li>
+                    <li>
+                        Try changing the turning angle and the move length to see how close you can get to a smooth spiral:<br />
+                        <img class="center" src="/bjc-r/img/prog/spiral.png" alt="spiral">
+                    </li>
+                    <li>The example above shows a script that counts from 1 to 10. Build it and modify it so that it counts 0, 2, 4, 6, 8... up to 30.</li>
+                    <li>Build a script that counts backwards from 100 to 0 by 10s (that is, 100, 90, 80, etc.).</li>
+                    
+                </ol>
+            </div>
+        </div>
+        <div class="takeItFurther">
+            <div>      
+            	<ol start="6">
+          		   <li>Build a script that nests squares, like this: <br /> 
+                   <img class="center" src="/bjc-r/img/1-introduction/nested-squares.png" alt="nested squares">
+         		   </li>
+                   <li>Build a script that counts from 3.14 to 0.14 and then back again.</li>
+            	</ol>
+            </div>
+        </div>  
+        
+    </body>
+</html>

@@ -44,6 +44,18 @@ li > ol {  list-style-type: lower-alpha;}
   clear:both;
 }
 
+
+code {
+  /* color: #00FFFF; */
+  font-family: courier; 
+  font-size: 1.2em;
+  padding: 0px;
+}
+
+.comment > code {
+  color: #606;
+}
+
 .todo {
   /*display: none;*/
   font-size: .9em;
@@ -138,11 +150,13 @@ img.noshaddow {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment) { /* Shared Heading Formatting */
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment) { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
 }
+
+.forYouToDoHeader {text-indent:-40px;}
 
 .forYouToDo {
   background-color: #d2e3be; /* #edf4e6; */
@@ -196,7 +210,7 @@ div.saveAs span.text {
 
 div.newProject span.text {
   position: absolute; 
-  margin-left: 290px;/*19.7em;*/
+  margin-left: 323px;/*19.7em;*/
   padding-top: 1.05em;
   z-index:2;
   color: #333;
@@ -211,10 +225,3 @@ div.newProject span.text {
 .script {height: 18%;}
 
 .button {height: 1.6em;}
-
-code {
-  /* color: #00FFFF; */
-  font-family: courier; 
-  font-size: 1.2em;
-  padding: 0px;
-}

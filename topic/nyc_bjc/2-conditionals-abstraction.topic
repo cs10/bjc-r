@@ -15,12 +15,12 @@ heading: Programming Lab 1: Conditional Blocks
 	resource: Conditionals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/1-getting-started-with-conditionals.html] 
 	resource: Creating predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html]
 	    //remove/replace some quiz questions
-	resource: Using many <code>If</code> and <code>If-else</code> blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/3-multiple-ifs.html]
+	resource: Using multiple <code>If</code> statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/3-multiple-ifs.html]
 		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		   //examples with dates would be great.
-	resource: Project: Developing a block that pluralizes nouns [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
+	resource: Project: Developing a block that makes plurals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
 	resource: Plurals project, continued [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/5-plurals2.html]
 	    //resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
 	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
@@ -32,21 +32,22 @@ heading: Programming Lab 2: Script variables
 	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
 	// quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/complex-booleans-self-test.html]
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
-	resource: Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html] // chop out relevant pieces
-	resource: Sum-thing's Up [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-sum-things-up.html]
+	resource: Building a useful collection of predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html] // chop out relevant pieces
+	resource: Analyzing and debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-sum-things-up.html]
 
 	
-heading: Programming Lab 3: Building more complex blocks
+heading: Programming Lab 3: Developing more complex programs
 	    //resource: motivation
 	    //resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-	resource: Predicates: Make a <code>Between</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-predicates-make-a-between-block.html]
-	resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-complex-booleans-practice.html]
-    resource: Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-number-guessing.html]
-	resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
-	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-input-types.html]
-	resource: Composition of Reporters [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-composition-of-reporters.html]
-	
+	resource: Abstraction: developing a board game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html]
+	//resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-complex-booleans-practice.html]
+    resource: Abstraction: developing a number guessing game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-developing-a-number-guessing-game.html]
+	resource: Abstraction: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-abstraction-brick-wall.html]
+	//resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
+	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html]
+	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-composition-of-functions.html]
+	resource: Analyzing various definitions of <code> >= </code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-analyzing-definitions-of-ge.html]
 
 // heading: Programming Lab 4: Number Guessing
 			//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
@@ -54,19 +55,14 @@ heading: Programming Lab 3: Building more complex blocks
 		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
 		
 
-heading: Social Implications Lab 4: Communication and Online Interactions
-	raw-html: <div class="todo">MF: I moved "Media, Sharing, and Copyright" to U1 and replaced it with "Communication and Online Interactions". Students might want to import images or sounds into their programs right away. --Mary</div>
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/big-questions.html]
-	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-communication/innovations.html]
-
 
 		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
 
 // heading: Programming Lab 5: More Work with Reporters
 	
-heading: Programming Lab 5: Custom Blocks Make Code Easier to Understand
+// heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
+	//resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
 	
 
 //heading: Lab 7: Testing Your Code
@@ -75,10 +71,10 @@ heading: Programming Lab 5: Custom Blocks Make Code Easier to Understand
 //  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
 
-heading: Programming Lab 6: Abstraction
-	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-abstraction/brick-wall.html]
+// heading: Programming Lab 4: Abstraction
+//	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
 //	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
-    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-abstraction/ge-soln.html]
+//    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
 
 // heading: Lab 8: Programs with Multiple Sprites
 //	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
@@ -88,8 +84,22 @@ heading: Programming Lab 6: Abstraction
 //	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
 //	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
 
-heading: Social Implications Lab 7: Innovations and Computing in Other Fields
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-innovations-other-fields/big-questions.html]
+ 	raw-html: <hr />
+
+heading: Social Implications Lab 4: Bits and Information
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/big-questions.html]
+//	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/innovations.html]
+//	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/btb-chapter3.html]
+
+
+heading: Social Implications Lab 5: Search and How the Internet Works
+//	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
+ 	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
+//	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
+//	resource: Search [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/search.html]
+//	resource: Internet [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/internet.html]
+
+ 	raw-html: <hr />
 
 heading: Investigations
 	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]

@@ -53,7 +53,7 @@ Open a new file.
                     	<li>For mathematics to be consistent, we'd like all of these to follow the same pattern, but one of them does not. To fix the problem, we need to <em>define</em> 0! = 1. Edit your <code>n!</code> block to  report 1 if <em>n</em> = 0. Then fully test <code>n!</code> again to make sure it works as it should. </li>
                         <li><strong>Debugging: </strong>Obviously <img src="/bjc-r/img/2-conditionals-abstraction-testing/cookie-factorial-bug.png" alt="cookie-factorial-bug"> should not work! Check to see what does happen.  Then edit your block and find a way to use <img src="/bjc-r/img/2-conditionals-abstraction-testing/is-n-a-number.png" alt="is n a number"> to check that the input is a number and report some sensible result or message.</li>
                         <li> <strong>Analyzing code: </strong>In mathematics, factorial is defined only for positive integers and zero, so 3.7! would make no mathematical sense.  But <img src="/bjc-r/img/2-conditionals-abstraction-testing/three-point-seven-factorial.png" alt="three-point-seven-factorial"> reports a result!  
-                          Find out what it reports and figure out why <em>that</em> is the result.</li>
+                          Find out what it reports and analyze what the block does so that you can figure out why <em>that</em> is the result.</li>
                         
                         </ol>
           </li> 
@@ -62,13 +62,19 @@ Open a new file.
           <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> so that <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from -3 to 3.png" alt="sum from -3 to 3"> reports the sum of -3 + -2 + -1 + 0 + 1 + 2 + 3.</li>
           <li> <div class="sidenote">Recall that <code>n mod i</code> will tell you if <em>i</em> is a divisor of <em>n</em>.</div> Create a block that takes a whole number as input and checks  numbers from 1 through that input and counts the ones that evenly divide the input. So, for example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/number-of-divisors-of-8-with-result(4).png" alt="number of divisors of 8, with result = 4"> because, from 1 through 8, only the numbers 1, 2, 4, and 8 evenly divide 8.  <code>number-of-divisors 10</code> should also report 4 because, of the numbers from 1 through 10, only 1, 2, 5, and 10 are divisors of 10.</li> 
                             
-           <li>Create a tool <code>digital sum</code> that adds up the digits in a number.  So, for example <code>digital sum 7</code> should report 7, and <code>digital sum 12</code> should report 3, and <code>digital sum 126</code> should report 9.  You will need these blocks to create your <code>digital sum</code> block. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"> </li>    
-      </ol>
-<ol start="7">
-  <p>
+           <li>Create a tool <code>digital sum</code> that adds up the digits in a number.  So, for example <code>digital sum 7</code> should report 7, and <code>digital sum 12</code> should report 3, and <code>digital sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"> </li>  
+           <li>Create a <code>multiples of 7 algorithm</code> block that takes any whole number as input and then puts it through this process: 
+           <div class="sidenote">For this project,  <img src="/bjc-r/img/blocks/all-but-last-letter-of.png" alt="all but last letter of"> and <img src="/bjc-r/img/blocks/last-letter-of.png" alt="last letter of"> are useful. They are in <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">  the <strong>Words, sentences</strong> library</a>.</div>
+           <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/divisibility-by-7-algorithm.png" alt="multiples of 7 algorithm"> </p>
+               <div class="sidenote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations. 
+               </div>
+           <p>Test it first on several multiples of 7 (small and large) and make sure that, for multiples of 7, it reports only the results 14, 7, 0, -7, and -14. Also test it on several numbers that are <em>not</em> multiples of 7; for those numbers, it should never report 14, 7, 0, -7, or -14. <img src="/bjc-r/img/2-conditionals-abstraction-testing/multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14).png" alt="multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14)"></p>
+           </li>  
+           <li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm. 
+           </li>
+      
   <div class="saveAs"><span class="text">"U2Lab2MathematicalTools"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U2Lab2MathematicalTools" title="save your work as U2Lab2MathematicalTools" /></div>
-  </p>
-</ol>
+   </ol>
 </div>
     <!--    <p>Script variables can also be useful when a program  interacts with the user.</p>
         <img src="/bjc-r/img/prog/converse.png" alt="conversation with ASK AND WAIT" />

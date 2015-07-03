@@ -9,36 +9,33 @@ big-idea: Design computer programs to draw designs, play music, animate, calcula
 big-idea: Get to know  the <span class="snap">snap</span> programming interface.
 big-idea: Use loops to repeat similar steps in a program.
 big-idea: Create programs inside other programs.
-big-idea: Learn about the mathmatics used in programming (random numbers, remainders, and logic).
+big-idea: Learn about the mathmatics used in programming (random numbers, modular arithmetic, and logic).
 big-idea: Understand and analyze the impact of the internet on our culture.
 		
 
-heading: First day: Hour of Code
-	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
-	
 heading: Programming Lab 1: Introduction
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	resource: <span class="snap">snap</span> Accounts [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts.html]
-	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
+	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
 	
 heading: Progamming Lab 2: Graphics and Effects
-	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-drawing/2-sprite-position-direction.html]
-	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-looks-sound.html]
+	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-graphics-effects/1-the-snap-interface.html]
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-graphics-effects/2-sprite-position-direction.html]
+	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
 	
 heading: Programming Lab 3: Control Commands
-	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html]
-	resource: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-nesting-repeats.html]
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-forever-block.html]
-	resource: The <code>For</code> Block (or do repeat until instead?) [/bjc-r/cur/programming/1-introduction/3-looping-commands/4-the-for-block.html]
+	quiz: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
+	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-control-commands/2-nesting-repeats.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html]
+	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html]
 
 heading: Programming Lab 4: Block Types and Calculations
-	resource: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/1-commands-and-reporters.html]
-	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/2-predicate-logic.html]
-	resource: Sensing and Conditionals??
-	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/3-operators.html]
-	quiz: Declaring Variables [/bjc-r/cur/programming/1-introduction/4-types-of-blocks/4-declaring-variables.html]
+	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
+	resource: Predicate Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicate-logic.html]
+	resource: Sensing and Conditionals [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-sensing-conditionals.html]
+	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-operators.html]
+	quiz: Declaring Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/5-declaring-variables.html]
 
 heading: Programming Lab 5: Building and Debugging Your Own Blocks
 	raw-html: <div class="comment">See also: <br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a><br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a><br >- <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a></div>
@@ -46,27 +43,20 @@ heading: Programming Lab 5: Building and Debugging Your Own Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/2-adding-an-input.html]
-	resource: Debugging Custom Blocks (build like <a href="/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html">Debugging Blocks within Blocks</a>)
-	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-a-custom-block.html]
-	resource: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
+	quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/3-debugging-custom-blocks.html]
+	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-blocks-within-blocks.html]
+	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
 		
  	raw-html: <hr />
 	
-heading: Social Implications Lab 6: Introduction, Bits, Games and Violence, Blown to Bits Chapter 1
+heading: Social Implications Lab 6: Bits, Games and Violence
 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/big-questions.html]
-	resource: Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
-	resource: Games and Violence [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/games-and-violence.html]
-	resource: Blown to Bits Chapter 1 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
-	reading: Blown To Bits: Chapter 1 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter1.pdf]
-	reading: Digital Explosion: Why Is It Happening, and What Is at Stake? (pg. 1-18) [http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=19]
+	resource: Seven Koans (Truths) About Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
 
-heading: Social Implications Lab 7: Privacy, Community and Online Interactions, Blown to Bits Chapter 2
+heading: Social Implications Lab 7: Privacy, Community and Online Interactions
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
-	resource: Blown to Bits Chapter 2 [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/btb-chapter1.html]
-	resource: Blown to Bits: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
-	resource: Addicted to Apps [/bjc-r/cur/programming/1-introduction/7-privacy/addicted.html]
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
+	resource: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
 
 
 	raw-html: <hr />
