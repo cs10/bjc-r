@@ -45,7 +45,7 @@ heading: Programming Lab 3: Developing more complex programs
     resource: Abstraction: developing a number guessing game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-number-guessing.html]
 	//resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
 	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-input-types.html]
-	resource: Composition of Reporters [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-composition-of-reporters.html]
+	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-composition-of-reporters.html]
 	
 
 // heading: Programming Lab 4: Number Guessing

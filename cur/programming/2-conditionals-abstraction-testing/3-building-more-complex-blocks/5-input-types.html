@@ -26,13 +26,19 @@
                     <img border="0" src="/bjc-r/img/prog/x-long-dialog.png" alt="Input Type" title="Input Type">
                 </li>
                 <li>
-                    <p>Modify both the <code>x</code> and <code>y</code> variables to take only numbers and to have the default values of 5 and 10, respectively. Your Block Editor should then look like this, with the default values shown in the header:</p>
+                    <p>
+                    Modify both the <code>x</code> and <code>y</code> variables to take only numbers and to have the default values of 5 and 10, respectively. Your Block Editor should then look like this, with the default values shown in the header: <div class="sidenote">Notice that the variable <em>names</em> are still <code>x</code> and <code>y</code>, even though the title line for the block looks different. It uses # to indicate that the input must be a number and it shows the default value that will be used.</div>
+                     </p>
                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block-editor-max-block.png" alt="'max' block with defaults">
-                    <p>When you click "OK," you should be able to see your block in the "Operators" tab, with the default values filled in. Also, note that you will no longer be able to enter text</p>
-                    <img class="indent" border="0" src="/bjc-r/img/prog/max-of-5-and-10.png" alt="'max' block with defaults">
+                    <p>When you click OK, your block should look like this <img src="/bjc-r/img/blocks/max of 5 and 10.png" alt="max of 5 and 10"> in the Operators tab and we can no longer type text as input.</p>
                 </li>
+                	<div class="takeNote">
+          <p>When an input type is restricted, a block can still receive improper values. <img src="/bjc-r/img/2-conditionals-abstraction-testing/max of true and 10.png" alt="max of true and 10"> <span class="snap">snap</span> doesn’t constantly check to see what types are passed as values and indicate when those do not match a block’s input type. Specifying the input type is  an organizational tool to remind you what the domain (input values) of your blocks should be.</p>
+          <p>When you are writing a complicated program that  requires the user to input information&mdash;a number, their name, or something else&mdash;you will often want to check to make sure their information is the right kind, so that your program works properly.</p>
+        			</div>
+        		<li>Edit <img src="/bjc-r/img/2-conditionals-abstraction-testing/a-greater-than-or-equal-to-b.png" alt="a greater than or equal to b"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/postfix factorial 47&nbsp;&times;&nbsp;27 pixels.png" alt="n factorial"> and <code>between</code> and <code>integer?</code> to restrict their input values to numbers.</li>
             </ol>
         </div>
-        <div class="takeNote">Even if we specify an input type for a block it could still receive improper values when a variable is passed in as its argument (<span class="snap">snap</span> won’t constantly check if the variable’s type is the same as the block’s input type). As such, input types should only be used as an organizational tool to keep you thinking about what the domain (input values) of your blocks should be.</div>
+        
 	</body>
 </html>
