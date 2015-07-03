@@ -59,7 +59,7 @@ heading: Programming Lab 3: Developing more complex programs
 
 // heading: Programming Lab 5: More Work with Reporters
 	
-heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
+// heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
 	resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
 	
@@ -70,7 +70,7 @@ heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
 //  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
   		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
 
-heading: Programming Lab 5: Abstraction
+heading: Programming Lab 4: Abstraction
 	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
 //	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
     resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
@@ -85,13 +85,13 @@ heading: Programming Lab 5: Abstraction
 
  	raw-html: <hr />
 
-heading: Social Implications Lab 6: Bits and Information
+heading: Social Implications Lab 5: Bits and Information
 	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/big-questions.html]
 //	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/innovations.html]
 //	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/btb-chapter3.html]
 
 
-heading: Social Implications Lab 7: Search and How the Internet Works
+heading: Social Implications Lab 6: Search and How the Internet Works
 //	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
  	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
 //	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
