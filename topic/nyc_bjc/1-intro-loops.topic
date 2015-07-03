@@ -20,7 +20,7 @@ heading: Programming Lab 1: Introduction
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
 	
 heading: Hour of Code
-	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
+	resource: Build a <span class="snap">snap</span> App [../../../hourofcode/]
 	
 heading: Progamming Lab 2: Graphics and Effects
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
