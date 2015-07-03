@@ -6,23 +6,28 @@
     </head>
     <body>
 		<h2>Input Types</h2>
-        <p>The <code>max</code> block has an unexpected behavior. We wanted it to work only for numbers, yet you can type text into it! <img class="indent" border="0" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png"></p>
-        <p></p>
+        <p>The <code>max</code> block has an unexpected behavior. It is intended to work only for numbers, yet you can type text into it! <img class="indent" border="0" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png"></p>
+        <p>You have already used <img src="/bjc-r/img/blocks/is-5-a-number.png" alt="is input a number"> to <em>check</em> for situations like this, but you can also define blocks in a way that <em>allows</em> only the appropriate input.</p>
         
         <div class="forYouToDo" id="first">
-	        <p>To remedy this behavior, we can specify the input type that should be used in our block. Now, we are going to limit the <code>max</code> block to accept only numbers as arguments.</p>
+        <p> 
+        <div class="sidenote">The words &quot;input&quot; and &quot;argument&quot; are often used interchangeably. Nobody is being disagreeable!</div> 
+        You can specify the input type that should be used in a block. For example, you can limit the <code>max</code> block to accept only numbers as arguments. 
+        
+      </p>
             <ol>
                 <li>
-                    <p>Open the Block Editor for the <code>max</code> block and click on the input <code>x</code>.</p>
+                    <p>Open the Block Editor for the <code>max</code> block and click on one of the input names (e.g., <code>x</code>). You whould get this pop-up box</p>
                     <img class="indent" src="/bjc-r/img/sys/edit-input-variable-x-BYOB.jpg" alt="Editing input 'x'">
                 </li>
                 <li>
-                    <p>Then, click on the right arrow in the pop-up box shown above. This will open the dialog box shown below. This allows us to specify the shape of the slot. We want a numbers-only slot (as shown selected below). We can also specify that we want the variable to have a <em>default</em> value; this is similar to blocks like <code>move</code> that always start out with the default value 10.</p>
+                    <p>Then, click on the right-arrow in the pop-up box. The dialog box (shown below) lets you choose the input type you want. For this block, you want a numbers-only slot (shown selected below). As you can see, the <em>shape</em> of the slot tells people  what type of input the block accepts. </p>
+                    <p>You can also specify  a <em>default</em> value for the variable if you like. This is how the <code>move</code> block was defined always  to start as <img src="/bjc-r/img/blocks/move-10-steps.png" width="110" height="24" alt="move 10 steps"> with the default value 10, and not just <img src="/bjc-r/img/blocks/move-steps.png" width="100" height="24" alt="move steps"> with no default value specified.</p>
                     <img border="0" src="/bjc-r/img/prog/x-long-dialog.png" alt="Input Type" title="Input Type">
                 </li>
                 <li>
                     <p>Modify both the <code>x</code> and <code>y</code> variables to take only numbers and to have the default values of 5 and 10, respectively. Your Block Editor should then look like this, with the default values shown in the header:</p>
-                    <img class="indent" border="0" src="/bjc-r/img/prog/max-defaults.png" alt="Default Values">
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block-editor-max-block.png" alt="'max' block with defaults">
                     <p>When you click "OK," you should be able to see your block in the "Operators" tab, with the default values filled in. Also, note that you will no longer be able to enter text</p>
                     <img class="indent" border="0" src="/bjc-r/img/prog/max-of-5-and-10.png" alt="'max' block with defaults">
                 </li>
