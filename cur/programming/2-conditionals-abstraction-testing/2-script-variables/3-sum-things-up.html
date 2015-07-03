@@ -2,12 +2,13 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Lab 2: Script variables</title>
+        <title>Lab 2: Script variables and predicates</title>
     </head>
     <body>
-		<h2>Debugging</h2>
+		<h2>Debugging and analyzing</h2>
         
-        <div class="forYouToDo" id="first">
+        <div class="forYouToDo">
+        <strong>Debugging</strong>
         <p>You already wrote and tested <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png"  alt="sum from a to b">.</p>
 <p>Here are two buggy versions. Imagine helping these programmers debug their code. You are not trying to rewrite from scratch, the way you did it, but to find the spots in their code where a small fix (or two) will make it work correctly <em>and explain</em> what caused the bug in their code.</p>
         	<div class="sidenote"><div>Click on any of the pictures to go to a <span class="snap">snap</span> file containing the code.</div></div>
@@ -16,5 +17,29 @@
                 <li><img src="/bjc-r/img/2-conditionals-abstraction-testing/second-buggy-sum-from-low-to-high.png" alt="second-buggy-sum-from-low-to-high"></li>
             </ol>
         </div>
+        
+        <div class="forYouToDo">
+        <strong>Analyzing and simplifying code</strong>
+<ol start="3">    
+     <li>
+                    Here is a block definition. <br/>
+                    <img src="/bjc-r/img/cond/mystery.png"/>
+                    <ol>
+                    	<li>Give it a more descriptive name.</li>
+                        <li>Ghen re-write using no <code>if</code> blocks.</li>
+                    </ol>
+    </li>
+    <img class="imageRight" alt="max block being executed" src="/bjc-r/img/prog/max-block-executed-BYOB.jpg" />
+        <li>The custom <code>max</code> block <img class="inline" src="/bjc-r/img/blocks/max.png"> takes two numbers as input and should report the bigger value (the maximum). 
+        <p> But the version of <code>max</code> shown below doesn't seem to be working correctly:</p>
+            <img class="indent" src="/bjc-r/img/building-blocks/max-code-buggy.png" alt="Buggy max code"> 
+            <ol>
+                <li>Try to predict what <em>this</em> code reports for various input values. </li>
+                <li>With your pair programmer, describe the problem with the faulty <code>max</code> block. </li>
+                <li>Then fix it.</li>
+            </ol>
+         </li>
+       </ol>
+    </div>
 	</body>
 </html>
