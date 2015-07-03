@@ -20,7 +20,7 @@ heading: Programming Lab 1: Introduction
 	resource: Saving and Opening Projects [/bjc-r/cur/programming/1-introduction/1-introduction/3-saving-and-opening.html]
 	
 heading: Hour of Code
-	resource: Build a <span class="snap">snap</span> App [../../../hourofcode/]
+	resource: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
 	
 heading: Progamming Lab 2: Graphics and Effects
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-drawing/1-the-snap-interface.html]
@@ -28,8 +28,8 @@ heading: Progamming Lab 2: Graphics and Effects
 	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-drawing/3-looks-sound.html]
 	
 heading: Programming Lab 3: Control Commands
-	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html]
-	resource: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-nesting-repeats.html]
+	quiz: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/1-the-repeat-block.html]
+	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-looping-commands/2-nesting-repeats.html]
 	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-looping-commands/3-the-forever-block.html]
 	resource: The <code>For</code> Block (or do repeat until instead?) [/bjc-r/cur/programming/1-introduction/3-looping-commands/4-the-for-block.html]
 
@@ -46,8 +46,8 @@ heading: Programming Lab 5: Building and Debugging Your Own Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/2-adding-an-input.html]
-	resource: Debugging Custom Blocks (build like <a href="/bjc-r/cur/programming/1-introduction/5-building-complicated-blocks/buggy-house-and-square-self-test.html">Debugging Blocks within Blocks</a>)
-	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-a-custom-block.html]
+	resource: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/3-debugging-custom-blocks.html]
+	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/4-building-blocks-within-blocks.html]
 	resource: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/5-building-and-debugging/5-buggy-house-and-square-self-test.html]
 		
  	raw-html: <hr />
