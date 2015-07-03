@@ -40,14 +40,14 @@ heading: Programming Lab 3: Developing more complex programs
 	    //resource: motivation
 	    //resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-	resource: Abstraction: developing a board game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-predicates-make-a-between-block.html]
+	resource: Abstraction: developing a board game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html]
 	//resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-complex-booleans-practice.html]
-    resource: Abstraction: developing a number guessing game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-number-guessing.html]
-	resource: Abstraction: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
+    resource: Abstraction: developing a number guessing game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-developing-a-number-guessing-game.html]
+	resource: Abstraction: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-abstraction-brick-wall.html]
 	//resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
-	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-input-types.html]
-	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-composition-of-reporters.html]
-	resource: Analyzing different definitions of <code> >= </code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
+	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html]
+	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-composition-of-functions.html]
+	resource: Analyzing various definitions of <code> >= </code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-analyzing-definitions-of-ge.html]
 
 // heading: Programming Lab 4: Number Guessing
 			//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
