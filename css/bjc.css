@@ -150,7 +150,7 @@ img.noshaddow {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment) { /* Shared Heading Formatting */
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;

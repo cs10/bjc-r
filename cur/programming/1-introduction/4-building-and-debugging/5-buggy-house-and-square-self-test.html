@@ -2,24 +2,25 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 5: Building and Debugging Your Own Blocks</title>
+        <title>Unit 1 Lab 4: Building and Debugging Your Own Blocks</title>
     </head>
     <body>
     	<h2>Debugging Blocks within Blocks</h2>
-        <div class="comment">Page was titled: Composing with "Buggy" Custom Blocks</div>
-	    <div class="todo">
-            <ul>
-                <li>GitHub comment: The formatting of the questions does not seem right. There are some phrases in parentheses which I'm not sure are supposed to be there.</li>
-            </ul>
-        </div>
-        <p>A <strong>buggy</strong> program is one that doesn't work correctly.  It contains one or more <strong>bugs</strong>,  parts of the program that don't do what the programmer intended (or that cause some other part of the program not to behave as intended).</p>
-	    <p>Here is an example. A programmer intended to draw five squares in a row, like this, <img src="/bjc-r/img/1-introduction/5-squares-in-row.png" width="107" height="35" alt="five squares in a row"> and built this script.</p><br />
-        <img class="indent" src="/bjc-r/img/1-introduction/5-squares-in-row-script.png" alt="buggy draw square custom block">
-        <p>Of course, it needed a <code>draw a square</code> block, so the programmer created this definition.</p>
-        <p><img src="/bjc-r/img/1-introduction/state-non-transparent-square.png" width="186" height="208" alt="draw a square block"></p>
+	    <p>One potential challenge in building custom blocks with custom blocks in side them is that a custom block works fine on its own, but when it's used inside another custom block, something goes wrong.</p>
+        <p>
+        	Here is an example. A programmer intended to draw five squares in a row, like this: <img class="noshaddow" src="/bjc-r/img/1-introduction/5-squares-in-row.png" alt="five squares in a row" title="five squares in a row" />, and built this script:
+        	<img class="inline" src="/bjc-r/img/1-introduction/five-squares-in-row.png" alt="repeat (5) (draw square (20), move (20) steps)" title="repeat (5) (draw square (20), move (20) steps)" />
+        </p>
+        <p>
+        	Of course, it required a <code>draw a square</code> block with an input <code>size</code>, so the programmer created this definition:<br />
+        	<div class="sidenoteBig">This <code>draw square (size)</code>script makes one square of size 20, as expected, when it is called with 20 as the input.</div>
+            <img class="indent" src="/bjc-r/img/1-introduction/draw-square-(size).png" alt="draw square (size): move (size) steps, turn right 90 degrees, move (size) steps, turn right 90 degrees, move (size) steps, turn right 90 degrees, move (size) steps" title="draw square (size): move (size) steps, turn right 90 degrees, move (size) steps, turn right 90 degrees, move (size) steps, turn right 90 degrees, move (size) steps" />
+        </p>
         
-        <p> Instead of getting the desired picture <img src="/bjc-r/img/1-introduction/5-squares-in-row.png" width="107" height="35" alt="five squares in a row">, this program draws  <img src="/bjc-r/img/1-introduction/4-squares-around-square.png" width="68" height="66" alt="4 squares around a square"></p>.  
+        <p>But instead of getting the desired picture of five squares in a row like <img class="noshaddow" src="/bjc-r/img/1-introduction/5-squares-in-row.png" alt="five squares in a row" title="five squares in a row" />, the <img class="inline" src="/bjc-r/img/1-introduction/five-squares-in-row.png" alt="repeat (5) (draw square (20), move (20) steps)" title="repeat (5) (draw square (20), move (20) steps)" /> script draws <img class="noshaddow" src="/bjc-r/img/1-introduction/4-squares-around-square.png" alt="4 squares around a square" title="4 squares around a square" />.</p>
+        <p>This is a problem with the composition of blocks. The issue occues because the <code>draw square</code> block designed here is not state independent.</p>
 
+    	<h3>Debugging Blocks within Blocks Self-Check</h3>
         <!-- question 1 -->
         <div class="assessment-data"
         type="multiplechoice" identifier="buggy-draw-square"
@@ -89,7 +90,9 @@
             </div>
         </div>
 
+
         <!-- question 2 -->
+	    <div class="comment">GitHub comment: The formatting of the questions does not seem right. There are some phrases in parentheses which I'm not sure are supposed to be there.</div>
         <div class="assessment-data"
         type="multiplechoice" identifier="buggy-draw-square"
         hasinlinefeedback="true" maxchoices="1"

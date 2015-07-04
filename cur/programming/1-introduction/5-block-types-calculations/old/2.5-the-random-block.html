@@ -5,37 +5,37 @@
         <title>Lab 6: Using Randomness</title>
     </head>
     <body>
-    	<h2>The <code>Random</code> Block</h2>
+        <h3>The <code>Random</code> Block</h3>
         <p>You can use the <code>random</code> block to generate a random number within a range defined by two whole numbers. For example, each time this block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates, with about equal likelihood, one number ranging from 1 through 10.</p>
-    	<p>Like other <strong>reporter</strong> blocks, this <em>reports</em> a value that you can use inside other blocks that take an input. Here are some examples:</p>
+    	<p>Like other <strong>reporter</strong> blocks, <code>random</code> <em>reports</em> a value that you can use inside other blocks that take an input. Here are some examples:</p>
         <img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
         <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This program</a> simulates a six sided die that rolls every time you click on it. (You can look in the "Costumes" area&mdash;click the tab above the script&mdash;to see the six costumes that the random number is using).</p>
         <div class="forYouToDo" id="first">
         	<ol>
-            	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep track of:
+            	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep in mind:
                 	<ul>
 						<li>You'll want to use a <img src="/bjc-r/img/blocks/repeat.png" alt="repeat block" /> or <img src="/bjc-r/img/blocks/forever.png" alt="forever block" /> to keep your sprite moving continuously.</li>
          				<li>Make sure the sprite can travel in any direction.</li>
-            			<li>How does your sprite's actions change if you have it move a fixed, rather than random, amount each time?  </li>
-            			<li>Keep the pen for your sprite down, and you'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
-                        <li>Have another sprite chase that sprite but not quite catch it. It might point towards it and move more slowly or might point <em>almost</em> towards it but veer away by some random amount.</li>
+                        <li>Putting the pen down will help you keep track of what the sprite is doing. You'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
                     </ul>
                 </li>
-                <li>Build a script like this, and see if you can make it sound a bit more musical. <br />
-                <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" width="378" height="62" alt="repeat 5 times play a random note"></li>
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><strong>Experiment!</strong> How does your sprite's actions change if you have it move a fixed (rather than random) amount each time?  </li>
+    			<li>Have another sprite chase that sprite but not quite catch it. It might point towards it and move more slowly or it might point <em>almost</em> towards it but veer away by some random amount.</li>
+                <li>
+                	Build a script like this, and see if you can make it sound a bit more musical. <br />
+                    <img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+	                <img src="/bjc-r/img/1-introduction/repeat-play-random-note-5-times.png" style="height:50%;width:50%;" alt="repeat 5 times play a random note"></li>
             </ol>
         </div>
-        
-        
-        
-       	<div class="todo">
+     
+        <h3>Commands and Reporters Self-Check</h3>
+        <div class="todo">
             <ul>
-                <li>MF: The following used to be a separate page...</li>
+                <li>MF: add another with commands</li>
             </ul>
-        </div> 
+        </div>
         
-        
-        
+        <p><strong>Test yourself!</strong> See what you have learned, and review what you missed.</p>
         <!-- Question 1 -->
         <div class="assessment-data" type="multiplechoice" identifier="understanding-of-random-greeting-block"
         hasinlinefeedback="true" maxchoices="1"
@@ -206,5 +206,6 @@
                 <div class="correctResponse" identifier="c1"></div>
             </div>
         </div>
+       
     </body>
 </html>
