@@ -1,58 +1,46 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<script src="/bjc-r/llab/loader.js"></script>
-<title>Pascal's Triangle</title>
-</head>
-
-<body>
-<h2>Getting Started</h2>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<div class="forYouToDo" id="first">
-<p>You're in a class with a total of five students: Rocky, Bullwinkle, Peabody, Sherman, and <u>(your name here)</u>. You want to choose a committee to get the refreshments for the class party.  Remember that "Rocky and Sherman" is the same committee as "Sherman and Rocky."</p>
-<ol>
-<li>
-<ol type="a">
-<li>How many different committees of three people include Bullwinkle?</li>
-
-
-  <li>How many different committees of three people <em>don't</em> include Bullwinkle?</li>
-  <div>
-    <div class="sidenote">Some people call this the &quot;distinguished member method.&quot;  </div>
-  </div>
-
-<li>How many different committees of three people are there <em>altogether</em> in a group of five students?</li>
-</ol>
-<!-- <div><div class="sidenote">One idea:  use the result of problem~\ref{fipro} and the distinguished member method.</div></div> -->
-<li>How many 3-person committees can you make from 6 students?  See if you can use the results from earlier questions to help answer this one.</li>
-
-<li>
-<ol type="a">
-<li>How many 1-member committees can you form from 100 students?</li>
-<li>How many 99-member committees can you form from 100 students?</li>
-<li>How many 100-member committees can you form from 100 students?</li>
-<div><div class="sidenote">How can you have a committee with~0 members?  Find a way for that to make sense.</div></div>
-<li>How many 0-member committees can you make from 100 students?  </li>
-</ol>
-<hr /> 
-<li>How did you solve question 10? Describe your method in words, so precisely that others in your class understand it.
-
-
-</li>
-<li><strong>Take it Further</strong>.  Here's a start on a reporter that will return the number of $k$-person committees that can be formed from $n$-students.
-<p><img src="/bjc-r/img/6-recursive-reporters/committee.png" alt="committee+n+k:if (k=0 or n=k) report 1, else report nothing" title="committee+n+k:if (k=0 or n=k) report 1, else report nothing" width="252" height="162">
-</p> 
-<p>Finish it off.</p></li> 
-</ol>
-</div>
-
-
-
-
-
-</body>
+    <html>
+        <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Pascal's Triangle</title>
+    </head>
+    
+    <body>
+        <h2>Getting Started</h2>
+        <div class="forYouToDo" id="first">
+            <p>You're in a class with a total of five students: Rocky, Bullwinkle, Peabody, Sherman, and <u>(your name here)</u>. You want to choose a committee to get the refreshments for the class party.  Remember that "Rocky and Sherman" is the same committee as "Sherman and Rocky."</p>
+            <ol>
+                <li>
+                    <ol type="a">
+                        <li>How many different committees of three people include Bullwinkle?</li>
+                        <li>How many different committees of three people <em>don't</em> include Bullwinkle?</li>
+                        <div class="sidenote">Some people call this the &quot;distinguished member method.&quot;  </div>
+                        <li>How many different committees of three people are there <em>altogether</em> in a group of five students?</li>
+                    </ol>
+                    <!-- <div><div class="sidenote">One idea:  use the result of problem~\ref{fipro} and the distinguished member method.</div></div> -->
+                </li>
+                <li>How many 3-person committees can you make from 6 students?  See if you can use the results from earlier questions to help answer this one.</li>
+                
+                <li>
+                    <ol type="a">
+                        <li>How many 1-member committees can you form from 100 students?</li>
+                        <li>How many 99-member committees can you form from 100 students?</li>
+                        <li>How many 100-member committees can you form from 100 students?</li>
+                        <div class="sidenote">How can you have a committee with~0 members?  Find a way for that to make sense.</div>
+                        <li>How many 0-member committees can you make from 100 students?  </li>
+                    </ol>
+                </li>
+                <hr /> 
+                <li>How did you solve question 10? Describe your method in words, so precisely that others in your class understand it.</li>
+                <li>
+                	<strong>Take it Further</strong>.  Here's a start on a reporter that will return the number of $k$-person committees that can be formed from $n$-students.
+                    <p><img src="/bjc-r/img/6-recursive-reporters/committee.png" alt="committee+n+k:if (k=0 or n=k) report 1, else report nothing" title="committee+n+k:if (k=0 or n=k) report 1, else report nothing" width="252" height="162"></p> 
+                    <p>Finish it off.</p>
+                </li> 
+            </ol>
+        </div>
+    </body>
 </html>
 
 

@@ -102,13 +102,16 @@ heading: Social Implications Lab 5: Search and How the Internet Works
  	raw-html: <hr />
 
 heading: Investigations
-	resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
+	raw-html: <div class="comment">MF: I commented out the "Some interesting problem" page because the link was to a template.</div>
+	//resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
 	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html]
-	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-custom-blocks-make-code/valid-date.html]
+	raw-html: <div class="comment">MF: I commented out the Valid-Date? page because the link was dead.</div>
+	//resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-custom-blocks-make-code/valid-date.html]
 
 
 heading: Quarter 1 Project
-	resource: Assignment [/bjc-r/cur/programming/2-conditionals-abstraction-testing/quarter1-project/assignment.html]
+	raw-html: <div class="comment">MF: I commented out the Assignment page because the link was to a template.</div>
+	//resource: Assignment [/bjc-r/cur/programming/2-conditionals-abstraction-testing/quarter1-project/assignment.html]
 
 
 		//heading: Variables and custom blocks
