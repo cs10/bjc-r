@@ -2,16 +2,17 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 4: Block Types and Calculations</title>
+        <title>Unit 1 Lab 5: Block Types and Calculations</title>
     </head>
     <body>
-        <h2>Declaring Variables</h2>
+        <h2>Computing with Variables</h2>
         <div class="todo">
             <ul>
-                <li>Preview <a href="/bjc-r/cur/programming/1-introduction/5-building-and-debugging/1-custom-blocks.html">/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html</a></li>
+                <li>Preview <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html">/bjc-r/cur/programming/1-introduction/4-making-your-own-blocks/making-a-custom-block.html</a></li>
             </ul>
         </div>
-        
+        <!--<p>You've already seen <a href=""></a> and <a href=""></a></p>-->
+        <div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=11" target="_blank">Snap Manual pages 11-13</a>.</div>
         <div class="forYouToDo" id="first">
             <ol>
             	<div class="sidenote">By default, the <a href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/2-sprite-position-direction.html#watchers">watcher</a> for your variable is on.</div>
@@ -19,7 +20,7 @@
                 <li>At the top of the "Variables" palette, click on <img class="" src="/bjc-r/img/1-introduction/make-a-variable.gif" alt="" title="" />, and create a variable named <code><em>x</em></code>.</li>
                 <li>Locate the <img class="inline" src="/bjc-r/img/blocks/set-()-to-(0).png" alt="Set _ to 0" title="Set _ to 0" />block in the Operations palette and drag it into the staging area. This block assigns the value 0 (or something else you choose) to the variable selected from the dropdown box.</li>
                 <li>
-                	Build each of the following scripts. Without using <span class="snap">snap</span>, discuss what the value of <code><em>x</em></code> will be after running each script.
+                	Without using <span class="snap">snap</span>, discuss what the value of <code><em>x</em></code> will be after running each of the following scripts. Then build and run each one. 
                 	<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                     <ol>
                         <li><img src="/bjc-r/img/python/setx5.png" alt="x = 5"/></li>
@@ -29,61 +30,22 @@
                     </ol>
                 </li> 
                 <div class="comment">MF: the next bit is from python_syntax_and_operators.html</div>
-                <div class="endnote">You can set variables to hold the value of a complicated expression with multiple operations. For example: <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/></div>
+                <div class="endnote">You can set variables to hold the value of a complicated expression with multiple, nested operators. For example: <img src="/bjc-r/img/python/setx5+(4x3).png" alt="x = 5 + 4 * 3"/></div>
 				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Without using <span class="snap">snap</span>, predict the value of <code><em>x</em></code> after running each of these scripts:
                 	<ol>
                     	<li><img src="/bjc-r/img/python/setx(5+4)x3.png" alt="x = (5 + 4) * 3"/></li>
                         <li>more, including with mutiple command blocks</li>
                     </ol>
                 </li>
-            	<li>Another important block we use with variables was the <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> block. Notice that <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> and <img src="/bjc-r/img/python/setxx+1.png" alt="x = x + 1"/> are equivalent. ttp Discuss why.</li>
-                <li>Design an equivalent block to this: <img src="/bjc-r/img/python/setxx+8.png" alt="x = x + 8"/> </li>
+            	<li>Another important block we use with variables is <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> . Experiment with a variable and its watcher to determine what <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> does.</li>
+                <li>Notice that <img src="/bjc-r/img/python/change1.png" alt="change by 1"/> and <img src="/bjc-r/img/python/setxx+1.png" alt="x = x + 1"/> are equivalent. <img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Discuss why.</li>
 			</ol>
-                          
-            Do some review problems with these:
-            <img src="/bjc-r/img/python/amodb.png" alt="x mod y"/>
-                <table>
-                      <tr>
-                          <td>Not Equal</td>
-                          <td>
-                              <img src="/bjc-r/img/cond/not_equal.png">
-                          </td>
-                          <td><code>x != y</code></td>
-                      </tr>
-                     
-                      <tr>
-                            <td>Greater Than or Equal To</td>
-                            <td>
-                              <img src="/bjc-r/img/cond/greater_than_equal_to.png"/>
-                            </td>
-                            <td><code>x >= y</code></td>
-                        </tr>
-                      <tr>
-                            <td>Less Than or Equal To</td>
-                            <td>
-                              <img src="/bjc-r/img/cond/less_than_equal_to.png"/>
-                            </td>
-                            <td><code>x &lt;= y</code></td>
-                        </tr>
-                </table>
+       
             </div>
             
-            
-            
-        <div class="todo">
-            <ul>
-                <li>MF: the next bit is from math-and-variables-self-test.html</li>
-            </ul>
-        </div>
-        
-        
-        <h3>Directions</h3>
-        <p>This self test will test you on the basics of using variables and a few math operations.
-            Try answering these without using the interpreter first. If you get stuck, think about how
-        <span class="snap">snap</span> would work, and then try again.</p>
-        <br />
-        <hr />
-    <div class="comment">change images to snap scritps</div>
+        <!--from math-and-variables-self-test.html-->
+        <h3>Declaring Variables Self Check</h3>
+        <p>These quesions will quiz you on variables and a math operations. Try answering them without <span class="snap">snap</span></p>
     <!-- Question 1 -->
     <div class="assessment-data" type="multiplechoice" identifier="What is the value of x?"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri1" shuffle="true">
@@ -122,7 +84,7 @@
             </div>
             <div class="choice" identifier="c1">
                 <div class="text">2</div>
-                <div class="feedback">What does <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-operators.html">mod</a> perform?</div>
+                <div class="feedback">What does <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-operators.html">mod</a> perform?</div>
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">1</div>
@@ -145,15 +107,14 @@
     <div class="assessment-data" type="multiplechoice" identifier="variable switching"
         hasinlinefeedback="true" maxchoices="1" responseIdentifier="ri3" shuffle="false">
         <div class="prompt">
-            <img class="imagLeft" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
+            <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
             Which script will switch the values of the variables <code><em>x</em></code> and <code><em>y</em></code>?
             <div class="sidenote">Try making up starting values for <code><em>x</em></code> and <code><em>y</em></code> and work them through each script. For example, you could let: <br />
             <p class="center">
             	<code>x = 3</code><br />
 				<code class="center">y = 7</code>
             </p>
-            </code></pre>
-            </div>
+        </div>
         </div>
         <div class="choice" identifier="c1">
             <div class="text"><img class="indent" src="/bjc-r/img/1-introduction/variables-assignment-03.png" alt="set x to x + y, set y to x - y, set x to x - y" title="set x to x + y, set y to x - y, set x to x - y" /></div>
