@@ -2,32 +2,32 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 3: Control Commands</title>
+        <title>Unit 1 Lab 2: Control Commands</title>
     </head>
     <body>
         <h2>Nesting Repeats</h2>
         
 		<p> It is also possible to <em>nest</em> one <code>repeat</code> block inside another. Since <span class="snap">snap</span> processes scripts from top to bottom, the first <code>repeat</code> will begin first, and the second <code>repeat</code> will have to complete its entire process before the process of the first <code>repeat</code> is called again.</p>
-        <div class="forYouToDo">
+        <div class="forYouToDo" id="first">
             <ol>
             	<li>
                 	Predict what this script will do without building:<br />
                     <img src="/bjc-r/img/prog/hip32.png" class="indent">
-                    <ul>
+                    <ol type="a">
                         <li>How many times in total will the script say "Hip"?</li>
                         <li>How many times in total will the script say "Hooray"?</li>
-                    </ul>
+                    </ol>
                 </li>
                 <div class="comment">GitHub comment: You need to add a pen down block in step 12 so that you can see the result. MF: quick fix: a sticky; perm fix: rebuild script pic.</div>
-        		<div class="sidenote">The <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down"> command tells the sprite to set its penpoint down to draw.</div>
+        		<div class="sidenoteBig">You'll want to use the <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down"> command tells the sprite to set its penpoint down to draw.</div>
                 <li> Here is another script that has nested <code>repeat</code> blocks. <br />
 		        	<img class="indent" src="/bjc-r/img/1-introduction/square-in-square.png" style="height:14em;" alt="squares in nested repeats" title="squares in nested repeats" />
             	    <!--<img class="imageRight" src="/bjc-r/img/1-introduction/square-fractal2.png" style="height:10em;" alt="Square fractal" title="Square fractal" />-->
-                    <ul>
+                    <ol type="a">
 		            	<li>Sketch on paper what you expect it to do. </li> 
                         <li>Build it and try it out.</li>
                         <li>Embed <em>one more</em> <code>repeat (more, turn)</code> loop between <code>move 50 steps</code> and <code> turn right 90 degrees</code>.</li>
-                	</ul>
+                	</ol>
                 </li>
             </ol>
         </div>

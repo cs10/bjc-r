@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 5: Block Types and Calculations</title>
+        <title>Unit 1 Lab 4: Block Types and Calculations</title>
     </head>
     <body>
 		<h2>Commands and Reporters</h2>
@@ -24,12 +24,12 @@
                 <li style="list-style-type:none;">
                 	<ul>
                     	<li>
-                            <div class="sidenote">You may want to review these blocks: <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html"><code>repeat</code></a>, <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html"><code>forever</code></a>, or <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html"><code>for</code></a>.</div>
+                            <div class="sidenote">You may want to review these blocks: <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html"><code>repeat</code></a>, <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/3-the-forever-block.html"><code>forever</code></a>, or <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/4-the-for-block.html"><code>for</code></a>.</div>
                             <strong><em>Loops</em> are a special kind of command.</strong>  Loops perform the code inside them a certain number of times. Loops are C-shaped and have the same click-together grooves as other commands: <br />
                             <p class="center">
-                                <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html"><img src="/bjc-r/img/blocks/repeat.png" class="inline" alt="repeat" title="repeat" /></a>
-                                <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html"><img src="/bjc-r/img/blocks/forever.png" class="inline" alt="forever" title="forever" /></a>
-                                <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html"><img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" /></a><br />
+                                <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html"><img src="/bjc-r/img/blocks/repeat.png" class="inline" alt="repeat" title="repeat" /></a>
+                                <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/3-the-forever-block.html"><img src="/bjc-r/img/blocks/forever.png" class="inline" alt="forever" title="forever" /></a>
+                                <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/4-the-for-block.html"><img src="/bjc-r/img/blocks/for.png" class="inline" alt="for" title="for" /></a><br />
                             </p>
                 		</li>
                 	</ul>
@@ -37,7 +37,7 @@
                 <div class="sidenote">If you click any block or script, it will run. </div>
                 <div class="comment">MF: Rebuild these images so they are reporting.</div>
                 <li>
-                	<strong><em>Reporter</em> blocks report information</strong> (such as the result of a calculation or the location of the mouse) when they are run. Reporters are long with rounded ends or hexagonal (if they are <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html">predicates</a>):<br />
+                	<strong><em>Reporter</em> blocks report information</strong> (such as the result of a calculation or the location of the mouse) when they are run. Reporters are long with rounded ends or hexagonal (if they are <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html">predicates</a>):<br />
                 	<p class="center">
                         <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" />
                         <img class="inline" src="/bjc-r/img/blocks/size.png" alt="size" title="size" />
@@ -72,12 +72,21 @@
             </ol>
         </div>
         
-         
+        <div class="todo">MF: Clean this wtachers stuff up NOW</div>
+        <div class="endnote">
+        <div>Watchers<a name="watchers" class="anchor">&nbsp;</a></div>
+		<img class="imageRight" src="/bjc-r/img/1-introduction/position-watchers.gif" alt="" title="" />
+        <p>The three oval-shaped <strong>reporters</strong> at the bottom of the Motion palette have checkboxes for <strong>watchers</strong>.  Unlike the jigsaw-puzzle-shaped <strong>command</strong> blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
+        <img class="imageRight" src="/bjc-r/img/1-introduction/watchers-on-stage.gif" alt="position and direction watchers on the stage" title="position and direction watchers on the stage" />
+        <p>If you click the reporters, they will tell you their value (in this case, who the sprite is positioned on the stage). If you check off the boxes next to them, their values will be displayed in a <strong>watcher</strong> on the stage. As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position.</p>
+        <p>There are reporters with checkboxes for watchers in several of the <span class="snap">snap</span> palettes including reporters that you have created.</p>
+        </div>
+                 
     	<p>Like other reporter blocks, the <code>random</code> block a value that you can use inside other blocks:</p>
 		<div class="comment">MF: build and export each of these images separately with alts and titles.</div>
         <div class="sidenoteBig">
             <p>The <code>random</code> block generates a random number within a range (defined by two whole numbers). Each time the block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates one number ranging from 1 through 10 (with about equal likelihood).</p>
-            <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This simulation of a six sided die</a> "rolls" every time you click on it. (Look in the "Costumes" tab above the <a href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/1-the-snap-interface.html#window">scripting area</a> to see the six costumes that the sprite is using).</p>
+            <p><a class="run" href="/bjc-r/prog/random/six-sided-die.xml">This simulation of a six sided die</a> "rolls" every time you click on it. (Look in the "Costumes" tab above the <a href="/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html#window">scripting area</a> to see the six costumes that the sprite is using).</p>
         </div>
         <p class="center">
         	<img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
@@ -88,7 +97,7 @@
             	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep in mind:
                 	<ul>
 						<li>You'll want to use a <img src="/bjc-r/img/blocks/repeat.png" alt="repeat block" /> or <img src="/bjc-r/img/blocks/forever.png" alt="forever block" /> to keep your sprite moving continuously.</li>
-         				<li>Consider the <a href="/bjc-r/cur/programming/1-introduction/2-graphics-effects/2-sprite-position-direction.html">dimensions of the interface</a> to sure the sprite can travel in any direction.</li>
+         				<li>Consider the <a href="/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html">dimensions of the interface</a> to sure the sprite can travel in any direction.</li>
                         <li>Put the pen down to help you keep track of what the sprite is doing. You'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
                     </ul>
                 </li>

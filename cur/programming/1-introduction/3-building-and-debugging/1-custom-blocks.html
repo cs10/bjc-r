@@ -2,7 +2,7 @@
 <html>
     <head>
         <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-        <title>Unit 1 Lab 4: Building and Debugging Your Own Blocks</title>
+        <title>Unit 1 Lab 3: Building and Debugging Your Own Blocks</title>
     </head>
     <body>
         <!--<p class="code-vid">
@@ -12,10 +12,10 @@
         </p>-->
         <h2>Designing Custom Blocks</h2>
         
-        <div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=17" target="_blank">Snap Manual pages 17-18</a>.</div>
         <div class="todo">
         <ul>
         	<li>JK: Teachers at the EDC PD day wanted an animation on this page. They got stuck on these instructions. (They also really didn't like to read.)</li>
+			<li>MF: <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a></li>
         </ul>
         </div>
         
@@ -34,19 +34,19 @@
                     		<div class="sidenote">You can put the new block in any category that makes sense to you. If you don't choose a Category/color, your block will be a gray "Other" block and will be sorted into the "Variables" tab along with <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html">lists</a>.</div>
                             <img  alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" >
                 		</li>
-                   		<li> 
+                   		<div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=17" target="_blank">Snap Manual pages 17-18</a>.</div>
+                        <li> 
                         	<strong>Title:</strong> Give your block a name. Type "draw square" as shown here.<br />
                     		<img  alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" >
                     	</li>
                         <li><strong>Type:</strong> Leave "Command" selected since we want to command the computer to draw a square.
-                        <div class="comment">Probably should move this as this lab page comes after commands and reporters now...</div>
                         <div class="endnote">
                             You've seen commands before and also reporters, which report information, like this:
                             <p class="center">
                             <img class="inline" src="/bjc-r/img/1-introduction/x-position-reporting--79.png" alt="x position reporting -79" title="x position reporting -79" />
                             <img class="" src="/bjc-r/img/1-introduction/sqrt-of-25-reporting-5.png" alt="Sqrt of 25 reporting 5" title="Sqrt of 25 reporting 5" />
                             </p>
-                            You will learn about other types of blocks, like predicates, <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-commands-and-reporters.html">later</a>.
+                            You will learn more about these types of block and about other blocks, like <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html">predicates</a>, later.
                         </div>
                         </li>
                         
@@ -68,9 +68,9 @@
         <img class="indent" src="/bjc-r/img/1-introduction/pen-down-draw-square.png" alt="pen down, draw square" title="pen down, draw square" />
         <p>Congratulations! You have just created your first custom block.</p>
 		
-        <div class="takeItFurther">
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
            <img class="imageRight" src="/bjc-r/img/1-introduction/house.jpg" alt="House" title="House" />
-           <ol start="4">
+           <ol type="A">
             	<li>Define <code>draw triangle</code>, a custom block that draws an equilateral triangle with the same sidelength as the square you just drew. </li>
             	<li>Create a script that uses these two blocks (<code>draw square</code> and <code>draw triangle</code>) to draw a "house" shape: a square with a triangular shaped roof sitting on top. Then create a new block <code>draw house</code> that is defined by that script. </li>
             </ol>
