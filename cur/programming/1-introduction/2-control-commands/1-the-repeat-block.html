@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 1 Lab 2: Control Commands</title>
+    </head>
+    <body>
+        <h2>The <code>Repeat</code> Block</h2>
+        
+        <div class="comment">MF: this would work better if we could see both and compare them side by side rather than in inline code tags.</div>
+        <div class="sidenote">The little <img class="inline" src="/bjc-r/img/web/external-link.png"> icon next to this script means that you can click to open it in another window.</div>
+        <p>This script draws a square.</p>
+        <div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="Square example image" title="Square example image"> </a></div>
+       	<p><img class="inline" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking"> Take turns reading.</p>
+        <p>The <code>repeat</code> block makes this script shorter and simpler to construct. Also, structure&mdash;the logic of the script&mdash;is clearer when we see <code>repeat 4 (move 100, turn 90)</code> than when we see <code>move 100, turn 90, move 100, turn 90, move 100, turn 90, move 100, turn 90</code>.</p>
+        <p>Making the logic clear is essential to good coding. For one thing, it makes it easier to catch bugs. In that long script (with no repeat), we'd have to count the parts to see if it's right, and it would be easy to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one.  
+      	 </p>
+		<div class="forYouToDo" id="first">
+      		<ol>
+        		<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                <li>The three input numbers in the script&mdash;4, 100, and 90&mdash;determine the script's behavior. Experiment with each number, and discuss how each contributes to the square that is drawn. 
+</li>
+                <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
+
+                <!--<div class="comment"> 
+                    This is cute, but I don't think it's needed, and the code is too much for this early in the course. --MF
+                    <a class="run" href="/bjc-r/prog/loop/draw-square-and-squiggle.xml">
+                    <img class="center" src="/bjc-r/img/looping/drawing-regular-polygons.gif" alt="drawing a square and squiggle" />
+                    </a>
+                    OR <strong>we should do something more clearly explaining irregularity.</strong>
+                </div>- ->
+            	<div class="todo">JK: Comment from EDC BJC PD day: Some teachers didn't understand the point of going through a triangle, then a square, then pentagon, etc. They said that wanted some sort of indication like "Look for the pattern" to alert them to the fact that they should be thinking that way. I'm not sure I agree 100%, but it's something to think about.</div>-->
+				<li>            	
+                    <div class="sideHOM">Look for patterns.</div>
+	                <div class="sidenoteBig">A <em>regular</em> polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
+                	Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes <em>using the smallest number of lines</em>:
+                    <a name="polygon" class="anchor">&nbsp;</a>
+					<ul>
+                        <li>Equilateral Triangle</li>
+                        <li>Pentagon</li>
+                        <li>Hexagon</li>
+                        <li>Octagon</li>
+                    </ul>
+                </li>
+                <!--<div class="comment">JK (and Zuska): This problem #4 is a little annoying because you needed this info to do #3, so either this question is already answered or it was never discovered but #3 was too hard.</div>
+                <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>-->
+                <li>
+                	What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown below?<br/ >
+                    <img class="indent" src="/bjc-r/img/prog/nonagon-script.png"/>
+					<img src="/bjc-r/img/prog/nonagon.png"/>
+                </li>
+            </ol>
+        </div>
+
+                            
+        <div class="takeItFurther">
+        	<ol type="A">
+                <li>Figure out what turning angles to use in scripts that draw a 12-sided or 36-sided polygon and make small enough sides so that these can fit on the stage. With more and more sides, these get closer and closer to a circle. <!--Is there a point at which the result <em>is</em> a circle?--></li>
+                <div class="todo">
+                    <ul>
+                        <li>MF and PG: Include an animation of a script like (repeat 90: move 1 degree, wait .01 secs) and use it to explain the exterior/interior angle thing. </li>
+                        <li>JK: Teachers at this EDC PD also had issue with #7 because the code in #5 "technically" didn't provide them the answer to the 9-pointed star because there was a piece missing. They called this a "mistake" in #7 and insisted it should be fixed.</li>
+                    </ul>
+                </div>
+              	<img class="imageRight" src="/bjc-r/img/drawing/draw-star-picture.png" alt="drawn star">
+            	<li>The code in problem 4 above created a regular 9-pointed star. Through how many degrees did the sprite turn altogether to draw that star?</li>
+                <li>Adjust the numbers in that script to get a regular 5-pointed star.</li>
+  <li>Through how many degrees did your sprite turn altogether when you drew the five-pointed star?</li>
+                <li>Find a starting direction so that the star sits "straight."</li>
+            </ol>
+        </div>
+        
+        <!--<h3>The <code>Repeat</code> Block Self-Check</h3>
+		<!-- question 1, formerly question 2 in angles-self-test.html- ->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="pentagon"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Through how many degrees did your sprite turn <em>altogether</em> when you drew a pentagon?
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    72
+                </div>
+                <div class="feedback">
+                    No, consider the amount the sprite turned for all five of the rotations.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    108
+                </div>
+                <div class="feedback">
+                    Which way did the sprite end up facing?
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    360
+                </div>
+                <div class="feedback">
+                    Correct! The sprite made a complete revolution.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    540
+                </div>
+                <div class="feedback">
+                    No, How many times did the sprite turn?
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c3"></div>
+            </div>
+        </div>-->     
+
+        <!--<p>
+            <ol>
+                <li>
+                    Do something with this:<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/effects-fade-out.png" alt="" title="" />
+                </li>
+            </ol>
+        </p>-->
+
+
+    </body>
+</html>

@@ -18,54 +18,51 @@ heading: Programming Lab 1: Introduction
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
 	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
 	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://snap.berkeley.edu/hoc]
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
+	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
+	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
 	
-heading: Progamming Lab 2: Graphics and Effects
-	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/2-graphics-effects/1-the-snap-interface.html]
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/2-graphics-effects/2-sprite-position-direction.html]
-	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
-	
-heading: Programming Lab 3: Control Commands
+heading: Programming Lab 2: Control Commands
 	raw-html: <div class="comment">The quiz symbol, <img class="" src="/bjc-r/img/" alt="" title="" />, indicates that there is an online quiz to review your understanding.</div>
-	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
-	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-control-commands/2-nesting-repeats.html]
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html]
-	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html]
+	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html]
+	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/2-control-commands/2-nesting-repeats.html]
+	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/2-control-commands/3-the-forever-block.html]
+	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/2-control-commands/4-the-for-block.html]
 
-heading: Programming Lab 4: Building and Debugging Your Own Blocks
-	raw-html: <div class="todo">See also: <br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a><br />- <a href="http://interactivepython.org/courselib/static/thinkcspy/GeneralIntro/WhatisDebugging.html" target="_blank">What is Debuging?</a><br >- <a href="http://interactivepython.org/courselib/static/thinkcspy/Debugging/HowtoAvoidDebugging.html" target="_blank">How to Avoid Debugging</a></div>
+heading: Programming Lab 3: Building and Debugging Your Own Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
-	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html]
+	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/1-custom-blocks.html]
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
-	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html]
-	quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
-	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html]
-	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/5-buggy-house-and-square-self-test.html]
+	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html]
+	//quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/3-debugging-custom-blocks.html]
+	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
+	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/5-debugging-blocks-within-blocks.html]
 		
-heading: Programming Lab 5: Block Types and Calculations
-	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-commands-and-reporters.html]
-	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html]
-	resource: Operators  [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-operators.html]
-	quiz: Declaring Variables [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-declaring-variables.html]
+heading: Programming Lab 4: Block Types and Calculations
+	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
+	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html]
+	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
+	quiz: Computing with Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-computing-variables.html]
 
  	raw-html: <hr />
 	
-heading: Social Implications Lab 6: Bits, Games and Violence
+heading: Social Implications Lab 5: Bits, Games and Violence
 	raw-html: <div class="comment">MF: With the word "violence" in the title here, students might cringe at the thought of being yelled at more about their precious video games. What about "Bits and Video Games" or just "Technology and Society"?</div>
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/big-questions.html]
-	resource: Seven Koans (Truths) About Bits [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/bits.html]
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/big-questions.html]
+	resource: Seven Koans (Truths) About Bits [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/bits.html]
 
 
-heading: Social Implications Lab 7: Privacy, Community, and Online Interactions
+heading: Social Implications Lab 6: Privacy, Community, and Online Interactions
 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
 	raw-html: <div class="comment">MF: I really like this title (Privacy, Community, and Online Interactions)! (Can we use the serial comma?) ;)</div>
-	resource: Big Questions [/bjc-r/cur/programming/1-introduction/7-privacy/big-questions.html]
-	resource: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/7-privacy/footprints.html]
+	resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-privacy/big-questions.html]
+	resource: Footprints and Fingerprints [/bjc-r/cur/programming/1-introduction/6-privacy/footprints.html]
 
 
 	raw-html: <hr />
 	
 heading: Investigations
-	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/8-projects/make-a-kaleidoscope.html]
-	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/8-projects/bug-dance.html]
+	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/7-projects/make-a-kaleidoscope.html]
+	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/7-projects/bug-dance.html]
 
 }

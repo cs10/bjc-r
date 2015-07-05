@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 1 Lab 2: Graphics and Effects</title>
+	</head>
+	<body>
+		<h2>Looks and Sound</h2>
+		        
+        
+<div class="dialogue">
+    <div><span>Alphie</span> Ok well, here's a list of the notes: <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-01.png" alt="" title="" /></a>. If we click it, it lists the notes.</div>
+    <div><span>Betty:</span> Let's play that list of notes for 0.5 beats each: <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-02.png" alt="" title="" /></a> Oh, that only played one note!</div>
+    <div class="stagedir"></div>
+    <div><span>Alphie:</span> We could try to "run" your script... <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-03.png" alt="" title="" /></a></div>
+    <div><span>Gammie:</span> Let's try this <code>map over</code> thing and leave the note blank for the list to fill in: <a class="run" href="/bjc-r/prog/1-introduction/.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-04.png" alt="" title="" /></a> I got an error!<br />Ok, maybe <code>map over input</code>? <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-05.png" alt="" title="" /></a> Hmm...</div>
+    <div><span>Alphie:</span> How about this? <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-06.png" alt="" title="" /></a> Another error!</div>
+    <div><span>Betty:</span> Hey, we want to repeat the same commands for different items in a list, so what if we tried a <code>for</code> loop? <a class="run" href="/bjc-r/prog/1-introduction/chord-scale-with-list.xml"><img class="" src="/bjc-r/img/1-introduction/loops-sound-dialogue-07.png" alt="" title="" /></a></div>
+</div>
+
+        
+        <div class="forYouToDo" id="first">
+			<ol>
+        		
+				<li>
+                	Without using <span class="snap">snap</span>, guess what this code does. Discuss with your partner and perhaps another pair.<br />
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    <img class="indent" src="/bjc-r/img/1-introduction/change-sprite-size.png" /><br />
+            	</li>
+                <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                <li>After discussing your hypotheses, build the script and discuss what you think is happening.</li>
+                <li>Experiment more other numbers and other blocks.</li>
+            </ol>
+        </div>
+
+        
+        <div class="comment">Build a script with sound that does what this paragraph says...</div>
+        <p>Blocks in a script run in a specific order, from the top of the script to the bottom. Generally, <span class="snap">snap</span> waits until one block has finished its job before continuing on to the block below it. (One common exception is blocks that play sounds: a block's job can be to <em>start</em> the sound, which means the block below it will execute while the sound is still playing.)</p>	
+            
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>
+                	Click the script image below to open it in <span class="snap">snap</span>&nbsp; Then, click the green flag in the upper right, <img class="button" src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green-flag button"/>, and play the keys A, S, D, F, G, H, J, K, and L like a piano.<br />
+                	<img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+                	<a class="run" href="/bjc-r/prog/1-introduction/piano.xml"><img class="indent" src="/bjc-r/img/1-introduction/piano.png" alt="when green flag clicked, forever (if (key (a) pressed?) (play note (60) for (0.50) beats))" title="when green flag clicked, forever (if (key (a) pressed?) (play note (60) for (0.50) beats))" /></a>
+                </li>
+                <li>Click the <img class="" src="/bjc-r/img/1-introduction/random-tempo.png" alt="set tempo to (pick random (60) to (160)) bpm" title="set tempo to (pick random (60) to (160)) bpm" /> block and try out a few different tempos.</li>
+            </ol>
+        </div>
+
+
+    </body>
+</html>
