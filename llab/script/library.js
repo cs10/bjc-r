@@ -44,8 +44,8 @@ llab.getSnapRunURL = function(targeturl) {
 	if (currdom == "localhost") {
 		currdom = 'http://' + currdom + ":" + window.location.port;
 	} else if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
-		finalurl += llab.CORSproxy;
-	} 
+		finalurl += window.location.protocol + '//' + llab.CORSproxy;
+	}
 	if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
 		var path = window.location.pathname;
 		path = path.split("?")[0];
