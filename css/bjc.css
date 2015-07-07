@@ -32,7 +32,7 @@ li > ol {  list-style-type: lower-alpha;}
 
 /** Editor Notes **/
 .comment { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
-  display: none;
+  /*display: none;*/
   font-size: .9em;
   float: right;
   margin-right: 20px;
@@ -57,7 +57,7 @@ code {
 }
 
 .todo {
-  display: none;
+  /*display: none;*/
   font-size: .9em;
   margin-bottom: 20px;
   padding: 10px;
