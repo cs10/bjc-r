@@ -235,8 +235,10 @@ llab.addFrame = function() {
 	var frame = $(document.createElement("iframe")).attr(
 		{'src': source, 'class': 'content-embed'} );
 
-	var conent = $(document.createElement('div')).append(frame).append(
-	'<a href=' + source + ' target="blank">Open page in new window</a><br />');
+    var conent = $(document.createElement('div'));
+    conent.append(
+        '<a href=' + source + ' target="_blank">Open page in new window</a><br>');
+    conent.append(frame);
 
 	$(FULL).append(conent);
 };
