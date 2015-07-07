@@ -31,30 +31,31 @@ llab.snapRunURLBase = "http://snap.berkeley.edu/snapsource/snap.html#open:";
 // returns the current domain with a cors proxy if needed
 
 llab.getSnapRunURL = function(targeturl) {
-	if (!targeturl) { return ''; }
+    if (!targeturl) { return ''; }
 
-	if (targeturl.indexOf('http') == 0 || targeturl.indexOf('//') == 0) {
-		// pointing to some non-local resource...  do nothing!!
-		return targeturl;
-	}
+    if (targeturl.indexOf('http') == 0 || targeturl.indexOf('//') == 0) {
+        // pointing to some non-local resource...  do nothing!!
+        return targeturl;
+    }
 
-	// internal resource!
-	var finalurl = llab.snapRunURLBase;
-	var currdom = document.domain;
-	if (currdom == "localhost") {
-		currdom = 'http://' + currdom + ":" + window.location.port;
-	} else if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
-		finalurl += window.location.protocol + '//' + llab.CORSproxy;
-	}
-	if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
-		var path = window.location.pathname;
-		path = path.split("?")[0];
-		path = path.substring(0, path.lastIndexOf("/") + 1);
-		currdom = window.location.protocol + '//' + currdom + path;
-	}
-	finalurl = finalurl + currdom + targeturl;
+    // internal resource!
+    var finalurl = llab.snapRunURLBase;
+    var currdom = document.domain;
+    if (currdom == "localhost") {
+        currdom = 'http://' + currdom + ":" + window.location.port;
+    } else if (llab.CORSCompliantServers.indexOf(currdom) == -1) {
+        finalurl += llab.CORSproxy;
+    } else if (targeturl.indexOf("..") != -1 || targeturl.indexOf(llab.rootURL) == -1) {
+        var path = window.location.pathname;
+        path = path.split("?")[0];
+        path = path.substring(0, path.lastIndexOf("/") + 1);
+        currdom = window.location.protocol + '//' + currdom + path;
+    } else {
+        finalurl += window.location.protocol + '//';
+    }
+    finalurl = finalurl + currdom + targeturl;
 
-	return finalurl;
+    return finalurl;
 };
 
 
