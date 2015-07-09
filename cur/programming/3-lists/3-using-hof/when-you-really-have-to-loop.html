@@ -12,6 +12,20 @@
     <ul>
     	<li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
         <li>JK: Any other suggestions for interesting problems here?</li>
+        <li>From Dan in NY: "Some were still working on IsIncreasing(list)==>bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:
+
+1) The DEBUG global list technique, where a null global list is added to each loop by a join() statement that shows the values of iteration variables. E.g.,
+for each RIGHT in NUMBERS
+   add(join(LEFT,” < “,RIGHT,== >,(LEFT < RIGHT))to(DEBUG))
+…to show them what was happening with the the inner test and the result at each iteration.  That helped them find the source of the problem quickly, and many were able to put a conditional in there to handle the (1,2,2) case.
+
+2) A new block we all wrote together (several of the teachers _really_ like it when we work together on something) called Which-Failed(f)on(list-of-inputs)returns(list-of-expected-outputs) that returns a list of pretty-printed testing results.  This was really fun for alll, they got to see an example of walking through three lists at once, with some map and combine examples, I mostly let them drive it with me typing.
+
+3) I also showed them another way to write “Increasing” that does use HOFs (even though the curriculum says you can’t).
+
+2 and 3 are in this file:
+http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=Dans%20Increasing
+"</li>
     </ul>
     </div>
     
