@@ -13,6 +13,9 @@ big-idea: Learn about the mathmatics used in programming (random numbers, modula
 big-idea: Understand and analyze the impact of the internet on our culture.
 		
 
+	raw-html: <div class="todo">MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</div>
+        
+
 heading: Programming Lab 1: Introduction
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
