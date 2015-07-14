@@ -6,6 +6,8 @@ title: Unit 2: Conditionals, Abstraction, and Testing
 
 //	raw-html: <div class="todo"><ul><li>MF: The folder structure for this unit needs attention as it does not match the unit structure on this page. The brick wall project listed under Lab 7 here is in the Lab 8 folder. And the files in the Lab 9 folder don't appear to be anywhere. JANE FIXED THIS AND COMMENTED IT OUT. HOPE THAT'S OK!</li></ul></div>
        
+	raw-html: <div class="todo">MF: Consider doing something like <a href="https://www.youtube.com/watch?v=3YXwcx0rSlY" target="_blank">this maze game</a> to address conditionals and sensing.</div>
+       
 heading: Programming Lab 1: Conditional Blocks
 		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
 		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
