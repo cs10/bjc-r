@@ -11,7 +11,8 @@
             <ol>
                 <li>
                 	<div class="newProject">	<span class="text">"U1L2-Interface"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U1L2-Interface" title="Start a New Project called U1L2-Interface" /></div>
-                	<div class="endnote" style="width:60%; margin-right: 20px; margin-left: 20px;">
+                    <div class="comment">need animations for all of these...</div>
+	               	<div class="endnote" style="width:60%; margin-right: 20px; margin-left: 20px;">
                         <div>Creating a New Project &nbsp; <img class="inline" src="/bjc-r/img/icons/new-project-mini.png" alt="Starting a New Project" title="Starting a New Project" /></div>
                         <ol type="a">
                             <li>If there is a <span class="snap">snap</span> file open, <a href="/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html#saving">save it</a>.</li>
@@ -28,7 +29,7 @@
                     <div class="endnote" style="width:60%; margin-right: 20px; margin-left: 20px;">
                         <div>Changing the Background<a name="background" class="anchor">&nbsp;</a></div>
                         <ol type="a">
-                            <li>In the <a class="anchor" href="/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html#window">Sprite Corral</a>, select the Stage thumbnail.</li>
+                            <li>In the <a class="anchor" href="/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html#window">Sprite Corral</a> (lower right of <span class="snap">snap</span> screen), select the Stage thumbnail.</li>
                             <li>Then, choose "Backgrounds" from the <span class="snap">snap</span> File menu, <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> .</li>
                             <li>Choose "xy-grid.gif" to show the grid.</li>
                          </ol>
@@ -40,16 +41,17 @@
                         <div>Adding Sprite Watchers<a name="watchers" class="anchor">&nbsp;</a></div>
                         <ol type="a">
                             <li>
-                                In the blue Motion palette, click on the gray checkbox next to the <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" /> block. Drag the sprite around and to see the watcher display the changing <em>x</em>-position of the sprite.
+                                In the blue Motion palette, click on the gray checkbox next to the <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" /> block. Drag the sprite image (<img class="noshaddow" src="/bjc-r/img/1-introduction/sprite.png" alt="sprite" title="sprite" />) around and to see the watcher display the changing <em>x</em>-position of the sprite.
                                 <p class="center">
                                 <img src="/bjc-r/img/topic1/palette-checkbox.png" alt="X Position block's checkbox"/>
                                 <img src="/bjc-r/img/topic1/watcher.png" alt="X Position stage watcher"/>
                                 </p>
                             </li>
-                            <li>Create watchers for <img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="y position" title="y position" /> and <img class="inline" src="/bjc-r/img/blocks/direction.png" alt="direction" title="direction" /> by checking their boxes in the same palette. Move the sprite around using commands or by just dragging it with your mouse. Notice which actions change which values.</li>
+                            <li>Create watchers for <img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="y position" title="y position" /> and <img class="inline" src="/bjc-r/img/blocks/direction.png" alt="direction" title="direction" /> by checking their boxes in the same palette.</li>
                         </ol>
                     </div>
                 </li>
+                <li>Move the sprite around using commands (blocks; try <code>move</code> or <code>turn</code>) or by just dragging it with your mouse. Notice which actions change which values.</li>
             </ol>
         </div>
 	
@@ -79,6 +81,7 @@
                 <div class="sidenote">The tip of the sprite arrow is the point in question.</div>
         		<li>Experiment by dragging around a sprite image (<img class="noshaddow" src="/bjc-r/img/1-introduction/sprite.png" alt="sprite" title="sprite" />) to make sure you see which part of the sprite graphic the coordinates are describing.</li>
 				<div class="sidenoteBig">Once the pen is down, it stays down even in a different script. If you want your script to move the sprite  without leaving a trace, use the <code>pen up</code> block to &quot;lift the pen.&quot; </div>
+				<div class="todo">This might be the right spot to include some problems that support angles and turning... look at the python tutorial L, T, and checkmark problems...</div>
 				<li>
 					Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that, with one click, draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
 					<img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent block" alt="Move 10 Steps Block"/>&nbsp;
@@ -90,7 +93,6 @@
 			</ol>
 		</div>
         
-		<div class="todo">This might be the right spot to include some problems that support angles and turning...</div>
         
 		<div class="takeItFurther">
 			<ol type="A">
@@ -98,7 +100,7 @@
 					This script was intended to create a pentagon, but it has bugs. Without building it, try to figure out what it does instead. Then build it and try it out. What change(s) would fix this script?<br/>
 					<img src="/bjc-r/img/1-introduction/forever-4.png" class="indent" style="height:100px;" alt="penDown, forever (turn CW 10 deg, change x by 10)">
 				</li>
-                <li>Create a program with the x-y-grid in the background that labels each of the quadrants with the signs of their coordinates.</li>
+                <!--<li>Create a program with the <em>x</em>-<em>y</em>-grid in the background that labels each of the quadrants with the signs of their coordinates (like you might see in math class).</li>-->
 			</ol>
 		</div>
 
