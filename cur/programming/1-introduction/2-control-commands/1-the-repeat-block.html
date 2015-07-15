@@ -7,18 +7,26 @@
     <body>
         <h2>The <code>Repeat</code> Block</h2>
         
-        <div class="comment">MF: this would work better if we could see both and compare them side by side rather than in inline code tags.</div>
         <div class="sidenote">The little <img class="inline" src="/bjc-r/img/web/external-link.png"> icon next to this script means that you can click to open it in another window.</div>
         <p>This script draws a square.</p>
-        <div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="Square example image" title="Square example image"> </a></div>
+		<div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="Square example image" title="Square example image"> </a></div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Click the script above to open it in a <span class="snap">snap</span> window. Then click the script in <span class="snap">snap</span> to see it draw the square.</li>
+            </ol>
+        </div>
+        
        	<p><img class="inline" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking"> Take turns reading.</p>
-        <p>The <code>repeat</code> block makes this script shorter and simpler to construct. Also, structure&mdash;the logic of the script&mdash;is clearer when we see <code>repeat 4 (move 100, turn 90)</code> than when we see <code>move 100, turn 90, move 100, turn 90, move 100, turn 90, move 100, turn 90</code>.</p>
-        <p>Making the logic clear is essential to good coding. For one thing, it makes it easier to catch bugs. In that long script (with no repeat), we'd have to count the parts to see if it's right, and it would be easy to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one.  
-      	 </p>
-		<div class="forYouToDo" id="first">
-      		<ol>
+        <p>The <code>repeat</code> block makes this script shorter and simpler to construct. The structure (the logic of the script) is clearer when we see this:</p>
+        <img class="indent" src="/bjc-r/img/1-introduction/repeat-4(move-50-turn-right-90).png" alt="repeat 4 (move 50 steps, turn right 90 degrees)" title="repeat 4 (move 50 steps, turn right 90 degrees)" />
+        <p>...than it is when we see this:</p>
+        <img class="indent" src="/bjc-r/img/1-introduction/move-50-turn-right-90-(4-times).png" alt="move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees" title="move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees" />
+        <p>Making the logic clear is essential to good coding. For one thing, it makes it easier to catch bugs. In that long script (with no repeat), we have to count the parts to see if it's right, and it would be very easy to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one!</p>
+         
+		<div class="forYouToDo">
+      		<ol start="2">
         		<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-                <li>The three input numbers in the script&mdash;4, 100, and 90&mdash;determine the script's behavior. Experiment with each number, and discuss how each contributes to the square that is drawn. 
+                <li>The three input numbers in the script&mdash;4, 50, and 90&mdash;determine the script's behavior. Experiment with each number, and discuss how each contributes to the square that is drawn. 
 </li>
                 <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
 
@@ -31,10 +39,11 @@
                 </div>- ->
             	<div class="todo">JK: Comment from EDC BJC PD day: Some teachers didn't understand the point of going through a triangle, then a square, then pentagon, etc. They said that wanted some sort of indication like "Look for the pattern" to alert them to the fact that they should be thinking that way. I'm not sure I agree 100%, but it's something to think about.</div>-->
 				<li>            	
-                    <div class="sideHOM">Look for patterns.</div>
-	                <div class="sidenoteBig">A <em>regular</em> polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
-                	Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes <em>using the smallest number of lines</em>:
-                    <a name="polygon" class="anchor">&nbsp;</a>
+                    <!--<div class="sideHOM">Look for patterns.</div>-->
+                	<div class="comment">MF: Need to be sure we have support for angles...</div>
+                    Use <img src="/bjc-r/img/blocks/repeat.png" alt="empty repeat-n block" class="inline" /> to draw the following regular shapes <em>using the smallest number of lines</em>:
+ 					<div class="sidenoteBig">A <em>regular</em> polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular 4-sided polygon. </div>
+	                <a name="polygon" class="anchor">&nbsp;</a>
 					<ul>
                         <li>Equilateral Triangle</li>
                         <li>Pentagon</li>
@@ -44,10 +53,11 @@
                 </li>
                 <!--<div class="comment">JK (and Zuska): This problem #4 is a little annoying because you needed this info to do #3, so either this question is already answered or it was never discovered but #3 was too hard.</div>
                 <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>-->
+                <div class="comment">MF: This script should be 1.5 zoom.</div>
                 <li>
-                	What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown below?<br/ >
-                    <img class="indent" src="/bjc-r/img/prog/nonagon-script.png"/>
-					<img src="/bjc-r/img/prog/nonagon.png"/>
+                	What number can you put into the blank numeric input of the <code>repeat</code> block below to produce the picture shown below?<br />
+                    <img class="indent" src="/bjc-r/img/prog/nonagon-script.png" alt="when green flag clicked, pen down, repeat _ (move 100 steps, turn right 80 degrees)" title="when green flag clicked, pen down, repeat _ (move 100 steps, turn right 80 degrees)"/>
+					<img src="/bjc-r/img/prog/nonagon.png" alt="nine-sided star" title="nine-sided star"/>
                 </li>
             </ol>
         </div>
