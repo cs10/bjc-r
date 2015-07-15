@@ -1,0 +1,46 @@
+title: Teaching Guide for Unit 1: Introduction to <span class="snap">snap</span>
+
+{
+	raw-html: <h3>Purpose</h3>
+	raw-html: <p><strong>Programming Focus:</strong> Introduction to <span class="snap">snap</span>, Abstraction</p>
+    raw-html: <p>Students dive right into using <span class="snap">snap</span> by exploring its features and creating visual projects using important programming ideas such as loops, randomness, and building blocks. As much as possible, students should be encouraged to experiment with <span class="snap">snap</span>, playing with input parameters, using blocks before they have been formally introduced, and modifying and extending the assigned tasks. Creativity is not only a Big Idea of AP CS Principles, but also essential to students' experience of the course.</p>
+   //big-idea: Design computer programs to draw designs, play music, animate, calculate, and interact with the user.
+	//big-idea: Get to know  the <span class="snap">snap</span> programming interface.
+	//big-idea: Use loops to repeat similar steps in a program.
+	//big-idea: Create programs inside other programs.
+	//big-idea: Learn about the mathmatics used in programming (random numbers, modular arithmetic, and logic).
+	//big-idea: Understand and analyze the impact of the internet on our culture.
+	raw-html: <p><strong>Social Implications Focus:</strong> Privacy, Communication and Online Interactions</p>
+	raw-html: <p>In Unit 1, students will also discuss social implications of computing, (NEED TO EDIT) including issues such as cyberbullying, the prevalence of social media, and the ethics of illegally downloading music. Students are likely to be familiar with these issues, and grappling with them at the beginning of the course helps students understand the relevance and necessity of understanding the world of computing.</p>
+	
+	raw-html: <h3>Highlighting Computational Thinking</h3> 
+	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong>, and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it, and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
+
+
+heading: Week 1 (Programming Focus)
+	resource: Lab 1: Introduction [/bjc-r/cur/teaching-guide/U1/Week1/1-introduction.html]
+	resource: Lab 2: Control Commands [/bjc-r/cur/teaching-guide/U1/Week1/2-repeating-commands.html]
+	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U1/Week1/activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week1/assignments.html]
+
+heading: Week 2 (Programming Focus)
+	resource: Lab 3: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/Week2/3-make-your-own-blocks.html]
+	resource: Lab 4: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/Week2/4-using-randomness.html]
+	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U1/Week2/activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week2/assignments.html]
+	
+heading: Week 3 (Social Implications Focus)
+	resource: Lab 5: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/Week3/5-explosion-bits-games-violence.html] 
+	resource: Additional Problems/Activities (needs to be written) 
+	resource: Homework Assignments (needs to be written) 
+	
+heading: Week 4 (Social Implications Focus)
+	resource: Lab 6: Privacy; Community and Online Interactions [/bjc-r/cur/teaching-guide/U1/Week4/6-privacy-community-online-interactions.html]
+	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U1/Week4/activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week4/assignments.html]
+	
+heading: Investigations
+	resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/Investigations/kaleidoscope.html]
+	resource: Bug Dance Animation (needs to be written) 
+	
+}
