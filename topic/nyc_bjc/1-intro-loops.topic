@@ -49,8 +49,12 @@ heading: Programming Lab 4: Block Types and Calculations
 
  	raw-html: <hr />
 	
-heading: Social Implications Lab 5: Bits, Games and Violence
+heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
 	raw-html: <div class="comment">MF: With the word "violence" in the title here, students might cringe at the thought of being yelled at more about their precious video games. What about "Bits and Video Games" or just "Technology and Society"?</div>
+	resource: What are some social implications of computing? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/what-are-some-social-implications.html]
+	resource: What does Tanya Rider's story have to do with the explosion of bits? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/tanya-rider.html]
+	resource: Do violent video games contribute to youth violence? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/violent-video-games.html]
+	resource: Is technology good or bad? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/good-or-bad.html]
 	resource: Big Questions [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/big-questions.html]
 	resource: Seven Koans (Truths) About Bits [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/bits.html]
 
