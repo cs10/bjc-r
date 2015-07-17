@@ -121,6 +121,18 @@ code {
   clear:both;
 }
 
+.sideHOMbig { /* added by Mary Fries on 7/17/15 based on .sideHOM */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  width: 40%;
+  padding: 10px;
+  background-color: #FEC46C; /* #F3F0B3; */
+  clear:both;
+}
+
 .manual { /* added by Mary Fries on 6/25/15 based on .sidenote */
   font-size: .9em;
   float: right;
