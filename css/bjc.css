@@ -7,7 +7,7 @@
 
 a:visited {  color: #248694; /* was 36BBCE; */}
 
-a {  color: #2a6496; /* was 428bca; */}
+a, .dialogue a {  color: #2a6496; /* was 428bca; */}
 
 h4 {  padding: 20px 0px 0px 0px;}
 
@@ -40,7 +40,8 @@ li > ol {  list-style-type: lower-alpha;}
   margin-bottom: 20px;
   width: 20%;
   padding: 10px;
-  background-color: #FF0000;
+  border: 10px solid red;
+  /*background-color: #FF0000;*/
   clear:both;
 }
 
@@ -52,9 +53,9 @@ code {
   padding: 0px;
 }
 
-.comment > code {
+/*.comment > code {
   color: #606;
-}
+}*/
 
 .todo {
   /*display: none;*/
@@ -160,7 +161,7 @@ img.noshaddow {
   margin-bottom: .5em;
 }
 
-.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -186,6 +187,8 @@ img.noshaddow {
 
 .dialogue > div.stagedir {
   padding-left: 0em;
+  padding-top: 10px;
+  padding-bottom: 10px;
   text-indent: 0em;
   font-style: italic;
   text-align: center;
@@ -204,6 +207,8 @@ img.noshaddow {
   margin-right: auto;
  }
  
+.takeNote:before {content: "Take Note: ";}
+
 .apStandards {
   background-color: #fcc589;
   width: 100%;

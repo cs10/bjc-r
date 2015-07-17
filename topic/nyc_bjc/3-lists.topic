@@ -18,6 +18,8 @@ title: Unit 3: Lists
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
+	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
+
 heading: Programming Lab 1: Introduction to Lists
 	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html]
 	 resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/sentence-builder.html]
