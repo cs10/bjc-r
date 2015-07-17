@@ -13,6 +13,8 @@ title: Unit 8: Python //and/or Major Project
 //learning-goal: Learn the basics of Python syntax and write a few simple programs.
 //learning-goal: You should be comfortable with basic math and "string" operations.
 
+	raw-html: <div class="todo">Connect students to resources and online programming communities like <a href="http://stackexchange.com/" target="_blank">http://stackexchange.com/</a></div>
+        
 heading: Lab 1: Introduction to Python
     resource: Background Survey [/bjc-r/cur/programming/python/intro-survey.html]
     resource: Welcome to Besides Blocks: An Introduction to Python [/bjc-r/cur/programming/python/introduction_to_besides_blocks.html]
