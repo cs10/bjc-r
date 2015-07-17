@@ -1,0 +1,939 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>BJC Snippets</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssn</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:00:32Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Text Snap!</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T18:43:17Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-09T20:57:25Z</date>
+			<key>plainText</key>
+			<string>&lt;span class="snap"&gt;snap&lt;/span&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>49</integer>
+			<key>uuidString</key>
+			<string>14D3B506-1402-4CD3-8D00-D35A13709814</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddi</string>
+			<key>abbreviationMode</key>
+			<integer>1</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:01:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Dialogue</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T18:31:14Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-09T20:56:41Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="dialogue"&gt;
+    &lt;div&gt;&lt;span&gt;1:&lt;/span&gt; &lt;/div&gt;
+    &lt;div&gt;&lt;span&gt;2:&lt;/span&gt; &lt;/div&gt;
+    &lt;div class="stagedir"&gt;&lt;/div&gt;
+    &lt;div&gt;&lt;span&gt;1:&lt;/span&gt; &lt;/div&gt;
+    &lt;div&gt;&lt;span&gt;2:&lt;/span&gt; &lt;/div&gt;
+&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>9</integer>
+			<key>uuidString</key>
+			<string>62027589-C6B7-4A82-AB01-7284416703C1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ool</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:05:17Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML List Ordered</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T18:05:34Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-17T19:11:51Z</date>
+			<key>plainText</key>
+			<string>&lt;ol&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>16</integer>
+			<key>uuidString</key>
+			<string>6D765610-4233-4D0F-AEA3-D048E23AC78E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>uul</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:05:17Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML List Unordered</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T19:06:58Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-17T19:11:39Z</date>
+			<key>plainText</key>
+			<string>&lt;ul&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>5</integer>
+			<key>uuidString</key>
+			<string>F64B5289-3D37-499E-82B8-D99F46176A37</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tta</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:16:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Talk With Your Partner</string>
+			<key>lastUsed</key>
+			<date>2015-07-15T20:56:15Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-24T05:32:17Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>22</integer>
+			<key>uuidString</key>
+			<string>A76D22DA-E61F-40B3-9E8E-37BB698769FD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ffo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:19:28Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div For You to Do</string>
+			<key>lastUsed</key>
+			<date>2015-07-15T22:02:59Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-09T20:56:45Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="forYouToDo"&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>10</integer>
+			<key>uuidString</key>
+			<string>68F825BB-7DD6-40CF-940C-DFC96CD8A61D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ffu</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:22:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Take It Further</string>
+			<key>lastUsed</key>
+			<date>2015-07-15T20:57:33Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T00:36:20Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="takeItFurther"&gt;
+    &lt;ol type="A"&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>6</integer>
+			<key>uuidString</key>
+			<string>B0DA8B24-3D76-4242-A0B4-CC78DDC072F3</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssi</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:26:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Sidenote</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T17:44:44Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-09T20:56:52Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="sidenote"&gt;&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>29</integer>
+			<key>uuidString</key>
+			<string>F2C7C680-FAE3-4DFD-8C3E-712A315C8DFB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nno</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T19:02:53Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Take Note</string>
+			<key>modificationDate</key>
+			<date>2015-06-09T20:57:13Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="takeNote"&gt;
+    
+&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>D817824C-6421-4BC1-B027-502466F10AE6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>hht</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T19:19:02Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML Template Student Page</string>
+			<key>lastUsed</key>
+			<date>2015-07-16T19:47:31Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-17T19:11:15Z</date>
+			<key>plainText</key>
+			<string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
+        &lt;title&gt;Lab #: Name&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h2&gt;Page Name&lt;/h2&gt;
+        &lt;div class="forYouToDo" id="first"&gt;
+            &lt;ol&gt;
+                &lt;li&gt;&lt;/li&gt;                   
+            &lt;/ol&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>31</integer>
+			<key>uuidString</key>
+			<string>69CF6E31-B203-43AB-AC4A-BD592B6FC602</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cco</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-02T20:22:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Reviewer Comment</string>
+			<key>lastUsed</key>
+			<date>2015-07-16T18:22:27Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-29T21:25:20Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="comment"&gt;&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>83</integer>
+			<key>uuidString</key>
+			<string>08522B78-F82B-4875-9D5D-FA815AADD3A9</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tto</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-02T20:22:47Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Reviewer Todo List at Top</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T16:41:25Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-17T15:23:37Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="todo"&gt;&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>41</integer>
+			<key>uuidString</key>
+			<string>EA0B8C07-1642-4E2C-A18F-8CFD266BB3BB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>iim</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:12:14Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML Image Tag</string>
+			<key>lastUsed</key>
+			<date>2015-07-16T20:25:59Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T21:32:22Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="" src="/bjc-r/img/1-introduction/.png" alt="" title="" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>43</integer>
+			<key>uuidString</key>
+			<string>DE6E6410-F2E7-44D3-B7BF-005C9947D78C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>een</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:26:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Endnote</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T21:40:31Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-24T04:53:38Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="endnote"&gt;&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>18</integer>
+			<key>uuidString</key>
+			<string>6B0ADBC8-6EA2-42A6-876F-8810455A45A7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssa</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-24T05:30:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Save w/text</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T03:34:12Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-26T19:15:28Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="saveAs"&gt;&lt;span class="text"&gt;"U1L2-Name"&lt;/span&gt;&lt;img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Name" title="Save your work as U1L2-Name" /&gt;&lt;/div&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>C60DBAEE-832B-4DA3-977B-174FF57FF248</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nne</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-24T05:30:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon New w/text</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T03:37:41Z</date>
+			<key>modificationDate</key>
+			<date>2015-06-26T02:23:14Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="newProject"&gt;&lt;span class="text"&gt;"U1L1-Name"&lt;/span&gt;&lt;img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /&gt;&lt;/div&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>8B85BEB8-A2E5-405B-9B2A-CB9A9D36E23A</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>bbl</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-26T18:23:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML end HREF:  target="_blank"&gt;</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T19:05:13Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-03T04:52:33Z</date>
+			<key>plainText</key>
+			<string> target="_blank"&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>24</integer>
+			<key>uuidString</key>
+			<string>4B7C7C3D-B5ED-40A4-900C-7052CE7A8799</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-01T15:16:15Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Tough Stuff</string>
+			<key>lastUsed</key>
+			<date>2015-07-01T15:17:05Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-01T15:16:57Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>72D31510-7D4A-40FE-8E71-C2012A279D09</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ppm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-02T19:12:13Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Pair Programming Swap Mini</string>
+			<key>modificationDate</key>
+			<date>2015-07-02T19:13:22Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /&gt; 
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>AE81A118-96C6-4AB5-9206-BC5C88CC8E31</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pps</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-02T19:12:13Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Pair Programming Swap</string>
+			<key>lastUsed</key>
+			<date>2015-07-09T17:39:44Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-03T04:52:01Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /&gt; 
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>3927402E-FF2A-442C-AE66-FC2C822228DA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>aah</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-26T18:23:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML begin HREF:  &lt;a href=""</string>
+			<key>lastUsed</key>
+			<date>2015-07-17T19:04:53Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-03T04:52:20Z</date>
+			<key>plainText</key>
+			<string>&lt;a href=""</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>26</integer>
+			<key>uuidString</key>
+			<string>3D07F1DE-CC23-42B9-ADFE-4AF3F34BFBEB</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:16:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Talk With Another Pair</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T04:43:11Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-03T21:56:18Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>12</integer>
+			<key>uuidString</key>
+			<string>64AEDB8F-E48F-4F72-87D3-E8A9DEC40664</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>aan</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-06-26T18:23:56Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML begin NAME</string>
+			<key>lastUsed</key>
+			<date>2015-07-15T22:03:09Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-03T21:56:50Z</date>
+			<key>plainText</key>
+			<string>&lt;a name="" class="anchor"&gt;&amp;nbsp;&lt;/a&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>11</integer>
+			<key>uuidString</key>
+			<string>C53C1E47-47D8-4BFA-8C7B-8ED79532CEE4</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mmi</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T19:19:02Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML middot/cdot</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T21:28:02Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T00:36:40Z</date>
+			<key>plainText</key>
+			<string>&amp;middot;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>10</integer>
+			<key>uuidString</key>
+			<string>D5A2B0ED-F5D7-4583-AD2C-06AE12359793</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>rre</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:26:18Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Div Read Snap Manual</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T02:39:05Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T13:06:47Z</date>
+			<key>plainText</key>
+			<string>&lt;div class="manual"&gt;Read &lt;a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=13" target="_blank"&gt;Snap Manual pages 13-15&lt;/a&gt;.&lt;/div&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>20</integer>
+			<key>uuidString</key>
+			<string>21530C5A-EEDF-4771-92DD-9484BB029421</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>xxm</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T15:15:42Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML for XML link</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T15:21:21Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T15:17:02Z</date>
+			<key>plainText</key>
+			<string>&lt;a class="run" href="/bjc-r/prog/1-introduction/.xml"&gt;&lt;img class="" src="/bjc-r/img/" alt="" title="" /&gt;&lt;/a&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>6</integer>
+			<key>uuidString</key>
+			<string>4EB5DF02-8DD5-4B54-822E-DA5AA640DD25</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>xxp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T16:18:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Block: x position</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T16:19:33Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T16:18:46Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>4EF96D71-CFEE-442F-A7F9-52A51875C4B5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>yyp</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T16:18:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Block: y position</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T16:21:36Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T16:19:10Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="y position" title="y position" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>1246C208-AD8B-460B-A399-F264F8E85624</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ddr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T16:18:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Block: direction</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T16:22:39Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T16:22:33Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="inline" src="/bjc-r/img/blocks/direction.png" alt="direction" title="direction" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>C031227B-17EE-4AFF-B970-ED50FC3F7EA5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tts</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:16:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Take Turns Speaking Mini</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T17:19:58Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T17:19:55Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking"&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>11</integer>
+			<key>uuidString</key>
+			<string>BCD57016-D47B-427E-97B6-5FD0F19EA703</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>nnb</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T21:06:50Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML &amp;nbsp;</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T21:07:15Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T21:07:01Z</date>
+			<key>plainText</key>
+			<string>&amp;nbsp;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>4</integer>
+			<key>uuidString</key>
+			<string>67E6EE94-E690-4340-997D-95EA0451D47D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ttr</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T16:18:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Block: true</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T21:38:01Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T21:32:33Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>487BF563-3B0C-4846-8C94-7E0ABB64714D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ffa</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-04T16:18:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Block: false</string>
+			<key>lastUsed</key>
+			<date>2015-07-04T21:33:04Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-04T21:32:50Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>D32968F5-56A7-40EB-8D94-B4914D6B79B7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>tgtg</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T19:19:02Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>HTML Template TG Page</string>
+			<key>lastUsed</key>
+			<date>2015-07-16T20:00:28Z</date>
+			<key>modificationDate</key>
+			<date>2015-07-17T19:11:27Z</date>
+			<key>plainText</key>
+			<string>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
+		&lt;title&gt;Unit X Week X Teaching Guide&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+        &lt;h2&gt;Programming Lab X: XXX&lt;/h2&gt;
+        &lt;p&gt;PURPOSE STATEMENT&lt;/p&gt; 
+        
+
+        &lt;h3&gt;Prepare:&lt;/h3&gt;
+        &lt;div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+
+
+        &lt;h3&gt;Students will:&lt;/h3&gt;
+        &lt;div class="sidenoteBig"&gt;
+        	&lt;strong&gt;Looking Ahead&lt;/strong&gt;
+        	&lt;ul&gt;
+            	&lt;li&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;ul&gt;
+                &lt;li&gt;...&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt; 
+              
+        
+        &lt;h3&gt;As a Class:&lt;/h3&gt;
+        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+
+
+        &lt;h3&gt;Look For:&lt;/h3&gt;
+        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+
+            
+        &lt;!--&lt;h3&gt;Solutions&lt;/h3&gt;
+        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;--&gt;
+            
+            
+        &lt;div class="apStandards"&gt;
+            &lt;h4&gt;AP CS Principles Computational Thinking Practices:&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Coming soon...&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;h4&gt;AP CS Principles Essential Knowledge:&lt;/h4&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Coming soon...&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;            
+
+
+	&lt;/body&gt;
+&lt;/html&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>43</integer>
+			<key>uuidString</key>
+			<string>B197536A-24D7-4517-8BB2-70013CB623A6</string>
+		</dict>
+	</array>
+</dict>
+</plist>
