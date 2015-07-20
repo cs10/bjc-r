@@ -35,7 +35,8 @@
 <li>For row 20, estimate 2<sup>20</sup> (the number of calls made) and 20<sup>2</sup> (the number of unique values needed).</li></ol></div>
         <div class="takeItFurther"><ol start="7"><li>Figure out how to modify the <code>pascal</code> script to get an exact count of the number of unique (<code>row</code>,<code>column</code>) input pairs used in a computation.</li>
 <li>Use a list structure to keep track of already-computed values, and when the same inputs are given again, look up the saved value instead of making more recursive calls. (This technique is called <em><strong>memoization</strong>,</em> no typo; there's no "r" in the word.)</li></ol></div>
-    <p>Some of you might remember from an earlier exposure to Pascal's Triangle that there's a <em>formula </em>to compute the numbers in the table:</p><div align="center"> <sub><em>n</em></sub>C<sub><em>r</em></sub> = <em>n</em>&thinsp;!/(<em>r</em>&thinsp;!(<em>n</em>-<em>r</em>&thinsp;)!)</div></p>
+    <p>Some of you might remember from an earlier exposure to Pascal's Triangle that there's a <em>formula </em>to compute the numbers in the table:</p>
+    <div align="center"> Pascal(<em>n</em>, <em>r</em>) = <em>n</em>&thinsp;!/(<em>r</em>&thinsp;!(<em>n</em>-<em>r</em>&thinsp;)!)</div></p>
 <p>This can be computed, without using recursion at all, in a time proportional to the row number <em>n</em>. The moral: An ounce of math is worth a pound of computer science, sometimes.</p>
 </body>
 </html>
