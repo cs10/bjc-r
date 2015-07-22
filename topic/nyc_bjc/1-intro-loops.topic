@@ -3,12 +3,12 @@ title: Unit 1: Introduction to <span class="snap">snap</span>
 {
 
 h3: In this unit, you will...
-big-idea: Design computer programs to draw designs, play music, animate, calculate, and interact with the user.
-big-idea: Get to know  the <span class="snap">snap</span> programming interface.
-big-idea: Use loops to repeat similar steps in a program.
-big-idea: Create programs inside other programs.
-big-idea: Learn about the mathmatics used in programming (random numbers, modular arithmetic, and logic).
-big-idea: Understand and analyze the impact of the internet on our culture.
+big-idea: Build an app (or two) using <span class="snap">snap</span>
+big-idea: Design procedures to draw, make music, animate, and interact with the user.
+big-idea: Use loops to repeat similar steps of code.
+big-idea: Create procedures inside procedures and loops within loops.
+big-idea: Explore mathmatics of computer science: random, modulo, and logical operators.
+big-idea: Analyze the impact of technology on our culture and safety.
 		
 
 	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
