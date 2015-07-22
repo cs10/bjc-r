@@ -101,7 +101,7 @@ code {
 }
 
 .endnote { /* added by Mary Fries on 6/9/15 based on above */
-  width: 100%;
+  width: 90%;
   background-color: #FFF8AD;
   margin-left: auto;
   margin-right: auto;
@@ -159,6 +159,7 @@ img.noshaddow {
 .forYouToDo, .dialogue, .takeItFurther, .takeNote, .endnote {/* Shared Box Formatting */
   padding: 1em;
   margin-bottom: .5em;
+  margin-top: .5em;
 }
 
 .forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
@@ -196,13 +197,18 @@ img.noshaddow {
 
 .dialogue > div > span {  font-weight: bold;}
 
-.takeItFurther {  background-color: #e4cde3;}
+.takeItFurther {
+  background-color: #e4cde3; 
+  width:90%;  
+  margin-left: auto;
+  margin-right: auto;
+  }
 
 .takeItFurther:before {  content: "Take It Further";}
 
-.takeNote {
+.takeNote, endHOM {
   background-color: #fcc589;
-  width: 90%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
  }
