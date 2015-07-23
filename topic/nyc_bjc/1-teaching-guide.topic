@@ -18,8 +18,6 @@ title: Teaching Guide for Unit 1: Introduction to <span class="snap">snap</span>
 	raw-html: <h3>Highlighting Computational Thinking</h3> 
 	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong>, and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it, and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
 
-	resource: Introduction to Teaching Guide [/bjc-r/cur/teaching-guide/U1/overview.html]
-
 heading: Week 1 (Programming Focus)
 	resource: Lab 1: Introduction [/bjc-r/cur/teaching-guide/U1/Week01/1-introduction.html]
 	resource: Lab 2: Control Commands [/bjc-r/cur/teaching-guide/U1/Week01/2-repeating-commands.html]
