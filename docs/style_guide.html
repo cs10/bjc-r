@@ -30,6 +30,7 @@
             	<li><a href="#picture">How to Make an Picture of Blocks</a></li>
             	<li><a href="#animation">How to Make an Animation</a></li>
             	<li><a href="#script">How to Link to a Script</a></li>
+            	<li><a href="#anchors">How to Link to a Specfic Part of a Page with Anchors</a></li>
             </ul>
         </div>
         <p>"Getting Started" is an optional (for us&mdash;it's required for students) <em>HTML page</em> at the beginning of each lab. "Take it Further" is a <em>page element</em> that we can (optionally) place at the end of each lab or wherever makes sense.</p>
@@ -142,7 +143,7 @@
         	(If we like the look, we can reintegrate them, but for now, let's change each one over to our own styles above. I asked, and these didn't have much specific meaning in previous BJC versions.)
         </p>
 
-        <h3><a name="picture"></a>How to Make a Picture of Blocks</h3>
+        <h3><a name="picture" class="anchor"></a>How to Make a Picture of Blocks</h3>
         <div>
         	<ol>
             	<li>Build the script you want in <span class="snap">snap</span></li>
@@ -153,11 +154,11 @@
             </ol>
         </div>
 
-        <h3><a name="animation"></a>How to Make an Animation</h3>
+        <h3><a name="animation" class="anchor"></a>How to Make an Animation</h3>
         <p>See <a href="https://www.youtube.com/watch?v=MD9wiyBlJ9Y" target="_blank">https://www.youtube.com/watch?v=MD9wiyBlJ9Y
 </a> (A higher version of Adobe looks to be required. Ask for support from Mary as needed.)</p>
 
-        <h3><a name="script"></a>How to Link to a Script</h3>
+        <h3><a name="script" class="anchor"></a>How to Link to a Script</h3>
         <div>
         	<ol>
             	<li>Build the script you want in <span class="snap">snap</span></li>
@@ -169,6 +170,29 @@
                 </li>
             </ol>
         </div>
+        
+        <h3><a name="anchors" class="anchor"></a>How to Link to a Specfic Part of a Page Using Anchors</h3>
+        <p>
+        	There are two parts of a link with an anchor (the link and the anchor):
+            <ol>
+                <li>
+                    First, place the <strong>anchor</strong> on the target page:
+                    <ul><li>
+                        &lt;a name="picture" class="anchor"&gt;&lt;/a&gt;</li>
+                        <li>Put it at the start of the content about "picture" that you want to reference. (Note: do not put any content inside the opening and closing HTML tags or else it will be underlined.)
+                    </li></ul>
+                </li>
+                <li>
+                    Then, create a link, just like usual except add a hashtag and the anchor name to the end of the <strong>link</strong>: 
+                    <ul><li>
+                        For example: &lt;a href="http://localhost/bjc-r/docs/style_guide.html#picture"&gt;This would link to the "How to Make a Picture of Blocks"&lt;/a&gt;, section above. <a href="http://localhost/bjc-r/docs/style_guide.html#picture">Try it!</a>
+                    </li></ul>
+                </li>
+            </ol>
+        </p>
+        <p>The #moveturn in the reference (a href) scrolls to that anchor (a name). (The anchor class is a workaround to scroll past the heading at the top of each lab page; it goes in the "a name" only; we hope to fix that one day.)</p>
+        <p>Dreamweaver will maintain these links over time if you move and rename files in DW. Otherwise if you move or rename a files (outside DW) you will have to fix all the links yourself.</p>
+
     </body>
 </html>
 
