@@ -21,7 +21,7 @@ title: Unit 7: Big Data//Map Reduce/Projects and AP Test
 //learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
 //learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
 
-
+	raw-html: <div class="todo"><ul><li>Quick Intro Video: <a href="http://www.businessinsider.com/mind-blowing-growth-and-power-of-big-data-2015-6" target="_blank">http://www.businessinsider.com/mind-blowing-growth-and-power-of-big-data-2015-6</a></li></ul></div>
 heading: Lab 1: Background: concurrency without the computer
 	resource: Card Sorting [/bjc-r/cur/programming/sorting/cards/card-sorting.html]
 	group: Card Sorting: Discussion [/bjc-r/cur/programming/sorting/cards/card-sorting-discuss.html]
