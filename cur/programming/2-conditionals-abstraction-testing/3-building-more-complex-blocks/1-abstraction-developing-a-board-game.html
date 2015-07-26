@@ -17,21 +17,19 @@
                 </li>
                 <li>Build the beginnings of a game. 
                 	<ol>
-                    	<li> Set your sprite to (-150, 150), clear the stage, and run 
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles">. </li>
-                        <li> Build a reporter <code>where?</code> that uses your <code>between?</code> block to report <strong>5</strong> if the sprite is dragged into the center cell and <strong>0</strong> if it is not in the center cell. </li>
-                        <li>Click on Make a variable and name it <code>which tile?</code>.
-                          <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Make-a-variable(tile).png" alt="Make a variable"></p>
-                          <p>That will automatically give you a watcher to display its value on the stage.</p>
-                         </li>
-                        <li> Build a block <code>display the tile</code> that uses <code>where?</code> to <code>set</code> the variable <code>which tile?</code>. Use <code>forever</code> to make it <em>keep</em> reporting (and setting <code>which tile?</code>) as you drag the sprite around the stage. 
-                        </li>
-                        <li> Extend <code>where?</code> to report <strong>0</strong> only if the sprite is dragged entirely off the game board. Run <code>display the tile</code> to test your improvements to <code>where?</code>. </li>
-                        <li> Now improve <code>where?</code> further, so that it reports 1 for the top left tile, 2 for the top middle tile, 3 for the top right tile, and so on. 
-                        </li>
+                    	<li> Create a <code>calculate tile size</code> block that figures out what <em>size</em> each tile must be to center an n-by-n board on the stage and make the entire n-by-n board fit well. Use that <code>calculate tile size</code> block in a <code>draw n-by-n board</code> block like this:
+                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p></li>
+                        <li> Build a reporter <code>on the board?</code> that uses your <code>between?</code> block to report <code>true</code> if the sprite is on the board, and reports <code>false</code> if the sprite is dragged completely off the board.</li>
+                        <li> Now build <code>which cell?</code> that tells which cell the sprite has been dragged into. <div class="sidenote">There are many ways to write <code>which row?</code> and <code>which column?</code> You can, of course, use lots of <code>if</code> statements, but since the number of rows can change, it's hard to know how many to use. One convenient way is to divide the total size of the game board by the size of each cell. To use that result, you need to round down. <img src="/bjc-r/img/blocks/round-a-number.png" alt="round a number"> can do it, but it rounds to the <em>nearest</em> integer, up <em>or</em> down. The function <img src="/bjc-r/img/blocks/floor of number.png" alt="floor of number"> always rounds <em>down</em>, making it easier to use. The <code>floor</code> function is in the same block as <code>sqrt</code>.</div>
+                          Here is one way to do it that uses two other blocks that specialize in reporting <code>which column?</code> and <code>which row?</code> the sprite is in.
+<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/which-cell(n) without computation.png" alt="partial script for &quot;which-cell?&quot; reporter"></p>
+                          <p>These blocks will, of course, need to know how many rows and columns there were, so they'll need the input <code>n</code>.</p></li>
+                        <li>Here's a block that you can use to test how well your other blocks work together.
+                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.png" alt="play on n-by-n board">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.gif" alt="animation of play"></p>
+                        <p>Try it out for boards of different sizes.</p></li>
                    </ol>
                </li>
-               <div class="takeNote">Notice that even though <code>display the tile</code> is the block that <em>says</em> what tile you are in, you don't have to change it at all when you improve <code>where?</code>. In a similar way, you can improve how <code>display the tile</code> displays the information without changing the details of <code>where?</code>. Building separate blocks to specialize in separate functions is extremely valuable for clear, bug-free, improvable code. </div>
+               
           </ol>
         </div>
     </body>
