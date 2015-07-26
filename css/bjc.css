@@ -31,20 +31,22 @@ li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
 li > ol {  list-style-type: lower-alpha;}
 
 /** Editor Notes **/
-.comment { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+.comment, .commentBig { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   /*display: none;*/
   font-size: .9em;
   float: right;
   margin-right: 20px;
   margin-left: 1em;
   margin-bottom: 20px;
-  width: 20%;
   padding: 10px;
   border: 10px solid red;
   /*background-color: #FF0000;*/
   clear:both;
 }
 
+.comment {  width: 20%; }
+
+.commentBig {  width: 40%; }
 
 code {
   /* color: #00FFFF; */
