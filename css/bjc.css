@@ -213,7 +213,7 @@ img.noshaddow {
   margin-right: auto;
  }
  
-.takeNote:before {content: "Take Note: ";}
+/* .takeNote:before {content: "Take Note: ";} */
 
 .apStandards {
   background-color: #fcc589;
