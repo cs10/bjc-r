@@ -107,8 +107,8 @@ heading: Investigations
 	raw-html: <div class="comment">MF: I commented out the "Some interesting problem" page because the link was to a template.</div>
 	//resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
 	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html]
-	raw-html: <div class="comment">MF: I commented out the Valid-Date? page because the link was dead.</div>
-	//resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-custom-blocks-make-code/valid-date.html]
+	//raw-html: <div class="comment">MF: I commented out the Valid-Date? page because the link was dead.</div>
+	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/valid-date.html]
 
 
 heading: Quarter 1 Project
