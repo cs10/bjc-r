@@ -2,42 +2,52 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 2 Week 5 Teaching Guide</title>
+		<title>Unit 2 Week 5 Teacher Guide</title>
 	</head>
 
 	<body>
         <h2>Programming Lab 1: Conditional Blocks</h2>
-        <p>In this lab, students focus attention on using <strong>conditionals</strong>—especially <code>if-else</code>, <code>if</code>, but also <code>repeat-until</code>—to control the behavior of their programs based on whatever conditions the students test for (using <strong>predicates</strong> like <code>&lt;</code> or <code>=</code>). Small projects focus on using multiple <code>if</code> statements to distinguish multiple conditions (e.g., recognizing &quot;red,&quot; &quot;yellow,&quot; and &quot;blue&quot; in the traffic signal task, and distinguishing various spellings of nouns in order to spell the plurals of those nouns. Distinguishing conditions and basing action on the distinction will remain central to all future programming.</p> 
-        
-
-        <h3>Prepare:</h3>
+        <p>Your ATM  is programmed to let you choose whether to deposit or withdraw. The program does that by writing those choices somewhere on its screen and then <em>testing</em> to determine the location you touch or the button you press. The action the program takes or the  choice it offers next is conditional; it depends on what input you've given it with your touch. Another part of the program may test the size of the withdrawal you type in, and indicate if that is too large, or not an amount it can give; or it may deliver that amount. Your smart phone's screen uses a similar method. It knows only where you touch, but because it also knows what word or picture it put in that location, it can &quot;know what you want&quot;&mdash;<code>if</code> you touch <em>here</em>, do one thing, <code>else</code> do something else. Distinguishing conditions and basing action on the distinction is central to all  programming. </p>
+        <p>In this lab, students focus attention on  <strong>conditionals</strong>—especially <code>if-else</code> and <code>if</code>, but also <code>repeat-until</code>—to control the behavior of their programs based on whatever conditions the students test for,  using <strong>predicates</strong> like <code>&lt;</code> or <code>=</code>. </p>
+<p>Small projects focus especially on using multiple <code>if</code> statements to distinguish multiple conditions. Students design a program that tests to see whether &quot;red,&quot; &quot;yellow,&quot; or &quot;green&quot; has been typed, and sets a traffic signal to that color;  they design another program to distinguish various spellings of nouns and then decide, based on the condition they find, how to spell the plurals of those nouns. The first programs students write test to see whether the <code>direction</code> or <code>y position</code> of the sprite meet certain conditions, and base actions on the results.</p>
+<p>This lab also begins to focus deep attention on <strong>abstraction</strong> through <strong>analyzing</strong> tasks to break them into subtasks and creating blocks that specialize in these subtasks, and on <strong>analyzing</strong> and <strong>debugging</strong> scripts. Analyzing an existing script is a particularly powerful way to learn to program similar behaviors. Debugging is an essential skill&mdash;especially as the programs one writes become more complex&mdash;but one that takes  time to acquire and hone because there is no single formula or subskill for doing it well.  In this lab, the debugging focus is on deliberately trying to &quot;break&quot; a program, searching for ways that a user's input (or some  situation that arises on the stage) can cause a program to fail, and accounting for those ways by testing for them and responding appropriately.</p>
+<h3>Prepare:</h3>
         <div>
             <ul>
-                <li></li>
+                <li>Review all lab activities. </li>
+                <li>Notice especially how the &quot;figure out how it works&quot; part of  problem 1 on the &quot;Getting Started&quot; page helps students do problems 2 and 3 on that page. It is probably not necessary to do anything formal with that &quot;figure out&quot; part&mdash;talking with the pair programmer is likely to be enough&mdash;but if you feel your students need  more structure, you might prepare a paper copy of the scripts for students to annotate, or some other way to make the results of problem 1 more tangible than discussion.</li>
+                <li>Prepare a Computing in the News item.</li>
             </ul>
-        </div>
+</div>
 
 
         <h3>Students will:</h3>
         <div class="sidenoteBig">
-        	<strong>Looking Ahead</strong>
-        	<ul>
-            	<li></li>
-            </ul>
+        	<strong>Looking Ahead</strong><p>
+        	Take-It-Further problems 5 and 6 on the last page of this lab—<em>Plurals, continued</em>—foreshadow recursion, an extremely powerful idea that students will study formally later. Students develop a block <code>plural</code> to spell the plural of an English noun, creating separate blocks for various special cases (nouns ending with s, x, h, y, and so on) and otherwise just appending <strong>s</strong>. Then they <em>fix</em> <code>plural</code> to handle a &quot;word ending with a space&quot; and use <code>plural</code>, itself, as the specialist to handle the word after that space has been removed. It may surprise them to see that this solution works even with &quot;words&quot; that end with more than one space. </p>
         </div>
         <div>
             <ul>
-                <li>...</li>
+                <li>Analyze <em>scripts</em> to understand how they work and to learn to use those methods for their own scripts.</li>
+                <li>Develop <strong>predicates</strong> to test for various <strong>conditions</strong> and use <strong>conditional blocks</strong> to control programs based on those conditions.</li>
+                <li>Analyze <em>tasks</em> to find subtasks that can be handled independently, develop blocks that specialize in each of the subtasks, and use conditionals to determine which of these specialist blocks to use.</li>
+                <li>Use <strong>abstraction</strong> to simplify and clarify code.</li>
+                <li><strong>Debug</strong> code by deliberately trying to find ways to &quot;break&quot; it.</li>
             </ul>
-        </div> 
+</div> 
               
         
         <h3>As a Class:</h3>
-        <div><ul><li>...</li></ul></div>
+        <div><ul>
+          <li>Except where you may choose to have a &quot;Computing in the News&quot; discussion or have students share techniques they used or particularly interesting results they got, this lab can productively be  all pair-programming work.</li></ul></div>
 
 
         <h3>Look For:</h3>
-        <div><ul><li>...</li></ul></div>
+        <div><ul>
+          <li>Always look for pairs in which students are not getting the help that they need from their partner.</li>
+          <li>Look for students who elaborate the tasks, or creatively produce new tasks or have other ideas worth sharing with the class.</li>
+        </ul>
+    </div>
 
             
         <!--<h3>Solutions</h3>
