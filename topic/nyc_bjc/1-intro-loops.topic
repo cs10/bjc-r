@@ -43,7 +43,7 @@ heading: Programming Lab 3: Building and Debugging Your Own Blocks
 heading: Programming Lab 4: Block Types and Calculations
 	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
 	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html]
-	resource: Operators  [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
+	resource: Computer Operations [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
 	quiz: Computing with Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-computing-variables.html]
 
  	raw-html: <hr />

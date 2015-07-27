@@ -7,26 +7,27 @@
 
 	<body>
         <h2>Programming Lab 3: Building and Debugging Your Own Blocks</h2>
-        <p>PURPOSE STATEMENT</p> 
-        
+        <p>Students learn to create custom blocks, custom blocks with custom varibles, and custom blocks within custom blocks. Nesting blocks within blocks continues to preview recursion (calling a procedure from within itself), which will be addressed in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>. Here, students continue to develop comfort with block-programming and the <span class="snap">snap</span> interface as they create their own blocks and identify categories and input variables for their new blocks.</p>
+        <p>Students also build on their skill with debugging considering, in particular, how a block that works well on it's own might cause problems when used within another block if it is assumed that the inner block returns the state of the system to where it started, but it does not. Whenever a program is not exhibiting the expected behavior, it's a good idea to not only consider that the bug may be in a sub-procedures of the script, but also in the way that the sub-procedures combine and relate to each other when embedded.</p>
+
 
         <h3>Pacing</h3>
         <p>
-        	The 5 lab pages could be split across two or three days. Expected times to complete follow: <ul>
-                <li>xx-xx minutes on </li>
-                <li>xx-xx minutes on </li>
-                <li>xx-xx minutes on </li>
-                <li>xx-xx minutes on </li>
-                <li>xx-xx minutes on </li>
+        	The 4 lab pages could be split across two days. Lab 4: Block Types and Calculations is expected to take longer. Expected times to complete Lab 3 follow: <ul>
+                <li>10-15 minutes on Designing Custom Blocks</li>
+                <li>10-15 minutes on Adding an Input</li>
+                <li>15-20 minutes on Building Blocks within Blocks</li>
+                <li>10-15 minutes on Debugging Blocks within Blocks</li>
             </ul>
         </p>
-
         
         <h3>Prepare:</h3>
+		<div class="todo">These are starting getting similar across weeks. Still helpful or training teachers not to read? -MF</div>
         <div>
             <ul>
-                <li></li>
-            </ul>
+                <li>Review the <a href="http://bjc.edc.org/bjc-r/topic/topic.html?topic=nyc_bjc/1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" target="_blank">Unit 1 Student Programming Lab 3</a>.</li>
+                <li>Prepare a <a href="/bjc-r/cur/teaching-guide/U1/general-support/computing-in-the-news.html" target="_blank">Computing in the News</a> story.</li>
+            	<li>Prepare several other <a href="/bjc-r/cur/teaching-guide/U1/general-support/openers.html" target="_blank">Openers</a>.</li>            </ul>
         </div>
 
 
@@ -34,26 +35,30 @@
         <div class="sidenoteBig">
         	<strong>Looking Ahead</strong>
         	<ul>
-            	<li></li>
+            	<li>Lab 3 continues to preview recusion.</li>
+                <li>Student will work more with custom variables in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 2 Lab 3: Developing more complex programs, Input Types</a>.</li>
             </ul>
         </div>
         <div>
             <ul>
-                <li>...</li>
+                <li>Create procedures with custom inputs, building on <a href="/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Lab 1</a> work with drawing a square.</li>
+                <li>Create procedures inside procedures, using <code>draw square</code> to draw the petals in <code>draw flowwer</code> and <code>draw flower</code> to draw a field of flowers.</li>
+                <li>Debug procedures inside procedures, consdering why a script to draw a row of squares by repeatedly calling a <code>draw square</code> block that does not return the sprite to the starting orientation.</li>
             </ul>
-        </div> 
+        </div>
               
-        
-        <h3>Getting Started:</h3>
-        <div><ul><li>...</li></ul></div>
-
 
         <h3>As a Class:</h3>
-        <div><ul><li>...</li></ul></div>
+		<div class="todo">These too are getting similar across weeks. Still helpful or no? -MF</div>
+        <div><ul>
+        	<li>Work through the <a href="/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" target="_blank">Lab 3: Building and Debugging Your Own Blocks</a> and the Week 1 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/Week01/activities.html" target="_blank">Activities</a> and <a href="http://localhost/bjc-r/cur/teaching-guide/U1/Week01/assignments.html" target="_blank">Assignments</a>.</li>        
+        </ul></div>
 
 
-        <h3>Look For:</h3>
-        <div><ul><li>...</li></ul></div>
+        <h3>Tips:</h3>
+        <div><ul>
+        	<li>On the <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html" target="_blank">Building Blocks within Blocks</a> student lab page, students are given a good bit of creative license to create an interesting sprit to draw a field of flowers. Encrouage students to get creative! If students need help focusing  their ideas, suggest they build up their project one step at a time: first building the <code>draw square</code> block, then the <code>draw flower</code> block (perhaps without inputs at first and adding inputs for number and size of petals depending on available time), and lastly creating a script that moves the sprite randomly around the stage and calls the <code>draw flower</code> block. Students might expand this project by changing the size or color of the pen from flower to flower or by changing the polygons used in the flowers from squares to triangles, etc.</li>
+        </ul></div>
 
             
         <!--<h3>Solutions</h3>
@@ -71,6 +76,6 @@
             </ul>
         </div>            
 
-
+</
 	</body>
 </html>
