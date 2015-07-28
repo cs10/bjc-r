@@ -42,6 +42,7 @@ li > ol {  list-style-type: lower-alpha;}
   border: 10px solid red;
   /*background-color: #FF0000;*/
   clear:both;
+  background-color: #FFF;
 }
 
 .comment {  width: 20%; }

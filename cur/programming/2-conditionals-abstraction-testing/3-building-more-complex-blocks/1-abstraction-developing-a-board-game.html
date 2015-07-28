@@ -6,7 +6,19 @@
     </head>
     <body>
 		<h2>Abstraction: developing a board game</h2>
-        
+        <div class="todo">
+            <ul>
+                <li>GitHub Feedback:
+                	<ul>
+                        <li>The 3 blocks should be shown with numeric inputs</li>
+                        <li>It's not clear what the inputs to each block should represent. Particularly, the size parameter really ought to be named. The big advantage of Snap! is that we can have a mix of inputs and the function name.</li>
+                        <li>I also really thing that this only needs to be 2 blocks: draw tile and draw board. There's not always a "right" level of abstraction, but usually it's perfectly fine to skip the row style functions when working with 2D type data.</li>
+                        <li>Additionally, if these blocks are actually drawing (i.e. include pen down) then they should be the pen color.
+</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
         <div class="forYouToDo" id="first"> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" /> 
             <ol>
                 <li>Build three blocks: <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile (with input)" title="tile (with input)" /> with an input for size, <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of tiles (with two inputs)" title="row of tiles (with two inputs)" /> with inputs for number and size of tiles, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles,size).png" alt="nxn-array-of-tiles(tiles,size)"> with inputs for number and size of tiles. That is, build a program that allows you to draw a square array of a specified number of square tiles of a specified by building the row and tile blocks first. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles"> draws this:
