@@ -110,10 +110,13 @@
                         <li>
                         	For example:
                             <ul>
-<div class="todo">I believe screen readers will correctly handle Unicode characters such as &#x21BB;  (or its Unicode equivalent  &amp;#x21BB;) so we can use that instead of "CW."</div>                                 <li><code>repeat (4) [move (50) steps, turn CW (90) degrees]</code></li>
-                                <li>the <code>move</code> block</li>
-                                <li>If absolutely necessary, use, e.g., "fill in the blank in <code>move () steps</code> below."
-<div class="todo">To be consistent, this should be <code>list (apple) (orange) (banana)</code>, and the <em>result</em> that it reports should be <code>(apple, orange, banana)</code> without the word "list."  Or maybe to avoid parentheses having two meanings we should denote the result as <code>{apple, orange, banana}</code>. <strong>Update from JK: I started using the {} notation in Unit 3.</strong></div>                                <li><code>list (apple, orange, banana)</code></li>
+								<div class="commentBig">I believe screen readers will correctly handle Unicode characters such as &#x21BB;  (or its Unicode equivalent  &amp;#x21BB;) so we can use that instead of "CW." -MF</div>                                 
+								<li><code>repeat (4) [move (50) steps, turn &#x21BB; (90) degrees]</code></li>
+                                <li>to reference a block: the <code>move</code> block</li>
+                                <li>If absolutely necessary, use, e.g., "fill in the blank in <code>move () steps</code> below."</li>
+                                <li>lists should be represented like this: <code>{apple, orange, banana}</code></li>
+								<div class="todo">From BH: "The first time we use [braces], we should emphasize that that
+isn't something you can type into Snap!.  And every so often (once per unit?) we should remind people by showing both the text and a picture."</div>
                             </ul>
                         </li>
                         <li>Do you have any examples that break or challenge this rule?</li>
