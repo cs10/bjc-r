@@ -12,26 +12,30 @@ title: Teaching Guide for Unit 3: Lists
 	raw-html: <h3>Highlighting Computational Thinking</h3> 
 	raw-html: <div class="comment">Weak.</div><p>Lists are an important representation of data, and thinking of lists as a single object (rather than a collection of objects) is a way students practice <strong>abstracting</strong>. Students continue to <strong>collaborate</strong> through pair programming.</p>
 
+heading: Week 9 (Programming Focus)
+	resource: Lab 1: Introduction to Lists [/bjc-r/cur/teaching-guide/U3/Week09/1-introduction-to-lists.html]
+	resource: Lab 2: List Operations [/bjc-r/cur/teaching-guide/U3/Week09/2-list-operations.html]
+	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U3/Week09/activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U3/Week09/assignments.html]
+
 heading: Week 10 (Programming Focus)
-	resource: Lab 1: Introduction to Lists [/bjc-r/cur/teaching-guide/U3/Week10/1-introduction-to-lists.html]
-	resource: Lab 2: List Operations [/bjc-r/cur/teaching-guide/U3/Week10/2-list-operations.html]
 	resource: Lab 3: Using Higher-Order Functions [/bjc-r/cur/teaching-guide/U3/Week10/3-using-higher-order-functions.html]
+	resource: Lab 4: Magic Squares [/bjc-r/cur/teaching-guide/U3/Week10/4-magic-squares.html]
 	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U3/Week10/activities.html]
 	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U3/Week10/assignments.html]
 
 heading: Week 11 (Programming Focus)
-	resource: Lab 4: Magic Squares [/bjc-r/cur/teaching-guide/U3/Week11/4-magic-squares.html]
 	resource: Lab 5: Data Part I [/bjc-r/cur/teaching-guide/U3/Week11/5-data-part-I.html]
 	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U3/Week11/activities.html]
 	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U3/Week11/assignments.html]
-	
+
 heading: Week 12 (Social Implications Focus)
-	resource: Lab 6: Encryption and Security [/bjc-r/cur/teaching-guide/U3/Week12/6-encryption-security.html] 
+	resource: Lab 5: Search and How the Internet Works [/bjc-r/cur/teaching-guide/U2/Week12/5-search-how-internet-works.html]
 	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U3/Week12/activities.html]
 	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U3/Week12/assignments.html] 
 	
 heading: Week 13 (Social Implications Focus)
-	resource: Lab 7: Copyright, Media and Sharing, Patents [/bjc-r/cur/teaching-guide/U3/Week13/7-copyright-media-sharing-patents.html]
+	resource: Lab 6: Encryption and Security [/bjc-r/cur/teaching-guide/U3/Week13/6-encryption-security.html] 
 	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U3/Week13/activities.html]
 	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U3/Week13/assignments.html]
 	
