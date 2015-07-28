@@ -61,23 +61,23 @@ heading: Programming Lab 5: Data Part I
 	 resource: Spam and Ham: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/4-predict-by-number-of-words.html]
 	 resource: Spam and Ham: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/5-further-work.html]
 
-heading: Social Implications Lab 6: Encryption and Security, Blown to Bits Chapter 5
-	 resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/big-questions.html]
-//	 resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/encryption.html]
-//	 resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/security.html]
-//	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/public-key.html]
-//	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/btb-chapter5.html]
+ 	raw-html: <hr />
 
-heading: Social Implications Lab 7: Copyright, Media and Sharing, Patents, Blown to Bits Chapter 6
-	 resource:Getting Started [/bjc-r/cur/programming/3-lists/7-copyright/0-gs.html]
-	 resource: Stroke of Genius? [/bjc-r/cur/programming/3-lists/7-copyright/1-gray.html]
-	 resource: How Inventions Happen [/bjc-r/cur/programming/3-lists/7-copyright/2-invent.html]
-//	 resource: Big Questions [/bjc-r/cur/programming/1-introduction/6-copyright/big-questions.html]
-//	 resource: Big Questions [/bjc-r/cur/programming/3-lists/7-copyright/big-questions.html]
-//	 resource: Copyright [/bjc-r/cur/programming/3-lists/7-copyright/copyright.html]
-//	 resource: Media [/bjc-r/cur/programming/3-lists/7-copyright/media.html]
-//	 resource: Patents [/bjc-r/cur/programming/3-lists/7-copyright/patents.html]
-//	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/3-lists/7-copyright/btb-chapter6.html]
+heading: Social Implications Lab 6: Search and How the Internet Works
+	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions.html]
+ 	resource: Old Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions-old.html]
+	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/6-search-internet/btb-chapter4.html]
+	resource: Search [/bjc-r/cur/programming/3-lists/6-search-internet/search.html]
+	resource: Internet [/bjc-r/cur/programming/3-lists/6-search-internet/internet.html]
+
+heading: Social Implications Lab 7: Encryption and Security
+	 resource: Big Questions [/bjc-r/cur/programming/3-lists/7-encryption/big-questions.html]
+	 resource: Encryption [/bjc-r/cur/programming/3-lists/7-encryption/encryption.html]
+	 resource: Security [/bjc-r/cur/programming/3-lists/7-encryption/security.html]
+	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/7-encryption/public-key.html]
+	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/7-encryption/btb-chapter5.html]
+
+ 	raw-html: <hr />
 
 	 
 heading: Investigations

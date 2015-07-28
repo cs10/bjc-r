@@ -88,18 +88,17 @@ heading: Programming Lab 3: Developing more complex programs
 
  	raw-html: <hr />
 
-heading: Social Implications Lab 4: Bits and Information
-	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/big-questions.html]
-//	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/innovations.html]
-//	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/6-bits-information/btb-chapter3.html]
+heading: Social Implications Lab 4: Privacy; Community and Online Interactions
+	resource: What kinds of digital information is out there about you? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-privacy/kinds-of-digital-information.html]
+	resource: What are different ways our privacy is affected by computers? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-privacy/privacy-affected.html]
+	resource: What are some different ways we communicate?  [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-privacy/ways-we-communicate.html]
+	resource: What is cyberbullying? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-privacy/cyberbullying.html]
 
+heading: Social Implications Lab 5: Bits and Information
+	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/big-questions.html]
+//	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/innovations.html]
+//	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/btb-chapter3.html]
 
-heading: Social Implications Lab 5: Search and How the Internet Works
-//	resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/big-questions.html]
- 	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-and-data/big-questions.html]
-//	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/btb-chapter4.html]
-//	resource: Search [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/search.html]
-//	resource: Internet [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-search-internet/internet.html]
 
  	raw-html: <hr />
 
