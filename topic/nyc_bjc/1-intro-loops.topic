@@ -49,6 +49,7 @@ heading: Programming Lab 4: Block Types and Calculations
  	raw-html: <hr />
 	
 heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
+	resource: Getting Started [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/getting-started.html]
 	resource: What are some social implications of computing? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/what-are-some-social-implications.html]
 	resource: What does Tanya Rider's story have to do with the explosion of bits? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/tanya-rider.html]
 	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
