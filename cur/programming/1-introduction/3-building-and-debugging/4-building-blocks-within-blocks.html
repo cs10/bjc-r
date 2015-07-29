@@ -9,15 +9,15 @@
         <div class="todo">
             <ul>
                 <li>GitHub comment: In the "For You To Do" section it is unclear how one needs to incorportate the [draw square_] block into the [draw square-petal flower with_ petals of size_]. The image above this section I have drawn using [repeat 6] [turn 60 degrees] +[draw square] but it is unclear on how to create the new block that accepts inputs for the # of petals and the size of petals.</li>
+                <li>GH: the blocks should have numeric input as an example</li>
             </ul>
         </div>
-        <p>You can treat your custom-made blocks like any other block in snap, including using them within other blocks you define. You may have already done that at least once if you wrote <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/1-custom-blocks.html#further">the <code>house</code> block</a>. </p>
+        <p>You can treat your custom-made blocks like any other block in snap, including using them within other blocks you define. You may have already done that at least once if you wrote <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/1-custom-blocks.html#further" target="_blank">the <code>house</code> block</a>. </p>
         <div class="takeNote">The best way to solve bigger programming tasks is often to write simpler blocks that are used within slightly more complicated blocks, which are in turn used in even more complicated blocks, and so on. When you build blocks made of other blocks you've built, this is called <strong>composition</strong> of blocks.</div>
         
 		<div class="forYouToDo" id="first">
 	        <img class="imageRight" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals">
             <ol>
-                <div class="todo">These next bits added from "draw-a-flower.html"</div>
         		<!--<li>
                 	<p>Write a block that draws a full flower in the middle of the stage.</p>
        			 	<p><img class="inline" src="/bjc-r/img/drawing/draw-a-flower.png" alt="draw a flower block" 	title="draw a flower block" />...</p>
@@ -32,9 +32,8 @@
                     </p>
                     <p>Use several inputs that control aspects of what the flower should look like.  You might change the number of petals...</p>
                 </li>-->
-                <li>Use <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html">the <img class="block" src="/bjc-r/img/blocks/draw-square-empty-parameter.png"> block</a> to create a block <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-empty-parameters.png" alt="360 divided by the number of petals"> that will draw a  flower with square petals, like the one shown here, but with any specified number of square-shaped petals of the specified size.  Calling <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-6-50-parameters.png" alt="block: draw a flower with 6 petals of size 50"> should draw the example picture above.</li>
-				<div class="endnote">After you've worked on this for a bit, take a moment to look at what others have done and chat.  If you see something you like, spend some time trying to incorporate that design into your program.</div>
-                <div class="todo">From: <a href="http://localhost/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html" target="_blank">http://localhost/bjc-r/cur/programming/1-introduction/4-types-of-blocks/1-commands-and-reporters.html</a></div>
+                <li>Use <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html#drawsquare" target="_blank">the <img class="block" src="/bjc-r/img/blocks/draw-square-empty-parameter.png"> block</a> to create a block <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-empty-parameters.png" alt="360 divided by the number of petals"> that will draw a  flower with square petals, like the one shown here, but with any specified number of square-shaped petals of the specified size.  Calling <img class="block" src="/bjc-r/img/1-introduction/draw-square-petal-flower-6-50-parameters.png" alt="block: draw a flower with 6 petals of size 50"> should draw the example picture shown here.</li>
+				<div class="endnote"><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair-mini.png" alt="Talk with Another Pair" title="Talk with Another Pair" />After you've worked on this for a bit, take a moment to look at what others have done and chat.  If you see something you like, spend some time trying to incorporate that design into your program.</div>
         
 		<!--from draw-a-field-of-flowers.html-->
             	<li>
@@ -45,9 +44,11 @@
                             <li>Use <img class="inline" src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random block"> as much as you can to make the flowers interesting and different.</li>
                         </ol>
                     </p>
-                    <p>Here is a custom block (from someone who went wild with inputs) to give you some ideas:</p>
-					<img class="indent" src="/bjc-r/img/drawing/crazy-draw-flower-block.png" alt="crazy complicated draw flower block with tons of inputs">
-                    <div class="endnote">You could also use <a class="run" href="/bjc-r/prog/drawing/draw-field-of-flowers-with-backgrounds.xml">this starter project</a>, which contains a few fun backgrounds.  To use them, click on the "Stage" sprite at the lower right of the <span class="snap">snap</span> window, select the "Costumes" tab at the top of the scripting area, and select the background that you want for your program.</div>
+					<div class="endnote">
+	                    <p>Here is a custom block (from someone who went wild with inputs) to give you some ideas:</p>
+                        <img class="indent" src="/bjc-r/img/drawing/crazy-draw-flower-block.png" alt="crazy complicated draw flower block with tons of inputs"><br />
+                        You could also use <a class="run" href="/bjc-r/prog/drawing/draw-field-of-flowers-with-backgrounds.xml">this starter project</a>, which contains a few fun backgrounds.  To use them, click on the "Stage" sprite at the lower right of the <span class="snap">snap</span> window, select the "Costumes" tab at the top of the scripting area, and select the background that you want for your program.
+                    </div>
                 </li>
             </ol>
         </div>     
