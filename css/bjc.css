@@ -254,6 +254,11 @@ div.newProject span.text {
   color: #333;
 }
 
+/* Making Snap lowercase. */
+.snap {
+  font-variant: normal;
+}
+
 /* Other Random Things added by Mary NEEDS ATTENTION*/
 
 .block {height: 2em;}
@@ -263,3 +268,5 @@ div.newProject span.text {
 .script {height: 18%;}
 
 .button {height: 1.6em;}
+
+
