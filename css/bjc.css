@@ -43,6 +43,7 @@ li > ol {  list-style-type: lower-alpha;}
   /*background-color: #FF0000;*/
   clear:both;
   background-color: #FFF;
+  text-indent: 0em;
 }
 
 .comment {  width: 20%; }
@@ -89,6 +90,7 @@ code {
   padding: 10px;
   background-color: #FFF8AD; /* #F3F0B3; */
   clear:both;
+  text-indent: 0em;
 }
 
 .sidenoteBig { /* added by Mary Fries on 5/19/15 based on above */
@@ -101,6 +103,7 @@ code {
   padding: 10px;
   background-color: #FFF8AD;
   clear:both;
+  text-indent: 0em;
 }
 
 .endnote { /* added by Mary Fries on 6/9/15 based on above */
@@ -123,6 +126,7 @@ code {
   padding: 10px;
   background-color: #FEC46C; /* #F3F0B3; */
   clear:both;
+  text-indent: 0em;
 }
 
 .sideHOMbig { /* added by Mary Fries on 7/17/15 based on .sideHOM */
@@ -135,6 +139,7 @@ code {
   padding: 10px;
   background-color: #FEC46C; /* #F3F0B3; */
   clear:both;
+  text-indent: 0em;
 }
 
 .manual { /* added by Mary Fries on 6/25/15 based on .sidenote */
