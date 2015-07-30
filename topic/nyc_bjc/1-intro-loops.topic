@@ -37,7 +37,7 @@ heading: Programming Lab 3: Building and Debugging Your Own Blocks
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html]
 	//quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/3-debugging-custom-blocks.html]
-	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
+	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
 	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/5-debugging-blocks-within-blocks.html]
 		
 heading: Programming Lab 4: Block Types and Calculations
