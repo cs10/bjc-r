@@ -23,11 +23,11 @@
 <div class="dialogue">
   <div><span>Alphie:</span> <code>Map</code> applies some function to each item of a list.</div>
   <div><span>Betty:</span> <code>Keep</code> lets you choose some items and not others.</div>
-  <div><span>Alphie:</span> And <code>combine with</code> takes two items at a time and combines all the items into a single output.</div>
+  <div><span>Alphie:</span> And <code>combine with</code> takes an operation like <code>+</code>and a list.  It combines all the items of the list into a single output using the operation.</div>
   <div><span>Betty:</span> Can you think of a situation where we would use all three of the functions together?</div>
       <div class="stagedir">They pause to think.</div>
-  <div><span>Alphie:</span> This is kind of a boring example, but I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
-  <div><span>Betty:</span> Let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
+  <div><span>Alphie:</span> I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
+  <div><span>Betty:</span> This is like doing sit-ups.  OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
       <div class="stagedir"><img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
   <div><span>Alphie:</span> Then we add 10 to every item, so use <code>map</code>... The list we're mapping over is everything we kept, so let's just drag everything in the the <code>keep</code> block in there.</div>
   	  <div class="stagedir"><img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
@@ -38,6 +38,9 @@
 
 <div class="forYouToDo" id="first">
 <ol>
+<li> Try Alphie and Betty's invention with a list of your own.  Vary the operations, too. </li>
+
+
 	<li>Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
     <ol>
     	<li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
