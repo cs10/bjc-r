@@ -61,6 +61,10 @@ code {
   color: #606;
 }*/
 
+.classIndent {
+  margin-left: 2em;
+}
+
 .todo {
   /*display: none;*/
   font-size: .9em;
