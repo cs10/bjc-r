@@ -237,7 +237,7 @@ llab.addFrame = function() {
 
     var conent = $(document.createElement('div'));
     conent.append(
-        '<a href=' + source + ' target="_blank">Open page in new window</a><br>');
+        '<a href=' + source + ' target="_blank">Open page in new window</a><br />');
     conent.append(frame);
 
 	$(FULL).append(conent);

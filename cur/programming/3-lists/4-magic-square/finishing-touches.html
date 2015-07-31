@@ -1,45 +1,41 @@
-<!DOCTYPE html><html>
-
-
-   <head>
-      
-      <script src="/bjc-r/llab/loader.js"></script>
-      
-      <title>Lab 4: Magic Square</title>
-      
-   </head> 
-
-
-   <body>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 4: Magic Square</title>
+    </head> 
+    
+    <body>
+    	<h2>Finishing Touches</h2>
+        <div class="todo">
+            <ul>
+                <li>BH: #4 is way underspecified.  As an earlier example pointed out, they could just make a list of nine copies 1/3 of the target sum.  Is that an okay solution?  Or are the numbers supposed to be all different?  Etc.</li>
+                <li>JK response: Didn't address this comment yet. First of all, I think the student can probably decide how complicated to make it - sure, they could make a square with all of the same number, but that's not terribly challenging (unless they're actually playing with how best to display it on the screen or something, which could be where they choose to go with this). Also, there are lots of really involved problems in this take it further... I kept it as Bowen wrote it for now, but perhaps some of these problems belong elsewhere?</li>
+            </ul>
+        </div>
    
-   <h2>Finishing Touches</h2>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Make the <code>Is a magic square?</code> block.<br />
+                <div class="sidenote"> There is more than one good way to write this code.  After you've written <code>Is a magic square?</code> , see if anyone in the class has a method different from yours.</div>        
+                <img border="0" src="/bjc-r/img/3-lists/magic_predicate.png" alt="green predicate: Is (square) a magic square?" title="green predicate: Is (square) a magic square?" /><br />Here are some magic squares to test (from Getting Started):<br />
+                <img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is80_10_60magic.png" alt="is 80,10,60,30,50,70,40,90,20 a magic square?" title="is 80,10,60,30,50,70,40,90,20 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is17_16_21magic.png" alt="is 17,16,21,22,18,14,15,20,19 a magic square?" title="is 17,16,21,22,18,14,15,20,19 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is10_10_10magic.png" alt="is 10,10,10,10,10,10,10,10,10 a magic square?" title="is 10,10,10,10,10,10,10,10,10 a magic square?" /></li>
+            </ol>
+        </div>
    
-   <div class="todo">
-   	<ul>
-    	<li>BH: #4 is way underspecified.  As an earlier example pointed out, they could just make a list of nine copies 1/3 of the target sum.  Is that an okay solution?  Or are the numbers supposed to be all different?  Etc.</li>
-        <li>JK response: Didn't address this comment yet. First of all, I think the student can probably decide how complicated to make it - sure, they could make a square with all of the same number, but that's not terribly challenging (unless they're actually playing with how best to display it on the screen or something, which could be where they choose to go with this). Also, there are lots of really involved problems in this take it further... I kept it as Bowen wrote it for now, but perhaps some of these problems belong elsewhere?</li>
-    </ul>
-   </div>
-   
-   <div class="forYouToDo" id="first">
-   	<ol>
-    	<li>Make the <code>Is a magic square?</code> block.
-        <div class="sidenote"> There is more than one good way to write this code.  After you've written <code>Is a magic square?</code> , see if anyone in the class has a method different from yours.</div>        
-        
-        
-        <br><img border="0" src="/bjc-r/img/3-lists/magic_predicate.png" alt="green predicate: Is (square) a magic square?" title="green predicate: Is (square) a magic square?" /><br>Here are some magic squares to test (from Getting Started):<br><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br><img src="/bjc-r/img/3-lists/is80_10_60magic.png" alt="is 80,10,60,30,50,70,40,90,20 a magic square?" title="is 80,10,60,30,50,70,40,90,20 a magic square?" /><br><img src="/bjc-r/img/3-lists/is17_16_21magic.png" alt="is 17,16,21,22,18,14,15,20,19 a magic square?" title="is 17,16,21,22,18,14,15,20,19 a magic square?" /><br><img src="/bjc-r/img/3-lists/is10_10_10magic.png" alt="is 10,10,10,10,10,10,10,10,10 a magic square?" title="is 10,10,10,10,10,10,10,10,10 a magic square?" /></li>
-    </ol>
-   </div>
-   
-   <div class="takeItFurther">
-   	<ol start="2">
-    	<li>Build a magic square checker for 2-by-2 squares.</li>
-        <li> ... for 4-by-4 squares. </li>
-  		<li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> ... for <em>n</em>-by-<em>n</em> squares.</li>
- 		<li> Build a magic-square <em>generator</em> given a target sum as input.</li>
-  		<li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> Find a 3-by-3 magic square made up entirely of prime numbers.</li>
-    </ol>
-   </div>
+        <div class="takeItFurther">
+            <ol start="2">
+                <li>Build a magic square checker for 2-by-2 squares.</li>
+                <li> ... for 4-by-4 squares. </li>
+                <li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> ... for <em>n</em>-by-<em>n</em> squares.</li>
+                <li> Build a magic-square <em>generator</em> given a target sum as input.</li>
+                <li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> Find a 3-by-3 magic square made up entirely of prime numbers.</li>
+            </ol>
+        </div>
 
 <!--  <p>Here's one way to build the <code>all-triples</code> reporter, using the <code>lookup</code> block created previously:</p>
 
@@ -70,4 +66,5 @@
   <li> <b>Take It Further</b> Find a 3-by-3 magic square made up entirely of prime numbers.</li>
 </ol>-->
 
-</body></html>
+	</body>
+</html>

@@ -1,53 +1,43 @@
-<!DOCTYPE html><html>
-
-
+<!DOCTYPE html>
+<html>
    <head>
-      
-      <script src="/bjc-r/llab/loader.js"></script>
-      
-      <title>Lab 4: Magic Squares</title>
-      
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Lab 4: Magic Squares</title>
    </head> 
 
-
    <body>
-   
-   <h2>Triples</h2>
-   
-   <p>There are several possible algorithms for checking to see if a list forms a magic square. Though the details might be different, your algorithm probably involved identifying three numbers at a time and adding them. Call these sets of three numbers "triples".</p>
-   
-   <div class="forYouToDo" id="first">
-   <img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
-   <ol>
-   		<li>Write a block that finds the sum of the middle row of <img src="/bjc-r/img/3-lists/square_12_13_14.png" alt="{12, 13, 14, 10, 18, 11, 17, 15, 16}" title="{12, 13, 14, 10, 18, 11, 17, 15, 16}" /></li>
-                
- <!---       <li>If you didn't already, write the block that finds the sum of middle row using a block you previously made back in Lab 2: <code>lookup items () from ()</code>. Look <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noreading&noassignment" target="_blank">back at the problem</a> for instructions on importing the block to use for this project.</li>--->
- 
-<div class="sidenote"> The block <code>lookup items () from ()</code> from the <strong>Getting Started</strong> for this lab might be useful here.    </div>
-  
-<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+		<h2>Triples</h2>
        
-        <li>Write a block that compares the sum of the middle row and the sum of the right column. Are they equal?</li>
+		<p>There are several possible algorithms for checking to see if a list forms a magic square. Though the details might be different, your algorithm probably involved identifying three numbers at a time and adding them. Call these sets of three numbers "triples".</p>
+       
+		<div class="forYouToDo" id="first">
+        	<img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
+            <ol>
+				<li>Write a block that finds the sum of the middle row of <img src="/bjc-r/img/3-lists/square_12_13_14.png" alt="{12, 13, 14, 10, 18, 11, 17, 15, 16}" title="{12, 13, 14, 10, 18, 11, 17, 15, 16}" /></li>
+         <!---       <li>If you didn't already, write the block that finds the sum of middle row using a block you previously made back in Lab 2: <code>lookup items () from ()</code>. Look <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noreading&noassignment" target="_blank">back at the problem</a> for instructions on importing the block to use for this project.</li>--->
+				<div class="sidenote"> The block <code>lookup items () from ()</code> from the <strong>Getting Started</strong> for this lab might be useful here.    </div>
+				<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                <li>Write a block that compares the sum of the middle row and the sum of the right column. Are they equal?</li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you might write a program that compares all of the sums necessary for checking a magic square.</li>
+            </ol>
+        </div>
+    
+    <!--  <p>Each row, column, and diagonal of the magic square must be explicitly specified in the program, because it has no other way of knowing what to do. We'll call each row, column, and diagonal a<em> triple. </em>The program needs a list of all eight triples. Each triple is a short list, and the set of all eight triples is a list of lists.</p> Since this information never changes, it's a good idea to store it in a single global variable:
+      <blockquote>
+        <p><img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
+      </blockquote>
+      <p>The list of triples can be used to pull the right information out of a list of 9 numbers. But how? There is more than one way. Start by recalling how you could pull a single piece of information out of a list.</p>
+    
+    <ol>
+      <li> Given a list of 9 numbers, how can you report only the 4th number? </li>
+      <li> Given a list of 9 numbers, how can you report only the 4th <i>and</i> 5th numbers?</li>
+      <li> Given <code>square</code> with 9 numbers and <code>locations</code> with 3 numbers, write a reporter <code>lookup</code> that returns a new list of the numbers in <code>square</code> at the positions given in <code>locations</code>.</li>
+    
+    <p><img src="/bjc-r/img/3-lists/triple_report.png" alt="pulling a triple"><img src="/bjc-r/img/3-lists/triple_report_2.png" alt="saying the right triple"></p>
+    </ol> 
+    
+    The last problem above is more complicated, but can be done in one line using one of the higher-order list functions you've been working with.-->
 
-        <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you might write a program that compares all of the sums necessary for checking a magic square.</li>
-        
-    </ol>
-    </div>
-
-<!--  <p>Each row, column, and diagonal of the magic square must be explicitly specified in the program, because it has no other way of knowing what to do. We'll call each row, column, and diagonal a<em> triple. </em>The program needs a list of all eight triples. Each triple is a short list, and the set of all eight triples is a list of lists.</p> Since this information never changes, it's a good idea to store it in a single global variable:
-  <blockquote>
-    <p><img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
-  </blockquote>
-  <p>The list of triples can be used to pull the right information out of a list of 9 numbers. But how? There is more than one way. Start by recalling how you could pull a single piece of information out of a list.</p>
-
-<ol>
-  <li> Given a list of 9 numbers, how can you report only the 4th number? </li>
-  <li> Given a list of 9 numbers, how can you report only the 4th <i>and</i> 5th numbers?</li>
-  <li> Given <code>square</code> with 9 numbers and <code>locations</code> with 3 numbers, write a reporter <code>lookup</code> that returns a new list of the numbers in <code>square</code> at the positions given in <code>locations</code>.</li>
-
-<p><img src="/bjc-r/img/3-lists/triple_report.png" alt="pulling a triple"><img src="/bjc-r/img/3-lists/triple_report_2.png" alt="saying the right triple"></p>
-</ol> 
-
-The last problem above is more complicated, but can be done in one line using one of the higher-order list functions you've been working with.-->
-
-</body></html>
+	</body>
+</html>

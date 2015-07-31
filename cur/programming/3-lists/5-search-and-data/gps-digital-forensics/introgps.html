@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html;
-        charset=ISO-8859-1">
-        <!-- put the following in exactly -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 5: Search and Data Part I</title>
     </head>
-    <body>
     
+    <body>
     	<h2>GPS Data</h2>
         <p>A computer forensic specialist who works for a law enforcement agency might analyze GPS (global positioning system) data.</p>
 
         <p>You have a set of GPS coordinates from a device the suspect used to communicate during the time of the crime. Use them to reconstruct the movements of the perpetrator.</p>
 
-        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br> DDD.DDDDD&deg; (latitude), DDD.DDDDD&deg; (longitude)<br> If you search for "37.873808, -122.254173" in <a href="https://www.google.com/maps/place/37%C2%B052'25.7%22N+122%C2%B015'15.0%22W/@37.873808,-122.254173,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0m" target="_blank">Google Maps</a>, you can see the corresponding location, near the Greek Theater on the campus of U.C. Berkeley.</div>
+        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br /> DDD.DDDDD&deg; (latitude), DDD.DDDDD&deg; (longitude)<br /> If you search for "37.873808, -122.254173" in <a href="https://www.google.com/maps/place/37%C2%B052'25.7%22N+122%C2%B015'15.0%22W/@37.873808,-122.254173,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0m" target="_blank">Google Maps</a>, you can see the corresponding location, near the Greek Theater on the campus of U.C. Berkeley.</div>
 
         <p>Here are the coordinates:</p>
         <table id="tableBlue">
@@ -73,14 +71,14 @@
     
     <h3>Making the data useful</h3>
     
-    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br>
-    <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br>
+    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br />
+    <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br />
     When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.</p>
     
     <div class="forYouToDo" id="first">
     <ol>
-    	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br>
-        When you run your script, you should see this:<br><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
+    	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br />
+        When you run your script, you should see this:<br /><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
     </ol>
     </div>
     
@@ -94,9 +92,9 @@
       <li>Every <em>x</em>-coordinate starts with "37.86" and every <em>y</em>-coordinate begins with "-122.27". This information is not helping us tell the points apart. Subtract 37.86 from every <em>x</em>-coordinate and subtract -122.27 from every <em>y</em>-coordinate, <strong>using a higher-order function</strong>.</li>
       <li>Now the first <em>x</em>-coordinate is 0.009050. There are many choices we could make to turn this into a "nicer" number. One choice is to multiply every <em>x</em>- and <em>y</em>-coordinate by 1000000 (that's one million). Adjust your higher-order function to do this calculation as well.</li>
       
-      <div class="sidenoteBig">Making <span class="snap">snap</span> do the work is better, because then the program can be used on <em>any</em> set of GPS points in this area, and not just these. That's abstraction.</div>
+      <div class="sidenoteBig">Making Snap<em>!</em> do the work is better, because then the program can be used on <em>any</em> set of GPS points in this area, and not just these. That's abstraction.</div>
       <div class="sidenoteBig">Recall that you made a block called <code>average</code> in <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/combine.html">Lab 2 ("Combine with")</a>.</div>
-      <li>Now the first <em>x</em>-coordinate is 9050, which we still can't see on the grid. Let's center the coordinates around the <em>average</em> <em>x</em>- and <em>y</em>-coordinate. Subtract the average of all the <em>x</em> values from each of the <em>x</em>-coordinates, and subtract the average <em>y</em> values from each of the <em>y</em>-coordinates. You can find the  average on a calculator, <strong>or even better</strong>, make <span class="snap">snap</span> do the work.</li>
+      <li>Now the first <em>x</em>-coordinate is 9050, which we still can't see on the grid. Let's center the coordinates around the <em>average</em> <em>x</em>- and <em>y</em>-coordinate. Subtract the average of all the <em>x</em> values from each of the <em>x</em>-coordinates, and subtract the average <em>y</em> values from each of the <em>y</em>-coordinates. You can find the  average on a calculator, <strong>or even better</strong>, make Snap<em>!</em> do the work.</li>
       <li>Once you have these transformed coordinates, use your script from problem 1 to graph the points.</li>
     </ol>
     </div>
