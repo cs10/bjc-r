@@ -1,22 +1,24 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <script src="/bjc-r/llab/loader.js"></script>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
 		<title>Investgations</title>
 	</head>
 
 	<body>
     	<h2>Display Word</h2>
+        <p>
+            Imagine that you're writing a program to play Hangman. The program has thought of a secret word, and the user is trying to guess it. Write a <code>display word</code> block that takes two inputs, the secret word and a list of the letters guessed by the user so far. It should report the letters of the secret word, spaced out, with underscore characters replacing the letters not yet guessed:<br />
+            <img border="0" src="/bjc-r/img/list/display-word-list.png" alt="display word (potsticker) (e,t,a) -&gt; _ _ t _ t _ _ _ e _" title="display word (potsticker) (e,t,a) -&gt; _ _ t _ t _ _ _ e _">
+        </p>
+        <p>(Use the <code>word &rarr; list</code> block or the <code>split</code> block on the secret word to get started.) </p>
+        <p>
+            In your own program, you would likely use this block within a <code>say</code> block, like this:<br />
+            <img src="/bjc-r/img/list/display-word-in-say.png" alt="display word inside a say block" border="0" />
+        </p>
+        <p>Consider why it's best to make the block a reporter, rather than directly <code>say</code>ing the result. </p>
         
-        Imagine that you're writing a program to play Hangman. The program has thought of a secret word, and the user is trying to guess it. Write a <code>display word</code> block that takes two inputs, the secret word and a list of the letters guessed by the user so far. It should report the letters of the secret word, spaced out, with underscore characters replacing the letters not yet guessed:
-      <br >
-      <img border="0" src="/bjc-r/img/list/display-word-list.png" alt="display word (potsticker) (e,t,a) -&gt; _ _ t _ t _ _ _ e _" title="display word (potsticker) (e,t,a) -&gt; _ _ t _ t _ _ _ e _">
-      <br />
-      (Use the <code>word -> list</code> block or the <code>split</code> block on the secret word to get started.) 
-      <br /> 
-      In your own program, you would likely use this block within a <code>say</code> block, like this:
-      <br />
-      <img src="/bjc-r/img/list/display-word-in-say.png" alt="display word inside a say block" border="0" />
-      <br /> 
-      Consider why it's best to make the block a reporter, rather than directly <code>say</code>ing the result. 
+        
 	</body>
 </html>
