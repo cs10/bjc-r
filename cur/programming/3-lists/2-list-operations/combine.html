@@ -1,18 +1,13 @@
+<!DOCTYPE html>
 <html>
-
-
-   <head>
-      
-      <script src="/bjc-r/llab/loader.js"></script>
-      
-      <title>Lab 2: List Operations</title>
-      
-   </head>   
-      
-
-   <body>
-
-<h2>Combine With</h2>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 2: List Operations</title>
+    </head>   
+    
+    <body>
+	    <h2>Combine With</h2>
 
 <!---<div class="todo">
 	<ul>
@@ -21,108 +16,71 @@
     </ul>
 </div>--->
 
-<div class="forYouToDo" id="first">
-<ol>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <div class="sidenote">Even if there are two blanks in <code>map</code>, there's still only <em>one</em> input</div>
+                <li>Try this  experiment. Make <img border="0" src="/bjc-r/img/3-lists/map_add_1234.png" alt="map addition over (1,2,3,4)" title="map addition over (1,2,3,4)" /> and <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank addition spaces for <code>map</code>? What seems to be going in the blanks for <code>combine with</code>? </li>
+                <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
+                <li>Make a block <img border="0" src="/bjc-r/img/3-lists/max_of.png" alt="max of () and ()" title="max of () and ()" /> that returns the larger of two inputs. </li>
+                <li>Make <img border="0" src="/bjc-r/img/3-lists/maxpict.png" alt="map max over list 1 4 9 5 " title="map max over list 1 4 9 5" /> and <img border="0" src="/bjc-r/img/3-lists/maxpict1.png" alt="combine with max (1,4,9,5)" title="combine with max (1,4,9,5)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank  spaces for <code>max</code>? What seems to be going in the blanks for <code>combine with</code>? </li>
+            </ol>
+        </div>
 
-	<div class="sidenote">Even if there are two blanks in <code>map</code>, there's still only <em>one</em> input</div>
+        <div class="takeNote">
+        <!---	<div class="sidenote">Note that these are all <em>two-input</em> functions.</div>---> 
+            <p>
+            	<strong>Ways toThink About It.</strong> When you see this:<br />
+            	<div class="sidenote">The grey ring around the addition signals that you're going to apply the addition <em>function</em> to all of the elements of the list.</div>  
+            	<img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" /><br />
+            	think "I'm going to combine all the elements of <code>{1;2;3;4}</code> using addition."<br />
+            	In other words, &quot;I'm going to add up all the elements of <code>{1;2;3;4}</code>"
+            </p> 
+            
+            <p>
+                <code> Combine with</code> is most useful with  functions that take two inputs like:<br />
+                <img border="0" src="/bjc-r/img/3-lists/sum.png" alt="sum block" title="sum block" />
+                <img border="0" src="/bjc-r/img/3-lists/product.png" alt="product block" title="product block" />
+                <img border="0" src="/bjc-r/img/3-lists/join_two_blanks.png" alt="join block" title="join block" />
+                <img border="0" src="/bjc-r/img/3-lists/join_words_two_blanks.png" alt="join words (2 blanks)" title="join words (2 blanks)" />
+                <img border="0" src="/bjc-r/img/3-lists/and.png" alt="and predicate block" title="and predicate block" />
+                <img border="0" src="/bjc-r/img/3-lists/or.png" alt="or predicate block" title="or predicate block" />or  the <code>max</code> function that you defined above.
+            </p>
+            
+            <!--- <div class="comment">JK: BH says "The join words example in the orange box is really confusing.  It has to be join words (join words (the) (cat)) (sat) = join words (the) (join words (cat) (sat))" But I think that's more confusing. You're allowed to put phrases in join words... I'd like to keep it as is... Any other opinions out there?</div>--->
+            
+            <p>These operations are <em>associative</em>, which means that the result is the same no matter how the items are grouped. For example, (3 + 4) + 5 = 3 + (4 + 5) and <code>join words</code>("the cat")("sat") = <code>join words</code>("the")("cat sat").</p>
+            <!--The expression <img border="0" src="/bjc-r/img/3-lists/combine_minus_345.png" alt="combine with (subtraction) 3,4,5" title="combine with (subtraction) 3,4,5" /> actually gives the result of 3 - (4 - 5).-->
+        </div>
 
-	<li>Try this  experiment. Make <img border="0" src="/bjc-r/img/3-lists/map_add_1234.png" alt="map addition over (1,2,3,4)" title="map addition over (1,2,3,4)" /> and <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank addition spaces for <code>map</code>? What seems to be going in the blanks for <code>combine with</code>? </li>
-    <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
-    <li>Make a block <img border="0" src="/bjc-r/img/3-lists/max_of.png" alt="max of () and ()" title="max of () and ()" /> that returns the larger of two inputs. </li>
-	<li>Make <img border="0" src="/bjc-r/img/3-lists/maxpict.png" alt="map max over list 1 4 9 5 " title="map max over list 1 4 9 5" /> and <img border="0" src="/bjc-r/img/3-lists/maxpict1.png" alt="combine with max (1,4,9,5)" title="combine with max (1,4,9,5)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank  spaces for <code>max</code>? What seems to be going in the blanks for <code>combine with</code>? </li>
+        <div class="forYouToDo">
+            <ol start="4"> 
+                <li>
+                    <div class="sidenote"> <strong>Moral of the story:</strong> don't use subtraction or division in <code>combine with </code>because the grouping of the items matters in these cases. For example, (3 - 4) - 5 &ne; 3 - (4 - 5). </div> 
+                    Well, what happens if you drag non-associative  blocks such as <img border="0" src="/bjc-r/img/3-lists/difference.png" alt="difference block" title="difference block" /> or <img border="0" src="/bjc-r/img/3-lists/quotient.png" alt="quotient block" title="quotient block" /> into <code> combine with</code>? Try it.
+                </li>
+                <li> Build a block <code>sum </code>  that takes a list of numbeers and reports their sum.</li>
+                <li>
+                    <div class="sidenote">average<br>= (sum of numbers) / (number of numbers)</div>
+                    Click on the script to open a new project.<br>
+                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab2Combine.xml"> <img border="0" src="/bjc-r/img/3-lists/numbers_list.png" alt="list of 2-digit numbers" title="list of 2-digit numbers" /> </a>
+                    Edit the block definition for <img border="0" src="/bjc-r/img/3-lists/average_grades.png" alt="average(grades)" title="average(grades)" /> to report the average of a list of grades. Use your block to find the average of <code>numbers</code>.
+                </li>
+                <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
+            </ol>
+        </div>
 
- 
-
-	
-</ol>
-</div>
-
-<div class="takeNote">
-<!---	<div class="sidenote">Note that these are all <em>two-input</em> functions.</div>
----> 
-  <p><strong>Ways toThink About It.</strong> When you see this:
-  <div class="sidenote">The grey ring around the addition signals that you're going to apply the addition <em>function</em> to all of the elements of the list.</div>  
-  <p> <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" /> 
-  <p>think ``I'm going to combine all the elements of <code>{1;2;3;4}</code> using addition.''  
-  In other words, &quot;I'm going to add up all the elements of <code>{1;2;3;4}</code>" </p> 
-
-<p>
-<code> Combine with</code> 
-   is most useful with  functions that take two inputs like:<br>
-  <img border="0" src="/bjc-r/img/3-lists/sum.png" alt="sum block" title="sum block" />
-  <img border="0" src="/bjc-r/img/3-lists/product.png" alt="product block" title="product block" />
-  <img border="0" src="/bjc-r/img/3-lists/join_two_blanks.png" alt="join block" title="join block" />
-  <img border="0" src="/bjc-r/img/3-lists/join_words_two_blanks.png" alt="join words (2 blanks)" title="join words (2 blanks)" />
-  <img border="0" src="/bjc-r/img/3-lists/and.png" alt="and predicate block" title="and predicate block" />
-  <img border="0" src="/bjc-r/img/3-lists/or.png" alt="or predicate block" title="or predicate block" />or  the <code>max</code> function that you defined above.</p>
-  <p><br>
+        <div class="takeItFurther">
+            <ol start="6">
+                <li>
+                    <img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    You met the <em>factorial</em> function before (see <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html#factorial" target="_blank">this example</a>). It takes a positive integer input <em>n</em> and reports the product of all the positive integers between 1 and <em>n</em>. Make a block <code>factorial</code> that models this using  <code>combine with</code>.  
+                    <!--- <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html#countdown">Hint.</a>--->
+                    <!---<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html#factorial"></a>  --->     
+                    <p><img border="0" src="/bjc-r/img/3-lists/factpict.png" alt="factorial of 5" title="factorial of 5" /></p>      
+                </li>  
+            </ol>
+        </div>
     
-</p>
- <!--- <div class="comment">JK: BH says "The join words example in the orange box is really confusing.  It has to be join words (join words (the) (cat)) (sat) = join words (the) (join words (cat) (sat))" But I think that's more confusing. You're allowed to put phrases in join words... I'd like to keep it as is... Any other opinions out there?</div>--->
-
-These operations are <em>associative</em>, which means that the result is the same no matter how the items are grouped. For example, (3 + 4) + 5 = 3 + (4 + 5) and <code>join words</code>("the cat")("sat") = <code>join words</code>("the")("cat sat"). <br>
-<!--The expression <img border="0" src="/bjc-r/img/3-lists/combine_minus_345.png" alt="combine with (subtraction) 3,4,5" title="combine with (subtraction) 3,4,5" /> actually gives the result of 3 - (4 - 5).-->
-</div>
-
- 
-
-
-
-<div class="forYouToDo">
-<ol start="4"> 
-
-
-<li>
-
-<div class="sidenote"> <strong>Moral of the story:</strong> don't use subtraction or division in <code>combine with </code>because the grouping of the items matters in these cases. For example, (3 - 4) - 5 &ne; 3 - (4 - 5). </div> 
-
-
-
-Well, what happens if you drag non-associative  blocks such as <img border="0" src="/bjc-r/img/3-lists/difference.png" alt="difference block" title="difference block" /> or <img border="0" src="/bjc-r/img/3-lists/quotient.png" alt="quotient block" title="quotient block" /> into <code> combine with</code>?    
-
-Try it.</li>
-
-
-<li> Build a block <code>sum </code>  that takes a list of numbeers and reports their sum.</li>
-
-
-	<li><div class="sidenote">average<br>= (sum of numbers) / (number of numbers)</div>
-    
-    Click on the script to open a new project.<br>
-<a class="run" href="/bjc-r/prog/3-lists/U3Lab2Combine.xml"> <img border="0" src="/bjc-r/img/3-lists/numbers_list.png" alt="list of 2-digit numbers" title="list of 2-digit numbers" /> </a>
-    Edit the block definition for <img border="0" src="/bjc-r/img/3-lists/average_grades.png" alt="average(grades)" title="average(grades)" /> to report the average of a list of grades. Use your block to find the average of <code>numbers</code>.</li>
-
-    <h1><img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></h1>
-</ol>
-</div>
-
-<div class="takeItFurther">
-    <ol start="6">
-
-        <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />You met the <em>factorial</em> function before (see <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html#factorial">for example</a>)</span>. It takes a positive integer input <em>n</em> and reports the product of all the positive integers between 1 and <em>n</em>.    Make a block  <code>factorial</code> that models this using  <code>combine with</code>.  
-        
-        
-<!--- <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html#countdown">Hint.</a>--->
-        
-<!---<a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html#factorial"></a>  --->     
-        
-        
-        
-       
-        
- <p>       
- <img border="0" src="/bjc-r/img/3-lists/factpict.png" alt="factorial of 5" title="factorial of 5" />   </p>      
-        
-        
-        
-           </li>  
-  </ol>
-</div>
-    
-    
-
-
-
 
 <!--<p><br>Let's say you have a list of numbers, such as all the students' grades on a quiz. You want to find the average grade. There are two steps: First, add up all the numbers; then divide that sum by the number of numbers &#45 that is, by the length of the list.<br>
 <img border="0" src="/bjc-r/img/list/hof/average.png" alt="average uses COMBINE WITH +" title="average uses COMBINE WITH +"/>
