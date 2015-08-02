@@ -21,7 +21,7 @@ h4 {  padding: 20px 0px 0px 0px;}
 
 img.imageLeft {margin-bottom: 0px;}
 
-li {	padding: 2px;}
+li {	padding: 5px;}
 
 li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin: 5px auto;
@@ -32,7 +32,7 @@ li > ol {  list-style-type: lower-alpha;}
 
 /** Editor Notes **/
 .comment, .commentBig { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
-  /*display: none;*/
+  display: none;
   font-size: .9em;
   float: right;
   margin-right: 20px;
@@ -66,7 +66,7 @@ code {
 }
 
 .todo {
-  /*display: none;*/
+  display: none;
   font-size: .9em;
   margin-bottom: 20px;
   padding: 10px;
@@ -194,6 +194,8 @@ img.noshaddow {
 .dialogue:before {content: "Thinking Out Loud";}
 
 .dialogue > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 5em;
   text-indent: -3em;
 }
@@ -208,6 +210,11 @@ img.noshaddow {
 }
 
 .dialogue > div > span {  font-weight: bold;}
+
+.inline {
+  padding-top: -5px;
+  padding-bottom: -5px;
+}
 
 .takeItFurther {
   background-color: #e4cde3; 
