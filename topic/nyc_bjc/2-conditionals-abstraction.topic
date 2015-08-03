@@ -20,13 +20,15 @@ heading: Programming Lab 1: Conditional Blocks
 	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
 		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
 		   //examples with dates would be great.
+	raw-html: <img class="imageRight" src="/bjc-r/img/cond/mystery.png" alt="mystery sum script" title="mystery sum script" />
 	resource: Project: Developing a block that makes plurals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
 	resource: Plurals project, continued [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/5-plurals2.html]
 	    //resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
 	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
 	
 		// game of life here later?
-	
+
+
 heading: Programming Lab 2: Script variables
 	//resource: More Complex Boolean Expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/complex-booleans.html]
 	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
@@ -44,7 +46,9 @@ heading: Programming Lab 3: Developing more complex programs
 	//resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-complex-booleans-practice.html]
     resource: Abstraction: developing a number guessing game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-developing-a-number-guessing-game.html]
 	resource: Abstraction: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-abstraction-brick-wall.html]
+	//raw-html: <img class="imageRight" src="/bjc-r/img/abstraction/new-brickwall/wall.png" alt="brick wall" title="brick wall" />
 	//resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
+	raw-html: <img class="imageRight" src="/bjc-r/img/building-blocks/max-3-arg-code.png" alt="max of (x) and (y) and (z) block definition" title="max of (x) and (y) and (z) block definition" />
 	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html]
 	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-composition-of-functions.html]
 	resource: Analyzing various definitions of <code> >= </code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-analyzing-definitions-of-ge.html]
@@ -102,15 +106,14 @@ heading: Social Implications Lab 5: Bits and Information
  	raw-html: <hr />
 
 heading: Investigations
-	raw-html: <div class="comment">MF: I commented out the "Some interesting problem" page because the link was to a template.</div>
+	raw-html: <div class="commentBig">MF: I commented out the "Some interesting problem" page because the link was to a template.<br />MF: I commented out the Assignment page because the link was to a template.</div>
 	//resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
 	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html]
-	//raw-html: <div class="comment">MF: I commented out the Valid-Date? page because the link was dead.</div>
+	//raw-html: <div class="commentBig">MF: I commented out the Valid-Date? page because the link was dead.</div>
 	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/valid-date.html]
 
 
 heading: Quarter 1 Project
-	raw-html: <div class="comment">MF: I commented out the Assignment page because the link was to a template.</div>
 	//resource: Assignment [/bjc-r/cur/programming/2-conditionals-abstraction-testing/quarter1-project/assignment.html]
 
 
