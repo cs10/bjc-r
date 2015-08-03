@@ -9,7 +9,9 @@ a:visited {  color: #248694; /* was 36BBCE; */}
 
 a, .dialogue a {  color: #2a6496; /* was 428bca; */}
 
-h4 {  padding: 20px 0px 0px 0px;}
+h4 {  padding: 5px 0px 0px 0px;}
+
+h3 {  padding-top: 10px;}
 
 .full ul, .full ol {
   display: block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
@@ -21,7 +23,7 @@ h4 {  padding: 20px 0px 0px 0px;}
 
 img.imageLeft {margin-bottom: 0px;}
 
-li {	padding: 2px;}
+li {	padding: 3px;}
 
 li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin: 5px auto;
@@ -60,6 +62,10 @@ code {
 /*.comment > code {
   color: #606;
 }*/
+
+.classIndent {
+  margin-left: 2em;
+}
 
 .todo {
   /*display: none;*/
@@ -190,6 +196,8 @@ img.noshaddow {
 .dialogue:before {content: "Thinking Out Loud";}
 
 .dialogue > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 5em;
   text-indent: -3em;
 }
@@ -204,6 +212,11 @@ img.noshaddow {
 }
 
 .dialogue > div > span {  font-weight: bold;}
+
+.inline {
+  padding-top: -5px;
+  padding-bottom: -5px;
+}
 
 .takeItFurther {
   background-color: #e4cde3;

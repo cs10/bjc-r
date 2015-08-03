@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv="content-type" content="text/html;
-        charset=ISO-8859-1">
-        <!-- put the following in exactly -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 5: Search and Data Part I</title>
     </head>
-    <body>
     
+    <body>
     	<h2>GPS Data</h2>
         <p>A computer forensic specialist who works for a law enforcement agency might analyze GPS (global positioning system) data.</p>
 
         <p>You have a set of GPS coordinates from a device the suspect used to communicate during the time of the crime. Use them to reconstruct the movements of the perpetrator.</p>
 
-        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br> DDD.DDDDD&deg; (latitude), DDD.DDDDD&deg; (longitude)<br> If you search for "37.873808, -122.254173" in <a href="https://www.google.com/maps/place/37%C2%B052'25.7%22N+122%C2%B015'15.0%22W/@37.873808,-122.254173,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0m" target="_blank">Google Maps</a>, you can see the corresponding location, near the Greek Theater on the campus of U.C. Berkeley.</div>
+        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br /> DDD.DDDDD&deg; (latitude), DDD.DDDDD&deg; (longitude)<br /> If you search for "37.873808, -122.254173" in <a href="https://www.google.com/maps/place/37%C2%B052'25.7%22N+122%C2%B015'15.0%22W/@37.873808,-122.254173,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x0m" target="_blank">Google Maps</a>, you can see the corresponding location, near the Greek Theater on the campus of U.C. Berkeley.</div>
 
         <p>Here are the coordinates:</p>
         <table id="tableBlue">
@@ -73,14 +71,14 @@
     
     <h3>Making the data useful</h3>
     
-    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br>
-    <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br>
+    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br />
+    <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br />
     When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.</p>
     
     <div class="forYouToDo" id="first">
     <ol>
-    	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br>
-        When you run your script, you should see this:<br><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
+    	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br />
+        When you run your script, you should see this:<br /><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
     </ol>
     </div>
     

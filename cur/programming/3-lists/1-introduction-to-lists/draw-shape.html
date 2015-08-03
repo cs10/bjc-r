@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 1: Introduction to Lists</title>
     </head> 
@@ -45,16 +46,16 @@
                 <span>Gamal:</span> I think one reason you had trouble finishiing that script is that all those <code>item</code> blocks get confusing.  How about if you define, in your head, a new data type called <em>point</em> that contains an <em>X coordinate</em> and a <em>Y coordinate:</em><br />
                 <div class="sidenote">Gamal's idea is called <em>data abstraction.</em></div>
                 <a class="run" href="/bjc-r/prog/3-lists/U3Lab1DrawShape.xml">
-                    <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/point.png" alt="point = list" title="point = list"/><br />
-                    <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /><br />
-                    <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
+                    <img src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/><br />
+                    <img src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /><br />
+                    <img src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
                 </a>
                 These blocks are trivial one-liners; they aren't going to make the rest of the program any shorter. But they <em>are</em> going to make it more self-documenting. For example, your list of points will now be obviously a list of points, rather than some other data type:<br />
-                <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /><br />
+                <img src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /><br />
                 And Alphie's version of the drawing script will have things like<br />
-                <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/alphie-adt.png" alt="x coord of item I of A" title="x coord of item I of A" /><br />
+                <img src="/bjc-r/img/3-lists/alphie-adt.png" alt="x coord of item I of A" title="x coord of item I of A" /><br />
             instead of the headache-inducing<br />
-                <img src="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/alphie-no-adt.png" alt="item 1 of item I of A" title="item 1 of item I of A" />
+                <img src="/bjc-r/img/3-lists/alphie-no-adt.png" alt="item 1 of item I of A" title="item 1 of item I of A" />
             </div>
         </div>
         
@@ -70,8 +71,8 @@
         </div>
         
         <div class="takeItFurther">
-            <ol start="4">
-                <div class="sidenote">Notice the use of abstraction. <img border="0" src="/bjc-r/img/3-lists/A-B-C.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
+            <ol type="A">
+                <div class="sidenote">Notice the use of abstraction. The block <img border="0" src="/bjc-r/img/3-lists/A-B-C.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
                 <li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
                 <li>If you made other letters, gather all the letters into a list of their own. Use <code>draw shape ()</code> to draw a message.<br><img border="0" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" /></li>
             </ol>

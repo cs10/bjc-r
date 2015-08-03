@@ -1,7 +1,7 @@
 title: Teaching Guide for Unit 4: Algorithm Complexity
 
 {
-	raw-html: <h3>Purpose</h3>
+h3: Purpose
 	
 	raw-html: <p><strong>Programming Focus:</strong> FROM UNIT 3: Lists, Abstraction</p>
     raw-html: <p>FROM UNIT 3: Students work with lists in Unit 3. Students should understand that lists can be treated as a single object. Just as functions can act on a number input or a string input, they can also act on a list input. Students are also introduced to several higher-order functions: <code>map</code>, <code>keep</code>, and <code>combine with</code>. Near the end of the course, students will write their own higher-order functions, including <code>map</code>. But first, they get plenty of experience with using these functions in this Unit. Note that students don't have to understand even what a higher-order function is - at this point, they are just using these blocks, just as they would any other blocks. The social implications topic in Unit 3 is <em>search and data</em> (part 1). In their AP Explore tasks, students will have to describe the role of data in their chosen innovation, and the discussions and activities of Unit 3 are meant to help students write about this topic.</p>
@@ -9,7 +9,7 @@ title: Teaching Guide for Unit 4: Algorithm Complexity
 	raw-html: <p><strong>Social Implications Focus:</strong> Search and Data Part I</p>
 	raw-html: <p></p>
 
-	raw-html: <h3>Highlighting Computational Thinking</h3> 
+h3: Highlighting Computational Thinking
 	raw-html: <div class="comment">Weak.</div><p>Lists are an important representation of data, and thinking of lists as a single object (rather than a collection of objects) is a way students practice <strong>abstracting</strong>. Students continue to <strong>collaborate</strong> through pair programming.</p>
 
 heading: Week 14 (Programming Focus)

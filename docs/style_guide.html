@@ -24,6 +24,9 @@
         <p>Use &lt;span class="snap"&gt;snap&lt;/span&gt; to write Snap<em>!</em></p>
     	<div class="comment">Comment Sidenote.</div>
         <div class="sidenoteBig">A wider sidenote (I added a new 90% width one for end of page summaries down below. --MF)</div>
+        <div class="todo"><ul><li>Words banned from the curriculum:  "fun," "let's" (except in dialogs).</li>
+        <li>A "block" is one block.  A block with inputs filled in is an "expression" (if the outer block is a reporter) or an "instruction" (if a command).</li>
+        <li>We don't "put" or "build" blocks inside blocks; we "use" blocks inside blocks.</li></ul></div>
         <h3>How to....</h3>
         <div>
         	Links to things down below (like in TG): 
@@ -100,16 +103,17 @@
         
         <div class="takeItFurther">
             <br clear="all" />Here is a list of other formatting we can use:<br />
-            <ol start="6">
+            <div class="commentBig">I think it's better to use uppercase letters for the TIF divs because if there are, for example, FYTD problems 1-4, and then TIF 5-6, and then more FYTD problems, it's weird to reference them as 7, 8, 9 rather than continuing at 5. This way, the optional problems have their own count (with uppercase letters). Then the subproblems in TIF would be lowercase roman numerals (as shown here).<br /> Note: for some reason, the first &lt;ol&gt; tag can use an <code>type="A"</code> atribute, but the nested ones must be done with CSS:<br /><br /> &lt;ol type="A"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The first level will be numbered with uppercase letters.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;ol style="list-style:lower-roman;"&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;This will be a 2nd level lower-roman list.&lt;/li&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/ol&gt;<br />&nbsp;&nbsp;&nbsp;&nbsp;&lt;/li&gt;<br />&lt;/ol&gt;</div>
+            <ol type="A">
                 <li>
                     Use the "code" tag for <code>code</code>. Reference blocks (e.g. <code>pen down</code>) using the "code" tag or an image of the actual block: <img src="/bjc-r/img/1-introduction/pen-down.png" class="block"/>. 
-                    <ul>
+                    <ol style="list-style:lower-roman;">
                         <li>Note: The <code>code</code> tag has been used all over the place in the previous version of BJC. Please try to keep it to only actual code blocks.</li>
-                        <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a Snap<em>!</em> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
-                    </ul>
+                        <li>Re: variables and mathematics&mdash;If you are referencing a mathematical variable that you have made into a <span class="snap">snap</span> variable (hence, a block) then use the code tag (or an image of the block). If you are referencing the plus/minus/etc. block, use the code tag (or an image of the block). If you are just discussing a mathematical idea, then use regular notation: e.g. <em>x</em> + <em>y</em> = 7. </li>
+                    </ol>
                 </li>
                 <li> Syntax for <code>code</code> tags <em>and</em> alt/title text:
-                    <ul>
+                    <ol style="list-style:lower-roman;">
                         <li>Use parentheses for numerical or text inputs and square brackets for scripts (stacks of command blocks).</li>
                         <li>(When <em>naming</em> a block, as opposed to showing an invocation with inputs, just use the first word, e.g. <code>map</code> or <code>join</code>, unless this is ambiguous, e.g., the <code>go</code> block vs. the <code>go to x:y:</code> block.)</li>
                         <li>
@@ -136,7 +140,7 @@ isn't something you can type into Snap!.  And every so often (once per unit?) we
                             </ul>
                         </li>
                         <li>Do you have any examples that break or challenge this rule?</li>
-                    </ul>                 
+                    </ol>                 
                 </li>
                 <li>Lists have items. not members or elements, because of the ITEM block.  And reporters report (not return) values.</li>
                 <li>Use the "strong" tag for <strong>bold</strong>. Introduce <strong>new terms</strong> using the strong tag.</li>

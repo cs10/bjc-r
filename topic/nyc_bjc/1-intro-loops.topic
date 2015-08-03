@@ -9,21 +9,22 @@ big-idea: Use loops to repeat similar steps of code.
 big-idea: Create procedures inside procedures and loops within loops.
 big-idea: Explore mathematics of computer science: random, modulo, and logical operators.
 big-idea: Analyze the impact of technology on our culture and safety.
-		
+
 
 	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white Snap<em>!</em> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
-        
+
 
 heading: Programming Lab 1: Introduction
 	raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-	resource: Exploring Snap<em>!</em> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	resource: Snap<em>!</em> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
-	resource: Hour of Code: Build a Snap<em>!</em> App [http://bjc.edc.org/hourofcode/index.html]
+	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
+	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://bjc.edc.org/hourofcode/index.html]
+	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
 	resource: Getting to Know the Snap<em>!</em> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
 	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
-	
+
 heading: Programming Lab 2: Control Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html]
 	raw-html: <div class="sidenoteBig">The quiz symbol, <img class="inline" style="padding: 1px;" src="/bjc-r/llab/img/multiplechoice16.png" alt="multiple choice icon" title="multiple choice icon" />, indicates that this page includes an online quiz to help you check your understanding.</div>
@@ -37,17 +38,17 @@ heading: Programming Lab 3: Building and Debugging Your Own Blocks
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html]
 	//quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/3-debugging-custom-blocks.html]
-	resource: Building Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
+	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
 	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/5-debugging-blocks-within-blocks.html]
-		
+
 heading: Programming Lab 4: Block Types and Calculations
 	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
 	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html]
 	resource: Computer Operations [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
-	quiz: Computing with Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-computing-variables.html]
+	//quiz: Computing with Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-computing-variables.html]
 
  	raw-html: <hr />
-	
+
 heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
 	resource: Getting Started [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/getting-started.html]
 	resource: Computing Innovations [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/what-are-some-social-implications.html]
@@ -57,9 +58,9 @@ heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
 	resource: Is technology good or bad? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/good-or-bad.html]
 
 	raw-html: <hr />
-	
+
 heading: Investigations
-	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/7-projects/make-a-kaleidoscope.html]
-	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/7-projects/bug-dance.html]
+	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/6-projects/make-a-kaleidoscope.html]
+	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/6-projects/bug-dance.html]
 
 }

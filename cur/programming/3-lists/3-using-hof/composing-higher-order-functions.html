@@ -1,64 +1,65 @@
+<!DOCTYPE html>
 <html>
-
-
    <head>
-      
-      <script src="/bjc-r/llab/loader.js"></script>
-      
-      <title>Lab 3: Using Higher-Order Functions</title>
-      
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 3: Using Higher-Order Functions</title>
    </head>   
       
-
    <body>
-<h2>Composing higher-order functions</h2>
+        <h2>Composing higher-order functions</h2>
+        
+        <div class="todo">
+            <ul>
+                <li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
+            </ul>
+        </div>
+        
+        <div class="dialogue">
+            <div><span>Alphie:</span> <code>Map</code> applies some function to each item of a list.</div>
+            <div><span>Betty:</span> <code>Keep</code> lets you choose some items and not others.</div>
+            <div><span>Alphie:</span> And <code>combine with</code> takes an operation like <code>+</code>and a list.  It combines all the items of the list into a single output using the operation.</div>
+            <div><span>Betty:</span> Can you think of a situation where we would use all three of the functions together?</div>
+              <div class="stagedir">They pause to think.</div>
+            <div><span>Alphie:</span> I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
+            <div><span>Betty:</span> This is like doing sit-ups.  OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
+              <div class="stagedir"><img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
+            <div><span>Alphie:</span> Then we add 10 to every item, so use <code>map</code>... The list we're mapping over is everything we kept, so let's just drag everything in the the <code>keep</code> block in there.</div>
+              <div class="stagedir"><img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
+            <div><span>Betty:</span> The last thing was to add all the numbers, right? So we'll use <code>combine with</code> addition, and our list is everything in the <code>map</code> block.</div>
+              <div class="stagedir"><img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
+        </div>
 
-<!---<div class="todo">
-	<ul>
-    	<li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
-    </ul>
-</div>--->
 
-
-<div class="dialogue">
-  <div><span>Alphie:</span> <code>Map</code> applies some function to each item of a list.</div>
-  <div><span>Betty:</span> <code>Keep</code> lets you choose some items and not others.</div>
-  <div><span>Alphie:</span> And <code>combine with</code> takes two items at a time and combines all the items into a single output.</div>
-  <div><span>Betty:</span> Can you think of a situation where we would use all three of the functions together?</div>
-      <div class="stagedir">They pause to think.</div>
-  <div><span>Alphie:</span> This is kind of a boring example, but I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
-  <div><span>Betty:</span> Let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
-      <div class="stagedir"><img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
-  <div><span>Alphie:</span> Then we add 10 to every item, so use <code>map</code>... The list we're mapping over is everything we kept, so let's just drag everything in the the <code>keep</code> block in there.</div>
-  	  <div class="stagedir"><img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
-  <div><span>Betty:</span> The last thing was to add all the numbers, right? So we'll use <code>combine with</code> addition, and our list is everything in the <code>map</code> block.</div>
-  	  <div class="stagedir"><img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
-</div>
-
-
-<div class="forYouToDo" id="first">
-<ol>
-	<li>Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
-    <ol>
-    	<li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
-        <li>Use those blocks along with <code>map</code> and <code>combine with</code> to decode this message.<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
-    </ol></li>
-
-<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
-
-	<li>Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's data at the shop. There are eight days shown here. <br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
-    	<ul>
-        	<li>The first number is the day's high temperature.</li>
-            <li>The second is the number of Popsicles sold.</li>
-            <li>The third number is the number of ice cream cones sold.</li>
-            <li>Popsicles sell for $1.50 each.</li>
-            <li>Ice cream cones sell for $3.75 each.</li>
-        </ul>
-        Use <code>map</code>, <code>keep</code>, and <code>combine with</code> together in a single block that calculates the total amount of money the shop made by selling Popsicles and ice cream cones on the days when the high temperature was over 80 degrees.</li>
-	<li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
-</ol>
-</div>
-
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li> Try Alphie and Betty's invention with a list of your own.  Vary the operations, too. </li>
+            
+            
+                <li>
+                    Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
+                    <ol>
+                        <li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
+                        <li>Use those blocks along with <code>map</code> and <code>combine with</code> to decode this message.<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+                    </ol>
+                </li>
+            
+            	<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+            
+                <li>
+                	Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's data at the shop. There are eight days shown here. <br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
+                    <ul>
+                        <li>The first number is the day's high temperature (in Fahrenheit).</li>
+                        <li>The second is the number of Popsicles sold.</li>
+                        <li>The third number is the number of ice cream cones sold.</li>
+                        <li>Popsicles sell for $1.50 each.</li>
+                        <li>Ice cream cones sell for $3.75 each.</li>
+                    </ul>
+                    Use <code>map</code>, <code>keep</code>, and <code>combine with</code> together in a single block that calculates the total amount of money the shop made by selling Popsicles and ice cream cones on the days when the high temperature was over 80 degrees.
+                </li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
+            </ol>
+        </div>
 
 <!--
 <p><br>
@@ -102,9 +103,6 @@ Modify the <code>acronym</code> block so that, instead of keeping long words, it
 <img border="0" src="/bjc-r/img/list/hof/ucb-acro.png" alt="acronym of UCB" title="acronym of UCB"/></p>
 <img border="0" src="/bjc-r/img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br><br>  
 -->
-
-
-
 
    </body>
 </html>

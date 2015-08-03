@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 3: Developing complex programs</title>
     </head>
+
     <body>
 		<h2>Abstraction: Brick Wall and Tic-Tac-Toe</h2>
         <div class="todo">
@@ -24,7 +26,7 @@
 		<img border="0" class="indent" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/abstraction/new-brickwall/wall.png" />
         
         <h3>Abstraction</h3>
-		<p>While any good programming language might have many tools for drawing and moving, it wouldn't make sense to have one for drawing bricks because most programs don't involve bricks. But ones that do could really use a <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" /> block. Having a <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" \="" }="" alt="draw-brick" /> block lets us move away from having to talk in the computer's terms and closer to using the terms of the problem we're trying to solve. The process of moving from what the programming language gives you to a natural language (one that humans speak to communicate) is critical to a good abstraction.</p>
+		<p>While any good programming language might have many tools for drawing and moving, it wouldn't make sense to have one for drawing bricks because most programs don't involve bricks. But ones that do could really use a <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" /> block. Having a <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" /> block lets us move away from having to talk in the computer's terms and closer to using the terms of the problem we're trying to solve. The process of moving from what the programming language gives you to a natural language (one that humans speak to communicate) is critical to a good abstraction.</p>
 		<p>In this problem, you will build an abstraction for drawing a brick wall, first by creating <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="draw-brick" />, then blocks for drawing rows, and ultimately the goal: <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="draw-brick-wall-n" />.</p>
         
         <div class="forYouToDo">
@@ -54,7 +56,7 @@
         <div class="forYouToDo">
         	<ol start="3">
             	<li>Make blocks <img src="/bjc-r/img/abstraction/new-brickwall/rowa-block.png" alt="Row A" /> and <img src="/bjc-r/img/abstraction/new-brickwall/rowb-block.png" alt="Row B" />.</li>
-            	<li>Think about what helper blocks besides <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" .> you might want.</li>
+            	<li>Think about what helper blocks besides <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> you might want.</li>
             
         <div class="takeNote"> <p>It's possible to go overboard on abstraction so that you have so many blocks that it's hard to find where the work actually gets done. On the other hand, sometimes it's useful to make a custom block even if its definition is just one primitive (built-in) block. For example, to draw the <em>mortar</em> (the white space) between bricks in a row, all you have to do is <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps"> (since the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> block picks up the pen at the end of its script):</p>
         
@@ -68,32 +70,45 @@
                 <li>Once you have the two kinds of rows the same length, you can write the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="Draw a Brick Wall with ( ) Rows" /> block.  Remember that it should work for both even and odd numbers of rows, which means that sometimes you'll have to draw an extra Row A.</li>
             </ol>
         </div>
-        <div class="takeItFurther">
-            <ol start="7">
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
                 <li>
                 	<p>After you've drawn the picture at the top of this page, add more
-        inputs to the <code>Draw a Brick Wall</code> block:</p>
-        			<ol>
+        inputs to the <code>Draw a Brick Wall</code> block:<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Would be a Good Time to Save" title="Now Would be a Good Time to Save" /></p>
+        			<ol style="list-style:lower-roman;">
                     	<li>Length of the wall (how many bricks)</li>
 				        <li>Length of a brick</li>
 				        <li>Mortar thickness</li>
                     </ol>
-                    <p><img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Would be a Good Time to Save" title="Now Would be a Good Time to Save" /> Add these one at a time, not all at once!  When you modify the length of a brick, that should also change the length of a half-brick. When you modify the mortar thickness, that should also change the distance between rows (since that's mortar too). </p>
+                    <p> Add these one at a time, not all at once!  When you modify the length of a brick, that should also change the length of a half-brick. When you modify the mortar thickness, that should also change the distance between rows (since that's mortar too). </p>
+                    <div class="todo">Hi Paul, I moved this icon up into the empty space. Now, I'm getting out of here before I start editing too much... ;) Mary</div>
                 </li>
                 
                 
             </ol>
         </div>
+        
         <div class="forYouToDo">
-          <p><strong>Practice abstraction: </strong> Over time, you will program the computer to play tic-tac-toe with a person. For now, start just with the board.</p>
-          <p>&nbsp;</p>
-            <ol start="8">
-              <li> Below is some code to draw a tic-tac-toe board. It works, but it's ugly. Your goal is to create blocks that make this code simpler. Don't bother building this script first. You may decide not to use any of it.
-          <p><img class="indent" src="/bjc-r/img/abstraction/complicated-tic-tac-toe.png" alt="Tic-Tac-Toe Board Drawer" title="Tic-Tac-Toe Board Drawer" /></p>
-		      <ul>
-                <li>It's probably easiest to start by noticing how <em>you</em> draw a tic-tac-toe board with pen and paper, <em>not</em> by looking at this awful code!.</li>
-                <li>Use the same strategy you used above: building meaningful sub-tasks. Let each sub-block <em>specialize</em> in a task and have a name that says clearly what it does. Your goal is to make your code easy to read and understand. Ideally, your resulting <code>draw tic-tac-toe board</code> will read naturally, like the language you would use to a person. <div class="saveAs"><span class="text">"U2Lab3TicTacToeProject"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" title="save your work as U1Lab2Crayon" /></div></li>
-          </ol>
-    </div>
+			<p><strong>Practice abstraction: </strong> Over time, you will program the computer to play tic-tac-toe with a person. For now, start just with the board.</p>
+			<p>
+				<ol start="7">
+					<li>
+                    	Below is some code to draw a tic-tac-toe board. It works, but it's ugly. Your goal is to create blocks that make this code simpler. Don't bother building this script first. You may decide not to use any of it.<br />
+						<img class="indent" src="/bjc-r/img/abstraction/complicated-tic-tac-toe.png" alt="Tic-Tac-Toe Board Drawer" title="Tic-Tac-Toe Board Drawer" /><br />                    
+                    	<ul>
+                            <li>It's probably easiest to start by noticing how <em>you</em> draw a tic-tac-toe board with pen and paper, <em>not</em> by looking at this awful code!.</li>
+                            <li>
+                            	Use the same strategy you used above: building meaningful sub-tasks. Let each sub-block <em>specialize</em> in a task and have a name that says clearly what it does. Your goal is to make your code easy to read and understand. Ideally, your resulting <code>draw tic-tac-toe board</code> will read naturally, like the language you would use to a person. 
+                                <div class="commentBig">Hi Paul, I was in here making the TIF "numbering" alphabetical, I fixed a bunch of HTML issues, and I changed this lab title to make it fit. If it really has to have "Project" on the end, change it and let me know; I'll widen the box. --MF</div>
+                                <div class="saveAs"><span class="text">"U2Lab3TicTacToe"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U1Lab2Crayon" title="save your work as U1Lab2Crayon" /></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+            </p>
+        </div>
+    
+    
     </body>
-</html>
+</html>    

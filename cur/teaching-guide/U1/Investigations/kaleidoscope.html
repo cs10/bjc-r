@@ -9,6 +9,8 @@
     	<h2>Kaleidoscope</h2>
 		<div class="todo">Needs work still... --MMF</div>
         <p>Students become acquainted with the Snap<em>!</em> stage as a coordinate plane.</p> 
+		<div class="todo">Needs work still... --MF (Also, Reference megacrayon)</div>
+        <p>Students create a drawing app that  acquainted with the <span class="snap">snap</span> stage as a coordinate plane.</p> 
         
 
         <!--<h3>Prepare:</h3>
@@ -24,7 +26,7 @@
             <ul>
                 <li>Practice pair programming</li>
                 <li>Incorporate x- and y-positions in their scripts</li>
-                <li>Explore and use <code>forever</code></li>
+                <li>Explore and use the <code>forever</code> block</li>
             </ul>
         </div> 
 
@@ -38,25 +40,28 @@
         </div>
             
         
-        <h3>Share</h3>
+        <h3>Share:</h3>
         <div>
-        	Students sumbitted their Kaleidoscopes at the end of <a href="/bjc-r/cur/teaching-guide/U1/old/lesson03.html">Lesson 3</a>. Choose interesting examples to show the class and ask the class for their reactions. There are several ways you might structure this time:
+        	Students submitted their Kaleidoscopes at the end of <a href="/bjc-r/cur/teaching-guide/U1/old/lesson03.html">Lesson 3</a>. Choose interesting examples to show the class and ask the class for their reactions. There are several ways you might structure this time:
             <ul>
-                <li>If many students struggled to get their Kaleidoscope to work, it might be useful to share several examples of students who got parts of the program correct, and then talk what they might try next.</li>
                 <li>You might choose to share different solution approaches. For example, students might have found different ways to modify each sprite's <img src="/bjc-r/img/blocks/go-to-x-y-0-0.png" class="block" alt="Go to X Y Block"/> block, and students can see how different expressions resulted in similar results.</li>
-                <li>You might have some students who got particularly creative with their Kaleidoscopes. Perhaps they had more than four sprites, or played with having the sprites move at different angles, or made other creative modifications. Creativity is a Big Idea of AP CS Principles, and you might emphasize this creative spirit during this sharing time.</li>
-                <li>You can also invite students to volunteer to present their own projects, though in general it is better to be guided by a specific purpose. If asking for volunteers, so so at the end of the sharing time to give the opportunity to those who haven't yet seen their work displayed.</li> 
+                <li>You might have some students who got particularly creative with their Kaleidoscopes. Perhaps they had more than four sprites, played with having the sprites move at different angles, or made other creative modifications. Creativity is a Big Idea of AP CS Principles, and you might emphasize this creative spirit during sharing time.</li>
             </ul>
+            Review the Beauty and Joy Teaching Support page on <a href="/bjc-r/cur/teaching-guide/U1/general-support/sharing.html" target="_blank">Sharing</a>.
         </div>
 
 
-        <h3>Other stuff</h3>
+        <h3>Tips:</h3>
         <div>
             <ul>
+                <li>You might encourage students who finish this project early to vary their kaleidoscope by using <em>different transformations of the coordinates</em> and/or by <em>using more sprites</em>.</li>
+				<li>You might consider assigning the <a href="/bjc-r/cur/teaching-guide/U1/Week01/assignments.html#megacrayons" target="_blank">Mega-Crayons</a> adaptation of this activity, in which students don't have to reflect the sprites, but just offset (translate) them.</li>
+                <li>Or, instead of following the coordinates of the mouse, students could make sprites point toward each other and chase each other by moving a short distance (and possibly also turning, as well, so that they don't instantly crash).</li>
+                <div class="comment">MF: maybe move some of this to a more general discussion of sharing...</div>
                 <li>
                     As students finish making their Kaleidoscope program, they should save their work and submit it. It is up to you whether you want to assign grades for this work, but at the very least, you will use their submitted work during <a href="/bjc-r/cur/teaching-guide/U1/old/lesson05.html">Lesson 5</a> during a sharing session that gives students an opportunity to see each others' work. 
                     <ul>
-                        <li>Before class, find a method for students to submit Snap<em>!</em> projects that makes sense to you. Here's one suggestion: In Snap<em>!</em>, students can choose "Export project..." from the file menu. This brings up text in XML. Students can right-click on the page and "Save As..." to a local folder. Give students directions on naming their files (e.g. Kaleidoscope-first-last.xml), then have them send this file to you. When you go to display their work, you can open Snap<em>!</em>, then choose "Import..." and the file.</li>
+                        <li>Before class, find a method that makes sense to you for students to submit <span class="snap">snap</span> projects. Here's one suggestion: In <span class="snap">snap</span>, students can choose "Export project..." from the file menu. This brings up text in XML. Students can right-click on the page and "Save As..." to a local folder. Give students directions on naming their files (e.g. Kaleidoscope-last-first.xml), then have them send this file to you. When you go to display their work, you can open <span class="snap">snap</span>, then choose "Import..." and the file.</li>
                         <li>During class, take note of interesting approaches or creative ideas that would be interesting to share. As you will see, it's difficult to "browse" through projects from the .xml files, so it's good to have a sense of whose projects you'd like to share. Consider also asking students to submit yet-incomplete kaleidoscopes (give them some way of indicating this in the file name) if you see an interesting intermediate attempt that would spark discussion.</li>
                     </ul>
                 </li>
@@ -82,17 +87,21 @@
         </div>-->
             
             
-        <div class="apStandards"><strong>AP CS Principles Computational Thinking Practices:</strong><ul>
-            <li><strong>P1 Connecting Computing</strong> Identify impacts of computing.</li>
-            <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
-            <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
-        </ul>
-        <strong>AP CS Principles Essential Knowledge:</strong><ul>
-            <li><strong>EK4.1.1B</strong> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
-            <li><strong>EK5.1.3B</strong> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
-            <li><strong>EK5.1.3F</strong> Effective communication between participants is required for successful collaboration when developing programs.</li>
-            <li><strong>EK5.2.1B</strong> Program instructions are executed sequentially.</li>
-        </ul></div>        
+        <h3>Correlation with AP CS Principles Framework </h3>
+        <div class="apStandards">
+        	<h4>Computational Thinking Practices:</h4>
+            <ul>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
+                <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
+            </ul>
+            <h4>Essential Knowledge:</h4>
+            <ul>
+                <li><strong>EK4.1.1B</strong> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
+                <li><strong>EK5.1.3B</strong> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
+                <li><strong>EK5.1.3F</strong> Effective communication between participants is required for successful collaboration when developing programs.</li>
+                <li><strong>EK5.2.1B</strong> Program instructions are executed sequentially.</li>
+        	</ul>
+        </div>        
         	
     </body>
 </html>

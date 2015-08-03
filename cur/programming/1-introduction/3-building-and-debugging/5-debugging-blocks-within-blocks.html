@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Unit 1 Lab 3: Building and Debugging Your Own Blocks</title>
     </head>
+    
     <body>
     	<h2>Debugging Blocks within Blocks</h2>
-	    <p>One potential challenge in building custom blocks with custom blocks in side them is that a custom block works fine on its own, but when it's used inside another custom block, something goes wrong.</p>
+	    <p>One potential challenge in building custom blocks that use other custom blocks is that a custom block works fine on its own, but when it's used inside another custom block, something goes wrong.</p>
         <p>
         	Here is an example. A programmer intended to draw five squares in a row, like this: <img class="noshaddow" src="/bjc-r/img/1-introduction/5-squares-in-row.png" alt="five squares in a row" title="five squares in a row" />, and built this script:
         	<img class="inline" src="/bjc-r/img/1-introduction/five-squares-in-row.png" alt="repeat (5) (draw square (20), move (20) steps)" title="repeat (5) (draw square (20), move (20) steps)" />
@@ -41,7 +43,7 @@
             </div>
             <div class="choice" identifier="c1">
                 <div class="text">
-                    The <code>draw a square</code> block  draws a square of the wrong size.
+                    The <code>draw square</code> block  draws a square of the wrong size.
                 </div>
                 <div class="feedback">
                     No, each side is the correct length.
@@ -49,7 +51,7 @@
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">
-                    The  <code>draw a square</code> block won't draw 4 sides in the shape of a square.
+                    The  <code>draw square</code> block won't draw 4 sides in the shape of a square.
                 </div>
                 <div class="feedback">
                     No, the square looks correct when it is drawn by itself.
@@ -58,11 +60,10 @@
 
             <div class="choice" identifier="c3">
                 <div class="text">
-                    The <code>draw a square</code> block actually works correctly!
+                    The <code>draw square</code> block actually works correctly!
                 </div>
                 <div class="feedback">
-                    Only sort of... The <code>draw a square</code> block draws a square of the correct size and shape, but causes a problem that the <code>repeat</code> script doesn't expect.
-                    block.
+                    Only sort of... The <code>draw square</code> block draws a square of the correct size and shape, but causes a problem that the <code>repeat</code> script doesn't expect.
                 </div>
             </div>
 
@@ -72,16 +73,16 @@
                     when it is done.
                 </div>
                 <div class="feedback">
-                    The sprite's <em>location</em> is correct, but something else is wrong about the way the sprite has been left at the end of <code>draw a square</code>.
+                    The sprite's <em>location</em> is correct, but something else is wrong about the way the sprite has been left at the end of <code>draw square</code>.
                 </div>
             </div>
 
             <div class="choice" identifier="c5">
                 <div class="text">
-                    The  <code>draw a square</code> block leaves the sprite facing  the wrong direction.
+                    The  <code>draw square</code> block leaves the sprite facing  the wrong direction.
                 </div>
                 <div class="feedback">
-                    Right! Because the <code>draw a square</code> block doesn't leave the sprite facing the same way as when it started, the the <code>repeat</code> script moves in different directions each time <code>draw a square</code> draws a square. If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end of <code>draw a square</code>, all would be well.
+                    Right! Because the <code>draw square</code> block doesn't leave the sprite facing the same way as when it started, the the <code>repeat</code> script moves in different directions each time <code>draw a square</code> draws a square. If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end of <code>draw square</code>, all would be well.
                 </div>
             </div>
 
@@ -92,18 +93,17 @@
 
 
         <!-- question 2 -->
-	    <div class="comment">GitHub comment: The formatting of the questions does not seem right. There are some phrases in parentheses which I'm not sure are supposed to be there.</div>
         <div class="assessment-data"
         type="multiplechoice" identifier="buggy-draw-square"
         hasinlinefeedback="true" maxchoices="1"
         responseIdentifier="resp10" shuffle="true" >
             <div class="prompt">
                 <p>
-                    Consider the following block definition to draw a house; it uses a <b>correct</b> <code>draw square</code> block, it will draw a house (with a flat roof)
+                    Consider the following block definition to draw a house; if it uses a <b>correct</b> <code>draw square</code> block, it will draw a house (with a flat roof)
                     and a door at the lower right:
                 </p>
                 <div class="indent">
-                    <a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> <img class="inline" src="/bjc-r/img/drawing/draw-house-code.png" alt="draw-house block definition using proper draw-square"> </a>
+                    <!--<a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml">--> <img class="inline" src="/bjc-r/img/drawing/draw-house-code.png" alt="draw-house block definition using proper draw-square">
                     <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture">
                 </div>
 
@@ -111,7 +111,7 @@
                     What will be drawn if it uses the <b>buggy</b> <code>draw square</code> code shown at the top of the page?
                 </p>
                 <div class="indent">
-                    <a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> <img  src="/bjc-r/img/drawing/draw-house-code-buggy.png" alt="draw-house block definition using buggy draw-square"> </a>
+                    <!--<a class="run" href="/bjc-r/prog/drawing/draw-house-buggy.xml"> --><img  src="/bjc-r/img/drawing/draw-house-code-buggy.png" alt="draw-house block definition using buggy draw-square"> 
                 </div>
             </div>
             <div class="choice" identifier="c1">
@@ -162,6 +162,7 @@
                 <div class="correctResponse" identifier="c4"></div>
             </div>
         </div>
+
 
     </body>
 </html>

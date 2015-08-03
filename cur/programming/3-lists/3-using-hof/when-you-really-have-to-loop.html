@@ -1,71 +1,69 @@
+<!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Lab 3: Using Higher-Order Functions</title>
     </head>
 
     <body>
-    
-    <h2>When You Really Have to Loop</h2>
-    
-    <div class="todo">
-    <ul>
-    	<li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
-        <li>JK: Any other suggestions for interesting problems here?</li>
-        <li>From Dan in NY: "Some were still working on IsIncreasing(list)==>bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:
-
-1) The DEBUG global list technique, where a null global list is added to each loop by a join() statement that shows the values of iteration variables. E.g.,
-for each RIGHT in NUMBERS
-   add(join(LEFT,” < “,RIGHT,== >,(LEFT < RIGHT))to(DEBUG))
-…to show them what was happening with the the inner test and the result at each iteration.  That helped them find the source of the problem quickly, and many were able to put a conditional in there to handle the (1,2,2) case.
-
-2) A new block we all wrote together (several of the teachers _really_ like it when we work together on something) called Which-Failed(f)on(list-of-inputs)returns(list-of-expected-outputs) that returns a list of pretty-printed testing results.  This was really fun for alll, they got to see an example of walking through three lists at once, with some map and combine examples, I mostly let them drive it with me typing.
-
-3) I also showed them another way to write “Increasing” that does use HOFs (even though the curriculum says you can’t).
-
-2 and 3 are in this file:
-http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=Dans%20Increasing
-"</li>
-    </ul>
-    </div>
-    
-    <div class="forYouToDo" id="first">
-    	<ol>
-        <li>Consider the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />. It returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok), or <code>false</code> otherwise.<br>
-        <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br>
-        <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
-        	<ol>
-            <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
-            <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code>.</li>
-            <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code>.</li>
+        <h2>When You Really Have to Loop</h2>
+        
+        <div class="todo">
+            <ul>
+                <li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
+                <li>JK: Any other suggestions for interesting problems here?</li>
+                <li>
+                    From Dan in NY: "Some were still working on IsIncreasing(list)&rarr;bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:<br />
+                    1) The DEBUG global list technique, where a null global list is added to each loop by a join() statement that shows the values of iteration variables. E.g.,
+                    for each RIGHT in NUMBERS
+                       add(join(LEFT,” &lt; “,RIGHT,&rarr;,(LEFT &lt; RIGHT))to(DEBUG))
+                    …to show them what was happening with the the inner test and the result at each iteration.  That helped them find the source of the problem quickly, and many were able to put a conditional in there to handle the (1,2,2) case.<br />
+                    
+                    2) A new block we all wrote together (several of the teachers _really_ like it when we work together on something) called Which-Failed(f)on(list-of-inputs)returns(list-of-expected-outputs) that returns a list of pretty-printed testing results.  This was really fun for alll, they got to see an example of walking through three lists at once, with some map and combine examples, I mostly let them drive it with me typing.<br />
+                    
+                    3) I also showed them another way to write “Increasing” that does use HOFs (even though the curriculum says you can’t).<br />
+                    
+                    2 and 3 are in this file: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=Dans%20Increasing" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&amp;ProjectName=Dans%20Increasing</a>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Consider the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />. It returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok), or <code>false</code> otherwise.<br>
+                <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br>
+                <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
+                    <ol>
+                    <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
+                    <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code>.</li>
+                    <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code>.</li>
+                    </ol>
+                </li>
             </ol>
-        </li></ol>
-    </div>
+        </div>
+        
+        <div class="dialogue">
+            <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
+            <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
+            <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
+            <div><span>Betty:</span> So as we compare two items at a time, we end up with a list of "true"s and "false"s. And then we would check that list, and if there's even one "false" in there, then <code>increasing?</code> is false.</div>
+            <div><span>Alphie:</span> Yeah, that works... </div>
+              <div class="stagedir">They pause to think.</div>
+            <div><span>Betty:</span> I think we can do this better. We don't need to keep track of the item number because we don't care where the out-of-order numbers are. Also, we don't need the middle step of making a list of "true"s and "false"s. As soon as one of the comparisons is "false", we know <code>increasing?</code> is false. </div>
+            <div><span>Alphie:</span> You're saying we don't care about the item number, just the item itself. So we could use a <code>for each</code> loop. For each item in the list, we compare it to... what? </div>
+            <div><span>Betty:</span> What if we make a variable that keeps track of the highest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
+            <div><span>Alphie:</span> Ok, here's what I have so far.</div>
+              <div class="stagedir"><a class="run" href="/bjc-r/prog/3-lists/U3Lab3Increasing.xml"> <img border="0" title="increasing script (with mistake)" alt="increasing script (with mistake)" src="/bjc-r/img/3-lists/increasing_wrongscript.png" /> </a></div>
+        </div>
     
-    <div class="dialogue">
-      <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
-      <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
-      <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
-      <div><span>Betty:</span> So as we compare two items at a time, we end up with a list of "true"s and "false"s. And then we would check that list, and if there's even one "false" in there, then <code>increasing?</code> is false.</div>
-      <div><span>Alphie:</span> Yeah, that works... </div>
-          <div class="stagedir">They pause to think.</div>
-      <div><span>Betty:</span> I think we can do this better. We don't need to keep track of the item number because we don't care where the out-of-order numbers are. Also, we don't need the middle step of making a list of "true"s and "false"s. As soon as one of the comparisons is "false", we know <code>increasing?</code> is false. </div>
-      <div><span>Alphie:</span> You're saying we don't care about the item number, just the item itself. So we could use a <code>for each</code> loop. For each item in the list, we compare it to... what? </div>
-      <div><span>Betty:</span> What if we make a variable that keeps track of the highest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
-      <div><span>Alphie:</span> Ok, here's what I have so far.</div>
-          <div class="stagedir"><a class="run" href="/bjc-r/prog/3-lists/U3Lab3Increasing.xml"> <img border="0" title="increasing script (with mistake)" alt="increasing script (with mistake)" src="/bjc-r/img/3-lists/increasing_wrongscript.png" /> </a></div>
-    </div>
-
-
-	<div class="forYouToDo">
-    	<ol start="2">
-        <li>Alphie and Betty's script contains a mistake! For example, their script gives this result:<br>
-        <img border="0" title="increasing(1,7,4,10)=true" alt="increasing(1,7,4,10)=true" src="/bjc-r/img/3-lists/increasing_truemistake.png" /><br>
-        Click their script to open their project and fix their code.</li>
-        </ol>
-    </div>
-        
-        
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>Alphie and Betty's script contains a mistake! For example, their script gives this result:<br>
+                <img border="0" title="increasing(1,7,4,10)=true" alt="increasing(1,7,4,10)=true" src="/bjc-r/img/3-lists/increasing_truemistake.png" /><br>
+                Click their script to open their project and fix their code.</li>
+            </ol>
+        </div>
         
         
 <!--
@@ -143,14 +141,14 @@ http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&Proj
         <p class="step">
  -->
  
- 	<div class="takeItFurther">
-    	<ol start="3">
-        	<li>Write an <code>expand</code> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br>
-            <img border="0" src="/bjc-r/img/3-lists/expand_output.png"
-            alt="she loves you 3 yeah -> she loves you yeah yeah yeah"
-            title="she loves you 3 yeah -> she loves you yeah yeah yeah"/></li>
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>Write an <code>expand</code> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br>
+                <img border="0" src="/bjc-r/img/3-lists/expand_output.png"
+                alt="she loves you 3 yeah -> she loves you yeah yeah yeah"
+                title="she loves you 3 yeah -> she loves you yeah yeah yeah"/></li>
             </ol>
-            </div>
+        </div>
 
       
     </body>

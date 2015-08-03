@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Unit 1 Lab 4: Block Types and Calculations</title>
     </head>
+
     <body>
 		<h2>Commands and Reporters</h2>
         <p>
@@ -49,13 +51,12 @@
                  </li>
             </ul>
         </p>
-       
+
    		<div class="forYouToDo" id="first">
-        <div class="comment">From GH: For You To Do: Click each of these reporter bocks in Snap! (tell me where) script or panel?</div>
             <ol>
                 <li>
                     <div class="sidenoteBig">It's ok if you get different reports than those shown here. Discuss why that might happen.</div>
-                    Click each of these reporter blocks in Snap<em>!</em> to see them report their information:<br />
+                    Click each of these reporter blocks in <span class="snap">snap</span> (in the script or the panel) to see them report their information:<br />
                 	<p class="center">
                     	<img class="inline" src="/bjc-r/img/1-introduction/size-reporting-100.png" alt="Size reporting 100" title="Size reporting 100" />
                     	<img class="" src="/bjc-r/img/1-introduction/pick-random-1-to-10-reporting-2.png" alt="Pick random 1 to 10 reporting 2" title="Pick random 1 to 10 reporting 2" />
@@ -63,7 +64,7 @@
 					</p>
 				</li>
             	<div class="todo">MF: show a few more reporters reporting above (including letter _ of _ ) and reporters in blocks below.</div>
-                <li>Reporters are often used inside other blocks including reporters and commands. Try building and running a few of these nested blocks:
+                <li>Reporters are often used as inputs to other blocks, including reporters and commands. Try building and running a few of these nested blocks:
                 	<p class="center">
                     	<img class="inline" src="/bjc-r/img/cond/say-4-plus-7.png" alt="say 4 + 7" title="say 4 + 7" /> <img class="inline" src="/bjc-r/img/1-introduction/play-note-pick-random-50-to-80-for-0.5-beats.png" alt="play note (pick random 50 to 80) for 0.5 beats" title="play note (pick random 50 to 80) for 0.5 beats" />
                     </p>
@@ -71,18 +72,18 @@
                 <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss <em>what happens</em> when you click these commands with reports nested inside them and <em>why</em>.</li>
             </ol>
         </div>
-        
-        <div class="todo">MF: Clean this wtachers stuff up NOW</div>
+
+        <div class="todo">MF: More tidying needed on watchers</div>
         <div class="endnote">
         <div>Watchers<a name="watchers" class="anchor">&nbsp;</a></div>
 		<img class="imageRight" src="/bjc-r/img/1-introduction/position-watchers.gif" alt="" title="" />
-        <p>The three oval-shaped <strong>reporters</strong> at the bottom of the Motion palette have checkboxes for <strong>watchers</strong>.  Unlike the jigsaw-puzzle-shaped <strong>command</strong> blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
+        <p>The three oval-shaped reporters at the bottom of the Motion palette have checkboxes for <strong>watchers</strong>.  Unlike the jigsaw-puzzle-shaped command blocks, reporters don't carry out an action (such as moving the sprite  or displaying a speech balloon).  Instead, they <em>report a value</em>, usually for use in another block's input slot.</p>
         <img class="imageRight" src="/bjc-r/img/1-introduction/watchers-on-stage.gif" alt="position and direction watchers on the stage" title="position and direction watchers on the stage" />
-        <p>If you click the reporters, they will tell you their value (in this case, who the sprite is positioned on the stage). If you check off the boxes next to them, their values will be displayed in a <strong>watcher</strong> on the stage. As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position.</p>
-        <p>There are reporters with checkboxes for watchers in several of the Snap<em>!</em> palettes including reporters that you have created.</p>
+        <p>If you click the reporters, they will tell you their value (in this case, where the sprite is positioned on the stage). If you check  the boxes next to them, their values will be displayed in a <strong>watcher</strong> on the stage. As in algebra, <em>x</em> means left-to-right position, and <em>y</em> means bottom-to-top position. Once you put a watcher on the stage, the value it displays will be kept up to date as your program runs. (You can uncheck the box to remove a watcher from the stage.)</p>
+        <p>There are reporters with checkboxes for watchers in several of the <span class="snap">snap</span> palettes.</p>
         </div>
-                 
-    	<p>Like other reporter blocks, the <code>random</code> block a value that you can use inside other blocks:</p>
+
+    	<p>Like other reporter blocks, the <code>random</code> block reports a value that you can use as input to other blocks:</p>
 		<div class="comment">MF: build and export each of these images separately with alts and titles.</div>
         <div class="sidenoteBig">
             <p>The <code>random</code> block generates a random number within a range (defined by two whole numbers). Each time the block <img  title="Random" alt="Random" src="/bjc-r/img/blocks/pick-random-1-to-10.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/Random.jpg"> is run, it generates one number ranging from 1 through 10 (with about equal likelihood).</p>
@@ -91,7 +92,7 @@
         <p class="center">
         	<img title="Random Everywhere" class="indent" alt="Random Everywhere" src="/bjc-r/img/prog/pick-random-block-inside-various-blocks.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab03/RandomEverywhere.gif">
         </p>
-        
+
         <div class="forYouToDo">
         	<ol start="4">
             	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep in mind:
@@ -119,16 +120,16 @@
 </li>
             </ol>
 		</div>
-     
+
         <h3>Commands and Reporters Self-Check</h3>
         <div class="comment">MF: add another with commands</div>
-        
+
         <p><strong>Test yourself!</strong> See what you have learned, and review what you missed.</p>
         <!-- Question 1 -->
         <div class="assessment-data" type="multiplechoice" identifier="understanding-of-random-greeting-block"
         hasinlinefeedback="true" maxchoices="1"
         responseIdentifier="ri1" shuffle="false">
-        
+
             <div class="prompt">
                 <p>
                     What will the following script do?
@@ -138,162 +139,156 @@
                     Choose one:
                 </p>
             </div>
-            
+
             <div class="choice" identifier="c1">
                 <div class="text">
-                    	The sprite will say "Hey! You!" once.	
+                    	The sprite will say "Hey! You!" once.
                 </div>
                 <div class="feedback">
                     Incorrect. Understand what the say block does. In this case, "Hey!" will be said first, independently from "You!". "You!" will be said after "Hey!".
                 </div>
             </div>
-            
+
             <div class="choice" identifier="c2">
                 <div class="text">
-                    	The sprite will say "Hey!" and then "You!" once.	
+                    	The sprite will say "Hey!" and then "You!" once.
                 </div>
                 <div class="feedback">
                     Not necessarily. This is only true if the pick random block picks the number 1, which means that the repeat loop will only loop once. If this is so, then "Hey!" will be said for one second followed by "You!" said for one second.
                 </div>
             </div>
-            
+
             <div class="choice" identifier="c3">
                 <div class="text">
-                    	The sprite will say "Hey!" a random number of times and "You!" a <i>different</i> random number of times.	
+                    	The sprite will say "Hey!" a random number of times and "You!" a <i>different</i> random number of times.
                 </div>
                 <div class="feedback">
-                    Not quite, but you are close! Make sure you understand that a repeat loop will do the same number of repeats to each block within it.
-                </div>
+                    Not quite, but you are close! Make sure you understand that a repeat loop will run all the blocks inside it, each time through the loop.</div>
             </div>
-            
+
             <div class="choice" identifier="c4">
                 <div class="text">
-                    	The sprite will say "Hey!" and "You!" the <i>same</i> random number of times.	
+                    	The sprite will say "Hey!" and "You!" the <i>same</i> random number of times.
                 </div>
                 <div class="feedback">
                     Correct! The pick random block will randomly pick a number between 1 and 5 (the given parameters) and then loop that number of times.
                 </div>
             </div>
-        
+
             <div class="responseDeclaration" identifier="ri1">
                 <div class="correctResponse" identifier="c4"></div>
             </div>
         </div>
-    
-    
+
+
         <!-- Question 2 -->
         <div class="assessment-data" type="multiplechoice" identifier="not-plausible-outcome-of-addition-block"
         hasinlinefeedback="true" maxchoices="1"
         responseIdentifier="ri2" shuffle="false">
-        
+
             <div class="prompt">
                 <p>
-                    Understand the following reporter block and then choose which of the following answers is <i>not</i> a plausible output.
+                    Understand the following reporter block and then choose which of the following answers is <i>not</i> a possible output.
                 </p>
                 <img src="/bjc-r/img/lab-2/random-addition.png" alt="There should be an image here" title="random addition block"/>
                 <p>
                     Choose one:
                 </p>
             </div>
-            
+
             <div class="choice" identifier="c1">
                 <div class="text">
-                    	16	
+                    	16
                 </div>
                 <div class="feedback">
-                    Incorrect. Think about why 16 is a plausible output. Hint: Look at the largest numbers each pick random block can pick.
-                </div>
+                Incorrect. Think about why 16 is a possible output. Hint: Look at the largest numbers each <code>pick random</code> block can pick. </div>
             </div>
-            
+
             <div class="choice" identifier="c2">
                 <div class="text">
-                    	8	
+                    	8
                 </div>
                 <div class="feedback">
-                    Incorrect. Make sure you understand the above code. 
+                    Incorrect. What two random numbers might be picked that add up to 8?
                 </div>
             </div>
-            
+
             <div class="choice" identifier="c3">
                 <div class="text">
-                    	3	
+                    	3
                 </div>
                 <div class="feedback">
-                    Correct! Although the second pick random block can potentially select 3, the first pick random block has parameters of 4 and 9, which means that the sum will never be 3.
-                </div>
+                Correct! Although the second <code>pick random</code> block can potentially select 3, the first pick random block has inputs of 4 and 9, which means that the sum will be at least 3+4.</div>
             </div>
-            
+
             <div class="choice" identifier="c4">
                 <div class="text">
-                    	12	
+                    	12
                 </div>
                 <div class="feedback">
-                    Incorrect. Make sure you understand what the above code does!
-                </div>
+                    Incorrect. What two random numbers might be picked that add up to 12?                </div>
             </div>
-        
+
             <div class="responseDeclaration" identifier="ri2">
                 <div class="correctResponse" identifier="c3"></div>
             </div>
         </div>
-        
+
         <div class="comment">GitHub comment: question3 is too small</div>
         <!-- Question 3 -->
         <div class="assessment-data" type="multiplechoice" identifier="plausible-output-of-letter-block"
         hasinlinefeedback="true" maxchoices="1"
         responseIdentifier="ri3" shuffle="false">
-        
+
             <div class="prompt">
                 <p>
-                   Look at the following reporter block. Which of the following is a plausable output of this block?
+                   Look at the following reporter block. Which of the following is a possible output of this block?
                 </p>
                 <img src="/bjc-r/img/lab-2/random-letter-super.png" alt="There should be an image here" title="Supercalifragilisticexpialidocious"/>
-                
+
                 <p>
                     Choose one:
                 </p>
             </div>
-            
+
             <div class="choice" identifier="c1">
                 <div class="text">
-                    	c	
+                    	c
                 </div>
                 <div class="feedback">
                     Correct! "c" is letter 6 of supercalifragilisticexpialidocious.
                 </div>
             </div>
-            
+
             <div class="choice" identifier="c2">
                 <div class="text">
-                    	s	
+                    	s
                 </div>
                 <div class="feedback">
-                    Incorrect. Which letter value (1-34) is "s"? It may have multiple values as it is found in multiple places in the word, but it is not found within the given parameters.
-                </div>
+                    Incorrect. Which letter position (1-34) is "s"? (It has multiple positions, but it is not found within the given range.)</div>
             </div>
-            
+
             <div class="choice" identifier="c3">
                 <div class="text">
-                    	a	
+                    	a
                 </div>
                 <div class="feedback">
-                    Incorrect. Which letter value (1-34) is "a"? It may have multiple values as it is found in multiple places in the word, but it is not found within the given parameters.
-                </div>
+                    Incorrect. Which letter position (1-34) is "a"? (It has multiple positions, but it is not found within the given range.)</div>
             </div>
-            
+
             <div class="choice" identifier="c4">
                 <div class="text">
-                    	x	
+                    	x
                 </div>
                 <div class="feedback">
-                    Incorrect. Which letter value (1-34) is "x"? It is not found within the given parameters.
-                </div>
+                    Incorrect. Which letter position (1-34) is "x"?                </div>
             </div>
-            
+
             <div class="responseDeclaration" identifier="ri3">
                 <div class="correctResponse" identifier="c1"></div>
             </div>
         </div>
-        
+
+
 	</body>
 </html>

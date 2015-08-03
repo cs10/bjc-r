@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Unit 1 Lab 4: Block Types and Calculations</title>
     </head>
+    
     <body>
         <h2>Computer Operations</h2>
        	<p>
@@ -36,7 +38,7 @@
                         <li><img src="/bjc-r/img/1-introduction/operator-fytd-10.png" alt="(((5 + 4) &middot; 3) - 2)" title="(((5 + 4) &middot; 3) - 2)" /></li>
                     </ol>
                 </li>
-				<div class="sidenoteBig">You may want to review <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/1-custom-blocks.html">Designing Custom Blocks</a> and <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html">Adding and Input</a>.</div>
+				<div class="sidenoteBig">You may want to review <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/1-custom-blocks.html">Designing Custom Blocks</a> and <a href="/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html">Adding an Input</a>.</div>
                 <li>Build an <code>is it an integer?</code> block. Use the <code>round</code> operator to compare a number to itself but rounded.</li>
             </ol>
         </div>
@@ -62,26 +64,22 @@
                     </div>
                 </li>
 				<!--<div class="sidenote">If <em>a</em> is divisible by <em>b</em>, then the remainder for <em>a</em> &divide; <em>b</em> is  0. The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="mod block" title="mod block" /> gives the remainder when the first numebr is divided by the second.</div>-->
-                <div class="sidenoteBig">You'll probably want an <code>if else</code> block for this.</div>
+       <!--         <div class="sidenoteBig">You'll probably want an <code>if else</code> block for this.</div>   -->
                 <li>Build an <code>is () divisible by ()?</code> block that takes two inputs and reports <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> if the first number is divisible by the second and reports <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /> if the first number is <em>not</em> divisible by the second.</li>                   
             </ol>
          </div>
         
-        <div class="todo">
-            <ul>
-                <li>From GH: Build an is () divisible by ()? block that takes two inputs and reports true if the first number is divisible by the second and reports false if the first number is not divisible by the second. "evenly divisible?" might be more accurate</li>
-            </ul>
-        </div>
+       
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <div class="comment">for TG: this is related to <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html">U2L2</a></div>
-            <div class="comment"> It's too much at this point to have all the conditions for leap year --- too much text and too much complexity of programming --- but we can't leave this without <em>some</em> indication that this is not the whole story. Election year? Just a sidenote? (Except that there are way, way too many  yellow boxes already.) Calling it <em>part</em> of a test for leap year? Or, "most of the time, a leap year can be...." ??  </div>
     		<ol type="A">
                 <div class="endnote">
                 	<p>In a leap year, February has a 29th day and the year overall has 366. Leap years let the calendar adjust for the fact that it takes the earth takes slightly over 365 days to revolve around the sun. It actually takes approximately 365.25 days so leap years come about every fourth year.</p>
                 	<!--<p>So, a year is a leap year if it can be divided evenly by 4. The year 2012 was a leap year (divisible evenly by 4), 2013 was not (not evenly divisble by 4, 2013 mod 4 &equiv; 1), 1996 was (because 1996 mod 4 &equiv; 0), and 2014 wasn't (because 2014 mod 4 &equiv; 2).</p>-->
                 </div>
                 <li> Write a script that checks the variable <code>year</code> and says "leap year" when the value of <code>year</code> is evenly divisible by 4 and says "not leap year" otherwise. </li>
+                <li>This is actually a simplification of the <em>real</em> rules for determining leap years.  If you have the time and energy, look up the algorithm online and fix the script you made above.</li>
             </ol>
         </div>
 
