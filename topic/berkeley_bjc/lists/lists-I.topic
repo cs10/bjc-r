@@ -25,15 +25,15 @@ heading: Introduction to Lists
    resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
    resource: More on composition of higher order functions [/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
    resource: When you really have to loop [/bjc-r/cur/programming/lists/hof/when-you-really-have-to-loop.html]
-  
+
 //heading: Lists and Sentences: The Index Variable Pattern
 //  resource: Processing a Sentence [/bjc-r/cur/programming/lists/sentences/processing-a-sentence.html]
-  
+
 heading: List Mutation
   resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
   resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
 
-  
-assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
-  
+
+// assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+
 }
