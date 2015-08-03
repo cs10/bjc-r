@@ -17,9 +17,9 @@ big-idea: Analyze the impact of technology on our culture and safety.
 heading: Programming Lab 1: Introduction
 	raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
-	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
-	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://bjc.edc.org/hourofcode/index.html]
+	resource: Exploring Snap<em>!</em> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
+	resource: Snap<em>!</em> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+	resource: Hour of Code: Build a Snap<em>!</em> App [http://bjc.edc.org/hourofcode/index.html]
 	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
 	resource: Getting to Know the Snap<em>!</em> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
