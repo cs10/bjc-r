@@ -10,6 +10,7 @@ a:visited {  color: #248694; /* was 36BBCE; */}
 a, .dialogue a {  color: #2a6496; /* was 428bca; */}
 
 h4 {  padding: 5px 0px 0px 0px;}
+
 h3 {  padding-top: 10px;}
 
 .full ul, .full ol {
@@ -33,7 +34,7 @@ li > ol {  list-style-type: lower-alpha;}
 
 /** Editor Notes **/
 .comment, .commentBig { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
-  display: none;
+  /*display: none;*/
   font-size: .9em;
   float: right;
   margin-right: 20px;
@@ -67,7 +68,7 @@ code {
 }
 
 .todo {
-  display: none;
+  /*display: none;*/
   font-size: .9em;
   margin-bottom: 20px;
   padding: 10px;
