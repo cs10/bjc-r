@@ -9,7 +9,8 @@ a:visited {  color: #248694; /* was 36BBCE; */}
 
 a, .dialogue a {  color: #2a6496; /* was 428bca; */}
 
-h4 {  padding: 20px 0px 0px 0px;}
+h4 {  padding: 5px 0px 0px 0px;}
+h3 {  padding-top: 10px;}
 
 .full ul, .full ol {
   display: block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
@@ -21,7 +22,7 @@ h4 {  padding: 20px 0px 0px 0px;}
 
 img.imageLeft {margin-bottom: 0px;}
 
-li {	padding: 5px;}
+li {	padding: 3px;}
 
 li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
   margin: 5px auto;
