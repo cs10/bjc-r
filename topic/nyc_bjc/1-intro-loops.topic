@@ -62,8 +62,5 @@ heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
 heading: Investigations
 	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/6-projects/make-a-kaleidoscope.html]
 	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/6-projects/bug-dance.html]
-	raw-html: <div class="sidenote"></div>
-	forum: Maze Game
-	forum: Asteroids Game
-
+	
 }
