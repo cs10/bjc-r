@@ -12,7 +12,7 @@ big-idea: Get a sense of the complexity and team work required to produce modern
 
 h2: Activities
 learning-goal: Learn to use key listeners to move the characters around the screen.
-learning-goal: Learn to use the movement and drawing commands in <span class="snap">snap</span>  to draw complex images and geometric shapes.
+learning-goal: Learn to use the movement and drawing commands in Snap<em>!</em>  to draw complex images and geometric shapes.
 learning-goal: Learn to use variables that change dynamically within a program.
 learning-goal: Use layers of abstraction in programs to draw complex images.
 

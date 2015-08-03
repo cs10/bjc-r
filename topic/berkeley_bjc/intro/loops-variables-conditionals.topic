@@ -16,7 +16,7 @@ big-idea: Use elementary control structures
   reading: Justices Reject Ban on Violent Video Games for Children [http://www.nytimes.com/2011/06/28/us/28scotus.html?_r=1]
 
 h2: Activities
-learning-goal: Learn to use the movement and drawing commands in <span class="snap">snap</span>  to draw complex images and geometric shapes.
+learning-goal: Learn to use the movement and drawing commands in Snap<em>!</em>  to draw complex images and geometric shapes.
 learning-goal: Learn to use variables that change dynamically within a program.
 learning-goal: Use layers of abstraction in programs to draw complex images.
 learning-goal: Learn how the X- Y- Coordinate plane maps to the stage.
@@ -57,7 +57,7 @@ heading: Variables
   
   
 heading: Activities
-  resource: Draw a Picture in <span class="snap">snap</span> [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
+  resource: Draw a Picture in Snap<em>!</em> [/bjc-r/cur/programming/intro/drawing/draw-a-picture.html]
 //  resource: Countdown [/bjc-r/cur/programming/variables/countdown-with-sprites.html]
 
 heading: The <code>If</code> Block

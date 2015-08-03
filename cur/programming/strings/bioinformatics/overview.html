@@ -7,7 +7,7 @@
         </title>
     </head>
     <body>
-        Now, we'll attack this problem using <span class="snap">snap</span>. We will assume that these DNA sequences are strings, like any other words we've used in this course. We will start this problem by defining a superstring. A <i>superstring</i> of a set of strings is any string that contains every string in that set. For example, if we had a set RACAD, DABRA, ADABR, ABRAC, ACADA, one possible superstring is RACADABRAADABRABRACACADA. The <i>shortest superstring</i>, is a superstring that is also as short as possible (the solution for the above set is ABRACADABRA).
+        Now, we'll attack this problem using Snap<em>!</em>. We will assume that these DNA sequences are strings, like any other words we've used in this course. We will start this problem by defining a superstring. A <i>superstring</i> of a set of strings is any string that contains every string in that set. For example, if we had a set RACAD, DABRA, ADABR, ABRAC, ACADA, one possible superstring is RACADABRAADABRABRACACADA. The <i>shortest superstring</i>, is a superstring that is also as short as possible (the solution for the above set is ABRACADABRA).
         <br>
         <br>
         Basically, we keep combining them, bigger and bigger, like a snowball, until we arrive at the full string. First, we compute overlaps, where ABRA and RACA has 2 overlaps because the RA overlaps. We compute all the pairwise overlaps. We pick the pair with the greatest overlap and combine them into a single string. The above case would have resulted in ABRACA. We repeat this process over and over, until we're left with a single string, which we claim to be the <span style="font-style: italic;">shortest superstring</span>.

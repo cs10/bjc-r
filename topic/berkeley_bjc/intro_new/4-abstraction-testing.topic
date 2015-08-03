@@ -26,7 +26,7 @@ heading: Abstraction
 
 heading: Programs with Multiple Sprites
 
-  resource: Experiment with a short <span class="snap">snap</span> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
+  resource: Experiment with a short Snap<em>!</em> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
   quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
   quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
     resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html] 

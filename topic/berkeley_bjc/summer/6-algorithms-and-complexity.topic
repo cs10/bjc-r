@@ -13,7 +13,7 @@ learning-goal: There's often more than one way to solve the same problem. Certai
 learning-goal: Practice implementing algorithms that were discussed verbally.
 learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
-learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
+learning-goal: Use the Snap<em>!</em>  timer to gather run time information
 learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
 
@@ -21,7 +21,7 @@ heading: What are Algorithms?
   resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
   forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
   resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
-  resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
+  resource: Algorithms in Snap<em>!</em> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
   resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
   resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
 
