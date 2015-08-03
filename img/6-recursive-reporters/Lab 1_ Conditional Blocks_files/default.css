@@ -596,7 +596,7 @@ img.indent, div.indent {
 
 /**** SPECIAL CONTENT CLASSES ***/
 /* .snap inserts the logo using the proper formatting.
-* Insert using "<span class="snap">snap</span>"
+* Insert using "Snap<em>!</em>"
 */
 .snap:first-letter {
   font-variant: normal;

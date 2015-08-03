@@ -1,8 +1,8 @@
-title: Welcome to <span class="snap">snap</span>
+title: Welcome to Snap<em>!</em>
 
 {
 h2: Big Ideas
-big-idea: Explore abstraction through <span class="snap">snap</span> blocks as it relates to Computer Science (CS)
+big-idea: Explore abstraction through Snap<em>!</em> blocks as it relates to Computer Science (CS)
 big-idea: Explore sequential programming
 big-idea: Understand and analyze some of the impact of the internet on our culture
 
@@ -11,15 +11,15 @@ big-idea: Understand and analyze some of the impact of the internet on our cultu
 
 
 h2: Activities
-learning-goal: Familiarize yourself with the <span class="snap">snap</span> interface
-learning-goal: Make a <span class="snap">snap</span> account to save and load projects
+learning-goal: Familiarize yourself with the Snap<em>!</em> interface
+learning-goal: Make a Snap<em>!</em> account to save and load projects
 learning-goal: Make a sprite sing
 learning-goal: Learn to use the mouse to move sprites around the screen.
 learning-goal: Make a Kaleidoscope
 
-heading: Introduction to <span class="snap">snap</span>
+heading: Introduction to Snap<em>!</em>
 	resource: Introduction to Pair Programming [/bjc-r/cur/programming/guides/pair-programming-intro.html]
-	resource: Welcome to <span class="snap">snap</span> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
+	resource: Welcome to Snap<em>!</em> [/bjc-r/cur/programming/intro/snap/welcome-to-snap2.html]
 	resource: Overview of the Window [/bjc-r/cur/programming/intro/snap/exploring-snap-overview-of-window.html]
 	resource: Blocks [/bjc-r/cur/programming/intro/snap/exploring-snap-blocks.html]
 	// Swap

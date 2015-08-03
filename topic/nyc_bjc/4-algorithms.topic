@@ -25,7 +25,7 @@ heading: Programming Lab 1: List Manipulation
 	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/algorithms/experiencing-algorithms.html]
 	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
 	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
-	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
+	resource: Algorithms in Snap<em>!</em> [/bjc-r/cur/programming/algorithms/algorithms-in-snap.html]
 	resource: Improving Our Number Finder [/bjc-r/cur/programming/algorithms/improving-our-number-finder.html]
 	resource: Too Many Blocks! [/bjc-r/cur/programming/algorithms/too-many-blocks.html]
 
@@ -41,7 +41,7 @@ heading: Programming Lab 1: List Manipulation
 //	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
 
 //h2: Activities
-//learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
+//learning-goal: Use the Snap<em>!</em>  timer to gather run time information
 //learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
 heading: Lab 2: Algorithm Complexity

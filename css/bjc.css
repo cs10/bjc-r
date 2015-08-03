@@ -52,7 +52,7 @@ li > ol {  list-style-type: lower-alpha;}
 
 code {
   /* color: #00FFFF; */
-  font-family: courier; 
+  font-family: courier;
   font-size: 1.2em;
   padding: 0px;
 }
@@ -206,8 +206,8 @@ img.noshaddow {
 .dialogue > div > span {  font-weight: bold;}
 
 .takeItFurther {
-  background-color: #e4cde3; 
-  width:90%;  
+  background-color: #e4cde3;
+  width:90%;
   margin-left: auto;
   margin-right: auto;
   }
@@ -220,7 +220,7 @@ img.noshaddow {
   margin-left: auto;
   margin-right: auto;
  }
- 
+
 /* .takeNote:before {content: "Take Note: ";} */
 
 .apStandards {
@@ -239,7 +239,7 @@ div.saveAs img {
 }
 
 div.saveAs span.text {
-  position: absolute; 
+  position: absolute;
   margin-left: 182px;/*19.7em;*/
   padding-top: 1.05em;
   z-index:2;
@@ -247,7 +247,7 @@ div.saveAs span.text {
 }
 
 div.newProject span.text {
-  position: absolute; 
+  position: absolute;
   margin-left: 323px;/*19.7em;*/
   padding-top: 1.05em;
   z-index:2;
