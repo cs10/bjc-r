@@ -17,12 +17,14 @@ title: Unit 4: Algorithm Complexity
 //learning-goal: Memoization is a technique that can be used for improving the performance of algorithms with repeated calculations at the expense of a higher memory requirement.
 //learning-goal: Hiding algorithmic details behind a layer of abstraction makes it easier to upgrade or adjust your implementation in the future.
 
+	raw-html: <div class="todo">Are any of L1 and L2 moving to U3? I'm having a hard time making sense of what's in there. --MF</div>
 heading: Programming Lab 1: List Manipulation
+	raw-html: <div class="commentBig">Brian and I agreed to move the content from "Experiencing Algorithms" to the TG. --MF</div>
 	// resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
 	resource: Getting Started [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/1-getting-started.html]
 	// forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
 	// forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
-	resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/2-experiencing-algorithms.html]
+	//resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/2-experiencing-algorithms.html]
 	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
 	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
 	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/3-algorithms-in-snap.html]
@@ -44,15 +46,15 @@ heading: Programming Lab 1: List Manipulation
 //learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
 //learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
-heading: Lab 2: Algorithm Complexity
+heading: Programming Lab 2: Algorithm Complexity
 	resource: A (non-video) Game [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/1-a-non-video-game.html]
 	resource: Competing with Young Gauss [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/2-competing-with-young-gauss.html]
 
-heading: Lab 3: Timing Experiments
-	resource: Time is of the Es-sense [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/1-time-is-of-the-es-sense.html]
-	resource: Do You Have Time to Add? [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/2-do-you-have-time-to-add.html] 
+heading: Programming Lab 3: Timing Experiments
+	resource: Timing a Reporter [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/1-time-is-of-the-es-sense.html]
+	//resource: The Time It Takes to Increment [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/2-do-you-have-time-to-add.html] 
 	resource: Constant-Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/3-constant-time.html]
-	resource: All the Numbers, All the Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/4-all-the-numbers-all-the-time.html]
+	//resource: All the Numbers, All the Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/4-all-the-numbers-all-the-time.html]
 	resource: Linear-Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/5-linear-time.html]
 	quiz: Searching Through Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/6-quiz-searching-through-time.html]
 	resource: Timing Sum-thing's Up [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/7-timing-sum-things-up.html]

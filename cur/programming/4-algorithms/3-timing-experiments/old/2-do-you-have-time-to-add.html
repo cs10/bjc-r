@@ -7,13 +7,7 @@
 	</head>
 
 	<body>
-    	<h2>Constant-Time</h2>
-		<div class="todo">
-            <ul>
-                <li>This was originally two pages that I combined. --MF</li>
-            </ul>
-		</div>
-
+    	<h2>The Time It Takes to Increment</h2>
 		<p>Let us start our timing experiments with something simple: how long does it take for a computer to <em>add 1 to</em> (that is, <em>increment</em>) a number?</p>
         <div class="forYouToDo" id="first">
             <ol>
@@ -50,12 +44,5 @@
             </ol>
         </div>
         
-        <div class="todo">MF: The section below is too long. Let's  trim it down considerably, especially the third paragraph.</div>
-        <p>In the timing experiments above, you may have noticed that the computer takes approximately the same time to increment a number, even though the number was made progressively larger. This is why, computer scientists call incrementing a number a <em>constant-time</em> operation. It turns out, that <em>any</em> basic arithmetic operation (addition, subtraction, multiplication, division, and exponentiation) is considered to be a constant-time operation.</p>
-        <p>Notice that we call these operations <em>constant-time</em> operations, but we don't actually say how much time they take because different computers will take different amounts of time to perform the same operation. Instead, <em>we focus on how the running time of an algorithm scales as we scale its inputs to larger and larger sizes</em> because this is a property of the algorithm itself, and it is independent of the computer that it is run on.</p>
-        <p>Why did the computer take approximately the same amount of time to increment a number, even though that number was getting larger? Think about how you would add one to a number back in your elementary school days; this is similar to how a computer does its arithmetic (ignoring technical details). The elementary school way of adding numbers goes digit by digit, and so the amount of time it takes for you to add two numbers depends on how many digits each number has. As we doubled the number we were incrementing, we didn't consistently add digits to it, and so the computer took approximately the same time. Even as we began scaling the number by ten, the computer (and you!) takes a relatively small amount of time to account for the extra digit, so the total time remains approximately constant.</p>
-        <p>Constant-time operations are the Holy Grail of computer science algorithms, and unfortunately, most algorithms are <em>not</em> constant-time...</p>   
-
-
 	</body>
 </html>
