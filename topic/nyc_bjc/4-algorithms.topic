@@ -48,6 +48,7 @@ heading: Programming Lab 1: List Manipulation
 
 heading: Programming Lab 2: Algorithm Complexity
 	resource: A (non-video) Game [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/1-a-non-video-game.html]
+	raw-html: <div class="todo">From Dan: <ul><li>Given a ton of card decks, have the class figure out the fastest INDIVIDUAL time to start from a shuffled deck to a sorted deck (students can choose what “in order” means for that, but it has to be a unique order, so “reds in front of blacks” isn’t enough — people always choose to sort by either rank or suit).  Talk about the different algorithms that evolved, and what were fastest.</li><li>Tell the class they can work as a TEAM to sort a shuffled desk the fastest.  The teams can be any size. Let them continue to adjust the algorithms and sizes of teams and personnel on the teams to achieve the fastest scores.  Talk about the different algorithms that evolved, and what were fastest.</li></ul>This is a great introduction to concurrent algorithms, and allows the kids to come up with algorithms on their own, and builds team spirit. (Added in by MF) Brian suggested the placement in the middle of Lab 2.</div>
 	resource: Competing with Young Gauss [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/2-competing-with-young-gauss.html]
 
 heading: Programming Lab 3: Timing Experiments
