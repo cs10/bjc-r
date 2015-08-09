@@ -7,7 +7,7 @@
     </head>
     
     <body>
-        <h2>Computer Operations</h2>
+        <h2>Expressions Are Made of  Operations</h2>
        	<p>
         	Math operations such as 
         	<img src="/bjc-r/img/python/plus.png" alt="_ + _"/>
@@ -21,6 +21,8 @@
         	<img src="/bjc-r/img/1-introduction/5+(4x3).png" alt="5 + (4 &middot; 3)" title="5 + (4 &middot; 3)" /> = 5 + (4 &middot; 3) = 5 + 12<br />So, we get: <img src="/bjc-r/img/1-introduction/5+(4x3)-reporting-17.png" alt="5 + (4 &middot; 3) reporting 17" title="5 + (4 &middot; 3) reporting 17" />
         </p>
         <p>The order of operations depends on how the blocks are embeded. Here, <span class="snap">snap</span> will first evaluate the innermost block, 4&nbsp;&middot;&nbsp;3, which equals 12, and then evaluate 5&nbsp;+&nbsp;12.  If you want to change the order of operations for this expression, rebuild the expression with the multiplication block on the outside.</p>
+        <p class="center"><img src="/bjc-r/img/1-introduction/(5+4)*3.png" alt="(5+4)*3"></p>
+
         <p></p>
         <div class="forYouToDo" id="first">
             <ol>
@@ -46,11 +48,12 @@
         <h3>The <code>Mod</code> Block</h3>
 	
             <p>The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block  <em>reports the remainder</em> when the first positive integer input is divided by the second. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png" style="margin-bottom:1.2em;" alt="17 mod 5 reports 2" title="17 mod 5 reports 2" /> because  when 17 is divided by 5, the remainder is 2. </p>
-            <div class="endnote">In mathematics, we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  style="margin-bottom:1.2em;" alt="17 mod 5 reports 2"> as 17&nbsp;(mod&nbsp;5)&nbsp;&#x2261&nbsp;2, and we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png"  style="margin-bottom:1.2em;" alt="15-mod-5-reporting-0"> as 15&nbsp;(mod&nbsp;5)&nbsp;&#x2261&nbsp;0.</div>
+            <div class="endnote"><div class="comment">No we don't; we write 17&#x2261;2 (mod 5).  And, do we really want to get into why not just use equals here?</div> In mathematics, we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  style="margin-bottom:1.2em;" alt="17 mod 5 reports 2"> as 17&nbsp;(mod&nbsp;5)&nbsp;&#x2261&nbsp;2, and we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png"  style="margin-bottom:1.2em;" alt="15-mod-5-reporting-0"> as 15&nbsp;(mod&nbsp;5)&nbsp;&#x2261&nbsp;0.</div>
             <p>When one number divides another evenly, the remainder is 0: <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png"  style="margin-bottom:1.2em;" alt="15 mod 5 reports 0" title="15 mod 5 reports 0" />.  The predicate <img class="inline" src="/bjc-r/img/1-introduction/n-mod-2=0.png" alt="n mod 2 = 0" title="n mod 2 = 0" /> reports <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> if <em>n</em> is divisible by 2 (meaning <code><em>n</em></code> is even) and <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" /> if <code><em>n</em></code> is odd (not divisible by 2 and so the remainder is not 0).</p>
         
         <div class="forYouToDo">
             <ol start="3">
+            <div class="comment">Sorry to be difficult but in CS the word "parity" means something related but different, about the number of 1 bits in a value. Also, why are the instructions in yellow?</div>
                 <li>
                     Build a <a href="https://en.wikipedia.org/wiki/Parity_(mathematics)" target="_blank">parity</a> checker that picks a random number from 1 to 10 and has the sprite say whether the number is odd or even.
                     <div class="endnote">
@@ -78,8 +81,8 @@
                 	<p>In a leap year, February has a 29th day and the year overall has 366. Leap years let the calendar adjust for the fact that it takes the earth takes slightly over 365 days to revolve around the sun. It actually takes approximately 365.25 days so leap years come about every fourth year.</p>
                 	<!--<p>So, a year is a leap year if it can be divided evenly by 4. The year 2012 was a leap year (divisible evenly by 4), 2013 was not (not evenly divisble by 4, 2013 mod 4 &equiv; 1), 1996 was (because 1996 mod 4 &equiv; 0), and 2014 wasn't (because 2014 mod 4 &equiv; 2).</p>-->
                 </div>
-                <li> Write a script that checks the variable <code>year</code> and says "leap year" when the value of <code>year</code> is evenly divisible by 4 and says "not leap year" otherwise. </li>
-                <li>This is actually a simplification of the <em>real</em> rules for determining leap years.  If you have the time and energy, look up the algorithm online and fix the script you made above.</li>
+                <li> Write a block that checks the value of its input called <code>year</code> and says "leap year" when the value of <code>year</code> is evenly divisible by 4 and says "not leap year" otherwise. </li>
+                <li>This is actually a simplification of the <em>real</em> rules for determining leap years.  If you have the time and energy, look up the algorithm online and fix the block you made above.</li>
             </ol>
         </div>
 

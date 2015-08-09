@@ -56,7 +56,7 @@
             <ol>
                 <li>
                     <div class="sidenoteBig">It's ok if you get different reports than those shown here. Discuss why that might happen.</div>
-                    Click each of these reporter blocks in <span class="snap">snap</span> (in the script or the panel) to see them report their information:<br />
+                    Click each of these reporter blocks in <span class="snap">snap</span> (in the script area or the palette) to see them report their information:<br />
                 	<p class="center">
                     	<img class="inline" src="/bjc-r/img/1-introduction/size-reporting-100.png" alt="Size reporting 100" title="Size reporting 100" />
                     	<img class="" src="/bjc-r/img/1-introduction/pick-random-1-to-10-reporting-2.png" alt="Pick random 1 to 10 reporting 2" title="Pick random 1 to 10 reporting 2" />
@@ -98,7 +98,8 @@
             	<li>Make a sprite keep moving around the screen randomly, using <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random" /> blocks (with the correct inputs) inside <img src="/bjc-r/img/blocks/turn-right.png" alt="turn right block" /> and <img src="/bjc-r/img/blocks/move.png" alt="move to" /> blocks.  Some things to keep in mind:
                 	<ul>
 						<li>You'll want to use a <img src="/bjc-r/img/blocks/repeat.png" alt="repeat block" /> or <img src="/bjc-r/img/blocks/forever.png" alt="forever block" /> to keep your sprite moving continuously.</li>
-         				<li>Consider the <a href="/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html">dimensions of the interface</a> to sure the sprite can travel in any direction.</li>
+                        <div class="comment">I'm not convinced this is really possible.  If you get a string of rightward moves, sooner or later even move 1 step will fail.  I would program this with <code>go to x:y:</code>.</div>
+         				<li>Consider the <a href="/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html">dimensions of the stage</a> to sure the sprite can travel in any direction.</li>
                         <li>Put the pen down to help you keep track of what the sprite is doing. You'll see a two-dimensional <a href="http://en.wikipedia.org/wiki/Random_walk" target="_blank">random walk</a>.</li>
                     </ul>
                 </li>

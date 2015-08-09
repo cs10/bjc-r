@@ -8,8 +8,12 @@
 
     <body>
         <h2>Predicates, Conditionals, and Logic</h2>
-        <div class="todo">MF: See also <a href="http://bjc.berkeley.edu/bjc-r/cur/programming/intro/drawing/game-of-tag.html?topic=berkeley_bjc/intro/broadcast-animations-music.topic&step=11&noassigment=true&course=berkeley_bjc.html" target="_blank">Game of tag</a></div>
-        <div class="sidenoteBig">
+        <div class="todo">
+          <p>MF: See also <a href="http://bjc.berkeley.edu/bjc-r/cur/programming/intro/drawing/game-of-tag.html?topic=berkeley_bjc/intro/broadcast-animations-music.topic&step=11&noassigment=true&course=berkeley_bjc.html" target="_blank">Game of tag</a></p>
+          <p>BH: How about some experience before formality? Have them make scripts like forever (go to mouse pos, if x&gt;0 set pen color to red else set ...blue).</p>
+        </div>
+        <div class="comment">Why is this an animation?</div>
+    <div class="sidenoteBig">
             <img class="imageRight" style="margin:0px;" src="/bjc-r/img/2-conditionals-abstraction-testing/reporter-plus-reporting-10.gif" alt="7 + 3 reporting 10" title="7 + 3 reporting 10" />
         	Reporter blocks can report different kinds of values. The <code>plus</code> block, for example, reports a number. Predicates always report a Boolean value (either <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />).<br />
         </div>        
@@ -27,8 +31,8 @@
                     </p>
                     <ul>
                         <div class="comment">Make a picture showing a speech balloon reporting from one of the Booleans.  By themselves, the block pictures aren't obviously blocks rather than output values.</div>
-                        <li><strong><em>Boolean</em> blocks are a special kind of predicate.</strong> There are two of them, one for each of the values a predicate can report: <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />.</li>
-                    	<div class="endnote">These two special values are called <a href="https://en.wikipedia.org/wiki/Boolean_data_type" target="_blank">Boolean values</a> and were named after the logician <a href="https://en.wikipedia.org/wiki/George_Boole" target="_blank">George Boole</a>.</div>
+                        <li><strong><em>Boolean value</em> blocks are a special kind of predicate.</strong> There are two of them, one for each of the Boolean values: <img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> and <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />.</li>
+                    	<div class="endnote"><a href="https://en.wikipedia.org/wiki/Boolean_data_type" target="_blank">Boolean values</a>  were named after the logician <a href="https://en.wikipedia.org/wiki/George_Boole" target="_blank">George Boole</a>.</div>
                     </ul>
                 </li>
 
@@ -39,7 +43,7 @@
             Predicates often used to control the logic of a program include <img src="/bjc-r/img/python/equal.png" alt="equals block" title="equals block"/>, <img src="/bjc-r/img/python/lessthan.png" alt="less than block" title="less than block"/>, <img src="/bjc-r/img/python/greaterthan.png" alt="greater than block" title="greater than block"/>, <img src="/bjc-r/img/blocks/not.png" alt="not" title="not" />, <img src="/bjc-r/img/blocks/and.png" alt="and" title="and" />, and <img src="/bjc-r/img/blocks/or.png" alt="or" title="or" />.
             Predicates can have other blocks nested inside them to make more complicated expressions:<!--, but predicates always report a boolean (<img class="inline" src="/bjc-r/img/blocks/true.png" alt="true" title="true" /> or <img class="inline" src="/bjc-r/img/blocks/false.png" alt="false" title="false" />).--> 
         </p>
-        <div class="sidenoteBig"><span class="snap">snap</span> alternates light and dark versions of the palette colors when a block is nested inside another block from the same palette. (This aid to readability is called zebra coloring.)	</div>
+        <div class="sidenoteBig"><span class="snap">snap</span> alternates light and dark versions of the palette colors when a block is nested inside another block from the same palette. (This aid to readability is called <em>zebra coloring.</em>) </div>
         <div class="comment">MF: clean up these blurry script pics (and resize to zoom 1?)</div> 
 		<p class="center">
             <img src="/bjc-r/img/2-conditionals-abstraction-testing/equals-reporting-true_293x44.png" alt="equals reporting true">
@@ -82,7 +86,8 @@
             <div class="sidenote">Conditionals are found in the yellow Control palette	with <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html"><code>repeat</code></a>, <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/3-the-forever-block.html"><code>forever</code></a>, and <a href="/bjc-r/cur/programming/1-introduction/2-control-commands/4-the-for-block.html"><code>for</code></a>.</div>
             <ul>        
                 <li>
-                	<strong><em>Conditional</em> blocks are a special kind of <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html">command</a>.</strong> Conditionals perform the code inside them if (and only if) the hexagonal condition (a <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html">predicate</a>) is true. Conditionals are C-shaped or E-shaped and have the same click-together grooves as other commands:<br /> 
+                	<strong><em>Conditional</em> blocks are a special kind of <a href="/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html">command</a>.</strong> Conditionals perform the code inside them if (and only if) the condition input (a Boolean value) is<ul><li><code>true</code> for the first command slot of an <code>if</code>.</li>
+                    <li><code>false</code> for the second (<code>else</code>) command slot of an <code>if</code> or the command slot of <code>repeat until</code>.</li></ul> Conditionals are C-shaped or E-shaped and have the same click-together grooves as other commands:<br /> 
                     <p class="center">
                         <img src="/bjc-r/img/blocks/if.png" class="inline" alt="if" title="if" />
                         <img src="/bjc-r/img/blocks/if-else.png" class="inline" alt="if else" title="if else" />
@@ -99,8 +104,8 @@
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Determine a simpler, common mathematical statement that is equivalent this complex predicate: <img src="/bjc-r/img/1-introduction/xlt9orx=9.png" alt="x < 9 or x = 9" title="x < 9 or x = 9" /></li>
-                <li>Determine an equivalent mathematical statement to this complex predicate: <img src="/bjc-r/img/cond/less_than_equal_to.png" alt="" title=""/></li>
+                <li>Determine a simpler expression that is equivalent to this one: <img src="/bjc-r/img/1-introduction/xlt9orx=9.png" alt="x < 9 or x = 9" title="x < 9 or x = 9" /></li>
+                <li>Determine a simpler expression that is equivalent to this one: <img src="/bjc-r/img/cond/less_than_equal_to.png" alt="" title=""/></li>
             </ol>
         </div>
        
