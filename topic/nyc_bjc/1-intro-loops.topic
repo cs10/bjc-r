@@ -26,7 +26,7 @@ heading: Programming Lab 1: Introduction
 	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
+	// resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
 	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
 	
