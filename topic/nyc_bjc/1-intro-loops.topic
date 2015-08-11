@@ -17,9 +17,9 @@ big-idea: Analyze the impact of technology on our culture and safety.
 heading: Programming Lab 1: Hour of Code
 	raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
 	resource: Create a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-hour-of-code/1-creating-a-snap-account.html]
-	resource: Start Your First Mobile App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/2-start-your-first-mobile-app.html]
+	resource: Start Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/2-start-your-first-snap-app.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-hour-of-code/3-pair-programming-swap.html]
-	resource: Finish Your First Mobile App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/4-finish-your-first-mobile-app.html]
+	resource: Finish Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/4-finish-your-first-snap-app.html]
 	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-hour-of-code/5-saving-in-snap.html]
 	
 heading: Programming Lab 1: Introduction
