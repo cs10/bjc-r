@@ -14,9 +14,13 @@ big-idea: Analyze the impact of technology on our culture and safety.
 	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white <span class="snap">snap</span> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
         
 
-heading: Programming Lab 1: Introduction
-	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://bjc.edc.org/hourofcode/index.html]
-	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+heading: Programming Lab 1: Hour of Code
+	raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
+	resource: Create a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-hour-of-code/1-creating-a-snap-account.html]
+	resource: Start Your First Mobile App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/2-start-your-first-mobile-app.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-hour-of-code/3-pair-programming-swap.html]
+	resource: Finish Your First Mobile App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/4-finish-your-first-mobile-app.html]
+	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-hour-of-code/5-saving-in-snap.html]
 	
 heading: Programming Lab 1: Introduction
 	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
