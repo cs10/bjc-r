@@ -15,13 +15,14 @@ big-idea: Analyze the impact of technology on our culture and safety.
         
 
 heading: Programming Lab 1: Introduction
-	raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
+	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://bjc.edc.org/hourofcode/index.html]
+	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+	
+heading: Programming Lab 1: Introduction
+	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
-	resource: <span class="snap">snap</span> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
-	resource: Hour of Code: Build a <span class="snap">snap</span> App [http://bjc.edc.org/hourofcode/index.html]
-	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
+	resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
 	resource: Getting to Know the <span class="snap">snap</span> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
 	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
 	
@@ -41,7 +42,8 @@ heading: Programming Lab 3: Building and Debugging Your Own Blocks
 	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
 	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/5-debugging-blocks-within-blocks.html]
 		
-heading: Programming Lab 4: Block Types and Calculations
+heading: Programming Lab 4: Mathematics of Computer Science? (Block Types and Calculations)
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
 	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
 	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html]
 	resource: Expressions Are Made of Operations [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
