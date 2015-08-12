@@ -7,46 +7,85 @@
 	</head>
     
 	<body>
+<div class="todo">This lab is written all as one page. It should be broken into at least two, possibly three.</div>
 		<h2>Sprites Having a Conversation</h2>
         <div class="comment">Give instructions to import the U1 tell block before starting this project and <em>save</em> this project as Dialogues.</div>
-        In this lab, you will program <em>two</em> sprites. <br /> 
-        You will direct one sprite's movements with your mouse. <br />
+        <p>In this lab, you will program <em>two</em> sprites. <br /> 
+    One sprite will follow your mouse. <br />
         The other sprite will chase the first. <br /> 
-        When they meet, they will have a short conversation.<br />
-        <strong>START BY LOADING THIS FILE (Link to <em>U1 Tell block</em>).</strong>
-    	<div class="forYouToDo" id="first">
+        When they meet, they will have a short conversation.</p>
+        <p><div class="newProject"><span class="text">"U1L2-SpriteChaseConversation"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L2-SpriteChaseConversation" title="Create a new project called U1L2-SpriteChaseConversation" /></div>
+          <strong>START BY LOADING THIS FILE (Link to <em>U1 Tell block</em>).</strong>
+        </p>
+        <div class="forYouToDo" id="first">
             <ol>
             <li><div class="sidenoteBig"><img src="/bjc-r/img/blocks/mouse-x.png" class="block" alt="Mouse X Reporter"/> and <img src="/bjc-r/img/blocks/mouse-y.png" class="block" alt="Mouse Y Reporter"/> report the mouse's location on the screen. You can find them in the &quot;Sensing&quot; palette.</div> 
             Read and think about this script before you build it. What do you expect it to do?
               <p><img src="/bjc-r/img/1-introduction/follow-that-mouse.png" alt="Follow That Mouse Script"></p>
             <p>Now build the script.</p>  <div class="sidenote">To <em>stop</em> this script, click the red stop sign <img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button"/>. </div>
             <p>Move your mouse around the stage while the program is running. Does the program work the way you expected?</p></li>
-			  <li>Now create a second sprite. The video shows how. The instructions here describe the steps.</li>
-              <ol>
-                    <li><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART1.gif" alt="getting a new sprite"></li>
-                    <li><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART2.gif" alt="part 2"></li>
-                    <li></li>
-              </ol>
-              
-              
-              <li>
-					<div class="sidenoteBig">
+			  <li>Now create a second sprite. The video shows how. <br /> The instructions below the video describe the steps.
+                  <p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART1.gif" alt="getting a new sprite"></p>
+                  <ol>
+                        <li>Click on the &quot;add a new Turtle sprite&quot; button just below the stage. <img src="/bjc-r/img/1-introduction/Add-a-new-turtle-sprite.png" alt="add a new turtle sprite"></li>
+                        <li>That new sprite appears on the stage and a button to select it and its script appears underneath the stage. Right now, it has no script. You will need to drag in blocks to tell it what to do.</li>
+                        <li> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> If you want to see any sprite's script, click on its button below the stage. </li>
+                  </ol> 
+              </li> 
+              <li> Build a script for Sprite(2): <br />
+              &nbsp; &nbsp; &nbsp; &nbsp; <code>when started</code> <br />
+              &nbsp; &nbsp; &nbsp; &nbsp; <code>forever {point towards Sprite} </code> <br />
+              The video shows how.<br /> 
+              The instructions below explain a bit more.
+                  <p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART2.gif" alt="part 2"></p>
+                  <ol>
+                        <li> <div class="sidenoteBig">
 						While a script is running, its border is highlighted. Some scripts run so quickly that you may not notice the brief border flash. This script takes longer to run, so it's easier to notice the highlighted border.
-						<img class="" src="/bjc-r/img/1-introduction/just-made-a-script-highlighted.png" alt="Script Running">
-					</div>
-                 
-                <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=Two-sprite%20games"> <img src="/bjc-r/img/1-introduction/SimpleDialogue-Going-to-lunch.png" alt="Simple dialogue about going to lunch"> </a>                </li>
-                <li>We see only one side of this converstion.  We need another sprite.  Here's how.</li>
-			  <li>NEED TO ADD STUFF HERE ABOUT GETTING SECOND SPRITE, HAVING SPRITES CHASE</li>
+					         </div>
+                    When the green flag is clicked, <em>both</em> sprites' scripts run.
+                            <ul> 
+                              <li>Sprite always follows your mouse, as you taught it to.</li>
+                              <li>Sprite(2) always points toward Sprite.</li>
+                            </ul>
+                        </li>
+                        <li><img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> Click the green flag and try it yourself.</li>
+                  </ol>
+              </li>
               
+              <li>We don't want the sprites to repeat their movements forever. <br /> We want them to <code>repeat until</code> they touch each other, and then stop.<br /> 
+              The video shows how to change <code>Sprite(2)</code>'s code. <br /> 
+              <img src="/bjc-r/img/1-introduction/Replacing-code.gif" alt="Replacing code"><br /> Do that for <code>Sprite(2)</code>. <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></li>
+              
+              <li>Now go back to <code>Sprite</code> and tell it not to follow your mouse <em>only</em> until <code>touching Sprite(2)</code>.</li>
+              
+              <li> <div class="sidenoteBig">When the green flag is clicked, you should be able to move the gray Sprite, and watch Sprite(2) keep facing it until you bring Sprite close enough for the two to touch.</div> Try out your program. </li>
+              
+              <li>Sprite(2) <em>faces</em> Sprite, but doesn't move. Add a line of code so that Sprite(2) chases Sprite.<br />
+              &nbsp; &nbsp; &nbsp; &nbsp; <code>repeat until touching</code> <br />
+              &nbsp; &nbsp; &nbsp; &nbsp; <code>point towards Sprite</code> <br />
+              &nbsp; &nbsp; &nbsp; &nbsp; <code>move a tiny amount</code> <br />
+              You may want each move to be even less than 1 step so that Sprite(2) doesn't catch Sprite too quickly.</li>
+              <li>Test your program! Test it a few times. <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" />  </li>
+              <li>Right now, when they do meet, they just stop. <br />
+              You can make them have a conversation by adding code like this to Sprite's script. <br />
+              Make up your own dialogue. You can use any language you can type. <br />
+              <img src="/bjc-r/img/1-introduction/SimpleDialogue-Going-to-lunch.png" alt="Simple dialogue about going to lunch"> 
+              </li>
               </ol>
               </div>
               
+              Save your two-sprite project.<div class="saveAs"><span class="text">"U1L2-SpriteChaseConversation"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-SpriteChaseConversation" title="Save your work as U1L2-SpriteChaseConversation" /></div>
+              
+              <div class="newProject"><span class="text">"U1L2-SpriteOrbit"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div>
+
+
+NOT EDITED FROM HERE ON.
+
 <div class="forYouToDo">
-    <ol start="7">
+    <ol start="10">
         
-				<div class="sidenoteBig">In general, you need to press <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down" title="pen down"> before you can draw. Here, you already pressed it above.</div>
-                <li>
+				
+<li>
                     Create this two-block script in the scripting area. Click on it a several times to see what it does.<br />
                     <img class="indent" style="height:4em;" src="/bjc-r/img/1-introduction/move-turn.png" alt="move 10 steps, turn right 15 degrees" title="move 10 steps, turn right 15 degrees" />
                 </li>
