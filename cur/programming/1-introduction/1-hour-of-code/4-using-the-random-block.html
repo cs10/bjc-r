@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 1 Lab 1: Hour of Code</title>
+	</head>
+
+	<body>
+		<h2>Using the Random Block</h2>
+    	<p>Next, you'll add blocks so that every time Alonzo is clicked, it moves to a different random position using the <code>random</code> block.</p>
+        <p>The <code>random</code> block generates a random number within a range (defined by two integers). For example, each time the <img class="inline" src="/bjc-r/img/1-introduction/pick-random--10-to-20.png" alt="pick random (-10) to (20)" title="pick random (-10) to (20)" /> block is run, it reports one number ranging from -10 through 20 (with about equal likelihood).</p>
+		<div class="forYouToDo" id="first">
+			<ol>
+				<div class="sidenote">One good way to find out what a block does is to click on it and try it out.</div>
+            	<li>Find the <img class="inline" src="/bjc-r/img/blocks/pick-random-1-to-10.png" alt="pick random (1) to (10)" title="pick random (1) to (10)" /> block in the green Operators palette, and click it to try it out.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss the values that the <code>random</code> block reports. What do you notice?</li>
+            </ol>
+        </div>
+        
+        <p>
+        	Oval-shaped blocks like <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random () to ()" title="pick random () to ()" /> can report their values as inputs to other blocks. To use an oval-shaped block that way, you can drag it into the blank input slot in another block like this: <br />
+        	<img class="indent" src="/bjc-r/img/1-introduction/alonzo-go-to-random.gif" alt="Placing random block in goto block" title="Placing random block in goto block" />
+		</p>
+
+		<div class="forYouToDo">
+			<ol start="3">
+                <li>Add a line of code so that every time Alonzo is clicked it not only turns, but also moves to a random position (between -190 and 190 in the <em>x</em> direction and between -130 and 130 in the <em>y</em> direction). Use two <img src="/bjc-r/img/blocks/pick-random-empty-args.png" alt="pick random () to ()" title="pick random () to ()" /> blocks and one <img src="/bjc-r/img/blocks/go-to-x-y-0-0.png" alt="go to x=0 y=0" title="go to x=0 y=0"/> block together at the end of your code to make this happen.</li>	   
+				<div class="endnote">
+                    The Snap<em>!</em> stage (the white space in the upper right where all of the stuff happens) is just like the coordinate plane in math class. The <em>x</em> axis goes from -240 to 240, and the <em>y</em> axis goes from -180 to 180.<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/snap-coord-grid.png" alt="Coordinate Grid" title="Coordinate Grid" />
+                </div>
+                <li>Click on Alonzo. If your script works, Alonzo should face the other way <em>and</em> move to a random spot on the stage (going up, down, and all around, but not off of the stage).</li>
+            </ol>
+        </div>
+        
+        
+	</body>
+</html>
