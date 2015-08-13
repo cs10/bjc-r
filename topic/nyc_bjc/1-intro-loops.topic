@@ -14,17 +14,17 @@ big-idea: Analyze the impact of technology on our culture and safety.
 	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white <span class="snap">snap</span> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
         
 
-heading: Programming Lab 1: Hour of Code
+heading: Programming Lab 1: Building an App
 	raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
-	resource: Create a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-hour-of-code/1-creating-a-snap-account.html]
-	resource: Start Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/2-start-your-first-snap-app.html]
-	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-hour-of-code/3-pair-programming-swap.html]
-	resource: Using the <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/1-hour-of-code/4-using-the-random-block.html]
-	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-hour-of-code/5-saving-in-snap.html]
-	resource: Finish Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-hour-of-code/6-finish-your-first-snap-app.html]
-	resource: Loading Your App on a Mobile Device [/bjc-r/cur/programming/1-introduction/1-hour-of-code/7-loading-mobile-device.html]
+	resource: Create a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html]
+	resource: Start Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/2-start-your-first-snap-app.html]
+	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-building-an-app/3-pair-programming-swap.html]
+	resource: Using the <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/1-building-an-app/4-using-the-random-block.html]
+	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-building-an-app/5-saving-in-snap.html]
+	resource: Finish Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/6-finish-your-first-snap-app.html]
+	resource: Loading Your App on a Mobile Device [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
 	
-heading: Programming Lab 2: Introduction
+heading: Programming Lab 2: Sprite Drawing and Communication
 	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/2-introduction/1-exploring-snap-code.html]
@@ -44,12 +44,12 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
 	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html]
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html]
-	//quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
+	quiz: THIS PAGE NEEDS ATTENTION Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
 	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html]
 	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/5-debugging-blocks-within-blocks.html]
 		
-heading: Programming Lab 5: Mathematics of Computer Science? (Block Types and Calculations)
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
+heading: Programming Lab 5: Block Types and Calculations
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-sprite-position-direction.html]
 	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-commands-and-reporters.html]
 	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html]
 	resource: Expressions Are Made of Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-computer-operations.html]
