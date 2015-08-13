@@ -12,7 +12,7 @@
 
         <p>Hundreds of people have shared their locations through GPS coordinates.</p>
 
-        <div class="sidenote">Locations in this format are called <i>Decimal Degrees</i>:<br /> DDD.DDDD&deg; (latitude, north or south), DDD.DDDD&deg; (longitude, east or west). If you search for "40.748817, -73.985428" in <a href="https://www.google.com/maps/place/40%C2%B044'55.7%22N+73%C2%B059'07.5%22W/@40.7488051,-73.9854167,17z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Google Maps</a>, you can see the corresponding location, near the Empire State Building.</div>
+        <div class="sidenote">The first number is the <i>latitude</i> (north-south), and the second number is the <i>longitude</i> (east-west). If you search for "40.748817, -73.985428" in <a href="https://www.google.com/maps/place/40%C2%B044'55.7%22N+73%C2%B059'07.5%22W/@40.7488051,-73.9854167,17z/data=!4m2!3m1!1s0x0:0x0" target="_blank">Google Maps</a>, you can see the corresponding location, near the Empire State Building.</div>
 
         <p>Here are some of the coordinates (need to change these):</p>
         <table id="tableBlue">
@@ -71,21 +71,21 @@
     <p>
     Positive values of latitude are north of the Equator, negative values are south. Positive values of longitude are east of the Prime Meridian (through London), negative values are west.</p>
 
-	! consider adding a graphic here of latitude-longitude !
+	! consider adding a graphic here of the world and latitude-longitude !
 	
 	<div class="takeNote"> Note that the first number is <i>latitude</i>, the <i>y</i>-coordinate. When plotting GPS coordinates, plot them as <b>(longitude, latitude)</b>, which reverses the typical order.</div>
     
     
     <h3>Making the data useful</h3>
     
-    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists:<br />
+    <p>GPS data isn't very useful as a list of numbers; the data is far more useful if we can visualize it. Here are the coordinates as a list of lists: *need to build this, think about whether to switch lat and long now, think about whether the data-read-in is relevant*<br />
     <a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br />
     When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.</p>
     
     <div class="forYouToDo" id="first">
     <ol>
     	<li>Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br />
-        When you run your script, you should see this:<div class="sidenote">Remember, plot the longitude first, then the latitude. Why can't you see all the points?</div><br /><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
+        When you run your script, you should see this (need to fix this):<div class="sidenote">Remember, plot the longitude first, then the latitude. Why can't you see all the points?</div><br /><img src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" /></li>
     </ol>
     </div>
     
