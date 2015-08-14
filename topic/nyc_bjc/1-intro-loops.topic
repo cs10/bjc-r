@@ -23,7 +23,7 @@ heading: Programming Lab 1: Building an App
 	resource: Using the <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/1-building-an-app/4-using-the-random-block.html]
 	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-building-an-app/5-saving-in-snap.html]
 	resource: Finish Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/6-finish-your-first-snap-app.html]
-	resource: Sharing Your App and Loading It on a Mobile Device [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
+	resource: Sharing Your App [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
 	
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 
