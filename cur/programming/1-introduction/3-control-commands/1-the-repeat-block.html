@@ -9,9 +9,10 @@
     <body>
         <h2>The <code>Repeat</code> Block</h2>
         
-        <div class="sidenote">The <img class="inline" src="/bjc-r/img/web/external-link.png" alt="click to launch script in Snap!" title="click to launch script in Snap!" /> icon means that clicking the script opens it in a new browser tab.</div>
+        <!-- <div class="sidenote">The <img class="inline" src="/bjc-r/img/web/external-link.png" alt="click to launch script in Snap!" title="click to launch script in Snap!" /> icon means that clicking the script opens it in a new browser tab.</div>
         <p>This script draws a square.</p>
 		<div><a class="run" href="/bjc-r/prog/loop/draw-a-square.xml"> <img class="indent" src="/bjc-r/img/1-introduction/draw-square.png" alt="Square example image" title="Square example image"> </a></div>
+        
         <div class="forYouToDo" id="first">
             <ol>
               <li>Click the script picture above to open it in <span class="snap">snap</span>. Then, click the script in <span class="snap">snap</span> to see it run.</li>
@@ -19,24 +20,44 @@
         </div>
         
        	<p><img class="inline" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking"> Take turns reading.</p>
-        <p style="width:50%;float:left;">
-        	The <code>repeat</code> block makes this script shorter and simpler to construct. Also, the structure (the logic of the script) is clearer when we see this:<br /><br />
+        <p style="width:50%;float:left;">  makes this script shorter and simpler to construct. Also, the structure (the logic of the script) is clearer when we see this: -->
+        
+        	It is, of course, much easier to create this script...<br />
         	<img class="indent" src="/bjc-r/img/1-introduction/repeat-4(move-50-turn-right-90).png" alt="repeat 4 (move 50 steps, turn right 90 degrees)" title="repeat 4 (move 50 steps, turn right 90 degrees)" /><br />
-        	<span style="float:right;">...than it is when we see this:</span>
+        	...than to create this one:
         </p>
-        <p style="width:50%;float:right;">
+<p>
         	<img class="indent" src="/bjc-r/img/1-introduction/move-50-turn-right-90-(4-times).png" alt="move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees" title="move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees, move 50 steps, turn right 90 degrees" />
         </p>
         <br clear="all" />
-        <p>Making the logic clear is essential to good coding. It makes it easier to catch bugs.</p>
-        <div class="endnote">In that longer script (without <code>repeat</code>), we'd have to count the parts to see if it's right, and it would be very easy to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one!</div>
+        <p>Even more important than ease, using <code>repeat</code> makes the <em>structure</em> of the program clearer. </p>
+        <p> That is essential to good coding. Clearly structured code is easier to understand and easier to debug (to catch and fix errors).</p>
+        <p>In that longer script (without <code>repeat</code>), we'd have to count the parts to see if it's right. It would be very easy to make a mistake if we were drawing a 20-sided figure instead of a 4-sided one!</p>
          
 		<div class="forYouToDo">
-      		<ol start="2">
-        		<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-                <li>Predict what would happen if you changed each of the three input numbers in the script: 4, 50, and 90.</li>
-                <li>Experiment with these numbers and note their effects on the script's behavior. Discuss how each value contributes to the drawing.</li>
-                <div class="endnote">Before you change and re-run code, predict what will happen. That way, you can be sure you <em>understand</em> the script.</div>
+	    <ol>
+        		<li><strong>Analyze  structure: </strong>Here are four pictures. 
+                <p><img src="/bjc-r/img/1-introduction/Square with sides alternating red and blue.png" alt="Square with sides alternating red and blue"> 
+                <img src="/bjc-r/img/1-introduction/6-sided figure with sides alternating red and blue.png" alt="6-sided figure, sides alternating red-blue">
+                <img src="/bjc-r/img/1-introduction/8-sided figure with sides alternating red and blue.png" alt="8-sided figure, sides alternating red-blue">
+                <img src="/bjc-r/img/1-introduction/12-sided figure alternating 3 red and 3 blue.png" alt="12-sided figure, sides alternating 3 red 3 blue"></p>
+        		<p>Which one(s) of these pictures could the following pseudo-code draw? <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+</p>
+                <pre>
+	repeat (4)
+	  {
+	     set pen color red
+	     move (some) steps
+	     turn (n) degrees
+	     set pen color blue
+	     move (some) steps
+	     turn (n) degrees
+	  }</pre>
+      <li>For each picture, write pseudo-code that describes how to draw it. <br /> You don't need to say how long each side is or how many degrees to turn. <br /> You do need to show what repeats and how many times it repeats.</li>
+                </li>
+                <li><strong>Experiment:</strong> Create <span class="snap">snap</span> scripts from your pseudo-code and experiment with the number of degrees to make your pictures match the ones here. (Don't worry about matching the size exactly.)</li>
+          </ol></div>
+                <!-- <div class="endnote">Before you change and re-run code, predict what will happen. That way, you can be sure you <em>understand</em> the script.</div>
                 <li>When you change the 4 to 40, what <em>does</em> change and what <em>does not</em> change about the picture and the way it is drawn?</li>
                 <li>Predict what will happen if you change <code>turn right 90 degrees</code> to <code>turn right 60 degrees</code> and discuss the result.</li>
 
@@ -47,7 +68,7 @@
                     </a>
                     OR <strong>we should do something more clearly explaining irregularity.</strong>
                 </div>- ->
-            	<div class="todo">JK: Comment from EDC BJC PD day: Some teachers didn't understand the point of going through a triangle, then a square, then pentagon, etc. They said that wanted some sort of indication like "Look for the pattern" to alert them to the fact that they should be thinking that way. I'm not sure I agree 100%, but it's something to think about.</div>-->
+            	<div class="todo">JK: Comment from EDC BJC PD day: Some teachers didn't understand the point of going through a triangle, then a square, then pentagon, etc. They said that wanted some sort of indication like "Look for the pattern" to alert them to the fact that they should be thinking that way. I'm not sure I agree 100%, but it's something to think about.</div>
 	            <div class="todo">MF: Need more support for angles?<ul>                        <li>MF and PG: Include an animation of a script like (repeat 90: move 1 step, turn 1 degree, wait .01 secs) and use it to explain the exterior/interior angle thing. </li>
 	              <li>BH: But without saying anything about interior angles! Just say that a small turn keeps the sprite going almost in the same direction, and a bigger turn is a bigger change of direction. And then later teach the TTTT.</li>
 	            </ul>
@@ -55,7 +76,9 @@
 	
                 <!--<div class="comment">JK (and Zuska): This problem #4 is a little annoying because you needed this info to do #3, so either this question is already answered or it was never discovered but #3 was too hard.</div>
                 <li>Through how many degrees did your sprite turn <em>altogether</em> (not per side) when you drew the triangle? (That is, ignore the <code>move</code> blocks and focus on only the <code>turn</code> blocks).</li>-->
-            	<li>            	
+            	<div class="takeItFurther">
+    <ol>
+        <li>            	
                     <div class="sideHOM">Look for patterns.</div>
                     Use <img class="inline" src="/bjc-r/img/blocks/repeat-empty.png" alt="empty repeat-n block" /> to draw the following regular polygons <em>using the smallest number of lines</em>:
  					<div class="sidenoteBig">A <em>regular</em> polygon is a shape in which all the sides are the same length and all the turning angles are the same. A square is a regular, 4-sided polygon. </div>
@@ -67,8 +90,9 @@
                         <li>Octagon</li>
                     </ul>
                 </li>
-            </ol>
-        </div>
+    </ol>
+</div>
+      
         
         <h3>The <code>Repeat</code> Block Self Check</h3>
 		<!-- question 1, formerly question 2 in angles-self-test.html-->
@@ -167,7 +191,7 @@
 
                             
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-        	<ol type="A">
+        	<ol type="A" start="B">
 
                 <li>Determine the turning angles to draw a 12-sided or 36-sided regular polygon.</li>
                 <div class="endnote">Make small enough sides so that the shapes can fit on the stage. With more and more sides, the polygons get closer and closer to a circle. Is there a point at which the result <em>is</em> a circle?</div>
