@@ -7,7 +7,7 @@
     </head>
 
     <body>
-		<h2>Adding an Input</h2>
+		<h2>Giving Your Blocks Inputs</h2>
         <div class="sidenote">
         	You've seen many blocks that take inputs:<br />
         	<img class="inline" src="/bjc-r/img/blocks/move-10-steps.png" alt="move 10 steps" title="move 10 steps"><br />
@@ -17,33 +17,41 @@
             <img src="/bjc-r/img/blocks/think-Hmm...-for-2-secs.png" class="inline" alt="think Hmm... for 2 secs" title="think Hmm... for 2 secs" /><br />
             <img src="/bjc-r/img/blocks/play-note-60-for-0.5-beats.png" class="inline" alt="play note 60 for 0.5 beats" title="play note 60 for 0.5 beats" />
         </div>
-        <p>Your <code>draw square</code> block can only draw squares of one particular size, built into the script that defines the block.  You can improve your block to draw squares of <em>any</em> size by giving your block an <em><strong>input</strong></em>.</p>
+        <p>Your <code>draw square</code> block  draws squares of only one particular size, built into its script.  You can improve your block to draw squares of <em>any</em> size by giving your block an <em><strong>input</strong></em>.</p>
         <div class="forYouToDo" id="first">
+        <p>As you learn from the video and instructions below, edit your <code>draw square</code> block to give it an input.</p>
             <ol>
-                <li>
-                    <p>To edit a block, right-click (or two-finger-click) on it (either in the palette or in a script) and select "edit" to open it in the block editor.</p>
-                    <div class="comment">This is the first time we've hinted that they might be using a touchscreen/touchpad.  We should maybe be consistent about this?  Define &quot;secondary click&quot; carefully once and then just use it?</div>
-                    <img class="indent" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block.png" >
+                <li>To edit a block, right-click (or two-finger-click) on it and select "edit." 
+                <p>Use the video to get the idea. Read the  detailed instructions (in yellow, below) to know more about what you are doing.</p>
                 </li>
-                <li>   
-	                <div class="sidenote">The technical name for <em>input</em> in mathematics and computer science is <em>argument</em>. </div>
+                
+                  <div class="comment">This is the first time we've hinted that they might be using a touchscreen/touchpad.  We should maybe be consistent about this?  Define &quot;secondary click&quot; carefully once and then just use it? PG: This is getting overwhelmingly complicated and just begs to be obsolete when the next technology comes in. Right-click, control-click, two-finger-click....</div>
+                  <img src="/bjc-r/img/1-introduction/adding-input-to-block.gif" alt="adding input to block"></li>
+            </ol>
+        </div>
+                
+                <div class="endnote">
+                <strong>The details: </strong>
+                <ol>
+                <li> <strong>What are the + signs?</strong>  
+	                
 	                <div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=19" target="_blank">Snap Manual pages 19-20</a> and, for more advanced info, <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=27" target="_blank">pages 27-31</a></div>
                     <p>In the Block Editor, hover your cursor over the words and plus signs (<b>+</b>) in the hat block.</p>
-                    <p>Clicking on a word will let you change that word; clicking on a <b>+</b> will let you add something in that position. You want to add an input after the title, so click on the <b>+</b> at the end.</p>
+                    <p>Clicking on a word will let you change that word; clicking on a <b>+</b> will let you put a new word in that position. You want to add the name of an input after the title, so click on the <b>+</b> at the end.</p>
                     <img class="indent" alt="draw square editor" src="/bjc-r/img/sys/draw-square-block-editor.png" >
                 </li>
                 <li>
                     <img class="imageRight" src="/bjc-r/img/sys/add-argument-in-block-signature.png" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" />
                     <p>
                     	You have two choices about what you want to add or modify to the block definition:
-                        <ol>
-                            <li><strong>Title text</strong> (grey in this picture) will let you add a word or words to the block's title. (For example, if you wanted to change the name of the block from <code>draw square</code> to <code>draw square picture</code> you'd click on "Title text" and type the word "picture" into the text box.)</li>
-                            <li><strong>Input name</strong> (selected in this picture ) will let you add an <i>input</i>. This is what you want now, and it is selected by default any time you open this dialog.</li>
-                        </ol>
+                  <ol>
+                            <li><strong>Title text</strong> (grey in this picture) will let you add words to the block's title. (If you wanted to change the name  from <code>draw square</code> to <code>draw square picture</code> you'd click on "Title text" and type the word "picture." )</li>
+                            <li><strong>Input name</strong> (shown selected in this picture) lets you add an <i>input</i>. This is what you want now, so just leave it selected.</li>
+                  </ol>
                     </p>
 
-                    <p>Give the input a name that makes its meaning clear to any reader: <code>size</code> or <code>side length</code> would be good.  Type that name in the input field and click "OK."</p>
-                </li></ol></div>
+                  <li>Give the input a name that makes its meaning clear to any reader: <code>size</code> or <code>side length</code> would be good.  Type that name in the input field and click "OK."</li>
+</li></ol></div>
                 <div>
                 Your block header has changed: there is now a variable named <code>size</code> (or whatever name you chose) after the title.<br />
                     <img class="indent" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
