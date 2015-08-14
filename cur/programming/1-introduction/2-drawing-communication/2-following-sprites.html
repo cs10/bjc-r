@@ -8,56 +8,53 @@
     
 	<body>
 		<h2>Following with Sprites</h2>
-        <div class="comment">Give instructions to import the U1 tell block before starting this project and <em>save</em> this project as Dialogues.</div>
         <p>In this lab, you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>
-        <p><div class="newProject"><span class="text">"U1L2-SpriteChase"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L2-SpriteChase" title="Create a new project called U1L2-SpriteChase" /></div>
-          <strong>START BY LOADING THIS FILE (Link to <em>U1 Tell block</em>). Paul, can you insert a link to the shared URL? I'll put the image in as a link as the first thing to do in the list below.</strong>
-        </p>
 		<div class="forYouToDo" id="first">
 			<ol>
-				<li>
-                    <div class="sidenoteBig"><img src="/bjc-r/img/blocks/mouse-x.png" class="block" alt="Mouse X Reporter"/> and <img src="/bjc-r/img/blocks/mouse-y.png" class="block" alt="Mouse Y Reporter"/> report the mouse's location on the screen. You can find them in the &quot;Sensing&quot; palette.</div> 
-                    <div class="sidenote">To <em>stop</em> this script, click the red stop sign <img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button"/>. </div>
+				<li><div class="newProject"><span class="text">"U1L2-SpriteChase"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L2-SpriteChase" title="Create a new project called U1L2-SpriteChase" /></div></li>
+                <li>
                     Read and think about this script before you build it. What do you expect it to do?
+                    <div class="sidenoteBig"><img src="/bjc-r/img/blocks/mouse-x.png" class="block" alt="Mouse X Reporter"/> and <img src="/bjc-r/img/blocks/mouse-y.png" class="block" alt="Mouse Y Reporter"/> report the mouse's location on the stage. You can find them in the Sensing palette.</div> 
                     <p><img class="indent" src="/bjc-r/img/1-introduction/follow-that-mouse.png" alt="Follow That Mouse Script" title="Follow That Mouse Script" /></p>
                 </li>
-                <li>Now build the script and run it. Move your mouse around the stage while the program is running. <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Does the program work the way you expected?</li>
+                <li>
+                	<div class="sidenote">To <em>stop</em> this script, click the red stop sign <img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button"/>. </div>
+					Now build the script and run it. Move your mouse around the stage while the program is running.
+                </li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Does the program work the way you expected?</li>
 				<li>
-                	Now create a second sprite. The video shows how. <br /> The instructions below the video describe the steps.
-					<p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART1.gif" alt="getting a new sprite"></p>
+                	Create a second sprite that turns toward the first sprite. Follow these instructions or watch the animation below.<a name="newTurtle" class="anchor">&nbsp;</a>
                     <ol>
-                        <li>Click on the &quot;add a new Turtle sprite&quot; button just below the stage. <img src="/bjc-r/img/1-introduction/Add-a-new-turtle-sprite.png" alt="add a new turtle sprite"></li>
-                        <li>That new sprite appears on the stage and a button to select it  appears underneath the stage. It is brand new, so it has no script. You will need to drag in blocks to tell it what to do.</li>
-                        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
-                        <li> If you want to see any sprite's script, click on its button below the stage. </li>
+                        <li>Click on the "add a new Turtle sprite" button just below the stage: <img style="padding:0px;" src="/bjc-r/img/1-introduction/Add-a-new-turtle-sprite.png" alt="add a new turtle sprite" title="add a new turtle sprite" /></li>
+                        <div class="endnote">The new sprite appears on the stage, and a button to select it appears underneath the stage. This sprite is brand new so it has no scripts. You will need to drag in blocks to tell it what to do. If you want to see any sprite's script, click on its button below the stage. </div>
+                        <li>Add a line of code to Sprite (2) to make it point towards Sprite.</li> 
                     </ol> 
+                    <img class="indent" src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART1.gif" alt="getting a new sprite" title="getting a new sprite" />
 				</li> 
+                
+                <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+
 				<li> 
-                	Build a script for Sprite(2): 
-					<pre>
+                	Change your script for Sprite(2) so that once the green flag is clicked, it will point towards Sprite forever. Follow these instructions or watch the animation below. 
+					<!--<pre>
 	when started
 	forever 
 	  {
 	     point towards (Sprite)
-	  }</pre>
-					The video shows how.<br /> 
-					The instructions below explain a bit more.
-                <p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART2.gif" alt="part 2"></p>
-                <ol>
-                    <li> 
-                    	<div class="sidenoteBig">While a script is running, its border is highlighted. Some scripts run so quickly that you may not notice the brief border flash. This script takes longer to run, so it's easier to notice the highlighted border.</div>
-                    	When <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> is clicked, <em>both</em> sprites' scripts run.
+	  }</pre>-->
+	                <p><img class="indent" src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART2.gif" alt="pointing towards Sprite forever" title="pointing towards Sprite forever" /></p>
+                </li>
+                <div class="endnote">While a script is running, its border is highlighted. Some scripts run so quickly that you may not notice the brief border flash. This script runs forever, so it's easier to notice the highlighted border.</div>
+                <li>
+                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Click <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> and check that your script does what you had intended it to:
                         <ul> 
-                            <li>Sprite always follows your mouse, as you taught it to.</li>
-                            <li>Sprite(2) always points toward Sprite.</li>
+		                	<div class="sidenoteBig">Both sprites' scripts start with <code>When<img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>clicked</code>. So, when <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> is clicked, <em>both</em> sprites' scripts run.</div>
+                            <li>Sprite always follows your mouse around the stage.</li>
+                            <li>Sprite(2) stays in the same place, but always points toward Sprite.</li>
                         </ul>
-                    </li>
-                    <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
-                    <li>Click <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> and try it yourself.</li>
-                  </ol>
-              </li>
-          </ol>
-      </div>
+				</li>
+			</ol>
+		</div>
               
     
     </body>

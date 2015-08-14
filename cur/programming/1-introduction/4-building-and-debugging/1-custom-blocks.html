@@ -14,86 +14,73 @@
         </p>-->
         <h2>Designing Custom Blocks</h2>
         
-        <div class="todo">
-        <ul>
-        	<li>JK: Teachers at the EDC PD day wanted an animation on this page. They got stuck on these instructions. (They also really didn't like to read.)</li>
-			<li>MF: <a href="http://interactivepython.org/courselib/static/thinkcspy/PythonTurtle/OurFirstTurtleProgram.html" target="_blank">OurFirstTurtleProgram</a></li>
-            <li>MF: consider adding building this block with a list input to preview U3:<br /> <img class="indent" src="/bjc-r/img/1-introduction/favorite-food.png" alt="favorite food 'foods': for each (item) of (foods) [say (join (I like, 'item', a lot!!)) for 2 secs]" title="favorite food 'foods': for each (item) of (foods) [say (join (I like, 'item', a lot!!)) for 2 secs]" /><img src="/bjc-r/img/1-introduction/favorite-food-list.png" alt="favorite food [list: apples, bananas, oranges, grapes, peaches]" title="favorite food [list: apples, bananas, oranges, grapes, peaches]" /></li>
-        </ul>
+        <p>
+        	Up until now, you used blocks that already existed. You will now learn how to build your own blocks. You will start by making a block that draws a square and you will name this new block <code>draw square</code>.<br/>
+        	<img class="indent" alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" >
+        </p>
+        <div class="forYouToDo" id="first">
+        	<ol>
+            	<li>
+                	Build the <code>draw square</code> block. To start, right-click (or control-click on a Mac) on the gray background of the scripting area and choose "make a block..." The video below shows how to start building the block. Finish it yourself, and press OK. The step-by-step instructions  in the yellow section below give you more detail about what you are doing.
+                	<div class="sidenote">To get the Block Editor, you can also click <img class="inline" src="/bjc-r/img/1-introduction/make-a-block.png" alt="Make a block" title="Make a block" /> near the bottom of the "Variables" palette.</div>
+                	<img class="indent" src="/bjc-r/img/blocks/make-a-square-block.gif" alt="make a block">
+                </li>
+            </ol>
+        </div>
+                
+        <div class="endnote">
+            Every block needs a palette (color), a title, a category (shape), and a script that defines its behavior.
+			<ul>
+				<li> 
+                    <strong>Palette:</strong> Choose a  palette for your new block to go into. ("Motion" or "Pen" might be nice for the <code>draw square</code> block.)<br />
+                    <img  alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" >
+                    <div class="sideHOMbig">You can put the new block in any palette that makes sense to you. If you don't choose a palette/color, your block will be a gray "Other" block and will be sorted into the "Variables" tab.</div>
+                </li>
+                <div class="manual">You can find information more in the <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=17" target="_blank">Snap Manual pages 17-18</a>.</div>
+                <li> 
+                    <strong>Title:</strong> Give your block a name. Type "draw square" as shown here.<br />
+                    <img  alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" >
+                </li>
+                <li>
+                	<strong>Category:</strong> Leave "Command" selected since we want a block that takes action (drawing a square) rather than one that reports a value. 
+                  <!--<div class="takeNote">
+                    You've seen commands before and also reporters, which report information, like this:
+                    <p class="center">
+                    <img class="inline" src="/bjc-r/img/1-introduction/x-position-reporting--79.png" alt="x position reporting -79" title="x position reporting -79" />
+                    <img class="" src="/bjc-r/img/1-introduction/sqrt-of-25-reporting-5.png" alt="Sqrt of 25 reporting 5" title="Sqrt of 25 reporting 5" />
+                    </p>
+                    
+                </div>-->
+                	(In this course, you will almost always want to keep "for all sprites" selected, so you can ignore that choice for now, and click "OK".)
+                </li>
+                <li>
+                    <strong>Behavior:</strong> A dialog titled "Block Editor" will appear. Build the instructions for your new block here exactly as you do in the scripting area:  <a href="/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html#building">Drag blocks from the palette</a> to define the script that will run when your custom block is used. When you are finished, click "OK".<br />
+                    <div class="sideHOM">The editor starts you with a <strong>hat</strong> block, a kind of block that is the start for any block you create. It contains the title of your block, which is <code>draw square</code> in this case. Hat blocks can never be in the middle of a script, only at the top. </div>
+                    <img class="indent" alt="Script to draw a square" src="/bjc-r/img/1-introduction/empty-draw-square.png" >
+                </li>
+			</ul>
+		</div>
+        
+        <p>You can use the <code>draw square</code> block exactly the way you have used other blocks. If you created the block as a blue Motion block, you will find it in the Motion palette. <p>
+        <img class="indent" src="/bjc-r/img/1-introduction/pen-down-draw-square.png" alt="pen down, draw square" title="pen down, draw square" /></p>
+        <p>Congratulations! You have just created your first custom block.</p></p>
+    
+        <div class="forYouToDo">
+            <p>Practice building blocks.</p>
+            <ol start = "2">
+                <li>Define <code>draw triangle</code> to draw an equilateral triangle with the same side-length as the square you just drew. </li>
+                <li>Define <code>MyNameBackwards</code>. When clicked, it should spell your name backwards. (Your related work from the previous page should be saved in "U1L2-ForLoops".) </li>
+            </ol>
         </div>
         
-        <img class="imageRight" alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" >
-        <div>
-          <p>Up until now, you used blocks that already existed. You will now learn how to build your own blocks. You will start by making a block that draws a square and you will name this new block <code>draw square</code>. </p>
-          <p>To start, right-click (or control-click on a Mac) on the gray background of the scripting area and choose &quot;make a block.&quot; The video below shows how to start building a <code>draw square</code> block. <div class="sidenote">To get the Block Editor, you can also click <img class="inline" src="/bjc-r/img/1-introduction/make-a-block.png" alt="Make a block" title="Make a block" /> near the bottom of the "Variables" palette.</div> </p>
-</div>
-        
-        <p> <img src="/bjc-r/img/blocks/make-a-square-block.gif" alt="make a block"> </p>
-        
-        <div class="forYouToDo" id="first">
-          <ol>
-                <li>Start building the <code>draw square</code> block as the video shows. Then finish the block yourself and press OK. The step-by-step instructions  in the yellow section below give you more detail about what you are doing. They are worth reading.</li></ol></div>
-                
-                <div class="endnote">
-                Every block needs a palette (color), a title, a category (shape), and a script that defines its behavior.
-                	  <ol>
-                    	<li> 
-                       		<strong>Palette:</strong> Choose a  palette for your new block to go into. ("Motion" or "Pen" might be nice for the <code>draw square</code> block.<br />
-                    		
-                            <img  alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" >
-                            <div class="takeNote">You can put the new block in any palette that makes sense to you. If you don't choose a palette/color, your block will be a gray "Other" block and will be sorted into the "Variables" tab.</div>
-                		</li>
-                   		<div class="manual">You can find more in the <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=17" target="_blank">Snap Manual pages 17-18</a>.</div>
-                        <li> 
-                        	<strong>Title:</strong> Give your block a name. Type "draw square" as shown here.<br />
-                    		<img  alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" >
-                    	</li>
-                        <li><strong>Category:</strong> Leave "Command" selected since we want a block that takes action (drawing a square) rather than one that reports a value.
-                          <div class="takeNote">
-                            You've seen commands before and also reporters, which report information, like this:
-                            <p class="center">
-                            <img class="inline" src="/bjc-r/img/1-introduction/x-position-reporting--79.png" alt="x position reporting -79" title="x position reporting -79" />
-                            <img class="" src="/bjc-r/img/1-introduction/sqrt-of-25-reporting-5.png" alt="Sqrt of 25 reporting 5" title="Sqrt of 25 reporting 5" />
-                            </p>
-                            
-                        </div>
-                        </li>
-                        
-                  		<li>
-                        	In this course, you will almost always want to keep "for all sprites" selected, so you can ignore that choice for now, and click "OK". </li>
-                        <li>A dialog titled "Block Editor" will appear.<br />
-    					    <img src="/bjc-r/img/prog/empty-draw-square-BYOB.png" alt="Block Editor for 'draw square'" >
-        					<div class="takeNote">The editor starts you with a <strong>hat</strong> block, a kind of block that is the start for any block you create. It contains the title of your block, <code>draw square</code>, in this case. Hat blocks can never be in the middle of a script, only at the top.</div>
-                        </li>
-        				<li>
-                			<strong>Behavior:</strong> Build the instructions for your new block here exactly as you do in the scripting area:  <a href="/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html#building">Drag blocks from the palette</a> to define the script that will run when your custom block is used. <br />
-                   			<img class="indent" alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" >
-                        </li>
-                        <li>When you click "OK", you can use this block exactly the way you have used other blocks. Since you created the block as a "Motion" block, you will find it in the "Motion" tab. <p>
-        <img class="indent" src="/bjc-r/img/1-introduction/pen-down-draw-square.png" alt="pen down, draw square" title="pen down, draw square" /></p>
-        <p>Congratulations! You have just created your first custom block.</p></li>
-                  </ol>
-                
-    </ol></div></div>
-    
-   <div class="forYouToDo">
-   <strong>Practice building blocks.</strong>
-    <ol start = "2">
-        <li>Define <code>draw triangle</code> to draw an equilateral triangle with the same side-length as the square you just drew. </li>
-        <li>Define <code>MyNameBackwards</code>. When clicked, it should spell your name backwards.  </li>
-    </ol>
-</div>
-        
-        
-        
-		
-<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+    		
+		<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
            <img class="imageRight" src="/bjc-r/img/1-introduction/house.jpg" alt="House" title="House" />
            <ol type="A">
-            	<li>Create a <em>script</em> that uses your <code>draw square</code> and <code>draw triangle</code> blocks to draw a &quot;house&quot; shape: a square with a triangular shaped roof sitting on top. </li>
+            	<li>Create a <em>script</em> that uses your <code>draw square</code> and <code>draw triangle</code> blocks together to draw a "house" shape: a square with a triangular shaped roof sitting on top. </li>
             	<li>Then create a new <em>block</em> <code>draw house</code> that is defined by the script you just made. </li>
             </ol>
-      <br clear="all" />
+      		<br clear="all" />
         </div>
 
 

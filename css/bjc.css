@@ -163,7 +163,7 @@ code {
   clear:both;
 }
 
-img.noshaddow {
+img.noshadow {
   /* Better resizing of images for mobile devices */
   -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
   -ms-filter: none;

@@ -8,45 +8,47 @@
     
 	<body>
 		<h2>Drawing with Two Sprites</h2>
-        <div class="newProject"><span class="text">"U1L2-SpriteOrbit"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div>
     
         <div class="forYouToDo" id="first">
             <ol>
                 <li>
                     <strong>Analyze and predict:</strong> How are the behaviors of these four scripts the same? How are they different? <br /> 
-                    <img src="/bjc-r/img/1-introduction/Forever(move100-turn90).png" alt="Forever(move100-turn90)">
-                    <img src="/bjc-r/img/1-introduction/Forever(repeat10(move10)-turn90).png"  alt="Forever(repeat10(move10)-turn90)"> 
-                    <img src="/bjc-r/img/1-introduction/Forever(repeat20(move5)-turn90).png" alt="Forever(repeat20(move5)-turn90)"> 
-                    <img src="/bjc-r/img/1-introduction/Forever(repeat100(move1)-turn90).png"  alt="Forever(repeat100(move1)-turn90)">
-                </li>	
+	                <div class="sidenote">Analyzing these scripts will help you control the speed of the drawings in the problems below.</div>
+                    <img src="/bjc-r/img/1-introduction/Forever(move100-turn90).png" alt="Forever [ move (100), turn (90)]" title="Forever [ move (100), turn (90)]" />
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat10(move10)-turn90).png" alt="Forever [repeat (10) [move (10)], turn (90)]" title="Forever [repeat (10) [move (10)], turn (90)]" /> 
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat20(move5)-turn90).png" alt="Forever [repeat (20) [move (5)], turn (90)]" title="Forever [repeat (20) [move (5)], turn (90)]" /> 
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat100(move1)-turn90).png" alt="Forever [repeat (100) [move (1)], turn(90)]" title="Forever [repeat (100) [move (1)], turn(90)]" />
+                </li>
+                <li><div class="newProject"><span class="text">"U1L2-SpriteOrbit"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div></li>	
+                <li>Give Sprite a script that, <em>when started</em>, draws a blue square, drawing each line at some medium speed.</li>
+                <div class="endnote">When you are finished, double-check that your script does exactly what you mean for it to. This is always a good idea when coding because if you move on with part of the program still not working, you will only compound your problems.</div>
+                
+                <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                
                 <li>
-                	Create two sprites. 
-                    <ol>
-                        <li>Give Sprite a script that, <em>when started</em>, draws a blue square, drawing each line at some medium speed.</li>
-                        <li>
-                        	Give Sprite(2) a script that does this:<br />
-							<pre>
-                when started
-                draw in red
-                forever
-                  {
-                     point towards (Sprite)
-                     move (5) steps
-                  }</pre>  
-                        </li>
-                        <div class="takeNote">One &quot;line&quot; of pseudo-code may require more than one line of code in the language you are using. For example, &quot;draw in red&quot; requires two <span class="snap">snap</span> commands, one so that the sprite draws when it moves, and one to set the pen's color.</div>	
-                        <li>Make sure that your program starts both sprites at the same time (for example, with <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>).</li>
-					</ol>
-				</li>
+                	Create a second sprites with a script that does this:<br />
+                    <div class="sideHOMbig">One &quot;line&quot; of pseudo-code may require more than one line of code in the language you are using. For example, &quot;draw in red&quot; requires two <span class="snap">snap</span> commands, one so that the sprite draws when it moves, and one to set the pen's color.</div>	
+					<pre class="indent" style="width:300px;">
+when started
+draw in red
+forever
+    {
+        point towards (Sprite)
+        move (5) steps
+    }</pre>  
+                </li>
+                <li>Test your program. Make sure that it starts both sprites at the same time (for example, with <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>).</li>
+
+
 				<li>Experiment with the speeds of each sprite. 
                     <ol>
-                        <li>What happens if Sprite(2) moves 20 steps instead of 5 steps each cycle through the forever-loop? <br /> 
-                            What if it moves only 2 steps? <br /> 
-                            What if Sprite draws its square more quickly? </li>
-                        <li>Describe your experiments in writing. Include pictures of the screen to show what happened. Try to explain <em>why</em> the picture came out as it did.</li>
+                        <li>What happens if Sprite(2) moves 20 steps instead of 5 steps each time it goes through the forever-loop?</li>
+                        <li>What if Sprite(2) moves only 2 steps?</li>
+                        <li>What if Sprite draws its square more quickly? </li>
                     </ol>
-				</li>
-			</ol>
+                </li>
+                <li><img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" /> Describe the results of your experiments. Include pictures of the screen to show what happened. Try to explain <em>why</em> each picture came out as it did.</li>
+          </ol>
 		</div>
 	
     	<div class="takeItFurther">
@@ -62,6 +64,8 @@
                     <img class="inline" src="/bjc-r/img/1-introduction/move-turn-design-02.png" alt="move turn design 2" title="move turn design 2" />
                     <img class="inline" src="/bjc-r/img/1-introduction/move-turn-design-03.png" alt="move turn design 3" title="move turn design 3" />
                 </li>
+                <li><img class="inline" src="/bjc-r/img/icons/write-out-thoughts.png" alt="Write Out Your Thoughts" title="Write Out Your Thoughts" /> Describe the results of your experiements. Include pictures and explanations.</li>
+
             </ol>
         </div>
         		

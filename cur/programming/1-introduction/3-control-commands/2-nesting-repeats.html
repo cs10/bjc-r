@@ -7,9 +7,7 @@
     </head>
     
     <body>
-        <h2>Nesting Repeats</h2>
-        <div class="todo">MF: Do lots of recursion preview here. Look at U5.</div>
-        
+        <h2>Nesting Repeats</h2>        
 		<p> It is also possible to <em>nest</em> one <code>repeat</code> block inside another. Since <span class="snap">snap</span> processes scripts from top to bottom, the first <code>repeat</code> will begin first, and the second <code>repeat</code> will have to complete its entire process before the process of the first <code>repeat</code> is called again.</p>
         <div class="forYouToDo" id="first">
             <ol>
@@ -21,38 +19,53 @@
                         <li>How many times in total will the script say "Hooray"?</li>
                     </ol>
                 </li>
-          </ol></div>
-    <p>For the next experiment, it is useful to know how to duplicate a script. Right-click (or control-click) on the script and choose &quot;duplicate.&quot; The video shows how. </p>
-    <p><img src="/bjc-r/img/1-introduction/Duplicating-a-script.gif" alt="duplicating a script"></p>
-    <div class="forYouToDo">
-    <ol start="2">
-        <li>Build the script shown in that video. Then duplicate it and change its inputs as the video shows.</li>
-        <li>Try each script by itself to be certain what it does. Then clear the stage.</li>
-        <li>Now, insert the entire script for the blue triangle between the <code>move</code> and <code>turn</code> blocks of the red triangle, like this. <br />
-        <img src="/bjc-r/img/1-introduction/embedding-one-script-in-another.gif" alt="embedding the blue triangle in the red triangle"></li>
-        <li>Try this script to see what it does.</li>
-        <li>Using the scripts you have, find a way to make this picture.
-        <p><img src="/bjc-r/img/1-introduction/Three-color-Sierpinski.png" alt="Red triangle with blue children and green grandchildren"></p>
-        </li>
-<div class="takeItFurther">
-   <p> If you like, embed one more triangle, half the size of the last one, in the same way.</p>
-</div>
-      <li>This animation shows another example of embedding one script inside a similar script. 
-        <p><img src="/bjc-r/img/1-introduction/embedding-scripts-for-squares.gif"  alt="embedding scripts for squares"></p>
-            
-                  <ol type="a">
-	            	  <li>Sketch what each <em>individual</em> script will draw. </li> 
-                      <li>Predict the <em>number</em> of blue shapes that the <em>combined</em> script will draw.</li>
-                        <li>Sketch the <em>shape</em> that  the combined script will draw.</li>
-                      <li>Build the combined script and try it out.</li>
-                      <li><strong>Experiment: </strong> Embed <em>another</em> square, half the size of the last, in the same way. 
-                          <p>How many small squares does it draw? How could you have <em>predicted </em> that number before trying it?</p></li>
-                      <li><strong>Experiment and predict: </strong> Embed <em>one more</em> square, half the size of the last, in exactly the same way.
-                          <p>Try to <em>predict</em> the number of tiny triangles it will draw before trying it.</p></li>
-               	  </ol>
-      </li>
-      </ol>
-</div>
+	            <li>
+                	Build a script that draws a red triangle, duplicate it twice, and make the two new scripts draw a smaller blue triangle and an even smaller green one. 
+                    <ul>
+                    	<li>To duplicate a script, right-click (or control-click) on the script and choose "duplicate".</li>
+                        <li>
+                            Then, change the inputs as the video shows:<br />
+                            <img class="indent" src="/bjc-r/img/1-introduction/Duplicating-a-script.gif" alt="duplicating a script">
+                        </li>
+                    </ul>
+                </li>
+                <li>Try each script by itself to be certain what it does. Then clear the stage.</li>
+                <li>
+                    Now, insert the entire script for the blue triangle between the <code>move</code> and <code>turn</code> blocks of the red triangle, like this. <br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/embedding-one-script-in-another.gif" alt="embedding the blue triangle in the red triangle">
+                </li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+ Predict what will happen when you run this script.</li>
+                <li>Then, try this script to see what it does.</li>
+                <li>
+                    Using the scripts you have, find a way to make this picture.
+                    <p><img class="indent" src="/bjc-r/img/1-introduction/Three-color-Sierpinski.png" alt="Red triangle with blue children and green grandchildren"></p>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther">
+        	<ol type="A">
+            	<li>If you like, embed one more triangle, half the size of the last one, in the same way.</li>
+            </ol>
+        </div>
+        
+        <div class="forYouToDo">
+            <ol start="8">
+            	<li>
+                    This animation shows another example of embedding one script inside a similar script. (You'll make predictions first, so don't build it yet.)<br />
+                    <img class="indent" src="/bjc-r/img/1-introduction/embedding-scripts-for-squares.gif" alt="embedding scripts for squares" title="embedding scripts for squares" />                   
+                    <ol type="a">
+                        <li>Before building this script, sketch what each of the two <em>individual</em> scripts will draw before they are combined. </li> 
+                        <li>Predict the number of blue shapes that the combined script will draw.</li>
+                        <li>Sketch the shape that the combined script will draw.</li>
+                        <li>Now, build the combined script and try it out.</li>
+                        <li><strong>Experiment: </strong> Embed <em>another</em> square, half the size of the last, in the same way. How many of these smallest squares does the script draw? How could you have <em>predicted </em> that number before trying it?</li>
+                        <li><strong>Predict then experiment: </strong> Next, embed <em>one more</em> square, half the size of the last, in exactly the same way. But first, try to <em>predict</em> the number of tiny triangles it will draw before trying it.</li>
+                    </ol>
+                </li>
+            </ol>
+		</div>
 	
         <h3>Nesting Repeats Self Check</h3>
         <div class="comment">MF: add a few more questions</div>

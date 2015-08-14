@@ -8,38 +8,41 @@
     
 	<body>
 		<h2>Sprite Interaction</h2>
+		<p>Now, change the script so that the sprites don't repeat their movements forever, but <code>repeat until</code> they touch each other and then stop.</p>
 		<div class="forYouToDo" id="first">
-			<ol>
+            <ol>
 				<li>
-                	<div class="comment">We should always include written instructions when there is an animated gif. --MARY</div>
-                    <p>We don't want the sprites to repeat their movements forever.  We want them to <code>repeat until</code> they touch each other, and then stop.</p>
-                    <p>Change <code>Sprite(2)</code>'s code to <code>point towards Sprite</code> until it is <code>touching Sprite</code>. This video shows how:</p>
+                    Change Sprite(2)'s code to point towards Sprite only until it is touching Sprite.  Follow these instructions or watch the animation below:
+                    	<ol>
+                        	<li>Click the Sprite(2) button below the stage.</li>
+                            <li>Replace the <code>forever</code> block with a <code>repeat until</code> block</li>
+                            <li>Drag a <code>touching () ?</code> block into the hexgonal space in the <code>repeat until</code> block, and set it to repeat until it is touching Sprite.</li>
+                        </ol>                        
                     <img class="indent" src="/bjc-r/img/1-introduction/Replacing-code.gif" alt="Replacing code" title="Replacing code" />
                 </li>
-                <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
-				<li>Now, go back to <code>Sprite</code>'s code and tell it to follow your mouse <em>only</em> until it is <code>touching Sprite(2)</code>.</li>
-				<li> <div class="sidenoteBig">When you click <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>,  the <img src="/bjc-r/img/1-introduction/sprite.png" style="height:1.6em;" alt="the gray Sprite"> should follow your mouse.  Sprite(2) should keep facing <img src="/bjc-r/img/1-introduction/sprite.png" style="height:1.6em;" alt="the gray Sprite"> until you bring <img src="/bjc-r/img/1-introduction/sprite.png" style="height:1.6em;" alt="the gray Sprite"> close enough for the two to touch.</div> Try out your program. </li>
-				<li>
-                	Sprite(2) <em>points toward</em> Sprite, but doesn't <em>move</em> toward it. <br /> Add a line of code so that Sprite(2) chases Sprite.<br />
-					<pre>
- 	repeat until touching
-	  {
-	     point towards (Sprite)
-	     move a tiny amount
-	  }</pre>
-					You may want each &quot;tiny amount&quot; to be even less than 1 step so that Sprite(2) doesn't catch Sprite too quickly.
-					<div class="takeNote">This kind of written-out code is often called &quot;pseudo-code.&quot; It isn't precisely what your code would look like in <em>any</em> programming language but it makes the logical steps clear. There are no special &quot;rules&quot; for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div>
+				<li>Change <code>Sprite</code>'s code to follow your mouse only until it is <code>touching Sprite(2)</code>.</li>
+                <li> Try out your program. </li>
+				<div class="endnote">When you click <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>, Sprite (the gray one) should follow your mouse and Sprite(2) (the purple one) should keep turning to face Sprite. But once you bring Sprite close enough for the two to touch, both sprites should stop moving.</div>
+                <li>
+                	Sprite(2) <em>points toward</em> Sprite, but doesn't <em>move</em> toward it.  Add a line of code so that Sprite(2) chases Sprite. Here's the idea:<br />
+					<div class="sidenoteBig">You may want each "tiny amount" to be even less than 1 step so that Sprite(2) doesn't catch Sprite too quickly.</div>
+					<pre class="indent" style="width:300px;">
+repeat until touching
+    {
+        point towards (Sprite)
+        move a tiny amount
+    }</pre>
+					<div class="takeNote">This kind of written-out code is often called &quot;pseudo-code.&quot; It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special &quot;rules&quot; for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div>
 				</li>
-				<li>Test your program a few times. <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></li>
-				<li>
-					<p>
-                        Right now, when the sprites meet, they just stop. <br />
-                        Make them have a conversation when they stop. <br />
-                        You can do that by adding code like this to Sprite(2)'s script. <br />
-                        Make up your own dialogue. You can use any language you can type.
-					</p>
-                    <div class="sidenote">This code puts <code>Sprite(2)</code> in charge of <code>Sprite</code>.</div>
-                    <p> Sprite(2) does things itself. It also tells <code>Sprite</code> what to do and when to do it. </p>
+    			<li>Test your program a few times. </li>
+            	<img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
+                <li>
+                	<p>Right now, when the sprites meet, they just stop. Make them have a conversation when they stop. You can do that by adding code like this to Sprite(2)'s script. Make up your own conversation. You can use any language you can type.</p>
+                    <div class="sidenoteBig">Sprite(2) does things itself. It also tells Sprite what to do and when to do it. This code puts Sprite(2) in charge of Sprite.</div>
+                    <div class="sidenoteBig">
+                        <p class="center"><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /></p>
+                        In the current version of <span class="snap">snap</span>, the <code>tell</code> block isn't installed automatically. Click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu at the top of the <span class="snap">snap</span> window and select "Import Tools." The <code>tell</code> block will appear toward the end of the Control palette. You'll need to import tools once into each new <span class="snap">snap</span> project where you need <code>tell</code>. 
+                    </div>
                     <img class="indent" src="/bjc-r/img/1-introduction/SimpleDialogue-Going-to-lunch.png" alt="Simple dialogue about going to lunch" title="Simple dialogue about going to lunch" /> 
 				</li>
 			</ol>
@@ -48,9 +51,9 @@
 		<img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 
         <div class="takeItFurther">
-            <p> You can make this more interesting in lots of ways, if you like.</p> 
+            <p>If you like, you can make this more interesting in lots of ways...</p> 
             <ol type="A">
-                <li>You can give the sprites costumes. You can even use a photograph or picture from the Internet by dragging the picture into the costume area for that sprite. If the picture you choose is too big, set its size <img src="/bjc-r/img/blocks/set-size.png" alt="set size"> to something less than 100%. </li>
+                <li>You can give the sprites costumes. You can even use a photograph or picture from the Internet by dragging the picture into the costume area for that sprite. If the picture you choose is too big, set its size to something less than 100% using <img class="inline" src="/bjc-r/img/blocks/set-size.png" alt="set size to (100)%" title="set size to (100)%" />. </li>
                 <li>You can make a dialogue about school or home or work or play. </li>
                 <li>You can add a third sprite and have it do something, too.</li>
                 <li>
