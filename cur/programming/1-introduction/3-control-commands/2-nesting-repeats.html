@@ -14,26 +14,38 @@
         <div class="forYouToDo" id="first">
             <ol>
             	<li>
-                	Predict what this script will do without building:<br />
+           	    <strong>Predict</strong> what this script will do without building it.<br />
                     <img class="indent" src="/bjc-r/img/prog/hip32.png" alt="when greenflag clicked, repeat (3) [repeat (2) [say (Hip) for (2) secs], say (Hooray!) for (2) secs]" title="when greenflag clicked, repeat (3) [repeat (2) [say (Hip) for (2) secs], say (Hooray!) for (2) secs]" />
                     <ol type="a">
                         <li>How many times in total will the script say "Hip"?</li>
                         <li>How many times in total will the script say "Hooray"?</li>
                     </ol>
                 </li>
-                <div class="comment">GitHub comment: You need to add a pen down block in step 12 so that you can see the result. MF: quick fix: a sticky; perm fix: rebuild script pic.</div>
-        		<div class="sidenoteBig">You'll want to use the <img class="inline" src="/bjc-r/img/blocks/pen-down.png" alt="pen down"> command, which tells the sprite to set its pen point down to draw.</div>
-                <li> Here is another script that has nested <code>repeat</code> blocks. <br />
-		        	<img class="indent" src="/bjc-r/img/1-introduction/square-in-square.png" style="height:14em;" alt="squares in nested repeats" title="squares in nested repeats" />
-            	    <!--<img class="imageRight" src="/bjc-r/img/1-introduction/square-fractal2.png" style="height:10em;" alt="Square fractal" title="Square fractal" />-->
+          </ol></div>
+    <p>For the next experiment, it is useful to know how to duplicate a script. Right-click (or command-click) on the script and choose &quot;duplicate.&quot; The video shows how. </p>
+    <p><img src="/bjc-r/img/1-introduction/Duplicating-a-script.gif" alt="duplicating a script"></p>
+    <div class="forYouToDo">
+    <ol start="2">
+        <li>Build the script shown in that video. Then duplicate it and change its inputs as the video shows.</li>
+        <li>Try each script by itself to be certain what it does. Then clear the stage.</li>
+        <li>Now, insert the entire script for the blue triangle between the <code>move</code> and <code>turn</code> blocks of the red triangle, like this. <br />
+        <img src="/bjc-r/img/1-introduction/embedding-one-script-in-another.gif" alt="embedding the blue triangle in the red triangle"></li>
+        <li>Try this script to see what it does.</li>
+        <li>Using the scripts you have, find a way to make this picture.
+        <p><img src="/bjc-r/img/1-introduction/Three-color-Sierpinski.png" alt="Red triangle with blue children and green grandchildren"></p>
+        </li>
+
+        <li><strong>Predict by sketching on paper: </strong> Look at the animation below.
+		     <p><img src="/bjc-r/img/1-introduction/embedding-scripts-for-squares.gif"  alt="embedding scripts for squares"></p>
                     <ol type="a">
-		            	<li>Sketch on paper what you expect it to do. </li> 
+		            	<li>Sketch what each individual script will draw. </li> 
+                        <li>Then predict what the combined script will draw.</li>
                         <li>Build it and try it out.</li>
-                        <li>Embed <em>one more</em> <code>repeat (more, turn)</code> loop between <code>move 50 steps</code> and <code> turn right 90 degrees</code>.</li>
+                        <li>Embed <em>one more</em> <code>repeat (move 25 steps, turn 90 degrees)</code>  between <code>move 50 steps</code> and <code> turn right 90 degrees</code>.</li>
                 	</ol>
-                </li>
-            </ol>
-        </div>
+      </li>
+      </ol>
+</div>
 	
         <h3>Nesting Repeats Self Check</h3>
         <div class="comment">MF: add a few more questions</div>
