@@ -11,22 +11,24 @@ big-idea: Explore mathematics of computer science: random, modulo, and logical o
 big-idea: Analyze the impact of technology on our culture and safety.
 		
 
-	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white <span class="snap">snap</span> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
+	//raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white <span class="snap">snap</span> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
         
 
+	raw-html: <div style="float:right;"><img class="imageRight" src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner"/><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /><!-- <br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />--></div>
 heading: Programming Lab 1: Building an App
-	raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
+	//raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
 	resource: Create a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html]
 	resource: Start Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/2-start-your-first-snap-app.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-building-an-app/3-pair-programming-swap.html]
 	resource: Using the <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/1-building-an-app/4-using-the-random-block.html]
 	resource: Saving in Snap<em>!</em> [/bjc-r/cur/programming/1-introduction/1-building-an-app/5-saving-in-snap.html]
 	resource: Finish Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/6-finish-your-first-snap-app.html]
-	resource: Loading Your App on a Mobile Device [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
+	resource: Sharing Your App and Loading It on a Mobile Device [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
 	
+	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+
 heading: Programming Lab 2: Sprite Drawing and Communication
 	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
-	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
 	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/2-introduction/1-exploring-snap-code.html]
 	// resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-introduction/3-looks-sound.html]
 	resource: Sprites Having a Conversation [/bjc-r/cur/programming/1-introduction/2-introduction/2-sprites-having-conversation.html]
