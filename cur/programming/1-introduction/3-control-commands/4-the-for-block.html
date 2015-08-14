@@ -22,27 +22,24 @@
             </ul>
         </div>
         
-        <p>Repeating parts of your program is a very common practice in programming.  There are many ways to do it. You have already used two of them:
-        	<ul>
-                <li>The <img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" /> block is appropriate when you want to repeat the same behavior <em>forever</em>.</li>
-                <li>The <img class="inline" src="/bjc-r/img/blocks/repeat.png" alt="the repeat block" title="the repeat block" /> block is appropriate when you want to repeat the same behavior <em>a specific number of times</em>.</li>
-            	<li>The <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for"> block (see <img class="inline" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" /> at right) is appropriate when you want to repeat <em>almost</em> the same behavior with a change in each step.</li>
+        <p>Programs often require repeating a set of actions. You have already used three ways and will learn a fourth in this lab session.
+<ul>
+                <li>The <img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" /> block is appropriate when you want to repeat the same thing <em>forever</em>.</li>
+                <li>The <img class="inline" src="/bjc-r/img/blocks/repeat.png" alt="the repeat block" title="the repeat block" /> block is appropriate when you want to repeat the same thing <em>a specific number of times</em>.</li>
+                <li>The <img src="/bjc-r/img/blocks/repeat-until.png"  alt="repeat until"> block is appropriate when you want to repeat the same thing until some special condition occurs.</li>
+            	<li><div class="sidenoteBig">
+            <p class="center"><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /></p>
+            In the current version of <span class="snap">snap</span>, the <code>for</code> block isn't installed automatically. Click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu at the top of the <span class="snap">snap</span> window and select "Import Tools." You'll need to import tools once into each new <span class="snap">snap</span> project where you need <code>for</code>. 
+        </div>
+        The <img src="/bjc-r/img/prog/for.png" class="imageCenter" alt="for"> block is appropriate when you want to repeat <em>almost</em> the same thing with a change in each step.</li>
             </ul>
         </p>
-        
-        <div class="sidenoteBig">
-            <p class="center"><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /></p>
-            In the current version of <span class="snap">snap</span>, the <code>for</code> block isn't installed automatically. Click on the File <img src="/bjc-r/img/sys/button-file-menu.png" class="inline" style="height:1.7em;" alt="File menu icon" title="File menu icon" /> menu at the top of the <span class="snap">snap</span> window and select "Import Tools." You'll need to import tools once into each new <span class="snap">snap</span> project where you need <code>for</code> or other tool blocks. 
-        </div>
-
-        <div class="sidenoteBig">The numbers in the <code>for</code> block work as you might expect: the <code>for</code> block counts by 1 from the first number to the last number, running the script inside the C-shape with the new number each time.   
-        As the <code>for</code> block counts, it keeps track of the changing number with a variable, the orange oval set to <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" /> by default, which you can drag into the blocks inside the <code>for</code> loop.
-		</div>
-                    
         <p>
-        	With <code>for</code>, long scripts like:<br />    
+        	The <code>for</code> block lets you simplify long scripts like:<br />    
     	        <img class="indent" src="/bjc-r/img/looping/for-loop-equivalent.png" alt="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" title="say (1) for (2) secs, say (2) for (2) secs, say (3) for (2) secs... say (10) for (2) secs" /><br />
-	            can be simplfied to:<br />    
+	             to:  <div class="sidenoteBig">The <code>for</code> block counts by 1 from the first number to the last number, running the script inside it. 
+        As the <code>for</code> block counts, it keeps track of the changing number with the variable <img class="inline" src="/bjc-r/img/blocks/variable-i.png" alt="i" title="i" />. You can <em>use</em> the  number in that script. The video shows how.   
+		</div>   <br /> 
                 <img class="indent" src="/bjc-r/img/looping/for-loop-drag-i.gif" alt="for (i) (1) to (10) [say (Hello!) for (2) secs" title="for (i) (1) to (10) [say (Hello!) for (2) secs" /><br />
 		</p>
         
@@ -59,23 +56,22 @@
                			<img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"><br />
                 		This shape is called a &quot;squiral&quot; &mdash; a square spiral. 
                      </li>
-                     <div class="comment">Does this sidenote really help?  Or just prevent thinking?</div> 
-            <div class="sidenote">The steps moved varies between repetitions.</div>
+                    
                      <li>
                      	<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
 						Do you see why it spirals outward?
                     </li>
                     <li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
-                    <li>Experiment! Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
+                    <li><strong>Experiment:</strong> Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
                     <li>
                         Change the turn angle and the move steps to get as close as you can get to a smooth spiral:<br />
                         <img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
                     </li>
                     <li><div class="saveAs"><span class="text">"U1L2-Squiral"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Squiral" title="Save your work as U1L2-Squiral" /></div></li>
-                    <li>Click the script below to lanch it in <span class="snap">snap</span>:<br /><a class="run" href="/bjc-r/prog/1-introduction/sound-sweep-up.xml"><img class="indent" src="/bjc-r/img/1-introduction/sound-sweep-up.png" alt="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" title="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" /></a></li>
+                    <li>Click the script below to launch it in <span class="snap">snap</span>:<br /><a class="run" href="/bjc-r/prog/1-introduction/sound-sweep-up.xml"><img class="indent" src="/bjc-r/img/1-introduction/sound-sweep-up.png" alt="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" title="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" /></a></li>
                 	<li>Create a second script that says and plays the notes down from 84 to 60 when you press the down arrow.</li>
-                	<div class="endnote">You can additional build scripts by dragging more blocks out from the palettes on the left and snapping them together or by duplicating an existing script (by two-finger-clicking or left-clicking it).</div>
-	           		<li>Code a script that says and plays the notes from 60 to 83 and then from 84 to 61 a total of 3 times <em>quickly</em>.</li>
+                	<div class="endnote">Because the new script will be so much like what you already have, you may want to <em>duplicate</em> (right-click or command-click) and then change.</div>
+	           		<li>Create a script that says and plays the notes from 60 to 83 and then from 84 to 61 a total of 3 times <em>quickly</em>.</li>
 
                 </ol>
             </div>
