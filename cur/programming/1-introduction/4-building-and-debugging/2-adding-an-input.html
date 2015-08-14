@@ -17,67 +17,62 @@
             <img src="/bjc-r/img/blocks/think-Hmm...-for-2-secs.png" class="inline" alt="think Hmm... for 2 secs" title="think Hmm... for 2 secs" /><br />
             <img src="/bjc-r/img/blocks/play-note-60-for-0.5-beats.png" class="inline" alt="play note 60 for 0.5 beats" title="play note 60 for 0.5 beats" />
         </div>
-        <p>Your <code>draw square</code> block  draws squares of only one particular size, built into its script.  You can improve your block to draw squares of <em>any</em> size by giving your block an <em><strong>input</strong></em>.</p>
+        
+        <p>Your <code>draw square</code> block draws squares of only one particular size&mdash;the size built into its script. You can improve your block to draw squares of <em>any</em> size by giving your block an <em><strong>input</strong></em>.</p>
         <div class="forYouToDo" id="first">
-        <p>As you learn from the video and instructions below, edit your <code>draw square</code> block to give it an input.</p>
             <ol>
-                <li>To edit a block, right-click on it  (or control-click or two-finger-click) and select "edit." 
-                  <p>Use the video to get the idea. Read the  detailed instructions (in yellow, below) to know more about what you are doing.</p>
-                </li>
-                
-                  <div class="comment">This is the first time we've hinted that they might be using a touchscreen/touchpad.  We should maybe be consistent about this?  Define &quot;secondary click&quot; carefully once and then just use it? PG: This is getting overwhelmingly complicated and just begs to be obsolete when the next technology comes in. Right-click, control-click, two-finger-click....</div>
-                  <img src="/bjc-r/img/1-introduction/adding-input-to-block.gif" alt="adding input to block"></li>
+                <li>Edit your <code>draw square</code> block to give it an input. To edit a block, right-click on it  (or control-click or two-finger-click) and select "edit." Use the video to get the idea. You can read the detailed instructions (in yellow below) to learn more about what you are doing.<br />
+				<div class="comment">This is the first time we've hinted that they might be using a touchscreen/touchpad.  We should maybe be consistent about this?  Define &quot;secondary click&quot; carefully once and then just use it? PG: This is getting overwhelmingly complicated and just begs to be obsolete when the next technology comes in. Right-click, control-click, two-finger-click....</div>
+				<img src="/bjc-r/img/1-introduction/adding-input-to-block.gif" alt="adding input to block"></li>
             </ol>
         </div>
                 
-                <div class="endnote">
-                <strong>The details: </strong>
-                <ol>
-                <li> <strong>What are the + signs?</strong>  
-	                
-	                <div class="manual">Read <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=19" target="_blank">Snap Manual pages 19-20</a> and, for more advanced info, <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=27" target="_blank">pages 27-31</a></div>
-                    <p>In the Block Editor, hover your cursor over the words and plus signs (<b>+</b>) in the hat block.</p>
-                    <p>Clicking on a word lets you change the word; clicking on a <b>+</b> lets you put a new word in that position. Your new input will go after the title, so click  the <b>+</b> at the end.</p>
+		<div class="endnote">
+			<ul>
+                <li> 
+                	<strong>The + signs</strong>: In the Block Editor, hover your cursor over the words and plus signs (<b>+</b>) in the hat block. Clicking on a word lets you change the word; clicking on a <b>+</b> lets you put a new word in that position. Your new input will go after the title, so click the <b>+</b> at the end.<br />
+	                <div class="manual">See also <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=19" target="_blank">Snap Manual pages 19-20</a> and, for more advanced info, <a href="http://snap.berkeley.edu/snapsource/help/SnapManual.pdf#page=27" target="_blank">pages 27-31</a>.</div>
                     <img class="indent" alt="draw square editor" src="/bjc-r/img/sys/draw-square-block-editor.png" >
                 </li>
-                <li>Give the input a name that makes its meaning clear to any reader: <code>size</code> or <code>side length</code> would be good.  Type that name in the input field.</li>
                 <li>
-                    <img class="imageRight" src="/bjc-r/img/sys/add-argument-in-block-signature.png" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" />
+                	<p>
+                    	<strong>Naming the Input</strong>: Choose a name for the input that makes its meaning clear to any reader: <code>size</code> or <code>side length</code> would be good.  Type that name in the input field.
+                		<img class="imageRight" src="/bjc-r/img/sys/add-argument-in-block-signature.png" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" />
+                    </p>
                     <p>
                     	You have two choices about how to treat that new text:
-                  <ol>
+                        <ol>
                             <li><strong>Input name</strong> is automatically selected for you, and that is what you want now, so just leave it selected.</li>
-                            <li>But <em>if</em> you ever want to change a block's title, you could click <strong>Title text</strong> (grey in this picture) and type the new words.
-                            For example, to change the name from <code>draw square</code> to <code>draw square picture</code> you'd click on "Title text" and type the word "picture." )</li>
-                            
-                  </ol>
+                            <li>But <em>if</em> you ever want to change a block's title, you could click <strong>Title text</strong> (grey in this picture) and type the new words. (For example, to change the name from <code>draw square</code> to <code>draw square picture</code> you'd click on "Title text" and type the word "picture.")</li>
+                                
+                        </ol>
                     </p>
-
-                  
-</li>
-               <p> Your block header has changed: there is now a variable named <code>size</code> (or whatever name you chose) after the title.<br />
-                    <img class="indent" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" ></p>
-               
-                <li> <div class="sidenote">This is exactly what you did when you used the variable in <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-for-block.html" target="_blank">the <code>for</code> block</a>.</div>
-            
-                    <p><a name="drawsquare" class="anchor"></a>To use the <code>size</code> variable in the <code>draw square</code> script, drag the variable down into the move block. Whenever you need a new copy of a variable, just drag another down.  </p>
-                    
+                    <p> 
+                    	Your block header has changed: there is now a variable named <code>size</code> (or whatever name you chose) after the title:<br />
+                    	<img class="indent" title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
+                    </p>
+                </li>
+                <li> 
+                    <p><a name="drawsquare" class="anchor"></a><strong>To use the <code>size</code> variable</strong> in the <code>draw square</code> script, drag the variable down into the move block. Whenever you need a new copy of a variable, just drag another down.</p>
+                	<div class="sideHOM">This is exactly what you did when you used the variable in <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-for-block.html" target="_blank">the <code>for</code> block</a>.</div>
                     <img class="indent" title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif">
                 </li>
-                <li> <div class="sidenoteBig">If you have extra copies of a block or variable or script that you want to get rid of, you can drag them all the way to the palette at the left of the <span class="snap">snap</span> window.</div>
-					<p>When you click "OK" in the block editor, you'll see that the <code>draw square</code> block in the scripting area now takes an input. Run this script with a few different inputs to check that it works:</p>
+                <li>
+                	<strong>Check your work</strong>: When you click "OK" in the block editor, you'll see that the <code>draw square</code> block in the scripting area now takes an input. Run this script with a few different inputs to check that it works:<br />
+                    <div class="sideHOMbig">If you have extra copies of a block or variable or script that you want to get rid of, you can drag them all the way to the palette at the left of the <span class="snap">snap</span> window.</div>
                     <img class="indent" src="/bjc-r/img/1-introduction/pen-down-draw-square-100.png" alt="pen down, draw square (100)" title="pen down, draw square (100)" />
                 </li>
 
-            </ol>
-</div>
-        <div class="todo">Is it kosher for one TIF to assume that you did an earlier TIF?</div>
+            </ul>
+		</div>
+        
+        <div class="todo">Is it kosher for one TIF to assume that you did an earlier TIF? --PG? That's what the links are for. :) MF</div>
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Now edit <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html#further" target="_blank">your <code>triangle</code> and <code>house</code> blocks from the previous page</a> so that you can draw houses of any size you specify as input.</li>
-                <img class="imageRight" src="/bjc-r/img/prog/polyblock.png" alt="draw polygon () sides of length ()">
-                <div class="sidenoteBig">You may wish to look back at <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html#polygon" target="_blank">the work with polygons you did in Lab 2</a>.<div class="comment">is this still in lab 2?</div> How many degrees altogether? How many turns?</div>
+                <li>If you made the <code>house</code> block on the <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html#further" target="_blank">previous page</a>, edit your <code>triangle</code> and <code>house</code> blocks so that you can draw houses of any size you specify as input.</li>
                 <li>Create a <code>spell backwards</code> block that takes an input word or phrase and spells it backward. You may want your <code>for</code> block to use <code>length of</code> <img src="/bjc-r/img/blocks/length-of-world.png" alt="length of"> in order to know when to stop spelling.</li>
+                <img class="imageRight" src="/bjc-r/img/prog/polyblock.png" alt="draw polygon () sides of length ()">
+                <div class="sidenoteBig">You may wish to look back at <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html#polygon" target="_blank">the work with polygons you did in Lab 3</a>. How many degrees altogether? How many turns?</div>
                 <li>
                     Create a <code>draw polygon</code> block that takes two inputs:
                     <ul>
