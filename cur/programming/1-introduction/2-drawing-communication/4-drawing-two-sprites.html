@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 1 Lab 2: Sprite Drawing and Communication</title>
+	</head>
+    
+	<body>
+		<h2>Drawing with Two Sprites</h2>
+        <div class="newProject"><span class="text">"U1L2-SpriteOrbit"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div>
+    
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <strong>Analyze and predict:</strong> How are the behaviors of these four scripts the same? How are they different? <br /> 
+                    <img src="/bjc-r/img/1-introduction/Forever(move100-turn90).png" alt="Forever(move100-turn90)">
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat10(move10)-turn90).png"  alt="Forever(repeat10(move10)-turn90)"> 
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat20(move5)-turn90).png" alt="Forever(repeat20(move5)-turn90)"> 
+                    <img src="/bjc-r/img/1-introduction/Forever(repeat100(move1)-turn90).png"  alt="Forever(repeat100(move1)-turn90)">
+                </li>	
+                <li>
+                	Create two sprites. 
+                    <ol>
+                        <li>Give Sprite a script that, <em>when started</em>, draws a blue square, drawing each line at some medium speed.</li>
+                        <li>
+                        	Give Sprite(2) a script that does this:<br />
+							<pre>
+                when started
+                draw in red
+                forever
+                  {
+                     point towards (Sprite)
+                     move (5) steps
+                  }</pre>  
+                        </li>
+                        <div class="takeNote">One &quot;line&quot; of pseudo-code may require more than one line of code in the language you are using. For example, &quot;draw in red&quot; requires two <span class="snap">snap</span> commands, one so that the sprite draws when it moves, and one to set the pen's color.</div>	
+                        <li>Make sure that your program starts both sprites at the same time (for example, with <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>).</li>
+					</ol>
+				</li>
+				<li>Experiment with the speeds of each sprite. 
+                    <ol>
+                        <li>What happens if Sprite(2) moves 20 steps instead of 5 steps each cycle through the forever-loop? <br /> 
+                            What if it moves only 2 steps? <br /> 
+                            What if Sprite draws its square more quickly? </li>
+                        <li>Describe your experiments in writing. Include pictures of the screen to show what happened. Try to explain <em>why</em> the picture came out as it did.</li>
+                    </ol>
+				</li>
+			</ol>
+		</div>
+	
+    	<div class="takeItFurther">
+            <p>Sprite doesn't need to move in a square. Try one or more of the following experiments.</p>
+            <ol type="A">
+                <li>Change Sprite's turn to 144 degrees.</li>
+                <li> Change Sprite's turn so that it makes an equilateral triangle. </li>
+                <li>Change Sprite's turn to 10 degrees and make the distance it moves in each step much smaller than 100.</li>
+                <li>
+                	<img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" />
+                    Try to make some other interesting designs. Here are some examples:<br />
+                    <img class="inline" src="/bjc-r/img/1-introduction/move-turn-design-01.png" alt="move turn design 1" title="move turn design 1" />
+                    <img class="inline" src="/bjc-r/img/1-introduction/move-turn-design-02.png" alt="move turn design 2" title="move turn design 2" />
+                    <img class="inline" src="/bjc-r/img/1-introduction/move-turn-design-03.png" alt="move turn design 3" title="move turn design 3" />
+                </li>
+            </ol>
+        </div>
+        		
+    
+    </body>
+</html>

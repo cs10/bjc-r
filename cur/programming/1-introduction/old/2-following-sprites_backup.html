@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 1 Lab 2: Sprite Drawing and Communication</title>
+	</head>
+    
+	<body>
+		<h2>Sprites Having a Conversation</h2>
+        <div class="comment">Give instructions to import the U1 tell block before starting this project and <em>save</em> this project as Dialogues.</div>
+        <p>In this lab, you will program <em>two</em> sprites. One sprite will follow your mouse. The other sprite will chase the first. When they meet, they will have a short conversation.</p>
+        <p><div class="newProject"><span class="text">"U1L2-SpriteChase"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L2-SpriteChase" title="Create a new project called U1L2-SpriteChase" /></div>
+          <strong>START BY LOADING THIS FILE (Link to <em>U1 Tell block</em>). Paul, can you insert a link to the shared URL? I'll put the image in as a link as the first thing to do in the list below.</strong>
+        </p>
+		<div class="forYouToDo" id="first">
+			<ol>
+				<li>
+                    <div class="sidenoteBig"><img src="/bjc-r/img/blocks/mouse-x.png" class="block" alt="Mouse X Reporter"/> and <img src="/bjc-r/img/blocks/mouse-y.png" class="block" alt="Mouse Y Reporter"/> report the mouse's location on the screen. You can find them in the &quot;Sensing&quot; palette.</div> 
+                    Read and think about this script before you build it. What do you expect it to do?
+                    <p><img src="/bjc-r/img/1-introduction/follow-that-mouse.png" alt="Follow That Mouse Script"></p>
+                    <p>Now build the script.</p>  <div class="sidenote">To <em>stop</em> this script, click the red stop sign <img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button"/>. </div>
+                    <p>Move your mouse around the stage while the program is running. Does the program work the way you expected?</p>
+                </li>
+				<li>
+                	Now create a second sprite. The video shows how. <br /> The instructions below the video describe the steps.
+					<p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART1.gif" alt="getting a new sprite"></p>
+                    <ol>
+                        <li>Click on the &quot;add a new Turtle sprite&quot; button just below the stage. <img src="/bjc-r/img/1-introduction/Add-a-new-turtle-sprite.png" alt="add a new turtle sprite"></li>
+                        <li>That new sprite appears on the stage and a button to select it  appears underneath the stage. It is brand new, so it has no script. You will need to drag in blocks to tell it what to do.</li>
+                        <li> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> If you want to see any sprite's script, click on its button below the stage. </li>
+                    </ol> 
+				</li> 
+				<li> 
+                	Build a script for Sprite(2): 
+					<pre>
+	when started
+	forever 
+	  {
+	     point towards (Sprite)
+	  }</pre>
+					The video shows how.<br /> 
+					The instructions below explain a bit more.
+                <p><img src="/bjc-r/img/1-introduction/NewSprite-pointing-to-old-sprite-PART2.gif" alt="part 2"></p>
+                <ol>
+                    <li> 
+                    	<div class="sidenoteBig">While a script is running, its border is highlighted. Some scripts run so quickly that you may not notice the brief border flash. This script takes longer to run, so it's easier to notice the highlighted border.</div>
+                    	When <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> is clicked, <em>both</em> sprites' scripts run.
+                        <ul> 
+                            <li>Sprite always follows your mouse, as you taught it to.</li>
+                            <li>Sprite(2) always points toward Sprite.</li>
+                        </ul>
+                    </li>
+                    <li><img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> Click <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/> and try it yourself.</li>
+                  </ol>
+              </li>
+          </ol>
+      </div>
+              
+    
+    </body>
+</html>

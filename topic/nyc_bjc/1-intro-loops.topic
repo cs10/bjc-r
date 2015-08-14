@@ -29,10 +29,11 @@ heading: Programming Lab 1: Building an App
 
 heading: Programming Lab 2: Sprite Drawing and Communication
 	//raw-html: <div class="comment">Link for testing: <a href="../../../hourofcode/index.html" target="_blank">HOC on localhost</a>.</div>
-	resource: Exploring <span class="snap">snap</span> Code [/bjc-r/cur/programming/1-introduction/2-introduction/1-exploring-snap-code.html]
-	// resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-introduction/3-looks-sound.html]
-	resource: Sprites Having a Conversation [/bjc-r/cur/programming/1-introduction/2-introduction/2-sprites-having-conversation.html]
-	//resource: Looks and Sound [/bjc-r/cur/programming/2-introduction/2-graphics-effects/3-looks-sound.html]
+	resource: Exploring <span class="snap">snap</span> Drawing and Motion [/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html]
+	resource: Following with Sprites [/bjc-r/cur/programming/1-introduction/2-drawing-communication/2-following-sprites.html]
+	resource: Sprites Interaction [/bjc-r/cur/programming/1-introduction/2-drawing-communication/3-sprite-interaction.html]
+	resource: Drawing with Two Sprites [/bjc-r/cur/programming/1-introduction/2-drawing-communication/4-drawing-two-sprites.html]
+	resource: More Sprite Drawing and Interaction [/bjc-r/cur/programming/1-introduction/2-drawing-communication/5-more-drawing-interaction.html]
 	
 heading: Programming Lab 3: Control Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
