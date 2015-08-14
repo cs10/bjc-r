@@ -36,7 +36,7 @@ heading: Programming Lab 3: Control Commands
 	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
 	raw-html: <div class="sidenoteBig">The quiz symbol, <img class="inline" style="padding: 1px;" src="/bjc-r/llab/img/multiplechoice16.png" alt="multiple choice icon" title="multiple choice icon" />, indicates that this page includes an online quiz to help you check your understanding.</div>
 	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-control-commands/2-nesting-repeats.html]
-	resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html]
+	//resource: The <code>Forever</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-forever-block.html]
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/4-the-for-block.html]
 
 heading: Programming Lab 4: Building and Debugging Your Own Blocks
