@@ -15,21 +15,22 @@ h3: Highlighting Computational Thinking
 	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong>, and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it, and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
 	
 heading: Week 1 (Programming Focus)
-	resource: Lab 1: Introduction [/bjc-r/cur/teaching-guide/U1/Week01/1-introduction.html]
-	resource: Lab 2: Control Commands [/bjc-r/cur/teaching-guide/U1/Week01/2-repeating-commands.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week01/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week01/assignments.html]
+	resource: Lab 1: Building an App [/bjc-r/cur/teaching-guide/U1/lab-pages/1-building-an-app.html]
+	resource: Lab 2: Introduction [/bjc-r/cur/teaching-guide/U1/lab-pages/2-sprite-drawing-communication.html]
+	resource: Lab 3: Control Commands [/bjc-r/cur/teaching-guide/U1/lab-pages/3-control-commands.html]
+	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week01/W01-activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week01/W01-assignments.html]
 
 heading: Week 2 (Programming Focus)
-	resource: Lab 3: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/Week02/3-make-your-own-blocks.html]
-	resource: Lab 4: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/Week02/4-using-randomness.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week02/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week02/assignments.html]
+	resource: Lab 4: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/lab-pages/4-make-your-own-blocks.html]
+	resource: Lab 5: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/lab-pages/5-block-types.html]
+	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week02/W02-activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week02/W02-assignments.html]
 	
 heading: Week 3 (Social Implications Focus)
-	resource: Lab 5: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/Week03/5-explosion-bits-games-violence.html] 
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week03/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week03/assignments.html]
+	resource: Lab 5: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/lab-pages/5-explosion-bits-games-violence.html] 
+	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week03/W03-activities.html]
+	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week03/W03-assignments.html]
 	
 heading: Investigations
 	resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/investigations/kaleidoscope.html]
