@@ -39,24 +39,22 @@
                         
                 <img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /><br clear="all"/>
 				<li>Drag the sprite around with your mouse. Also use <code>move</code> and <code>turn</code> to control the sprite. Notice which actions change which values.</li>
-                <li>Experiment to determine <em> part</em> of the sprite the coordinates are describing. (Head? Tail? Center?)</li>
+              <li>Experiment to determine <em> part</em> of the sprite the coordinates are describing. (Head? Tail? Center?)</li>
             </ol>
 </div>
 	
 	        <p>Your stage should look like this with axes, a grid, the origin, and 3 watchers: <em>x</em> position, <em>y</em> position, and direction.</p>
 	<div class="sidenote">
-        <p>In some programming languages, the origin is at the upper left corner of the screen, and the numbers get bigger as the sprite moves   <em>down</em> the screen. They use that system because  TV screens display from top to bottom. <span class="snap">snap</span> uses the same coordinates you use in algebra.</p>
+        <p>Some programming languages treat the top left corner of the screen as the origin: coordinates get bigger as you move <em>down</em> and right, with no negative coordinates. <span class="snap">snap</span> uses the same coordinates you use in algebra.</p>
         </div>
    	 	<p class="center"><img src="/bjc-r/img/1-introduction/snap-coord-grid.png" alt="Coordinate Grid"/></p>
 		
-    	<div class="takeNote">
-        	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-        	Though <span class="snap">snap</span>'s <em>coordinates</em> work the way you've learned in mathematics, the  sprite <strong>direction</strong> in <span class="snap">snap</span> uses 0 to mean "pointing 'North'" and 90 to mean "pointing 'East,'" and so on. This is how <a href="https://en.wikipedia.org/wiki/Points_of_the_compass" title="Wikipedia compass directions" target="new"> compass directions</a> are given. Mathematics uses a different convention: 0° for pointing in the positive direction along the <em>x</em>-axis, increasing as we turn toward the north (90°) and beyond.
-                	<p class="center"><img class="indent" style="height:25%;width:25%;" src="/bjc-r/img/1-introduction/point-in-direction.png" alt="grid and axes on Snap stage with sprite watchers" title="grid and axes on Snap stage with sprite watchers"/></p>
+    	<div class="takeNote"><span class="snap">snap</span>'s <em>coordinates</em> work the way you've learned in mathematics. <strong>Direction</strong> in <span class="snap">snap</span> works differently. <span class="snap">snap</span> uses 0 to mean "pointing 'North'" and 90 to mean "pointing 'East,'" and so on. This is how <a href="https://en.wikipedia.org/wiki/Points_of_the_compass" title="Wikipedia compass directions" target="new"> compass directions</a> are expressed. Mathematics uses a different convention: 0° for pointing in the positive direction along the <em>x</em>-axis (that is, toward the right), increasing as we turn counter-clockwise toward the north (90°) and beyond.
+       	  <p class="center"><img class="indent" style="height:25%;width:25%;" src="/bjc-r/img/1-introduction/point-in-direction.png" alt="grid and axes on Snap stage with sprite watchers" title="grid and axes on Snap stage with sprite watchers"/></p>
                 
         <!--<div class="todo">insert image with labeled axes and a (+,-) in each quad??</div>-->
 	</div>
-		<div class="forYouToDo">
+<div class="forYouToDo">
 			<ol start="6">
                 <li>What are the <em>position coordinates</em> of the sprite in the image above?</li>
                 <li>In what <em>direction</em> is the sprite pointing?</li>
@@ -67,7 +65,7 @@
 		  </ol>
 		</div>
        
-        <!--<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+    <!--<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
 			<ol type="A">
 	            <!--<li>Create a program with the <em>x</em>-<em>y</em>-grid in the background that labels each of the quadrants with the signs of their coordinates (like you might see in math class).</li>
 			</ol>

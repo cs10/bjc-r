@@ -52,8 +52,8 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
 		
 heading: Programming Lab 5: Block Types and Calculations
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-sprite-position-direction.html]
-	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html]
 	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-computer-operations.html]
+	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html]
 	quiz: Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-commands-and-reporters.html]
 	
  	raw-html: <hr />
