@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 1 Lab 2: Introduction</title>
+		<title>Unit 1 Lab 5: Block Types and Calculations</title>
 	</head>
     
 	<body>
@@ -17,82 +17,55 @@
         </div>
         <div class="forYouToDo" id="first">
             <ol>
+                
+                <div class="sidenote">There are also other backgrounds built into <span class="snap">snap</span> that you can use for other projects, or you can drag your own pictures in.</div>
                 <li>
-                	<div class="newProject">	<span class="text">"U1L1-Interface"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U1L2-Interface" title="Start a New Project called U1L2-Interface" /></div>
-                    <div class="comment">Animations for some or all of these?</div>
-                    <ol type="a">
-                        <li>If there is a <span class="snap">snap</span> file open, <a href="/bjc-r/cur/programming/1-introduction/1-building-an-app/5-saving-in-snap.html#saving">save it</a>.</li>
-                        <li>Go to the <span class="snap">snap</span> File menu, <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/>, and choose "New".</li>
-                        <li>Click "Yes" to replace the current project.</li>
-                        <li>In the <a href="http://snap.berkeley.edu/run" target="_blank"><span class="snap">snap</span></a>  File menu, <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/>, choose either "Save" or "Save as..."</li>
-                        <li>Name the file "U1L2-Interface"</li>
-                    </ol>
-				</li>
-                <div class="sidenote">There are also other backgrounds built into <span class="snap">snap</span> that you can use for other projects, or you can drag pictures in from your desktop.</div>
-                <li>
-                    Change the background on your stage so that you see the coordinate plane grid and axes.  
-                    <ol type="a">
-                        <li>In the <a class="anchor" href="/bjc-r/cur/programming/1-introduction/2-introduction/2-sprites-having-conversation.html#window">Sprite Corral</a> (lower right of <span class="snap">snap</span> screen), select the Stage thumbnail.</li>
+                    Change the stage's background to xy-grid  so that you see the coordinate plane grid and axes.  
+                      <p>The video and instructions will remind you how.</p>
+                      <p><img src="/bjc-r/img/1-introduction/Change-Background-to-x-y-grid.gif" alt="video reminder of how to change stage background"></p>
+                      <ol type="a">
+                        <li>In the <a class="anchor" href="/bjc-r/cur/programming/1-introduction/2-introduction/2-sprites-having-conversation.html#window">Sprite Corral</a> (just below the screen), click the Stage button.</li>
                         <li>Then, choose "Backgrounds" from the <span class="snap">snap</span> File menu, <img src="/bjc-r/img/1-introduction/file_button.png" style="height:1.6em;" alt="File button"/> .</li>
                         <li>Choose "xy-grid.gif" to show the grid.</li>
                      </ol>
                  </li>
                  <li>
-                    Turn on <em>watchers</em> to show the direction of the sprite and its <em>x</em> and <em>y</em> coordinates.
-                    <ol type="a">
-                        <li>
-                            In the blue Motion palette, click on the gray checkbox next to the <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" /> block. Drag the sprite image (<img class="noshadow" src="/bjc-r/img/1-introduction/sprite.png" alt="sprite" title="sprite" />) around and to see the watcher display the changing <em>x</em> position of the sprite.
+                            In the blue Motion palette, check the gray checkbox next to the <img class="inline" src="/bjc-r/img/blocks/x-position.png" alt="x position" title="x position" />, <img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="y position" title="y position" />, and <img src="/bjc-r/img/blocks/direction.png" alt="direction"> blocks. That creates &quot;watchers&quot; on the stage, boxes that show the <em>x</em> and <em>y</em> coordinates of your sprite and the direction it is pointing.
                             <p class="center">
-                            <img src="/bjc-r/img/topic1/palette-checkbox.png" alt="X Position block's checkbox"/>
-                            <img src="/bjc-r/img/topic1/watcher.png" alt="X Position stage watcher"/>
-                            </p>
+            <img src="/bjc-r/img/topic1/palette-checkbox.png" alt="X Position block's checkbox"/>
+            <img src="/bjc-r/img/topic1/watcher.png" alt="X Position stage watcher"/>
+            </p>
                         </li>
-                        <li>Create watchers for <img class="inline" src="/bjc-r/img/blocks/y-position.png" alt="y position" title="y position" /> and <img class="inline" src="/bjc-r/img/blocks/direction.png" alt="direction" title="direction" /> by checking their boxes in the same palette.</li>
-                    </ol>
-                </li>
+                        
                 <img class="imageLeft" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /><br clear="all"/>
-				<li>Move the sprite around using commands (blocks; try <code>move</code> or <code>turn</code>) or by just dragging it with your mouse. Notice which actions change which values.</li>
+				<li>Drag the sprite around with your mouse. Also use <code>move</code> and <code>turn</code> to control the sprite. Notice which actions change which values.</li>
+              <li>Experiment to determine <em> part</em> of the sprite the coordinates are describing. (Head? Tail? Center?)</li>
             </ol>
-        </div>
+</div>
 	
 	        <p>Your stage should look like this with axes, a grid, the origin, and 3 watchers: <em>x</em> position, <em>y</em> position, and direction.</p>
 	<div class="sidenote">
-        <p>In some programming languages, the origin is at the upper left corner of the screen, and the numbers get bigger as the sprite moves   <em>down</em> the screen. They use that system because  TV screens display from top to bottom. The use of more familiar center-origin coordinates in <span class="snap">snap</span> is an example of <em><strong>abstraction</strong>:</em> hiding implementation details so that the user can think in more familiar ways.</p>
+        <p>Some programming languages treat the top left corner of the screen as the origin: coordinates get bigger as you move <em>down</em> and right, with no negative coordinates. <span class="snap">snap</span> uses the same coordinates you use in algebra.</p>
         </div>
    	 	<p class="center"><img src="/bjc-r/img/1-introduction/snap-coord-grid.png" alt="Coordinate Grid"/></p>
 		
-    	<div class="takeNote">
-        	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-            The coordinate system is a little different from the one you may have learned in algebra.
-            <ul>
-                <li>In <span class="snap">snap</span>, <em>positions</em> are the same as in algebra: the <strong>origin</strong>, (0, 0), is in the middle of the stage, horizontal position is called <em>x</em> and is positive to the right of the origin, and vertical position is called <em>y</em> and is positive above the origin.</li>
-                <li>Unlike mathematical convention, the  sprite <strong>direction</strong> in <span class="snap">snap</span> starts with 0 at the top and counts up in degrees going clockwise.  This is the numbering used for <a href="https://en.wikipedia.org/wiki/Points_of_the_compass" title="Wikipedia compass directions" target="new">compass directions</a>.
-                	<p class="center"><img class="indent" style="height:25%;width:25%;" src="/bjc-r/img/1-introduction/point-in-direction.png" alt="grid and axes on Snap stage with sprite watchers" title="grid and axes on Snap stage with sprite watchers"/></p>
-                </li>
-            </ul>
-        </div>
+    	<div class="takeNote"><span class="snap">snap</span>'s <em>coordinates</em> work the way you've learned in mathematics. <strong>Direction</strong> in <span class="snap">snap</span> works differently. <span class="snap">snap</span> uses 0 to mean "pointing 'North'" and 90 to mean "pointing 'East,'" and so on. This is how <a href="https://en.wikipedia.org/wiki/Points_of_the_compass" title="Wikipedia compass directions" target="new"> compass directions</a> are expressed. Mathematics uses a different convention: 0° for pointing in the positive direction along the <em>x</em>-axis (that is, toward the right), increasing as we turn counter-clockwise toward the north (90°) and beyond.
+       	  <p class="center"><img class="indent" style="height:25%;width:25%;" src="/bjc-r/img/1-introduction/point-in-direction.png" alt="grid and axes on Snap stage with sprite watchers" title="grid and axes on Snap stage with sprite watchers"/></p>
+                
         <!--<div class="todo">insert image with labeled axes and a (+,-) in each quad??</div>-->
-	
-		<div class="forYouToDo">
-			<ol start="5">
+	</div>
+<div class="forYouToDo">
+			<ol start="6">
                 <li>What are the <em>position coordinates</em> of the sprite in the image above?</li>
                 <li>In what <em>direction</em> is the sprite pointing?</li>
-                <div class="sidenote">The tip of the sprite arrow is the point in question.</div>
-        		<li>Experiment by dragging around a sprite image (<img class="noshadow" src="/bjc-r/img/1-introduction/sprite.png" alt="sprite" title="sprite" />) to make sure you see which part of the sprite graphic the coordinates are describing.</li>
-				<div class="sidenoteBig">Once the pen is down, it stays down even in a different script. If you want your script to move the sprite  without leaving a trace, use the <code>pen up</code> block to &quot;lift the pen.&quot; </div>
-				<div class="todo">MF: Consider incluing somthing like the python tutorial L, T, and checkmark problems...</div>
-				<li>
-					Assemble a collection of blocks from the "Motion" and "Pen" tabs into a script that, with one click, draws a square or triangle or some other a simple picture. You will almost certainly want at least these blocks:<br />
-					<img src="/bjc-r/img/1-introduction/move-10-steps.png" class="indent block" alt="Move 10 Steps Block"/>&nbsp;
-					<img src="/bjc-r/img/1-introduction/turn-right-15.png" class="block" alt="Turn Right 15 Degrees Block"/>&nbsp;
-					<img src="/bjc-r/img/1-introduction/clear.png" class="block" alt="Clear Block"/>&nbsp;
-					and <img src="/bjc-r/img/1-introduction/pen-down.png" class="block" alt="Pen Up Block"/>.
-				</li>
 
-			</ol>
+			  <div class="todo">MF: Consider incluing somthing like the python tutorial L, T, and checkmark problems...</div>
+				
+
+		  </ol>
 		</div>
-        
-        <!--<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+       
+    <!--<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
 			<ol type="A">
 	            <!--<li>Create a program with the <em>x</em>-<em>y</em>-grid in the background that labels each of the quadrants with the signs of their coordinates (like you might see in math class).</li>
 			</ol>
