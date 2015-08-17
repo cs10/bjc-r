@@ -18,17 +18,20 @@
         <div class="forYouToDo" id="first">
             <ol> 
                <li> <strong>Analyzing and debugging:</strong> These two blocks are quite similar.  Build them both. Which one works properly?
-                    <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if(incorrect).png" alt="Block title Even Or Odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]; say (join n with text is odd) for 1 second">
-                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if-else(correct).png" alt="Block title even or odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]  else [say  (join n with text is odd) for 1 second]"></p>
+                 <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if(incorrect).png" alt="Block title Even Or Odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]; say (join n with text is odd) for 1 second">
+        <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if-else(correct).png" alt="Block title even or odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]  else [say  (join n with text is odd) for 1 second]"></p>
                </li>
-                   <div class="comment">MF: We'll be introducing this in U1, so it might make sense to <a href="/bjc-r/cue/programming/1-introduction/5-types-of-blocks/the-mod-block.html">have a link to that page</a> here instead. (I might use some of this content.)</div>
-                   <div class="takeNote">
-                      <p><strong>mod: </strong>The <img class="inline" src="/bjc-r/img/blocks/mod.png" alt="() mod ()"/> block  reports the remainder when the first input is divided by the second (and we are using only positive integers). For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  alt="17 mod 5 reports 2"> because  when 17 is divided by 5, the remainder is 2. </p>
-                     <p>&nbsp;</p>
-                      <p>When one number divides another evenly, the remainder is 0 <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png" alt="15-mod-5-reporting-0">.  So the predicate <img class="inline" src="/bjc-r/img/2-conditionals-abstraction-testing/n mod 2 = 0, 138 × 23 pixels.png" alt="n mod 2 = 0"/> reports <code>true</code> if <em>n</em> is divisible by 2 (i.e., if <em>n</em> is even) and <code>false</code> if <em>n</em> is odd.</p>
-                     <p>&nbsp;</p>
-                      <p>In mathematical notation, we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/17-mod-5-reporting-2.png"  alt="17 mod 5 reports 2"> as 17 (mod 5) &#x2261 2 and we write <img src="/bjc-r/img/2-conditionals-abstraction-testing/15-mod-5-reporting-0.png" alt="15-mod-5-reporting-0"> as 15 (mod 5) &#x2261 0.</p>
-                   </div>
+                   
+            <li>The <code>even or odd</code> block tells <em>you</em> whether its input is even or odd. It is more useful to have a block that can tell that to other blocks, so that you can write code like
+            <pre class="indent" style="width:300px;">
+if the number is even
+  {
+    run these steps
+  }
+else
+  {
+    run some other steps
+  }</pre> </li>
                <li >For an upcoming project, it will be useful to create a predicate that tests a letter to see if it is a vowel. It should work like this: 
                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
                
