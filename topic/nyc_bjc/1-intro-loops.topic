@@ -46,15 +46,15 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
 	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html]
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
 	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html]
-	quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
+	resource: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
 	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html]
 	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/5-debugging-blocks-within-blocks.html]
 		
 heading: Programming Lab 5: Block Types and Calculations
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-sprite-position-direction.html]
-	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-computer-operations.html]
-	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-predicates-conditionals-logic.html]
-	quiz: Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-commands-and-reporters.html]
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-sprite-position-direction.html]
+	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html]
+	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-predicates-logic.html]
+	quiz: <code>Random</code>Block Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-random-self-check.html]
 	
  	raw-html: <hr />
 	
