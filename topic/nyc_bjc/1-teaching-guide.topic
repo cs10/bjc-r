@@ -11,7 +11,7 @@ h3: Pacing
 	raw-html:<p>The 2 weeks of Programming Labs and 1 week of Social Implications Labs for Unit 1 can be distributed according to what works best with your class. Experiment! Find the rhythm that works for your students. Consider: <ul><li>Working through the 4 programming labs in the first 2 weeks and then the social implications lab in the 3rd week as presented below.</li><li>Work through the 4 programming labs over all 3 weeks of Unit 1 while concurrently working through the social implications lab (either on specific days of the week or as a part of each class across several days).</li></ul></p>
 	
 h3: Highlighting Computational Thinking
-	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong>, and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it, and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
+	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong> and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
 	
 heading: Week 1 (Programming Focus)
 	resource: Lab 1: Building an App [/bjc-r/cur/teaching-guide/U1/lab-pages/1-building-an-app.html]
@@ -31,8 +31,8 @@ heading: Week 3 (Social Implications Focus)
 	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W03-activities.html]
 	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W03-assignments.html]
 	
-heading: Investigations
-	resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/investigations/kaleidoscope.html]
+heading: Investigation
+	//resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/investigations/kaleidoscope.html]
 	resource: Bug Dance Animation [/bjc-r/cur/teaching-guide/U1/investigations/bug-dance.html]
 	
 }
