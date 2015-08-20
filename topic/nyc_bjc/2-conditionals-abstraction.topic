@@ -35,7 +35,7 @@ heading: Programming Lab 2: Script variables
 	// quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/complex-booleans-self-test.html]
 	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
 	resource: Building a useful collection of predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-predicates.html] // chop out relevant pieces
-	resource: Analyzing and debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-3-analyzing-debugging-simplifying.html]
+	resource: Analyzing and debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-analyzing-debugging-simplifying.html]
 
 	
 heading: Programming Lab 3: Developing more complex programs
