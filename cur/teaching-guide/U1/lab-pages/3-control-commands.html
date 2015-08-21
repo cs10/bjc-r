@@ -7,8 +7,9 @@
 
 	<body>
     	<h2>Programming Lab 3: Control Commands</h2>
-	    <p>Students use loops to repeat similar steps of code. Students compare and contrast functionally equivalent scripts (one that uses a loop and one without) to appreciate the clarity, simplicity, and elegance of looping. Students consider the implications of nesting <code>repeat</code> blocks within <code>repeat</code> blocks and explore short scripts with <code>forever</code> and <code>for</code> blocks.</p>
-    <p>Nesting <code>repeat</code> blocks within <code>repeat</code> blocks previews <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html" target="_blank">Using Blocks within Blocks</a> in Lab 3. Students develop understanding of <strong>abstraction</strong> as they see how projects can be broken down into smaller tasks and programmed in chunks. This practice helps the programmer conceptualize the project and makes the code easier to read and debug. Recursion (calling a procedure from within itself) will be addressed in much greater detail in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>.</p>
+	    <img class="imageRight" src="/bjc-r/img/1-introduction/repeat-4(move-50-turn-right-90).png" alt="repeat 4 (move 50 steps, turn right 90 degrees)" title="repeat 4 (move 50 steps, turn right 90 degrees)" />
+        <p>Students use loops to repeat similar steps of code. Students compare and contrast functionally equivalent scripts (one that uses a loop and one without) to appreciate the clarity, simplicity, and elegance of looping. Students consider the implications of nesting <code>repeat</code> blocks within <code>repeat</code> blocks and explore short scripts with <code>forever</code> and <code>for</code> blocks.</p>
+    <p>Nesting <code>repeat</code> blocks within <code>repeat</code> blocks previews <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html" target="_blank">Using Blocks within Blocks</a> in Lab 4. Students develop understanding of <strong>abstraction</strong> as they see how projects can be broken down into smaller tasks and programmed in chunks. This practice helps the programmer conceptualize the project and makes the code easier to read and debug. Recursion (calling a procedure from within itself) will be addressed in much greater detail in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>.</p>
 
         
         <h3>Pacing</h3>
@@ -32,6 +33,7 @@
 
 
 		<h3>Students will:</h3>
+        <div class="commentBig">Paul or Brian, can you please made sure that this Looking Ahead box is the right thing? --MF</div>
         <div class="sideHOMbig">
             <strong>Looking Ahead</strong>
             <ul>
@@ -40,27 +42,26 @@
         </div>
         <div>
             <ul>
-                <li>Practice pair programming</li>
-                <li>Appreciate the usefulness of looping</li>
-                <li>Understand and use several basic kinds of loops (repeat, forever, and for)</li>
-                <li>Learn the concept of nesting commands</li>
-                <li>Create loops within loops.</li>
+                <li>Formalize their understanding of and use several basic kinds of loops (repeat, forever, and for).</li>
+                <li>Learn the concept of nesting commands and create loops within loops.</li>
+                <li>Begin to explore sound blocks, namely <code>play note () for () beats</code> and string operator blocks such as <code>letter () of ()</code> and <code>length of ()</code>.</li>
             </ul>
         </div> 
-        <div class="todo">Team: Do we actually need the "Student's will" section? I feel like this can be covered by the purpose statement at the top. -MF</div>
-
-        <h3>As a Class:</h3>
-		<div><ul>
-        	<li>Work through the <a href="/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" target="_blank">Programming Lab 2: Control Commands</a> and the Week 1 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html" target="_blank">Activities</a> and <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W01-assignments.html" target="_blank">Assignments</a>.</li>
-        </ul></div>
-        <div class="todo">MF: Keep this here or is it in the student labs? Experiment with three input numbers in the script&mdash;4, 50, and 90. These determine the script's behavior. Discuss how each contributes to the square that is drawn. -MF </div>
         
-
+        
+        <h3>As a Class:</h3>
+		<div>
+        	<ul>
+        		<li>Work through the <a href="/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Programming Lab 3: Control Commands</a> and the relevant Week 1 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html" target="_blank">Activities</a> including the <a href="/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html#discussion" target="_blank">discussion on Loops</a>.</li>
+                <li>Consider working through the Week 1 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W01-assignments.html" target="_blank">Assignments</a> that you don't assign as homework together as a class.</li>
+            </ul>
+        </div>
+                
         
         <h3>Tips:</h3>
         <div>
         	<ul>
-        		<li><strong>Angles</strong>: High school geometry is not a requirement of this course, but students who have had it may be at an advantage when drawing polygons. Look to these students to share their knowledge about working with degrees. On the other hand, <strong>a common misunderstanding about drawing polygons for students who've studied geometry is to confuse the interior angles of the figure with the angles of sprite rotation</strong>. These are not generally the same; they are, in fact, supplementary. To clarify the distinction, have students draw sketches with marked angles. Don't make it a discussion about math vocabulary; focus students' attention on tracing out the sprite's turning. If you're lucky enough to have a classroom with chalk rather than dry erase markers, draw a big equilateral triangle on the floor, and get one or more kids to &quot;play sprite,&quot; tracing the picture by moving and turning, and ask them to pay attention to what their bodies are doing.  &quot;Did you turn more or less than a right angle?&quot; If that doesn't clear up the confusion, trace (in chalk) the kid's foot before and after a turn, and get the kid to draw the arc between the two feet.</li>
+        		<li><strong>Angles</strong>:<a name="angles" class="anchor">&nbsp;</a>High school geometry is not a requirement of this course, but students who have had it may be at an advantage when drawing polygons. Look to these students to share their knowledge about working with degrees. On the other hand, <strong>a common misunderstanding about drawing polygons for students who've studied geometry is to confuse the interior angles of the figure with the angles of sprite rotation</strong>. These are not generally the same; they are, in fact, supplementary. To clarify the distinction, have students draw sketches with marked angles. Don't make it a discussion about math vocabulary; focus students' attention on tracing out the sprite's turning. If you're lucky enough to have a classroom with chalk rather than dry erase markers, draw a big equilateral triangle on the floor, and get one or more kids to &quot;play sprite,&quot; tracing the picture by moving and turning, and ask them to pay attention to what their bodies are doing.  &quot;Did you turn more or less than a right angle?&quot; If that doesn't clear up the confusion, trace (in chalk) the kid's foot before and after a turn, and get the kid to draw the arc between the two feet.</li>
 			</ul>
         </div>	
             
