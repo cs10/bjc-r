@@ -16,34 +16,40 @@
             
                 <li><strong>Mondrian—an art project:</strong> The Dutch artist Piet Mondrian is possibly best known for his artwork using brightly colored rectangles.
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-Piet-Mondrian.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"> &quot;Tableau 1&quot; by Piet Mondrian</p>
-                  <p>Mondrian wasn't at all random in his choice of colors and locations, but you can be. A <span class="snap">snap</span> script can produce some very interesting Mondrian-like effects. </p>
-                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="300"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="300"  alt="another Mondrian-like design drawn with Snap"></p>
-                The following algorithm will produce designs like these.
+                  <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A <span class="snap">snap</span> script can produce designs like these. </p>
+                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="260"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap"></p>
+                This algorithm  produced those designs.
 <pre class="indent" style="width:450px;">Draw outer frame (400 x 300)
-Fill with color
+Fill with some color
 Repeat many times
     Pick random location
     Pick random height and width for a rectangle that, 
-        at that location, 
-        will not extend beyond frame
-    Fill rectangle with random color
-    Draw bold boundary in black</pre>
+        at that location, won't extend beyond frame
+    Draw rectangle boundary in thick black line
+    Fill rectangle with random color</pre>
+    <p>To keep your code clear, you may want to create separate blocks that specialize in boundary and fill and choosing locations and calculating size.</p>
     <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is 
 <pre class="indent" style="width:450px;">Repeat until height or width is less than 2
 	Draw rectangle of specified height and width
 	Set height slightly smaller
 	Set width slightly smaller</pre>
     </p>
-    <p>
-    
-    To get bright colors, use <code>set pen shade to 100</code>, and you get a good collection of colors with 
-                <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-pen-color-to(2-times-pick-random-0-to-50).png"  alt="set-pen-color-to(2-times-pick-random-0-to-50)">  </p></li>
-                <li> The code <code>set pen size 50, move 100 steps</code> does not do quite what you might expect, because the "ends of the lines" are rounded. The code <code>clear set pen size 50, move 0.5 steps</code> does  something that can be useful. Experiment with the possibilities. 
-                  <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/colored-circles.png" width="300" alt="colored circles randomly placed">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/Colored-ovals.png" width="300" alt="colored ovals"></p> 
-                <div class="endnote">Another way to fill a rectangle is to draw a "very thick line" that has &quot;flat&quot; ends instead of round ends. The settings menu allows you to choose "flat line ends." 
+    <p>To get bright colors, use <code>set pen shade to 100</code>, and you get a good collection of colors with 
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-pen-color-to(2-times-pick-random-0-to-50).png"  alt="set-pen-color-to(2-times-pick-random-0-to-50)">  </p>
+                  <ol>  
+                  		<li>Build a program that draws different pictures each time, always using colored rectangles. Use the algorithm suggested above or some idea of your own. <em>Take screen shots of the artworks your program generates and <strong>save the ones that you like</strong> best.</em></li>
+                        <li> Mondrian limited his colors and used a lot of white and some black. Experiment with that to see if you get designs you like.</li>
+                        <li>Find ways to improve your program. </li>
+                  </ol>
+                </li>
+                <li> <strong>Another art idea:</strong> The code <code>set pen size 50, move 100 steps</code> does not do quite what you might expect, because the "ends of the lines" are rounded. Try it. Now <code>clear</code> the stage and try the code <code> set pen size 50, move 0.5 steps</code>. Why does <em>that</em> happen? <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                
+                  <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/colored-circles.png" width="260" alt="colored circles randomly placed">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/Colored-ovals.png" width="260" alt="colored ovals"></p>
+                  <p>  Experiment with the possibilities. </p> 
+                <div class="endnote">You can also fill a rectangle with a "very thick line" that has &quot;flat&quot;  instead of round ends. Choose "flat line ends" in the settings menu.
                   <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Flat Line Ends.png"  alt="settings menu, flat line ends"></p>
                 </div>  
-                </li>
+              </li>
                 <li><strong>Writing secret code:</strong> Create a block that takes a word as input, changes each letter into the <em>next</em> letter in the alphabet—for example, A becomes B, Y becomes Z...—and reports the result, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/encode-decode(HANDY)-with-result(IBOEZ).png" alt="encode-decode(HANDY)-with-result(IBOEZ)">.
                 <p>In order to do this, you will need to be able to change a letter into a number, add 1 to that number, and then change the new number back to a letter. The blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode-of(Y).png" alt="unicode-of(Y)">                and <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode(89)as-letter.png"  alt="unicode(89)as-letter"> will help you do that. Experiment with them to see how they work.</p>
                 <ol><li>This block encodes by adding 1 to the unicode for each letter. You could, instead, always add 2 or 5 or whatever. Give your block a second variable that allows you to specify what to add to the unicode.</li>
