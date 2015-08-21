@@ -24,8 +24,8 @@
 	<div class="forYouToDo" id="first">
    	   <ol>
 				
-			<li>  Watch the video  to see how to create, name, and set the value of a script variable, or read the step-by-step instructions that follow the video.
-				<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
+			<li>  Watch the video (or read the  instructions that follow it) to see how to create, name, and set the value of a script variable.
+              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
 					<ol> 
                 	<li>To create the variable, use <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> (in the variables tab, of course).</li>
                     <li>To name the variable, click on the orange <em><code>a</code></em> and type the name you want.</li>
@@ -35,12 +35,13 @@
                 </ol></li>
         		
      
-                <li>Create this script, which draws polygons with a random number of sides.
+                <li>This script draws polygons with a random number of sides.
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
-                <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div></li>
-                <li>Try running the script several times to see what shapes it draws.</li>
+                <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div>
+                <ol>
+                <li>Make the script andrun it several times to see what it draws.</li>
                 <li><strong>Check your understanding:</strong> Why does it make sense to start the range of possible random numbers at 3?</li>
-                <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+                <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li></ol></li>
                 <li>
                     <strong>Challenge:</strong> Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using <em>only multiples of 10</em>.
                     <div class="endnote">There are two ways to create a second script variable.  You could use another <code>script variables</code> block 
@@ -50,6 +51,26 @@
                 	<strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
                     <p><img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" /></p>
             	</li>
+                <li>This script shows a very useful thing that you can do with variables.
+                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result"></p>
+                    <ol> 
+                        <li> Build it, try it, and figure out <em>why</em> it does what it does. </li>
+                        <li>Change the 5 to a 7 and <em>predict</em> what it will do.</li>
+                    </ol>
+                    <div class="takeNote">
+   					This step <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"> performs some operation on the value that <code>result</code> already has and then sets <code>result</code> to the new value. You will probably use this idea very often in your programming.</div>
+         <li>Now create the much more useful script 
+                            <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
+                    <ol> 
+                        <li> Build it, try it, and figure out how it does what it does. </li>
+                        <li> Change the <code> times 5</code> to <code> times 3</code> and <em>predict</em> what it will do.</li>
+                        <li> Then change the <code> repeat 2</code> to <code> repeat 3</code>. 
+                        <li> Build a <strong>reporter</strong> block named <code> raise (base) to the power of (exponenent)</code>.
+                             <p>Use the script inside, and put the variables <code>(base)</code> and <code>(exponent)</code> in the right places.</p>
+                             <p>Check (as always!) to make sure it does what you expect.</p></li> 
+                    </ol>
+                 </li>
+                        
         	</ol>
 </div>
 		
