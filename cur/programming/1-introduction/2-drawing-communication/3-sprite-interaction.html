@@ -15,7 +15,7 @@
                     Change Sprite(2)'s code to point towards Sprite only until it is touching Sprite.  Follow these instructions or watch the animation below:
                     	<ol>
                         	<li>Click the Sprite(2) button below the stage.</li>
-                            <li>Replace the <code>forever</code> block with a <code>repeat until</code> block</li>
+                            <li>Replace the <code>forever</code> block with a <code>repeat until</code> block.</li>
                             <li>Drag a <img src="/bjc-r/img/blocks/touching.png"  alt="touching sprite"> block into the hexagonal space in the <code>repeat until</code> block, and set it to repeat until it is touching Sprite.</li>
                         </ol>                        
                     <img class="indent" src="/bjc-r/img/1-introduction/Replacing-code.gif" alt="Replacing code" title="Replacing code" />
@@ -28,11 +28,11 @@
 					<div class="sidenoteBig">You may want each "tiny amount" to be even less than 1 step so that Sprite(2) doesn't catch Sprite too quickly.</div>
 					<pre class="indent" style="width:300px;">
 repeat until touching
-    {
-        point towards (Sprite)
-        move a tiny amount
-    }</pre>
-					<div class="takeNote">This kind of written-out code is often called &quot;pseudo-code.&quot; It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special &quot;rules&quot; for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div>
+     point towards (Sprite)
+     move a tiny amount
+</pre>
+<!--					<div class="takeNote">This kind of written-out code is often called &quot;pseudo-code.&quot; It isn't precisely what your code would look like in <em>any</em> programming language, but it makes the logical steps clear. There are no special &quot;rules&quot; for writing pseudo-code. You may use your own style as long as you specify the logical steps clearly.</div> -->
+<div class="takeNote">We didn't put that white box <code>in red type</code> because it's not <span class="snap">snap</span> code, just a vague English description of the script we have in mind.  For example, <code>point towards (Sprite)</code> is a <span class="snap">snap</span> instruction, but "move a tiny amount" obviously isn't.</div>
 				</li>
     			<li>Test your program a few times. </li>
             	<img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
@@ -51,7 +51,7 @@ repeat until touching
 		<img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 
         <div class="takeItFurther">
-            <p>If you like, you can make this more interesting in lots of ways...</p> 
+            <p>If you like, you can personalize this project in lots of ways...</p> 
             <ol type="A">
                 <li>You can give the sprites costumes. You can even use a photograph or picture from the Internet by dragging the picture into the costume area for that sprite. If the picture you choose is too big, set its size to something less than 100% using <img class="inline" src="/bjc-r/img/blocks/set-size.png" alt="set size to (100)%" title="set size to (100)%" />. </li>
                 <li>You can make a dialogue about school or home or work or play. </li>
