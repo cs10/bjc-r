@@ -37,20 +37,18 @@
                  </ol>
                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/defining-even-predicate.gif" alt="defining a predicate block"></p>
               </li>   
-                <div class="takeNote">
+     <!--           <div class="takeNote">
     				You have just created a <strong>predicate</strong>, a block that reports only <code>true</code> or <code>false</code> depending on its input. <strong>Conditional</strong> blocks—<code>if-else</code>, <code>if</code>, <code>repeat until</code>, <code>wait until</code>—use the condition you are testing to control the behavior of your program. 
                     <p>&nbsp;</p>
                     Your <code>even? (n)</code> block reported the result of one of <span class="snap">snap</span>'s built-in predicates, <code>=</code>, which tested to see if <code>n mod 2</code> equaled 0.</div> 
+                    -->
               <li>Edit  <code>even or odd</code>  (from problem 1) to make it use the <code>even? (n)</code> block. As always, <em>test</em> the result to be sure it works.
                 <pre class="indent" style="width:300px;">
-if the number is even
-  {
+if the number is <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate">
     run these steps
-  }
 else
-  {
     run some other steps
-  }</pre> 
+</pre> 
               </li>
                <li ><div class="sidenoteBig"><img src="/bjc-r/img/2-conditionals-abstraction-testing/use-a-or-an-with-(word).gif" alt="use-a-or-an-with-(word)"></div> 
                To create realistic dialogues, a program  needs to adjust some words to fit others. For example, it needs to know  when to use <em><strong>a </strong></em> or <em><strong> an</strong></em>.  <strong><em>A</em></strong> peach or <strong><em>an</em></strong> peach?  <strong><em>A</em></strong> apple or <strong><em>an</em></strong> apple?
@@ -70,7 +68,7 @@ else
                </li>
                <li> Now define a block <code>use indefinite article (noun)</code> that works like this:
                <img src="/bjc-r/img/2-conditionals-abstraction-testing/use-indefinite-article.gif" alt="use indefinite article animation showing (a lion) and (an elephant)">
-               <p>You will need to use <img src="/bjc-r/img/blocks/join-words().png"  alt="join words"> with <em>three</em> inputs. The block  shows a slot for only <em>one</em> input, but you can use the arrows <img src="/bjc-r/img/2-conditionals-abstraction-testing/input-arrows.png"  alt="input arrows"> to increase or decrease the number of inputs.</p>
+               <p>You will need to use <img src="/bjc-r/img/blocks/join-words().png"  alt="join words"> with <em>two</em> inputs. The block  shows a slot for only <em>one</em> input, but you can use the arrows <img src="/bjc-r/img/2-conditionals-abstraction-testing/input-arrows.png"  alt="input arrows"> to increase or decrease the number of inputs.</p>
                </li>
   </ol>
     </div>
@@ -83,7 +81,7 @@ else
 <ol start="6">
             <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
                  <div class = "sidenote"> 
-                     <em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. That remainder is 0 only when em>n</em> is a multiple of <em>m</em>. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 only when the sprite's <code>direction</code> is a multiple of 60&deg;. So, the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> is true only when  <code>direction</code> is 0, 60, 120, 180, 240, or 300. 
+                     <em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. That remainder is 0 only when <em>n</em> is a multiple of <em>m</em>. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 only when the sprite's <code>direction</code> is a multiple of 60&deg;. So, the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> is true only when  <code>direction</code> is 0, 60, 120, 180, 240, or 300. 
                      <p>When the sprite's direction is not a multiple of 60, 
                         <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0. For example, if the sprite's direction is 127&deg;, 
                       <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.</p>
@@ -115,13 +113,13 @@ else
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A"> 
                 <li>Problems 7 and 8 can be solved with  conditionals or without. Whichever way you solved it, figure out how to solve it the other way.</li>
-                <li><strong>Challenge: </strong> In problem 8, the sprite always says "Another hour has passed." How boring! Make it say <em>what</em> time it has just reached, like this.</li>
+                <li><strong>Challenge: </strong> In problem 8, the sprite always says "Another hour has passed." You can do better than that: Make it say <em>what</em> time it has just reached, like this.</li>
 				<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/clock.gif" alt="animated clock that says the hour"></p></ol>
                <strong>Take it <em>even further</em>!</strong>
                 <ol type="A" start="3">
                 <div class="takeNote">
-                	<p><strong>Data types: </strong> <span class="snap">snap</span> lets you manipulate a variety of <strong>data types</strong>. You have already used blocks like <code>letter (1) of (world)</code> to manipulate <strong>strings</strong> (sets of characters like &quot;New York&quot; or   &quot;Another hour has passed&quot;. You have also manipulated <strong>numbers</strong>.</p>
-                    <p> The next two  problems give you a first taste of a  new data type, <strong>lists</strong>, and show how useful lists can be. In Unit 3, you will study <strong>lists</strong> in depth.</p>
+                	<p><strong>Data types: </strong> <span class="snap">snap</span> lets you manipulate a variety of <strong>data types</strong>. You have already used blocks like <code>letter (1) of (world)</code> to manipulate <strong>strings</strong> of characters such as &quot;New York&quot; or  &quot;Another hour has passed&quot;. You have also manipulated <strong>numbers</strong>.</p>
+                    <p> The next two  problems give you a first taste of a  new data type, <strong>lists</strong>, and show how useful lists can be. In Unit 3, you will study lists in depth.</p>
                 </div>
                 <li> Instead of using many <code>if</code> statements in <code>vowel?</code>, you can make a list of vowels and then test to see if a particular letter is in that list.  <span class="snap">snap</span> makes that a snap! 
                   <ol>
@@ -145,7 +143,11 @@ else
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v2).png" alt="is letter a vowel (v4)">
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v3).png"  alt="is letter a vowel (v3)"> 
                 </li>
-          </ol> 
+                <li>Problem
+          1, at the top of the page, seemed to suggest that to choose between alternative actions, you must use <code>if-else</code>, not just <code>if</code>. Problem 4, however, seems to choose alternatives with plain <code>if</code>. Why does that work? (There's a subtle hint in the shapes of the 
+          <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" alt="say">
+          and <img src="/bjc-r/img/blocks/report.png"  alt="report">
+          blocks.)</ol> 
         </div>
 
     </body>

@@ -30,15 +30,15 @@
                 	<p>For a programming task this complex, it's best to break it into parts. Instead of coding every detail directly in <code>plural</code>, it is cleaner and clearer to handle each special case separately with a  block that specializes in that case only. The &quot;top-level&quot; block—<code>plural</code>—should show only the outline.</p>
                     
                     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-abstract-definition.png" alt="abstract definition of plural: if h = last letter of word, report h-case plural; if y = last letter of word, report y-case plural; if some other case, use a block that specializes in that case; etc.; else report join word s"></p>
-                    <p>Showing the <em>structure</em> of the method—just the overall strategy—in the &quot;top-level&quot; block and relegating the details to  separate blocks is one part of an important computer science idea called <strong>abstraction</strong>. Using "specialists" like this is  extremely helpful in keeping your code clear and helping you debug it. </p>
+                    <p>Showing the <em>structure</em> of the method—just the overall strategy—in the &quot;top-level&quot; block and relegating the details to  separate blocks is one part of <strong>abstraction</strong>. Using "specialists" like this is  extremely helpful in keeping your code clear and helping you debug it. </p>
                 </div>
                <li> When you trust your new specialist <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_h.png" alt="plural">, edit your original <code> plural</code> block to use it. Test your revised <code>plural</code> block to make sure it still works for all the words it used to work for, <em>and </em>for  the new ones.</li>
                <li> Take the next step. Create <code>plural-y</code> to handle words like this. 
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-tray-with-result.png"  alt="plural_y-tray-with-result">
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-sky-with-result.png" alt="plural_y-sky-with-result">
                </li>
-               <p>As before, this specialist can make mistakes if it is asked to do a job that isn't its  specialty <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-mouse-with-(wrong)result.png" alt="plural_y-mouse-with-(wrong)result">. </p>
-               <p>It will be <code>plural</code>'s job to give <code>plural-y</code> only the cases it knows how to handle correctly.</p>
+               <p>(As before, this specialist can make mistakes if it is asked to do a job that isn't its  specialty: <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural_y-mouse-with-(wrong)result.png" alt="plural_y-mouse-with-(wrong)result">. </p>
+               <p>It will be <code>plural</code>'s job to give <code>plural-y</code> only the cases it knows how to handle correctly.)</p>
 			</ol>
 </div>
           
@@ -47,7 +47,7 @@
             	<ol type="A"> 
             		<li> Extend <code>plural</code> to handle another special case. Again, make a special-purpose block to  keep <code>plural</code> from becoming cluttered with details. (Choose whatever special case you like. Some extensions will become easier when you learn more about  <strong>lists</strong> in Unit 3, but even now you can handle some new cases.)</li>
               		<li><strong>An important idea lurks here: </strong>Right now, if you give <code>plural</code>  a word with a space at the end,   the plural contains a space, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-bulldog[space]-with-result(bulldog[space]s).png" alt="plural of bulldog with space at the end, and result with space before s">. Figure out how to handle this special case and edit <code>plural</code> so that the result is <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-bulldog[space]-with-result(bulldogs).png" alt="plural of bulldog with space at the end, and correct result, no space before s">? You  already have a block that  <em>specializes</em> in making plurals of words that <em>don't</em> have a space at the end. You can use it.</li>
-              		<li><strong>Surprise! </strong>Once <code>plural</code> works for a single space at the end of a word, try giving it <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-bulldog[four-spaces].png" alt="plural of bulldog with four spaces at the end">. <strong>Challenge: </strong>Explain why that works!</li>
+              		<li><strong>Surprise! </strong>Once <code>plural</code> works for a single space at the end of a word, try giving it <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-bulldog[four-spaces].png" alt="plural of bulldog with four spaces at the end">. <strong>Challenge: </strong>Explain why that works.</li>
             	</ol>
             </div>
         </div>

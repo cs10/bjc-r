@@ -53,10 +53,9 @@
             	</li>
       </ol>
     </div>
-<h3>Important new idea:</h3> 
-<p> You will often find it useful to perform some operation on the <em>current</em> value of a variable and then set the variable's value to the result of that operation.  Here is one way that might look in <span class="snap">snap</span>. </p>
+<p> You will sometimes find it useful to compute some expression using the <em>current</em> value of a variable and then set the variable's value to the result.  Here is one way that might look in <span class="snap">snap</span>. </p>
 <p> <img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"> </p>
-<p>The operation might be <code></code> or <img src="/bjc-r/img/blocks/join()().png" alt="join"> or  <img src="/bjc-r/img/blocks/times.png"  alt="times"> or many others.</p>
+<p>The operation might be <code></code><img src="/bjc-r/img/blocks/join()().png" alt="join"> or  <img src="/bjc-r/img/blocks/times.png"  alt="times"> or many others.</p>
         <div class="forYouToDo">
 	        <ol start="5">
         
@@ -67,7 +66,7 @@
                         <li>Change the 5 to a 7 and <em>predict</em> what this script will do.</li>
                     </ol>
                    
-         <li>This script does a  much more useful thing. 
+         <li>This script leads up to a   more useful example. 
                             <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
                     <ol> 
                         <li> Build it, try it, and figure out how it does what it does. </li>
@@ -162,11 +161,15 @@ Repeat many times
         <div class="commentBig">Hi Paul, I was in here working on the TIF Assignments for the TG, and I changed this lab title to make it fit. If it really has to be "Mathematical" on the end, change it and let me know; I'll widen the box. --MF</div>
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-                <li>Edit your <code>raise (n) to the power (b)</code> block to make it work for negative integer exponents. </li> 
-                <li><strong>Old-fashioned divisibility test—divisibility by 3 or 9: </strong>Create a tool <code>digital sum</code> that adds up the digits in a number.  So, for example <code>digital sum 7</code> should report 7, and <code>digital sum 12</code> should report 3, and <code>digital sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"> </li>
+            <li>Although this 
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/clobber.png" alt="set variable to function of variable"> style of programming is very common, pretty soon you'll learn a better way: <em>functional programming,</em> in which you never change the value of a variable.  (The first example on this page, in which <code>sides</code> was computed once and used twice, shows that script variables are useful even when you don't change their initial values.)  You're not quite ready to write functional programs yet (that'll come in Unit 3), but here are some examples from above, rewritten functionally, that you can probably understand:            <img src="/bjc-r/img/2-conditionals-abstraction-testing/cascade-version.png" alt="raise to power: report cascade exponent (__ * base) 1">            <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n"><img src="/bjc-r/img/2-conditionals-abstraction-testing/better-divisors.png" alt="number-of-divisors: length of keep items such that ((n mod __) = 0) from (values from 1 to n)">            
+            <li>Edit your <code>raise (n) to the power (b)</code> block to make it work for negative integer exponents. </li> 
+                <li><strong>Old-fashioned divisibility test—divisibility by 3 or 9: </strong>Create a helper reporter <code>digit sum</code> that adds up the digits in a number.  So, for example <code>digit sum 7</code> should report 7, and <code>digit sum 12</code> should report 3, and <code>digit sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number">  A number is divisible by 3 if its digit sum is 0, 3, 6, or 9; it's divisible by 9 if its digit sum is 0 or 9.
+                <ul><li><img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /> Why?</li></ul></li>
             
                 <li><strong>Old-fashioned divisibility test—divisibility by 7: </strong>
                     Create a <code>multiples of 7 algorithm</code> block that takes any whole number as input and then puts it through this process:
+                    <div class="comment">Again, the link starts a new project.  But students can load the library themselves.  Only projects meant to replace the previous work should be linked this way!</div>
                     <div class="endnote">For this project,  <img src="/bjc-r/img/blocks/all-but-last-letter-of.png" alt="all but last letter of"> and <img src="/bjc-r/img/blocks/last-letter-of.png" alt="last letter of"> are useful. They are in <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">  the <strong>Words, sentences</strong> library</a>.</div>
                     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/divisibility-by-7-algorithm.png" alt="multiples of 7 algorithm"> </p>
                     

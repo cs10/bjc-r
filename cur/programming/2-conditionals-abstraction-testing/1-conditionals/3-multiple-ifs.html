@@ -26,7 +26,7 @@
             <ol>
             	<li>Make a <img class="inline" src="/bjc-r/img/cond/state-of-water.png" alt="state of water ()"/> block that takes in a temperature and says whether water will be liquid, solid, or gas at that temperature.</li>
                 <li>Make a <img class="inline" src="/bjc-r/img/cond/traffic-signal.png" alt="traffic signal ()"/> block that when given the words "red," "yellow," or "green," makes the sprite say the appropriate action. For example <img class="inline" src="/bjc-r/img/cond/traffic-signal-green.png" alt="traffic signal ('green')"/> should make the sprite say "go." Decide what should happen if your <code>traffic signal</code> block gets something <em>other</em> than "red," "yellow," or "green."</li>
-             
+             <div class="comment">Prob 3 doesn't work because the load deletes those blocks.  Waiting for a solution from Jens. P.S. Commands don't belong in Operators. :-)</div>
                 <li> Click on this image <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=Stoplights"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/three-color-stoplights.png"  alt="red, yellow, and green stoplights"></a> to load stoplight costumes.
                 Edit <code> traffic signal </code> so that it changes the sprite's costume to the correct color. </li>
              </ol>
@@ -38,7 +38,8 @@
             	<ol start="4">
                 	<li>Load <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=Paul&ProjectName=U2L1p2">these three scripts</a>.  					  <p> Only two of them work properly. </p> 
                       <p> Experiment with them and look at the code to see what they do. Explain what causes the buggy one to fail.</p>
-                  	<p> <div class="sidenote">When the sprite asks its question, you will see an "answer space" at the bottom of the stage. <img src="/bjc-r/img/2-conditionals-abstraction-testing/SpriteAskingQuestion,withAnswerBox.png" alt="Answer space on stage"> <p>Type your answer there and  click the check box (or hit return). </p></div> <img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptForU2L1p2n1_ask-direction-up-down-left-right-and-move.png" alt="forever [ask (which direction do you want the sprite to move? Type up, down, right, or left and wait); if answer = up [go to x position, y position + 20]; if answer = down [go to x position y position - 20]; if answer = right [go to x position + 20 y position]; if answer = left [go to x position - 20 y position]; if answer = stop [stop all]; if not (answer = up) or (answer = down) or (answer = right) or (answer = left) or (answer = stop) [think (huh?!) for 2 seconds] ]"></p>
+                  	<p> 
+                    <div class="sidenote">When the sprite asks its question, you will see an "answer space" at the bottom of the stage. <img src="/bjc-r/img/2-conditionals-abstraction-testing/SpriteAskingQuestion,withAnswerBox.png" alt="Answer space on stage"> <p>Type your answer there and  click the check box (or hit return). </p></div> <img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptForU2L1p2n1_ask-direction-up-down-left-right-and-move.png" alt="forever [ask (which direction do you want the sprite to move? Type up, down, right, or left and wait); if answer = up [go to x position, y position + 20]; if answer = down [go to x position y position - 20]; if answer = right [go to x position + 20 y position]; if answer = left [go to x position - 20 y position]; if answer = stop [stop all]; if not (answer = up) or (answer = down) or (answer = right) or (answer = left) or (answer = stop) [think (huh?!) for 2 seconds] ]"></p>
                     <p>
                         <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
                         <img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptForU2L1p2n1_ask-direction-up-down-left-right-and-move_if-else_version.png"  alt="forever [ask (which direction do you want the sprite to move? Type up, down, right, or left and wait); if answer = up [go to x position, y position + 20] else if answer = down [go to x position y position - 20] else if answer = right [go to x position + 20 y position] else if answer = left [go to x position - 20 y position] else if answer = stop [stop all] else [think (huh?!) for 2 seconds] ]">
@@ -58,7 +59,7 @@
               <p>The <strong>absolute value</strong> of a number is that number's <em>distance from zero</em>. </p>
                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Numberline.png" alt="Number line from -5 to 5 showing that -4 and 4 are the same distance from 0."></p>
                 <p>As the number line shows, -3 and 3 are the same distance from 0, so <code>abs(-3)</code> and <code>abs(3)</code> are both 3. <code>abs(-2.5)</code> is 2.5.</p>
-                <p>In mathematical notation, we generally write <code>abs(-3)</code> as <strong>|</strong>-3<strong>|</strong>.</p>
+                <p>In mathematical notation, we  write <code>abs(-3)</code> as <strong>|</strong>-3<strong>|</strong>.</p>
             </div>
             <ol start="5">
                 <li><img src="/bjc-r/img/2-conditionals-abstraction-testing/mystery1-back-and-forth.png" alt="a mysterious block"></li>
