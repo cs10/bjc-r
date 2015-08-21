@@ -24,8 +24,8 @@
 	<div class="forYouToDo" id="first">
    	   <ol>
 				
-			<li>  Watch the video  to see how to create, name, and set the value of a script variable, or read the step-by-step instructions that follow the video.
-				<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
+			<li>  Watch the video (or read the  instructions that follow it) to see how to create, name, and set the value of a script variable.
+              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
 					<ol> 
                 	<li>To create the variable, use <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> (in the variables tab, of course).</li>
                     <li>To name the variable, click on the orange <em><code>a</code></em> and type the name you want.</li>
@@ -35,12 +35,13 @@
                 </ol></li>
         		
      
-                <li>Create this script, which draws polygons with a random number of sides.
+                <li>This script draws polygons with a random number of sides.
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
-                <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div></li>
-                <li>Try running the script several times to see what shapes it draws.</li>
+                <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div>
+                <ol>
+                <li>Make the script andrun it several times to see what it draws.</li>
                 <li><strong>Check your understanding:</strong> Why does it make sense to start the range of possible random numbers at 3?</li>
-                <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+                <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li></ol></li>
                 <li>
                     <strong>Challenge:</strong> Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using <em>only multiples of 10</em>.
                     <div class="endnote">There are two ways to create a second script variable.  You could use another <code>script variables</code> block 
@@ -50,43 +51,97 @@
                 	<strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
                     <p><img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" /></p>
             	</li>
-                <li>This script
-                <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result"></p>
-                shows a very important way that you can use variables. 
+      </ol>
+    </div>
+<h3>Important new idea:</h3> 
+<p> You will often find it useful to perform some operation on the <em>current</em> value of a variable and then set the variable's value to the result of that operation.  Here is one way that might look in <span class="snap">snap</span>. </p>
+<p> <img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"> </p>
+<p>The operation might be <code></code> or <img src="/bjc-r/img/blocks/join()().png" alt="join"> or  <img src="/bjc-r/img/blocks/times.png"  alt="times"> or many others.</p>
+        <div class="forYouToDo">
+	        <ol start="5">
+        
+                <li>Here is one example.
+                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result"></p>
                     <ol> 
-                        <li> Build it, try it, and figure out <em>why</em> it does what it does. </li>
-                        <li>Change the 5 to a 7 and <em>predict</em> what it will do.</li>
+                        <li> Build it, try it, and figure out why <img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(result)-for-2-secs.png"  alt="say-(result)-for-2-secs"> says one thing in step 3 and a different thing in step 5.</li>
+                        <li>Change the 5 to a 7 and <em>predict</em> what this script will do.</li>
                     </ol>
-                    <div class="takeNote">
-   					<strong>EDIT PICTURE AND EDIT TEXT</strong> <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"></div>
-         <li>Now create the much more useful script 
+                   
+         <li>This script does a  much more useful thing. 
                             <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
                     <ol> 
                         <li> Build it, try it, and figure out how it does what it does. </li>
                         <li> Change the <code> times 5</code> to <code> times 3</code> and <em>predict</em> what it will do.</li>
                         <li> Then change the <code> repeat 2</code> to <code> repeat 3</code>. 
-                        <li> Build a <strong>reporter</strong> block named <code> raise (base) to the power of (exponenent)</code>.
-                             <p>Use the script inside, and put the variables <code>(base)</code> and <code>(exponent)</code> in the right places.</p>
-                             <p>Check (as always!) to make sure it does what you expect.</p></li> 
+                        <li> Build a <strong>reporter</strong> block named <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise-base-to-the-power-of-exponent.png" alt="raise-base-to-the-power-of-exponent">.
+                          <p>The script you created should help. Put the variables <code>(base)</code> and <code>(exponent)</code> in the right places inside that script.</p>
+                          <p>Your block should work like this:</p>
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(3)(with-result).png" alt="raise 2 to the power 3 (result = 8)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(5)(with-result).png" alt="raise 2 to the power 5 (result = 32)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(3)-to-the-power(4)(with-result).png" alt="raise 3 to the power 4 (result = 81)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(1)(with-result).png" alt="raise 2 to the power 1 (result = 2)"></p>
+                    <p>Make sure it also works for this case: <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(5)-to-the-power(0)(with-result).png" alt="raise 5 to the power 0 (result = 1)"></p>
+                             <p>Check (as always!) to make sure it works as you expect.</p></li> 
                     </ol>
-                 </li>
+              </li>
+              <li>Here is another example.
+                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-remover-script.png" alt="vowel-remover-script, first line: script variables (result)(somewords); second line: set result to (empty slot); third line: set somewords to (any sentence you like); fourth line: for i = 1 to length of (somewords) {if not vowel? letter i of somewords, set result to (join result letter i of somewords)}; fifth line: say result"></p>
+                  <ol> 
+                            <li> Build it, try it, and figure out <em>how</em> it does what it does. </li>
+                            <li> Change the code so that it puts in hyphens (-) where the vowels used to be.</li>
+                            <li> Change the code so that it <em>counts</em> the vowels, <em>counts</em> all the letters (not including spaces), and ends with 
+<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels.png" alt="say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels"></p>
+                            If you like, compare the results you get from similar length sentences in two different languages. You may get very interesting results.</li>
+                   </ol> 
+              </li>
                         
-        	</ol>
+       	  </ol>
 </div>
 		
         <div class="todo">You could replace the below with one of these: <div class="newProject"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-MathTools" title="Start a New Project called U2L2-MathTools" /> (sizing if only off because it's in a reviewer comment)</div> and use a <img src="/bjc-r/img/icons/save-mini.png" alt="Save your work" title="Save your work" /> at the end. (Or just use <img src="/bjc-r/img/icons/new-project-mini.png" alt="Create a new project" title="Create a new project" /> before "Open a new file.") --MF</div>
-        <p>Now you have a choice. Some of the problems below are about words,  some are about numbers, and some are about art. Choose any four  that interest you and do them. You don't have to do more than four.</p>
+        <p>Now you have a choice. Some of the problems below are about language or linguistics,  some are about mathematics, and some are about art. Choose any two  that interest you and do them. </p>
         
         <div class="forYouToDo">
             <ol start="8">
-                <div class="comment">Feedback from Dan during August PD: These problems (7-14) are too math-focused. --MF<br />from GH: based on today's conversation in NYC should #7-14 be (1) in a sub-page, (2) offered as a 'choose 3' of the following. /shawn</div>
-                <li>
-                    Here is one way to create a <code>factorial</code> block that takes a positive integer <em>n</em> and reports the value 1 &times; 2 &times; 3 &times; ... &times; (<em>n</em> - 1) &times; <em>n</em>. 
-                    <p><a name="factorial" class="anchor"></a><img src="/bjc-r/img/2-conditionals-abstraction-testing/factorial-block.png" alt="factorial block"></p>
+            
+                <li><strong>Mondrian—an art project:</strong> The artist Mondrian is possibly best known for his artwork using brightly colored rectangles
+                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-by-Piet-Mondriaan.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"></p>
+                  <p>Mondrian wasn't at all random in his choice of colors and locations, but you can be. A <span class="snap">snap</span> script can produce some very interesting Mondrian-like effects. </p>
+                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="300"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="300"  alt="another Mondrian-like design drawn with Snap"></p>
+                The following algorithm will produce designs like these.
+<pre class="indent" style="width:450px;">Draw outer frame (400 x 300)
+Fill with color
+Repeat many times
+    Pick random location
+    Pick random height and width for a rectangle that, 
+        at that location, 
+        will not extend beyond frame
+    Fill rectangle with random color
+    Draw bold boundary in black</pre>
+    <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is 
+<pre class="indent" style="width:450px;">Repeat until height or width is less than 2
+	Draw rectangle of specified height and width
+	Set height slightly smaller
+	Set width slightly smaller</pre>
+    </p>
+    <p>
+    
+    To get bright colors, use <code>set pen shade to 100</code>, and you get a good collection of colors with 
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-pen-color-to(2-times-pick-random-0-to-50).png"  alt="set-pen-color-to(2-times-pick-random-0-to-50)">  </p></li>
+                <li> The code <code>set pen size 50, move 100 steps</code> does not do quite what you might expect, because the "ends of the lines" are rounded. The code <code>clear set pen size 50, move 0.5 steps</code> does  something that can be useful. Experiment with the possibilities. 
+                  <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/colored-circles.png" width="300" alt="colored circles randomly placed">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/Colored-ovals.png" width="300" alt="colored ovals"></p> 
+                <div class="endnote">Another way to fill a rectangle is to draw a "very thick line" that has &quot;flat&quot; ends instead of round ends. The settings menu allows you to choose "flat line ends." 
+                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Flat Line Ends.png"  alt="settings menu, flat line ends"></p>
+                </div>  
+                </li>
+                <li><strong>Writing secret code:</strong> Create a block that takes a word as input, changes each letter into the <em>next</em> letter in the alphabet—for example, A becomes B, Y becomes Z...—and reports the result, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/encode-decode(HANDY)-with-result(IBOEZ).png" alt="encode-decode(HANDY)-with-result(IBOEZ)">.
+                <p>In order to do this, you will need to be able to change a letter into a number, add 1 to that number, and then change the new number back to a letter. The blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode-of(Y).png" alt="unicode-of(Y)">                and <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode(89)as-letter.png"  alt="unicode(89)as-letter"> will help you do that. Experiment with them to see how they work.</p>
+                <ol><li>This block encodes by adding 1 to the unicode for each letter. You could, instead, always add 2 or 5 or whatever. Give your block a second variable that allows you to specify what to add to the unicode.</li>
+                <li>When you give your <code>encode</code> block the input <code>z</code>, what does it report? If that's not what you would <em>like</em> it to report, change it. </li>
+                <li>Make a <code>decode</code> block.</li></ol>
+                </li>
+                <li><strong>Linguistic research:</strong> Build a block that can take a piece of text as input and which letter,  <strong>t</strong> or <strong>s</strong>, is used more often in that bit of text. Later, you will be able to generalize this and take a large block of text and figure out the frequency of each letter. <em>Letter frequency differs from language to language. That information has been used as one clue in decoding encrypted messages.</em></li>
+    
+                <li><strong>A mathematical function: </strong>Create <a name="factorial" class="anchor"></a> a <code>factorial</code> block <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial.png" alt="n factorial"> (or <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial-symbol.png"  alt="n!">) that takes a positive integer <em>n</em> and reports the product of all whole numbers from 1 through <em>n</em>, in other words 1 &times; 2 &times; 3 &times; ... &times; (<em>n</em> - 1) &times; <em>n</em>. When the  input is 4, the output should be 24 (because 1 × 2 × 3 × 4 = 24). 
                     <ol>
-                        <li>Build this block and test it out. When the block's input is 4, its output should be 24 (because 1 &times; 2 &times; 3 &times; 4 = 24). And when the input is 5, you should see. <img src="/bjc-r/img/2-conditionals-abstraction-testing/5-factorial-with-result(120).png"  alt="five factorial with result (120)"></li>
-                        <li>Dividing 5! by 4!, the result should be 5 <img src="/bjc-r/img/2-conditionals-abstraction-testing/5-factorial-divided-by-4-factorial-with-result(5).png" alt="5-factorial-divided-by-4-factorial-with-result(5)"> because 4! is  1 &times; 2 &times; 3 &times; 4, and 5! is  1 &times; 2 &times; 3 &times; 4 &times;5. Using your block, check each of these computations&mdash;<img src="/bjc-r/img/2-conditionals-abstraction-testing/4-factorial-divided-by-3-factorial.png"  alt="4-factorial-divided-by-3-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/3-factorial-divided-by-2-factorial.png"  alt="3-factorial-divided-by-2-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/2-factorial-divided-by-1-factorial.png"  alt="2-factorial-divided-by-1-factorial"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/1-factorial-divided-by-0-factorial.png"  alt="1-factorial-divided-by-0-factorial">&mdash;to see what it reports. </li>
-                        <li>For mathematics to be consistent, we'd like all of these to follow the same pattern, but one of them does not. To fix the problem, we need to <em>define</em> 0! = 1. Edit your <code>n!</code> block to  report 1 if <em>n</em> = 0. Then fully test <code>n!</code> again to make sure it works as it should. </li>
+                        <li>Dividing 5! by 4!, the result should be 5 <img src="/bjc-r/img/2-conditionals-abstraction-testing/5-factorial-divided-by-4-factorial-with-result(5).png" alt="5-factorial-divided-by-4-factorial-with-result(5)"> because 5 factorial is really just 5 times 4 factorial. Using your block, check each of these computations&mdash;<img src="/bjc-r/img/2-conditionals-abstraction-testing/4-factorial-divided-by-3-factorial.png"  alt="4-factorial-divided-by-3-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/3-factorial-divided-by-2-factorial.png"  alt="3-factorial-divided-by-2-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/2-factorial-divided-by-1-factorial.png"  alt="2-factorial-divided-by-1-factorial"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/1-factorial-divided-by-0-factorial.png"  alt="1-factorial-divided-by-0-factorial">&mdash;to see what it reports. One of these is inconsistent with the others. To fix the problem, we need to <em>define</em> 0! = 1. Edit your <code>n!</code> block to  report 1 if <em>n</em> = 0. Then fully test <code>n!</code> again to make sure it works as it should. </li>
                         <li><strong>Debugging: </strong>Obviously <img src="/bjc-r/img/2-conditionals-abstraction-testing/cookie-factorial-bug.png" alt="cookie-factorial-bug"> should not work! Check to see what does happen.  Then edit your block and find a way to use <img src="/bjc-r/img/2-conditionals-abstraction-testing/is-n-a-number.png" alt="is n a number"> to check that the input is a number and report some sensible result or message.</li>
                         <li> 
                             <strong>Analyzing code: </strong>In mathematics, factorial is defined only for positive integers and zero, so 3.7! would make no mathematical sense.  But <img src="/bjc-r/img/2-conditionals-abstraction-testing/three-point-seven-factorial.png" alt="three-point-seven-factorial"> reports a result!
@@ -94,31 +149,30 @@
                         </li>
                     </ol>
                 </li>
-                <li>Create a block <code>triangular number n</code> that takes <em>n</em> as input and reports 1 + 2 + 3 + ... + (<em>n</em> - 1) + <em>n</em>. <code> triangular number 4</code> should report 10.  Define your block so that <code> triangular number 0</code> reports 0. </li>
-                <li>
-                    Create a <code>raise (n) to the power (b)</code> block that works like this:
-                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(3)(with-result).png" alt="raise 2 to the power 3 (result = 8)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(5)(with-result).png" alt="raise 2 to the power 5 (result = 32)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(3)-to-the-power(4)(with-result).png" alt="raise 3 to the power 4 (result = 81)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(1)(with-result).png" alt="raise 2 to the power 1 (result = 2)"></p>
-                    <p>Make sure it also works for this case: <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(5)-to-the-power(0)(with-result).png" alt="raise 5 to the power 0 (result = 1)"></p>
-                </li> 
-                <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> so that <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from -3 to 3.png" alt="sum from -3 to 3"> reports the sum of -3 + -2 + -1 + 0 + 1 + 2 + 3.</li>
-                <li> <div class="sidenote">Recall that <code>n mod i</code> will tell you if <em>i</em> is a divisor of <em>n</em>.</div> Create a block that takes a whole number as input and checks  numbers from 1 through that input and counts the ones that evenly divide the input. So, for example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/number-of-divisors-of-8-with-result(4).png" alt="number of divisors of 8, with result = 4"> because, from 1 through 8, only the numbers 1, 2, 4, and 8 evenly divide 8.  <code>number-of-divisors 10</code> should also report 4 because, of the numbers from 1 through 10, only 1, 2, 5, and 10 are divisors of 10.</li>
-                <li>Create a tool <code>digital sum</code> that adds up the digits in a number.  So, for example <code>digital sum 7</code> should report 7, and <code>digital sum 12</code> should report 3, and <code>digital sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"> </li>
+                <li><strong>Another mathematical function:</strong> Create a block <code>triangular number n</code> that <em>adds</em> all of the whole numbers from 1 through <em>n</em>. 1 + 2 + 3 + ... + (<em>n</em> - 1) + <em>n</em>. When its input is 4, your block should report 10 (that is, 1 + 2 + 3 + 4).  Define your block so that <code> triangular number 0</code> reports 0. </li>
+                <ol> 
+                <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> so that <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from -3 to 3.png" alt="sum from -3 to 3"> reports the sum of -3 + -2 + -1 + 0 + 1 + 2 + 3.</li></ol>
+                <li> <div class="sidenote">Recall that <code>n mod i</code> will tell you if <em>i</em> is a divisor of <em>n</em>.</div>
+                  <strong>Counting divisors: </strong>Create a block that takes a whole number as input and checks  numbers from 1 through that input and counts the ones that evenly divide the input. So, for example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/number-of-divisors-of-8-with-result(4).png" alt="number of divisors of 8, with result = 4"> because, from 1 through 8, only the numbers 1, 2, 4, and 8 evenly divide 8.  <code>number-of-divisors 10</code> should also report 4 because, of the numbers from 1 through 10, only 1, 2, 5, and 10 are divisors of 10. <strong>Experiment</strong> to find several numbers that have an odd number of divisors.</li>
+                
                 
 			</ol>
-		</div>
+</div>
 
         <div class="commentBig">Hi Paul, I was in here working on the TIF Assignments for the TG, and I changed this lab title to make it fit. If it really has to be "Mathematical" on the end, change it and let me know; I'll widen the box. --MF</div>
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
                 <li>Edit your <code>raise (n) to the power (b)</code> block to make it work for negative integer exponents. </li> 
-                <li>
+                <li><strong>Old-fashioned divisibility test—divisibility by 3 or 9: </strong>Create a tool <code>digital sum</code> that adds up the digits in a number.  So, for example <code>digital sum 7</code> should report 7, and <code>digital sum 12</code> should report 3, and <code>digital sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"> </li>
+            
+                <li><strong>Old-fashioned divisibility test—divisibility by 7: </strong>
                     Create a <code>multiples of 7 algorithm</code> block that takes any whole number as input and then puts it through this process:
-                    <div class="sidenote">For this project,  <img src="/bjc-r/img/blocks/all-but-last-letter-of.png" alt="all but last letter of"> and <img src="/bjc-r/img/blocks/last-letter-of.png" alt="last letter of"> are useful. They are in <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">  the <strong>Words, sentences</strong> library</a>.</div>
+                    <div class="endnote">For this project,  <img src="/bjc-r/img/blocks/all-but-last-letter-of.png" alt="all but last letter of"> and <img src="/bjc-r/img/blocks/last-letter-of.png" alt="last letter of"> are useful. They are in <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://snap.berkeley.edu/snapsource/libraries/word-sentence.xml">  the <strong>Words, sentences</strong> library</a>.</div>
                     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/divisibility-by-7-algorithm.png" alt="multiples of 7 algorithm"> </p>
-                    <div class="sidenote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div>
+                    
                     <p>Test it first on several multiples of 7 (small and large) and make sure that, for multiples of 7, it reports only the results 14, 7, 0, -7, and -14. Also test it on several numbers that are <em>not</em> multiples of 7; for those numbers, it should never report 14, 7, 0, -7, or -14. <img src="/bjc-r/img/2-conditionals-abstraction-testing/multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14).png" alt="multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14)"></p>
                 </li>  
-				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li>
+				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div>
                 <div class="saveAs"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U2L2-MathTools" title="save your work as U2L2-MathTools" /></div>
             </ol>
         </div>

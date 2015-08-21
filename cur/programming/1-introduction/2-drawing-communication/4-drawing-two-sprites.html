@@ -20,24 +20,23 @@
                     <img src="/bjc-r/img/1-introduction/forever(repeat100(move1)-turn90).png" alt="Forever [repeat (100) [move (1)], turn(90)]" title="Forever [repeat (100) [move (1)], turn(90)]" />
                 </li>
                 <li><div class="newProject"><span class="text">"U1L2-SpriteOrbit"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div></li>	
-                <li>Give Sprite a script that, <em>when started</em>, draws a blue square, drawing each line at some medium speed.</li>
+                <li>Give Sprite a script that, when the green flag is clicked, draws a blue square, drawing each line at some medium speed.</li>
                 <div class="endnote">When you are finished, double-check that your script does exactly what you mean for it to. This is always a good idea when coding because if you move on with part of the program still not working, you will only compound your problems.</div>
                 
                 <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
                 
                 <li>
                 	Create a second sprite with a script that does this:<br />
-                    <div class="sideHOMbig">One &quot;line&quot; of pseudo-code may require more than one line of code in the language you are using. For example, &quot;draw in red&quot; requires two <span class="snap">snap</span> commands, one so that the sprite draws when it moves, and one to set the pen's color.</div>	
+                <!--    <div class="sideHOMbig">One &quot;line&quot; of pseudo-code may require more than one line of code in the language you are using. For example, &quot;draw in red&quot; requires two <span class="snap">snap</span> commands, one so that the sprite draws when it moves, and one to set the pen's color.</div>	  -->
 					<pre class="indent" style="width:300px;">
-when started
+when flag clicked
 draw in red
 forever
-    {
-        point towards (Sprite)
-        move (5) steps
-    }</pre>  
+     point towards (Sprite)
+     move (5) steps
+</pre>  
                 </li>
-                <li>Test your program. Make sure that it starts both sprites at the same time (for example, with <img src="/bjc-r/img/1-introduction/green-flag_button.png" style="height:1.6em;" alt="green-flag button"/>).</li>
+                <li>Test your program. Make sure that it starts both sprites at the same time.</li>
 
 
 				<li>Experiment with the speeds of each sprite. 
