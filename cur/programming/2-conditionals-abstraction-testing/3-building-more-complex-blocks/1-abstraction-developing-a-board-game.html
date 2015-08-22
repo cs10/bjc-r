@@ -33,18 +33,18 @@
                   	<li>And, <img src="/bjc-r/img/2-conditionals-abstraction-testing/calculate-tile-size.png" alt="calculate tile size"> which can be used in <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3).png" alt="nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3)"> to make sure the entire board fits.</li>
                   </ol>
                  <p>Test each block by itself before building a block that uses it.</p>
+                 <p>Your top-level board-drawing block, <code>draw n-by-n board</code>, might look something like this.</p>
+                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p>
 				</li>
-                
-                <li>If you have not already done it, now create <code>draw n-by-n board</code>. <em><strong>UNEDITED FROM HERE ON</strong></em><strong></strong></li>
                 <li> Now build some tools you might need for a game. 
                 	<ol>
-                    	<li> Create a <code>calculate tile size</code> block that figures out what <em>size</em> each tile must be to center an n-by-n board on the stage and make the entire n-by-n board fit well. Use that <code>calculate tile size</code> block in a <code>draw n-by-n board</code> block like this:
-                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p></li>
-                        <li> Build a reporter <code>on the board?</code> that uses your <code>between?</code> block to report <code>true</code> if the sprite is on the board, and reports <code>false</code> if the sprite is dragged completely off the board.</li>
-                        <li> Now build <code>which cell?</code> that tells which cell the sprite has been dragged into. <div class="sidenote">There are many ways to write <code>which row?</code> and <code>which column?</code> You can, of course, use lots of <code>if</code> statements, but since the number of rows can change, it's hard to know how many to use. One convenient way is to divide the total size of the game board by the size of each cell. To use that result, you need to round down. <img src="/bjc-r/img/blocks/round-a-number.png" alt="round a number"> can do it, but it rounds to the <em>nearest</em> integer, up <em>or</em> down. The function <img src="/bjc-r/img/blocks/floor of number.png" alt="floor of number"> always rounds <em>down</em>, making it easier to use. The <code>floor</code> function is in the same block as <code>sqrt</code>.</div>
+                    	<li> Build a predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/on-the-boardP.png" alt="on the board?"> that uses your <code>between?</code> block to report <code>true</code> if the sprite is on the board, and reports <code>false</code> if the sprite is dragged completely off the board.</li>
+                        <li> Build <code>which cell?</code> that tells which cell the sprite has been dragged into. 
                           Here is one way to do it that uses two other blocks that specialize in reporting <code>which column?</code> and <code>which row?</code> the sprite is in.
 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/which-cell(n) without computation.png" alt="partial script for &quot;which-cell?&quot; reporter"></p>
-                          <p>These blocks will, of course, need to know how many rows and columns there were, so they'll need the input <code>n</code>.</p></li>
+                          <p>These blocks will, of course, need to know how many rows and columns there were, so they'll need the input <code>n</code>.</p>
+                          <div class="endnote">There are many ways to write <code>which row?</code> and <code>which column?</code> You can, of course, use lots of <code>if</code> statements, but since the number of rows can change, it's hard to know how many to use. One convenient way is to divide the total size of the game board by the size of each cell. To use that result, you need to round down. <img src="/bjc-r/img/blocks/round-a-number.png" alt="round a number"> can do it, but it rounds to the <em>nearest</em> integer, up <em>or</em> down. The function <img src="/bjc-r/img/blocks/floor of number.png" alt="floor of number"> always rounds <em>down</em>, making it easier to use. The <code>floor</code> function is in the same block as <code>sqrt</code>.</div>
+                        </li>
                         <li>Here's a block that you can use to test how well your other blocks work together.
                         <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.png" alt="play on n-by-n board">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.gif" alt="animation of play"></p>
                         <p>Try it out for boards of different sizes.</p></li>
