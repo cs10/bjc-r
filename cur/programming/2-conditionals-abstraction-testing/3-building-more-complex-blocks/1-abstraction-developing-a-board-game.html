@@ -23,13 +23,20 @@
         </div>
         <div class="forYouToDo" id="first"> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" /> 
             <ol>
-                <li>Build three blocks: <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile (with input)" title="tile (with input)" /> with an input for size, <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of tiles (with two inputs)" title="row of tiles (with two inputs)" /> with inputs for number and size of tiles, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles,size).png" alt="nxn-array-of-tiles(tiles,size)"> with inputs for number and size of tiles. That is, build a program that allows you to draw a square array of a specified number of square tiles of a specified by building the row and tile blocks first. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles3,size100).png" alt="n by n array of tiles with input for number of tiles per row and size of tiles"> draws this:
-                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" alt="3x3array-of-squares-on-stage"></p>
+                <li>Many board games are played on a square array of tiles. The goal now is to build a block that lets you draw boards with various numbers of tiles, fitting neatly on the stage. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(3).png"  alt="draw-n-by-n-board(3)"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(5).png" alt="draw-n-by-n-board(5)">  should draw these boards:
+                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" width="260" alt="3x3array-of-squares-on-stage"><img src="/bjc-r/img/2-conditionals-abstraction-testing/5x5array-of-squares-on-stage.png" width="260" alt="5x5array-of-squares-on-stage"></p>
+                  <p>The task is complex, so build specialists that accomplish part of the task and then put them together. For example, you might start by building:</p>
+                  <ol> 
+                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)">, which just takes a size and makes a single square.</li>
+                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of">, which uses <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)"> to draw a single row of the given number of tiles, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/Row-of-5-tiles.png" alt="row of 5 tiles"></li>
+                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-100).png"  alt="nxn-array-of-tiles(tiles-3,size-100)">, which draws <em>n</em> rows using <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of">.</li>
+                  	<li>And, <img src="/bjc-r/img/2-conditionals-abstraction-testing/calculate-tile-size.png" alt="calculate tile size"> which can be used in <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3).png" alt="nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3)"> to make sure the entire board fits.</li>
+                  </ol>
+                 <p>Test each block by itself before building a block that uses it.</p>
 				</li>
-                <li>
-                  <p>Test it to make sure that it can make 4x4 arrays and 5x5 arrays, and that the size of the tiles can be controlled.</p>
-                </li>
-                <li>Build the beginnings of a game. 
+                
+                <li>If you have not already done it, now create <code>draw n-by-n board</code>. </li>
+                <li> Now build some tools you might need for a game. 
                 	<ol>
                     	<li> Create a <code>calculate tile size</code> block that figures out what <em>size</em> each tile must be to center an n-by-n board on the stage and make the entire n-by-n board fit well. Use that <code>calculate tile size</code> block in a <code>draw n-by-n board</code> block like this:
                         <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p></li>
