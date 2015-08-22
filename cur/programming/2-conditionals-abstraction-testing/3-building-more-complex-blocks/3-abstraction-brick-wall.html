@@ -38,41 +38,44 @@
         <img border="0" class="indent" title="code for brick" alt="Code for draw brick" src="/bjc-r/img/abstraction/new-brickwall/draw-brick-code.png" />
         
        	  <ol>
-            	<li>
-                	<p>Try out this block. Notice that your brick has rounded ends.  These ends stick out beyond the length of the line you asked to draw.  Here's a picture of the rounded brick with a regular line (pen size 1) inside it:</p>
-					<img border="0" class="indent" title="round brick" alt="Round brick" src="/bjc-r/img/abstraction/new-brickwall/round-brick.png" />
-        			<p>These rounded ends are fine for most pictures, but not for bricks. So for this project, you will turn off the rounded ends.</p>
+            	<li>Try out this block.  
+               	  <div class="endnote">If your "brick" has rounded ends, remember that you can <a href=" bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html"> change how lines are drawn </a> by clicking the settings button (<img src="/bjc-r/img/sys/settings.png" alt="settings button" />) in the toolbar, and turning on  "Flat line ends." Rounded ends stick out beyond the length of the line you asked to draw.  Here's a picture of the rounded brick with a regular  line (pen size 1) inside it:
+               	    </p>
+					<img border="0" class="indent" title="round brick" alt="Round brick" src="/bjc-r/img/abstraction/new-brickwall/round-brick.png" /> 
+       			  <p>These rounded ends are better for most line drawings, but not for this purpose.</p> 
+       			  </div> 
                 </li>
-                <li>Click on the settings button (<img src="/bjc-r/img/sys/settings.png" alt="settings button" />) in the toolbar, and turn on the "Flat line ends" setting.</li>
+                
             </ol>
         </div>
         
         <h3>Using Problem Decomposition to Write an Abstraction</h3>
-		<p> Consider this line of code that was used to create the brick wall:</p>
+		<p> You'd like the &quot;top level&quot; block to be something like this:</p>
 		<img class="indent" src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-7.png" alt="draw-brick-wall-7" />
-		<p> If you were to ask a mason to make a brick wall with seven rows, he would surely understand what to do. A computer, however, doesn't knows, so you must fill in the details. This means going from the abstract (draw a brick wall) to the concrete (pardon the pun). This involves problem decomposition.</p>
-		<p>We see that there are two kinds of rows, so we make blocks that specialize in each:</p>
+		<p> A human brick-layer  would  understand exactly how to build such a wall. A compute, doesn't know, so you must fill in the details. This means going from the abstract (draw a brick wall) to the concrete (pardon the pun). This involves <strong>problem decomposition</strong>.</p>
+		<p>There are two kinds of rows, so we make blocks that specialize in each:</p>
 		<ul>
 			<li><strong>Row A</strong>: <img border="0" title="Row A" alt="Row A" src="/bjc-r/img/abstraction/new-brickwall/row-a.png" /></li>
 			<li><strong>Row B</strong>: <img border="0" title="Row B" alt="Row B" src="/bjc-r/img/abstraction/new-brickwall/row-b.png" /></li>
 		</ul>
         <div class="forYouToDo">
-        	<ol start="3">
+        	<ol start="2">
             	<li>Make blocks <img src="/bjc-r/img/abstraction/new-brickwall/rowa-block.png" alt="Row A" /> and <img src="/bjc-r/img/abstraction/new-brickwall/rowb-block.png" alt="Row B" />.</li>
             	<li>Think about what helper blocks besides <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> you might want.</li>
             
-        <div class="takeNote"> <p>It's possible to go overboard on abstraction so that you have so many blocks that it's hard to find where the work actually gets done. On the other hand, sometimes it's useful to make a custom block even if its definition is just one primitive (built-in) block. For example, to draw the <em>mortar</em> (the white space) between bricks in a row, all you have to do is <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps"> (since the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick.png" alt="Draw Brick" /> block picks up the pen at the end of its script):</p>
-        
-        <p>You could just use <code>move</code>, but you might instead want to define a <code>Draw Mortar</code> block. Why? Maybe later you'll decide that four steps is the wrong thickness for mortar, and you'd rather have five steps. With many <code>move</code> blocks scattered through your program, you would have to find and change each one. With a <code>Draw Mortar</code> block, you can just change its definition, and all the mortar in your picture will be changed.</p>
-        <p><strong>Abstraction is powerful. </strong> It makes code easier to read and easier to debug, and it makes code easier to improve.</p></div>
+        <div class="takeNote"> 
+          <p><strong>Too much abstraction? </strong>It's possible to go overboard on abstraction and build so many blocks that your program is just as cluttered as it would be without the special blocks. </p>
+          <p>But it can also be useful to make a special block even when its definition is just one built-in block. For example, to draw the mortar (the cement between bricks, shown  as white space), you can just use <img src="/bjc-r/img/abstraction/new-brickwall/move4.png" alt="Move 4 Steps">, but it might make sense to define a <code>draw mortar</code> block. </p>
+          <p>Why? You might later decide that 4 steps is the wrong thickness for mortar, and you'd rather have 5. Or you might want the mortar to be  cement-colored, slightly gray. With many <code>move</code> blocks scattered through your program, you would have to find and change each one, and keep putting in <code>set pen color</code> blocks. With a <code>draw mortar</code> block, you can just change its definition, and all the mortar in your picture will be changed.</p>
+        </div>
             	<li>
-                	<p>Notice that the two kinds of rows should be exactly the same length.  Your first try at drawing a Row B may be a little too long. If so, think through what causes that bug.</p>
-					<p>How are you going to fix it? Should a Row B have different-size bricks, different-size mortar gaps, or different-size half-bricks? If you're not sure, try all the possibilities and see which looks right in the finished wall. (There's really only one good answer.)</p>
+                	<p>The two kinds of rows should be exactly the same length.  Your first try at drawing  Row B may be a little too long. If so, think through what causes that bug.</p>
+					<p>How are you going to fix it? Should  Row B have different-size bricks, different-size mortar gaps, or different-size half-bricks? If you're not sure, try all the possibilities and see which looks right in the finished wall. Or think &quot;What would <em>make most sense</em> in a <em>real</em> brick wall?&quot;</p>
                 </li>
                 
-                <li>Once you have the two kinds of rows the same length, you can write the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="Draw a Brick Wall with ( ) Rows" /> block.  Remember that it should work for both even and odd numbers of rows, which means that sometimes you'll have to draw an extra Row A.</li>
+                <li>Once you have  rows A and B the same length, you can write the <img src="/bjc-r/img/abstraction/new-brickwall/draw-brick-wall-num.png" alt="Draw a Brick Wall with ( ) Rows" /> block.  Make sure that it  works sensibly for both even and odd numbers of rows.</li>
             </ol>
-        </div>
+</div>
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
@@ -95,7 +98,7 @@
         <div class="forYouToDo">
 			<p><strong>Practice abstraction: </strong> Over time, you will program the computer to play tic-tac-toe with a person. For now, start just with the board.</p>
 			<p>
-				<ol start="7">
+				<ol start="6">
 					<li>
                     	Below is some code to draw a tic-tac-toe board. It works, but it's ugly. Your goal is to create blocks that make this code simpler. Don't bother building this script first. You may decide not to use any of it.<br />
 						<img class="indent" src="/bjc-r/img/abstraction/complicated-tic-tac-toe.png" alt="Tic-Tac-Toe Board Drawer" title="Tic-Tac-Toe Board Drawer" /><br />                    
