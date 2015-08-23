@@ -7,17 +7,18 @@
 
 	<body>
         <h2>Programming Lab 1: Conditional Blocks</h2>
-        <p>Your ATM  is programmed to let you choose whether to deposit or withdraw. The program does that by writing those choices somewhere on its screen and then <em>testing</em> to determine the location you touch or the button you press. The action the program takes or the  choice it offers next is conditional; it depends on what input you've given it with your touch. Another part of the program may test the size of the withdrawal you type in, and indicate if that is too large, or not an amount it can give; or it may deliver that amount. Your smart phone's screen works a similar way. It knows only where you touch, but because it also knows what word or picture it put in that location, it can &quot;know what you want&quot;&mdash;<code>if</code> you touch <em>here</em>, do one thing, <code>else</code> do something else. Distinguishing conditions and basing action on the distinction is central to all  programming. </p>
-        <p>In this lab, students focus attention on  <strong>conditionals</strong>—especially <code>if-else</code> and <code>if</code>, but also <code>repeat-until</code>—to control the behavior of their programs based on whatever conditions the students test for,  using <strong>predicates</strong> like <code>&lt;</code> or <code>=</code>. </p>
-<p>Small projects focus especially on using multiple <code>if</code> statements to distinguish multiple conditions. Students design a program that tests to see whether &quot;red,&quot; &quot;yellow,&quot; or &quot;green&quot; has been typed, and sets a traffic signal to that color;  they design another program to distinguish various spellings of nouns and then decide, based on the condition they find, how to spell the plurals of those nouns. The first programs students write test to see whether the <code>direction</code> or <code>y position</code> of the sprite meet certain conditions, and base actions on the results.</p>
-<p>This lab also begins to focus deep attention on <strong>abstraction</strong> through <strong>analyzing</strong> tasks to break them into subtasks and creating blocks that specialize in these subtasks, and on <strong>analyzing</strong> and <strong>debugging</strong> scripts. Analyzing an existing script is a particularly powerful way to learn to program similar behaviors. Debugging is an essential skill&mdash;especially as the programs one writes become more complex&mdash;but one that takes  time to acquire and hone because there is no single formula or subskill for doing it well.  In this lab, the debugging focus is on deliberately trying to &quot;break&quot; a program, searching for ways that a user's input (or some  situation that arises on the stage) can cause a program to fail, and accounting for those ways by testing for them and responding appropriately.</p>
+        <p>In this lab, students focus attention on  <strong>conditionals</strong>—especially <code>if-else</code> and <code>if</code>—to control the behavior of their programs. Students learn to use <strong>predicates</strong>—blocks that report <code>true</code> or <code>false</code> based on tests they perform—like <code>&lt;</code> or <code>=</code>, and learn to build other special purpose predicates. Early on, they  test  the <code>direction</code> and <code>y position</code> of the sprite and, base actions on the results.</p>
+        <div class="endnote"><strong>Introducing "conditionals"</strong> An ATM  is programmed to let you choose whether to deposit or withdraw. The program does that by placing those choices somewhere on its screen and then <em>testing</em> to determine where you touch or which button you press. The action the program takes or the  choice it offers next is conditional; it depends on what input you've given it with your touch. Another part of the program may test the size of the withdrawal you request, and indicate if that is too large, or not an amount it can give; or it may deliver that amount. Your smart phone's screen works a similar way. It knows only where you touch, but because it also knows what word or picture it put in that location, it can &quot;know what you want&quot;&mdash;<code>if</code> you touch <em>here</em>, do one thing, <code>else</code> do something else. Distinguishing conditions and basing action on the distinction is central to all  programming.</div>
+        
+<p>Small projects focus especially on using multiple <code>if</code> statements to distinguish multiple conditions. Students design a program that tests to see whether &quot;red,&quot; &quot;yellow,&quot; or &quot;green&quot; has been typed, and sets a traffic signal to that color; they design another program to decide when to add <em>s</em> and when to add <em>es</em> to make the plural of a noun, and then spell the plurals. </p>
+<p>This lab also begins to focus  on <strong>abstraction</strong> through <strong>analyzing</strong> tasks to break them into subtasks and then creating blocks that specialize in these subtasks, and through <strong>analyzing</strong> and <strong>debugging</strong> scripts. Analyzing an existing script is a particularly powerful way to learn to program similar behaviors. Debugging is an essential skill&mdash;especially as ones programs  become more complex&mdash;but it takes  time to acquire and hone that skill because there is no single formula or subskill for doing it well.  In this lab, the debugging focus is on deliberately trying to &quot;break&quot; a program, searching for ways that a user's input (or some  situation that arises on the stage) can cause a program to fail, and accounting for those ways by testing for them and responding appropriately.</p>
 
 <h3>Pacing:</h3>
 	<div>
             <ul>
                 <li> This week contains two labs. Though they differ in page length, each will probably take roughly half the time you have available. </li>
                 <li> The goal is for students to learn and succeed, not rush, and to have chances to  try some of the Take It Further problems and to be creative on their own. Plan accordingly, but... </li>
-                <li>...if you notice that the first page of Lab 1 is taking longer than you had anticipated, consider doing <em>only</em> problems 1-3 on page 2 (Using Multiple <code>If</code> statements) and skipping the rest of that page (problems 4 through 7).  There will be other opportunities to work with multiple <code>if</code>s. 
+                <li>...if you notice that the first two pages of Lab 1 are taking longer than you had anticipated, consider doing <em>only</em> problems 1-3 on page 3 (Using Multiple <code>If</code> statements) and skipping the rest of that page (problems 4 through 7).  There will be many other opportunities to work with multiple <code>if</code>s. 
             </li></ul>
 
 
@@ -26,7 +27,7 @@
             <ul>
                 <li>Review all lab activities beforehand. </li>
                 <li>Prepare a Computing in the News item.</li>
-                <li><strong>In teaching the first day:</strong> Make sure that students don't skip over the &quot;<em>figure out how it works</em>&quot; part of  problem 1 on the &quot;Getting Started&quot; page. Figuring out <em>how</em> sample code works, not just seeing what it does, is a powerful way to learn to code. In this case, the figuring out helps students do problems 2 and 3 on that page. It's probably not necessary to do anything formal with that &quot;figure out&quot; part&mdash;talking with the pair programmer is likely to be enough&mdash;but if you feel your students need  more structure, you might prepare a paper copy of the scripts for students to annotate, or some other way to make the results of problem 1 more tangible than discussion.</li>
+                <li><strong>In teaching the first day:</strong> Make sure that students don't skip over the &quot;<em>figure out how it works</em>&quot; part of  problem 1 on the &quot;Getting Started&quot; page. Figuring out <em>how</em> sample code works, not just seeing what it does, is one of the best ways to learn to code. In this case, the figuring out helps students do problems 2 and 3 on that page. It's probably not necessary to do anything formal with that &quot;figure out&quot; part&mdash;talking with the pair programmer is likely to be enough&mdash;but if you feel your students need  more structure, you might prepare a paper copy of the scripts for students to annotate, or some other way to make the results of problem 1 more tangible than discussion.</li>
             </ul>
 </div>
 
@@ -46,6 +47,18 @@
             </ul>
 </div> 
               
+        <h3>Tips:</h3>
+        <div><ul>
+          <li>Getting started: The "getting started" section in any lab involves some pure experimentation—students use code to see what it does—and some puzzles. Some of the puzzles are hard. Let students know that if they've done the experiments, the playing around, they have most of the knowledge they need for the puzzles but puzzles are puzzling! Try, tinker, try something new, talk to your partner. And if you can't solve the puzzle yourself, that's ok. Talk to another group. Even professional programming is like that. Programmers ask each other how to solve problems. Sometimes you <em>get</em> help, sometimes you <em>give</em> it.</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul></div>
         
         <h3>As a Class:</h3>
         <div><ul>
