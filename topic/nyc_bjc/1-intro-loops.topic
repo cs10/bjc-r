@@ -36,7 +36,7 @@ heading: Programming Lab 2: Sprite Drawing and Communication
 	resource: More Sprite Drawing and Interaction [/bjc-r/cur/programming/1-introduction/2-drawing-communication/5-more-drawing-interaction.html]
 	
 heading: Programming Lab 3: Control Commands
-	resource: The Real Value of The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
+	resource: The Real Value of the <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
 	raw-html: <div class="sidenoteBig">The quiz symbol, <img class="inline" style="padding: 1px;" src="/bjc-r/llab/img/multiplechoice16.png" alt="multiple choice icon" title="multiple choice icon" />, indicates that this page includes an online quiz to help you check your understanding.</div>
 	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-control-commands/2-nesting-repeats.html]
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-for-block.html]
