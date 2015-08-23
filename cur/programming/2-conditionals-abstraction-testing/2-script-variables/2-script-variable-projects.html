@@ -82,11 +82,19 @@ Repeat many times
 			</ol>
 </div>
 
-        <div class="commentBig">Hi Paul, I was in here working on the TIF Assignments for the TG, and I changed this lab title to make it fit. If it really has to be "Mathematical" on the end, change it and let me know; I'll widen the box. --MF</div>
+      
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-
-            <li>Edit your <code>raise (n) to the power (b)</code> block to make it work for negative integer exponents. </li> 
+			<li>Here is a block and the picture  it makes.
+            	<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Albers-circles.png" width="212" alt="Block that makes nested colored circles, looking a bit like a tunnel"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnelpic-(steps-6)(color-0).png" width="165" alt="The picture of nested circles made by that block"></p>
+                <p>Edit it and give it inputs that let you produce pictures like these. You don't have to use script variables.</p>
+                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnel-(steps-3)(color-0).png"  alt="command "> <img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnelpic-(steps-3)(color-0).png" width="165"  alt="three embedded red circles"> </p>
+                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnel-(steps-4)(color-50).png"  alt="command tunnel-(steps-4)(color-50)"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnelpic-(steps-4)(color-50).png" width="165"  alt="four embedded aqua-blue circles"></p>
+               <p>Experiment with various inputs.</p>
+            </li>
+			<li>The artist Joseph Albers became famous for paintings a bit like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/AlbersPic-(steps-4)(color-60).png" width="164" alt="AlbersPic-(steps-4)(color-60)"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Albers-(steps-4)(color-60).png" alt="Albers-(steps-4)(color-60)">
+            <p>Set "flat line ends" and create a block that draws pictures like this. It will be convenient to use script variables</p></li>
+          <li>Edit your <code>raise (n) to the power (b)</code> block to make it work for negative integer exponents. </li> 
                 <li><strong>Old-fashioned divisibility test—divisibility by 3 or 9: </strong>
                 <ul><li>Create a helper reporter <code>digit sum</code> that adds up the digits in a number.  So, for example <code>digit sum 7</code> should report 7, and <code>digit sum 12</code> should report 3, and <code>digit sum 126</code> should report 9 (the sum of 1, 2 and 6).  You may find these blocks useful. <img src="/bjc-r/img/2-conditionals-abstraction-testing/letter-i-of-number.png" alt="fletter-i-of-number"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/for-i=1-to-length-of-number.png" alt="for-i=1-to-length-of-number"></li>
                 <li>Then write <code>repeated digit sum</code>, which keeps taking the <code>digit sum</code> until the result is a single digit. For example, the digit sum of 238 is 2+3+8=13, which is more than a single digit. The digit sum of 13 is 1+3=4, which <em>is</em> a single digit. So the repeated digit sum of 238 is 4.</li>
@@ -104,7 +112,7 @@ Repeat many times
 				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div></ol>
                <div class="takeNote">Although this 
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/clobber.png" alt="set variable to function of variable"> style of programming is very common, pretty soon you'll learn a better way: <em>functional programming,</em> in which you never change the value of a variable.  You're not quite ready to write functional programs yet (that'll come in Unit 3), but here are some examples from above, rewritten functionally, that you can probably understand:                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n"><img src="/bjc-r/img/2-conditionals-abstraction-testing/better-divisors.png" alt="number-of-divisors: length of keep items such that ((n mod __) = 0) from (values from 1 to n)">
-        <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-digit-sum.png" alt="digit sum: combine with + items of word to list of number"> </div>
+<img src="/bjc-r/img/2-conditionals-abstraction-testing/better-digit-sum.png" alt="digit sum: combine with + items of word to list of number"></div>
                 <div class="saveAs"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U2L2-MathTools" title="save your work as U2L2-MathTools" /></div>
             </ol>
         </div>
