@@ -45,14 +45,20 @@
 
 
         <h3>Look For:</h3>
-        <div><ul><li>As you notice interesting student work—creative responses to assigned tasks, ideas that go beyond the tasks, or interesting bugs—you may choose to have students share, but allow plenty of time for students to do the programming.</li></ul></div>
+        <div><ul><li>As you notice interesting student work&mdash;creative responses to assigned tasks, ideas that go beyond the tasks, or interesting bugs&mdash;you may choose to have students share, but allow plenty of time for students to do the programming.</li></ul></div>
 
             <h3>Tips:</h3>
         <div><ul>
+        	<li>Be aware that the curriculum very deliberately starts from variables with  limited scope, giving students as much experience as possible with them (<code>for</code> block variables, custom block inputs, and now script variables) <em>before</em> introducing global variables. We want to get students in the habit of using local variables without having to make a big fuss about Thou Shalt Not Use Global Variables. So, you don't have to call attention to scope issues, but try not to undermine this effort with global variables.</li>
         	<li>Students who choose the "writing secret code" project will encounter <code>unicode</code> and explore it a bit. They can be leaders in discussions of that topic when it comes up later in the year.</li>
+        	<li>It's possible to get a non-keyboard character into the <code>unicode of</code> block by copying it in another program (from a web page or a text file, for example) and then pasting it in Snap<em>!</em> with control-V or command-V.</li>
         	<li>This is a perfect place for the creativity called for in the CS Principles. Try to find time for students to share the different ideas they've brought to their projects. </li>
+        	<li>At the end of the Script Variable Projects page is a teaser for the functional programming style coming in Unit 3. As usual when we tease later parts of the curriculum, don't make a fuss about this.</li>
+        	<li>In the <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-predicates.html" target="new">Building a useful collection of predicates</a> page, many students find the first problem (<code>&gt;=</code>) difficult, but don't let them give up. It seems to lead to a big improvement in students' understanding both of logic and of composition of functions. Beware of students typing the words &quot;true&quot; and &quot;false&quot; into <code>report</code> blocks instead of using the Boolean constant blocks. That bug can take hours to find and isn't intellectually interesting; just tell them how to fix it so that they can get to the interesting logic bugs.&#x263A; </li>
+        	<li>In the <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/4-analyzing-debugging-simplifying.html" target="new">Analyzing, debugging, and simplifying code</a> page, take note of the last question, 4c. The point it's making is important: When computing a function, write a reporter, not a command block that <code>say</code>s the value. The latter can't participate in composition of functions. In the case of <code>max</code>, we're later going to compose it with itself to find the maximum of <em>three</em> numbers. People who've programmed in non-interactive languages aren't accustomed to being able to click on a reporter to see what it reports, and tend to write scripts with lots of <code>ask and wait</code> blocks at the beginning and lots of <code>say</code> blocks at the end. Instead, write a reporter with inputs.</li>
         	
-        </ul></div>
+        </ul>
+        </div>
         
 <!--<h3>Solutions</h3>
         <div><ul><li>...</li></ul></div>-->

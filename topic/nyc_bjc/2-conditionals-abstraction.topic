@@ -17,8 +17,8 @@ heading: Programming Lab 1: Conditional Blocks
 
 
 heading: Programming Lab 2: Script Variables
-	resource: Script Variables 	
-	raw-html: <img class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap" />[/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
+	raw-html: <img class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap" />
+	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
 	resource: Script Variable Projects [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html]
 	resource: Building a Useful Collection of Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-predicates.html] // chop out relevant pieces
 	resource: Analyzing, Debugging, and Simplifying Code [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/4-analyzing-debugging-simplifying.html]

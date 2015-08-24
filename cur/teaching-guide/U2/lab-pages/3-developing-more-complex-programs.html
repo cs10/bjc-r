@@ -8,25 +8,17 @@
 	<body>
         <h2>Programming Lab 3: Developing More Complex Programs</h2>
         <p>In Lab 3, students build two  complex games, focusing almost exclusively on ideas of <strong>abstraction</strong> to serve the goals  writing clear, debuggable, improvable code&mdash;all essential for developing complex programs. They are given goals and specifications for the programs&mdash;and are given guidance on <em>structuring</em> the programs&mdash;but must find their own ways to build the parts. Both the game board project and the number-guessing-game project are very extensible and modifiable and may lead students to their own ideas.</p>
-    <p>There is little new <span class="snap">snap</span> code in Lab 3. Even the idea of abstraction—analyzing a task to find its chunks or component parts or special cases  and then build blocks that <em>specialize</em> in each of them—is not really new. Students did that when they built <code>plural</code>. But making a habit of analyzing and chunking tasks takes time and experience. </p>
+    <p>There is little new <span class="snap">snap</span> code in Lab 3. Even the idea of abstraction&mdash;analyzing a task to find its chunks or component parts or special cases  and then build blocks that <em>specialize</em> in each of them&mdash;is not really new. Students did that when they built <code>plural</code>. But making a habit of analyzing and chunking tasks takes time and experience. </p>
         <p>The lab ends with three shorter activities&mdash;essentially how-to's&mdash;showing techniques that can be useful in more complex programming tasks.</p>
 <h3>Pacing: </h3>
     <div>
       <ul>
-                <li>The first three pages of this lab—Developing a Board Game, Developing a Number Guessing Game, and Brick Wall—are the most important. Plan with the hopes of doing the last three pages as well, but if students get involved in extensions of the first three pages, give that the priority and feel free to  condense the last three.</li>
-                <li>Ideally, the last three pages&mdash;all short&mdash;could be done in a single period, with page 6 done before page 5. The <strong>Tips</strong> section below suggests how.</li>
+                <li>The first three pages of this lab (Developing a Board Game, Developing a Number Guessing Game, and Brick Wall) are the most important. Plan with the hopes of doing the last three pages as well, but if students get involved in extensions of the first three pages, give that the priority and feel free to  condense the last three.</li>
+                <li>Ideally, the last three pages. all short, could be done in a single period, with page 6 done before page 5. The <strong>Tips</strong> section below suggests how.</li>
       </ul>
     </div>
 
-<h3>Prepare:</h3>
-    <div>
-      <ul>
-                <li>Search for some Computing in the News topics, or ask your students to look for them in advance.</li>
-            </ul>
-        </div>
-
-
-        <h3>Students will:</h3>
+    <h3>Students will:</h3>
         <div class="sidenoteBig">
         	<strong>Looking Ahead</strong>
         	<ul>
@@ -39,23 +31,11 @@
                 <li>Build a number guessing game in which the user tries to guess the computer's secret number, and the computer tries to respond with as human-like dialogue as the programmer can build.</li>
                 <li>Experience the idea of abstraction in the context of developing blocks that specialize.</li>
                 <li>Learn how to specify the type of input that a block is expecting to receive.</li>
-                <li>Get a bit of practice composing functions.</li>
+                <li>Get practice composing functions.</li>
             </ul>
 </div> 
               
         
-        <h3>As a Class:</h3>
-        <div><ul>
-<li>Except for a Computing in the News, and the usual option of having students share particularly interesting problems or results, treat this lab as largely work-with-your-partner time.</li></ul></div>
-
-
-        <h3>Look For:</h3>
-        <div><ul>
-          <li>As always, look for students who have interesting result to share.</li>
-          <li>As always, look for students who seem stuck and are not getting the support that they need from their partner .</li>
-        </ul>
-</div>
-
         <h3>Tips:</h3>
         <div><ul>
           <li><strong>Page 1: Developing a board game</strong>. This  is the most complicated project in units 1 and 2, but students are given enough subtasks to make it likely that, <em>working together</em>, they can succeed. Working together is key. Some will figure out how to solve certain parts, and others will figure out how to solve other parts. Sharing, they will learn from each other.</li>
@@ -63,18 +43,17 @@
           	<ol> 
               <li>Show me what you've already figured out.</li>
           	  <li>What are the <em>parts</em> of the problem that need to be built? </li>
-          	  <li>Is there a good starting place (or a thing to do next), something really simple that will get us a bit closer?</li>
-            </ol>
-          </li>
-          <li><strong>Page 2: Developing a number guessing game</strong>. This involves simpler coding, but is very open to students' creative ideas.</li>
-          <li><strong>Page 3: Brick wall</strong>. This involves the simplest coding of the three projects, but contains a <strong>key idea</strong> about abstraction. The suggestion to create a <code>draw mortar</code> block is important. It shows how editing <em>one</em> block can update a program in many places.</li>
-          <li><strong>Page 4: Input types</strong>. The information&mdash;how to constrain a block's inputs  to expect only numbers&mdash;is useful but not essential. Consider &quot;ignoring the page,&quot; <em>demonstrating</em> the method yourself, and having students watch you and follow along. They may find that faster and better than  working through the page.</li>
-          <li><strong>Page 6: Analyzing various definitions of <code>&gt;=</code></strong>. Because no programming is involved&mdash;this is entirely discussion&mdash;you may want to do this second, while the whole class is working together. Then let students loose to work on Page 5.</li>
-          <li><strong>Page 5: Composition of functions</strong>. This extremely short page  does not introduce any new ideas but is very useful practice both in problem solving and in programming. </li>
-
-          <li>As always, look for students who seem stuck and are not getting the support that they need from their partner.</li>
-        </ul>
-</div>
+          	  <li>Is there a good starting place (or a thing to do next), something really simple that will get us a bit closer?</li></ol></li>
+       
+            <li>The orange box about abstraction leaves out, to avoid overloading the text, mention of the fact that even building the board out of boxes is an abstraction-based design decision. That's not how you draw a tic-tac-toe board by hand; you draw long intersecting lines. We could have done that here, too, but wanted a <code>draw tile</code> block that could be modified later.</li>
+            <li><strong>Page 2: Developing a number guessing game</strong>. This involves simpler coding, but is very open to students' creative ideas.</li>
+            <li><strong>Page 3: Brick wall</strong>. This involves the simplest coding of the three projects, but contains a <strong>key idea</strong> about abstraction. The suggestion to create a <code>draw mortar</code> block is important. It shows how editing <em>one</em> block can update a program in many places. Also, although the coding is simple, figuring out how to make row B's length come out right is a hurdle.</li>
+            <li><strong>Page 4: Input types</strong>. The information&mdash;how to constrain a block's inputs  to expect only numbers&mdash;is useful but not essential. Consider &quot;ignoring the page,&quot; <em>demonstrating</em> the method yourself, and having students watch you and follow along. They may find that faster and better than  working through the page.</li>
+            <li>Input types in Snap<em>!</em> are <em>program documentation,</em> not constraints on the programmer. You can drop any reporter into any input slot. The input slot shapes are just hints about what the block expects. Don't make a fetish out of type checking. It's really important for a programmer to understand the domain and range of each function, but the domain is often different from the language's types, e.g., &quot;an even positive integer&quot; or &quot;a word of no more than eight letters&quot; or &quot;a list whose items are either Booleans or lists.&quot;</li>
+            <li><strong>Page 6: Analyzing various definitions of <code>&gt;=</code></strong>. The main point of this page is to bring home to students that it's worthwhile learning the Boolean operators. The fourth definition is exactly how you'd explain the <code>&gt;=</code> function in English. By contrast, the versions using <code>if</code> bear no relation to the way you'd think about the function in a non-programming context. Because no programming is involved&mdash;this is entirely discussion&mdash;you may want to do this second, while the whole class is working together. Then let students loose to work on Page 5.</li>
+            <li><strong>Page 5: Composition of functions</strong>. This extremely short page is very useful practice both in problem solving and in programming. It also foreshadows the way associative operators can be composed by the <code>combine</code> function in Unit 3.</li>
+          </ul>
+    </div>
 
             
         <!--<h3>Solutions</h3>
