@@ -19,9 +19,8 @@
 			    <div class="sidenote">Hint: You can do this using just 3 blocks!</div>
                 <li>Create a second script that makes Alonzo move to (190, -130) and <code>say</code> a welcome message whenever the green flag is clicked. (Alonzo might say, "Welcome to Click On Alonzo! Keep clicking me if you can!") . </li>
 			    <li>
-                	Make that message disappear when the player clicks on Alonzo. 
-                	<div class="endnote"> You will use the <img src="/bjc-r/img/blocks/say-Hello-World!.png" > block. An empty input will get Alonzo to stop saying whatever he's saying.</div> 
-                    <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Where should the <code>Say</code> block go?
+                	Make that message disappear when the player clicks on Alonzo.
+                	<div class="endnote">Using the <img src="/bjc-r/img/blocks/say-empty.png" alt="say ()" title="say ()" /> block with an empty input will make the Alonzo sprite stop saying anything.</div>
                 </li>
                 <li>
                 	Check that your app does everything you intend it to do:
@@ -31,23 +30,39 @@
                     </ul>
                 </li>
  			</ol>
-</div>
+		</div>
         
         <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-    <!--        <img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />    -->
+            <p>Choose and code additional features. Or make up and code your own!</p>
             <ol type="A">
-                <li>The game is too easy if Alonzo just waits in one place to be clicked. If you have extra time, add code so that after the first time Alonzo is clicked, every two seconds he moves to a random position (even if not clicked).</li>
-                <div class="endnote"><strong>Translating English into code:</strong> "every 2 seconds" means <code>wait 2 seconds</code> and then go to a random position, and do that over and over again <code>forever</code>.</div>
-                <li>It would be good to give the player some sense of how well he or she is doing.  Put this block <br />
-                
-                  <img src="/bjc-r/img/1-introduction/ghost.png" alt="change ghost effect by 5"> <br />
-
-in the script that runs when the player clicks on Alonzo. This makes Alonzo fade out a little every time he's clicked. Put another block in your program to change the ghost effect by -5 every time Alonzo moves without being clicked.                
+	        	<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
+                <li>
+                    So far, Alonzo waits in one place to be clicked. Increase the game's difficulty by adding code so that after the first time he is clicked and from them on, Alonzo moves to a random position on the stage every two seconds (even if not clicked).
+                      <div class="endnote">
+                    	<strong>Translating ideas into code:</strong> "Every 2 seconds" means <code>wait 2 seconds</code> and repeat.
+                        <ul>
+                            <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                            <li>What does "from then on" translate to in Snap<em>!</em> programming?</li>
+                            <li>What does "after the first time Alonzo is clicked" tell you about the structure of the code?</li>
+                            <div class="takeNote">Snap<em>!</em> <em>scripts</em> can run at the same time, but <em>within each script, the steps run one at a time</em>.</div>
+                        </ul>
+                    </div>
+                </li>
+                <li>Give the player some sense of how well they are doing:
+                	<ol style="list-style: lower-roman;">
+                    	<li>Put <img src="/bjc-r/img/1-introduction/ghost.png" alt="change ghost effect by 5" title="change ghost effect by 5" /> in the script that runs when the player clicks on Alonzo. This makes Alonzo fade out a little every time he's clicked.</li>
+                        <li>Put another block in your program to change the ghost effect by -5 every time Alonzo moves without being clicked. </li>
+                        <li>Add a reset button by creating a sprite with a reset button costume (made in Snap<em>!</em> or using an imported image) that will <code>clear graphic effects</code> or <code>set ghost effect to 0</code> when clicked.</li>
+                    </ol>
+                </li>
+                <li>Finish the <a href="http://bjc.edc.org/hourofcode" target="_blank">BJC Hour of Code</a>. (The problems above took you through some of the steps already.)</li>
+                <div class="endnote">If the Hour of Code is buggy (or any other website), try a different browser. If you can, check that your browser(s) are up to date. Try a forced page refresh (shift-refresh) or clearing your cache if you can.</div>
             </ol>
         </div>
 
+        <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 
 	</body>
 </html>
