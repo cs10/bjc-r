@@ -20,21 +20,23 @@
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-Piet-Mondrian.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"> &quot;Tableau 1&quot; by Piet Mondrian</p>
                   <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A <span class="snap">snap</span> script can produce designs like these. </p>
                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="260"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap"></p>
-                This algorithm  produced those designs.
-<pre class="indent" style="width:450px;">Draw outer frame (400 x 300)
+                This algorithm  produced those designs.<br />
+                <img src="/bjc-r/img/2-conditionals-abstraction-testing/mondrian-script.png" alt="Draw outer frame (400 x 300)
 Fill with some color
 Repeat many times
     Pick random location
     Pick random height and width for a rectangle that, 
         at that location, won't extend beyond frame
     Draw rectangle boundary in thick black line
-    Fill rectangle with random color</pre>
+    Fill rectangle with random color">
+
     <p>To keep your code clear, you may want to create separate blocks that specialize in boundary and fill and choosing locations and calculating size.</p>
-    <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is 
-<pre class="indent" style="width:450px;">Repeat until height or width is less than 2
+    <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is <br />
+      <img src="/bjc-r/img/2-conditionals-abstraction-testing/fill-script.png" alt="Repeat until height or width is less than 2
 	Draw rectangle of specified height and width
 	Set height slightly smaller
-	Set width slightly smaller</pre>
+	Set width slightly smaller">
+
     </p>
     <p>To get bright colors, use <code>set pen shade to 100</code>, and you get a good collection of colors with 
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-pen-color-to(2-times-pick-random-0-to-50).png"  alt="set-pen-color-to(2-times-pick-random-0-to-50)">  </p>
