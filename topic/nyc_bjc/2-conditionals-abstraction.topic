@@ -26,7 +26,7 @@ heading: Programming Lab 2: Script Variables
 heading: Programming Lab 3: Developing More Complex Programs
 	resource: Abstraction: Developing a Board Game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html]
     resource: Abstraction: Developing a Number Guessing Game [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-developing-a-number-guessing-game.html]
-	resource: Abstraction: Brick Wall and Tic-Tac-Toe [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-abstraction-brick-wall.html]
+	resource: Abstraction: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/3-abstraction-brick-wall.html]
 	raw-html: <img class="imageRight" src="/bjc-r/img/building-blocks/max-3-arg-code.png" alt="max of (x) and (y) and (z) block definition" title="max of (x) and (y) and (z) block definition" />
 	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html]
 	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-composition-of-functions.html]
