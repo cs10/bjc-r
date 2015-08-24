@@ -17,14 +17,14 @@ heading: Week 1 (Programming Focus)
 	resource: Lab 1: Building an App [/bjc-r/cur/teaching-guide/U1/lab-pages/1-building-an-app.html]
 	resource: Lab 2: Sprite Drawing and Communication [/bjc-r/cur/teaching-guide/U1/lab-pages/2-sprite-drawing-communication.html]
 	resource: Lab 3: Control Commands [/bjc-r/cur/teaching-guide/U1/lab-pages/3-control-commands.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W01-assignments.html]
+	//resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W01-assignments.html]
 
 heading: Week 2 (Programming Focus)
 	resource: Lab 4: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/lab-pages/4-make-your-own-blocks.html]
 	resource: Lab 5: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/lab-pages/5-block-types.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W02-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W02-assignments.html]
+	//resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W02-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W02-assignments.html]
 	
 heading: Week 3 (Social Implications Focus)
 	resource: Lab 6: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/lab-pages/6-explosion-bits-games-violence.html] 
