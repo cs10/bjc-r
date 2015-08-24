@@ -7,7 +7,7 @@
 
 	<body>
         <h2>Programming Lab 4: Building and Debugging Your Own Blocks</h2>
-        <p>Students learn to create custom blocks and blocks with inputs and to use custom blocks within custom blocks. Using blocks within blocks presages recursion (calling a procedure from within itself), which will be addressed in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>. In this lab, students continue to develop comfort with block programming and the <span class="snap">snap</span> interface as they create their own blocks and identify categories and input variables for their new blocks.</p>
+        <p>Students learn to create their own blocks with inputs and to use their own blocks to build others. Using blocks within blocks presages recursion (calling a procedure from within itself), which will be addressed in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>. In this lab, students continue to develop comfort with block programming and the <span class="snap">snap</span> interface as they create their own blocks and identify categories and input variables for their new blocks.</p>
         <p>Students also build  their skill with debugging, and they consider how a block that works well on its own might cause problems when used within another block. </p>
 
 
@@ -27,7 +27,7 @@
         	<strong>Looking Ahead</strong>
         	<ul>
             	<li>Lab 4  presages recursion.</li>
-                <li>Student will work more with custom block inputs in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 2 Lab 3: Developing more complex programs, Input Types</a>.</li>
+                <li>Students will work more with custom block inputs in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 2 Lab 3: Developing more complex programs, Input Types</a>.</li>
             </ul>
         </div>
         <div>
@@ -41,11 +41,11 @@
                 	Use custom procedures inside procedures, using <code>draw square</code> to draw the petals in <code>draw flower</code> and using <code>draw flower</code> to draw a field of flowers.<br />
                 	<img class="block indent" src="/bjc-r/img/1-introduction/draw-square-petal-flower-6-50-parameters.png" alt="block: draw a flower with 6 petals of size 50" title="block: draw a flower with 6 petals of size 50" />
                 </li>
-                <li>Debug procedures inside procedures, considering why a script to draw a row of squares by repeatedly calling a <code>draw square</code> block that does not return the sprite to the starting orientation fails.</li>
+                <li>Debug procedures inside procedures, considering why a seemingly simple and logical script to draw a row of squares fails. The problem is in the <code>draw square</code> block that, by itself, also succeeds, but does not return the sprite to its starting state.</li>
             </ul>
         </div>
               
-        <h3>Assignments:</h3>
+        <!--<h3>Assignments:</h3>
         <div>
         	<ul>
                 <li>
@@ -72,22 +72,21 @@
                     </ul>
                 </li>
             </ul>
-        </div>
+        </div>-->
 
 
         <h3>Tips:</h3>
         <div>
             <ul>
 				<img class="imageRight" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals" title="flower with 6 square petals" />
-                <li>A very common error, even among experienced <span class="snap">snap</span> programmers, is to forget to specify the palette/color when making a new block. The block then ends up in the grey &quot;Other&quot; category, which is especially hard to find because it shares a palette with Variables. To change a block's palette, open it in the block editor and click on the orange hat block at the top of its script.</li>
-                <li>It's also possible to change the <em>shape</em> of a custom block in the block editor, but only if there are no invocations of the block anywhere in a script, whether in the scripting area (including the block by itself) or in a custom block. You have to delete all such invocations (by dragging them onto the palette area) before clicking on the hat block.</li>
+                <li>A  common slip, even among experienced <span class="snap">snap</span> programmers, is to forget to choose a palette/color when making a new block. The block ends up in the grey &quot;Other&quot; category. This doesn't hurt anything, but makes the block hard to find because gray blocks share a palette with Variables. To change a block's palette, edit it and click on the yellow hat block at the top of its script in the editor.</li>
+                <li>It's also possible to change the <em>shape</em> of a custom block in the block editor, but only if  the block is not currently used in a script or another block and as long as it doesn't even appear in the scripting area. You must delete all such invocations (by dragging them onto the palette area) before clicking on the hat block.</li>
+                <div class="comment">Should it be in the FYTD then? --MF </div>
                 <li>The <code>draw polygon</code> problem in the Take It Further on the <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html" target="new">Adding an Input</a> page is really important; you might want to assign it to everyone. It introduces the idea of <em>generalizing patterns:</em> If you have a family of custom blocks that are mostly the same script but with a little difference in each one, you can make a single block that captures the entire family by adding an input for the part that's different. We'll use this idea many times in the course, but it's especially important in Unit 5 when the result of the generalization is a recursive procedure.</li>
-                <li>Another point about adding inputs is that the custom blocks your students create on this page will have rectangular input slots, not oval as in the primitive blocks, for numeric inputs. If a student questions this, say that this won't affect the usability of their blocks, but that we'll get to distinguishing input types in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html" target="new">Unit 2, Lab 3</a>.</li>
-                <li>About bugs: Beginning programmers often get very upset and discouraged when they see an error message. But experienced programmers are happy about error messages, because they're much easier to fix than the kind of bug that runs to completion without an error message, but does the wrong thing. The error message helps pinpoint where in the code the bug lies. You can say that to students who seem frustrated by an error message.
-                  <ul>
-                    <li>Scratch, which was designed for young children who get upset easily, bends over backwards to avoid error messages. Snap<em>!</em> is more willing to flag an error, because its older users are writing more complicated programs and need the help in debugging that error messages provide.</li>
-                  </ul>
-                </li>
+                <li>Custom blocks that your students create on this page will have rectangular input slots, not oval as in the primitive (built-in) blocks, for numeric inputs. If students ask why, say that this won't affect the usability of their blocks, and that they will learn to distinguish input types in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html" target="new">Unit 2, Lab 3</a>.</li>
+                <div class="comment">I wonder about the effectiveness of this message since the error messages in Snap<em>!</em> are not especially helpful... --MF</div>
+                <li>About bugs: Beginning programmers sometimes treat unexpected results and error messages as signs of failure. The right way to look at them is that they're information that help you take a next step. Instead of seeing the program as &quot;no good,&quot; see it as &quot;not yet done.&quot; Creating bugs, even often, is not a sign that you are no good at programming! Bugs are normal, especially as programs become more complex. And, sometimes, bugs (and error messages) provide not only clues about how to fix the program, but ideas that can be <em>useful</em> in new programs. Experienced programmers can find bugs amusing (except when there's a deadline!) and error messages very helpful.
+				</li>
             </ul>
         </div>
 
