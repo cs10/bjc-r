@@ -34,8 +34,9 @@
 
         <h3>Students will:</h3>
         <div class="sidenoteBig">
-        	<strong>Looking Ahead</strong><p>
-        	Take-It-Further problems 5 and 6 on the last page of this lab—<em>Plurals, continued</em>—foreshadow recursion, an extremely powerful idea that students will study formally later. Students develop a block <code>plural</code> to spell the plural of an English noun, creating separate blocks for various special cases (nouns ending with s, x, h, y, and so on) and otherwise just appending <strong>s</strong>. Then they <em>fix</em> <code>plural</code> to handle a &quot;word ending with a space&quot; and use <code>plural</code>, itself, as the specialist to handle the word after that space has been removed. It may surprise them to see that this solution works even with &quot;words&quot; that end with more than one space. </p>
+        	<strong>Looking Ahead</strong>
+        	<p>
+        	The Take-It-Further  on the last page of this lab—<em>Plurals, continued</em>—foreshadows recursion, a powerful idea that students will study in Unit 6. Students develop  <code>plural</code> to spell the plural of an English noun, creating separate blocks for various special cases (nouns ending with s, x, h, y, and so on) and otherwise just appending <strong>s</strong>. Then they <em>fix</em> <code>plural</code> to handle a &quot;word ending with a space&quot; and use <code>plural</code>, itself, as the specialist to handle the word after that space has been removed. It may surprise them to see that this solution works even with &quot;words&quot; that end with many spaces. </p>
         </div>
         <div>
             <ul>
@@ -49,15 +50,17 @@
               
         <h3>Tips:</h3>
         <div><ul>
-          <li>Getting started: The "getting started" section in any lab involves some pure experimentation—students use code to see what it does—and some puzzles. Some of the puzzles are hard. Let students know that if they've done the experiments, the playing around, they have most of the knowledge they need for the puzzles but puzzles are puzzling! Try, tinker, try something new, talk to your partner. And if you can't solve the puzzle yourself, that's ok. Talk to another group. Even professional programming is like that. Programmers ask each other how to solve problems. Sometimes you <em>get</em> help, sometimes you <em>give</em> it.</li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li><strong>Page 1: Getting started</strong>. The "getting started" section in any lab involves some pure experimentation—students use code to see what it does—and some puzzles. Some of the puzzles are hard. Let students know that if they've done the experiments, the playing around, they have most of the knowledge they need for the puzzles but puzzles are puzzling! Try, tinker, try something new, talk to your partner. And if you can't solve the puzzle yourself, that's ok. Talk to another group. Even professional programming is like that. Programmers ask each other how to solve problems. Sometimes you <em>get</em> help, sometimes you <em>give</em> it.</li>
+          <li><strong>Page 2: Creating predicates</strong>. Problem 2 uses a video to show how to crete the <code>even?</code> block. If you have a projector, it may be easier for your students to watch you demonstrate and copy what you in <span class="snap">snap</span>, instead of trying to have both the student guide and the <span class="snap">snap</span> page open on their machine. For the rest of the problems on the page, avoid demonstrating. Students will learn most by puzzling them out. Take-It-Further challenge B is particularly worthwhile for students who have the time.</li>
+          <li><strong>Page 3: Using multiple <code>if</code> statements</strong>. If time is short, have students do only the first three problems on this page. There will be other opportunities to learn what they will skip here.</li>
+          <li><strong>Pages 4 and 5: Plurals</strong>. The prior pages were introduction and preparation. This project is core. Students learn how to do something more complex with significant sub-parts, a task that requires analysis, experimentation, and debugging. <ul>
+          		<li>All students—but especially those whose English is not native or not "standard"—may have questions about what <em>is</em> the correct plural or correct way to spell it. Encourage them to feel free to check with each other, but also feel free to ask you. Nobody can possibly think of all possible words anyway, so let students feel that it is okay simply to ignore ones that they're not yet sure about. One side-benefit of this project is that it helps student notice how much they <em>do</em>know and take for granted, and how much work it is for a computer to do what humans do naturally! <em>Students may do this kind of activity in another language if they like. The Take It Further on page 4 suggests one such investigation. </em></li>
+                <li><code>plural-h</code> needs to recognize words that end with <em>ch</em> and <em>sh</em> so that it can <code>join</code> <em>es</em> to those. To all other word (for example, ones that end with <em>th</em>), we just <code>join</code> <em>s</em>. To do this, <code>plural-h</code> must look at the next-to-last letter of the word. </li>
+                <li><code>plural-y</code> also needs to look at the next-to-last letter to see if it is a vowel. To words like <em>day</em> and <em>boy</em> with vowels before the <em>y</em>, we just <code>join</code> <em>s</em>. For the others, like <em>spy</em> and <em>fly</em>, we "change" the last letter (<em>y</em>) to <em>i</em> (by removing the <em>y</em> and using <code>join</code> to replace it with an <em>i</em>) and then <code>join</code> <em>es</em>. </li>
+                <li>The <strong>Take-it-further</strong> contains a wonderful surprise that foreshadows a powerful programming technique students will learn in unit 6. All Take-it-furthers are optional but this one is especially worthwhile, and not difficult. If there is time, encourage students to try it. </li>
+          </ul>
+          </li>
+
         </ul></div>
         
         <h3>As a Class:</h3>
