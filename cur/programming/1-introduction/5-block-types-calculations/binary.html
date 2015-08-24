@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 1 Lab 5: Block Types and Calculations</title>
+    </head>
+    <body>
+    	<h2>Numbers in Binary</h2>
+        <p>Here's a collection of powers of two:</p>
+        <table width="80%" border="0" summary="first 16 powers of two">
+            <tr>
+                <td><div align="right">1</div></td>
+                <td><div align="right">2</div></td>
+                <td><div align="right">4</div></td>
+                <td><div align="right">8</div></td>
+            </tr>
+            <tr>
+                <td><div align="right">16</div></td>
+                <td><div align="right">32</div></td>
+                <td><div align="right">64</div></td>
+                <td><div align="right">128</div></td>
+            </tr>
+            <tr>
+                <td><div align="right">256</div></td>
+                <td><div align="right">512</div></td>
+                <td><div align="right">1024</div></td>
+                <td><div align="right">2048</div></td>
+            </tr>
+            <tr>
+                <td><div align="right">4096</div></td>
+                <td><div align="right">8192</div></td>
+                <td><div align="right">16384</div></td>
+                <td><div align="right">32768</div></td>
+            </tr>
+        </table>
+
+		<div class="forYouToDo" id="first">
+        	<ol>
+			    <li>Find three different powers of two that add up to 21.</li>
+                <li>Can you find any other ways to get 21?</li>
+                <li>Find some different powers of two that add up to 66.</li>
+                <li>Can you find any other ways to get 66?</li>
+                <li>Find some different powers of two that add up to 15.</li>
+                <li>Are there any whole numbers (positive integers) that <em>aren't</em> a sum of two different powers of two?</li>
+            </ol>
+        </div>
+        
+        
+        <p>In <strong>decimal</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:</p>
+    	<div class="sidenote">The number "XVIII" in Roman numerals still represents the same number of things when it's written in decimal as "18." In binary, we write "10010" for "18", but it's still the same number.</div>
+    	<p class="center"> 9827  &nbsp; = &nbsp; 9 &times;  10<sup>3</sup> &nbsp;+&nbsp; 8 &times;  10<sup>2</sup> &nbsp;+&nbsp; 2 &times;  10<sup>1</sup> &nbsp;+&nbsp; 7 &times;  10<sup>0</sup></p>
+        <!--<div class="endnote"><strong>Why right to left?</strong>  the rightmost digit is always multiplied by 10<sup>0</sup>, but in a long number such as 432786149314152718281828459045 you can't tell what power of 10 to multiply the leftmost digit by, until you count up to it from the right.)</div>-->
+
+		<p><strong>Binary</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. So, for example:</p>
+        
+        <p align="center">10010 (in binary) &nbsp; = &nbsp; 1 &times; 2<sup>4</sup>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; 1 &times; 2<sup>1</sup> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18 (in decimal)</p>
+        
+        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> <br />
+
+<p>Decimal notation is called <strong>base 10</strong>. It's the usual way of representing numbers with the digits "0-9". Binary is <strong>base 2</strong>. It only uses two digits: "0" and "1". </p>
+        <p>
+        	In both systems, place value always starts from the units place and goes up <em>right to left</em> (just like you learned in elementary school):
+            <table class="bordered">
+                <tr>
+                	<th colspan="7" style="text-align:center;">base 10:</th>
+                </tr>
+                <tr>
+                	<td></td>
+                	<td></td>
+                	<td>	0</td>
+                	<td>9</td>
+                	<td>8</td>
+                	<td>2</td>
+                	<td>7</td>
+                </tr>
+                <tr>
+                    <td>(higher places)</td>
+                    <td>...</td>
+                    <td>ten-thousands place</td>
+                    <td>thousands place</td>
+                    <td>hundreds place</td>
+                    <td>tens place</td>
+                    <td>units place</td>
+                </tr>
+            </table>
+            
+            <p class="center"><img class="noshadow" src="/bjc-r/img/6-recursive-reporters/r-to-l.png" alt="right-to-left arrow" title="right-to-left arrow" /></p>
+
+            <table class="bordered">
+                <tr>
+                	<th colspan="10" style="text-align:center;">base 2:</th>
+                </tr>
+                <tr>
+                	<td></td>
+                	<td></td>
+                	<td>1</td>
+                	<td>0</td>
+                	<td>0</td>
+                	<td>0</td>
+                	<td>1</td>
+                	<td>0</td>
+                	<td>0</td>
+                	<td>1</td>
+                </tr>
+                <tr>
+                    <td>(higher places)</td>
+                    <td>...</td>
+                    <td>128s place</td>
+                    <td>64s place</td>
+                    <td>32s place</td>
+                    <td>sixteens place</td>
+                    <td>eights place</td>
+                    <td>fours place</td>
+                    <td>twos place</td>
+                    <td>units place</td>
+                </tr>
+            </table>
+        </p>
+	
+        <p>Computers store information in binary using bits and bytes. A bit is a "0" or "1". A byte is 8 bits grouped together like "10001001", which is binary for the number "137". </p>
+
+        <div class="forYouToDo">
+            <ol start="7">
+                <li>
+                    Represent these bytes in decimal notation:
+                    <ol>
+                        <li>10000111</li>
+                        <li>00100000</li>
+                        <li>00011111</li>
+                    </ol>
+                </li>
+                <li>
+                    Represent these decimal numerals in binary notation:
+                    <ol>
+                        <li>27</li>
+                        <li>28</li>
+                        <li>239</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+What's the <em>rightmost</em> digit in the binary representation of 15551212?</li>
+                <li>What's the rightmost bit ("<strong>b</strong>inary dig<strong>it</strong>") of 123456789?</li>
+                <li>What numbers can be represented in a single bit?</li>
+                <li>What numbers can be represented in a single byte?</li>
+                <!--<li>
+                    Write a reporter called <code>decimal-&gt;binary</code> that takes a decimal whole number as input and reports  the same number in binary:<br />
+                    <img class="indent" src="/bjc-r/img/6-recursive-reporters/9827.png" alt="decimal-&gt;binary of 9827" title="decimal-&gt;binary of 9827" />
+				</li>-->            
+            </ol>
+        </div>
+
+
+	<!--I think the rest fo this is too much... --MF
+    <div class="endnote">
+        To solve this problem, you're going to new <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html#mod" target="_blank">the <code>mod</code> operator</a>:<br />
+        <img src="/bjc-r/img/6-recursive-reporters/mod.png" alt="mod" /><br />
+        In the Operators palette there's a block <code>sqrt of</code> in which the word <code>sqrt</code> is part of a menu of mathematical operations. From that menu, choose <code>floor</code> to get the integer part of the quotient. (It's called &quot;floor&quot; because it's the nearest integer <em>smaller than </em>its input, as opposed to <code>round</code>, which finds the nearest integer whether smaller or larger.) 
+        <img src="/bjc-r/img/6-recursive-reporters/quotient.png" alt="quotient" />
+    </div>
+	        
+            <h2>Binary numbers: Hint</h2>
+<p>Okay, here's the hint:  Positional notation works from right to left.</p>
+<div class="forYouToDo" id="first">
+<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+            <div><ol><li>Quick:   How can Snap<em>!</em> know the rightmost bit of a number represented in binary?</li>
+  <li>  How will you tell Snap<em>!</em> about this?  (It's the base case.)</li>
+  <li>Okay, now write the block script:
+  <p><img src="/bjc-r/img/6-recursive-reporters/hint.png" alt="hint: if report else report" /></p>
+  <p>Don't turn the page until you have this working. Don't forget</p>
+<p align="left"><img src="/bjc-r/img/6-recursive-reporters/quotient.png" alt="quotient" /><img src="/bjc-r/img/6-recursive-reporters/mod.png" alt="mod" /></p>
+<p align="left">but dividing by 2 instead of by 5.</p>
+
+  </li></ol></div></div>-->
+    
+    
+    </body>
+</html>
