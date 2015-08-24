@@ -2,18 +2,18 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 1 Week 2 Teacher Guide</title>
+		<title>Unit 1 Teacher Guide</title>
 	</head>
 
 	<body>
         <h2>Programming Lab 4: Building and Debugging Your Own Blocks</h2>
-        <p>Students learn to create custom blocks, custom blocks inputs, and custom blocks used within other custom blocks. Using blocks within blocks continues to presage recursion (calling a procedure from within itself), which will be addressed in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>. Here, students continue to develop comfort with block programming and the <span class="snap">snap</span> interface as they create their own blocks and identify categories and input variables for their new blocks.</p>
-        <p>Students also build on their skill with debugging considering, in particular, how a block that works well on its own might cause problems when used within another block if it is assumed that the inner block preserves the state of the sprite, but it actually does not. Whenever a program is not exhibiting the expected behavior, it's a good idea to consider that the bug may not only be in a sub procedure of the script, but also be in the way that sub procedures combine and relate to each other when embedded.</p>
+        <p>Students learn to create custom blocks and blocks with inputs and to use custom blocks within custom blocks. Using blocks within blocks continues to presage recursion (calling a procedure from within itself), which will be addressed in <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/5-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 5: Recursion</a> and <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursive-reporters.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 6: Recursive Reporters</a>. In this lab, students continue to develop comfort with block programming and the <span class="snap">snap</span> interface as they create their own blocks and identify categories and input variables for their new blocks.</p>
+        <p>Students also build on their skill with debugging, and they consider how a block that works well on its own might cause problems when used within another block if it is assumed that the inner block preserves the state of the sprite but it actually does not. Whenever a program is not exhibiting the expected behavior, it's a good idea to consider that the bug may not be in a sub procedure of the script but in the way that sub procedures combine and relate to each other when embedded.</p>
 
 
         <h3>Pacing</h3>
         <p>
-        	The 5 lab pages could be split across two or three days. Expected times to complete Lab 3 follow: <ul>
+        	The 5 lab pages could be split across two or three days (55-80 minutes). Expected times to complete Lab 4 follow: <ul>
                 <li>10-15 minutes on Designing Custom Blocks</li>
                 <li>5-10 minutes on Adding an Input</li>
                 <li>15-20 minutes on Debugging Custom Blocks</li>
@@ -23,12 +23,10 @@
         </p>
         
         <h3>Prepare:</h3>
-		<div class="todo">These are starting getting similar across weeks. Still helpful or training teachers not to read? -MF +1 BH.</div>
         <div>
             <ul>
-                <li>Review the <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Unit 1 Student Programming Lab 4, Building and Debugging Your Own Blocks</a>.</li>
-                <li>Prepare a <a href="/bjc-r/cur/teaching-guide/U1/general-support/computing-in-the-news.html" target="_blank">Computing in the News</a> story.</li>
-            	<li>Prepare several other <a href="/bjc-r/cur/teaching-guide/U1/general-support/openers.html" target="_blank">Openers</a>.</li>            
+				<li>Prepare several <a href="/bjc-r/cur/teaching-guide/U1/general-support/openers.html#computingnews" target="_blank">Computing in the News</a> stories.</li>
+           
             </ul>
         </div>
 
@@ -43,27 +41,80 @@
         </div>
         <div>
             <ul>
-                <li>Create procedures with  inputs, building on <a href="/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Lab 1</a> work with drawing a square.</li>
-                <li>Use custom procedures inside procedures, using <code>draw square</code> to draw the petals in <code>draw flower</code> and using <code>draw flower</code> to draw a field of flowers.</li>
+                <li>
+                	Create procedures with inputs, building on <a href="/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Lab 2</a> work with drawing a square.<br />
+					<img class="indent" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" alt="Script to draw a square" title="Script to draw a square"  />
+
+				</li>
+				<li>
+                	Use custom procedures inside procedures, using <code>draw square</code> to draw the petals in <code>draw flower</code> and using <code>draw flower</code> to draw a field of flowers.<br />
+                	<img class="block indent" src="/bjc-r/img/1-introduction/draw-square-petal-flower-6-50-parameters.png" alt="block: draw a flower with 6 petals of size 50" title="block: draw a flower with 6 petals of size 50" />
+                </li>
                 <li>Debug procedures inside procedures, considering why a script to draw a row of squares by repeatedly calling a <code>draw square</code> block that does not return the sprite to the starting orientation fails.</li>
             </ul>
         </div>
               
 
         <h3>As a Class:</h3>
-		<div class="todo">These too are getting similar across weeks. Still helpful or no? -MF</div>
+		<img class="imageRight" src="/bjc-r/img/1-introduction/count-up-num.png" alt="count up 'num': for i = 1 to 10 (say i for 1 secs)" title="count up 'num': for i = 1 to 10 (say i for 1 secs)" />
         <div>
         	<ul>
-        		<li>Work through the <a href="/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">Programming Lab 4: Building and Debugging Your Own Blocks</a> and the relevant Week 2 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W02-activities.html" target="_blank">Activities</a> including the <a href="/bjc-r/cur/teaching-guide/U1/extras/W02-activities.html#discussion" target="_blank">discussion on Abstraction</a>.</li>
-                <li>Consider working through the Week 2 <a href="http://localhost/bjc-r/cur/teaching-guide/U1/extras/W02-assignments.html" target="_blank">Assignments</a> that you don't assign as homework together as a class.</li>
+				<li>
+                	Make a Prediction: <a href="https://docs.google.com/document/d/1wWBFmUhgqLIZBf9NdUE9lL8zNxNb4sXxsTomdh8TAes/edit?usp=sharing" target="_blank">Count from 1 to <code>num</code></a>
+                    <ul>
+                    	<li>Ask students to predict what this script does. Students may notice the "hat" block, which here names the procedure being defined, <code>count up (num)</code>. From their work with <a href="/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-for-block.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html" target="_blank">the <code>for</code> block</a>, students will likely be able to determine that this script "says" the numbers from 1 to <code>num</code> each for 1 second.</li>
+                    </ul>
+                </li>
+				<li>
+                	Discussion/Writing Prompts:<a name="discussion" class="anchor">&nbsp;</a>These "abstraction" prompts can be used in sets or spread across several days and are for either individual or collective reflection:
+            		<div class="sidenote">Read more about <a href="/bjc-r/cur/teaching-guide/U1/general-support/discussion.html" target="_blank">Facilitating a Classroom Discussion</a></div>
+                    <ul>
+                        <li>What is abstraction? (See <a href="http://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-curriculum-framework.pdf#page=9" target="_blank">Computational Thinking Practice 3: Abstracting</a> and <a href="http://secure-media.collegeboard.org/digitalServices/pdf/ap/ap-computer-science-principles-curriculum-framework.pdf#page=13" target="_blank">Big Idea 2: Abstraction</a>.)</li>
+                        <li>How is abstraction important to programming?</li>
+                        <li>How is calling blocks within blocks similar to and different from nesting repeats in repeats?</li>
+                    </ul>
+                </li>       
+            </ul>
+        </div>
+
+
+        <h3>Assignments:</h3>
+        <div>
+        	<ul>
+                <li>
+                    You may wish to specifically assign one or more of the optional "Take it Further" problems:
+                    <ul>
+                        <li>
+                            Designing Custom Blocks:
+                            <img class="imageRight" src="/bjc-r/img/1-introduction/house.jpg" alt="House" title="House" />
+                            <ul>
+                                <li><a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html#further" target="_blank">Creating a <code>draw triangle</code> block</a></li>
+                                <li><a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html#further" target="_blank">Creating a <code>draw house</code> block (using the <code>draw triangle</code> block)</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            Adding an Input:
+                            <ul>
+                                <li><a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html#further" target="_blank">Extending <code>draw triangle</code> and <code>draw house</code> to accept a size input</a></li>
+                                <li><a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html#further" target="_blank">Creating a <code>draw polygon</code> block</a></li>
+                                <li><a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html#further" target="_blank">Nesting polygons with inputs for number of sides and sidelength</a></li>
+                                <img class="indent" src="/bjc-r/img/prog/polyblock.png" alt="draw polygon () sides of length ()" title="draw polygon () sides of length ()" />
+        
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
 
 
         <h3>Tips:</h3>
-        <div><ul>
-        	<li>On the <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html" target="_blank">Using Blocks within Blocks</a> student lab page, students are given only a general instruction to draw a field of flowers. Encourage students to get creative! If students need help focusing  their ideas, suggest they build up their project one step at a time: first building the <code>draw square</code> block, then the <code>draw flower</code> block (perhaps without inputs at first and adding inputs for number and size of petals depending on available time), and lastly creating a script that moves the sprite randomly around the stage and calls the <code>draw flower</code> block. Students might expand this project by changing the size or color of the pen from flower to flower or by changing the polygons used in the flowers from squares to triangles, etc.</li>
-        </ul></div>
+        <div>
+            <ul>
+				<img class="imageRight" src="/bjc-r/img/drawing/flower-with-6-square-petals.png" alt="flower with 6 square petals" title="flower with 6 square petals" />
+                <li>On the <a href="/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html" target="_blank">Using Blocks within Blocks</a> student lab page, students are given only a general instruction to draw a field of flowers. Encourage students to get creative! If students need help focusing  their ideas, suggest they build up their project one step at a time: first building the <code>draw square</code> block, then the <code>draw flower</code> block (perhaps without inputs at first and adding inputs for number and size of petals depending on available time), and lastly creating a script that moves the sprite randomly around the stage and calls the <code>draw flower</code> block. Students might expand this project by changing the size or color of the pen from flower to flower or by changing the polygons used in the flowers from squares to triangles, etc.</li>
+            </ul>
+        </div>
 
             
         <!--<h3>Solutions</h3>
