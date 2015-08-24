@@ -11,13 +11,14 @@ heading: Programming Lab 1: Conditional Blocks
 	resource: Creating Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/2-creating-predicates.html]
 	    //remove/replace some quiz questions
 	resource: Using Multiple <code>If</code> Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/3-multiple-ifs.html]
-	raw-html: <img class="imageRight" src="/bjc-r/img/cond/mystery.png" alt="mystery sum script" title="mystery sum script" />
+    raw-html: <img class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/plural-boss-with-result.png"  alt="plural boss (with result)">
 	resource: Project: Developing a Block That Makes Plurals [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html]
 	resource: Plurals Project, Continued [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/5-plurals2.html]
 
 
 heading: Programming Lab 2: Script Variables
-	resource: Script Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
+	resource: Script Variables 	
+	raw-html: <img class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap" />[/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/1-script-variables.html]
 	resource: Script Variable Projects [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html]
 	resource: Building a Useful Collection of Predicates [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/3-predicates.html] // chop out relevant pieces
 	resource: Analyzing, Debugging, and Simplifying Code [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/4-analyzing-debugging-simplifying.html]
