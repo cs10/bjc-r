@@ -284,17 +284,17 @@ div.newProject span.text {
 
 /* Development Updates Table */
 
-.devtable {
+.bordered {
   margin-left: auto;
   margin-right: auto;
 }
 
-.devtable th {
+.bordered th {
   font-weight: bold;
   text-align: center;
 }
 
-.devtable td, th {
+.bordered td, th {
   border: 2px solid black;
   padding: 5px;
 }
