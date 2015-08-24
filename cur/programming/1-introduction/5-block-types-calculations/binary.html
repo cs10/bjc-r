@@ -4,6 +4,11 @@
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Unit 1 Lab 5: Block Types and Calculations</title>
+    <style type="text/css">
+    .orange {
+	color: #FF8000;
+}
+    </style>
     </head>
     <body>
     	<h2>Numbers in Binary</h2>
@@ -48,19 +53,18 @@
         
         
         <p>In <strong>decimal</strong> notation, each place value represents a <strong>power of ten</strong>: the units place (10<sup>0</sup> = 1), the tens place (10<sup>1</sup> = 10), the hundreds place (10<sup>2</sup> = 100), the thousands place (10<sup>3</sup> = 1000), etc. So, for example:</p>
-    	<div class="sidenote">The number "XVIII" in Roman numerals still represents the same number of things when it's written in decimal as "18." In binary, we write "10010" for "18", but it's still the same number.</div>
+    	<div class="sidenote">The symbol "XVIII" in Roman numerals  represents the same number as the decimal representation "18." In binary, we write "10010" for "18," but it's still the same number. So there's no such thing as a &quot;Binary number,&quot; just binary <em>representation.</em></div>
     	<p class="center"> 9827  &nbsp; = &nbsp; 9 &times;  10<sup>3</sup> &nbsp;+&nbsp; 8 &times;  10<sup>2</sup> &nbsp;+&nbsp; 2 &times;  10<sup>1</sup> &nbsp;+&nbsp; 7 &times;  10<sup>0</sup></p>
         <!--<div class="endnote"><strong>Why right to left?</strong>  the rightmost digit is always multiplied by 10<sup>0</sup>, but in a long number such as 432786149314152718281828459045 you can't tell what power of 10 to multiply the leftmost digit by, until you count up to it from the right.)</div>-->
 
 		<p><strong>Binary</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. So, for example:</p>
         
-        <p align="center">10010 (in binary) &nbsp; = &nbsp; 1 &times; 2<sup>4</sup>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; 1 &times; 2<sup>1</sup> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18 (in decimal)</p>
-        
-        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> <br />
+        <p align="center">10010 (in binary) &nbsp; = &nbsp; <span class="orange">1 &times; 2<sup>4</sup></span>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <span class="orange">1 &times; 2<sup>1</sup></span> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18 (in decimal)</p>
+        <br />
 
-<p>Decimal notation is called <strong>base 10</strong>. It's the usual way of representing numbers with the digits "0-9". Binary is <strong>base 2</strong>. It only uses two digits: "0" and "1". </p>
+<p>Decimal notation is called <strong>base 10</strong>. It's the usual way of representing numbers with the digits "0-9." Binary is <strong>base 2</strong>. It only uses two digits: "0" and "1." </p>
         <p>
-        	In both systems, place value always starts from the units place and goes up <em>right to left</em> (just like you learned in elementary school):
+        	In both systems, place value always starts from the units place and goes up <em>right to left</em> (just as you learned in elementary school):
             <table class="bordered">
                 <tr>
                 	<th colspan="7" style="text-align:center;">base 10:</th>
