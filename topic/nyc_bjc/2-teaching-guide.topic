@@ -1,13 +1,15 @@
 title: Teaching Guide for Unit 2: Conditionals, Abstraction, and Debugging
 
 {
+
 h3: Purpose
+	raw-html:<div class="comment">Is anything from <a href="/bjc-r/cur/teaching-guide/U2/u2-main.html" target="_blank">u2-main.html</a> or <a href="/bjc-r/cur/teaching-guide/U2/openers/snap-judgment.html" target="_blank">Snap Judgment</a> still needed? --MF</div>
 	raw-html: <p><strong>Programming Focus:</strong> Conditionals, Abstraction, and Debugging</p>
     raw-html: <p>The major programming focus of Unit 2 is on structure and abstraction. Starting with the challenging task of teaching the computer to generate the plurals of nouns (e.g., butterfly &rarr; butterflies, moth &rarr; moths, bush &rarr; bushes), students begin thinking about the <em>structure of programs</em>. They learn  to test for special cases, and how to use, sequence, and optimize the conditionals that control a program based on those cases. They learn to chunk details of a process into meaningful, recognizable parts, creating &quot;specialist&quot; blocks so that the main top-level block can show the structure of the program uncamouflaged by the details. This makes reading and debugging code easer, and  allows the &quot;specialist&quot; blocks to be refined without requiring revision to the overall program. All of these are at the heart of the Abstraction standard of AP CS Principle and are core to mathematical thinking as well as computer science.</p> <p> Students also begin to think about what makes correctly working code &quot;good&quot; code&mdash;is it the brevity, the clarity, or some combination? (They do not yet encounter situations in which the speed-efficiency of the code can be a criterion.) This, too, helps them begin to attend to structure. They learn to think about debugging by deliberately looking for ways to make a program fail, and then finding ways to avert failures.</p>
 	raw-html: <p><strong>Social Implications Focus:</strong> Media, Sharing, and Copyright; Innovations and Computing in Other Fields</p>
 	
 h3: Pacing
-	raw-html:<div class="todo">Paul, I just copied and edited from U1. Do what makes sense here. --MF</div><p>The 2 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 2 can be distributed in whatever way works best for your class. Experiment! Find the rhythm that works for your students. Here are two possibilities: <ul><li>Work through the 3 programming labs in the first 2 weeks and then the social implications Labs 4 and 5 in the last 2 weeks as presented below.</li><li>Work through the 3 programming labs over all 4 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p>
+	raw-html:<div class="todo">Paul, I just copied and edited from U1. Do what makes sense here. --MF</div><p>The 2 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 2 can be distributed in whatever way works best for your class. Experiment! Find the rhythm that works for your students. Here are two possibilities: <ul><li>Work through the 3 programming labs in the first 2 weeks and then the social implications Labs 4 and 5 in the last 2 weeks as presented below.</li><li>Work through the 3 programming labs over all 4 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p><div class="todo">Could these also be done programming, implications, programming, implications (4657)? --MF</div>
 	
 h3: Highlighting Computational Thinking 
 	raw-html: <p>Of the six AP CS Principles Computational Thinking Practices, not all can be thought of as specific to computing technology. For example, while Communicating and Collaborating are certainly <em>essential</em> elements of good CS practice, they are  essential elements of good practice in virtually <em>all</em> domains. Similarly, Analyzing Problems and Artifacts is core to scientific and technical fields from archaeology to zoology and so is also not really specific to CS. These essential practices can (and should) certainly be developed in other subject areas, but BJC AP CS does its share both in service of computer science, and in service of all the other domains that require Communicating and Collaborating. </p> <p> The increased challenge of Unit 2's programs gives pair programmers good reason and plenty of practice to develop communication and collaboration skills, because those skills are genuinely needed. Over the course of the year, the discussions of social implications also helps to develop those skills, and create a context for broader discussion of hard social issues. The focus on structure, abstraction, and debugging connects the AP CS Learning Objectives (especially 1, 2, and 5) and Computational Thinking Practices (P2 through P5) with the Common Core State Standards for Mathematical Practice, in particular standards MPS 3 (viable argument and critiquing reasoning), MPS 7 (structure), and MPS 6 (statement with precision).</p>
@@ -16,23 +18,24 @@ h3: Highlighting Computational Thinking
 heading: Week 4 (Programming Focus)
 	resource: Lab 1: Conditional Blocks [/bjc-r/cur/teaching-guide/U2/lab-pages/1-conditional-blocks.html]
 	resource: Lab 2: Script Variables [/bjc-r/cur/teaching-guide/U2/lab-pages/2-script-variables.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W04-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W04-assignments.html]
+	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W04-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W04-assignments.html]
 
 heading: Week 5 (Programming Focus)
 	resource: Lab 3: Developing More Complex Programs [/bjc-r/cur/teaching-guide/U2/lab-pages/3-developing-more-complex-programs.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W05-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W05-assignments.html]
+	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W05-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W05-assignments.html]
 	
 heading: Week 6 (Social Implications Focus)
+	raw-html: <img src="/bjc-r/img/1-introduction/topic1-kaleidoscope.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Lab 4: Privacy; Community and Online Interactions [/bjc-r/cur/teaching-guide/U2/lab-pages/4-privacy-community-online-interactions.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W06-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W06-assignments.html] 
+	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W06-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W06-assignments.html] 
 	
 heading: Week 7 (Social Implications Focus)
 	resource: Lab 5: Bits and Information [/bjc-r/cur/teaching-guide/U2/lab-pages/5-bits-and-information.html] 
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W07-activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W07-assignments.html]
+	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W07-activities.html]
+	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W07-assignments.html]
 	
 heading: Investigations
 	resource: Checking for Leap Years [/bjc-r/cur/teaching-guide/U2/investigations/checking-for-leap-years.html] 

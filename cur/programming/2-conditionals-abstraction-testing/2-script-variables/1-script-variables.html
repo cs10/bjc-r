@@ -17,7 +17,7 @@
         </div> -->
         <p>    
     <p>You have used variables that the <code>for</code> block <em>gave</em> you. <img src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"></p>
-              <p> You also <em>created</em> variables <img src="/bjc-r/img/2-conditionals-abstraction-testing/plural-hat-block-and-first-line-only.png" width="200" alt="plural-hat-block-and-first-line-only"> as inputs to blocks that you made.</p>
+              <p> You also <em>created</em> variables <img class="noshadow" src="/bjc-r/img/2-conditionals-abstraction-testing/plural-hat-block-and-first-line-only.png" width="200" alt="plural-hat-block-and-first-line-only"> as inputs to blocks that you made.</p>
     <p> <div class="sidenote"> A script variable  exists only while the script is running. </div>  Sometimes you will need <em>extra</em> variables to store information temporarily while your script is running. The 
     <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> block lets you do that.</p>
               </p>
@@ -36,7 +36,7 @@
         		
      
                 <li>This script draws polygons with a random number of sides.
-                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
+                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
                 <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div>
                 <ol>
                 <li>Make the script and run it several times to see what it draws.</li>
@@ -49,7 +49,7 @@
                 </li>
         		<li>
                 	<strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
-                    <p><img src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" /></p>
+                    <img class="indent" src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
             	</li>
       </ol>
     </div>
@@ -59,29 +59,37 @@
         <div class="forYouToDo">
 	        <ol start="5">
         
-                <li>Here is one example.
-                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result"></p>
+                <li>
+                	Here is one example.<br />
+                  	<img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result">
                     <ol> 
                         <li> Build it, try it, and figure out why <img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(result)-for-2-secs.png"  alt="say-(result)-for-2-secs"> says one thing in step 3 and a different thing in step 5.</li>
                         <li>Change the 5 to a 7 and <em>predict</em> what this script will do.</li>
                     </ol>
+                </li>
                    
-         <li>This script leads up to a   more useful example. 
-                            <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
+ 		        <li>
+                	This script leads up to a   more useful example. 
+					<p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
                     <ol> 
                         <li> Build it, try it, and figure out how it does what it does. </li>
                         <li> Change the <code> times 5</code> to <code> times 3</code> and <em>predict</em> what it will do.</li>
-                        <li> Then change the <code> repeat 2</code> to <code> repeat 3</code>. 
-                        <li> Build a <strong>reporter</strong> block named <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise-base-to-the-power-of-exponent.png" alt="raise-base-to-the-power-of-exponent">.
-                          <p>The script you created should help. Put the variables <code>(base)</code> and <code>(exponent)</code> in the right places inside that script.</p>
-                          <p>Your block should work like this:</p>
-                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(3)(with-result).png" alt="raise 2 to the power 3 (result = 8)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(5)(with-result).png" alt="raise 2 to the power 5 (result = 32)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(3)-to-the-power(4)(with-result).png" alt="raise 3 to the power 4 (result = 81)"><img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(1)(with-result).png" alt="raise 2 to the power 1 (result = 2)"></p>
-                    <p>Make sure it also works for this case: <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(5)-to-the-power(0)(with-result).png" alt="raise 5 to the power 0 (result = 1)"></p>
-                             <p>Check (as always!) to make sure it works as you expect.</p></li> 
+                        <li> Then change the <code> repeat 2</code> to <code> repeat 3</code>. </li>
+                        <li> 
+                        	Build a <strong>reporter</strong> block named <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise-base-to-the-power-of-exponent.png" alt="raise-base-to-the-power-of-exponent">.<br />
+                            The script you created should help. Put the variables <code>(base)</code> and <code>(exponent)</code> in the right places inside that script.<br />
+                            Your block should work like this:<br />
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(3)(with-result).png" alt="raise 2 to the power 3 (result = 8)">
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(5)(with-result).png" alt="raise 2 to the power 5 (result = 32)">
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(3)-to-the-power(4)(with-result).png" alt="raise 3 to the power 4 (result = 81)">
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(1)(with-result).png" alt="raise 2 to the power 1 (result = 2)"><br />
+                            Make sure it also works for this case: <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(5)-to-the-power(0)(with-result).png" alt="raise 5 to the power 0 (result = 1)"><br />
+                            Check (as always!) to make sure it works as you expect.
+                        </li> 
                     </ol>
               </li>
               <li>Here is another example.
-                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-remover-script.png" alt="vowel-remover-script, first line: script variables (result)(somewords); second line: set result to (empty slot); third line: set somewords to (any sentence you like); fourth line: for i = 1 to length of (somewords) {if not vowel? letter i of somewords, set result to (join result letter i of somewords)}; fifth line: say result"></p>
+                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-remover-script.png" alt="vowel-remover-script, first line: script variables (result)(somewords); second line: set result to (empty slot); third line: set somewords to (any sentence you like); fourth line: for i = 1 to length of (somewords) {if not vowel? letter i of somewords, set result to (join result letter i of somewords)}; fifth line: say result"></p>
                   <ol> 
                             <li> Build it, try it, and figure out <em>how</em> it does what it does. </li>
                             <li> Change the code so that it puts in hyphens (-) where the vowels used to be.</li>
@@ -89,11 +97,11 @@
 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels.png" alt="say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels"></p>
                             If you like, compare the results you get from similar length sentences in two different languages. You may get very interesting results.</li>
                    </ol> 
-              </li>
-                  Save your work.  <img src="/bjc-r/img/icons/save-mini.png" alt="Save your work" title="Save your work" />    
-       	  </ol>
-</div>
-		
+				</li>
+            </ol>
+            <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
+        </div>
+	
 
 	</body>
 </html>

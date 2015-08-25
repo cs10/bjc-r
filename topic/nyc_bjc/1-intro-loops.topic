@@ -1,4 +1,4 @@
-title: Unit 1: Introduction to Snap<em>!</em>
+title: Unit 1: Introduction to Snap<em>!</em> Programming
 
 {
 
@@ -53,16 +53,16 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
 heading: Programming Lab 5: Block Types and Calculations
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-sprite-position-direction.html]
 	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html]
-	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-predicates-logic.html]
-	quiz: <code>Random</code> Block Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-random-self-check.html]
+	resource: Binary Numerals [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-binary.html]
+	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html]
+	quiz: <code>Random</code> Block Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/5-random-self-check.html]
 	
  	raw-html: <hr />
 	
 heading: Social Implications Lab 6: Explosion of Bits; Games and Violence
-	resource: Getting Started [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/getting-started.html]
+	resource: Technology Autobiography [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/getting-started.html]
 	resource: Computing Innovations [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/what-are-some-social-implications.html]
 	resource: Tanya Rider's Story [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/tanya-rider.html]
-	// raw-html: <img src="/bjc-r/img/1-introduction/topic1-kaleidoscope.gif" class="imageRight" alt="Kaleidoscope Script" />
 	resource: Do violent video games contribute to youth violence? [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/violent-video-games.html]
 	resource: Is technology good or bad? [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/good-or-bad.html]
 

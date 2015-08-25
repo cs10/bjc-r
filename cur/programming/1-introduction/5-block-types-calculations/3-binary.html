@@ -5,13 +5,13 @@
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Unit 1 Lab 5: Block Types and Calculations</title>
     <style type="text/css">
-    .orange {
-	color: #FF8000;
+    .blue {
+	color: #00C;
 }
     </style>
     </head>
     <body>
-    	<h2>Numbers in Binary</h2>
+    	<h2>Binary Numerals</h2>
         <p>Here's a collection of powers of two:</p>
         <table width="80%" border="0" summary="first 16 powers of two">
             <tr>
@@ -59,7 +59,7 @@
 
 		<p><strong>Binary</strong> uses the same idea but with <strong>powers of two</strong> instead of powers of ten. So, for example:</p>
         
-        <p align="center">10010 (in binary) &nbsp; = &nbsp; <span class="orange">1 &times; 2<sup>4</sup></span>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <span class="orange">1 &times; 2<sup>1</sup></span> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18 (in decimal)</p>
+        <p align="center">10010 (in binary) &nbsp; = &nbsp; <span class="blue">1 &times; 2<sup>4</sup></span>	 &nbsp;+&nbsp; 0 &times; 2<sup>3</sup> &nbsp;+&nbsp; 0 &times; 2<sup>2</sup> &nbsp;+&nbsp; <span class="blue">1 &times; 2<sup>1</sup></span> &nbsp;+&nbsp; 0 &times; 2<sup>0</sup> &nbsp; = &nbsp; 16 &nbsp;+&nbsp; 2 &nbsp; = &nbsp; 18 (in decimal)</p>
         <br />
 
 <p>Decimal notation is called <strong>base 10</strong>. It's the usual way of representing numbers with the digits "0-9." Binary is <strong>base 2</strong>. It only uses two digits: "0" and "1." </p>
@@ -152,6 +152,7 @@ What's the <em>rightmost</em> digit in the binary representation of 15551212?</l
                 <li>What's the rightmost bit ("<strong>b</strong>inary dig<strong>it</strong>") of 123456789?</li>
                 <li>What numbers can be represented in a single bit?</li>
                 <li>What numbers can be represented in a single byte?</li>
+                <li>What numbers can be represented in a kilobyte?</li>
                 <!--<li>
                     Write a reporter called <code>decimal-&gt;binary</code> that takes a decimal whole number as input and reports  the same number in binary:<br />
                     <img class="indent" src="/bjc-r/img/6-recursive-reporters/9827.png" alt="decimal-&gt;binary of 9827" title="decimal-&gt;binary of 9827" />
@@ -160,7 +161,7 @@ What's the <em>rightmost</em> digit in the binary representation of 15551212?</l
         </div>
 
 
-	<!--I think the rest fo this is too much... --MF
+	<!--I think the rest of this is too much... --MF
     <div class="endnote">
         To solve this problem, you're going to new <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html#mod" target="_blank">the <code>mod</code> operator</a>:<br />
         <img src="/bjc-r/img/6-recursive-reporters/mod.png" alt="mod" /><br />

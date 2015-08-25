@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 2 Week 4 Teacher Guide</title>
+		<title>Unit 2 Teacher Guide</title>
 	</head>
 
 	<body>
@@ -10,18 +10,29 @@
         <p>In this lab, students focus attention on  <strong>conditionals</strong>&mdash;especially <code>if-else</code> and <code>if</code>&mdash;to control the behavior of their programs. Students learn to use <strong>predicates</strong> (blocks that report <code>true</code> or <code>false</code> based on tests they perform) such as <code>&lt;</code> or <code>=</code>, and learn to build other special purpose predicates. Early on, they  test  the <code>direction</code> and <code>y position</code> of the sprite, and base actions on the results.</p>
         <div class="endnote"><strong>Introducing conditionals. </strong> An ATM  is programmed to let you choose whether to deposit or withdraw. The program does that by placing those choices somewhere on its screen and then <em>testing</em> to determine where you touch or which button you press. The action the program takes or the  choice it offers next is conditional; it depends on what input you've given it with your touch. Another part of the program may test the size of the withdrawal you request, and indicate if that is too large, or not an amount it can give; or it may deliver that amount. Your smart phone's screen works a similar way. It knows only where you touch, but because it also knows what word or picture it put in that location, it can &quot;know what you want&quot;&mdash;<code>if</code> you touch <em>here</em>, do one thing, <code>else</code> do something else. Distinguishing conditions and basing action on the distinction is central to all  programming.</div>
         
-<p>Small projects focus especially on using multiple <code>if</code> statements to distinguish multiple conditions. Students design a program that tests to see whether &quot;red,&quot; &quot;yellow,&quot; or &quot;green&quot; has been typed, and sets a traffic signal to that color; they design another program to decide when to add <em>s</em> and when to add <em>es</em> to make the plural of a noun. </p>
-<p>This lab also begins to focus  on <strong>abstraction</strong> through <strong>analyzing</strong> tasks to break them into subtasks and then creating blocks that specialize in these subtasks, and through <strong>analyzing</strong> and <strong>debugging</strong> scripts. Analyzing an existing script is a particularly powerful way to learn to program similar behaviors. Debugging is an essential skill&mdash;especially as one's programs  become more complex&mdash;but it takes  time to acquire and hone that skill because there is no single formula or subskill for doing it well.  In this lab, the debugging focus is on deliberately trying to &quot;break&quot; a program, searching for ways that a user's input (or some  situation that arises on the stage) can cause a program to fail, and accounting for those ways by testing for them and responding appropriately.</p>
+		<p>Small projects focus especially on using multiple <code>if</code> statements to distinguish multiple conditions. Students design a program that tests to see whether &quot;red,&quot; &quot;yellow,&quot; or &quot;green&quot; has been typed, and sets a traffic signal to that color; they design another program to decide when to add <em>s</em> and when to add <em>es</em> to make the plural of a noun. </p>
+<p>This lab also begins to focus  on <strong>abstraction</strong> through <strong>analyzing</strong> tasks to break them into subtasks and then creating blocks that specialize in these subtasks, and through <strong>analyzing</strong> and <strong>debugging</strong> scripts. Analyzing an existing script is a particularly powerful way to learn to program similar behaviors. Debugging is an essential skill&mdash;especially as one's programs  become more complex&mdash;but it takes  time to acquire and hone that skill because there is no single formula or sub-skill for doing it well.  In this lab, the debugging focus is on deliberately trying to &quot;break&quot; a program, searching for ways that a user's input (or some  situation that arises on the stage) can cause a program to fail, and accounting for those ways by testing for them and responding appropriately.</p>
 
-<h3>Pacing:</h3>
-	<div>
+        <h3>Pacing:</h3>
+        <div>
             <ul>
                 <li> This week contains two labs. Though they differ in page length, each will probably take roughly half the time you have available. </li>
                 <li> The goal is for students to learn and succeed, not rush, and to have chances to  try some of the Take It Further problems and to be creative on their own. Plan accordingly, but... </li>
-                <li>...if you notice that the first two pages of Lab 1 are taking longer than you had anticipated, consider doing <em>only</em> problems 1-3 on page 3 (Using Multiple <code>If</code> Statements) and skipping the rest of that page (problems 4 through 7).  There will be many other opportunities to work with multiple <code>if</code>s. 
-            </li></ul>
+                <li>...if you notice that the first two pages of Lab 1 are taking longer than you had anticipated, consider doing <em>only</em> problems 1-3 on page 3 (Using Multiple <code>If</code> Statements) and skipping the rest of that page (problems 4 through 7).  There will be many other opportunities to work with multiple <code>if</code>s.</li>
+            </ul>
+        </div>
 
-    <h3>Students will:</h3>
+    	<h3>As a Class</h3>
+        <div>
+            <ul>
+                <li>
+                	To launch Lab 1 &mdash; <strong>Make a Prediction</strong>: Project these scripts and ask students to describe what they will do. Discuss in small groups and/or as a class. Students have seen similar things.<br />
+                <a href="/bjc-r/img/1-introduction/follow-that-mouse.png" target="_blank"><img class="indent" src="/bjc-r/img/1-introduction/follow-that-mouse.png" alt="Follow That Mouse Script"/></a> and <a href="/bjc-r/img/2-conditionals-abstraction-testing/repeat-until-direction-equals-90-move-1-turn-cw-1.png" target="_blank"><img src="/bjc-r/img/2-conditionals-abstraction-testing/repeat-until-direction-equals-90-move-1-turn-cw-1.png" alt="repeat-until-direction-equals-90-move-1-turn-clockwise-1"></a>
+                </li>
+            </ul>
+        </div>
+        
+        <h3>Students will:</h3>
         <div class="sidenoteBig">
         	<strong>Looking Ahead</strong>
         	<p>
@@ -35,13 +46,13 @@
                 <li>Use <strong>abstraction</strong> to simplify and clarify code.</li>
                 <li><strong>Debug</strong> code by deliberately trying to find ways to &quot;break&quot; it.</li>
             </ul>
-</div> 
+		</div> 
               
         <h3>Tips:</h3>
         <div><ul>
           <li><strong>Page 1: Getting started</strong>. The "getting started" section in any lab involves some pure experimentation (students use code to see what it does) and some puzzles. Some of the puzzles are hard. Let students know that if they've done the experiments, the playing around, they have most of the knowledge they need for the puzzles but puzzles are puzzling! Try, tinker, try something new, talk to your partner. And if you can't solve the puzzle yourself, that's ok. Talk to another group.</li>
           <li>Make sure that students don't skip over the &quot;<em>figure out how it works</em>&quot; part of  problem 1 on the &quot;Getting Started&quot; page.  In this case, the figuring out helps students do problems 2 and 3 on that page. It's probably not necessary to do anything formal with that &quot;figure out&quot; part&mdash;talking with the pair programmer is likely to be enough&mdash;but if you feel your students need  more structure, you might prepare a paper copy of the scripts for students to annotate, or some other way to make the results of problem 1 more tangible than discussion.</li>
-          <li><strong>Page 2: Creating predicates</strong>. Problem 2 uses a video to show how to crete the <code>even?</code> block. If you have a projector, it may be easier for your students to watch you demonstrate and copy what you do in <span class="snap">snap</span>, instead of trying to have both the student guide and the <span class="snap">snap</span> page open on their machine. For the rest of the problems on the page, avoid demonstrating. Students will learn most by puzzling them out. Take-It-Further challenge B is particularly worthwhile for students who have the time.</li>
+          <li><strong>Page 2: Creating predicates</strong>. Problem 2 uses a video to show how to create the <code>even?</code> block. If you have a projector, it may be easier for your students to watch you demonstrate and copy what you do in <span class="snap">snap</span>, instead of trying to have both the student guide and the <span class="snap">snap</span> page open on their machine. For the rest of the problems on the page, avoid demonstrating. Students will learn most by puzzling them out. Take-It-Further challenge B is particularly worthwhile for students who have the time.</li>
           <li><strong>Page 3: Using multiple <code>if</code> statements</strong>. If time is short, have students do only the first three problems on this page. There will be other opportunities to learn what they will skip here.</li>
           <li><strong>Pages 4 and 5: Plurals</strong>. The prior pages were introduction and preparation. This project is core. Students learn how to do something more complex with significant sub-parts, a task that requires analysis, experimentation, and debugging. <ul>
           		<li>All students (but especially those whose English is not native or not "standard") may have questions about what <em>is</em> the correct plural or correct way to spell it. Encourage them to feel free to check with each other, but also feel free to ask you. Nobody can possibly think of all possible words anyway, so let students feel that it is okay simply to ignore ones that they're not yet sure about. One side-benefit of this project is that it helps student notice how much they <em>do</em> know and take for granted, and how much work it is for a computer to do what humans do naturally! <em>Students may do this kind of activity in another language if they like. The Take It Further on page 4 suggests one such investigation. </em></li>
