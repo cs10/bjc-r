@@ -6,9 +6,14 @@
 		<!--ORIGINAL NAME: C-Curve-->
 	</head>
 	<body>
-    <h2>The C-Curve Fractal</h2>
-	<p>Another beautiful recursive shape is the C-curve. As in the snowflake algorithm, the base case is that the sprite draws a single line segment. The sprite starts facing right and faces right at the end. In this algorithm, the sprite does not return to the starting place after each recursive call. The base case has the sprite start on the left and go to the right. (Hint: The direction that the sprite points at the end is important! It should point in the same direction it did at the beginning of the recursive call.)<br>
-	<div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/5-recursion/c-curve-level0.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/C-Curve/ccurve0.gif">
+        <h2>The C-Curve Fractal</h2>
+        <div class="todo">
+            <ul>
+                <li>GH Feedback 8/4/15: I like this program. I needed Brian Harvey's help to understand the fractal and thus be able to write this program. I know it sounds silly, but the colors threw me off! The base level was red and the next level is a red and blue corner. The next level should be the red and blue corner and then ANOTHER red and blue corner. The coloring messed with my noggin.</li>
+            </ul>
+        </div>
+        <p>Another beautiful recursive shape is the C-curve. As in the snowflake algorithm, the base case is that the sprite draws a single line segment. The sprite starts facing right and faces right at the end. In this algorithm, the sprite does not return to the starting place after each recursive call. The base case has the sprite start on the left and go to the right. (Hint: The direction that the sprite points at the end is important! It should point in the same direction it did at the beginning of the recursive call.)<br>
+        <div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/5-recursion/c-curve-level0.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab13/C-Curve/ccurve0.gif">
 			
 		</div>
 		In the next level,  start facing right and end facing right but repeat the previous level twice (red and blue below).  You'll have to think about how much smaller than the <code>size</code> input the size of the recursive calls should be.<br>
