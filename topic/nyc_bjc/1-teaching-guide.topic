@@ -15,14 +15,19 @@ h3: Highlighting Computational Thinking
 	
 heading: Week 1 (Programming Focus)
 	resource: Lab 1: Building an App [/bjc-r/cur/teaching-guide/U1/lab-pages/1-building-an-app.html]
+	raw-html:<ul><li>1-2 days</li></ul>
 	resource: Lab 2: Sprite Drawing and Communication [/bjc-r/cur/teaching-guide/U1/lab-pages/2-sprite-drawing-communication.html]
+	raw-html:<ul><li>2-3 days</li></ul>
 	resource: Lab 3: Control Commands [/bjc-r/cur/teaching-guide/U1/lab-pages/3-control-commands.html]
+	raw-html:<ul><li>2-3 days (may go into second week)</li></ul>
 	//resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W01-activities.html]
 	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W01-assignments.html]
 
 heading: Week 2 (Programming Focus)
 	resource: Lab 4: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/lab-pages/4-make-your-own-blocks.html]
+	raw-html:<ul><li>2-3 days</li></ul>
 	resource: Lab 5: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/lab-pages/5-block-types.html]
+	raw-html:<ul><li>2 days</li></ul>
 	//resource: Class Activities [/bjc-r/cur/teaching-guide/U1/extras/W02-activities.html]
 	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/extras/W02-assignments.html]
 	
@@ -34,5 +39,5 @@ heading: Week 3 (Social Implications Focus)
 heading: Investigation
 	//resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/investigations/kaleidoscope.html]
 	//resource: Bug Dance Animation [/bjc-r/cur/teaching-guide/U1/investigations/bug-dance.html]
-	raw-html: <p>Students can begin work on the <a href="/bjc-r/cur/programming/1-introduction/investigations/bug-dance.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Bug Dance Animation</a> after Lab 3 when they formalize their understanding of <code>repeat</code>.</p><div class="endnote">Investigations are supplemental content. If you have time, assign them for homework, classwork, or differentiation.</div>
+	raw-html: <p>Students can begin work on <a href="/bjc-r/cur/programming/1-introduction/investigations/bug-dance.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Bug Dance Animation</a> after Lab 3 when they formalize their understanding of <code>repeat</code>.</p><div class="endnote">Investigations are supplemental content. If you have time, assign them for homework, classwork, or differentiation.</div>
 }

@@ -17,7 +17,9 @@ h3: Highlighting Computational Thinking
 
 heading: Week 4 (Programming Focus)
 	resource: Lab 1: Conditional Blocks [/bjc-r/cur/teaching-guide/U2/lab-pages/1-conditional-blocks.html]
+	raw-html:<ul><li>About half a week</li></ul>
 	resource: Lab 2: Script Variables [/bjc-r/cur/teaching-guide/U2/lab-pages/2-script-variables.html]
+	raw-html:<ul><li>About half a week</li></ul>
 	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W04-activities.html]
 	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W04-assignments.html]
 
@@ -40,6 +42,6 @@ heading: Week 7 (Social Implications Focus)
 heading: Investigations
 	//resource: Checking for Leap Years [/bjc-r/cur/teaching-guide/U2/investigations/checking-for-leap-years.html] 
 	//resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U2/investigations/kaleidoscope.html] 
-	raw-html: <p>Students can begin work on: the <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Checking for Leap Years</a> after Lab 3 when they formalize their understanding of <code>repeat</code>, the <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/valid-date.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Valid Date?</a> after Lab 3 when they formalize their understanding of <code>repeat</code>, and the <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/make-a-kaleidoscope.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Kaleidoscope</a> after Lab 1 where they work with predicates and nested <code>if</code> statements.</p>
+	raw-html: <p>Students can begin work on <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Checking for Leap Years</a>,  <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/valid-date.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Valid Date?</a>, and/or <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/make-a-kaleidoscope.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Kaleidoscope</a> after Lab 1 where they work with predicates and nested <code>if</code> statements.</p>
 
 }
