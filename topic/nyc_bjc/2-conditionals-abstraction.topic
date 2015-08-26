@@ -4,7 +4,7 @@ title: Unit 2: Conditionals, Abstraction, and Debugging
 
 		//h1: Formerly Topic 3: Conditionals and Variables
        
-	raw-html: <div class="todo"><ul><li>MF: Consider doing something like <a href="https://www.youtube.com/watch?v=3YXwcx0rSlY" target="_blank">this maze game</a> to address conditionals and sensing.</li><li>MF: The page titles on this page do not consistently match the page titles on the actual pages. This needs to be fixed in the student pages and on the TG Assignment pages where I linked to the Take it Further problems.</li><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><ul></div>
+	raw-html: <div class="todo"><ul><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><ul></div>
        
 heading: Programming Lab 1: Conditional Blocks
 	resource: Getting Started [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/1-getting-started-with-conditionals.html] 
