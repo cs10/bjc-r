@@ -300,3 +300,8 @@ div.newProject span.text {
   border: 2px solid black;
   padding: 5px;
 }
+
+/* Color Emphasis */
+.blue {
+  color: #00C;
+}
