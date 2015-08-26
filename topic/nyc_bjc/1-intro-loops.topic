@@ -17,7 +17,7 @@ big-idea: Analyze the impact of technology on our culture and safety.
 	raw-html: <div style="float:right;"><img class="imageRight" src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner"/><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /><!-- <br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />--></div>
 heading: Programming Lab 1: Building an App
 	//raw-html: <div class="commentBig"><a href="http://bjc.edc.org/hourofcode/index.html" target="_blank">OLD: Hour of Code: Build a <span class="snap">snap</span> App</a></div>
-	resource: Creating a Snap<em>!</em> Account [/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html]
+	resource: Getting Started [/bjc-r/cur/programming/1-introduction/1-building-an-app/1-creating-a-snap-account.html]
 	resource: Starting Your First Snap<em>!</em> App [/bjc-r/cur/programming/1-introduction/1-building-an-app/2-start-your-first-snap-app.html]
 	resource: Pair Programming Swap [/bjc-r/cur/programming/1-introduction/1-building-an-app/3-pair-programming-swap.html]
 	resource: Using the <code>Random</code> Block [/bjc-r/cur/programming/1-introduction/1-building-an-app/4-using-the-random-block.html]
@@ -60,7 +60,7 @@ heading: Programming Lab 5: Block Types and Calculations
  	raw-html: <hr />
 	
 heading: Social Implications Lab 6: Explosion of Bits; Games and Violence
-	resource: Technology Autobiography [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/getting-started.html]
+	resource: Getting Started [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/getting-started.html]
 	resource: Computing Innovations [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/what-are-some-social-implications.html]
 	resource: Tanya Rider's Story [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/tanya-rider.html]
 	resource: Do violent video games contribute to youth violence? [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/violent-video-games.html]
