@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<script src="/bjc-r/llab/loader.js"></script>
-	<title>Number representation</title>
-    <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
-    <style type="text/css">
-    .blue {
-	color: #2031BC;
-	font-weight: bold;
-}
-    .highlight {
-	background-color: #FF0;
-}
-    </style>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Number representation</title>
+        <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+        .blue {
+        color: #2031BC;
+        font-weight: bold;
+    }
+        .highlight {
+        background-color: #FF0;
+    }
+        </style>
     </head>
 
     <body>
 
 	<h2>Numbers in Binary</h2>
-	<p>If there's one thing everyone knows about computers, it's that they think in zeros and ones. As you know by now, the whole point of computer science is <em>abstraction, </em>so that you can program and use computers without ever having to deal with their low-level circuitry. Still, for some reason the people who made up the AP curriculum standards think you should know about binary.</p>
+	<div class="todo">
+        <ul>
+            <li>
+            	GH feedback 8/2/15: Before having students code decimal to binary, they should probably spend some time doing the conversions by hand. Your examples are great but the kids need to do this on paper before they will be able to program ig.
+                <ul>
+                    <li>This is in <a href="http://localhost/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-binary.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" target="_blank">U1L5</a> now, but it's probably worth having them review conversions a bit here too... --MF</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p>If there's one thing everyone knows about computers, it's that they think in zeros and ones. As you know by now, the whole point of computer science is <em>abstraction, </em>so that you can program and use computers without ever having to deal with their low-level circuitry. Still, for some reason the people who made up the AP curriculum standards think you should know about binary.</p>
 	<div class="takeNote"><div><p>People usually say "binary numbers," but the mathematicians on our team won't let us do that.  Numbers are numbers, regardless of how they're represented: "XVIII" and "18" represent the same number, and so, as you'll see, does "10010" in binary.</p></div></div>
     
 	<p>In plain old decimal (base 10) notation, each digit's <em>position </em>represents a power of 10, starting with 1 (which is 10<sup>0</sup>)

@@ -14,6 +14,7 @@
     <p>If the desired position is at the left (<code>column=0</code>) or the right (<code>column=row</code>) end of a row, then the value is 1. That's the base case. In the recursive case, the desired value is the sum of two values in the previous row (the two recursive calls).</p>
     <p>This is like the other examples we've seen in that what's reported is the result from a combiner block, in this case <code>+</code>. But it's different in that the two things being combined are both recursive calls.</p>
     <p>Just how many recursive calls are needed to compute a value in Pascal's Triangle? In, let's say, the middle of row 10? (Values near an end of a row are faster to compute because they reach a base case quickly.)</p>
+<div class="todo"><ul><li>GH Feedback 8/1/15: Under "For You To Do" it says how many "seconds" does it take to compute. Do you mean how many passes of pascal?</li></ul></div>
 <div class="forYouToDo" id="first"><ol><li>How many <em>seconds</em> does it take to compute <code>pascal(10,5)</code>?</li>
 <li>How about <code>pascal(12,6)</code>?</li>
 <li>What's your guess about how long it would take to compute <code>pascal(20,10)</code>?</li>

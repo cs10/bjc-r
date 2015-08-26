@@ -231,7 +231,7 @@ llab.selectors = {};
 llab.fragments = {};
 // These are common strings that need not be build and should be reused!
 llab.strings = {};
-llab.strings.goMain = 'Go to the Course Page';
+llab.strings.goMain = 'Go to table of contents';
 // &#8230; is ellipsis
 llab.strings.clickNav = 'Click here to navigate&nbsp;&nbsp;';
 //
