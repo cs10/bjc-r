@@ -23,15 +23,15 @@
 			<key>label</key>
 			<string>Text Snap!</string>
 			<key>lastUsed</key>
-			<date>2015-07-23T15:39:05Z</date>
+			<date>2015-08-26T18:39:03Z</date>
 			<key>modificationDate</key>
-			<date>2015-06-09T20:57:25Z</date>
+			<date>2015-07-31T17:08:46Z</date>
 			<key>plainText</key>
-			<string>&lt;span class="snap"&gt;snap&lt;/span&gt;</string>
+			<string>Snap&lt;em&gt;!&lt;/em&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>62</integer>
+			<integer>75</integer>
 			<key>uuidString</key>
 			<string>14D3B506-1402-4CD3-8D00-D35A13709814</string>
 		</dict>
@@ -47,7 +47,7 @@
 			<key>label</key>
 			<string>Div Dialogue</string>
 			<key>lastUsed</key>
-			<date>2015-07-17T18:31:14Z</date>
+			<date>2015-08-14T20:35:05Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-09T20:56:41Z</date>
 			<key>plainText</key>
@@ -61,7 +61,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>10</integer>
+			<integer>11</integer>
 			<key>uuidString</key>
 			<string>62027589-C6B7-4A82-AB01-7284416703C1</string>
 		</dict>
@@ -89,7 +89,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>17</integer>
+			<integer>18</integer>
 			<key>uuidString</key>
 			<string>6D765610-4233-4D0F-AEA3-D048E23AC78E</string>
 		</dict>
@@ -105,7 +105,7 @@
 			<key>label</key>
 			<string>HTML List Unordered</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T17:33:32Z</date>
+			<date>2015-08-25T19:14:32Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-17T19:11:39Z</date>
 			<key>plainText</key>
@@ -117,7 +117,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>17</integer>
+			<integer>35</integer>
 			<key>uuidString</key>
 			<string>F64B5289-3D37-499E-82B8-D99F46176A37</string>
 		</dict>
@@ -133,7 +133,7 @@
 			<key>label</key>
 			<string>Icon Talk With Your Partner</string>
 			<key>lastUsed</key>
-			<date>2015-07-23T15:39:29Z</date>
+			<date>2015-08-14T21:36:42Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-23T15:44:13Z</date>
 			<key>plainText</key>
@@ -142,7 +142,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>28</integer>
+			<integer>36</integer>
 			<key>uuidString</key>
 			<string>A76D22DA-E61F-40B3-9E8E-37BB698769FD</string>
 		</dict>
@@ -158,7 +158,7 @@
 			<key>label</key>
 			<string>Div For You to Do</string>
 			<key>lastUsed</key>
-			<date>2015-07-15T22:02:59Z</date>
+			<date>2015-08-14T19:53:05Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-09T20:56:45Z</date>
 			<key>plainText</key>
@@ -174,7 +174,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>10</integer>
+			<integer>17</integer>
 			<key>uuidString</key>
 			<string>68F825BB-7DD6-40CF-940C-DFC96CD8A61D</string>
 		</dict>
@@ -190,7 +190,7 @@
 			<key>label</key>
 			<string>Div Take It Further</string>
 			<key>lastUsed</key>
-			<date>2015-07-15T20:57:33Z</date>
+			<date>2015-08-14T17:29:40Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-04T00:36:20Z</date>
 			<key>plainText</key>
@@ -206,7 +206,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>6</integer>
+			<integer>11</integer>
 			<key>uuidString</key>
 			<string>B0DA8B24-3D76-4242-A0B4-CC78DDC072F3</string>
 		</dict>
@@ -222,7 +222,7 @@
 			<key>label</key>
 			<string>Div Sidenote</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T18:55:14Z</date>
+			<date>2015-08-26T18:21:46Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-09T20:56:52Z</date>
 			<key>plainText</key>
@@ -230,7 +230,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>32</integer>
+			<integer>43</integer>
 			<key>uuidString</key>
 			<string>F2C7C680-FAE3-4DFD-8C3E-712A315C8DFB</string>
 		</dict>
@@ -245,6 +245,8 @@
 			<integer>0</integer>
 			<key>label</key>
 			<string>Div Take Note</string>
+			<key>lastUsed</key>
+			<date>2015-08-14T20:11:17Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-09T20:57:13Z</date>
 			<key>plainText</key>
@@ -254,7 +256,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>D817824C-6421-4BC1-B027-502466F10AE6</string>
 		</dict>
@@ -270,29 +272,33 @@
 			<key>label</key>
 			<string>HTML Template Student Page</string>
 			<key>lastUsed</key>
-			<date>2015-07-23T15:38:39Z</date>
+			<date>2015-08-13T16:40:56Z</date>
 			<key>modificationDate</key>
-			<date>2015-07-17T19:11:15Z</date>
+			<date>2015-08-13T16:43:46Z</date>
 			<key>plainText</key>
 			<string>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;script src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
-        &lt;title&gt;Lab #: Name&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h2&gt;Page Name&lt;/h2&gt;
-        &lt;div class="forYouToDo" id="first"&gt;
-            &lt;ol&gt;
-                &lt;li&gt;&lt;/li&gt;                   
-            &lt;/ol&gt;
-        &lt;/div&gt;
-    &lt;/body&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+		&lt;script type="text/javascript" src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
+		&lt;title&gt;Lab #: Name&lt;/title&gt;
+	&lt;/head&gt;
+
+	&lt;body&gt;
+		&lt;h2&gt;Page Name&lt;/h2&gt;
+		&lt;div class="forYouToDo" id="first"&gt;
+			&lt;ol&gt;
+				&lt;li&gt;&lt;/li&gt;				   
+			&lt;/ol&gt;
+		&lt;/div&gt;
+
+
+	&lt;/body&gt;
 &lt;/html&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>37</integer>
+			<integer>80</integer>
 			<key>uuidString</key>
 			<string>69CF6E31-B203-43AB-AC4A-BD592B6FC602</string>
 		</dict>
@@ -308,7 +314,7 @@
 			<key>label</key>
 			<string>Div Reviewer Comment</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T18:18:38Z</date>
+			<date>2015-08-25T21:07:54Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-29T21:25:20Z</date>
 			<key>plainText</key>
@@ -316,7 +322,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>95</integer>
+			<integer>137</integer>
 			<key>uuidString</key>
 			<string>08522B78-F82B-4875-9D5D-FA815AADD3A9</string>
 		</dict>
@@ -332,7 +338,7 @@
 			<key>label</key>
 			<string>Div Reviewer Todo List at Top</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T18:47:49Z</date>
+			<date>2015-08-26T20:41:44Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-17T15:23:37Z</date>
 			<key>plainText</key>
@@ -340,7 +346,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>53</integer>
+			<integer>87</integer>
 			<key>uuidString</key>
 			<string>EA0B8C07-1642-4E2C-A18F-8CFD266BB3BB</string>
 		</dict>
@@ -356,7 +362,7 @@
 			<key>label</key>
 			<string>HTML Image Tag</string>
 			<key>lastUsed</key>
-			<date>2015-07-20T19:46:57Z</date>
+			<date>2015-08-14T16:59:17Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-04T21:32:22Z</date>
 			<key>plainText</key>
@@ -364,7 +370,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>44</integer>
+			<integer>53</integer>
 			<key>uuidString</key>
 			<string>DE6E6410-F2E7-44D3-B7BF-005C9947D78C</string>
 		</dict>
@@ -380,7 +386,7 @@
 			<key>label</key>
 			<string>Div Endnote</string>
 			<key>lastUsed</key>
-			<date>2015-07-04T21:40:31Z</date>
+			<date>2015-08-14T23:03:20Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-24T04:53:38Z</date>
 			<key>plainText</key>
@@ -388,7 +394,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>18</integer>
+			<integer>23</integer>
 			<key>uuidString</key>
 			<string>6B0ADBC8-6EA2-42A6-876F-8810455A45A7</string>
 		</dict>
@@ -404,7 +410,7 @@
 			<key>label</key>
 			<string>Icon Save w/text</string>
 			<key>lastUsed</key>
-			<date>2015-07-04T03:34:12Z</date>
+			<date>2015-08-13T18:38:14Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-26T19:15:28Z</date>
 			<key>plainText</key>
@@ -413,7 +419,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>7</integer>
 			<key>uuidString</key>
 			<string>C60DBAEE-832B-4DA3-977B-174FF57FF248</string>
 		</dict>
@@ -429,7 +435,7 @@
 			<key>label</key>
 			<string>Icon New w/text</string>
 			<key>lastUsed</key>
-			<date>2015-07-04T03:37:41Z</date>
+			<date>2015-08-14T21:54:49Z</date>
 			<key>modificationDate</key>
 			<date>2015-06-26T02:23:14Z</date>
 			<key>plainText</key>
@@ -438,7 +444,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>3</integer>
+			<integer>5</integer>
 			<key>uuidString</key>
 			<string>8B85BEB8-A2E5-405B-9B2A-CB9A9D36E23A</string>
 		</dict>
@@ -454,7 +460,7 @@
 			<key>label</key>
 			<string>HTML end HREF:  target="_blank"&gt;</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T17:59:50Z</date>
+			<date>2015-08-26T19:29:33Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-03T04:52:33Z</date>
 			<key>plainText</key>
@@ -462,7 +468,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>70</integer>
+			<integer>140</integer>
 			<key>uuidString</key>
 			<string>4B7C7C3D-B5ED-40A4-900C-7052CE7A8799</string>
 		</dict>
@@ -478,7 +484,7 @@
 			<key>label</key>
 			<string>Icon Tough Stuff</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T01:44:01Z</date>
+			<date>2015-08-18T17:36:51Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-01T15:16:57Z</date>
 			<key>plainText</key>
@@ -486,7 +492,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>2</integer>
+			<integer>6</integer>
 			<key>uuidString</key>
 			<string>72D31510-7D4A-40FE-8E71-C2012A279D09</string>
 		</dict>
@@ -525,7 +531,7 @@
 			<key>label</key>
 			<string>Icon Pair Programming Swap</string>
 			<key>lastUsed</key>
-			<date>2015-07-09T17:39:44Z</date>
+			<date>2015-08-14T22:56:44Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-03T04:52:01Z</date>
 			<key>plainText</key>
@@ -534,7 +540,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>7</integer>
 			<key>uuidString</key>
 			<string>3927402E-FF2A-442C-AE66-FC2C822228DA</string>
 		</dict>
@@ -550,7 +556,7 @@
 			<key>label</key>
 			<string>HTML begin HREF:  &lt;a href=""</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T17:59:49Z</date>
+			<date>2015-08-26T18:50:57Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-03T04:52:20Z</date>
 			<key>plainText</key>
@@ -558,7 +564,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>67</integer>
+			<integer>110</integer>
 			<key>uuidString</key>
 			<string>3D07F1DE-CC23-42B9-ADFE-4AF3F34BFBEB</string>
 		</dict>
@@ -574,7 +580,7 @@
 			<key>label</key>
 			<string>Icon Talk With Another Pair</string>
 			<key>lastUsed</key>
-			<date>2015-07-04T04:43:11Z</date>
+			<date>2015-08-14T18:54:34Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-03T21:56:18Z</date>
 			<key>plainText</key>
@@ -582,7 +588,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>12</integer>
+			<integer>16</integer>
 			<key>uuidString</key>
 			<string>64AEDB8F-E48F-4F72-87D3-E8A9DEC40664</string>
 		</dict>
@@ -598,7 +604,7 @@
 			<key>label</key>
 			<string>HTML begin NAME</string>
 			<key>lastUsed</key>
-			<date>2015-07-17T21:28:08Z</date>
+			<date>2015-08-14T23:04:24Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-03T21:56:50Z</date>
 			<key>plainText</key>
@@ -606,7 +612,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>13</integer>
+			<integer>17</integer>
 			<key>uuidString</key>
 			<string>C53C1E47-47D8-4BFA-8C7B-8ED79532CEE4</string>
 		</dict>
@@ -622,7 +628,7 @@
 			<key>label</key>
 			<string>HTML middot/cdot</string>
 			<key>lastUsed</key>
-			<date>2015-07-20T19:48:50Z</date>
+			<date>2015-07-28T18:54:53Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-04T00:36:40Z</date>
 			<key>plainText</key>
@@ -630,7 +636,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>11</integer>
+			<integer>14</integer>
 			<key>uuidString</key>
 			<string>D5A2B0ED-F5D7-4583-AD2C-06AE12359793</string>
 		</dict>
@@ -814,7 +820,7 @@
 			<key>label</key>
 			<string>Block: true</string>
 			<key>lastUsed</key>
-			<date>2015-07-04T21:38:01Z</date>
+			<date>2015-07-30T15:47:27Z</date>
 			<key>modificationDate</key>
 			<date>2015-07-04T21:32:33Z</date>
 			<key>plainText</key>
@@ -822,7 +828,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>1</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
 			<string>487BF563-3B0C-4846-8C94-7E0ABB64714D</string>
 		</dict>
@@ -862,66 +868,68 @@
 			<key>label</key>
 			<string>HTML Template TG Page</string>
 			<key>lastUsed</key>
-			<date>2015-07-21T01:44:09Z</date>
+			<date>2015-08-18T17:36:52Z</date>
 			<key>modificationDate</key>
-			<date>2015-07-17T19:11:27Z</date>
+			<date>2015-08-27T16:31:25Z</date>
 			<key>plainText</key>
 			<string>&lt;!DOCTYPE html&gt;
 &lt;html&gt;
-    &lt;head&gt;
-        &lt;script src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
+	&lt;head&gt;
+		&lt;meta http-equiv="content-type" content="text/html; charset=utf-8"&gt;
+		&lt;script type="text/javascript" src="/bjc-r/llab/loader.js"&gt;&lt;/script&gt;
 		&lt;title&gt;Unit X Week X Teaching Guide&lt;/title&gt;
 	&lt;/head&gt;
 
 	&lt;body&gt;
-        &lt;h2&gt;Programming Lab X: XXX&lt;/h2&gt;
-        &lt;p&gt;PURPOSE STATEMENT&lt;/p&gt; 
-        
+		&lt;h2&gt;Programming Lab X: XXX&lt;/h2&gt;
+		&lt;p&gt;PURPOSE STATEMENT&lt;/p&gt; 
+		
 
-        &lt;h3&gt;Prepare:&lt;/h3&gt;
-        &lt;div&gt;
-            &lt;ul&gt;
-                &lt;li&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-
-
-        &lt;h3&gt;Students will:&lt;/h3&gt;
-        &lt;div class="sidenoteBig"&gt;
-        	&lt;strong&gt;Looking Ahead&lt;/strong&gt;
-        	&lt;ul&gt;
-            	&lt;li&gt;&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-        &lt;div&gt;
-            &lt;ul&gt;
-                &lt;li&gt;...&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt; 
-              
-        
-        &lt;h3&gt;As a Class:&lt;/h3&gt;
-        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+		&lt;h3&gt;Prepare:&lt;/h3&gt;
+		&lt;div&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
 
 
-        &lt;h3&gt;Look For:&lt;/h3&gt;
-        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+		&lt;h3&gt;Students will:&lt;/h3&gt;
+		&lt;div class="sidenoteBig"&gt;
+			&lt;strong&gt;Looking Ahead&lt;/strong&gt;
+			&lt;ul&gt;
+				&lt;li&gt;&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;
+		&lt;div&gt;
+			&lt;ul&gt;
+				&lt;li&gt;...&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt; 
+			  
+		
+		&lt;h3&gt;As a Class:&lt;/h3&gt;
+		&lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
 
-            
-        &lt;!--&lt;h3&gt;Solutions&lt;/h3&gt;
-        &lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;--&gt;
-            
-            
-        &lt;div class="apStandards"&gt;
-            &lt;h4&gt;AP CS Principles Computational Thinking Practices:&lt;/h4&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Coming soon...&lt;/li&gt;
-            &lt;/ul&gt;
-            &lt;h4&gt;AP CS Principles Essential Knowledge:&lt;/h4&gt;
-            &lt;ul&gt;
-                &lt;li&gt;Coming soon...&lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;            
+
+		&lt;h3&gt;Look For:&lt;/h3&gt;
+		&lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
+
+			
+		&lt;!--&lt;h3&gt;Solutions&lt;/h3&gt;
+		&lt;div&gt;&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;--&gt;
+			
+			
+		&lt;h3&gt;Correlation with AP CS Principles Framework&lt;/h3&gt;
+		&lt;div class="apStandards"&gt;
+			&lt;h4&gt;Computational Thinking Practices:&lt;/h4&gt;
+			&lt;ul&gt;
+				&lt;li&gt;Coming soon...&lt;/li&gt;
+			&lt;/ul&gt;
+			&lt;h4&gt;Essential Knowledge:&lt;/h4&gt;
+			&lt;ul&gt;
+				&lt;li&gt;Coming soon...&lt;/li&gt;
+			&lt;/ul&gt;
+		&lt;/div&gt;			
 
 
 	&lt;/body&gt;
@@ -930,7 +938,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>44</integer>
+			<integer>49</integer>
 			<key>uuidString</key>
 			<string>B197536A-24D7-4517-8BB2-70013CB623A6</string>
 		</dict>
@@ -964,6 +972,78 @@
 			<integer>1</integer>
 			<key>uuidString</key>
 			<string>EAD1E700-EC1A-4F3D-AFCC-06E879D1A8ED</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string></string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-08-02T06:19:25Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2015-08-02T06:19:25Z</date>
+			<key>plainText</key>
+			<string></string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>ACFC64D7-6AAB-4BFB-AF2A-3587B91F50CD</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ssh</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-07-02T19:12:13Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Share Your Work</string>
+			<key>lastUsed</key>
+			<date>2015-08-13T16:34:47Z</date>
+			<key>modificationDate</key>
+			<date>2015-08-02T06:20:56Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" /&gt;
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>2</integer>
+			<key>uuidString</key>
+			<string>CCB67042-F90D-424F-9E2A-099396E05FAC</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>wwo</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2015-05-22T02:16:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string>Icon Work with a Partner</string>
+			<key>lastUsed</key>
+			<date>2015-07-23T15:39:29Z</date>
+			<key>modificationDate</key>
+			<date>2015-08-02T06:20:52Z</date>
+			<key>plainText</key>
+			<string>&lt;img class="imageRight" src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner" /&gt; 
+</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>29</integer>
+			<key>uuidString</key>
+			<string>EC39B08A-9A68-491B-965A-6B4DA2C141D8</string>
 		</dict>
 	</array>
 </dict>
