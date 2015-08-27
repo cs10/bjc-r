@@ -35,6 +35,7 @@ llab.courses_path = llab.rootURL + "course/";
 //  place where you put (oldstyle) X.topic files, used when building menus on curriculum pages
 llab.topics_path = llab.rootURL + "topic/";
 //  used when referring to a topic page -- you could change this location
+llab.empty_topic_page_path = llab.llab_path + "html/empty-topic-page.html";
 llab.topic_launch_page = llab.llab_path + "html/topic.html";
 llab.alt_topic_page = llab.rootURL + "topic/topic.html";
 llab.empty_curriculum_page_path = llab.llab_path + "html/empty-curriculum-page.html";
