@@ -53,7 +53,7 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
 heading: Programming Lab 5: Block Types and Calculations
 	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-sprite-position-direction.html]
 	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html]
-	resource: Binary Numerals [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-binary.html]
+	resource: Binary Representation [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-binary.html]
 	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html]
 	quiz: <code>Random</code> Block Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/5-random-self-check.html]
 	
