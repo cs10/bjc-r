@@ -32,10 +32,10 @@ heading: Week 13 (Social Implications Focus)
 	resource: Lab 7: Encryption and Security [/bjc-r/cur/teaching-guide/U3/lab-pages/7-encryption-security.html] 
 	
 heading: Investigations
-	resource: Building Musical Chords [/bjc-r/cur/teaching-guide/U3/Investigations/buiding-musical-chords.html] 
-	resource: Processing a Sentence [/bjc-r/cur/teaching-guide/U3/Investigations/processing-a-sentence.html]  
-	resource: Longest Word [/bjc-r/cur/teaching-guide/U3/Investigations/longest-word.html] 
-	resource: Display Word  [/bjc-r/cur/teaching-guide/U3/Investigations/display-word.html] 
-	resource: Exaggerate [/bjc-r/cur/teaching-guide/U3/Investigations/exaggerate.html] 
-		
+	//resource: Building Musical Chords [/bjc-r/cur/teaching-guide/U3/Investigations/buiding-musical-chords.html] 
+	//resource: Processing a Sentence [/bjc-r/cur/teaching-guide/U3/Investigations/processing-a-sentence.html]  
+	//resource: Longest Word [/bjc-r/cur/teaching-guide/U3/Investigations/longest-word.html] 
+	//resource: Display Word  [/bjc-r/cur/teaching-guide/U3/Investigations/display-word.html] 
+	//resource: Exaggerate [/bjc-r/cur/teaching-guide/U3/Investigations/exaggerate.html] 
+	raw-html: <p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/chords.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Building Musical Chords</a> and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Processing a Sentence</a>, after Lab 1 where they...</p><p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/longest-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Longest Word</a>, <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/display-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Display Word</a>, and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/exaggerate.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Exaggerate</a>, after Lab 3 where they...</p>	
 }
