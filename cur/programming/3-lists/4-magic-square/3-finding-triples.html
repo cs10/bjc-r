@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 4: Magic Squares</title>
+    </head> 
+    
+    <body>
+    	<h2>Finding Triples</h2>
+        <div class="forYouToDo" id="first">
+            <img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
+            <ol>
+                <li>How many triples do you have to check to see if a list is a magic square?</li>
+                <li>Make a list of lists, called <code>triple positions</code> that keeps track of the <em>positions</em> of the triples. Here's a start. The first item, the list (1, 4, 7) is identifying the <em>left column</em> in a 3-by-3 grid.<br><img border="0" src="/bjc-r/img/3-lists/magic_start_triples.png" alt="list that gives first triple (1,4,7)" title="list that gives first triple (1,4,7)" /></li>
+                <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+                <li><code>Triple positions</code> gives a list of the positions of the triples. Now make a red reporter block, called <code>triples in square ()</code> that returns the <em>numbers</em> from the potential magic square that are in those positions. Here's the beginning of <code>triples in square ()</code>.<br><img border="0" src="/bjc-r/img/3-lists/magic_triples_square.png" alt="red reporter: triples in square (square)" title="red reporter: triples in square (square)" /><br>Here's the beginning of the output for the square shown above:<br><img border="0" src="/bjc-r/img/3-lists/magic_firsttriples.png" alt="triples in square (12, 13, 14, etc) = (12, 10, 17)" title= "triples in square (12, 13, 14, etc) = (12, 10, 17)" /></li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you can use this information to determine whether the original 9 numbers form a magic square.</li>
+            </ol>
+        </div>
+
+<!--  <p>Each row, column, and diagonal of the magic square must be explicitly specified in the program, because it has no other way of knowing what to do. We'll call each row, column, and diagonal a<em> triple. </em>The program needs a list of all eight triples. Each triple is a short list, and the set of all eight triples is a list of lists.</p> Since this information never changes, it's a good idea to store it in a single global variable:
+  <blockquote>
+    <p><img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
+  </blockquote>
+  <p>The list of triples can be used to pull the right information out of a list of 9 numbers. But how? There is more than one way. Start by recalling how you could pull a single piece of information out of a list.</p>
+
+<ol>
+  <li> Given a list of 9 numbers, how can you report only the 4th number? </li>
+  <li> Given a list of 9 numbers, how can you report only the 4th <i>and</i> 5th numbers?</li>
+  <li> Given <code>square</code> with 9 numbers and <code>locations</code> with 3 numbers, write a reporter <code>lookup</code> that returns a new list of the numbers in <code>square</code> at the positions given in <code>locations</code>.</li>
+
+<p><img src="/bjc-r/img/3-lists/triple_report.png" alt="pulling a triple"><img src="/bjc-r/img/3-lists/triple_report_2.png" alt="saying the right triple"></p>
+</ol> 
+
+The last problem above is more complicated, but can be done in one line using one of the higher-order list functions you've been working with.-->
+
+	</body>
+</html>

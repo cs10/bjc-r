@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 5: Data Part I</title>
+    </head>
+    
+    <body>
+    	<h2>Spam and Ham: Text Messages</h2>
+        <p>You are going to work with a set of 500 real text messages, part of a collection recorded and collected by T. Almeida and J. Hidalgo (<a href="http://archive.ics.uci.edu/ml/datasets/SMS+Spam+Collection">original source</a>).</p>
+        <p>
+            Two typical lines in our data look like this:
+
+            <table id="tableBlue" width="80%">
+                <tr>
+                    <td>ham</td>
+                    <td>Fair enough, anything going on?</td>
+                </tr>
+                <tr>
+                    <td>spam</td>
+                    <td>SMS. ac
+                    Sptv: The New Jersey Devils and the Detroit Red Wings play Ice
+                    Hockey. Correct or Incorrect? End? Reply END SPTV</td>
+                </tr>
+            </table>
+        </p>
+
+        <p>
+        	The raw data is <a href="old/spam-ham-500.txt">here</a>, but we've made a <a class="run" href="/bjc-r/prog/data/spam-ham.xml">starter Snap<em>!</em> project</a> which you should open now.  It has a script that you can run to import the text data (from the above link), split it line by line and then into a list with two entries, and then store it into a variable <code>datasheet</code>:<br />
+        	<img class="indent" src="/bjc-r/img/data/spam-ham-datasheet-watcher.png" alt="spam-ham data watcher variable"><br />
+            Be aware that this is real-world data with very casual language (we've already removed the messages with language that was <em>too</em> casual for a school assignment!)
+        </p>
+        <p class="alert quoteOrange"> We will call that first word&mdash;spam or ham&mdash; the <i>ground truth classification</i>. That is, at some point an actual human decided whether this message was spam or ham, and we'll consider this to be "the truth". In this way, we can see how good our program is at classifying a message, based only on its contents, by comparing it this value. You might actually disagree with some of the "truth" classifications that are in the file; if so, feel free to change them (and be ready to justify your belief to others!)</p>
+		<p>Out of the 500 messages, how many are ham?  Write a script to find out.</p>
+
+    </body>
+</html>

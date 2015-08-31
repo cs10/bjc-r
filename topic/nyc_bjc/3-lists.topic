@@ -21,61 +21,62 @@ title: Unit 3: Lists
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
 
 heading: Programming Lab 1: Introduction to Lists
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/getting-started.html]
-	 resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/sentence-builder.html]
-	 resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/list-of-lists.html]
-	 resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/draw-shape.html]
-     quiz: Check: Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/lists-self-test.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
+	 resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html]
+	 resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html]
+	 resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html]
+     quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html]
 
 heading: Programming Lab 2: List Operations
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html]
-	 resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/map.html]
-	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/keep.html]
-	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/combine.html]
-	 quiz: Check: Map, Keep, and Combine [/bjc-r/cur/programming/3-lists/2-list-operations/hof-self-test.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
+	 resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
+	 resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
+	 resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
+	 quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
 
 heading: Programming Lab 3: Using Higher-Order Functions
-     resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/getting-started.html]
-	  resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/composing-higher-order-functions.html] 
-	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/acronym-generator.html]
-	 resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/when-you-really-have-to-loop.html]
+     resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
+	  resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
+	 resource: Acronym Generator [/bjc-r/cur/programming/3-lists/3-using-hof/3-acronym-generator.html]
+	 resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
 
 //heading: Lists and Sentences: The Index Variable Pattern
 
 heading: Programming Lab 4: Magic Squares
-	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/getting-started.html]
-	 resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/triples.html]
-	 resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples.html]
-	 //resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/finding-triples-3.html]
-	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/finishing-touches.html]
+	 resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
+	 resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/2-triples.html]
+	 resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/3-finding-triples.html]
+	 //resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/old/finding-triples-3.html]
+	 resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
 
 heading: Programming Lab 5: Data Part I
-	 resource: GPS Forensics: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/introgps.html]
-	 resource: GPS Forensics: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/visualizing.html]
-	 resource: GPS Forensics: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/clustering.html]
-	 resource: GPS Forensics: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/gps-digital-forensics/conclusions.html] 
-	 resource: Weather App: API and Scraping Data [/bjc-r/cur/programming/3-lists/5-search-and-data/weatherintro.html]
-	 resource: Spam and Ham: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-introduction.html]
-	 resource: Spam and Ham: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/2-the-data.html]
-	 resource: Spam and Ham: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/3-average-number-of-words.html]
-	 resource: Spam and Ham: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/4-predict-by-number-of-words.html]
-	 resource: Spam and Ham: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/spam-ham/5-further-work.html]
+	 <div class="comment">This lab is so huge. Can it be split into 2 or 3? --MF</div>
+	 resource: GPS Forensics: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/1-introgps.html]
+	 resource: GPS Forensics: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/2-visualizing.html]
+	 resource: GPS Forensics: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/3-clustering.html]
+	 resource: GPS Forensics: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/4-conclusions.html] 
+	 resource: Weather App: API and Scraping Data [/bjc-r/cur/programming/3-lists/5-search-and-data/5-weatherintro.html]
+	 resource: Spam and Ham: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/6-spam-introduction.html]
+	 resource: Spam and Ham: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/7-the-data.html]
+	 resource: Spam and Ham: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/8-average-number-of-words.html]
+	 resource: Spam and Ham: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/9-predict-by-number-of-words.html]
+	 resource: Spam and Ham: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/10-further-work.html]
 
  	raw-html: <hr />
 
 heading: Social Implications Lab 6: Search and How the Internet Works
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions.html]
- 	resource: Old Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions-old.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/6-search-internet/btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/3-lists/6-search-internet/search.html]
-	resource: Internet [/bjc-r/cur/programming/3-lists/6-search-internet/internet.html]
+	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/1-big-questions.html]
+ 	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions-old.html]
+	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/6-search-internet/2-btb-chapter4.html]
+	resource: Search [/bjc-r/cur/programming/3-lists/6-search-internet/3-search.html]
+	resource: Internet [/bjc-r/cur/programming/3-lists/6-search-internet/4-internet.html]
 
 heading: Social Implications Lab 7: Encryption and Security
-	 resource: Big Questions [/bjc-r/cur/programming/3-lists/7-encryption/big-questions.html]
-	 resource: Encryption [/bjc-r/cur/programming/3-lists/7-encryption/encryption.html]
-	 resource: Security [/bjc-r/cur/programming/3-lists/7-encryption/security.html]
-	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/7-encryption/public-key.html]
-	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/7-encryption/btb-chapter5.html]
+	 resource: Big Questions [/bjc-r/cur/programming/3-lists/7-encryption/1-big-questions.html]
+	 resource: Encryption [/bjc-r/cur/programming/3-lists/7-encryption/2-encryption.html]
+	 resource: Security [/bjc-r/cur/programming/3-lists/7-encryption/3-security.html]
+	 resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/7-encryption/4-public-key.html]
+	 resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/7-encryption/5-btb-chapter5.html]
 
  	raw-html: <hr />
 
