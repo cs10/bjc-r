@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 5: Data Part I</title>
+    </head>
+    
+    <body>
+    	<h2>Spam and Ham: Predictions!</h2>
+     
+        <p>Now that you know that the average length differs,  build a simple classifier based on the number of words in a particular message.</p>
+       
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                	Write a block that takes in a message and, based on how many words it contains, returns either "ham" or "spam" as its classification.<br />
+                	<img class="indent" alt="classify a message that evaluates to HAM" src="/bjc-r/img/data/classify-by-number-of-words-HAM.png"><br />
+			        <img class="indent" alt="classify a message that evaluates to SPAM" src="/bjc-r/img/data/classify-by-number-of-words-SPAM.png">
+					<div class="endnote">
+                    	Implement in <span class="snap">snap</span>, and use it to classify the messages in our data.  You can use a regular loop to call your classify on the second item in each row of the data, or you might use this <i>faster</i> method using <img class="inline" src="/bjc-r/img/blocks/keep.png" alt="the keep block">:<br />
+                    	<img class="indent" src="/bjc-r/img/data/count-number-of-spam-messages-with-custom-classify.png" alt="using keep to apply a custom classify method to the data" title="using keep to apply a custom classify method to the data" />
+					</div>
+				</li>
+                <li>Play around with different <i>threshold values</i>&mdash;that is, the number of words above which you decide that a message is spam.</li>
+                <li>What was the best threshold you found?</li>
+                <li>How many messages did it classify incorrectly?</li>
+			</ol>
+		</div>
+        
+        
+    </body>
+</html>
