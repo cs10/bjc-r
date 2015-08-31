@@ -22,7 +22,7 @@
         
         <img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />
         <p>The <code>join words</code> block adds a space between its inputs, like this: <img border="0" src="/bjc-r/img/3-lists/joinwords_elephant.png" alt="join words(the elephant climbs)" title="join words(the elephant climbs)"><br>
-        In the dialogue below, Alphie and Betty try to use the word lists to build interesting sentences.</p>
+        In the dialogue below, Alphie and Betty try to use the  lists of words to build interesting sentences.</p>
         
         <div class="dialogue">
             <div><span>Alphie:</span> "the elephant climbs" is just one specific example. Let's build a sentence that joins any article, noun, and verb.</div>
@@ -34,18 +34,19 @@
         </div>
         
         <div class="forYouToDo">
-            <ol start="2">  
+ <div class="sidenote">The phrases won't make sense necessarily. For example, <code>noun phrase</code> might generate "a sleepy pizza".</div>                                         <ol start="2">  
                 <li>Fix Alphie and Betty's script.</li>
                 
                 <li>
                 	In this problem, you will make a sentence-builder that makes complicated sentences like "the little elephant runs excitedly around the big pizza". To do this, use two levels of abstraction.
                 	<ol>
                     	<li>
-                        	First, use your words to make phrases. Make three reporters <img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block"> <img border="0" src="/bjc-r/img/3-lists/prep_phrase.png" alt="green prepositional phrase reporter block" title="green prepositional phrase reporter block"> and <img border="0" src="/bjc-r/img/3-lists/verb_phrase.png" alt="green verb phrase reporter block" title="green verb phrase reporter block">. Here are some sample outputs:
+              	First, use your words to make phrases. Make three reporters <img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block"> <img border="0" src="/bjc-r/img/3-lists/prep_phrase.png" alt="green prepositional phrase reporter block" title="green prepositional phrase reporter block"> and <img border="0" src="/bjc-r/img/3-lists/verb_phrase.png" alt="green verb phrase reporter block" title="green verb phrase reporter block">. Here are some sample outputs:
                             <ul>
-            <div class="sidenote">The phrases won't make sense necessarily. For example, <code>noun phrase</code> might generate "a sleepy pizza".</div>                    
+            
                                 <li><code>noun phrase</code>: "the little boy" "a green giraffe"</li>
-                                <li><code>prepositional phrase</code>: "near the little boy" "in a wise pizza"</li>
+
+<div class="sidenote">You can use <em>three</em> levels of abstraction.  A prepositional phrase is a preposition plus a ...</div>                                <li><code>prepositional phrase</code>: "near the little boy" "in a wise pizza"</li>
                                 <li><code>verb phrase</code>: "jumps sadly" "naps quickly"</li>
                             </ul>
                         </li>
