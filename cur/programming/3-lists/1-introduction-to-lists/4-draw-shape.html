@@ -52,7 +52,7 @@
                     <img class="indent" src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/><br />
                     <img class="indent" src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /><br />
                     <img class="indent" src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
-                </a>
+                </a><br />
                 These blocks are trivial one-liners; they aren't going to make the rest of the program any shorter. But they <em>are</em> going to make it easier to think about. For example, your list of points will now be obviously a list of points, rather than some other data type:<br />
                 <img class="indent" src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /><br />
                 And Alphie's version of the drawing script will have things like<br />
@@ -67,6 +67,7 @@
                 <li>
                 	Fix Betty's script using Gamal's idea, then make a green command block using that script: <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br />
                 	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the input type:<br /> 
+                    <div class="comment">This animation needs to be redrawn with Plain Prototype Labels off!</div>
                     <img class="indent" src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
                 </li>
                 <div><img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
@@ -76,9 +77,12 @@
         
         <div class="takeItFurther">
             <ol type="A">
-                <div class="sidenote">Notice the use of abstraction. The block <img  src="/bjc-r/img/3-lists/A-B-C.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
-                <li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
-                <li>If you made other letters, gather all the letters into a list of their own. Use <code>draw shape ()</code> to draw a message.<br><img class="indent" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" /></li>
+            	<li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
+                <div class="sidenote">Notice the use of abstraction. Representing the message &quot;HI&quot; as <img src="/bjc-r/img/3-lists/list-h-i.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
+                <li>
+                	If you made other letters, write a block <code>draw message ()</code> that takes a <em>list of letters</em> as input and uses <code>draw shape ()</code> to draw a message.<br />
+                	<img class="indent" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" />
+                </li>
             </ol>
         </div>
 

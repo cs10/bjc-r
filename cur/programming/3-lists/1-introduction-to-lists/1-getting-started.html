@@ -22,7 +22,6 @@
 
 			<p>Write down your observations.</p>
             <div class="sidenote">The <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block creates a list. Use the left and right arrowheads to vary the number of input slots. Blocks that can be varied in this way are said to have  a <strong>variadic input</strong>. </div>
-            <div class="sidenote">What does  <img border="0" src="/bjc-r/img/3-lists/listblockempty.png" class="block" alt="Empty LIST block" title="orange LIST block"> report?. </div> 
             <ol>
                 <li>
                     Find <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block" /> in the Variables palette and construct <img border="0" src="/bjc-r/img/3-lists/gs1.png" class="script" alt="LIST block with capitals" title="LIST block with capitals" />. 
@@ -34,7 +33,9 @@
                         <li> <img border="0" src="/bjc-r/img/3-lists/gs1a.png" alt="ALL BUT FIRST block" title="ALL BUT FIRST block"> </li>
                         <li> <img border="0" src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
                         <li> <img border="0" src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>
-                    </ol>
+                        <li><img border="0" src="/bjc-r/img/3-lists/listblockempty.png" class="block" alt="Empty LIST block" title="orange LIST block"></li>
+                        
+                  </ol>
                 </li>
                 <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img border="0" src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div>
                 <div class="sidenote">An input slot that looks like <img border="0" src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
@@ -80,7 +81,16 @@
         
         <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 
-    <!-- <div class="takeItFurther">
+        <div class="dialogue">
+        <div class="stagedir">Gamal joins the group and looks over Alphie's shoulder.</div>
+        <span>Gamal: </span>Wow, it would never have occurred to me to write it that way!  You want <code>countdown (5)</code> to report the list {5, 4, 3, 2, 1}.  But <code>countdown (4)</code> is {4, 3, 2, 1}, so all you have to do is stick a 5 in front:<br />
+	<img src="/bjc-r/img/3-lists/recursive-countdown.png" width="450" height="202" alt="define countdown (n): if n=0 report empty list, otherwise report (n) in front of (countdown (n-1))">
+</div>
+        <div class="forYouToDo">
+<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+            <ol start="7">
+            	<li>Gamal's description of his algorithm didn't mention the <code>if</code> in his code.  What would happen if he left that part out?  Why?</li></ol></div>
+        <!-- <div class="takeItFurther">
 <ol start="5">
 
 <div class="comment">JK: LOTS of comments from Dan and NY teachers: "upto(n), when they’re trying to start with an empty list, and add the numbers 1-n to the list in order, they didn’t realize you could click left on the default list constructor to make it a function of no arguments.  I also mentioned yesterday that they were frustrated that nothing in the lab suggested they should look in the “Variables” tab for the “Add _ to (LIST)” block, since they are only shown list reporters above."</div>
@@ -105,6 +115,6 @@ Make a block <code>upto (n)</code> that takes a positive integer <em>n</em> as i
 </ol>
     </div> -->
 
-	</body>
+    </body>
 </html>
     
