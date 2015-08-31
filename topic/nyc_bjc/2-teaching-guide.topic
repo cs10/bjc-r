@@ -34,10 +34,10 @@ heading: Week 6 (Social Implications Focus)
 	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W06-activities.html]
 	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W06-assignments.html] 
 	
-heading: Week 7 (Social Implications Focus)
-	resource: Lab 5: Bits and Information [/bjc-r/cur/teaching-guide/U2/lab-pages/5-bits-and-information.html] 
-	//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W07-activities.html]
-	//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W07-assignments.html]
+//heading: Week 7 (Social Implications Focus)
+	//resource: Lab 5: Bits and Information [/bjc-r/cur/teaching-guide/U2/lab-pages/5-bits-and-information.html] 
+		//resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U2/extras/W07-activities.html]
+		//resource: Homework Assignments [/bjc-r/cur/teaching-guide/U2/extras/W07-assignments.html]
 	
 heading: Investigations
 	//resource: Checking for Leap Years [/bjc-r/cur/teaching-guide/U2/investigations/checking-for-leap-years.html] 
