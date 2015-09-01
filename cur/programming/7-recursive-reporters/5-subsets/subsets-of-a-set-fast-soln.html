@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script src="/bjc-r/llab/loader.js"></script>
+<title>Subsets</title>
+</head>
+
+<body>
+<h2>Fast Subsets</h2>
+<p>With our original solution:</p>
+<p><img src="/bjc-r/img/7-recursive-reporters/subset-slow.png" alt="slow solution" /></p>
+<p>it takes 127 calls to find the 64 subsets of a six-element set. Here's how to make each of the recursive calls only once:</p>
+<p><img src="/bjc-r/img/7-recursive-reporters/subset-fast.png" alt="fast solution" /></p>
+<p>This version takes only 7 calls to find the 64 subsets! That's quite an improvement.</p>
+<p>In general, for an <em>n</em>-element list, the first version makes about 2<sup><em>n</em>+1</sup> calls; the second takes just <em>n</em>+1 calls.</p>
+<div class="takeItFurther"><p>Measure the time in seconds that it takes for an eight-element list with both versions. Is the actual time speedup as dramatic as the improvement in the number of calls? Why or why not? (How long does each call to <code>map</code> take?)</p>
+</div>
+</body>
+</html>

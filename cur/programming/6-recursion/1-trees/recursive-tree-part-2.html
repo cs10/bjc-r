@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- put the following in exactly -->
+		<script src="/bjc-r/llab/loader.js"></script><title>Trees in a Forest</title>
+		<!--ORIGINAL NAME: Recursive Tree Part 2-->
+	</head>
+	<body>
+    <h2>Recursive Tree, Part 2</h2>
+	<div class="forYouToDo" id="first">
+            <div><ol start="4">
+           <li><p>That <code>tree2a</code> block is pretty long and repetitive. But we can simplify it if we notice that in two places it has a move forward/move back pair of blocks, and that this is what <code>tree1</code> does! So we can use <code>tree1</code> to shorten <code>tree2</code>. Compare the code below to convince yourself that the new <code>tree2</code> will work the same as the original <code>tree2a</code>. 
+		</p>
+
+		<table width="100%" border="1">
+			<tbody>
+				<tr>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree1
+					</code><br>
+					</td>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2a</code> (old version)<br>
+					</td>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2</code> (new version)<br>
+					</td>
+				</tr>
+				<tr>
+					<td width="33%" valign="top" style="text-align: center;"><img border="0" src="/bjc-r/img/6-recursion/tree1.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg">
+					<br>
+					</td>
+					<td width="33%" valign="top" style="text-align: center;"><img border="0" src="/bjc-r/img/6-recursion/tree2a.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg">
+					<br>
+					</td>
+					<td width="33%" valign="top" style="text-align: center;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/6-recursion/tree2.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2aS.jpg">
+					<br>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	
+		
+		Note that the tree blocks inside this <code>tree2</code> script are <code>tree1</code> blocks, not <code>tree2</code> blocks! So there's no mysterious <code>tree</code>-using-<code>tree</code> situation here; it's not unusual for one already-written block to be used in <em>another</em>&thinsp; block's script. </li>
+<li>Why are we multiplying <code>size</code> by 0.75?</li>
+<li>What would happen if we used a negative <code>size</code>?</li>
+<li>Why is the right turn amount 30 degrees instead of 15?</li>
+           <li>Make a <code>tree3</code> block that uses the <code>tree2</code> block, on the same pattern, and see if you get the result that you expect. </li>
+	<li>Make a <code>tree4</code> block that uses the <code>tree3</code> block and try it out. </li>
+    <li>If you can stand it, make a <code>tree5</code> block that uses the <code>tree4</code> block and try it out. </li></ol></div></div>
+		<p>
+			<b>This would be a good time to save your project.</b>
+		</p>
+<div class="forYouToDo">
+            <div><ol start="11"><li>		<p>
+These blocks all look exactly the same, don't they? So it makes sense to wonder if we can replace them all with a single <code>tree</code> block. Here's the big idea: We can write a <code>tree</code> block that uses itself in its own script <i>provided that it knows how many levels it's expected to draw!</i>&thinsp; So, in addition to the <code>size</code> input, it'll have a <code>levels</code> input:</p>
+         <img src="/bjc-r/img/6-recursion/tree-header.png" width="311" height="64" alt="tree (_) levels, size (_)">
+		<p>
+		In the earlier steps, <code>tree3</code> used <code>tree2</code>; <code>tree2</code> used <code>tree1</code>. If you actually had the patience to work up to a <code>tree437</code> block, what block would it call for its two branches? To generalize the pattern, <code>tree</code> will use <code>tree</code>, but reducing the number of levels by 1:</p>
+		<p><img src="../../../../img/6-recursion/tree-nobase.png" alt="recursive tree, first version"></p>
+		<p>For example, given a <code>levels</code> input of 5, <code>tree</code> will call two trees with a <code>levels</code> input of 4. Those two trees in turn will each call two more trees with a <code>levels</code> input of 3, and so on.</p>
+		<p>Now try the <code>tree</code> block. What happens? <em>Why </em>does it happen? When you know the answer, go to the next activity.
+		</p>
+	</body>
+</html>
