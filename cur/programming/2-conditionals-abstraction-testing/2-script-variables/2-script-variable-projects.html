@@ -18,7 +18,7 @@
             
                 <li><strong>Mondrian—an art project:</strong> The Dutch artist Piet Mondrian is possibly best known for his artwork using brightly colored rectangles.
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-Piet-Mondrian.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"> &quot;Tableau 1&quot; by Piet Mondrian</p>
-                  <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A <span class="snap">snap</span> script can produce designs like these. </p>
+                  <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A Snap<em>!</em> script can produce designs like these. </p>
                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="260"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap"></p>
                 <div class="sidenoteBig">This isn't the actual Snap<em>!</em> program.  You could write custom blocks with these names, but they're a little verbose to use as real block names, especially that two-line one in the middle.  This algorithm is for you to read, not for a computer to read.</div>
                 This algorithm  produced those designs:<br />
@@ -32,7 +32,7 @@ Repeat many times
     Fill rectangle with random color">
 
     <p>To keep your code clear, you may want to create separate blocks that specialize in boundary and fill and choosing locations and calculating size.</p>
-    <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is <br />
+    <p>Snap<em>!</em> has no <code>fill with color</code> block.  One way to make such a block is <br />
       <img src="/bjc-r/img/2-conditionals-abstraction-testing/fill-script.png" alt="Repeat until height or width is less than 2
 	Draw rectangle of specified height and width
 	Set height slightly smaller
@@ -112,7 +112,7 @@ Repeat many times
                     
                     <p>Test it first on several multiples of 7 (small and large) and make sure that, for multiples of 7, it reports only the results 14, 7, 0, -7, and -14. Also test it on several numbers that are <em>not</em> multiples of 7; for those numbers, it should never report 14, 7, 0, -7, or -14. <img src="/bjc-r/img/2-conditionals-abstraction-testing/multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14).png" alt="multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14)"></p>
                 </li>  
-				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div></ol>
+				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In Snap<em>!</em>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div></ol>
                <div class="takeNote"><img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />Although this 
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/clobber.png" alt="set variable to function of variable"> style of programming is very common, pretty soon you'll learn a better way: <em>functional programming,</em> in which you never change the value of a variable.  You're not quite ready to write functional programs yet (that'll come in Unit 3), but here are some examples from above, rewritten functionally, that you can probably understand:      <br />                  <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n"><img src="/bjc-r/img/2-conditionals-abstraction-testing/better-divisors.png" alt="number-of-divisors: length of keep items such that ((n mod __) = 0) from (values from 1 to n)">
 <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-digit-sum.png" alt="digit sum: combine with + items of word to list of number"></div>
