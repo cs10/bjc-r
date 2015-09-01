@@ -4,7 +4,7 @@ h2: Big Ideas
 big-idea: External robots are an interesting way to extend our programs
 
 h2: Activities
-learning-goal: Understand how to connect the finch robot to <span class="snap">snap</span>
+learning-goal: Understand how to connect the finch robot to Snap<em>!</em>
 learning-goal: Read and understand code, and make modifications to it
 
     resource: Introduction [/bjc-r/cur/programming/robots/finch-introduction.html]

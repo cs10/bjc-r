@@ -348,6 +348,7 @@ pre > code.hljs {
 .resultMessageDiv {
   font-size: 1.2em;
 }
+
 /* FEEDBACK BUTTON ON BOTTOM RIGHT
  * TODO: This section doesn't belong in llab. Bad Michael.
  */
@@ -596,7 +597,7 @@ img.indent, div.indent {
 
 /**** SPECIAL CONTENT CLASSES ***/
 /* .snap inserts the logo using the proper formatting.
-* Insert using "<span class="snap">snap</span>"
+* Insert using "Snap<em>!</em>"
 */
 .snap:first-letter {
   font-variant: normal;
@@ -847,6 +848,16 @@ img.indent, div.indent {
 	width: 100%;
 	/* Override this setting so that width takes effect. */
 	max-width: 100%;
+  }
+}
+
+@media print {
+  #fdbk, .page-feedback {
+    display: none;
+  }
+
+  nav.llab-nav.navbar.navbar-default.navbar-fixed-top {
+    display: none;
   }
 }
 
