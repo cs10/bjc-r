@@ -50,7 +50,7 @@ heading: Programming Lab 4: Magic Squares
 	resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
 
 heading: Programming Lab 5: Data Part I
-	raw-html: <div class="comment">This lab is so huge. Can it be split into 2 or 3? --MF</div>
+	raw-html: <div class="todo">I talked to Bowen and he thinks that it makes sense to move this lab to U4, which would be great because there is too much in U3 and not enough in U4. --MF</div>
 	resource: GPS Forensics: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/1-introgps.html]
 	resource: GPS Forensics: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/2-visualizing.html]
 	resource: GPS Forensics: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/3-clustering.html]
