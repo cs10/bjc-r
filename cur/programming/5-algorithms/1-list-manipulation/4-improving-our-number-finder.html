@@ -8,7 +8,14 @@
 
 	<body>
 		<h2>Improving Our Number Finder</h2>
-        <div class="todo"><ul><li>GT Feedback 8/12/15: Spelling. "memoization" (I marked where I thought this might refer to. --MF)</li></ul></div>
+        <div class="todo">
+            <ul>
+                <li>GH Feedback 8/12/15: Spelling. "memoization" (I marked where I thought this might refer to. --MF)</li>
+                <li>GH Feedback 7/21/15: It would be helpful to have a pronunciation guide for "memoization," specifically whether it is "memo-ization" or "meme-oi-zation"</li>
+                <li>GH Feedback 7/29/15: There is an error in the script for testing the memoized sort. The memory list should be initialized to -1's not 0's</li>
+            </ul>
+        </div>
+        
         <p><strong>Feel free to ask for help on this section if you get stuck. We'll be discussing a somewhat difficult subject and it may be helpful to have it explained in person.</strong></p>
         <p>If the user may be searching for the same number multiple times, it seems ridiculous to calculate the answer each time that they ask. Why don't we remember the answer after it's been calculated instead? Remembering previously calculated information is called <span style="font-weight: bold;">memoization</span> (not memorization) in computer science. It is a powerful technique that can be used to speed up programs that have redundant calculations.</p>
         <p>Let's implement a third block in our project that uses memoization to remember the location of numbers that have already been found. This block will be very similar to our the second block you built, the sorted number finder.</p>
