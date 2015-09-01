@@ -16,22 +16,22 @@ title: Unit 6: Trees and Other Fractals
 //big-idea: Make sure you watch the first recursion lecture before doing this lab!
 
 heading: Lab 1: Trees in a Forest
- 	raw-html: <img src="/bjc-r/img/5-recursion/real-tree.jpg" class="imageRight" alt="Kaleidoscope Script" />
-	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/5-recursion/1-trees/recursive-tree-part-1.html]
-    resource: Recursive Tree Part 2 [/bjc-r/cur/programming/5-recursion/1-trees/recursive-tree-part-2.html]
-    resource: Recursive Tree Part 3 [/bjc-r/cur/programming/5-recursion/1-trees/treepart3.html]
-    resource: Base Cases [/bjc-r/cur/programming/5-recursion/1-trees/base-cases.html]
-    quiz: Self Test: Understanding <code>tree</code> Inputs [/bjc-r/cur/programming/5-recursion/1-trees/selftest1.html]
-    quiz: Self Test: What was Changed? [/bjc-r/cur/programming/5-recursion/1-trees/treechange.html]
-    resource: Vary Your Tree [/bjc-r/cur/programming/5-recursion/1-trees/vary-your-tree.html]
-    resource: Random Tree [/bjc-r/cur/programming/5-recursion/1-trees/random-tree.html]
-    resource: A Forest [/bjc-r/cur/programming/5-recursion/1-trees/forest.html]
+ 	raw-html: <img src="/bjc-r/img/6-recursion/real-tree.jpg" class="imageRight" alt="Kaleidoscope Script" />
+	resource: Recursive Tree Part 1 [/bjc-r/cur/programming/6-recursion/1-trees/recursive-tree-part-1.html]
+    resource: Recursive Tree Part 2 [/bjc-r/cur/programming/6-recursion/1-trees/recursive-tree-part-2.html]
+    resource: Recursive Tree Part 3 [/bjc-r/cur/programming/6-recursion/1-trees/treepart3.html]
+    resource: Base Cases [/bjc-r/cur/programming/6-recursion/1-trees/base-cases.html]
+    quiz: Self Test: Understanding <code>tree</code> Inputs [/bjc-r/cur/programming/6-recursion/1-trees/selftest1.html]
+    quiz: Self Test: What was Changed? [/bjc-r/cur/programming/6-recursion/1-trees/treechange.html]
+    resource: Vary Your Tree [/bjc-r/cur/programming/6-recursion/1-trees/vary-your-tree.html]
+    resource: Random Tree [/bjc-r/cur/programming/6-recursion/1-trees/random-tree.html]
+    resource: A Forest [/bjc-r/cur/programming/6-recursion/1-trees/forest.html]
 
 heading: Lab 2: Fractals
-    resource: Triangle Fractal #1 [/bjc-r/cur/programming/5-recursion/2-fractals/triangle-fractal-1.html]
-    resource: Triangle Fractal #2 [/bjc-r/cur/programming/5-recursion/2-fractals/triangle-fractal-2.html]
-    resource: Snowflake [/bjc-r/cur/programming/5-recursion/2-fractals/snowflake.html]
-    resource: C-Curve [/bjc-r/cur/programming/5-recursion/2-fractals/c-curve.html]
-    resource: Search for "Fractals in Nature" [/bjc-r/cur/programming/5-recursion/2-fractals/search-for-fractals-in-nature.html]
+    resource: Triangle Fractal #1 [/bjc-r/cur/programming/6-recursion/2-fractals/triangle-fractal-1.html]
+    resource: Triangle Fractal #2 [/bjc-r/cur/programming/6-recursion/2-fractals/triangle-fractal-2.html]
+    resource: Snowflake [/bjc-r/cur/programming/6-recursion/2-fractals/snowflake.html]
+    resource: C-Curve [/bjc-r/cur/programming/6-recursion/2-fractals/c-curve.html]
+    resource: Search for "Fractals in Nature" [/bjc-r/cur/programming/6-recursion/2-fractals/search-for-fractals-in-nature.html]
 
 }
