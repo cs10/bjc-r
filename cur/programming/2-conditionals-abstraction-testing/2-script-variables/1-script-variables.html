@@ -17,50 +17,60 @@
         </div> -->
     	<div class="todo">We need to mention that <code>set</code> is an "assignment statement". --MF and BH</div>
         <p>You have used variables that the <code>for</code> block <em>gave</em> you. <img src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"></p>
-              <p> You also <em>created</em> variables <img class="noshadow" src="/bjc-r/img/2-conditionals-abstraction-testing/plural-hat-block-and-first-line-only.png" width="200" alt="plural-hat-block-and-first-line-only"> as inputs to blocks that you made.</p>
-    <p> <div class="sidenote"> A script variable  exists only while the script is running. </div>  Sometimes you will need <em>extra</em> variables to store information temporarily while your script is running. The 
-    <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> block lets you do that.</p>
-              </p>
-	<div class="forYouToDo" id="first">
-   	   <ol>
-				
-			<li>  Watch the video (or read the  instructions that follow it) to see how to create, name, and set the value of a script variable.
-              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
-					<ol> 
-                	<li>To create the variable, use <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> (in the variables tab, of course).</li>
-                    <li>To name the variable, click on the orange <em><code>a</code></em> and type the name you want.</li>
-                    <li>To set your variable's value, use 
-					<img src="/bjc-r/img/prog/set.png" alt="set" />. The down-arrow lets you select the variable you want (in this example, there's only one variable to choose).</li>
-                    <li>Then set its value. </li>
-                </ol></li>
-        		
-     
-                <li>This script draws polygons with a random number of sides.
-                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
-                <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div>
-                <ol>
-                <li>Make the script and run it several times to see what it draws.</li>
-                <li><strong>Check your understanding:</strong> Why does it make sense to start the range of possible random numbers at 3?</li>
-                <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li></ol></li>
+		<p> You also <em>created</em> variables <img class="noshadow" src="/bjc-r/img/2-conditionals-abstraction-testing/plural-hat-block-and-first-line-only.png" width="200" alt="plural-hat-block-and-first-line-only"> as inputs to blocks that you made.</p>
+		<p> 
+        	<div class="sidenote"> A script variable  exists only while the script is running. </div>  
+            Sometimes you will need <em>extra</em> variables to store information temporarily while your script is running. The <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> block lets you do that.
+        </p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>  
+                	Watch the video (or read the  instructions that follow it) to see how to create, name, and set the value of a script variable.
+                	<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ScriptVariables.gif" alt="movie showing how to choose the name of a script variable and set its initial value"></p>
+                    <ol> 
+                        <li>To create the variable, use <img src="/bjc-r/img/prog/scriptvar.png" alt="script variables" /> (in the variables tab, of course).</li>
+                        <li>To name the variable, click on the orange <em><code>a</code></em> and type the name you want.</li>
+                        <li>
+                        	To set your variable's value, use 
+                        	<img src="/bjc-r/img/prog/set.png" alt="set" />. The down-arrow lets you select the variable you want (in this example, there's only one variable to choose).
+                        </li>
+                        <li>Then set its value. </li>
+                    </ol>
+                </li>
+                <li>
+                    This script draws polygons with a random number of sides.
+                    <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Random-Polygon-script_372x300.png" alt="random polygon script"></p>
+                    <div class="endnote">This script uses the value of <code>sides</code> twice, once in the <code>repeat</code> block to say how many times the <code>move</code>-and-<code>turn</code> combination should be done, and once in computing the angle to <code>turn</code>. </div>
+                    <ol>
+                        <li>Make the script and run it several times to see what it draws.</li>
+                        <li><strong>Check your understanding:</strong> Why does it make sense to start the range of possible random numbers at 3?</li>
+                        <li><strong>Check your understanding:</strong> Where did the formula <img src="/bjc-r/img/prog/360-over-sides.png" alt="360/sides" /> come from?</li>
+                    </ol>
+                </li>
                 <li>
                     <strong>Challenge:</strong> Modify the script so that it also picks a <em>size</em> randomly, from 30 through 60 using <em>only multiples of 10</em>.
                     <div class="endnote">There are two ways to create a second script variable.  You could use another <code>script variables</code> block 
-                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/script-variables-sides-script-variables-size.png" alt="script-variables-sides-script-variables-size"> or you could extend the one block, using the right-arrow <img src="/bjc-r/img/2-conditionals-abstraction-testing/second-script-variables-movie.gif" alt="adding a second script variable"> </div><div class="saveAs"><span class="text">"U2Lab2Polygons"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U2Lab2Polygons" title="save your work as U2Lab2Polygons" /></div>
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/script-variables-sides-script-variables-size.png" alt="script-variables-sides-script-variables-size"> or you could extend the one block, using the right-arrow <img src="/bjc-r/img/2-conditionals-abstraction-testing/second-script-variables-movie.gif" alt="adding a second script variable"> </div>
+                    <div class="saveAs"><span class="text">"U2Lab2Polygons"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U2Lab2Polygons" title="save your work as U2Lab2Polygons" /></div>
                 </li>
-        		<li>
-                	<strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
-                    <img class="indent" src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
-            	</li>
-      </ol>
-    </div>
-<p> You will sometimes find it useful to compute some expression using the <em>current</em> value of a variable and then set the variable's value to the result.  Here is one way that might look in <span class="snap">snap</span>. </p>
-<p> <img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"> </p>
-<p>The operation might be <code></code><img src="/bjc-r/img/blocks/join()().png" alt="join"> or  <img src="/bjc-r/img/blocks/times.png"  alt="times"> or many others.</p>
-        <div class="forYouToDo">
-	        <ol start="5">
-        
                 <li>
-                	Here is one example.<br />
+                    <strong>Analyzing and debugging:</strong> Instead of setting a script variable, this script just uses the <code>pick random</code> block in the two places that need the random number. Before you build and run this script, try to figure out what is likely to go wrong.
+                    <img class="indent" src="/bjc-r/img/prog/bad-random-poly.png" alt="buggy random polygon" />
+                </li>
+            </ol>
+        </div>
+		
+        <p> 
+        	You will sometimes find it useful to compute some expression using the <em>current</em> value of a variable and then set the variable's value to the result. Here is one way that might look in <span class="snap">snap</span>.<br />
+        	<div class="commentBig">Why does this font look so different? Is this from Snap<em>!</em>? --MF</div>
+            <img class="indent noshadow" src="/bjc-r/img/2-conditionals-abstraction-testing/set-result-to-(operation-on-result).png" alt="set-result-to-(operation-on-result)"> 
+        </p>
+		<p>The operation might be <img src="/bjc-r/img/blocks/join()().png" alt="join" title="join" /> or <img src="/bjc-r/img/blocks/times.png" alt="times" title="times"/> or many others.</p>
+        
+		<div class="forYouToDo">
+			<ol start="5">
+				<li>
+					Here is one example.<br />
                   	<img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/example-set-result-to-5-say-result-set-result-to-result-x-2-say-result.png" alt="example-set-result-to-5-say-result-set-result-to-result-x-2-say-result">
                     <ol> 
                         <li> Build it, try it, and figure out why <img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(result)-for-2-secs.png"  alt="say-(result)-for-2-secs"> says one thing in step 3 and a different thing in step 5.</li>
@@ -69,14 +79,14 @@
                 </li>
                    
  		        <li>
-                	This script leads up to a   more useful example. 
-					<p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result"> </p> 
-                    <ol> 
-                        <li> Build it, try it, and figure out how it does what it does. </li>
+					This script leads up to a more useful example. <br />
+					<img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result.png" alt="power--set-result-to-1-repeat-2-(set-result-to-result-times-5)-say-result">
+					<ol> 
+						<li> Build it, try it, and figure out how it does what it does. </li>
                         <li> Change the <code> times 5</code> to <code> times 3</code> and <em>predict</em> what it will do.</li>
                         <li> Then change the <code> repeat 2</code> to <code> repeat 3</code>. </li>
                         <li> 
-                        	Build a <strong>reporter</strong> block named <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise-base-to-the-power-of-exponent.png" alt="raise-base-to-the-power-of-exponent">.<br />
+                            Build a <strong>reporter</strong> block named <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise-base-to-the-power-of-exponent.png" alt="raise-base-to-the-power-of-exponent">.<br />
                             The script you created should help. Put the variables <code>(base)</code> and <code>(exponent)</code> in the right places inside that script.<br />
                             Your block should work like this:<br />
                             <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(2)-to-the-power(3)(with-result).png" alt="raise 2 to the power 3 (result = 8)">
@@ -86,18 +96,20 @@
                             Make sure it also works for this case: <img src="/bjc-r/img/2-conditionals-abstraction-testing/raise(5)-to-the-power(0)(with-result).png" alt="raise 5 to the power 0 (result = 1)"><br />
                             Check (as always!) to make sure it works as you expect.
                         </li> 
-                    </ol>
-              </li>
-              <li>Here is another example.
-                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-remover-script.png" alt="vowel-remover-script, first line: script variables (result)(somewords); second line: set result to (empty slot); third line: set somewords to (any sentence you like); fourth line: for i = 1 to length of (somewords) {if not vowel? letter i of somewords, set result to (join result letter i of somewords)}; fifth line: say result"></p>
-                  <ol> 
-                            <li> Build it, try it, and figure out <em>how</em> it does what it does. </li>
-                            <li> Change the code so that it puts in hyphens (-) where the vowels used to be.</li>
-                            <li> Change the code so that it <em>counts</em> the vowels, <em>counts</em> all the letters (not including spaces), and ends with 
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels.png" alt="say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels"></p>
-                            If you like, compare the results you get from similar length sentences in two different languages. You may get very interesting results.</li>
-                   </ol> 
+					</ol>
 				</li>
+				<li>Here is another example.
+                    <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-remover-script.png" alt="vowel-remover-script, first line: script variables (result)(somewords); second line: set result to (empty slot); third line: set somewords to (any sentence you like); fourth line: for i = 1 to length of (somewords) {if not vowel? letter i of somewords, set result to (join result letter i of somewords)}; fifth line: say result"></p>
+                    <ol> 
+                        <li> Build it, try it, and figure out <em>how</em> it does what it does. </li>
+                        <li> Change the code so that it puts in hyphens (-) where the vowels used to be.</li>
+                        <li> 
+                            Change the code so that it <em>counts</em> the vowels, <em>counts</em> all the letters (not including spaces), and ends with <br />
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels.png" alt="say-(vowels)-for-2-secs-say(total-letters)-for-2-secs-say((join-words-(this-passage-is)(vowels-divided-by-total-letters)-percent-vowels"><br />
+                            If you like, compare the results you get from similar length sentences in two different languages. You may get very interesting results.
+                        </li>
+                    </ol> 
+                </li>
             </ol>
             <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Save your work" title="Save your work" />
         </div>
