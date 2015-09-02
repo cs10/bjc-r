@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction</title>
+        <link href="/bjc-r/advancednote.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <h2>Getting Started</h2>
+        <p>You&rsquo;ve built and worked with recursive <em>command</em> blocks. Recursion can also be used in <em>reporters</em>. Thinking and programming with recursive reporters can often help solve otherwise complicated problems. </p>
+        
+        <div class="forYouToDo" id="first">
+            <div class="sidenote" style="position:relative;top:730px;">What exactly is Tony’s <code>map</code> block doing?</div>
+            <!-- Putting the divs up here and with that much relative positioning is not a good permanent solution. -Mary, 5/18/15 -->
+            <div class="sidenote" style="position:relative;top:1000px;">
+                <!--Here it makes sense to use the strong tag because we are not technically within a dialogue. -Mary, 5/18/15 -->
+                <strong>Derman:</strong> Yours is more complicated.<br /> 
+                <strong>Sasha:</strong> But that pattern was easier to spot (for me).
+        	</div>
+            <ol>
+                <li>This block takes two whole numbers as input. Download it and figure out what it does.
+                    <p><a class="run" href="/bjc-r/prog/6-recursive-reporters/rangefrom.xml"><img src="/bjc-r/img/6-recursive-reporters/rangefrom.png" alt="range from ( ) to ( )"></a></p>
+                </li>
+                <li>
+                    <div class="dialogue">
+                        <div class="stagedir">Episode 1:</div>
+                        <div class="stagedir">Derman is staring at this table:</div>
+                        <div>
+                        	<table width="200" border="1" style="margin-left:auto; margin-right:auto; padding-left:0em; text-indent:0em;">
+                                <tr>
+                                    <th>Input</th>
+                                    <th>Output</th>
+                                </tr>
+                                <tr>
+                                    <td>0</td>
+                                    <td>3</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>9</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>11</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>13</td>
+                                </tr>
+                            </table><br />
+                        </div>
+                        <div>
+                            <span>Tony:</span> In this table, each output is 3 more than twice the input. I have a reporter that will match it.<br />
+                            <img src="/bjc-r/img/6-recursive-reporters/2n+3.png" alt="2n+3"><br />
+                            Just to be sure, I’ll try it:<br />
+                            <img src="/bjc-r/img/6-recursive-reporters/map-2n+3.png"  alt="map 2n+3 over [0,5]">
+                        </div>
+                        <div class="stagedir">Is Tony right?</div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dialogue">
+                        <div class="stagedir">Episode 2</div>
+                        <div class="stagedir"><em>Sasha is looking at Derman’s table from Exercise 2.</em></div>
+                        <div>
+                            <span>Sasha:</span> I see another way to match the table. If you look down the Output column, each number is two more than the one above it.  The only special case is the first row, which doesn't <em>have</em> a row above it, so we have to build in explicitly the fact that if the input is 0 the output should be 3:<br />
+                            <img src="/bjc-r/img/6-recursive-reporters/sasha.png" alt="Sasha's version">
+                        </div>
+                        <div class="stagedir">Check Sasha's work.</div>
+                    </div>
+                </li>
+                <li>
+                    Build Sasha-like (recursive) reporters that agree with each of these blocks on whole numbers.<br />
+                    <img src="/bjc-r/img/6-recursive-reporters/q4a.png"  alt="2n+7"><br />
+                    <img src="/bjc-r/img/6-recursive-reporters/q4b.png" alt="2n+5"><br />
+                    <img src="/bjc-r/img/6-recursive-reporters/q4c.png" alt="n^2+1"><br />
+                    <img src="/bjc-r/img/6-recursive-reporters/q4d.png" alt="n^2+2"><br />
+                </li>
+                <li>In problem 4, you can check your blocks against the ones in the problem for a long time, but you can’t check them for <em>all</em> numbers. Are there any numbers for which there isn’t a match?</li>
+                <li>
+                    Build Tony-like reporters that agree with each of these blocks on whole numbers.<br />
+                    <img src="/bjc-r/img/6-recursive-reporters/u.png"  alt="q6a"><br />
+                    <img src="/bjc-r/img/6-recursive-reporters/v.png"  alt="q6b"><br />
+                    <div class="comment">Teacher Feedback: Going from explicit to recursive is hard enough for linear problems; these last two problems that require quadratics are far too hard for high school students who haven't had algebra. These Z and X problems should be in a TIF. --MF</div>
+                    <img src="/bjc-r/img/6-recursive-reporters/z.png"  alt="q6c"><br />
+                    <img src="/bjc-r/img/6-recursive-reporters/x.png"  alt="q6d"><br />
+                </li>
+            </ol>
+        </div>
+        <p>
+            Experiment with these two blocks, using short input lists, to see what they do:<br />
+            <a class="run" href="/bjc-r/prog/6-recursive-reporters/sayeach.xml">
+                <img src="/bjc-r/img/6-recursive-reporters/sayeach.png" alt="say each item of list (command)"><br />
+                <img src="/bjc-r/img/6-recursive-reporters/stringtogether.png" alt="string items together from (reporter)">
+            </a>
+        </p>
+        <div class="forYouToDo">
+            <img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+            <ol start="7">
+                <li>What's the biggest difference between the two blocks?</li>
+                <li>What are some similarities between them?</li>
+                <li>What does <code>all but first of</code> do?</li>
+                <li>
+                	Fill in the empty parts of the following definition so that the block reports a sentence containing all the whole numbers from <code>a</code> to <code>b</code>.  <strong>Note that this question does <em>not</em> involve a list.</strong> The inputs are numbers; the reported value is a text string (a sentence). What should the block report in the base case? Where does the recursive call go?<br />
+                    <img src="/bjc-r/img/6-recursive-reporters/iota.png" width="248" height="143" alt="numbers from A to B">
+                    <img src="/bjc-r/img/6-recursive-reporters/numbers-result.png" alt="numbers from (4) to (12) --&gt;  4 5 6 7 8 9 10 11 12"></p>
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>

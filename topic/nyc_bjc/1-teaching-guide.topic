@@ -3,18 +3,17 @@ title: Teaching Guide for Unit 1: Introduction to Snap<em>!</em> Programming
 {
 
 h3: Purpose
-	raw-html:<p><strong>Programming Focus:</strong> Introduction to Snap<em>!</em>, Abstraction</p>
-    raw-html:<p>Students dive right into Snap<em>!</em> programming by designing games and visual projects using loops, randomness, modulo, and logic blocks. They get to know the Snap<em>!</em> interface, positioning system, sounds, mathematics, variables, and custom scripts. As much as possible, encourage students to experiment with Snap<em>!</em>: playing with input parameters, using blocks before they have been formally introduced, and modifying and extending the assigned tasks. Creativity is a Big Idea of AP CS Principles and a core element of this course.</p>
-	raw-html:<p><strong>Social Implications Focus:</strong> Privacy, Communication and Online Interactions</p>
-	raw-html:<div class="comment">Needs more work -MF</div>
-	raw-html:<p>In Unit 1, students will also discuss social implications of computing, including video games, social media, cyberbullying, privacy, and downloading music. Students are likely to be familiar with these issues, and grappling with them at the beginning of the course helps students understand the relevance and necessity of understanding the world of computing. Encourage constructive and rigorous debate. Ask questions to challenge students' viewpoint(s) and to expand the debate especially if students lean toward a collective bias. Review the teacher support on <a href="/bjc-r/cur/teaching-guide/U1/general-support/dicussion.html">Facilitating Classroom Discussion</a>.</p>
-
+	raw-html:<p><strong>Programming Focus:</strong> Introduction to <span class="snap">snap</span>, Abstraction</p>
+    raw-html:<p>Students dive right into <span class="snap">snap</span> programming by designing games and visual projects using loops, randomness, and control blocks. They get to know the <span class="snap">snap</span> interface,  coordinate system, sounds, mathematics, variables, and how to build their own blocks. Encourage students to <em>experiment</em> with <span class="snap">snap</span>, playing with inputs, trying out blocks before they have been formally introduced, and modifying and extending the assigned tasks. Creativity is a Big Idea of AP CS Principles and a core element of BJC.</p>
+	raw-html:<p><strong>Social Implications Focus:</strong> Privacy, Games, and the Nature of Technology</p>
+	raw-html:<p>Students  discuss social implications of computing, including video games, privacy, and an introduction to the general question of whether or to what extent technology is good or bad.  Review the teacher support on <a href="/bjc-r/cur/teaching-guide/U1/general-support/discussion.html" target="_blank">Facilitating Classroom Discussion</a>.</p>
+	
 h3: Pacing
-	raw-html:<p>The 2 weeks of Programming Labs and 1 week of Social Implications Labs for Unit 1 can be distributed according to what works best with your class. Experiment! Find the rhythm that works for your students. Consider: <ul><li>Working through the 4 programming labs in the first 2 weeks and then the social implications lab in the 3rd week as presented below.</li><li>Work through the 4 programming labs over all 3 weeks of Unit 1 while concurrently working through the social implications lab (either on specific days of the week or as a part of each class across several days).</li></ul></p>
-
+	raw-html:<p>The two weeks of Programming Labs and one week of Social Implications Labs for Unit 1 can be distributed in whatever way works best with your class. Experiment! Find the rhythm that works for your students. Consider: <ul><li>Working through the five programming labs in the first two weeks and then the social implications lab in the third week as presented below.  This has the advantage of letting students become accustomed to a single style of work over a stretch of time, but the disadvantage of allowing them to view social implications as something artificially tacked onto the course.</li><li>Work through the five programming labs over all three weeks of Unit 1 while concurrently working through the social implications lab (either on specific days of the week or as a part of each class across several days).  This has the advantage of integrating the two main threads of the course in students' minds, but requires them to be able to switch gears frequently.</li></ul></p>
+	
 h3: Highlighting Computational Thinking
-	raw-html: <p>One way students develop their computational thinking skills is through direct experience with Snap<em>!</em>. For example, students are frequently asked to predict what they think will result from a given Snap<em>!</em> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong>, and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script as they explore it, and as they are introduced to functions as a way to generalize processes. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. Finally, students engage with the broader world of computing in exploring topics related to its impacts. As students write about and debate important social issues, they develop the thinking skills required to analyze complex issues.</p>
-
+	raw-html: <p>One way students develop their computational thinking skills is through direct experience with <span class="snap">snap</span>. For example, students are frequently asked to predict what they think will result from a given <span class="snap">snap</span> script. Making such predictions requires students to make sense of the sequential nature of the code. Students are introduced to the idea of <strong>abstraction</strong> and will experience this way of thinking as they learn what details they can manipulate or safely overlook in a script. They will expand this idea of abstraction throughout the course. The emphasis on Pair Programming in Unit 1 is meant to help students <strong>communicate</strong> and <strong>collaborate</strong> in problem solving. It is also common practice in industry, not just a pedagogical device. Finally, students engage with the broader world of computing by exploring  its impacts. As students  debate and sometimes write about important and complex social issues, they develop analytic thinking skills.</p>
+	
 heading: Week 1 (Programming Focus)
 	resource: Lab 1: Building an App [/bjc-r/cur/teaching-guide/U1/lab-pages/1-building-an-app.html]
 	raw-html:<ul><li>1-2 days</li></ul>
@@ -24,18 +23,14 @@ heading: Week 1 (Programming Focus)
 	raw-html:<ul><li>2-3 days (may go into second week)</li></ul>
 
 heading: Week 2 (Programming Focus)
-	resource: Lab 3: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/Week02/3-make-your-own-blocks.html]
-	resource: Lab 4: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/Week02/4-using-randomness.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week02/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week02/assignments.html]
-
+	resource: Lab 4: Building and Debugging Your Own Blocks [/bjc-r/cur/teaching-guide/U1/lab-pages/4-make-your-own-blocks.html]
+	raw-html:<ul><li>2-3 days</li></ul>
+	resource: Lab 5: Block Types and Calculations [/bjc-r/cur/teaching-guide/U1/lab-pages/5-block-types.html]
+	raw-html:<ul><li>2 days</li></ul>
+	
 heading: Week 3 (Social Implications Focus)
-	resource: Lab 5: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/Week03/5-explosion-bits-games-violence.html]
-	resource: Class Activities [/bjc-r/cur/teaching-guide/U1/Week03/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U1/Week03/assignments.html]
-
-heading: Investigations
-	resource: Kaleidoscope [/bjc-r/cur/teaching-guide/U1/investigations/kaleidoscope.html]
-	resource: Bug Dance Animation [/bjc-r/cur/teaching-guide/U1/investigations/bug-dance.html]
-
+	resource: Lab 6: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/lab-pages/6-explosion-bits-games-violence.html] 
+	
+heading: Investigation
+	raw-html: <p>Students can begin work on <a href="/bjc-r/cur/programming/1-introduction/investigations/bug-dance.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Bug Dance Animation</a> after Lab 3 when they formalize their understanding of <code>repeat</code>.</p><div class="endnote">Investigations are supplemental content. If you have time, assign them for homework, classwork, or differentiation.</div>
 }

@@ -9,7 +9,7 @@ big-idea: Understand Moore's law and the technical limitations and hurdles the h
 	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
 
 h2: Activities
-learning-goal: Use the Snap<em>!</em>  timer to gather run time information
+learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
 learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
 heading: Introduction

@@ -7,8 +7,8 @@
     </head>
     
     <body>
-		<h2>Map</h2>
-
+		<h2>Map</h2>            
+        
 <!--
 <br><br>
 The first input to the <code>map</code> block has a form you haven't seen before this:<br>
@@ -26,7 +26,7 @@ The first input to the <code>map</code> block has a form you haven't seen before
 		<div class="comment">Why does the font in this image look so different? --MF<br /><img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/></div>
         <div class="sidenote">The first input of <code>map</code> <img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/> goes inside a gray ring, which means the input is a <em>function</em>.<br> <code>map</code> is called a <em>higher order function</em> because it takes another function as an input.</div>
 
-		<p>Alphie and Betty talk about another example of using <code>map</code> to compute some function of every item of a list:</p>
+		<p>Alphie and Betty talk about another example of using <code>map</code> to compute some function of every item of a list:</p>    
         <div class="dialogue">
     		<div><span>Betty:</span> That gray ring after the word "map" means a function goes in there. A function? Like in algebra? What about the function <em>f</em> defined by <em>f</em>(<em>n</em>) = 3<em>n</em> + 7?</div>
             <div>
@@ -40,7 +40,7 @@ The first input to the <code>map</code> block has a form you haven't seen before
             <div class="stagedir">Betty makes and clicks to see <img border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/3-lists/map3x+7.png" /></div>
             <div><span>Alphie:</span> Let's see. 2 times 3 is 6. And then add 7. That's 13. Good, it worked!</div>
         </div>
-
+        
         <div class="forYouToDo" id="first">
         	<ol>
             	<li>
@@ -48,7 +48,7 @@ The first input to the <code>map</code> block has a form you haven't seen before
                     <ol>
                         <li>Write a function that would report the <strong>list</strong> 3, 1, 8. </li>
                         <li>Write a function that would report the <strong>list</strong> 4, 0, 14. </li>
-            <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" />
+            <img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
                         <li>Write a function that would report the <strong>list</strong> 4, 0, 49. </li>
         			</ol>
                 </li>
@@ -57,10 +57,10 @@ The first input to the <code>map</code> block has a form you haven't seen before
                 	Build a reporter <code>compose </code>  that takes two functions and a list as input and 
 					reports the the result of mapping the first function over the result of mapping the second function over the list:
                 	<img border="0" title="compose" alt="map 3x+7" src="/bjc-r/img/3-lists/compose.png" />
-                </li>
+                </li>  
             </ol>
         </div>
-
+        
         <div class="takeItFurther">
         	<ol type="A">
             	<li>
@@ -85,15 +85,16 @@ The first input to the <code>map</code> block has a form you haven't seen before
 				        <li> Make <code>Move</code> more general, so that you can input how much you want to change each coordinate of the elements of <code>A</code>.</li>
                     </ol>
                 </li>
-            </ol>
-        </div>
-
-<!---
+            </ol> 
+        </div>    
+        
+<!---        
 <div class="comment">JK: Comment from Dan and NY teachers: "They worked for quite a while, not realizing that if the function passed to map is “item _ of LIST” that they could remove the 1 to leave a blank slot.  This has come up before with students who see a drop-down menu and don’t realize it can be edited."</div>
-
+        
         <li><strong>Make</strong> a red block, <img border="0" src="/bjc-r/img/3-lists/lookup_block.png" alt="red reporter: lookup items () from ()" title="red reporter: lookup items () from ()" />. Here's how it starts:<br> <img border="0" src="/bjc-r/img/3-lists/lookup_block_def.png" alt="lookup items (item numbers) from (this list)" title="lookup items (item numbers) from (this list)" /><br>And here it is in action on our list <code>nouns</code>:<div class="sidenote">If you need some inspiration, look again at <a href="/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html#fmap">problem 3 in the Getting Started</a> for this lab.</div><br><img border="0" src="/bjc-r/img/3-lists/nouns.png" alt="giraffe, elephant, pizza, etc." title="giraffe, elephant, pizza, etc." /> <br> <img border="0" src="/bjc-r/img/3-lists/lookup_result.png" alt="lookup items (1,2,5) from (nouns) = (giraffe, elephant, boy)" title="lookup items (1,2,5) from (nouns) = (giraffe, elephant, boy)" /></li>
-
-        <li>Once you've made <code>lookup items () from ()</code>, go to the file menu <img class="button" src="/bjc-r/img/1-introduction/file_button.png" alt="File button"/> and choose "Export blocks...". This opens a window with all the imported tools and all your custom blocks. <strong>Uncheck</strong> all the blocks <strong>except</strong> your new <code>lookup</code> block. Choose "ok."<br> You will see a new tab open with text. Save this as "lookup.xml" (go to your browser's File->Save Page As... or right-click on the page and Save As...). Save it to a folder or on your computer's desktop.<br>Now, you can use this block in other Snap<em>!</em> projects. Try it now. Open a new Snap<em>!</em> page. Then <strong>drag</strong> the "lookup.xml" file onto the Snap<em>!</em> page. The block should now be in your Variables palette.<br>You will use the <code>lookup</code> block again later in Unit 3 Lab 4.</li>
+        
+        <li>Once you've made <code>lookup items () from ()</code>, go to the file menu <img class="button" src="/bjc-r/img/1-introduction/file_button.png" alt="File button"/> and choose "Export blocks...". This opens a window with all the imported tools and all your custom blocks. <strong>Uncheck</strong> all the blocks <strong>except</strong> your new <code>lookup</code> block. Choose "ok."<br> You will see a new tab open with text. Save this as "lookup.xml" (go to your browser's File->Save Page As... or right-click on the page and Save As...). Save it to a folder or on your computer's desktop.<br>Now, you can use this block in other <span class="snap">snap</span> projects. Try it now. Open a new <span class="snap">snap</span> page. Then <strong>drag</strong> the "lookup.xml" file onto the <span class="snap">snap</span> page. The block should now be in your Variables palette.<br>You will use the <code>lookup</code> block again later in Unit 3 Lab 4.</li>
+        
     </ol>
     </div>
 --->

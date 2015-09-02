@@ -31,42 +31,7 @@ heading: Programming Lab 3: Developing More Complex Programs
 	raw-html: <img class="imageRight" src="/bjc-r/img/building-blocks/max-3-arg-code.png" alt="max of (x) and (y) and (z) block definition" title="max of (x) and (y) and (z) block definition" />
 	resource: Input Types [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-input-types.html]
 	resource: Composition of Functions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/5-composition-of-functions.html]
-	resource: Analyzing various definitions of <code> >= </code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-analyzing-definitions-of-ge.html]
-
-// heading: Programming Lab 4: Number Guessing
-			//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-		//resource: More Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-number-guessing/more-number-guessing.html]
-		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
-		
-
-
-		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
-
-// heading: Programming Lab 5: More Work with Reporters
-	
-// heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-	//resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
-	
-
-//heading: Lab 7: Testing Your Code
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
-//  	resource: Simple Debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/simple-debugging-house.html]
-//  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
-  		//resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
-
-// heading: Programming Lab 4: Abstraction
-//	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
-//	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
-//    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
-
-// heading: Lab 8: Programs with Multiple Sprites
-//	resource: Experiment with a Short Snap<em>!</em> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
-//	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
-		//quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/quiz-different-ways-to-broadcast.html]
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
-//	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
-//	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
+	resource: Analyzing Various Definitions of <code> &gt;=</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/6-analyzing-definitions-of-ge.html]
 
  	raw-html: <hr />
 
@@ -161,7 +126,7 @@ heading: Quarter 1 Project
 		//	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
 		//    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
 		// heading: Lab 8: Programs with Multiple Sprites
-		//	resource: Experiment with a Short Snap<em>!</em> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
+		//	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
 		//	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
 				//quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/quiz-different-ways-to-broadcast.html]
 			//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]

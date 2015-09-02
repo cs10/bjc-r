@@ -8,57 +8,50 @@
       
 	<body>
         <h2>Composing Higher-Order Functions</h2>
-
+        
+        <div class="todo">
+            <ul>
+                <li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
+            </ul>
+        </div>
         
         <div class="dialogue">
-        	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-              <div class="stagedir">Alphie and Betty are discussing the blocks they have been using with lists.</div>
-            <div class="sidenoteBig">Click to review: <a href="/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>map</code></a>, <a href="/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>keep</code></a>, or <a href="/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>combine with</code></a>.</div>
-            <div><span>Alphie:</span> The <code>map</code> block applies some function to each item of a list.</div>
-            <div><span>Betty:</span> The <code>keep</code> block lets you choose some items from a list and not others.</div>
-            <div><span>Alphie:</span> And <code>combine with</code> takes an operation (like <code>+</code>) and a list.  It combines all the items of the list into a single output using the operation. So, with <code>+</code>, it would give the sum of all the numebrs in the list.</div>
-            <div><span>Betty:</span> Would we ever use all three of the functions together?</div>
+            <div><span>Alphie:</span> <code>Map</code> applies some function to each item of a list.</div>
+            <div><span>Betty:</span> <code>Keep</code> lets you choose some items and not others.</div>
+            <div><span>Alphie:</span> And <code>combine with</code> takes an operation like <code>+</code>and a list.  It combines all the items of the list into a single output using the operation.</div>
+            <div><span>Betty:</span> Can you think of a situation where we would use all three of the functions together?</div>
               <div class="stagedir">They pause to think.</div>
-            <div><span>Alphie:</span> I guess you could start with a list of numbers, <code>keep</code> the ones that were greater than 50, use <code>map</code> to add 10 to all of them, and then use <code>combine with</code> to add those new numbers up.</div>
-            <div><span>Betty:</span> OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll <code>keep</code> the numbers over 50.</div>
-              <div class="stagedir">Betty builds this expression: <img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
-            <div><span>Alphie:</span> Then we add 10 to every item using <code>map</code>. And the list we're mapping over is everything over 50 that we kept, so let's just drag everything in our <code>keep</code> expression in there.</div>
-              <div class="stagedir">Alphie builds this expression using Betty's: <img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
-            <div><span>Betty:</span> Your last idea was to add all these new numbers up, right? So we'll use <code>combine with</code> and addition, and our list is everything in the <code>map</code> expression.</div>
-              <div class="stagedir">Betty adds to Alphie's expression: <img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
+            <div><span>Alphie:</span> I guess you could start with a list of numbers, keep the ones that were greater than 50, add 10 to all of them, and then add those new numbers up.</div>
+            <div><span>Betty:</span> This is like doing sit-ups.  OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll keep the numbers over 50.</div>
+              <div class="stagedir"><img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
+            <div><span>Alphie:</span> Then we add 10 to every item, so use <code>map</code>... The list we're mapping over is everything we kept, so let's just drag everything in the the <code>keep</code> block in there.</div>
+              <div class="stagedir"><img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
+            <div><span>Betty:</span> The last thing was to add all the numbers, right? So we'll use <code>combine with</code> addition, and our list is everything in the <code>map</code> block.</div>
+              <div class="stagedir"><img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
         </div>
 
 
         <div class="forYouToDo" id="first">
             <ol>
-                <li> Try Alphie and Betty's invention with a list of your own.  Change the operations in <code>combine with</code> and <code>map</code>, too. </li>
-            </ol>
-        </div>
-
-        <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
-
-        <div class="forYouToDo">
-            <ol start="2">
-                <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
-                <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
-				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
-                <li>Use those blocks to decode this message:<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
-            </ol>
-        </div>
+                <li> Try Alphie and Betty's invention with a list of your own.  Vary the operations, too. </li>
             
-            	<img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
-        <div class="forYouToDo">
-        	<ol start="5">
-                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
-            </ol>
-        </div>
-        <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a> and <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html#secretcode">Unit 2 Lab 2: Script Variables</a></div>
-        <div class="takeItFurther">
-            <ol type="A">
+            
                 <li>
-                	Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's data at the shop. There are eight days shown here. <br />
-		    		<div class="comment">JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</div>
-                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
+                    Every character you type can be represented as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
+                    <ol>
+                        <li>Use the green blocks <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> and <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
+						
+<div class="sidenote">	 <code>map</code> and <code>combine with</code> might be helpful here. </div>	
+						
+						
+                        <li>Use those blocks to decode this message:<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+                    </ol>
+                </li>
+            
+            	<img src="/bjc-r/img/icons/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+            
+                <li>
+                	Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's data at the shop. There are eight days shown here. <br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
                     <ul>
                         <li>The first number is the day's high temperature (in Fahrenheit).</li>
                         <li>The second is the number of Popsicles sold.</li>
@@ -68,7 +61,8 @@
                     </ul>
                     Build a single block that calculates the total amount of money the shop made by selling Popsicles and ice cream cones on the days when the high temperature was over 80 degrees.
                 </li>
-        	</ol>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
+            </ol>
         </div>
 
 <!--
@@ -94,7 +88,7 @@ Don't be confused about which inputs do and don't have rings. It's the square <u
 <p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
 
 </p>
-To translate from a text string to a list of words, Snap<em>!</em>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
+To translate from a text string to a list of words, <span class="snap">snap</span>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
 <img border="0" src="/bjc-r/img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
 <br>As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
 

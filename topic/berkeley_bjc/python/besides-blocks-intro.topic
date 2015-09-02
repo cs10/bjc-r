@@ -5,7 +5,7 @@ title: Besides Blocks: Intro to Python
 {
 h2: Big Ideas
 big-idea: Computational Thinking can be used in any programming language.
-big-idea: Python and Snap<em>!</em>  are awesome languages which coexist.
+big-idea: Python and <span class="snap">snap</span>  are awesome languages which coexist.
 big-idea: #EverythingIsAwesome!
 
 // h2: Activities
