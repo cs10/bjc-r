@@ -21,13 +21,13 @@ title: Unit 5: Algorithms and Data
 heading: Programming Lab 1: List Manipulation
 	raw-html: <div class="commentBig">Brian and I agreed to move the content from "Experiencing Algorithms" to the TG. --MF</div>
 	// resource: Everyone's Got Algorithms [/bjc-r/cur/programming/algorithms/everyones-got-algorithms.html]
-	resource: Getting Started [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/1-getting-started.html]
+	resource: Getting Started [/bjc-r/cur/programming/5-algorithms/1-list-manipulation/1-getting-started.html]
 	// forum: Trash or Treasure? [/bjc-r/cur/programming/algorithms/trash-or-treasure.html]
 	// forum: Trash or Treasure? [http://veritas.eecs.berkeley.edu/courses/mod/forum/view.php?id=1773]
-	//resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/2-experiencing-algorithms.html]
+	//resource: (group work) Experiencing Algorithms [/bjc-r/cur/programming/5-algorithms/1-list-manipulation/2-experiencing-algorithms.html]
 	// resource: (group work) Searching [/bjc-r/cur/programming/algorithms/group-work-searching.html]
 	// resource: (group work) The Need for Speed [/bjc-r/cur/programming/algorithms/group-work-the-need-for-speed.html]
-	resource: Algorithms in <span class="snap">snap</span> [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/3-algorithms-in-snap.html]
+	resource: Algorithms in Snap<em>!</em> [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/3-algorithms-in-snap.html]
 	resource: Improving Our Number Finder [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/4-improving-our-number-finder.html]
 	resource: Too Many Blocks! [/bjc-r/cur/programming/4-algorithms/1-list-manipulation/5-too-many-blocks.html]
 
@@ -43,19 +43,18 @@ heading: Programming Lab 1: List Manipulation
 //	reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
 
 //h2: Activities
-//learning-goal: Use the <span class="snap">snap</span>  timer to gather run time information
+//learning-goal: Use the Snap<em>!</em>  timer to gather run time information
 //learning-goal: Observe the difference between constant, linear, quadratic and logarithmic run times.
 
-heading: Programming Lab 2: Algorithm Complexity
+heading: Lab 2: Algorithm Complexity
 	resource: A (non-video) Game [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/1-a-non-video-game.html]
-	raw-html: <div class="todo">From Dan: <ul><li>Given a ton of card decks, have the class figure out the fastest INDIVIDUAL time to start from a shuffled deck to a sorted deck (students can choose what “in order” means for that, but it has to be a unique order, so “reds in front of blacks” isn’t enough — people always choose to sort by either rank or suit).  Talk about the different algorithms that evolved, and what were fastest.</li><li>Tell the class they can work as a TEAM to sort a shuffled desk the fastest.  The teams can be any size. Let them continue to adjust the algorithms and sizes of teams and personnel on the teams to achieve the fastest scores.  Talk about the different algorithms that evolved, and what were fastest.</li></ul>This is a great introduction to concurrent algorithms, and allows the kids to come up with algorithms on their own, and builds team spirit. It’s really fun and useful to plot the fastest times vs the number of players, and talk about amdahl’s law. (Added in by MF) Brian suggested the placement in the middle of Lab 2.</div>
 	resource: Competing with Young Gauss [/bjc-r/cur/programming/4-algorithms/2-algorithm-complexity/2-competing-with-young-gauss.html]
 
-heading: Programming Lab 3: Timing Experiments
-	resource: Timing a Reporter [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/1-time-is-of-the-es-sense.html]
-	//resource: The Time It Takes to Increment [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/2-do-you-have-time-to-add.html] 
+heading: Lab 3: Timing Experiments
+	resource: Time is of the Es-sense [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/1-time-is-of-the-es-sense.html]
+	resource: Do You Have Time to Add? [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/2-do-you-have-time-to-add.html]
 	resource: Constant-Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/3-constant-time.html]
-	//resource: All the Numbers, All the Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/4-all-the-numbers-all-the-time.html]
+	resource: All the Numbers, All the Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/4-all-the-numbers-all-the-time.html]
 	resource: Linear-Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/5-linear-time.html]
 	quiz: Searching Through Time [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/6-quiz-searching-through-time.html]
 	resource: Timing Sum-thing's Up [/bjc-r/cur/programming/4-algorithms/3-timing-experiments/7-timing-sum-things-up.html]
@@ -69,21 +68,21 @@ heading: Programming Lab 3: Timing Experiments
  	raw-html: <hr />
 
 heading: Social Implications Lab 5: Copyright; Media and Sharing; Patents
-	 resource: Getting Started [/bjc-r/cur/programming/4-algorithms/5-copyright/0-gs.html]
-	 resource: Stroke of Genius? [/bjc-r/cur/programming/4-algorithms/5-copyright/1-gray.html]
-	 resource: How Inventions Happen [/bjc-r/cur/programming/4-algorithms/5-copyright/2-invent.html]
-	 resource: Big Questions [/bjc-r/cur/programming/4-algorithms/5-copyright/big-questions.html]
-	 resource: Copyright [/bjc-r/cur/programming/4-algorithms/5-copyright/copyright.html]
-	 resource: Media [/bjc-r/cur/programming/4-algorithms/5-copyright/media.html]
-	 resource: Patents [/bjc-r/cur/programming/4-algorithms/5-copyright/patents.html]
-	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/4-algorithms/5-copyright/btb-chapter6.html]
+	 resource: Getting Started [/bjc-r/cur/programming/5-algorithms/5-copyright/0-gs.html]
+	 resource: Stroke of Genius? [/bjc-r/cur/programming/5-algorithms/5-copyright/1-gray.html]
+	 resource: How Inventions Happen [/bjc-r/cur/programming/5-algorithms/5-copyright/2-invent.html]
+	 resource: Big Questions [/bjc-r/cur/programming/5-algorithms/5-copyright/big-questions.html]
+	 resource: Copyright [/bjc-r/cur/programming/5-algorithms/5-copyright/copyright.html]
+	 resource: Media [/bjc-r/cur/programming/5-algorithms/5-copyright/media.html]
+	 resource: Patents [/bjc-r/cur/programming/5-algorithms/5-copyright/patents.html]
+	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/5-algorithms/5-copyright/btb-chapter6.html]
 
 heading: Social Implications Lab 6: Censorship and Regulation; Computing around the World; Computing in War
 	 resource: Big Questions [/bjc-r/cur/programming/4-algorithms/6-censorship/big-questions.html]
 	 resource: Censorship and Regulation [/bjc-r/cur/programming/4-algorithms/6-censorship/censorship.html]
 	 resource: Computing around the World [/bjc-r/cur/programming/4-algorithms/6-censorship/computing-world.html]
 	 resource: Computing in War [/bjc-r/cur/programming/4-algorithms/6-censorship/computing-war.html]
-	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-algorithms/6-censorship/btb-chapter7.html]	 
+	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-algorithms/6-censorship/btb-chapter7.html]
 	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/4-algorithms/6-censorship/btb-chapter8.html]
 
 heading: Social Implications Lab 7: Innovations; Computing in Other Fields; Computing in Work
@@ -91,7 +90,7 @@ heading: Social Implications Lab 7: Innovations; Computing in Other Fields; Comp
 	 resource: Innovations [/bjc-r/cur/programming/4-algorithms/7-innovations/innovations.html]
 	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-algorithms/7-innovations/computing-other.html]
 	 resource: Computing in Work [/bjc-r/cur/programming/4-algorithms/7-innovations/computing-work.html]
-	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-algorithms/7-innovations/btb-conclusion.html]	 
+	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-algorithms/7-innovations/btb-conclusion.html]
 
  	raw-html: <hr />
 

@@ -15,7 +15,7 @@ There are a few tips for keeping a consistent tone with labs.
 * __Page length recommendations coming soon...__
 * Strike a middle ground between colloquial and formal
 * The writing should be accessible to high school audiences
-* Snap! should always be written in code as `<span class="snap">snap</span>`
+* Snap! should always be written in code as `Snap<em>!</em>`
 * Distinguish between programming concepts and Snap-isms.
 * __Contractions... Probably best to avoid them__
 * If you introduce a new (CS) word be sure the meaning is clear!

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction</title>
+    </head>
+
+    <body>
+        <h2>Recursive Reporters</h2>
+        <div class="todo">
+        	<ul>
+                <li>
+                	<strong>GitHub Feedback:</strong> These problems are at least as good as iteration problems, and it is arguably more natural to think about these problems in terms of loops, not recursion.<br />
+                	It is really, REALLY important that recursion problems be natural recursion problems. That is, the best way and easiest way to think of solving the problem should be recursion, not some other technique.<br />
+                	I would give serious thought to scrapping the problems in this unit that are not natural recursion problems at their core.</li>
+                    <li>
+                    	<strong>BH Respose:</strong> I totally agree with the general idea -- I suspect you learned it (maybe indirectly) from me. :-) But a Getting Started is supposed to make a connection between something they understand and something they don't (yet) understand, to get them playing with the ideas before any exposition. I tried to find a nonlinear pair of examples but didn't find a good one. These two are simple scripts that are easy to compare. I suppose the examples could be<br />
+                        <img src="/bjc-r/img/comments/6-1-rri_01.png" /><br />
+                        and<br />
+                        <img src="/bjc-r/img/comments/6-1-rri_02.png" /><br />
+                        This would have the advantage that the tree block is already familiar to them, but the disadvantage that the reporter does something weird and useless. And that the tree script is pretty long, because it's full of all those moves and turns that are irrelevant for our current purpose. What do you think?
+                    </li>
+                    <li>GH Feedback	8/1: I could be wrong... but there appears to be an error in the piglatin code.... the last line should be simply join(all but first letter of (word)), (letter 1 of (word)), (ay). This would make "pig" into "igpay"<br />You call piglatin again but this creates an infinite loop... There is no base case.... Your if statement is for the condition that the first letter is a vowel. -It's not a base case.</li>
+            </ul>
+        </div>
+        <p>Until this unit, all our examples of recursion have been <em>command</em> blocks, whose scripts have a structure like this:</p>
+        <p><img src="/bjc-r/img/7-recursive-reporters/rec-command.png" alt="recursive command pattern" /></p>
+        <p>There can be any number of recursive calls interspersed with other commands in the script.</p>
+        <p>Reporters are different, because a reporter can only report <em>one </em>value. So you can't do this:</p>
+        
+        <p><img src="/bjc-r/img/7-recursive-reporters/bad-rec-reporter.png" alt="bad (multi-report) recursive reporter pattern" /></p>
+        <div class="sidenote"><p>Take It Further:<br />How did we make that picture?</p></div>    
+        <p>(In fact, Snap<em>!</em> won't let you stack <code>report</code> blocks; since <code>report</code> ends the script, there is no connection tab below the block and you can't put anything directly below it.)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p>Instead, most of the time a recursive reporter call will be inside a <em>combiner</em> that attaches the result of the recursive call to some other value:</p>
+        <p><img src="/bjc-r/img/7-recursive-reporters/rec-reporter.png" alt="correct recursive reporter pattern with combiner" /></p>
+        <p>The combiner can be an arithmetic operator such as <code>+</code> or <code>&times;</code>:</p>
+        <p><img src="/bjc-r/img/7-recursive-reporters/factorial.png" alt="factorial" /></p>
+        <div class="forYouToDo" id="first">
+        	<p><strong>Do the problems on this page using recursion, not higher order functions.</strong></p>
+            <ol>
+            	<li>Make a <code>sum</code> block that takes a list of numbers as input and reports their sum.</li>
+            </ol>
+            <p>Note: This problem and the others on this page are really too simple to need recursion; in real life you'd solve them with looping or with higher order functions.  Right now we're trying to get you comfortable with the notation of recursive reporters.  Starting with the next lab, you'll be working on problems that really are natural for recursion.</p>
+        </div>
+        <p>... or a text string operator such as <code>join</code> or <code>join words</code>:</p>
+        <p><img src="/bjc-r/img/7-recursive-reporters/list-to-sentence.png" alt="list-&gt;sentence" /></p>
+        <div class="forYouToDo">
+        	<ol start="2">
+            	<li>Make an <code>initials</code> block that takes a list of words as input and reports a word containing the first letters of each of the input words.</li>
+            </ol>
+        </div>
+        <p>or a list operator such as <code>append</code> or <code>in front of</code>:</p>
+        <p><img src="/bjc-r/img/7-recursive-reporters/plurals.png" alt="plurals" /></p>
+        <div class="forYouToDo">
+        	<p>Don't go on until you understand what those three example scripts do, and how they do it. </p>
+       	</div>
+        <p class="takeNote">
+        	Note: On rare occasions, the recursive call <em>does</em> appear directly inside the <code>report</code>:<br />
+        	<img src="/bjc-r/img/7-recursive-reporters/piglatin.png" alt="piglatin" /><br />
+            But almost always, you won't go wrong if you start by thinking about what combining block to use.
+        </p>    
+        
+	</body>
+</html>

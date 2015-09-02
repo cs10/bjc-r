@@ -3,12 +3,12 @@
     <head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 3 Lab 1: Introduction to Lists</title>
-    </head> 
-    
+        <title>Lab 1: Introduction to Lists</title>
+    </head>
+
     <body>
-		<h2>Getting Started</h2>
-   
+		<h2>Getting Started: Lists</h2>
+
         <div class="todo">
             <ul>
 	            <li>JK: #4 is still there, but may be deleted if the functionality of "length of" is changed in Snap.</li>
@@ -16,15 +16,14 @@
             </ul>
         </div>
 
-        	<div class="newProject"><span class="text">"U3L1-Intro"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L1-Intro" title="Create a new project called U3L1-Intro" /></div>
-        
         <div class="forYouToDo" id="first">
 
 			<p>Write down your observations.</p>
             <div class="sidenote">The <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block creates a list. Use the left and right arrowheads to vary the number of input slots. Blocks that can be varied in this way are said to have  a <strong>variadic input</strong>. </div>
+            <div class="sidenote">What does  <img border="0" src="/bjc-r/img/3-lists/listblockempty.png" class="block" alt="Empty LIST block" title="orange LIST block"> report?. </div>
             <ol>
                 <li>
-                    Find <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block" /> in the Variables palette and construct <img border="0" src="/bjc-r/img/3-lists/gs1.png" class="script" alt="LIST block with capitals" title="LIST block with capitals" />. 
+                    Find <img border="0" src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block" /> in the Variables palette and construct <img border="0" src="/bjc-r/img/3-lists/gs1.png" class="script" alt="LIST block with capitals" title="LIST block with capitals" />.
                     <p>Describe what it does.</p>
                 </li>
                 <li>
@@ -37,20 +36,20 @@
                         
                   </ol>
                 </li>
-                <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img border="0" src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div>
+                <div class="sidenote">This  artist's conception of a list is how Snap<em>!</em> displays a list. Each red rectangle is one <strong>list item</strong>. <img border="0" src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div>
                 <div class="sidenote">An input slot that looks like <img border="0" src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
                 <li> What's the difference between <img border="0" src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img border="0" src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
                 <div><img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
                 <li>
                     The red <code>length of</code> block returns the number of items in a <strong>list</strong>. For example, <img border="0" src="/bjc-r/img/3-lists/gs_length2.png" alt="length (Augusta, Boise)" title="length (Augusta, Boise)" /> returns 2. What do each of the following return?
                     <ol>
-                        
+
                         <li><img border="0" src="/bjc-r/img/3-lists/gs_length_allbutfirst.png" alt="length (all but first (Augusta, Boise, Columbia))" title="length (all but first (Augusta, Boise, Columbia))" /></li>
                         <li><img border="0" src="/bjc-r/img/3-lists/gs_length_blanks.png" alt="length (blank, Augusta, blank, blank, Boise, blank)" title="length (blank, Augusta, blank, blank, Boise, blank)" /></li>
                         <li><img border="0" src="/bjc-r/img/3-lists/gs_length0.png" alt="length (empty list)" title="length (empty list)" /></li>
                     </ol>
                 </li>
-            
+
                 <li> Compare:
                     <ol>
                       <li><img border="0" src="/bjc-r/img/3-lists/gs4say_list.png" alt="say list block" title="say list block"></li>
@@ -58,10 +57,10 @@
                       <li><img border="0" src="/bjc-r/img/3-lists/gs4say_random.png" alt="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)"></li>
 <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />                      <li><img border="0" src="/bjc-r/img/3-lists/gs4say_each.png" class="script" alt="say for each block" title="say for each block"></li>
                     </ol>
-                </li>   
+                </li>
             </ol>
         </div>
-  
+
         <div class="dialogue">
             <div class="stagedir">Alphie and Betsy are trying to build a block to generate a list of whole numbers from <em>n</em> down to 1.</div>
             <div>
@@ -82,14 +81,17 @@
         <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
 
         <div class="dialogue">
-        <div class="stagedir">Gamal joins the group and looks over Alphie's shoulder.</div>
-        <span>Gamal: </span>Wow, it would never have occurred to me to write it that way!  You want <code>countdown (5)</code> to report the list {5, 4, 3, 2, 1}.  But <code>countdown (4)</code> is {4, 3, 2, 1}, so all you have to do is stick a 5 in front:<br />
-	<img src="/bjc-r/img/3-lists/recursive-countdown.png" width="450" height="202" alt="define countdown (n): if n=0 report empty list, otherwise report (n) in front of (countdown (n-1))">
-</div>
+            <div class="stagedir">Gamal joins the group and looks over Alphie's shoulder.</div>
+            <span>Gamal: </span>Wow, it would never have occurred to me to write it that way!  You want <code>countdown (5)</code> to report the list {5, 4, 3, 2, 1}.  But <code>countdown (4)</code> is {4, 3, 2, 1}, so all you have to do is stick a 5 in front:<br />
+        	<img class="indent" src="/bjc-r/img/3-lists/recursive-countdown.png" alt="define countdown (n): if n=0 report empty list, otherwise report (n) in front of (countdown (n-1))">
+		</div>
+        
         <div class="forYouToDo">
-<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+            <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
             <ol start="7">
-            	<li>Gamal's description of his algorithm didn't mention the <code>if</code> in his code.  What would happen if he left that part out?  Why?</li></ol></div>
+                <li>Gamal's description of his algorithm didn't mention the <code>if</code> in his code.  What would happen if he left that part out?  Why?</li>
+            </ol>
+        </div>
         <!-- <div class="takeItFurther">
 <ol start="5">
 
@@ -117,4 +119,3 @@ Make a block <code>upto (n)</code> that takes a positive integer <em>n</em> as i
 
     </body>
 </html>
-    

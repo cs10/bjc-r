@@ -8,17 +8,16 @@
 
     <body>
 		<h2>Script Variable Projects</h2>
-                <div class="todo">You could replace the below with one of these: <div class="newProject"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-MathTools" title="Start a New Project called U2L2-MathTools" /> (sizing if only off because it's in a reviewer comment)</div> and use a  at the end. (Or just use ) --MF</div>
+                <div class="todo">You could replace the below with one of these: <div class="newProject"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-MathTools" title="Start a New Project called U2L2-MathTools" /></div> (sizing is only off because it's in a reviewer comment). --MF</div>
         
         <p> Open a new file. <img src="/bjc-r/img/icons/new-project-mini.png" alt="Create a new project" title="Create a new project" /> </p>
     <p><strong>You have a choice. </strong> Some of the problems below are about language or linguistics,  some are about mathematics, and some are about art. <strong>Choose any three </strong>that interest you and do them. </p>
         
         <div class="forYouToDo" id="first">
             <ol>
-            
-                <li><strong>Mondrian—an art project:</strong> The Dutch artist Piet Mondrian is possibly best known for his artwork using brightly colored rectangles.
+              <li><strong>Mondrian—an art project:</strong> The Dutch artist Piet Mondrian is possibly best known for his artwork using brightly colored rectangles.
                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-Piet-Mondrian.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"> &quot;Tableau 1&quot; by Piet Mondrian</p>
-                  <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A <span class="snap">snap</span> script can produce designs like these. </p>
+                  <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A Snap<em>!</em> script can produce designs like these. </p>
                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="260"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap"></p>
                 <div class="sidenoteBig">This isn't the actual Snap<em>!</em> program.  You could write custom blocks with these names, but they're a little verbose to use as real block names, especially that two-line one in the middle.  This algorithm is for you to read, not for a computer to read.</div>
                 This algorithm  produced those designs:<br />
@@ -32,7 +31,7 @@ Repeat many times
     Fill rectangle with random color">
 
     <p>To keep your code clear, you may want to create separate blocks that specialize in boundary and fill and choosing locations and calculating size.</p>
-    <p><span class="snap">snap</span> has no <code>fill with color</code> block.  One way to make such a block is <br />
+    <p>Snap<em>!</em> has no <code>fill with color</code> block.  One way to make such a block is <br />
       <img src="/bjc-r/img/2-conditionals-abstraction-testing/fill-script.png" alt="Repeat until height or width is less than 2
 	Draw rectangle of specified height and width
 	Set height slightly smaller
@@ -42,23 +41,24 @@ Repeat many times
     <p>To get bright colors, use <code>set pen shade to 100</code>, and you get a good collection of colors with 
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/set-pen-color-to(2-times-pick-random-0-to-50).png"  alt="set-pen-color-to(2-times-pick-random-0-to-50)">  </p>
                   <ol>  
-                  		<li>Build a program that draws different pictures each time, always using colored rectangles. Use the algorithm suggested above or some idea of your own. <em>Take screen shots of the artworks your program generates and <strong>save the ones that you like</strong> best.</em></li>
-                        <li> Mondrian limited his colors and used a lot of white and some black. Experiment with that to see if you get designs you like.</li>
-                        <li>Find ways to improve your program. </li>
-                  </ol>
+                      <li>Build a program that draws different pictures each time, always using colored rectangles. Use the algorithm suggested above or some idea of your own. <em>Take screen shots of the artworks your program generates and <strong>save the ones that you like</strong> best.</em></li>
+                      <li> Mondrian limited his colors and used a lot of white and some black. Experiment with that to see if you get designs you like.</li>
+                      <li>Find ways to improve your program. </li>
+                    </ol>
                 </li>
-                <li> <strong>Another art idea:</strong> The code <img src="/bjc-r/img/2-conditionals-abstraction-testing/Set-pen-size-50-move-100-steps.png"  alt="Set-pen-size-50-move-100-steps"> does not do what you might expect, because the "ends of the lines" are rounded. Try it.  Now <code>clear</code> the stage and try <img src="/bjc-r/img/2-conditionals-abstraction-testing/Set-pen-size-50-move-0.1-steps.png"  alt="Set-pen-size-50-move-0.1-steps">.
-                  <p>Why does <em>that</em> happen? <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /></p>
-                
-                  <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/colored-circles.png" width="260" alt="colored circles randomly placed">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/Colored-ovals.png" width="260" alt="colored ovals"></p>
-                  <p>  Experiment with the possibilities. </p> 
-                <div class="endnote">You can choose between flat and round ends in the settings menu.
-                  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Flat Line Ends.png"  alt="settings menu, flat line ends"></p>
-                  If you switch to "Flat line ends" for this project, you will probably want to switch back to "round ends" for other drawing projects.
-                </div>  
-              </li>
-                <li><strong>Writing secret code:</strong> Create a block that takes a word as input, changes each letter into the <em>next</em> letter in the alphabet—for example, A becomes B, Y becomes Z...—and reports the result, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/encode-decode(HANDY)-with-result(IBOEZ).png" alt="encode-decode(HANDY)-with-result(IBOEZ)">.
-                <p>In order to do this, you will need to be able to change a letter into a number, add 1 to that number, and then change the new number back to a letter. The blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode-of(Y).png" alt="unicode-of(Y)">                and <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode(89)as-letter.png"  alt="unicode(89)as-letter"> will help you do that. Experiment with them to see how they work.</p>
+                <li> 
+                    <strong>Another art idea:</strong> The code <img src="/bjc-r/img/2-conditionals-abstraction-testing/Set-pen-size-50-move-100-steps.png"  alt="Set-pen-size-50-move-100-steps"> does not do what you might expect, because the "ends of the lines" are rounded. Try it.  Now <code>clear</code> the stage and try <img src="/bjc-r/img/2-conditionals-abstraction-testing/Set-pen-size-50-move-0.1-steps.png"  alt="Set-pen-size-50-move-0.1-steps">.<br />
+                    Why does <em>that</em> happen? <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br />
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/colored-circles.png" width="260" alt="colored circles randomly placed">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/Colored-ovals.png" width="260" alt="colored ovals"><br />
+                    Experiment with the possibilities.<br />
+                    <div class="endnote">
+                        You can choose between flat and round ends in the settings menu.<br />
+                        <img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/Flat Line Ends.png"  alt="settings menu, flat line ends"><br />
+                        If you switch to "Flat line ends" for this project, you will probably want to switch back to "round ends" for other drawing projects.
+                    </div>  
+                </li>
+                <li><strong>Writing<a name="secretcode" class="anchor">&nbsp;</a>secret code:</strong> Create a block that takes a word as input, changes each letter into the <em>next</em> letter in the alphabet—for example, A becomes B, Y becomes Z...—and reports the result, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/encode-decode(HANDY)-with-result(IBOEZ).png" alt="encode-decode(HANDY)-with-result(IBOEZ)">.
+                <p>In order to do this, you will need to be able to change a letter into a number, add 1 to that number, and then change the new number back to a letter. The blocks <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode-of(Y).png" alt="unicode-of(Y)"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/unicode(89)as-letter.png"  alt="unicode(89)as-letter"> will help you do that. Experiment with them to see how they work.</p>
                 <ol><li>This block encodes by adding 1 to the unicode for each letter. You could, instead, always add 2 or 5 or whatever. Give your block a second variable that allows you to specify what to add to the unicode.</li>
                 <li>When you give your <code>encode</code> block the input <code>z</code>, what does it report? If that's not what you would <em>like</em> it to report, change it. </li>
                 <li>Make a <code>decode</code> block.</li></ol>
@@ -75,7 +75,7 @@ Repeat many times
                         </li>
                     </ol>
                 </li>
-                <li><strong>Another mathematical function:</strong> Create a block <code>triangular number n</code> that <em>adds</em> all of the whole numbers from 1 through <em>n</em>. 1 + 2 + 3 + ... + (<em>n</em> - 1) + <em>n</em>. When its input is 4, your block should report 10 (that is, 1 + 2 + 3 + 4).  Define your block so that <code> triangular number 0</code> reports 0. </li>
+                <li><strong>Another mathematical function:</strong> Create a block <code>triangular number n</code> that <em>adds</em> all of the whole numbers from 1 through <em>n</em>:$$1 + 2 + 3 + \cdots + (n - 1) + n$$ When its input is 4, your block should report 10 (that is, 1 + 2 + 3 + 4).  Define your block so that <code> triangular number 0</code> reports 0. </li>
                 <ol> 
                 <li>Create <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from a to b 170 × 27 pixels.png" alt="sum from a to b"> so that <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from 3 to 7 170 × 27 pixels.png" alt="sum from 3 to 7"> reports the sum 3 + 4 + 5 + 6 + 7, and <img src="/bjc-r/img/2-conditionals-abstraction-testing/sum from -3 to 3.png" alt="sum from -3 to 3"> reports the sum of -3 + -2 + -1 + 0 + 1 + 2 + 3.</li></ol>
                 <li> <div class="sidenote">Recall that <code>n mod i</code> will tell you if <em>i</em> is a divisor of <em>n</em>.</div>
@@ -112,7 +112,7 @@ Repeat many times
                     
                     <p>Test it first on several multiples of 7 (small and large) and make sure that, for multiples of 7, it reports only the results 14, 7, 0, -7, and -14. Also test it on several numbers that are <em>not</em> multiples of 7; for those numbers, it should never report 14, 7, 0, -7, or -14. <img src="/bjc-r/img/2-conditionals-abstraction-testing/multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14).png" alt="multiples-of-7-algorithm-block-with-501298-as-input(and-result-neg14)"></p>
                 </li>  
-				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In <span class="snap">snap</span>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div></ol>
+				<li>Look up a test for divisibility by 11 or 13 and see if you can build a block that performs that algorithm.</li><div class="endnote">In Snap<em>!</em>, as in most programming languages, you can test for divisibility just by using <code>mod</code>, but before computers were widespread, algorithms like these greatly simplified some computations.</div></ol>
                <div class="takeNote"><img class="imageRight" src="/bjc-r/img/icons/import-tools-mini.png" alt="Import Tools" title="Import Tools" />Although this 
                 <img src="/bjc-r/img/2-conditionals-abstraction-testing/clobber.png" alt="set variable to function of variable"> style of programming is very common, pretty soon you'll learn a better way: <em>functional programming,</em> in which you never change the value of a variable.  You're not quite ready to write functional programs yet (that'll come in Unit 3), but here are some examples from above, rewritten functionally, that you can probably understand:      <br />                  <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-factorial.png" alt="factorial: combine with times items of numbers from 1 to n"><img src="/bjc-r/img/2-conditionals-abstraction-testing/better-divisors.png" alt="number-of-divisors: length of keep items such that ((n mod __) = 0) from (values from 1 to n)">
 <img src="/bjc-r/img/2-conditionals-abstraction-testing/better-digit-sum.png" alt="digit sum: combine with + items of word to list of number"></div>

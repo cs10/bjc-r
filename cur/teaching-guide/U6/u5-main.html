@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 5 Teacher Guide</title>
+    </head>
+
+<body>
+        <h2>Unit 5 Teacher Guide</h2>
+        <!--<a href="/bjc-r/course/bjc4nyc_2015-2016.html">BJC Home</a><br>
+        <a href="/bjc-r/topic/topic.html?topic=nyc_bjc/6-recursion-trees-fractals.topic&course=bjc4nyc_2015-2016.html&noassignment&noreading&novideo">Unit 5 Student Pages</a><br>
+        <a href="/bjc-r/cur/teaching-guide/U1/overview.html">Introduction to Teacher Guide</a>-->
+        
+        <div class="todo">
+        From Dan: I often show kids how to retrofit a “trace” when they’re debugging a tough recursion:
+<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=BJC4NYC%20Debugging%20Recursion">link</a>
+		</div>
+        
+        <h3>Purpose</h3>
+        <p>Recursion is the use of a procedure within itself. That definition is simple enough, but using recursion in real programming takes some practice and also requires care in the order in which ideas are presented.</p>
+        <p>Recursion is one of the two signature big ideas that distinguish BJC from other CS Principles courses. You never truly <em>need </em>recursion to solve a problem, and even AP CS teachers have traditionally had trouble learning it, so why do we make it so central to our curriculum?</p>
+        <p>One of the central insights of the CS equity and inclusion movement that led to the design of CS Principles is that nontraditional CS students, especially young women, have had a stereotyped view of <em>programming</em> as boring, lonely work, but even people with that stereotype actually <em>love computers, </em>in the form of cell phones, video games, and social networking. That's why the framework makes programming just one of seven &quot;big ideas&quot; of computer science — you meet kids where they are.</p>
+        <p>We agree: You meet kids where they are. But we're not willing to declare victory if we end up <em>leaving</em> them where they start. The truth is, computer science is about programming. The other stuff is important, too, but there wouldn't be a field of computer science if computers could program themselves. We want kids to complete the course having come to see <em>programs themselves,</em> not merely the results of running the programs, as beautiful and joyous. And we think that recursion is the place in the curriculum where that happens: Kids see a tiny recursive program that produces an enormously complicated effect, and that's the central &quot;Aha!&quot; moment in learning to program.  Variable assignment and conditionals and loops just don't have that power.</p>
+        <p>Unit 5 introduces recursion in the context of command blocks, which are recursive programs that have a visible effect. More specifically, this unit revolves around fractal graphics, i.e., pictures that include smaller, simpler versions of themselves.  The canonical example is the fractal tree, in which each branch is a smaller sub-tree with branches of its own.</p>
+        <p><img src="/bjc-r/img/6-recursion/real-tree.jpg" width="246" height="249" alt="picture of tree"></p>
+        <p>The program that produces this tree is not trivial, and we build up to it in small steps in Lab 1. We expand to other fractal shapes, and gradually reduced hand-holding, in Lab 2. Those two labs are the entire programming content of this unit, so it's smaller than the earlier ones, but you should expect to progress more slowly through each lab.</p>
+        <p>A more traditional approach to teaching recursion would start with <em>tail recursion,</em> in which the sole recursive call comes at the end, like this:</p>
+        <p><img src="/bjc-r/img/6-recursion/recursive-square.png" width="258" height="213" alt="tail recursive square block"></p>
+        <p>It is said that students understand this sort of recursion more easily than the branching recursion of the fractal tree. But the truth is that students <em>misunderstand</em> this code! They think the recursive call at the end means &quot;go back to the beginning.&quot; This wrong model will work for tail recursive blocks like this version of <code>square</code>, but eventually students see a recursive call that isn't at the end of the definition, and then they're lost. The &quot;go back&quot; model is hard to overcome once it invades a learner's mind. Better to <em>start</em> with an example in which &quot;go back&quot; obviously fails.</p>
+        <p>Also, a student looking at this definition will wonder what the point is of doing in such a complicated way the same task they did with <code>repeat 4</code> in the first unit.</p>
+        
+        
+        <h3>Week by week stuff</h3>
+        <div class="indent">
+            <ul>
+                <li><strong>VEE demo.</strong>  Almost always in this curriculum, we start with direct exploration of unfamiliar ideas.  But in this case we think the unit has to start with a teacher-in-front, kids-facing-forward demonstration, because the collective gasp when the first really deep picture appears is unforgettable.  VEE is a great introduction to recursion because its use of randomness lets you ignore completely the annoying detail of base cases in recursive code.  Students who've seen the demo therefore aren't ready to write their own recursive programs, but they're motivated to get through the first lab.  By the way, be aware that the <em>list of blocks</em> in the corner of the stage is something the students won't have seen before, but resist the temptation to talk about it.  (If a student asks, say "see me after class.")  If you don't make a fuss about it, students will understand it by themselves, because they've seen lists before and they've seen blocks before.  This is the moment in the course where Snap<em>!</em>&thinsp;'s extention of the Scratch idea of visual metaphors for computer science ideas really shines.</li>
+                <li>
+                	<strong>Programming Lab 1: Trees in a Forest.</strong>  Most of this lab walks the students through a simple fractal tree in lengthy detail.  The structure of the first three pages uses the <em>combining method</em> of explaining recursion.  What motivates this approach is the need to overcome students' initial feeling that a recursive call is "cheating" because it's calling a block that hasn't been (fully) written yet.  To avoid this confusion, we start not with the recursive tree, but with a sequence of simpler tree blocks each of which calls the one before it.  (<code>tree2</code> calls <code>tree1</code>; <code>tree3</code> calls <code>tree2</code>; and so on.)  Students go through this sequence with no feeling of cheating, since, for example, <code>tree3</code> has been written and debugged completely <em>before</em> we use it in <code>tree4</code>.  The combining method is time-consuming, but it's worthwhile for students to use it throughout this lab as they make variants on the simple tree.<br /><br />
+                	Most of the labs provide links to projects with the blocks partly or completely pre-written.  We don't in this lab, because students really need the tactile experience of building almost the same script repeatedly in order to see the virtue of combining them into a single script.
+                </li>
+                <li><strong>Programming Lab 2: More Fractals.</strong>  In this lab, besides getting more variety in the fractal shapes we see, we start weaning students away from the combining method into the <em>leap of faith</em> method, in which they write the recursive definition right away, just assuming on faith that the recursive call(s) will do what they're supposed to.  (Of course it's not truly a leap of faith in the religious sense, because the students' faith in recursion is based on their earlier experience with the combining method.  It's just a little "hop of faith," taking for granted that the same idea of recursion that worked before will work this time, too.)</li>
+            </ul>
+        </div>
+		<h3>External Resources</h3>
+        <div class="todo">
+        	<ul>
+	            <li>MF: Consider suggesting teachers assign some/all of these readings to students</li>
+                <li>
+                	MF: I added this preview from "How to Think like a Computer Scientist" in U1: <br />
+                <img class="indent" src="/bjc-r/img/1-introduction/sum-odds.png" alt="set sum to 0, for i = 1 to 5 [set sum to (sum + ((2 &middot; i) - 1))]" title="set sum to 0, for i = 1 to 5 [set sum to (sum + ((2 &middot; i) - 1))]" /></li>
+                <li>BH: I don't like either of these resources, because they both spend a lot of time starting with could-be-done-iteratively examples, which we've just explained above we're <em><strong>not</strong></em> going to do! :-(</li>
+            </ul>
+        </div>
+        <ul>
+            <li><a href="http://interactivepython.org/courselib/static/thinkcspy/Recursion/recursionsimple.html" target="_blank">Recursion</a> article from "How to Think like a Computer Scientist"</li>
+            <li><a href="https://www.khanacademy.org/computing/computer-science/algorithms/recursive-algorithms/a/recursion" target="_blank">Recursive Algorithms on Khan Academy</a></li>
+        </ul>
+	</body>
+</html>
+

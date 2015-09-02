@@ -3,15 +3,16 @@ title: Unit 1: Introduction to Snap<em>!</em> Programming
 {
 
 h3: In this unit, you will...
-big-idea: Build an app (or two) using <span class="snap">snap</span>
+big-idea: Build an app (or two) using Snap<em>!</em>
 big-idea: Design procedures to draw, make music, animate, and interact with the user.
 big-idea: Use loops to repeat similar steps of code.
 big-idea: Create procedures inside procedures and loops within loops.
 big-idea: Explore mathematics of computer science: random, modulo, and logical operators.
 big-idea: Analyze the impact of technology on our culture and safety.
-		
 
-	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white <span class="snap">snap</span> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
+
+	raw-html: <div class="todo"><ul><li>MF: need to add in more <img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> messages (and dialgoues).</li><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.v0buedmnov8e" target="_blank">Zeph Grunschlag in NY</a></li><li>Distinguish white Snap<em>!</em> boxes, into which you can type, from block-colored drop-downs, into which you must drag and drop variables.</li></ul></div>
+
 
 	raw-html: <div style="float:right;"><img class="imageRight" src="/bjc-r/img/icons/work-with-a-partner.png" alt="Work with a Partner" title="Work with a Partner"/><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /><!-- <br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /><br clear="all" /><img class="imageRight" src="/bjc-r/img/icons/share-your-work.png" alt="Share Your Work" title="Share Your Work" />--></div>
 heading: Programming Lab 1: Building an App
@@ -24,16 +25,16 @@ heading: Programming Lab 1: Building an App
 	resource: Sharing Your App [/bjc-r/cur/programming/1-introduction/1-building-an-app/7-loading-mobile-device.html]
 	
 	raw-html: <img class="imageRight" src="/bjc-r/img/1-introduction/draw-square.png" alt="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" title="pen down, repeat 4 (move 50 steps, turn CW 90 degrees)" />
+	resource: Exploring Snap<em>!</em> Code [/bjc-r/cur/programming/1-introduction/1-introduction/1-exploring-snap-code.html]
+	resource: Snap<em>!</em> Accounts and Files [/bjc-r/cur/programming/1-introduction/1-introduction/2-snap-accounts-files.html]
+	resource: Hour of Code: Build a Snap<em>!</em> App [http://bjc.edc.org/hourofcode/index.html]
+	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/1-introduction/3-looks-sound.html]
+	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/1-introduction/4-sprite-position-direction.html]
+	resource: Getting to Know the Snap<em>!</em> Interface [/bjc-r/cur/programming/1-introduction/1-introduction/5-the-snap-interface.html]
+	//resource: Looks and Sound [/bjc-r/cur/programming/1-introduction/2-graphics-effects/3-looks-sound.html]
 
-heading: Programming Lab 2: Sprite Drawing and Communication
-	resource: Exploring <span class="snap">snap</span> Drawing and Motion [/bjc-r/cur/programming/1-introduction/2-drawing-communication/1-exploring-snap-drawing-motion.html]
-	resource: Following with Sprites [/bjc-r/cur/programming/1-introduction/2-drawing-communication/2-following-sprites.html]
-	resource: Sprites Interaction [/bjc-r/cur/programming/1-introduction/2-drawing-communication/3-sprite-interaction.html]
-	resource: Drawing with Two Sprites [/bjc-r/cur/programming/1-introduction/2-drawing-communication/4-drawing-two-sprites.html]
-	resource: More Sprite Drawing and Interaction [/bjc-r/cur/programming/1-introduction/2-drawing-communication/5-more-drawing-interaction.html]
-	
-heading: Programming Lab 3: Control Commands
-	resource: The Real Value of the <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/1-the-repeat-block.html]
+heading: Programming Lab 2: Control Commands
+	resource: The <code>Repeat</code> Block [/bjc-r/cur/programming/1-introduction/2-control-commands/1-the-repeat-block.html]
 	raw-html: <div class="sidenoteBig">The quiz symbol, <img class="inline" style="padding: 1px;" src="/bjc-r/llab/img/multiplechoice16.png" alt="multiple choice icon" title="multiple choice icon" />, indicates that this page includes an online quiz to help you check your understanding.</div>
 	quiz: Nesting Repeats [/bjc-r/cur/programming/1-introduction/3-control-commands/2-nesting-repeats.html]
 	resource: The <code>For</code> Block [/bjc-r/cur/programming/1-introduction/3-control-commands/3-the-for-block.html]
@@ -42,30 +43,31 @@ heading: Programming Lab 4: Building and Debugging Your Own Blocks
  	raw-html: <img src="/bjc-r/img/drawing/flower-with-6-square-petals.png" class="imageRight" alt="Drawing Flowers" />
 	resource: Designing Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/1-custom-blocks.html]
 	//raw-html: <img src="/bjc-r/img/drawing/draw-star-picture.png" class="imageRight" alt="Drawning a Star"><img src="/bjc-r/img/drawing/draw-star-code-with-blanks.png" class="imageRight" alt="Drawing a Star" />
-	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/2-adding-an-input.html]
-	resource: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/3-debugging-custom-blocks.html]
-	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/4-building-blocks-within-blocks.html]
-	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/4-building-and-debugging/5-debugging-blocks-within-blocks.html]
-		
-heading: Programming Lab 5: Block Types and Calculations
-	resource: Sprite Position and Direction [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/1-sprite-position-direction.html]
-	resource: Expressions and Operations [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/2-computer-operations.html]
-	resource: Binary Representation [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/3-binary.html]
-	resource: Predicates and Logic [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html]
-	quiz: <code>Random</code> Block Self Check [/bjc-r/cur/programming/1-introduction/5-block-types-calculations/5-random-self-check.html]
-	
+	resource: Adding an Input [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/2-adding-an-input.html]
+	//quiz: Debugging Custom Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/3-debugging-custom-blocks.html]
+	resource: Using Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/4-building-blocks-within-blocks.html]
+	quiz: Debugging Blocks within Blocks [/bjc-r/cur/programming/1-introduction/3-building-and-debugging/5-debugging-blocks-within-blocks.html]
+
+heading: Programming Lab 4: Block Types and Calculations
+	quiz: Commands and Reporters [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/1-commands-and-reporters.html]
+	resource: Predicates, Conditionals, and Logic [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/2-predicates-conditionals-logic.html]
+	resource: Computer Operations [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/3-computer-operations.html]
+	//quiz: Computing with Variables [/bjc-r/cur/programming/1-introduction/4-block-types-calculations/4-computing-variables.html]
+
  	raw-html: <hr />
-	
-heading: Social Implications Lab 6: Explosion of Bits; Games and Violence
-	resource: Getting Started [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/getting-started.html]
-	resource: Computing Innovations [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/what-are-some-social-implications.html]
-	resource: Tanya Rider's Story [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/tanya-rider.html]
-	resource: Do violent video games contribute to youth violence? [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/violent-video-games.html]
-	resource: Is technology good or bad? [/bjc-r/cur/programming/1-introduction/6-intro-bits-games/good-or-bad.html]
+
+heading: Social Implications Lab 5: Explosion of Bits; Games and Violence
+	resource: Getting Started [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/getting-started.html]
+	resource: Computing Innovations [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/what-are-some-social-implications.html]
+	resource: Tanya Rider's Story [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/tanya-rider.html]
+	raw-html: <img src="/bjc-r/img/1-introduction/topic1_kaleidoscopegif.gif" class="imageRight" alt="Kaleidoscope Script" />
+	resource: Do violent video games contribute to youth violence? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/violent-video-games.html]
+	resource: Is technology good or bad? [/bjc-r/cur/programming/1-introduction/5-intro-bits-games/good-or-bad.html]
 
 	raw-html: <hr />
-	
-heading: Investigation
-	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/investigations/bug-dance.html]
-	
+
+heading: Investigations
+	forum: Kaleidoscope [/bjc-r/cur/programming/1-introduction/6-projects/make-a-kaleidoscope.html]
+	forum: Bug Dance Animation [/bjc-r/cur/programming/1-introduction/6-projects/bug-dance.html]
+
 }
