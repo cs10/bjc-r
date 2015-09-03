@@ -7,34 +7,34 @@
 	</head>
 	<body>
 		<p>
-			4. That <code>tree2a</code> block is pretty long and repetitive. But we can simplify it if we notice that in two places it has a move forward/move back pair of blocks, and that this is what <code>tree1</code> does! So we can use <code>tree1</code> to shorten <code>tree2</code>. Compare the code below to convince yourself that the new <code>tree2</code> will work the same as the original <code>tree2a</code>. <br>
+			4. That <code>tree2a</code> block is pretty long and repetitive. But we can simplify it if we notice that in two places it has a move forward/move back pair of blocks, and that this is what <code>tree1</code> does! So we can use <code>tree1</code> to shorten <code>tree2</code>. Compare the code below to convince yourself that the new <code>tree2</code> will work the same as the original <code>tree2a</code>. <br />
 		</p>
 
 		<table width="100%" border="1">
 			<tbody>
 				<tr>
 					<td width="33%" valign="top" style="text-align: center;"><code>tree1
-					</code><br>
+					</code><br />
 					</td>
-					<td width="33%" valign="top" style="text-align: center;"><code>tree2a</code> (old version)<br>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2a</code> (old version)<br />
 					</td>
-					<td width="33%" valign="top" style="text-align: center;"><code>tree2</code> (new version)<br>
+					<td width="33%" valign="top" style="text-align: center;"><code>tree2</code> (new version)<br />
 					</td>
 				</tr>
 				<tr>
 					<td width="33%" valign="top" style="text-align: center;"><img border="0" src="/bjc-r/img/recur/tree1.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree1-script_.jpg">
-					<br>
+					<br />
 					</td>
 					<td width="33%" valign="top" style="text-align: center;"><img border="0" src="/bjc-r/img/recur/tree2a.png" alt="There should be an image here" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2-script_.jpg">
-					<br>
+					<br />
 					</td>
 					<td width="33%" valign="top" style="text-align: center;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/tree2.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab11/Recurisve_Tree/tree2aS.jpg">
-					<br>
+					<br />
 					</td>
 				</tr>
 			</tbody>
 		</table>
-		<br>
+		<br />
 		<p>
 		Note that the tree blocks inside this <code>tree2</code> script are <code>tree1</code> blocks, not <code>tree2</code> blocks! So there's no mysterious <code>tree</code>-using-<code>tree</code> situation here; it's not unusual for one already-written block to be used in <em>another</em>&thinsp; block's script. </p>
 		<p>
@@ -53,7 +53,7 @@
 		<p><img src="../../../../img/recur/tree-nobase.png" alt="recursive tree, first version"></p>
 		<p>For example, given a <code>levels</code> input of 5, <code>tree</code> will call two trees with a <code>levels</code> input of 4. Those two trees in turn will each call two more trees with a <code>levels</code> input of 3. This pattern continues on and on, with the <code>levels</code> and <code>size</code> inputs getting smaller and smaller. Ideally, we want the <code>levels</code> input to eventually reach and finish at 1, signifying our most basic tree.</p>
 		<p>Now try the <code>tree</code> block. What happens? <em>Why </em>does it happen? When you know the answer, go to the next activity.
-		<br>
+		<br />
 		<em>Hint: Try to follow the <code>tree</code> block for a small <code>levels</code> input such as 3, and keep track of the decreasing <code>levels</code> input as you call more trees. Does the tree reach and successfully draw at level 1, which is our most basic tree?</em></p>
 	</body>
 </html>

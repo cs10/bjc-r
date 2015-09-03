@@ -21,6 +21,7 @@ title: Unit 3: Lists
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
 
 heading: Programming Lab 1: Introduction to Lists
+	raw-html: <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
 	resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html]
 	resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html]
@@ -41,6 +42,8 @@ heading: Programming Lab 3: Using Higher-Order Functions
 	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
 
 //heading: Lists and Sentences: The Index Variable Pattern
+
+	raw-html: <img class="imageRight" border="0" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16">
 
 heading: Programming Lab 4: Magic Squares
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
@@ -89,8 +92,8 @@ heading: Social Implications Lab 6: Encryption and Security
  	raw-html: <hr />
 
 heading: Investigations
-	raw-html: <div class="commentBig">I pulled out the "(Use after Lab 3)" comments and put them in the TG to match the other units. If we want them here too, we should agree to make the change across units. --MF</div>
-	resource: Building Musical Chords [/bjc-r/cur/programming/3-lists/investigations/chords.html]
+	raw-html: <div class="todo">We agreed to remove these from the units. So, where will these go? Perhaps we can tuck them into the Labs to make things more interesting. --MF</div>
+	resource: Building Musical Chords (Claimed for L3 --MF) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
 	resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
 	resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
 	resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]

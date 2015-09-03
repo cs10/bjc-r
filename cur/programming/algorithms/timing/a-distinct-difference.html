@@ -7,22 +7,22 @@ This kind of question pops up frequently in computer science: for
 example, when returning search results, Google would like to ensure
 that all of the search results are different from each other (as far as
 possible). Here is a first attempt at an algorithm (which is a series
-of steps) to solve the problem:</p> <br><strong>Step 1</strong>. I take
+of steps) to solve the problem:</p> <br /><strong>Step 1</strong>. I take
 the first number of the list, and compare it with all of the other
 numbers in the list (the second number, the third number, and so on).
 If, at any point, I see the same number again, I stop and tell the user
-that the numbers are not distinct.<span style="font-weight: bold;"><br><br></span> <strong>Step 2</strong>.
+that the numbers are not distinct.<span style="font-weight: bold;"><br /><br /></span> <strong>Step 2</strong>.
 If I complete step 1 without stopping, I take the second number of the
 list, and compare it with all of the other numbers in the list (the
 third number, the fourth number, and so on). If, at any point, I see
 the same number again, I stop and tell the user that the numbers are
-not distinct.<span style="font-weight: bold;"><br><br></span> <strong>Step 3</strong>.
+not distinct.<span style="font-weight: bold;"><br /><br /></span> <strong>Step 3</strong>.
 I repeat the two steps above for all of the numbers in the list, each
 time taking a number from the list and comparing it with all of the
-following numbers.<br><br><strong>Step 4.</strong> If I am done with all of the numbers in the list, I stop and tell the user that the numbers <em>are</em> distinct.
+following numbers.<br /><br /><strong>Step 4.</strong> If I am done with all of the numbers in the list, I stop and tell the user that the numbers <em>are</em> distinct.
 <p> Take a moment to understand the algorithm, and ask any questions
 that you may have. Using the algorithm above, complete the body of the
-following block in the <code>Variables</code> menu:</p> <br><div style="margin-left: 40px;"><img style="width: 219px; height: 32px;" src="../../../../img/list/are-numbers-distinct-block.png" title="are the numbers in 'list' distinct?" alt="are the numbers in 'list' distinct?" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/AreDistinctBlock.gif"><br><br></div>
+following block in the <code>Variables</code> menu:</p> <br /><div style="margin-left: 40px;"><img style="width: 219px; height: 32px;" src="../../../../img/list/are-numbers-distinct-block.png" title="are the numbers in 'list' distinct?" alt="are the numbers in 'list' distinct?" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab08/Complexity/AreDistinctBlock.gif"><br /><br /></div>
 <p> Once we are done with the block, we need to figure out the <strong>worst-case</strong>
 running time of the algorithm: how long will this algorithm take on the
 worst possible input? By "worst", we mean an input that will cause the
