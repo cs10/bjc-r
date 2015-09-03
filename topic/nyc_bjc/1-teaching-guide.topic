@@ -31,6 +31,4 @@ heading: Week 2 (Programming Focus)
 heading: Week 3 (Social Implications Focus)
 	resource: Lab 6: Explosion of Bits; Games and Violence [/bjc-r/cur/teaching-guide/U1/lab-pages/6-explosion-bits-games-violence.html] 
 	
-heading: Investigation
-	raw-html: <p>Students can begin work on <a href="/bjc-r/cur/programming/1-introduction/investigations/bug-dance.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" >Bug Dance Animation</a> after Lab 3 when they formalize their understanding of <code>repeat</code>.</p><div class="endnote">Investigations are supplemental content. If you have time, assign them for homework, classwork, or differentiation.</div>
 }
