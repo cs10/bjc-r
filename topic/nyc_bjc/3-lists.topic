@@ -49,36 +49,42 @@ heading: Programming Lab 4: Magic Squares
 	//resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/old/finding-triples-3.html]
 	resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
 
-heading: Programming Lab 5: Data Part I
+	raw-html: <hr />
+
+heading: Programming Lab Moving to U4: GPS Forensics
 	raw-html: <div class="todo">I talked to Bowen and he thinks that it makes sense to move this lab to U4, which would be great because there is too much in U3 and not enough in U4. --MF</div>
-	resource: GPS Forensics: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/1-introgps.html]
-	resource: GPS Forensics: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/2-visualizing.html]
-	resource: GPS Forensics: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/3-clustering.html]
-	resource: GPS Forensics: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/4-conclusions.html] 
+	resource: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/1-introgps.html]
+	resource: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/2-visualizing.html]
+	resource: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/3-clustering.html]
+	resource: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/4-conclusions.html] 
+
+heading: Slated for Demolition:
 	resource: Weather App: API and Scraping Data [/bjc-r/cur/programming/3-lists/5-search-and-data/5-weatherintro.html]
-	resource: Spam and Ham: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/6-spam-introduction.html]
-	resource: Spam and Ham: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/7-the-data.html]
-	resource: Spam and Ham: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/8-average-number-of-words.html]
-	resource: Spam and Ham: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/9-predict-by-number-of-words.html]
-	resource: Spam and Ham: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/10-further-work.html]
+
+heading: Programming Lab Moving to U4: Spam and Ham
+	resource: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/6-spam-introduction.html]
+	resource: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/7-the-data.html]
+	resource: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/8-average-number-of-words.html]
+	resource: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/9-predict-by-number-of-words.html]
+	resource: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/10-further-work.html]
 		
 	raw-html: <hr />
 
-heading: Social Implications Lab 6: Search and How the Internet Works
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-search-internet/getting-started.html]
-	resource: How Searching Works [/bjc-r/cur/programming/3-lists/6-search-internet/how-searching-works.html]
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/1-big-questions.html]
-	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/6-search-internet/big-questions-old.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/6-search-internet/2-btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/3-lists/6-search-internet/3-search.html]
-	resource: Internet [/bjc-r/cur/programming/3-lists/6-search-internet/4-internet.html]
+heading: Social Implications Lab 5: Search and How the Internet Works
+	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
+	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
+	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/1-big-questions.html]
+	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/big-questions-old.html]
+	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/5-search-internet/2-btb-chapter4.html]
+	resource: Search [/bjc-r/cur/programming/3-lists/5-search-internet/3-search.html]
+	resource: Internet [/bjc-r/cur/programming/3-lists/5-search-internet/4-internet.html]
 
-heading: Social Implications Lab 7: Encryption and Security
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/7-encryption/1-big-questions.html]
-	resource: Encryption [/bjc-r/cur/programming/3-lists/7-encryption/2-encryption.html]
-	resource: Security [/bjc-r/cur/programming/3-lists/7-encryption/3-security.html]
-	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/7-encryption/4-public-key.html]
-	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/7-encryption/5-btb-chapter5.html]
+heading: Social Implications Lab 6: Encryption and Security
+	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
+	resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html]
+	resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/3-security.html]
+	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
+	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
 
  	raw-html: <hr />
 
