@@ -26,6 +26,7 @@ title: Unit 3: Lists
 
 
 heading: Programming Lab 1: Introduction to Lists
+	raw-html: <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
 	resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html]
 	resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html]
@@ -46,6 +47,8 @@ heading: Programming Lab 3: Combining List Operations
 
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 
+	raw-html: <img class="imageRight" border="0" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16">
+
 heading: Programming Lab 4: Magic Squares
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
 	resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/2-triples.html]
@@ -61,6 +64,7 @@ heading: Social Implications Lab 5: Search
 	resource: Design Your Own Search Engine [/bjc-r/cur/programming/3-lists/5-search-internet/design-your-own.html]
 
 heading: Social Implications Lab 6: Encryption and Security
+<<<<<<< HEAD
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
 	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
 	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
@@ -75,6 +79,23 @@ heading: Social Implications Lab 6: Encryption and Security
 	//resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
 	//resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
 	//resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
+=======
+	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
+	resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html]
+	resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/3-security.html]
+	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
+	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
+
+ 	raw-html: <hr />
+
+heading: Investigations
+	raw-html: <div class="todo">We agreed to remove these from the units. So, where will these go? Perhaps we can tuck them into the Labs to make things more interesting. --MF</div>
+	resource: Building Musical Chords (Claimed for L3 --MF) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
+	resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
+	resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
+	resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
+	resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
+>>>>>>> 2e69c09... U3 Stray Edits (and fixing breaks all over the place)
 
 
 // heading: List Mutation  // this has moved to Chapter 4

@@ -30,127 +30,127 @@
 		</p>
 		<h2> Build Your Own Block: A Tutorial </h2>
 		We are going to teach the computer how to draw a square using a block named <code>draw square</code>. Please follow the steps below:
-		<br>
+		<br />
 		<ol>
 			<li>
 				Click on <code>make a block</code> at the bottom of the Variables palette (or right-click or control-click on the scripting area background and choose "<code>make a block</code>").
-				<br>
+				<br />
 				<div style="margin-left: 40px;">
 					<img border="0" title="'make a block'" alt="'make a block'" src="/bjc-r/img/sys/MakeABlock-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlock.jpg">
 				</div>
 			</li>
 			<li>
 				This will open up the <code>Make a block</code> dialog box. Now, you get to choose which tab the block should go into. Our block is going to draw a square, so let us choose <code>Motion</code>. (Note: A very common mistake is to omit this step. If you do forget, your block will become a gray Other block, in the Variables palette.)
-				<br>
+				<br />
 				<div style="margin-left: 40px;">
 					<img border="0" title="'make a block' dialog box" alt="'make a block' dialog box" src="/bjc-r/img/sys/make-a-block-BYOB.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockDialog.jpg">
-					<br>
+					<br />
 				</div>
 			</li>
-			<br>
+			<br />
 			<li>
 				When we selected <code>Motion</code>, the block became blue. We now have the option of making blocks of different shapes. Right now, however, we are  going to make a Lego-shaped command block, the default.
-				<br>
-				<br>
+				<br />
+				<br />
 				<div style="margin-left: 40px;">
 					<img border="0" title="Make a command block" alt="Make a command block" src="/bjc-r/img/sys/make-draw-square-block.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquare.jpg">
-					<br>
+					<br />
 				</div>
 			</li>
-			<br>
+			<br />
 			<li>
 				When we click <code>OK</code>, we should see the block editor below. Inside the window is a picture of what your block will look like, called its <em>prototype,</em> inside a hat block. Usually a hat block is used at the top of a script to say &quot;<strong>When</strong> such-and-such event happens, run this script.&quot;  The hat block here is the same; it's saying &quot;<strong>when</strong> the <code>
 					draw-square</code>
 				block is run in a script, run <em>this </em>script.&quot; You'll create the script to draw a square below this hat block.
-				<br>
-				<br>
+				<br />
+				<br />
 				<div style="margin-left: 40px;">
 					<img border="0" src="/bjc-r/img/prog/empty-draw-square-BYOB.png" alt="Block Editor for 'draw square'" title="Block Editor for 'draw square'" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EmptyDrawSquare.jpg">
-					<br>
+					<br />
 				</div>
 			</li>
-			<br>
+			<br />
 			<li>
 				Use the blocks from the Control and Motion palettes to create a script that draws a square, as shown below.
-				<br>
-				<br>
+				<br />
+				<br />
 				<div style="margin-left: 40px;">
 					<img  title="Script to draw a square" 
 					alt="Script to draw a square" src="/bjc-r/img/building-blocks/draw-square-no-arguments.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/MakeABlockSquareCode.gif">
-					<br>
+					<br />
 				</div>
 			</li>
-			<br>
+			<br />
 			<li>
 				When you click <code>OK</code>, you should be able to use this block as if it were a regular block. Since you created the block as a <code>Motion</code> block, it will end up at the bottom of the <code>Motion</code> tab.
-				<br>
-				<br>
+				<br />
+				<br />
 				<div style="margin-left: 40px;">
 					<img border="0" title="Using the 'draw square' block" alt="Using the 'draw square' block" src="/bjc-r/img/prog/draw-square-block-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareNoArgs.gif">
-					<br>
+					<br />
 				</div>
 			</li>
-			<br>
+			<br />
 			Congratulations! You have just created your first custom block.
 		</ol><h2> Improving the <code>draw</code><code>square</code> block </h2>
 		You have created a block that draws a square, but only a square in which each side is of length <code>100</code> steps. It would be better if you could specify how long you wanted each side to be. Edit the block to accept an <em>input</em> (or<em> argument</em>), which tells it the length of the square it has to draw:
 		<ol>
 			<li>
 				Right-click or control-click on the new block (either in the palette or in a script) and select <code>edit</code> to go back to the block editor.
-				<br>
-				<br>
+				<br />
+				<br />
 			</li>
 			<div style="margin-left: 40px;">
 				<img border="0" title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/EditCurrentBlock.jpg">
-				<br>
+				<br />
 			</div>
 
-			<br>
+			<br />
 			<li>
 				In the <code>Block Editor</code>, notice that when you move the mouse over the prototype of the custom block, the plus signs (<code>+</code>) between words change color when you point to them. When you click on these plus signs, you can add more text or inputs. When you click on the text between the plus signs, you can delete or modify that text. Click on the plus sign at the far right as shown below:
-				<br>
+				<br />
 			</li>
-			<br>
+			<br />
 			<div style="margin-left: 40px;">
 				<img border="0" title="Plus signs" alt="Plus signs" src="/bjc-r/img/prog/draw-square-editor-with-plus-for-args-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquarePlus.jpg">
-				<br>
+				<br />
 			</div>
 
-			<br>
+			<br />
 			<li>
 				When you click on the plus sign on the far right, you should get the following dialog box. With this dialog box, we can select if we want to add input (orange) or more text (blue). You want to add an input called <code>size</code>, so  type <code>size</code>, select <code>Input Name</code>, and click <code>OK</code>.
-				<br>
+				<br />
 			</li>
-			<br>
+			<br />
 			<div style="margin-left: 40px;">
 				<img border="0" title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block" src="/bjc-r/img/sys/add-argument-in-block-signature-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/AddArgument.jpg">
-				<br>
+				<br />
 			</div>
 			<li>
 				Now you have a variable inside your block definition, just like a script variable, but getting its value from the custom block's input slot.
-				<br>
-				<br>
+				<br />
+				<br />
 			</li>
 			<div style="margin-left: 40px;">
 				<img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSize.gif">
-				<br>
+				<br />
 			</div>
-			<br>
+			<br />
 			<li>
 				Drag the variable <code>size</code> down into the move block. Whenever you need a new copy of a variable,  just drag the copy from that variable in the prototype.
-				<br>
-				<br>
+				<br />
+				<br />
 			</li>
 			<div style="margin-left: 40px;">
 				<img  title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/SquareWithSizeInBody.jpg">
-				<br>
+				<br />
 			</div>
-			<br>
+			<br />
 			<li>
 				When you click <code>OK</code>, you'll see that the <code>draw square</code> block now takes an argument. You can put different numbers in the blank and draw squares of different sizes.
-				<br>
+				<br />
 			</li>
-			<br>
+			<br />
 			<div style="margin-left: 40px;">
 				<img border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
 			</div>

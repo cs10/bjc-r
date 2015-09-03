@@ -9,10 +9,10 @@
 		<div style="margin-left: 40px;">
 			<img border="0" title="Sample image of brick wall" alt="Sample image of brick wall" src="/bjc-r/img/prog/red-brick-wall-with-sprite-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab02/Brick_Wall/SampleImage.jpg">
 		</div>
-		<br>
+		<br />
 		<em>Note</em>: You must implement these blocks and adhere to the abstraction described below.
-		<br>
-		<br>
+		<br />
+		<br />
 		There are two kinds of rows in this brick wall:
 		<ul>
 			<li>
@@ -22,12 +22,12 @@
 				<strong>Row B</strong>: <img border="0" title="Row B" alt="Row B" src="/bjc-r/img/prog/row-of-red-bricks2-BYOB.jpg" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab02/Brick_Wall/Row2.jpg">
 			</li>
 		</ul>
-		<br>
+		<br />
 		The big idea is that there are three levels of abstraction.
-		<br>
-		<br>
+		<br />
+		<br />
 		<strong>At the lowest level of abstraction (Level 3)</strong>:
-		<br>
+		<br />
 		<ul>
 			<li>
 				You need to figure out how to draw individual bricks, small bricks and spaces.
@@ -38,7 +38,7 @@
 			<ul>
 				<li>
 					The <code>Draw Brick</code> block, which draws a single brick. (Hint: a brick is drawn by setting the pen size to about 10)
-					<br>
+					<br />
 				</li>
 				<li>
 					The <code>Draw Small Brick</code> block, which draws the small brick for the edges of row B. Note that this brick will <em>not</em> be exactly half as long as the full brick. Part of this homework is figuring out how long the "small brick" should be.
@@ -48,13 +48,13 @@
 				</li>
 			</ul>
 		</ul>
-		<br>
+		<br />
 		<strong>At the middle level of abstraction (Level 2)</strong>:
-		<br>
+		<br />
 		<ul>
 			<li>
 				You can use the functionality provided by the bottom level of abstraction to make entire rows of bricks.
-				<br>
+				<br />
 			</li>
 			<li>
 				The rows referred to as "Row A" and "Row B" should look like the rows shown above.
@@ -83,9 +83,9 @@
 				</li>
 			</ul>
 		</ul>
-		<br>
+		<br />
 		<strong>At the highest level of abstraction (level 1)</strong>
-		<br>
+		<br />
 		<ul>
 			<li>
 				You will put together the full brick wall using only the functionality provided by the middle level of abstraction.
@@ -95,13 +95,13 @@
 			</li>
 		</ul>
 		In summary, you should implement the following blocks:
-		<br>
-		<br>
+		<br />
+		<br />
 		<div style="margin-left: 40px;">
 			<img border="0" title="Blocks to implement" alt="Blocks to implement" src="/bjc-r/img/prog/brick-blocks.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab02/Brick_Wall/BrickBlocks.gif">
 		</div>
-		<br>
-		<br>
+		<br />
+		<br />
 		<em>Note</em>: Whenever you need to refer to a fixed number, such as the width of a brick, use a global variable. This is generally considered good style, because you can use the same variable in multiple places in your program, and you only need to change the value of the variable to change it in multiple places at once, to tune up the appearance of your wall. 
 		<h2>Upload and Submit</h2>
 		Once you are done, upload your  solution as a file called <code>Brick-Wall</code> and submit.
