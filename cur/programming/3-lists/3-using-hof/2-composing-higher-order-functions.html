@@ -17,7 +17,15 @@
             <div><span>Betty:</span> The <code>keep</code> block lets you choose some items from a list and not others.</div>
             <div><span>Alphie:</span> And <code>combine with</code> takes an operation (like <code>+</code>) and a list.  It combines all the items of the list into a single output using the operation. So, with <code>+</code>, it would give the sum of all the numebrs in the list.</div>
             <div><span>Betty:</span> Would we ever use all three of the functions together?</div>
-              <div class="stagedir">They pause to think.</div>
+</div>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. <img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /></li>
+            </ol>
+		</div>
+
+
+        <div class="dialogue">
             <div><span>Alphie:</span> I guess you could start with a list of numbers, <code>keep</code> the ones that were greater than 50, use <code>map</code> to add 10 to all of them, and then use <code>combine with</code> to add those new numbers up.</div>
             <div><span>Betty:</span> OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll <code>keep</code> the numbers over 50.</div>
               <div class="stagedir">Betty builds this expression: <img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
@@ -28,8 +36,8 @@
         </div>
 
 
-        <div class="forYouToDo" id="first">
-            <ol>
+        <div class="forYouToDo">
+            <ol start="2">
                 <li> Try Alphie and Betty's invention with a list of your own.  Change the operations in <code>combine with</code> and <code>map</code>, too. </li>
             </ol>
         </div>
@@ -39,12 +47,27 @@
         <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
         
         <div class="forYouToDo">
-            <ol start="2">
-				<div class="sidenote"><code>map</code> will be helpful here. </div>	
+            <ol start="3">
                 <li>
                 	Create a reporter block that<a name="transpose" class="anchor">&nbsp;</a>transposes a list of sounds, where each list item is a list with the sound's note and duration. Your block should take as input a list with the song data and a number incidating how much to transpose the song.<br />
-                	<img class="indent" src="/bjc-r/img/3-lists/play-sound-sequence.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
+					<div class="sidenote"><code>map</code> will be helpful here. </div>	
+                	<img class="indent" src="/bjc-r/img/3-lists/transpose-by.png" alt="transpose {} by ()" title="transpose {} by ()" />
                 </li>
+                <li>Musical scales are sets of notes ordered by pitch. For example, this is the C Major scale and the Snap<em>!</em> note numbers:
+                <table>
+                    <tr>
+                        <td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td><td>B</td>
+                    </tr>
+                    <tr>
+                        <td>60</td><td>62</td><td>64</td><td>65</td><td>67</td><td>69</td><td>71</td>
+                    </tr>
+                </table>
+                </li>
+                <li>create a block that plays a sclae</li>
+                <li>Create a reporter that generates an <a name="" class="anchor">&nbsp;</a>arpeggio of a scale...</li>
+                <li>here sia block tht plays a chord</li>
+                <li></li>
+                <li></li>
             </ol>
         </div>
         
@@ -54,32 +77,69 @@
         <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
 
         <div class="forYouToDo">
-            <ol start="3">
+            <ol start="4">
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
 				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
                 <li>Use those blocks to decode this message:<br /><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+		<img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
             </ol>
         </div>
             
-            	<img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
+        
+        <h3>Acronym Generator</h3>
+        
+        <p>With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once.</i> You don't have to think, "Find the first letter of the first word and operate on it, then do the next letter until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word" and so on.</p>
+        <p>You can think, "check the first letters of all the words."</p>
+
+        <div class="todo">
+            <ul>
+                <li>BH: We need a way to separate philosophical questions that apply across the curriculum from local errors, and start writing something like Mary's style guide but at a higher level of abstraction, listing decisions we make about the overall tone of the curriculum, things like what a "new" project is and how we should say what that wants to say.<br />
+           		</li>
+                <li><strong>GH feedback:</strong> shouldn't the acronym block return a "sentence" and not a list?<br />from BH: A word, actually (no spaces), but certainly not a list! +1</li>
+                <li><strong>Feedback from Michael Ball:</strong> shouldn't acronym be an operator block?</li>
+				
+            </ul>
+        </div>
+
+        <div class="forYouToDo">
+            <ol start="7">
+                <li>
+					<div class="sidenoteBig">An <strong>acronym</strong> is the first letters of every capitalized word in a phrase. </div>
+	                <div class="sidenote"><code>map</code>, <code>keep</code>, and <code>combine</code> will be useful here.</div>
+                    Create a reporter  that takes a phrase as input and reports its acronym, made from the first letters of the capitalized words.  It should work like this:<br/>
+                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
+                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> 
+                    <!--<img border="0" src="/bjc-r/img/3-lists/acronym_TTY.png" title="BFF" alt="BFF"  />-->
+			        <br clear="all"><div class="takeNote"><img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />There are many ways to turn a string like "Beauty and Joy of Computing" into a list of words. One way is to use this green block: <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  /> (pronounced "sentence to list"). It's in the Tools library.</div>
+                </li>
+            </ol>
+        </div>
+         
+                
         <div class="takeItFurther">
             <ol type="A">
                 <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
+                <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                 <li>
-                	Here are some made-up data from 8 days of sales at an ice cream shop: <br />
-		    		<div class="comment">JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</div>
+                	Here are some made-up data from 8 days of sales at an ice cream stand: <br />
+                    <div class="todo">We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</div>
+		    		<div class="comment">JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions? Mary: I don't mind it here as a TIF. I made some edits.</div>
                     <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
-					Each of the smaller lists represents one day's data at the shop:
+					Each of the smaller lists represents one day's data at the stand:
 					<ol style="list-style:decimal;">
                         <li>The first number is the day's high temperature (in Fahrenheit).</li>
                         <li>The second is the number of Popsicles sold.</li>
                         <li>The third number is the number of ice cream cones sold.</li>
                     </ol>
-                    Imagine that popsicles sell for $1.50 each and ice cream cones sell for $3.75 each. 
+                    Imagine that popsicles sell for $2.75 each and ice cream cones sell for $5.75 each. 
                     <ol style="list-style:lower-roman;">
-                    	<li>Build a single block that calculates the total sales of the shop in these eight days.</li>
-                        <li>Build a block that calculates the total sales on days when the high temperature was over 80 degrees.</li>
+                        <div class="sidenote"><strong>Analyze</strong>: Based on these figures, how many employees would you expect this business to have?</div>
+                    	<li>Build a single block that calculates the stand's total sales in these eight days.</li>
+						<li>Build a block that calculates the stand's total sales in a year.</li>
+                        <li>Build a block that calculates the total sales on days when the high temperature was over 80 degrees Fahrenheit.</li>
+                        <li>Build a block that compares the sales on days when the high was over 80&deg;F to the sales on days when it was lower than 80&deg;F.</li>
+                        
                     </ol>
                 </li>
         	</ol>
