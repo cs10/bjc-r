@@ -1,4 +1,4 @@
-title: Teaching Guide for Unit 4: Algorithm Complexity
+title: Teaching Guide for Unit 5: Algorithms and Data
 
 {
 h3: Purpose
@@ -13,33 +13,24 @@ h3: Highlighting Computational Thinking
 	raw-html: <div class="comment">Weak.</div><p>Lists are an important representation of data, and thinking of lists as a single object (rather than a collection of objects) is a way students practice <strong>abstracting</strong>. Students continue to <strong>collaborate</strong> through pair programming.</p>
 
 heading: Week 14 (Programming Focus)
-	resource: Lab 1: Title [/bjc-r/cur/teaching-guide/U4/Week14/1-title.html]
-	resource: Lab 2: Title [/bjc-r/cur/teaching-guide/U4/Week14/2-title.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U4/Week14/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U4/Week14/assignments.html]
+	raw-html: <div class="commentBig">Brian and Mary agreed that the <a href="/bjc-r/cur/teaching-guide/U5/lab-pages/experiencing-algorithms.html">Lab 1: List Manipulation</a> conetnt should be in the TG not the labs.</div>
+	resource: Lab 1: List Manipulation [/bjc-r/cur/teaching-guide/U5/Week14/1-title.html]
+	resource: Lab 2: Algorithm Complexity [/bjc-r/cur/teaching-guide/U5/Week14/2-title.html]
 
 heading: Week 15 (Programming Focus)
-	resource: Lab 3: Title [/bjc-r/cur/teaching-guide/U4/Week15/3-title.html]
-	resource: Lab 4: Title [/bjc-r/cur/teaching-guide/U4/Week15/4-title.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U4/Week15/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U4/Week15/assignments.html]
+	resource: Lab 3: Timing Experiments [/bjc-r/cur/teaching-guide/U5/Week15/3-title.html]
+	resource: Lab 4: NONE CURRENTLY [/bjc-r/cur/teaching-guide/U5/Week15/4-title.html]
 
 heading: Week 16 (Social Implications Focus)
-	resource: Lab 5: Copyright; Media and Sharing; Patents [/bjc-r/cur/teaching-guide/U4/Week16/5-copyright-media-sharing-patents.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U4/Week16/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U4/Week16/assignments.html]
+	raw-html: <div class="todo"><ul><li>STRAY CONTENT:<strong>Do you think everyone who illegally downloads music or movies deserves to be prosecuted?</strong> <a>Google doc</a><br>Students have likely encountered this issue directly in their lives. In this Snap Judgment assignment, students begin to form an argument to support a position. Later in the class, students will receive more information about the issue and engage in a short debate.</li></ul></div>
+	resource: Lab 5: Copyright; Media and Sharing; Patents [/bjc-r/cur/teaching-guide/U5/lab-pages/5-copyright-media-sharing-patents.html]
 
 heading: Week 17 (Social Implications Focus)
-	resource: Lab 6: Censorship and Regulation; Computings around the World; Computers in War [/bjc-r/cur/teaching-guide/U4/Week17/6-censorship-world-war.html]
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U4/Week17/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U4/Week17/assignments.html] 
+	resource: Lab 6: Censorship and Regulation; Computings around the World; Computers in War [/bjc-r/cur/teaching-guide/U5/lab-pages/6-censorship-world-war.html]
 	
 heading: Week 18 (Social Implications Focus)
-	resource: Lab 7: Innovations; Computing in Other Fields; Computers in Work [/bjc-r/cur/teaching-guide/U4/Week18/7-innovations-work.html] 
-	resource: Additional Problems/Activities [/bjc-r/cur/teaching-guide/U4/Week18/activities.html]
-	resource: Homework Assignments [/bjc-r/cur/teaching-guide/U4/Week18/assignments.html]
+	resource: Lab 7: Innovations; Computing in Other Fields; Computers in Work [/bjc-r/cur/teaching-guide/U5/lab-pages/7-innovations-work.html] 
 	
 heading: Investigations
-	resource: FROM UNIT 3 Building Musical Chords [/bjc-r/cur/teaching-guide/U3/Investigations/buiding-musical-chords.html] 
-		
+	raw-html: <div class="todo">Add something like from <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/1-teaching-guide.topic&course=bjc4nyc_2015-2016_teacher.html&novideo&noassignment">U1</a> or <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/2-teaching-guide.topic&course=bjc4nyc_2015-2016_teacher.html&novideo&noassignment">U2</a></div>		
 }

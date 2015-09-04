@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 5: Data Part I</title>
+		<style>.comment, .todo {display:none;}</style>
+    </head>
+    
+    <body>
+    	<h2>GPS Forensics: Clustering</h2>
+        <div class="todo">
+            <ul>
+                <li>This page looks pretty different from the updated, EDC look, and it's content is different enough from the structure of contents on other pages that I hesitate to do it myself just yet. --MF</li>
+                <li>GH feedback 8/12: I was looking for the comment in the code about adding the pre-processed coordinate list. I don't see the comment, and I am not sure where to add the list. It looks like we just choose 3 points at a time. Also, where is it explained about how to put the data into a text editor? Maybe a link here back to that explanation would be helpful for students (and me!). We need to keep in mind the number of ELL students and students with IEPs that are reading this, and define more words as we go along.</li>
+                <li>This is it's own page. maybe half is TIF. --MF</li>
+                <li>GH Feedback 8/12: Name the points (x1, y1) and (x2, y2) !!! This is high school. That's how they'll see it! They are freshmen!<ul><li>From Michael Ball: I think they are referring to the distance formula graphic and related parts. IMO the current page is more clear for people who have even away from algebra for a while, and better conveys the meaning of what the formula is. Maybe there could be a note added?</li></ul></li>
+Feedback
+            </ul>
+        </div>
+        <div class="endnote">Suddenly, your crime-fighter colleagues come in and have a hunch: Maybe there was more than one perpetrator? The messages were collected in a very short time and no major movement was observed. So they ask you to confirm or deny the hypothesis that the messages come from more than one source and if so from how many.</div>
+        <div class="sidenote">It wouldn't add much information if each data point were its own cluster or if we grouped all of them into one large cluster.</div>
+        <p>All <a href="">these coordinates</a> have different values. It's common to want to know if certain points are bunched closer and if there's a pattern. In other words: <strong>Can we group the points into distinct <em>clusters</em>?</strong> If so, how many clusters are best for the data? </p>
+        <div>
+            <div class="todo">Can we say "cluster data" instead of "do clustering"? See below. --MF</div>
+            In order to do clustering, we need two main processes:
+            <ol style="list-style:upper-roman;">
+                <li>a way to measure how close points are to each other, and</li>
+                <li>a way to determine if a point belongs to a cluster or not.</li>
+            </ol>
+        </div>
+        
+        
+        <h3>Measuring Distance</h3>
+        <p>To determine how close points are to each other we use a <em>distance metric</em>, some way of measuring distance.  A common metric is Euclidean Distance <code>d</code>, which accurate for <a href="" target="_blank">flat surfaces</a> and found using the by the Pythagorean Formula.</p>
+        <div class="sidenoteBig">Disclaimer: GPS coordiates are used on the Earth, which is not a flat surface! But for coordinates all in a small, mostly flat area, Euclidean distance does well enough.</div>
+        <p>Given two points <code>P</code> and <code>Q</code>, each with coordinates <code>P<sub>lat</sub></code> and <code>P<sub>long</sub></code> and <code>Q<sub>lat</sub></code> and <code>Q<sub>long</sub></code>, the distance is calculated by the Pythagorean Formula: $$distance(P,Q)=\sqrt{(P_lat-Q_lat)^2+(P_long-Q_long)^2}$$<br />
+            <!--<img class="indent noshadow" src="/bjc-r/img/equations/euclidean-distance-gps.png" alt="Forumla for Euclidean Distance">-->
+            <div class="comment">Please replace with a better grid with lat and long marked and these distances marked. Rebuild from something in TTA or use GSP.</div>
+            
+            <img class="indent" src="/bjc-r/img/3-lists/distance-metric.png" alt="distance metric" title="distance metric" />
+        </p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />This version of the Pythagorean Formula may look different than others you have seen such as $a^2+b^2=c^2$ or $d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$. Review what you know about the Pythagorean Theorem.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />Match-up the pieces of the image and the formula(s) you understand best, and discuss to clarify your understanding.</li>
+                <li>
+                    Create a <code>distance from (P) to (Q)</code> reporter block that uses the Pythagoean Formula to calculate distance for any pair of cordinate pairs, like this:
+                    <img class="indent" src="/bjc-r/img/data/distance-1-2-to-4-6.png" alt="'distance from (1,2) to (4,6)' showing 5" />
+                </li>
+            </ol>
+        </div>
+        
+        
+        <div class="comment">Do we like my word, "Clustership"? --MF</div>
+        <h3>Determining Clustership</h3>
+        <p>A cluster is a set of points, and we'll use our distance metric to compare the point in question (lets call it <code>p1<sub>outside?</sub></code>) with the points that are in the cluster. That will give you a list of distances (as many as there are points in the cluster), so you'll need to use that list to figure out if <code>p1<sub>outside?</sub></code> should be considered a member of the cluster.</p>
+                    <p>You can do this in various ways; let's choose an easy one: figure out if the minimum distance in your list is less than some predetermined value. What this means, then, is that <code>p1<sub>outside?</sub></code> belongs to a cluster if the distance between it and the closet point in the cluster is "close enough".</p>
+                </li>
+            </ol>
+        </p>
+        <p>
+        	In Snap<em>!</em>, you'll make a block for each of these processes.these two blocks should look like this, once you have implemented them:<br />
+        	<img class="indent" src="/bjc-r/img/data/distance-1-2-to-4-6.png" alt="'distance from (1,2) to (4,6)' showing 5" /><br />
+			and<br />
+            <img class="indent" src="/bjc-r/img/data/distance-1-2-to-cluster.png" alt="distance from (1,2) to cluster ((4,6), (40,60)) showing 5" />
+       	</p>
+      
+		<p>Before you use your two new blocks, let's first take a look at the data by extending the previously introduced (<a class="run" href="/bjc-r/prog/data/clustering.xml">visualization code</a>):</p>
+        <img class="indent" src="/bjc-r/img/data/clustering-visualization.png" alt="visualizing clusters">
+        <p>As the comments already indicate, you need to add the pre-processed coordinates as lists (points) of lists (coordinates). If you followed the recommendation under pre-processing, you have these in a text editor and need to copy and paste them into the CLUSTER DATA list. In the next line, we start by defining three cluster center points that we eye-balled from the data. Then, in the following line, we set our minimum distance for a point belonging to a cluster to 50.</p>
+        <p>Play around with the numbers to see if you can find better clusters. How many clusters do you feel are optimal and what are their parameters?</p>
+
+    </body>
+</html>

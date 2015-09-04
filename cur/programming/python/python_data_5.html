@@ -13,11 +13,11 @@
      </p>
 
      <p style="clear:both" class="alert quoteBlue">
-		Remember we had created a <code>wordlist</code> of type <code>PlaintextCorpusReader</code>. This uses the datastructure of a nested list. <br />
-		PlaintextCorpusReader type is made up of a list of fileids, which are made up of a list of paragraphs, which is in turn made up of a list of sentences, which is in turn made up of a list of words.<br />
-		<code>words()</code>: list of str<br />
-		<code>sents()</code>: list of (list of str) <br />
-		<code>paras()</code>: list of (list of (list of str)) <br />
+		Remember we had created a <code>wordlist</code> of type <code>PlaintextCorpusReader</code>. This uses the datastructure of a nested list. <br>
+		PlaintextCorpusReader type is made up of a list of fileids, which are made up of a list of paragraphs, which is in turn made up of a list of sentences, which is in turn made up of a list of words.<br>
+		<code>words()</code>: list of str<br>
+		<code>sents()</code>: list of (list of str) <br>
+		<code>paras()</code>: list of (list of (list of str)) <br>
 		<code>fileids()</code>: list of (list of (list of (list of str)))
 	</p>
 <p>
@@ -54,7 +54,7 @@
 	</code>
 </pre>
 <p>
-	We are ready to start mining the data. So let's do a simple analysis on the occurence of the concept "basketball" in JayZ's lyrics as represented by the list of 40 terms that are common when we talk about basketball.<br />
+	We are ready to start mining the data. So let's do a simple analysis on the occurence of the concept "basketball" in JayZ's lyrics as represented by the list of 40 terms that are common when we talk about basketball.<br>
 	
 </p>
 
@@ -86,14 +86,14 @@ The following code converts the words in the basket ball concept to lowercase us
 	for fileid in Albums[:14]
 	for w in wordlist.words(fileid)
 	for target in basketball_bag_of_words
-	if w.lower().startswith(target))<br />
+	if w.lower().startswith(target))<br>
 >> cfd.plot()
 	</code>
 </pre></p>
 
 <img src="/bjc-r/img/python/cfd_data.png" alt="cfd data plot"/>
     <p>
-     From the plot we see that the basketball term "roll" seems to be used extensively in the song <i>Party Life</i>. Let's take a closer look at this phenomenon, and determine if "roll" was used in the "basketball" sense of the term. To do this, we need to see the context in which it was used. So, lets build a concordance. <br />
+     From the plot we see that the basketball term "roll" seems to be used extensively in the song <i>Party Life</i>. Let's take a closer look at this phenomenon, and determine if "roll" was used in the "basketball" sense of the term. To do this, we need to see the context in which it was used. So, lets build a concordance. <br>
 	The first thing I want to do is to create a corpus that only contain words from the American Gangster album.
     </p>
     <p>

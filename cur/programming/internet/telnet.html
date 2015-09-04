@@ -9,22 +9,22 @@
   </head>
   <body>
     Have you ever wondered how a web browser works? Well, let's find
-    out.<br />
+    out.<br>
     <h3>HTML Source</h3>
     You are currenlty looking at this page using a web browser, most
     likely Chrome or Firefox. Both of these browsers have the option to
     show you the source code of the web page, i.e. the instructions that
     are given to your browser in order to render the page. Under Firefox
     and Chrome, you right click on the page and a menu appears. Choose <span
-      style="font-style: italic;">View Page Source</span>. <br />
-    <br />
-    Go ahead and do it now. <br />
-    <br />
+      style="font-style: italic;">View Page Source</span>. <br>
+    <br>
+    Go ahead and do it now. <br>
+    <br>
     Now you see the HTML source code of this page. This is what a
     browser interprets to render the web page you are viewing. Without
     going into further detail of how HTML works, let's get into the more
-    technical details of how to get to this source code. <br />
-    <span style="font-weight: bold;"><br />
+    technical details of how to get to this source code. <br>
+    <span style="font-weight: bold;"><br>
     </span>
     <h3><span style="font-weight: bold;"></span>Telnet</h3>
     Web Browsers do basically three things: They connect to a server,
@@ -32,8 +32,8 @@
     show the content that is returned. The content, as we have seen in
     the last paragraph, is encoded in HTML which is then interpreted and
     rendered to the screen. What we want to concentrate in this part of
-    the lab is the connection and the page request. <br />
-    <br />
+    the lab is the connection and the page request. <br>
+    <br>
     A simple connection can be established with the Linux program <a
       href="http://en.wikipedia.org/wiki/Telnet">telnet</a>. The program
     telnet basically sends the keyboard input to the remote host as if
@@ -41,12 +41,12 @@
     remote screen output (only text) back at the local host. Let's watch
     a historical introduction to the program from 1995 (which is now
     pretty amusing, especially in the end): <a
-      href="http://www.youtube.com/watch?v=yFF0oQySsh4">Video here</a>.<br />
-    <br />
+      href="http://www.youtube.com/watch?v=yFF0oQySsh4">Video here</a>.<br>
+    <br>
     So now, about 20 years later, how different is the Internet now?
     Let's use telnet and find out. Note, telnet might not be available
-    under the default installation on Windows.<br />
-    <br />
+    under the default installation on Windows.<br>
+    <br>
     If you look into the address bar of your browser now, you will find
     a <a href="http://en.wikipedia.org/wiki/Uniform_resource_locator">URL
 
@@ -57,21 +57,21 @@
     </a>which points to it. The URL starts with<span style="font-style:
       italic;"> http://inst.eecs.berkeley.edu</span> which specifis the
     protocol (http://) and the server. After that, the URL contains a
-    file path on the server.<br />
+    file path on the server.<br>
     So lets instruct telnet to connect to <span style="font-style:
       italic;">http://inst.eecs.berkeley.edu</span> and grab this web
     page.&nbsp; Telnet does not know of http:// (which stands for
     hypertext transfer protocol) since it's essentially a copy program.
     Instead, we need to instruct telnet to connect to <a
       href="http://en.wikipedia.org/wiki/Port_%28computer_networking%29">port</a>
-    80, which is the default port for http. Enter the following:<br />
-    <br />
+    80, which is the default port for http. Enter the following:<br>
+    <br>
     <div style="margin-left: 40px;"><code>telnet inst.eecs.berkeley.edu
-        80</code><br />
+        80</code><br>
       <span style="font-style: italic;"></span></div>
-    <span style="font-style: italic;"><br />
-    </span>You should now see a response that looks like this:<br />
-    <br />
+    <span style="font-style: italic;"><br>
+    </span>You should now see a response that looks like this:<br>
+    <br>
     <div style="margin-left: 40px;"><span style="font-style: italic;">Trying
 
 
@@ -81,66 +81,66 @@
         128.32.42.199...</span><br style="font-style: italic;">
       <span style="font-style: italic;">Connected to
         inst.eecs.berkeley.edu.</span><br style="font-style: italic;">
-      <span style="font-style: italic;">Escape character is '^]'.</span><br />
+      <span style="font-style: italic;">Escape character is '^]'.</span><br>
     </div>
-    <br />
+    <br>
     with a blinking cursor below. Congratulations! You just established
-    a connection to the institute's web server!<br />
-    <br />
+    a connection to the institute's web server!<br>
+    <br>
     Now all you have to do is instruct the webserver to fetch the
     website. Since telnet does not know about <a
       href="http://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">http</a>,
     we need to speak the protocol ourselves. the command for getting a
     webpage is <span style="font-style: italic;">GET </span>followed
-    by a path. Let's try it, enter the following: <br />
-    <br />
-    <div style="margin-left: 40px;"><code>GET /</code><br />
+    by a path. Let's try it, enter the following: <br>
+    <br>
+    <div style="margin-left: 40px;"><code>GET /</code><br>
     </div>
-    <br />
-    You should now see a response that looks like this:<br />
-    <br />
-    <div style="margin-left: 40px; font-style: italic;">[...]<br />
-      &nbsp;&nbsp;&nbsp; 377 &amp; 378 Cory Hall, 333 Soda Hall<br />
-      &nbsp;&nbsp;&nbsp; University of California<br />
-      &nbsp;&nbsp;&nbsp; Berkeley&nbsp; CA&nbsp; 94720-1770<br />
-      &nbsp;&nbsp;&nbsp; &lt;/DIV&gt;<br />
-      &nbsp; &lt;/td&gt;<br />
-      &lt;/tr&gt;<br />
-      &lt;/table&gt;<br />
-      &lt;HR&gt;<br />
-      &lt;!--#include virtual="tail.html"--&gt;<br />
-      <br />
-      &lt;/BODY&gt;<br />
-      &lt;/HTML&gt;<br />
-      Connection closed by foreign host.<br />
+    <br>
+    You should now see a response that looks like this:<br>
+    <br>
+    <div style="margin-left: 40px; font-style: italic;">[...]<br>
+      &nbsp;&nbsp;&nbsp; 377 &amp; 378 Cory Hall, 333 Soda Hall<br>
+      &nbsp;&nbsp;&nbsp; University of California<br>
+      &nbsp;&nbsp;&nbsp; Berkeley&nbsp; CA&nbsp; 94720-1770<br>
+      &nbsp;&nbsp;&nbsp; &lt;/DIV&gt;<br>
+      &nbsp; &lt;/td&gt;<br>
+      &lt;/tr&gt;<br>
+      &lt;/table&gt;<br>
+      &lt;HR&gt;<br>
+      &lt;!--#include virtual="tail.html"--&gt;<br>
+      <br>
+      &lt;/BODY&gt;<br>
+      &lt;/HTML&gt;<br>
+      Connection closed by foreign host.<br>
     </div>
-    <br />
+    <br>
     Congratulations, you just downloaded the page for <span
-      style="font-style: italic;">http://inst.eecs.berkeley.edu/! <br />
-      <br />
+      style="font-style: italic;">http://inst.eecs.berkeley.edu/! <br>
+      <br>
       <span style="text-decoration: underline;"><span style="font-style:
           italic;"><span style="text-decoration: underline;"><span
               style="font-style: italic;"><span style="text-decoration:
-                underline;"></span></span></span></span></span></span>Now:<br />
+                underline;"></span></span></span></span></span></span>Now:<br>
     <ol>
       <li>Download the webpage that you are currnelty looking at (this
         page).</li>
       <li>Take a moment to discuss with your peers the technical changes
         between the historical video and today.</li>
     </ol>
-    <br />
+    <br>
     Again, after all this work: Let's finish with another fun one.
-    Enter:<br />
-    <br />
+    Enter:<br>
+    <br>
     <div style="margin-left: 40px;">&nbsp;&nbsp; <code>telnet
         towel.blinkenlights.nl</code></div>
-    <br />
+    <br>
     Don't watch to the end though, since there is more work to do in
-    this lab...<br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    this lab...<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
   </body>
 </html>
