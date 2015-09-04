@@ -13,7 +13,6 @@
         
         <div class="todo">
             <ul>
-                <li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
                 <li>JK: Any other suggestions for interesting problems here?</li>
                 <li>
                     From Dan in NY: "Some were still working on IsIncreasing(list)&rarr;bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:<br />
@@ -34,7 +33,8 @@
                 <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br>
                 <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
                     <ol>
-                    <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming predicates (blocks that answer yes-or-no questions).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
+                    <div class="commentBig">I'm not convinved that "explaining why not" is going to be accessible to students. --MF</div>
+                    <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a> (blocks that report either true-or-false).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
                     <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code>.</li>
                     <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code>.</li>
                     </ol>
@@ -43,6 +43,7 @@
         </div>
         
         <div class="dialogue">
+            <div class="todo">Trim this down. --MF</div>
             <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
             <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
             <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
@@ -140,6 +141,12 @@
         <p class="step">
  -->
  
+        <div class="todo">
+            <ul>
+                <li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
+            </ul>
+        </div>
+
         <div class="takeItFurther">
             <ol type="A">
                 <li>Write an <code>expand</code> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br>
