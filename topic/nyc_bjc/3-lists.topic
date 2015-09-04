@@ -54,25 +54,6 @@ heading: Programming Lab 4: Magic Squares
 
 	raw-html: <hr />
 
-heading: Programming Lab Moving to U4: GPS Forensics
-	raw-html: <div class="todo">I talked to Bowen and he thinks that it makes sense to move this lab to U4, which would be great because there is too much in U3 and not enough in U4. --MF</div>
-	resource: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/1-introgps.html]
-	resource: Visualizing Data [/bjc-r/cur/programming/3-lists/5-search-and-data/2-visualizing.html]
-	resource: Clustering [/bjc-r/cur/programming/3-lists/5-search-and-data/3-clustering.html]
-	resource: Drawing Conclusions [/bjc-r/cur/programming/3-lists/5-search-and-data/4-conclusions.html] 
-
-heading: Slated for Demolition:
-	resource: Weather App: API and Scraping Data [/bjc-r/cur/programming/3-lists/5-search-and-data/5-weatherintro.html]
-
-heading: Programming Lab Moving to U4: Spam and Ham
-	resource: Introduction [/bjc-r/cur/programming/3-lists/5-search-and-data/6-spam-introduction.html]
-	resource: Text Messages [/bjc-r/cur/programming/3-lists/5-search-and-data/7-the-data.html]
-	resource: Counting Words [/bjc-r/cur/programming/3-lists/5-search-and-data/8-average-number-of-words.html]
-	resource: Predictions! [/bjc-r/cur/programming/3-lists/5-search-and-data/9-predict-by-number-of-words.html]
-	resource: Further work [/bjc-r/cur/programming/3-lists/5-search-and-data/10-further-work.html]
-		
-	raw-html: <hr />
-
 heading: Social Implications Lab 5: Search and How the Internet Works
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
 	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
