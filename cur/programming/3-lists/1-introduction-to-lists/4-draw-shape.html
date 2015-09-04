@@ -11,7 +11,7 @@
         
         <div class="todo">
             <ul>
-            	<li>From Dan in NY:"They liked the list of lists that drew the letter A, and I had them extend it to handle the middle of the A (that was engaging for most)"</li>
+            	<li>From Dan in NY: "They liked the list of lists that drew the letter A, and I had them extend it to handle the middle of the A (that was engaging for most)"</li>
             </ul>
         </div>
         
@@ -42,41 +42,60 @@
             </ol>
         </div>
      
-        <div class="todo">This is a very long line for one character to say. Is there a plan for how this will take place as a script in the classroom? Perhaps we can break up the ideas and make it more of a conversation? --MF</div>
-        <div class="dialogue"> 
+             
+        <div class="dialogue"> <a name="point" class="anchor">&nbsp;</a>
         	<div class="stagedir">Gamal has been looking over Betty's shoulder.</div>
             <div>
-                <span>Gamal:</span> I think one reason you had trouble finishiing that script is that all those <code>item</code> blocks get confusing.  How about if you define, in your head, a new data type called <em>point</em> that contains an <em>X coordinate</em> and a <em>Y coordinate:</em><br />
-                <div class="sidenote">Gamal's idea is called <em>data abstraction.</em></div>
+                <span>Gamal:</span> I think you had trouble finishing that script because those <code>item</code> blocks get confusing. How about if you define a new data type called <code>point</code> that contains an <em>X coordinate</em> and a <em>Y coordinate?</em><br />
+                <div class="sidenote">Gamal's idea is called <em><a href="">data abstraction</a>.</em></div>
+            </div>
+        	<div class="stagedir">
+                Gamal has built this block: 
                 <a class="run" href="/bjc-r/prog/3-lists/U3Lab1DrawShape.xml">
-                    <img class="indent" src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/><br />
-                    <img class="indent" src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /><br />
-                    <img class="indent" src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
-                </a><br />
-                These blocks are trivial one-liners; they aren't going to make the rest of the program any shorter. But they <em>are</em> going to make it easier to think about. For example, your list of points will now be obviously a list of points, rather than some other data type:<br />
-                <img class="indent" src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /><br />
-                And Alphie's version of the drawing script will have things like<br />
-                <img class="indent" src="/bjc-r/img/3-lists/alphie-adt.png" alt="x coord of item I of A" title="x coord of item I of A" /><br />
-            instead of the headache-inducing<br />
-                <img class="indent" src="/bjc-r/img/3-lists/alphie-no-adt.png" alt="item 1 of item I of A" title="item 1 of item I of A" />
+                    <img src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/><br />
+                    
+                </a>
+            </div>
+            <div><span>Betty:</span> Those blocks are trivial. They aren't going to make the rest of the program any shorter.</div>
+            <div>
+            	<span>Gamal:</span> They are going to <em>make it easier to think about</em>. Now, your list of points will obviously be a list of points:<br />
+                <img class="indent" src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" />
+            </div>
+            <div>
+            	<span>Alphie:</span> And we could make <em>X coordinate</em> and <em>Y coordinate</em> blocks so my drawing script would have things like
+                <img class="inline" src="/bjc-r/img/3-lists/alphie-adt.png" alt="x coord of item I of A" title="x coord of item I of A" />
+            	instead of <img class="inline" src="/bjc-r/img/3-lists/alphie-no-adt.png" alt="item 1 of item I of A" title="item 1 of item I of A" />, which was confusing.
+            </div>
+            <div class="stagedir">
+                Alphie's two other blocks: <img src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /> 
+                    <img src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
             </div>
         </div>
         
         <div class="forYouToDo">
             <ol start="2">
                 <li>
-                	Fix Betty's script using Gamal's idea, then make a green command block using that script: <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br />
-                	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the input type:<br /> 
+                	Improve Betty's script using Gamal's idea, then make a green command block using that script: <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br />
+                	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the list input type:<br /> 
                     <div class="comment">This animation needs to be redrawn with Plain Prototype Labels off!</div>
                     <img class="indent" src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
                 </li>
                 <div><img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></div>
                 <li>Finish making the <code>draw shape ()</code> block so that <img  src="/bjc-r/img/3-lists/draw_shape_A.png" alt="draw shape (A)" title="draw shape (A)" /> produces the animation at the top of the page.</li>
+                <div class="comment">I know this isn't about drawing a shape, but I didn't see a better place to put this... --MF</div>
+                <li>
+	                <img class="imageRight" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+                	Create a new data<a name="data-type" class="anchor">&nbsp;</a>type called <code>note beats</code> to make your <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#sound">sound sequence</a> lists easier to think about.<br >
+					<img class="indent" src="/bjc-r/img/3-lists/play-sound-sequence-data-type.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
+
+                </li>
             </ol>
         </div>
         
+        
         <div class="takeItFurther">
             <ol type="A">
+                <li>Update the <code>draw shape ()</code> block so that <img  src="/bjc-r/img/3-lists/draw_shape_A.png" alt="draw shape (A)" title="draw shape (A)" /> completes a drawing of a letter A. (Choose the additional cordinates yourself.)</li>
             	<li>Make a list of lists with coordinates to draw any other letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
                 <div class="sidenote">Notice the use of abstraction. Representing the message &quot;HI&quot; as <img src="/bjc-r/img/3-lists/list-h-i.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
                 <li>
