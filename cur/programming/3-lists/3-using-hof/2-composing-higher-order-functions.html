@@ -9,7 +9,6 @@
 	<body>
         <h2>Composing Higher-Order Functions</h2>
 
-        
         <div class="dialogue">
         	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
               <div class="stagedir">Alphie and Betty are discussing the blocks they have been using with lists.</div>
@@ -35,83 +34,98 @@
             </ol>
         </div>
 
+
+        <h3>Transcribing Musical Notes</h3>
+        <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
+        
+        <div class="forYouToDo">
+            <ol start="2">
+				<div class="sidenote"><code>map</code> will be helpful here. </div>	
+                <li>
+                	Create a reporter block that<a name="transpose" class="anchor">&nbsp;</a>transposes a list of sounds, where each list item is a list with the sound's note and duration. Your block should take as input a list with the song data and a number incidating how much to transpose the song.<br />
+                	<img class="indent" src="/bjc-r/img/3-lists/play-sound-sequence.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
+                </li>
+            </ol>
+        </div>
+        
+        
+        <h3>Charcter Encoding</h3>
+        <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="http://localhost/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
         <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
 
         <div class="forYouToDo">
-            <ol start="2">
+            <ol start="3">
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
 				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
-                <li>Use those blocks to decode this message:<br><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+                <li>Use those blocks to decode this message:<br /><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
             </ol>
         </div>
             
             	<img src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /> 
-        <div class="forYouToDo">
-        	<ol start="5">
-                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
-            </ol>
-        </div>
-        <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a> and <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html#secretcode">Unit 2 Lab 2: Script Variables</a></div>
         <div class="takeItFurther">
             <ol type="A">
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
                 <li>
-                	Here are some made-up data from an ice cream shop. Each of the smaller lists represents one day's data at the shop. There are eight days shown here. <br />
+                	Here are some made-up data from 8 days of sales at an ice cream shop: <br />
 		    		<div class="comment">JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</div>
-                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a>
-                    <ul>
+                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
+					Each of the smaller lists represents one day's data at the shop:
+					<ol style="list-style:decimal;">
                         <li>The first number is the day's high temperature (in Fahrenheit).</li>
                         <li>The second is the number of Popsicles sold.</li>
                         <li>The third number is the number of ice cream cones sold.</li>
-                        <li>Popsicles sell for $1.50 each.</li>
-                        <li>Ice cream cones sell for $3.75 each.</li>
-                    </ul>
-                    Build a single block that calculates the total amount of money the shop made by selling Popsicles and ice cream cones on the days when the high temperature was over 80 degrees.
+                    </ol>
+                    Imagine that popsicles sell for $1.50 each and ice cream cones sell for $3.75 each. 
+                    <ol style="list-style:lower-roman;">
+                    	<li>Build a single block that calculates the total sales of the shop in these eight days.</li>
+                        <li>Build a block that calculates the total sales on days when the high temperature was over 80 degrees.</li>
+                    </ol>
                 </li>
         	</ol>
         </div>
 
 <!--
-<p><br>
-  Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br>
+<p><br />
+  Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br />
 <img border="0" title="map (() * ()) over list" alt="map (() * ()) over list" src="/bjc-r/img/list/hof/mapsq.png"/>
 
-<br><br>
-Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <code>keep</code> problem:<br>
+<br /><br />
+Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <code>keep</code> problem:<br />
 <img border="0" title="keep items such that <(() mod (2)) = (1)> from list..." alt="keep items such that <(() mod (2)) = (1)> from list..." src="/bjc-r/img/list/hof/keepodds.png"/>
 
-<br><br>
-But what if we want the squares of the odd numbers? This is neither a simple <code>map</code> nor a simple <code>keep</code>, but combines aspects of both. And we can solve the problem by using the value reported by the <code>keep</code> as the list input to <code>map</code>:<br>
+<br /><br />
+But what if we want the squares of the odd numbers? This is neither a simple <code>map</code> nor a simple <code>keep</code>, but combines aspects of both. And we can solve the problem by using the value reported by the <code>keep</code> as the list input to <code>map</code>:<br />
 <img border="0" title="map square over keep odds from list" alt="map square over keep odds from list" src="/bjc-r/img/list/hof/sq-odds.png"/>
 
-<br>
+<br />
 Don't be confused about which inputs do and don't have rings. It's the square <u>function</u> and the are-you-odd? <u>function</u> that we use as the first input to each higher order function. But, even though <code>keep</code> itself is a function, it's <i>the <u>list</u> reported by <code>keep </code></i>that we're using as the second input to <code>map</code>.
 
-</p><br>We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
-<br>   - Select only the words with five or more letters.<br>   - Make a list of the first letters of the words.
-<br>Review those activities if you don't remember how to solve those problems.
+</p><br />We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
+<br />   - Select only the words with five or more letters.<br />   - Make a list of the first letters of the words.
+<br />Review those activities if you don't remember how to solve those problems.
 
 <p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
 
 </p>
-To translate from a text string to a list of words, <span class="snap">snap</span>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
+To translate from a text string to a list of words, <span class="snap">snap</span>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br />
 <img border="0" src="/bjc-r/img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
-<br>As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
+<br />As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
 
 <p>Once we have the list, we can use the tools we've already built to get a list of the first letters of the long words. What we want, though, is a single word as the reported value. We can use one of the higher order functions to join the letters into a string.
 
 </p><b>Try this: </b>Should we use <code>map</code>, <code>keep</code>, or <code>combine</code> for this purpose?
 
-<p>Here's the final result:<br>
-<img border="0" src="/bjc-r/img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br>
+<p>Here's the final result:<br />
+<img border="0" src="/bjc-r/img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br />
 <img border="0" src="/bjc-r/img/list/hof/bad-bjc.png" alt="acronym reports BC instead of BJC" title="acronym reports BC instead of BJC"/>
-<br>Oops! The word &quot;Joy&quot; is shorter than five letters, but it's still an important word in the acronym. We need a better algorithm.
+<br />Oops! The word &quot;Joy&quot; is shorter than five letters, but it's still an important word in the acronym. We need a better algorithm.
 
-</p><br><br><b>Try this: <br></b>
-Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br>
+</p><br /><br /><b>Try this: <br /></b>
+Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br />
 <img border="0" src="/bjc-r/img/list/hof/good-bjc.png" alt="acronym reports BJC" title="acronym reports BJC"/><p>
 <img border="0" src="/bjc-r/img/list/hof/ucb-acro.png" alt="acronym of UCB" title="acronym of UCB"/></p>
-<img border="0" src="/bjc-r/img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br><br>  
+<img border="0" src="/bjc-r/img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br /><br />  
 -->
 
    </body>

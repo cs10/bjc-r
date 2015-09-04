@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 5: Data Part I</title>
+    </head>
+    
+    <body>
+    	<h2>GPS: Introduction</h2>
+        <div class="todo">
+            <ul>
+                <li>GH Feedback 8/12: Not "too much math", but lets use less complex numbers at the beginning. =)</li>
+                <li>GH Feedback 8/12: Too much math for high school freshman. Was fun for us to do tho.</li>
+                <li>Consider: <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html#point">Point Block in Unit 3 Lab 1: Introduction to Lists</a></li>
+            </ul>
+        </div>
+        
+        <!--<p>Big Burgers is coming to New York City, and asked people to share their location to decide where to put their new restaurants. Hundreds of people have shared their locations through GPS coordinates.</p>
+
+        >>>Replace this with link to bigger dataset, right? --MF
+        <p>Here are some of the coordinates (need to change these):</p>
+        <table id="tableBlue">
+            <tr>
+                <td>37.869050</td>
+                <td>-122.272050</td>
+            </tr>
+            <tr>
+                <td>37.869110</td>
+                <td>-122.271941</td>
+            </tr>
+            <tr>
+                <td>37.869116</td>
+                <td>-122.271957</td>
+            </tr>
+            <tr>
+                <td>37.869201</td>
+                <td>-122.272136</td>
+            </tr>
+            <tr>
+                <td>37.869118</td>
+                <td>-122.271967</td>
+            </tr>
+            <tr>
+                <td>37.869084</td>
+                <td>-122.271931</td>
+            </tr>
+            <tr>
+                <td>37.869192</td>
+                <td>-122.272132</td>
+            </tr>
+            <tr>
+                <td>37.869178</td>
+                <td>-122.272136</td>
+            </tr>
+            <tr>
+                <td>37.869102</td>
+                <td>-122.271957</td>
+            </tr>
+            <tr>
+                <td>37.868922</td>
+                <td>-122.272110</td>
+            </tr>
+			 <tr>
+                <td align="center">&#8942;</td>
+                <td align="center">&#8942;</td>
+            </tr>
+
+        </table>-->
+
+        <div class="forYouToDo" id="first">
+			<div class="sidenoteBig">It's not necessary, but if you are interested, read this or another quick introduction on GPS coordinates: <a target="_blank" href="http://www.ehow.com/how_2209240_read-gps-coordinates.html">E-How Tutorial on GPS coordinates</a>. And/or, check out this <a href="https://www.youtube.com/watch?v=zQdIjwoi-u4" target="_blank">video on GPS &amp; Relativity</a>.</div>
+            <ol>
+                <li><a href="" target="_blank">Import these GPS coordinates</a>, which describe locations on the Earth<!--, into Snap! using the <code>http://</code> block-->.</li>
+				<div class="todo">Not having read the lab that we don't have yet before this, I have no idea how this import is going to happen. Are they going to import data from a file? ;) MF</div>
+            </ol>
+        </div>
+
+        <p>In each coordinate pair, the first number is the <em>latitude</em> (north-south), and the second number is the <em>longitude</em> (east-west).</p>
+        <div class="sidenote">If you like this, check out <a href="" target="_blank">Google Earth</a> outside of class.</div>
+		<div class="comment"><a href="https://commons.wikimedia.org/wiki/File:Latitude_and_Longitude_of_the_Earth.svg" target="_blank">This image is in the creative commons.</a></div>
+    	<img class="indent" src="/bjc-r/img/3-lists/Latitude_and_Longitude_of_the_Earth.svg" alt="Latitude and Longitude of the Earth" title="Latitude and Longitude of the Earth" />
+        <div class="endnote"> Positive values of latitude are north of the Equator, negative values are south. Positive values of longitude are east of the Prime Meridian (through London), negative values are west. </div>
+        <p>For example, if you <a href="https://www.google.com/maps/place/40%C2%B044'55.7%22N+73%C2%B059'07.5%22W/@40.7488051,-73.9854167,17z/data=!4m2!3m1!1s0x0:0x0" target="_blank">search for "40.7488051,-73.9854167" in Google Maps</a> (or Google Earth), you'll see the corresponding location, near the Empire State Building.</p>
+        <div class="todo">Include a 2D map of that locaton with lat and long clearly marked to make it clear WHY we reverse the order. --MF</div>
+
+        <div class="takeNote"> Note when <em>writing</em> GPS coordinates, the convention is that the first number is <em>latitude</em>, the north-south measurement, and the second, <em>longitude</em>, is measures east-west. $$latitude, longitude$$ $$40.7488051,-73.9854167$$ However, when <em>plotting</em> GPS coordinates, the convention is that <em>longitude</em>, which is plotted on the horizontal <em>x</em>-axis, is first, and <em>latitude</em>, which is measures vertical location on the <em>y</em>-axis is second. $$(longitude, latitude)$$  $$(-73.9854167, 40.7488051) $$ When plotting GPS coordinates, plot them as (longitude, latitude), reversing the written order.</div>
+            <p></p>
+
+    
+    <h3>Making the data useful</h3>
+    
+    <div class="comment">*need to build this, think about whether to switch lat and long now, think about whether the data-read-in is relevant*</div>
+    <p>
+    	GPS data isn't very useful as a list of numbers; the data is far more useful if we can <em>visualize</em> it. Here are the coordinates as a list of lists: <br />
+    	<a class="run" href="/bjc-r/prog/3-lists/U3Lab5GPS.xml"><img class="indent" src="/bjc-r/img/3-lists/gps_coords.png" alt="set (coordinates) to {{37.869050, -122.272050}, etc}" title="set (coordinates) to {{37.869050, -122.272050}, etc}" /></a><br />
+    	When you open the project, you will see that the background of the stage is set to an <em>x</em>-<em>y</em> grid and that the sprite's costume is a black circle.
+    </p>
+    
+    <div class="forYouToDo">
+        <ol>
+            <li>
+                Write a script to plot the coordinates on the graph. Use <code>stamp</code> to plot the points.<br />
+                When you run your script, you should see this (need to fix this):
+                <div class="sidenote">Remember, plot the longitude first, then the latitude.</div>
+            	<img class="indent" src="/bjc-r/img/3-lists/gps_badpic.png" alt="graph with only one point around (37, -122)" title="graph with only one point around (37, -122)" />
+        	</li>
+            <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Why can't you see all the points?</li>
+        </ol>
+    </div>
+    
+    <h3>Transform the data</h3>
+    <div class="sidenoteBig">You can do it your own way instead if you like.</div>    
+    To display all the points, you'll need to <em>transform</em> them. These problems will lead you through one way to do this.
+    
+    <div class="forYouToDo">
+    <ol start="2">
+      <div class="sidenote">Subtracting -74 is the same as adding 74.</div>
+      <li>Every point's longitude is around -74 and every point's latitude is around 40. This does not help us tell the points apart. Subtract -74 from every <em>x</em>-coordinate and subtract 40 from every <em>y</em>-coordinate, <strong>using a <a href="">higher-order function</a></strong>.</li>
+      <li>Now the first <em>x</em>-coordinate is BLAH. There are many choices we could make to turn this into a "nicer" number. One choice is to multiply every <em>x</em>- and <em>y</em>-coordinate by BLAH. Adjust your higher-order function to do this calculation as well.</li>
+      
+      <div class="sidenoteBig">Making Snap<em>!</em> do the work is better, because then the program can be used on <em>any</em> set of GPS points in this area, and not just these. That's abstraction.</div>
+      <div class="sidenoteBig">Recall that you made a block called <code>average</code> in <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/combine.html">Lab 2 ("Combine with")</a>.</div>
+      <li>Now the first <em>x</em>-coordinate is BLAH, which we still can't see on the grid. Let's center the coordinates around the <em>average</em> <em>x</em>- and <em>y</em>-coordinate. Subtract the average of all the <em>x</em> values from each of the <em>x</em>-coordinates, and subtract the average of all the&nbsp;<em>y</em> values from each of the <em>y</em>-coordinates. Make Snap<em>!</em> do the work.</li>
+      <li>Once you have these transformed coordinates, use your script from problem 1 to plot the points.</li>
+    </ol>
+    </div>
+
+    </body>
+</html>

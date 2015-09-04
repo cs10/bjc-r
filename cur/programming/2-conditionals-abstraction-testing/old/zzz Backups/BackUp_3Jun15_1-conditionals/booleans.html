@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Lab 1: Conditional Blocks</title>
+    </head>
+    <body>
+		<h2>Booleans</h2>
+        
+        <div class="todo">
+        <ul>
+        	<li>JK: I'm confused. Are students learning about <code>if</code> or are they learning about how responsive this command is? #2 seems like the latter, but then the text after it sounds like they were actually supposed to have been learning about <code>if</code>...
+                <ul>
+                    <li>MF: Going through this page, it feels like the point is going to be about the lag with this script (discussed in #2), but then there is nothing about it later so I'm just left with a "something is broken" feeling.</li>
+                </ul>
+            </li>
+            <li>JK: I don't really like #3 and #4 - they are too vague. First, it's hard to find the definitions for predicate and conditional. The definition hints for predicate are in both the yellow sidenote and the orange box below. And one of the main examples of a prediciate (turbo mode) is the one you're being told you won't be able to figure out. The definition for conditional was also difficult. I guess "when space is pressed' is also a conditional, but it's hard to tell just by looking at the "control" tab (which is all of the instruction you're given). If I were a student, I'd guess that "repeat" is a conditional because it looks more like "if" than any of the hat blocks. But repeat isn't a conditional. Right?
+            	<ul>
+                    <li>MF: I agree. I don't find them helpful. At least predicates are discussed later (though not their usefulness-as requested), but conditionals are just left dangling. </li>
+                </ul>
+			</li>
+            <li>JK: Instead of "distance less than 20" in the if statement, what if it was just the block "mouse down?" as the condition? Or maybe do distance less than 50, so that it's harder to "shake" and that you can see the behavior of the sprite jumping to the mouse more clearly.</li> 
+            <li>In #3, show the predicate blocks. And give some non-examples.</li>
+            <li>Page theme: this page used to be able booleans, but now it's more about predicate conditionals with boolean values.</li>
+			<li>Let's us the term "procedures" for subroutines where appropriate.</li>
+            <li>June: "You already know" is not language we want to use.</li>
+            <li>Let's drop the new script with the "bug" on this page. We had a lot of debate about the message that it's sending here, and it's not clear.</li>
+            <li>Bowen: perhaps an <code>if-else</code> would be better for the introduction here. Maybe have the sprite follow the mouse at all times and change color or costume if it's within a certain distance to the origin. </li>
+            <li>Jane: Let's get more of a "getting started" feel here.</li>
+            <li>
+            	We could:
+                <ul>
+                    <li>We could introduce a few logic puzzles with if-then (maybe it could be in the TG as a lesson opener). Or a choose your own adventure style activity. </li>
+                    
+                    <li>Experiement with prediates and do a few problems and then do Bowen's idea before.</li>
+                </ul>
+            </li>
+            <li>MF: Maybe students could write their own choose their own activity at the end of the lesson.</li>
+            <li>MF: Maybe we could keep the truth tables but put them in the lesson openers in the TG.</li>
+            <li>PG: One possitbility: start with the traffic light then go to the plurals.</li>
+        </ul>
+        </div>
+        
+        <p>You already know what <img src="/bjc-r/img/blocks/follow-that-mouse.png" alt="Follow That Mouse Script"/>  does. </p>
+    	<p>The following script uses two new blocks,  <code>if</code>  and  <code>distance to</code>: <br /> <img src="/bjc-r/img/2-conditionals-abstraction-testing/forever-snap-to-mouse-pointer.png" style="height:100px;" class="indent" alt="forever, if distance to mouse is less than 20, go to mouse pointer"></p>
+    	<div class="forYouToDo" id="first">
+        <ol>
+            <li>First  analyze this new script and predict what it <em>should</em> do.</li>
+            <li> In actuality, it doesn't behave exactly as it &quot;should.&quot; Nothing in the script should make its behavior depend on  mouse speed, but speed does matter. Build it and experiment with it. Then come up with a theory to explain the behavior you see.</li>
+          </ol></div>
+    	<p>The script checks "forever" to see <code>if</code>  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is true.  If it is, the sprite follows the instruction <img src="/bjc-r/img/2-conditionals-abstraction-testing/go-to-mouse-x-mouse-y.png" class="block" alt="go to mouse x and mouse y"> contained inside the <code>if</code>. If  <img src="/bjc-r/img/2-conditionals-abstraction-testing/distance-to-mouse-less-than-20.png" class="block" alt="distance to mouse less than 20"> is not <img src="/bjc-r/img/blocks/true.png" alt="true"/>, the sprite is not instructed to move. Blocks, like <code>if</code>, that specify the conditions that control when some code is to run are called <strong>conditionals</strong>. </p>
+
+        <div class="forYouToDo">
+        	<div class="sidenote">
+       	    <div> Blocks, like <code>greater than</code>, that report <code>true</code> when a condition is met and <code>false</code> when it is not met are called "predicates." <p> <img class="center" src="/bjc-r/img/cond/predicate-returning-boolean.gif" alt="5 > 3 returns 'true'"/></p> In <span class="snap">snap</span>, these functions have the hexagonal shape: <img src="/bjc-r/img/cond/demo-predicate-block.png" alt="a predicate block"/>. </div></div>
+            <ol start="3">
+            	<li>Look in the "Sensing" and "Operations" tabs, find the <em>predicate</em> blocks, and talk with your pair programmer about what you think they might be useful for. </li>
+            	<li>Look in the "Control" tab to find what other <em>conditionals</em> are there. Again discuss how you think you might use these.</li>
+            </ol>
+        </div>
+        <div class="takeNote">
+       	    <div> Predicate functions are like questions that can be answered with <code>true</code> or <code>false</code>. The two special values  are represented in <span class="snap">snap</span>  by the blocks <img src="/bjc-r/img/blocks/true.png" alt="true"/> and <img src="/bjc-r/img/blocks/false.png" alt="false"/>. They are called Boolean values, named after the great logician George Boole. Some  predicates, like <code>turbo mode?</code>, will not yet make sense, but you are likely to be able to make a good guess about many others.</div></div>
+    </body>
+</html>
