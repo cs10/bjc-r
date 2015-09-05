@@ -24,19 +24,19 @@
 <div class="sidenoteBig">There are different traditions on how to name predicates. Using question marks in the name, as in <code>even?</code>, is hard to miss, but some people don't like it because in English the question mark would go at the end: <code>is (n) even?</code>. And in any case English questions don't go after the word <code>if</code>. But don't try too hard to read or write any programming language as if it were English.</div>
 <p><em>You</em> know that the code <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-mod-2-equals-0.png" alt="if-n-mod-2-equals-0"> means &quot;if <em>n</em> is even,&quot; but programs are much easier to read and debug when the code  <em>says</em> what it means, something like <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-even-n.png"  alt="if even? n"> or  <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-is-even.png" alt="if n is even">. </p>
 
-<div class="forYouToDo">
-            <ol start="2"> 
-              <li>Create the <code>even? (n)</code> block.
-                <div class="sidenote">The video also shows a different (optional) way to create an input name. You can, if you like, type the title text and input name at the same time, and <em>then</em> change the part that you want to use as an input name  by clicking on it and choosing &quot;input name.&quot; Use whatever way you like best.</div>
-                  <ol>The video below shows <em>almost</em> all you need to do to define <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate">, but an important step is missing. 
-                  <ul> 
+		<div class="forYouToDo">
+			<ol start="2"> 
+				<li>
+                    Create the <code>even? (n)</code> block.<br />
+                    <div class="sidenote">The video also shows a different (optional) way to create an input name. You can, if you like, type the title text and input name at the same time, and <em>then</em> change the part that you want to use as an input name  by clicking on it and choosing &quot;input name.&quot; Use whatever way you like best.</div>
+                    The video below shows <em>almost</em> all you need to do to define <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate">, but an important step is missing. 
+                    <ul> 
                     <li>You must define your block to be a <em>predicate</em> rather than a command. </li>
                     <li>You must use  the <img src="/bjc-r/img/blocks/report.png" alt="report"> block to report the result.</li>
-                 </ul>
+                    </ul>
                     <li><strong>What else must be done before clicking OK?</strong></li>
                     <li><strong>Test</strong> your new block to make sure it works properly.</li>
-                 </ol>
-                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/defining-even-predicate.gif" alt="defining a predicate block"></p>
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/defining-even-predicate.gif" alt="defining a predicate block"></p>
               </li>   
      <!--           <div class="takeNote">
     				You have just created a <strong>predicate</strong>, a block that reports only <code>true</code> or <code>false</code> depending on its input. <strong>Conditional</strong> blocks—<code>if-else</code>, <code>if</code>, <code>repeat until</code>, <code>wait until</code>—use the condition you are testing to control the behavior of your program. 
@@ -52,23 +52,25 @@
                <p>To decide, it  needs a predicate that tests the next letter to see if it's a vowel. It should work like this:</p>
   <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
                  
-                 <p>There are many ways to create a block like this. Here's one way, started for you. </p>
-                 <p>Complete it, test it, and save it for future use. </p>
-                 <div class="sidenoteBig">
-                   Again, the block is defined with the hexagonal <strong>predicate</strong> shape because it outputs only <code>true</code> or <code>false</code>. Choose the shape when you first define the block. 
-                   <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/make-a-predicate-block.png"  alt="make a predicate block by choosing the correct shape"></p>
-                 </div>
-                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-definition.png" alt="vowel definition"></p>
-                 <div class="todo">GitHub Feedback: The vowel block doesn't have much context. I found out that it relates to the Take It Further section for words that end in y, but there should be a link or description of some sort added to clarify this.
-                 </div>
-               </li>
-               <li> Now define a block <code>use indefinite article (noun)</code> that works like this:
-               <img src="/bjc-r/img/2-conditionals-abstraction-testing/use-indefinite-article.gif" alt="use indefinite article animation showing (a lion) and (an elephant)">
-               <p>You will need to use <img src="/bjc-r/img/blocks/join-words().png"  alt="join words"> with <em>two</em> inputs. The block  shows a slot for only <em>one</em> input, but you can use the arrows <img src="/bjc-r/img/2-conditionals-abstraction-testing/input-arrows.png"  alt="input arrows"> to increase or decrease the number of inputs.</p>
-               <div class="endnote"> <img class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/make-a-reporter-block.png" width="180" alt="make a reporter block"> When you define this block, you will need to choose the rounded <strong>reporter</strong> shape.</div>
-              </li>
-  </ol>
-    </div>
+					<p>There are many ways to create a block like this. Here's one way, started for you. </p>
+					<p>Complete it, test it, and save it for future use. </p>
+					<div class="sidenoteBig">
+						Again, the block is defined with the hexagonal <strong>predicate</strong> shape because it outputs only <code>true</code> or <code>false</code>. Choose the shape when you first define the block. 
+						<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/make-a-predicate-block.png"  alt="make a predicate block by choosing the correct shape"></p>
+					</div>
+					<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel-definition.png" alt="vowel definition"></p>
+					<div class="todo">GitHub Feedback: The vowel block doesn't have much context. I found out that it relates to the Take It Further section for words that end in y, but there should be a link or description of some sort added to clarify this.
+					</div>
+				</li>
+				<li> 
+                    <div class="sidenoteBig">What is an <em>indefinite article</em>? Look it up! <a class="run" href="http://study.com/academy/lesson/indefinite-and-definite-articles-definition-and-examples.html">Here's a video:<img src="/bjc-r/img/2-conditionals-abstraction-testing/three-articles.png" alt="There are three articles in English: a , an, the" title="There are three articles in English: a , an, the" /></a> </div>
+                    Now, define a block <code>use indefinite article (noun)</code> that works like this:<br />
+                    <img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/use-indefinite-article.gif" alt="use indefinite article animation showing (a lion) and (an elephant)" title="use indefinite article animation showing (a lion) and (an elephant)" /><br />
+                    <div class="sidenoteBig"> <img  class="imageRight" src="/bjc-r/img/2-conditionals-abstraction-testing/make-a-reporter-block.png" width="180" alt="make a reporter block"> When you define this block, you will need to choose the rounded <strong>reporter</strong> shape.</div>
+                    <p>You will need to use <img src="/bjc-r/img/blocks/join-words().png"  alt="join words"> with <em>two</em> inputs. The block  shows a slot for only <em>one</em> input, but you can use the arrows <img src="/bjc-r/img/2-conditionals-abstraction-testing/input-arrows.png"  alt="input arrows"> to increase or decrease the number of inputs.</p>
+				</li>
+			</ol>
+		</div>
         
 <p>The solution to problem 1 needs only one <code>if</code> statement, because all integers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>,  the number is not even, so it must be odd. </p>
 <p>&nbsp;</p>
@@ -121,9 +123,7 @@
                 <li> Instead of using many <code>if</code> statements in <code>vowel?</code>, you can make a list of vowels and then test to see if a particular letter is in that list.  <span class="snap">snap</span> makes that a snap! 
                   <ol>
                     <li>Construct <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">, click on it, and see what it does.</li>
-                    <div class="endnote">The <img src="/bjc-r/img/2-conditionals-abstraction-testing/just the list [a e i o u].png" alt="just the list a e i o u"> that you see when you click on <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">  is an artist's way of picturing a list inside the computer. The image numbers each item of the list and tells you how long the list is.
-                        <p>A scroll bar lets you see list elements that aren't shown in the small picture. </p>
-					</div>
+                    <div class="endnote">The <img src="/bjc-r/img/2-conditionals-abstraction-testing/just the list [a e i o u].png" alt="just the list a e i o u"> that you see when you click on <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">  is an artist's way of picturing a list inside the computer. The image numbers each item of the list and tells you how long the list is. The scroll bar lets you see list elements that aren't shown in the small picture.</div>
                     <li>Experiment with these blocks to see what they do.
                     <div class="endnote"> To save work, just duplicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> a few times to use in each experiment.</div>
                    
@@ -141,10 +141,8 @@
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v3).png"  alt="is letter a vowel (v3)"> 
                 </li>
                 <li>Problem
-          1, at the top of the page, seemed to suggest that to choose between alternative actions, you must use <code>if-else</code>, not just <code>if</code>. Problem 4, however, seems to choose alternatives with plain <code>if</code>. Why does that work? (There's a subtle hint in the shapes of the 
-          <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" alt="say">
-          and <img src="/bjc-r/img/blocks/report.png"  alt="report">
-          blocks.)</ol> 
+          1, at the top of the page, seemed to suggest that to choose between alternative actions, you must use <code>if-else</code>, not just <code>if</code>. Problem 4, however, seems to choose alternatives with plain <code>if</code>. Why does that work? (There's a subtle hint in the shapes of the <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" alt="say"> and <img src="/bjc-r/img/blocks/report.png"  alt="report"> blocks.)</li>
+	        </ol> 
         </div>
 
     </body>
