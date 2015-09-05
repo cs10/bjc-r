@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 4, Lab 1: Reading Web Pages</title>
+    </head>
+<body>
+<h2>Reading Web Pages</h2>    <div class="forYouToDo" id="first">
+<ol>
+<li>Load <a class="run" href="/bjc-r/cur/programming/4-internet/1-read-web/http-block.xml">this project</a>.</li>
+<li>Find the block 
+  <img src="/bjc-r/img/blocks/http.png" alt="http:// block"> in the Sensing palette, drag it into the scripting area, and click on it.
+  <ul><li>What do you think the block is reporting?</li></ul></li>
+  <li>In another browser window, open the page <code>http://snap.berkeley.edu</code> for reference.</li></ol></div>
+<p>The page starts with two pictures (the Snap<em>!</em> logo and a screenshot), then some text.  Do you see any of that in what the <code>http</code> block reported?</p>
+  
+<img src="/bjc-r/img/4-internet/s-b-e.png" width="50%" alt="snap.berkeley.edu as seen in browser"><img src="/bjc-r/img/4-internet/s-b-e-reported.png" width="50%" alt="html text reported by http block">
+<div class="forYouToDo"><ol start="4">
+<li>Actually, there <em>is</em> something in what the block reports that you can see in the browser.  Look at the text in the tab <em>above</em> the page.  What does it say?  Can you find that text in what the <code>http</code> block reported?</li>
+<li>Every web page has a <em>head</em> (telling the browser how to format the page in general) and a <em>body</em> with the actual information on the page.  Perhaps you'll see something more interesting if you skip over the head by looking for the text &quot; <code>&lt;body&gt;</code>&quot;:<br />
+<img src="/bjc-r/img/4-internet/s-b-e-body.png" width="100%" alt="substring of (http: ...) starting with &lt;body&gt;">
+<br />Find the two pictures and the beginning of the text in this reported value.</li></ol></div>
+<div class="takeItFurther"><ol type="A">
+<li>Here on <em>this</em> page, give your browser's "View Source" command:<br /><br />
+<table width="80%" border="1" summary="How to shortcut "view source" in various browsers and oses.">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">Linux</th>
+    <th scope="col">MacOS</th>
+    <th scope="col">Windows</th>
+  </tr>
+  <tr>
+    <th scope="row">Firefox</th>
+    <td>&#x2303;U</td>
+    <td>&#x2318;U</td>
+    <td>&#x2303;U</td>
+  </tr>
+  <tr>
+    <th scope="row">Chrome</th>
+    <td>&nbsp;</td>
+    <td>&#x2318;&#x2387;U</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">Safari</th>
+    <td>&nbsp;</td>
+    <td>&#x2318;&#x2387;U</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <th scope="row">IE</th>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+    <caption>
+    View Source command
+  </caption>
+</table>
+<br />
+    <br />
+    Make a list of all the formatting commands you can figure out.  For example, why is the background right here purple?</li></ol></div>
+<p>This web page notation, with things of the form<br />
+<center>
+<code>&lt;tag&gt;A bunch of text&lt;/tag&gt;</code>
+</center>
+is a <em>special purpose programming language</em> (one that's designed for a specific task, unlike what people usually think of as programming languages) called HTML (HyperText Markup Language).
+</p>
+<div class="saveAs"><span class="text">"U4L4-Web"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U4L4-Web" title="save your work as U4L4-Web" /></div>
+</body>
+</html>

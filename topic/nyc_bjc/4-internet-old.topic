@@ -1,0 +1,74 @@
+title: Unit 4: The Internet and Global Impact
+
+{
+
+	raw-html:<div class="todo">Bowen and I discussed moving <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">U3 L5</a> into U4, after the <code>http</code> block is addressed. So, that gives us something else for this unit. --MF</div>
+
+h1: Old INTERNET content in case we want it...
+
+h2: Big Ideas
+
+big-idea: Learn how to do network commands on a Unix shell
+big-idea: Investigate the properties and architecture of the Internet using standard Unix commands
+big-idea: Learn about an important social impact of the Internet: Privacy issues
+
+h2: Activities
+learning-goal: Invoke a Unix shell
+learning-goal: Use traceroute, whois, ping, telnet, and other commands to investigate the Internet
+learning-goal: Discuss challenges in Internet privacy
+
+heading: Internet under the Hood
+        resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
+        resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/trace.html]
+        resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
+        resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/speed.html]     
+        resource: Practice: Internet and Privacy [/bjc-r/cur/programming/internet/introprivacy.html]
+		
+
+
+h1: Old BIG DATA content in case we want it...
+
+h3: In this unit, you will...
+big-idea: Understand the basic components of any computer
+big-idea: Understand Moore's Law impact on the development of the processors
+big-idea: Understand parallelism and its limitations in computing
+big-idea: Explore the history and development of encryption techniques
+
+	raw-html:<div class="commentBig">Concurrency video to pull ideas from: <a href="https://coursesharing.org/courses/6/lectures/16" target="_blank">https://coursesharing.org/courses/6/lectures/16</a></div>
+
+h3: Learning Goals:
+learning-goal: In <span class="snap">snap</span>  what are the issues/facilities to do parallel work, and how does the machine work?
+learning-goal: A single sprite has control blocks which appear to respond in parallel (e.g., multiple "when green flag, do...", "when space is clicked, do...", "when I receive broadcast", etc.)
+learning-goal: Multiple sprites only exacerbate the problem, and race conditions could occur (e.g., what if multiple sprites tried to paint the screen their color all at the same time?)
+learning-goal: What happens when multiple signals are sent to the same "when I receive broadcast" block, do all get through? (yes if Broadcast and wait; no, but consistent, if Broadcast and Edit->Thread Safe Scripts checked; no, but inconsistent, if Edit->Thread Safe Scripts unchecked)
+learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
+learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
+
+	raw-html: <div class="todo"><ul><li>Quick Intro Video: <a href="http://www.businessinsider.com/mind-blowing-growth-and-power-of-big-data-2015-6" target="_blank">http://www.businessinsider.com/mind-blowing-growth-and-power-of-big-data-2015-6</a></li></ul></div>
+heading: Lab 1: Background: concurrency without the computer
+	resource: Card Sorting [/bjc-r/cur/programming/sorting/cards/card-sorting.html]
+	group: Card Sorting: Discussion [/bjc-r/cur/programming/sorting/cards/card-sorting-discuss.html]
+	resource: Card Sorting: Let's do it [/bjc-r/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
+	resource: Card Sorting: Reflect [/bjc-r/cur/programming/sorting/cards/card-sorting-reflect.html]
+	forum: Concurrency in real life... [/bjc-r/cur/programming/concurrency/concurrency-in-real-life.html]
+	
+heading: Lab 2: Two heads are better than one.
+	resource: <span class="snap">snap</span>  Machine Concepts [/bjc-r/cur/programming/concurrency/snap/snap-machine-concepts.html] 
+	resource: Concurrency in <span class="snap">snap</span>  [/bjc-r/cur/programming/concurrency/snap/snap-play-1.html]
+	resource: Debugging: Serial vs. Parallel [/bjc-r/cur/programming/concurrency/snap/snap-debug.html]
+	resource: Reflection [/bjc-r/cur/programming/concurrency/snap/reflection-snap-1.html]
+
+heading: Lab 3: <span class="snap">snap</span> ... don't all talk at once!
+	resource: Overview: Threads [/bjc-r/cur/programming/concurrency/snap/overview-snap-2.html]
+	resource: Determinism vs. Non-determinism [/bjc-r/cur/programming/concurrency/snap/snap-modify.html] 
+	resource: What are the possible values? [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-script-snap.html]
+	//quiz: Quiz
+	resource: Race Conditions in <span class="snap">snap</span>  [/bjc-r/cur/programming/concurrency/snap/snap-play-2.html]
+	resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-answer-snap.html]
+
+heading: Lab 4: <span class="snap">snap</span> ... some details to form a mental model
+	resource: Overview: Broadcasts [/bjc-r/cur/programming/concurrency/snap/overview-snap-3.html]
+	resource: Multiple Broadcasts [/bjc-r/cur/programming/concurrency/snap/snap-play-3.html] 
+	resource: Reflection: Multiple Broadcasts [/bjc-r/cur/programming/concurrency/snap/reflection-snap-3.html]
+
+}
