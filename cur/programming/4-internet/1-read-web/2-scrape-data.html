@@ -5,67 +5,38 @@
         <title>Unit 4, Lab 1: Reading Web Pages</title>
     </head>
 <body>
-<h2>Reading Web Pages</h2>    <div class="forYouToDo" id="first">
-<ol>
-<li>Load <a class="run" href="/bjc-r/cur/programming/4-internet/1-read-web/http-block.xml">this project</a>.</li>
-<li>Find the block 
-  <img src="/bjc-r/img/blocks/http.png" alt="http:// block"> in the Sensing palette, drag it into the scripting area, and click on it.
-  <ul><li>What do you think the block is reporting?</li></ul></li>
-  <li>In another browser window, open the page <code>http://snap.berkeley.edu</code> for reference.</li></ol></div>
-<p>The page starts with two pictures (the Snap<em>!</em> logo and a screenshot), then some text.  Do you see any of that in what the <code>http</code> block reported?</p>
-  
-<img src="/bjc-r/img/4-internet/s-b-e.png" width="50%" alt="snap.berkeley.edu as seen in browser"><img src="/bjc-r/img/4-internet/s-b-e-reported.png" width="50%" alt="html text reported by http block">
-<div class="forYouToDo"><ol start="4">
-<li>Actually, there <em>is</em> something in what the block reports that you can see in the browser.  Look at the text in the tab <em>above</em> the page.  What does it say?  Can you find that text in what the <code>http</code> block reported?</li>
-<li>Every web page has a <em>head</em> (telling the browser how to format the page in general) and a <em>body</em> with the actual information on the page.  Perhaps you'll see something more interesting if you skip over the head by looking for the text &quot; <code>&lt;body&gt;</code>&quot;:<br />
-<img src="/bjc-r/img/4-internet/s-b-e-body.png" width="100%" alt="substring of (http: ...) starting with &lt;body&gt;">
-<br />Find the two pictures and the beginning of the text in this reported value.</li></ol></div>
-<div class="takeItFurther"><ol type="A">
-<li>Here on <em>this</em> page, give your browser's "View Source" command:<br /><br />
-<table width="80%" border="1" summary="How to shortcut "view source" in various browsers and oses.">
-  <tr>
-    <th scope="col">&nbsp;</th>
-    <th scope="col">Linux</th>
-    <th scope="col">MacOS</th>
-    <th scope="col">Windows</th>
-  </tr>
-  <tr>
-    <th scope="row">Firefox</th>
-    <td>&#x2303;U</td>
-    <td>&#x2318;U</td>
-    <td>&#x2303;U</td>
-  </tr>
-  <tr>
-    <th scope="row">Chrome</th>
-    <td>&nbsp;</td>
-    <td>&#x2318;&#x2387;U</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">Safari</th>
-    <td>&nbsp;</td>
-    <td>&#x2318;&#x2387;U</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <th scope="row">IE</th>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-    <caption>
-    View Source command
-  </caption>
-</table>
-<br />
-    <br />
-    Make a list of all the formatting commands you can figure out.  For example, why is the background right here purple?</li></ol></div>
-<p>This web page notation, with things of the form<br />
-<center>
-<code>&lt;tag&gt;A bunch of text&lt;/tag&gt;</code>
-</center>
-is a <em>special purpose programming language</em> (one that's designed for a specific task, unlike what people usually think of as programming languages) called HTML (HyperText Markup Language).
-</p>
-<div class="saveAs"><span class="text">"U4L4-Web"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U4L4-Web" title="save your work as U4L4-Web" /></div>
+<h2>Scraping Data from Web Pages</h2>
+<p>Sometimes you're lucky, and a URL points directly to a data file:</p>
+<img src="/bjc-r/img/4-internet/libraries-txt.png" alt="text from URL snap.berkeley.edu/snapsource/libraries/LIBRARIES">
+<div class="forYouToDo" id="first">
+<p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
+    <ol><li>
+    The reported value above is a multi-line text string.  Just as you did for <em>words</em> and <em>sentences</em> in Unit 3, you'll often find it more convenient to have a list with one <em>line</em> per item.  In your scripting area you should see this script:<br />
+    
+      <img src="/bjc-r/img/4-internet/libraries-txt-list.png" alt="split LIBRARIES by line"><br />
+      <div class="sidenote">
+            <img src="/bjc-r/img/4-internet/drag-out.gif" width="75%" alt="animation of dragging out resize corner"></div>
+      Click on it, and pull out the bottom right corner of the stage watcher so that you can see the entire list.<br />
+
+      <ul><li>Compare this list with the result in the speech balloon above.  What do you notice?</li>
+      <li>In the Snap<em>!</em> file menu, click on "Libraries..." and look at the submenu that appears.  Compare it with what's in the file.  Why do you think they're different?</li></ul></li>
+      <li>Find the <code>split</code> block in the Operators palette, and experiment with the different options for the second input slot.
+ Read the help screen (right-click on a <code>split</code> block and choose &quot;Help&quot;) if you need ideas.</li></ol></div>
+<p> When you're 
+<em>not</em> lucky, the information you want is buried in a mass of HTML code.  Extracting the information from the formatting is called <em>scraping</em> the web page.</p>
+<div class="forYouToDo"><ol start="3">
+<li>In a new browser tab, visit the page <code>http://snap.berkeley.edu/snapsource/libraries</code>.  How does it compare with the ...libraries/LIBRARIES one?</li>
+<li>In your Snap<em>!</em> window, click on this script:<br />
+<img src="/bjc-r/img/4-internet/libraries-dir-list.png" alt="split libraries by line"></li>
+<li>We'd like to extract the list of files from this web page.  As a first step, use a higher order function to select only the list items that contain files, rather than header text.  You'll find this block helpful:<br />
+  <img src="/bjc-r/img/4-internet/contains.png" alt="( ) contains ( ) ?"></li>
+<li>The <code>strip</code> block in this project is an attempt to scrape just the file names from the <code>libraries</code> web page.  It almost works, but it has a couple of problems.
+<ul><li>Read the code of <code>strip</code> and make sure you understand how it works.  It uses helper blocks<br />
+<img src="/bjc-r/img/4-internet/substring-starting.png" alt="substring of ( ) starting ( )"><br />
+<img src="/bjc-r/img/4-internet/substring-upto.png" alt="substring of ( ) up to ( )"><br />
+Notice the narrow input slot in the second of those; it's meant to let you know that only a single character goes there, not a multi-character string.  Experiment with these blocks.</li>
+<li>Fix the bugs in <code>strip</code> so that you get a complete list of files and nothing else.</li></ul></li>
+</ol></div>
+
 </body>
 </html>
