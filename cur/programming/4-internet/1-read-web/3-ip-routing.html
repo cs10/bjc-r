@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Unit 4, Lab 1: Reading Web Pages</title>
+    </head>
+<body>
+<h2>IP Routing</h2>
+<div class="forYouToDo" id="first">
+<p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
+    <ol>
+    <div class="sidenote"><strong>What's DuckDuckGo?</strong>  It's a search engine, like Google or Bing, except that it doesn't track your searches to sell you to advertisers as the others do.</div>
+    <li>Every computer (including smartphones, internet-enabled appliances, etc.) on the Internet has an address, analogous to your house's mailing address, called its <strong>IP address</strong>. (&quot;IP&quot; stands for <strong>Internet Protocol</strong>, which we'll talk more about later.) You can find out your computer's IP address by asking a search engine:<br />
+      <a href="https://duckduckgo.com/?q=my+ip+address" target="new">https://duckduckgo.com/?q=my+ip+address</a><br />
+      Write a Snap<em>!</em> reporter 
+    
+<img src="/bjc-r/img/4-internet/my-ip-addr.png" alt="my IP address"> in the Sensing palette that scrapes your IP address from the above link.  (If you're lucky, it'll come right after the phrase &quot;Your IP address is,&quot; but if you're unlucky there will be HTML tags to strip out.) </li>  
+    <li><strong>Discuss:</strong>  How does DuckDuckGo know your IP address?  Why do web sites <em>need</em> to know your IP address?</li></ol></div>
+    <div class="takeNote">The Internet is probably the largest and most complicated artifact in human history.  It is a monument to two big ideas:<ul>
+<li><strong>Cooperation.</strong> Just think: You can send email to someone in a country that's considered an enemy of this country (from the US to Iran, for example).  An engineer at Microsoft can read a web page at Apple.  Your T-Mobile cell phone can talk to your friend's Verizon phone.  Despite some governments' attempts to censor the net, the big picture is one of strong cooperative spirit.</li>
+    <li><strong>Abstraction.</strong> There are billions of devices connected to the Internet, and hundreds of <em>kinds</em> of devices: laptops, tablets, phones, refrigerators, handheld credit card readers that the waiter brings to your table at the restaurant, and so on.  How do they all know how to talk to each other?  The Internet was designed with several levels of abstraction.  Here's an only slightly simplified picture:<br /><br />
+  <center><table border="2" cellpadding="6" summary="hardware, device driver software, Internet Protocol, Transmission Control Protocol, application protocols.">
+        <caption>
+          <center>Internet abstraction hierarchy</center>
+        </caption>
+        <tr>
+          <td>&nbsp;&nbsp;application protocols</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Transmission Control Protocol (TCP)&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Internet Protocol (IP)</td>
+        </tr>
+      <tr>
+          <td>&nbsp;&nbsp;device driver software</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;network interface hardware</td>
+        </tr>
+      </table></center>
+            <div class="sidenote">In some parts of the country the word "route" is pronounced like "root"; in other parts it's pronounced to rhyme with "doubt."  Nevertheless, engineers everywhere pronounce "router" like "doubter."</div><br />
+ <p>     Read this table from the bottom (least abstract) to the top (most abstract).  We won't have much to say about the bottom two levels.  Your computer connects to the net through some kind of interface.  If it's a big desktop computer, it might have an Ethernet interface attached to a socket on the side or back of the computer, looking like a telephone jack but wider.  A laptop computer might have an Ethernet adaptor, but more likely has a WiFi interface attached to an antenna inside the case, connecting to your network <em>router</em> box by radio.  Your cell phone uses a longer-range <em>cellular</em> connetion to your phone carrier.</p>
+ <p>The central processor in your computer has to know how to control the network interface hardware.  The program that does this controlling is called the <em>device driver.</em>
+Typically the manufacturer of the interface hardware provides driver software for the different operating systems your device might run.</p>
+ <p>Your network interface connects you to a small <em>local network</em>.  If your connection is by Ethernet (physical cable), the local network is all the machines that are cabled together, typically all in one or two rooms.  If the computers in your lab are permanently installed, the odds are they're on an Ethernet.  If you're on a laptop, your local network consists of all the machines with WiFi connections to the same router, also typically very near each other.  If you're on a cell phone using your cellular data service, your local network might be everyone talking to the same cell tower, or just some subset of them.</p>
+ <p>Somewhere on your local network is a device that's also connected to <em>another</em> network.  That other network isn't "the Internet"; it's a somewhat larger network, but still pretty small.  Maybe there's one such network for your entire school.  The routers are the machines that are connected to two or more networks, your local one and some wider area ones.  It's a "router" because its job is to route incoming messages to the particular local computer to which each message is addressed.  It also knows how to forward outgoing messages to the best available larger network.</p>
+<p>So, does your message finally get onto a super-huge network called "the Internet"?  No; all of the networks together, even the local net in your house, make up the Internet.  It's called "Internet" because it's a <em>network of networks</em>.</p>
+<p>The network hardware interface attached to your computer only knows how to send messages to other computers on your local network.  When you ask for a web site on the other side of the world, as far as the hardware is concerned, you're just sending your request to your local router.  The router has to forward your message to <em>its</em> router, and so on, until you reach a router that's on several large networks ahd has to figure out which one is best for the next step in getting your request to its final destination.  The rules by which routers know how to do that are the <strong>Internet Protocol.</strong>  It's the abstraction that lets you imagine you're on a single huge network with all of the other computers in the world.</p>
+</body>
+</html>
