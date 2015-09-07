@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!-- saved from url=(0157)http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+		<script async="" src="./Unit 3 Lab 2_ List Operations_files/analytics.js"></script><script src="./Unit 3 Lab 2_ List Operations_files/loader.js"></script><script src="./Unit 3 Lab 2_ List Operations_files/llab.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/jquery.min.js" type="text/javascript"></script>
+		<title>Unit 3 Lab 2: List Operations</title>
+	<link href="./Unit 3 Lab 2_ List Operations_files/bootstrap-compiled.min.css" type="text/css" rel="stylesheet" media="screen"><link href="./Unit 3 Lab 2_ List Operations_files/default.css" type="text/css" rel="stylesheet" media="screen"><link href="./Unit 3 Lab 2_ List Operations_files/bjc.css" type="text/css" rel="stylesheet" media="screen"><script src="./Unit 3 Lab 2_ List Operations_files/library.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/curriculum.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/course.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/topic.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/multiplechoice.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/bootstrap.min.js" type="text/javascript"></script><meta name="viewport" content="width=device-width, initial-scale=1"><script src="./Unit 3 Lab 2_ List Operations_files/quiz.js" type="text/javascript"></script><script src="./Unit 3 Lab 2_ List Operations_files/MathJax.js" type="text/javascript"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Hover_Arrow {position: absolute; width: 15px; height: 11px; cursor: pointer}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 5px 0px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px; -khtml-border-radius: 5px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 1px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; color: #666666}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: .7em}
+.MathJax_MenuRadioCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuLabel {padding: 1px 2em 3px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #DDDDDD; margin: 4px 3px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: #606872; color: white}
+.MathJax_Menu_Close {position: absolute; width: 31px; height: 31px; top: -15px; left: -15px}
+</style><style type="text/css">.MathJax_Preview .MJXc-math {color: inherit!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXc-script {font-size: .8em}
+.MJXc-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXc-bold {font-weight: bold}
+.MJXc-italic {font-style: italic}
+.MJXc-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXc-largeop {font-size: 150%}
+.MJXc-largeop.MJXc-int {vertical-align: -.2em}
+.MJXc-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXc-display {display: block; text-align: center; margin: 1em 0}
+.MJXc-math span {display: inline-block}
+.MJXc-box {display: block!important; text-align: center}
+.MJXc-box:after {content: " "}
+.MJXc-rule {display: block!important; margin-top: .1em}
+.MJXc-char {display: block!important}
+.MJXc-mo {margin: 0 .15em}
+.MJXc-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXc-denom {display: inline-table!important; width: 100%}
+.MJXc-denom > * {display: table-row!important}
+.MJXc-surd {vertical-align: top}
+.MJXc-surd > * {display: block!important}
+.MJXc-script-box > *  {display: table!important; height: 50%}
+.MJXc-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXc-script-box > *:last-child > * {vertical-align: bottom}
+.MJXc-script-box > * > * > * {display: block!important}
+.MJXc-mphantom {visibility: hidden}
+.MJXc-munderover {display: inline-table!important}
+.MJXc-over {display: inline-block!important; text-align: center}
+.MJXc-over > * {display: block!important}
+.MJXc-munderover > * {display: table-row!important}
+.MJXc-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXc-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXc-mtr {display: table-row!important}
+.MJXc-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXc-mtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-mlabeledtr {display: table-row!important}
+.MJXc-mlabeledtr > .MJXc-mtd:first-child {padding-left: 0}
+.MJXc-mlabeledtr:first-child > .MJXc-mtd {padding-top: 0}
+.MJXc-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXc-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXc-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXc-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXc-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXc-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXc-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXc-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXc-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXc-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXc-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_CHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>   
+    
+	<body style="padding-top: 42.8889px;"><div id="MathJax_Message" style="display: none;"></div><nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation"><div class="nav navbar-nav navbar-left navbar-title">Unit 3 Lab 2: List Operations</div><div class="nav navbar-nav navbar-right"><ul class="nav-btns btn-group"><a class="btn btn-default backbutton arrow" href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">back</a><div class="dropdown inline"><button class="navbar-toggle btn btn-default dropdown-toggle list_header" type="button" data-toggle="dropdown"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><ul class="dropdown-menu dropdown-menu-right" role="menu" aria-labeledby="Topic-Navigation-Menu" style="max-height: 664.8px; max-width: 450px;"><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/course/bjc4nyc_2015-2016.html" role="menuitem"><span class="course-link-list">Go to Table of Contents</span></a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/llab/html/topic.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem"><span class="main-topic-link">Unit 3: Lists</span></a></li><li class="divider list_item" role="presentation"></li><li class="list_item dropdown-header" role="presentation">Programming Lab 1: Introduction to Lists</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Getting Started</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Sentence Builder</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">List of Lists</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Draw Shape</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Lists Self Check</a></li><li class="list_item dropdown-header" role="presentation">Programming Lab 2: List Operations</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Getting Started</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Map</a></li><li class="list_item" role="presentation"><a href="./Unit 3 Lab 2_ List Operations_files/Unit 3 Lab 2_ List Operations.html" role="menuitem"><span class="current-page-arrow">Keep</span></a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Combine</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Map, Keep, and Combine Self Check</a></li><li class="list_item dropdown-header" role="presentation">Programming Lab 3: Using Higher-Order Functions</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Getting Started</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Composing Higher-Order Functions</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">When You Really Have to Loop</a></li><li class="list_item dropdown-header" role="presentation">Programming Lab 4: Magic Squares</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Getting Started</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/4-magic-square/2-triples.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Triples</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/4-magic-square/3-finding-triples.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Finding Triples</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Finishing Touches</a></li><li class="list_item dropdown-header" role="presentation">Social Implications Lab 5: Search and How the Internet Works</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Getting Started</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">How Searching Works</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/1-big-questions.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Big Questions</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/2-btb-chapter4.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Blown to Bits Chapter 4</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/3-search.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Search</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/4-internet.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Internet</a></li><li class="list_item dropdown-header" role="presentation">Social Implications Lab 6: Encryption and Security</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Big Questions</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Encryption</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/6-encryption/3-security.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Security</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Public Key Encryption</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Blown to Bits Chapter 5</a></li><li class="list_item dropdown-header" role="presentation">Investigations</li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/chords.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Building Musical Chords</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Processing a Sentence</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/longest-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Longest Word</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/display-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Display Word</a></li><li class="list_item" role="presentation"><a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/exaggerate.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment" role="menuitem">Exaggerate</a></li></ul></div><a class="btn btn-default forwardbutton arrow" href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">next</a></ul></div></nav><div class="title-small-screen">Unit 3 Lab 2: List Operations</div><div class="full">
+
+<!--<p><br>You may have played Geography, the game in which one player says 
+a place name and the next player has to name another place whose first 
+letter is the last letter of the previous place: Newark, Kentucky, 
+Yonkers, San Francisco, Oklahoma. Have you ever gotten stuck on the 
+letter "A"? Oklahoma, Alabama, Asia, Alaska, America, Alameda... and so 
+on, forever.</p>
+
+How many states start and end with the same letter? To find out, we first need a list of all the states. -->
+
+        <h2>Keep</h2>
+        
+        <p>
+            Click on the script to open a new file.<br>
+            <a class="run" href="http://snap.berkeley.edu/snapsource/snap.html#open:http://localhost:/bjc-r/prog/3-lists/U3Lab2Keep.xml" target="_blank"> <img border="0" src="./Unit 3 Lab 2_ List Operations_files/states.png" alt="Alabama, Alaska, ... Wisconsin, Wyoming" title="Alabama, Alaska, ... Wisconsin, Wyoming"> </a>
+        </p>
+    
+        <div class="sidenote">Notice that this grey ring's inner boundary is hexagonal, which means you should use a <i>predicate </i>function, which is a function that reports <code>true</code> or <code>false</code>.</div>
+    
+        <p>Alphie and Betty discuss using <code>keep</code>: <img title="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" alt="KEEP ITEMS SUCH THAT (&lt;predicate&gt;) FROM (list)" src="./Unit 3 Lab 2_ List Operations_files/keep_block.png" border="0"></p>
+    
+        <div class="dialogue">
+            <div><span>Alphie:</span> Let's figure out how <code>keep</code> works. Which states do we want to keep?</div>
+            <div><span>Betty:</span> Let's get a list of the states that begin and end with the same letter.</div>
+            <div><span>Alphie:</span> So the list we're using is <code>states</code>. And letter 1 of the word needs to be the same as the last letter of the word.</div>
+            <div><span>Betty:</span> Ok, so far we have this.</div>
+            <div class="stagedir"><img border="0" src="./Unit 3 Lab 2_ List Operations_files/keep_letter1equalsletterblank.png" alt="keep(letter_1=letter_blank)from(states)" title="keep(letter_1=letter_blank)from(states)"></div>
+            <div><span>Alphie:</span> We want the last letter of each word. The last letter depends on the length of the word.</div>
+            <div><span>Betty:</span> Oh, right, so we can do this.</div>
+            <div class="stagedir"><img border="0" title="keep(letter_1=letter(length))from(states)" alt="keep(letter_1=letter(length))from(states)" src="./Unit 3 Lab 2_ List Operations_files/keep_letter1equalsletter(length)from(states).png"></div>
+            <div><span>Alphie:</span> Each item of <code>states</code> goes in the empty spaces. So, let's try an example. I'll pick a state - "new york". Letter 1 of "new york" is "n".</div>
+			
+			
+	               
+		
+			
+
+			
+		 <div class="sidenote">The space in "new york" counts as a character. So "new york" has a length of 8 and the eighth letter is "k".</div> 	
+	
+	<div class="comment">No idea whay this sidenote above  is indented like this. and this comment is, too.  ???</div>
+			
+            <div><span>Betty:</span> And that equals... Well, length of "new york" is 8, and letter 8 of "new york" is "k". The condition is false because "n" doesn't equal "k". So "new york" doesn't show up in the list. We'll keep only the states that have the same first and last letter.</div>
+           
+        </div>
+    
+        <div class="forYouToDo" id="first">
+           <ol>
+	
+<li>			
+			
+	<ol>		
+			
+                <li>Define a block that will keep all the states that start with a given letter. Here's an example of the block in action:
+                <img title="states with S -&gt; south carolina, south dakota" alt="states with S -&gt; south carolina, south dakota" src="./Unit 3 Lab 2_ List Operations_files/s-states.png" border="0"></li>
+		<!--	<div class="sidenote">If you need some inspiration for problem 3, look again at <a href="/bjc-r/cur/programming/3-lists/2-list-operations/getting-started.html#fmapcon">problem 5 on the Getting Started</a> for this lab.</div> --->
+                <img src="./Unit 3 Lab 2_ List Operations_files/pair-programming-swap-mini.png" alt="Pair Programming Swap" title="Pair Programming Swap"> 
+                <li>Write an expression that will select all the states whose names are at least seven letters long.</li>
+
+
+
+
+
+
+	<!--	<img title="KEEP(vowels_contains_blank)from(states)" alt="KEEP(vowels_contains_blank)from(states)" src="/bjc-r/img/3-lists/keep_vowelsfromstates.png" border="0" /></li> -->
+           
+         
+    </ol>  
+	
+	</li></ol></div>
+	
+A <strong>database	</strong> is a list of <em>records</em>.  Each record is a list of its own (the "data" for that record).  For example, a database of people in New York might consist of records that contain first name, last name, address,  and phone number.  To be useful, a database needs <strong>selectors</strong> that pull out individual pieces of information from each record.
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+<div class="forYouToDo">
+    <ol start="2">
+	<li><img class="imageRight" src="./Unit 3 Lab 2_ List Operations_files/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner"> Discuss how <code>map</code> and <code>keep</code>might be useful in selecting and organizing data from a database
+</li>
+	
+	
+	
+	
+
+	<div class="comment">We could do a lot more here with abstraction.  Should we?</div>
+	
+	<li>
+	
+	<ol start="a">
+	
+	
+	
+	<li>Make a database with data from your class.  Each record contains first and last names, age (in years), and heght (in inches).  So, your database might start out like this:
+	
+	
+ <img class="" src="./Unit 3 Lab 2_ List Operations_files/database.png" alt="data_from_class" title="data_from_class">
+	
+ </li>
+ 
+ <li>Make your selectors.  You need four of them;  you could call them 
+ <code>firstname</code>, <code>lastname</code>, <code>age</code>, and <code>height</code>.  Here's how <code>age</code>  might work:
+ 
+ <img class="" src="./Unit 3 Lab 2_ List Operations_files/agesel.png" alt="age_sasha" title="age_sasha">
+ 
+ 
+ </li>
+ 
+ 
+<li> Search your database and create a list of all classmates who are
+<ol type="i">
+<li>the same age as you</li>
+<li>taller than you</li>
+
+<li>younger than you</li>
+</ol>
+
+
+
+</li> 
+ 
+ <li> Search your database and create a list of all classmates 
+<ol type="i">
+<li>whose last name has the same first letter as yours</li>
+<li>Whose first name starts with a letter that comes before yours in the alphabet</li>
+
+ 
+</ol>
+ 
+</li> 
+ 
+ </ol>
+ </li></ol>
+ <div class="takeItFurther">
+    <ol type="A">
+        <li>Make a block that  takes your database and reports a rearrangement of  the records so that the last names  of your classmates are in alphabetical order.</li>
+        
+    </ol>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+	
+	
+ 
+	
+	
+
+</div>	
+	
+	
+             
+			
+			
+			
+			
+			
+		
+			
+        
+  
+  
+	
+
+</div><div class="full-bottom-bar" style="background-position: 22.211% 3px;"><div class="bottom-nav btn-group"><a class="btn btn-default backbutton arrow" href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">back</a><a class="btn btn-default forwardbutton arrow" href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">next</a></div></div><div class="page-feedback"><button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button><div id="fdbk" class="collapse feedback-panel panel panel-primary"></div></div></body></html>

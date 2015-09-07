@@ -1,0 +1,307 @@
+/** Basic HTML **/
+
+.todo, .comment, .commentBig { 
+  /*display: none;*/
+}
+
+.anchor {
+   padding-top: 65px;
+   margin-top: -65px;
+}
+
+a:visited {  color: #248694; /* was 36BBCE; */}
+
+a, .dialogue a {  color: #2a6496; /* was 428bca; */}
+
+h4 {  padding: 5px 0px 0px 0px;}
+
+h3 {  padding-top: 10px;}
+
+.full ul, .full ol {
+  display: block; /* Commented out because it was breaking my styles --Mary Fries 3/19/15 */
+  color: inherit; /* reset the color */
+  /*margin: 0px 15px 15px  0; /* Added */
+  border: none; /* EDC change. */
+  margin: 0px;
+}
+
+img.imageLeft {margin-bottom: 0px;}
+
+li {	padding: 3px;}
+
+li > ul, li > ol {/* Edited by Mary Fries, March 2015 */
+  margin: 5px auto;
+  line-height: none; /* hmm. */
+}
+
+li > ol {  list-style-type: lower-alpha;}
+
+/** Editor Notes **/
+.comment, .commentBig { /* added by Mary Fries on 5/27/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid red;
+  /*background-color: #FF0000;*/
+  clear:both;
+  background-color: #FFF;
+  text-indent: 0em;
+}
+
+.comment {  width: 20%; }
+
+.commentBig {  width: 40%; }
+
+code {
+  /* color: #00FFFF; */
+  font-family: courier; 
+  font-size: 1.2em;
+  padding: 2px;
+}
+
+/*.comment > code {
+  color: #606;
+}*/
+
+.classIndent {
+  margin-left: 2em;
+}
+
+.todo {
+  font-size: .9em;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 10px solid red;
+  background-color: #FFF;
+}
+
+.todo:before {
+  font-size: 18px;
+  font-weight: bold;
+  content: "Reviewer Comments: ";
+}
+
+/** Side Notes **/
+.sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #FFF8AD; /* #F3F0B3; */
+  clear:both;
+  text-indent: 0em;
+}
+
+.sidenoteBig { /* added by Mary Fries on 5/19/15 based on above */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  width: 40%;
+  padding: 10px;
+  background-color: #FFF8AD;
+  clear:both;
+  text-indent: 0em;
+}
+
+.endnote { /* added by Mary Fries on 6/9/15 based on above */
+  width: 90%;
+  background-color: #FFF8AD;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+.sideHOM { /* added by Mary Fries on 6/25/15 based on .sidenote */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #FEC46C; /* #F3F0B3; */
+  clear:both;
+  text-indent: 0em;
+}
+
+.sideHOMbig { /* added by Mary Fries on 7/17/15 based on .sideHOM */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  width: 40%;
+  padding: 10px;
+  background-color: #FEC46C; /* #F3F0B3; */
+  clear:both;
+  text-indent: 0em;
+}
+
+.manual { /* added by Mary Fries on 6/25/15 based on .sidenote */
+  font-size: .9em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 10px;
+  background-color: #e4cde3; /* #F3F0B3; */
+  clear:both;
+}
+
+img.noshadow {
+  /* Better resizing of images for mobile devices */
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.5));
+  -ms-filter: none;
+  filter: none;
+}
+
+.forYouToDo, .dialogue, .takeItFurther, .takeNote, .endnote {/* Shared Box Formatting */
+  padding: 1em;
+  margin-bottom: .5em;
+  margin-top: .5em;
+}
+
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 2.5em;
+}
+
+.forYouToDoHeader {text-indent:-40px;}
+
+.forYouToDo {
+  background-color: #d2e3be; /* #edf4e6; */
+  margin-bottom: .5em;
+}
+
+.forYouToDo#first:before {content: "For You To Do";}
+
+.dialogue {background-color: #cce4f6; /* #ecf4fb; */}
+
+.dialogue:before {content: "Thinking Out Loud";}
+
+.dialogue > div {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5em;
+  text-indent: -3em;
+}
+
+.dialogue > div.stagedir {
+  padding-left: 0em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-indent: 0em;
+  font-style: italic;
+  text-align: center;
+}
+
+.dialogue > div > span {  font-weight: bold;}
+
+.inline {
+  padding-top: -5px;
+  padding-bottom: -5px;
+}
+
+.takeItFurther {
+  background-color: #e4cde3; 
+  width:90%;  
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.takeItFurther:before {  content: "Take It Further";}
+
+.takeNote, endHOM {
+  background-color: #fcc589;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+ 
+/* .takeNote:before {content: "Take Note: ";} */
+
+.apStandards {
+  background-color: #fcc589;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+/** BJC4NYC elements added by Mary Fries, May 2015 **/
+div.saveAs img {
+  position: relative;
+  z-index:1;
+}
+
+div.saveAs span.text {
+  position: absolute; 
+  margin-left: 182px;/*19.7em;*/
+  padding-top: 1.05em;
+  z-index:2;
+  color: #333;
+}
+
+div.newProject span.text {
+  position: absolute; 
+  margin-left: 323px;/*19.7em;*/
+  padding-top: 1.05em;
+  z-index:2;
+  color: #333;
+}
+
+/* Making Snap lowercase. */
+.snap {
+  font-variant: normal;
+}
+
+/* Other Random Things added by Mary NEEDS ATTENTION*/
+
+.block {height: 2em;}
+
+.bigBlock {height: 6%;}
+
+.script {height: 18%;}
+
+.button {height: 1.6em;}
+
+/* Development Updates Table */
+
+.bordered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bordered th {
+  font-weight: bold;
+  text-align: center;
+}
+
+.bordered td, th {
+  border: 2px solid black;
+  padding: 5px;
+}
+
+/* Color Emphasis */
+.blue {
+  color: #00C;
+}
