@@ -19,6 +19,10 @@ title: Unit 3: Lists
 // learning-goal: Develop the techniques and functions to draw a game board.
 
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
+	raw-html: <div class="todo">Former "Investigations":<br /><a href="/bjc-r/cur/programming/3-lists/investigations/chords.html">Building Musical Chords</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html">Processing a Sentence</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/longest-word.html">Longest Word<a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/display-word.html">Display Word</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/exaggerate.html">Exaggerate</a></div>
+
+	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" /></div>
+
 
 heading: Programming Lab 1: Introduction to Lists
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
@@ -27,19 +31,19 @@ heading: Programming Lab 1: Introduction to Lists
 	resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html]
 	quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html]
 
-heading: Programming Lab 2: List Operations
+heading: Programming Lab 2: Three Key List Operations
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
 	resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
 	resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
 	resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
 	quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
 
-heading: Programming Lab 3: Using Higher-Order Functions
+heading: Programming Lab 3: Combining List Operations
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
 	resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
 	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
 
-//heading: Lists and Sentences: The Index Variable Pattern
+	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 
 heading: Programming Lab 4: Magic Squares
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
@@ -47,6 +51,8 @@ heading: Programming Lab 4: Magic Squares
 	resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/3-finding-triples.html]
 	//resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/old/finding-triples-3.html]
 	resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
+
+ 	raw-html: <hr />
 
 heading: Social Implications Lab 5: Search and How the Internet Works
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
@@ -64,15 +70,14 @@ heading: Social Implications Lab 6: Encryption and Security
 	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
 	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
 
- 	raw-html: <hr />
+ 	//raw-html: <hr />
 
-heading: Investigations
-	raw-html: <div class="commentBig">I pulled out the "(Use after Lab 3)" comments and put them in the TG to match the other units. If we want them here too, we should agree to make the change across units. --MF</div>
-	resource: Building Musical Chords [/bjc-r/cur/programming/3-lists/investigations/chords.html]
-	resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
-	resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
-	resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
-	resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
+//heading: Investigations
+	//resource: Building Musical Chords [/bjc-r/cur/programming/3-lists/investigations/chords.html]
+	//resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
+	//resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
+	//resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
+	//resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
 
 
 // heading: List Mutation  // this has moved to Chapter 4

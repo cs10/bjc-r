@@ -6,7 +6,7 @@
     </head>
 <body>
 <h2>Scraping Data from Web Pages</h2>
-<p>Sometimes you're lucky, and a URL points directly to a data file:</p>
+<p><strong>Sometimes you're lucky,</strong> and a URL points directly to a data file:</p>
 <img src="/bjc-r/img/4-internet/libraries-txt.png" alt="text from URL snap.berkeley.edu/snapsource/libraries/LIBRARIES">
 <div class="forYouToDo" id="first">
 <p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
@@ -22,10 +22,9 @@
       <li>In the Snap<em>!</em> file menu, click on "Libraries..." and look at the submenu that appears.  Compare it with what's in the file.  Why do you think they're different?</li></ul></li>
       <li>Find the <code>split</code> block in the Operators palette, and experiment with the different options for the second input slot.
  Read the help screen (right-click on a <code>split</code> block and choose &quot;Help&quot;) if you need ideas.</li></ol></div>
-<p> When you're 
-<em>not</em> lucky, the information you want is buried in a mass of HTML code.  Extracting the information from the formatting is called <em>scraping</em> the web page.</p>
+<p> <strong>When you're <em>not</em> lucky,</strong> the information you want is buried in a mass of HTML code.  Extracting the information from the formatting is called <em>scraping</em> the web page.</p>
 <div class="forYouToDo"><ol start="3">
-<li>In a new browser tab, visit the page <code>http://snap.berkeley.edu/snapsource/libraries</code>.  How does it compare with the ...libraries/LIBRARIES one?</li>
+<li>In a new browser tab, visit the page <a href="http://snap.berkeley.edu/snapsource/libraries" target="new">http://snap.berkeley.edu/snapsource/libraries</a>.  How does it compare with the ...libraries/LIBRARIES one?</li>
 <li>In your Snap<em>!</em> window, click on this script:<br />
 <img src="/bjc-r/img/4-internet/libraries-dir-list.png" alt="split libraries by line"></li>
 <li>We'd like to extract the list of files from this web page.  As a first step, use a higher order function to select only the list items that contain files, rather than header text.  You'll find this block helpful:<br />
@@ -35,8 +34,12 @@
 <img src="/bjc-r/img/4-internet/substring-starting.png" alt="substring of ( ) starting ( )"><br />
 <img src="/bjc-r/img/4-internet/substring-upto.png" alt="substring of ( ) up to ( )"><br />
 Notice the narrow input slot in the second of those; it's meant to let you know that only a single character goes there, not a multi-character string.  Experiment with these blocks.</li>
-<li>Fix the bugs in <code>strip</code> so that you get a complete list of files and nothing else.</li></ul></li>
-</ol></div>
+<li>Fix the bugs in <code>strip</code> so that you get a complete list of files and nothing else.</li>
+<li>Try your <code>strip</code> block on <a href="http://snap.berkeley.edu/snapsource/Costumes" target="new">snap.berkeley.edu/snapsource/Costumes</a> to make sure it can work on <em>any</em> file directory.<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /></li>
+</ul>
+</li>
+</ol>
+</div>
 
 </body>
 </html>
