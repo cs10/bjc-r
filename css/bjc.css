@@ -45,7 +45,6 @@ li > ol {  list-style-type: lower-alpha;}
   margin-bottom: 20px;
   padding: 10px;
   border: 10px solid red;
-  /*background-color: #FF0000;*/
   clear:both;
   background-color: #FFF;
   text-indent: 0em;
@@ -56,15 +55,10 @@ li > ol {  list-style-type: lower-alpha;}
 .commentBig {  width: 40%; }
 
 code {
-  /* color: #00FFFF; */
   font-family: courier; 
   font-size: 1.2em;
   padding: 2px;
 }
-
-/*.comment > code {
-  color: #606;
-}*/
 
 .classIndent {
   margin-left: 2em;
@@ -178,7 +172,7 @@ img.noshadow {
   margin-top: .5em;
 }
 
-.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -197,7 +191,7 @@ img.noshadow {
 
 .dialogue:before {content: "Thinking Out Loud";}
 
-.dialogue > div {
+.dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig) {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 5em;
