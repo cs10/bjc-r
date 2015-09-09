@@ -9,33 +9,31 @@ h3: Purpose
 	raw-html: <p></p>
 
 h3: Pacing
-	raw-html: <p>Please put <e>something</em> here like what was in <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/1-teaching-guide.topic&course=bjc4nyc_2015-2016_teacher.html&novideo&noassignment">U1</a> and <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/2-teaching-guide.topic&course=bjc4nyc_2015-2016_teacher.html&novideo&noassignment">U2</a>... --MF</p>
+ raw-html:<div class="todo">Copied from U2. Needs edits. --MF</div><p>The 2 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 3 can be distributed as works best for your class. Here are two possibilities: <ul><li>Work through the 4 programming labs in the first 2 weeks and then the social implications Labs 5 and 6 in the last 2 weeks as presented below.</li><li>Work through the 4 programming labs over all 4 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p><div class="todo">Could these also be done programming, implications, programming, implications (8, 10, 9, 11)? --MF</div>
+
 
 h3: Highlighting Computational Thinking
 	raw-html: <div class="comment">Weak.</div><p>Lists are an important representation of data, and thinking of lists as a single object (rather than a collection of objects) is a way students practice <strong>abstracting</strong>. Students continue to <strong>collaborate</strong> through pair programming.</p>
 
-heading: Week 9 (Programming Focus)
+heading: Week 8 (Programming Focus)
 	resource: Lab 1: Introduction to Lists [/bjc-r/cur/teaching-guide/U3/lab-pages/1-introduction-to-lists.html]
 	resource: Lab 2: List Operations [/bjc-r/cur/teaching-guide/U3/lab-pages/2-list-operations.html]
 
-heading: Week 10 (Programming Focus)
+heading: Week 9 (Programming Focus)
 	resource: Lab 3: Using Higher-Order Functions [/bjc-r/cur/teaching-guide/U3/lab-pages/3-using-higher-order-functions.html]
 	resource: Lab 4: Magic Squares [/bjc-r/cur/teaching-guide/U3/lab-pages/4-magic-squares.html]
 
-heading: Week 11 (Programming Focus)
-	resource: Lab 5: Data Part I [/bjc-r/cur/teaching-guide/U3/lab-pages/5-data-part-I.html]
-
-heading: Week 12 (Social Implications Focus)
-	resource: Lab 6: Search and How the Internet Works [/bjc-r/cur/teaching-guide/U3/lab-pages/6-search-how-internet-works.html]
+heading: Week 10 (Social Implications Focus)
+	resource: Lab 5: Search and How the Internet Works [/bjc-r/cur/teaching-guide/U3/lab-pages/5-search-how-internet-works.html]
 	
-heading: Week 13 (Social Implications Focus)
-	resource: Lab 7: Encryption and Security [/bjc-r/cur/teaching-guide/U3/lab-pages/7-encryption-security.html] 
+heading: Week 11 (Social Implications Focus)
+	resource: Lab 6: Encryption and Security [/bjc-r/cur/teaching-guide/U3/lab-pages/6-encryption-security.html] 
 	
-heading: Investigations
+//heading: Investigations
 	//resource: Building Musical Chords [/bjc-r/cur/teaching-guide/U3/Investigations/buiding-musical-chords.html] 
 	//resource: Processing a Sentence [/bjc-r/cur/teaching-guide/U3/Investigations/processing-a-sentence.html]  
 	//resource: Longest Word [/bjc-r/cur/teaching-guide/U3/Investigations/longest-word.html] 
 	//resource: Display Word  [/bjc-r/cur/teaching-guide/U3/Investigations/display-word.html] 
 	//resource: Exaggerate [/bjc-r/cur/teaching-guide/U3/Investigations/exaggerate.html] 
-	raw-html: <p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/chords.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Building Musical Chords</a> and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Processing a Sentence</a>, after Lab 1 where they...</p><p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/longest-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Longest Word</a>, <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/display-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Display Word</a>, and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/exaggerate.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Exaggerate</a>, after Lab 3 where they...</p>	
+	//raw-html: <p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/chords.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Building Musical Chords</a> and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Processing a Sentence</a>, after Lab 1 where they...</p><p>Students can begin work on <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/longest-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Longest Word</a>, <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/display-word.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Display Word</a>, and/or <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/exaggerate.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Exaggerate</a>, after Lab 3 where they...</p>	
 }
