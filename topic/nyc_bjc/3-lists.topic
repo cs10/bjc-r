@@ -57,11 +57,7 @@ heading: Programming Lab 4: Magic Squares
 heading: Social Implications Lab 5: Search and How the Internet Works
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
 	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/1-big-questions.html]
-	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/big-questions-old.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/5-search-internet/2-btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/3-lists/5-search-internet/3-search.html]
-	resource: Internet [/bjc-r/cur/programming/3-lists/5-search-internet/4-internet.html]
+	resource: Search is Power [/bjc-r/cur/programming/3-lists/5-search-internet/search-is-power.html]
 
 heading: Social Implications Lab 6: Encryption and Security
 	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
