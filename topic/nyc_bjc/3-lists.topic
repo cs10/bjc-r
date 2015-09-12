@@ -1,4 +1,5 @@
 title: Unit 3: Lists
+
 {
 // h1: Formerly Topic 5: Collecting Data into Lists
 
@@ -57,18 +58,14 @@ heading: Programming Lab 4: Magic Squares
 heading: Social Implications Lab 5: Search and How the Internet Works
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
 	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/1-big-questions.html]
-	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/big-questions-old.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/5-search-internet/2-btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/3-lists/5-search-internet/3-search.html]
-	resource: Internet [/bjc-r/cur/programming/3-lists/5-search-internet/4-internet.html]
+	resource: Design Your Own Search Engine [/bjc-r/cur/programming/3-lists/5-search-internet/design-your-own.html]
 
 heading: Social Implications Lab 6: Encryption and Security
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
-	resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html]
-	resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/3-security.html]
-	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
-	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
+	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
+	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
+	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
+	resource: Public Keys [/bjc-r/cur/programming/3-lists/6-encryption/public-keys.html]
+	resource: Cryptography and Privacy [/bjc-r/cur/programming/3-lists/6-encryption/cryptography-and-privacy.html]
 
  	//raw-html: <hr />
 
