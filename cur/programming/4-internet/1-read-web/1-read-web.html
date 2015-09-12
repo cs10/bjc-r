@@ -5,24 +5,27 @@
         <title>Unit 4, Lab 1: Reading Web Pages</title>
     </head>
 <body>
-<h2>Reading Web Pages</h2>    <div class="forYouToDo" id="first">
+<h2>Getting Started</h2>    <div class="forYouToDo" id="first">
 <ol>
 <li>Load <a class="run" href="/bjc-r/cur/programming/4-internet/1-read-web/http-block.xml">this project</a>.</li>
 <li>Find the block 
   <img src="/bjc-r/img/blocks/http.png" alt="http:// block"> in the Sensing palette, drag it into the scripting area, and click on it.
   <ul><li>What do you think the block is reporting?</li></ul></li>
   <li>In another browser window, open the page <code>http://snap.berkeley.edu</code> for reference.</li></ol></div>
-<p>The page starts with two pictures (the Snap<em>!</em> logo and a screenshot), then some text.  Do you see any of that in what the <code>http</code> block reported?</p>
+<p>The page starts with two pictures (the Snap<em>!</em> logo and a screenshot), then some text.  Do you see anything in the speech balloon (which shows just the beginning of what the <code>http</code> block reports) that you think corresponds to the actual page?</p>
   
 <img src="/bjc-r/img/4-internet/s-b-e.png" width="50%" alt="snap.berkeley.edu as seen in browser"><img src="/bjc-r/img/4-internet/s-b-e-reported.png" width="50%" alt="html text reported by http block">
 <div class="forYouToDo"><ol start="4">
-<li>Actually, there <em>is</em> something in what the block reports that you can see in the browser.  Look at the text in the tab <em>above</em> the page.  What does it say?  Can you find that text in what the <code>http</code> block reported?</li>
+<li>Actually, there <em>is</em> something in the speech balloon that you can see in the actual page.  Look at the text in the tab <em>above</em> the page.  What does it say?  Can you find that text in what the <code>http</code> block reported?</li>
 <li>Every web page has a <em>head</em> (telling the browser how to format the page in general) and a <em>body</em> with the actual information on the page.  Perhaps you'll see something more interesting if you skip over the head by looking for the text &quot; <code>&lt;body&gt;</code>&quot;:<br />
 <img src="/bjc-r/img/4-internet/s-b-e-body.png" width="100%" alt="substring of (http: ...) starting with &lt;body&gt;">
 <br />Find the two pictures and the beginning of the text in this reported value.</li></ol></div>
 <div class="takeItFurther"><ol type="A">
 <li>Here on <em>this</em> page, give your browser's "View Source" command:<br /><br />
 <center><table border="1" summary="How to shortcut "view source" in various browsers and oses.">
+    <caption>
+    View Source command
+  </caption>
   <tr>
     <th scope="col">&nbsp;</th>
     <th scope="col">Linux</th>
@@ -53,13 +56,10 @@
     <td>&nbsp;</td>
     <td>&nbsp;</td>
   </tr>
-    <caption>
-    View Source command
-  </caption>
 </table></center>
 <br />
     <br />
-    Make a list of all the formatting commands you can figure out.  For example, why is the background right here purple?</li></ol></div>
+    Make a list of all the formatting commands you can figure out.  For example, what part of the page source produced the table above?</li></ol></div>
 <p>This web page notation, with things of the form
 <center>
 <code>&lt;tag&gt;A bunch of text&lt;/tag&gt;</code>
@@ -69,7 +69,7 @@ is a <em>special purpose programming language</em> (one that's designed for a sp
 <div class="saveAs"><span class="text">"U4L4-Web"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U4L4-Web" title="save your work as U4L4-Web" /></div>
 <div class="forYouToDo"><ol start="6">
 <li>If you're an experimenter at heart, you've probably already tried the <code>http</code> block with a URL other than snap.berkeley.edu.  If not, try it now.</li>
-<li>You very likely got an empty result back.  This is because of a "seccurity" misfeature that disallows one web site (such as the Snap<em>!</em> server) from sending a request to another site.  Fortunately, it's not a very bulletproof attempt at security.  Find the 
+<li>You very likely got an empty result back.  This is because of a "security" misfeature that disallows one web site (such as the Snap<em>!</em> server) from sending a request to another site.  Fortunately, it's not a very bulletproof attempt at security.  Find the 
   <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http://"> block and try it with your favorite web site.  Then look inside the block (right-click and choose &quot;edit&quot;) to see how it works.</li></ol></div>
 </body>
 </html>
