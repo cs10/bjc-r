@@ -65,10 +65,10 @@ heading: Social Implications Lab 5: Search
 
 heading: Social Implications Lab 6: Encryption and Security
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
-	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
 	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
 	resource: Public Keys [/bjc-r/cur/programming/3-lists/6-encryption/public-keys.html]
-	resource: Cryptography and Privacy [/bjc-r/cur/programming/3-lists/6-encryption/cryptography-and-privacy.html]
+	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
+	resource: Cryptography and Society [/bjc-r/cur/programming/3-lists/6-encryption/cryptography-and-society.html]
 
  	raw-html: <hr />
 
