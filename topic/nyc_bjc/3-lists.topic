@@ -64,27 +64,11 @@ heading: Social Implications Lab 5: Search
 	resource: Design Your Own Search Engine [/bjc-r/cur/programming/3-lists/5-search-internet/design-your-own.html]
 
 heading: Social Implications Lab 6: Encryption and Security
-<<<<<<< HEAD
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
 	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
 	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
 	resource: Public Keys [/bjc-r/cur/programming/3-lists/6-encryption/public-keys.html]
 	resource: Cryptography and Privacy [/bjc-r/cur/programming/3-lists/6-encryption/cryptography-and-privacy.html]
-
- 	//raw-html: <hr />
-
-//heading: Investigations
-	//resource: Building Musical Chords [/bjc-r/cur/programming/3-lists/investigations/chords.html]
-	//resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
-	//resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
-	//resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
-	//resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
-=======
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
-	resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html]
-	resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/3-security.html]
-	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
-	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
 
  	raw-html: <hr />
 
@@ -95,8 +79,6 @@ heading: Investigations
 	resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
 	resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
 	resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
->>>>>>> 2e69c09... U3 Stray Edits (and fixing breaks all over the place)
-
 
 // heading: List Mutation  // this has moved to Chapter 4
 //	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
