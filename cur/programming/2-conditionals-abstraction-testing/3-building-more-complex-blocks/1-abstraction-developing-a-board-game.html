@@ -21,53 +21,61 @@
                 </li>
             </ul>
         </div>
-        <div class="forYouToDo" id="first"> <img class="imageRight" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" /> 
+        
+        <div class="forYouToDo" id="first">  
             <ol>
-                <li>Many board games are played on a square array of tiles. The goal now is to build a block that lets you draw boards with various numbers of tiles, fitting neatly on the stage. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(3).png"  alt="draw-n-by-n-board(3)"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(5).png" alt="draw-n-by-n-board(5)">  should draw these boards:
-                  <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" width="260" alt="3x3array-of-squares-on-stage"><img src="/bjc-r/img/2-conditionals-abstraction-testing/5x5array-of-squares-on-stage.png" width="260" alt="5x5array-of-squares-on-stage"></p>
-                  <p>The task is complex, so build specialists that accomplish part of the task and then put them together. For example, you might start by building:</p>
-                  <ol> 
-                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)">, which  takes a size and draws one square.</li>
-                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of">, which uses <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)"> to draw one row of  tiles, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/Row-of-5-tiles.png" alt="row of 5 tiles"></li>
-                  	<li><img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-100).png"  alt="nxn-array-of-tiles(tiles-3,size-100)">, which uses <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of"> to draw as many rows as needed—the same number of rows as there are tiles in each row.</li>
-                  	<li>And, <img src="/bjc-r/img/2-conditionals-abstraction-testing/calculate-tile-size.png" alt="calculate tile size"> which can be used in <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3).png" alt="nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3)"> to make sure the entire board fits. (In the example, <code>3 tiles</code> means three tiles on each row (and three rows), not three tiles altogether.)</li>
-                  </ol>
-                 <p>Test each block by itself before building a block that uses it.</p>
-                 <p>Your top-level board-drawing block, <code>draw n-by-n board</code>, might look something like this.</p>
-                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p>
-				</li>
-            <div class="takeNote">
-    			<p><strong>Abstraction: </strong> 
-		  Why building the block <code>clear and go to starting place</code>, when all it contains is a few commands to assure that the sprite starts in the right place, pointed the right way, with its pen down, and that the stages is cleared?</p>
-    			<p>One purpose of hiding the details is to make your code clear, understandable, and easy to debug and update. Instead of seeing the details and wondering what they are for, you know exactly what this piece of code does just by reading the block's name.</p>
-                <p>The same is true of <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)">.  Instead of building that block, you could have used<br />
-	            <img src="/bjc-r/img/2-conditionals-abstraction-testing/rep4-move-turn.png" width="192" height="115" alt="repeat 4, move, turn"></p>
-
-		  Hiding those details does <em>two</em> useful things. It makes your code easier to read. And if, some day, you decide to create the tiles differently—maybe with thicker borders or fills of random colors or by using <img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette">—you can make  those changes in a logical place rather than looking all over your program to find where the change might be needed.</div>
+                <li>
+                    Many board games are played on a square array of tiles. The goal now is to build a block that lets you draw boards with various numbers of tiles, fitting neatly on the stage. For example, <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(3).png"  alt="draw-n-by-n-board(3)"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(5).png" alt="draw-n-by-n-board(5)">  should draw these boards:
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/3x3array-of-squares-on-stage.png" width="260" alt="3x3array-of-squares-on-stage"><img src="/bjc-r/img/2-conditionals-abstraction-testing/5x5array-of-squares-on-stage.png" width="260" alt="5x5array-of-squares-on-stage"></p>
+                    <p>The task is complex, so build specialists that accomplish part of the task and then put them together. For example, you might start by building:</p>
+                    <ol> 
+                        <li><img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)">, which  takes a size and draws one square.</li>
+                        <li><img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of">, which uses <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)"> to draw one row of  tiles, like this: <img src="/bjc-r/img/2-conditionals-abstraction-testing/Row-of-5-tiles.png" alt="row of 5 tiles"></li>
+                        <li><img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-100).png"  alt="nxn-array-of-tiles(tiles-3,size-100)">, which uses <img src="/bjc-r/img/2-conditionals-abstraction-testing/row(tiles,size).png" alt="row of"> to draw as many rows as needed—the same number of rows as there are tiles in each row.</li>
+                        <li>And, <img src="/bjc-r/img/2-conditionals-abstraction-testing/calculate-tile-size.png" alt="calculate tile size"> which can be used in <img src="/bjc-r/img/2-conditionals-abstraction-testing/nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3).png" alt="nxn-array-of-tiles(tiles-3,size-calculated-to-fit-3-by-3)"> to make sure the entire board fits. (In the example, <code>3 tiles</code> means three tiles on each row (and three rows), not three tiles altogether.)</li>
+                    </ol>
+                    <p>Test each block by itself before building a block that uses it.</p>
+                    <p>Your top-level board-drawing block, <code>draw n-by-n board</code>, might look something like this.</p>
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/draw-n-by-n-board(n).png" alt="draw an n-by-n board that fits within a 300 by 300 space centered on the stage">. </p>
+                </li>
+                <div class="takeNote">
+                    <p><strong>Abstraction: </strong> Why building the block <code>clear and go to starting place</code>, when all it contains is a few commands to assure that the sprite starts in the right place, pointed the right way, with its pen down, and that the stages is cleared?</p>
+                    <p>One purpose of hiding the details is to make your code clear, understandable, and easy to debug and update. Instead of seeing the details and wondering what they are for, you know exactly what this piece of code does just by reading the block's name.</p>
+                    <p>
+                    	The same is true of <img src="/bjc-r/img/2-conditionals-abstraction-testing/tile(size).png" alt="tile of size (size)">.  Instead of building that block, you could have used<br />
+                    	<img src="/bjc-r/img/2-conditionals-abstraction-testing/rep4-move-turn.png" width="192" height="115" alt="repeat 4, move, turn">
+                    </p>
+                    Hiding those details does <em>two</em> useful things. It makes your code easier to read. And if, some day, you decide to create the tiles differently—maybe with thicker borders or fills of random colors or by using <img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette">—you can make  those changes in a logical place rather than looking all over your program to find where the change might be needed.
+                </div>
                 <li> Now build some tools you might need for a game. 
                 	<ol>
-                    	<li> Build a predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/on-the-boardP.png" alt="on the board?"> that uses your <code>between?</code> block to report <code>true</code> if the sprite is on the board, and reports <code>false</code> if the sprite is dragged completely off the board.</li>
-                        <li> Build <code>which cell?</code> that tells which cell the sprite has been dragged into. 
-                          Here is one way to do it that uses two other blocks that specialize in reporting <code>which column?</code> and <code>which row?</code> the sprite is in.
-<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/which-cell(n) without computation.png" alt="partial script for &quot;which-cell?&quot; reporter"></p>
-                          <p>These blocks will, of course, need to know how many rows and columns there were, so they'll need the input <code>n</code>.</p>
-                          <div class="endnote">There are many ways to write <code>which row?</code> and <code>which column?</code> You can, of course, use lots of <code>if</code> statements, but since the number of rows can change, it's hard to know how many to use. One convenient way is to divide the total size of the game board by the size of each cell. To use that result, you need to round down. <img src="/bjc-r/img/blocks/round-a-number.png" alt="round a number"> can do it, but it rounds to the <em>nearest</em> integer, up <em>or</em> down. The function <img src="/bjc-r/img/blocks/floor of number.png" alt="floor of number"> always rounds <em>down</em>, making it easier to use. The <code>floor</code> function is in the same block as <code>sqrt</code>.</div>
+                        <li> Build a predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/on-the-boardP.png" alt="on the board?"> that uses your <code>between?</code> block to report <code>true</code> if the sprite is on the board, and reports <code>false</code> if the sprite is dragged completely off the board.</li>
+                        <li> 
+                            Build <code>which cell?</code> that tells which cell the sprite has been dragged into. 
+                            Here is one way to do it that uses two other blocks that specialize in reporting <code>which column?</code> and <code>which row?</code> the sprite is in.
+                            <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/which-cell(n) without computation.png" alt="partial script for &quot;which-cell?&quot; reporter"></p>
+                            <p>These blocks will, of course, need to know how many rows and columns there were, so they'll need the input <code>n</code>.</p>
+                            <div class="endnote">There are many ways to write <code>which row?</code> and <code>which column?</code> You can, of course, use lots of <code>if</code> statements, but since the number of rows can change, it's hard to know how many to use. One convenient way is to divide the total size of the game board by the size of each cell. To use that result, you need to round down. <img src="/bjc-r/img/blocks/round-a-number.png" alt="round a number"> can do it, but it rounds to the <em>nearest</em> integer, up <em>or</em> down. The function <img src="/bjc-r/img/blocks/floor of number.png" alt="floor of number"> always rounds <em>down</em>, making it easier to use. The <code>floor</code> function is in the same block as <code>sqrt</code>.</div>
                         </li>
-                        <li>Here's a block that you can use to test how well your other blocks work together.
-                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.png" alt="play on n-by-n board">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.gif" alt="animation of play"></p>
-                        <p>Try it out for boards of different sizes.</p></li>
+                        <li>
+                            Here's a block that you can use to test how well your other blocks work together.<br />
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.png" alt="play on n-by-n board">  <img src="/bjc-r/img/2-conditionals-abstraction-testing/play-on-n-by-n-board.gif" alt="animation of play"><br />
+                            Try it out for boards of different sizes.
+                        </li>
                    </ol>
                </li>
 			</ol>
         </div>
-        <div class="takeItFurther">
-    <ol type="A">
-        <li>Create a block <code>move to tile (n)</code> that takes a tile number as input and moves your sprite to the center of that tile. Because the location of tile 9 depends on how many tiles there are, your <code>move to tile </code> block will need to know the size of the board.</li>
-        <li>Create <code>mark tile (n)</code> to move to the specified tile and <img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette"> the sprite's shape on that tile to mark it as "taken."</li>
-        <li>Create a second sprite with a different shape so that people can take turns, with their own sprite, stamping its mark on a tile.</li>
-        <div class="endnote">In Unit 3, you will learn ways to keep track of which tiles have been taken  by which player. Then you can improve your game more. It could become like tic-tac-toe, or connect-four, or....</div>
-    </ol>
-</div>
         
-</body>
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>Create a block <code>move to tile (n)</code> that takes a tile number as input and moves your sprite to the center of that tile. Because the location of tile 9 depends on how many tiles there are, your <code>move to tile </code> block will need to know the size of the board.</li>
+                <li>Create <code>mark tile (n)</code> to move to the specified tile and <img src="/bjc-r/img/blocks/stamp.png" alt="stamp, from the Pen palette"> the sprite's shape on that tile to mark it as "taken."</li>
+                <li>Create a second sprite with a different shape so that people can take turns, with their own sprite, stamping its mark on a tile.</li>
+                <div class="endnote">In Unit 3, you will learn ways to keep track of which tiles have been taken  by which player. Then you can improve your game more. It could become like tic-tac-toe, or connect-four, or....</div>
+            </ol>
+        </div>
+        
+        
+	</body>
 </html>
