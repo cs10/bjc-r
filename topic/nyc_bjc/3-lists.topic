@@ -31,7 +31,7 @@ heading: Programming Lab 1: Introduction to Lists
 	resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html]
 	resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html]
 	resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html]
-	quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html]
+	//quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html]
 
 heading: Programming Lab 2: Three Key List Operations
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
