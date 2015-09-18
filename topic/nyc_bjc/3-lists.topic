@@ -19,7 +19,7 @@ title: Unit 3: Lists
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
-	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revisions.</div>
+	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revision.</div>
 
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
 	raw-html: <div class="todo">Former "Investigations":<br /><a href="/bjc-r/cur/programming/3-lists/investigations/chords.html">Building Musical Chords</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html">Processing a Sentence</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/longest-word.html">Longest Word<a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/display-word.html">Display Word</a><br /><a href="/bjc-r/cur/programming/3-lists/investigations/exaggerate.html">Exaggerate</a></div>
