@@ -2,11 +2,28 @@ title: Unit 4: The Internet and Global Impact
 
 {
 
-h2: Activities
+	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revisions.</div>
 
 heading: Reading the Web
-        resource: Reading the Web [/bjc-r/cur/programming/4-internet/1-read-web/1-read-web.html]
-        resource: Scraping Data from Web Pages [/bjc-r/cur/programming/4-internet/1-read-web/2-scrape-data.html]
-        resource: IP Routing [/bjc-r/cur/programming/4-internet/1-read-web/3-ip-routing.html]
+	resource: Reading the Web [/bjc-r/cur/programming/4-internet/1-read-web/1-read-web.html]
+	resource: Scraping Data from Web Pages [/bjc-r/cur/programming/4-internet/1-read-web/2-scrape-data.html]
+	resource: IP Routing [/bjc-r/cur/programming/4-internet/1-read-web/3-ip-routing.html]
 
+heading: GPS Forensics
+	resource: Introduction [/bjc-r/cur/programming/4-internet/n-gps-data/1-introgps.html]
+	resource: Visualizing Data [/bjc-r/cur/programming/4-internet/n-gps-data/2-visualizing.html]
+	resource: Clustering [/bjc-r/cur/programming/4-internet/n-gps-data/3-clustering.html]
+	resource: Drawing Conclusions [/bjc-r/cur/programming/4-internet/n-gps-data/4-conclusions.html] 
+	
+heading: Weather App
+	resource: API and Scraping Data [/bjc-r/cur/programming/4-internet/o-weather-app/1-weatherintro.html]
+	
+heading: Spam Checking
+	resource: Introduction [/bjc-r/cur/programming/4-internet/p-spam-checking/1-spam-introduction.html]
+	resource: Text Messages [/bjc-r/cur/programming/4-internet/p-spam-checking/2-the-data.html]
+	resource: Counting Words [/bjc-r/cur/programming/4-internet/p-spam-checking/3-average-number-of-words.html]
+	resource: Predictions! [/bjc-r/cur/programming/4-internet/p-spam-checking/4-predict-by-number-of-words.html]
+	resource: Further work [/bjc-r/cur/programming/4-internet/p-spam-checking/5-further-work.html]
+	
+	
 }
