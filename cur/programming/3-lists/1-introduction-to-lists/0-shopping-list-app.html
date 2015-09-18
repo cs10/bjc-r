@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+	</head>
+
+	<body>
+		<h2>Shopping List App</h2>
+
+		<img class="imageRight" src="/bjc-r/img/3-lists/shoppinglist.png" alt="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" title="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" />
+        <p>Many computer apps are essentially <em>lists</em> with tools that search, sort, or manipulate the items on the list. Some examples include: contact lists, playlists, calendars of events, locations on a map, reminders, etc. In this lab, you’ll create a simple shopping list app.</p>
+        <p>As programmers, we could use list block, <img class="inline" src="/bjc-r/img/blocks/list.png" alt="list block" title="list block">, to type everything we want to buy right into a list block as inputs. But it would be nice for the user of the app to be able to add things to their list without dealing with blocks and to have some other list controls like a way to clear the list and to search the list without looking through the whole thing (which is especially useful if the list is long).</p>
+
+		<div class="forYouToDo" id="first">
+			<ol>
+				<li>Create a variable called <code>shopping list</code> to store the information.</li>
+                <li>Set <code>shopping list</code> to be an empty list.</li>
+				<li>Find list block, use arrows to reduce it to empty, use set variable to empty list block</li>
+				<li>Create your own "Add Item" sprite costume or download and import this image:<img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-add-item.png" alt="'Add Item' button" title="'Add Item' button" /></li>
+				<div class="comment">Is #5 overly perscriptive or is it ok? --MF</div>
+                <li>Write a script for this first sprite that, when clicked, uses <code>ask</code> to request a shopping list item and uses <code>in front of</code> and <code>set</code> to add the item to the list.</li>
+                <div class="endnote">It's good programming practice to get each new feature working before moving onto the next.</div>
+                <li>Create second spirte with a "Clear List" costume. You can design your own or use this: <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-clear-list.png" alt="'Clear List' button" title="'Clear List' button" /></li>
+                <li>Write a script for the second sprite that asks for confirmation and clears list.</li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>Improve first button to check the list when the user type a new item and use <code>contains</code> to check if that item is already on the list.</li>
+                <li>Create third sprite with a "Search" costume that lets the user check whether an item is already on the list without adding it. <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-search.png" alt="'Search' button" title="'Search' button" /> </li>
+                <li>Create a forth button that deletes an item from the list. <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-delete-item.png" alt="'Delete Item' button" title="'Delete Item' button" /></li>
+            </ol>
+        </div>
+        
+	</body>
+</html>
