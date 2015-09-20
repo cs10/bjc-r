@@ -6,13 +6,9 @@
 		<title>Unit 4 Lab 1: Reading Web Pages</title>
     </head>
 <body>
-<h2>IP Routing</h2>
+<h2>The Network of Networks: IP</h2>
+<p>Many people talk as if &quot;the Internet&quot; and &quot;the World Wide Web&quot; were the same thing. But the Internet is much more general, and you're going to look at how it works.</p>
 <div class="forYouToDo" id="first">
-<div class="todo">
-    <ul>
-        <li>GH Feedback 9/7/15: The protocol stack is better represented as an hour glass, which gets to a much more interesting discussion later on.<br />TCP is not the only protocol at Layer 4, so it should say "Transport"<br />Really this could be 2 pages, I definitely think the "end-to-end" principle needs to be mentioned somewhere, and likely the robustness principle. This is worth guiding into a discussion about how two very simple (and in retrospect obvious) ideas have led to something so useful.</li>
-    </ul>
-</div>
 <p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
     <ol>
     <div class="sidenote"><strong>What's DuckDuckGo?</strong>  It's a search engine, like Google or Bing, except that it doesn't track your searches to sell you to advertisers as the others do.</div>
@@ -110,13 +106,18 @@ Notice that hops 7, 8, 9, and 11 show three different results.  Traceroute gener
 <div class="endnote">Network people have their own vocabulary.  On the AP exam you may see
 <ul>
 <li>The <strong>end-to-end principle</strong> is abstraction, in the particular case of the Internet hierarchy.  It says that routers don't have to know anything about the meaning or purpose of the messages you send over the net; all they care about is the IP address at the beginning of the message.  Your computer and the server to which you sent the message are the only ones that have to think about what it means.
-As a result, when someone invents a new application for the Internet, all the routers in the world don't have to be replaced or reprogrammed &mdash; to them it's all just bits. (But it's not so true any more to say that routers just have to understand IP packets; look at how many protocols are now defined at the Internet layer in the picture below.)<li><strong>Robustness</strong> is the technical name for the redundancy of paths through the Internet,  It means that if part of the net fails, the rest of the net remains connected even if the failed part is in the usual path from one place to another.
+As a result, when someone invents a new application for the Internet, all the routers in the world don't have to be replaced or reprogrammed &mdash; to them it's all just bits.<li><strong>Robustness</strong> is the technical name for the redundancy of paths through the Internet,  It means that if part of the net fails, the rest of the net remains connected even if the failed part is in the usual path from one place to another.
 <li>A <strong>packet</strong> is a small message.  Typically, if you want to send a <em>large</em> message, your computer divides it into small chunks that it sends individually.  This is important because if a router that's handling a chunk of your message fails, only that chunk has to be resent, rather than the entire message.  The Internet is a <strong>packet switching</strong> network.  (By contrast, landline telephone systems establish a long-term connection from one telephone to another, for as long as the phone call continues.)</li>
 <li>There are a <em>lot</em> of protocols! Here's a picture from Wikipedia:<br />
 <img src="/bjc-r/img/4-internet/IP-suite.png" width="424" height="506" alt="The Internet protocol suite"><br />
 You don't have to know about all of these, but you should know the official names for the four levels of abstraction in the Internet hierarchy.</li>
 </ul>
 </div>
-<div class="takeItFurther"><p>A more detailed explanation of the Internet protocol hierarchy is in <a href="/bjc-r/cur/programming/4-internet/1-read-web/B2B-Appendix.pdf" target="new">the Appendix</a> to <em>Blown to Bits</em>.</p></div>
+<div class="takeItFurther"><ul><li>A more detailed explanation of the Internet protocol hierarchy is in <a href="/bjc-r/cur/programming/4-internet/1-read-web/B2B-Appendix.pdf" target="new">the Appendix</a> to <em>Blown to Bits</em>.</li>
+<li>We did say 
+ 
+this was a simplified picture, so it wasn't exactly a lie when we said a web search would reveal your computer's Internet address. Most likely, the router in your home or school uses <strong>Network Address Translation (NAT)</strong>, a protocol that allows all the computers on a local network to share one IP address, as seen from outside the network. The router that creates the local network gives each computer a <em>local address</em>. For example, although the outside world thinks the computer at which I'm typing this has IP address 
+108.26.181.226
+, my computer itself thinks its address is 192.168.1.11. The 192.168 <strong>domain</strong> (a range of IP addresses) is reserved for local networks; no computer on the Internet &quot;really&quot; has an address in that range.  As a result of NAT and other complications added to solve efficiency or security problems, the job of the router is not really as simple as the end-to-end principle ideally suggests.</li></ul></div>
 </body>
 </html>
