@@ -4,10 +4,50 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 <title>Unit 4 Lab 1: Reading Web Pages</title>
+<style type="text/css">
+.green {
+	color: #0D0;
+}
+</style>
 </head>
 <body>
 
 <h2>Reliable Transmission on Unreliable Networks: TCP</h2>
-<p>&nbsp;</p>
+<p>The last page was about the bottom two levels of the Internet protocol suite:</p>
+<center><table border="2" cellpadding="6" summary="hardware, device driver software, Internet Protocol, Transmission Control Protocol, application protocols.">
+        <caption>
+          <center>Internet abstraction hierarchy</center>
+        </caption>
+        <tr>
+          <td>&nbsp;&nbsp;application protocols</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;Transmission Control Protocol (TCP)&nbsp;&nbsp;</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;<span class="green">&#x2714;</span> Internet Protocol (IP)</td>
+        </tr>
+        <tr>
+          <td>&nbsp;&nbsp;<span class="green">&#x2714;</span> network interface hardware</td>
+        </tr>
+      </table></center>
+<p>Computers, including routers, are pretty reliable.  But in a store and forward network, with several computers and cables or radio transmissions between you and the recipient of a packet, every once in a while a packet will be lost.</p>
+<div class="takeNote">
+<p>Earlier networks tried to provide reliability with programs running in their equivalent of routers. But it's time-consuming to deliver a transmission with complete reliability, and not every packet has to be delivered reliably. For example, your computer includes a clock, essentially just like the one next to your bed. And, like your bedside clock, the one in your computer doesn't keep perfect time. Eventually it will get noticeably fast or slow (and a computer can &quot;notice&quot; quite small errors). So every so often your computer sends a request to a <strong>time server</strong>, a computer with a very accurate clock that can reset your computer's clock to the correct value. But if one of those time requests is lost, it doesn't really matter; your computer will send another request pretty soon anyway.</p>
+<p>The end-to-end principle gives routers a relatively simple task: figure out how to get a packet from one IP address to another, with the understanding that sometimes the packet will be lost. It's the computers at the endpoints, your computer and, usually, a big server computer, that do the work of establishing <em>reliable</em> transmission. This is an abstraction in which routers just run the Internet Protocol, allowing your computer to imagine that packets go directly from the client to the server. The client and server computers run the <strong>Transmission Control Protocol</strong> that guarantees reliability.</p></div>
+<div class="forYouToDo" style="first">
+<p>Load <a href="/bjc-r/prog/4-internet/TCP.xml">this project</a>.
+ It provides a simulation of IP. You're going to write (a simplified) TCP based on it.</p>
+<ol><li>Click on one of the characters, and when prompted, enter a message that one should send to the other one.</li>
+<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+<li>Compare the result with what you sent.  What problems do you see?</li>
+<img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair-mini.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+<li>Compare notes with another pair.  Discuss what you might be able to do to get around network unreliability.</ol></div>
+                <p>Because this is a simulation, you could always "solve" the problem by rewriting the program to simulate a perfect network instead of an imperfect one, but that's against the rules of this game.  You may not change the definition of 
+                  <img src="/bjc-r/img/4-internet/send-IP.png" alt="send IP packet () to (sprite)">.
+<p>You will want to change the definition of          <img src="/bjc-r/img/4-internet/transmit.png" alt="transmit (message) to (sprite)"> so that messages are received reliably despite the limitations of IP packets.  In this simulation, the complete message is a text string, which is divided into packets each of which includes only one letter of the text.  (The division of a long message into pieces is realistic, but we are limiting the packets to one letter of the message so that we can have both short messages and lots of packets.  Normally the packet length is not so strictly limited.)  <em>You may include non-text (<strong>header</strong>) information in a packet along with the one text character.</em>  A packet can include any kind of data: text, numbers, or lists.</p>
+<div class="endnote"><p>Click the green flag to empty the <code>incoming transmission</code> variables before each experiment.</p>
+<p>Click on a sprite to ask that character to send a message to the other one.</p>
+<p>Typing an A will send the alphabet from Bob to Alice; typing a B will send the alphabet from Alice to Bob.  This is a good test message for checking the order in which packets arrive.</p></div>
 </body>
 </html>
