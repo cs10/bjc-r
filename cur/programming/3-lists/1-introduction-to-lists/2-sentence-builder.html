@@ -20,8 +20,8 @@
         <div class="forYouToDo" id="first">
             <ol>
                 <li>Click on the script below to see it in <span class="snap">snap</span><br />
-                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab1Sentence.xml"> <img class="indent" src="/bjc-r/img/3-lists/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /> </a> <br />
-                    Customize the lists by adding your own nouns, verbs, and so on.
+                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab1Sentence.xml"> <img src="/bjc-r/img/3-lists/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /> </a> <br />
+                    Feel free to change these lists to use your own nouns, verbs, and so on.
                 </li>
             </ol>
         </div>
@@ -36,25 +36,25 @@
                 <div class="stagedir">Betty makes: <img border="0" src="/bjc-r/img/3-lists/joinwords_wholelists.png" alt="join words(articles, nouns, verbs)" title="join words(articles, nouns, verbs)"></div>
             <div><span>Alphie:</span> Looks good to me. Click it. What happens?</div>
                 <div class="stagedir">Betty clicks and they see <img border="0" src="/bjc-r/img/3-lists/joinwords_wholelistsresult.png" alt="all articles nouns verbs joined" title="all articles nouns verbs joined"></div>
-            <div><span>Betty:</span> Wha...? Oh, these are <em>all</em> the words in the lists. How do we get just one item from each list?</div>
+            <div><span>Betty:</span> Wha...? Oh, these are <em>all</em> the words in the lists. We want to get just one  item, at random, from each list.</div>
         </div>
         
         <div class="forYouToDo">
-			<div class="sidenote">The phrases won't make sense necessarily. For example, <code>noun phrase</code> might generate "a sleepy pizza".</div>
+			<div class="sidenote">The phrases won't make sense necessarily. For example, <code>noun phrase</code> might generate &quot;a tired pizza.&quot;</div>
             <ol start="2">  
                 <li>Fix Alphie and Betty's script.</li>
                 
                 <li>
-                	In this problem, you will make a sentence-builder that makes complicated sentences like "the little elephant runs excitedly around the big pizza". To do this, use abstraction:
-                	<ol>
-                    	<li>
+                	In this problem, you will make a sentence-builder that makes complicated sentences like "the little elephant runs happily around the wise pizza." To do this, use abstraction:
+<ol>
+<li>
               				First, use your words to make phrases. Make three reporters <img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block"> <img border="0" src="/bjc-r/img/3-lists/prep_phrase.png" alt="green prepositional phrase reporter block" title="green prepositional phrase reporter block"> and <img border="0" src="/bjc-r/img/3-lists/verb_phrase.png" alt="green verb phrase reporter block" title="green verb phrase reporter block">. Here are some sample outputs:
                             <ul>
             					<div class="comment">We might need some support here for ELLs. --MF</div>
-                                <li><code>noun phrase</code>: "the little boy" "a green giraffe"</li>
+                                <li><img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block"> will combine <em>one</em> article (or possessive pronoun) with <em>one</em> adjective and <em>one</em> noun to create phrases like "the little boy" "a green giraffe" or "our old sandwich." </li>
 								<div class="sidenote">You can use abstraction within this block.  A prepositional phrase is a preposition plus a&nbsp;...</div>
-                                <li><code>prepositional phrase</code>: "near the little boy" "in a wise pizza"</li>
-                                <li><code>verb phrase</code>: "jumps sadly" "naps quickly"</li>
+                                <li><img border="0" src="/bjc-r/img/3-lists/prep_phrase.png" alt="green prepositional phrase reporter block" title="green prepositional phrase reporter block"> will combine <em>one</em> preposition with one <img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block">: "near the little boy" "over a wise pizza" </li>
+                                <li><img border="0" src="/bjc-r/img/3-lists/verb_phrase.png" alt="green verb phrase reporter block" title="green verb phrase reporter block"> will combine a verb and an adverb: "jumps sadly" "naps quickly" "thinks sleepily."</li>
                             </ul>
                         </li>
                         <li>Then, make a reporter <img border="0" src="/bjc-r/img/3-lists/sentence.png" alt="green sentence reporter block" title="green sentence reporter block"> that joins these phrases.</li>
@@ -66,11 +66,12 @@
     
         <div class="takeItFurther">
             <ol type="A">
-                <li>Create an even-more-complicated sentence-builder. Some ideas to try:
+                <li>Create more flexible sentence-builder. Some ideas to try:
                     <ul style="list-style:lower-roman;">
-                        <li>Randomly vary the order of the phrases (but only in ways that make grammatical sentences)</li>
-                        <li>Occasionally include people's names instead of article-adjective-noun phrases</li>
-                        <li>Pandomly vary the number of adjectives that appear in a phrase</li>
+                        <li>Noun phrases don't always have to have one adjective. They can have none. Or two. </li>
+                        <li>Find a way to create questions. The sentence could start with "Why does" or "Did" or...</li>
+                        <li>Occasionally include people's names instead of article-adjective-noun phrases.</li>
+                        <li>Use your <code>plural</code> block from U2Lab1-Plural to let your nouns sometimes be plural. Your program will need to keep track of when it makes a plural noun so that it can fix the verb to agree.</li>
                     </ul>
                 </li>
             </ol>
