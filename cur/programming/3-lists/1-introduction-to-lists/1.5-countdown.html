@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+    
+    <body>
+		<h2>Countdown</h2>
+
+		<div class="dialogue">
+            <div class="stagedir">Alphie and Betsy are trying to build a block to generate a list of whole numbers from <em>n</em> down to 1.</div>
+            <div>
+                <span>Alphie:</span> I used a script variable and kept shoving a new number at the beginning of the list using <code>for</code>.<br />
+                <img class="indent" src="/bjc-r/img/3-lists/countdown(n)-iterative.png" alt="countdown using a for-loop">
+            </div>
+            <div><span>Betsy:</span> Let's try it!</div>
+            <div class="stagedir">They take it out for a spin.</div>
+            <div><span>Alphie:</span> Oh. Not what I expected...</div>
+        </div>
+
+
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Fix Alphie and Betsy's<a name="countdown" class="anchor">&nbsp;</a><code>countdown</code> script so that it does what it's supposed to do.  </li>
+            </ol>
+        </div>
+        
+        
+        <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+
+
+        <div class="dialogue">
+            <div class="stagedir">Gamal joins the group and looks over Alphie's shoulder.</div>
+            <div>
+            	<span>Gamal: </span>Wow, it would never have occurred to me to write it that way!  You want <code>countdown (5)</code> to report the list {5, 4, 3, 2, 1}.  But <code>countdown (4)</code> is {4, 3, 2, 1}, so all you have to do is stick a 5 in front:<br />
+	        	
+                <img class="indent" src="/bjc-r/img/3-lists/recursive-countdown.png" alt="define countdown (n): if n=0 report empty list, otherwise report (n) in front of (countdown (n-1))">
+            </div>
+		</div>
+        
+        
+        <div class="forYouToDo">
+            <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+            <ol start="2">
+                <li>Gamal's description of his algorithm didn't mention the <code>if</code> in his code.  What would happen if he left that part out?  Why?</li>
+            </ol>
+        </div>
+        
+
+    </body>
+</html>
+    
