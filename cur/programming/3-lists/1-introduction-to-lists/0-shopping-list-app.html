@@ -7,7 +7,6 @@
 	</head>
 
 	<body>
-<div class="todo">Make a project containing the tool blocks and sprites for the buttons.  That way they won't get confused and add all the costumes to one sprite.  Have them load it first thing.</div>
 		<h2>Shopping List App</h2>
 
 		<img class="imageRight" src="/bjc-r/img/3-lists/shoppinglist.png" alt="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" title="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" />
@@ -16,24 +15,20 @@
 
 		<div class="forYouToDo" id="first">
 			<ol>
-				<li>Make a variable <img src="/bjc-r/img/3-lists/Make-a-variable.png"  alt="Make a variable button"> called <code>shopping list</code> to store the information.</li>
+				<li>Click to <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ShoppingList.xml" target="_blank">load this project</a>.</li>
+                <li>Make a variable <img src="/bjc-r/img/3-lists/Make-a-variable.png"  alt="Make a variable button"> called <code>shopping list</code> to store the information.</li>
                 <li>Set <img src="/bjc-r/img/blocks/set-()-to-(0).png" alt="set block"> <code>shopping list</code> to be an empty list. You will need the list block <img class="inline" src="/bjc-r/img/blocks/list.png" alt="list block" title="list block">. Use its arrows to get rid of its input slot, like this<img src="/bjc-r/img/3-lists/empty-list-block.png"  alt="empty list block">.</li>
-<div class="comment">Remove sidenote and steps 3 and 5 after making initial project as above.</div>
-                <div class="sidenote">You can download these buttons by right-clicking (or control-clicking) them and choosing "Save Image As..."</div>
-				<li>Create your own "Add Item" sprite costume or download and import this image: <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-add-item.png" alt="'Add Item' button" title="'Add Item' button" /> </li>
-				
-                <li>Write a script for this  sprite so that when the sprite is clicked, it <code>ask</code>s the user for a new item, and uses <code>in front of</code> and <code>set</code> to add the item to the list.</li>
+                <li>Write a script for the "Add Item" button so that when that sprite is clicked, it <code>ask</code>s the user for a new item, and uses <code>in front of</code> and <code>set</code> to add the item to the list.</li>
                 <div class="endnote">Check to see if it works. It's good programming practice to get each new feature working before moving on to the next.</div>
-                <li>Create a second sprite to clear the list: <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-clear-list.png" alt="'Clear List' button" title="'Clear List' button" /></li>
-                <li>Write a script for the second sprite that asks for confirmation and sets the list back to empty.</li>
+                <li>Write a script for the "Clear List" button that asks for confirmation and then sets the list back to an empty list.</li>
             </ol>
 </div>
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
                 <li>Improve the "Add Item" button to add new items only if they are not already on the list. You can use <code>contains</code> to see if an item is already on the list.</li>
-                <li>Create a <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-search.png" alt="'Search' button" title="'Search' button" /> sprite that just tells the user whether an item is already on the list, and doesn't try to add that item.  </li>
-                <li>Create a <img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-delete-item.png" alt="'Delete Item' button" title="'Delete Item' button" /> button that removes an item from the list. </li>
+                <li>Write a script for the "Search" button that tells the user whether an item is already on the list (but doesn't add the item).  </li>
+                <li>Write a script for the "Delete Item" button that removes an item from the list. </li>
                 <li>Think of another improvement and program it.</li>
             </ol>
         </div>
