@@ -51,10 +51,13 @@ heading: Lab 6: Some simple ones
 	 resource: Even numbers [/bjc-r/cur/programming/7-recursive-reporters/7-simple/even-number-filter.html]
 
 
-heading: Investigation (Take It Further): Menu
-	 resource: At the Ice Cream Shop [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-shop.html]
-	 resource: Formal Parameters [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-formal-parameters.html]
-	 resource: Menu hints [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-hint.html]
+	raw-html:<div class="todo">There are 3 investigations hidden here: <a href="/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-shop.html">At the Ice Cream Shop</a>, <a href="/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-formal-parameters.html">Formal Parameters</a>, <a href="/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-hint.html">Menu hints</a> --MF</div>
+	
+	
+//heading: Investigation (Take It Further): Menu
+	 //resource: At the Ice Cream Shop [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-shop.html]
+	 //resource: Formal Parameters [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-formal-parameters.html]
+	 //resource: Menu hints [/bjc-r/cur/programming/7-recursive-reporters/6-icecream/ice-cream-hint.html]
 
 }
 

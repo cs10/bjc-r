@@ -93,10 +93,10 @@ heading: Social Implications Lab 7: Innovations; Computing in Other Fields; Comp
 	 resource: Computing in Work [/bjc-r/cur/programming/5-algorithms/7-innovations/computing-work.html]
 	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/5-algorithms/7-innovations/btb-conclusion.html]	 
 
- 	raw-html: <hr />
+ 	//raw-html: <hr />
 
-heading: Investigations
-	 resource: FROM UNIT 3 Building Musical Chords (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
+//heading: Investigations
+	 //resource: FROM UNIT 3 Building Musical Chords (Use after Lab 1) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
 
 
 }
