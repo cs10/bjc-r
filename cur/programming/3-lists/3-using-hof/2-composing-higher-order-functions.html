@@ -8,42 +8,9 @@
       
 	<body>
         <h2>Composing Higher-Order Functions</h2>
-<div class="todo">This dialogue is the ultimate in the tail wagging the dog.  Just start right in with a real example.</div>
-        <div class="dialogue">
-        	<img class="imageRight" src="/bjc-r/img/icons/take-turns-speaking-mini.gif" alt="Take turns speaking" title="Take turns speaking">
-              <div class="stagedir">Alphie and Betty are discussing the blocks they have been using with lists.</div>
-            <div class="sidenoteBig">Click to review: <a href="/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>map</code></a>, <a href="/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>keep</code></a>, or <a href="/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment"><code>combine with</code></a>.</div>
-            <div><span>Alphie:</span> The <code>map</code> block applies some function to each item of a list.</div>
-            <div><span>Betty:</span> The <code>keep</code> block lets you choose some items from a list and not others.</div>
-            <div><span>Alphie:</span> And <code>combine with</code> takes an operation (like <code>+</code>) and a list.  It combines all the items of the list into a single output using the operation. So, with <code>+</code>, it would give the sum of all the numebrs in the list.</div>
-            <div><span>Betty:</span> Would we ever use all three of the functions together?</div>
-		</div>
+
+        <div class="todo">I'm wanting an introductory sentence or two briefly introducing the ideas of this page... --MF</div>
         
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. <img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /></li>
-            </ol>
-		</div>
-
-
-        <div class="dialogue">
-            <div><span>Alphie:</span> I guess you could start with a list of numbers, <code>keep</code> the ones that were greater than 50, use <code>map</code> to add 10 to all of them, and then use <code>combine with</code> to add those new numbers up.</div>
-            <div><span>Betty:</span> OK, let's try it. I'm just going to make up a variable called "list of numbers". Then we'll <code>keep</code> the numbers over 50.</div>
-				<div class="stagedir">Betty builds this expression: <img border="0" title="keep(()>50)from(listofNumbers)" alt="keep(()>50)from(listofNumbers)" src="/bjc-r/img/3-lists/keep_listofNum.png" /></div>
-            <div><span>Alphie:</span> Then we add 10 to every item using <code>map</code>. And the list we're mapping over is everything over 50 that we kept, so let's just drag everything in our <code>keep</code> expression in there.</div>
-				<div class="stagedir">Alphie builds this expression using Betty's: <img border="0" title="map(()+10)over(keep...)" alt="map(()+10)over(keep...)" src="/bjc-r/img/3-lists/keep_map.png" /></div>
-            <div><span>Betty:</span> Your last idea was to add all these new numbers up, right? So we'll use <code>combine with</code> and addition, and our list is everything in the <code>map</code> expression.</div>
-				<div class="stagedir">Betty adds to Alphie's expression: <img border="0" title="combine(addition)itemsof(map(keep...))" alt="combine(addition)itemsof(map(keep...))" src="/bjc-r/img/3-lists/keep_map_combine.png" /></div>
-        </div>
-
-
-        <div class="forYouToDo">
-            <ol start="2">
-                <li> Try Alphie and Betty's invention with a list of your own.  Change the operations in <code>combine with</code> and <code>map</code>, too. </li>
-            </ol>
-        </div>
-
-
         <!--<h3>Transcribing Musical Notes</h3>
         <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
         
@@ -78,8 +45,8 @@
         <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="http://localhost/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
         <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
         
-        <div class="forYouToDo">
-            <ol start="4">
+        <div class="forYouToDo" id="first">
+            <ol>
 				<li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
 				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
@@ -98,15 +65,17 @@
            		</li>
                 <li><strong>GH feedback:</strong> shouldn't the acronym block return a "sentence" and not a list?<br />from BH: A word, actually (no spaces), but certainly not a list! +1</li>
                 <li><strong>Feedback from Michael Ball:</strong> shouldn't acronym be an operator block?</li>
-				
+				<li>Why is this block variable-colored?  It should be Operator green.</li>
             </ul>
         </div>
 
+        <div class="commentBig"><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+</a></div>
         <div class="forYouToDo">
-            <ol start="7">
+            <ol start="4">
                 <li>
 					<div class="sidenoteBig">An <strong>acronym</strong> is the first letters of every capitalized word in a phrase. </div>
-<div class="comment">Why is this block variable-colored?  It should be Operator green.</div>
 	                <div class="sidenote"><code>map</code>, <code>keep</code>, and <code>combine</code> will be useful here.</div>
                     Create a reporter  that takes a phrase as input and reports its acronym, made from the first letters of the capitalized words.  It should work like this:<br/>
                     <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
@@ -124,8 +93,19 @@
                 <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
                 <li>
                 	Here are some made-up data from 8 days of sales at an ice cream stand: <br />
-                    <div class="todo">We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</div>
-		    		<div class="comment">JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions? Mary: I don't mind it here as a TIF. I made some edits.</div>
+                    <div class="todo">
+                    	<ul>
+                        	<li>We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</li>
+                            <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
+                        </ul>
+                    </div>
+		    		<div class="commentBig">
+                    	<ul>
+                        	<li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
+                            <li>Mary: I don't mind it here as a TIF. I made some edits.</li>
+                            <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
+						</ul>
+					</div>
                     <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
 					Each of the smaller lists represents one day's data at the stand:
 					<ol style="list-style:decimal;">
