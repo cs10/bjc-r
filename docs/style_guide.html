@@ -34,6 +34,7 @@
             	<li><a href="#picture">How to Make an Picture of Blocks</a></li>
             	<li><a href="#animation">How to Make an Animation</a></li>
             	<li><a href="#script">How to Link to a Project</a></li>
+            	<ul><li><a href="#cloud">How to Load a Project NOT in Presentation with #cloudin the URL</a></li></ul>
             	<li><a href="#anchors">How to Link to a Specfic Part of a Page with Anchors</a></li>
             </ul>
         </div>
@@ -207,11 +208,27 @@ isn't something you can type into Snap!.  And every so often (once per unit?) we
             Principles for when to include a script:
             <ul>
             	<li>Early on, and for simple scripts (and minimal or no typing), getting them to build is useful practice.</li>
-                <li>For complicated scripts that we want them to test and/or modify, let them load it.  Saves time and guarantees they’re testing what we actually intended.</li>
+                <li>For complicated scripts that we want them to test and/or modify, let them load it.  Saves time and guarantees they're testing what we actually intended.</li>
                 <li>For lists with lots of typing, let them load initial versions, especially for getting started or experiments.  Again, reduces overhead. Also, they can always tailor if they want.</li>
             </ul>
         </div>
         
+        <h3>How<a name="cloud" class="anchor">&nbsp;</a>to Load a Project NOT in Presentation with #cloud in the URL</h3>
+		<p>From Jens: you can use #cloud to open a shared project in edit mode without running it right away.</p>
+        <p>There are also three switches you can add to the #present: url to get more control over what will be displayed:
+        	<ol>
+            	<li><code>&amp;editMode</code>: this will also NOT switch to presentation mode, but it will still run the project right away.</li>
+                <ul><li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&ProjectName=Mesmerize&editMode" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&amp;ProjectName=Mesmerize&amp;editMode</a></li></ul>
+                <li><code>&amp;noRun</code>: this switch will prevent the project from running immediately (it won't fire the green flag event).</li>
+                <ul>
+                	<li>You can use it together with other switches, e.g. <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&ProjectName=Mesmerize&editMode&noRun" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&amp;ProjectName=Mesmerize&amp;editMode&amp;noRun</a>.</li>
+                    <li>but also alone: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&ProjectName=Mesmerize&noRun" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&amp;ProjectName=Mesmerize&amp;noRun</a></li>
+                </ul>
+                <li><code>&amp;hideControls</code>: this switch hides the green-flag, pause, and stop buttons. This is useful when embedding Snap projects into other web pages using iFrames. You can also use this in combination with other switches, but it makes the most sense in presentation mode</li>
+                <ul><li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&ProjectName=Mesmerize&hideControls" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=jens&amp;ProjectName=Mesmerize&amp;hideControls</a></li></ul>
+            </ol>
+        </p>
+
         <h3>How<a name="anchors" class="anchor">&nbsp;</a>to Link to a Specfic Part of a Page Using Anchors</h3>
         <p>
         	There are two parts of a link with an anchor (the link and the anchor):
