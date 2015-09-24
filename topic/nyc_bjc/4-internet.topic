@@ -32,28 +32,28 @@ heading: Weather App
  	raw-html: <hr />
 
 heading: Social Implications Lab 4: Copyright
-	 resource: Getting Started [/bjc-r/cur/programming/5-algorithms/5-copyright/0-gs.html]
-	 resource: Stroke of Genius? [/bjc-r/cur/programming/5-algorithms/5-copyright/1-gray.html]
-	 resource: How Inventions Happen [/bjc-r/cur/programming/5-algorithms/5-copyright/2-invent.html]
-	 resource: Big Questions [/bjc-r/cur/programming/5-algorithms/5-copyright/big-questions.html]
-	 resource: Copyright [/bjc-r/cur/programming/5-algorithms/5-copyright/copyright.html]
-	 resource: Media [/bjc-r/cur/programming/5-algorithms/5-copyright/media.html]
-	 resource: Patents [/bjc-r/cur/programming/5-algorithms/5-copyright/patents.html]
-	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/5-algorithms/5-copyright/btb-chapter6.html]
+	 resource: Getting Started [/bjc-r/cur/programming/4-internet/4-copyright/0-gs.html]
+	 resource: Stroke of Genius? [/bjc-r/cur/programming/4-internet/4-copyright/1-gray.html]
+	 resource: How Inventions Happen [/bjc-r/cur/programming/4-internet/4-copyright/2-invent.html]
+	 resource: Big Questions [/bjc-r/cur/programming/4-internet/4-copyright/big-questions.html]
+	 resource: Copyright [/bjc-r/cur/programming/4-internet/4-copyright/copyright.html]
+	 resource: Media [/bjc-r/cur/programming/4-internet/4-copyright/media.html]
+	 resource: Patents [/bjc-r/cur/programming/4-internet/4-copyright/patents.html]
+	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/4-internet/4-copyright/btb-chapter6.html]
 
 heading: Social Implications Lab 5: Censorship
-	 resource: Big Questions [/bjc-r/cur/programming/5-algorithms/6-censorship/big-questions.html]
-	 resource: Censorship and Regulation [/bjc-r/cur/programming/5-algorithms/6-censorship/censorship.html]
-	 resource: Computing around the World [/bjc-r/cur/programming/5-algorithms/6-censorship/computing-world.html]
-	 resource: Computing in War [/bjc-r/cur/programming/5-algorithms/6-censorship/computing-war.html]
-	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/5-algorithms/6-censorship/btb-chapter7.html]	 
-	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/5-algorithms/6-censorship/btb-chapter8.html]
+	 resource: Big Questions [/bjc-r/cur/programming/4-internet/5-censorship/big-questions.html]
+	 resource: Censorship and Regulation [/bjc-r/cur/programming/4-internet/5-censorship/censorship.html]
+	 resource: Computing around the World [/bjc-r/cur/programming/4-internet/5-censorship/computing-world.html]
+	 resource: Computing in War [/bjc-r/cur/programming/4-internet/5-censorship/computing-war.html]
+	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-internet/5-censorship/btb-chapter7.html]	 
+	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/4-internet/5-censorship/btb-chapter8.html]
 
 heading: Social Implications Lab 6: Innovations
-	 resource: Big Questions [/bjc-r/cur/programming/5-algorithms/7-innovations/big-questions.html]
-	 resource: Innovations [/bjc-r/cur/programming/5-algorithms/7-innovations/innovations.html]
-	 resource: Computing in Other Fields [/bjc-r/cur/programming/5-algorithms/7-innovations/computing-other.html]
-	 resource: Computing in Work [/bjc-r/cur/programming/5-algorithms/7-innovations/computing-work.html]
-	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/5-algorithms/7-innovations/btb-conclusion.html]	 
+	 resource: Big Questions [/bjc-r/cur/programming/4-internet/6-innovations/big-questions.html]
+	 resource: Innovations [/bjc-r/cur/programming/4-internet/6-innovations/innovations.html]
+	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-internet/6-innovations/computing-other.html]
+	 resource: Computing in Work [/bjc-r/cur/programming/4-internet/6-innovations/computing-work.html]
+	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-internet/6-innovations/btb-conclusion.html]	 
 
 }
