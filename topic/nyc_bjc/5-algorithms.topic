@@ -66,7 +66,7 @@ heading: Programming Lab 3: Timing Experiments
 
 	assignment: Evil Hangman [/bjc-r/cur/programming/projects/hangman/evil-hangman.html]
 
-	raw-html: <div class="todo">JK: I wonder, during the data parts of this lab, if the following articles might be useful: <a href="http://webdocs.cs.ualberta.ca/~zaiane/courses/cmput690/notes/Chapter1/ch1.pdf">Pages 1-3 of this article about data mining</a> (The article goes on to describe the processes invovled in data mining, the kinds of data that can be mined, and the kind of information that can be discovered from data mining.) or <a href="http://www.technologyreview.com/news/513016/how-wireless-carriers-are-monetizing-your-movements/">How Wireless Carriers are Monetizing Your Movements</a>. I had also thought of the following possible discussion questions: What opportunities are provided by large data sets? What challenges are presented by them?</div>
+	raw-html: <div class="todo">JK: I wonder, during the data parts of this unit, if the following articles might be useful: <a href="http://webdocs.cs.ualberta.ca/~zaiane/courses/cmput690/notes/Chapter1/ch1.pdf">Pages 1-3 of this article about data mining</a> (The article goes on to describe the processes invovled in data mining, the kinds of data that can be mined, and the kind of information that can be discovered from data mining.) or <a href="http://www.technologyreview.com/news/513016/how-wireless-carriers-are-monetizing-your-movements/">How Wireless Carriers are Monetizing Your Movements</a>. I had also thought of the following possible discussion questions: What opportunities are provided by large data sets? What challenges are presented by them?</div>
 
  	raw-html: <hr />
 
