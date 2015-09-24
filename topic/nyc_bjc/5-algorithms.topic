@@ -69,6 +69,14 @@ heading: Programming Lab 3: Timing Experiments
 	
  	raw-html: <hr />
 
-heading: Social Implications Lab 4: Computing around the World
-
+heading: Social Implications Lab 4: Copyright
+	 resource: Getting Started [/bjc-r/cur/programming/4-internet/4-copyright/0-gs.html]
+	 resource: Stroke of Genius? [/bjc-r/cur/programming/4-internet/4-copyright/1-gray.html]
+	 resource: How Inventions Happen [/bjc-r/cur/programming/4-internet/4-copyright/2-invent.html]
+	 resource: Big Questions [/bjc-r/cur/programming/4-internet/4-copyright/big-questions.html]
+	 resource: Copyright [/bjc-r/cur/programming/4-internet/4-copyright/copyright.html]
+	 resource: Media [/bjc-r/cur/programming/4-internet/4-copyright/media.html]
+	 resource: Patents [/bjc-r/cur/programming/4-internet/4-copyright/patents.html]
+	 resource: Blown to Bits Chapter 6 [/bjc-r/cur/programming/4-internet/4-copyright/btb-chapter6.html]
+	 
 }
