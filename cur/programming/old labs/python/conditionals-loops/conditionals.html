@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </style>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Conditionals</title>
+    </head>
+    <body>
+          <p>
+              In Python, conditional statements consist of "if", "if-else", and "if-elif-else": <br />
+              <table>
+                <tr>
+                  <td>
+                    <pre><code class="">
+if (condition):
+    do something
+                    </code></pre>
+                  </td>
+                  <td><img src="../../../../../img/python/ifgeneral.png" alt="if condition"/></td>
+              </tr>
+              <tr>
+                  <td>
+                      <pre><code class="">
+if (condition):
+     do something
+else:
+    do something else
+                    </code></pre>
+                  </td>
+                  <td><img src="../../../../../img/python/ifelse.png" alt="if-elsecondition"/></td>
+              </tr>
+              <tr>
+                  <td>
+                      <pre><code class="">
+if (condition):
+     do thing 1
+elif (condition2):
+    do thing 2
+else:
+    do something else
+                    </code></pre>
+                  </td>
+                  <td><img src="../../../../../img/python/ifelseif.png" alt="if-elif-else condition"/></td>
+              </tr>
+              </table>
+          </p>
+        <p>
+            For example:
+            <br />
+            (Don't worry too much of what def means for now, that is how you define a new function in Python. We will go more in-depth later.)
+            <pre><code>
+def hi(x):
+    if (x % 2 == 0):
+        print("Hello, your number was even")
+    else:
+        print("Hello, your number was odd")
+>>> x = 6
+>>> hi(x)
+Hello, your number was even
+>>> hi(9)
+Hello, your number was odd
+          </code></pre>
+        </p>
+        <p>
+          <pre><code>
+# Returns true if X is 0 or odd, otherwise returns false. <br />
+def check_zero_or_odd(x):
+    if (x % 2 == 0):
+        return True
+    elif (x == 0):
+        return True
+    else:
+        return False
+>>> x = 0
+>>> check_zero_or_odd(x)
+True
+>>> x += 1
+>>> check_zero_or_odd(x)
+True
+>>> x += 3
+>>> check_zero_or_odd(x)
+False
+          </code></pre>
+        </p>
+    </body>
+</html>

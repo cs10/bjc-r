@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly -->
+
+<script src="/bjc-r/llab/loader.js"></script><title>Logarithmic-Time</title><!--ORIGINAL NAME: Logarithmic-Time--></head><body>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;We will end this lab by introducing another
+kind of running time that appears frequently when analyzing algorithms.
+<a href="/bjc-r/cur/programming/old labs/algorithms/algorithms-in-snap.html">Two labs ago</a>, we looked at a few ways of finding a number in a list.  <a href="/bjc-r/cur/programming/old labs/algorithms/timing/quiz-searching-through-time.html">Earlier in this lab</a>, we decided
+that an algorithm that merely walks through a list to find the number
+is a linear-time algorithm. (This algorithm, by the way, is fancily
+known as a <em>linear search</em>.  Now you know why.)  However, the eternal question: Can we do better?</p><p>
+</p><p>&nbsp;&nbsp;&nbsp;&nbsp;We also saw an algorithm that worked on
+sorted lists: we kept dividing the list of numbers into smaller and
+smaller halves, always looking at the middlemost element to narrow in
+on the number we are looking for. What is the running time of this
+algorithm? Well, the runtime is definitely not constant-time, because
+the longer the list, the more elements we have to look through.
+However, the runtime is definitely not linear-time either, because we
+don't ever end up looking at all of the elements of the list. The
+runtime of this algorithm must lie somewhere in between.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Let's count the number of splits that we
+have to do for a sorted list of a given size. For a list of size 4, we
+only ever have to do at most two splits before we find the number we
+are looking for, or conclude that the number is not in the list. For a
+list of size 8, after the first split, we are now concerned only with a
+list of size 4. But, as we have just seen, we only have to do at most
+two splits before we are done. Again, for a list of size 16, after the
+first split, we are now concerned only with a list of size 8, which can
+take three more splits. To summarize:</p>
+<table id="t5m:" style="font-size: 1em; line-height: inherit; border-collapse: collapse;" border="1" cellpadding="3" cellspacing="0" width="100%"><tbody><tr style="text-align: left;"><td width="20%">Size of list</td><td width="20%"><code>4</code></td><td width="20%"><code>8</code></td><td width="20%"><code>16</code></td><td width="20%"><code>32</code></td></tr><tr style="text-align: left;"><td width="20%">Number of splits</td><td width="20%"><code>2</code></td><td width="20%"><code>3</code></td><td width="20%"><code>4</code></td><td width="20%"><code>5</code></td></tr></tbody></table><p>&nbsp;&nbsp;&nbsp;&nbsp;Notice
+that when the size of the input doubles, the number of splits (and thus
+the runtime of the algorithm) increases by one. Also, notice that the
+top row is growing much faster than the bottom row. This behavior is
+similar to that of the logarithmic function that you may have seen
+before, where every multiplicative increase in the input is converted
+to an additive increase in the output. Such a growth is thus called a <em>logarithmic</em> growth, and this algorithm is a <strong>logarithmic-time</strong> algorithm.&nbsp; (In contrast to the linear search algorithm, this algorithm is known as a <strong>binary search</strong>.)</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Logarithmic-time algorithms are also
+sought-after, since their runtimes are close to, although not quite,
+constant-time. You can increase the sizes of their inputs by a large
+factor, yet their running time will increase by a small, <em>added</em>
+amount, which makes them valuable. In general, any algorithm that
+involves dividing something into smaller pieces can be a
+logarithmic-time algorithm.</p>   </body></html>
