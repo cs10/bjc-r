@@ -32,18 +32,14 @@ heading: Weather App
  	raw-html: <hr />
 
 heading: Social Implications Lab 4: Censorship and Computing around the World
-	 resource: Big Questions [/bjc-r/cur/programming/4-internet/5-censorship/big-questions.html]
-	 resource: Censorship and Regulation [/bjc-r/cur/programming/4-internet/5-censorship/censorship.html]
-	 resource: Computing around the World [/bjc-r/cur/programming/4-internet/5-censorship/computing-world.html]
-	 resource: Computing in War [/bjc-r/cur/programming/4-internet/5-censorship/computing-war.html]
-	 resource: Blown to Bits Chapter 7 [/bjc-r/cur/programming/4-internet/5-censorship/btb-chapter7.html]	 
-	 resource: Blown to Bits Chapter 8 [/bjc-r/cur/programming/4-internet/5-censorship/btb-chapter8.html]
+	 resource: Rules for the Internet [/bjc-r/cur/programming/4-internet/4-censorship/rules.html]
+	 resource: Computing around the World [/bjc-r/cur/programming/4-internet/4-censorship/computing-world.html]
 
 heading: Social Implications Lab 5: Innovating for Social Change
-	 resource: Big Questions [/bjc-r/cur/programming/4-internet/6-innovations/big-questions.html]
-	 resource: Innovations [/bjc-r/cur/programming/4-internet/6-innovations/innovations.html]
-	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-internet/6-innovations/computing-other.html]
-	 resource: Computing in Work [/bjc-r/cur/programming/4-internet/6-innovations/computing-work.html]
-	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-internet/6-innovations/btb-conclusion.html]	 
+	 resource: Big Questions [/bjc-r/cur/programming/4-internet/5-innovations/big-questions.html]
+	 resource: Innovations [/bjc-r/cur/programming/4-internet/5-innovations/innovations.html]
+	 resource: Computing in Other Fields [/bjc-r/cur/programming/4-internet/5-innovations/computing-other.html]
+	 resource: Computing in Work [/bjc-r/cur/programming/4-internet/5-innovations/computing-work.html]
+	 resource: Blown to Bits Conclusion [/bjc-r/cur/programming/4-internet/5-innovations/btb-conclusion.html]	 
 
 }
