@@ -4,7 +4,7 @@ title: Unit 2: Conditionals, Abstraction, and Debugging
 
 		//h1: Formerly Topic 3: Conditionals and Variables
        
-	raw-html: <div class="todo"><ul><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><ul></div>
+	raw-html: <div class="todo"><ul><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><li>9/24/15 we agreed to change the two GS lab titles to normal names. Change L1 GS to "Sprite Drawing Puzzles" and L4 GS to "Searching for Yourself Online"</li><ul></div>
        
 heading: Programming Lab 1: Conditional Blocks
 	resource: Getting Started [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/1-getting-started-with-conditionals.html] 
