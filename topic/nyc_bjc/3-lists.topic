@@ -60,12 +60,12 @@ heading: Programming Lab 4: Magic Squares
  	raw-html: <hr />
 
 heading: Social Implications Lab 5: Search
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
+	resource: Search Engines [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
 	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
 	resource: Design Your Own Search Engine [/bjc-r/cur/programming/3-lists/5-search-internet/design-your-own.html]
 
 heading: Social Implications Lab 6: Encryption
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
+	resource: Secrets [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
 	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
 	resource: Public Keys [/bjc-r/cur/programming/3-lists/6-encryption/public-keys.html]
 	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
