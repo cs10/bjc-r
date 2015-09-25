@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+
+    <body>
+        <h2>Data Types</h2>
+        
+        <div class="todo">
+            <ul>
+            	<li>This was formerly the second half of "Draw Shape" --MF</li>
+            </ul>
+        </div>
+        
+        <div class="dialogue"> <a name="point" class="anchor">&nbsp;</a>
+        	<div class="stagedir">Gamal has been looking over Betsy's shoulder.</div>
+            <div>
+              <span>Gamal:</span> I think you had trouble finishing that script because those <code>item</code> blocks get confusing. We could define a new <em>data type</em> called <code>point</code> that contains an <em>X coordinate</em> and a <em>Y coordinate</em>.<br />
+                <div class="sidenote">Gamal's idea is called <em>data abstraction</em>.</div>
+            </div>
+        	<div class="stagedir">
+                Gamal has built this block: 
+                <a class="run" href="/bjc-r/prog/3-lists/U3Lab1DrawShape.xml"><img src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/></a>
+            </div>
+            <div><span>Betsy:</span> Those blocks are trivial. They aren't going to make the rest of the program any shorter.</div>
+            <div><span>Gamal:</span> They are going to <em>make it easier to think about</em>. Now, a list of points <em>looks</em> like a list of points:</div>
+            <div class="stagedir"><img src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /></div>
+            <div>
+<div class="comment">Get rid of FOR loop and index variable.  Use FOR EACH right away.</div>
+            	<span>Betsy:</span> I get it. So we could also make <code>X coordinate</code> and <code>Y coordinate</code> blocks so that the drawing script would have things like
+                <img class="inline" src="/bjc-r/img/3-lists/alphie-adt.png" alt="x coord of item I of A" title="x coord of item I of A" />
+            	instead of <img class="inline" src="/bjc-r/img/3-lists/alphie-no-adt.png" alt="item 1 of item I of A" title="item 1 of item I of A" />, which was confusing.
+            </div>
+            <div class="stagedir">
+                Betsy's two other blocks: <img src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /> 
+                <img src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
+            </div>
+        </div>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                	Improve Betsy's script using Gamal's idea, then make a green command block using that script: <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> <br />
+                	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the list input type:<br /> 
+                    <div class="comment">This animation needs to be redrawn with Plain Prototype Labels off!</div>
+                    <img src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
+                </li>
+                <li>Finish making the <code>draw shape ()</code> block so that <img  src="/bjc-r/img/3-lists/draw_shape_A.png" alt="draw shape (A)" title="draw shape (A)" /> produces the animation at the top of the page.</li>
+                <li>
+                	Create a new data<a name="data-type" class="anchor">&nbsp;</a>type called <code>note () beats ()</code> to make your <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#playnotes">play notes</a> lists easier to think about.<br >
+	                <img class="imageLeft" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+					<img class="indent" src="/bjc-r/img/3-lists/play-notes-data-type.png" alt="Play Notes" title="Play Notes" />
+
+                </li>
+            </ol>
+        </div>
+
+
+   </body>
+</html>

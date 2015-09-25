@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+    
+    <body>
+		<h2>Exploring List Processing</h2>
+   
+		<div class="forYouToDo" id="first">
+            <ol>
+				<li><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> You will need to do this for most of the lab pages in Unit 3.</li>
+                <div class="commentBig">I don't know the source of the yellow comment below. Is the terminology "variadic input" important here? If not, delete it before it shows up on a classroom test. (I've just commented it out in case it is urgently needed.) (that was from Paul, I think --MF)</div>
+                <div class="sidenote">The <img src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block's left and right arrowheads let you vary the number of input slots. <!-- Blocks that can be varied in this way are said to have a <strong>variadic input</strong>. --> </div>
+                <li>
+                    Construct these expressions and describe what they do:
+                    <ol>
+                        <li> <img src="/bjc-r/img/3-lists/gs1a.png" alt="ALL BUT FIRST block" title="ALL BUT FIRST block"> </li>
+                        <li> <img src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
+                        <li> <img src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>
+                        <li><img src="/bjc-r/img/3-lists/listblockempty.png" class="block" alt="Empty LIST block" title="orange LIST block"></li>
+                        
+                  </ol>
+                </li>
+               <!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
+                <div class="endnote">An input slot that looks like <img src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
+                <li> What's the difference between <img src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
+            </ol>
+        </div>
+        <p>The <code>length of</code> block returns the number of items in a <strong>list</strong>. For example, <img src="/bjc-r/img/3-lists/gs_length2.png" alt="length (Augusta, Boise)" title="length (Augusta, Boise)" /> returns 2.</p>
+        <div class="forYouToDo">
+            <ol start="5">
+                <li>
+                    What do each of the following return?
+                    <ol>
+                        
+                        <li><img src="/bjc-r/img/3-lists/gs_length_allbutfirst.png" alt="length (all but first (Augusta, Boise, Columbia))" title="length (all but first (Augusta, Boise, Columbia))" /></li>
+                        <li><img src="/bjc-r/img/3-lists/gs_length_blanks.png" alt="length (blank, Augusta, blank, blank, Boise, blank)" title="length (blank, Augusta, blank, blank, Boise, blank)" /></li>
+                        <li><img src="/bjc-r/img/3-lists/gs_length0.png" alt="length (empty list)" title="length (empty list)" /></li>
+                    </ol>
+                </li>
+                <li>Build and compare:
+					<div class="sidenote">You will learn more about these expressions if you click them each multiple times.</div>
+                    <ol>
+						<li><img src="/bjc-r/img/3-lists/gs4say_list.png" alt="say list block" title="say list block"></li>
+						<li><img src="/bjc-r/img/3-lists/gs4say_any.png" alt="say any item block" title="say any item block"></li>
+						<li><img src="/bjc-r/img/3-lists/gs4say_random.png" alt="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="say (item (pick random 1 to 3) of list (Augusta) (Boise) (Columbia) (Des Moines)"></li>
+						<li><img src="/bjc-r/img/3-lists/gs4say_each.png" class="script" alt="say for each block" title="say for each block"></li>
+                    </ol>
+                </li>
+	        	<img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+                <li>Build and compare:
+                    <ol style="list-style:lower-roman;">
+                        <li><img src="/bjc-r/img/3-lists/compare-play-note-1.png" alt="play note (item (any) of (list (60) (64) (67) (72))) for (1) beats" title="play note (item (any) of (list (60) (64) (67) (72))) for (1) beats">Try this one a few times.</li>
+                        <li><img src="/bjc-r/img/3-lists/compare-play-note-2.png" alt="for each (note) of (list (60) (64) (67) (72)) (play note (note) for (1) beats)" title="for each (note) of (list (60) (64) (67) (72)) (play note (note) for (1) beats)"></li>
+                        <li><img src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72))) (play note (note) for (1) beats)"></li>
+                    </ol>
+                </li> 
+            </ol>
+        </div>
+  
+
+    </body>
+</html>
+    

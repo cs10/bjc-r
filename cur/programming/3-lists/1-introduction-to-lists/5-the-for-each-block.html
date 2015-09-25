@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+
+    <body>
+        <h2>The <code>For Each</code> Block</h2>
+        
+        <div class="todo">
+            <ul>
+            	<li>This was formerly "Draw Shape" but I split that page in two and changed the name so that I could tuck the sound stuff in here, which really does belong here with this <code>for each</code> content (extends wrists to be slapped) --MF</li>
+            </ul>
+        </div>
+        
+        <div class="dialogue"> <a name="seta" class="anchor">&nbsp;</a>
+            	<div class="stagedir">
+                	Alphie and Betsy are making a list of coordinates for a sprite to make this drawing:<br />
+            		<img border="2" class="inline" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
+                </div>
+            <div><span>Betsy:</span> Let's use a list of lists to hold <em>x</em>- and <em>y</em>-coordinates for the letter A.</div>
+				<div class="stagedir">Betsy clicks "Make a variable," names it "A," and builds: <img  src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /></div>
+            <div>
+            	<span>Alphie:</span> So, for each of the eight lists, we want to make the sprite go to (item 1, item 2). Here's how I would start it....
+                <div class="stagedir">Alphie makes <img  src="/bjc-r/img/3-lists/A_foreach.png" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" /></div>
+            	But what goes in the blanks after <em>x</em> and <em>y</em>?
+            </div>
+                
+            <div><span>Betsy:</span> Hmm... Good question. Also, this script isn't quite right. We don't want the pen down as it goes from wherever the sprite starts to the first point on the letter. And it doesn't connect the first and last points together. </div>
+        </div>
+        
+        <div class="forYouToDo" id="first">
+        	<ol>
+            	<li>Load and finish building <a class="run" href="/bjc-r/prog/3-lists/U3Lab1DrawShape.xml">Alphie's script</a>, and fix the two bugs Betsy noticed.</li>
+            </ol>
+        </div>
+     
+		<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+				<li>Update the script so that it completes a drawing of the letter A. (Choose the additional coordinates yourself.)</li>
+				<li>Make a general <code>draw shape ()</code> block that draws <em>any</em> shape based on a list of coordinates.</li>
+            	<li>If you made the <code>draw shape ()</code> block, make a new list of lists with coordinates to draw a different letter or shape. Check to see that <code>draw shape ()</code> works with this new list.</li>
+                <div class="sidenote">Notice the use of abstraction. Representing the message &quot;HI&quot; as <img src="/bjc-r/img/3-lists/list-h-i.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
+                <li>
+                	If you made other letters, write <code>draw message ()</code> block that takes a <em>list of letters</em> as input and uses <code>draw shape ()</code> to draw a message.<br />
+                	<img class="indent" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" />
+                </li>
+            </ol>
+        </div>
+        
+        <div class="forYouToDo">
+        	<ol start="2">
+                <li>
+					<div class="sidenote">Use the <code>set tempo to () bpm</code> block to change the pace at which the note are played.</div>	
+	                <img class="imageLeft" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+                	Create a <code>play<a name="playnotes" class="anchor">&nbsp;</a>notes</code> block that takes a list of lists as input where each inner list includes two items: a note and a number of beats to play it. <br />
+					<img  src="/bjc-r/img/3-lists/play-notes.png" alt="Play Notes" title="Play Notes" />
+                </li>
+            </ol>
+        </div>
+     
+		<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A" start="5">
+                <li>Change input to your <code>play notes</code> block so that it plays a song you like or one you make up.</li>
+            </ol>
+        </div>
+     
+
+   </body>
+</html>

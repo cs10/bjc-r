@@ -10,7 +10,6 @@
         <h2>List of Lists</h2>
         <p>
         	Lists can contain other lists. Here are three lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
-            <div class="comment">These image attributions need attention. They should match the images more completely and should use brackets instead of parentheses. --MF</div>
             <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml">
             	<img src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br />
             	<img src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br />
@@ -24,22 +23,19 @@
                 <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
                 <li>Load the project above by clicking on the picture.</li>
                 <li>
-                    Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists. Then answer:
-                    <ol style="a">
-                        <li>
-                        	Does this expression report 8 or 16?<br />
-                        	<img src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" />
-                        </li>
-                        <li>
-                        	Does this expression report 9:15 or the list <code>{4:45, 7:30, 10:15}</code>?<br />
-                        	<img src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
-                            <div class="endnote">Writing <code>{4:45, 7:30, 10:15}</code> is one possible way to represent the list <img class="noshadow" src="/bjc-r/img/3-lists/output445-730-1015.png" height="80" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /> with text.</div>
-                        </li> 
-                        <li>
-                        	Does this expression report 9:15, the list <code>{9:15}</code>, or <code>{4:45, 7:30, 10:15}</code>?<br />
-                        	<img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
-                        </li>
-                    </ol>
+                    Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
+                <li>
+                    Does this expression report <var>8</var> or <var>16</var>? Make a guess and then build it to check.<br />
+                    <img src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" />
+                </li>
+                    <div class="sidenote">Writing <var>{4:45, 7:30, 10:15}</var> is one possible way to represent this list with text: <img class="noshadow" src="/bjc-r/img/3-lists/output445-730-1015.png" height="80" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /></div>
+                <li>
+                    What will this expression report? Why? <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> and then build and run it in Snap<em>!</em><br />
+                    <img src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
+                </li> 
+                <li>
+                    Does this expression report <var>9:15</var>, the list <var>{9:15}</var>, or <var>{4:45, 7:30, 10:15}</var>?<br />
+                    <img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
                 </li>
                 <li>
                 	What will this expression report? Why? <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> and then build and run it in Snap<em>!</em><br />
@@ -49,6 +45,9 @@
         </div>
 		
     
+        <!--I CUT THIS BECUASE I didn't think it was a good way to introduce "for each" after the edit suggested by Brian, and we have the "draw shape" page next anyway. --MF
+        
+        
         <div class="dialogue">
         	<div class="stagedir">
             	Alphie and Betty are making a list of coordinates for a sprite to make this drawing:<br /><img src="/bjc-r/img/3-lists/draw_list_coordinates.gif" alt="sprite drawing by going to each set of coordinates" title="sprite drawing by going to each set of coordinates">
@@ -68,21 +67,9 @@
         	<img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
             <ol  start="7">
             	<li>Modify Alphie's script to use <code>for each</code>.</li>
-                <li>
-	                <img class="imageLeft" src="/bjc-r/img/icons/headphones-mini.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
-                	Create a <code>play sound<a name="sound" class="anchor">&nbsp;</a>sequence</code> command block that takes as input a list of lists where each inner list includes two items: a note and a number of beats to play it. Running your  block should play each of the notes in the list for the indicated number of beats.<br />
-					<div class="sidenote"><code>for each</code> will be helpful here too. </div>	
-					<img  src="/bjc-r/img/3-lists/play-sound-sequence.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
-                </li>
-                
             </ol>
-        </div>    
-
-		<div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
-            <ol type="A">
-                <li>Change the lists in your <code>play sound sequence</code> block to play a song you like or one you make up.</li>
-            </ol>
-        </div>
+        </div>   --> 
+        
     
 
    </body>
