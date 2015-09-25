@@ -54,10 +54,14 @@ li > ol {  list-style-type: lower-alpha;}
 
 .commentBig {  width: 40%; }
 
-code {
+code, var {
   font-family: courier; 
   font-size: 1.2em;
   padding: 2px;
+}
+
+var {
+  font-style: normal;
 }
 
 .classIndent {
@@ -77,6 +81,7 @@ code {
   font-weight: bold;
   content: "Reviewer Comments: ";
 }
+
 
 /** Side Notes **/
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
@@ -194,11 +199,11 @@ img.noshadow {
 .dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig) {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 5em;
-  text-indent: -3em;
+  padding-left: 6em;
+  text-indent: -4em;
 }
 
-.dialogue > div.stagedir {
+.stagedir {
   padding-left: 0em;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -207,7 +212,11 @@ img.noshadow {
   text-align: center;
 }
 
-.dialogue > div > span {  font-weight: bold;}
+.dialogue > div > span {  
+  font-weight: bold; 
+  float: left;
+  width: 4em; 
+}
 
 .inline {
   padding-top: -5px;
@@ -216,7 +225,7 @@ img.noshadow {
 
 .takeItFurther {
   background-color: #e4cde3; 
-  width:90%;  
+  width: 90%;  
   margin-left: auto;
   margin-right: auto;
   }
