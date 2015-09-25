@@ -10,7 +10,11 @@
         <h2>Composing Higher-Order Functions</h2>
 
         <div class="todo">I'm wanting an introductory sentence or two briefly introducing the ideas of this page... --MF</div>
-        
+        <div class="todo">Until we get to character encoding, this again feels like it’s a bit arbitrary. It’s exactly the mistake I made in Unit 2.  I loved the idea of building a bunch of useful calculation tools, and it’d be great if kids felt so enabled that they could use Snap to do their mathematics homework, or at least the calculational part of it.  But I’m just not seeing the getting started working that way.  The sum of the squares does interest me, if we are doing a mathematical investigation, but we’re not: just making a procedure that does that feels unmotivated.  And the kids on page 2 are also trying to figure out what to do with the blocks.  I’d like us to solve that a bit better and give some varied and good examples.  Brian??  You are needed here.  
+<br /><br />
+
+</div>
+
         <!--<h3>Transcribing Musical Notes</h3>
         <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
         
@@ -42,6 +46,9 @@
         
         
         <h3>Character Encoding</h3>
+		<div class="todo">Character encoding.  Good.  It recalls stuff the kids did earlier (in U2?) but bumps it up a notch.  I’d bump it up one more notch.  Here’s a good place to map adding some number to every number in a list.  Take an input message, tear it into letter-sized chunks, get the unicode, add 1, reconstitute it as a string.  Do reverse to decode.  Good way also to anticipate something in U4.
+<br /><br />In addition to encoding/decoding as an application of map as partial anticipation of U4, I’d also suggest turning a string into a list of lists containing the characters (or their Unicode) and the order in which they appear in the original message.  The utility of that won’t be apparent now, but is a decent exercise.  It will be useful in U4 (but I would not say that now) for students ever to have tried to do such a thing. Right now, if there’s a way to make it more “motivated” and less arbitrary, please do, but I could be satisfied even with just treating it as an exercise.
+        </div>
         <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="http://localhost/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
         <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
         
@@ -55,7 +62,7 @@
         </div>
                     
         <h3>Acronym Generator</h3>
-        
+        <div class="todo">PG: Acronym is fine.   Just clarify.  Return a word. </div>
         <p>With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once.</i> You don't have to think, "Find the first letter of the first word and operate on it, then do the next letter until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word" and so on.</p>
         <p>You can think, "check the first letters of all the words."</p>
 
