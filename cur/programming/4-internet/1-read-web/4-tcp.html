@@ -37,8 +37,9 @@ color: #0D0;
   <p>The end-to-end principle gives routers a relatively simple task: figure out how to get a packet from one IP address to another, with the understanding that sometimes the packet will be lost. It's the computers at the endpoints, your computer and, usually, a big server computer, that do the work of establishing <em>reliable</em> transmission. This is an abstraction in which routers just run the Internet Protocol, allowing your computer to imagine that packets go directly from the client to the server. The client and server computers run the <strong>Transmission Control Protocol</strong> that guarantees reliability.</p>
 </div>
 <div class="forYouToDo" style="first">
-  <p>Load <a href="/bjc-r/prog/4-internet/TCP.xml">this project</a>.
+  <p>Load <a class="run" href="/bjc-r/prog/4-internet/TCP.xml">this project</a>.
   It provides a simulation of IP. You're going to write (a simplified) TCP based on it.</p>
+  <p><a class="run" href="/bjc-r/prog/4-internet/TCP.xml"><img src="/bjc-r/img/4-internet/TCP.png" alt="picture of TCP project stage"></a></p>
   <div class="endnote">
     <p>Click the green flag to empty the <code>incoming transmission</code> variables before each experiment.</p>
     <p>Click on a sprite to ask that character to send a message to the other one.</p>
@@ -55,6 +56,10 @@ color: #0D0;
     <img src="/bjc-r/img/4-internet/send-IP.png" alt="send IP packet () to (sprite)">.</p>
     <p>You will want to change the definition of <img src="/bjc-r/img/4-internet/transmit.png" alt="transmit (message) to (sprite)"> and the script in each sprite that starts with <img src="/bjc-r/img/4-internet/when-get-any.png" alt="when I receive (any message)"> so that messages are received reliably despite the limitations of IP packets.  In this simulation, the complete message is a text string, which is divided into packets each of which includes only one letter of the text.  (The division of a long message into pieces is realistic, but we are limiting the packets to one letter of the message so that we can have both short messages and lots of packets.  Normally the packet length is not so strictly limited.) <em>You may include non-text (<strong>header</strong>) information in a packet along with the one text character.</em>  A packet can include any kind of data: text, numbers, or lists.</p>
   <div class="forYouToDo">
+    <div class="endnote">
+      Note that on the stage there are two watchers, labelled "Alice incoming transmission" and "Bob incoming transmission."  But in the Variables palette you'll see the variable name "incoming transmission" without the sprite's name.  These are two different variables, one belonging to Alice and one belonging to Bob.  To make such a <em>sprite-local</em> variable, click the "for this sprite only" button when creating the variable:<br /><img src="/bjc-r/img/4-internet/sprite-local.png" width="289" height="165" alt="for this sprite only button"><br />
+      You'll have to make each variable twice: once for Alice and once for Bob. (Choose which sprite you're working on, as usual, by clicking on its picture in the sprite corral.)</div>
+      
     <ol start="4">
       <li>Solve the problem of packets arriving out of order.  That is, make it possible for the receiver to get the packets into the intended order.  This will require cooperation by both sender and receiver.</li>
       <li>Solve the problem of packets not arriving at all. Remember, you can't do this by eliminating the unreliability of <code>Send IP packet</code>.
@@ -62,8 +67,12 @@ color: #0D0;
     </ol>
   </div>
   <div class="takeNote">
-	<p>This simulation correctly represents the central issue about TCP, namely that it's possible, but complicated, to achieve reliable transmission as a layer of abstraction based on an unreliable underlying network.  But it omits many details.  For example, TCP simulates a <em>persistent</em> connection, as if the two endpoint computers were connected directly with wires, even though the real Internet uses packet switching.  Also, a computer can have several different TCP connections at once, and TCP has to direct each incoming packet to the correct (simulated) connection.  It does this by including in each packet header a <strong>port</strong> number that's different for each connection.  In setting up a TCP connection, the two endpoint computers start with an elaborate <strong>handshake</strong>, an interchange of messages including the assigned port numbers.</p>    
-	<p>TCP is not the only &quot;transport layer&quot; protocol.  Another common one is <strong>UDP</strong> (User Datagram Protocol) that also uses port numbers to keep different conversations separate, but does not try to guarantee reliable delivery.</p>
+	<p>This simulation correctly represents the central issue about TCP, namely that it's possible, but complicated, to achieve reliable transmission as a layer of abstraction based on an unreliable underlying network.  But it omits many details.  Here are some examples:</p>
+	<ul><li>TCP simulates a <em>persistent</em> connection, as if the two endpoint computers were connected directly with wires, even though the real Internet uses packet switching.</li>
+    <li>A computer can have several different TCP connections at once, and TCP has to direct each incoming packet to the correct (simulated) connection.  It does this by including in each packet header a <strong>port</strong> number that's different for each connection.  In setting up a TCP connection, the two endpoint computers start with an elaborate <strong>handshake</strong>, an interchange of messages including the assigned port numbers.</li>
+    <li>In our simulation, a packet either arrives correctly or doesn't arrive at all, but on the real Internet it's possible for a packet to arrive with erroneous data, so the real TCP has to check for that and request retransmission of packets with internal errors.</li>
+    <li>The earliest version of TCP turned out to be prone to network <strong>congestion</strong>, meaning that too many packets went back and forth in a short time for the network links to handle.  Therefore, modern TCP includes <strong>congestion control</strong> features to limit the rate at which packets are sent.</li></ul>
+	<p>TCP is not the only &quot;transport layer&quot; protocol.  Another common one is <strong>UDP</strong> (User Datagram Protocol) that also uses port numbers to keep different transmissions separate, but does not try to guarantee reliable delivery.</p>
 	<p>Finally, the top level of the protocol hierarchy is the <strong>application protocol</strong>. There are lots of these, one for each computer application. You're familiar by now with<strong> HTTP</strong>, the HyperText Transfer Protocol used by Web browsers. Others are <strong>FTP</strong>, the File Transfer Protocol used for sending files between computers, and <strong>IMAP</strong>, the Internet Message Access Protocol, by which the email program on your computer or phone gets your email from whatever server hosts your email account, such as gmail.com or yandex.com.</p>
   </div>
 
