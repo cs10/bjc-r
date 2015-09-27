@@ -61,5 +61,11 @@ color: #0D0;
       You have to make the transmission reliable<em> even though</em> IP is unreliable.  This, too, will require changing both sender and receiver.  (Hint: The sender will have to send a special end-of-transmission packet so that the receiver knows when to stop worrying about missing packets.)</li>
     </ol>
   </div>
+  <div class="takeNote">
+	<p>This simulation correctly represents the central issue about TCP, namely that it's possible, but complicated, to achieve reliable transmission as a layer of abstraction based on an unreliable underlying network.  But it omits many details.  For example, TCP simulates a <em>persistent</em> connection, as if the two endpoint computers were connected directly with wires, even though the real Internet uses packet switching.  Also, a computer can have several different TCP connections at once, and TCP has to direct each incoming packet to the correct (simulated) connection.  It does this by including in each packet header a <strong>port</strong> number that's different for each connection.  In setting up a TCP connection, the two endpoint computers start with an elaborate <strong>handshake</strong>, an interchange of messages including the assigned port numbers.</p>    
+	<p>TCP is not the only &quot;transport layer&quot; protocol.  Another common one is <strong>UDP</strong> (User Datagram Protocol) that also uses port numbers to keep different conversations separate, but does not try to guarantee reliable delivery.</p>
+	<p>Finally, the top level of the protocol hierarchy is the <strong>application protocol</strong>. There are lots of these, one for each computer application. You're familiar by now with<strong> HTTP</strong>, the HyperText Transfer Protocol used by Web browsers. Others are <strong>FTP</strong>, the File Transfer Protocol used for sending files between computers, and <strong>IMAP</strong>, the Internet Message Access Protocol, by which the email program on your computer or phone gets your email from whatever server hosts your email account, such as gmail.com or yandex.com.</p>
+  </div>
+
 </body>
 </html>
