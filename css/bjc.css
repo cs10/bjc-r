@@ -196,7 +196,7 @@ img.noshadow {
 
 .dialogue:before {content: "Thinking Out Loud";}
 
-.dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig) {
+.dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig):not(.todo) {
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 6em;
