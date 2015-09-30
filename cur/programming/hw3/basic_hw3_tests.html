@@ -12,14 +12,18 @@
 
    <body>
 
+<h3>How The Test Block Works</h3>
+<br>
 <p>We've provided a large number of blocks that you can use in HW3. You'll also need to fill in all of the gray blocks described in the spec. As mentioned in lecture, in this assignment we're going to use a new HoF called test to verify the correct function of the gray blocks that we build.
 
 <p>To understand how the testing block works, let's start by looking at some tests for blocks that are already completed.
 
-<p>Click on the "TESTER" sprite, and you'll see two example tests for the addition operation. The first block tests that 1 + 1 = 2. Try running it, and you shuold get back "true", since this test is correct. The second block performs two tests: One that 1 + 1 = 2, and one that 2 + 4 = 5. Try running it, and you shuold get the first test passes and the second test fails. 
+<p>Click on the "TESTER" sprite, and you'll see two example tests for the addition operation. The first block tests that 1 + 1 = 2. Try running it, and you shuold get back "true", since this test is correct. The second block performs two tests: One that 1 + 1 = 2, and one that 2 + 4 = 5. Try running it, and you should get the first test passes and the second test fails. 
 
 <p>In this specific case, the problem is not the addition operation, but the input/output relationships that were wrong. In other words, we wrote an intentionally buggy test so you could see what happens when there is an input/output mismatch. 
 
+<h3>Testing Homework 3</h3>
+<br>
 <p>Let's now turn to some tests of the blocks that we provided for HW3. Click on the "HW3 Lab" sprite, and you should see a test that looks like this at the top:
 
 
@@ -33,11 +37,15 @@
 
 <p>This test is a little trickier. Since we're testing a command block, we have to create a temporary variable to use that command block. In this case, the test verifies that if you set position (1, 4) to 2, that the actual value stored at that position is a 2. It also verifies that the value at position (1, 2) is just zero (since it hasn't been set). Again, if you run this test, you should get back "true" twice. Make sure that this test makes sense before proceeding.
 
-<p>Now let's start writing our own test fensure we understand the "rotated row for ___, ___ for size ___" block. This block is trickier to understand, so make sure to click the link in the HW3 spec under the "Description" column. Note that two of the three expected output values are blank. Your goal is to figure out what numbers go here so that the output is True. Try to fill in these numbers. DO NOT USE TRIAL AND ERROR! You will need to read the description of this block very carefully to understand what numbers you need to fill in. We recommend you use actually rotate a physical piece of paper to work out the answers. 
+<div class="alert-success" style="padding: 10px">
+	<h4>Do This:>/h4>
+	<br>
+	<p>Now let's start writing our own test fensure we understand the "rotated row for ___, ___ for size ___" block. This block is trickier to understand, so make sure to click the link in the HW3 spec under the "Description" column. Note that two of the three expected output values are blank. Your goal is to figure out what numbers go here so that the output is True. Try to fill in these numbers. DO NOT USE TRIAL AND ERROR! You will need to read the description of this block very carefully to understand what numbers you need to fill in. We recommend you use actually rotate a physical piece of paper to work out the answers.</p>
 
-<p>When you've identified the correct outputs for the "rotated row for ___, ___ for size ___" block, the test should say true three times.
+	<p>When you've identified the correct outputs for the "rotated row for ___, ___ for size ___" block, the test should say true three times.</p>
 
-<p>To ensure we feel comfortable writing tests entirely on our own, write a test for the "score of the number". Make sure to test at least at least 3 different values.
+	<p>To ensure we feel comfortable writing tests entirely on our own, write a test for the "score of the number". Make sure to test at least at least 3 different values.</p>
+</div>
 
    </body>
 </html>
