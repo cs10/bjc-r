@@ -1,19 +1,19 @@
-title: Testing and HW3
+title: Testing Code and 2048
 {
-h2: Introduction to HW3
-big-idea: Understand the essentials of HW3 and our new HoF: test.
+h2: Introduction to the game 2048
+big-idea: Understand the essentials of 2048 and our new HoF block: <code>test</code>.
 
 
 h2: Activities
-learning-goal: Understand the HW3 spec.
-learning-goal: Understand how the test block works.
+learning-goal: Understand the 2048 assignment spec.
+learning-goal: Understand how the <code>test</code> block works.
 learning-goal: Gain familiarity with the idea of test driven development.
-learning-goal: Write tests that you can use for HW3.
+learning-goal: Write tests that you can use for 2048.
 
 
-heading: HW3 and Tests
-   resource: Intro to HW3 [/bjc-r/cur/programming/2048-testing/intro_to_hw3.html]
-   resource: Basic HW3 Tests [/bjc-r/cur/programming/2048-testing/basic_hw3_tests.html]
+heading: 2048 and Tests
+   resource: Intro to 2048 [/bjc-r/cur/programming/2048-testing/intro_to_hw3.html]
+   resource: Basic 2048 Tests [/bjc-r/cur/programming/2048-testing/basic_hw3_tests.html]
    resource: Writing Tests  [/bjc-r/cur/programming/2048-testing/test_driven_development.html]
 
 }
