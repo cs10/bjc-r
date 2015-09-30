@@ -2,27 +2,27 @@
 
 
    <head>
-      
+
       <script src="/bjc-r/llab/loader.js"></script>
-      
+
       <title> Introduction to 2048</title>
-      
-   </head> 
+
+   </head>
 
 
    <body>
 
-<h3>How The Test Block Works</h3>
+<h3>How The <code>test</code> Block Works</h3>
 <br>
-<p>We've provided a large number of blocks that you can use in 2048. You'll also need to fill in all of the gray blocks described in the spec. As mentioned in lecture, in this assignment we're going to use a new HoF called test to verify the correct function of the gray blocks that we build.
+<p>We've provided a large number of blocks that you can use in 2048. You'll also need to fill in all of the gray blocks described in the spec. As mentioned in lecture, in this assignment we're going to use a new HoF called test to verify the correct function of the gray blocks that we build.</p>
 
-<p>To understand how the testing block works, let's start by looking at some tests for blocks that are already completed.
+<p>To understand how the testing block works, let's start by looking at some tests for blocks that are already completed.</p>
 
-<p>Click on the "TESTER" sprite, and you'll see two example tests for the addition operation. The first block tests that 1 + 1 = 2. Try running it, and you shuold get back "true", since this test is correct. The second block performs two tests: One that 1 + 1 = 2, and one that 2 + 4 = 5. Try running it, and you should get the first test passes and the second test fails. 
+<p>Click on the "TESTER" sprite, and you'll see two example tests for the addition operation. The first block tests that 1 + 1 = 2. Try running it, and you should get back <code>true</code> , since this test is correct. The second block performs two tests: One that <samp>1 + 1 = 2</samp>, and one that <samp>2 + 4 = 5</samp>. Try running it, and you should get the first test passes and the second test fails.</p>
 
-<p>In this specific case, the problem is not the addition operation, but the input/output relationships that were wrong. In other words, we wrote an intentionally buggy test so you could see what happens when there is an input/output mismatch. 
+<p>In this specific case, the problem is not the addition operation, but the input/output relationships that were wrong. In other words, we wrote an intentionally buggy test so you could see what happens when there is an input/output mismatch.</p>
 
-<h3>Testing Homework 3</h3>
+<h3>Testing 2048</h3>
 <br>
 <p>Let's now turn to some tests of the blocks that we provided for 2048. Click on the "2048 Lab" sprite, and you should see a test that looks like this at the top:
 
@@ -33,17 +33,17 @@
 
 <p>The next test should look like:
 
-<p><img border="0" src="/bjc-r/img/2048-testing/set_item_of_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+<p><img src="/bjc-r/img/2048-testing/set_item_of_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
 
-<p>This test is a little trickier. Since we're testing a command block, we have to create a temporary variable to use that command block. In this case, the test verifies that if you set position (1, 4) to 2, that the actual value stored at that position is a 2. It also verifies that the value at position (1, 2) is just zero (since it hasn't been set). Again, if you run this test, you should get back "true" twice. Make sure that this test makes sense before proceeding.
+<p>This test is a little trickier. Since we're testing a command block, we have to create a temporary variable to use that command block. In this case, the test verifies that if you set position (1, 4) to 2, that the actual value stored at that position is a 2. It also verifies that the value at position (1, 2) is just zero (since it hasn't been set). Again, if you run this test, you should get back <code>true</code> twice. Make sure that this test makes sense before proceeding.
 
-<div class="alert-success" style="padding: 10px">
-	<h4>Do These:</h4>
-	<p><b>First:</b> let's start writing our own test for <img src="/bjc-r/img/2048-testing/rotated_row.png">. This block is trickier to understand, so make sure to click the link in the 2048 spec under the "Description" column. Note that two of the three expected output values are blank. Your goal is to figure out what numbers go here so that the output is True. Try to fill in these numbers. DO NOT USE TRIAL AND ERROR! You will need to read the description of this block very carefully to understand what numbers you need to fill in. We recommend you actually rotate a physical piece of paper to work out the answers.</p>
+<div class="alert quoteGreen alert-success">
+  <h4><strong>For You To Do:</strong></h4>
+  <p><b>First:</b> let's start writing our own test for <img src="/bjc-r/img/2048-testing/rotated_row.png">. This block is trickier to understand, so make sure to click the link in the 2048 spec under the "Description" column. Note that two of the three expected output values are blank. Your goal is to figure out what numbers go here so that the output is True. Try to fill in these numbers. DO NOT USE TRIAL AND ERROR! You will need to read the description of this block very carefully to understand what numbers you need to fill in. We recommend you actually rotate a physical piece of paper to work out the answers.</p>
 
-	<p>When you've identified the correct outputs for the <img src="/bjc-r/img/2048-testing/rotated_row.png"> block, the test should say true three times.</p>
+  <p>When you've identified the correct outputs for the <img src="/bjc-r/img/2048-testing/rotated_row.png"> block, the test should say true three times.</p>
 
-	<p><b>Second:</b> to ensure we feel comfortable writing tests entirely on our own, write a test for  <img src="/bjc-r/img/2048-testing/score_tile.png">. Make sure to test at least at least 3 different values.</p>
+  <p><b>Second:</b> to ensure we feel comfortable writing tests entirely on our own, write a test for  <img src="/bjc-r/img/2048-testing/score_tile.png">. Make sure to test at least at least 3 different values.</p>
 </div>
 
    </body>
