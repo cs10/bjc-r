@@ -12,8 +12,8 @@ learning-goal: Write tests that you can use for HW3.
 
 
 heading: HW3 and Tests
-   resource: Intro to HW3 [/bjc-r/cur/programming/hw3/intro_to_hw3.html]
-   resource: Basic HW3 Tests [/bjc-r/cur/programming/hw3/basic_hw3_tests.html]
-   resource: Writing Tests  [/bjc-r/cur/programming/hw3/test_driven_development.html]
+   resource: Intro to HW3 [/bjc-r/cur/programming/2048-testing/intro_to_hw3.html]
+   resource: Basic HW3 Tests [/bjc-r/cur/programming/2048-testing/basic_hw3_tests.html]
+   resource: Writing Tests  [/bjc-r/cur/programming/2048-testing/test_driven_development.html]
 
 }
