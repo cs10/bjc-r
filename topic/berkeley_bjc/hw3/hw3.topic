@@ -1,0 +1,18 @@
+title: Testing and HW3
+{
+h2: Introduction to HW3
+big-idea: Understand the essentials of HW3 and our new HoF: test.
+
+
+h2: Activities
+learning-goal: Understand the HW3 spec.
+learning-goal: Understand how the test block works.
+learning-goal: Gain familiarity with the idea of test driven development.
+learning-goal: Write tests that you can use for HW3.
+
+
+heading: HW3 and Tests
+   resource: Using the LIST block to make a list [/bjc-r/cur/programming/hw3/intro_to_hw3.html]
+   resource: What good are lists?  [/bjc-r/cur/programming/hw3/test_driven_development.html]
+
+}
