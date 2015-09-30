@@ -1,32 +1,73 @@
 <html>
-
-
    <head>
-      
       <script src="/bjc-r/llab/loader.js"></script>
-      
       <title> Introduction to 2048</title>
-      
-   </head> 
+   </head>
 
 
    <body>
+     <p>
+       <b>Reminder that you can work on 2048 in pairs.</b> Your partner (if any)
+       that you work with in lab today does not necessarily need to be the same partner that you work with on 2048 throughout the next week and a half.
 
-<p><b>Reminder that you can work on 2048 in pairs.</b> Your partner (if any) that you work with in lab today does not necessarily need to be the same partner that you work with on 2048 throughout the next week and a half.
+       <br>
+       <p>
+         Before beginning this lab, read over the <a href="http://cs10.org/fa15/assign.html?//docs.google.com/document/d/186x49Yd05JKztSwlSNv0S82Jy5w5ql_MVDLTZo-_mPQ/pub">spec for 2048</a> up until you get to <b>"The Assignment"</b>. Stop there.
+       </p>
 
-<p><br>Before beginning this lab, read over the <a href="http://cs10.org/fa15/assign.html?//docs.google.com/document/d/186x49Yd05JKztSwlSNv0S82Jy5w5ql_MVDLTZo-_mPQ/pub">spec for 2048</a> up until you get to <b>"The Assignment"</b>. Stop there.
+       <p>
+         Now that you've read over the basics of the assignment, let's refine our understanding. Begin this lab by opening up the starter file. Ignore the existing code for now, you'll be looking at this code after today's lab is complete. Add a script to the scripting area with the following code (the "update display for" block is under Looks). Run it, and you should see a 2 appear gloriously in the top right corner (position 1, 4).
+        </p>
+           <p><img src="/bjc-r/img/2048-testing/simple_board_setup_script.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
 
-<p>Now that you've read over the basics of the assignment, let's refine our understanding. Begin this lab by opening up the starter file. Ignore the existing code for now, you'll be looking at this code after today's lab is complete. Add a script to the scripting area with the following code (the "update display for" block is under Looks). Run it, and you should see a 2 appear gloriously in the top right corner (position 1, 4).
+           <div class="alert quoteBlue alert-info">
+             <h4><strong>For You To Do:</strong></h4>
+             <p>
+               Modify the script above so that it displays the board pictured below. This is an opportunity for you to use the <img src="/bjc-r/img/2048-testing/set_item.png" /> block and learn how the grid works for the 2048 game.
+             </p>
+             <img src="/bjc-r/img/2048-testing/example_board.png" alt="this should be a board" style="width: 10em"/>
 
-<p><img border="0" src="/bjc-r/img/2048-testing/simple_board_setup_script.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+             <br /><br />
+            <div class="assessment-data"  type="multiplechoice"  maxchoices="1"
+                responseIdentifier="2048" hasinlinefeedback="true"  shuffle="true">
+                <div class="prompt">
+                    <p>
+                      In the above image, what is the position of the <strong>16</strong> tile?
+                    </p>
+                </div>
 
-<div class="alert-success" style="padding: 10px">
-	<h4>Do this:</h4>
-	<p>
-		Modify the script above so that it displays the board pictured below. This is an opportunity for you to use the <img src="/bjc-r/img/2048-testing/set_item.png"> block and learn how the grid works for the 2048 game.
-	</p>
-	<img src="/bjc-r/img/2048-testing/example_board.png" alt="this should be a board" style="width: 10em"/>
-</div>
+                <div class="choice" identifier="c1">
+                    <div class="text">(2, 3)</div>
+                    <div class="feedback">
+                        Remember, that we specify positions in the format (row, column)
+                    </div>
+                </div>
 
+                <div class="choice" identifier="c2">
+                    <div class="text">(2, 1)</div>
+                    <div class="feedback">
+                        Consider what the starting value of the left box is. Is it 0 or 1?
+                    </div>
+                </div>
+
+                <div class="choice" identifier="c3">
+                    <div class="text">(3, 2)</div>
+                    <div class="feedback">
+                        Correct!
+                    </div>
+                </div>
+
+                <div class="choice" identifier="c4">
+                    <div class="text">(2, 2)</div>
+                    <div class="feedback">
+                        Which corner of the board is (1, 1)? Start counting from there.
+                    </div>
+                </div>
+
+                <div class="responseDeclaration" identifier="2048">
+                  <div class="correctResponse" identifier="c3"></div>
+                </div>
+              </div>
+            </div>
    </body>
 </html>
