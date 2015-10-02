@@ -50,7 +50,7 @@
 <br /><br />In addition to encoding/decoding as an application of map as partial anticipation of U4, I’d also suggest turning a string into a list of lists containing the characters (or their Unicode) and the order in which they appear in the original message.  The utility of that won’t be apparent now, but is a decent exercise.  It will be useful in U4 (but I would not say that now) for students ever to have tried to do such a thing. Right now, if there’s a way to make it more “motivated” and less arbitrary, please do, but I could be satisfied even with just treating it as an exercise.
         </div>
         <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
-        <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. 
+        <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. </p>
         
         <div class="forYouToDo" id="first">
             <ol>
@@ -63,8 +63,12 @@
                     
         <h3>Acronym Generator</h3>
         <div class="todo">PG: Acronym is fine.   Just clarify.  Return a word. </div>
-        <p>With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once.</i> You don't have to think, "Find the first letter of the first word and operate on it, then do the next letter until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word" and so on.</p>
-        <p>You can think, "check the first letters of all the words."</p>
+        <p>An <strong>acronym</strong> is a "word" made up of the first letters of the words in a phrase. For example, the acronym for United States of America is USA, and a blog that summarizes the activities of the Supreme Court of the United States is named using the acronym SCOTUSblog. Sometimes, an acronym uses only the capitalized words in a phrase; for example, "Beauty and Joy of Computing" becomes "BJC," not "BaJoC."</p>
+        <p>In this project, you will create a reporter block that takes a phrase as input and reports an acronym made <em>only from the capitalized words</em>.</p>
+        <p>It should work like this:<br/>
+                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
+                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> </p>
+        
 
         <div class="todo">
             <ul>
@@ -81,14 +85,15 @@
 </a></div>
         <div class="forYouToDo">
             <ol start="4">
-                <li>
-					<div class="sidenoteBig">An <strong>acronym</strong> is the first letters of every capitalized word in a phrase. </div>
-	                <div class="sidenote"><code>map</code>, <code>keep</code>, and <code>combine</code> will be useful here.</div>
-                    Create a reporter  that takes a phrase as input and reports its acronym, made from the first letters of the capitalized words.  It should work like this:<br/>
-                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
-                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> 
-                    <!--<img border="0" src="/bjc-r/img/3-lists/acronym_TTY.png" title="BFF" alt="BFF"  />-->
-			        <br clear="all"><div class="takeNote"><img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />There are many ways to turn a string like "Beauty and Joy of Computing" into a list of words. One way is to use this green block: <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  /> (pronounced "sentence to list"). It's in the Tools library.</div>
+                <li>The steps below suggest <em>one</em> way to create a reporter that takes a phrase as input and reports an acronym composed of the first letters of the capitalized words. 
+                <ol>
+                    <li>The input phrase is a string of characters. So that you don't have to look at every character of the string to find which ones are the first letters of words, <span class="snap">snap</span> lets you split that string at every space-character and convert it to a list of words. There are many ways. One way is to use <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  />. It's in the Tools library. <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+                    </li>
+                    <li> <code>map</code>, <code>keep</code>, and <code>combine</code> will help you operate on the all items of that list without having to think about stepping through the list item by item. You have choices about your next step. You could use map to generate a new list containing only the first letters of the words in your input list, and <em>then</em> keep only those that are capital letters.  <strong>OR</strong>, you could keep only the words that begin with capitals and <em>then</em> create a list containing only the first letters of those words.
+                    </li>
+                    <li>Last, you need to convert that list back into a string.
+                    </li>
+                </ol>
                 </li>
             </ol>
         </div>
