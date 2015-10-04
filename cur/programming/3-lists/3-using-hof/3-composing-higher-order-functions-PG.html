@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 3: Combining List Operations</title>
+    </head>   
+      
+	<body>
+        <h2>Composing Higher-Order Functions</h2>
+
+        <div class="todo">I'm wanting an introductory sentence or two briefly introducing the ideas of this page... --MF</div>
+        <div class="todo">Until we get to character encoding, this again feels like it’s a bit arbitrary. It’s exactly the mistake I made in Unit 2.  I loved the idea of building a bunch of useful calculation tools, and it’d be great if kids felt so enabled that they could use Snap to do their mathematics homework, or at least the calculational part of it.  But I’m just not seeing the getting started working that way.  The sum of the squares does interest me, if we are doing a mathematical investigation, but we’re not: just making a procedure that does that feels unmotivated.  And the kids on page 2 are also trying to figure out what to do with the blocks.  I’d like us to solve that a bit better and give some varied and good examples.  Brian??  You are needed here.  
+<br /><br />
+
+</div>
+
+        <!--<h3>Transcribing Musical Notes</h3>
+        <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
+        
+        <div class="forYouToDo">
+            <ol start="3">
+                <div class="todo">UNFINISHED</div>
+                <li>
+                	Create a reporter block that<a name="transpose" class="anchor">&nbsp;</a>transposes a list of sounds, where each list item is a list with the sound's note and duration. Your block should take as input a list with the song data and a number incidating how much to transpose the song.<br />
+					<div class="sidenote"><code>map</code> will be helpful here. </div>	
+                	<img class="indent" src="/bjc-r/img/3-lists/transpose-by.png" alt="transpose {} by ()" title="transpose {} by ()" />
+                </li>
+                <li>Musical scales are sets of notes ordered by pitch. For example, this is the C Major scale and the Snap<em>!</em> note numbers:
+                <table>
+                    <tr>
+                        <td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>A</td><td>B</td>
+                    </tr>
+                    <tr>
+                        <td>60</td><td>62</td><td>64</td><td>65</td><td>67</td><td>69</td><td>71</td>
+                    </tr>
+                </table>
+                </li>
+                <li>create a block that plays a scale.</li>
+                <li>Create a reporter that generates an <a name="" class="anchor">&nbsp;</a>arpeggio of a scale...</li>
+                <li>here is a block that plays a chord...</li>
+                <li></li>
+                <li></li>
+            </ol>
+        </div>-->
+        
+        
+        <h3>Character Encoding</h3>
+		<div class="todo">Character encoding.  Good.  It recalls stuff the kids did earlier (in U2?) but bumps it up a notch.  I’d bump it up one more notch.  Here’s a good place to map adding some number to every number in a list.  Take an input message, tear it into letter-sized chunks, get the unicode, add 1, reconstitute it as a string.  Do reverse to decode.  Good way also to anticipate something in U4.
+<br /><br />In addition to encoding/decoding as an application of map as partial anticipation of U4, I’d also suggest turning a string into a list of lists containing the characters (or their Unicode) and the order in which they appear in the original message.  The utility of that won’t be apparent now, but is a decent exercise.  It will be useful in U4 (but I would not say that now) for students ever to have tried to do such a thing. Right now, if there’s a way to make it more “motivated” and less arbitrary, please do, but I could be satisfied even with just treating it as an exercise.
+        </div>
+        <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
+        <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar. </p>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+				<li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
+                <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
+				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
+                <li>Use those blocks to decode this message:<br /><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+            </ol>
+        </div>
+                    
+        <h3>Acronym Generator</h3>
+        <div class="todo">PG: Acronym is fine.   Just clarify.  Return a word. </div>
+        <p>An <strong>acronym</strong> is a "word" made up of the first letters of the words in a phrase. Sometimes, only the capitalized words or important words are used: for example, the acronym for United States of America is USA, not USoA. Other times, all the words are used: for example, a blog that summarizes the activities of the Supreme Court of the United States is named using the acronym SCOTUSblog. Texting often abbreviates phrases the same way: LMK for &quot;let me know&quot; or LOL for &quot;laughing out loud.&quot;</p>
+        <p>In this project, you will create a reporter block that takes a phrase as input and reports an acronym made <em>only from the capitalized words</em>.</p>
+        <p>It should work like this:<br/>
+                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
+                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> </p>
+        
+
+        <div class="todo">
+            <ul>
+                <li>BH: We need a way to separate philosophical questions that apply across the curriculum from local errors, and start writing something like Mary's style guide but at a higher level of abstraction, listing decisions we make about the overall tone of the curriculum, things like what a "new" project is and how we should say what that wants to say.<br />
+           		</li>
+                <li><strong>GH feedback:</strong> shouldn't the acronym block return a "sentence" and not a list?<br />from BH: A word, actually (no spaces), but certainly not a list! +1</li>
+                <li><strong>Feedback from Michael Ball:</strong> shouldn't acronym be an operator block?</li>
+				<li>Why is this block variable-colored?  It should be Operator green.</li>
+            </ul>
+        </div>
+
+        <div class="commentBig"><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+</a></div>
+        <div class="forYouToDo">
+            <ol start="4">
+                <li>The steps below suggest <em>one</em> way to create a reporter that takes a phrase as input and reports an acronym composed of the first letters of the capitalized words. 
+                <ol>
+                    <li>The input phrase is a string of characters. So that you don't have to look at every character of the string to find which ones are the first letters of words, <span class="snap">snap</span> lets you split that string at every space-character and convert it to a list of words. There are many ways. One way is to use <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  />. It's in the Tools library. <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+                    </li>
+                    <li>You have choices about the next step. You could use <code>map</code> to generate a new list containing only the first letters of the words in your input list, and <em>then</em> <code>keep</code> only those that are capital letters.  <strong>OR</strong>, you could <code>keep</code> only the words that begin with capitals and <em>then</em> use <code>map</code> to create a list containing only the first letters of those words.
+                    </li>
+                    <li>Last, you need to convert that list back into a string.
+                    </li>
+                </ol>
+                </li>
+            </ol>
+        </div>
+         
+                
+        <div class="takeItFurther">
+            <ol type="A">
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
+                <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+                <li>
+                	Here are some made-up data from 8 days of sales at an ice cream stand: <br />
+                    <div class="todo">
+                    	<ul>
+                        	<li>We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</li>
+                            <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
+                        </ul>
+                    </div>
+		    		<div class="commentBig">
+                    	<ul>
+                        	<li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
+                            <li>Mary: I don't mind it here as a TIF. I made some edits.</li>
+                            <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
+						</ul>
+					</div>
+                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
+					Each of the smaller lists represents one day's data at the stand:
+					<ol style="list-style:decimal;">
+                        <li>The first number is the day's high temperature (in Fahrenheit).</li>
+                        <li>The second is the number of Popsicles sold.</li>
+                        <li>The third number is the number of ice cream cones sold.</li>
+                    </ol>
+                    Imagine that popsicles sell for $2.75 each and ice cream cones sell for $5.75 each. 
+                    <ol style="list-style:lower-roman;">
+                        <div class="sidenote"><strong>Analyze</strong>: Based on these figures, how many employees would you expect this business to have?</div>
+                    	<li>Build a single block that calculates the stand's total sales in these eight days.</li>
+						<li>Build a block that calculates the stand's total sales in a year.</li>
+                        <li>Build a block that calculates the total sales on days when the high temperature was over 80 degrees Fahrenheit.</li>
+                        <li>Build a block that compares the sales on days when the high was over 80&deg;F to the sales on days when it was lower than 80&deg;F.</li>
+                    </ol>
+                </li>
+        	</ol>
+        </div>
+
+<!--
+<p><br />
+  Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br />
+<img border="0" title="map (() * ()) over list" alt="map (() * ()) over list" src="/bjc-r/img/list/hof/mapsq.png"/>
+
+<br /><br />
+Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <code>keep</code> problem:<br />
+<img border="0" title="keep items such that <(() mod (2)) = (1)> from list..." alt="keep items such that <(() mod (2)) = (1)> from list..." src="/bjc-r/img/list/hof/keepodds.png"/>
+
+<br /><br />
+But what if we want the squares of the odd numbers? This is neither a simple <code>map</code> nor a simple <code>keep</code>, but combines aspects of both. And we can solve the problem by using the value reported by the <code>keep</code> as the list input to <code>map</code>:<br />
+<img border="0" title="map square over keep odds from list" alt="map square over keep odds from list" src="/bjc-r/img/list/hof/sq-odds.png"/>
+
+<br />
+Don't be confused about which inputs do and don't have rings. It's the square <u>function</u> and the are-you-odd? <u>function</u> that we use as the first input to each higher order function. But, even though <code>keep</code> itself is a function, it's <i>the <u>list</u> reported by <code>keep </code></i>that we're using as the second input to <code>map</code>.
+
+</p><br />We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
+<br />   - Select only the words with five or more letters.<br />   - Make a list of the first letters of the words.
+<br />Review those activities if you don't remember how to solve those problems.
+
+<p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
+
+</p>
+To translate from a text string to a list of words, <span class="snap">snap</span>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br />
+<img border="0" src="/bjc-r/img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
+<br />As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
+
+<p>Once we have the list, we can use the tools we've already built to get a list of the first letters of the long words. What we want, though, is a single word as the reported value. We can use one of the higher order functions to join the letters into a string.
+
+</p><b>Try this: </b>Should we use <code>map</code>, <code>keep</code>, or <code>combine</code> for this purpose?
+
+<p>Here's the final result:<br />
+<img border="0" src="/bjc-r/img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br />
+<img border="0" src="/bjc-r/img/list/hof/bad-bjc.png" alt="acronym reports BC instead of BJC" title="acronym reports BC instead of BJC"/>
+<br />Oops! The word &quot;Joy&quot; is shorter than five letters, but it's still an important word in the acronym. We need a better algorithm.
+
+</p><br /><br /><b>Try this: <br /></b>
+Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br />
+<img border="0" src="/bjc-r/img/list/hof/good-bjc.png" alt="acronym reports BJC" title="acronym reports BJC"/><p>
+<img border="0" src="/bjc-r/img/list/hof/ucb-acro.png" alt="acronym of UCB" title="acronym of UCB"/></p>
+<img border="0" src="/bjc-r/img/list/hof/byob-acro.png" alt="BYOB" title="BYOB"/><br /><br />  
+-->
+
+   </body>
+</html>
