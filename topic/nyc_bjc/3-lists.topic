@@ -44,7 +44,7 @@ heading: Programming Lab 2: Three Key List Operations
 	quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
 
 heading: Programming Lab 3: Combining List Operations
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
+	//resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
 	resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
 	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
 
