@@ -10,6 +10,8 @@
         <h2>Composing Higher-Order Functions</h2>
 
 		<div class="todo">Paul, I had made these edits before I saw your note to "Replace page 2-composing with <a href="http://localhost/bjc-r/cur/programming/3-lists/3-using-hof/3-composing-higher-order-functions-PG.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">the one [you, Paul] just sent</a>." I don't see what you did there... --MF</div>
+        <div class="todo">Oh, but now we've crashed; I'll clean up... --MF</div>
+        
         <div class="todo">Need to put in these: <div class="newProject"><span class="text">"U1L1-Name"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div>
  and <div class="saveAs"><span class="text">"U1L2-Name"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Name" title="Save your work as U1L2-Name" /></div>
 and <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> --MF</div>
@@ -109,11 +111,21 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
 
             
         <h3>Acronym Generator</h3>
+<<<<<<< HEAD
         <div class="todo">
         Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br />
         </div>
         <p>With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once.</i> You don't have to think, "Find the first letter of the first word and operate on it, then do the next letter until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word" and so on.</p>
         <p>You can think, "check the first letters of all the words."</p>
+=======
+        <div class="todo">PG: Acronym is fine.   Just clarify.  Return a word. </div>
+        <p>An <strong>acronym</strong> is a "word" made up of the first letters of the words in a phrase. For example, the acronym for United States of America is USA, and a blog that summarizes the activities of the Supreme Court of the United States is named using the acronym SCOTUSblog. Sometimes, an acronym uses only the capitalized words in a phrase; for example, "Beauty and Joy of Computing" becomes "BJC," not "BaJoC."</p>
+        <p>In this project, you will create a reporter block that takes a phrase as input and reports an acronym made <em>only from the capitalized words</em>.</p>
+        <p>It should work like this:<br/>
+                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
+                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> </p>
+        
+>>>>>>> origin/gh-pages
 
 		<div class="sidenoteBig">An <strong>acronym</strong> is the first letters of every capitalized word in a phrase. For example, SUNY is an acronym for State University of New York.</div>
         <p>Imagine, we want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. </p>
@@ -132,6 +144,7 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
         </div>
 
         <div class="forYouToDo">
+<<<<<<< HEAD
             <ol start="6">
                 <li>
 	                <div class="sidenote"><code>map</code>, <code>keep</code>, and <code>combine</code> will be useful here.</div>
@@ -151,6 +164,18 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
                             Review those activities if you don't remember how to solve those problems.
                         </div>
                     </div>
+=======
+            <ol start="4">
+                <li>The steps below suggest <em>one</em> way to create a reporter that takes a phrase as input and reports an acronym composed of the first letters of the capitalized words. 
+                <ol>
+                    <li>The input phrase is a string of characters. So that you don't have to look at every character of the string to find which ones are the first letters of words, <span class="snap">snap</span> lets you split that string at every space-character and convert it to a list of words. There are many ways. One way is to use <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  />. It's in the Tools library. <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+                    </li>
+                    <li> <code>map</code>, <code>keep</code>, and <code>combine</code> will help you operate on the all items of that list without having to think about stepping through the list item by item. You have choices about your next step. You could use map to generate a new list containing only the first letters of the words in your input list, and <em>then</em> keep only those that are capital letters.  <strong>OR</strong>, you could keep only the words that begin with capitals and <em>then</em> create a list containing only the first letters of those words.
+                    </li>
+                    <li>Last, you need to convert that list back into a string.
+                    </li>
+                </ol>
+>>>>>>> origin/gh-pages
                 </li>
             </ol>
         </div>
