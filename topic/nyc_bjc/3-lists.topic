@@ -38,9 +38,9 @@ heading: Programming Lab 1: Introduction to Lists
 
 heading: Programming Lab 2: Three Key List Operations
 	resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
-	resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
-	resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
-	resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
+	resource: <code>Map</code> [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
+	resource: <code>Keep</code> [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
+	resource: <code>Combine</code> [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
 	quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
 
 heading: Programming Lab 3: Combining List Operations
