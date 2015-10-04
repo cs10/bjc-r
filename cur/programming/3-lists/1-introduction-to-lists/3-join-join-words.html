@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+    
+    <body>
+    	<h2><code>Join</code> and <code>Join Words</code></h2>
+        <div class="todo">
+        	<ul>
+            	<li>Formerly "Sentence Builder" --MF</li>
+                <li>PG wrote in an email from NYC PD: "Miscellaneous:  Lists project Lab 1 Sentence Builder needs more scaffold." That's all he said... perhaps he can clarify?<ul><li>Is this better now, Paul? --MF</li></ul></li>
+                <li>What kind of support would be needed for ELLs here? --MF</li>
+
+            </ul>
+        </div>
+   
+		<p>The <code>join</code> block connects strings of characters given as input without adding spaces, like this: <img class="indent" src="/bjc-r/img/3-lists/join_elephant.png" alt="join (the) (elephant) (climbs)" title="join (the) (elephant) (climbs)"></p>
+        <p>The <code>join words</code> block does the same and adds a space between its inputs, like this: <img class="indent" src="/bjc-r/img/3-lists/joinwords_elephant.png" alt="join words (the) (elephant) (climbs)" title="join words (the) (elephant) (climbs)"></p>
+		<div class="sidenoteBig">This page is designed to clarify English grammar. Look up anything you want to understand better, and use the blue feedback button in the lower right to offer suggestions for improvment.</div>
+        <p>On this page, you'll use abstraction to create a "Sentence Builder" project that builds complicated sentences like "the little elephant runs happily around the wise pizza" by joining different parts of speech: nouns, verbs, adjectives, articles, possessive pronouns, adverbs, prepositions, etc. </p>
+        
+        <div class="takeNote">Recall, abstraction is hiding the complexity of a program by writing procedures to do specific parts of the task (like writing a program to draw one tree and then calling that program multiple times to draw a forest).</div>
+        
+        <div class="forYouToDo" id="first">
+			<ol>
+				<li>
+					<div class="sidenote">There are three articles in English: "the", "a", and "and".</div>
+                	Click on the script below to load it in <span class="snap">snap</span><br />
+                    <a class="run" href="/bjc-r/prog/3-lists/U3L1-SentenceBuilder.xml"><img src="/bjc-r/img/3-lists/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></a> <br />
+                    Feel free to change these lists to use your own nouns, verbs, etc.
+				</li>
+				<div class="endnote">There are many posessive pronouns including: "my", "your", "her", "his", "its", "our", "their". (Actually, those are just some possessive adjectives. Other posessive pronouns include "whose" and absolute posessive pronouns like "mine", "yours", and "ours", etc. But those work differently in a sentence.)</div>
+            </ol>
+        </div>
+               
+        
+        <div class="dialogue">
+            <div class="stagedir">Alphie and Betty are trying to use the lists of words to build sentences.</div>
+            <div><span>Betty:</span> The sentence "the elephant climbs" is just one specific example. Let's build a block that joins any article or possessive pronoun with a noun and a verb.</div>
+                <div class="stagedir">They make: <img border="0" src="/bjc-r/img/3-lists/joinwords_wholelists.png" alt="join words(articles, nouns, verbs)" title="join words(articles, nouns, verbs)"></div>
+            <div><span>Alphie:</span> Looks good to me. Let's run it and see what happens.</div>
+                <div class="stagedir">Betty clicks and they see: <img class="inline" src="/bjc-r/img/3-lists/joinwords_wholelistsresult.png" alt="all articles nouns verbs joined" title="all articles nouns verbs joined"></div>
+            <div><span>Betty:</span> What? Oh, these are <em>all</em> the words in those lists. We want just one item from each of the three lists.</div>
+        </div>
+        
+        <div class="forYouToDo">
+            <ol start="2">  
+                <li>Fix their script so that it selects one <em>random</em> item from each of the three lists and puts spaces between the words, and put the script in a reporter called <img class="inline" src="/bjc-r/img/3-lists/simple-sentence.png" alt="green 'simple sentence' reporter block" title="green 'simple sentence' reporter block">.</li>
+                	<div class="sidenote">These phrases will be grammatically correct, but they won't necessarily make sense. For example, <code>noun phrase</code> might generate &quot;a tired pizza.&quot;</div>
+                    	<li>
+              				Make three other reporters that report different kinds of phrases:
+                            <ol>
+                                <li><img border="0" src="/bjc-r/img/3-lists/noun_phrase.png" alt="green noun phrase reporter block" title="green noun phrase reporter block"> should join <em>one</em> article (or possessive pronoun) with <em>one</em> adjective and <em>one</em> noun to create phrases like "the little boy", "a green giraffe", or "our old sandwich." </li>
+                                <li><img border="0" src="/bjc-r/img/3-lists/prep_phrase.png" alt="green prepositional phrase reporter block" title="green prepositional phrase reporter block"> should join <em>one</em> preposition with one <code>noun phrase</code> to create phrases like "near the little boy" or "over a wise pizza" </li>
+								<div class="takeNote">Use <em>abstraction</em> to build the preposition phrase block. Instead of reporting a preposition and then an article and then an adjective and then a noun, you can just report a preposition together with the <code>noun phrase</code> block you've already built.</div>
+                                <li><img border="0" src="/bjc-r/img/3-lists/verb_phrase.png" alt="green verb phrase reporter block" title="green verb phrase reporter block"> should join a verb and an adverb to create phrases like "jumps sadly", "naps quickly", or "thinks sleepily."</li>
+                            </ol>
+                        </li>
+                        <div class="sidenote"> Use abstraction.</div>
+                        <li>Then, make a reporter <img class="inline" src="/bjc-r/img/3-lists/complex-sentence.png" alt="green 'complex sentence' reporter block" title="green 'complex sentence' reporter block"> that joins one noun phrase with one prepositional phrase and one verb phrase.</li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss with your partner how your complex sentence builder demonstrates abstraction.<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /></li>
+            </ol>
+        </div>
+        
+    
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>Create a more flexible sentence builder. Some ideas to try:
+                    <ul style="list-style:lower-roman;">
+                        <li>Noun phrases don't always have to have one adjective. They can have none or two, etc. </li>
+                        <li>Find a way to create questions. The sentence could start with "Why does", "Did", "How did", etc. These are called "<a href="https://www.google.com/webhp#q=interrogative%20relative%20adverbs" target="_blank">interrogative &amp; relative adverbs</a>." </li>
+                        <div class="endnote">You'll want to create a <code>verb phrase question form</code> block, a version of <code>verb phrase</code> that uses the question form of the verb (usually, that just requires taking the "s" off the verb). </div>
+                        <div class="todo">I want to give them a name for the reporter. How is this? Can someone who is better at grammar than me am please help? ;) MF</div>
+                        <li>Occasionally include people's names instead of a <code>noun phrase</code>. So, instead of something like "my silly elephant", the program could sometimes use "Alfred" or some other names. </li>
+                        <div class="sidenoteBig">Your old Snap<em>!</em> project should be called "U2Lab1-Plural".</div>
+                        <li>Use your <code>plural</code> block from <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Unit 2</a> to let your nouns sometimes be plural. Your program will need to keep track of when it makes a plural noun so that it can fix the verb to agree.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+        
+        <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+        
+        
+   </body>
+</html>
