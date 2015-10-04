@@ -45,6 +45,7 @@ heading: Programming Lab 2: Three Key List Operations
 
 heading: Programming Lab 3: Combining List Operations
 	//resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
+	resource: Processing List Data [/bjc-r/cur/programming/3-lists/3-using-hof/1-processing-data-lists.html]
 	resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
 	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
 
