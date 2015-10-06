@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 4: Tabular Data</title>
+    </head> 
+    
+    <body>
+    	<h2>Magic Squares</h2>
+        <div class="todo">FROM PAUL:  I would include magic squares as a follow-up, omitting the current FYtD page 1 problem 1, if it is possible to gamify it. As it stands, even at the end, the only thing it does is test to see whether a given list (where did that come from?) is a magic square.  Perhaps allowing people to rearrange a set of consecutive numbers 0-8 or 1-9 or 1, 3, 5, 7… to try to make a magic square would be fun. The interaction could be much like TTT.  Then the program checks to see if you’ve done it.  ??? --PG</div>
+        <p>In this lab, you will write <img src="/bjc-r/img/3-lists/isamagicsquare_block.png" alt="green predicate: is a magic square?" title="green predicate: is a magic square?" /> that reports whether or not a set of numbers forms a <em>magic square</em>. In a magic square, the sum of the numbers in each row, column, and diagonal must be equal.</p>
+        <p> The data in this list: <img src="/bjc-r/img/3-lists/square_12_13_14.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"> corresponds to this 3-by-3 grid of numbers:<br /> <img class="indent" border="0" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16">
+        <!--<table border="1" width=80px; height=50px; align="center" text-align="center"> <!-- CSS? -->
+        <!--    <tr>
+        <td style="text-align:center">12</td>
+        <td style="text-align:center">13</td>
+        <td style="text-align:center">14</td>
+        </tr>
+        <tr>
+        <td style="text-align:center">10</td>
+        <td style="text-align:center">18</td>
+        <td style="text-align:center">11</td>
+        </tr>
+        <tr>
+        <td style="text-align:center">17</td>
+        <td style="text-align:center">15</td>
+        <td style="text-align:center">16</td>
+        </tr>
+        </table>-->
+        </p>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>
+                    <div class="sidenote">Don't try to code the block yet, just decide using the fact that the sum of the numbers in each row, column, and diagonal must be equal.</div>For each of these, decide whether <code>is () a magic square?</code> should report <code>true</code> or <code>false</code>.
+                    <ol>
+                        <li> <img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /> </li>
+                        <li> <img src="/bjc-r/img/3-lists/is80_10_60magic.png" alt="is 80,10,60,30,50,70,40,90,20 a magic square?" title="is 80,10,60,30,50,70,40,90,20 a magic square?" /> </li>
+                        <li> <img src="/bjc-r/img/3-lists/is17_16_21magic.png" alt="is 17,16,21,22,18,14,15,20,19 a magic square?" title="is 17,16,21,22,18,14,15,20,19 a magic square?" /> </li>
+                        <li> <img src="/bjc-r/img/3-lists/is10_10_10magic.png" alt="is 10,10,10,10,10,10,10,10,10 a magic square?" title="is 10,10,10,10,10,10,10,10,10 a magic square?" /> </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+		<p>Now that you've had some experience deciding what makes something a magic square, it's time to write an algorithm.</p>
+
+    	<div class="forYouToDo">
+            <ol start="2">
+                <li> <i>Using as much detail as possible</i>, you and your partner should <em>each</em> write down&mdash;in words, not in code&mdash;an algorithm that you can use to decide whether or not a list of 9 numbers forms a magic square.</li>
+                <li> Exchange your algorithm with your partner. Follow your partner's algorithm on this list: <img src="/bjc-r/img/3-lists/square_3_2_1.png" alt="square_3,2,1,1,3,2,2,1,3" title="square_3,2,1,1,3,2,2,1,3"></li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss any improvements or clarifications needed to make your algorithms as clear as possible.</li>
+            </ol>
+        </div>
+
+		<p>One of the things that will be useful when you write <code>is () a magic square? </code> is a reporter that picks off elements from a given list, like the first, fourth, and seventh element.</p>
+ 
+        <div class="forYouToDo">
+            <ol start = "5">
+                <li>Write an expression that reports (as a list) the fourth element  of a given list.</li>
+                <li>Write an expression that reports a list of the fourth and first elements  of a given list.</li>
+                <li>Write an expression that reports a list of the fourth, first, and seventh elements  of a given list.</li>
+                <li>Make  a red block, <img border="0" src="/bjc-r/img/3-lists/lookup_block.png" alt="red reporter: lookup items () from ()" title="red reporter: lookup items () from ()" />. Here's how it starts:<br /> <img border="0" src="/bjc-r/img/3-lists/lookup_block_def.png" alt="lookup items (item numbers) from (this list)" title="lookup items (item numbers) from (this list)" />
+                    <p>And here it is in action:</p>
+                    <img border="0" src="/bjc-r/img/3-lists/lookup_result1.png" alt="lookup items (1,4,7) from (nouns) = (a,b,c,d,e,f,g,h,i)" title="lookup items (1,4,7) from (nouns) = (a,b,c,d,e,f,g,h,i)" />
+                    <div class="sidenote">If you need some inspiration, look again at <a href="/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html#fmap"> Problem 3 here.</a> </div> 
+                    <!---</div><br /><img border="0" src="/bjc-r/img/3-lists/nouns.png" alt="giraffe, elephant, pizza, etc." title="giraffe, elephant, pizza, etc." />--->
+                </li>
+            </ol>
+        </div>
+        
+        <h3>Triples</h3>
+       
+		<p>There are several possible algorithms for checking to see if a list forms a magic square. Though the details might be different, your algorithm probably involved identifying three numbers at a time and adding them. Call these sets of three numbers "triples".</p>
+       
+		<div class="forYouToDo" id="first">
+				<div class="sidenote"> The block <code>lookup items () from ()</code> from the <strong>Getting Started</strong> for this lab might be useful here.</div>
+            <ol>
+				<li>Write a block that finds the sum of the middle row of <img src="/bjc-r/img/3-lists/square_12_13_14.png" alt="{12, 13, 14, 10, 18, 11, 17, 15, 16}" title="{12, 13, 14, 10, 18, 11, 17, 15, 16}" /></li>
+         <!---       <li>If you didn't already, write the block that finds the sum of middle row using a block you previously made back in Lab 2: <code>lookup items () from ()</code>. Look <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noreading&noassignment" target="_blank">back at the problem</a> for instructions on importing the block to use for this project.</li>--->
+		         	<img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
+
+                <li>Write a block that compares the sum of the middle row and the sum of the right column. Are they equal?</li>
+                <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you might write a program that compares all of the sums necessary for checking a magic square.</li>
+            </ol>
+        </div>
+		
+		<div class="todo">I can't figure out how to place this image properly. The "lookup items" reference ties to #1 so I moved it up, but both of these don't fit together.</div>
+
+    
+    <!--  <p>Each row, column, and diagonal of the magic square must be explicitly specified in the program, because it has no other way of knowing what to do. We'll call each row, column, and diagonal a<em> triple. </em>The program needs a list of all eight triples. Each triple is a short list, and the set of all eight triples is a list of lists.</p> Since this information never changes, it's a good idea to store it in a single global variable:
+      <blockquote>
+        <p><img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
+      </blockquote>
+      <p>The list of triples can be used to pull the right information out of a list of 9 numbers. But how? There is more than one way. Start by recalling how you could pull a single piece of information out of a list.</p>
+    
+    <ol>
+      <li> Given a list of 9 numbers, how can you report only the 4th number? </li>
+      <li> Given a list of 9 numbers, how can you report only the 4th <i>and</i> 5th numbers?</li>
+      <li> Given <code>square</code> with 9 numbers and <code>locations</code> with 3 numbers, write a reporter <code>lookup</code> that returns a new list of the numbers in <code>square</code> at the positions given in <code>locations</code>.</li>
+    
+    <p><img src="/bjc-r/img/3-lists/triple_report.png" alt="pulling a triple"><img src="/bjc-r/img/3-lists/triple_report_2.png" alt="saying the right triple"></p>
+    </ol> 
+    
+    The last problem above is more complicated, but can be done in one line using one of the higher-order list functions you've been working with.-->
+    
+    <h3>Finding Triples</h3>
+        <div class="forYouToDo" id="first">
+            <img border="0" class="imageRight" src="/bjc-r/img/3-lists/magic_square_positions.png" alt="picture that labels positions" title="picture that labels positions" />
+            <ol>
+                <li>How many triples do you have to check to see if a list is a magic square?</li>
+               <li>Make a list of lists called <code>triple positions</code> that tracks the <em>positions</em> of all triples. Here's a start. The first item, the list (1, 4, 7) is identifying the <em>left column</em> in a 3-by-3 grid.<br /><img border="0" src="/bjc-r/img/3-lists/magic_start_triples.png" alt="list that gives first triple (1,4,7)" title="list that gives first triple (1,4,7)" /></li>
+                <li><code>Triple positions</code> gives the positions of the triples. Now make a red reporter block, called <code>triples in square ()</code> that returns the <em>numbers</em> from the square for all the triples. Here's the beginning of <code>triples in square ()</code>, which returns a list of lists.<br /><img border="0" src="/bjc-r/img/3-lists/magic_triples_square.png" alt="red reporter: triples in square (square)" title="red reporter: triples in square (square)" /><br />Here's the beginning of the output for the square shown above:<br /><img border="0" src="/bjc-r/img/3-lists/magic_firsttriples.png" alt="triples in square (12, 13, 14, etc) = (12, 10, 17)" title= "triples in square (12, 13, 14, etc) = (12, 10, 17)" /></li>
+               <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Discuss how you can use this information to determine whether the original 9 numbers form a magic square.</li>
+            </ol>
+        </div>
+
+<!--  <p>Each row, column, and diagonal of the magic square must be explicitly specified in the program, because it has no other way of knowing what to do. We'll call each row, column, and diagonal a<em> triple. </em>The program needs a list of all eight triples. Each triple is a short list, and the set of all eight triples is a list of lists.</p> Since this information never changes, it's a good idea to store it in a single global variable:
+  <blockquote>
+    <p><img src="/bjc-r/img/3-lists/triples.png" alt="list of triples"></p>
+  </blockquote>
+  <p>The list of triples can be used to pull the right information out of a list of 9 numbers. But how? There is more than one way. Start by recalling how you could pull a single piece of information out of a list.</p>
+
+<ol>
+  <li> Given a list of 9 numbers, how can you report only the 4th number? </li>
+  <li> Given a list of 9 numbers, how can you report only the 4th <i>and</i> 5th numbers?</li>
+  <li> Given <code>square</code> with 9 numbers and <code>locations</code> with 3 numbers, write a reporter <code>lookup</code> that returns a new list of the numbers in <code>square</code> at the positions given in <code>locations</code>.</li>
+
+<p><img src="/bjc-r/img/3-lists/triple_report.png" alt="pulling a triple"><img src="/bjc-r/img/3-lists/triple_report_2.png" alt="saying the right triple"></p>
+</ol> 
+
+The last problem above is more complicated, but can be done in one line using one of the higher-order list functions you've been working with.-->
+
+
+<h2>Finishing Touches</h2>
+        <div class="todo">
+            <ul>
+			<li> BK: What is the standard for listing input in a block? I've seen "is __ a magic square" but also "triples in square ()" and "is a magic square" with no blank. Changing all instances to what I think is the preferred: <code>is () a magic square</code>.</li>
+                <li>BH: #4 is way underspecified.  As an earlier example pointed out, they could just make a list of nine copies 1/3 of the target sum.  Is that an okay solution?  Or are the numbers supposed to be all different?  Etc.</li>
+                <li>JK response: Didn't address this comment yet. First of all, I think the student can probably decide how complicated to make it - sure, they could make a square with all of the same number, but that's not terribly challenging (unless they're actually playing with how best to display it on the screen or something, which could be where they choose to go with this). Also, there are lots of really involved problems in this take it further... I kept it as Bowen wrote it for now, but perhaps some of these problems belong elsewhere?</li>
+            </ul>
+        </div>
+   
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Make the <code>is () a magic square?</code> block.<br />
+                <div class="sidenote">After you've written <code>is () a magic square?</code>, look at others' code to see some different methods from yours.</div>        
+                <img border="0" src="/bjc-r/img/3-lists/magic_predicate.png" alt="green predicate: Is (square) a magic square?" title="green predicate: Is (square) a magic square?" /><br />Here are some squares to test:<br />
+                <img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is80_10_60magic.png" alt="is 80,10,60,30,50,70,40,90,20 a magic square?" title="is 80,10,60,30,50,70,40,90,20 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is17_16_21magic.png" alt="is 17,16,21,22,18,14,15,20,19 a magic square?" title="is 17,16,21,22,18,14,15,20,19 a magic square?" /><br />
+                <img src="/bjc-r/img/3-lists/is10_10_10magic.png" alt="is 10,10,10,10,10,10,10,10,10 a magic square?" title="is 10,10,10,10,10,10,10,10,10 a magic square?" /></li>
+            </ol>
+        </div>
+   
+        <div class="commentBig">Teacher Feedback: These TIF questions (especially toward the end) are way too hard for the HS level. The teacher who mentioned this said that when they did research on their own to answer these questions, they found that the prime magic square stuff has only even come out very recently. So, this is just way too much. We might need to think about an upper limit on difficultly for TIF problems. We want challenging stuff, but not over the top. --MF  Ok, it feels like to me that the only students doing E would be the ones who might take a deep dive into it. --BK</div>
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>Build a magic square checker for 2-by-2 squares.</li>
+                <li> ... for 4-by-4 squares. </li>
+                <li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> ... for <em>n</em>-by-<em>n</em> squares.</li>
+                <li> Build a magic-square <em>generator</em> given a target sum as input.</li>
+                <li> <img src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" /><strong>Challenge</strong> Find a 3-by-3 magic square made up entirely of prime numbers.</li>
+            </ol>
+        </div>
+
+<!--  <p>Here's one way to build the <code>all-triples</code> reporter, using the <code>lookup</code> block created previously:</p>
+
+  <blockquote>
+    <p><img src="/bjc-r/img/3-lists/all_triples_2.png" alt="code for all-triples reporter"></p>
+  </blockquote>
+
+  <p>On the last page, you were asked to write a description of how to take the information from <code>all-triples</code> and determine whether or not the numbers form a magic square.</p>
+
+  <p>Here is some help as you write the final code for the magic square predicate:</p> <p align="middle"><img src="/bjc-r/img/3-lists/magicsquare.png" alt="Magic Square Checker" align="middle"></p>
+  <ul>
+  	<li> The <code>combine</code> block takes a two-input function and a list, and returns the result of performing that operation on all values of a list.</li>
+      <p align="middle"><img src="/bjc-r/img/3-lists/combine_with.png" alt="Combine With block" align="middle"></p>
+
+  	<li> The <code>keep</code> block takes a predicate function as input, returning all values of a list that pass a condition.</li>
+      <p align="middle"><img src="/bjc-r/img/3-lists/keep_block.png" alt="Keep block" align="middle"></p>
+  	<li> The <code>length of</code> block can tell you how many things are in a list.</li>
+      <p align="middle"><img src="/bjc-r/img/3-lists/length_block.png" alt="Length block" align="middle"></p>
+</ul>
+  <p><i> There is more than one good way to write this code!</i> Good luck.</p>
+
+
+<ol> <i>When you finish, here are some challenges to try:</i>
+  <li> Build a magic-square checker for 2-by-2 squares. </li>
+  <li> ... for 4-by-4 squares. </li>
+  <li> <b>Take It Further</b> ... for <i>n</i>-by-<i>n</i> squares.</li>
+  <li> Build a magic-square <i>generator</i> given a target sum as input.</li>
+  <li> <b>Take It Further</b> Find a 3-by-3 magic square made up entirely of prime numbers.</li>
+</ol>-->
+
+
+	</body>
+</html>

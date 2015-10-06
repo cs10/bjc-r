@@ -37,27 +37,23 @@ heading: Programming Lab 1: Introduction to Lists
 	quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/7-lists-self-check.html]
 
 heading: Programming Lab 2: Three Key List Operations
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
+	resource: Exploring List Operations [/bjc-r/cur/programming/3-lists/2-list-operations/1-exploring-list-operations.html]
 	resource: <code>Map</code> [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
 	resource: <code>Keep</code> [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
 	resource: <code>Combine</code> [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
 	quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
 
 heading: Programming Lab 3: Combining List Operations
-	//resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
 	resource: Processing List Data [/bjc-r/cur/programming/3-lists/3-using-hof/1-processing-data-lists.html]
 	resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
-	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
+	resource: Looping through a List [/bjc-r/cur/programming/3-lists/3-using-hof/4-looping-through-list.html]
 
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 
-heading: Programming Lab 4: Magic Squares
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
-	resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/2-triples.html]
-	resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/3-finding-triples.html]
-	//resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/old/finding-triples-3.html]
-	resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
-
+heading: Programming Lab 4: Tabular Data
+	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-tabular-data/1-tic-tac-toe.html]
+	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-tabular-data/2-magic-squares.html]
+	
  	raw-html: <hr />
 
 heading: Social Implications Lab 5: Search
