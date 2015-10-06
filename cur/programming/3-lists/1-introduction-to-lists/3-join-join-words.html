@@ -12,12 +12,15 @@
         	<ul>
                 <li>PAUL: You wrote in an email from NYC PD: "Miscellaneous:  Lists project Lab 1 Sentence Builder needs more scaffold." Is this better now? --MF</li>
                 <li>ALL: What kind of support would be needed for ELLs here? --MF</li>
+                <li>BH: This page should be called &quot;Generating Funny English Sentences.&quot; It's not even <em>about</em> Join Words; it's about lists. And the only use of Join is to demonstrate a bug!</li>
 
             </ul>
         </div>
    
         <p>On this page, you'll use abstraction to create a "Sentence Builder" project that builds complicated sentences like "the little elephant runs happily around the wise pizza" by joining different parts of speech: nouns, verbs, adjectives, articles, possessive pronouns, adverbs, prepositions, etc. </p>
-		<div class="sidenote">This page is designed to clarify English grammar. Look up anything you want to understand better, and use the blue feedback button in the lower right to offer suggestions for improvment.</div>
+    <div class="todo">BH: I disagree with this sidenote:
+		<div class="endnote">This page is designed to clarify English grammar. Look up anything you want to understand better, and use the blue feedback button in the lower right to offer suggestions for improvment.</div>
+    The page is designed to give students a fun mini-project in which the use of lists feels natural and empowering.  The less we have to talk about grammar, the better!  It's not clear to me why we have to include the possessives at all.  I've edited the grammar lesson below so that it's at least sensible, but I'm not convinced it contributes to the students' enjoyment of the course.  I think the other grammatical categories are well enough implicitly defined by the sample words in each list; even prepositions can be introduced without comment, given the examples.</div>
 		<p>The <code>join</code> block connects strings of characters given as input without adding spaces, like this: <img class="indent" src="/bjc-r/img/3-lists/join_elephant.png" alt="join (the) (elephant) (climbs)" title="join (the) (elephant) (climbs)"></p>
         <p>The <code>join words</code> block does the same and adds a space between its inputs, like this: <img class="indent" src="/bjc-r/img/3-lists/joinwords_elephant.png" alt="join words (the) (elephant) (climbs)" title="join words (the) (elephant) (climbs)"></p>
         
@@ -25,14 +28,16 @@
         <div class="forYouToDo" id="first">
 			<ol>
 				<li>
-					<div class="sidenote">There are three articles in English: "the", "a", and "and".</div>
-                	<div class="comment">MARY: Change image and XML to "posessive adjectives" instead of "posessive pronouns". Images in TOL will need changing too. --MF</div>
+               	  <div class="todo"><ul><li>MARY: Change image and XML to "posessive adjectives" instead of "posessive pronouns.&quot; Images in TOL will need changing too. --MF</li>
+                    <li>BH: After slogging my way through <a href="https://en.wikipedia.org/wiki/Talk:Possessive_determiner" target="new">https://en.wikipedia.org/wiki/Talk:Possessive_determiner</a> my instinct that nobody would understand "possessive adjective" is reinforced by expert opinion.  A case could be made for "possessive determiner" but I vote for using the name everyone knows.  By the way, I'd be happier if these and articles were two separate lists -- either that or call the combined list "determiners."</li></ul></div>
                     Click on the script below to load it in <span class="snap">snap</span><br />
                     <a class="run" href="/bjc-r/prog/3-lists/U3L1-SentenceBuilder.xml"><img src="/bjc-r/img/3-lists/wordlists.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></a> <br />
                     Feel free to change these lists to use your own nouns, verbs, etc.
 				</li>
-				<div class="endnote">There are many posessive adjectives in English including: "my", "your", "her", "his", "its", "our", "their".</div>
             </ol>
+            					<div class="endnote"><p>There are three articles in English: "the", "a", and "an.&quot;</p>
+     <p>There are several posessive pronouns in English; the ones "my,&quot; "your," "her," "his," "its," "our," and "their&quot; are used as determiners, comparable to articles: &quot;the book&quot; and &quot;my book&quot; are similar. (By contrast, &quot;mine,&quot; &quot;yours,&quot; etc. are used in different contexts: &quot;the book is mine,&quot; not &quot;mine book.&quot;)</p>
+                    </div>
         </div>
                
         
@@ -48,7 +53,8 @@
         <div class="forYouToDo">
             <ol start="2">  
                 <li><img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />Fix their script so that it selects one <em>random</em> item from each of the three lists and puts spaces between the words, and put the script in a reporter called <img class="inline" src="/bjc-r/img/3-lists/simple-sentence.png" alt="green 'simple sentence' reporter block" title="green 'simple sentence' reporter block">.</li>
-                <div class="todo">REVIEWERS: Please review the orange takeNote below and leave a note about it here. --MF</div>
+                <div class="todo">REVIEWERS: Please review the orange takeNote below and leave a note about it here. --MF<br />
+              BH: It comes too soon; it's not clear yet what abstraction has to do with anything.  Maybe merge this into the takeNote further down.  "Defining prepositional phrase using noun phrase as a helper is a good example of abstraction..."</div>
                 <div class="takeNote">Recall, <strong>abstraction</strong> is hiding the complexity of a program by writing custom procedures (blocks) to do specific parts of a task (like writing a program to draw one tree and then calling that program multiple times to draw a forest).</div>
                 	<div class="sidenote">These phrases will be grammatically correct, but they won't necessarily make sense. For example, <code>noun phrase</code> might generate &quot;a tired pizza.&quot;</div>
                     	<li>
@@ -74,8 +80,12 @@
                 <li>Noun phrases don't always have to have one adjective. They can have none or two, etc. </li>
 
                 <div class="sidenoteBig">Your old Snap<em>!</em> project should be called "U2Lab1-Plural".</div>
-                <li>Use your <code>plural</code> block from <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Unit 2</a> to let your nouns sometimes be plural. Your program will need to keep track of when it makes a plural noun so that it can fix the verb to agree.</li>
+                <li>Use your <code>plural</code> block from <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/4-plurals1.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Unit 2</a> to let your nouns sometimes be plural. Your program will need two separate expressions, one for singular sentences and one for plural ones, since the verb has to match the noun: &quot;the kangaroo jumps&quot; but &quot;the kangaroos jump.&quot;</li>
+                <div class="todo">
                 <div class="sidenote">See also: <a href="https://www.google.com/webhp#q=interrogative%20relative%20adverbs" target="_blank">interrogative &amp; relative adverbs</a>.</div>
+                BH: Ixnay on this sidenote.  Didn't we all agree not to include links to incomprehensible outside pages?<br />
+                <br />
+              Also, in part D, we should think about whether this is the simplest kind of question. Another candidate would be &quot;Who ...?&quot; which just requires changing noun phrase.</div>
                 <li>Find a way to create questions. (The sentence could start with a <code>question phrase</code> like "Why does", "Did", "How did", etc.)</li>
                 <div class="endnote">You might want to create a <code>question verb phrase </code> block that is a version of <code>verb phrase</code> that reports the question form of the verb (without the "s" as the end). </div>
             </ol>

@@ -12,23 +12,29 @@
         <div class="todo">
             <ul>
                 <li>Paul or Brian, please review the following preface on data types. --MF</li>
+                <li>BH: Variables do not have types. <em>Data</em> have types. Any variable can hold any datum, regardless of type. Also, Snap<em>!</em> is not Scratch -- lists are not comparable to variables; they're comparable to numbers or procedures.</li>
             </ul>
         </div>
         
 		<img class="imageRight" src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/>
-        <p>A <strong>data type</strong> is a label that specifies what type of data a variable can hold. In some programming languages, there are different data types for numbers than for words&mdash;or even for different kinds of numbers (for instance, integers vs. decimals). In Snap<em>!</em>, there are variables (which each hold one piece of data that can be either a number or text) and lists (which hold multiple pieces of data&mdash;numbers or text). We can also create our own data types to help clarify our code.</p>
-        <div class="dialogue"> <a name="point" class="anchor">&nbsp;</a>
-        	<div class="stagedir">Gamal joins Betsy and Alphie's <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">discussion about using a list of coordinates to make a drawing of a letter</a>.</div>
+<!--        <p>A <strong>data type</strong> is a label that specifies what type of data a variable can hold. In some programming languages, there are different data types for numbers than for words&mdash;or even for different kinds of numbers (for instance, integers vs. decimals). In Snap<em>!</em>, there are variables (which each hold one piece of data that can be either a number or text) and lists (which hold multiple pieces of data&mdash;numbers or text). We can also create our own data types to help clarify our code.</p>  -->
+<p> <br />A <strong>data type</strong> is, just as the name suggests, what <em>kind</em> of data something is.  &quot;Noun phrase&quot; is a data type; so is &quot;phrase&quot; (which also includes verb phrases and prepositional phrases).  &quot;Person&quot; could be a data type in a Contacts app. <br />&nbsp;</p>
+		<img class="imageRight" src="/bjc-r/img/3-lists/isa-menu.png" alt="primitive types" title="primitive types"/>
+<p>The <strong>abstract</strong> data types in the last paragraph exist only in the mind of the programmer. Other <strong>primitive</strong> data types are built into each programming language.  The primitive types in Snap<em>!</em> are number, text string, Boolean, list, command, reporter, and predicate.  (We haven't used the last three as data types yet.)  You can get a reminder of Snap<em>!</em>'s primitive types from the pulldown menu in the <code>is () a ()?</code> block.
+
+<div class="dialogue"> <a name="point" class="anchor">&nbsp;</a>
+  <div class="stagedir">Gamal joins Betsy and Alphie's <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">discussion about using a list of coordinates to make a drawing of a letter</a>.</div>
             <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
             <div><span>Gamal:</span> I think you had trouble finishing that last script because those <code>item of</code> blocks get confusing with lists inside lists.</div>
             <div><span>Betsy:</span> Yeah, the expressions like <img style="padding: 0px;" src="/bjc-r/img/3-lists/item-2-of-item-1-of-A.png" alt="item (2) of (item (1) of (A))" title="item (2) of (item (1) of (A))" /> get confusing fast!</div>
 			<div><span>Gamal:</span> Well, we could define a new <em>data type</em> called <img class="inline" src="/bjc-r/img/3-lists/point()().png" alt="point () ()" title="point () ()" /> that contains an <em>x</em>-coordinate and a <em>y</em>-coordinate.</div>
-                <div class="sidenote">Gamal's idea is called <strong>data abstraction</strong>, simplifying data by hiding its complexity behind a simpler idea.</div>
+                <div class="sidenote">Gamal's idea is called <strong>data abstraction</strong>: creating a new abstract data type so that the detailed representation of the type is hidden from its users. In this case, users of points don't have to know that they're represented as lists.</div>
         	<div class="stagedir">
                 Gamal has built this block: 
                 <img src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/>
             </div>
-			<div class="todo">I replaced this image (above) and removed the link. The <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">prior image</a> didn't make sense and the link did not include this block. --MF </div>
+			<div class="todo"><ul><li>I replaced this image (above) and removed the link. The <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">prior image</a> didn't make sense and the link did not include this block. --MF</li>
+            <li>BH: "Didn't make sense"?  The number signs are there because Gamal has declared his inputs to be of type number.  And we're supposed to make block definition pictures with "Plain prototype labels" turned on.</li></ul> </div>
             <div><span>Betsy:</span> That block is trivial; it isn't going to make the rest of the program any shorter.</div>
             <div><span>Gamal:</span> But it is going to make it <em>easier to think about</em>. Now, a list of points will actually look like a list of points:</div>
             <div class="stagedir"><img src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /></div>
@@ -48,7 +54,6 @@
                 <li>
                 	Make a general <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> block that draws <em>any</em> shape based on a list of coordinates.<br />
                 	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the list input type:<br /> 
-                    <div class="comment">This animation needs to be redrawn with Plain Prototype Labels off!<br /> It's in the Snap<em>!</em> "Settings" menu.</div>
                     <img src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
                 </li>
             	<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
