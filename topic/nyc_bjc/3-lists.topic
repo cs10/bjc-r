@@ -30,28 +30,28 @@ heading: Programming Lab 1: Introduction to Lists
 	resource: Shopping List App [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html]
 	resource: Exploring List Processing [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-exploring-list-processing.html]
 	resource: <code>Join</code> and <code>Join Words</code> [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-join-join-words.html]
-	resource: Managing List Data [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-sorting-data.html]
+	resource: Managing List Data [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-managing-list-data.html]
 	
 heading: Programming Lab 2: Nesting Lists
-	resource: Lists of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-list-of-lists.html]
-	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html]
-	resource: Data Types [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/6-data-types.html]
-	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/7-lists-self-check.html]
+	resource: Lists of Lists [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-list-of-lists.html]
+	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
+	resource: Data Types [/bjc-r/cur/programming/3-lists/2-nesting-lists/3-data-types.html]
+	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/2-nesting-lists/4-lists-self-check.html]
 
 heading: Programming Lab 3: Three Key List Operations
-	resource: Exploring List Operations [/bjc-r/cur/programming/3-lists/2-list-operations/1-exploring-list-operations.html]
-	quiz: <code>Map</code> [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
-	quiz: <code>Keep</code> [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
-	quiz: <code>Combine</code> [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
-	quiz: <s>Map, Keep, and Combine Self</s> Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
+	resource: Exploring List Operations [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/1-exploring-list-operations.html]
+	quiz: <code>Map</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/2-map.html]
+	quiz: <code>Keep</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/3-keep.html]
+	quiz: <code>Combine</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/4-combine.html]
+	quiz: <s>Map, Keep, and Combine Self</s> Check[/bjc-r/cur/programming/3-lists/3-three-key-list-ops/5-hof-self-test.html]
 
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 heading: Programming Lab 4: Combining List Operations
-	resource: <s>Processing List Data</s> [/bjc-r/cur/programming/3-lists/3-using-hof/1-processing-data-lists.html]
-	resource: Nesting Functions to Make Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
-	resource: Looping through a List* [/bjc-r/cur/programming/3-lists/3-using-hof/4-looping-through-list.html]
-	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-tabular-data/1-tic-tac-toe.html]
-	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-tabular-data/2-magic-squares.html]
+	resource: <s>Processing List Data</s> [/bjc-r/cur/programming/3-lists/4-combining-list-ops/0-processing-data-lists.html]
+	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-composing-higher-order-functions.html] 
+	resource: When You Really Need to Loop [/bjc-r/cur/programming/3-lists/4-combining-list-ops/2-when-you-really-need-to-loop.html]
+	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
+	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-combining-list-ops/4-magic-squares.html]
 	
  	raw-html: <hr />
 	

@@ -3,11 +3,12 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 3 Lab 4: Tabular Data</title>
+		<title>Unit 3 Lab 4: Combining List Operations</title>
     </head> 
     
     <body>
     	<h2>Tic Tac Toe</h2>
+
         <div class="todo">PAUL Suggestion 2:  Where we are currently doing magic square, don’t.  Just check for TTT wins.  The machinery for drawing the board (well, as a grid of squares) is already done (U2) and locating one’s position on it is a worthwhile computation (future U2, but U3 for now, and the model already exists), and stamping X or O is a trivial (!) and worthwhile addition.  Relevant, then, to U3 is keeping track of the stamps, and checking that list both to avoid re-using a space and to check for a win.  AND THAT’S ALL.  The magic square needn’t be dumped, but can be a TiF for those who are interested.  It uses the same logic along with combine.  Not using combine (except in TiF) is the only loss to taking this approach.  There are many gains and Brian’s comment that combine is just not as useful as map and keep warrants treating it as an optional extra.</div>
         <div class="todo">PAUL: My note about it contained an error, making it even easier to do than I was imagining. Kids have already solved the locating-the-cell problem in U2, so the only still-needed precursor to U3 stuff is a pair of X and O costumes and a trivial script to stamp them where we drag and drop the sprite.  The new U3 stuff is only to list and check.</div>
         <div class="todo">FROM PAUL:  I would not start with magic squares.  Checking for a win in <a href="/bjc-r/prog/3-lists/U3L4-TicTacToeWithoutChecking.xml" class="run">Tic-Tac-Toe</a> is, in terms of processing a list, exactly the same logic we want students to use except for the COMBINE WITH + step.  TTT is way more familiar to students than magic squares, and the current FYtD start uses the pain of adding up a bunch of numbers as the motivator to build a program to do it for you.  If the intro started instead with does (list X O X X O O X X O) contain a winning position? and other such lists, students would still be looking for all the ways to recognize rows, columns, and diagonals.  They could then apply it to the board game, attached, parts of which they’ve already built in U2.  (It would be nice if they built the remaining non-list-using parts before starting the list parts, so that they have done the whole thing, but we could give them bits and save the full project for next year.) The development could follow closely what is already on this page, just switching the context from arithmetic to scoring TTT. --PG</div>
