@@ -14,7 +14,8 @@
 				<li><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> You will need to do this for most of the lab pages in Unit 3.</li>
                 <div class="commentBig">FROM PAUL? I don't know the source of the yellow comment below. Is the terminology "variadic input" important here? If not, delete it before it shows up on a classroom test. (I've just commented it out in case it is urgently needed.)</div>
                 <div class="sidenote">The <img src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block's left and right arrowheads let you vary the number of input slots. <!-- Blocks that can be varied in this way are said to have a <strong>variadic input</strong>. --> </div>
-                <div class="todo">These list items should not be alphabetical. It implies something that is not the case. --MF
+                <!--
+                These list items should not be alphabetical. It implies something that is not the case. I replaced these with more items that focus on list reporters. --MF
                 <li>
                     Construct these expressions and describe what they do:
                     <ol>
@@ -22,29 +23,24 @@
                         <li> <img src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
                         <li> <img src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>                        
                   </ol>
-                </li></div>
-                <div class="sidenoteBig">This should go without saying, but keep list items appropriate. Programming is interesting and is a skill worth good money in the real world, but it is also challenging. Focus and be creative.</div>
+                </li>-->
                 <li>Create a <var>mylist</var> variable and initialize (<code>set</code>) it as a list of 5-15 items. (Go for a variety of list elements: letters, words, whole numbers, decimals, negatives, <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a>, etc.)</li>
                 <li>
                     For each of these reporters, discuss what you think it does. Then, experiment using <var>mylist</var>, and discuss the results:
                         <ol>
 		                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-                            <li><code>length</code></li>
-                            <li><code>all but first</code></li>
-                            <li><code>in front of </code></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/length-list.png" alt="length of {}" title="length of {}" /></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/all-but-first.png" alt="all but first of {}" title="all but first of {}" /></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/in-front-of.png" alt="() in front of {}" title="() in front of {}" /></li>
                         </ol>
                 </li>
-                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />The <code>item</code> reporter has a dropdown with three options: <var>1</var>, <var>any</var>, and <var>last</var>, but that input also accepts a reporter. Experiment. Discuss how you might use this block in a program. </li>
-                <li>The <code>contains</code> predicate accepts a string and a list as input. What do you think it does? Experiment. What does it do? How might you use it?</li>
-               	<!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
                 <div class="endnote">An input slot that looks like <img src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
-                <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is the difference between <img src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
-            </ol>
-        </div>
-        <p>The <code>length of</code> block returns the number of items in a <strong>list</strong>. For example, <img src="/bjc-r/img/3-lists/gs_length2.png" alt="length (Augusta, Boise)" title="length (Augusta, Boise)" /> returns 2.</p>
-        <div class="forYouToDo">
-            <ol start="4">
-                <li>
+                <img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+                <li>The <img class="inline" src="/bjc-r/img/blocks/item.png" alt="item (1) of {}" title="item (1) of {}" /> reporter has a dropdown with three options: <var>1</var>, <var>any</var>, and <var>last</var>, but that input also accepts a reporter. Experiment. Discuss how you might use this block in a program. </li>
+                <li>The <img class="inline" src="/bjc-r/img/blocks/contains.png" alt="{} contains ()" title="{} contains ()" /> predicate accepts a string and a list as input. What do you think it does? Experiment. What does it do? How might you use it?</li>
+               	<!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
+                <li>What is the difference between <img src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
+            	<li>
                     What do each of the following return? Guess first then build in Snap<em>!</em>&nbsp; Then discuss why the expressions return what they do.
                     <ol>
                         <li><img src="/bjc-r/img/3-lists/gs_length_allbutfirst.png" alt="length (all but first (Augusta, Boise, Columbia))" title="length (all but first (Augusta, Boise, Columbia))" /></li>
@@ -55,9 +51,11 @@
                 </li>
             </ol>
         </div>
+        
         <p>List procedures (blocks) can be used to access information in the list.</p>
+        
         <div class="forYouToDo">
-            <ol start="5">
+            <ol start="8">
                 <li>Build and compare these <code>say</code> scripts. Run each script a few times.
 					<div class="sidenote">You will learn more about these expressions if you click them each multiple times.</div>
                     <ol>
