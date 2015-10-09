@@ -14,7 +14,7 @@
 				<li><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> You will need to do this for most of the lab pages in Unit 3.</li>
                 <div class="commentBig">FROM PAUL? I don't know the source of the yellow comment below. Is the terminology "variadic input" important here? If not, delete it before it shows up on a classroom test. (I've just commented it out in case it is urgently needed.)</div>
                 <div class="sidenote">The <img src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block's left and right arrowheads let you vary the number of input slots. <!-- Blocks that can be varied in this way are said to have a <strong>variadic input</strong>. --> </div>
-                <div class="todo">NEXT TIME: These list items should not be alphabetical. It implies something that is not the case. --MF</div>
+                <div class="todo">These list items should not be alphabetical. It implies something that is not the case. --MF
                 <li>
                     Construct these expressions and describe what they do:
                     <ol>
@@ -22,8 +22,21 @@
                         <li> <img src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
                         <li> <img src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>                        
                   </ol>
+                </li></div>
+                <div class="sidenoteBig">This should go without saying, but keep list items appropriate. Programming is interesting and is a skill worth good money in the real world, but it is also challenging. Focus and be creative.</div>
+                <li>Create a <var>mylist</var> variable and initialize (<code>set</code>) it as a list of 5-15 items. (Go for a variety of list elements: letters, words, whole numbers, decimals, negatives, <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a>, etc.)</li>
+                <li>
+                    For each of these reporters, discuss what you think it does. Then, experiment using <var>mylist</var>, and discuss the results:
+                        <ol>
+		                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                            <li><code>length of</code></li>
+                            <li><code>all but first of</code></li>
+                            <li><code>in front of </code></li>
+                        </ol>
                 </li>
-               <!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />The <code>item of</code> reporter has a dropdown with three options: <var>1</var>, <var>any</var>, and <var>last</var>, but that input also accepts a reporter. Experiment. Discuss how you might use this block in a program. </li>
+                <li>The <code>contains</code> predicate accepts a string and a list as input. What do you think it does? Experiment. What does it do? How might you use it?</li>
+               	<!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
                 <div class="endnote">An input slot that looks like <img src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
                 <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is the difference between <img src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">?</li>
             </ol>
@@ -42,7 +55,7 @@
                 </li>
             </ol>
         </div>
-        <p>List operations (like <code>length of</code>, <code>item of</code>, <code>all but first of</code> and <code>for each</code>) can be used with other blocks to access information in the list.</p>
+        <p>List procedures (blocks) can be used to access information in the list.</p>
         <div class="forYouToDo">
             <ol start="5">
                 <li>Build and compare these <code>say</code> scripts. Run each script a few times.
@@ -59,10 +72,11 @@
 		
 				<li>Build and compare these <code>play</code> scripts. Run each script a few times.
 					<ol>
-                        <li><img src="/bjc-r/img/3-lists/compare-play-note-1.png" alt="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats" title="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats"></li>
-                        <li><img src="/bjc-r/img/3-lists/compare-play-note-2.png" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)"></li>
-						<div class="comment">It would be nice to preview <code>keep</code> and <code>combine</code> here too. --MF</div>
-                        <li><img src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-1.png" alt="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats" title="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-2.png" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-4.png" alt="" title="" /></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" /></li>
                     </ol>
                 </li> 
             </ol>

@@ -9,22 +9,24 @@
     <body>
 	    <h2><code>Combine</code></h2>
 
-        <div class="todo">
-            <ul>
-                <li>BH: I'm not sure I like the first exercise.  The fact that you can use the same value in more than one input slot with map is an obscure secondary feature; I'd rather kids see that map expects a single input slot, whereas combine requires (exactly) two input slots.  I'm too tired right now to try to craft an alternative, though.  :-(</li>
-                <li>JK's response: We have kids find squares of numbers earlier in the lab so they've seen it... Maybe the new sidenote below helps enough that we can keep the problem?</li>
-        
-            </ul>
+		<div class="todo">
+        	<ul>
+				<li>See COMBINE ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
+	        </ul>
         </div>
+        
+        <div class="todo">Clean up and highlight average. where was it before? U2?</div>
 
-        <div class="todo">This page feels a little short, which is fine, but is there more to say here? --MF</div>
-        <div class="todo">this lesson really feels like COMBINE is all about arithmetic and needs to change. --PG</div>
+		<div class="todo">Mini-projects:
+            <ul>
+                <li>test score anaylsis</li>
+                <li>pairing names</li>
+            </ul>
+	    </div>
         <div class="todo">
         	<ul>
-        		<li>Is there some similar interesting thing to do with combine?  We can combine words instead of numbers, or make pairs (lists) of shapes and colors (pretty lame, but at least recognizable result).  Not so many things come to mind.  Brian?   We’re not looking for an excuse to practice using combine but a reason for wishing we’d known about it all our life!  We should not come out of this saying “is that all you can do with it?” which is what I’m feeling about some of the material we now have.
-<br /><br />
-Mary, the semicolons in the combine page should be commas.  Feel free to change, but only if we’re even keeping the examples.  I see “non-associative blocks” and “factorial” and know that this would be great in a mathematics course because it’s so concrete—we can actually build the things we’re talking about—but this is not a mathematics course.  All the calculations should come in—we want this course to help kids with their mathematics, so the ideas of applying functions to numbers, building calculations that do what we want, etc., should all be there—but that notion of building calculations that we want means that we need to want them for something. They can’t just be arbitrary, just as we wouldn’t want them to be arbitrary in our mathematics curricula.
-</li>
+        		<li>this lesson really feels like COMBINE is all about arithmetic and needs to change. --PG</li>
+                <li>Is there some similar interesting thing to do with combine?  We can combine words instead of numbers, or make pairs (lists) of shapes and colors (pretty lame, but at least recognizable result).  Not so many things come to mind.  Brian?   We’re not looking for an excuse to practice using combine but a reason for wishing we’d known about it all our life!  We should not come out of this saying “is that all you can do with it?” which is what I’m feeling about some of the material we now have.</li>
         		<li>There are only a few functions you ever use with combine, and mostly
 they're arithmetic.  The others are the Boolean operators and JOIN and
 JOIN WORDS.  So, I don't know, you could write camelCase that takes a
@@ -34,6 +36,14 @@ even though they're in the tools library. Combine just isn't as versatile as the
             </ul>
     	</div>
         <div class="forYouToDo" id="first">
+<div class="todo">
+            <ul>
+                <li>BH: I'm not sure I like the first exercise.  The fact that you can use the same value in more than one input slot with map is an obscure secondary feature; I'd rather kids see that map expects a single input slot, whereas combine requires (exactly) two input slots.  I'm too tired right now to try to craft an alternative, though.  :-(</li>
+                <li>JK's response: We have kids find squares of numbers earlier in the lab so they've seen it... Maybe the new sidenote below helps enough that we can keep the problem?</li>
+        
+            </ul>
+        </div>
+        
             <ol>
                 <div class="sidenote">Even if there are two blanks in <code>map</code>, there's still only <em>one</em> input</div>
                 <li>Try this  experiment. Make <img border="0" src="/bjc-r/img/3-lists/map_add_1234.png" alt="map addition over (1,2,3,4)" title="map addition over (1,2,3,4)" /> and <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" />. <img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What is going into the blank addition spaces for <code>map</code>? What seems to be going in the blanks for <code>combine with</code>? </li>
@@ -47,7 +57,9 @@ even though they're in the tools library. Combine just isn't as versatile as the
             <p>
             	<strong>Ways to Think About It.</strong> When you see this:<br />
             	<div class="sidenote">The grey ring around the addition signals that you're going to apply the addition <em>function</em> to all of the elements of the list.</div>  
-            	<div class="comment">What's up with the semicolons in <code>{1;2;3;4}</code>? --MF</div>
+            	<div class="todo">Mary, the semicolons in the combine page should be commas.  Feel free to change, but only if we’re even keeping the examples.  I see “non-associative blocks” and “factorial” and know that this would be great in a mathematics course because it’s so concrete—we can actually build the things we’re talking about—but this is not a mathematics course.  All the calculations should come in—we want this course to help kids with their mathematics, so the ideas of applying functions to numbers, building calculations that do what we want, etc., should all be there—but that notion of building calculations that we want means that we need to want them for something. They can’t just be arbitrary, just as we wouldn’t want them to be arbitrary in our mathematics curricula.
+</div>
+                <div class="comment">What's up with the semicolons in <code>{1;2;3;4}</code>? --MF</div>
                 <img border="0" src="/bjc-r/img/3-lists/combine_add_1234.png" alt="combine with addition (1,2,3,4)" title="combine with addition (1,2,3,4)" /><br />
             	think "I'm going to combine all the elements of <code>{1;2;3;4}</code> using addition."<br />
             	In other words, &quot;I'm going to add up all the elements of <code>{1;2;3;4}</code>"
@@ -75,7 +87,7 @@ even though they're in the tools library. Combine just isn't as versatile as the
                     <div class="sidenote"> <strong>Moral of the story:</strong> don't use subtraction or division in <code>combine with </code>because the grouping of the items matters in these cases. For example, (3 - 4) - 5 &ne; 3 - (4 - 5). </div> 
                     Well, what happens if you drag non-associative  blocks such as <img border="0" src="/bjc-r/img/3-lists/difference.png" alt="difference block" title="difference block" /> or <img border="0" src="/bjc-r/img/3-lists/quotient.png" alt="quotient block" title="quotient block" /> into <code> combine with</code>? Try it.
                 </li>
-                <li>Build a block <code>sum </code>  that takes a list of numbeers and reports their sum.</li>
+                <li>Build a block <code>sum </code>  that takes a list of numbers and reports their sum.</li>
                 <li>
                     <div class="sidenote">average<br />= (sum of numbers) / (number of numbers)</div>
                     Click on the script to open a new project.<br />

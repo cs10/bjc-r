@@ -8,31 +8,129 @@
     
     <body>
 		<h2><code>Map</code></h2> 
-        <div class="todo">Lab1’s last page, draw shape, has lots of numbers, but we’re doing something with them.  If we used MAP over the vertices of A to translate it, or dilate it, that would be ok.  I actually thought that was here somewhere, but couldn’t find it.  That would require a slightly more complex “getting inside” the list operation, but the kids in their dialogue have already begun that thinking in draw shape.  But when we get to the page on MAP, it applies arbitrary functions to arbitrary numbers for no apparent reason other than exercise.
-<br /><br />
-Could you invent a MAP page that builds on draw shape, maybe translating or reflecting or dilating?  You could exchange x and y coords and see what happens.  A translation of, say, (20, 10) could look 3-D ish, especially if corners of the two were connected.  So would a connecting an image and a dilation. The simplest bits of a scales project could also work.  Two scales (I’d recommend major and double-harmonic only because they give cool variety and, btw, validate an interesting group of kids), a transposer (map), and something that plays them (for-each). 
-</div>
-        <div class="todo">This math is too much. --MF</div>
         
-<!--
+        <div class="todo">
+            Put these on each of the next 3 pages: <ul>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+Discuss what <code>map</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+Discuss what <code>keep</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-4.png" alt="" title="" /></li>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+Discuss what <code>combine</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" /></li>
+            </ul>
+        </div>
+        <div class="todo">
+        	<ul>
+				<li>MAP:Could also do a <code>square checker</code> mini-project that writes a list of square numbers <img class="" src="/bjc-r/img/3-lists/square-checker-1.png" alt="" title="" /><br/>checks if a number is on that list <img class="" src="/bjc-r/img/3-lists/square-checker-2.png" alt="" title="" /><br/> and talks through the items on the list <img class="" src="/bjc-r/img/3-lists/square-checker-3.png" alt="" title="" /> (ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
+	        </ul>
+        </div>
+    
+    
+        <p>
+        	The <code>map</code> block takes two inputs: an expression with a blank and a list, and it replaces each item in the list with the result of plugging that item into the expression. For example:<br/>
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-1.png" alt="map (( )-(1)) over (list (96) (-100) (4.7))" title="map (( )-(1)) over (list (96) (-100) (4.7))" />
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join ( ) (s)) over (list (cat) (dog) (bird))" title="map (join ( ) (s)) over (list (cat) (dog) (bird))" />
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-3.png" alt="map (round ( )) over (list (3.14159) (87) (5.4))" title="map (round ( )) over (list (3.14159) (87) (5.4))" />
+        </p>
+		
+        <h3>Transposing Music</h3>
+        <div class="forYouToDo">
+            <p>You can use <code>map</code> to transpose (shift) music.</p>
+            <ol>
+                <img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+                <div class="todo">Help! This XML link does not work, and I have <em><strong>no</strong></em> idea why!! The XML will <em>import</em> just fine, and I've copied the HTML from a working link, so I'm out of ideas. --MF</div>
+                <li><a class="run" href="/bjc-r/prog/3-lists/U3L2-PlayNotes.xml">Open this project</a>. It contains two musical scales (a major scale and an Egyptian scale) and a song (Twinkle Twinkle Little Star). Each is just a sound reporter that reports a list of notes.</li>
+                <div class="sidenote"><code>For each</code> will be helpful here.</div>
+                <li>Create a <code>play notes</code> command block that takes a list of note as input and plays each note for 1 beat. Try it out with each of the scales included in the project file.</li>
+                <div class="endnote">This <code>play notes</code> block is like the <code>play song</code> block that you wrote in Lab 1</div>
+                <!--Already in /3-lists/1-introduction-to-lists/5-the-for-each-block.html <div class="sidenoteBig">You might want to adjust the tempo using <img class="inline" src="/bjc-r/img/3-lists/set-tempo-to-(240)-bpm.png" alt="set tempo to (240) bpm" title="set tempo to (240) bpm" />.</div>-->
+                <li>
+                    Create a <code>transpose notes by</code> reporter block that takes a list of note pitches (such as a scale) and a number as input and adds the number to each note. This will raise the pitch if the number is positive and lower the pitch if the number is negative. For example:<br />
+	                <div class="sidenote"><code>Map</code> will be helpful here.</div>
+                    <img class="indent" src="/bjc-r/img/3-lists/transpose-by-example.png" alt="tranpose (list (63) (67) (70) (75)) by (10) reporting list (73) (77) (80) ..." title="tranpose (list (63) (67) (70) (75)) by (10) reporting list (73) (77) (80) ..." />
+                </li>
+                <li>
+                	Use your <code>play notes</code> and <code>transpose by</code> blocks to <em>hear</em> the impact of <code>map</code> on each of the two scales. For example, try: <br />
+                	<img class="indent" src="/bjc-r/img/3-lists/play-notes-transpose-twinkle-example.png" alt="play note(transpose(twinkle twinkle little star) by (4))" title="play note(transpose(twinkle twinkle little star) by (4))" />
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+            
+        	<!-- I think this cannot be done with map... -MF
+            <p>Now, you'll transpose <em>songs</em>, which have lists of lists of note pitches and beats.</p>
+            <ol start="5">
+                <li>Open your U3L1-PlaySong project from <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/6-data-types.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#music">Lab 1</a>.</li>
+                <li>
+                    Create a <code>transpose song by</code> reporter block that takes a list of note pitches and beats and a number as input and adds the number to each note's pitch. For example:<br />
+                    <img class="" src="/bjc-r/img/3-lists/" alt="" title="" />
+                </li>
+            </ol>-->
+        </div>
+        
+        <h3>Drawing 3D Shapes</h3>
+        <div class="forYouToDo">
+            <div class="todo">Could you invent a MAP page that builds on draw shape, maybe translating or reflecting or dilating?  You could exchange x and y coords and see what happens.  A translation of, say, (20, 10) could look 3-D ish, especially if corners of the two were connected.  So would a connecting an image and a dilation. --PG</div>
+            <p>You can also use <code>map</code> to translate coordinates on a plane.</p>
+            <ol>
+                <li>Open your "U3L1-DrawShape" project from <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/6-data-types.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Lab 1</a>.</li>
+                <li>
+                    Create a <code>draw 3D shape</code> block that takes a list of points as input and does the following:
+                    <ol>
+                        <li>Draws the shape by calling your existing <code>draw shape</code> block</li>
+                        <li>Draws a second copy of the shape shifted 20 in the <em>x</em> direction and 10 in the <em>y</em> direction</li>
+                        <li>Connects the corresponding verticies (corners) of the two copies of the shape</li>
+                    </ol>
+                    <div class="endnote"></div>
+				</li>
+            </ol>
+        </div>
+        
+        <h3>Transcribing Musical Notes</h3>
+        <div class="forYouToDo">
+            <div class="todo">The simplest bits of a scales project could also work. Two scales (I’d recommend major and double-harmonic only because they give cool variety and, btw, validate an interesting group of kids), a transposer (map), and something that plays them (for-each). --PG</div>
+            <ol>
+        		<li>
+					<div class="sidenote"><code>map</code> will be helpful here too. </div>	
+                    A set of notes played together is a<a name="chord" class="anchor">&nbsp;</a>chord. Create a reporter block that transposes  (shifts) a musical chord. Your block should take as input:
+                    <ol>
+                        <li>A list with the note data </li>
+                        <li>A number indicating how much to transpose the song</li>
+                    </ol>
+                	<img class="indent" src="/bjc-r/img/3-lists/transpose-chord.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
+                    <div class="endnote">You can use this <a class="run" href="/bjc-r/prog/3-lists/play-chord-block.xml"><img class="inline" src="/bjc-r/img/3-lists/play-chord-for-beats-empty.png" alt="play chord {} for () beats" title="play chord {} for () beats" /></a> to try out your <code>transpose chord</code> block.</div>
+                </li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther">
+        	<ol type="A">
+                <li>Create a script that <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#sound">plays sequences of notes</a> and chords.</li>
+            	<div class="todo">Mary, put in your example <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=mfries&ProjectName=U3%20play%20chord" target="_blank">U3 play chord</a>, which currently seems to sound terrible... Did something happen to Snap!? --MF</div>
+            
+            	<div class="takeNote">It's often useful to apply two or more functions, one after the other. This operation is called <strong>composition</strong>.</div>
+            </ol>
+        </div>
+        
+<div class="todo">Lab1’s last page, draw shape, has lots of numbers, but we’re doing something with them.  If we used MAP over the vertices of A to translate it, or dilate it, that would be ok.  I actually thought that was here somewhere, but couldn’t find it.  That would require a slightly more complex “getting inside” the list operation, but the kids in their dialogue have already begun that thinking in draw shape.  But when we get to the page on MAP, it applies arbitrary functions to arbitrary numbers for no apparent reason other than exercise.
 <br /><br />
-The first input to the <code>map</code> block has a form you haven't seen before this:<br />
-<img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>
-
-</p>
-<p>The grey ring means that the input should be a <i>function</i>. What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <code>join</code> block into the <code>map</code> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <code>join</code>ing.
-  </p>
-<p>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <code>join</code>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.
-
-</p>
-<p><br /><b>Try this:</b> Modify your <code>noun phrase</code> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;
-
-</p>-->
+</div>
+        
+        <div class="todo">
+            <div class="comment">This content had been commented out...</div>
+            The first input to the <code>map</code> block has a form you haven't seen before this:<br />
+            <img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>
+            
+            <p>The grey ring means that the input should be a <i>function</i>. What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <code>join</code> block into the <code>map</code> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <code>join</code>ing.</p>
+            <p>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <code>join</code>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.</p>
+            <p><br /><b>Try this:</b> Modify your <code>noun phrase</code> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;</p>
+        </div>
+        
 		<div class="comment">Why does the font in this image look so different? --MF<br /><img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/></div>
         <div class="sidenote">The first input of <code>map</code> <img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/> goes inside a gray ring, which means the input is a <em>function</em>.<br /> <code>map</code> is called a <em>higher order function</em> because it takes another function as an input.</div>
 
-		<p>Alphie and Betty talk about another example of using <code>map</code> to compute some function of every item of a list:</p>    
+        <h3>Using <code>Map</code> for Algebraic Functions</h3>
         <div class="dialogue">
+			<div class="stagedir">Alphie and Betty are talking about another example of using <code>map</code> to compute some function of every item of a list:</div>
     		<div><span>Betty:</span> That gray ring after the word "map" means a function goes in there. A function? Like in algebra? What about the function <em>f</em> defined by <em>f</em>(<em>n</em>) = 3<em>n</em> + 7?</div>
             <div>
             	<span>Alphie:</span> Well, I don't think the function has to be mathematical. We used <code>plural</code> with words. But let's try to put the function <em>f</em> in there. First I need to build <em>f</em>.  Here you go:<br />
@@ -56,28 +154,14 @@ The first input to the <code>map</code> block has a form you haven't seen before
                         <li>Write a function that would report the <strong>list</strong> 4, 0, 49. </li>
         			</ol>
                 </li>
-                <li>
-					<div class="sidenote"><code>map</code> will be helpful here too. </div>	
-                    A set of notes played together is a<a name="chord" class="anchor">&nbsp;</a>chord. Create a reporter block that transposes  (shifts) a musical chord. Your block should take as input:
-                    <ol>
-                        <li>A list with the note data </li>
-                        <li>A number indicating how much to transpose the song</li>
-                    </ol>
-                	<img class="indent" src="/bjc-r/img/3-lists/transpose-chord.png" alt="Play Sound Sequence" title="Play Sound Sequence" />
-                    <div class="endnote">You can use this <a class="run" href="/bjc-r/prog/3-lists/play-chord-block.xml"><img class="inline" src="/bjc-r/img/3-lists/play-chord-for-beats-empty.png" alt="play chord {} for () beats" title="play chord {} for () beats" /></a> to try out your <code>transpose chord</code> block.</div>
-                </li>		          
+                		          
             </ol>
         </div>
         
         
         <div class="takeItFurther">
         	<ol type="A">
-                <li>Create a script that <a href="/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#sound">plays sequences of notes</a> and chords.</li>
-            	<div class="todo">Mary, put in your example <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=mfries&ProjectName=U3%20play%20chord" target="_blank">U3 play chord</a>, which currently seems to sound terrible... Did something happen to Snap!? --MF</div>
-            
-            	<div class="takeNote">It's often useful to apply two or more functions, one after the other. This operation is called <strong>composition</strong>.</div>
-                           
-				<li>
+                <li>
                 	Build a reporter <code>compose </code>  that takes two functions and a list as input and reports the the result of mapping the first function over the result of mapping the second function over the list:<br />
                 	<img class="indent" title="compose" alt="map 3x+7" src="/bjc-r/img/3-lists/compose.png" />
                 </li>

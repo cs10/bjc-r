@@ -7,29 +7,36 @@
     </head>   
       
 	<body>
-        <h2>Composing Higher-Order Functions</h2>
+        <h2>Nesting Functions to Make Higher-Order Functions</h2>
 
 		<div class="todo">Paul, I had made these edits before I saw your note to "Replace page 2-composing with <a href="http://localhost/bjc-r/cur/programming/3-lists/3-using-hof/3-composing-higher-order-functions-PG.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">the one [you, Paul] just sent</a>." I don't see what you did there... --MF</div>
-        <div class="todo">Oh, but now we've crashed; I'll clean up... --MF</div>
         
-        <div class="todo">Need to put in these: <div class="newProject"><span class="text">"U1L1-Name"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U1L1-Name" title="Create a new project called U1L1-Name" /></div>
- and <div class="saveAs"><span class="text">"U1L2-Name"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Name" title="Save your work as U1L2-Name" /></div>
-and <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> --MF</div>
-        
-
-		<div class="todo"><ul><li>BH: ...just starting with the Unicode example would be okay, although really we should have, as Paul always says, a problem that kids will want to solve and /then/ talk about how to combine HOFs to solve it.</li>
-</ul></div>
         <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
 		<p><code>Map</code> <em>performs a function</em> to each item in a list and outputs a <em>list</em>. <code>Keep</code> <em>filters</em> for specific items and outputs a <em>list</em>. <code>Combine</code> <em>performs a binary operation</em> (a function with two inputs) across all items in the set and outputs a <em>single result</em>. The three can be used together to execute more advanced functions.</p>
         
 
+        <div class="todo">IDEA "Composing HOF’s" FROM:<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a><br/ >
+        
+<pre>        PUTTING IT ALL TOGETHER: Now that you’re a map, keep and combine expert you’re ready to use map, keep, and combine to make a very useful function block: remove pattern. Remove pattern takes a string str and a pattern x and removes the the pattern x everywhere from str. For example. For example if str is the string abracadabra and your removal pattern x is the letter a, then remove pattern(abracadabra, a) = brcdbr.
+		Here is some pseudocode to help with this:
+		remove pattern( str, x )
+			script variables: tokens
+set tokens to the result of split str using the pattern x 
+set tokens to the result of keep tokens with length > 0  {got rid of
+empty tokens}
+			report the result of join list on tokens   {join list is the combine
+based function that you created in problem 6}</pre><br/>
+Make sure to leave an example in your script that shows your remove pattern function works.
+</div>
+        <div class="todo">MARY: include some reflections for students to discuss for <strong>EK5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</div>
+        
         <div class="todo">
         <h3>Transcribing Musical Notes</h3>
-        <div class="todo">Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
+		<div class="todo"><ul><li>BH: ...just starting with the Unicode example would be okay, although really we should have, as Paul always says, a problem that kids will want to solve and /then/ talk about how to combine HOFs to solve it.</li></ul></div>
         
         <div class="forYouToDo">
             <ol start="3">
-                <div class="todo">UNFINISHED</div>
+                <div class="todo">UNFINISHED - Pull ideas from <a href="/bjc-r/cur/programming/1-introduction/old/3-looks-sound.html">Old Looks and Sound Page</a></div>
                 <li>
                 	Create a reporter block that<a name="transpose" class="anchor">&nbsp;</a>transposes a list of sounds, where each list item is a list with the sound's note and duration. Your block should take as input a list with the song data and a number incidating how much to transpose the song.<br />
 					<div class="sidenote"><code>map</code> will be helpful here. </div>	
@@ -87,6 +94,7 @@ and <img class="inline" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good T
         </div>
         
         <div class="todo">
+        <h1> uncommenting old code for salvaging --MF</h1>
         <br /><s>We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
 <br />   - Select only the words with five or more letters.<br />   - Make a list of the first letters of the words.
 <br />Review those activities if you don't remember how to solve those problems.</s>
@@ -111,23 +119,10 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
 
             
         <h3>Acronym Generator</h3>
-<<<<<<< HEAD
-        <div class="todo">
-        Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br />
-        </div>
         <p>With <code>map</code>, <code>keep</code>, and <code>combine</code>, you can operate on the items of a list <i>all at once.</i> You don't have to think, "Find the first letter of the first word and operate on it, then do the next letter until you find a space, then skip over any extra spaces that might be next to it, then remember the position of the beginning of the second word" and so on.</p>
         <p>You can think, "check the first letters of all the words."</p>
-=======
-        <div class="todo">PG: Acronym is fine.   Just clarify.  Return a word. </div>
-        <p>An <strong>acronym</strong> is a "word" made up of the first letters of the words in a phrase. For example, the acronym for United States of America is USA, and a blog that summarizes the activities of the Supreme Court of the United States is named using the acronym SCOTUSblog. Sometimes, an acronym uses only the capitalized words in a phrase; for example, "Beauty and Joy of Computing" becomes "BJC," not "BaJoC."</p>
-        <p>In this project, you will create a reporter block that takes a phrase as input and reports an acronym made <em>only from the capitalized words</em>.</p>
-        <p>It should work like this:<br/>
-                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  /><br />
-                    <img  src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> </p>
-        
->>>>>>> origin/gh-pages
 
-		<div class="sidenoteBig">An <strong>acronym</strong> is the first letters of every capitalized word in a phrase. For example, SUNY is an acronym for State University of New York.</div>
+		<div class="sidenoteBig">An <strong>acronym</strong> is a "word" made up of the first letters of every capitalized word in a phrase. For example, the acronym for United States of America is USA, and SUNY is an acronym for State University of New York.</div>
         <p>Imagine, we want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. </p>
         <div class="todo">
             <ul>
@@ -144,7 +139,7 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
         </div>
 
         <div class="forYouToDo">
-<<<<<<< HEAD
+	        <div class="todo">Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)</div>
             <ol start="6">
                 <li>
 	                <div class="sidenote"><code>map</code>, <code>keep</code>, and <code>combine</code> will be useful here.</div>
@@ -164,18 +159,6 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
                             Review those activities if you don't remember how to solve those problems.
                         </div>
                     </div>
-=======
-            <ol start="4">
-                <li>The steps below suggest <em>one</em> way to create a reporter that takes a phrase as input and reports an acronym composed of the first letters of the capitalized words. 
-                <ol>
-                    <li>The input phrase is a string of characters. So that you don't have to look at every character of the string to find which ones are the first letters of words, <span class="snap">snap</span> lets you split that string at every space-character and convert it to a list of words. There are many ways. One way is to use <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  />. It's in the Tools library. <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
-                    </li>
-                    <li> <code>map</code>, <code>keep</code>, and <code>combine</code> will help you operate on the all items of that list without having to think about stepping through the list item by item. You have choices about your next step. You could use map to generate a new list containing only the first letters of the words in your input list, and <em>then</em> keep only those that are capital letters.  <strong>OR</strong>, you could keep only the words that begin with capitals and <em>then</em> create a list containing only the first letters of those words.
-                    </li>
-                    <li>Last, you need to convert that list back into a string.
-                    </li>
-                </ol>
->>>>>>> origin/gh-pages
                 </li>
             </ol>
         </div>
@@ -196,13 +179,10 @@ To translate from a text string to a list of words, <span class="snap">snap</spa
 
         <h3>Statistics: Sums of Squares</h3>
         <div class="todo">The sum of the squares does interest me, if we are doing a mathematical investigation, but we’re not: just making a procedure that does that feels unmotivated--PG</div>
-        <div class="todo">Briefly introduce sum of squares statstical idea. See <a href="https://www.youtube.com/watch?v=W0IR9wF_KFQ">youtube</a> --MF</div>
         <p>In statistics, the sum the squares of the... </p>
         
         <div class="forYouToDo">
             <ol start="7">
-                <li>Create a list of the ages of people in a group (your class, your family, your friends, a made-up group, etc.)</li>
-                <li>Set a variable <var>N</var> (for number) to the number of ages in your list.</li>
                 <li>Using <code>map</code>, create a block that takes a list of positive integers as input and reports the list of the squares of its elements.</li>
                 <div class="endnote">For example, if the input list is <code>{2, 7, 4, 9}</code>, then the output list should be <code>{4, 49, 16, 81}</code>.</div>
                 <li>Using <code>map</code> and <code>combine</code>, create a block that takes a list of positive integers as input and reports the sum of all the  squares of its elements.</li>

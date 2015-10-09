@@ -17,8 +17,9 @@ h3: Highlighting Computational Thinking
 
 heading: Week 7 (Programming Focus)
 	resource: Lab 1: Introduction to Lists [/bjc-r/cur/teaching-guide/U3/lab-pages/1-introduction-to-lists.html]
-	raw-html:<ul><li>3-4 days</li></ul>
-	resource: Lab 2: Three Key List Operations [/bjc-r/cur/teaching-guide/U3/lab-pages/2-list-operations.html]
+	raw-html:<ul><li>7 days</li></ul>
+	resource: Lab 2: Nesting Lists [/bjc-r/cur/teaching-guide/U3/lab-pages/2-list-operations.html]
+	resource: Lab 3: Three Key List Operations [/bjc-r/cur/teaching-guide/U3/lab-pages/2-list-operations.html]
 	raw-html:<ul><li>3-4 days (continue in Week 8)</li></ul>
 
 heading: Week 8 (Programming Focus)
@@ -26,7 +27,7 @@ heading: Week 8 (Programming Focus)
 	raw-html:<ul><li>3-4 days (continue in Week 9)</li></ul>
 
 heading: Week 9 (Programming Focus)
-	resource: Lab 4: Tabular Data [/bjc-r/cur/teaching-guide/U3/lab-pages/4-tabular-data.html]
+	resource: <s>Lab 4: Tabular Data</ [/bjc-r/cur/teaching-guide/U3/lab-pages/4-tabular-data.html]
 	raw-html:<ul><li>3 days</li></ul>
 
 heading: Week 10 (Social Implications Focus)
