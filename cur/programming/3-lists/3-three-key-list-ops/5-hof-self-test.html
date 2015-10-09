@@ -147,7 +147,7 @@
                     <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that ((letter (length of ()) of ())=1) from (squares)" title="keep items such that ((letter (length of ()) of ())=1) from (squares)" /> reports the list {1, 16, 100, 121, 144, 169, and 196}.
                 </div>
                 <div class="feedback">
-                    No, this doesn't mean "keep numbers in which <em>any</em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1." 
+                    No, this doesn't mean "keep numbers in which the first<em></em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1." 
                 </div>
             </div>
             <div class="choice" identifier="c4">
@@ -191,8 +191,7 @@
                     <img border="0" src="/bjc-r/img/3-lists/check2isaNumc1.png" alt="map (is () a (number)?) over (words and numbers)" title="map (is () a (number)?) over (words and numbers)" />
                 </div>
                 <div class="feedback">
-                    No. The <code>Is a number?</code> block is a predicate, so it returns a Boolean.
-                </div>
+                    No. The <code>Is a number?</code> block is a predicate, so <code>map</code> will report a list of Boolean (true/false) values, not a list of numbers.</div>
             </div>
             <div class="choice" identifier="c2">
                 <div class="text">
@@ -270,6 +269,7 @@
         </div>
 
         <!-- question 5-->
+            <div class="comment">This isn't wrong, but I don't like examples of combine that only work for lists of length two.  Students get confused about what these mean.</div>
         <div class="assessment-data"
         type="multiplechoice" identifier="capitals_mapkeepcombine"
         hasinlinefeedback="true" maxchoices="5"
