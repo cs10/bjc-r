@@ -8,23 +8,46 @@
 
 	<body>
     	<h2>Programming Lab 1: Introduction to Lists</h2>
-        <p>Computers manipulate data and return processed information to the user. Numbers, strings of characters (letters, numbers, symbols, etc.), and Boolean values (true, false) are some of the basic pieces of information. Often these small pieces are arranged in more complex structures: <em>lists</em>, ordered sets of data. 
-        A <code>list</code> is not just a collection (set) but a collection <em>in a particular order</em>. If it has any elements at all, it has a first element, a last element, and so on.  You can search a list to see if it <code>contains</code> some element; you can create new lists that <code>keep</code> only certain items from a list you started with; you can create new lists with more or fewer elements than the list you have; and you can pick an <code>item of</code> a list by position, or characteristic, or just randomly.  A <code>list</code> can be totally empty, with no elements at all; often that is the way we want to start (initialize) a list before we add elements to it. The <code>length of</code> such a list is 0.  An item (e.g., almonds) is not the same as a <em>list</em> containing just that item. And you can do something with each item of the list: you can process it in some way (e.g., <code>map</code> a function over each element and report the resulting list) or, <code>for each</code> element of the list, you can display it in some way.</p>
-        <p>Students begin Lab 1 by building a very elementary shopping list app: it its simplest form, the app allows the user only to add items to the list or clear the list. Students can later add more features as they learn more about list processing.</p> 
-        
+        <p>Computers manipulate data and return processed information to the user. Numbers, strings of characters (letters, numbers, symbols, etc.), and Boolean values (true, false) are some of the basic pieces of information. Often these small pieces are arranged in more complex structures: <em>lists</em>, ordered sets of data.</p> 
+		<p>
+            A <code>list</code> is not just a collection (set) but also a collection <em>in a particular order</em> (this order is tracked by an <em>index number</em> for each item on the list). If it has any elements at all, it has a first element, a last element, and so on. A list can also be totally empty, with no elements at all; often that is the way we want to set up (<em>initialize</em>) a list before we add elements to it. The <code>length of</code> an empty list is 0.</p>
+            <p>
+				Lists are powerful. Databases are lists of lists of lists. Many operations can be performed on data in a list:
+				<ul>
+					<li>Searching a list to see if it <code>contains</code> some element.</li>
+					<li>Modifying lists to <code>add</code>, <code>delete</code>, <code>replace</code> items, or to <code>insert</code> an item in a specific spot.</li>
+                    <li>Creating new lists that <code>keep</code> only certain items from a list you started with.</li>
+                    <li>You can create new lists with more or fewer elements than the list you have.</li>
+                    <li>You can pick an <code>item</code> of a list by position, or characteristic, or just randomly. </li>
+                    <li>You can do something with each item of the list: you can process it in some way or, <code>for each</code> element of the list, you can display it in some way.</li>
+            </ul>
+        </p>
+        <p>Students begin page 1, Introducion to Lists, by building a basic shopping list app that introduces the ideas that lists can store data and that programs can access and manipulate list contents. In its simplest form, the app allows the user to add items to the list or clear the list. Students can add more features as they learn more about list processing.</p>
+        <p>On page 2, Exploring List Processing, students explore various list blocks by predicting and testing the outcome of various expressions and small scripts. Students get a preview of several important funcitons that will be addressed in more detail (<code>for each</code>, <code>map</code>, <code>keep</code>, and <code>combine</code>).</p>
+        <p>Page 3, <code>Join</code> and <code>Join Words</code> is a project that focuses on using <strong>abstraction</strong> to organize calls to a group of lists. Sentence phrase blocks are combined to build simple and complex sentences.</p>
+        <p>The last page, Managing List Data, covers a variety of common and/or illustrative programming tasks related to lists (including swapping items, filtering for uniques, and sorting).</p>
+
         <h3>Pacing:</h3>
         <div>
             <ul>
-                <li>The first page of this lab (Shopping List App) should be relatively quick. Student may finish it and work on the Take it Further questions in <em>less than one period</em>.</li>
-                <li>The remaining pages page (Exploring List Processing,<code>Join</code> and <code>Join Words</code>, and Managing List Data) may take <em>one to two class periods</em>.</li>
+                <li>The first page of this lab (<strong>Shopping List App</strong>) should be relatively quick. Student may finish it and work on the Take it Further questions <em>within one period</em>.</li>
+                <li>The three remaining pages (<strong>Exploring List Processing</strong>, <strong><code>Join</code> and <code>Join Words</code></strong>, and <strong>Managing List Data</strong>) may take <em>one to two class periods</em>.</li>
             </ul>
         </div>
+        
+        <h3>Prepare:</h3>
+        <div>
+            <ul>
+				<li>Page 1, Shopping List App, and page 4, Managing List Data, are new pages that were not part of this curriculum until October 2015. Teachers should review and, if time, also work though these pages before their students. Feedback (via the blue button the lower right) is always appreciated. For a timely response, please use the BJC Piazza site.</li>
+            </ul>
+        </div>
+
 
     	<h3>Students will:</h3>
         <div class="sidenoteBig">
         	<div><strong>Looking ahead</strong></div>
         	<ul>
-            	<li>Students are introduced to <code>map</code>, <code>keep</code>, and <code>combine</code> in Exploring List Processing, but they don't have to fully understand it yet. They will work more with these blocks in Lab 3.</li>
+            	<li>Students are briefly introduced to <code>map</code>, <code>keep</code>, and <code>combine</code> in Exploring List Processing. They will work with these blocks more in Lab 3: Three Key List Operations.</li>
 			</ul>
 		</div>
 		<div>
@@ -32,7 +55,9 @@
                 <li>Continue to practice pair programming</li>
                 <li>Make lists and become familiar with many of the list blocks in the Variables palette</li>
                 <li>Notice the difference between returning a string (or a number) and returning a list</li>
-                <li>Randomly choose items from lists of words to make a Sentence Builder</li>			
+                <li>Write scripts for user interface buttons that control items in a shopping list.</li>
+                <li>Randomly choose items from lists of words to make a Sentence Builder</li>
+                <li>Explore several concepts related to list manipulation and sorting.</li>			
             </ul>
 		</div> 
 			  
@@ -40,34 +65,93 @@
 		<h3>As a Class:</h3>
 		<div>
         	<ul>
-				<li>You may wish to have a class discussion regarding datatypes: strings vs. lists (also predicates, numbers, functions, etc.). You might ask:
-                    <ol>
-                        <li>What is a list?</li>
-                        <li>What can you do with a list?</li>
-                        <li>What kind of datatypes does a list take?</li>
-                        <li>Can you put a list in a list?</li>
-            		</ol>
-    			</li>
+				<h4></h4>
+                <li>
+                	<strong>Page 1: Shopping List App.</strong>
+               	  <ul>
+                    	<div class="comment">When time, add a Google doc. --MF</div>
+                        <li>Opener: After the first day with "Shopping List App," present a short script with an error showing (where the error has been caused by neglecting to initialize a list). Ask students: What might have caused the error? What is the proper way to address this issue? (This opener connects to "Shopping List App," where students first initialize a list.)</li>
+						<div class="todo">Brian, I'm not sure you like my writing about data types, please review the following carefully... --MF</div>
+                        <li>
+	                        Discussion: You may wish to review different types of data in Snap<em>!</em>: strings, lists, predicates, numbers, functions, etc. You might ask:
+                            <ul>
+                                <li>What is is the difference between a string and a list?</li>
+                                <li>What else is special about a list? Use if students don't mention that each item in a list has an index number.</li>
+                                <li>What can you do with a list? Listen for both specific tasks (e.g. "add an item" or "order the items") and also for project ideas (e.g. "track earnings and expenses" or "organize sports data").</li>
+                                <li>What kind of data types does a list take? Invite students to experiment with Snap<em>!</em> to answer this question and to consider contexts for which including various data types in a list would be useful.</li>
+                                <li>Can you put a list in a list? What are some examples of a list within a list? (Students may not have examples just yet.) This is both of preview of the next lab, "Nesting Lists" and also a reminder to students that nesting computational objects is common in programming. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                
+                <li>
+                    <strong>Page 2: Exploring List Processing.</strong>
+                    <ul>
+	                    <li>
+                        	Discussion: After students have all had a chance to consider the problems on this page, you might ask:
+                            <ul>
+                                <li>What is the difference between <img src="/bjc-r/img/3-lists/gs2item.png" class="script" alt="item 2 of list block" title="item 2 of list block"> and <img src="/bjc-r/img/3-lists/gs2list.png" class="script" alt="list with item 2 block" title="list with item 2 block">? This question is on the student lab page. Asking it again gives students a chance to refine their understanding that an item (e.g., Boise) is not the same as a <em>list</em> containing just that item.</li>
+                                <li>What does the ... block do? (for each the these list reporters: <code>length</code>, <code>all but first</code>, <code>in front of</code>, <code>item</code>, <code>contains</code>)</li>
+                                <li>What does the ... block do? (for the following higher-order list blocks: <code>for each</code>, <code>map</code>, <code>keep</code>, and <code>combine</code>) Students don't need to achieve mastery here. This is just a chance to spend a moment building some initial ideas about these functions before Lab 3: Three Key List Operations.</li>
+                              <li>What do you think the ... block does? (for <code>add</code>, <code>delete</code>, <code>insert</code>, and <code>replace</code>) Unit 3 doesn't doesn't focus on these blocks as much as those above in part because these blocks are relatively easy to understand. </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                	<strong>Page 3: <code>Join</code> and <code>Join Words</code>.</strong> 
+                	<ul>
+                    	<li>This lesson relies on confidence with (more than knowledge of) English grammar, but if you have students who are more proficient with another language, you may encourage them to build simple and complex sentence builders in a language of their choice. Students could work with others or alone and then share. Be creative. For example, it might be beneficial to pair a student studying Spanish with a fluent Spanish speaker.</li>
+                        <li>As always, if students do interesting work (e.g. with another language or with the Take It Further excercises), consider inviting them to share with the class.</li>
+                    </ul>
+                </li>
+                <li>
+                	<strong>Page 4: Managing List Data</strong>
+                    <ul>
+                    	<li>
+                            Discussion: Several points in this lesson are worth a brief discussion. You might ask:
+                            <ul>
+								<li>What is the difference between creating a script to swap the values of two variables and creating a script that swaps a list item with the list item just after it?</li>
+                                <li>When would you want your <code>swap with next</code> block to be a command and when would you want it to be a reporter?</li>
+                                <li>What would be the list input to the <code>swap with next</code> block (variable or list) in the case of it being a command block or a reporter?</li>
+                                <li>What is a selection sort?</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
     		</ul>
     	</div>
 
 
 		<h3>Assignments:</h3>
-		<div class="comment">Do we have to worry about student data here?? --MF</div>
-
+        <div>
+            <ul>
+	            <li>Students can begin work on their <a href="http://localhost/bjc-r/topic/topic.html?topic=nyc_bjc/3.5-term-1-programming-project.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Team 1 Programming Project</a> during Unit 3.</li>
+                <li>
+                	Lab 1 also includes several mini-projects that students could spend additional time improving and turn in:
+                	<ul>
+                    	<li>The Shopping List App (on "Shopping List App")</li>
+                        <li>The Sentence Builder (on "<code>Join</code> and <code>Join Words</code>")</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    
 			
-		<h3>Look For:</h3>
+		<!--<h3>Look For:</h3>  	THIS LOOKS WORTH REVISITING ONE DAY --MF
 		<div>
         	<ul>
-                <div class="todo">JK: Putting in these bullets to remind myself, in response to AC's comment that it's good to ask students to fix scripts becuase it demonstrates MP "something or other"</div>
+                <div class="todo">JK: Putting in these bullets to remind myself, in response to AC's comment that it's good to ask students to fix scripts because it demonstrates MP "something or other"</div>
             	<li>Fixing Alphie and Betty's script...</li>
                 <li>Also include sample student responses for what partners are saying to each other about how sentence builder demonstrates abstraction</li>
             </ul>
-        </div>
+        </div>-->
         
 			
-		<h3>Related Resources:</h3>
-		<div><ul><li>...</li></ul></div>
+		<!--<h3>Related Resources:</h3>
+		<div><ul><li>...</li></ul></div>-->
 
 			
 		<h3>Tips:</h3>
@@ -76,8 +160,7 @@
                 <li><div class="sidenote">Many of the <span class="snap">snap</span> projects linked from the student pages already have the tools imported.</div>Throughout this Unit, students will have to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> in order to access the blocks they need. This is required every time a student opens a new <span class="snap">snap</span> window. (Links to projects in the curriculum have been shared with the tools already imported.)</li>
             	<li><strong>Shopping List App:</strong>
                     <ul>
-                        <li>This simple progam introduces the ideas that lists can store data and that programs can access and manipulate list contents.</li>
-                        <li>Students 
+                        <li>If some students work through this page more quickly than others, encourage those students to do some of the Take it Further exercises and also to consider designing and making their own adaptations to their Shopping List App.</li>
 					</ul>
                 </li>
             	<li><strong>Exploring List Processing:</strong>
@@ -85,6 +168,16 @@
                         <li>This page asks students to build the blocks (rather than providing a link that has the blocks built already). This is intentional, so that students get the experience of finding these blocks in the palette and getting the logic of what kinds of blocks go inside of other blocks.</li>
                         <li>Students explore blocks such as <code>all but the first of {}</code>, <code>() in front of {}</code>, and <code>item () of {}</code>. Consider asking students to write out a sentence describing the behavior of each of these blocks or to describe them to the class</li>
                         <li>Listen for students making the distinction between expressions that report strings (such as "Boise") and those that report a list containing one item (such as <code>{Boise}</code>). If you don't hear students making this distinction, consider a brief class discussion about it. Distinguishing the logic between what data type is reported is a big help when debugging.</li>
+                    </ul>
+                </li>
+            	<li><strong><code>Join</code> and <code>Join Words</code>:</strong>
+					<ul>
+                    	<li>The English grammar on this page may be too complex for some English Language Learners to stay focused on the computer science. There are some suggestions on the student lab page for handling this. Students are encouraged to be creative and to make their own choice about how to proceed.</li>
+                    </ul>
+                </li>
+            	<li><strong>Managing List Data:</strong>
+					<ul>
+                    	<li>The Selection Sort Take It Further exercise is  complicated. Have students who tackle this problem share any meaningful progress with the class</li>
                     </ul>
                 </li>
         	</ul>
@@ -97,27 +190,43 @@
 			
 		<h3>Correlation with AP CS Principles Framework</h3>
 		<div class="apStandards">
-			<div class="comment">Are these really for U3 or were the copied from another unit? --MF</div>
             <h4>Computational Thinking Practices:</h4>
 			<ul>
-                <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Create an artifact with a practical, personal, or societal intent.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Select appropriate techniques to develop a computational artifact.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Use appropriate algorithmic and information management principles.</li>
+				<li><strong>P3 Abstracting</strong> Explain how data, information, or knowledge is represented for computational use.</li>
+                <li><strong>P3 Abstracting</strong> Explain how abstractions are used in computation or modeling.</li>
+                <li><strong>P3 Abstracting</strong> Identify abstractions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Evaluate a proposed solution to a problem.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Locate and correct errors.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Explain how an artifact functions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Justify appropriateness and correctness of a solution, model, or artifact.</li>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in producing an artifact.</li>
+                <li><strong>P6 Collaborating</strong> Share the workload by providing individual contributions to an overall collaborative effort.</li>
+                <li><strong>P6 Collaborating</strong> Foster a constructive, collaborative climate by resolving conflicts and facilitating the contributions of a partner or team member.</li>
                 <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
+                <li><strong>P6 Collaborating</strong> Review and revise their work as needed to create a high-quality artifact.</li>
             </ul>
 			<h4>Essential Knowledge:</h4>
 			<ul>
+                <li><strong>EK2.1.1A</strong> Digital data is represented by abstractions at different levels.</li>
+                
+                <li><strong>EK3.1.3E</strong> Interactivity with data is an aspect of communicating.</li>
+                <li><strong>EK3.2.1F</strong> Software tools, including spreadsheets and databases, help to efficiently organize and find trends in information.</li>
+                <li><strong>EK3.2.2H</strong> Analytical techniques to store, manage, transmit, and process data sets change as the size of data sets scale.</li>
                 <li><strong>EK4.1.1B</strong>Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
+                <li><strong>EK5.1.3B</strong>Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
+                <li><strong>EK5.1.3F</strong>Effective communication between participants is required for successful collaboration when developing programs.</li>
+                <li><strong>EK5.3.1I</strong> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
                 <li><strong>EK5.2.1B</strong>Program instructions are executed sequentially.</li>
                 <li><strong>EK5.3.1K</strong> Lists and list operations, such as add, remove, and search, are common in many programs.</li> 
 				<li><strong>EK5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
 				<li><strong>EK5.5.1H</strong> Computational methods may use lists and collections to solve problems.</li>
-
-				<div class="todo">The following where here previously, but I don't know if they are relevant now. --MF</div>
-                <li><strong>EK5.1.3B</strong>Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
-                <li><strong>EK5.1.3F</strong>Effective communication between participants is required for successful collaboration when developing programs.</li>
-                <li><strong>EK5.3.1I</strong> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
+				<li><strong>EK7.3.1K</strong> People can have instant access to vast amounts of information online; accessing this information can enable the collection of both individual and aggregate data that can be used and collected.</li>
             </ul>
 		</div>			
 
 
-	</body>
+</body>
 </html>
