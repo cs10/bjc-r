@@ -9,6 +9,9 @@ heading: Reading the Web
 	resource: Scraping Data from Web Pages [/bjc-r/cur/programming/4-internet/1-read-web/2-scrape-data.html]
 	resource: The Network of Networks: IP [/bjc-r/cur/programming/4-internet/1-read-web/3-ip-routing.html]
 	resource: Reliable Transmission on Unreliable Networks: TCP [/bjc-r/cur/programming/4-internet/1-read-web/4-tcp.html]
+	resource: Names to Addresses: DNS [/bjc-r/cur/programming/4-internet/1-read-web/5-dns.html]
+	resource: Who's In Charge? [/bjc-r/cur/programming/4-internet/1-read-web/6-ietf.html]
+	resource: Internet Security [/bjc-r/cur/programming/4-internet/1-read-web/7-security.html]
 
 heading: GPS Forensics
 	resource: Introduction [/bjc-r/cur/programming/4-internet/n-gps-data/1-introgps.html]
