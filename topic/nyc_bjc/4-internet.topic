@@ -13,14 +13,17 @@ heading: Reading the Web
 	resource: Who's In Charge? [/bjc-r/cur/programming/4-internet/1-read-web/6-ietf.html]
 	resource: Internet Security [/bjc-r/cur/programming/4-internet/1-read-web/7-security.html]
 
+heading: Weather App
+	resource: Getting Started [/bjc-r/cur/programming/4-internet/2-weather-app/1-read-web-google.html]
+	resource: Pulling Weather Data [/bjc-r/cur/programming/4-internet/2-weather-app/2-weather-grab.html]
+	resource: Building A Weather Report [/bjc-r/cur/programming/4-internet/2-weather-app/3-weather-report.html]
+	resource: Need An Umbrella? [/bjc-r/cur/programming/4-internet/2-weather-app/4-umbrella.html]
+
 heading: GPS Forensics
 	resource: Introduction [/bjc-r/cur/programming/4-internet/n-gps-data/1-introgps.html]
 	resource: Visualizing Data [/bjc-r/cur/programming/4-internet/n-gps-data/2-visualizing.html]
 	resource: Clustering [/bjc-r/cur/programming/4-internet/n-gps-data/3-clustering.html]
 	resource: Drawing Conclusions [/bjc-r/cur/programming/4-internet/n-gps-data/4-conclusions.html] 
-	
-heading: Weather App
-	resource: API and Scraping Data [/bjc-r/cur/programming/4-internet/o-weather-app/1-weatherintro.html]
 	
 	raw-html: <div class="todo">The Spam Checking Lab has been commmented out for the 2015-2016 year. --MF</div>
 
