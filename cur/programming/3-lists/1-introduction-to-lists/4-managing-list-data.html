@@ -57,7 +57,7 @@
 		<h3>Using an Index Variable</h3>
         <div class="todo">The content in this section was adapted from a former U3 investigation: <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html">Processing a Sentence</a></div>
 <div class="comment">Is this in the framework or something?  Because the way I'd write <code>spell word</code> is<img src="/bjc-r/img/3-lists/bh-spell-word.png"></div>
-<p>Part of what makes lists so powerful is that lists are ordered and each item in the list has an <em>index number</em> that you can use to refer to that particular item. But using an index variable to process a bunch of values is not specific to lists! Creating an index from scratch is farily common in programming and worth getting comfortable with.</p>
+<p>Part of what makes lists so powerful is that lists are ordered and each item in the list has an <em>index number</em> that you can use to refer to that particular item. But using an index variable to process a bunch of values is not specific to lists! Creating an index from scratch is fairly common in programming and worth getting comfortable with.</p>
         <p>This block says each of the items in a list:<br /><img class="indent" src="/bjc-r/img/3-lists/index-read-list.png" alt="read through list (list) block definition" title="read through list (list) block definition" /></p>
         <p>The block says all of the letters in a sentence:<br /><a class="run" href="/bjc-r/prog/3-lists/U3L1-IndexVariable.xml"><img class="indent" src="/bjc-r/img/3-lists/index-spell-word.png" alt="spell word (word) block definition" title="spell word (word) block definition" /></a></p>
                     
@@ -84,7 +84,8 @@
                     <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
             </ol>
         </div>
-        
+
+<div class=ToDo> DANGER BELOW: See Brian's note.  We must actually create, not just imagine, the programs we ask kids to write. Problem b won't work, at least not as specified. Because of the <em>title</em> of this section, I've included the whole section in the warning.    
         
         <h3>Swapping Variable Contents</h3>
         <div class="forYouToDo">
@@ -112,7 +113,7 @@
                         <li>List <em>reporters</em> perform some kind of calculation <em>with</em> a list (but generally <em>without changing</em> the list), and they <em>report</em> information, perhaps a modified list.</li>
                         <li>List <em>commands</em> perform some kind of calculation <em>on</em> a list. They may <em>actually change the original list</em> and  have <em>no output</em>.</li>
                     </ul>
-                </div>
+                </div></div>
               <div class="todo">Is this any different from what we already know about commands and reporters?  What I think you really want to say here is this:  <div class="takeNote">There are two very different styles of programming: <em>functional</em> programming, in which you mostly use reporters, and compute new values rather than modify values of variables that already exist; and <em>imperative</em> programming, in which you mostly use commands, and change the values of variables all the time.  All else being equal, functional programming is better because it leads to fewer bugs and because it's much easier to parallelize.  But sometimes it's more efficient or just plain easier to use imperative programming style.  In Snap<em>!</em>, because of the way lists are implemented, it's important for efficiency reasons to use a consistent style for any particular list&mdash;either always use red command blocks to mutate the list, or always use reporters such as <code>in front of</code> or <code>keep</code> to compute new lists based on the old one.</div>  But it's much too early to say that, which is why this whole page, if it belongs anywhere, belongs in Lab 4.</div>
 
 		  </ol>
