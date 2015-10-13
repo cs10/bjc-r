@@ -23,14 +23,13 @@ title: Unit 3: Lists
 
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li><li>Yet unused Former "Investigation": <a href="/bjc-r/cur/programming/3-lists/investigations/display-word.html">Display Word</a></li></ul></div>
 
-	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" /></div>
-
-
 heading: Programming Lab 1: Introduction to Lists
 	resource: Shopping List App [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html]
 	resource: Exploring List Processing [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-exploring-list-processing.html]
-	resource: Modeling the Way we Make Sentences [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-join-join-words.html]
+	resource: Modeling Sentence Structures [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-join-join-words.html]
 	
+	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" /></div>
+
 heading: Programming Lab 2: Nesting Lists
 	resource: Lists of Lists [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-list-of-lists.html]
 	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
