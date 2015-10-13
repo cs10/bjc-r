@@ -8,27 +8,26 @@
 
 	<body>
     	<h2>Programming Lab 2: Nesting Lists</h2>
-        <p>A list of same-size lists forms a table, a two-dimensional array of data. Their ordered and nested indicies provide a logical structure for accessing information in the dataset. (In mathematics, lists appear as vectors and lists of lists as matrices.)</p>
-        <p>, tables or arrays of data (in mathematics, vectors and matrices), and more.  The <code>list</code> is the basic building block of all those more complex structures.  A table of data, is a list of rows of data, each row being a list of data.</p>
-        <p>Students create a contact list app that collects and stores phone numbers and names and can be cleared, and explore list reporters with nested lists. They use <code>for each</code> to process lists of points on the plane and lists of note pitches and durations in a melody. The points and notes are, themselves list of lists, (<var>{<em>x</em>, <em>y</em>}</var> and <var>{pitch, duration}</var>).</p>
-        <p>abstract data types (ADTs)</p>
+        <p>A list of same-size lists forms a table, a two-dimensional array of data. <!--A table of data, is a list of rows of data, each row being a list of data.--> The ordered and nested indicies of the lists provide a logical structure for accessing information in the dataset. In mathematics, lists appear as vectors and lists of lists as matrices. The <code>list</code> is the basic building block of these more complex structures.</p>
+        <p>Lists that appear as elements of another list are called "nested lists". Blocks can locate items in the nested lists and also the nexted lists themselves (with all their items inside). For example, <code>item (3) of </code> the list of points below gives <var>list {10, 120}</var>. As the sprite visits each of these points (in a <code>for each</code> block) the point (10, 120) is the third that it visits.  </p>
+		<img class="indent" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />
+        <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
+
+        <p>Lists can go inside lists inside lists and so on, but Unit 3 only covers two-dimensions of nesting: lists of lists which form arrays.</p>
+        <p>Students begin the Lab on page 1, Lists of Lists, where they explore list reporters with nested lists and create a contact list app that collects and stores phone numbers and names. Then on page 2, The <code>For Each</code> Block, they use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists. Page 3, Data Types, introduces the idea of using abstraction to make the lists inside the list more usable, namely, labeling them as points. Finally in page 4, Lists Review and Self Check students use <code>for each</code> two write two additional sprites (Show Contact and Delete Contact) for their Contact List app and extend their use of <code>for each</code> and data types to a musical context.</p>
         <p>Thus in Labs 1 and 2, students have encountered lists of strings/words, numbers, and lists. They also use <em>abstraction</em> to clarify and simplify code, clarifying the role of a pair of numbers as the coordinates of a <code>point</code> (or the attributes of a <code>note</code>) not just as the elements of a <code>list</code>. </p> 
-        Students 
-        
-        <p>Lists that appear as elements of another list are called "nested lists". For example if we  <code>item (3) of </code> the list below gives <var>list {10, 120}</var>. The point (10, 120) is the third that the sprite visits and is the first on the right hand (positive) side of the vertical axis. blocks can locate items in the lists in the list and also the just the lists within the list with all their items inside. Lists can go inside lists inside lists and so on, but Unit 3 only covers two-dimensions of nesting: lists of lists which form arrays.
-         in <s>is a list that appears as an element in another list. In this list, the element with index 3 is a nested list. To extract an element from the nested list, we can proceed in two steps. First, extract the nested list, then extract the item of interest. It is also possible to combine those steps using bracket operators that evaluate from left to right.</s></p>
         
         <h3>Pacing:</h3>
         <div>
             <ul>
-                <li>The four pages of this lab (<strong>Lists of Lists</strong>, <strong>The <code>For Each</code> Block</strong>, <strong>Data Types</strong>, and <strong>Lists Review and Self Check</strong>) are each expected to be relatively quick, approximately 1 class period each.</li>
+                <li>The four pages of this lab are each expected to be relatively quick, approximately 1 class period each.</li>
             </ul>
         </div>
         
         <h3>Prepare:</h3>
         <div>
             <ul>
-				<li>Page 1, Lists of Lists, includes a new Contact List app that was not part of this curriculum until October 2015. Teachers should review and work though these pages. Feedback is always appreciated.</li>
+				<li>Page 1, Lists of Lists, and Page 4, Lists Review and Self Check include a new Contact List app that was not part of this curriculum until October 2015. Teachers should review and work though these pages. Feedback is always appreciated.</li>
             </ul>
         </div>
 
@@ -56,13 +55,13 @@
                 	<strong>Page 1: Lists of Lists.</strong>
                     <ul>
                         <li>Discussion, you might ask:
-                            <ol>
+                            <ul>
                                 <li>What is a list of lists?</li>
                                 <li>What kinds of things can you do with a list of lists?</li>
                                 <li>Do the lists inside a list <em>need to</em> be the same size?</li>
                                 <li>What can be done if the lists inside a list <em>are</em> the same size?</li>
 		                        <li>In what other situations might a list of lists be helpful?</li>
-                            </ol>
+                            </ul>
                         </li>
                         <li>You might consider asking students (or pairs) to write a sentence for each of the list reporters decribing how they treat lists of lists. Or you could discuss this as a class as well.</li>
                     </ul>
@@ -94,7 +93,6 @@
                 	<strong>Page 4: Lists Review and Self Check.</strong>
                     <ul>
                         <li>Consider inviting students with musical training to present basic music theory (especially classical note pitch and beat length representation) and to share and describe their music script(s) with the class.</li>
-                        <li></li>
                     </ul>
                 </li>
     		</ul>
@@ -135,8 +133,15 @@
             	<li>
                 	<strong>Page 1: Lists of Lists.</strong>
                     <ul>
-                        <li></li>
-                        <li></li>
+                        <li>Encoruage students to make a prediction about what the Snap<em>!</em> scripts to <em>before</em> building actually them in Snap<em>!</em></li>
+                        <li>
+                            Downloading and importing sprite costumes is easy, but there are a few steps to note:
+                            <ul>
+                                <li>First, right click to save the file to a location on your harddrive where you can easily find it again.</li>
+                                <li>In Snap<em>!</em>, add a new sprite with the desired name, and <em>with that sprite selected</em>, click the "Costumes" tab.</li>
+                                <li>Locate and drag the image file from the location where you saved it to the open "Costumes" tab.</li>
+                            </ul>
+                        </li>
                     </ul>
             	</li>
                 <li>
@@ -150,14 +155,13 @@
                 <li>
                 	<strong>Page 3: Data Types.</strong>
                     <ul>
-                        <li></li>
+                        <li>"Abstract data type" sounds like a complicated thing, but programmers actually use them to simplify the logical structure of their code. It is reasonable to think of an abstract data type like a "template" for data&mdash;for example, if you had everyone in class fill out a form with their name, address, email, etc., that form would be like an abstract data type (except for being a real paper form&mdash;not an abstract digital artifact).</li>
                     </ul>
             	</li>
                 <li>
                 	<strong>Page 4: Lists Review and Self Check.</strong>
                     <ul>
                         <li>Students familiar with music may want to use fractions (e.g. 0.25, 0.5, etc.) to represent note lengths (e.g. quarter notes, half notes, etc.) and adjust their tempo(s) accordingly. Integer note lengths are offered on the lab pages for students unfamiliar with the nuances of representing musical time signatures as decimals (e.g. 0.25 + 0.5 being a full measure in 3/4 time, but not 4/4 time). Integers work just as well and are more forgiving.</li>
-                        <li></li>
                     </ul>
                 </li>
        	  </ul>
