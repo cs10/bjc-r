@@ -9,11 +9,9 @@
     <body>
         <h2>List of Lists</h2>
         
-        <div class="todo"><a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">Contact List</a> mini-project</div>
-        <div class="todo">Add contacts list app: Suggestion 1:  When lists of lists are introduced, build on the structure of the shopping list app to make a contacts list app, in which each entry (abstraction!) is a contact, just Gamal is suggesting each pair of coordinates is a point and we are suggesting each pitch-duration combination is a note.  If we include address, then U4 can locate the contacts on a map and U5 can sort it. Let the U3 version of the project search the list for a contact and display it. It would be nice if it also could correct/update the information in a contact or delete a particular contact.  </div>
-        <div class="todo">Lists containing elements of the same length are arrays.</div>
+        <div class="todo"><!--Add contacts list app: Suggestion 1:  When lists of lists are introduced, build on the structure of the shopping list app to -->make a <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">contacts list app</a>, in which each entry (abstraction!) is a contact<!--, just Gamal is suggesting each pair of coordinates is a point and we are suggesting each pitch-duration combination is a note-->.  <strong>If we include address, then U4 can locate the contacts on a map and U5 can sort it.</strong> Let the U3 version of the project search the list for a contact and display it. It would be nice if it also could correct/update the information in a contact or <s>delete a particular contact</s> (done on this page, 1).  </div>
         <p>
-        	Lists can contain other lists. Here are three lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
+            Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
      <!--       <div class="sidenote">Lists of lists (i.e. arrays of arrays) are very powerful. If each inner list has the same number of items, you can think of a list of lists like a table of data (or a matrix).</div>  -->
             <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml">
             	<img src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br />
@@ -25,7 +23,6 @@
         
         <div class="forYouToDo" id="first">
             <ol>
-                <li><img src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Come up with at least two other situations where you might use a list of lists.</li> 
                 <li>Load the project above by clicking on the picture.</li>
                 <li>
                     Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
@@ -43,15 +40,56 @@
                     <img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
                 </li>
                 <li>
-                	<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
                     What will this expression report? Why? Build and run it in Snap<em>!</em><br />
+                	<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
 					<img  src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">
+                </li>
+            </ol>
+        </div>
+        
+        
+        <h3>Contact List App</h3>
+        <p>Lists can contain other lists&mdash;<em>all of the same size</em>&mdash;to make tables (arrays) of information. You will create a Contact List app</p>
+        <div class="forYouToDo">
+            <ol>
+				<li><div class="newProject"><span class="text">"U3L2-ContactList"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L2-ContactList" title="Create a new project called U3L2-ContactList" /></div></li>
+                <li><img class="inline" src="/bjc-r/img/3-lists/Make-a-variable.png" alt="Make a variable" title="Make a variable"> called <var>contact list</var> to store the information.</li>
+                <li><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#initialize">Initialize</a> <var>contact list</var> as an empty list: <img src="/bjc-r/img/3-lists/empty-list-block.png"  alt="empty list block">. </li>
+				<li>Create buttons for "Add Contact", "Show Contact", and "Delete Contact" either by downloading and importing the images below into the sprite's "Costumes" tab or by drawing buttons of your own.</li>
+                <a href="/bjc-r/img/3-lists/contact-list-button-add-contact.png"><img class="imageRight" src="/bjc-r/img/3-lists/contact-list-button-add-contact.png" alt="Add Contact button" title="Add Contact button" /></a>
+                <li>
+                    Write a script for "Add Contact" that, when clicked: 
+                    <ul>
+                        <li>Asks the user for a phone number</li>
+                        <li>Adds that number into a new contact in the <var>contact list</var></li>
+                        <li>Requests and stores the <var>first name</var> and <var>last name</var> of the contact</li>
+                    </ul>
+                </li>
+                <div class="endnote">You'll want to add some data as your test out your buttons, but don't spend time adding contacts yet.</div>
+                <a href="/bjc-r/img/3-lists/contact-list-button-show-contact.png"><img class="imageRight" src="/bjc-r/img/3-lists/contact-list-button-show-contact.png" alt="Show Contact button" title="Show Contact button" /></a>
+                <li>
+                    Create a "Show Contact" button that, when clicked:
+                    <ul>
+                        <li>Asks which contact to display</li>
+                        <li>Searches for that contact</li>
+                        <li>If contact exists, displays the selected contact</li>
+                    </ul>
+                </li>
+                <a href="/bjc-r/img/3-lists/contact-list-button-delete-contact.png"><img class="imageRight" src="/bjc-r/img/3-lists/contact-list-button-delete-contact.png" alt="Delete Contact button" title="Delete Contact button" /></a>
+                <li>
+                    Create a "Delete Contact" button that, when clicked:
+                    <ul>
+                        <li>Asks which contact to delete</li>
+                        <li>Searches for that contact</li>
+                        <li>If contact exists, asks for confirmation</li>
+                        <li>If confirmed, deletes the selected contact</li>
+                    </ul>
                 </li>
             </ol>
         </div>
 		
     
-        <!--I CUT THIS BECUASE I didn't think it was a good way to introduce "for each" after the edit suggested by Brian, and we have the "draw shape" page next anyway. --MF
+    <!--I CUT THIS BECUASE I didn't think it was a good way to introduce "for each" after the edit suggested by Brian, and we have the "draw shape" page next anyway. --MF
         
         
         <div class="dialogue">
