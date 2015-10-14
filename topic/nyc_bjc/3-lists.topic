@@ -46,7 +46,7 @@ heading: Programming Lab 3: Three Key List Operations
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 heading: Programming Lab 4: Combining List Operations
 	resource: <s>Processing List Data</s> [/bjc-r/cur/programming/3-lists/4-combining-list-ops/0-processing-data-lists.html]
-	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-composing-higher-order-functions.html] 
+	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-nesting-functions.html] 
 	resource: When You Really Need to Loop [/bjc-r/cur/programming/3-lists/4-combining-list-ops/2-when-you-really-need-to-loop.html]
 	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
 	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-combining-list-ops/4-magic-squares.html]
