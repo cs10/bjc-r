@@ -31,7 +31,7 @@ heading: Programming Lab 1: Introduction to Lists
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" /></div>
 
 heading: Programming Lab 2: Nesting Lists
-	resource: Lists of Lists [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-list-of-lists.html]
+	resource: Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-contact-list-app.html]
 	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
 	resource: Data Types [/bjc-r/cur/programming/3-lists/2-nesting-lists/3-data-types.html]
 	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/2-nesting-lists/4-lists-self-check.html]
