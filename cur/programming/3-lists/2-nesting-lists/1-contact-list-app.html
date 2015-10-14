@@ -11,8 +11,8 @@
         
         <div class="todo"><!--Add contacts list app: Suggestion 1:  When lists of lists are introduced, build on the structure of the shopping list app to -->make a <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">contacts list app</a>, in which each entry (abstraction!) is a contact<!--, just Gamal is suggesting each pair of coordinates is a point and we are suggesting each pitch-duration combination is a note-->.  <strong>If we include address, then U4 can locate the contacts on a map and U5 can sort it.</strong> Let the U3 version of the project search the list for a contact and display it. It would be nice if it also could correct/update the information in a contact or <s>delete a particular contact</s> (done on this page, 1).  </div>
 
-<div class="todo">I think Paul's idea was to <em>lead</em> with the project.  Finger exercises can come later.  I'm including your version here for reference, but I think that from a student point of view it's exactly the same as the grocery list.  What makes it different is the introduction of an abstract data type for contacts.  So I'm proposing to take Paul's version as a starting point, and have students improve it.  --bh
-  <div class="forYouToDo" id="first">
+		<div class="todo">I think Paul's idea was to <em>lead</em> with the project.  Finger exercises can come later.  I'm including your version here for reference, but I think that from a student point of view it's exactly the same as the grocery list.  What makes it different is the introduction of an abstract data type for contacts.  So I'm proposing to take Paul's version as a starting point, and have students improve it.  --bh
+		<div class="forYouToDo">
             <ol>
 				<li><div class="newProject"><span class="text">"U3L2-ContactList"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L2-ContactList" title="Create a new project called U3L2-ContactList" /></div></li>
                 <li><img class="inline" src="/bjc-r/img/3-lists/Make-a-variable.png" alt="Make a variable" title="Make a variable"> called <var>contact list</var> to store the information.</li>
@@ -39,66 +39,79 @@
 
             </ol>
         </div></div>
-        <div class="forYouToDo" id="first">
-        <ol>
-        <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
-    <li>Press the "Add Contact" button, watch what happens, and read the script to understand how it happens.</li>
-    <li>Write a grey Other-category reporter <code>phone number of ( )</code> that takes a person's name as input, and that reports that person's phone number, or &quot;not found&quot; if the name is not in the contact list.  (There are many ways to write this.  For now, don't worry about efficiency or elegance; you're going to rewrite it later.)</li>
-                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
-    <li>Real contact apps have a lot more information than just a name and a phone number.  Modify the &quot;when I am clicked&quot; script for the &quot;Add Contact&quot; button so that each contact includes a name, an address, and a phone number, in that order.</li>        
-        <li>Try your phone number block again. Does it still work?</li>
-        <li>You could fix the problem, but as we start adding more complexity to contacts &mdash;birthday, spouse, work address, and so on&mdash;the location of the phone number within a contact will keep changing. Instead, you're going to hide all the details of how a contact is represented inside the program in a handful of procedures, and then the parts of the program that define the user interface, such as your phone number block, will use those special procedures and will keep working when the representation changes. To start, write a <em>constructor</em> block that looks like this:<br /><img src="/bjc-r/img/3-lists/contact-constructor.png" alt="contact name= () addr= () phone= ()"><br />
-          It should report a contact (which is still a list of three items, so far).</li>
-        <li>Rewrite the &quot;Add Contact&quot; script to use this constructor.</li>
-        <li>Now write three <em>selector</em> blocks:<br /><img src="/bjc-r/img/3-lists/name-selector.png" alt="contact name ( )"><br /><img src="/bjc-r/img/3-lists/address-selector.png" alt="contact address ( )"><br /><img src="/bjc-r/img/3-lists/phone-selector.png" alt="contact phone ( )"><br />
-          Each of them should take a contact as input, reporting one of the three pieces of a contact. The constructor and selectors together define an <strong>abstract data type</strong>, namely, in this case, the &quot;contact&quot; data type.</li>
-        <li>Now you can rewrite the <code>phone number of</code> block this way:<img src="/bjc-r/img/3-lists/phone-number-of.png" alt="report contact phone (contact info for (person))"><br />
-          The red <code>contact info</code> block will have the same definition as your old <code>phone number</code> block, except that instead of extracting the phone number, it reports the entire contact (a list).<em>Also, when searching through the contact list for the desired name, be sure to use the</em> <code>contact name</code> <em>selector instead of just looking at the first item of the contact! </em>Make sure this all works.</li>
-                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
-        <li>Now, editing only the definitions of the constructor and selectors, change the internal representation of a contact so that it's a list of four items: the word &quot;Contact&quot;, the phone number, the name, and the address. Do not change the order of the inputs to the constructor; change only how those inputs are used.</li>
-        <li>Clear your contact list, add some contacts, make sure the internal representation is what you expect, and then make sure that your <code>phone number of</code> block still works, without changing it at all.</li>
-        </ol></div>
-        <div class="todo">There's more to do here, and maybe this should be split over two pages, but this should give the idea, I hope. I'd hope to work up to something like this:<img src="/bjc-r/img/3-lists/enter-new-contact.png"><br />
-          but maybe not in this lab! But leaving out the CALL part, I think we can right after this page introduce map, then just use the map call as the constructor, changing the selectors to match. <em>Then</em> it'll be okay to go to the stuff about for each.</div>
         
-          <h3> More lists of lists</h3>
-          <p>
-            Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
+		<div class="forYouToDo" id="first">
+			<div class="todo">Paul, Brian wrote this. It's much more wordy than out other pages, but I'm going to let you read it before I go editing it. Please let me know what you think. --MF</div>
+            <ol>
+                <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
+                <li>Press the "Add Contact" button, watch what happens, and read the script to understand how it happens.</li>
+                <li>Write a grey Other-category reporter <code>phone number of ( )</code> that takes a person's name as input, and that reports that person's phone number, or "not found" if the name is not in the contact list.  (There are many ways to write this.  For now, don't worry about efficiency or elegance; you're going to rewrite it later.)</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
+                <li>Real contact apps have a lot more information than just a name and a phone number.  Modify the "when I am clicked" script for the "Add Contact" button so that each contact includes a name, an address, and a phone number, in that order.</li>        
+                <li>Try your phone number block again. Does it still work?</li>
+                <li>You could fix the problem, but as we start adding more complexity to contacts &mdash;birthday, spouse, work address, and so on&mdash;the location of the phone number within a contact will keep changing. Instead, you're going to hide all the details of how a contact is represented inside the program in a handful of procedures, and then the parts of the program that define the user interface, such as your phone number block, will use those special procedures and will keep working when the representation changes. To start, write a <em>constructor</em> block that looks like this:<br /><img src="/bjc-r/img/3-lists/contact-constructor.png" alt="contact name= () addr= () phone= ()"><br />
+                It should report a contact (which is still a list of three items, so far).</li>
+                <li>Rewrite the "Add Contact" script to use this constructor.</li>
+                <li>
+                	Now write three <em>selector</em> blocks:<br />
+                    <img src="/bjc-r/img/3-lists/name-selector.png" alt="contact name ( )"><br />
+                    <img src="/bjc-r/img/3-lists/address-selector.png" alt="contact address ( )"><br />
+                    <img src="/bjc-r/img/3-lists/phone-selector.png" alt="contact phone ( )"><br />
+                	Each of them should take a contact as input, reporting one of the three pieces of a contact. The constructor and selectors together define an <strong>abstract data type</strong>, namely, in this case, the "contact" data type.
+                </li>
+                <li>
+                	Now you can rewrite the <code>phone number of</code> block this way: <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="report contact phone (contact info for (person))"><br />
+                	The red <code>contact info</code> block will have the same definition as your old <code>phone number</code> block, except that instead of extracting the phone number, it reports the entire contact (a list).<em>Also, when searching through the contact list for the desired name, be sure to use the</em> <code>contact name</code> <em>selector instead of just looking at the first item of the contact! </em>Make sure this all works.
+                </li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
+                <li>Now, editing only the definitions of the constructor and selectors, change the internal representation of a contact so that it's a list of four items: the word "Contact", the phone number, the name, and the address. Do not change the order of the inputs to the constructor; change only how those inputs are used.</li>
+                <li>Clear your contact list, add some contacts, make sure the internal representation is what you expect, and then make sure that your <code>phone number of</code> block still works, without changing it at all.</li>
+			</ol>
+        </div>
+        
+        
+        <div class="todo">
+			There's more to do here, and maybe this should be split over two pages, but this should give the idea, I hope. I'd hope to work up to something like this:<img src="/bjc-r/img/3-lists/enter-new-contact.png"><br />
+			but maybe not in this lab! But leaving out the CALL part, I think we can right after this page introduce map, then just use the map call as the constructor, changing the selectors to match. <em>Then</em> it'll be okay to go to the stuff about for each.
+		</div>
+        
+		<h3> More lists of lists</h3>
+		<p>
+			Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
             <!--       <div class="sidenote">Lists of lists (i.e. arrays of arrays) are very powerful. If each inner list has the same number of items, you can think of a list of lists like a table of data (or a matrix).</div>  -->
             <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml">
-              <img src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br />
-              <img src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br />
-              <img  src="/bjc-r/img/3-lists/list_list_todo.png" alt="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)" title="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)"/>
-            </a>
-          </p>
+                <img src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br />
+                <img src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br />
+                <img  src="/bjc-r/img/3-lists/list_list_todo.png" alt="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)" title="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)"/>
+			</a>
+		</p>
           
           
-          <div class="forYouToDo">
-            <ol>
-              <li>Load the project above by clicking on the picture.</li>
-              <li>
-                Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
-              <img class="imageRight" src="/bjc-r/img/icons/predict.png" alt="Predict What Will Happen" title="Predict What Will Happen" />
-              <li>
-                Does this expression report <var>8</var> or <var>16</var>? Make a guess and then build it to check.<br />
-                <img src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" />
-              </li>
-              <li>
-                What will this expression report? Why? <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Build and run it in Snap<em>!</em><br />
-                <img src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
-              </li> 
-              <li>
-                <div class="sidenote">Writing <var>{4:45, 7:30, 10:15}</var> is one possible way to represent this list with text: <img class="noshadow" src="/bjc-r/img/3-lists/output445-730-1015.png" height="80" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /></div>
-                Does this expression report <var>9:15</var>, the list <var>{9:15}</var>, or <var>{4:45, 7:30, 10:15}</var>?<br />
-                <img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
-              </li>
-              <li>
-                What will this expression report? Why? Build and run it in Snap<em>!</em><br />
-                <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-                <img  src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">
-              </li>
+        <div class="forYouToDo">
+            <ol start="12">
+                <li>Load the project above by clicking on the picture.</li>
+                <li>Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
+                <img class="imageRight" src="/bjc-r/img/icons/predict.png" alt="Predict What Will Happen" title="Predict What Will Happen" />
+                <li>
+                    Does this expression report <var>8</var> or <var>16</var>? Make a guess and then build it to check.<br />
+                    <img src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" />
+                </li>
+                <li>
+                    What will this expression report? Why? <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Build and run it in Snap<em>!</em><br />
+                    <img src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
+                </li> 
+                <li>
+                    <div class="sidenote">Writing <var>{4:45, 7:30, 10:15}</var> is one possible way to represent this list with text: <img class="noshadow" src="/bjc-r/img/3-lists/output445-730-1015.png" height="80" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /></div>
+                    Does this expression report <var>9:15</var>, the list <var>{9:15}</var>, or <var>{4:45, 7:30, 10:15}</var>?<br />
+                    <img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
+                </li>
+                <li>
+                    What will this expression report? Why? Build and run it in Snap<em>!</em><br />
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                    <img  src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">
+                </li>
             </ol>
-          </div>
+        </div>
           
           
           <!--I CUT THIS BECUASE I didn't think it was a good way to introduce "for each" after the edit suggested by Brian, and we have the "draw shape" page next anyway. --MF
