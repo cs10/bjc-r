@@ -8,36 +8,35 @@
 
 	<body>
     	<h2>Programming Lab 1: Introduction to Lists</h2>
-        <p>Computers manipulate data and return processed information to the user. Numbers, strings of characters (letters, numbers, symbols, etc.), and Boolean values (true, false) are some of the basic pieces of information. Often these small pieces are arranged in more complex structures: <em>lists</em>, ordered sets of data.</p> 
-		<p>
-            A <code>list</code> is not just a collection (set) but also a collection <em>in a particular order</em> (this order is tracked by an <em>index number</em> for each item on the list). If it has any elements at all, it has a first element, a last element, and so on. A list can also be totally empty, with no elements at all; often that is the way we want to set up (<em>initialize</em>) a list before we add elements to it. The <code>length of</code> an empty list is 0.</p>
+        <p>Computers manipulate data and return processed information to the user. Numbers, strings of characters (letters, numbers, symbols, etc.), and Boolean values (true, false) are some of the basic pieces of information. Often, these small pieces are arranged in more complex structures: <em>lists</em>, ordered sets of data.</p> 
+		<p>A <code>list</code> is not just a collection (set) but also a collection <em>in a particular order</em> (this order is tracked by an <em>index number</em> for each item on the list). If it has any elements at all, it has a first element, a last element, and so on. A list can also be totally empty, with no elements; often that is the way we want to set up (<em>initialize</em>) a list before we add elements to it. The <code>length of</code> an empty list is 0.</p>
             <p>
 				Lists are powerful. Databases are lists of lists of lists. Many operations can be performed on data in a list:
 				<ul>
 					<li>Searching a list to see if it <code>contains</code> some element.</li>
-					<li>Modifying lists to <code>add</code>, <code>delete</code>, <code>replace</code> items, or to <code>insert</code> an item in a specific spot.</li>
+					<li>Modifying lists to <code>add</code>, <code>delete</code>, or <code>replace</code> items, or to <code>insert</code> an item in a specific spot.</li>
                     <li>Creating new lists that <code>keep</code> only certain items from a list you started with.</li>
                     <li>You can create new lists with more or fewer elements than the list you have.</li>
-                    <li>You can pick an <code>item</code> of a list by position, or characteristic, or just randomly. </li>
-                    <li>You can do something with each item of the list: you can process it in some way or, <code>for each</code> element of the list, you can display it in some way.</li>
+                    <li>You can pick an <code>item</code> of a list by position or characteristic or just randomly. </li>
+                    <li>You can do something with each item of the list: you can process it in some way, or <code>for each</code> element of the list, you can display it in some way.</li>
             </ul>
         </p>
-        <p>Students begin page 1, Introducion to Lists, by building a basic shopping list app that introduces the ideas that lists can store data and that programs can access and manipulate list contents. In its simplest form, the app allows the user to add items to the list or clear the list. Students can add more features as they learn more about list processing.</p>
-        <p>On page 2, Exploring List Processing, students explore various list blocks by predicting and testing the outcome of various expressions and small scripts. Students get a preview of several important funcitons that will be addressed in more detail (<code>for each</code>, <code>map</code>, <code>keep</code>, and <code>combine</code>).</p>
-        <p>Page 3, <code>Join</code> and <code>Join Words</code> is a project that focuses on using <strong>abstraction</strong> to organize calls to a group of lists. Sentence phrase blocks are combined to build simple and complex sentences.</p>
+        <p>Students begin page 1, Introducion to Lists, by building a basic shopping list app that introduces the ideas that lists can store data and that programs can access and manipulate list contents. In its simplest form, the app allows the user to add items or clear the list. Students can add more features as they learn more about list processing.</p>
+        <p>On page 2, Exploring List Processing, students explore various list blocks by predicting and testing the outcome of various expressions and small scripts. Students get a preview of several important functions that will be addressed in more detail (<code>for each</code>, <code>map</code>, <code>keep</code>, and <code>combine</code>).</p>
+        <p>Page 3, Modeling Sentence Structures, is a project that focuses on using <strong>abstraction</strong> to organize calls to a group of lists. Sentence phrase blocks are combined to build simple and complex sentences.</p>
 
         <h3>Pacing:</h3>
         <div>
             <ul>
-                <li>The first page of this lab (<strong>Shopping List App</strong>) should be relatively quick. Student may finish it and work on the Take it Further questions <em>within one period</em>.</li>
-                <li>The three remaining pages (<strong>Exploring List Processing</strong>, <strong><code>Join</code> and <code>Join Words</code></strong>, and <strong>Managing List Data</strong>) may take <em>one to two class periods</em>.</li>
+                <li>The first page of this lab (Shopping List App) should be relatively quick. Student may finish it and work on the Take it Further questions <em>within one period</em>.</li>
+                <li>The two remaining pages (Exploring List Processing and Modeling Sentence Structures) may take <em>one to two class periods</em>.</li>
             </ul>
         </div>
         
         <h3>Prepare:</h3>
         <div>
             <ul>
-				<li>Page 1, Shopping List App, and page 4, Managing List Data, are new pages that were not part of this curriculum until October 2015. Teachers should review and, if time, also work though these pages before their students. Feedback (via the blue button the lower right) is always appreciated. For a timely response, please use the BJC Piazza site.</li>
+				<li>Page 1, Shopping List App, is a new page that was not part of this curriculum until October 2015. Teachers should review and, if time, also work though this page before their students. Feedback (via the blue button the lower right) is always appreciated. For a timely response, please use the BJC Piazza site.</li>
             </ul>
         </div>
 
@@ -53,7 +52,7 @@
 			<ul>
                 <li>Continue to practice pair programming.</li>
                 <li>Make lists and become familiar with many of the list blocks in the Variables palette.</li>
-                <li>Notice the difference between returning a string (or a number) and returning a list.</li>
+                <li>Notice the difference between returning a string (or a number) and returning a list&mdash;especially when that list contains only one item that is a string or a number.</li>
                 <li>Write scripts for user interface buttons that control items in a shopping list.</li>
                 <li>Randomly choose items from lists of words to make a Sentence Builder.</li>
             </ul>
@@ -63,10 +62,9 @@
 		<h3>As a Class:</h3>
 		<div>
         	<ul>
-				<h4></h4>
                 <li>
                 	<strong>Page 1: Shopping List App.</strong>
-               	  <ul>
+					<ul>
                     	<div class="comment">When time, add a Google doc. --MF</div>
                         <li>Opener: After the first day with "Shopping List App," present a short script with an error showing (where the error has been caused by neglecting to initialize a list). Ask students: What might have caused the error? What is the proper way to address this issue? (This opener connects to "Shopping List App," where students first initialize a list.)</li>
 						<div class="todo">Brian, I'm not sure you like my writing about data types, please review the following carefully... --MF</div>
@@ -101,7 +99,7 @@
                     </ul>
                 </li>
                 <li>
-                	<strong>Page 3: <code>Join</code> and <code>Join Words</code>.</strong> 
+                	<strong>Page 3: Modeling Sentence Structures.</strong> 
                 	<ul>
                     	<li>The page is designed to offer a fun mini-project in which the use of lists feels natural and empowering. Encourage students to be creative and build other kinds of sentences or even simple conversations.</li>
                         <li>This lesson relies on proficiency in the ideas of this class more than knowledge of English sentence structure, but if you have students who are more proficient with another language, you may encourage them to build simple and complex sentence builders in a language of their choice. Students could work with others or alone and then share. Be creative. For example, it might be beneficial to pair a student studying Spanish with a fluent Spanish speaker.</li>
@@ -122,7 +120,7 @@
                 	Lab 1 also includes several mini-projects that students could spend additional time improving and turn in:
                 	<ul>
                     	<li>The Shopping List App (on "Shopping List App")</li>
-                        <li>The Sentence Builder (on "<code>Join</code> and <code>Join Words</code>")</li>
+                        <li>The Sentence Builder (on "Modeling Sentence Structures")</li>
                     </ul>
                 </li>
             </ul>
@@ -147,19 +145,22 @@
 		<div>
         	<ul>
                 <li><div class="sidenote">Many of the <span class="snap">snap</span> projects linked from the student pages already have the tools imported.</div>Throughout this Unit, students will have to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> in order to access the blocks they need. This is required every time a student opens a new <span class="snap">snap</span> window. (Links to projects in the curriculum have been shared with the tools already imported.)</li>
-            	<li><strong>Page 1: Shopping List App:</strong>
+            	<li>
+                	<strong>Page 1: Shopping List App.</strong>
                     <ul>
                         <li>If some students work through this page more quickly than others, encourage those students to do some of the Take it Further exercises and also to consider designing and making their own adaptations to their Shopping List App.</li>
 					</ul>
                 </li>
-            	<li><strong>Page 2: Exploring List Processing:</strong>
+            	<li>
+                	<strong>Page 2: Exploring List Processing.</strong>
                     <ul>
                         <li>This page asks students to build the blocks (rather than providing a link that has the blocks built already). This is intentional, so that students get the experience of finding these blocks in the palette and getting the logic of what kinds of blocks go inside of other blocks.</li>
                         <li>Students explore blocks such as <code>all but the first of {}</code>, <code>() in front of {}</code>, and <code>item () of {}</code>. Consider asking students to write out a sentence describing the behavior of each of these blocks or to describe them to the class.</li>
                         <li>Listen for students making the distinction between expressions that report strings (such as "Boise") and those that report a list containing one item (such as <code>{Boise}</code>). If you don't hear students making this distinction, consider a brief class discussion about it. Distinguishing the logic between what data type is reported is a big help when debugging.</li>
                     </ul>
                 </li>
-            	<li><strong>Page 3: <code>Join</code> and <code>Join Words</code>:</strong>
+            	<li>
+                	<strong>Page 3: Modeling Sentence Structures.</strong>
 					<ul>
                     	<li>The English grammar on this page may be too complex for some English Language Learners to stay focused on the computer science. There are some suggestions on the student lab page for handling this. Students are encouraged to be creative and to make their own choice about how to proceed.</li>
                     </ul>
