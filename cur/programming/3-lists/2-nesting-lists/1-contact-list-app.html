@@ -8,14 +8,14 @@
     
     <body>
         <h2>Contact<a name="contactlist" class="anchor">&nbsp;</a>List App</h2>
-        
+All cell phones have some kind of Contacts list. In this lab, you will build a Contacts app yourself. 
 		<div class="forYouToDo" id="first">
             <ol>
                 <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
-                <li>Press the "Add Contact" button, watch what happens, and read the script to understand how it happens. Note that a contact is represented as a list, so the global contact list is a <em>list of lists.</em></li>
+                <li>Press  "Add Contact"  and read the script to understand how it works. Each new contact is  a list, so the list of contacts is a <em>list of lists.</em></li>
                 <li>Fix the <img src="/bjc-r/img/3-lists/get-phone.png" alt="get phone"> block so that it works similarly to<img src="/bjc-r/img/3-lists/get-name.png" alt="get name">.</li>
     <li>Clear your contact list and add a few made-up people to make sure everything works.</li>
-                <li>Write a grey Other-category reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and that reports that person's phone number, or "not found" if the name is not in the contact list.  Here are two new blocks to help you:
+                <li>Write a reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and  reports that person's phone number, or "not found" if the name is not in the contact list.  Here are two new blocks to help you:
                   <ol type="a">
                     <Li>The <img src="/bjc-r/img/3-lists/string-contains.png" alt="&lt;string () contains ()&gt;"> block will help you find out whether a particular contact's name matches the user's input string.</Li>
                     <Li>The <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)"> block will apply a test (its first input) to <em>each item of</em> a list (its second input), and will report a new list containing only those items for which the test succeeds. (Remember that when you have a lot of contacts there might be more than one named John. If that happens, just give the phone number of the first one in the list.) If none of the items satisfies the test, then <code>keep</code> will report an empty list.</Li>
