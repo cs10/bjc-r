@@ -9,73 +9,34 @@
     <body>
         <h2>Contact<a name="contactlist" class="anchor">&nbsp;</a>List App</h2>
         
-        <div class="todo"><!--Add contacts list app: Suggestion 1:  When lists of lists are introduced, build on the structure of the shopping list app to -->make a <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">contacts list app</a>, in which each entry (abstraction!) is a contact<!--, just Gamal is suggesting each pair of coordinates is a point and we are suggesting each pitch-duration combination is a note-->.  <strong>If we include address, then U4 can locate the contacts on a map and U5 can sort it.</strong> Let the U3 version of the project search the list for a contact and display it. It would be nice if it also could correct/update the information in a contact or <s>delete a particular contact</s> (done on this page, 1).  </div>
-
-		<div class="todo">I think Paul's idea was to <em>lead</em> with the project.  Finger exercises can come later.  I'm including your version here for reference, but I think that from a student point of view it's exactly the same as the grocery list.  What makes it different is the introduction of an abstract data type for contacts.  So I'm proposing to take Paul's version as a starting point, and have students improve it.  --bh
-		<div class="forYouToDo">
-            <ol>
-				<li><div class="newProject"><span class="text">"U3L2-ContactList"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L2-ContactList" title="Create a new project called U3L2-ContactList" /></div></li>
-                <li><img class="inline" src="/bjc-r/img/3-lists/Make-a-variable.png" alt="Make a variable" title="Make a variable"> called <var>contact list</var> to store the information.</li>
-                <li><a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#initialize">Initialize</a> <var>contact list</var> as an empty list: <img src="/bjc-r/img/3-lists/empty-list-block.png"  alt="empty list block">. </li>
-				<li>Create buttons for "Add Contact" and "Clear List" either by downloading and importing the images below into the sprites' "Costumes" tabs or by drawing buttons of your own.</li>
-                <a href="/bjc-r/img/3-lists/contact-list-button-add-contact.png"><img class="imageRight" src="/bjc-r/img/3-lists/contact-list-button-add-contact.png" alt="Add Contact button" title="Add Contact button" /></a>
-                <li>
-                    Write a script for "Add Contact" that, when clicked: 
-                    <ul>
-                        <li>Asks the user for a phone number</li>
-                        <li>Adds that number into a new contact in the <var>contact list</var></li>
-                        <li>Requests and stores the <var>name</var> of the contact</li>
-                    </ul>
-                </li>
-                <div class="endnote">You'll want to add some data as your test out your buttons, but don't spend time adding contacts yet.</div>
-                <a href="/bjc-r/img/3-lists/contact-list-button-clear-list.png"><img class="imageRight" src="/bjc-r/img/3-lists/contact-list-button-clear-list.png" alt="Clear List button" title="Clear List button" /></a>
-                <li>
-                    Write a script for "Clear List" that, when clicked: 
-                    <ul>
-                        <li>Asks for confirmation</li>
-                        <li>If confirmed, resets <var>contact list</var> as an empty list</li>
-                    </ul>
-                </li>
-
-            </ol>
-        </div></div>
-        
 		<div class="forYouToDo" id="first">
-			<div class="todo">Paul, Brian wrote this. It's much more wordy than out other pages, but I'm going to let you read it before I go editing it. Please let me know what you think. --MF</div>
             <ol>
                 <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
-                <li>Press the "Add Contact" button, watch what happens, and read the script to understand how it happens.</li>
-                <li>Write a grey Other-category reporter <code>phone number of ( )</code> that takes a person's name as input, and that reports that person's phone number, or "not found" if the name is not in the contact list.  (There are many ways to write this.  For now, don't worry about efficiency or elegance; you're going to rewrite it later.)</li>
-                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
-                <li>Real contact apps have a lot more information than just a name and a phone number.  Modify the "when I am clicked" script for the "Add Contact" button so that each contact includes a name, an address, and a phone number, in that order.</li>        
-                <li>Try your phone number block again. Does it still work?</li>
-                <li>You could fix the problem, but as we start adding more complexity to contacts &mdash;birthday, spouse, work address, and so on&mdash;the location of the phone number within a contact will keep changing. Instead, you're going to hide all the details of how a contact is represented inside the program in a handful of procedures, and then the parts of the program that define the user interface, such as your phone number block, will use those special procedures and will keep working when the representation changes. To start, write a <em>constructor</em> block that looks like this:<br /><img src="/bjc-r/img/3-lists/contact-constructor.png" alt="contact name= () addr= () phone= ()"><br />
-                It should report a contact (which is still a list of three items, so far).</li>
-                <li>Rewrite the "Add Contact" script to use this constructor.</li>
-                <li>
-                	Now write three <em>selector</em> blocks:<br />
-                    <img src="/bjc-r/img/3-lists/name-selector.png" alt="contact name ( )"><br />
-                    <img src="/bjc-r/img/3-lists/address-selector.png" alt="contact address ( )"><br />
-                    <img src="/bjc-r/img/3-lists/phone-selector.png" alt="contact phone ( )"><br />
-                	Each of them should take a contact as input, reporting one of the three pieces of a contact. The constructor and selectors together define an <strong>abstract data type</strong>, namely, in this case, the "contact" data type.
+                <li>Press the "Add Contact" button, watch what happens, and read the script to understand how it happens. Note that a contact is represented as a list, so the global contact list is a <em>list of lists.</em></li>
+                <li>Fix the <img src="/bjc-r/img/3-lists/get-phone.png" alt="get phone"> block so that it works similarly to<img src="/bjc-r/img/3-lists/get-name.png" alt="get name">.</li>
+    <li>Clear your contact list and add a few made-up people to make sure everything works.</li>
+                <li>Write a grey Other-category reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and that reports that person's phone number, or "not found" if the name is not in the contact list.  Here are two new blocks to help you:
+                  <ol type="a">
+                    <Li>The <img src="/bjc-r/img/3-lists/string-contains.png" alt="&lt;string () contains ()&gt;"> block will help you find out whether a particular contact's name matches the user's input string.</Li>
+                    <Li>The <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)"> block will apply a test (its first input) to <em>each item of</em> a list (its second input), and will report a new list containing only those items for which the test succeeds. (Remember that when you have a lot of contacts there might be more than one named John. If that happens, just give the phone number of the first one in the list.) If none of the items satisfies the test, then <code>keep</code> will report an empty list.</Li>
+                    </ol>
                 </li>
-                <li>
-                	Now you can rewrite the <code>phone number of</code> block this way: <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="report contact phone (contact info for (person))"><br />
-                	The red <code>contact info</code> block will have the same definition as your old <code>phone number</code> block, except that instead of extracting the phone number, it reports the entire contact (a list).<em>Also, when searching through the contact list for the desired name, be sure to use the</em> <code>contact name</code> <em>selector instead of just looking at the first item of the contact! </em>Make sure this all works.
-                </li>
+                <li>When someone calls your phone, your phone service sends the calling number to the phone. But if the number is in your contact list, what the phone actually displays is the contact's name. So you'll also want a block<img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> that searches for a phone number and reports the contact's name.</li>
                 <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
-                <li>Now, editing only the definitions of the constructor and selectors, change the internal representation of a contact so that it's a list of four items: the word "Contact", the phone number, the name, and the address. Do not change the order of the inputs to the constructor; change only how those inputs are used.</li>
-                <li>Clear your contact list, add some contacts, make sure the internal representation is what you expect, and then make sure that your <code>phone number of</code> block still works, without changing it at all.</li>
-			</ol>
+                <li>Our starter version of the app represents a person's name as a single text string containing all parts of the name. This is fine for displaying the name on the screen. But your phone's contacts app can also display an alphabetical list of all the contacts <em>sorted by last name.</em> So we really want to keep the last name separate from the first (and middle if any) name.
+                <ol type="a">
+                   <li>Modify the <img src="/bjc-r/img/3-lists/get-name.png" alt="get name"> block so that it asks separately for first-and-middle name and for last name, and reports a list of the two answers. (In some cultures, the family name&mdash;the one you want to use for alphabetizing&mdash;is written first, For example, in &quot;Sun Yat-Sen&quot; the family name is &quot;Sun.&quot;  So instead of asking for &quot;first and middle name(s)&quot; and for &quot;last name&quot; you might want to use the terminology &quot;given name(s)&quot; and &quot;family name.&quot;) Make sure that adding a new contact does what you expect.</li>
+                   <li>Write two reporters that take a contact as input and report the name as a text string, in two different orders:<br /><img src="/bjc-r/img/3-lists/name-display-result.png" alt="name (display form) --&gt; Abraham Lincoln"><br /><img src="/bjc-r/img/3-lists/name-sorting-result.png" alt="name (sorting form) --&gt; Lincoln, Abraham"><br />
+                     (Don't wotty, yet, about how to handle family-name-first names.)</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                   <li>Make sure your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work.</li>
+                </ol>
+                </li></ol>
+                We're going to come back to this app soon, but first time out for some quick practice with lists of lists.
         </div>
         
-        
-        <div class="todo">
-			There's more to do here, and maybe this should be split over two pages, but this should give the idea, I hope. I'd hope to work up to something like this:<img src="/bjc-r/img/3-lists/enter-new-contact.png"><br />
-			but maybe not in this lab! But leaving out the CALL part, I think we can right after this page introduce map, then just use the map call as the constructor, changing the selectors to match. <em>Then</em> it'll be okay to go to the stuff about for each.
-		</div>
-        
-		<h3> More lists of lists</h3>
+                
+	<h3> More lists of lists</h3>
 		<p>
 			Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
             <!--       <div class="sidenote">Lists of lists (i.e. arrays of arrays) are very powerful. If each inner list has the same number of items, you can think of a list of lists like a table of data (or a matrix).</div>  -->

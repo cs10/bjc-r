@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 2: Nesting Lists</title>
+    </head> 
+    
+    <body>
+        <h2>Contact List App, Part 2</h2>
+        <p>Load your contact list app from before; it should be saved as &quot;U3L2-ContactList&quot;</p>
+        
+		<div class="forYouToDo" id="first">
+            <ol>
+                <li>Real contact apps have a lot more information than just a name and a phone number.  Modify <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact"> so that each contact includes a name, <em>an address,</em> and a phone number, in that order.</li>        
+                <li>Try your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> block again. Does it still work?</li>
+                <li>You could fix the problem, but as we start adding more complexity to contacts&mdash;birthday, spouse, work address, and so on&mdash;the location of the phone number within a contact will keep changing. Instead, you're going to hide all the details of how a contact is represented inside the program in a handful of procedures, and then the parts of the program that define the user interface, such as your phone number block, will use those special procedures and will keep working when the representation changes. To start, write a <em>constructor</em> block that looks like this:<br /><img src="/bjc-r/img/3-lists/contact-constructor.png" alt="contact name= () addr= () phone= ()"><br />
+                It should report a contact (which is still a list of three items, so far). Note that it takes the three items as inputs; it doesn't ask the user to enter the information. This block will be used in <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact">, but it doesn't do the entire job of <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact">.</li>
+                <li>Rewrite  <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact"> to use this constructor.</li>
+                <li>
+                	Now write two new <em>selector</em> blocks:<br />
+                    <img src="/bjc-r/img/3-lists/address-selector.png" alt="contact address ( )"><br />
+                    <img src="/bjc-r/img/3-lists/phone-selector.png" alt="contact phone ( )"><br />
+                	Each of them should take a contact as input, reporting one of the three pieces of a contact. Also, check the selectors you've already written:<br /> 
+                    <img src="/bjc-r/img/3-lists/name-display.png" alt="name (display form) ()"><br />
+                    <img src="/bjc-r/img/3-lists/name-sorting.png" alt="name (sorting form) ()"><br />
+                    The constructor and selectors together define an <strong>abstract data type</strong>, namely, in this case, the "contact" data type.
+                </li>
+                <li>
+                	Now you can rewrite the <code>phone number of</code> block this way: <img src="/bjc-r/img/3-lists/phone-number-script.png" alt="report contact phone (contact info for (name))"><br />
+               	The red <code>contact info</code> block will have the same definition as your old <code>phone number</code> block, except that instead of extracting the phone number, it reports the entire contact (a list).</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />        
+                <li>Do the same thing for the <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> block. Make sure this all works. </li>
+<div class="sidenoteBig">If your program had many abstract data types, all represented as lists, then it'd be very useful to include the word "Contact" as a <strong>type tag</strong> so that the program can find out which abstract data type any particular list belongs to.</div>
+                <li>Now, editing only the definitions of the constructor and selectors, change the internal representation of a contact so that it's a list of four items, in this order: the word "Contact", the phone number, the name, and the address. Do not change the order of the inputs to the constructor; change only how those inputs are used.</li>
+                <li>Clear your contact list, add some contacts, make sure the internal representation is what you expect, and then make sure that your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work, without changing them at all.</li>
+			</ol></div>
+</body>
+</html>

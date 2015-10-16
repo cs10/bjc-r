@@ -32,6 +32,7 @@ heading: Programming Lab 1: Introduction to Lists
 
 heading: Programming Lab 2: Nesting Lists
 	resource: Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-contact-list-app.html]
+	resource: Contact List App, part 2 [/bjc-r/cur/programming/3-lists/2-nesting-lists/1.5-contact-list-app-2.html]
 	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
 	resource: Data Types [/bjc-r/cur/programming/3-lists/2-nesting-lists/3-data-types.html]
 	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/2-nesting-lists/4-lists-self-check.html]
