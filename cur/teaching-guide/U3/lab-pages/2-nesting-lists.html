@@ -8,20 +8,21 @@
 
 	<body>
     	<h2>Programming Lab 2: Nesting Lists</h2>
-        <p>Lists can contain anything: numbers, strings, other lists, even blocks. The objects <em>in</em> a list can be all of the same kind—all numbers, for example, or all lists that contain a name and a phone number—or can, like that list of name and phone number, be different. The tabular data we are familiar with in spreadsheets can be represented as a list of same-length lists, the smaller lists representing each row in the table, and the larger list representing the collection of rows.
+        <p>Lists can contain anything: numbers, strings, other lists, even blocks. The objects <em>in</em> a list can be all of the same kind—all numbers, for example, or all lists that contain a name and a phone number—or can, as in that list of name and phone number, be different. The tabular data we are familiar with in spreadsheets can be represented as a list of same-length lists, the smaller lists representing each row in the table, and the larger list representing the collection of rows.
 
           <!--A table of data, is a list of rows of data, each row being a list of data.-->
 Selecting information in the dataset involves only knowing where it appears. The &quot;ordered pairs&quot; of algebra, the (<em>x</em>, <em>y</em>) coordinates of a point, can be represented as lists. So can vectors and matrices. The <code>list</code> block is the basic building block of these  complex structures.</p>
-        <p>Blocks can locate items in the nested lists. For example, <code>item (3) of </code> the list of points below gives <var>list {10, 120}</var>. As the sprite visits each of these points (in a <code>for each</code> block) the point (10, 120) is the third that it visits.  </p>
+        <p>Blocks can locate items in the nested lists. For example, <code>item (3) of </code> the list of points below gives <var> {10, 120}</var>. As the sprite visits each of these points (in a <code>for each</code> block) the point (10, 120) is the third that it visits.  </p>
 		<img class="indent" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />
         <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
 
-        <p>Students start by construcing a very simple shopping list app. They later create a contact list app whose elements are, themselves, lists. This requires not only collecting and storing information, but being able to retrieve it in useful ways. Students use <code>keep</code> to be able to collect only the information they need from a list, and learn to use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists of coordinates. Data Types, returns to the idea of using abstraction to make the (<em>x</em>, <em>y</em>) coordinate lists more recognizable and usable by creating the <strong>abstract data type</strong> <code>point</code> and constructing and identifying these coordinate lists that way. After some embellishment of the contact app, practicing and extending the ideas of abstraction, and a Lists Review and Self Check, students use <code>for each</code> two write two additional sprites (Show Contact and Delete Contact) for their Contact List app and extend their use of <code>for each</code> and data types to a musical context.</p>
+        <p>Students start by construcing a very simple shopping list app. They later create a contact list app whose elements are themselves lists. This requires not only collecting and storing information, but being able to retrieve it in useful ways. Students use <code>keep</code> to be able to collect only the information they need from a list, and learn to use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists of coordinates. Data Types, returns to the idea of using abstraction to make the (<em>x</em>, <em>y</em>) coordinate lists more recognizable and usable by creating the <strong>abstract data type</strong> <code>point</code> and constructing and identifying these coordinate lists that way. After some embellishment of the contact app, practicing and extending the ideas of abstraction, and a Lists Review and Self Check, students extend their use of <code>for each</code> and data types to a musical context.</p>
 <p>Thus in Labs 1 and 2, students have encountered lists of strings/words, numbers, and lists. They also use <em>abstraction</em> to clarify and simplify code, and see how it makes code more flexible and maintainable. </p> 
         
         <h3>Pacing:</h3>
         <div>
             <ul>
+            <div class="comment">Is this still true? --bh</div>
                 <li>The four pages of this lab are each expected to be relatively quick, <em>approximately 1 class period each</em>.</li>
             </ul>
         </div>
@@ -29,7 +30,7 @@ Selecting information in the dataset involves only knowing where it appears. The
         <h3>Prepare:</h3>
         <div>
             <ul>
-				<li>Page 1, Contact List App, and Page 4, Lists Review and Self Check include a new Contact List app that was not part of this curriculum until October 2015. Teachers should review and work though these pages. Feedback is always appreciated.</li>
+				<li>Pages 1 and 1.5, the Contact List App, and Page 4, Lists Review and Self Check, include a new Contact List app that was not part of this curriculum until October 2015. Teachers should review and work though these pages. Feedback is always appreciated.</li>
             </ul>
         </div>
 
@@ -54,9 +55,9 @@ Selecting information in the dataset involves only knowing where it appears. The
 		<div>
         	<ul>
             	<li>
-                	<strong>Page 1: Contact List App.</strong>
+                	<strong>Pages 1 and 1.5: Contact List App.</strong>
                     <ul>
-                        <li>Discussion, you might ask:
+                        <li>Discussion: You might ask these questions:
                             <ul>
                                 <li>What kinds of objects can go in lists?</li>
                                 <li>What kinds of things can you do with a list of lists?</li>
@@ -64,7 +65,7 @@ Selecting information in the dataset involves only knowing where it appears. The
                                 <li>In what other situations might a list of lists be helpful?</li>
                             </ul>
                         </li>
-                        <li>You might consider asking students (or pairs) to write a sentence for each of the list reporters decribing how they treat lists of lists. Or you could discuss this as a class as well.</li>
+                        <li>The Contact List project is ambitious but carefully scaffolded. It's helpful for you to remember its ultimate goal, which is to introduce the idea of <strong>data abstraction</strong>, in which an abstract data type is defined by writing <em>constructor</em> and <em>selector</em> blocks that are the sole program interface to the underlying list structure. We start without data abstraction, so you see lots of <code>item 2 of</code> when a phone number is wanted. By the end of the project, there should be no more <code>item</code> calls in the user interface blocks.  Students will be inclined to resist data abstraction, because it makes the program longer. But the project uses a change in the underlying representation to convince them that it's much easier to maintain a large program if such changes affect only the constructor and selectors.</li>
                     </ul>
             	</li>
                 <li>
