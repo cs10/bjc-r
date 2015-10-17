@@ -32,17 +32,16 @@ heading: Programming Lab 1: Introduction to Lists
 
 heading: Programming Lab 2: Nesting Lists
 	resource: Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-contact-list-app.html]
-	resource: Contact List App, part 2 [/bjc-r/cur/programming/3-lists/2-nesting-lists/1.5-contact-list-app-2.html]
 	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
 	resource: Data Types [/bjc-r/cur/programming/3-lists/2-nesting-lists/3-data-types.html]
+	resource: Improving Your Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/1.5-contact-list-app-2.html]
 	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/2-nesting-lists/4-lists-self-check.html]
 
 heading: Programming Lab 3: Three Key List Operations
-	resource: Exploring List Operations [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/1-exploring-list-operations.html]
+	resource: <s>Exploring List Operations</s> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/1-exploring-list-operations.html]
 	quiz: <code>Map</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/2-map.html]
 	quiz: <code>Keep</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/3-keep.html]
 	quiz: <code>Combine</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/4-combine.html]
-	quiz: <s>Map, Keep, and Combine Self</s> Check[/bjc-r/cur/programming/3-lists/3-three-key-list-ops/5-hof-self-test.html]
 
 	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
 heading: Programming Lab 4: Combining List Operations

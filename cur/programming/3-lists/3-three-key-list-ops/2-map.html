@@ -9,39 +9,56 @@
     <body>
 		<h2><code>Map</code></h2> 
         
-        <div class="todo">
-            GH Feedack from 10/12/15: 
-            <ul>
-                <li>If new to map FYTD 1c will be a fairly big leap. It requires 2 blanks in the input function.</li>
-                <li>Also not sure if solving for the expressions are really worth people's time? Maybe give people the function to map over (as the form 3x+5 or something), and turn it into code?</li>
-                <li>Look at <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">bjc.edc.org</a> to match problem numbers. --MF</li>
-            </ul>
-		</div>
-        <div class="todo">
-            Put these on each of the next 3 pages: <ul>
-                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-Discuss what <code>map</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-Discuss what <code>keep</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-4.png" alt="" title="" /></li>
-				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
-Discuss what <code>combine</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" /></li>
-            </ul>
-        </div>
-        <div class="todo">
-        	<ul>
-				<li>MAP:Could also do a <code>square checker</code> mini-project that writes a list of square numbers <img class="" src="/bjc-r/img/3-lists/square-checker-1.png" alt="" title="" /><br/>checks if a number is on that list <img class="" src="/bjc-r/img/3-lists/square-checker-2.png" alt="" title="" /><br/> and talks through the items on the list <img class="" src="/bjc-r/img/3-lists/square-checker-3.png" alt="" title="" /> (ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
-	        </ul>
-        </div>
-    
-    
         <p>
-        	The <code>map</code> block takes two inputs: an expression with a blank and a list, and it replaces each item in the list with the result of plugging that item into the expression. For example:<br/>
-            <img class="indent" src="/bjc-r/img/3-lists/map-example-1.png" alt="map (( )-(1)) over (list (96) (-100) (4.7))" title="map (( )-(1)) over (list (96) (-100) (4.7))" />
-            <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join ( ) (s)) over (list (cat) (dog) (bird))" title="map (join ( ) (s)) over (list (cat) (dog) (bird))" />
-            <img class="indent" src="/bjc-r/img/3-lists/map-example-3.png" alt="map (round ( )) over (list (3.14159) (87) (5.4))" title="map (round ( )) over (list (3.14159) (87) (5.4))" />
+        	The <img class="block" src="/bjc-r/img/blocks/map.png" alt="map" title="map" /> block takes two inputs: an expression with a blank and a list, and it replaces each item in the list with the result of plugging that item into the expression. For example:<br/>
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-1.png" alt="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" title="map (( )-(1)) over (list (96) (-100) (4.7)) reporting" /><br />
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-2.png" alt="map (join ( ) (s)) over (list (cat) (dog) (bird)) reporting" title="map (join ( ) (s)) over (list (cat) (dog) (bird)) reporting" /><br />
+            <img class="indent" src="/bjc-r/img/3-lists/map-example-3.png" alt="map (round ( )) over (list (3.14159) (87) (5.4)) reporting" title="map (round ( )) over (list (3.14159) (87) (5.4)) reporting" /><br />
         </p>
 		
+        
+        
+        <h3>Drawing 3D Shapes</h3>
+		<div class="todo">Lab1’s last page, draw shape, has lots of numbers, but we’re doing something with them.  If we used MAP over the vertices of A to translate it, or dilate it, that would be ok.  I actually thought that was here somewhere, but couldn’t find it.  That would require a slightly more complex “getting inside” the list operation, but the kids in their dialogue have already begun that thinking in draw shape.  But when we get to the page on MAP, it applies arbitrary functions to arbitrary numbers for no apparent reason other than exercise.</div>
+		<div class="todo">Could you invent a MAP page that builds on draw shape, maybe translating or reflecting or dilating?  You could exchange x and y coords and see what happens.  A translation of, say, (20, 10) could look 3-D ish, especially if corners of the two were connected.  So would a connecting an image and a dilation. --PG</div>
+		<p>You can use <code>map</code> to translate coordinates on a plane.</p>
+        <div class="forYouToDo">
+            <ol>
+                <li>Open your "U3L1-DrawShape" project from <a href="/bjc-r/cur/programming/3-lists/2-nesting-lists/6-data-types.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Lab 1</a>.</li>
+                <div class="sidenoteBig">Use addition to <em>translate</em> the shape to different locations.</div>
+                <li>Create a <code>shape zoo</code> block that uses your <code>draw shape</code> block together with <code>map</code> to draw the shape (given as an input list) at random places on the stage.</li>
+                <li><div class="saveAs"><span class="text">"U3L3-ShapeZoo"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U3L3-ShapeZoo" title="Save your work as U3L3-ShapeZoo" /></div>
+                <div class="sidenoteBig">Use multiplication to <em>dialate</em> the shape.</div>
+                <li>Change your <code>shape zoo</code> block so that it dialates (re-scales) each shape by a random factor (for example, from .5 to 3).</li>
+                <div class="sidenoteBig"><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> What changes about a coordinate pair when it flips across the <em>x</em>- or <em>y</em>-axis?</div>
+                <li>Adjust your <code>shape zoo</code> block so that it sometimes reflects (flips) the shape vertically and/or horizontally.</li>
+</li>
+            </ol>
+        </div>
+        
+		<div class="todo">I found the 3D thing difficult, and <em>I have not yet gotten it to work right</em>, so I made it a TIF. <strong>Someone please check that it's reasonable to ask this.</strong> --MF</div>
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>
+                    Create a <code>draw 3D shape</code> block that takes a list of points as input and does the following:
+                    <ol>
+                        <li>Draws the shape by calling your existing <code>draw shape</code> block</li>
+                        <li>Draws a second copy of the shape shifted 20 in the <em>x</em> direction and 10 in the <em>y</em> direction</li>
+                        <li>Connects the corresponding verticies (corners) of the two copies of the shape</li>
+                    </ol>
+				</li>
+            </ol>
+        </div>
+
+
         <h3>Transposing Music</h3>
+        <div class="forYouToDo">
+            <ol>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+Discuss what <code>map</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
+            </ol>
+        </div>
+        
         <div class="forYouToDo">
             <p>You can use <code>map</code> to transpose (shift) music.</p>
             <ol>
@@ -109,23 +126,6 @@ Discuss what <code>combine</code> does in this script: <img class="inline" src="
             </ol>
         </div>
         
-        <h3>Drawing 3D Shapes</h3>
-        <div class="forYouToDo">
-            <div class="todo">Could you invent a MAP page that builds on draw shape, maybe translating or reflecting or dilating?  You could exchange x and y coords and see what happens.  A translation of, say, (20, 10) could look 3-D ish, especially if corners of the two were connected.  So would a connecting an image and a dilation. --PG</div>
-            <p>You can also use <code>map</code> to translate coordinates on a plane.</p>
-            <ol>
-                <li>Open your "U3L1-DrawShape" project from <a href="/bjc-r/cur/programming/3-lists/2-nesting-lists/6-data-types.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Lab 1</a>.</li>
-                <li>
-                    Create a <code>draw 3D shape</code> block that takes a list of points as input and does the following:
-                    <ol>
-                        <li>Draws the shape by calling your existing <code>draw shape</code> block</li>
-                        <li>Draws a second copy of the shape shifted 20 in the <em>x</em> direction and 10 in the <em>y</em> direction</li>
-                        <li>Connects the corresponding verticies (corners) of the two copies of the shape</li>
-                    </ol>
-                    <div class="endnote"></div>
-				</li>
-            </ol>
-        </div>
         
         <h3>Transcribing Musical Notes</h3>
         <div class="forYouToDo">
@@ -153,9 +153,6 @@ Discuss what <code>combine</code> does in this script: <img class="inline" src="
             </ol>
         </div>
         
-<div class="todo">Lab1’s last page, draw shape, has lots of numbers, but we’re doing something with them.  If we used MAP over the vertices of A to translate it, or dilate it, that would be ok.  I actually thought that was here somewhere, but couldn’t find it.  That would require a slightly more complex “getting inside” the list operation, but the kids in their dialogue have already begun that thinking in draw shape.  But when we get to the page on MAP, it applies arbitrary functions to arbitrary numbers for no apparent reason other than exercise.
-<br /><br />
-</div>
         
         <div class="todo">
             <div class="comment">This content had been commented out...</div>
@@ -190,6 +187,14 @@ Discuss what <code>combine</code> does in this script: <img class="inline" src="
         	<ol>
             	<li>
                 	<img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" />For each of these problems, start with this block: <img border="0" src="/bjc-r/img/3-lists/map_over207.png" alt="map over list(2,0,7)" title="map over list(2,0,7)" />
+                    <div class="todo">
+                        GH Feedack from 10/12/15: 
+                        <ul>
+                            <li>If new to map FYTD 1c will be a fairly big leap. It requires 2 blanks in the input function.</li>
+                            <li>Also not sure if solving for the expressions are really worth people's time? Maybe give people the function to map over (as the form 3x+5 or something), and turn it into code?</li>
+                            <li>Look at <a href="http://bjc.edc.org/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">bjc.edc.org</a> to match problem numbers. --MF</li>
+                        </ul>
+                    </div>
                     <ol>
                         <li>Write a function that would report the <strong>list</strong> 3, 1, 8. </li>
                         <li>Write a function that would report the <strong>list</strong> 4, 0, 14. </li>
@@ -221,6 +226,28 @@ Discuss what <code>combine</code> does in this script: <img class="inline" src="
             </ol> 
         </div>    
         
+        <div class="takeItFurther">
+	        <div class="todo">
+				<p>The TiF is also pretty arbitrary.  We’re getting some mathematical lesson in comparing iii and iv, but we’re not getting CS, and it’s not interesting. --PG?</p>
+
+				<p>Does this go here? --MF</p>
+            </div>
+            <ol type="A">  
+                <li>
+                	Describe what each of these does to the numbers in the list <code>{4,3,2,7}</code>
+                    <div class="sidenote">Write an algebraic expression for what each one does.</div>
+					<ol style="list-style:lower-roman;">
+						<li><img border="0" src="/bjc-r/img/3-lists/3n+2.png" alt="map +2 over (map*3 over {4327})" title="map +2 over (map*3 over  {4327})" /><br /></li>
+                        <li><img border="0" src="/bjc-r/img/3-lists/(n+2)3.png" alt="map *3 over (map + over {4327})" title="map *3 over (map + over {4327})" /><br /></li>
+                        <li><img border="0" src="/bjc-r/img/3-lists/comp2.png" alt="map +2*3 (over {4327})" title="map +2*3 (over {4327})" /><br /></li>
+                        <li><img border="0" src="/bjc-r/img/3-lists/comp3.png" alt="map *3+2 (over {4327})" title="map *3+2 (over {4327})" /><br /></li>
+                        <li><img border="0" src="/bjc-r/img/3-lists/double.png" alt="map _+_ over {4327}" title="map _+_ over {4327}" /><br /></li>
+                        <li><img border="0" src="/bjc-r/img/3-lists/plsq.png" alt="map _+_ over _*_ {4327}" title="map _+_ over _*_ {4327}" /><br /></li>
+					</ol>
+                </li>
+            </ol >  
+        </div>
+        
 <!---        
 <div class="comment">JK: Comment from Dan and NY teachers: "They worked for quite a while, not realizing that if the function passed to map is “item _ of LIST” that they could remove the 1 to leave a blank slot.  This has come up before with students who see a drop-down menu and don’t realize it can be edited."</div>
         
@@ -231,6 +258,68 @@ Discuss what <code>combine</code> does in this script: <img class="inline" src="
     </ol>
     </div>
 --->
+
+		<!-- question 1 (was #4 on Self Check Page) -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="mapLetterVsItem"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp4" shuffle="true">
+            <div class="prompt">
+                <p>
+                    This question refers to these two lists:<br /> 
+                    <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/check1capitals.png" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" /><br />
+                    Which of these statements are <strong>true</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc1.png" alt="map (letter (1) of ()) over (words and numbers)" title="map (letter (1) of ()) over (words and numbers)" /> reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc2.png" alt="map (item (1) of ()) over (words and numbers)" title="map (item (1) of ()) over (words and numbers)"> reports the list {rabbit}.
+                </div>
+                <div class="feedback">
+                    No. The blank space is expecting a <strong>list</strong> as its input, but <code>map</code> puts a single item from <code>words and numbers</code> into that slot.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc3.png" alt="map (item (1) of ()) over (capitals)" title="map (item (1) of ()) over (capitals)"> reports the list {Augusta, Boise, Columbia, Des Moines}.
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc4.png" alt="map (letter (1) of ()) over (capitals)" title="map (letter (1) of ()) over (capitals)"> reports the list {A, B, C, D}.
+                </div>
+                <div class="feedback">
+                    No. You can find the first letter of a word, but not the first letter of a list.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc5.png" alt="map (all but first of () over (capitals)" title="map (all but first of () over (capitals)"> reports the list {Maine, Idaho, South Carolina, Iowa}.
+                </div>
+                <div class="feedback">
+                    No. This is kind of a trick question. What gets reported is actually a list of lists. The output is: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. 
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp4">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
 
    </body>
 </html>

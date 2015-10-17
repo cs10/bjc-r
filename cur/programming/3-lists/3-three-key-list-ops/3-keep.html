@@ -8,15 +8,35 @@
 	
 	<body>
 		<h2><code>Keep</code></h2>
-
-		<div class="todo">
+		<div class="comment">
         	<ul>
-				<li>See KEEP ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
-                <li><code>Keep</code> filters a list and returns a list of all items from the orginal list that match a given requirement.
-KEEP takes a list as input and lets you create a new list keeping only those items from the input list that match some criterion—like begins with a vowel, or is even, or is less than five characters long, or is a vegetable.  You need to write the predicate that does the checking, but then KEEP allows you to apply that predicate to each item in the input list and report the list of elements that make the predicate true.</li>
-	        </ul>
+				<li>See also KEEP ideas from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></li>
+            </ul>
+		</div>
+        
+		<p>
+            The <img class="block" src="/bjc-r/img/blocks/keep.png" alt="keep" title="keep" /> block takes a prepdicate and a list as input and creates a new list keeping only those items from the input list that match some criterion like: begins with a vowel, is less than five characters long, is even, or is a vegetable. For example:
+            <div class="comment">Image blocks need alt and title attributes. --MF</div>
+            <img class="indent" src="/bjc-r/img/3-lists/keep-example-1.png" alt="" title="" /><br />
+            <img class="indent" src="/bjc-r/img/3-lists/keep-example-2.png" alt="" title="" /><br />
+            <img class="indent" src="/bjc-r/img/3-lists/keep-example-3.png" alt="" title="" /><br />
+        </p>
+		<p>You write the predicate that does the checking, and  <code>keep</code> applies that predicate to each item in the input list and reports the list of elements that make your predicate true.</p>
+        
+        
+        <div class="todo">Keep is ok, but it could be augmented to foreshadow some other stuff. For example, if kids imported a data set (so that they did not have to create it themselves), they could keep all the points that are higher than whatever.  Could be grades, but it’d be nice if they could actually answer some useful question by performing some list operation.  Count the entire list; keep all the values that are over some level; count that list; compare?  (not brilliant, come up with something better)</div>
+		<div class="forYouToDo" id="first">
+			<ol>
+                <li>Import <a class="run" href="/bjc-r/prog/3-lists/U3L3-Grades.xml">this data set of class grades</a>.</li>
+                <li>Count the number of items in the list.</li>
+                <li>Use <code>keep</code> to create a filter that keeps only the values of a list that are over some input number. (It should be a reporter that takes a list and a number as input and reports a new list of all of the values in the original list that are greater than the specified number.)</li>
+                <li>Count number of grades that are 80 or above.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+ Compare the size of the original list with the list of the scores of 80 or better.</li>
+            </ol>
         </div>
-    
+
+        
     <!--<p><br />You may have played Geography, the game in which one player says 
 a place name and the next player has to name another place whose first 
 letter is the last letter of the previous place: Newark, Kentucky, 
@@ -26,7 +46,6 @@ on, forever.</p>
 
 How many states start and end with the same letter? To find out, we first need a list of all the states. -->
 
-		<div class="todo">Keep is ok, but it could be augmented to foreshadow some other stuff. For example, if kids imported a data set (so that they did not have to create it themselves), they could keep all the points that are higher than whatever.  Could be grades, but it’d be nice if they could actually answer some useful question by performing some list operation.  Count the entire list; keep all the values that are over some level; count that list; compare?  (not brilliant, come up with something better)</div>
         
 		<p>
 			Click on the script to open a new file.<br>
@@ -109,6 +128,42 @@ How many states start and end with the same letter? To find out, we first need a
 				<li>Make a block that takes your database and reports a rearrangement of the records so that the last names of your classmates are in alphabetical order.</li>
 			</ol>
 		</div>
+
+		<!-- question 1 (was #3 on Self Check Page) -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="is_a_number"
+        hasinlinefeedback="true" maxchoices="3"
+        responseIdentifier="resp3" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use this list of words and numbers: <br />
+                    <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /><br />
+                    Which of these expressions produce the list with just the numbers: {5, 34, 2, 305, 61}?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc1.png" alt="map (is () a (number)?) over (words and numbers)" title="map (is () a (number)?) over (words and numbers)" />
+                </div>
+                <div class="feedback">
+                    No. The <code>Is a number?</code> block is a predicate, so <code>map</code> will report a list of Boolean (true/false) values, not a list of numbers.</div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc2.png" alt="keep items such that (is () a (number)?) from (words and numbers)" title="keep items such that (is () a (number)?) from (words and numbers)" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp3">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
 
 	</body>
 </html>

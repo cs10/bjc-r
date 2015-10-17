@@ -32,14 +32,24 @@ even though they're in the tools library. Combine just isn't as versatile as the
                 </li>
             </ul>
 	    </div>
-        <div class="forYouToDo" id="first">
-<div class="todo">
-            <ul>
-                <li>BH: I'm not sure I like the first exercise.  The fact that you can use the same value in more than one input slot with map is an obscure secondary feature; I'd rather kids see that map expects a single input slot, whereas combine requires (exactly) two input slots.  I'm too tired right now to try to craft an alternative, though.  :-(</li>
-                <li>JK's response: We have kids find squares of numbers earlier in the lab so they've seen it... Maybe the new sidenote below helps enough that we can keep the problem?</li>
         
+        
+		<div class="todo">
+            Integrate: <ul>
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+Discuss what <code>combine</code> does in this script: <img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" /></li>
             </ul>
         </div>
+        
+        
+        <div class="forYouToDo" id="first">
+            <div class="todo">
+                <ul>
+                    <li>BH: I'm not sure I like the first exercise.  The fact that you can use the same value in more than one input slot with map is an obscure secondary feature; I'd rather kids see that map expects a single input slot, whereas combine requires (exactly) two input slots.  I'm too tired right now to try to craft an alternative, though.  :-(</li>
+                    <li>JK's response: We have kids find squares of numbers earlier in the lab so they've seen it... Maybe the new sidenote below helps enough that we can keep the problem?</li>
+            
+                </ul>
+            </div>
         
             <ol>
                 <div class="sidenote">Even if there are two blanks in <code>map</code>, there's still only <em>one</em> input</div>
@@ -131,5 +141,154 @@ We should try out the <code>average</code> block:<br />
 <img border="0" src="/bjc-r/img/list/hof/avg781.png" alt="average of the list 7,8,1 iw 5.333333" title="average of the list 7,8,1 iw 5.333333"/>
 <br />Is that the answer you'd expect?<br /><br />  
   </p>-->
-   </body>
+
+
+		<!-- question 1 (was #1 on Self Check Page) -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares_mapkeepcombine"
+        hasinlinefeedback="true" maxchoices="8"
+        responseIdentifier="resp1" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use this list of squares: <br /> 
+                    <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /><br />
+                    Which of these expressions will report a <strong>list</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep items such that (()mod(2)=0) from (squares)" title="keep items such that (()mod(2)=0) from (squares)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)">
+                </div>
+                <div class="feedback">
+                    No, + reports a number, so in this case <code>combine with</code> will report a number. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that (letter (length of ()) of () = 1) from (squares)" title="keep items such that (letter (length of ()) of () = 1) from (squares)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map (()+()) over (squares)" title="map (()+()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with (join ()()) items of (squares)" title="combine with (join ()()) items of (squares)">
+                </div>
+                <div class="feedback">
+                    No. <code>join</code>(1,4) will report 14. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map ((0)-()) over (squares)" title="map ((0)-()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map (()-()) over (squares)" title="map (()-()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+        
+		<!-- question 2 (was #2 on Self Check Page) -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use the same list of squares: <br /> 
+                    <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /><br />
+                    The expressions in this problem are the same as you saw in question 1.<br />
+                    Which of these statements are <strong>true</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep items such that (()mod(2)=0) from (squares)" title="keep items such that (()mod(2)=0) from (squares)" /> reports a list with only even square numbers.
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map (()+()) over (squares)" title="map (()+()) over (squares)" /> report the same result.
+                </div>
+                <div class="feedback">
+                    No, <code>combine with</code> will report a number, whereas <code>map</code> will report a list.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that ((letter (length of ()) of ())=1) from (squares)" title="keep items such that ((letter (length of ()) of ())=1) from (squares)" /> reports the list {1, 16, 100, 121, 144, 169, and 196}.
+                </div>
+                <div class="feedback">
+                    No, this doesn't mean "keep numbers in which the first<em></em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1." 
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with (join ()()) items of (squares)" title="combine with (join ()()) items of (squares)" /> report the same result.
+                </div>
+                <div class="feedback">
+                    No; adding two numbers isn't the same as stringing their digits together.
+                </div>
+            </div>
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map ((0)-()) over (squares)" title="map ((0)-()) over (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map (()-()) over (squares)" title="map (()-()) over (squares)"> both report a list with negative values.
+                </div>
+                <div class="feedback">
+                    No. One of these lists is made up of 15 items that are all zero.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+
+	</body>
 </html>
