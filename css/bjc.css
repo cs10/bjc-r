@@ -296,7 +296,10 @@ div.newProject span.text {
 
 /* Other Random Things added by Mary NEEDS ATTENTION*/
 
-.block {height: 2em;}
+.block {
+  height: 2em; 
+  padding: 0px;
+}
 
 .bigBlock {height: 6%;}
 
