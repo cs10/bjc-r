@@ -7,13 +7,13 @@
     </head>
 
     <body>
+
         <h2>When You Really Have to Loop</h2>
-                
         
         <div class="todo">
             <ul>
                 <li>JK: Any other suggestions for interesting problems here?</li>
-                <li>
+                <ul><li>
                     From Dan in NY: "Some were still working on IsIncreasing(list)&rarr;bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:<br />
                     1) The DEBUG global list technique, where a null global list is added to each loop by a join() statement that shows the values of iteration variables. E.g.,
                     for each RIGHT in NUMBERS
@@ -24,35 +24,28 @@
                     2 and 3 are in this file: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=Dans%20Increasing" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&amp;ProjectName=Dans%20Increasing</a>
                 </li>
                 <li>From Brian:What he's suggesting is to make a global variable DEBUG LOG or something, set it to the empty list, and then inside a FOR EACH ITEM loop you say <code>ADD (JOIN WORDS (item) (some intermediate result) (another one) ...) TO (DEBUG LOG)</code>and you use a stage watcher to see what your program is actually doing at each step.  I'm not sure how or whether to put all that in here.  If anything it should be a page by itself: "Debugging a Loop" or something.</li>
-                <li>4-when page is nearly unreadable without format because there are so many interrupting divs, but I agree with Mary that explaining why some HoF won’t help is inaccessible. These are great questions, leading to a good analysis of what map, keep, and combine do.  Maybe these are classroom discussable, but not questions for kids to do in pairs because students are not yet so solid with where these do help that they will be able to feel confident that they can distinguish between things that they don’t know how to do with HoFs and things that the HoFs simply won’t do.  Some version of the dialogue might be helpful. --PG</li>
+                <li>This content remains to be developed as of Oct 2015. --MF</li></ul>
+                <li>4-when <!--page is nearly unreadable without format because there are so many interrupting divs, but I agree with Mary that explaining why some HoF won’t help is inaccessible. These are great questions, leading to a good analysis of what map, keep, and combine do.  Maybe these are classroom discussable, but not questions for kids to do in pairs because students are not yet so solid with where these do help that they will be able to feel confident that they can distinguish between things that they don’t know how to do with HoFs and things that the HoFs simply won’t do.-->  Some version of the dialogue might be helpful. --PG</li>
             </ul>
         </div>
-        
-        <div class="forYouToDo" id="first">
-            <ol>
-                <li>Consider the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />. It returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok), or <code>false</code> otherwise.<br />
-                <img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /><br />
-                <img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
-                    <ol>
-                    <div class="commentBig">I'm not convinved that "explaining why not" is going to be accessible to students. --MF</div>
-                    <li><div class="sidenote">The question mark at the end of <code>increasing?</code> is a convention for naming <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a> (blocks that report either true-or-false).</div><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>map</code> won't help you write <code>increasing?</code>.</li>
-                    <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>keep</code> won't help you write <code>increasing?</code>.</li>
-                    <li><img src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Explain why <code>combine with</code> won't help you write <code>increasing?</code>.</li>
-                    </ol>
-                </li>
-            </ol>
-        </div>
+
         
         <div class="dialogue">
-        	<div class="todo">The kids are also trying to figure out what to do with the blocks.  I’d like us to solve that a bit better and give some varied and good examples. --PG <strong>Brian</strong>??  You are needed here.</div>
+			<div class="stagedir">
+				Alpha and Beta are considering the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />, which returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok) and <code>false</code> otherwise. For example: <br />
+				<img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /> 
+				<img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
+            </div>
+                    
+            <div class="todo">The kids are also trying to figure out what to do with the blocks.  I’d like us to solve that a bit better and give some varied and good examples. --PG <strong>Brian</strong>??  You are needed here.</div>
             <div class="comment">Trim this down. --MF</div>
-            <div><span>Alphie:</span> Great, so now we know a bunch of functions that <em>won't</em> help us. How <em>do</em> we write <code>increasing?</code></div>
-            <div><span>Betty:</span> Let's try talking through what we want the code to do. You know, the algorithm.</div>
-            <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> We could compare item 1 to item 2 and check that item 1 is less. Then compare item 2 to item 3, then item 3 to... Well, until we reach item "length of" the list.</div>
-            <div><span>Betty:</span> So as we compare two items at a time, we end up with a list of "true"s and "false"s. And then we would check that list, and if there's even one "false" in there, then <code>increasing?</code> is false.</div>
+            <div><span>Betty:</span> Let's develop our algorithm, you know, the plan what we want the code to do.</div>
+            <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> Well, we need to compare each item to all the others, but we can't do that all at once, so we'll need to compare each one at a time...</div>
+            <div><span>Alphie:</span> We could compare item 1 to item 2 and check that item 1 is less, and then compare item 2 to item 3 and check if item 2 is less, and then compare item 3 to item 4 and check that item 3 is less, all the way to the end. And, we'll know it's the end when we reach item "length of" for the list!</div>
+            <div> ok, and if we get "false" even once...
+            <div> <em>(Interrupting)</em> Then we know it's not increasing!
             <div><span>Alphie:</span> Yeah, that works... </div>
               <div class="stagedir">They pause to think.</div>
-            <div><span>Betty:</span> I think we can do this better. We don't need to keep track of the item number because we don't care where the out-of-order numbers are. Also, we don't need the middle step of making a list of "true"s and "false"s. As soon as one of the comparisons is "false", we know <code>increasing?</code> is false. </div>
             <div><span>Alphie:</span> You're saying we don't care about the item number, just the item itself. So we could use a <code>for each</code> loop. For each item in the list, we compare it to... what? </div>
             <div><span>Betty:</span> What if we make a variable that keeps track of the highest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
             <div><span>Alphie:</span> Ok, here's what I have so far.</div>
@@ -62,6 +55,7 @@
         <div class="forYouToDo">
             <ol start="2">
                 <li>Alphie and Betty's script contains a mistake! For example, their script gives this result:<br />
+				<div class="sidenoteBig">The question mark at the end of <code>increasing?</code> is a convention for naming <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a> (blocks that report either true-or-false).</div>
                 <img border="0" title="increasing(1,7,4,10)=true" alt="increasing(1,7,4,10)=true" src="/bjc-r/img/3-lists/increasing_truemistake.png" /><br />
                 Click their script to open their project and fix their code.</li>
             </ol>

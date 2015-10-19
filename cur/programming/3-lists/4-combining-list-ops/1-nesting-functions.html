@@ -20,14 +20,13 @@
 <pre>remove pattern( str, x )
 script variables: tokens
 set tokens to the result of split str using the pattern x 
-set tokens to the result of keep tokens with length > 0  {got rid of empty tokens}
+set tokens to the result of keep tokens with length &gt; 0  {got rid of empty tokens}
 report the result of join list on tokens   {join list is the combine based function that you created in problem 6}</pre>
 			</p>
 			<p>Make sure to leave an example in your script that shows your remove pattern function works.</p>
 		</div>
         
-        <div class="todo">There was music stuff right here, but I moved it to map because keep and combine weren't as relevant. --MF</div>
-        
+                
         <h3>Character Encoding</h3>
 		<div class="todo">
         	<ul>
@@ -49,9 +48,9 @@ report the result of join list on tokens   {join list is the combine based funct
         <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
         <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar.</p>
         
-        <div class="comment">Would be nice to include an ascii table here&mdash;something like what they will see on the exam. --MF</div>
+        <div class="todo">Would be nice to include an ascii table here&mdash;something like what they will see on the exam. --MF</div>
 
-        <div class="forYouToDo">
+        <div class="forYouToDo" id="first">
             <ol>
 				<li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
                 <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
