@@ -49,7 +49,7 @@ heading: Programming Lab 4: Combining List Operations
 	//resource: Processing List Data [/bjc-r/cur/programming/3-lists/4-combining-list-ops/0-processing-data-lists.html]
 	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-nesting-functions.html] 
 	//resource: When You Really Need to Loop [/bjc-r/cur/programming/3-lists/4-combining-list-ops/2-when-you-really-need-to-loop.html]
-	//resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
+	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
 	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-combining-list-ops/4-magic-squares.html]
 	
  	raw-html: <hr />
