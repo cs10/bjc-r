@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 2: Nesting Lists</title>
+    </head> 
+    
+    <body>
+        <h2>Improving Your Contact List App</h2>
+        <p>Load your contact list app from before; it should be saved as &quot;U3L2-ContactList&quot;</p>
+        
+		<div class="forYouToDo" id="first">
+            <ol>
+                <li>Real contact apps have a lot more information than just a name and a phone number.  Modify <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact"> so that each contact includes a name, <em>an address,</em> and a phone number, in that order.</li>        
+                <li>Try your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> block again. Does it still work?</li>
+          </ol>
+    </div>
+You could fix the problem, but as we add more complexity to contacts&mdash;birthday, spouse, work address, and so on&mdash;the location of the phone number within a contact might keep changing. Instead of fixing every block that needs to find the phone number every time the phone number moves, we can define <em>one</em> block that knows where the phone number is, and use that in all other blocks that need to know. That way, a very small number of procedures will know the details of where things are, and only those will need editing when things change. Other parts of your program will use those special procedures and will keep working when the representation changes. 
+                <div class="forYouToDo">
+    <ol start="3">
+        
+      <li>To start, write a <em>constructor</em> block (a block that constructs a data object) that looks like this:<br />
+        <img src="/bjc-r/img/3-lists/contact-constructor.png" alt="contact name= () addr= () phone= ()"><br />
+        It should report a contact (still a list of three items). Note that it takes the three items as inputs; it doesn't ask the user to enter the information. This block will be used in <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact">, but it doesn't do the entire job of  <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact">.</li>
+                <li>Rewrite  <img src="/bjc-r/img/3-lists/get-new-contact.png" alt="get new contact"> to use this constructor.</li>
+                <li>
+                	Now write two new <em>selector</em> blocks (blocks that <em>select</em> a piece of data from the input they're given):<br />
+                    <img src="/bjc-r/img/3-lists/address-selector.png" alt="contact address ( )"><br />
+                    <img src="/bjc-r/img/3-lists/phone-selector.png" alt="contact phone ( )"><br />
+                	Each of them should take a contact as input and report the right piece of that contact. Also, check the selectors you've already written:<br /> 
+                    <img src="/bjc-r/img/3-lists/name-display.png" alt="name (display form) ()"><br />
+                    <img src="/bjc-r/img/3-lists/name-sorting.png" alt="name (sorting form) ()"><br />
+                    Together, the constructor and selectors  define an <strong>abstract data type</strong>, in this case, the "contact" data type.
+      </li>
+                <li>
+                	Now you can rewrite the <code>phone number of</code> block this way: <img src="/bjc-r/img/3-lists/phone-number-script.png" alt="report contact phone (contact info for (name))"><br />
+               	The red <code>contact info</code> block will have the same definition as your old <code>phone number</code> block, except that instead of extracting the phone number, it reports the entire contact (a list).</li>
+                <li>Do the same thing for the <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> block. Make sure this all works. </li>
+                </ol>
+                </div>
+                                
+                <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> <p>&nbsp; <br /> </p> <p>&nbsp; <br /> </p>     
+                
+                <div class="forYouToDo">
+                  <ol start="8">
+                <li>Now you're going to address the name order problem. The overall plan is to have two different types of contact: Eastern-style (family name first) and Western-style (given names first). (These style names are slightly oversimplified; Hungary is an example of a European (Western) country in which family names come first. But they're close enough for computer science.) Each contact will be represented inside the program as a list whose first item is a <strong>type tag</strong>, either the word &quot;Eastern&quot; or the word &quot;Western.&quot; Write two new constructors:<br /><img src="/bjc-r/img/3-lists/Eastern-contact.png" alt="Eastern-style contact, name= () addr= () phone= ()"><br /><img src="/bjc-r/img/3-lists/Western-contact.png" alt="Western-style contact, name= () addr= (), phone= ()"><br />
+                  Both of them should report a four-item list containing the type tag, the name, the address, and the phone number,</li>
+                <li>Decide how to present this choice in the user interface. You could have two buttons &quot;Add Eastern-style contact&quot; and &quot;Add Western-style contact&quot;; you could have a single button that asks the user to enter the type (maybe with examples) along with entering the name, address, and phone.</li>
+                <li>Next come the selectors. Write a new one called <code>contact type</code> that takes a contact as input, and that reports its type tag. The other easy steps are fixing the address and phone number selectors to use the new contact structure. Finally, the two name selectors must be enhanced to check the type tag:
+                  <table width="82%" border="1">
+                    <caption>
+                      Name forms vs. name types
+                    </caption>
+                    <tr>
+                      <th width="29%" scope="col">&nbsp;</th>
+                      <th width="34%" scope="col">display form</th>
+                      <th width="37%" scope="col">sorting form</th>
+                    </tr>
+                    <tr>
+                      <th scope="row">Eastern-style</th>
+                      <td>&nbsp;&nbsp;Sun Yat-Sen</td>
+                      <td>&nbsp;&nbsp;Sun Yat-sen</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Western-style</th>
+                      <td>&nbsp;&nbsp;Abraham Lincoln</td>
+                      <td>&nbsp;&nbsp;Lincoln, Abraham</td>
+                    </tr>
+                  </table>
+                  Note that there's no comma in the sorting form of an Eastern-style name; it's exactly the same as the display form.
+                </li>
+                <li>Clear your contact list, add some contacts of both types, make sure the internal representation is what you expect, and then make sure that your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work, without changing them at all.</li>
+			</ol></div>
+            <div class="takeItFurther">
+            <ol type="A">
+            <li>Put the sorting form of names to work by sorting your contact list. You've been given a <code>sort</code> block that takes a list as its first input, reporting a sorted version of the list. The second input to <code>sort</code> is a <em>comparison function</em> that takes two inputs, reporting <img src="/bjc-r/img/blocks/true.png" alt="true"> if one item comes before a second item. Here's how you'll use it in this project:<img src="/bjc-r/img/3-lists/sort-contacts.png" alt="sort (contact list) ordering with &lt;(name (sorting form) {}) &lt; (name (sorting form) {})&gt;"><br />The two list slots in the picture are supposed to stay empty.  Don't forget that <code>sort</code> is a reporter; you have to do something with the list it reports.</li>
+            </ol></div>
+</body>
+</html>

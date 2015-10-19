@@ -8,7 +8,7 @@
 
 	<body>
     	<h2>Programming Lab 2: Nesting Lists</h2>
-        <p>Lists can contain anything: numbers, strings, other lists, even blocks. The objects <em>in</em> a list can be all of the same kind—all numbers, for example, or all lists that contain a name and a phone number—or can, as in that list of name and phone number, be different. The tabular data we are familiar with in spreadsheets can be represented as a list of same-length lists, the smaller lists representing each row in the table, and the larger list representing the collection of rows.
+        <p>Lists can contain anything: numbers, strings, other lists, even blocks. The objects <em>in</em> a list can be all of the same kind (all numbers, for example, or all lists that contain a name and a phone number). But the objects can also be of different types that list of name and phone number, for example). The tabular data we are familiar with in spreadsheets can be represented as a list of same-length lists, the smaller lists representing each row in the table, and the enclosing list representing the entire spreadsheet.
 
           <!--A table of data, is a list of rows of data, each row being a list of data.-->
 Selecting information in the dataset involves only knowing where it appears. The &quot;ordered pairs&quot; of algebra, the (<em>x</em>, <em>y</em>) coordinates of a point, can be represented as lists. So can vectors and matrices. The <code>list</code> block is the basic building block of these  complex structures.</p>
@@ -16,14 +16,14 @@ Selecting information in the dataset involves only knowing where it appears. The
 		<img class="indent" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />
         <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
 
-        <p>Students start by construcing a very simple shopping list app. They later create a contact list app whose elements are themselves lists. This requires not only collecting and storing information, but being able to retrieve it in useful ways. Students use <code>keep</code> to be able to collect only the information they need from a list, and learn to use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists of coordinates. Data Types, returns to the idea of using abstraction to make the (<em>x</em>, <em>y</em>) coordinate lists more recognizable and usable by creating the <strong>abstract data type</strong> <code>point</code> and constructing and identifying these coordinate lists that way. After some embellishment of the contact app, practicing and extending the ideas of abstraction, and a Lists Review and Self Check, students extend their use of <code>for each</code> and data types to a musical context.</p>
+        <p>Students start by construcing a very simple shopping list app. They later create a contact list app whose elements are themselves lists. This requires not only collecting and storing information, but being able to retrieve it in useful ways. Students use <code>keep</code> to be able to collect only the information they need from a list, and learn to use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists of coordinates. Data Types, a later page in this lab, returns to the idea of using abstraction to make the (<em>x</em>, <em>y</em>) coordinate lists more recognizable and usable by creating the <strong>abstract data type</strong> <code>point</code> and constructing and identifying these coordinate lists that way. After some embellishment of the contact app, practicing and extending the ideas of abstraction, and a Lists Review and Self Check, students extend their use of <code>for each</code> and data types to a musical context.</p>
 <p>Thus in Labs 1 and 2, students have encountered lists of strings/words, numbers, and lists. They also use <em>abstraction</em> to clarify and simplify code, and see how it makes code more flexible and maintainable. </p> 
         
         <h3>Pacing:</h3>
         <div>
             <ul>
             <div class="comment">Is this still true? --bh</div>
-                <li>The four pages of this lab are each expected to be relatively quick, <em>approximately 1 class period each</em>.</li>
+                <li>The five pages of this lab are each expected to be relatively quick, <em>approximately 1 class period each</em>.</li>
             </ul>
         </div>
         
@@ -44,6 +44,7 @@ Selecting information in the dataset involves only knowing where it appears. The
 		<div>
 			<ul>
                 <li>Access and manipulate data in lists of lists.</li>
+                <li>Use the <code>keep</code> function to search for a contact in the Contact List app.</li>
                 <li>Use the <code>for each</code> block to access each item of a list.</li>
                 <li>Create abstract data types to organize and manage data.</li>
                 <li>Use lists of lists together with data types to organize and access data.</li>
@@ -82,7 +83,7 @@ Selecting information in the dataset involves only knowing where it appears. The
                         	<ul>
 		                        <li>What are some benefits of creating an abstract data type?</li>
 		                        <li>In what other situations might abstract data types be helpful?</li>
-                                <li>What kind of data types does a list take? Lists take any type of input (primative or abstract data types)</li>
+                                <li>What data types can a list include? Lists can include any data type.</li>
 		                        <li>What is a <em>primitive</em> data type? What are some examples?</li>
 		                        <li>What is an <em>abstract</em> data type? What are some examples?</li>
                                 <li>What is the difference between a primitive data type and an abstract data type?</li>
@@ -135,18 +136,29 @@ Selecting information in the dataset involves only knowing where it appears. The
             	<li>
                 	<strong>Page 1: Contact List App.</strong>
                     <ul>
-                        <li>Encoruage students to make a prediction about what the Snap<em>!</em> scripts to <em>before</em> building actually them in Snap<em>!</em></li>
+                        <li>Encoruage students to make a prediction about what the Snap<em>!</em> scripts do <em>before</em> building  them in Snap<em>!</em></li>
                         <li>
                             Downloading and importing sprite costumes is easy, but there are a few steps to note:
                             <ul>
                                 <li>First, right click to save the file to a location on your harddrive where you can easily find it again.</li>
-                                <li>In Snap<em>!</em>, add a new sprite with the desired name, and <em>with that sprite selected</em>, click the "Costumes" tab.</li>
-                                <li>Locate and drag the image file from the location where you saved it to the open "Costumes" tab.</li>
+                                <li>In Snap<em>!</em>, add a new sprite with the desired name, and <em>with that sprite selected</em>, locate and drag the image file from the location where you saved it to the Snap<em>!</em> window.</li>
+                                <li>(An alternative to the second step is to select &quot;Import...&quot; from the File menu, then choose the image file in the file browser that appears.)</li>
                             </ul>
                         </li>
+                        <li><strong><em>Make sure students save their app before doing the finger exercises at the end of the page!</em></strong></li>
                     </ul>
             	</li>
-                <li>
+            	<li><strong>Page 1.5: Contact List App, Part 2.</strong>
+            	  <ul>
+            	    <li>This is a pretty long page. It's helpful for you to keep in mind its overall structure:
+            	      <ul>
+            	        <li>In the first green For You To Do box, students change the internal representation of a contact, and discover that this change breaks all the user interface procedures. This will feel like a step backward, so you m ight warn them and assure them that it'll all turn out better than ever by the end of the page.</li>
+            	        <li></li>
+          	          </ul>
+            	    </li>
+           	      </ul>
+            	</li>
+            	<li>
                 	<strong>Page 2: The <code>For Each</code> Block.</strong>
                     <ul>
                       <img class="imageRight" src="/bjc-r/img/3-lists/A_foreach.png" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
