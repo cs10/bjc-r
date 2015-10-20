@@ -1,205 +1,132 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 3 Teacher Guide</title>
-	</head>
-
-	<body>
-		<h2>Programming Lab 3: Three Key List Operations</h2>
-		<p>Functions that <em>take other functions as input</em> are called <strong>higher order functions</strong>. In this unit (and often but not always in practice) these are used for processing lists. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">In Lab 1</a>, students worked with  <code>for each</code> to apply a procedure to each item of a list, but . Now students focus on three higher order list operations: <code>map</code>, <code>keep</code>, and <code>combine</code>.</p>
-		<p>
-            While <code>for each</code> is a command block that steps through each item in a list to use or make changes to the items, <code>combine</code> reports a single result, and <code>map</code> and <code>keep</code> both report new lists of data:
-            <ul>
-            <li><code>Map</code> <em>performs a function on each item of a list</em> and returns a modified list. That is, <code>map</code> takes a list as input and  reports a new list in which each element of the original list has been processed in some way, for example: doubled,  made plural,  replaced by something (like a selection from some other list), etc.</li>
-            <li><code>Keep</code> <em>filters a list</em> and returns a list of all items  that match a given requirement. That is, <code>keep</code> takes a list as input and reports a new list keeping only those items from the original list that match some criterion, for example: begins with a vowel, is even, is less than five characters long,  is a vegetable, etc.</li>
-            <li><code>Combine</code> <em>performs one operation between </em><em> all the items</em> of a list and returns a single result (e.g. a sum, product,  concatenated string, etc.). That is, <code>combine</code> takes a list and a binary (i.e., two-input) operation as input and reports the result of performing that binary operation between each of the items in the list. (Like addition, multiplication, and <code>join</code>, <code>combine</code> is <em>associative</em>; however, even non -associative binary operations can be used with <code>combine</code>, for example: subtraction would just alternately cancel itself with each list item.) </li>
-            </ul>
-        </p>
-		<p>These three list processing operations give enormous power all by themselves.  In combination, they allow very sophisticated data processing. Students will apply these tools various context including an overarching theme of list of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
-        
-        <div class="todo">
-            <p>
-                Maybe also something about... ???
-                <ul>
-                    <li>abstract data types</li>
-                    <li>mapping over a map</li>
-                    <li>lists of lists</li>
-                    <li>mapping over a list of lists</li>
-                </ul>
-            </p>
-        </div>    
-		
-
-		<h3>Pacing:</h3>
-		<div>
-			The 4 lab pages could be split across 5 to 7 days. Expected times to complete follow:
-			<ul>
-				<li>The introductory page, Exploring List Operations,  are  expected to be relatively quick, <em>less than 1 class period</em>.</li>
-				<li>
-					The <code>Map</code>, <code>Keep</code>, and <code>Combine</code> lab pages each have several sections with different (if any) project files and a quiz.
-					<ul>
-						<li><code>Map</code> may take 2-3 days.</li>
-						<li><code>Keep</code> may take 1-2 days.</li>
-						<li><code>Combine</code> may take 1-2 days.</li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-
-
-		<!--<h3>Prepare:</h3>
-		<div>
-			<ul>
-				<li></li>
-			</ul>
-		</div>-->
-
-
-		<h3>Students will:</h3>
-		<!--<div class="sidenoteBig">
-			<strong>Looking Ahead</strong>
-			<ul>
-				<li></li>
-			</ul>
-		</div>-->
-		<div>
-			<ul>
-				<li>Learn about higher order functions.</li>
-                <li>Learn to use <code>for each</code>, <code>map</code>, <code>keep</code>, and <code>combine</code> on their own and together to access and manipulate list data.</li>
-			</ul>
-		</div> 
-			  
-		
-		<h3>As a Class:</h3>
-		<div>
-        	<ul>
-                <!--<li>
-                	<strong>Page 1: Exploring List Operations.</strong>
-                    <ul>
-                        <li>Students should work through this page, which introduces map and keep</li>
-                    </ul>
-            	</li>-->
-                <li>
-                	<strong>Page 2: <code>Map</code>.</strong>
-                    <ul>
-						<li>The section, Using <code>Map</code> for Algebraic Functions, presents an example of using Snap<em>!</em> to model this algebraic function: $$f(n)=3n+7$$ Encourage students to identify a function (or several) of interest to them and build a reporter to run it. For example, they might calculate  values of a function needed for a math or science assignment (or  any other school or non-school context). 
-</li>
-                  </ul>
-            	</li>
-                <!--<li>
-                	<strong>Page 3: <code>Keep</code>.</strong>
-                    <ul>
-                        <li>Students should work through the problems and read the dialogue out loud.</li>
-                    </ul>
-            	</li>-->
-                <li>
-                	<strong>Page 4: <code>Combine</code>.</strong>
-                    <ul>
-                        <li>The constraints of the functional input for <code>combine</code> are straightforward (an associative operation with two blank input slots), but as they are different from <code>map</code> and <code>keep</code> (which require input functions and predicates, respectively, with one blank). You may wish to have a discussion to discuss the <code>combine</code> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
-                    </ul>
-                </li>
-        	</ul>
-        </div>
-
-		<h3>Assignments:</h3>
-		<div>
-        	<ul>
-                <li>Encourage students to identify places where <code>map</code>, <code>keep</code>, and <code>combine</code> may help with a program with lists that they have already developed and to take the time to improve their programs.</li>
-        	</ul>
-        </div>
-			
-		<!--<h3>Look For:</h3>
-		<div>
-        	<ul>
-        		<li>...</li>
-        	</ul>
-        </div>
-			
-		<h3>Related Resources:</h3>
-		<div>
-        	<ul>
-        		<li>...</li>
-        	</ul>
-        </div>-->
-			
-		<h3>Tips:</h3>
-		<div>
-        	<ul>
-                <li>
-                	<strong>Page 1: Exploring List Operations.</strong>
-                    <ul>
-						<li>Problem 1 part b gives the result "NaN". This stands for "Not a Number" and results because the sum operation expects numbers as its inputs, and this expression includes a list as one of the inputs.</li>
-                    </ul>
-            	</li>
-                <li>
-                	<strong>Page 2: <code>Map</code>.</strong>
-                    <ul>
-                        <li>Watch for students who are particularly adapt with translating, dilating, and reflecting computer graphics or with composing and transposing music. Encourage these students to develop these projects further and/or to present their work to the class.</li>
-                    </ul>
-            	</li>
-                <li>
-                	<strong>Page 3: <code>Keep</code>.</strong>
-                    <ul>
-                        <li>Students develop a small database of first name, last name, age (in years), and height (in inches). Encourage students to keep the dataset small (4-6 records) to minimize time lost on data entry.</li>
-                    </ul>
-            	</li>
-                <li>
-                	<strong>Page 4: <code>Combine</code>.</strong>
-                    <ul>
-                        <li>The two quizzes on this page address all three higher order functions in this lab: <code>map</code>, <code>keep</code>, and <code>combine</code>. Encourage students to use these questions to assess how well they have learned these ideas. If necessary, they may wish to review. </li>
-                    </ul>
-                </li>
-        	</ul>
-        </div>
-
-			
-		<!--<h3>Solutions</h3>
-		<div><ul><li>...</li></ul></div>-->
-			
-			
-		<h3>Correlation with AP CS Principles Framework</h3>
-	<div class="apStandards">
-			<h4>Computational Thinking Practices:</h4>
-			<ul>
-                <li><strong>P2 Creating Computational Artifacts</strong> Create an artifact with a practical, personal, or societal intent.</li>
-                <li><strong>P2 Creating Computational Artifacts</strong> Select appropriate techniques to develop a computational artifact.</li>
-                <li><strong>P2 Creating Computational Artifacts</strong> Use appropriate algorithmic and information management principles.</li>
-                <li><strong>P3 Abstracting</strong> Explain how data, information, or knowledge is represented for computational use.</li>
-                <li><strong>P3 Abstracting</strong> Explain how abstractions are used in computation or modeling.</li>
-                <li><strong>P3 Abstracting</strong> Identify abstractions.</li>
-                <li><strong>P4 Analyzing Problems and Artifacts</strong> Evaluate a proposed solution to a problem.</li>
-                <li><strong>P4 Analyzing Problems and Artifacts</strong> Locate and correct errors.</li>
-                <li><strong>P4 Analyzing Problems and Artifacts</strong> Explain how an artifact functions.</li>
-                <li><strong>P4 Analyzing Problems and Artifacts</strong> Justify appropriateness and correctness of a solution, model, or artifact.</li>
-                <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
-                <li><strong>P6 Collaborating</strong> Collaborate with another student in producing an artifact.</li>
-                <li><strong>P6 Collaborating</strong> Share the workload by providing individual contributions to an overall collaborative effort.</li>
-                <li><strong>P6 Collaborating</strong> Foster a constructive, collaborative climate by resolving conflicts and facilitating the contributions of a partner or team member.</li>
-                <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
-                <li><strong>P6 Collaborating</strong> Review and revise their work as needed to create a high-quality artifact.</li>
-			</ul>
-	  <h4>Essential Knowledge:</h4>
-		<ul>
-			<li><strong>EK2.1.1A</strong> Digital data is represented by abstractions at different levels.</li>
-            <li><strong>EK3.1.3E</strong> Interactivity with data is an aspect of communicating.</li>
-            <li><strong>EK3.2.1F</strong> Software tools, including spreadsheets and databases, help to efficiently organize and find trends in information.</li>
-            <li><strong>EK3.2.2H</strong> Analytical techniques to store, manage, transmit, and process data sets change as the size of data sets scale.</li>
-            <li><strong>EK4.1.1B</strong> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
-            <li><strong>EK5.1.3B</strong> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
-            <li><strong>EK5.1.3F</strong> Effective communication between participants is required for successful collaboration when developing programs.</li>
-            <li><strong>EK5.2.1B</strong> Program instructions are executed sequentially.</li>
-            <li><strong>EK5.2.1C</strong> Program instructions may involve variables that are initialized and updated, read, and written.</li>
-            <li><strong>EK5.3.1I</strong> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
-            <li><strong>EK5.3.1K</strong> Lists and list operations, such as add, remove, and search, are common in many programs.</li> 
-            <li><strong>EK5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
-            <li><strong>EK5.5.1H</strong> Computational methods may use lists and collections to solve problems.</li>
-            <li><strong>EK5.5.1I</strong> Lists and other collections can be treated as abstract data types (ADTs) in developing programs.</li>
-            <li><strong>EK7.3.1K</strong> People can have instant access to vast amounts of information online; accessing this information can enable the collection of both individual and aggregate data that can be used and collected.</li>
-	    </ul>
-	  </div>			
-
-
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>Unit 3 Teacher Guide</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1265.21">
+  <style type="text/css">
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p5 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; min-height: 14.0px}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    span.s1 {text-decoration: underline ; color: #0000ee}
+    span.s2 {font: 12.0px Courier}
+    ul.ul1 {list-style-type: disc}
+    ul.ul2 {list-style-type: circle}
+  </style>
+</head>
+<body>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times"><b>Programming Lab 3: Three Key List Operations</b></h2>
+<p class="p2"><br></p>
+<p class="p3">Functions that <i>take other functions as input</i> are called <b>higher order functions</b>. In this unit (and often but not always in practice) these are used for processing lists. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc_2015-2016.html&amp;novideo&amp;noassignment"><span class="s1">In Lab 1</span></a>, students worked with <span class="s2">for each</span> to apply a procedure to each item of a list, but it’s not a function. Now students focus on three higher order list operations: <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span>.</p>
+<p class="p3">While <span class="s2">for each</span> is a command block that steps through each item in a list to use or make changes to the items, <span class="s2">combine</span> reports a single result, and <span class="s2">map</span> and <span class="s2">keep</span> both report new lists:</p>
+<ul class="ul1">
+  <li class="li4"><span class="s2">Map</span> <i>calls a function on each item of a list</i> and returns a result list. That is, <span class="s2">map</span> takes a list as input and reports a new list in which each element of the original list has been processed in some way, for example: doubled, made plural, replaced by something (such as a selection from some other list), etc.</li>
+  <li class="li4"><span class="s2">Keep</span> <i>filters a list</i> and returns a list of all items that match a given requirement. That is, <span class="s2">keep</span> takes a list as input and reports a new list keeping only those items from the original list that match some criterion, for example: begins with a vowel, is even, is less than five characters long, is a vegetable, etc.</li>
+  <li class="li4"><span class="s2">Combine</span> <i>performs one operation on all the items</i> of a list and returns a single result (e.g. a sum, product, concatenated string, etc.). That is, <span class="s2">combine</span> takes a list and a dyadic (i.e., two-input) operation as input and reports the result of repeatedly calling that dyadic operation on a result-so-far and one new list item. <span class="s2">Combine</span> should be used only with associative functions such as addition or multiplication. Non-associative functions don't give an error message, but their result depends on the order in which items are chosen from the list, so it's unhelpful.</li>
+</ul>
+<p class="p5"><br></p>
+<p class="p3">Students will apply these tools various context including an overarching theme of lists of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
+<p class="p3">Maybe also something about... ???</p>
+<ul class="ul1">
+  <li class="li4">abstract data types</li>
+  <li class="li4">mapping over a map</li>
+  <li class="li4">lists of lists</li>
+  <li class="li4">mapping over a list of lists</li>
+</ul>
+<p class="p5"><br></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Pacing:</b></h3>
+<p class="p4">The 4 lab pages could be split across 5 to 7 days. Expected times to complete follow:</p>
+<ul class="ul1">
+  <li class="li4">The introductory page, Exploring List Operations, are expected to be relatively quick, <i>less than 1 class period</i>.</li>
+  <li class="li4">The <span class="s2">Map</span>, <span class="s2">Keep</span>, and <span class="s2">Combine</span> lab pages each have several sections with different (if any) project files and a quiz.</li>
+  <ul class="ul2">
+    <li class="li4">Nesting Functions may take <i>about a day</i>.</li>
+    <li class="li4"><span class="s2">Map</span> may take <i>2-3 days</i>.</li>
+    <li class="li4"><span class="s2">Keep</span> may take <i>1-2 days</i>.</li>
+    <li class="li4"><span class="s2">Combine</span> may take <i>1-2 days</i>.</li>
+  </ul>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Students will:</b></h3>
+<ul class="ul1">
+  <li class="li4">Learn about higher order functions.</li>
+  <li class="li4">Learn to use <span class="s2">for each</span>, <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span> on their own and together to access and manipulate list data.</li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>As a Class:</b></h3>
+<ul class="ul1">
+  <li class="li4"><b>Page 2: </b><span class="s2"><b>Map</b></span><b>.</b></li>
+  <ul class="ul2">
+    <li class="li4">The section, Using <span class="s2">Map</span> for Algebraic Functions, presents an example of using Snap<i>!</i> to model this algebraic function: $$f(n)=3n+7$$ Encourage students to identify a function (or several) of interest to them and build a reporter to run it. For example, they might calculate values of a function needed for a math or science assignment (or any other school or non-school context).</li>
+  </ul>
+  <li class="li4"><b>Page 4: </b><span class="s2"><b>Combine</b></span><b>.</b></li>
+  <ul class="ul2">
+    <li class="li4">The constraints of the functional input for <span class="s2">combine</span> are straightforward (an associative operation with two blank input slots), but as they are different from <span class="s2">map</span> and <span class="s2">keep</span> (which require input functions and predicates, respectively, with one input). You may wish to have a discussion to discuss the <span class="s2">combine</span> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
+  </ul>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Assignments:</b></h3>
+<ul class="ul1">
+  <li class="li4">Encourage students to identify places where <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span> may help with a program with lists that they have already developed and to take the time to improve their programs.</li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Tips:</b></h3>
+<ul class="ul1">
+  <li class="li4"><b>Page 1: Exploring List Operations.</b></li>
+  <ul class="ul2">
+    <li class="li4">Problem 1 part b gives the result "NaN". This stands for "Not a Number" and results because the sum operation expects numbers as its inputs, and this expression includes a list as one of the inputs.</li>
+  </ul>
+  <li class="li4"><b>Page 2: </b><span class="s2"><b>Map</b></span><b>.</b></li>
+  <ul class="ul2">
+    <li class="li4">Watch for students who are particularly adapt with translating, dilating, and reflecting computer graphics or with composing and transposing music. Encourage these students to develop these projects further and/or to present their work to the class.</li>
+  </ul>
+  <li class="li4"><b>Page 3: </b><span class="s2"><b>Keep</b></span><b>.</b></li>
+  <ul class="ul2">
+    <li class="li4">Students develop a small database of first name, last name, age (in years), and height (in inches). Encourage students to keep the dataset small (4-6 records) to minimize time lost on data entry.</li>
+    <li class="li4">You might also discuss whether it's ethical to put this data in a shared project.</li>
+  </ul>
+  <li class="li4"><b>Page 4: </b><span class="s2"><b>Combine</b></span><b>.</b></li>
+  <ul class="ul2">
+    <li class="li4">The two quizzes on this page address all three higher order functions in this lab: <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span>. Encourage students to use these questions to assess how well they have learned these ideas. If necessary, they may wish to review.</li>
+  </ul>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Correlation with AP CS Principles Framework</b></h3>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times"><b>Computational Thinking Practices:</b></h4>
+<ul class="ul1">
+  <li class="li4"><b>P2 Creating Computational Artifacts</b> Create an artifact with a practical, personal, or societal intent.</li>
+  <li class="li4"><b>P2 Creating Computational Artifacts</b> Select appropriate techniques to develop a computational artifact.</li>
+  <li class="li4"><b>P2 Creating Computational Artifacts</b> Use appropriate algorithmic and information management principles.</li>
+  <li class="li4"><b>P3 Abstracting</b> Explain how data, information, or knowledge is represented for computational use.</li>
+  <li class="li4"><b>P3 Abstracting</b> Explain how abstractions are used in computation or modeling.</li>
+  <li class="li4"><b>P3 Abstracting</b> Identify abstractions.</li>
+  <li class="li4"><b>P4 Analyzing Problems and Artifacts</b> Evaluate a proposed solution to a problem.</li>
+  <li class="li4"><b>P4 Analyzing Problems and Artifacts</b> Locate and correct errors.</li>
+  <li class="li4"><b>P4 Analyzing Problems and Artifacts</b> Explain how an artifact functions.</li>
+  <li class="li4"><b>P4 Analyzing Problems and Artifacts</b> Justify appropriateness and correctness of a solution, model, or artifact.</li>
+  <li class="li4"><b>P6 Collaborating</b> Collaborate with another student in solving a computational problem.</li>
+  <li class="li4"><b>P6 Collaborating</b> Collaborate with another student in producing an artifact.</li>
+  <li class="li4"><b>P6 Collaborating</b> Share the workload by providing individual contributions to an overall collaborative effort.</li>
+  <li class="li4"><b>P6 Collaborating</b> Foster a constructive, collaborative climate by resolving conflicts and facilitating the contributions of a partner or team member.</li>
+  <li class="li4"><b>P6 Collaborating</b> Exchange knowledge and feedback with a partner or team member.</li>
+  <li class="li4"><b>P6 Collaborating</b> Review and revise their work as needed to create a high-quality artifact.</li>
+</ul>
+<h4 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 12.0px Times"><b>Essential Knowledge:</b></h4>
+<ul class="ul1">
+  <li class="li4"><b>EK2.1.1A</b> Digital data is represented by abstractions at different levels.</li>
+  <li class="li4"><b>EK3.1.3E</b> Interactivity with data is an aspect of communicating.</li>
+  <li class="li4"><b>EK3.2.1F</b> Software tools, including spreadsheets and databases, help to efficiently organize and find trends in information.</li>
+  <li class="li4"><b>EK3.2.2H</b> Analytical techniques to store, manage, transmit, and process data sets change as the size of data sets scale.</li>
+  <li class="li4"><b>EK4.1.1B</b> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
+  <li class="li4"><b>EK5.1.3B</b> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
+  <li class="li4"><b>EK5.1.3F</b> Effective communication between participants is required for successful collaboration when developing programs.</li>
+  <li class="li4"><b>EK5.2.1B</b> Program instructions are executed sequentially.</li>
+  <li class="li4"><b>EK5.2.1C</b> Program instructions may involve variables that are initialized and updated, read, and written.</li>
+  <li class="li4"><b>EK5.3.1I</b> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
+  <li class="li4"><b>EK5.3.1K</b> Lists and list operations, such as add, remove, and search, are common in many programs.</li>
+  <li class="li4"><b>EK5.3.1L</b> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
+  <li class="li4"><b>EK5.5.1H</b> Computational methods may use lists and collections to solve problems.</li>
+  <li class="li4"><b>EK5.5.1I</b> Lists and other collections can be treated as abstract data types (ADTs) in developing programs.</li>
+  <li class="li4"><b>EK7.3.1K</b> People can have instant access to vast amounts of information online; accessing this information can enable the collection of both individual and aggregate data that can be used and collected.</li>
+</ul>
 </body>
 </html>
