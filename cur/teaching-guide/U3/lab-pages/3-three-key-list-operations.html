@@ -21,22 +21,15 @@
 <body>
 <h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times"><b>Programming Lab 3: Three Key List Operations</b></h2>
 <p class="p2"><br></p>
-<p class="p3">Functions that <i>take other functions as input</i> are called <b>higher order functions</b>. In this unit (and often but not always in practice) these are used for processing lists. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc_2015-2016.html&amp;novideo&amp;noassignment"><span class="s1">In Lab 1</span></a>, students worked with <span class="s2">for each</span> to apply a procedure to each item of a list, but it’s not a function. Now students focus on three higher order list operations: <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span>.</p>
+<p class="p3">Functions that <i>take other functions as input</i> are called <b>higher order functions</b>. In this unit (and often but not always in practice) higher order functions are used for processing lists. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&amp;course=bjc4nyc_2015-2016.html&amp;novideo&amp;noassignment"><span class="s1">In Lab 1</span></a>, students worked with <span class="s2">for each</span> to apply a procedure to each item of a list, but <span class="s2">for each</span> is not a function; it does not report an output as a function of its inputs. Now students focus on three higher order list operations: <span class="s2">map</span>, <span class="s2">keep</span>, and <span class="s2">combine</span>.</p>
 <p class="p3">While <span class="s2">for each</span> is a command block that steps through each item in a list to use or make changes to the items, <span class="s2">combine</span> reports a single result, and <span class="s2">map</span> and <span class="s2">keep</span> both report new lists:</p>
 <ul class="ul1">
-  <li class="li4"><span class="s2">Map</span> <i>calls a function on each item of a list</i> and returns a result list. That is, <span class="s2">map</span> takes a list as input and reports a new list in which each element of the original list has been processed in some way, for example: doubled, made plural, replaced by something (such as a selection from some other list), etc.</li>
-  <li class="li4"><span class="s2">Keep</span> <i>filters a list</i> and returns a list of all items that match a given requirement. That is, <span class="s2">keep</span> takes a list as input and reports a new list keeping only those items from the original list that match some criterion, for example: begins with a vowel, is even, is less than five characters long, is a vegetable, etc.</li>
-  <li class="li4"><span class="s2">Combine</span> <i>performs one operation on all the items</i> of a list and returns a single result (e.g. a sum, product, concatenated string, etc.). That is, <span class="s2">combine</span> takes a list and a dyadic (i.e., two-input) operation as input and reports the result of repeatedly calling that dyadic operation on a result-so-far and one new list item. <span class="s2">Combine</span> should be used only with associative functions such as addition or multiplication. Non-associative functions don't give an error message, but their result depends on the order in which items are chosen from the list, so it's unhelpful.</li>
+  <li class="li4"><span class="s2">Map</span> takes two inputs, a function and a list. It <i>applies the function to each item of a list</i> and returns a new list (without changing the original) in which each element is the result of applying the function to the corresponding element of the original list. The applied function can be anything that accepts the list items as input: it could double a number, make a word plural, replace an item by a selection from some other list, etc.</li>
+  <li class="li4"><span class="s2">Keep</span> takes two inputs, a predicate function and a list. It <i>filters the list</i>, returning a list of all (and only) those items in the original list for which the predicate returns <span class="s2">true</span>. <span class="s2">keep</span> might be used to filter a list and return only the items that begin with a vowel, or are even number, or are less than five characters long, or (as in the Tic Tac Toe lab) are the moves made by player x.</li>
+  <li class="li4"><span class="s2">Combine</span> takes two inputs, a function and a list, and <i>combines all the items in the list using that function</i>. It returns a single result (e.g. a sum, product, concatenated string, etc.). <span class="s2">combine</span> applies its two-input operation by repeatedly calling that  operation on a result-so-far and one new list item. <span class="s2">Combine</span> should be used only with associative functions: addition, multiplication, join, and very few others.</li>
 </ul>
 <p class="p5"><br></p>
-<p class="p3">Students will apply these tools various context including an overarching theme of lists of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
-<p class="p3">Maybe also something about... ???</p>
-<ul class="ul1">
-  <li class="li4">abstract data types</li>
-  <li class="li4">mapping over a map</li>
-  <li class="li4">lists of lists</li>
-  <li class="li4">mapping over a list of lists</li>
-</ul>
+<p class="p3">Students will apply these tools in various contexts including an overarching theme of lists of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
 <p class="p5"><br></p>
 <h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Pacing:</b></h3>
 <p class="p4">The 4 lab pages could be split across 5 to 7 days. Expected times to complete follow:</p>
@@ -63,7 +56,7 @@
   </ul>
   <li class="li4"><b>Page 4: </b><span class="s2"><b>Combine</b></span><b>.</b></li>
   <ul class="ul2">
-    <li class="li4">The constraints of the functional input for <span class="s2">combine</span> are straightforward (an associative operation with two blank input slots), but as they are different from <span class="s2">map</span> and <span class="s2">keep</span> (which require input functions and predicates, respectively, with one input). You may wish to have a discussion to discuss the <span class="s2">combine</span> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
+    <li class="li4">The constraints of the functional input for <span class="s2">combine</span> are straightforward (an associative operation with two blank input slots), but  they are different from <span class="s2">map</span> and <span class="s2">keep</span> (whose input functions require one blank input slot). You may wish to discuss the <span class="s2">combine</span> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
   </ul>
 </ul>
 <h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Assignments:</b></h3>
