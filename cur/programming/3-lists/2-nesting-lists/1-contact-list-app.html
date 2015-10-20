@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 2: Nesting Lists</title>
+    </head> 
+    
+    <body>
+        <h2>Contact<a name="contactlist" class="anchor">&nbsp;</a>List App</h2>
+All cell phones have some kind of Contacts list. In this lab, you will build a Contacts app yourself. 
+		<div class="forYouToDo" id="first">
+            <ol>
+                <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
+                <li>Press  "Add Contact"  and read the script to understand how it works. Each new contact is  a list, so the list of contacts is a <em>list of lists.</em></li>
+                <li>Fix the <img src="/bjc-r/img/3-lists/get-phone.png" alt="get phone"> block so that it works similarly to <img src="/bjc-r/img/3-lists/get-name.png" alt="get name">.</li>
+    <li>Clear your contact list and add a few made-up people to make sure everything works.</li>
+                <li>Write a reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and  reports that person's phone number, or "not found" if the name is not in the contact list.  
+                  <ol type="a">
+        <Li>You will need a new block, <img src="/bjc-r/img/3-lists/string-contains.png" alt="&lt;string () contains ()&gt;">, which lets you find out whether one string (a contact's name) contains another (the name or part of a name that the user gave as input).</Li>
+        <Li>You will also need <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)">.</Li>
+        </ol>
+                </li>
+                <li>When someone calls you, the phone company sends only the calling number to your phone, not the person's name. But if the number is in your contact list, your phone  figures out the name. So you'll also want a block<img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> that searches for a phone number and reports the contact's name.</li>
+     </ol>
+ </div>
+<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> Make sure everything works the way you want it to before going on.  Then save!
+                
+ <div class="forYouToDo">
+     <ol start="7">                       
+                <li>
+                  <div class="sidenote">In some cultures, the family name—the one you  use for alphabetizing—is written first. For example, in "Sun Yat-Sen" the family name is "Sun." So instead of asking for "first and middle name(s)" and for "last name" you might want to say "given name(s)" and "family name."</div> 
+                  Our starter version uses a single text string to hold a person's entire name. This is fine for displaying the name on the screen but makes it hard to  display a list of all  contacts <em>sorted by family name.</em> So we really want to keep the family name separate from the given name(s).
+                  <ol type="a">
+                   <li>Modify the <img src="/bjc-r/img/3-lists/get-name.png" alt="get name"> block so that it asks separately for given names and for family name, and reports a list of the two answers. Check to make sure that adding a new contact does what you expect.</li>
+                   <li>Write two reporters that take a contact as input and report the name as a text string, in two different orders:<br /><img src="/bjc-r/img/3-lists/name-display-result.png" alt="name (display form) --&gt; Abraham Lincoln"><br /><img src="/bjc-r/img/3-lists/name-sorting-result.png" alt="name (sorting form) --&gt; Lincoln, Abraham"><br />
+                     (Don't worry, yet, about how to handle family-name-first names. We'll get to that soon.)</li>
+                <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                   <li>Make sure your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work.</li>
+                </ol>
+       </li></ol>
+                You will soon make more improvements to this app, but first time out for some quick practice with lists of lists.
+        </div>
+        
+                
+	<h3> More lists of lists</h3>
+		<p>
+			Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
+            <!--       <div class="sidenote">Lists of lists (i.e. arrays of arrays) are very powerful. If each inner list has the same number of items, you can think of a list of lists like a table of data (or a matrix).</div>  -->
+            <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml">
+                <img src="/bjc-r/img/3-lists/list_list_world_capitals.png" alt="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" /><br />
+                <img src="/bjc-r/img/3-lists/list_list_movies.png" alt="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)"/><br />
+                <img  src="/bjc-r/img/3-lists/list_list_todo.png" alt="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)" title="list (trash, (eggs, cucumbers, juice, bread), practice, plants, etc.)"/>
+			</a>
+		</p>
+          
+          
+        <div class="forYouToDo">
+            <ol start="12">
+                <li>Load the project above by clicking on the picture.</li>
+                <li>Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
+                <img class="imageRight" src="/bjc-r/img/icons/predict.png" alt="Predict What Will Happen" title="Predict What Will Happen" />
+                <li>
+                    Does this expression report <var>8</var> or <var>16</var>? Make a guess and then build it to check.<br />
+                    <img src="/bjc-r/img/3-lists/list_list_world_length.png" alt="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" title="length of list ((Quito, Ecuador), (Copenhagen, Denmark), etc.)" />
+                </li>
+                <li>
+                    What will this expression report? Why? <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Build and run it in Snap<em>!</em><br />
+                    <img src="/bjc-r/img/3-lists/list_list_movie_item2.png" alt="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="item 2 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" />
+                </li> 
+                <li>
+                    
+                    Does this expression <img src="/bjc-r/img/3-lists/list_list_movie_allbutfirst.png" alt="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" title="allbutfirst of item 1 of list ((6:15, 9:15), (4:45, 7:30, 10:15), etc.)" /> report <var>9:15</var>, the list <var>{9:15}</var>, or <var>{4:45, 7:30, 10:15}</var>?<br />
+                    <div class="endnote"> <var>{4:45, 7:30, 10:15}</var> is how we represent <img class="noshadow" src="/bjc-r/img/3-lists/output445-730-1015.png" height="80" alt="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" title="picture of gray rounded rectangle with 4:45, 7:30, and 10:15 in smaller red rounded rectanges" /> with text.</div>
+                </li>
+                <li>
+                    What will this expression report? Why? Build and run it in Snap<em>!</em><br />
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                    <img  src="/bjc-r/img/3-lists/gs5how_many.png" alt="item 3 of list in list" title="list in a list">
+                </li>
+            </ol>
+  </div>
+          
+          
+          <!--I CUT THIS BECUASE I didn't think it was a good way to introduce "for each" after the edit suggested by Brian, and we have the "draw shape" page next anyway. --MF
+        
+        
+        <div class="dialogue">
+        	<div class="stagedir">
+            	Alphie and Betty are making a list of coordinates for a sprite to make this drawing:<br /><img src="/bjc-r/img/3-lists/draw_list_coordinates.gif" alt="sprite drawing by going to each set of coordinates" title="sprite drawing by going to each set of coordinates">
+            </div>
+            <div><span>Betty:</span> We could use a list of lists with x- and y-coordinates for each the position of the sprite like this:</div>
+                <div class="stagedir">Betty makes: <img src="/bjc-r/img/3-lists/coordinates.png" alt="coordinates list ((50,120), (-20,40), etc)" title="coordinates list ((50,120), (-20,40), etc)"></div>
+            <div><span>Alphie:</span> So then, we want to make the sprite go to (item 1, item 2) for each of the lists in the list. Let me try to build a script to do that.</div>
+<div class="comment">Get rid of FOR loop and index variable.  Use FOR EACH right away.</div>
+				<div class="stagedir">Alphie makes <img src="/bjc-r/img/3-lists/coordinates_for1.png" alt="script with for loop" title="script with for loop"></div>
+            <div class="sidenote">Why does the sprite go to (200,-20)?</div>            
+            <div><span>Betty:</span> First, the sprite goes to (200,-20). So when <code>i</code> is 1, the sprite glides to (item 1 of item 1, item 2 of item 1). Then when <code>i</code> is 2, the sprite glides to (item 1 of item 2, item 2 of item 2. And then it goes to the third and fouth points too.</div>
+            <div><span>Alphie:</span> Since these are lists, I wonder if there's a way to use <code>for each</code> instead of <code>for</code>...</div>
+        </div>
+		
+        
+        <div class="forYouToDo">
+        	<img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+            <ol  start="7">
+            	<li>Modify Alphie's script to use <code>for each</code>.</li>
+            </ol>
+        </div>   --> 
+          
+          
+          
+   </body>
+</html>

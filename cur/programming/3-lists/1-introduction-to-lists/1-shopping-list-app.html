@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+	</head>
+
+	<body>
+		<h2>Shopping List App</h2>
+
+        <img class="inline" src="/bjc-r/img/icons/pair-programming-swap-reminder.png" alt="Remember to Do Pair Programming Swaps" title="Remember to Do Pair Programming Swaps" /><br clear="all" />
+
+		<img class="imageRight" src="/bjc-r/img/3-lists/shoppinglist.png" alt="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" title="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" />
+        
+        <div class="comment">Next round, make gif match project --MF</div>
+        <p>Many computer apps—contact lists, playlists, calendars of events, locations on a map, reminders—involve manipulating <em>lists</em> of information with tools that search, sort, or change the items on the list. In this first activity, you’ll create a  Shopping List app.</p>
+        <img class="indent" src="/bjc-r/img/3-lists/shopping-list-project-v3.gif" alt="animation of shopping list app">
+<div class="endnote">
+   	    Some programming languages use the name <strong>array</strong> for their <em>sequence</em> data type. A list (or array) is a set of items, in sequence, so you can specify which one you want:<br />
+            <img class="inline" src="/bjc-r/img/3-lists/item-2-of-list-reporting.png" alt="item (2) of (list () (cantaloupe) (banana)) reporting 'cantaloupe'" title="item (2) of (list () (cantaloupe) (banana)) reporting 'cantaloupe'" />
+            <!--<img src="/bjc-r/img/3-lists/item-5-of-shoppinglist-reporting-bananas.png" alt="item (5) of (list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}" title="list {apples, bread, yogurt, spinach, bananas, eggs, cucumber, tomatoes, olive oil, almonds}) reporting 'bananas'" />--><br />
+        The position number of an item in a sequence is called its <strong>index</strong>. </div>
+	  <div class="forYouToDo" id="first">
+			<ol>
+				<li><a class="run" href="/bjc-r/prog/3-lists/U3L1-ShoppingList.xml" target="_blank">Load this project</a>.</li>
+                <li><img class="inline" src="/bjc-r/img/3-lists/Make-a-variable.png" alt="Make a variable" title="Make a variable"> called <var>shopping list</var> to store the information.</li>
+                <div class="sidenote">Setting the starting value of a variable is known as <strong>initializing</strong><a name="initialize" class="anchor">&nbsp;</a>the variable. </div>
+                <li>Use <img class="inline" src="/bjc-r/img/blocks/set-()-to-(0).png" alt="set block" title="set block"> to set the starting value of <var>shopping list</var> to be an empty list. You will need the list block <img class="inline" src="/bjc-r/img/blocks/list.png" alt="list block" title="list block">. Use its arrows to get rid of its input slot so that it looks like this: <img src="/bjc-r/img/3-lists/empty-list-block.png"  alt="empty list block">. </li>
+                <div class="sidenoteBig">You first saw the <code>ask</code> and <code>answer</code> blocks in Unit 2: <a href="http://localhost/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/3-multiple-ifs.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Using Multiple <code>If</code> Statements</a> and <a href="http://localhost/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-abstraction-developing-a-number-guessing-game.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Developing a Number Guessing Game</a>.</div>
+                <li>Write a script for the "Add Item" button so that when that sprite is clicked, it will <code>ask</code> the user for a new item, and then use <code>in front of</code> to make a shopping list extended with the new item, and <code>set</code> to set the variable to the extended list. Make sure it works.</li>
+                <li>Write a script for the "Clear List" button that asks for confirmation and then sets the variable back to an empty list.</li>
+        		<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+		</div>
+        
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <li>Improve the "Add Item" button to add new items only if they are not already on the list. You can use <code>contains</code> to see if an item is already on the list.</li>
+                <li>Write a script for the "Search" button that tells the user whether an item is already on the list (but doesn't add the item).  </li>
+                <li>Write a script for the "Delete Item" button that removes an item from the list. </li>
+                <li>Think of another improvement and program it.</li>
+            </ol>
+        </div>
+        
+	</body>
+</html>

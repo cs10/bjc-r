@@ -1,0 +1,14 @@
+title: Term 1 Programming Project
+
+{
+	raw-html: <div class="takeNote"><strong>Please note:</strong> This project is actively undergoing revision.</div>
+
+heading: Term 1 Programming Project
+	raw-html:<img class="imageRight" src="/bjc-r/img/costumes/bug/bug_stand.png" alt="bug standing" title="bug standing" />
+	resource: Choosing a Programming Project [/bjc-r/cur/programming/3.5-T1PP/1-choosing-a-project.html]
+	resource: Building and Submitting Your Project [/bjc-r/cur/programming/3.5-T1PP/2-building-submitting-team.html]
+	resource: Writing a Reflection [/bjc-r/cur/programming/3.5-T1PP/3-written-reflection.html]
+	//resource: Building and Submitting Your Individual Project [/bjc-r/cur/programming/3.5-T1PP/3-building-submitting-solo.html]
+	raw-html:<img class="inline" src="/bjc-r/img/1-introduction/topic1-kaleidoscope.gif" alt="Kaleidoscope Project" title="Kaleidoscope Project" /><img class="inline" src="/bjc-r/img/3.5-T1PP/country-quiz.png" alt="Country quiz" title="Country quiz" /><img class="inline" src="/bjc-r/img/3.5-T1PP/pong.png" alt="Pong game" title="Pong game" /><img class="inline" src="/bjc-r/img/3.5-T1PP/ferris-wheel.png" alt="Ferris Wheel animation" title="Ferris Wheel animation" /><img class="inline" src="/bjc-r/img/3.5-T1PP/breakout.png" alt="Breakout game" title="Breakout game" /><img class="inline" src="/bjc-r/img/3.5-T1PP/maze.png" alt="Maze game" title="Maze game" /><img class="inline" src="/bjc-r/img/3.5-T1PP/asteroids.png" alt="Asteroids game" title="Asteroids game" />
+
+}

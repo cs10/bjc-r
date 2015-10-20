@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html;
+      charset=ISO-8859-1">
+    <!-- put the following in exactly -->
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Connection Metrics</title>
+  </head>
+  <body>
+    There are two major connection properties: Latency and throughput.<br />
+    <h3>Latency</h3>
+    Latency is the time it takes to establish a connection. Latency is
+    influenced by hardware i.e. which connection device is used (e.g.,
+    wireless connections take longer than wired) and also other factors
+    such as the length of the route or latency bottlenecks in the route.
+    Latencies are easiest measured with the Linux tool <a
+      href="http://en.wikipedia.org/wiki/Ping_%28networking_utility%29">ping</a>.
+    Ping takes a hostname or IP address as a parameter and sends a small
+    test packet to the node that is echoed by it. Once the echo is
+    received time is measured. If the host does not send an echo back in
+    a reasonable time, a timeout is signaled indicating the host is
+    offline. This is repeated until the user presses CTRL+C. <br />
+    <br />
+    Under Linux ping is sometimes accessible as <code>/usr/sbin/ping</code>
+    and on Mac it's sometimes <code>/sbin/ping</code>.<br />
+    <br />
+    Go ahead and try:<br />
+    <br />
+    <code>ping www.berkeley.edu<br />
+      ping www.google.com<br />
+      ping australia.gov.au </code><br />
+    &nbsp;<br />
+    <span style="font-weight: bold; font-style: italic;"> </span><span
+      style="font-weight: bold;"></span>Ping can also be used on entire
+    networks. This is called broadcast ping, whereby all online hosts on
+    the Ethernet bus will respond. In order to ping your network you
+    need to find out the IP address of your own host and derive the
+    network IP. There are several ways to determine your own IP but the
+    easiest is way (when you are not behind a router) is to open your
+    browser to <span style="font-style: italic;">www.google.com</span>
+    and search for "my IP".&nbsp; Then replace the last digits of the IP
+    (say XXX.YYY.ZZZ.001) address with 255. So if your IP address is
+    192.150.186.72, your replacement would be 192.150.186.255. <br />
+    <br />
+    Then you execute:<br />
+    <br />
+    <code>ping -b</code> XXX.YYY.ZZZ.255 <br />
+    <br />
+    Go ahead and try it! <br />
+    <br />
+    Note that this may not always work as some networks forbid the
+    broadcast ping or are configured differently. Nevertheless, for a
+    system administrator it's an easy way to test all the hosts along
+    the bus at once. <br />
+    <span style="font-weight: bold; font-style: italic;">&nbsp;<br />
+    </span>
+    <h3><span style="font-weight: bold; font-style: italic;"></span>Throughput<br />
+    </h3>
+    <em><strong>Throughput</strong></em> is a term which describes how much data
+    is being transferred at a time. You may also be familiar with another term, 
+    <em>bandwidth</em>, which means the same thing. It is usually measured in 
+    terms of "bps" or bits per second. For example, you may have an internet 
+    connection capable of <em>5Mbps</em>. This means, that (in theory!) each 
+    second you computer could download 5 megabits of data from another location.
+    Of course, in reality, throughput varies widely, and it's quite difficult
+    to obtain the maximum speeds of any connection.
+    <br /> 
+    Throughput is much harder to measure. It also massively depends on
+    what other processes (applications) running on your computer take bandwidth,
+    as well as any other devices connected through the same Ethernet port or 
+    wireless access device. A simple way but not necessarily very accurate way 
+    to measure bandwidth is to use a website 
+    designed to test your connection. One example is provided by the website
+     <a href="http://www.speedtest.net">http://www.speedtest.net</a>.
+    Give it a quick try and answer the following questions:<br />
+    <ol>
+      <li>Run the speed test three times. How much did the throughput
+        vary?</li>
+      <li>Is upload speed different than download speed? If so, why?</li>
+      <li>Synchronize with your peers and measure the speed
+        concurrently. How much did it drop?</li>
+    </ol>
+    <br />
+  </body>
+</html>

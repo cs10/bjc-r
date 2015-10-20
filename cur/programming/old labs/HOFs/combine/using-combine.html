@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Using Combine
+        </title><!--ORIGINAL NAME: Using Combine-->
+    </head>
+    <body>
+        <b>Combine</b> also takes a two-input reporter block and a list as inputs. Combine uses the two-input reporter block to combine items from the list one by one into a single value. For example, the block shown below starts with 4, then computes 4+5=9, then computes 9+6=15.
+        <br />
+        <p></p>
+        <div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/combine-with-addition-call2.png" alt="using combine" title="using combine" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19-12v2.png">
+            <br />
+            <div style="text-align: left;">
+                <br />
+                Note: Unlike MAP and KEEP, COMBINE really makes sense with a small number of reporter blocks as input, because the operation has to be associative (giving the same answer no matter how the operands are grouped). The blocks you'll use often with COMBINE are +, * (but not &#128;&#148; or /), MAX, MIN, JOIN, and JOIN WORDS (which is in the tools package).
+                <br />
+                <br />
+                <h3>Ask Yourself</h3>
+                <ul>
+                <li>Why not &mdash; or /?</li>
+          
+                <li>What happens if the input list is empty?</li>
+              </ul>
+            </div>
+        </div>
+    </body>
+</html>

@@ -4,7 +4,7 @@ title: Unit 2: Conditionals, Abstraction, and Debugging
 
 		//h1: Formerly Topic 3: Conditionals and Variables
        
-	raw-html: <div class="todo"><ul><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><ul></div>
+	raw-html: <div class="todo"><ul><li>PG: I've moved to the bitter end everything that had been commented out so that I could read this thing.</li><li>9/24/15 we agreed to change the two GS lab titles to normal names. Change L1 GS to "Sprite Drawing Puzzles" and L4 GS to "Searching for Yourself Online"</li><ul></div>
        
 heading: Programming Lab 1: Conditional Blocks
 	resource: Getting Started [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/1-getting-started-with-conditionals.html] 
@@ -46,103 +46,5 @@ heading: Social Implications Lab 4: Privacy; Community and Online Interactions
 //heading: Social Implications Lab 5: Bits and Information
 	//resource: Big Questions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/big-questions.html]
 
-
- 	raw-html: <hr />
-
-heading: Investigations
-	raw-html: <div class="commentBig">MF: I commented out the "Some interesting problem" page because the link was to a template.<br />MF: I commented out the Assignment page because the link was to a template.</div>
-	resource: Checking for Leap Years [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/checking-for-leap-years.html]
-	resource: Valid-Date? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/valid-date.html]
-	forum: Kaleidoscope [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/make-a-kaleidoscope.html]
-
-
-heading: Quarter 1 Project
-	//resource: Assignment [/bjc-r/cur/programming/2-conditionals-abstraction-testing/quarter1-project/assignment.html]
-
-
-		//heading: Variables and custom blocks
-			// quiz: Change a global variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-				// fix -- not a global variable, but a
-		
-		//  the word "REGULAR" is wrong!!
-		//	resource: Difference between Arguments/Input and Variables [/bjc-r/cur/programming/functions/difference-between-arguments-input-and-variables.html]
-		  // if used, get rid of global
-		//	quiz: Don't use Script Variables Outside of their Script [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13990]
-		//	quiz: Changing regular variables with block variables [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13991]
-		//	quiz: Change a regular variable within a block [http://veritas.eecs.berkeley.edu/courses/mod/quiz/view.php?id=13992]
-		//	resource: Conflicts between regular variables and block variables [/bjc-r/cur/programming/functions/conflicts-between-regular-variables-and-block-variables.html]
-		
-		
-//OLD STUFF FROM LAB 1
-		//resource: Primer: Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/variables-primer.html]
-		//resource: Introduction: Why do we need conditionals? [/bjc-r/cur/programming/2-conditionals-abstraction-testing/conditionals-intro.html]
-		//have them see an actual if/then block that reads like english (with a custom predicate? -- <have sufficient funds>
-		//resource: "If-then" Statements [/bjc-r/cur/programming/2-conditionals-abstraction-testing/if-then-statements.html] 
-		// combine with introduction raw-html: <table class="truthtable imageRight"> <tr><th>A</th> <th>B</th> <th>A <code>or</code> B</th></tr> <tr><td>F</td> <td>F</td> <td>F</td></tr> <tr><td>F</td> <td>T</td> <td>T</td></tr> <tr><td>T</td> <td>F</td> <td>T</td></tr> <tr><td>T</td> <td>T</td> <td>T</td></tr> </table>
-		//resource: Predict what happens! [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/predict.html]
-	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?1]
-		//resource: write thermostat  -- writing a block that is used elsewhere (get a input parameter as necessary)
-		   //examples with dates would be great.
-	    //resource: Using <code>If</code> and <code>If-else</code> [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/if-else-examples1.html]
-	    //resource: Conditionals, Part 2 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/1-conditionals/booleans-part2.html] 
-		// game of life here later?
-		
-		
-//OLD STUFF FROM LAB 2
-	//resource: More Complex Boolean Expressions [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/complex-booleans.html]
-	// quiz: Check: Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/complex-booleans-self-test.html]
-	//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
-
-//OLD STUFF FROM LAB 3
-	    //resource: motivation
-	    //resource: Reporter Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-practice-with-predicates/reporters.html]
-	    //resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?3]
-		//resource: Practice with Complex Booleans [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/2-complex-booleans-practice.html]
-		//raw-html: <img class="imageRight" src="/bjc-r/img/abstraction/new-brickwall/wall.png" alt="brick wall" title="brick wall" />
-		//resource: The <code>Max</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/4-the-max-block.html]
-
-
-//OLD STUFF BETWEEN LABS 3 AND 4
-	// heading: Programming Lab 4: Number Guessing
-		//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
-		//resource: More Number Guessing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-number-guessing/more-number-guessing.html]
-		//resource: Tamagotchi [/bjc-r/cur/programming/2-conditionals-abstraction-testing/tamagotchi.html]
-		//h1: Formerly Topic 4: Advanced Building: Abstraction and Testing
-
-	// heading: Programming Lab 5: More Work with Reporters
-	
-	// heading: Programming Lab 4: Custom Blocks Make Code Easier to Understand
-		//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
-		//resource: Simplifying Tic-Tac-Toe Using Custom Blocks [/bjc-r/cur/programming/2-conditionals-abstraction-testing/4-custom-blocks-make-code/simplifying-a-tic-tac-toe-using-custom-blocks.html]
-
-	//heading: Lab 7: Testing Your Code
-		//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
-		//  	resource: Simple Debugging [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/simple-debugging-house.html]
-		//  	resource: The <code>Check</code> Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/the-check-block.html]
-		//  resource: Using The Check Block [/bjc-r/cur/programming/2-conditionals-abstraction-testing/7-testing-your-code/using-the-check-block.html]
-	
-	// heading: Programming Lab 4: Abstraction
-		//	resource: Brick Wall [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/brick-wall.html]
-		//	resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?7]
-		//    resource: Solutions to >= [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-abstraction/ge-soln.html]
-		// heading: Lab 8: Programs with Multiple Sprites
-		//	resource: Experiment with a Short <span class="snap">snap</span> Play [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/snap-play-learn-broadcast.html]
-		//	quiz: Check: Broadcasts [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/test-yourself-go-team.html]
-				//quiz: Check: Different ways to broadcast [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/quiz-different-ways-to-broadcast.html]
-			//resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?8]
-		//	resource: More "Message" Passing [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/more-message-passing.html]
-		//	resource: Global Variables [/bjc-r/cur/programming/2-conditionals-abstraction-testing/9-programs-with-multiple-sprites/global-variables.html]
-
-
-//OLD STUFF FROM LAB "8"
-		//	resource: Innovations [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/innovations.html]
-		//	resource: Blown to Bits Chapter 3 [/bjc-r/cur/programming/2-conditionals-abstraction-testing/5-bits-information/btb-chapter3.html]
-
-//OLD STUFF FROM INVESTIGATIONS
-	//resource: Some interesting problem [/bjc-r/cur/programming/2-conditionals-abstraction-testing/investigations/problem.html]
-	//raw-html: <div class="commentBig">MF: I commented out the Valid-Date? page because the link was dead.</div>
-
-//OLD STUFF FROM LAB 1
-//OLD STUFF FROM LAB 1
 		
 }

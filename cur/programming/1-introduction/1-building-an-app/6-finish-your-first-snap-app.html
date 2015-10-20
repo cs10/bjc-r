@@ -7,9 +7,18 @@
 	</head>
 
 	<body>
-	<h2>Finishing Your First Snap<em>!</em> App</h2>
+		<h2>Finishing Your First Snap<em>!</em> App</h2>
+        <div class="todo">
+        	<ul>
+            	<li>GH Feedback 9/4/15: I don't like how part C at the end shoots students off to a different page (and forces them to either redo their work or click through several screens of show me the answer/do it for me to get back to where they were). The blocks used in the Hour of Code don't match those used here exactly, as well, which could lead to confusion ("flip" is used rather than "next costume").<br />It would be better to either A) incorporate the exercises into this site), or B) have a link that takes them to a filled-in copy of the Hour of Code project that matches the code they've already produced.<br />Also, feedback on the feedback form: it's annoying to have the gray "getfeedback" logo hovering over the text I'm currently typing. It makes it harder to proof read.<br />Everything else in this section has looked very good, and I look forward to using it in class. :)</li>
+                <li>GH Feedback 9/7/15: In the "Take It Further" portion, you are asking students to use a forever block before being introduced to it. Also you ask the kids to create a second sprite... They don't know how to do this yet. This makes the Take It Further impossible for a new programmer.</li>
+                <li>Piazza Feedback 9/15/15: [Take it further B] is problematic.  When a student drops a reset button into the costumes, suddenly the "next costume" code s/he has already programmed will turn Alonzo into a reset button and then later back to left and right Alonzo's again.  The lab is not clear to a novice that the costume belongs to a different/new sprite because creating new sprites has not been covered yet.  We had churned through all this in the old labs and figured out what the students were going to run into.  Now with new labs we have to start all over again and I am hesitant to let them proceed if it means having to devote class time to a few leaders while others are still struggling to get started.</li>
+				<li>GH Feedback 9/1/15: More scaffolding about the green flag block would have been helpful. Many students didn't even know there was such a block, and the fact that it could be used separately from the "when i am clicked" block was not clear to many. I of course talked about it during class, but it would also be good to have it addressed explicitly in the text.</li>
+				<li>GH Feedback 9/1/15: The reset button doesn't seem to work without using broadcast - it seems like the clear graphic effects and set ghost effect blocks are sprite specific. None of my students were able to get a reset block to work.<ul><li>BH: Either we teach them broadcast (or TELL) or we flush the example.</li></ul></li>
+			</ul>
+        </div>
         
-        <p><img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></p>
+    <p><img class="inline" src="/bjc-r/img/icons/pair-programming-swap.png" alt="Pair Programming Swap" title="Pair Programming Swap" /></p>
 
 		<p>In Snap<em>!</em>, a sprite can have more than one script controlling its behavior. You currently have just one script, which runs when you click on Alonzo. Now you'll make a second script that runs when you click on the green flag. The new script will get Alonzo to welcome the player to your game.</p>
         <div class="endnote">Clicking the green flag at the top right, <img class="button" src="/bjc-r/img/1-introduction/green-flag_button.png" alt="green-flag button"/>, is one way to start a Snap! script. You can stop all running scripts by clicking the red stop sign, <img class="button" src="/bjc-r/img/1-introduction/stop_button.png" alt="stop button"/>. </div>
@@ -53,7 +62,8 @@
                 	<ol style="list-style: lower-roman;">
                     	<li>Put <img src="/bjc-r/img/1-introduction/ghost.png" alt="change ghost effect by 5" title="change ghost effect by 5" /> in the script that runs when the player clicks on Alonzo. This makes Alonzo fade out a little every time he's clicked.</li>
                         <li>Put another block in your program to change the ghost effect by -5 every time Alonzo moves without being clicked. </li>
-                        <li>Add a reset button by creating a sprite with a reset button costume (made in Snap<em>!</em> or using an imported image) that will <code>clear graphic effects</code> or <code>set ghost effect to 0</code> when clicked.</li>
+ <!--  BRING BACK AFTER TEACHING TELL.                       <li><div class=sidenote><img src="/bjc-r/img/1-introduction/newsprite.gif" alt="click new sprite button"></div>
+                          Add a reset button by <strong>creating a sprite </strong>(see sidenote) with a reset button costume (made in Snap<em>!</em> or using an imported image) that will <code>clear graphic effects</code> or <code>set ghost effect to 0</code> when clicked.</li>  -->
                     </ol>
                 </li>
             </ol>

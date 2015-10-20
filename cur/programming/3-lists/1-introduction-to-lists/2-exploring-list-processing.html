@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+    </head> 
+    
+    <body>
+		<h2>Exploring List Processing</h2>
+   
+        <div class="todo">
+        	<ul>
+            	<li>GH Feedback 10/14/15: Let's assume that a student is ready for this unit. I would argue that student has done enough copying of script pics and it would be a much nicer experience to create a microworld with the code and provide a link instead of making the student copy the code from the image. The copying at this stage strikes me as busy work. Just my $0.02.</li>
+            </ul>
+        </div>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+				<li><img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> You will need to do this for most of the lab pages in Unit 3.</li>
+	            <div class="sidenote">The <img src="/bjc-r/img/3-lists/list_block.png" class="block" alt="LIST block" title="orange LIST block"> block's left and right arrowheads let you vary the number of input slots. </div> 
+                <!--
+                These list items should not be alphabetical. It implies something that is not the case. I replaced these with more items that focus on list reporters. --MF
+                <li>
+                    Construct these expressions and describe what they do:
+                    <ol>
+                        <li> <img src="/bjc-r/img/3-lists/gs1a.png" alt="ALL BUT FIRST block" title="ALL BUT FIRST block"> </li>
+                        <li> <img src="/bjc-r/img/3-lists/gs1b.png" alt="IN FRONT OF block" title="IN FRONT OF block"></li>
+                        <li> <img src="/bjc-r/img/3-lists/item_last.png" alt="item (last) of list (Augusta) (Boise) (Columbia) (Des Moines)" title="item (last) of (Augusta) (Boise) (Columbia) (Des Moines)"></li>                        
+                  </ol>
+                </li>-->
+                <li>Use the <code>list</code> block to create a list containing a mixture of (at least 5) items: letters, words, whole numbers, decimals, negatives, Booleans, etc.</li>
+                <li>
+                    For each of these reporters, discuss what you think it does. Then, experiment using your list, and discuss the results:
+                        <ol>
+			                <img class="imageRight" src="/bjc-r/img/icons/predict.png" alt="Predict What Will Happen" title="Predict What Will Happen" />
+                            <li><img class="inline" src="/bjc-r/img/blocks/length-list.png" alt="length of {}" title="length of {}" /></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/all-but-first.png" alt="all but first of {}" title="all but first of {}" /></li>
+                            <li><img class="inline" src="/bjc-r/img/blocks/in-front-of.png" alt="() in front of {}" title="() in front of {}" /></li>
+                        </ol>
+                </li>
+                <div class="endnote">An input slot that looks like <img src="/bjc-r/img/3-lists/list_input_slot.png" class="block" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside"> means that a <em>list</em> value is expected.</div>
+                <img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />
+                <li>The <img class="inline" src="/bjc-r/img/blocks/item.png" alt="item (1) of {}" title="item (1) of {}" /> reporter has a dropdown with three options: <var>1</var>, <var>any</var>, and <var>last</var>, but that input also accepts an arithmetic expression or a constant number. Experiment. Discuss how you might use this block in a program.<ul><li>How would you ask for the <em>last</em> item of a list?</li></ul> </li>
+                <li>The <img class="inline" src="/bjc-r/img/blocks/contains.png" alt="{} contains ()" title="{} contains ()" /> predicate accepts a list and any value as input. What do you think it does with them? Experiment. What does it do? How might you use this block?</li>
+               	<!-- <div class="sidenote">This  artist's conception of a list is how <span class="snap">snap</span> displays a list. Each red rectangle is one <strong>list item</strong>. <img src="/bjc-r/img/3-lists/visual_list.png" alt="visual representation of list" title="visual representation of list"></div> -->
+          </ol>
+                </div>
+                For the next explorations, build <img src="/bjc-r/img/3-lists/list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)">. Then control-click on it, select <strong>duplicate</strong>, and make a few copies.
+                <div class="forYouToDo">
+  <ol start="6">
+        
+                <li>What is the difference between <img src="/bjc-r/img/3-lists/item-2-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png"  alt="item-2-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"> and <img src="/bjc-r/img/3-lists/list(Haiti).png" alt="list(Haiti)">?</li>
+            	<li>
+                    What do each of the following return? Guess first; then build in Snap<em>!</em>&nbsp; Then, discuss why the expressions return what they do.
+                    <ol>
+                        <li><img src="/bjc-r/img/3-lists/length-of-all-but-first-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="length-of-all-but-first-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+                        <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                        <li><img src="/bjc-r/img/3-lists/length-of-list(blank-Haiti-blank-blank-Rwanda-blank).png"  alt="length-of-list(blank-Haiti-blank-blank-Rwanda-blank)"></li>
+                        <li><img src="/bjc-r/img/3-lists/gs_length0.png" alt="length (empty list)" title="length (empty list)" /></li>
+                        <li><img src="/bjc-r/img/3-lists/keep-items-such-that-a-equals-letter-3-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png"  alt="keep-items-such-that-a-equals-letter-3-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+                        <li><img src="/bjc-r/img/3-lists/keep-items-such-that-a-equals-letter-6-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="keep-items-such-that-a-equals-letter-6-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+                        <li><img src="/bjc-r/img/3-lists/keep-items-such-that-a-equals-letter-1-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="keep-items-such-that-a-equals-letter-1-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+                        <li><img src="/bjc-r/img/3-lists/keep-items-such-that-6-equals-length-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="keep-items-such-that-6-equals-length-of()-from-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+                    </ol>
+              </li>
+                <li>Figure out <em>two</em> different ways to use <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that () from ()"> with  <img src="/bjc-r/img/3-lists/list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"> so that <code>keep</code> reports <img src="/bjc-r/img/3-lists/report-showing-list(Haiti-Japan).png" width="135" alt="report-showing-list(Haiti-Japan)"></li>
+                <li>Find a way to use <code>keep</code> with the same list, so that your code  reports a list of all countries with names longer than 7 characters.</li>
+  </ol>
+          <div class="takeNote">
+    <p><code>keep</code> applies a test (its first input) to each item of a list (its second input), and reports a list containing only the matching items. If no items satisfy the test, <code>keep</code> reports an empty list.</p>
+    <p><img class="indent" src="/bjc-r/img/3-lists/Explaining-keep-items-1st-letter-is-u.png" alt="Explaining Keep items such that "> </p>
+          </div>
+</div>
+        
+        <p>List procedures (blocks) can be used to access information in the list.</p>
+        
+        <div class="forYouToDo">
+            <ol start="10">
+                <li>Build and compare these <code>say</code> scripts. Run each script a few times.
+					<div class="sidenote">You will learn more about these expressions if you click them each multiple times.</div>
+                    <ol>
+						<li><img src="/bjc-r/img/3-lists/say-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png"  alt="say-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+						<li><img src="/bjc-r/img/3-lists/say-item-any-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png" alt="say-item-any-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+						<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                        <li><img src="/bjc-r/img/3-lists/say-item-pick-random-3-to-5-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam).png"  alt="say-item-pick-random-3-to-5-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)"></li>
+						<li><img src="/bjc-r/img/3-lists/for-each-item-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)-say-item-for-1-secs.png" alt="for-each-item-of-list(Russia-Haiti-Japan-Brazil-Rwanda-VietNam)-say-item-for-1-secs"></li>
+                	</ol>
+                </li>
+		        	<img class="imageRight" src="/bjc-r/img/icons/headphones.png" alt="Set Up Your Headphones or Speakers" title="Set Up Your Headphones or Speakers" />
+		
+				<li>Build and compare these <code>play</code> scripts. Run each script a few times.
+					<ol>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-1.png" alt="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats" title="play note (item (any) of (list (60) (64) (67) (72) (60))) for (1) beats"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-2.png" alt="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)" title="for each (note) of (list (60) (64) (67) (72) (60)) (play note (note) for (1) beats)"></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-3.png" alt="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)" title="for each (note) of (map (_ + 5) over (list (60) (64) (67) (72) (60))) (play note (note) for (1) beats)"></li>
+						<div class="comment">Image blocks need alt and title attributes. --MF</div>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-4.png" alt="" title="" /></li>
+                        <li><img class="inline" src="/bjc-r/img/3-lists/compare-play-note-5.png" alt="" title="" /></li>
+                    </ol>
+                </li> 
+            </ol>
+        </div>
+          
+
+    </body>
+</html>
+    

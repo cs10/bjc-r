@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 2: Nesting Lists</title>
+    </head> 
+
+    <body>
+        <h2>Data Types</h2>
+        
+        <div class="todo">
+            <ul>
+                <li>Paul or Brian, please review the following preface on data types. --MF
+                	<ul>
+                    	<li>Variables do not have types. <em>Data</em> have types. Any variable can hold any datum, regardless of type. Also, Snap<em>!</em> is not Scratch -- lists are not comparable to variables; they're comparable to numbers or procedures. --BH</li>
+						<li>Brian, Please make changes here and in the TG regarding constructors and selectors vs. datatypes. --MF</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+<!--        <p>A <strong>data type</strong> is a label that specifies what type of data a variable can hold. In some programming languages, there are different data types for numbers than for words&mdash;or even for different kinds of numbers (for instance, integers vs. decimals). In Snap<em>!</em>, there are variables (which each hold one piece of data that can be either a number or text) and lists (which hold multiple pieces of data&mdash;numbers or text). We can also create our own data types to help clarify our code.</p>  -->
+		<img class="imageRight" src="/bjc-r/img/3-lists/isa-menu.png" alt="primitive types" title="primitive types"/>
+		<p>A <strong>data type</strong> is, just as the name suggests, what <em>kind</em> of data something is.</p>
+		<p>Each programming language provides some &quot;primitive&quot; data types.  The <strong>primitive</strong> types in Snap<em>!</em> are <em>number</em>, <em>text string</em>, <em>Boolean</em>, <em>list</em>, <em>command</em>, <em>reporter</em>, and <em>predicate</em> (but we haven't used the last three as data types yet.)  You can get a reminder of Snap<em>!</em>'s primitive types from the pulldown menu in the <code>is () a ()?</code> block (shown right).</p>
+        <p>
+            <strong>Abstract data types</strong> (or ADTs), like &quot;noun phrase&quot; exist only in the mind of the programmer. For example: 
+<ul>
+                <li>Your reporter <var>noun phrase</var> (in <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-join-join-words.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Lab 1</a>) was a data type  that joined 3 text strings from various lists.</li>
+                <li>Also <var>prepositional phrase</var> (in <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-join-join-words.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Lab 1</a>) was a data type that joined a text string and a <var>noun phrase</var>.</li>
+                <li>You could create a <var>person</var> data type for your Contacts List app.</li>
+                <li>You might want a <var>student</var> data type if you were collecting data on your classmates for a yearbook. </li>
+            </ul>
+        </p>
+        <div class="todo">
+            I believe this was Paul's work that crashed into my work on this page. I did not reintegrate since I've already updated the above. Paul, if you want to keep any of this, please reintegrate whatever is most important. --MF
+            <p>Data types such as &quot;Noun phrase&quot; or &quot;person&quot; exist only in the mind of the programmer. These are abstractions, created by the programmer, so they are called &quot;abstract&quot; data types. Each programming language provides some &quot;primitive&quot; data types.  The primitive types in Snap<em>!</em> are number, text string, Boolean, list, command, reporter, and predicate.  (We haven't used the last three as data types yet.)  You can get a reminder of Snap<em>!</em>'s primitive types from the pulldown menu in the <code>is () a ()?</code> block.</p>
+        </div>
+
+        <div class="dialogue"> <a name="point" class="anchor">&nbsp;</a>
+        	<div class="stagedir">Gamal joins Betsy and Alphie's <a href="/bjc-r/cur/programming/3-lists/2-nesting-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">discussion about using a list of coordinates to make a drawing of a letter</a>.</div>
+            <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
+            <div><span>Gamal:</span> I think you had trouble finishing that last script because those <code>item of</code> blocks get confusing with lists inside lists.</div>
+            <div><span>Betsy:</span> Yeah, the expressions like <img style="padding: 0px;" src="/bjc-r/img/3-lists/item-2-of-item-1-of-A.png" alt="item (2) of (item (1) of (A))" title="item (2) of (item (1) of (A))" /> get confusing fast!</div>
+			<div><span>Gamal:</span> Well, we could define a new <em>data type</em> called <img class="inline" src="/bjc-r/img/3-lists/point()().png" alt="point () ()" title="point () ()" /> that contains an <em>x</em>-coordinate and a <em>y</em>-coordinate.</div>
+                <div class="sidenote">Gamal's idea is called <strong>data abstraction</strong>: creating a new abstract data type so that the detailed representation of the type is hidden from its users. In this case, users of points don't have to know that they're represented as lists.</div>
+        	<div class="stagedir">
+                Gamal has built this block: 
+                <img src="/bjc-r/img/3-lists/point.png" alt="point = list" title="point = list"/>
+            </div>
+			<div><span>Betsy:</span> That block is trivial; it isn't going to make the rest of the program any shorter.</div>
+            <div><span>Gamal:</span> But it is going to make it <em>easier to think about</em>. Now, a list of points will actually look like a list of points:</div>
+            <div class="stagedir"><img src="/bjc-r/img/3-lists/list-of-points.png" alt="letter A as list of points" title="letter A as list of points" /></div>
+            <div>
+            	<span>Betsy:</span> Hmmm... So we could also make <code>X coordinate</code> and <code>Y coordinate</code> blocks so that the drawing script would have things like <img class="inline" src="/bjc-r/img/3-lists/X-coord-of-item-1-of-A.png" alt="X coordinate of item (1) of (A)" title="X coordinate of item (1) of (A)" /> instead of <img class="inline" src="/bjc-r/img/3-lists/item-1-of-item-1-of-A.png" alt="item (1) of (item (1) of (A))" title="item (1) of (item (1) of (A))" />, which was confusing too.
+            </div>
+            <div class="stagedir">
+                Betsy's two other blocks: <img src="/bjc-r/img/3-lists/xcoord.png" alt="x coordinate = item 1" title="x coordinate = item 1" /> 
+                <img src="/bjc-r/img/3-lists/ycoord.png" alt="y coordinate = item 2" title="y coordinate = item 2" /><br />
+            </div>
+        </div>
+        
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Improve your "U3L1-DrawShape" project from <a href="/bjc-r/cur/programming/3-lists/2-nesting-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">the previous page</a> using Gamal's and Betsy's ideas.</li>
+                <li>
+                	Make a general <img class="inline" src="/bjc-r/img/3-lists/draw_shape_block.png" alt="draw shape ()" title="draw shape ()" /> block that draws <em>any</em> shape based on a list of coordinates.<br />
+                	Notice that the input slot <img class="inline" src="/bjc-r/img/3-lists/list_input_slot.png" alt="rectangle with two smaller orange rectangles inside" title="rectangle with two smaller orange rectangles inside" /> shows that a <em>list</em> value is expected. This animation shows you how to specify the list input type:<br /> 
+                    <img src="/bjc-r/img/3-lists/draw_shape_list_input.gif" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
+	                <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                </li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+            	<li>Make a new list of lists with coordinates to draw a different letter or shape. Check to see that your <code>draw shape ()</code> block works with this new list.</li>
+                <li>
+                	If you made other letters, write a <code>draw message ()</code> block that takes a <em>list of letters</em> as input and uses <code>draw shape ()</code> several times to draw a message.<br />
+	                <div class="sidenoteBig">Notice the use of abstraction. Representing the message &quot;HI&quot; as <img src="/bjc-r/img/3-lists/list-h-i.png" alt="list {A, B, C}" title="list {A, B, C}" /> hides all the complexity of the lists of coordinates used to draw the shapes.</div>
+                	<img class="indent" src="/bjc-r/img/3-lists/hi.gif" alt="animation that shows drawing H then drawing I" title="animation that shows drawing H then drawing I" />
+                </li>
+        	</ol>
+        </div>
+        
+
+   </body>
+</html>

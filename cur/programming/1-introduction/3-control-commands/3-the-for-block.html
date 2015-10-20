@@ -8,14 +8,19 @@
     
     <body>
 		<h2>The <code>For</code> Block</h2>
+        
         <div class="todo">
-        	<ul>
-                <li>GH Feedback 8/30: U1L2-xxxx should probably be named U1L3 (Lab 3)</li>
+            <ul>
+                <li>GH Feedback 9/29/15: You're naming system is off here. This is U1L3 and you ask to name the scripts U1L2</li>
+                <li>GH Feedback 9/30/15: The "Play Note" command gives me the error TypeError ctx is undefined.</li>
+                <li>GH Feedback 10/6/15: This is not Lab 2, it is Unit 1- Lab 3. The lab-book justifies the lab confirmation</li>
+                <li>GH Feedback 10/7/15: Fixing the "Play Note ... For ... Beats" block does not work properly, and says "Null reference"</li>
+                <li>GH Feedback 10/7/15: fix the play block, there is some error</li>
             </ul>
         </div>
         
         <p>Programs often require repeating a set of actions. You have already used three ways and will learn a fourth in this lab session.
-<ul>
+			<ul>
                 <li>The <img class="inline" src="/bjc-r/img/blocks/forever.png" alt="the forever block" title="the forever block" /> block is appropriate when you want to repeat the same thing <em>forever</em>.</li>
                 <li>The <img class="inline" src="/bjc-r/img/blocks/repeat.png" alt="the repeat block" title="the repeat block" /> block is appropriate when you want to repeat the same thing <em>a specific number of times</em>.</li>
                 <li>The <img src="/bjc-r/img/blocks/repeat-until.png"  alt="repeat until"> block is appropriate when you want to repeat the same thing until some special condition occurs.</li>
@@ -35,40 +40,37 @@
 		</p>
         
         <div class="forYouToDo" id="first">
-            <div>
-                <ol>
-                    <li>The example above shows a script that counts from 1 to 10. Build it and modify it so that it counts 0, 2, 4, 6, 8... up to 30.</li>
-                    <li><img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Discuss your solutions.</li>
-                    
-					<li>
-                    	<img src="/bjc-r/img/icons/new-project-mini.png" alt="Create a new project" title="Create a new project" /> Build this script and try it out:<br />
-                        <div class="sidenoteBig">To change the name of the variable from <code>i</code> to <code>length</code>, click on the orange oval <em>without </em>dragging it. After you've changed the name, drag it where you want to use it.</div>
-               			<img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"><br />
-                		This design got the nickname "squiral" because it looks like a square spiral. 
-					</li>
-					<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Do you see why the squiral spirals outward?</li>
-					<li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
-                    <li><strong>Experiment:</strong> Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
-                    <li>
-                        Change the turn angle and the move steps to get as close as you can get to a smooth spiral:<br />
-                        <img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
-                    </li>
-                    <li><div class="saveAs"><span class="text">"U1L2-Squiral"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Squiral" title="Save your work as U1L2-Squiral" /></div></li>
-                    <li>Click the script below to launch it in <span class="snap">snap</span>:<br /><a class="run" href="/bjc-r/prog/1-introduction/sound-sweep-up.xml"><img class="indent" src="/bjc-r/img/1-introduction/sound-sweep-up.png" alt="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" title="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" /></a></li>
-                	<li>Create a second script that says and plays the notes down from 84 to 60 when you press the down arrow.</li>
-                	<div class="endnote">Because the new script will be so much like what you already have, you may want to <em>duplicate</em> it (right-click or control-click on its hat block) and then change it.</div>
-	           		<li>Create a script that says and plays the notes from 60 to 83 and then from 84 to 61 a total of 3 times <em>quickly</em>.</li>
-	           		<li>
-                    	Here are two scripts to build and explore. When you have figured out how they work, build a script that spells <em>your name backwards</em>.
-                        <p><img src="/bjc-r/img/1-introduction/for-say-letter-i-of-my-name-is-secret.png"  alt="For i = 1 to 10, say letter i of my-name-is-secret">
-                        <img src="/bjc-r/img/1-introduction/repeat2-for-1-5-to-3-say-letter-i-of-abcdefg-wait-half-second.png" alt="repeat 2 ((for 1=5 to 3, say letter i of abcdefg), wait half 0.5 seconds)"></p>
-                    </li>
-                    <li><div class="saveAs"><span class="text">"U1L2-ForLoops"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-ForLoops" title="Save your work as U1L2-ForLoops" /></div></li>
-
-
-                </ol>
-            </div>
+            <ol>
+                <li>The example above shows a script that counts from 1 to 10. Build it and modify it so that it counts 0, 2, 4, 6, 8... up to 30.</li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" /> Discuss your solutions.</li>
+                
+                <li>
+                    <img src="/bjc-r/img/icons/new-project-mini.png" alt="Create a new project" title="Create a new project" /> Build this script and try it out:<br />
+                    <div class="sidenoteBig">To change the name of the variable from <code>i</code> to <code>length</code>, click on the orange oval <em>without </em>dragging it. After you've changed the name, drag it where you want to use it.</div>
+                    <img class="indent" src="/bjc-r/img/looping/squirral-script.png" alt="squiral script"><br />
+                    This design got the nickname "squiral" because it looks like a square spiral. 
+                </li>
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Do you see why the squiral spirals outward?</li>
+                <li>Try switching the order of the 100 and the 1 in the <code>for</code> block in the squiral script. What is the result?</li>
+                <li><strong>Experiment:</strong> Try changing the turning angle in the squiral script to other numbers such as 92, 126, etc.</li>
+                <li>
+                    Change the turn angle and the move steps to get as close as you can get to a smooth spiral:<br />
+                    <img class="indent" src="/bjc-r/img/prog/spiral.png" alt="spiral" title="spiral" />
+                </li>
+                <li><div class="saveAs"><span class="text">"U1L2-Squiral"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L2-Squiral" title="Save your work as U1L2-Squiral" /></div></li>
+                <li>Click the script below to launch it in <span class="snap">snap</span>:<br /><a class="run" href="/bjc-r/prog/1-introduction/sound-sweep-up.xml"><img class="indent" src="/bjc-r/img/1-introduction/sound-sweep-up.png" alt="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" title="when (up arrow) key pressed (for (i = 60 to 84) (say (i), play note (i) for (0.2) beats))" /></a></li>
+                <li>Create a second script that says and plays the notes down from 84 to 60 when you press the down arrow.</li>
+                <div class="endnote">Because the new script will be so much like what you already have, you may want to <em>duplicate</em> it (right-click or control-click on its hat block) and then change it.</div>
+                <li>Create a script that says and plays the notes from 60 to 83 and then from 84 to 61 a total of 3 times <em>quickly</em>.</li>
+                <li>
+                    Here are two scripts to build and explore. When you have figured out how they work, build a script that spells <em>your name backwards</em>.
+                    <p><img src="/bjc-r/img/1-introduction/for-say-letter-i-of-my-name-is-secret.png"  alt="For i = 1 to 10, say letter i of my-name-is-secret">
+                    <img src="/bjc-r/img/1-introduction/repeat2-for-1-5-to-3-say-letter-i-of-abcdefg-wait-half-second.png" alt="repeat 2 ((for 1=5 to 3, say letter i of abcdefg), wait half 0.5 seconds)"></p>
+                </li>
+                <li><div class="saveAs"><span class="text">"U1L3-ForLoops"</span><img class="inline" src="/bjc-r/img/icons/save-this-as.png" alt="Save your work as U1L3-ForLoops" title="Save your work as U1L3-ForLoops" /></div></li>
+            </ol>
         </div>
+        
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <div>      
             	<ol type="A">

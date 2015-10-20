@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 4: Combining List Operations</title>
+    </head>   
+      
+	<body>
+        <h2>Nesting Functions</h2>
+        
+        <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+		<p><code>Map</code> <em>performs a function</em> to each item in a list and outputs a <em>list</em>. <code>Keep</code> <em>filters</em> for specific items and outputs a <em>list</em>. <code>Combine</code> <em>performs a binary operation</em> (a function with two inputs) across all items in the set and outputs a <em>single result</em>. The three can be used together to execute more advanced functions.</p>
+        
+        <div class="todo">
+        	<p><strong>Maybe for next year</strong>, a version of "Composing HOF’s" from: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a></p>
+			<p>PUTTING IT ALL TOGETHER: Now that you’re a map, keep and combine expert you’re ready to use map, keep, and combine to make a very useful function block: remove pattern. Remove pattern takes a string str and a pattern x and removes the the pattern x everywhere from str. For example. For example if str is the string abracadabra and your removal pattern x is the letter a, then remove pattern(abracadabra, a) = brcdbr.</p>
+			<p>
+            	Here is some pseudocode to help with this:
+<pre>remove pattern( str, x )
+script variables: tokens
+set tokens to the result of split str using the pattern x 
+set tokens to the result of keep tokens with length &gt; 0  {got rid of empty tokens}
+report the result of join list on tokens   {join list is the combine based function that you created in problem 6}</pre>
+			</p>
+			<p>Make sure to leave an example in your script that shows your remove pattern function works.</p>
+		</div>
+        
+                
+        <h3>Character Encoding</h3>
+		<div class="todo">
+        	<ul>
+        		<li>
+                	Character encoding.  Good.  It recalls stuff the kids did earlier (in U2?) but bumps it up a notch.  I’d bump it up one more notch.  Here’s a good place to <strong>map adding some number to every number in a list</strong>.  Take an input message, tear it into letter-sized chunks, get the unicode, add 1, reconstitute it as a string.  Do reverse to decode.  Good way also to anticipate something in U4.--PG
+					<ul>
+                    	<li><strong>PAUL: How is what I have below now? --MF</strong></li>
+                    </ul>
+                </li>
+				<li>
+                	In addition to encoding/decoding as an application of map as partial anticipation of U4, I’d also suggest <strong>turning a string into a list of lists containing the characters (or their Unicode) and the order in which they appear in the original message</strong>.  The utility of that won’t be apparent now, but is a decent exercise.  It will be useful in U4 (but I would not say that now) for students ever to have tried to do such a thing. Right now, if there’s a way to make it more “motivated” and less arbitrary, please do, but I could be satisfied even with just treating it as an exercise. --PG
+                    <ul>
+                    	<li><strong>PAUL: I did <em>not</em> do this because I couldn't figure out way to make it feel better than arbitrary and this page is all mini-projects (presumably with inherent motivation). Will need to do in U4. --MF</strong></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="sidenoteBig">You may have built a unicode <code>encode</code> block in <a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/2-script-variables/2-script-variable-projects.html?topic=nyc_bjc%2F2-conditionals-abstraction.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment#secretcode">Unit 2 Lab 2: Script Variable Projects</a>.</div>
+        <p>Every character you type is encoded by the computer as a number. Unicode assigns a number to every letter that can be typed in any language, as well as to special characters, like !@# and the space bar.</p>
+        
+        <div class="todo">Would be nice to include an ascii table here&mdash;something like what they will see on the exam. --MF</div>
+
+        <div class="forYouToDo" id="first">
+            <ol>
+				<li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_of_a.png" alt="unicode of (a)" title="unicode of (a)" /> to figure out the unicode for "A", "Z", "a", and "z". </li>
+                <li>Use the green block <img border="0" src="/bjc-r/img/3-lists/unicode_65_as_letter.png" alt="unicode(65)as letter" title="unicode(65)as letter" /> to figure out the letter for the unicode numbers 72, 105, 33. </li>
+				<div class="sidenote"><code>map</code> and <code>combine with</code> will be helpful here. </div>	
+                <li>Use those blocks to decode this message:<br /><a class="run" href="/bjc-r/prog/3-lists/U3Lab3CodedMessage.xml"> <img border="0" src="/bjc-r/img/3-lists/code.png" alt="list of unicode numbers" title="list of unicode numbers" /> </a></li>
+                <li>Write a block, <code>encode (message)</code> that takes an input message (a sentence), tear it into letter-sized chunks, gets the unicode, adds 1 to each letter, and outputs the encoded message.</li>
+                <li>Build a <code>decode (message)</code> block to reverse <code>encode (message)</code>.</li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+                <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+                <div class="sidenoteBig">You could use <code>mod</code> to make the letters of the alphabet loop around to the beginning. You will need to take into account that A is 65.</div>
+            <ol type="A">
+                <li>Build a <code>encode (message) by (offset)</code> block that takes an input message and an offset value, gets the unicode of the message, adds the offset to each letter, and outputs the encoded message.</li>
+                <li>Build a <code>decode (message) by (offset)</code> block that takes an input message and an offset value and reverse <code>encode (message) by (offset)</code>.</li>
+            </ol>
+        </div>
+
+            
+        <h3>Acronym Generator</h3>
+        <div class="todo">
+            <ul>
+                <li><a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=bh&ProjectName=acronym
+</a></li>
+            </ul>
+        </div>
+
+		<p>An <strong>acronym</strong> is a "word" made up of the first letters of every capitalized word in a phrase. For example, the acronym for United States of America is USA, and SUNY is an acronym for State University of New York.</p>
+        <p>In this project, you will create a reporter block that takes a phrase as input and reports an acronym made <em>only from the capitalized words</em>. It should work like this:<br/>
+                    <img class="indent"	 src="/bjc-r/img/3-lists/acronym_BJC.png" title="Beauty and Joy of Computing: BJC" alt="Beauty and Joy of Computing: BJC"  />
+                    <img src="/bjc-r/img/3-lists/acronym_NYC.png" title="New York City: NYC" alt="New York City: NYC"  /> </p>
+
+        <div class="forYouToDo">
+            <ol start="6">
+                <li>
+                    Create a reporter that takes a phrase as input and reports an acronym made of the first letters of the capitalized words. The steps below suggest <em>one</em> way: 
+                    <ol>
+                        <img class="imageRight" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" />
+                        <li>The input phrase is a string of characters. Break it up into a list of words. </li>
+                    	<div class="takeNote">There are many ways to turn a string like "Beauty and Joy of Computing" into a list of words. One way is to use this green block: <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  /> (pronounced "sentence to list"). It lets you break a string at every space and convert the string to a list of words. It's in the Tools library.</div>
+                        <div class="todo">
+                        	<p>Cut content:</p>
+                            <p>So that you don't have to look at every character of the string to find which ones are the first letters of words, <span class="snap">snap</span> lets you split that string at every space and convert it to a list of words. There are many ways. One way is to use <img border="0" src="/bjc-r/img/3-lists/sentence_to_list.png" title="sentence to list" alt="sentence to list"  />. It's in the Tools library.</p>
+                           <p><strong> Paul, please remove this comment</strong> if you are ok with the current solution above. --MF</p>
+                        </div>
+				        <div class="sidenote">The <code>unicode of</code> block will be helpful here.</div>
+                        <li>You have choices about the next step. You could use <code>map</code> to generate a new list containing only the first letters of the words in your input list, and <em>then</em> <code>keep</code> only those that are capital letters.  <strong>OR</strong>, you could <code>keep</code> only the words that begin with capitals and <em>then</em> use <code>map</code> to create a list containing only the first letters of those words.
+                        </li>
+                        <li>Last, you need to convert that list back into a string.
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+        
+        <div class="takeItFurther">
+            <div class="todo">
+            	<ul>
+					<li>What I’d like this lab to be doing is more stuff like ACRONYM that uses map, keep, combine, two or all three at a time. We ask the kids in problem A to invent more stuff like that, but they’ve seen only two examples. This isn’t enough experience to do problem A or page 4-when-you-really…. --PG</li>
+                	<li>[This problem] asks the kids to do what we haven’t successfully done. --PG</li>
+                    <li><strong>Should we eliminate this TIF entirely?</strong> --MF</li>
+                </ul>
+            </div>
+            <ol type="A">        
+	            <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Think of another situation where it might be useful to use <code>map</code>, <code>keep</code>, and <code>combine with</code> together. Make up a list and describe how you would use the three functions together.</li>
+            </ol>
+        </div>
+
+
+        <div class="todo"> <strong>Ugh, I like this, but when I tried to make this meaningful (by using the only context I know for sums of squares, i.e., statistics) is started so seem way too hard way too fast... Please do not get bogged down by this section. Just skim the green and purple and make a quick decision abotu whether to clean it up and bring it back this year. :) --MF</strong>
+        <h3>Statistics: Sums of Squares</h3>
+        <div class="todo">The sum of the squares does interest me, if we are doing a mathematical investigation, but we’re not: just making a procedure that does that feels unmotivated--PG</div>
+        <p>In statistics, the sum the squares of the... </p>
+        
+        <div class="forYouToDo">
+            <ol start="7">
+                <li>Using <code>map</code>, create a block that takes a list of positive integers as input and reports the list of the squares of its elements.</li>
+                <div class="endnote">For example, if the input list is <code>{2, 7, 4, 9}</code>, then the output list should be <code>{4, 49, 16, 81}</code>.</div>
+                <li>Using <code>map</code> and <code>combine</code>, create a block that takes a list of positive integers as input and reports the sum of all the  squares of its elements.</li>
+                <div class="endnote">For example, if the input list is <code>{1, 4, 5}</code>, then the output should be <code>42</code> (the sum of 1, 16, and 25).</div>
+			</ol>
+		</div>
+        
+        <div class="todo">
+        <p><br />
+  Suppose we want the squares of all the items of a list of numbers. That's a straightforward <code>map</code> problem:<br />
+<img border="0" title="map (() * ()) over list" alt="map (() * ()) over list" src="/bjc-r/img/list/hof/mapsq.png"/>
+
+<br /><br />
+Now suppose instead that we want to select the odd numbers from a list of numbers. It's a little tricky figuring out how to tell if a number is odd, but apart from that it's a straightforward <code>keep</code> problem:<br />
+<img border="0" title="keep items such that <(() mod (2)) = (1)> from list..." alt="keep items such that <(() mod (2)) = (1)> from list..." src="/bjc-r/img/list/hof/keepodds.png"/>
+
+<br /><br />
+But what if we want the squares of the odd numbers? This is neither a simple <code>map</code> nor a simple <code>keep</code>, but combines aspects of both. And we can solve the problem by using the value reported by the <code>keep</code> as the list input to <code>map</code>:<br />
+<img border="0" title="map square over keep odds from list" alt="map square over keep odds from list" src="/bjc-r/img/list/hof/sq-odds.png"/>
+
+<br />
+Don't be confused about which inputs do and don't have rings. It's the square <u>function</u> and the are-you-odd? <u>function</u> that we use as the first input to each higher order function. But, even though <code>keep</code> itself is a function, it's <i>the <u>list</u> reported by <code>keep </code></i>that we're using as the second input to <code>map</code>.
+
+</p>
+</div>
+        
+        <div class="takeItFurther">
+	        <div class="todo">Needs review (from GS) --MF</div>
+            <ol type="A">
+                <li> 
+                    <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />
+                    The reporter <code>sq?</code> takes a positive integer as input.  What does it do?<br />
+                    <img class="indent" src="/bjc-r/img/3-lists/sq.png" alt="sq?: report(sqrt of (n) = floor of (sqrt of (n)))" title="sq?: report(sqrt of (n) = floor of (sqrt of (n)))" />
+                    
+                </li>
+                
+                <li>Create a block that takes a list of positive integers as input and reports the list of all perfect squares contained in the input list.</li>
+                <div class="endnote">For example, if the input list is <code>{6, 16, 21, 36}</code>, then the output list should be <code>{16, 36}</code>.</div>
+                <li>Create a block that takes a list of positive integers as input and reports the sum of all the perfect squares contained in the input list.</li>
+                <div class="endnote">For example, if the input list is <code>{2, 9, 13, 25}</code>, then the output should be <code>34</code> (the sum of 9 and 25).</div>
+            </ol>            
+        </div>
+        </div>
+        
+        
+        <h3>Sales Data Analysis</h3>
+        <div class="todo">
+            <ul>
+                <li>JK: I don't love the ice cream store problem - it feels very math-word-problem to me. I was just having trouble thinking of a good example. Any suggestions?</li>
+                <li>Mary: I don't mind it here as a TIF. I made some edits.</li>
+                <li>We could preview the http block here by giving a script that already parses a csv on our server into a nice list of lists with labeled blocks. Thoughts? --MF</li>
+                <li>Brian: I don't have strong feelings either way about bringing in the data that way, but I agree with Jane that the whole problem is kind of ad hoc.</li>
+                <li>[It] might be ok and maybe should be left, but it feels more like C than like BJ. --PG</li> 
+                <li>It's a TIF now, and I've made changes over time. <strong>Ok to leave in ?</strong> --MF</li>
+            </ul>
+        </div>
+                    
+        <div class="takeItFurther">
+            <ol type="A">        
+	            <img class="imageRight" src="/bjc-r/img/icons/tough-stuff-mini.png" alt="Tough Stuff" title="Tough Stuff" />
+                <li>
+                	Here are some made-up data from 8 days of sales at an ice cream stand: <br />
+                    
+                    <a class="run" href="/bjc-r/prog/3-lists/U3Lab3IceCreamShop.xml"> <img border="0" src="/bjc-r/img/3-lists/icecream.png" alt="made-up sales data from an ice cream shop" title="made-up sales data from an ice cream shop" /> </a><br />
+					Each of the smaller lists represents one day's data at the stand:
+					<ol style="list-style:decimal;">
+                        <li>The first number is the day's high temperature (in Fahrenheit).</li>
+                        <li>The second is the number of Popsicles sold.</li>
+                        <li>The third number is the number of ice cream cones sold.</li>
+                    </ol>
+                    Imagine that popsicles sell for $2.75 each and ice cream cones sell for $5.75 each. 
+                    <ol style="list-style:lower-roman;">
+                        <div class="sidenote"><strong>Analyze</strong>: Based on these figures, how many employees would you expect this business to have?</div>
+                    	<li>Build a single block that calculates the stand's total sales in these eight days.</li>
+						<li>Build a block that calculates the stand's total sales in a year.</li>
+                        <li>Build a block that calculates the total sales on days when the high temperature was over 80 degrees Fahrenheit.</li>
+                        <li>Build a block that compares the sales on days when the high was over 80&deg;F to the sales on days when it was lower than 80&deg;F.</li>
+                    </ol>
+                </li>
+        	</ol>
+        </div>
+
+
+   </body>
+</html>

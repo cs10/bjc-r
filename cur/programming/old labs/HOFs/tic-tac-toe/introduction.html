@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Introduction </title><!--ORIGINAL NAME: Introduction--></head><body> Now that you've learned about HOF's, we're going to use them for a larger example. We are going to make a program that plays a decent game of tic-tac-toe! Because we are going to be using HOF's, it is natural for us to use lists as our data structure for the game. So first of all, let's make ourselves a board configuration:
+<p></p>
+<div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/tic-tac-toe-board.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT1.png"></div>
+<p> </p>
+<p> We will represent this as a list in BYOB which corresponds with the numbers: I.E. The first item is an underline (which represent a blank square), and the second item is a O. We will call this the <span style="font-weight: bold;">position</span>.<br /></p>
+<p></p>
+<div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/TTT-list.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT2.png"></div>
+<p> </p>
+<p>Next, we are going to construct our main block, TTT, which will report the computer's next move given the current configuration. It takes two arguments: the current position and whether the computer is playing X or O. If the computer is O and using the board above, we can use the TTT block like this: </p>
+<p></p>
+<div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/ttt-block-call.png" title="There should be an image here" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab19/Lab19TTT3.png"><br /><br /><div style="text-align: left;"><br />So the computer will go to the first square, which makes sense.<br />Obviously, TTT is not going to work right now because we haven't implemented any strategies yet, nor have we even designed the program structure!<br /></div></div>
+<p></p>   </body></html>

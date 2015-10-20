@@ -1,4 +1,5 @@
 title: Unit 3: Lists
+
 {
 // h1: Formerly Topic 5: Collecting Data into Lists
 
@@ -18,69 +19,71 @@ title: Unit 3: Lists
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
-	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li></ul></div>
+	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revision.</div>
+
+	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li><li>Yet unused Former "Investigation": <a href="/bjc-r/cur/programming/3-lists/investigations/display-word.html">Display Word</a></li></ul></div>
 
 heading: Programming Lab 1: Introduction to Lists
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-getting-started.html]
-	resource: Sentence Builder [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-sentence-builder.html]
-	resource: List of Lists [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-list-of-lists.html]
-	resource: Draw Shape [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/4-draw-shape.html]
-	quiz: Lists Self Check [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-lists-self-test.html]
+	resource: Shopping List App [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html]
+	resource: Exploring List Processing [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/2-exploring-list-processing.html]
+	resource: Modeling Sentence Structures [/bjc-r/cur/programming/3-lists/1-introduction-to-lists/3-modeling-sentence-structures.html]
+	
+	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" /></div>
 
-heading: Programming Lab 2: List Operations
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/2-list-operations/1-getting-started.html]
-	resource: Map [/bjc-r/cur/programming/3-lists/2-list-operations/2-map.html]
-	resource: Keep [/bjc-r/cur/programming/3-lists/2-list-operations/3-keep.html]
-	resource: Combine [/bjc-r/cur/programming/3-lists/2-list-operations/4-combine.html]
-	quiz: Map, Keep, and Combine Self Check[/bjc-r/cur/programming/3-lists/2-list-operations/5-hof-self-test.html]
+heading: Programming Lab 2: Nesting Lists
+	resource: Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/1-contact-list-app.html]
+	resource: The <code>For Each</code> Block [/bjc-r/cur/programming/3-lists/2-nesting-lists/2-the-for-each-block.html]
+	resource: Data Types [/bjc-r/cur/programming/3-lists/2-nesting-lists/3-data-types.html]
+	resource: Improving Your Contact List App [/bjc-r/cur/programming/3-lists/2-nesting-lists/4-contact-list-app-2.html]
+	quiz: Lists Review and Self Check [/bjc-r/cur/programming/3-lists/2-nesting-lists/5-lists-self-check.html]
 
-heading: Programming Lab 3: Using Higher-Order Functions
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/3-using-hof/1-getting-started.html]
-	resource: Composing Higher-Order Functions [/bjc-r/cur/programming/3-lists/3-using-hof/2-composing-higher-order-functions.html] 
-	resource: When You Really Have to Loop [/bjc-r/cur/programming/3-lists/3-using-hof/4-when-you-really-have-to-loop.html]
+heading: Programming Lab 3: Three Key List Operations
+	resource: Exploring List Operations [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/1-exploring-list-operations.html]
+	raw-html:<div class="todo">Next year, I want to call these "The <code>Map</code> Block" etc. because otherwise it's not clear in a sentence whether we are talking about the block or the lab page. --MF</div>
+	quiz: <code>Map</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/2-map.html]
+	quiz: <code>Keep</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/3-keep.html]
+	quiz: <code>Combine</code> [/bjc-r/cur/programming/3-lists/3-three-key-list-ops/4-combine.html]
 
-//heading: Lists and Sentences: The Index Variable Pattern
-
-heading: Programming Lab 4: Magic Squares
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/4-magic-square/1-getting-started.html]
-	resource: Triples [/bjc-r/cur/programming/3-lists/4-magic-square/2-triples.html]
-	resource: Finding Triples [/bjc-r/cur/programming/3-lists/4-magic-square/3-finding-triples.html]
-	//resource: Finding All The Triples [/bjc-r/cur/programming/3-lists/4-magic-square/old/finding-triples-3.html]
-	resource: Finishing Touches [/bjc-r/cur/programming/3-lists/4-magic-square/4-finishing-touches.html]
-
-heading: Social Implications Lab 5: Search and How the Internet Works
-	resource: Getting Started [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
-	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/1-big-questions.html]
-	//resource: Old Big Questions [/bjc-r/cur/programming/3-lists/5-search-internet/big-questions-old.html]
-	resource: Blown to Bits Chapter 4 [/bjc-r/cur/programming/3-lists/5-search-internet/2-btb-chapter4.html]
-	resource: Search [/bjc-r/cur/programming/3-lists/5-search-internet/3-search.html]
-	resource: Internet [/bjc-r/cur/programming/3-lists/5-search-internet/4-internet.html]
-
-heading: Social Implications Lab 6: Encryption and Security
-	resource: Big Questions [/bjc-r/cur/programming/3-lists/6-encryption/1-big-questions.html]
-	resource: Encryption [/bjc-r/cur/programming/3-lists/6-encryption/2-encryption.html]
-	resource: Security [/bjc-r/cur/programming/3-lists/6-encryption/3-security.html]
-	resource: Public Key Encryption [/bjc-r/cur/programming/3-lists/6-encryption/4-public-key.html]
-	resource: Blown to Bits Chapter 5 [/bjc-r/cur/programming/3-lists/6-encryption/5-btb-chapter5.html]
-
+	raw-html: <div class="imageRight"><img src="/bjc-r/img/3-lists/is12_13_14magic.png" alt="is 12,13,14,10,18,11,17,15,16 a magic square?" title="is 12,13,14,10,18,11,17,15,16 a magic square?" /><br /><img class="imageRight" src="/bjc-r/img/3-lists/magic_square.png" alt="square_12,13,14,10,18,11,17,15,16" title="square_12,13,14,10,18,11,17,15,16"></div>
+heading: Programming Lab 4: Combining List Operations
+	//resource: Processing List Data [/bjc-r/cur/programming/3-lists/4-combining-list-ops/0-processing-data-lists.html]
+	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-nesting-functions.html] 
+	//resource: When You Really Need to Loop [/bjc-r/cur/programming/3-lists/4-combining-list-ops/2-when-you-really-need-to-loop.html]
+	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
+	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-combining-list-ops/4-magic-squares.html]
+	
  	raw-html: <hr />
+	
+	raw-html:<div class="todo">In the future, this would be a good unit to have privacy stuff because they can be using classroom data in the labs as projects. --MF</div>
 
-heading: Investigations
-	raw-html: <div class="commentBig">I pulled out the "(Use after Lab 3)" comments and put them in the TG to match the other units. If we want them here too, we should agree to make the change across units. --MF</div>
-	resource: Building Musical Chords [/bjc-r/cur/programming/3-lists/investigations/chords.html]
-	resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
-	resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
-	resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
-	resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
+heading: Social Implications Lab 5: Search
+	resource: Search Engines [/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html]
+	resource: How Searching Works [/bjc-r/cur/programming/3-lists/5-search-internet/how-searching-works.html]
+	resource: Design Your Own Search Engine [/bjc-r/cur/programming/3-lists/5-search-internet/design-your-own.html]
 
+heading: Social Implications Lab 6: Encryption
+	resource: Secrets [/bjc-r/cur/programming/3-lists/6-encryption/getting-started.html]
+	resource: Secret Keys [/bjc-r/cur/programming/3-lists/6-encryption/secret-keys.html]
+	resource: Public Keys [/bjc-r/cur/programming/3-lists/6-encryption/public-keys.html]
+	resource: Who Cares About Encryption? [/bjc-r/cur/programming/3-lists/6-encryption/who-cares-about-encryption.html]
+	resource: Cryptography and Innovations [/bjc-r/cur/programming/3-lists/6-encryption/cryptography-and-society.html]
+
+ 	//raw-html: <hr />
+
+//heading: Investigations
+	//raw-html: <div class="todo">We agreed to remove these from the units. So, where will these go? Perhaps we can tuck them into the Labs to make things more interesting. --MF</div>
+	//resource: Building Musical Chords (Claimed for L3 --MF) [/bjc-r/cur/programming/3-lists/investigations/chords.html]
+	//resource: Processing a Sentence [/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html]
+	//resource: Longest Word [/bjc-r/cur/programming/3-lists/investigations/longest-word.html]
+	//resource: Display Word [/bjc-r/cur/programming/3-lists/investigations/display-word.html]
+	//resource: Exaggerate [/bjc-r/cur/programming/3-lists/investigations/exaggerate.html]
 
 // heading: List Mutation  // this has moved to Chapter 4
 //	resource: Swap Two List Values [/bjc-r/cur/programming/lists/intro/swap-two-list-values.html]
 //	resource: Mutation of Variables [/bjc-r/cur/programming/lists/mutation/mutate-vars.html]
 
 
-assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
+//assignment: (Due Later) Hangman Classic [/bjc-r/cur/programming/projects/hangman/hangman-classic.html]
 
 // h1: Formerly Topic 13: Practicing with Lists: Tic-Tac-Toe
 // h2: Big Ideas

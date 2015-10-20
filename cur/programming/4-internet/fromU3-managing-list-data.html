@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 1: Introduction to Lists</title>
+	</head>
+
+	<body>
+		<h2>Managing List Data</h2>
+		<div class="comment">For more development ideas: see also Shuffling Cards from <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez" target="_blank">Zeph Grunschlag in NY</a> and also Looping Puzzle</div>        
+        <div class="todo">
+            From michael (via GH):
+            <ul>
+                <li>if discussing "index" variables, the word "position" should be used. The for each item is confusing because item is not an index. Using it on a word is OK, IMO, but there really needs to be an explicit comparison of the same operation between map / for each / explicit indexing if you want students to see the difference.</li>
+                <li>@brianharvey: Your selection sort has a minor bug which filters out duplicate data. I don't know if there's a clean way to do it with a keep though, so a different version probably isn't as pretty.</li>
+            </ul>
+        </div>
+
+        <div class="comment">This paragraph doesn't really say anything important or memorable.  Just jump into the FYTD. --bh</div>
+    	<p>Lists are essential to efficient data management. Lists can be counted, added to, removed from, selected from, searched in, and sorted. In this lesson, you will refine your Shopping List App, and you will explore common programming tasks related to lists: indexing, swapping, and sorting.</p>
+        
+        <div class="forYouToDo" id="first">
+			<ol>
+                <li>
+                    Review your "U3L1-ShoppingList" project from <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/1-shopping-list-app.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Shopping List App</a>:
+                    <ol>
+						<div class="sidenote"><code>Contains</code> will be helpful here.</div>
+                        <li>If you didn't write code for the "Search" button, do it now. Clicking the "Search" button should prompt the user for a search term and then tell the user whether that item is already on the list (but not add the item). If you already wrote code for "Search" button, review your code and either try to improve it or help someone else create their own.</li>			   
+						<li>Write a script for the "Delete Item" button that removes an item from the list if you haven't already.</li>
+<div class="comment">1c: Why?  --bh</div>
+						<li>
+                            Try re-writing your "Add Item" script a different way:
+                            <ul>
+								<img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                                <li>either using <code>set</code> and <code>in front of</code></li>
+                                <li>or using the <code>add</code> block</li>
+                            </ul>
+                            <img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> How do these two methods differ?
+						</li>
+                        <div class="sidenoteBig"><code>For each</code> and <code>insert</code> will be helpful here.</div><div class="comment">Here's how we do it in the list utilities library:<img src="/bjc-r/img/3-lists/bh-remdup.png"></div>
+                        <li>
+                            Perhaps you coded your "Add Item" button to check to see if the item you want to add is already on the list so you don't create duplicates. Either way, create a "Clean Up List" button that removes any duplicate items from the list. Here are some instructions:
+                            <ol>
+								<li>Save this image to your computer: <a href="/bjc-r/img/3-lists/shopping-list-button-clean-up-list.png" target="_blank"><img class="inline" src="/bjc-r/img/3-lists/shopping-list-button-clean-up-list.png" alt="Clean Up List button" title="Clean Up List button" /></a></li>
+                                <li>Open and add a new sprite to your U3L1-ShoppingList project, call the sprite "Clean Up", and import the new button image on the Costumes tab for that sprite.</li>
+                                <li>Create a reporter <code>uniques</code> that takes a list as input and reports a list of each unique item in the original list.</li>
+<div class="comment">We've known what this endnote says since U1.--bh</div>
+		                        <div class="endnote">Reporter blocks output (report) information based on the inputs, but they don't change the values stored in the input variable(s).</div>
+                                <li>Code the "Clean Up List" button to <code>set</code> the <var>shopping list</var> to a list of the unique items in <var>shopping list</var>.</li>
+                            </ol>
+                        </li>
+						<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+                    </ol>
+                </li>
+            </ol>
+        </div>
+        
+		<h3>Using an Index Variable</h3>
+        <div class="todo">The content in this section was adapted from a former U3 investigation: <a href="http://localhost/bjc-r/cur/programming/3-lists/investigations/processing-a-sentence.html">Processing a Sentence</a></div>
+<div class="comment">Is this in the framework or something?  Because the way I'd write <code>spell word</code> is<img src="/bjc-r/img/3-lists/bh-spell-word.png"></div>
+<p>Part of what makes lists so powerful is that lists are ordered and each item in the list has an <em>index number</em> that you can use to refer to that particular item. But using an index variable to process a bunch of values is not specific to lists! Creating an index from scratch is fairly common in programming and worth getting comfortable with.</p>
+        <p>This block says each of the items in a list:<br /><img class="indent" src="/bjc-r/img/3-lists/index-read-list.png" alt="read through list (list) block definition" title="read through list (list) block definition" /></p>
+        <p>The block says all of the letters in a sentence:<br /><a class="run" href="/bjc-r/prog/3-lists/U3L1-IndexVariable.xml"><img class="indent" src="/bjc-r/img/3-lists/index-spell-word.png" alt="spell word (word) block definition" title="spell word (word) block definition" /></a></p>
+                    
+        <p>Since there is no <code>for each letter</code> block that indexes strings of characters as if they were in a list, we must create an index variable and increase it by 1 (<em>increment</em> it) each time through the loop.</p>
+        <div class="forYouToDo">
+        	<ol start="2">
+                <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Read through each line of the <code>spell word</code> script above, and discuss how it works.</li>
+                <li>
+                    Modify <a class="run" href="/bjc-r/prog/3-lists/U3L1-IndexVariable.xml">the script above</a> to make the sprite say the following:
+                    <div class="sidenoteBig">
+                        When writing a script, if you already have a similar script, then you can:
+                        <ul>
+                            <li>Either duplicate the existing script and modify it for the new functionality</li>
+                            <li>Or create a more general script that can be used for both purposes.</li>
+                        </ul>
+                    </div>
+                    <ol>
+                        <li>Every other letter in the word</li>
+                        <li>Every third letter</li>
+                        <li>All the letters in reverse order</li>
+                        <li>A range of letters (for example, letters 4-7) using either a <code>repeat until</code> or a <code>repeat</code> block</li>
+                    </ol>
+                </li>
+                    <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+        </div>
+
+<div class = "todo"> DANGER BELOW: See Brian's note.  We must actually create, not just imagine, the programs we ask kids to write. Problem b won't work, at least not as specified. Because of the <em>title</em> of this section, I've included the whole section in the warning.    
+        
+        <h3>Swapping Variable Contents</h3>
+        <div class="forYouToDo">
+			<ol start="4">
+                <li>
+                	Another common programming task is swapping the values of two variables or items in a list. So, it's worth building a custom block (or two&mdash;one for variables and one for lists) to get familiar with the idea:
+                    <ol>
+                    	<li><div class="newProject"><span class="text">"U3L1-Swap"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L1-Swap" title="Create a new project called U3L1-Swap" /></div></li>
+	<div class="comment">The page <a href="/bjc-r/cur/programming/old labs/lists/mutation/mutate-vars.html">bjc-r/cur/programming/old labs/lists/mutation/mutate-vars.html </a>explains why this won't work!</div>
+					<div class="sidenote">A script variable to hold one value aside will be useful here.<img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Discuss how you will use it.</div>
+                        <li>
+                            Write a Variables command block called <code>swap</code> that takes two variables as input and swaps their values. For example, if <var>variable1</var> is <var>100</var> and <var>variable2</var> is <var>200</var>, and these are inputted into <code>swap</code>, <var>variable1</var> should then be <var>200</var> and <var>variable2</var> should be <var>100</var>.<br />
+                            <img class="indent" src="/bjc-r/img/3-lists/swap-var-empty.png" alt="swap () ()" title="swap () ()" /><br />
+                        </li>
+                        <div class="endnote">Command blocks can change the values stored in the input variable(s), but they do not  report a value.</div>
+						<li>
+                        	Write a Lists command block called <code>swap with</code> that takes two index numbers <em>and a list</em> as input and swaps the two list items with those index numbers. For example, this script swaps the 2nd and 5th items of the list assigned to the variable <var>alphabet</var>:<br />
+							<img class="indent" src="/bjc-r/img/3-lists/swap-list-example.png" alt="set (alphabet) to (list () () () () () () ()), swap (2) with (5) in (alphabet)" title="set (alphabet) to (list () () () () () () ()), swap (2) with (5) in (alphabet)" />
+                        </li>
+                        <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+					</ol>
+				</li></ol>
+<div class="takeNote"><strong>A note on list block types:</strong>
+        <ul>
+                        <li>List <em>reporters</em> perform some kind of calculation <em>with</em> a list (but generally <em>without changing</em> the list), and they <em>report</em> information, perhaps a modified list.</li>
+                        <li>List <em>commands</em> perform some kind of calculation <em>on</em> a list. They may <em>actually change the original list</em> and  have <em>no output</em>.</li>
+                    </ul>
+                </div></div>
+              <div class="todo">Is this any different from what we already know about commands and reporters?  What I think you really want to say here is this:  <div class="takeNote">There are two very different styles of programming: <em>functional</em> programming, in which you mostly use reporters, and compute new values rather than modify values of variables that already exist; and <em>imperative</em> programming, in which you mostly use commands, and change the values of variables all the time.  All else being equal, functional programming is better because it leads to fewer bugs and because it's much easier to parallelize.  But sometimes it's more efficient or just plain easier to use imperative programming style.  In Snap<em>!</em>, because of the way lists are implemented, it's important for efficiency reasons to use a consistent style for any particular list&mdash;either always use red command blocks to mutate the list, or always use reporters such as <code>in front of</code> or <code>keep</code> to compute new lists based on the old one.</div>  But it's much too early to say that, which is why this whole page, if it belongs anywhere, belongs in Lab 4.</div>
+
+		  </ol>
+		</div>
+        <h3>Sorting a List</h3>
+        
+<div class="todo">(1) This animation goes way too fast to read.  (2) Here's how I'd want them to think about selection sort:
+  <img src="/bjc-r/img/3-lists/bh-selection-sort.png"><br />
+... but that's recursive, so if we had to do it in this unit, I guess I'd settle for  <img src="/bjc-r/img/3-lists/bh-iter-select-sort.png"><br />
+... but you can see how much uglier that is.  So I'd rather do sorting in U7.
+<strong>PG: Sorting is not appropriate here. It's complicated, the technique should be recursive, and it's not needed.</strong>
+</div>        
+	<div class="attribRight" style="width:100px;">
+        	<a href="https://en.wikipedia.org/wiki/Selection_sort" target="_blank"><img src="/bjc-r/img/3-lists/Selection-Sort-Animation.gif" alt="Selection Sort Animation by Joestape89 at the English language Wikipedia" title="Selection Sort Animation by Joestape89 at the English language Wikipedia" /></a><br />
+            Credit: Joestape89 at the <a href="//en.wikipedia.org/wiki/" class="extiw" title="w:" target="_blank">English language Wikipedia</a>
+        </div>
+
+	<p>There are many different algorithms for sorting. Some are more efficient than others. Speed and memory matters a lot more when sorting with larger datasets. A simple sorting algorithm that works well with small datasets is the <em>selection sort</em> method shown right.</p>
+        <div class="endnote">
+            <p>White is the original list. Yellow is the sorted list. Red is the current minimum. Blue is the current item being compared to the current minimum.</p>
+            <p>The double-headed arrow indicates a swap from one place in the list to another. The single-headed arrow indicates that the item that was there did not have to move.</p>
+        </div>
+        <div class="forYouToDo">
+			<ol start="6">
+				<li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Study the <em>selection sort</em> graphic at right. Discuss how this sorting algorithm works. </li>
+<div class="comment">This seems needlessly complicated.  Why not just <code>index of smallest value from (here) to end</code> and always do the swap without even checking whether the two indices are the same?</div>
+                <li>
+                    Imagine you already have a <code>lowest of items after?</code> predicate that takes an index number and a list as inputs and outputs (reports) the following:
+                    <ul>
+                        <li><code>true</code> if the list item at that index number is less than or equal to all of the items after it </li>
+                        <li><code>false</code> if there is another item that is less than it after it.</li>
+                    </ul>
+                </li>
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-another-pair.png" alt="Talk with Another Pair" title="Talk with Another Pair" />Discuss how you could use your <code>swap with</code> and <code>lowest of items after?</code> blocks to build a selection sort script.</li>
+            </ol>
+        </div>
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+				<li><div class="newProject"><span class="text">"U3L1-SelectionSort"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Create a new project called U3L1-SelectionSort" title="Create a new project called U3L1-SelectionSort" /></div></li>
+				<img class="imageRight" src="/bjc-r/img/icons/tough-stuff.png" alt="Tough Stuff" title="Tough Stuff" />
+                <li>Create a <code>lowest of items after?</code> predicate (as described above). Test it with a  several items in a list of numbers.</li>
+                <div class="todo">Need script pic with result examples of block showing each output.</div>
+                <li>Build a selection sort script.</li>
+<div class="comment">This endnote is unnecessary; it just repeats what FYTD #8 just told them!  -bh</div>
+				<div class="endnote">Your <code>swap with</code> and <code>lowest of items after?</code> blocks will be useful here.</div>
+<div class="comment">The deliberate slight snarkiness of "now would be a good time to save your work" is ruined if you use it routinely at the end of a page.  It should be reserved for very occasional use in places mid-page where they're about to introduce a horrible bug in the service of some further enhancement of their program.  Also I just noticed that "now would be" has become "now is" which also kind of defeats the point. --bh</div>
+				<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" />
+            </ol>
+        </div>
+        <br clear="all" />
+        
+        
+	</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Teacher Guide</title>
+	</head>
+
+	<body>
+    	<h2>Programming Lab 2: Nesting Lists</h2>
+        <p>Lists can contain anything: numbers, strings, other lists, even blocks. The objects <em>in</em> a list can be all of the same kind (all numbers, for example, or all lists that contain a name and a phone number). But the objects can also be of different types that list of name and phone number, for example). The tabular data we are familiar with in spreadsheets can be represented as a list of same-length lists, the smaller lists representing each row in the table, and the enclosing list representing the entire spreadsheet.
+
+          <!--A table of data, is a list of rows of data, each row being a list of data.-->
+Selecting information in the dataset involves only knowing where it appears. The &quot;ordered pairs&quot; of algebra, the (<em>x</em>, <em>y</em>) coordinates of a point, can be represented as lists. So can vectors and matrices. The <code>list</code> block is the basic building block of these  complex structures.</p>
+        <p>Blocks can locate items in the nested lists. For example, <code>item (3) of </code> the list of points below gives <var> {10, 120}</var>. As the sprite visits each of these points (in a <code>for each</code> block) the point (10, 120) is the third that it visits.  </p>
+		<img class="indent" src="/bjc-r/img/3-lists/A.png" alt="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" title="set A to {{-50,20}, {-10,120}, {10,120}, {50,20}, {30,20}, {20,50}, {-20,50}, {-30,20}}" />
+        <img class="imageRight" src="/bjc-r/img/3-lists/drawA.gif" alt="sprite drawing letter A by going to each set of coordinates" title="sprite drawing letter A by going to each set of coordinates" />
+
+        <p>Students start by construcing a very simple shopping list app. They later create a contact list app whose elements are themselves lists. This requires not only collecting and storing information, but being able to retrieve it in useful ways. Students use <code>keep</code> to be able to collect only the information they need from a list, and learn to use <code>for each</code> to process lists of points on the plane&mdash;points which are themselves lists of coordinates. Data Types, a later page in this lab, returns to the idea of using abstraction to make the (<em>x</em>, <em>y</em>) coordinate lists more recognizable and usable by creating the <strong>abstract data type</strong> <code>point</code> and constructing and identifying these coordinate lists that way. After some embellishment of the contact app, practicing and extending the ideas of abstraction, and a Lists Review and Self Check, students extend their use of <code>for each</code> and data types to a musical context.</p>
+<p>Thus in Labs 1 and 2, students have encountered lists of strings/words, numbers, and lists. They also use <em>abstraction</em> to clarify and simplify code, and see how it makes code more flexible and maintainable. </p> 
+        
+        <h3>Pacing:</h3>
+        <div>
+            <ul>
+            <div class="comment">Is this still true? --bh</div>
+                <li>The five pages of this lab are each expected to be relatively quick, <em>approximately 1 class period each</em>.</li>
+            </ul>
+        </div>
+        
+        <h3>Prepare:</h3>
+        <div>
+            <ul>
+				<li>Pages 1, the Contact List App, and  4, Improving Your Contact List App, develop a new Contact List app that was not part of this curriculum until October 2015. Teachers should review and work though these pages. Feedback is always appreciated.</li>
+            </ul>
+        </div>
+
+
+        <h3>Students will:</h3>
+        <!--<div class="sidenoteBig">
+        	<div><strong>Looking ahead</strong></div>
+        	<ul>
+			</ul>
+		</div>-->
+		<div>
+			<ul>
+                <li>Access and manipulate data in lists of lists.</li>
+                <li>Use the <code>keep</code> function to search for a contact in the Contact List app.</li>
+                <li>Use the <code>for each</code> block to access each item of a list.</li>
+                <li>Create abstract data types to organize and manage data.</li>
+                <li>Use lists of lists together with data types to organize and access data.</li>
+            </ul>
+		</div> 
+			  
+		
+		<h3>As a Class:</h3>
+		<div>
+        	<ul>
+            	<li>
+                	<strong>Page 1: Contact List App.</strong>
+                    <ul>
+                        <li>Discussion: You might ask these questions:
+                            <ul>
+                                <li>What kinds of objects can go in lists?</li>
+                                <li>What kinds of things can you do with a list of lists?</li>
+                                <li>Do the lists inside a list <em>need to</em> be the same size?</li>
+                                <li>In what other situations might a list of lists be helpful?</li>
+                            </ul>
+                        </li>
+                    </ul>
+            	</li>
+                <li>
+                	<strong>Page 2: The <code>For Each</code> Block.</strong>
+                    <ul>
+                        <li>Encourage students to read though the dialogue more than once: individually, in small groups, in front of the class, etc. </li>
+                    </ul>
+            	</li>
+                <li>
+                	<strong>Page 3: Data Types.</strong>
+                    <ul>
+                        <li>Encourage students to read though the dialogue more than once.</li>
+                        <li>Discussion: After all students have read through the dialogue a few times (and perhaps also added the abstract data type to their U3L1-DrawShape project), you might review with questions like these:
+                        	<ul>
+		                        <li>What are some benefits of creating an abstract data type?</li>
+		                        <li>In what other situations might abstract data types be helpful?</li>
+                                <li>What data types can a list include? Lists can include any data type.</li>
+		                        <li>What is a <em>primitive</em> data type? What are some examples?</li>
+		                        <li>What is an <em>abstract</em> data type? What are some examples?</li>
+                                <li>What is the difference between a primitive data type and an abstract data type?</li>
+                                <li>How are abstract data types an example of abstraction?</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><strong>Page 4: Improving Your Contact List App</strong>
+                  <ul>
+                    <li>                    </li>
+                  </ul>
+                </li>
+                <li>
+                	<strong>Page 5: Lists Review and Self Check.</strong>
+                    <ul>
+                        <li>Consider inviting students with musical training to present basic music theory (especially classical note pitch and beat length representation) and to share and describe their music script(s) with the class.</li>
+                    </ul>
+                </li>
+    		</ul>
+    	</div>
+
+
+		<h3>Assignments:</h3>
+		<div class="comment">
+		  <p>Do we have to worry about student data here?? --MF</p>
+		  <p>What's with the &quot;several&quot;? Can we just flush this section? --bh</p>
+		</div>
+        <div>
+        	<ul>
+                <li>
+                	Lab 2 includes several mini-projects that students could spend additional time improving and turn in:
+                	<ul>
+                    	<li>The Contact List App (on "Lists of Lists")</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+			
+		<h3>Look For:</h3>
+		<div>
+        	<ul>
+                <div class="todo">JK: ...in response to AC's comment that it's good to ask students to fix scripts because it demonstrates MP "something or other"<ul><li>Jane, I've addressed both of those items in some way (thouh I lost track of the other one). Al or anyone, is there more to add here? --MF</li></ul></div>
+            	<li>Debugging: As students fix the bugs in Alphie and Betty's script, they must seek the cause(s) of the unwanted and missing lines in the drawing and identify the appropriate solution.</li>
+            </ul>
+        </div>
+        
+			
+		<!--<h3>Related Resources:</h3>
+		<div><ul><li>...</li></ul></div>-->
+
+			
+		<h3>Tips:</h3>
+		<div>
+        	<ul>
+                <li><div class="sidenote">Many of the <span class="snap">snap</span> projects linked from the student pages already have the tools imported.</div>Throughout this Unit, students will have to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> in order to access the blocks they need. This is required every time a student opens a new <span class="snap">snap</span> window. (Links to projects in the curriculum have been shared with the tools already imported.)</li>
+            	<li>
+                	<strong>Page 1: Contact List App.</strong>
+                    <ul>
+                  
+                        <li>The Contact List project is ambitious but carefully scaffolded. It's helpful for you to remember its ultimate goal, which is to introduce the idea of <strong>data abstraction</strong>, in which an abstract data type is defined by writing <em>constructor</em> and <em>selector</em> blocks that are the sole program interface to the underlying list structure. We start without data abstraction, so you see lots of <code>item 2 of</code> when a phone number is wanted. By the end of the project, there should be no more <code>item</code> calls in the user interface blocks.  Students will be inclined to resist data abstraction, because it makes the program longer. But the project uses a change in the underlying representation to convince them that it's much easier to maintain a large program if such changes affect only the constructor and selectors.</li>
+                      <li><strong><em>Make sure students save their app before doing the finger exercises at the end of the page!</em></strong></li>
+                    </ul>
+            	</li>
+            	<li>
+                	<strong>Page 2: The <code>For Each</code> Block.</strong>
+                    <ul>
+                      <img class="imageRight" src="/bjc-r/img/3-lists/A_foreach.png" alt="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" title="script with for each (item) of (A) {glide 1 secs to x:(blank) y:(blank)} then glide to (0, 0)" />
+                        <li>Encourage students to first complete the two blanks in the script (shown at right) and only after most of the letter is drawing	 correctly to begin addressing the two bugs at the beginning and end of the drawing process.</li>
+                        <li>For the Take It Further problem, students may want/be asked to review the concept of <em>slope</em> from algebra to identify the remaining points in the letter.</li>
+                    </ul>
+            	</li>
+                <li>
+                	<strong>Page 3: Data Types.</strong>
+                    <ul>
+                        <li>"Abstract data type" sounds like a complicated thing, but programmers actually use them to simplify the logical structure of their code. It is reasonable to think of an abstract data type like a "template" for data&mdash;for example, if you had everyone in class fill out a form with their name, address, email, etc., that form would be like an abstract data type (except for being a real paper form&mdash;not an abstract digital artifact).</li>
+                    </ul>
+            	</li>
+            	<li><strong>Page 4: Improving Your Contact List App.</strong>
+            	  <ul>
+            	    <li>This is a longer page, and it's possible for students to lose the big picture among all the details. You should understand the following structure of the three green For You To Do boxes:
+                      <ul>
+                        <li>The first box breaks the app by making a change to its data structure. Don't let students get discouraged by this; it'll work out fine in the end. The moral of this first part is that programs can be <em>brittle</em> when any part of the program changes.</li>
+                        <li>The second box makes the program less brittle by formally defining a Contact <em>abstract data type.</em> 
+                          <ul>
+                            <li>Such a definition consists of one (occasionally more) <em>constructor</em> block, and several <em>selector</em> blocks. The former creates an instance of the data type; the latter pull out pieces from such an instance. Once the ADT is set up and is consistently used by the rest of the program, it's possible to change the internal representation without breaking anything other than the constructor and selectors. </li>
+                            <li>If students think this is too much work for the benefit, ask them to imagine a real-world program with thousands of blocks (procedures) and dozens of data types. Then imagine the situation in the first green box: You need to move the phone number from item 2 to item 3 of a contact. Without data abstraction, you'd have to scan through the entire program looking for <code>item 2 of</code> expressions, and for each one you find, you have to work out whether it is looking at a contact (in which case you should change the item number) or at something else represented by a list (in which case you shouldn't. With data abstraction, there are no <code>item</code> calls outside of the selectors; the rest of the program should keep working smoothly when the representation changes.</li>
+                          </ul>
+                        </li>
+                        <li>The third block gives the payoff for this work. We now want two kinds of contacts, ones with the family name first  and one with the given names first. We make a major change to the constructors (two of them, now) and selectors, but the rest of the program still works, better than ever.</li>
+                      </ul>
+            	    </li>
+           	      </ul>
+           	  </li>
+                <li>
+                	<strong>Page 5: Lists Review and Self Check.</strong>
+                    <ul>
+                        <li>Students familiar with music may want to use fractions (e.g. 0.25, 0.5, etc.) to represent note lengths (e.g. quarter notes, half notes, etc.) and adjust their tempo(s) accordingly. Integer note lengths are offered on the lab pages for students unfamiliar with the nuances of representing musical time signatures as decimals (e.g. 0.25 + 0.5 being a full measure in 3/4 time, but not 4/4 time). Integers work just as well and are more forgiving.</li>
+                    </ul>
+                </li>
+       	  </ul>
+        </div>
+
+			
+		<!--<h3>Solutions</h3>
+		<div><ul><li>...</li></ul></div>-->
+			
+			
+		<h3>Correlation with AP CS Principles Framework</h3>
+		<div class="apStandards">
+			<h4>Computational Thinking Practices:</h4>
+			<ul>
+                <li><strong>P2 Creating Computational Artifacts</strong> Create an artifact with a practical, personal, or societal intent.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Select appropriate techniques to develop a computational artifact.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Use appropriate algorithmic and information management principles.</li>
+                <li><strong>P3 Abstracting</strong> Explain how data, information, or knowledge is represented for computational use.</li>
+                <li><strong>P3 Abstracting</strong> Explain how abstractions are used in computation or modeling.</li>
+                <li><strong>P3 Abstracting</strong> Identify abstractions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Evaluate a proposed solution to a problem.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Locate and correct errors.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Explain how an artifact functions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Justify appropriateness and correctness of a solution, model, or artifact.</li>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in producing an artifact.</li>
+                <li><strong>P6 Collaborating</strong> Share the workload by providing individual contributions to an overall collaborative effort.</li>
+                <li><strong>P6 Collaborating</strong> Foster a constructive, collaborative climate by resolving conflicts and facilitating the contributions of a partner or team member.</li>
+                <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
+                <li><strong>P6 Collaborating</strong> Review and revise their work as needed to create a high-quality artifact.</li>
+			</ul>
+		  <h4>Essential Knowledge:</h4>
+			<ul>
+                <li><strong>EK2.1.1A</strong> Digital data is represented by abstractions at different levels.</li>
+                <li><strong>EK3.1.3E</strong> Interactivity with data is an aspect of communicating.</li>
+                <li><strong>EK3.2.1F</strong> Software tools, including spreadsheets and databases, help to efficiently organize and find trends in information.</li>
+              <li><strong>EK4.1.1B</strong> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
+                <li><strong>EK5.1.3B</strong> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
+                <li><strong>EK5.1.3F</strong> Effective communication between participants is required for successful collaboration when developing programs.</li>
+                <li><strong>EK5.2.1B</strong> Program instructions are executed sequentially.</li>
+                <li><strong>EK5.2.1C</strong> Program instructions may involve variables that are initialized and updated, read, and written.</li>
+                <li><strong>EK5.3.1I</strong> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
+                <li><strong>EK5.3.1K</strong> Lists and list operations, such as add, remove, and search, are common in many programs.</li> 
+                <li><strong>EK5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
+                <li><strong>EK5.5.1H</strong> Computational methods may use lists and collections to solve problems.</li>
+                <li><strong>EK5.5.1I</strong> Lists and other collections can be treated as abstract data types (ADTs) in developing programs.</li>
+                <li><strong>EK7.3.1K</strong> People can have instant access to vast amounts of information online; accessing this information can enable the collection of both individual and aggregate data that can be used and collected.	</li>
+		  </ul>
+		</div>
+	</body>
+</html>

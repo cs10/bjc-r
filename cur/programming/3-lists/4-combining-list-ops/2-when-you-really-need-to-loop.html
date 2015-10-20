@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 4: Combining List Operations</title>
+    </head>
+
+    <body>
+
+        <h2>When You Really Have to Loop</h2>
+        
+        <div class="todo">
+            <ul>
+                <li>JK: Any other suggestions for interesting problems here?</li>
+                <ul><li>
+                    From Dan in NY: "Some were still working on IsIncreasing(list)&rarr;bool and then getting it to work on one case but it would break another.  [most didn’t test whether it worked on (1,2,2)] So I showed two things:<br />
+                    1) The DEBUG global list technique, where a null global list is added to each loop by a join() statement that shows the values of iteration variables. E.g.,
+                    for each RIGHT in NUMBERS
+                       add(join(LEFT,” &lt; “,RIGHT,&rarr;,(LEFT &lt; RIGHT))to(DEBUG))
+                    …to show them what was happening with the the inner test and the result at each iteration.  That helped them find the source of the problem quickly, and many were able to put a conditional in there to handle the (1,2,2) case.<br />
+                    2) A new block we all wrote together (several of the teachers _really_ like it when we work together on something) called Which-Failed(f)on(list-of-inputs)returns(list-of-expected-outputs) that returns a list of pretty-printed testing results.  This was really fun for alll, they got to see an example of walking through three lists at once, with some map and combine examples, I mostly let them drive it with me typing.<br />
+                    3) I also showed them another way to write “Increasing” that does use HOFs (even though the curriculum says you can’t).<br />
+                    2 and 3 are in this file: <a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&ProjectName=Dans%20Increasing" target="_blank">http://snap.berkeley.edu/snapsource/snap.html#present:Username=dan%20garcia&amp;ProjectName=Dans%20Increasing</a>
+                </li>
+                <li>From Brian:What he's suggesting is to make a global variable DEBUG LOG or something, set it to the empty list, and then inside a FOR EACH ITEM loop you say <code>ADD (JOIN WORDS (item) (some intermediate result) (another one) ...) TO (DEBUG LOG)</code>and you use a stage watcher to see what your program is actually doing at each step.  I'm not sure how or whether to put all that in here.  If anything it should be a page by itself: "Debugging a Loop" or something.</li>
+                <li>This content remains to be developed as of Oct 2015. --MF</li></ul>
+                <li>4-when <!--page is nearly unreadable without format because there are so many interrupting divs, but I agree with Mary that explaining why some HoF won’t help is inaccessible. These are great questions, leading to a good analysis of what map, keep, and combine do.  Maybe these are classroom discussable, but not questions for kids to do in pairs because students are not yet so solid with where these do help that they will be able to feel confident that they can distinguish between things that they don’t know how to do with HoFs and things that the HoFs simply won’t do.-->  Some version of the dialogue might be helpful. --PG</li>
+                <li>
+                	GH Feedback 10/16/15: With Simply Scheme, sometimes students were unclear whether it was just the first time a number was encountered that should produce multiple copies of the word.<br />
+                	I offer up EXPAND(i 8 3 pancakes 4 breakfast) with output "i 8 3 3 3 3 3 3 3 3 pancakes pancakes pancakes 4 breakfast breakfast breakfast breakfast" for clarification. Shorter words than these would be better, but the idea is to show multiple numbers and a number-after-number example.
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="dialogue">
+			<div class="stagedir">
+				Alpha and Beta are considering the block <img src="/bjc-r/img/3-lists/increasing_block.png" alt="green predicate block: increasing?(list)" title="green predicate block: increasing?(list)" />, which returns <code>true</code> when the items of the list are in increasing order (equal neighbors are ok) and <code>false</code> otherwise. For example: <br />
+				<img src="/bjc-r/img/3-lists/increasing_true.png" alt="increasing?(list 1,4,7,10) is true" title="increasing?(list 1,4,7,10) is true" /> 
+				<img src="/bjc-r/img/3-lists/increasing_false.png" alt="increasing?(list 1,7,4,10) is false" title="increasing?(list 1,7,4,10) is false" />
+            </div>
+                    
+            <div class="todo">The kids are also trying to figure out what to do with the blocks.  I’d like us to solve that a bit better and give some varied and good examples. --PG <strong>Brian</strong>??  You are needed here.</div>
+            <div class="comment">Trim this down. --MF</div>
+            <div><span>Betty:</span> Let's develop our algorithm, you know, the plan what we want the code to do.</div>
+            <div><span>Alphie:</span> Ok. <em>(Pauses to think.)</em> Well, we need to compare each item to all the others, but we can't do that all at once, so we'll need to compare each one at a time...</div>
+            <div><span>Alphie:</span> We could compare item 1 to item 2 and check that item 1 is less, and then compare item 2 to item 3 and check if item 2 is less, and then compare item 3 to item 4 and check that item 3 is less, all the way to the end. And, we'll know it's the end when we reach item "length of" for the list!</div>
+            <div> ok, and if we get "false" even once...
+            <div> <em>(Interrupting)</em> Then we know it's not increasing!
+            <div><span>Alphie:</span> Yeah, that works... </div>
+              <div class="stagedir">They pause to think.</div>
+            <div><span>Alphie:</span> You're saying we don't care about the item number, just the item itself. So we could use a <code>for each</code> loop. For each item in the list, we compare it to... what? </div>
+            <div><span>Betty:</span> What if we make a variable that keeps track of the highest number so far? Then we can check each item against that number, then reset the variable to equal to current item.</div>
+            <div><span>Alphie:</span> Ok, here's what I have so far.</div>
+              <div class="stagedir"><a class="run" href="/bjc-r/prog/3-lists/U3Lab3Increasing.xml"> <img border="0" title="increasing script (with mistake)" alt="increasing script (with mistake)" src="/bjc-r/img/3-lists/increasing_wrongscript.png" /> </a></div>
+        </div>
+    
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>Alphie and Betty's script contains a mistake! For example, their script gives this result:<br />
+				<div class="sidenoteBig">The question mark at the end of <code>increasing?</code> is a convention for naming <a href="/bjc-r/cur/programming/1-introduction/5-block-types-calculations/4-predicates-logic.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">predicates</a> (blocks that report either true-or-false).</div>
+                <img border="0" title="increasing(1,7,4,10)=true" alt="increasing(1,7,4,10)=true" src="/bjc-r/img/3-lists/increasing_truemistake.png" /><br />
+                Click their script to open their project and fix their code.</li>
+            </ol>
+        </div>
+        
+        
+<div class="todo">
+        <h1>I uncommented this to see the backstory. --MF</h1>
+        <p>
+            Consider the following problem:
+        </p>
+        <div class="alert quoteGreen">
+            <p>
+                Write a predicate <code>increasing?</code> that takes a list of numbers as input, and outputs <code>true</code> if the numbers are in increasing order (equal neighbors are okay), or <code>false</code> otherwise.
+            </p>
+            <p><img class="indent" src="/bjc-r/img/hof/increasing-list-true-report.png" alt="increasing of (1 3 4 10) returning true">
+              <br />
+              <img class="indent" src="/bjc-r/img/hof/increasing-list-false-report.png" alt="increasing of (1 7 4 10) returning false">
+            </p>
+            <p>(The question mark at the end of the name is a convention for predicates — blocks that answer yes-or-no questions. &quot;Is this list increasing?&quot;)</p>
+        </div>
+
+        <p>
+            Because this is a predicate, it's tempting to try to make it use <code>keep</code>:
+        </p>
+        <img class= "indent" border="0" src="/bjc-r/img/list/hof/wannabe-increasing.png"
+        alt="report <empty? (keep items such that (<() < (???)>) from (list)"
+        title="report <empty? (keep items such that (<() < (???)>) from (list)"/>
+
+        <p>
+            But <code>map</code>, <code>keep</code>, and <code>combine</code> work when each item in a list
+            can be considered independently of the others.
+            In this problem we have to
+            consider each item <b>in relation to</b> the ones that have come before it:
+            "<i>Is this number at least as big as the ones we've already seen?</i>"
+
+        </p>
+        <p>
+            To do this, we need to write a loop.
+            The loop needs to go through the lists items, from left to right, and keep track of the last item that
+            it saw.
+            But, as with <code>map</code>, we don't need to keep track of
+            the specific number of where we are in the list (e.g., the third position, the first position, etc.)
+            Those index numbers have nothing to do with the problem we're trying to solve.
+            The solution is to use the <code>for each item</code> block, this way:
+        </p>
+
+        <img class="indent" border="0" src="/bjc-r/img/list/hof/increasing.png" alt="definition of INCREASING? block" title="definition of INCREASING? block"/>
+        <p>
+            Like the functions used as input to <code>map</code> and friends,
+            the script inside the C-shaped slot of <code>for each item</code>
+            interprets empty input slots (in the <code>&lt;</code> and <code>set</code> blocks)
+            as placeholders into which an item of the list will be entered.
+            <code>For each item</code> promises to go through the list starting with item <code>1</code> and continuing in sequence to the end of the list. We use a script variable <code>minimum</code> to remember the most recent item's value, which is the
+            minimum allowable value for the next item. If any item is smaller than that
+            remembered value, <code>increasing?</code> reports <code>false</code>.
+            If we make it to the end of the list without violating that requirement,
+            then <code>increasing?</code> reports <code>true</code>.
+        </p>
+        <p>
+            Note that the <code>for each item</code> block has the word &quot;item&quot;
+            in a round orange block. It's a variable, and you can drag it into the script
+            that goes inside the C-slot, instead of using an empty input to
+            represent the list item:
+        </p>
+        <img class="indent" src="/bjc-r/img/list/hof/increasing-item.png" alt="for each using item variable">
+
+
+
+        <p>You can work with the above script <a class="run" href="/bjc-r/prog/loop/increasing.xml">here</a>.</p>
+
+        <h2>Try these</h2>
+
+        <p class="step">
+            <b>Try this:</b>
+            Display a longish list using time instead of space on the screen
+            by <img class="inline" src="/bjc-r/img/blocks/say-fragment.png" alt="say">ing each item for two seconds.
+
+        </p>
+</div>
+ 
+        <div class="todo">
+            <ul>
+                <li>JK: I like the Take it further question, BUT the only solution I was able to come up with uses "add () to list" which falls under the list mutation stuff and has been avoided thus far in the unit. Is there another solution I'm missing? Or should we just get rid of that question and leave it for later?</li>
+                <li>BH: This was meant as a look ahead to recursion. Maybe we have to mark it &quot;tough stuff.&quot; You either write a helper (n) COPIES OF (word) or else you turn expand({number,word,more...}) into expand({word,number-1,word,more...})</li>
+            </ul>
+        </div>
+
+        <div class="takeItFurther">
+            <ol type="A">
+                <li>Write an <code>expand</code> reporter that takes a sentence as input, and reports a sentence that's the same except that each number in the input is replaced by that many copies of the following word:<br />
+                <img border="0" src="/bjc-r/img/3-lists/expand_output.png"
+                alt="she loves you 3 yeah -> she loves you yeah yeah yeah"
+                title="she loves you 3 yeah -> she loves you yeah yeah yeah"/></li>
+            </ol>
+        </div>
+
+      
+    </body>
+</html>

@@ -45,7 +45,6 @@ li > ol {  list-style-type: lower-alpha;}
   margin-bottom: 20px;
   padding: 10px;
   border: 10px solid red;
-  /*background-color: #FF0000;*/
   clear:both;
   background-color: #FFF;
   text-indent: 0em;
@@ -55,16 +54,16 @@ li > ol {  list-style-type: lower-alpha;}
 
 .commentBig {  width: 40%; }
 
-code {
-  /* color: #00FFFF; */
+code, var {
   font-family: courier; 
   font-size: 1.2em;
   padding: 2px;
 }
 
-/*.comment > code {
-  color: #606;
-}*/
+var {
+  font-style: normal;
+  color: #4B0064;
+}
 
 .classIndent {
   margin-left: 2em;
@@ -81,10 +80,27 @@ code {
 .todo:before {
   font-size: 18px;
   font-weight: bold;
-  content: "Reviewer Comments: ";
+  /**content: "Reviewer Comments: ";**/
 }
 
+
 /** Side Notes **/
+.attribRight { /* added by Mary Fries on 10/10/15 based on .sidenote */
+  font-size: .5em;
+  float: right;
+  margin-right: 20px;
+  margin-left: 1em;
+  margin-bottom: 20px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: auto; /* default */
+  width: 20%;
+  padding: 5px;
+  background-color: #FFF; /* #F3F0B3; */
+  clear:both;
+  text-indent: 0em;
+}
+	
 .sidenote { /* added by Mary Fries on 3/10/15 based on http://hartshorne.ca/2005/07/27/footnotes_v_sidenotes/ */
   font-size: .9em;
   float: right;
@@ -101,7 +117,7 @@ code {
   text-indent: 0em;
 }
 
-.sidenoteBig { /* added by Mary Fries on 5/19/15 based on above */
+.sidenoteBig { /* added by Mary Fries on 5/19/15 based on .sidenote */
   font-size: .9em;
   float: right;
   margin-right: 20px;
@@ -178,7 +194,7 @@ img.noshadow {
   margin-top: .5em;
 }
 
-.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
+.forYouToDo:before, .forYouToDoHeader, .dialogue:before, .takeItFurther:before, .takeNote:before, .endnote > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig), .sidenote > div, .sidenoteBig > div  { /* Shared Heading Formatting */
   font-size: 18px;
   font-weight: bold;
   line-height: 2.5em;
@@ -197,14 +213,14 @@ img.noshadow {
 
 .dialogue:before {content: "Thinking Out Loud";}
 
-.dialogue > div {
+.dialogue > div:not(.sidenote):not(.sidenoteBig):not(.comment):not(.commentBig):not(.todo) {
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 5em;
-  text-indent: -3em;
+  padding-left: 6em;
+  text-indent: -4em;
 }
 
-.dialogue > div.stagedir {
+.stagedir {
   padding-left: 0em;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -213,7 +229,11 @@ img.noshadow {
   text-align: center;
 }
 
-.dialogue > div > span {  font-weight: bold;}
+.dialogue > div > span {  
+  font-weight: bold; 
+  float: left;
+  width: 4em; 
+}
 
 .inline {
   padding-top: -5px;
@@ -222,7 +242,7 @@ img.noshadow {
 
 .takeItFurther {
   background-color: #e4cde3; 
-  width:90%;  
+  width: 90%;  
   margin-left: auto;
   margin-right: auto;
   }
@@ -276,7 +296,10 @@ div.newProject span.text {
 
 /* Other Random Things added by Mary NEEDS ATTENTION*/
 
-.block {height: 2em;}
+.block {
+  height: 2em; 
+  padding: 0px;
+}
 
 .bigBlock {height: 6%;}
 

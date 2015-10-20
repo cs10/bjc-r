@@ -8,7 +8,13 @@
 
     <body>
 		<h2>Script Variable Projects</h2>
-                <div class="todo">You could replace the below with one of these: <div class="newProject"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-MathTools" title="Start a New Project called U2L2-MathTools" /></div> (sizing is only off because it's in a reviewer comment). --MF</div>
+		<div class="todo">
+        	<ul>
+            	<li>You could replace the below with one of these: <div class="newProject"><span class="text">"U2L2-MathTools"</span><img src="/bjc-r/img/icons/new-project-called.png" alt="Start a New Project called U2L2-MathTools" title="Start a New Project called U2L2-MathTools" /></div> (sizing is only off because it's in a reviewer comment). --MF</li>
+                <li>GH Feedback 9/14/15: I fear that the functional programming examples will be lost without a lecture to accompany them, and I wonder whether it makes logical sense to do that at this point in the course. I love all of the higher-order function examples, but I would defer them to HOF-specific parts of the online course.</li>
+                <li>GH Feedback 10/8/15: The 1st sentence for Linguistic Research appears ungrammatical. Do you mean the block is to determine which letter occurs more often?</li>
+            </ul>
+        </div>
         
         <p> Open a new file. <img src="/bjc-r/img/icons/new-project-mini.png" alt="Create a new project" title="Create a new project" /> </p>
     <p><strong>You have a choice. </strong> Some of the problems below are about language or linguistics,  some are about mathematics, and some are about art. <strong>Choose any three </strong>that interest you and do them. </p>
@@ -20,7 +26,7 @@
                     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Tableau-I-Piet-Mondrian.png" width="300" alt="Tableau_I,_by_Piet_Mondriaan, from Wikimedia Commons"> &quot;Tableau 1&quot; by Piet Mondrian</p>
                     <p>Mondrian wasn't at all random in his choice of colors and locations, but even some random choices can be interesting. A <span class="snap">snap</span> script can produce designs like these. </p>
                     <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian.png" width="260"  alt="Mondrian-like art drawn with Snap"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Snap-Piet-Mondrian2.png" width="260"  alt="another Mondrian-like design drawn with Snap"></p>
-                    <div class="sidenoteBig">This isn't the actual Snap<em>!</em> program.  You could write custom blocks with these names, but they're a little verbose to use as real block names, especially that two-line one in the middle.  This algorithm is for you to read, not for a computer to read.</div>
+                    <div class="sidenote">This isn't the actual Snap<em>!</em> program.  You could write custom blocks with these names, but they're a little verbose to use as real block names, especially that two-line one in the middle.  This algorithm is for you to read, not for a computer to read.</div>
                     This algorithm  produced those designs:<br />
                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/mondrian-script.png" alt="Draw outer frame (400 x 300); Fill with some color; Repeat many times; Pick random location, Pick random height and width for a rectangle that, at that location, won't extend beyond frame; Draw rectangle boundary in thick black line; Fill rectangle with random color" title="Draw outer frame (400 x 300); Fill with some color; Repeat many times; Pick random location, Pick random height and width for a rectangle that, at that location, won't extend beyond frame; Draw rectangle boundary in thick black line; Fill rectangle with random color" />
                     <p>To keep your code clear, you may want to create separate blocks that specialize in boundary and fill and choosing locations and calculating size.</p>
@@ -57,7 +63,7 @@
                 </li>
                 <li><strong>Linguistic research:</strong> Build a block that can take a piece of text as input and which letter,  <strong>t</strong> or <strong>s</strong>, is used more often in that bit of text. Later, you will be able to generalize this and take a large block of text and figure out the frequency of each letter. <em>Letter frequency differs from language to language. That information has been used as one clue in decoding encrypted messages.</em></li>
     
-                <li><strong>A mathematical function: </strong>Create <a name="factorial" class="anchor"></a> a <code>factorial</code> block <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial.png" alt="n factorial"> (or <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial-symbol.png"  alt="n!">) that takes a positive integer <em>n</em> and reports the product of all whole numbers from 1 through <em>n</em>, in other words 1 &times; 2 &times; 3 &times; ... &times; (<em>n</em> - 1) &times; <em>n</em>. When the  input is 4, the output should be 24 (because 1 × 2 × 3 × 4 = 24). 
+                <li><strong>A mathematical function: </strong>Create<a name="factorial" class="anchor">&nbsp;</a>a <code>factorial</code> block <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial.png" alt="n factorial"> (or <img src="/bjc-r/img/2-conditionals-abstraction-testing/n-factorial-symbol.png"  alt="n!">) that takes a positive integer <em>n</em> and reports the product of all whole numbers from 1 through <em>n</em>, in other words 1 &times; 2 &times; 3 &times; ... &times; (<em>n</em> - 1) &times; <em>n</em>. When the  input is 4, the output should be 24 (because 1 × 2 × 3 × 4 = 24). 
                     <ol>
                         <li>Dividing 5! by 4!, the result should be 5 <img src="/bjc-r/img/2-conditionals-abstraction-testing/5-factorial-divided-by-4-factorial-with-result(5).png" alt="5-factorial-divided-by-4-factorial-with-result(5)"> because 5 factorial is really just 5 times 4 factorial. Using your block, check each of these computations&mdash;<img src="/bjc-r/img/2-conditionals-abstraction-testing/4-factorial-divided-by-3-factorial.png"  alt="4-factorial-divided-by-3-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/3-factorial-divided-by-2-factorial.png"  alt="3-factorial-divided-by-2-factorial">, <img src="/bjc-r/img/2-conditionals-abstraction-testing/2-factorial-divided-by-1-factorial.png"  alt="2-factorial-divided-by-1-factorial"> and <img src="/bjc-r/img/2-conditionals-abstraction-testing/1-factorial-divided-by-0-factorial.png"  alt="1-factorial-divided-by-0-factorial">&mdash;to see what it reports. One of these is inconsistent with the others. To fix the problem, we need to <em>define</em> 0! = 1. Edit your <code>n!</code> block to  report 1 if <em>n</em> = 0. Then fully test <code>n!</code> again to make sure it works as it should. </li>
                         <li><strong>Debugging: </strong>Obviously <img src="/bjc-r/img/2-conditionals-abstraction-testing/cookie-factorial-bug.png" alt="cookie-factorial-bug"> should not work. Check to see what does happen.  Then edit your block and find a way to use <img src="/bjc-r/img/2-conditionals-abstraction-testing/is-n-a-number.png" alt="is n a number"> to check that the input is a number and report some sensible result or message.</li>
@@ -80,7 +86,8 @@
       
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A">
-			<li>Here is a block and the picture  it makes.
+			<li>        <div class="sidenote">"Flat line ends" should be unchecked for this one.</div>
+Here is a block and the picture  it makes.
             	<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Albers-circles.png" width="212" alt="Block that makes nested colored circles, looking a bit like a tunnel"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnelpic-(steps-6)(color-0).png" width="165" alt="The picture of nested circles made by that block"></p>
                 <p>Edit it and give it inputs that let you produce pictures like these. You don't have to use script variables.</p>
                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnel-(steps-3)(color-0).png"  alt="command "> <img src="/bjc-r/img/2-conditionals-abstraction-testing/tunnelpic-(steps-3)(color-0).png" width="165"  alt="three embedded red circles"> </p>

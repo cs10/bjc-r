@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly --><script type="text/javascript"
+        src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Adding an input
+        </title>
+    </head>
+    <body>
+        <p>
+            You have created a block that draws a square,
+            but only a square in which each side is of length
+            <code>100</code> steps.
+            It would be better if you could specify how long you wanted
+            each side to be.
+        </p>
+        <p>
+            Edit the block to accept an <em>input</em>
+            (or<em> argument</em>),
+            which tells it the length of the square it has to draw:
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Right-click or control-click on the new block (either in the palette or in a script) and select <code>edit</code> to go back to the block editor.
+                </p>
+                <img  title="Editing the 'draw square' block" alt="Editing the 'draw square' block" src="/bjc-r/img/sys/edit-current-block.png" >
+
+            </li>
+
+            <li>
+                <p>
+                    In the <code>Block Editor</code>, hover your cursor over the words and plus signs (<b><code>+</code></b>)
+                    in the top block.  (This top block is called a "hat" block because of the curved top.
+                    Hat blocks can never be in the middle of a script, only at the top).
+
+                </p>
+                <p>
+                    Clicking on a word will let you change that word; clicking on a <b><code>+</code></b>
+                    will let you add something in that position.
+
+                    We want to add an input at the end of the block, so click on the <b><code>+</code></b>
+                    at the end.
+
+                </p>
+
+                <img  alt="draw square editor" src="/bjc-r/img/sys/draw-square-block-editor.png" >
+
+            </li>
+
+            <li>
+                <p>
+                    You should get the following dialog box.
+                </p>
+                <img title="Adding an argument to the 'draw square' block" alt="Adding an argument to the 'draw square' block"
+                src="/bjc-r/img/sys/add-argument-in-block-signature.png" >
+
+                <p>
+                    You have two choices about what you want to add or modify to the block definition:
+                </p>
+                <ol>
+                    <li>
+                        <code>Title text</code> (unselected in the picture above) will let you add a word or words to the block's title.
+                        For example, if you wanted to change the name of the block from <code>draw square</code> to <code>draw square picture</code> you'd click on 'Title text' and type the word "picture"
+                        into the text box.
+                    </li>
+                    <li>
+                        <code>Input name</code> (selected in the picture above) will let you add an <i>input</i>.
+                        This is the choice we want here, and will by default be selected when you open this dialog.
+
+                    </li>
+                </ol>
+                <p>
+                    We want to add an input named <code>size</code> to our block definition.  Type "size"
+                    in the input field and click <code>OK</code> (since <code>Input name</code>
+                    is selected already).
+                </p>
+            </li>
+
+            <li>
+                <p>
+                    Your block title has changed: there is now a variable named <code>size</code> 
+                    at the end of the title.
+
+                </p>
+                <img title="New variable in the 'draw square' block" alt="New variable in the 'draw square' block" src="/bjc-r/img/building-blocks/draw-square-size-unused-argument.png" >
+            </li>
+
+            <li>
+                <p>
+                    
+                    In order to use the <code>size</code> variable within the <code>draw square</code> block,
+
+                    drag the variable <code>size</code> down into the move block. Whenever you need a new copy of a variable,
+                    just drag another down.  (If you have extra copies
+                    you want to get rid of, you can drag the copy all the way to the palette
+                    at the left of the <span class="snap">snap</span> window.)
+                    <br /><br />
+                    <span class="snap">snap</span> will determine the value of the <code>size</code> variable
+                    automatically for you whenever you use the <code>draw square</code>
+                    block in a program.
+                </p>
+                <img  title="Adding a variable to the body" alt="Adding a variable to the body" src="/bjc-r/img/building-blocks/draw-square-size-pull-argument.gif">
+            </li>
+
+            <br />
+            <li>
+                <p>
+                    When you click <code>OK</code>, you'll see that the <code>draw square</code> block 
+                    in the scripting area
+                    now takes an argument. You can put different numbers in the blank and draw squares of different sizes.
+
+                </p>
+                <img border="0" title="Running the 'draw square' block with an argument" alt="Running the 'draw square' block with an argument" src="/bjc-r/img/prog/draw-square-block-with-arg-BYOB.gif" origsrc="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab04/Square/RunSquareWithArgument.gif">
+
+            </li>
+
+        </ol>
+    </body>
+</html>

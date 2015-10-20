@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Teacher Guide</title>
+	</head>
+
+	<body>
+		<h2>Programming Lab 4: Combining List Operations</h2>
+		<div class="todo">
+        	<ul>
+                <li>Need a good motivation for the list tools.</li>
+                <li>In a case like <code>lookup</code>, where you aren't sure what to use, think about the size of the output. Consider, "how do you know it's a map?" </li>
+                <li>Using index values that are non-monotonic might be clearer.</li>
+                <li>Distinguishing the purpose of <code>keep</code> vs. <code>lookup</code>.</li>
+            </ul>
+        </div>
+        <div class="todo">
+            <strong>Former purpose ramblings</strong>
+            <p>This lab does not introduce new ideas, but gives students practice applying MAP, KEEP, and COMBINE in several contexts, in order to master the use of these powerful tools and to learn to think in terms of what they can do.</p> 
+            <p>Lists of same-size lists can function as tables or matrices. Tic Tac Toe... Magic Squares gives students a game context in which to practice further their use of lists and list processing functions.</p> 
+        </div>
+        
+		<p>Anything that can be handled by creating and manipulating a list can also be done without lists, just by working with the individual elements and keeping track of that process. But list processing—especially list processing with  the higher order functions <code>map</code>, <code>keep</code>, and <code>combine</code> (and, later in this course, recursion)—is powerful. That is because it lets the programmer focus on the purpose and meaning of the program—what the program is intended to do—and not on tiny local details of how to do it, details that essentially amount to inventing from scratch a clumsy equivalent of lists and ways to work sequentially through them.</p>
+        <p>Becoming facile with list processing requires practice, and initially requires contexts in which the meaning of the lists and the purpose and meaning of the functions that process them are clear.  One subtlety of working with lists is that it requires thinking simultaneously about the list as a <em>single object</em> and, at the same time, recognizing that much of what one wants to do with the list involves processing some or all of the <em>elements</em> of the list. That is also part of the subtlety of the higher-order functions, which take an entire list as a single object and handle the individual elements of the list in various ways, as determined by the programmer. <em>Composing</em> higher order functions is yet more powerful, but also more challenging, because each one does so much that the programmer needs to picture large effects and the interactions of these large effects.</p>
+        <p>This lab gives students practice applying <code>map</code>, <code>keep</code>, and <code>combine</code>  in several contexts to build their facility with these powerful tools and to learn to think in terms of what they can do. It does not introduce new ideas, but focuses on mastery and application.</p>
+
+
+		
+
+		<h3>Pacing:</h3>
+		<div>
+			<ul>
+				<li>Page 1, Nesting Functions, may take 1-2 days.</li>
+                <li>The second page, Magic Squares, is optional.</li>
+			</ul>
+		</div>
+
+
+		<!--<h3>Prepare:</h3>
+		<div>
+			<ul>
+				<li></li>
+			</ul>
+		</div>-->
+
+
+		<h3>Students will:</h3>
+		<!--<div class="sidenoteBig">
+			<strong>Looking Ahead</strong>
+			<ul>
+				<li></li>
+			</ul>
+		</div>-->
+		<div>
+			<ul>
+				<li>Continue to refine their understanding of higher order functions.</li>
+                <li>Practice combining higher order functions to perform more complicated list manipulations.</li>
+			</ul>
+		</div> 
+			  
+		
+		<h3>As a Class:</h3>
+		<div>
+        	<ul>
+				<!--<li>
+                	<strong>Page 1: Nesting Functions.</strong>
+                    <ul>
+                        <li></li>
+                    </ul>
+            	</li>
+                <li>
+                    <strong>Page 2: When You Really Need to Loop.</strong>
+                    <ul>
+                        <li>
+                            Opener: Before students sign on, project <a href="" target="_blank">Increasing?</a>, ask students to predict what it does (discuss in small groups and/or as a class), and then ask and discuss each of the following questions one at a time:
+                            <div class="comment">It would be nice to follow each question with a sentence answer the question for the teacher. --MF</div>
+                            <ul>
+                                <li>Why won't <code>map</code> help you write the <code>increasing?</code> block?</li>
+                                <li>Why won't <code>keep</code>help you write the<code>increasing?</code> block?</li>
+                                <li>Why won't <code>combine with</code> help you write the <code>increasing?</code> block?</li>
+                            </ul>
+                        </li>
+                        
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                	<strong>Page 3: Tic Tac Toe.</strong>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            	</li>
+                <li>
+                	<strong>Magic Squares.</strong>
+                    <ul>
+                        <li></li>
+                    </ul>
+				</li> -->
+				<li>The entire Magic Squares page is optional and can be used for differentiation.</li>
+       	
+        	</ul>
+        </div>
+
+
+		<!--<h3>Assignments:</h3>
+		<div>
+        	<ul>
+                <li>
+                	Labs 1 and 2 includes mini-projects that students could spend additional time improving and turn in:
+                	<ul>
+                    	<li>Shopping List App</li>
+                    	<li>Contact  List App</li>
+                    </ul>
+                </li><li>
+                	Lab 4 includes mini-projects that students could spend additional time improving and turn in:
+                	<ul>
+                    	<li>Tic Tac Toe</li>
+                    	<li>Magic Squares (an optional, Take It Futher lab page)</li>
+                    </ul>
+                </li>
+        	</ul>
+        </div>
+
+			
+		<!--<h3>Look For:</h3>
+		<div>
+        	<ul>
+        		<li>...</li>
+        	</ul>
+        </div>
+
+			
+		<h3>Related Resources:</h3>
+		<div>
+        	<ul>
+        		<li>...</li>
+        	</ul>
+        </div>-->
+
+			
+        <!--<h3>Tips:</h3>
+        <div>
+            <ul>
+				<li>
+                	<strong>Page 1: Nesting Functions.</strong>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            	</li>
+                <li>
+                    <strong>Page 2: When You Really Need to Loop.</strong>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                	<strong>Page 3: Tic Tac Toe.</strong>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                    </ul>
+            	</li>
+                <li>
+                	<strong>Page 4: Magic Squares.</strong>
+                    <ul>
+                        <li></li>
+                    </ul>
+				</li>        	
+            </ul>
+        </div>-->
+
+			
+		<!--<h3>Solutions</h3>
+		<div><ul><li>...</li></ul></div>-->
+			
+			
+		<h3>Correlation with AP CS Principles Framework</h3>
+	<div class="apStandards">
+			<h4>Computational Thinking Practices:</h4>
+			<ul>
+                <li><strong>P2 Creating Computational Artifacts</strong> Create an artifact with a practical, personal, or societal intent.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Select appropriate techniques to develop a computational artifact.</li>
+                <li><strong>P2 Creating Computational Artifacts</strong> Use appropriate algorithmic and information management principles.</li>
+                <li><strong>P3 Abstracting</strong> Explain how data, information, or knowledge is represented for computational use.</li>
+                <li><strong>P3 Abstracting</strong> Explain how abstractions are used in computation or modeling.</li>
+                <li><strong>P3 Abstracting</strong> Identify abstractions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Evaluate a proposed solution to a problem.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Locate and correct errors.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Explain how an artifact functions.</li>
+                <li><strong>P4 Analyzing Problems and Artifacts</strong> Justify appropriateness and correctness of a solution, model, or artifact.</li>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in solving a computational problem.</li>
+                <li><strong>P6 Collaborating</strong> Collaborate with another student in producing an artifact.</li>
+                <li><strong>P6 Collaborating</strong> Share the workload by providing individual contributions to an overall collaborative effort.</li>
+                <li><strong>P6 Collaborating</strong> Foster a constructive, collaborative climate by resolving conflicts and facilitating the contributions of a partner or team member.</li>
+                <li><strong>P6 Collaborating</strong> Exchange knowledge and feedback with a partner or team member.</li>
+                <li><strong>P6 Collaborating</strong> Review and revise their work as needed to create a high-quality artifact.</li>
+			</ul>
+	  <h4>Essential Knowledge:</h4>
+		<ul>
+            <li><strong>EK2.1.1A</strong> Digital data is represented by abstractions at different levels.</li>
+            <li><strong>EK3.1.3E</strong> Interactivity with data is an aspect of communicating.</li>
+            <li><strong>EK3.2.1F</strong> Software tools, including spreadsheets and databases, help to efficiently organize and find trends in information.</li>
+            <li><strong>EK3.2.2H</strong> Analytical techniques to store, manage, transmit, and process data sets change as the size of data sets scale.</li>
+            <li><strong>EK4.1.1B</strong> Sequencing is the application of each step of an algorithm in the order in which the statements are given.</li>
+            <li><strong>EK5.1.3B</strong> Collaboration facilitates multiple perspectives in developing ideas for solving problems by programming.</li>
+            <li><strong>EK5.1.3F</strong> Effective communication between participants is required for successful collaboration when developing programs.</li>
+            <li><strong>EK5.2.1B</strong> Program instructions are executed sequentially.</li>
+            <li><strong>EK5.2.1C</strong> Program instructions may involve variables that are initialized and updated, read, and written.</li>
+            <li><strong>EK5.3.1I</strong> Strings and string operations, including concatenation and some form of substring, are common in many programs.</li>
+            <li><strong>EK5.3.1K</strong> Lists and list operations, such as add, remove, and search, are common in many programs.</li> 
+            <li><strong>EK5.3.1L</strong> Using lists and procedures as abstractions in programming can result in programs that are easier to develop and maintain.</li>
+            <li><strong>EK5.5.1H</strong> Computational methods may use lists and collections to solve problems.</li>
+            <li><strong>EK5.5.1I</strong> Lists and other collections can be treated as abstract data types (ADTs) in developing programs.</li>
+            <li><strong>EK7.3.1K</strong> People can have instant access to vast amounts of information online; accessing this information can enable the collection of both individual and aggregate data that can be used and collected.</li>
+	    </ul>
+	  </div>			
+
+
+	</body>
+</html>

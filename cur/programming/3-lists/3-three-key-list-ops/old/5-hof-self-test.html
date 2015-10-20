@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 3 Lab 3: Three Key List Operations</title>
+    </head> 
+
+	<body>
+    	<h2><code>Map</code>, <code>Keep</code>, and <code>Combine</code> Self Check</h2>
+   
+        <div class="todo">
+            <ul>
+                <li>JK: 5 questions. Too long? Any opinions out there?<ul><li>Pull a few out onto their block pages?? (like #4 onto MAP and #3 onto KEEP and #1 onto COMBINE; spliting #2 into a T/F on MAP, 2 items for KEEP and 3 for COMBINE; 5 goes in HOF (along with some 3 items from TIF problem on <a href="http://localhost/bjc-r/cur/programming/3-lists/2-list-operations/1-exploring-list-operations.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Exploring List Operations
+</a> too...) --MF</li></ul></li>
+                <li>BH: Also, by the way, why are we asking them to load these into Snap! at all?  Don't we want them to answer the questions out of their heads?</li>
+                <li>JK"s response: Yes, but in case they want to try them out, it's kind of a pain to enter these in. Does the instruction line (which probably no one will read) help?</li>
+                <li>BH Question 5: This has come up before, but I don't like examples of COMBINE that only work on lists of exactly length 2.  That gives a misleading picture of what combine is /for/.  Let's talk about this at the meeting?</li>
+                <li><strong>GH Comment:</strong> Check your answers? Check how messages get displayed after check answer?<ul><li>QUIZ NEEDS HELP --MF</li></ul></li>
+            </ul>
+        </div>
+   
+        <p>
+            Try to reason through these problems <em>without</em> making the blocks in <span class="snap">snap</span> But if you'd like them, clicking on the images below will open a project containing these variables.<br />
+            <a class="run" href="/bjc-r/prog/3-lists/U3Lab2Check.xml"> 
+                <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /> <br /> 
+                <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /> <br />
+                <img class="indent" src="/bjc-r/img/3-lists/check1capitals.png" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" /> 
+            </a>
+        </p>
+   
+        <!-- question 1-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares_mapkeepcombine"
+        hasinlinefeedback="true" maxchoices="8"
+        responseIdentifier="resp1" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use the list of squares: <br /> 
+                    <img class="indent" src="/bjc-r/img/3-lists/squares.png" alt="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" title="set (squares) to {1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225}" /><br />
+                    Which of these expressions will report a <strong>list</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c1.png" title="map (sqrt of()) over (squares)" alt="map (sqrt of()) over (squares)" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep items such that (()mod(2)=0) from (squares)" title="keep items such that (()mod(2)=0) from (squares)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)">
+                </div>
+                <div class="feedback">
+                    No, + reports a number, so in this case <code>combine with</code> will report a number. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that (letter (length of ()) of () = 1) from (squares)" title="keep items such that (letter (length of ()) of () = 1) from (squares)">
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map (()+()) over (squares)" title="map (()+()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with (join ()()) items of (squares)" title="combine with (join ()()) items of (squares)">
+                </div>
+                <div class="feedback">
+                    No. <code>join</code>(1,4) will report 14. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map ((0)-()) over (squares)" title="map ((0)-()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map (()-()) over (squares)" title="map (()-()) over (squares)">
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        <!-- question 2-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="squares"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp2" shuffle="true">
+            <div class="prompt">
+                <p>
+                    The expressions in this problem are the same as you saw in question 1.<br />
+                    Which of these statements are <strong>true</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c2.png" alt="keep items such that (()mod(2)=0) from (squares)" title="keep items such that (()mod(2)=0) from (squares)" /> reports a list with only even square numbers.
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c5.png" alt="map (()+()) over (squares)" title="map (()+()) over (squares)" /> report the same result.
+                </div>
+                <div class="feedback">
+                    No, <code>combine with</code> will report a number, whereas <code>map</code> will report a list.
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c4.png" alt="keep items such that ((letter (length of ()) of ())=1) from (squares)" title="keep items such that ((letter (length of ()) of ())=1) from (squares)" /> reports the list {1, 16, 100, 121, 144, 169, and 196}.
+                </div>
+                <div class="feedback">
+                    No, this doesn't mean "keep numbers in which the first<em></em> digit is 1"; it means "keep numbers in which <em>the last</em> digit is 1." 
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c3.png" alt="combine with (()+()) items of (squares)" title="combine with (()+()) items of (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c6.png" alt="combine with (join ()()) items of (squares)" title="combine with (join ()()) items of (squares)" /> report the same result.
+                </div>
+                <div class="feedback">
+                    No; adding two numbers isn't the same as stringing their digits together.
+                </div>
+            </div>
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2squares1c7.png" alt="map ((0)-()) over (squares)" title="map ((0)-()) over (squares)" /> and <img border="0" src="/bjc-r/img/3-lists/check2squares1c8.png" alt="map (()-()) over (squares)" title="map (()-()) over (squares)"> both report a list with negative values.
+                </div>
+                <div class="feedback">
+                    No. One of these lists is made up of 15 items that are all zero.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp2">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+        <!-- question 3-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="is_a_number"
+        hasinlinefeedback="true" maxchoices="3"
+        responseIdentifier="resp3" shuffle="true">
+            <div class="prompt">
+                <p>
+                    Use the list of words and numbers: <br />
+                    <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /><br />
+                    Which of these expressions produce the list with just the numbers: {5, 34, 2, 305, 61}?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc1.png" alt="map (is () a (number)?) over (words and numbers)" title="map (is () a (number)?) over (words and numbers)" />
+                </div>
+                <div class="feedback">
+                    No. The <code>Is a number?</code> block is a predicate, so <code>map</code> will report a list of Boolean (true/false) values, not a list of numbers.</div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2isaNumc2.png" alt="keep items such that (is () a (number)?) from (words and numbers)" title="keep items such that (is () a (number)?) from (words and numbers)" />
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp3">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+        <!-- question 4-->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="mapLetterVsItem"
+        hasinlinefeedback="true" maxchoices="5"
+        responseIdentifier="resp4" shuffle="true">
+            <div class="prompt">
+                <p>
+                    This question refers to these two lists:<br /> 
+                    <img class="indent" src="/bjc-r/img/3-lists/words_numbers.png" alt="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" title="set (words and numbers) to {rabbit, 5, benefit, is, 34, kite, 2, 305, the, 61}" /><br />
+                    <img class="indent" src="/bjc-r/img/3-lists/check1capitals.png" alt="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" title="set (capitals) to {{Augusta, Maine}, {Boise, Idaho}, {Columbia, South Carolina}, {Des Moines, Iowa}}" /><br />
+                    Which of these statements are <strong>true</strong>?<br />
+                    Choose <strong>all</strong> that apply.
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc1.png" alt="map (letter (1) of ()) over (words and numbers)" title="map (letter (1) of ()) over (words and numbers)" /> reports the list {r, 5, b, i, 3, k, 2, 3, t, 6}.
+                </div>
+                <div class="feedback">
+                    Correct.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc2.png" alt="map (item (1) of ()) over (words and numbers)" title="map (item (1) of ()) over (words and numbers)"> reports the list {rabbit}.
+                </div>
+                <div class="feedback">
+                    No. The blank space is expecting a <strong>list</strong> as its input, but <code>map</code> puts a single item from <code>words and numbers</code> into that slot.
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc3.png" alt="map (item (1) of ()) over (capitals)" title="map (item (1) of ()) over (capitals)"> reports the list {Augusta, Boise, Columbia, Des Moines}.
+                </div>
+                <div class="feedback">
+                    Correct. 
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc4.png" alt="map (letter (1) of ()) over (capitals)" title="map (letter (1) of ()) over (capitals)"> reports the list {A, B, C, D}.
+                </div>
+                <div class="feedback">
+                    No. You can find the first letter of a word, but not the first letter of a list.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img border="0" src="/bjc-r/img/3-lists/check2mapc5.png" alt="map (all but first of () over (capitals)" title="map (all but first of () over (capitals)"> reports the list {Maine, Idaho, South Carolina, Iowa}.
+                </div>
+                <div class="feedback">
+                    No. This is kind of a trick question. What gets reported is actually a list of lists. The output is: {{Maine}, {Idaho}, {South Carolina}, {Iowa}}. 
+                </div>
+            </div>
+            
+            <div class="responseDeclaration" identifier="resp4">
+                <div class="correctResponse" identifier="c1"></div>
+            </div>
+        </div>
+
+
+   </body>
+</html>

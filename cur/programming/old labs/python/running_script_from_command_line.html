@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Running a script from the Command Line</title>
+    </head>
+    <body>
+    	<p>
+    		In today's lab, you've seen how to run python from the command line (also known as a shell) via the interpreter; however, we can also write our code in a separate text file, which we can save and then run from the command line. This is how most people create python programs.  However, before we can start writing more Python, you'll need to learn a few shell commands.
+    	</p>
+    	<br />
+    	<h3>How files are organized on a computer:</h3>
+    	<p>
+    		As you probably already know, your python files, and any file for that matter, can be found within a particular folder (also know as a directory) on your computer in a structure similar to the one shown below:
+    	</p>
+    	<p>
+    		<img style="float:left padding-bottom: 5px" src="/bjc-r/img/python/file_system_image.jpg"/>
+    	</p>
+    	<br />
+    	<p style="clear:both" class="alert quoteBlue">
+    		To navigate to a particular python file we will need to make use of the following shell commands (whenever we say "enter a command" this means type the command and then press enter to execute it):
+    	</p>
+    	<ol>
+    		<li>
+    			<p>
+    				First, enter the command <code>ls</code> to view a list of all of the files and directories that are located in your current directory (if you're using windows the command is <code>dir</code> not <code>ls</code>).  If you see a <code>~</code> next to your user name (<code>alonzo</code> is the username below) then we are in our home directory.  To go directly to your home directory enter the command <code>cd</code>.  When your enter <code>ls</code> in your home directory you should see something similar to the following:
+    			</p>
+    			<p><pre><code>
+Alonzos-MacBook:~ alonzo$ ls
+Applications		Downloads	Pictures
+Library			Public		Music
+Desktop			Movies		Documents
+				</code></pre></p>
+			</li>
+			<li>
+				<p>
+					Next, move into the Documents directory by entering the command <code>cd Documents</code>.  This stands for change directory to the given directory name.  The following should appear (notice that the <code>~</code> has now been replaced by the directory name <code>Documents</code>):
+				</p>
+				<p><pre><code>
+Alonzos-MacBook:~ alonzo$ cd Documents
+Alonzos-MacBook:Documents alonzo$
+				</code></pre></p>
+				<br />
+				<p>
+					If we need to move back out of our directory we can enter the command <code>cd ..</code> Shown below is how to move out of our documents directory and then back into it:
+				</p>
+				<p><pre><code>
+Alonzos-MacBook:Documents alonzo$ cd ..
+Alonzos-MacBook:~ alonzo$ cd Documents
+Alonzos-MacBook:Documents alonzo$
+				</code></pre></p>
+			</li>
+			<li>
+				<p>
+					Finally, let's make a directory that will hold our python files.We can enter the command <code>mkdir PythonLab1</code> to create a directory called PythonLab1 as shown below. Now that we have made this new directory enter the command <code>cd PythonLab1</code> to go to the directory.
+				</p>
+				<p><pre><code>
+Alonzos-MacBook:Documents alonzo$ 
+Alonzos-MacBook:Documents alonzo$ mkdir PythonLab1
+Alonzos-MacBook:Documents alonzo$ cd PythonLab1
+Alonzos-MacBook:PythonLab1 alonzo$ 
+				</code></pre></p>
+				<p class="alert quoteGreen">
+					Now we have a place to put all of our python files! Continue to the next page to download the starter file for this lab.
+				</p>
+			</li>
+		</ol>
+    </body>
+</html>

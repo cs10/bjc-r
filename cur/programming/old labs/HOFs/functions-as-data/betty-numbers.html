@@ -1,0 +1,43 @@
+<html>
+   <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+      
+        <title>Betty Numbers</title>
+      
+   </head>
+   <body>
+        <p>
+            We'll call a number a betty number if each of its digits is at least as large as the digit before it. This means
+            that there are no digits that decrease in value as the number is read from left to right (so all single-digit numbers
+            are betty numbers). Write a predicate that determines whether any positive number is a betty number; you may use
+            any techniques you'ver learned in this class:  recursion, higher-order functions, iteration, etc.
+        </p>
+        
+        <p>
+            <img src="../../../../../img/hof/is-betty.png" alt="is num a betty number?"/>
+        </p>
+        
+        <p>
+            Some betty numbers: 14789, 45, 47899, 1122334, 3 <br/>
+            Some non-betty numbers: 12342, 9876, 152
+        </p>
+        
+        <p>
+            Next, write a block that returns a list containing all of the betty numbers in a given range.
+        </p>
+        
+        <p>
+            <img src="../../../../../img/hof/list-all-betty-numbers.png" alt="list all betty numbers between min and max"/>
+        </p>
+        
+        <p>
+            Wait! Doesn't this sound pretty familiar? Try solving this one with the help of the nice generalized block we built on the last page.
+        </p>
+        
+        <p>
+            The beauty of abstraction: build once, use over and over again! When we wrote the <code>list all numbers with property</code> block, we didn't know
+            that betty numbers existed! But since we generalized properly, we were able to use the block to solve a future problem.
+        </p>
+        
+   </body>
+</html>
