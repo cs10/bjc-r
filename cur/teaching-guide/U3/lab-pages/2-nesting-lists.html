@@ -66,7 +66,6 @@ Selecting information in the dataset involves only knowing where it appears. The
                                 <li>In what other situations might a list of lists be helpful?</li>
                             </ul>
                         </li>
-                        <li>The Contact List project is ambitious but carefully scaffolded. It's helpful for you to remember its ultimate goal, which is to introduce the idea of <strong>data abstraction</strong>, in which an abstract data type is defined by writing <em>constructor</em> and <em>selector</em> blocks that are the sole program interface to the underlying list structure. We start without data abstraction, so you see lots of <code>item 2 of</code> when a phone number is wanted. By the end of the project, there should be no more <code>item</code> calls in the user interface blocks.  Students will be inclined to resist data abstraction, because it makes the program longer. But the project uses a change in the underlying representation to convince them that it's much easier to maintain a large program if such changes affect only the constructor and selectors.</li>
                     </ul>
             	</li>
                 <li>
@@ -94,14 +93,7 @@ Selecting information in the dataset involves only knowing where it appears. The
                 </li>
                 <li><strong>Page 4: Improving Your Contact List App</strong>
                   <ul>
-                    <li>This is a longer page, and it's possible for students to lose the big picture among all the details. You should understand the following structure of the three green For You To Do boxes:
-                      <ul>
-                        <li>The first box breaks the app by making a change to its data structure. Don't let students get discouraged by this; it'll work out fine in the end. The moral of this first part is that programs can be <em>brittle</em> when any part of the program changes.</li>
-                        <li>The second box makes the program less brittle by formally defining a Contact <em>abstract data type.</em> Such a definition consists of one (occasionally more) <em>constructor</em> block, and several <em>selector</em> blocks. The former creates an instance of the data type; the latter pull out pieces from such an instance. Once the ADT is set up and is consistently used by the rest of the program, it's possible to change the internal representation without breaking anything other than the constructor and selectors. If students think this is too much work for the benefit, ask them to imagine a real-world program with thousands of blocks (procedures) and dozens of data types. Then imagine the situation in the first green box: You need to move the phone number from item 2 to item 3 of a contact. Without data abstraction, you'd have to scan through the entire program looking for <code>item 2 of</code> expressions, and for each one you find, you have to work out whether it is looking at a contact (in which case you should change the item number) or at something else represented by a list (in which case you shouldn't. With data abstraction, there are no <code>item</code> calls outside of the selectors; the rest of the program should keep working smoothly when the representation changes.</li>
-                        <li>The third block gives the payoff for this work. We now want two kinds of contacts, ones with the family name first (Eastern-style) and one with the family name last (Western-style). We make a major change to the constructors (two of them, now) and selectors, but the rest of the program still works, better than ever.</li>
-                        <li>There's a Take It Further that uses a library <code>sort</code> block (included in the base project framework) along with the &quot;sorted form&quot; name selector, to sort the contacts correctly, family name first, regardless of where the family name is in the &quot;display form&quot; name. It's not hard, because we provide the code fragment to do the actual sorting, and doing it may give students a sense of closure, with all the features they've invented put to use. The TIF also gives another example of a higher order function, because <code>sort</code> takes an ordering function as an input, but we don't mention that fact explicitly.</li>
-                      </ul>
-                    </li>
+                    <li>                    </li>
                   </ul>
                 </li>
                 <li>
@@ -151,16 +143,9 @@ Selecting information in the dataset involves only knowing where it appears. The
             	<li>
                 	<strong>Page 1: Contact List App.</strong>
                     <ul>
-                        <li>Encoruage students to make a prediction about what the Snap<em>!</em> scripts do <em>before</em> building  them in Snap<em>!</em></li>
-                        <li>
-                            Downloading and importing sprite costumes is easy, but there are a few steps to note:
-                            <ul>
-                                <li>First, right click to save the file to a location on your harddrive where you can easily find it again.</li>
-                                <li>In Snap<em>!</em>, add a new sprite with the desired name, and <em>with that sprite selected</em>, locate and drag the image file from the location where you saved it to the Snap<em>!</em> window.</li>
-                                <li>(An alternative to the second step is to select &quot;Import...&quot; from the File menu, then choose the image file in the file browser that appears.)</li>
-                            </ul>
-                        </li>
-                        <li><strong><em>Make sure students save their app before doing the finger exercises at the end of the page!</em></strong></li>
+                  
+                        <li>The Contact List project is ambitious but carefully scaffolded. It's helpful for you to remember its ultimate goal, which is to introduce the idea of <strong>data abstraction</strong>, in which an abstract data type is defined by writing <em>constructor</em> and <em>selector</em> blocks that are the sole program interface to the underlying list structure. We start without data abstraction, so you see lots of <code>item 2 of</code> when a phone number is wanted. By the end of the project, there should be no more <code>item</code> calls in the user interface blocks.  Students will be inclined to resist data abstraction, because it makes the program longer. But the project uses a change in the underlying representation to convince them that it's much easier to maintain a large program if such changes affect only the constructor and selectors.</li>
+                      <li><strong><em>Make sure students save their app before doing the finger exercises at the end of the page!</em></strong></li>
                     </ul>
             	</li>
             	<li>
@@ -177,16 +162,22 @@ Selecting information in the dataset involves only knowing where it appears. The
                         <li>"Abstract data type" sounds like a complicated thing, but programmers actually use them to simplify the logical structure of their code. It is reasonable to think of an abstract data type like a "template" for data&mdash;for example, if you had everyone in class fill out a form with their name, address, email, etc., that form would be like an abstract data type (except for being a real paper form&mdash;not an abstract digital artifact).</li>
                     </ul>
             	</li>
-            	<li><strong>Page 4: Contact List App, Part 2.</strong>
+            	<li><strong>Page 4: Improving Your Contact List App.</strong>
             	  <ul>
-            	    <li>This is a pretty long page. It's helpful for you to keep in mind its overall structure:
-            	      <ul>
-            	        <li>In the first green For You To Do box, students change the internal representation of a contact, and discover that this change breaks all the user interface procedures. This will feel like a step backward, so you might warn them and assure them that it'll all turn out better than ever by the end of the page.</li>
-            	        <li></li>
-          	          </ul>
+            	    <li>This is a longer page, and it's possible for students to lose the big picture among all the details. You should understand the following structure of the three green For You To Do boxes:
+                      <ul>
+                        <li>The first box breaks the app by making a change to its data structure. Don't let students get discouraged by this; it'll work out fine in the end. The moral of this first part is that programs can be <em>brittle</em> when any part of the program changes.</li>
+                        <li>The second box makes the program less brittle by formally defining a Contact <em>abstract data type.</em> 
+                          <ul>
+                            <li>Such a definition consists of one (occasionally more) <em>constructor</em> block, and several <em>selector</em> blocks. The former creates an instance of the data type; the latter pull out pieces from such an instance. Once the ADT is set up and is consistently used by the rest of the program, it's possible to change the internal representation without breaking anything other than the constructor and selectors. </li>
+                            <li>If students think this is too much work for the benefit, ask them to imagine a real-world program with thousands of blocks (procedures) and dozens of data types. Then imagine the situation in the first green box: You need to move the phone number from item 2 to item 3 of a contact. Without data abstraction, you'd have to scan through the entire program looking for <code>item 2 of</code> expressions, and for each one you find, you have to work out whether it is looking at a contact (in which case you should change the item number) or at something else represented by a list (in which case you shouldn't. With data abstraction, there are no <code>item</code> calls outside of the selectors; the rest of the program should keep working smoothly when the representation changes.</li>
+                          </ul>
+                        </li>
+                        <li>The third block gives the payoff for this work. We now want two kinds of contacts, ones with the family name first  and one with the given names first. We make a major change to the constructors (two of them, now) and selectors, but the rest of the program still works, better than ever.</li>
+                      </ul>
             	    </li>
            	      </ul>
-            	</li>
+           	  </li>
                 <li>
                 	<strong>Page 5: Lists Review and Self Check.</strong>
                     <ul>
