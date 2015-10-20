@@ -37,10 +37,6 @@
         <div>
             <ul>
 				<li>Page 1, Shopping List App, is a new page that was not part of this curriculum until October 2015. Teachers should review and, if time, also work though this page before their students. Feedback (via the blue button the lower right) is always appreciated. For a timely response, please use the BJC Piazza site.</li>
-				<li>The words &quot;item&quot; and &quot;element&quot; have the same meaning. We favor &quot;item&quot; because that's the name of the block that examines an item in a list. Try to develop the &quot;item&quot; habit, but it's not a big deal.</li>
-				<li>In Snap<em>!</em>, the first item of a list is item number 1, not number 0 as in some other languages. We think this is clearly advantageous for learners: &quot;the third item&quot; and &quot;item 3&quot; should refer to the same thing. Zero-origin list indexing is a leftover from low-level languages that do arithmetic on array indices. Don't make a fuss about this, either, but if a kid thinks zero-origin is &quot;right&quot; you can point out that ordinals (first, second, third) and cardinals (1, 2, 3) should match.</li>
-				<li>We are encouraging functional programming style, which in this case means favoring the list reporters over the list commands. Make sure that students understand, for example, that <code>all but first of</code> makes a new list; the original list given as its input is not modified.</li>
-				<li>One advantage of functional programming is that list mutation gives rise to the possibility of circular structures:<br /><img src="/bjc-r/img/3-lists/circular.png" width="391" height="74" alt="replace item (3) of (foo) with (foo)"><br />This won't come up in the curriculum, but some students will try it anyway.  It won't break Snap<em>!</em>, but encourage such students to play with circularity on their own time.</li>
             </ul>
         </div>
 
@@ -147,8 +143,17 @@
 		<h3>Tips:</h3>
 		<div>
         	<ul>
-                <li><div class="sidenote">Many of the <span class="snap">snap</span> projects linked from the student pages already have the tools imported.</div>Throughout this Unit, students will have to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> in order to access the blocks they need. This is required every time a student opens a new <span class="snap">snap</span> window. (Links to projects in the curriculum have been shared with the tools already imported.)</li>
-            	<li>
+                <li>
+                	<strong>Across Unit 3.</strong>
+                    <ul>
+                        <li><div class="sidenote">Many of the <span class="snap">snap</span> projects linked from the student pages already have the tools imported.</div>Throughout this Unit, students will have to <img class="inline" src="/bjc-r/img/icons/import-tools.png" alt="Import Tools" title="Import Tools" /> in order to access the blocks they need. This is required every time a student opens a new <span class="snap">snap</span> window. (Links to projects in the curriculum have been shared with the tools already imported.)</li>
+                        <li>The words &quot;item&quot; and &quot;element&quot; have the same meaning. We favor &quot;item&quot; because that's the name of the block that examines an item in a list. Try to develop the &quot;item&quot; habit, but it's not a big deal.</li>
+                        <li>In Snap<em>!</em>, the first item of a list is item number 1, not number 0 as in some other languages. We think this is clearly advantageous for learners: &quot;the third item&quot; and &quot;item 3&quot; should refer to the same thing. Zero-origin list indexing is a leftover from low-level languages that do arithmetic on array indices. Don't make a fuss about this, either, but if a kid thinks zero-origin is &quot;right&quot; you can point out that ordinals (first, second, third) and cardinals (1, 2, 3) should match.</li>
+                        <li>We are encouraging functional programming style, which in this case means favoring the list reporters over the list commands. Make sure that students understand, for example, that <code>all but first of</code> makes a new list; the original list given as its input is not modified.</li>
+                        <li>One advantage of functional programming is that list mutation gives rise to the possibility of circular structures:<br /><img src="/bjc-r/img/3-lists/circular.png" alt="replace item (3) of (foo) with (foo)" title="replace item (3) of (foo) with (foo)" /><br />This won't come up in the curriculum, but some students may try it anyway.  It won't break Snap<em>!</em>, but encourage such students to play with circularity on their own time.</li>
+					</ul>
+                </li>
+                <li>
                 	<strong>Page 1: Shopping List App.</strong>
                     <ul>
                         <li>If some students work through this page more quickly than others, encourage those students to do some of the Take it Further exercises and also to consider designing and making their own adaptations to their Shopping List App.</li>
