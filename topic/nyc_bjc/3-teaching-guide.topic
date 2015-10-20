@@ -10,7 +10,7 @@ h3: Purpose
 	raw-html: <p>The social implications topics in Unit 3 are <em>search</em> and <em>encryption</em> (part 1). In both cases, the readings from <em>Blown to Bits</em> describe the underlying technology and also raise questions about risks.  The BJC lab pages focus more on the latter.  In the case of searching, the main issues are about user profiling (for serving advertising and for tailoring search results) and about bias in results (profile-based or otherwise). For encryption, we do emphasize how revolutionary public key cryptography has been, but the main emphasis is on how the various social stakeholders view the question of strong encryption of user data.</p>
 
 h3: Pacing
-	raw-html:<p>The 2 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 3 can be distributed as works best for your class. Here are two possibilities: <ul><li>Work through the 4 programming labs in the first 2 weeks and then the social implications Labs 5 and 6 in the last 2 weeks as presented below.</li><li>Work through the 4 programming labs over all 4 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p><div class="todo">Could these also be done programming, implications, programming, implications (8, 10, 9, 11)? --MF<br />I don't believe any of the pacing numbers below.  Could someone look at the current labs and decide again? -bh</div>
+	raw-html:<p>The 3 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 3 can be distributed as works best for your class. Here are two possibilities: <ul><li>Work through the 4 programming labs in the first 3 weeks and then the social implications Labs 5 and 6 in the last 2 weeks as presented below.</li><li>Work through the 4 programming labs over all 5 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p>
 
 
 h3: Highlighting Computational Thinking
@@ -18,17 +18,17 @@ h3: Highlighting Computational Thinking
 
 heading: Week 7 (Programming Focus)
 	resource: Lab 1: Introduction to Lists [/bjc-r/cur/teaching-guide/U3/lab-pages/1-introduction-to-lists.html]
-	raw-html:<ul><li>3-5 days</li></ul>
+	raw-html:<ul><li>3-4 days</li></ul>
 
 heading: Week 8 (Programming Focus)
 	resource: Lab 2: Nesting Lists [/bjc-r/cur/teaching-guide/U3/lab-pages/2-nesting-lists.html]
-	raw-html:<ul><li>3-5 days</li></ul>
+	raw-html:<ul><li>4-6 days</li></ul>
 	resource: Lab 3: Three Key List Operations [/bjc-r/cur/teaching-guide/U3/lab-pages/3-three-key-list-operations.html]
 	raw-html:<ul><li>5-7 days (continue in Week 9)</li></ul>
 
 heading: Week 9 (Programming Focus)
 	resource: Lab 4: Combining List Operations [/bjc-r/cur/teaching-guide/U3/lab-pages/4-combining-list-operations.html]
-	raw-html:<ul><li>2-3 days</li></ul>
+	raw-html:<ul><li>3-4 days</li></ul>
 
 heading: Week 10 (Social Implications Focus)
 	resource: Lab 5: Search [/bjc-r/cur/teaching-guide/U3/lab-pages/5-search.html]
