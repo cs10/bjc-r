@@ -34,13 +34,28 @@
                 <li>When a player tries to move the sprite into a space, your program must check the list <var>current game</var> to see if that is a legal move. One way to do that is to create a block <img src="/bjc-r/img/3-lists/legal-move().png"  alt="legal move?"> to see if the cell number is still free (not already used in <var>current game</var>). If it is still free, the player's move—the list of (x or o) and cell that <code>current move</code>reports—must be added to <var>current game</var>. Otherwise, the program must say something like "that space is already used." For this, it will be useful to have a selector <img src="/bjc-r/img/3-lists/cell-number-from-move.png" alt="cell-number-from-move"> that takes a move (a list like <var>{x 5}</var>) as input and reports only the cell number (e.g., 5). To test every move in <var>current game</var> and see if it contains the most recent cell number, <code>legal move?</code> will use <img src="/bjc-r/img/3-lists/map-cell-number-from-move()-over-current-game-contains-current-move.png" alt="map-cell-number-from-move()-over-current-game-contains-current-move"></li>
             </ol>
         <li>Check to make sure this all works. Save your result.</li>
-        <li>The next step is to create a way to tell if the player's move has resulted in a win. You can begin that now, and will finish it later, after you learn more about how to use <code>map</code> works. 
+        </ol></div>
+        
+Your next step is to create a way to tell if a player's move has resulted in a win. You will need to experiment to find a way to do that.  Here are some suggestions.
+        <div class="forYouToDo">
+    <ol>
+        
+        <li> Each winning combination is a list of three cells. 
         	<ol>
-           	  <li>Each winning combination is a list of three cells. What triples <em>are</em> winning combinations? How many winning combinations are there? </li>
-                <li>Create a list of all possible winning combinations of cells. That is a list of 3-cell lists.</li>
+       	       <li>What triples <em>are</em> winning combinations?</li>
+               <li> How many winning combinations are there? </li>
+               <li>Create a reporter that outputs a list of all possible winning combinations of cells. It will look something like this:
+                <p><img src="/bjc-r/img/3-lists/TicTacToe wins.png" alt="TicTacToe wins"></p>
+               </li>
             </ol>
         </li>
-  </ol>
+        <li>Now reset your tic-tac-toe board so that the board is clear and the <var>Current game</var> list is empty, and play <em>one</em> game, <em>deliberately letting x win the game</em>. </li>
+        <li> Then experiment with these scripts and figure out what their outputs are telling you about the game you just played. 
+        	<ol>
+            	<li></li>
+            </ol>
+        </li>
+    </ol>
 </div>
 
 	</body>
