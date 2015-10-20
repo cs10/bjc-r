@@ -8,16 +8,16 @@
 
 	<body>
 		<h2>Programming Lab 3: Three Key List Operations</h2>
-		<p>Functions that can accept other functions as input are called <em>higher order functions</em>. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">In Lab 1</a>, students worked with the higher order function <code>for each</code> to access each item of a list. Now students focus on three higher order list operations: <code>map</code>, <code>keep</code>, and <code>combine</code>.</p>
+		<p>Functions that can accept other functions as input are called <em>higher order functions</em>. <a href="http://localhost/bjc-r/cur/programming/3-lists/1-introduction-to-lists/5-the-for-each-block.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">In Lab 1</a>, students worked with the higher order procedure <code>for each</code> to access each item of a list. Now students focus on three higher order list operations: <code>map</code>, <code>keep</code>, and <code>combine</code>.</p>
 		<p>
-            While <code>for each</code> is a command block that steps through each item in a list to use or make changes to the items, <code>combine</code> reports a single result, and <code>map</code> and <code>keep</code> both report new lists of data:
-            <ul>
-            <li><code>Map</code> <em>performs a function on each item of a list</em> and returns a modified list. That is, <code>map</code> takes a list as input and  reports a new list in which each element of the original list has been processed in some way, for example: doubled,  made plural,  replaced by something (like a selection from some other list), etc.</li>
+            While <code>for each</code> is a command block that steps through each item in a list to use or make changes to the items, <code>combine</code> reports a single result, and <code>map</code> and <code>keep</code> both report new lists:
+    <ul>
+            <li><code>Map</code> <em>calls a function on each item of a list</em> and returns a result list. That is, <code>map</code> takes a list as input and  reports a new list in which each element of the original list has been processed in some way, for example: doubled,  made plural,  replaced by something (such as a selection from some other list), etc.</li>
             <li><code>Keep</code> <em>filters a list</em> and returns a list of all items  that match a given requirement. That is, <code>keep</code> takes a list as input and reports a new list keeping only those items from the original list that match some criterion, for example: begins with a vowel, is even, is less than five characters long,  is a vegetable, etc.</li>
-            <li><code>Combine</code> <em>performs one operation between </em><em> all the items</em> of a list and returns a single result (e.g. a sum, product,  concatenated string, etc.). That is, <code>combine</code> takes a list and a binary (i.e., two-input) operation as input and reports the result of performing that binary operation between each of the items in the list. (Like addition, multiplication, and <code>join</code>, <code>combine</code> is <em>associative</em>; however, even non -associative binary operations can be used with <code>combine</code>, for example: subtraction would just alternately cancel itself with each list item.) </li>
+            <li><code>Combine</code> <em>performs one operation on </em><em> all the items</em> of a list and returns a single result (e.g. a sum, product,  concatenated string, etc.). That is, <code>combine</code> takes a list and a dyadic (i.e., two-input) operation as input and reports the result of repeatedly calling that dyadic operation on a result-so-far and one new list item. <code>Combine</code> should be used only with associative functions such as addition or multiplication. Non-associative functions don't give an error message, but their result depends on the order in which items are chosen from the list, so it's unhelpful.</li>
             </ul>
         </p>
-		<p>These three list processing operations give enormous power all by themselves.  In combination, they allow very sophisticated data processing. Students will apply these tools various context including an overarching theme of list of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
+		<p>Students will apply these tools various context including an overarching theme of lists of lists to manage and organize data in apps (shopping list, contact lists, tic tac toe, etc.).</p>
         
         <div class="todo">
             <p>
@@ -97,7 +97,7 @@
                 <li>
                 	<strong>Page 4: <code>Combine</code>.</strong>
                     <ul>
-                        <li>The constraints of the functional input for <code>combine</code> are straightforward (an associative operation with two blank input slots), but as they are different from <code>map</code> and <code>keep</code> (which require input functions and predicates, respectively, with one blank). You may wish to have a discussion to discuss the <code>combine</code> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
+                        <li>The constraints of the functional input for <code>combine</code> are straightforward (an associative operation with two blank input slots), but as they are different from <code>map</code> and <code>keep</code> (which require input functions and predicates, respectively, with one input). You may wish to have a discussion to discuss the <code>combine</code> input requirements and the issue of associativity, which is also addressed in the student lab pages.</li>
                     </ul>
                 </li>
         	</ul>
@@ -143,6 +143,7 @@
                 	<strong>Page 3: <code>Keep</code>.</strong>
                     <ul>
                         <li>Students develop a small database of first name, last name, age (in years), and height (in inches). Encourage students to keep the dataset small (4-6 records) to minimize time lost on data entry.</li>
+                        <li>You might also discuss whether it's ethical to put this data in a shared project.</li>
                     </ul>
             	</li>
                 <li>
