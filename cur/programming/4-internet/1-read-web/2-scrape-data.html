@@ -5,50 +5,66 @@
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
 		<title>Unit 4 Lab 1: Reading Web Pages</title>
     </head>
-<body>
-<h2>Scraping Data from Web Pages</h2>
-<p>The Internet is full of information that you can use in your own programs.  For example, imagine writing an 
-<img src="/bjc-r/img/4-internet/umbrella.png" alt="umbrella? predicate"> block that looks up the weather forecast for your location and tells you whether or not to carry an umbrella.
-<p>But weather forecast sites change the appearance of their pages from time to time, so we're going to start with a web site we control. We want a list of all the available libraries of Snap<em>!</em> blocks.
-
-<div class="takeNote">
-<p><strong>Sometimes you're lucky,</strong> and a URL points directly to a data file:</p>
-<img src="/bjc-r/img/4-internet/libraries-txt.png" alt="text from URL snap.berkeley.edu/snapsource/libraries/LIBRARIES"></div>
-<div class="forYouToDo" id="first">
-<p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
-    <ol>
-      <li>
-    The reported value above is a multi-line text string.  Just as you did for <em>words</em> and <em>sentences</em> in Unit 3, in this unit you'll often find it more convenient to have a list with one <em>line</em> per item.  In your scripting area you should see this script:<br />
+    <body>
+        <h2>Scraping Data from Web Pages</h2>
+        <p>The Internet is full of information that you can use in your own programs.  For example, imagine writing an 
+        <img src="/bjc-r/img/4-internet/umbrella.png" alt="umbrella? predicate"> block that looks up the weather forecast for your location and tells you whether or not to carry an umbrella.</p>
+        <p>But weather forecast sites change the appearance of their pages from time to time, so we're going to start with a web site we control. We want a list of all the available libraries of Snap<em>!</em> blocks.</p>
+        
+        <div class="takeNote">
+            <p><strong>Sometimes you're lucky,</strong> and a URL points directly to a data file:</p>
+            <img src="/bjc-r/img/4-internet/libraries-txt.png" alt="text from URL snap.berkeley.edu/snapsource/libraries/LIBRARIES">
+        </div>
+        
+        <div class="forYouToDo" id="first">
+            <p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
+            <ol>
+                <li>
+                    The reported value above is a multi-line text string.  Just as you did for <em>words</em> and <em>sentences</em> in Unit 3, in this unit you'll often find it more convenient to have a list with one <em>line</em> per item.  In your scripting area you should see this script:<br />
+                    <img src="/bjc-r/img/4-internet/libraries-txt-list.png" alt="split LIBRARIES by line"><br />
+                    <div class="sidenote"><img src="/bjc-r/img/4-internet/drag-out.gif" width="75%" alt="animation of dragging out resize corner"></div>
+                    Click on it, and pull out the bottom right corner of the stage watcher so that you can see the entire list.<br />
+                    
+                    <ul>
+                        <li>Compare this list with the result in the speech balloon above.  What do you notice?</li>
+                        <li>In the Snap<em>!</em> file menu, click on "Libraries..." and look at the submenu that appears.  Compare it with what's in the file.  Why do you think they're different?</li>
+                    </ul>
+                </li>
+                <li>Find the <code>split</code> block in the Operators palette, and experiment with the different options for the second input slot. Read the help screen (right-click on a <code>split</code> block and choose &quot;Help&quot;) if you need ideas.</li>
+            </ol>
+        </div>
+        
+        
+        <div class="takeNote"><strong>When you're <em>not</em> lucky,</strong> the information you want is buried in a mass of HTML code.  Extracting the information from the formatting is called <em>scraping</em> the web page.</div>
+        
+        
+        <div class="forYouToDo">
+            <ol start="3">
+                <li>In a new browser tab, visit the page <a href="http://snap.berkeley.edu/snapsource/libraries" target="new">http://snap.berkeley.edu/snapsource/libraries</a>.  How does it compare with the ...libraries/LIBRARIES one?</li>
+                <li>
+                    In your Snap<em>!</em> window, click on this script:<br />
+                    <img src="/bjc-r/img/4-internet/libraries-dir-list.png" alt="split libraries by line"><br />
+                    You're putting the result in a global variable only because there's a watcher for that variable on the stage, so it's easy to see the result.
+                </li>
+                <li>
+                    We'd like to extract the list of files from this web page.  As a first step, use a higher order function to select only the list items that contain file names, rather than header text.  You'll find this block helpful:<br />
+                    <img src="/bjc-r/img/4-internet/contains.png" alt="( ) contains ( ) ?">
+                </li>
+                <li>
+                    The <code>scrape</code> block in this project is an attempt to scrape just the file names from the <code>libraries</code> web page.  It almost works, but it has a couple of problems.
+                    <ul>
+                        <li>
+                            Read the code of <code>scrape</code> and make sure you understand how it works.  It uses helper blocks<br />
+                            <img src="/bjc-r/img/4-internet/substring-starting.png" alt="substring of ( ) starting ( )"><br />
+                            <img src="/bjc-r/img/4-internet/substring-upto.png" alt="substring of ( ) up to ( )"><br />
+                            Notice the narrow input slot in the second of those; it's meant to let you know that only a single character goes there, not a multi-character string.  Experiment with these blocks.
+                        </li>
+                        <li>Fix the bugs in <code>scrape</code> so that you get a complete list of files and nothing else.</li>
+                        <li>Try your <code>scrape</code> block on <a href="http://snap.berkeley.edu/snapsource/Costumes" target="new">snap.berkeley.edu/snapsource/Costumes</a> to make sure it can work on <em>any</em> file directory. (&quot;Directory&quot; is the technical term for what users call a &quot;folder&quot;: a collection of files.)<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /></li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
     
-      <img src="/bjc-r/img/4-internet/libraries-txt-list.png" alt="split LIBRARIES by line"><br />
-      <div class="sidenote">
-            <img src="/bjc-r/img/4-internet/drag-out.gif" width="75%" alt="animation of dragging out resize corner"></div>
-      Click on it, and pull out the bottom right corner of the stage watcher so that you can see the entire list.<br />
-
-      <ul><li>Compare this list with the result in the speech balloon above.  What do you notice?</li>
-      <li>In the Snap<em>!</em> file menu, click on "Libraries..." and look at the submenu that appears.  Compare it with what's in the file.  Why do you think they're different?</li></ul></li>
-      <li>Find the <code>split</code> block in the Operators palette, and experiment with the different options for the second input slot.
- Read the help screen (right-click on a <code>split</code> block and choose &quot;Help&quot;) if you need ideas.</li></ol></div>
-<div class="takeNote">
-<p> <strong>When you're <em>not</em> lucky,</strong> the information you want is buried in a mass of HTML code.  Extracting the information from the formatting is called <em>scraping</em> the web page.</p></div>
-<div class="forYouToDo"><ol start="3">
-<li>In a new browser tab, visit the page <a href="http://snap.berkeley.edu/snapsource/libraries" target="new">http://snap.berkeley.edu/snapsource/libraries</a>.  How does it compare with the ...libraries/LIBRARIES one?</li>
-<li>In your Snap<em>!</em> window, click on this script:<br />
-<img src="/bjc-r/img/4-internet/libraries-dir-list.png" alt="split libraries by line"><br />
-You're putting the result in a global variable only because there's a watcher for that variable on the stage, so it's easy to see the result.</li>
-<li>We'd like to extract the list of files from this web page.  As a first step, use a higher order function to select only the list items that contain file names, rather than header text.  You'll find this block helpful:<br />
-  <img src="/bjc-r/img/4-internet/contains.png" alt="( ) contains ( ) ?"></li>
-<li>The <code>scrape</code> block in this project is an attempt to scrape just the file names from the <code>libraries</code> web page.  It almost works, but it has a couple of problems.
-<ul><li>Read the code of <code>scrape</code> and make sure you understand how it works.  It uses helper blocks<br />
-<img src="/bjc-r/img/4-internet/substring-starting.png" alt="substring of ( ) starting ( )"><br />
-<img src="/bjc-r/img/4-internet/substring-upto.png" alt="substring of ( ) up to ( )"><br />
-Notice the narrow input slot in the second of those; it's meant to let you know that only a single character goes there, not a multi-character string.  Experiment with these blocks.</li>
-<li>Fix the bugs in <code>scrape</code> so that you get a complete list of files and nothing else.</li>
-<li>Try your <code>scrape</code> block on <a href="http://snap.berkeley.edu/snapsource/Costumes" target="new">snap.berkeley.edu/snapsource/Costumes</a> to make sure it can work on <em>any</em> file directory. (&quot;Directory&quot; is the technical term for what users call a &quot;folder&quot;: a collection of files.)<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /></li>
-</ul>
-</li>
-</ol>
-</div>
-
-</body>
+    </body>
 </html>
