@@ -3,22 +3,23 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 4 Lab 1: Reading Web Pages</title>
+		<title>Unit 4 Lab 1: Web Data and Communication Protocols</title>
     </head>
     <body>
         <h2>Scraping Data from Web Pages</h2>
-        <p>The Internet is full of information that you can use in your own programs.  For example, imagine writing an 
-        <img src="/bjc-r/img/4-internet/umbrella.png" alt="umbrella? predicate"> block that looks up the weather forecast for your location and tells you whether or not to carry an umbrella.</p>
-        <p>But weather forecast sites change the appearance of their pages from time to time, so we're going to start with a web site we control. We want a list of all the available libraries of Snap<em>!</em> blocks.</p>
-        
+        <div class="sidenote">Weather forecast sites change their pages from time to time, so we're going to start with a web site we control. We'll build these blocks in a weather app in Lab 2.</div>
+        <p>The Internet is full of information that you can use in your programs.  For example, you could write an 
+        <img src="/bjc-r/img/4-internet/umbrella.png" alt="umbrella? predicate" title="umbrella? predicate" /> block that looks up the weather forecast for your location and tells you whether or not to carry an umbrella or a block that reports the current temperature for a certain location:<br /><img class="indent" src="/bjc-r/img/4-internet/current-temp-62.png" alt="current temperature in (New York) reporting 62" title="current temperature in (New York) reporting 62" /></p>
+        <p> We want a list of all the available libraries of Snap<em>!</em> blocks.
+                
         <div class="takeNote">
             <p><strong>Sometimes you're lucky,</strong> and a URL points directly to a data file:</p>
             <img src="/bjc-r/img/4-internet/libraries-txt.png" alt="text from URL snap.berkeley.edu/snapsource/libraries/LIBRARIES">
         </div>
         
         <div class="forYouToDo" id="first">
-            <p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
             <ol>
+	            <li>If you don't already have it open, load your project "U4L1-Web" from the <a href="http://localhost/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/1-read-web.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">previous page</a>.</li>
                 <li>
                     The reported value above is a multi-line text string.  Just as you did for <em>words</em> and <em>sentences</em> in Unit 3, in this unit you'll often find it more convenient to have a list with one <em>line</em> per item.  In your scripting area you should see this script:<br />
                     <img src="/bjc-r/img/4-internet/libraries-txt-list.png" alt="split LIBRARIES by line"><br />

@@ -3,7 +3,7 @@
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
-		<title>Unit 4 Lab 1: Reading Web Pages</title>
+		<title>Unit 4 Lab 1: Web Data and Communication Protocols</title>
     </head>
 <body>
 <h2>The Network of Networks: IP</h2>
@@ -125,7 +125,7 @@ You don't have to know about all of these, but you should know the official name
 <div class="takeItFurther"> Discuss: Will people ever be able to build a computer inside a single atom?</div>
 <p>The 32-bit version of IP is called <strong>IP version 4 (IPv4)</strong>, and the 128-bit version is <strong>IPv6</strong>. A great example of the importance of abstraction is that different protocols can be used at each of the four levels of the Internet abstraction hierarchy, and both IPv4 and IPv6 are in use today.  Most traffic still uses IPv4, because in order to make an IPv6 connection, all the routers along the way must recognize IPv6.  Old routers are replaced all the time anyway, because newer ones are faster, so eventually every router on the Internet will use IPv6. The switch from IPv4 to IPv6 is just one example of the fact that protocols in the Internet hierarchy are changing all the time.</p>
 </div>
-<div class="takeItFurther"><ul><li>A more detailed explanation of the Internet protocol hierarchy is in <a href="/bjc-r/cur/programming/4-internet/1-read-web/B2B-Appendix.pdf" target="new">the Appendix</a> to <em>Blown to Bits</em>.</li>
+<div class="takeItFurther"><ul><li>A more detailed explanation of the Internet protocol hierarchy is in <a href="/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/B2B-Appendix.pdf" target="new">the Appendix</a> to <em>Blown to Bits</em>.</li>
 <li>We did say this was a simplified picture, so it wasn't exactly a lie when we said a web search would reveal your computer's Internet address. &#x263a; Most likely, the router in your home or school uses <strong>Network Address Translation (NAT)</strong>, a protocol that allows all the computers on a local network to share one IP address, as seen from outside the network. The router that creates the local network gives each computer a <em>local address</em>. For example, although the outside world thinks the computer at which I'm typing this has IP address 108.26.181.226, my computer itself thinks its address is 192.168.1.11. The 192.168 <strong>domain</strong> (a range of IP addresses) is reserved for local networks; no computer on the Internet &quot;really&quot; has an address in that range.  As a result of NAT and other complications added to solve efficiency or security problems, the job of the router is not really as simple as the end-to-end principle ideally suggests.</li></ul></div>
 </body>
 </html>

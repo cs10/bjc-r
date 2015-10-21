@@ -4,26 +4,28 @@ title: Unit 4: The Internet and Global Impact
 
 	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revision.</div>
 
-heading: Reading the Web
-	resource: Reading the Web [/bjc-r/cur/programming/4-internet/1-read-web/1-read-web.html]
-	resource: Scraping Data from Web Pages [/bjc-r/cur/programming/4-internet/1-read-web/2-scrape-data.html]
-	resource: The Network of Networks: IP [/bjc-r/cur/programming/4-internet/1-read-web/3-ip-routing.html]
-	resource: Reliable Transmission on Unreliable Networks: TCP [/bjc-r/cur/programming/4-internet/1-read-web/4-tcp.html]
-	resource: Names to Addresses: DNS [/bjc-r/cur/programming/4-internet/1-read-web/5-dns.html]
-	resource: Who's In Charge? [/bjc-r/cur/programming/4-internet/1-read-web/6-ietf.html]
-	resource: Internet Security [/bjc-r/cur/programming/4-internet/1-read-web/7-security.html]
+heading: Programming Lab 1: Web Data and Communication Protocols
+	resource: Reading the Web with Snap<em>!</em> [/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/1-read-web.html]
+	resource: Scraping Data from Web Pages [/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/2-scrape-data.html]
+	resource: The Network of Networks: IP [/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/3-ip-routing.html]
+	resource: Reliable Transmission on Unreliable Networks: TCP [/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/4-tcp.html]
+	
+heading: Programming Lab 2: Domain Name Systems and Internet Security
+	resource: Names to Addresses: DNS [/bjc-r/cur/programming/4-internet/2-DNS-security/1-dns.html]
+	resource: Who's In Charge? [/bjc-r/cur/programming/4-internet/2-DNS-security/2-ietf.html]
+	resource: Internet Security [/bjc-r/cur/programming/4-internet/2-DNS-security/3-security.html]
 
-heading: Weather App
-	resource: Getting Started [/bjc-r/cur/programming/4-internet/2-weather-app/1-read-web-google.html]
-	resource: Pulling Weather Data [/bjc-r/cur/programming/4-internet/2-weather-app/2-weather-grab.html]
-	resource: Building A Weather Report [/bjc-r/cur/programming/4-internet/2-weather-app/3-weather-report.html]
-	resource: Need An Umbrella? [/bjc-r/cur/programming/4-internet/2-weather-app/4-umbrella.html]
+heading: Programming Lab 3: Weather App
+	resource: Getting Started [/bjc-r/cur/programming/4-internet/3-weather-app/1-read-web-google.html]
+	resource: Pulling Weather Data [/bjc-r/cur/programming/4-internet/3-weather-app/2-weather-grab.html]
+	resource: Building A Weather Report [/bjc-r/cur/programming/4-internet/3-weather-app/3-weather-report.html]
+	resource: Need An Umbrella? [/bjc-r/cur/programming/4-internet/3-weather-app/4-umbrella.html]
 
-heading: GPS Forensics
-	resource: Introduction [/bjc-r/cur/programming/4-internet/n-gps-data/1-introgps.html]
-	resource: Visualizing Data [/bjc-r/cur/programming/4-internet/n-gps-data/2-visualizing.html]
-	resource: Clustering [/bjc-r/cur/programming/4-internet/n-gps-data/3-clustering.html]
-	resource: Drawing Conclusions [/bjc-r/cur/programming/4-internet/n-gps-data/4-conclusions.html] 
+heading: Programming Lab 4: GPS Forensics
+	resource: Introduction [/bjc-r/cur/programming/4-internet/4-gps-data/1-introgps.html]
+	resource: Visualizing Data [/bjc-r/cur/programming/4-internet/4-gps-data/2-visualizing.html]
+	resource: Clustering [/bjc-r/cur/programming/4-internet/4-gps-data/3-clustering.html]
+	resource: Drawing Conclusions [/bjc-r/cur/programming/4-internet/4-gps-data/4-conclusions.html] 
 	
 	raw-html: <div class="todo">The Spam Checking Lab has been commmented out for the 2015-2016 year. --MF</div>
 
@@ -37,13 +39,13 @@ heading: GPS Forensics
 	
  	raw-html: <hr />
 
-heading: Social Implications Lab 4: Censorship and Computing around the World
-	 resource: Rules for the Internet [/bjc-r/cur/programming/4-internet/4-censorship/rules.html]
-	 resource: Regulating the Internet [/bjc-r/cur/programming/4-internet/4-censorship/regulating-the-internet.html]
-	 resource: Censorship [/bjc-r/cur/programming/4-internet/4-censorship/censorship.html]
-	 resource: Computing around the World [/bjc-r/cur/programming/4-internet/4-censorship/computing-world.html]
+heading: Social Implications Lab 5: Censorship and Computing around the World
+	 resource: Rules for the Internet [/bjc-r/cur/programming/4-internet/5-censorship/rules.html]
+	 resource: Regulating the Internet [/bjc-r/cur/programming/4-internet/5-censorship/regulating-the-internet.html]
+	 resource: Censorship [/bjc-r/cur/programming/4-internet/5-censorship/censorship.html]
+	 resource: Computing around the World [/bjc-r/cur/programming/4-internet/5-censorship/computing-world.html]
 
-heading: Social Implications Lab 5: Innovating for Social Change
-	 resource: Identifying Issues [/bjc-r/cur/programming/4-internet/5-innovations/issues.html]
+heading: Social Implications Lab 6: Innovating for Social Change
+	 resource: Identifying Issues [/bjc-r/cur/programming/4-internet/6-innovations/issues.html]
 
 }
