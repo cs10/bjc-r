@@ -17,21 +17,23 @@ h3: Highlighting Computational Thinking
 	raw-html: <p></p>
 
 heading: Week 13 (Programming Focus)
-	resource: Lab 1: Reading the Web [/bjc-r/cur/teaching-guide/U3/lab-pages/1-reading-the-web.html]
+	resource: Lab 1: Web Data and Communication Protocols [/bjc-r/cur/teaching-guide/U4/lab-pages/1-web-data-communication-protocols.html]
+	raw-html:<ul><li>X-X days</li></ul>
+	resource: Lab 2: Domain Name Systems and Internet Security [/bjc-r/cur/teaching-guide/U4/lab-pages/2-DNS-security.html]
 	raw-html:<ul><li>X-X days</li></ul>
 
 heading: Week 14 (Programming Focus)
-	resource: Lab 2: Weather App [/bjc-r/cur/teaching-guide/U3/lab-pages/2-weather-app.html]
+	resource: Lab 3: Weather App [/bjc-r/cur/teaching-guide/U4/lab-pages/3-weather-app.html]
 	raw-html:<ul><li>X-X days</li></ul>
-	resource: Lab 3: GPS Forensics [/bjc-r/cur/teaching-guide/U3/lab-pages/3-gps-forensics.html]
+	resource: Lab 4: GPS Forensics [/bjc-r/cur/teaching-guide/U4/lab-pages/4-gps-forensics.html]
 	raw-html:<ul><li>X-X days</li></ul>
 
 heading: Week 15 (Social Implications Focus)
-	resource: Lab 4: Censorship and Computing around the World [/bjc-r/cur/teaching-guide/U3/lab-pages/4-censorship-and-computing.html]
+	resource: Lab 5: Censorship and Computing around the World [/bjc-r/cur/teaching-guide/U4/lab-pages/5-censorship-and-computing.html]
 	raw-html:<ul><li>X-X days</li></ul>
 
 heading: Week 16 (Social Implications Focus)
-	resource: Lab 5: Innovating for Social Change [/bjc-r/cur/teaching-guide/U3/lab-pages/5-innovating-social-change.html] 
+	resource: Lab 6: Innovating for Social Change [/bjc-r/cur/teaching-guide/U4/lab-pages/6-innovating-social-change.html] 
 	raw-html:<ul><li>X-X days</li></ul>
 	
 }
