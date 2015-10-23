@@ -14,37 +14,42 @@ All cell phones have some kind of Contacts list. In this lab, you will build a C
                 <li>Load <a class="run" href="/bjc-r/prog/3-lists/U3L2-ContactList.xml">this starter version</a> of the app.</li>
                 <li>Press  "Add Contact"  and read the script to understand how it works. Each new contact is  a list, so the list of contacts is a <em>list of lists.</em></li>
                 <li>Fix the <img src="/bjc-r/img/3-lists/get-phone.png" alt="get phone"> block so that it works similarly to <img src="/bjc-r/img/3-lists/get-name.png" alt="get name">.</li>
-    <li>Clear your contact list and add a few made-up people to make sure everything works.</li>
-                <li>Write a reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and  reports that person's phone number, or "not found" if the name is not in the contact list.  
-                  <ol type="a">
-        <Li>You will need a new block, <img src="/bjc-r/img/3-lists/string-contains.png" alt="&lt;string () contains ()&gt;">, which lets you find out whether one string (a contact's name) contains another (the name or part of a name that the user gave as input).</Li>
-        <Li>You will also need <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)">.</Li>
-        </ol>
+              <li>Clear your contact list and add a few made-up people to make sure everything works.</li>
+                <li>
+                	Write a reporter <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> that takes any part of a person's name as input, and  reports that person's phone number, or "not found" if the name is not in the contact list.  
+				  <ol type="a">
+					<li>You will need a new block, <img src="/bjc-r/img/3-lists/string-contains.png" alt="&lt;string () contains ()&gt;">, which lets you find out whether one string (a contact's name) contains another (the name or part of a name that the user gave as input).</li>
+					<li>You will also need <img src="/bjc-r/img/blocks/keep.png" alt="keep items such that &lt;  &gt; from (list)">.</li>
+				  </ol>
                 </li>
                 <li>When someone calls you, the phone company sends only the calling number to your phone, not the person's name. But if the number is in your contact list, your phone  figures out the name. So you'll also want a block<img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> that searches for a phone number and reports the contact's name.</li>
-     </ol>
- </div>
-<img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> Make sure everything works the way you want it to before going on.  Then save!
+		  </ol>
+	</div>
+
+        <img class="imageRight" src="/bjc-r/img/icons/save-now.png" alt="Now Is a Good Time to Save" title="Now Is a Good Time to Save" /> Make sure everything works the way you want it to before going on.  Then save!
                 
- <div class="forYouToDo">
-     <ol start="7">                       
-                <li>
-                  <div class="sidenote">In some cultures, the family name—the one you  use for alphabetizing—is written first. For example, in "Sun Yat-Sen" the family name is "Sun." So instead of asking for "first and middle name(s)" and for "last name" you might want to say "given name(s)" and "family name."</div> 
-                  Our starter version uses a single text string to hold a person's entire name. This is fine for displaying the name on the screen but makes it hard to  display a list of all  contacts <em>sorted by family name.</em> So we really want to keep the family name separate from the given name(s).
-                  <ol type="a">
-                   <li>Modify the <img src="/bjc-r/img/3-lists/get-name.png" alt="get name"> block so that it asks separately for given names and for family name, and reports a list of the two answers. Check to make sure that adding a new contact does what you expect.</li>
-                   <li>Write two reporters that take a contact as input and report the name as a text string, in two different orders:<br /><img src="/bjc-r/img/3-lists/name-display-result.png" alt="name (display form) --&gt; Abraham Lincoln"><br /><img src="/bjc-r/img/3-lists/name-sorting-result.png" alt="name (sorting form) --&gt; Lincoln, Abraham"><br />
-                     (Don't worry, yet, about how to handle family-name-first names. We'll get to that soon.)</li>
-                <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
-                   <li>Make sure your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work.</li>
+    <div class="forYouToDo">
+        <ol start="7">                       
+            <li>
+                <div class="sidenote">In some cultures, the family name—the one you  use for alphabetizing—is written first. For example, in "Sun Yat-Sen" the family name is "Sun." So instead of asking for "first and middle name(s)" and for "last name" you might want to say "given name(s)" and "family name."</div> 
+                Our starter version uses a single text string to hold a person's entire name. This is fine for displaying the name on the screen but makes it hard to  display a list of all  contacts <em>sorted by family name.</em> So we really want to keep the family name separate from the given name(s).
+                <ol type="a">
+                    <li>Modify the <img src="/bjc-r/img/3-lists/get-name.png" alt="get name"> block so that it asks separately for given names and for family name, and reports a list of the two answers. Check to make sure that adding a new contact does what you expect.</li>
+                  <div class="commentBig">Ack! I think this is confusing and that we should avoid doing things like this (or any other kind of pseudo Snap<em>!</em> code):<img src="/bjc-r/img/3-lists/name-display-result.png" alt="name (display form) --&gt; Abraham Lincoln"><br /><img src="/bjc-r/img/3-lists/name-sorting-result.png" alt="name (sorting form) --&gt; Lincoln, Abraham"><br />I actually don't know what this is intended to mean (or else I would change it myself). Why not put a contact in there and make this an example expression? The kids I met this week would probably be just as confused (or more) than I am. --MF</div>
+                    <li>Write two reporters that take a contact as input and report the name as a text string, in two different orders:<br /><img src="/bjc-r/img/3-lists/name-display-result.png" alt="name (display form) --&gt; Abraham Lincoln"><br /><img src="/bjc-r/img/3-lists/name-sorting-result.png" alt="name (sorting form) --&gt; Lincoln, Abraham"><br />
+                    (Don't worry, yet, about how to handle family-name-first names. We'll get to that soon.)</li>
+                    <img class="imageRight" src="/bjc-r/img/icons/save-mini.png" alt="Save Your Work" title="Save Your Work" />
+                    <li>Make sure your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work.</li>
                 </ol>
-       </li></ol>
-                You will soon make more improvements to this app, but first time out for some quick practice with lists of lists.
-        </div>
+            </li>
+        </ol>
+		You will soon make more improvements to this app, but first time out for some quick practice with lists of lists.
+    </div>
         
                 
 	<h3> More lists of lists</h3>
-		<p>
+		<div class="commentBig">Is this still needed? It's kinda weird to have it on the "Contact List App" page since it has nothing to do with "Contact List App." --MF</div>
+    <p>
 			Here are three lists of lists: one is a list of world capitals and their countries; one is a list of showtimes on the four screens of a movie theater; and one is a to-do list with categories:<br />
             <!--       <div class="sidenote">Lists of lists (i.e. arrays of arrays) are very powerful. If each inner list has the same number of items, you can think of a list of lists like a table of data (or a matrix).</div>  -->
             <a class="run" href="/bjc-r/prog/3-lists/U3Lab1ListsOfLists.xml">
@@ -56,7 +61,7 @@ All cell phones have some kind of Contacts list. In this lab, you will build a C
           
           
         <div class="forYouToDo">
-            <ol start="12">
+            <ol start="8">
                 <li>Load the project above by clicking on the picture.</li>
                 <li>Experiment with list operations like <code>length of</code> and <code>item () of {}</code> to learn how they treat lists of lists.</li>
                 <img class="imageRight" src="/bjc-r/img/icons/predict.png" alt="Predict What Will Happen" title="Predict What Will Happen" />
