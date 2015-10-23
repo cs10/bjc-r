@@ -1,0 +1,39 @@
+title: Teaching Guide for Unit 4: The Internet and Global Impact
+
+{
+
+h3: Purpose
+	raw-html: <p><strong>Programming Focus:</strong> Internet, TCP/IP, WHAT ELSE??</p>
+    raw-html: <p></p> 
+
+	raw-html: <p><strong>Social Implications Focus:</strong> Censorship, Encryption</p>
+	raw-html: <p></p>
+
+h3: Pacing
+	raw-html:<p><div class="todo">Copied from U3!!!</div>The 2 weeks of Programming Labs and 2 weeks of Social Implications Labs for Unit 3 can be distributed as works best for your class. Here are two possibilities: <ul><li>Work through the 4 programming labs in the first 2 weeks and then the social implications Labs 5 and 6 in the last 2 weeks as presented below.</li><li>Work through the 4 programming labs over all 4 weeks while concurrently working through the social implications labs (either on specific days of the week or as a part of each class across several days).</li></ul></p>
+
+
+h3: Highlighting Computational Thinking
+	raw-html: <p></p>
+
+heading: Week 13 (Programming Focus)
+	resource: Lab 1: Web Data and Communication Protocols [/bjc-r/cur/teaching-guide/U4/lab-pages/1-web-data-communication-protocols.html]
+	raw-html:<ul><li>X-X days</li></ul>
+	resource: Lab 2: Domain Name Systems and Internet Security [/bjc-r/cur/teaching-guide/U4/lab-pages/2-DNS-security.html]
+	raw-html:<ul><li>X-X days</li></ul>
+
+heading: Week 14 (Programming Focus)
+	resource: Lab 3: Weather App [/bjc-r/cur/teaching-guide/U4/lab-pages/3-weather-app.html]
+	raw-html:<ul><li>X-X days</li></ul>
+	resource: Lab 4: GPS Forensics [/bjc-r/cur/teaching-guide/U4/lab-pages/4-gps-forensics.html]
+	raw-html:<ul><li>X-X days</li></ul>
+
+heading: Week 15 (Social Implications Focus)
+	resource: Lab 5: Censorship and Computing around the World [/bjc-r/cur/teaching-guide/U4/lab-pages/5-censorship-and-computing.html]
+	raw-html:<ul><li>X-X days</li></ul>
+
+heading: Week 16 (Social Implications Focus)
+	resource: Lab 6: Innovating for Social Change [/bjc-r/cur/teaching-guide/U4/lab-pages/6-innovating-social-change.html] 
+	raw-html:<ul><li>X-X days</li></ul>
+	
+}

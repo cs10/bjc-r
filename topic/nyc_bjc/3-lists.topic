@@ -19,8 +19,6 @@ title: Unit 3: Lists
 // learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
 // learning-goal: Develop the techniques and functions to draw a game board.
 
-	raw-html: <div class="takeNote"><strong>Please note:</strong> This unit is actively undergoing revision.</div>
-
 	raw-html: <div class="todo"><ul><li>Use ideas from <a href="https://docs.google.com/document/d/1JCw-l41ihbD2CFf_fM-sFmJpsvKHhLYwB3nYApBpmrc/edit#heading=h.f5t1xb3qv9ev" target="_blank">Zeph Grunschlag in NY</a></li><li>Yet unused Former "Investigation": <a href="/bjc-r/cur/programming/3-lists/investigations/display-word.html">Display Word</a></li></ul></div>
 
 heading: Programming Lab 1: Introduction to Lists
@@ -49,7 +47,7 @@ heading: Programming Lab 4: Combining List Operations
 	//resource: Processing List Data [/bjc-r/cur/programming/3-lists/4-combining-list-ops/0-processing-data-lists.html]
 	resource: Nesting Functions [/bjc-r/cur/programming/3-lists/4-combining-list-ops/1-nesting-functions.html] 
 	//resource: When You Really Need to Loop [/bjc-r/cur/programming/3-lists/4-combining-list-ops/2-when-you-really-need-to-loop.html]
-	//resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
+	resource: Tic Tac Toe [/bjc-r/cur/programming/3-lists/4-combining-list-ops/3-tic-tac-toe.html]
 	resource: Magic Squares [/bjc-r/cur/programming/3-lists/4-combining-list-ops/4-magic-squares.html]
 	
  	raw-html: <hr />

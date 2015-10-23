@@ -10,10 +10,20 @@
     	<h2>Public Keys</h2>
     	
         <h3>Public Key Encryption</h3>
+		
+	 <div class="endnote"> The the methods so far all have a basic weakness:  the encryption method or key needs to be kept secret.  But keeping the key private is almost as hard as keeping the message private.  In 1976 Ron Rivest, Adi Shamir, and Len Adleman devised an ingenious method (now known as RSA) that allows a person to announce publicly how anyone can encode a message to him  so that only he is able to decipher it. The information, which is given away to everybody, is called the <em>public key</em>. The information which is needed for deciphering (the <em>private key</em>) is known only by the person for whom the message is intended.  
+ 
+If Bob wants to send Alice a secret message, he enciphers it with Alice's public key. Then no one else can decipher it, even knowing her public key. Only her private key can undo the encryption, and you <em>can't figure out</em> the private key from the public key.
+                	
+                </div>	
+		
+		
+		
+		
                 
         <div class="forYouToDo" id="first">
             <ol>
-                <li>Read "Secrecy Changes Forever" (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=196" target="_blank"><em>Blown to Bits</em> pages 178-181</a>).</li>
+                <li>It may seem incredible that Alice can make her encryption key public and still no one except her can decrypt her message.  The RSA method relies on some mathematics and on some limitations on the speed of current computers.  Read "Secrecy Changes Forever" (<a href="http://www.bitsbook.com/wp-content/uploads/2008/12/B2B_3.pdf#page=196" target="_blank"><em>Blown to Bits</em> pages 178-181</a>) to understand some of how this works.</li>
             </ol>
         </div>
         
@@ -24,7 +34,7 @@
         
         <div class="forYouToDo">
         	<ol start="2">
-            	<li>With a partner, discuss how this picture is different from the one on the previous page. Does this method work if Bob wants to send his credit card number to a business (instead of Alice)? Would you trust this method to work to send your own credit card number?</li>
+            	<li>With a partner, discuss how this picture is different from the one on the previous page.  Would you trust this method to work to send your own credit card number?</li>
             </ol>
         </div>
         

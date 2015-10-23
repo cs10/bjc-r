@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 4 Lab 1: Web Data and Communication Protocols</title>
+    </head>
+    <body>
+        <h2>Reading the Web with Snap<em>!</em></h2>
+        <div class="todo">I took a first pass at this, and make some light but not substantial changes. I do wonder if we might <strong>use a page with cleaner HTML than snap.berkeley.edu</strong>... --MF</div>
+	
+    <p>In this lab you're going to look behind the scenes at how the Web actually works.</p>
+        <div class="forYouToDo" id="first">
+            <ol>
+                <li>Load <a class="run" href="/bjc-r/prog/4-internet/http-block.xml">this project</a>.</li>
+                <li><img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" />Find the block <img src="/bjc-r/img/blocks/http.png" alt="http:// block"> in the Sensing palette, drag it into the scripting area, and click on it. What do you think the <code>http</code> block is reporting?</li>
+                <li>
+                	In another browser window, open the page <a href="http://snap.berkeley.edu" target="_blank">http://snap.berkeley.edu</a> for reference. The page starts with two pictures (the Snap<em>!</em> logo and a screenshot), then some text.<br />
+					<img src="/bjc-r/img/4-internet/s-b-e.png" width="50%" alt="snap.berkeley.edu as seen in browser"><img src="/bjc-r/img/4-internet/s-b-e-reported.png" width="50%" alt="html text reported by http block">
+                </li>
+				<div class="todo">
+                	This feels like a trick question. You sit and look through all this code you don't understand, but there isn't actually anything there to find. --MF<br />
+                    <ul>
+                        <li><img class="inline" src="/bjc-r/img/icons/talk-with-your-partner-mini.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> Do you see anything in the speech balloon (which shows just the beginning of what the <code>http</code> block reports) that you think corresponds to the actual page?</li>
+                    </ul>
+                </div>
+                <li>It may not look like there is anything in the speech balloon that corresponds to the actual page, but look at the text in the browser tab <em>above</em> the page.  What does it say? Can you find that text in what the <code>http</code> block reported?</li>
+            </ol>
+        </div>
+        
+        <div class="todo">Regarding the next paragraph, I know &lt;body&gt; is HTML code, but I think it's confusing to use the same formatting for HTML code as for Snap<em>!</em> code. --MF</div>
+		<p>
+        	Every web page has a <em>head</em> (that tells the browser how to format the page) and a <em>body</em> (that contains the actual information on the page). You'll see something more interesting if you skip over the head by looking for the text "&lt;body&gt;":<br />
+			<img src="/bjc-r/img/4-internet/s-b-e-body.png" width="100%" alt="substring of (http: ...) starting with &lt;body&gt;">
+		</p>
+		
+        <div class="forYouToDo">
+          <ol start="5">
+                <li>Find the two pictures and the beginning of the text that appear on the web page in this report from the <code>http</code> block.</li>
+            </ol>
+        </div>
+        
+           
+        <p>
+            The output of the <code>http</code> block is the code that creates the page. This web page notation, with things of the form:<br />
+            <center>&lt;tag&gt;A bunch of text&lt;/tag&gt;</center><br />
+            is a <em>special purpose programming language</em> (it's designed for a specific task) called HTML (HyperText Markup Language).
+        </p>
+        
+        
+        <div class="forYouToDo">
+            <ol start="6">
+                <li><div class="saveAs"><span class="text">"U4L4-Web"</span><img src="/bjc-r/img/icons/save-this-as.png" alt="save your work as U4L4-Web" title="save your work as U4L4-Web" /></div></li>
+                <li>Try the <code>http</code> block with a URL other than snap.berkeley.edu.</li>
+            </ol>
+        </div>
+        
+        <p> You very likely got an empty result back.  This is because of a security feature that disallows one web site (such as the Snap<em>!</em> server) from sending a request to another site.  Fortunately for us, it's not a very bulletproof attempt at security...</p>
+       
+        <div class="forYouToDo">
+            <ol start="8">
+                <li>Find the <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http://"> block and try it with your favorite web site.</li>
+                <li>Then look inside the block (right-click and choose "edit") to see how it works.</li>
+            </ol>
+        </div>
+        
+        <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
+            <ol type="A">
+                <p>You don't need Snap<em>!</em> to view the code behind a web page. You can "View Source" for any web page using your browser. You might be able to find it in a menu, or just use the keystroke command for your browser listed below:
+                    <center>
+                        <table border="1" summary="How to shortcut 'view source' in various browsers and OSes.">
+                            <caption>"View Source" Command:</caption>
+                            <tr>
+                                <th scope="col">&nbsp;</th>
+                                <th scope="col">Linux</th>
+                                <th scope="col">MacOS</th>
+                                <th scope="col">Windows</th>
+                            </tr>
+                            <tr>
+                                <th scope="row">Firefox</th>
+                                <td>&#x2303;U</td>
+                                <td>&#x2318;U</td>
+                                <td>&#x2303;U</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Chrome</th>
+                                <td>&nbsp;</td>
+                                <td>&#x2318;&#x2387;U</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Safari</th>
+                                <td>&nbsp;</td>
+                                <td>&#x2318;&#x2387;U</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">IE</th>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </table>
+                    </center>
+                </p>
+                <div class="todo">Compelte this table please... --MF</div>
+                <li>Look at the source code for a few different web pages and make a list of all the HTML formatting commands you can figure out. For example, what part of the  source for this page produced the table above? What code makes something <strong>bold</strong> or <em>italics</em>?</li>
+                <div class="todo">The source for some bjc.edc.org pages produces a reporter too wide to read (try U3L1p4 for example)... --MF</div>
+                
+            </ol>
+        </div>
+
+</body>
+</html>

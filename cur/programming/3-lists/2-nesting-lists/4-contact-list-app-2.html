@@ -44,9 +44,9 @@ You could fix the problem, but as we add more complexity to contacts&mdash;birth
                 
                 <div class="forYouToDo">
                   <ol start="8">
-                <li>Now you're going to address the name order problem. The overall plan is to have two different types of contact: Eastern-style (family name first) and Western-style (given names first). (These style names are slightly oversimplified; Hungary is an example of a European (Western) country in which family names come first. But they're close enough for computer science.) Each contact will be represented inside the program as a list whose first item is a <strong>type tag</strong>, either the word &quot;Eastern&quot; or the word &quot;Western.&quot; Write two new constructors:<br /><img src="/bjc-r/img/3-lists/Eastern-contact.png" alt="Eastern-style contact, name= () addr= () phone= ()"><br /><img src="/bjc-r/img/3-lists/Western-contact.png" alt="Western-style contact, name= () addr= (), phone= ()"><br />
+                <li>Now you're going to address the name order problem. The overall plan is to have two different types of contact: family-first and given-first.Each contact will be represented inside the program as a list whose first item is a <strong>type tag</strong>, either the word &quot;family-first&quot; or the word &quot;given-first.&quot; Write two new constructors:<br /><img src="/bjc-r/img/3-lists/family-first.png" alt="family-first contact, name= () addr= () phone= ()"><br /><img src="/bjc-r/img/3-lists/given-first.png" alt="given-first contact, name= () addr= (), phone= ()"><br />
                   Both of them should report a four-item list containing the type tag, the name, the address, and the phone number,</li>
-                <li>Decide how to present this choice in the user interface. You could have two buttons &quot;Add Eastern-style contact&quot; and &quot;Add Western-style contact&quot;; you could have a single button that asks the user to enter the type (maybe with examples) along with entering the name, address, and phone.</li>
+                <li>Decide how to present this choice in the user interface. You could have two buttons &quot;Add family-first contact&quot; and &quot;Add given-first contact&quot;; you could have a single button that asks the user to enter the type (maybe with examples) along with entering the name, address, and phone.</li>
                 <li>Next come the selectors. Write a new one called <code>contact type</code> that takes a contact as input, and that reports its type tag. The other easy steps are fixing the address and phone number selectors to use the new contact structure. Finally, the two name selectors must be enhanced to check the type tag:
                   <table width="82%" border="1">
                     <caption>
@@ -58,23 +58,23 @@ You could fix the problem, but as we add more complexity to contacts&mdash;birth
                       <th width="37%" scope="col">sorting form</th>
                     </tr>
                     <tr>
-                      <th scope="row">Eastern-style</th>
+                      <th scope="row">family-first</th>
                       <td>&nbsp;&nbsp;Sun Yat-Sen</td>
                       <td>&nbsp;&nbsp;Sun Yat-sen</td>
                     </tr>
                     <tr>
-                      <th scope="row">Western-style</th>
+                      <th scope="row">given-first</th>
                       <td>&nbsp;&nbsp;Abraham Lincoln</td>
                       <td>&nbsp;&nbsp;Lincoln, Abraham</td>
                     </tr>
                   </table>
-                  Note that there's no comma in the sorting form of an Eastern-style name; it's exactly the same as the display form.
+                  Note that there's no comma in the sorting form of a family-first name; it's exactly the same as the display form.
                 </li>
                 <li>Clear your contact list, add some contacts of both types, make sure the internal representation is what you expect, and then make sure that your <img src="/bjc-r/img/3-lists/phone-number-of.png" alt="phone number of ()"> and <img src="/bjc-r/img/3-lists/name-from-number.png" alt="name from number ()"> blocks still work, without changing them at all.</li>
 			</ol></div>
-            <div class="takeItFurther">
+<!--             <div class="takeItFurther">
             <ol type="A">
             <li>Put the sorting form of names to work by sorting your contact list. You've been given a <code>sort</code> block that takes a list as its first input, reporting a sorted version of the list. The second input to <code>sort</code> is a <em>comparison function</em> that takes two inputs, reporting <img src="/bjc-r/img/blocks/true.png" alt="true"> if one item comes before a second item. Here's how you'll use it in this project:<img src="/bjc-r/img/3-lists/sort-contacts.png" alt="sort (contact list) ordering with &lt;(name (sorting form) {}) &lt; (name (sorting form) {})&gt;"><br />The two list slots in the picture are supposed to stay empty.  Don't forget that <code>sort</code> is a reporter; you have to do something with the list it reports.</li>
-            </ol></div>
+            </ol></div>  -->
 </body>
 </html>

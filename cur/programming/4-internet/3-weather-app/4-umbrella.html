@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+		<title>Unit 4 Lab 3: Weather App</title>
+    </head>
+<body>
+<h2>Need An Umbrella?</h2>
+<p>Let's build the <img src="/bjc-r/img/4-internet/umbrella.png" alt="UMBRELLA? block"> block. It's a predicate that tells you if you should or shouldn't carry an umbrella.</p>
+
+<p> But wait, doesn't this block need an input? Nope: your IP address provides it!</p>
+
+<div class="forYouToDo" id="first">
+<ol>
+<li>Determine your computer's <a href="/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/3-ip-routing.html">IP address</a>.</li>
+<li>Edit the following URL, replacing the IP address with your own: <code>http://ipinfo.io/72.229.28.185</code>. What information does this give you?</li>
+<li>Use <span class=snap>snap</span> to retrieve the data from this web page.</li><div class="sidenote">Some of the information might have slight inaccuracies. IP addresses often give the location of an Internet service provider, usually from a nearby location.
+</div>
+</ol>
+</div>
+
+The amount of detailed information available from an IP address is pretty amazing (and a little scary), especially when you think about the other places that new information can be used.
+
+<img src="/bjc-r/img/4-internet/ioshot.png" width="50%" align="middle" alt="Screen shot of ipinfo.io">
+
+<p>By viewing the source HTML for the page, you can devise a plan for extracting the right information from it.</p>
+
+<div class=takeNote>
+Some web sites also have ways for users to obtain direct information instead of an HTML page. Read the details on <code>ipinfo.io</code>, and you'll find some really nice ways to directly extract the information you need. For example, <code>ipinfo.io/72.229.28.185/loc</code> returns just a latitude and longitude, instead of a full HTML page.
+</div>
+
+<div class="forYouToDo"><ol start="4">
+<li>Build the <img src="/bjc-r/img/4-internet/umbrella.png" alt="UMBRELLA? block"> block by using IP information as input to the National Weather Service. You'll need to figure out what information should make the block answer: <img src="/bjc-r/img/4-internet/umbrellatrue.png" alt="UMBRELLA? block returning true">. The <i>true</i> and <i>false</i> blocks are in the Operators panel.</li>
+</ol></div>
+
+<div class="takeItFurther">
+<ol type="A">
+<li>Change the <img src="/bjc-r/img/4-internet/umbrella.png" alt="UMBRELLA? block"> to a reporter that can return a wider variety of information, including outputs such as <i>tonight</i>, <i>tomorrow</i>, <i>it's complicated</i>, and <i>boots</i>. </li> </li><div class="sidenote"><img src="/bjc-r/img/4-internet/sunsettime2.png" alt="SUNSET TIME block with output">
+</div>
+<li>Build a <img src="/bjc-r/img/4-internet/sunsettime1.png" alt="SUNSET TIME block"> reporter that returns the sunset time at a given location; if no location is provided, use the current location.
+</ol></div>
+
+</body>
+</html>

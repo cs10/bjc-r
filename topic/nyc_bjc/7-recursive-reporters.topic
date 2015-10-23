@@ -14,6 +14,10 @@ title: Unit 7: Recursive and Higher-Order Functions
 //learning-goal: Practice planning and coding recursive reporters.
 //learning-goal: Implement higher order functions.
 
+	raw-html: <div class="sidenoteBig"><strong>"Managing List Data" content cut from U3 L1 TG:</strong> <p>The last page, Managing List Data, covers a variety of common and/or illustrative programming tasks related to lists (including swapping items, filtering for uniques, and sorting).</p><p>Students will:<ul><li>Explore several concepts related to list manipulation and sorting.</li></ul></p><p>As a class:<ul><li><strong>Page 4: Managing List Data.</strong><ul><li>Discussion: Several points in this lesson are worth a brief discussion. You might ask:<ul><li>What is the difference between creating a script to swap the values of two variables and creating a script that swaps a list item with the list item just after it?</li><li>When would you want your <code>swap with next</code> block to be a command and when would you want it to be a reporter?</li><li>What would be the list input to the <code>swap with next</code> block (variable or list) in the case of it being a command block or a reporter?</li><li>What is a selection sort?</li></ul></li></ul></li></ul></p><p>Tips:<ul><li><strong>Page 4: Managing List Data:</strong><ul><li>The Selection Sort Take It Further exercise is complicated. Have students who tackle this problem share any meaningful progress with the class.</li></ul></li></ul></p></div>
+heading: Cut from U3 L1
+	resource: Managing List Data [/bjc-r/cur/programming/7-recursive-reporters/fromU3-managing-list-data.html]
+
 heading: Lab 1: Introduction
 //	 resource: Getting Started (Al) [/bjc-r/cur/programming/7-recursive-reporters/1-gs/getting-started.html]
 	 resource: Getting Started [/bjc-r/cur/programming/7-recursive-reporters/1-gs/getting-started.html]

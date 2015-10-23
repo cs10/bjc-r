@@ -15,7 +15,7 @@
         <div class="todo">FROM:<a href="http://snap.berkeley.edu/snapsource/snap.html#present:Username=MrZG&ProjectName=U0301_ListsPrez">Zeph Grunschlag in NY</a>: "Your goal is to make a much more elegant version of the Tic Tac Toe board drawer that uses functions instead of duplicate blocks. Please notice link to "complicated" program. You don't need to re-drag all the blocks (see the link to a pre-written Snap! program). BONUS: If you can make your program especially short (script blocs + function blocks in total) I'll give you extra credit.
 "</div>
 
-<p>In Unit 2 [[link to 2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html]], you developed the beginnings of a board game. In this lab, you will extend that project to build an app that lets two players play Tic-Tac-Toe. Later, you'll be able to teach the machine to play, too. </p>
+<p><a href="/bjc-r/cur/programming/2-conditionals-abstraction-testing/3-building-more-complex-blocks/1-abstraction-developing-a-board-game.html">In Unit 2</a>, you developed the beginnings of a board game. In this lab, you will extend that project to build an app that lets two players play Tic-Tac-Toe. Later, you'll be able to teach the machine to play, too. </p>
 <p><img class="indent" src="/bjc-r/img/3-lists/TicTacToe-video.gif"  alt="Tic Tac Toe video"></p>
 
 <div class="forYouToDo">
@@ -25,14 +25,59 @@
 
     <li>Find your file containing the board game you created in Unit 2 and open it. </li>
         <li>If you have not already built the <code>move to tile (n)</code> and <code>mark tile (n)</code> blocks (in the Take It Further section), build them now.</li>
-        <li>Load [[link here]] X and O costumes (or create them yourself).  </li>
+        <li>Download <img src="/bjc-r/img/3-lists/TTT-x.png" alt="X"> and  <img src="/bjc-r/img/3-lists/TTT-o.png" alt="O"> costumes from this page (or create them yourself). </li>
         <li>Edit the project to make sure that each time the sprite is moved onto the board, it stamps its costume, then moves back to the outside and changes costume, as the example above shows.</li>
-        <li>The players can see which which cells on the board have been taken, but the program isn't keeping track of those cells. That causes at least two problems.</li>
+        <li>The players can see which which cells on the board have been taken, but the program isn't keeping track of those cells, so a player can move the sprite into a space that has already been taken.</li>
         	<ol>
-            	<li></li>
+            	<li>To keep track, you will need a variable <var>current game</var> in which to list each move of the game. At the start of the game, this list must be empty (set to the empty list).</li>
+                <li>Build a constructor <code>current move</code> that takes two inputs, the player (<strong>x</strong> or <strong>o</strong>) and the cell the player moved to (1 through 9), and reports the list of those two. It will be useful to have a reporter like <img src="/bjc-r/img/3-lists/player(costumeNumber).png"  alt="player(costume Number)"> that translates a costume number (1 or 2) into a player's symbol (<strong>x</strong> or <strong>o</strong>). </li>
+                <li>When a player tries to move the sprite into a space, your program must check the list <var>current game</var> to see if that is a legal move. One way to do that is to create a block <img src="/bjc-r/img/3-lists/legal-move().png"  alt="legal move?"> to see if the cell number is still free (not already used in <var>current game</var>). If it is still free, the player's move—the list of (<strong>x</strong> or <strong>o</strong>) and cell that <code>current move</code>reports—must be added to <var>current game</var>. Otherwise, the program must say something like "that space is already used." For this, it will be useful to have a selector <img src="/bjc-r/img/3-lists/cell-number-from-move.png" alt="cell-number-from-move"> that takes a move (a list like <var>{x 5}</var>) as input and reports only the cell number (e.g., 5). To test every move in <var>current game</var> and see if it contains the most recent cell number, <code>legal move?</code> will use <img src="/bjc-r/img/3-lists/map-cell-number-from-move()-over-current-game-contains-current-move.png" alt="map-cell-number-from-move()-over-current-game-contains-current-move"></li>
             </ol>
-        <li></li>
-  </ol>
+        <li>Check to make sure this all works. Save your result.</li>
+  </ol></div>
+        
+Your next step is to create a way to tell if a player's move has resulted in a win. You will need to experiment to find a way to do that.  Here are some suggestions.
+        <div class="forYouToDo">
+    <ol>
+        
+        <li> Each winning combination is a list of three cells. 
+        	<ol>
+       	       <li>What triples <em>are</em> winning combinations?</li>
+               <li> How many winning combinations are there? </li>
+               <li>Create a reporter that outputs a list of all possible winning combinations of cells. It will look something like this:
+                <p><img src="/bjc-r/img/3-lists/TicTacToe wins.png" alt="TicTacToe wins"></p>
+               </li>
+            </ol>
+        </li>
+        <li>Now reset your tic-tac-toe board so that the board is clear and the <var>Current game</var> list is empty, and play <em>one</em> game, <em>deliberately letting</em> <strong>x</strong> <em> win the game</em>. </li>
+        <li> In order to invent a script that checks your board for wins, first experiment with these scripts. In each case, figure out <em>what</em> those results tell you about the game you just played, and figure out <em>how</em> that script  generated those results.
+          <ol>
+<li><img src="/bjc-r/img/3-lists/item-1-of-current-game.png"  alt="item-1-of-current-game"></li>
+            	<li><img src="/bjc-r/img/3-lists/Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game.png" alt="Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game"></li>
+                <li><img src="/bjc-r/img/3-lists/map(item-2-of-())-over-Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game.png"  alt="map(item-2-of-())-over-Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game"></li>
+            	<li><img src="/bjc-r/img/3-lists/item-1-of-TicTacToe-wins.png" alt="item-1-of-TicTacToe-wins"></li>
+            	<li><img src="/bjc-r/img/3-lists/Keep-items-such-that(list(1-2-3))-contains(item-2-of())-from-Current-game.png" alt="Keep-items-such-that(list(1-2-3))-contains(item-2-of())-from-Current-game"></li>
+                <li><img src="/bjc-r/img/3-lists/Keep-items-such-that(item-1-of-TicTacToe-wins)-contains(item-2-of())-from-Current-game.png" alt="Keep-items-such-that(item-1-of-TicTacToe-wins)-contains(item-2-of())-from-Current-game"></li>
+            	<li><img src="/bjc-r/img/3-lists/Keep-items-such-that(item-1-of-TicTacToe-wins)-contains(item-2-of())-from-(Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game).png" width="663" height="111" alt="Keep-items-such-that(item-1-of-TicTacToe-wins)-contains(item-2-of())-from-(Keep-items-such-that(item-1-of-()-equals-x)-from-Current-game)"></li>
+            	<li>Build a line of code, similar to one of the above, that lists all of the moves that player <strong>o</strong> made.</li>
+                <li>Build a line of code, similar to one of the above, that lists all of the moves (player and position) in the left-hand column.</li>
+                <li>Build a line of code, similar to one of the above, that lists all of the moves that player <strong>o</strong> made <em>in the left-hand column</em>.</li>
+                <li>Build reporter blocks  <img src="/bjc-r/img/3-lists/player-x-locations(reporting-result(6-3-9-4)).png"  alt="player-x-locations(reporting-result(6-3-9-4))"> and <img src="/bjc-r/img/3-lists/player-o-locations(reporting-result(2-7-5)).png"  alt="player-o-locations(reporting-result(2-7-5))"> that report a list of cell numbers indicating the locations of each player.</li>
+            </ol>
+        </li>
+        <li>Create a predicate block <img src="/bjc-r/img/3-lists/do-(player-x-locations)-satisfy-(item-1-of-TicTacToe-wins).png" alt="do-(player-x-locations)-satisfy-(item-1-of-TicTacToe-wins)">that takes a player's locations and one winning combination and tells whether those locations contain all three elements of the winning combination. Its definition could start this way: 
+          <p><img src="/bjc-r/img/3-lists/predicate-block-titled(do-positions-satisfy-winningCombination).png"  alt="predicate-block-titled(do-positions-satisfy-winningCombination); report ((positions) contains (item 1 of (winningCombination)) AND ..."> </p>
+        </li>
+        <li>Test it for item 1 of <var>TicTacToe wins</var>, as shown in problem 4, and for at least two other item numbers.</li>
+        <li>What  does <img src="/bjc-r/img/3-lists/map-(do(player-x-locations)satisfy())-over(TicTacToe-wins).png"  alt="map-(do(player-x-locations)satisfy())-over(TicTacToe-wins)"> report?</li>
+        <li>Build a block that checks to see if a particular player wins after that player's move. </li>
+    </ol>
+</div>
+
+<div class="takeItFurther">
+    <ol type="A">
+        <li>There are many small improvements you could make. For one thing, the game should <em>notify</em> the players about a win. You can decide how. What else might you want to change or improve?</li>
+    </ol>
 </div>
 
 	</body>
