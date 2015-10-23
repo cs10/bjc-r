@@ -8,16 +8,25 @@
     
     <body>
         <h2>The Network of Networks: IP</h2>
-        <p>Many people talk as if &quot;the Internet&quot; and &quot;the World Wide Web&quot; were the same thing. But the Internet is much more general, and you're going to look at how it's organized.</p>
+        <div class="commentBig">I didn't know that! Wow. Can we say a bit more here about what the difference is? It's weird to just tease with the idea and not explain the difference... --MF</div>
+        <p>Many people talk as if "the Internet" and "the World Wide Web" were the same thing. But the Internet is much more general, and you're going to look at how it's organized.</p>
         <div class="forYouToDo" id="first">
-            <p>If you don't already have it open, load your project U4L1-web from the previous activity.</p>
             <ol>
-                <div class="sidenote"><strong>What's DuckDuckGo?</strong>  It's a search engine, like Google or Bing, except that it doesn't track your searches to sell you to advertisers as the others do.</div>
-                <li>
-                    Every computer (including smartphones, internet-enabled appliances, etc.) on the Internet has an address, analogous to your house's mailing address, called its <strong>IP address</strong>. (&quot;IP&quot; stands for <strong>Internet Protocol</strong>, which you'll learn more about later.) You can find out your computer's IP address by asking a search engine:<br />
-                    <a href="https://duckduckgo.com/?q=my+ip+address" target="new">https://duckduckgo.com/?q=my+ip+address</a><br />
-                    Write a Snap<em>!</em> reporter <img src="/bjc-r/img/4-internet/my-ip-addr.png" alt="my IP address"> in the Sensing palette that scrapes your IP address from the above link.  (If you're lucky, it'll come right after the phrase &quot;Your IP address is,&quot; but if you're unlucky there will be HTML tags to strip out. Use the View Source command to find out.) Remember to use <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http">.
+	            <li>If you don't already have it open, load your project "U4L1-Web" from the <a href="http://localhost/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/1-read-web.html?topic=nyc_bjc%2F4-internet.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">previous pages</a>.</li>
+            </ol>
+        </div>
+
+
+        <div class="sidenoteBig"><strong>"IP"</strong> stands for <strong>Internet Protocol</strong>, which you'll learn more about later.</div>
+        <p>Every computer on the Internet (including smartphones, internet-enabled appliances, etc.) has an address, like a postal or email address, called its <strong>IP address</strong>. You can find out your computer's IP address by asking a search engine:<br /><center><a href="https://duckduckgo.com/?q=my+ip+address" target="new">https://duckduckgo.com/?q=my+ip+address</a></center><br />
+        <div class="endnote"><strong>What's DuckDuckGo?</strong>  It's a search engine, like Google or Bing, except that it doesn't track your searches to sell you to advertisers as the others do. You learned about it in <a href="http://localhost/bjc-r/cur/programming/3-lists/5-search-internet/getting-started.html?topic=nyc_bjc%2F3-lists.topic&course=bjc4nyc_2015-2016.html&novideo&noassignment">Unit 3</a>.</div>
+
+
+        <div class="forYouToDo">
+            <ol start="2">
+                <li>Write a Snap<em>!</em> reporter <img src="/bjc-r/img/4-internet/my-ip-addr.png" alt="my IP address"> in the Sensing palette that scrapes your IP address from the above link.  (If you're lucky, it'll come right after the phrase "Your IP address is," but if you're unlucky there will be HTML tags to strip out. Use the View Source command to find out.) Remember to use <img src="/bjc-r/img/4-internet/proxied-http.png" alt="proxied http">.
                 </li>  
+                <div class="commentBig">How would a student answer these questions? Should this be in the TG with some support? I don't know how to answer these questions... --MF</div>
                 <li><strong>Discuss:</strong>  How does DuckDuckGo know your IP address?  Why do web sites <em>need</em> to know your IP address?</li>
             </ol>
         </div>
@@ -165,7 +174,7 @@ xe-7-1-2-0.BSTNMA-VFTTP-301.verizon-gni.net (130.81.171.69)  135.155 ms
         <div class="takeItFurther">
             <ul>
                 <li>A more detailed explanation of the Internet protocol hierarchy is in <a href="/bjc-r/cur/programming/4-internet/1-web-data-communication-protocols/B2B-Appendix.pdf" target="new">the Appendix</a> to <em>Blown to Bits</em>.</li>
-                <li>We did say this was a simplified picture, so it wasn't exactly a lie when we said a web search would reveal your computer's Internet address. &#x263a; Most likely, the router in your home or school uses <strong>Network Address Translation (NAT)</strong>, a protocol that allows all the computers on a local network to share one IP address, as seen from outside the network. The router that creates the local network gives each computer a <em>local address</em>. For example, although the outside world thinks the computer at which I'm typing this has IP address 108.26.181.226, my computer itself thinks its address is 192.168.1.11. The 192.168 <strong>domain</strong> (a range of IP addresses) is reserved for local networks; no computer on the Internet &quot;really&quot; has an address in that range.  As a result of NAT and other complications added to solve efficiency or security problems, the job of the router is not really as simple as the end-to-end principle ideally suggests.</li>
+                <li>We did say this was a simplified picture, so it wasn't exactly a lie when we said a web search would reveal your computer's Internet address. &#x263a; Most likely, the router in your home or school uses <strong>Network Address Translation (NAT)</strong>, a protocol that allows all the computers on a local network to share one IP address, as seen from outside the network. The router that creates the local network gives each computer a <em>local address</em>. For example, although the outside world thinks the computer at which I'm typing this has IP address 108.26.181.226, my computer itself thinks its address is 192.168.1.11. The 192.168 <strong>domain</strong> (a range of IP addresses) is reserved for local networks; no computer on the Internet "really" has an address in that range.  As a result of NAT and other complications added to solve efficiency or security problems, the job of the router is not really as simple as the end-to-end principle ideally suggests.</li>
             </ul>
         </div>
         
