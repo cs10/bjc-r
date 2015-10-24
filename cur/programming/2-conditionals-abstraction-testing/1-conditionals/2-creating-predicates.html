@@ -12,6 +12,8 @@
         <div class="todo">
         	<ul>
                 <li>GitHub Feedback: The report block was not introduced prior to this page. It needs some explanation. Also, in item #6 that piece of code reports a joined word. What receives it?</li>
+                <li>GH Feedback 10/21/15: put the n in side the mod bar when making the even? block</li>
+                <li>GH Feedback 10/20/15: numbering is wrong</li>
             </ul>
         </div>
         
@@ -20,9 +22,13 @@
                <li> <strong>Analyzing and debugging:</strong> These two blocks are quite similar.  Build them both. Which one works properly?
                  <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if(incorrect).png" alt="Block title Even Or Odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]; say (join n with text is odd) for 1 second">
         <img src="/bjc-r/img/2-conditionals-abstraction-testing/Block_even-or-odd_if-else(correct).png" alt="Block title even or odd, input n; if (n mod 2 equals 0) [say (join n with text is even) for 1 second]  else [say  (join n with text is odd) for 1 second]"></p>
-               </li></ol></div>
-<div class="sidenoteBig">There are different traditions on how to name predicates. Using question marks in the name, as in <code>even?</code>, is hard to miss, but some people don't like it because in English the question mark would go at the end: <code>is (n) even?</code>. And in any case English questions don't go after the word <code>if</code>. But don't try too hard to read or write any programming language as if it were English.</div>
-<p><em>You</em> know that the code <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-mod-2-equals-0.png" alt="if-n-mod-2-equals-0"> means &quot;if <em>n</em> is even,&quot; but programs are much easier to read and debug when the code  <em>says</em> what it means, something like <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-even-n.png"  alt="if even? n"> or  <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-is-even.png" alt="if n is even">. </p>
+               </li>
+			</ol>
+		</div>
+        
+		<div class="sidenoteBig">There are different traditions on how to name predicates. Using question marks in the name, as in <code>even?</code>, is hard to miss, but some people don't like it because in English the question mark would go at the end: <code>is (n) even?</code>. And in any case English questions don't go after the word <code>if</code>. But don't try too hard to read or write any programming language as if it were English.</div>
+		
+        <p><em>You</em> know that the code <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-mod-2-equals-0.png" alt="if-n-mod-2-equals-0"> means &quot;if <em>n</em> is even,&quot; but programs are much easier to read and debug when the code  <em>says</em> what it means, something like <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-even-n.png"  alt="if even? n"> or  <img src="/bjc-r/img/2-conditionals-abstraction-testing/if-n-is-even.png" alt="if n is even">. </p>
 
 		<div class="forYouToDo">
 			<ol start="2"> 
@@ -31,27 +37,28 @@
                     <div class="sidenote">The video also shows a different (optional) way to create an input name. You can, if you like, type the title text and input name at the same time, and <em>then</em> change the part that you want to use as an input name  by clicking on it and choosing &quot;input name.&quot; Use whatever way you like best.</div>
                     The video below shows <em>almost</em> all you need to do to define <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate">, but an important step is missing. 
                     <ul> 
-                    <li>You must define your block to be a <em>predicate</em> rather than a command. </li>
-                    <li>You must use  the <img src="/bjc-r/img/blocks/report.png" alt="report"> block to report the result.</li>
+                        <li>You must define your block to be a <em>predicate</em> rather than a command. </li>
+                        <li>You must use  the <img src="/bjc-r/img/blocks/report.png" alt="report"> block to report the result.</li>
                     </ul>
                     <li><strong>What else must be done before clicking OK?</strong></li>
-                    <li><strong>Test</strong> your new block to make sure it works properly.</li>
-                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/defining-even-predicate.gif" alt="defining a predicate block"></p>
-              </li>   
+                    <li>
+                        <strong>Test</strong> your new block to make sure it works properly.</li>
+                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/defining-even-predicate.gif" alt="defining a predicate block"></p>
+				</li>   
      <!--           <div class="takeNote">
     				You have just created a <strong>predicate</strong>, a block that reports only <code>true</code> or <code>false</code> depending on its input. <strong>Conditional</strong> blocks—<code>if-else</code>, <code>if</code>, <code>repeat until</code>, <code>wait until</code>—use the condition you are testing to control the behavior of your program. 
                     <p>&nbsp;</p>
                     Your <code>even? (n)</code> block reported the result of one of <span class="snap">snap</span>'s built-in predicates, <code>=</code>, which tested to see if <code>n mod 2</code> equaled 0.</div> 
                     -->
-              <li>Edit  <code>even or odd</code>  (from problem 1) to make it use the <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate"> block. As always, <em>test</em> the result to be sure it works.<br />
-<img src="/bjc-r/img/2-conditionals-abstraction-testing/run-these-steps.png" alt="if the number is even, run these steps, else run some other steps">
-              </li>
-               <li ><div class="sidenoteBig"><img src="/bjc-r/img/2-conditionals-abstraction-testing/use-a-or-an-with-(word).gif" alt="use-a-or-an-with-(word)"></div> 
-               To create realistic dialogues, a program  needs to adjust some words to fit others. For example, it needs to know  when to use <em><strong>a </strong></em> or <em><strong> an</strong></em>.  <strong><em>A</em></strong> peach or <strong><em>an</em></strong> peach?  <strong><em>A</em></strong> apple or <strong><em>an</em></strong> apple?
-               <p>&nbsp;</p>
-               <p>To decide, it  needs a predicate that tests the next letter to see if it's a vowel. It should work like this:</p>
-  <p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
-                 
+				<li>
+                	Edit  <code>even or odd</code>  (from problem 1) to make it use the <img src="/bjc-r/img/2-conditionals-abstraction-testing/even-predicate.png" alt="the even predicate"> block. As always, <em>test</em> the result to be sure it works.<br />
+					<img src="/bjc-r/img/2-conditionals-abstraction-testing/run-these-steps.png" alt="if the number is even, run these steps, else run some other steps">
+				</li>
+				<li>
+                    <div class="sidenoteBig"><img src="/bjc-r/img/2-conditionals-abstraction-testing/use-a-or-an-with-(word).gif" alt="use-a-or-an-with-(word)"></div> 
+                    <p>To create realistic dialogues, a program  needs to adjust some words to fit others. For example, it needs to know  when to use <em><strong>a </strong></em> or <em><strong> an</strong></em>.  <strong><em>A</em></strong> peach or <strong><em>an</em></strong> peach?  <strong><em>A</em></strong> apple or <strong><em>an</em></strong> apple?</p>
+					<p>To decide, it  needs a predicate that tests the next letter to see if it's a vowel. It should work like this:</p>
+					<p><img class="indent" src="/bjc-r/img/2-conditionals-abstraction-testing/newvowel.gif" alt="predicate vowel? tests e and reports true, and tests b and reports false"></p>
 					<p>There are many ways to create a block like this. Here's one way, started for you. </p>
 					<p>Complete it, test it, and save it for future use. </p>
 					<div class="sidenoteBig">
@@ -72,76 +79,76 @@
 			</ol>
 		</div>
         
-<p>The solution to problem 1 needs only one <code>if</code> statement, because all integers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>,  the number is not even, so it must be odd. </p>
-<p>&nbsp;</p>
-<p>The way problem 4 was approached above used several <code>if</code> statements because it tested for several conditions. </p>
+        <p>The solution to problem 1 needs only one <code>if</code> statement, because all integers are either even or odd. If the boolean expression (<code>n mod 2 = 0</code>) evaluates to <code>false</code>,  the number is not even, so it must be odd. </p>
+        <p>The way problem 4 was approached above used several <code>if</code> statements because it tested for several conditions. </p>
 		
-<div class="forYouToDo">
-<ol start="6">
-            <li> <img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
-                 <div class = "sidenote"> 
-                     <em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. That remainder is 0 only when <em>n</em> is a multiple of <em>m</em>. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 only when the sprite's <code>direction</code> is a multiple of 60&deg;. So, the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> is true only when  <code>direction</code> is 0, 60, 120, 180, 240, or 300. 
-                     <p>When the sprite's direction is not a multiple of 60, 
-                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0. For example, if the sprite's direction is 127&deg;, 
-                      <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.</p>
-                     <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7"> </p>
-                     <p>When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0. </p> 
-                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">.
-                     <p> In how many other directions will the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30-equals-0.png" alt="direction-mod-30-equals-0"> report <code>true</code>?
-                     </p>
-                </div>
-            <strong>Analyzing:</strong>  To solve the puzzles in problems 7 and 8, you will need to understand how the conditionals (<code>if-else</code> and <code>repeat until</code>) control each of these scripts. Construct  and analyze them with your pair programmer, experimenting with the conditions until you are sure you can explain exactly how this code does what it does.       
-              <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Script-with-two-repeat-untils-and-mod.png" alt="Script"></p>
-              <ol>
-              	<li>What if, instead of <code>direction mod <em>whatever</em> = 0</code>, you used <code>direction mod <em>whatever</em> = 20</code>? </li>
-              	<li>What if you tried <code>direction mod <em>23</em> = 0</code>?</li>
-              	<li>What if you use <code>turn 2 degrees</code> or <code>turn 7 degrees</code> instead of <code>turn 1</code>?</li>
-              </ol>
-            </li>
-            <li>Two puzzles: For each picture, create a script (or modify one you already have) that keeps the sprite moving in a circle drawing that picture.
-            </li>
-                 <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge5.png"  alt="Puzzle 5: thin green circumference with four thick red dots at north, west, south, and east, sprite facing counterclockwise">
+        <div class="forYouToDo">
+            <ol start="8">
+                <li> 
+                	<img class="imageRight" src="/bjc-r/img/icons/talk-with-your-partner.png" alt="Talk with Your Partner" title="Talk with Your Partner" /> 
+                    <div class="sidenote"> 
+                        <em><strong>n</strong></em> <code>mod</code> <em><strong>m</strong></em> reports the remainder when <em>n</em> is divided by <em>m</em>. That remainder is 0 only when <em>n</em> is a multiple of <em>m</em>. So, <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 0 only when the sprite's <code>direction</code> is a multiple of 60&deg;. So, the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-60-equals-0.png" alt="direction-mod-60-equals-0"> is true only when  <code>direction</code> is 0, 60, 120, 180, 240, or 300. 
+                        <p>
+                            When the sprite's direction is not a multiple of 60, 
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports a number other than 0. For example, if the sprite's direction is 127&deg;, 
+                            <img src="/bjc-r/img/2-conditionals-abstraction-testing/Direction-mod-60_203x28.png" alt="127 mod 60"> reports 7.
+                        </p>
+                        <p> <img src="/bjc-r/img/2-conditionals-abstraction-testing/227DividedBy60.png" alt="127 divided by 60 leaving a remainder of 7"></p>
+                        <p>When the sprite is pointing in direction 90, <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30.png" alt="direction mod 30"> reports 0. </p> 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/90-divided-by-30.png" alt="90 divided by 30 with zero remainder">
+                        <p> In how many other directions will the predicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/direction-mod-30-equals-0.png" alt="direction-mod-30-equals-0"> report <code>true</code>?</p>
+                    </div>
+					<strong>Analyzing:</strong>  To solve the puzzles in problems 7 and 8, you will need to understand how the conditionals (<code>if-else</code> and <code>repeat until</code>) control each of these scripts. Construct  and analyze them with your pair programmer, experimenting with the conditions until you are sure you can explain exactly how this code does what it does.       
+                    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/IfDirectionMod60=0PenSize5ElsePenSize1_325x256.png" alt="If Direction Mod 60 equals 0 set Pen Size to 5 Else Set Pen Size to 1"> <img src="/bjc-r/img/2-conditionals-abstraction-testing/Script-with-two-repeat-untils-and-mod.png" alt="Script"></p>
+                    <ol>
+                        <li>What if, instead of <code>direction mod <em>whatever</em> = 0</code>, you used <code>direction mod <em>whatever</em> = 20</code>? </li>
+                        <li>What if you tried <code>direction mod <em>23</em> = 0</code>?</li>
+                        <li>What if you use <code>turn 2 degrees</code> or <code>turn 7 degrees</code> instead of <code>turn 1</code>?</li>
+                    </ol>
+				</li>
+				<li>Two puzzles: For each picture, create a script (or modify one you already have) that keeps the sprite moving in a circle drawing that picture.</li>
+				<p>
+                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge5.png"  alt="Puzzle 5: thin green circumference with four thick red dots at north, west, south, and east, sprite facing counterclockwise">
                     <img src="/bjc-r/img/2-conditionals-abstraction-testing/Challenge6.png" alt="Puzzle 6: thin blue circumference with two very thick red dots in southeast at roughly four-o'clock and five-o'clock positions, sprite circling clockwise">
-                 </p>
-            <li>And try to create a script that has this behavior.
-            </li>
-    <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ClockAnimation.gif" alt="Clock animation: draws circle with dots for each number and says &quot;another hour has passed&quot;"></p>
-  </ol>
-    </div>
+				</p>
+				<li>And try to create a script that has this behavior.</li>
+				<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/ClockAnimation.gif" alt="Clock animation: draws circle with dots for each number and says &quot;another hour has passed&quot;"></p>
+			</ol>
+		</div>
         
         <div class="takeItFurther"><a name="further" class="anchor">&nbsp;</a>
             <ol type="A"> 
                 <li>Problems 7 and 8 can be solved with  conditionals or without. Whichever way you solved it, figure out how to solve it the other way.</li>
                 <li><strong>Challenge: </strong> In problem 8, the sprite always says "Another hour has passed." You can do better than that: Make it say <em>what</em> time it has just reached, like this.</li>
 				<p><img src="/bjc-r/img/2-conditionals-abstraction-testing/clock.gif" alt="animated clock that says the hour"></p></ol>
-               <strong>Take it <em>even further</em>!</strong>
+				<strong>Take it <em>even further</em>!</strong>
                 <ol type="A" start="3">
                 <div class="takeNote">
                 	<p><strong>Data types: </strong> <span class="snap">snap</span> lets you manipulate a variety of <strong>data types</strong>. You have already used blocks like <code>letter (1) of (world)</code> to manipulate <strong>strings</strong> of characters such as &quot;New York&quot; or  &quot;Another hour has passed&quot;. You have also manipulated <strong>numbers</strong>.</p>
                     <p> The next two  problems give you a first taste of a  new data type, <strong>lists</strong>, and show how useful lists can be. In Unit 3, you will study lists in depth.</p>
                 </div>
-                <li> Instead of using many <code>if</code> statements in <code>vowel?</code>, you can make a list of vowels and then test to see if a particular letter is in that list.  <span class="snap">snap</span> makes that a snap! 
-                  <ol>
-                    <li>Construct <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">, click on it, and see what it does.</li>
-                    <div class="endnote">The <img src="/bjc-r/img/2-conditionals-abstraction-testing/just the list [a e i o u].png" alt="just the list a e i o u"> that you see when you click on <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">  is an artist's way of picturing a list inside the computer. The image numbers each item of the list and tells you how long the list is. The scroll bar lets you see list elements that aren't shown in the small picture.</div>
-                    <li>Experiment with these blocks to see what they do.
-                    <div class="endnote"> To save work, just duplicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> a few times to use in each experiment.</div>
-                   
-	                <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> 
-                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains m 313 × 33 pixels.png" alt="list a e i o u contains m"> 
-                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains e 310 × 33 pixels.png" alt="list a e i o u contains e">
-                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-of-vowels-contains-randomly-picked-letter-of-pencil_666x39.png" alt="list of vowels contains randomly picked letter of pencil">
-                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/item-pick-random-1-to-7-of-list-I-you-he-she-etc_605x33.png" alt="item pick random element from list of I you he she it we they"></p></li>
-                    <li><strong>Challenge:</strong> Redefine <code>vowel?</code> using <code>list</code> and <code>contains</code>.</li>
+                <li> 
+                	Instead of using many <code>if</code> statements in <code>vowel?</code>, you can make a list of vowels and then test to see if a particular letter is in that list.  <span class="snap">snap</span> makes that a snap! 
+                    <ol>
+                        <li>Construct <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">, click on it, and see what it does.</li>
+                        <div class="endnote">The <img src="/bjc-r/img/2-conditionals-abstraction-testing/just the list [a e i o u].png" alt="just the list a e i o u"> that you see when you click on <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)">  is an artist's way of picturing a list inside the computer. The image numbers each item of the list and tells you how long the list is. The scroll bar lets you see list elements that aren't shown in the small picture.</div>
+                        <li>Experiment with these blocks to see what they do.
+                        <div class="endnote"> To save work, just duplicate <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> a few times to use in each experiment.</div>
+                        
+                        <p><img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] 177 × 27 pixels.png"  alt="list (a e i o u)"> 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains m 313 × 33 pixels.png" alt="list a e i o u contains m"> 
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/list [a e i o u] contains e 310 × 33 pixels.png" alt="list a e i o u contains e">
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-of-vowels-contains-randomly-picked-letter-of-pencil_666x39.png" alt="list of vowels contains randomly picked letter of pencil">
+                        <img src="/bjc-r/img/2-conditionals-abstraction-testing/item-pick-random-1-to-7-of-list-I-you-he-she-etc_605x33.png" alt="item pick random element from list of I you he she it we they"></p></li>
+                        <li><strong>Challenge:</strong> Redefine <code>vowel?</code> using <code>list</code> and <code>contains</code>.</li>
                     </ol>
-                    
 				</li>
-                <li><strong>Analyzing, and programming elegance: </strong> Here are two ways you might use <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-(a-e-i-o-u)-contains().png" style="height:2em;" alt="list-(a-e-i-o-u)-contains (some letter)"> to redefine <code>vowel?</code>. With your pair programmer, figure out how each  works. Decide which  <em>you</em> find  clearer.<br />
+                <li>
+                	<strong>Analyzing, and programming elegance: </strong> Here are two ways you might use <img src="/bjc-r/img/2-conditionals-abstraction-testing/list-(a-e-i-o-u)-contains().png" style="height:2em;" alt="list-(a-e-i-o-u)-contains (some letter)"> to redefine <code>vowel?</code>. With your pair programmer, figure out how each  works. Decide which  <em>you</em> find  clearer.<br />
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v2).png" alt="is letter a vowel (v4)">
                    <img src="/bjc-r/img/2-conditionals-abstraction-testing/vowel(v3).png"  alt="is letter a vowel (v3)"> 
                 </li>
-                <li>Problem
-          1, at the top of the page, seemed to suggest that to choose between alternative actions, you must use <code>if-else</code>, not just <code>if</code>. Problem 4, however, seems to choose alternatives with plain <code>if</code>. Why does that work? (There's a subtle hint in the shapes of the <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" alt="say"> and <img src="/bjc-r/img/blocks/report.png"  alt="report"> blocks.)</li>
+                <li>Problem 1, at the top of the page, seemed to suggest that to choose between alternative actions, you must use <code>if-else</code>, not just <code>if</code>. Problem 4, however, seems to choose alternatives with plain <code>if</code>. Why does that work? (There's a subtle hint in the shapes of the <img src="/bjc-r/img/blocks/say-Hello!-for-2-secs.png" alt="say"> and <img src="/bjc-r/img/blocks/report.png"  alt="report"> blocks.)</li>
 	        </ol> 
         </div>
 
