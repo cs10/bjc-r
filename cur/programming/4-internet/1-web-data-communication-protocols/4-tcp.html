@@ -30,13 +30,16 @@
         <p>Computers, including routers, are pretty reliable.  But in a store and forward network, with several computers and cables or radio transmissions between you and the recipient of a packet, every once in a while a packet will be lost.</p>
         
         <div class="takeNote">
-            <p>Earlier networks tried to provide reliability with programs running in their equivalent of routers. But it's time-consuming to deliver a transmission with complete reliability, and not every packet has to be delivered reliably. For example, your computer includes a clock, essentially just like the one next to your bed. And, like your bedside clock, the one in your computer doesn't keep perfect time. Eventually it will get noticeably fast or slow (and a computer can &quot;notice&quot; quite small errors). So every so often your computer sends a request to a <strong>time server</strong>, a computer with a very accurate clock that can reset your computer's clock to the correct value. But if one of those time requests is lost, it doesn't really matter; your computer will send another request pretty soon anyway.</p>
+            <p>Earlier networks tried to provide reliability with programs running in their equivalent of routers. But it's time-consuming to deliver a transmission with complete reliability, and not every packet has to be delivered reliably. For example, your computer includes a clock, essentially just like the one next to your bed. And, like your bedside clock, the one in your computer doesn't keep perfect time. Eventually it will get noticeably fast or slow (and a computer can "notice" quite small errors). So every so often your computer sends a request to a <strong>time server</strong>, a computer with a very accurate clock that can reset your computer's clock to the correct value. But if one of those time requests is lost, it doesn't really matter; your computer will send another request pretty soon anyway.</p>
             <p>The end-to-end principle gives routers a relatively simple task: figure out how to get a packet from one IP address to another, with the understanding that sometimes the packet will be lost. It's the computers at the endpoints, your computer and, usually, a big server computer, that do the work of establishing <em>reliable</em> transmission. This is an abstraction in which routers just run the Internet Protocol, allowing your computer to imagine that packets go directly from the client to the server. The client and server computers run the <strong>Transmission Control Protocol</strong> that guarantees reliability.</p>
         </div>
         
-        <div class="forYouToDo" style="first">
-            <p>Load <a class="run" href="/bjc-r/prog/4-internet/TCP.xml">this project</a>.
-            It provides a simulation of IP. You're going to write (a simplified) TCP based on it.</p>
+        <div class="forYouToDo" id="first">
+            <p>
+            	<div class="comment">Link doesn't work. I don't know why. --MF</div>
+                Load <a class="run" href="/bjc-r/prog/4-internet/TCP.xml">this project</a>.
+                It provides a simulation of IP. You're going to write (a simplified) TCP based on it.
+            </p>
             <p><a class="run" href="/bjc-r/prog/4-internet/TCP.xml"><img src="/bjc-r/img/4-internet/TCP.png" alt="picture of TCP project stage"></a></p>
     
             <div class="endnote">
@@ -83,7 +86,7 @@
                 <li>In our simulation, a packet either arrives correctly or doesn't arrive at all, but on the real Internet it's possible for a packet to arrive with erroneous data, so the real TCP has to check for that and request retransmission of packets with internal errors.</li>
                 <li>The earliest version of TCP turned out to be prone to network <strong>congestion</strong>, meaning that too many packets went back and forth in a short time for the network links to handle.  Therefore, modern TCP includes <strong>congestion control</strong> features to limit the rate at which packets are sent.</li>
             </ul>
-            <p>TCP is not the only &quot;transport layer&quot; protocol.  Another common one is <strong>UDP</strong> (User Datagram Protocol) that also uses port numbers to keep different transmissions separate, but does not try to guarantee reliable delivery.</p>
+            <p>TCP is not the only "transport layer" protocol.  Another common one is <strong>UDP</strong> (User Datagram Protocol) that also uses port numbers to keep different transmissions separate, but does not try to guarantee reliable delivery.</p>
             <p>Finally, the top level of the protocol hierarchy is the <strong>application protocol</strong>. There are lots of these, one for each computer application. You're familiar by now with<strong> HTTP</strong>, the HyperText Transfer Protocol used by Web browsers. Others are <strong>FTP</strong>, the File Transfer Protocol used for sending files between computers, and <strong>IMAP</strong>, the Internet Message Access Protocol, by which the email program on your computer or phone gets your email from whatever server hosts your email account, such as gmail.com or yandex.com.</p>
         </div>
     
