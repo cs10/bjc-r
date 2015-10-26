@@ -60,12 +60,12 @@ llab.secondarySetUp = function() {
      });
 
      llab.additionalSetup([
-         {
+         {  // TODO: PUT THESE CLASSES SOMEWHERE
             trigger: 'pre code',
             function: llab.codeHighlightSetup()
          },
-         {
-             trigger: 'katex, katex-inline, katex-block',
+         {   // TODO: PUT THESE CLASSES SOMEWHERE
+             trigger: '.katex, .katex-inline, .katex-block',
              function: llab.mathDisplaySetup()
          }
      ]);
@@ -110,8 +110,9 @@ llab.codeHighlightSetup = function () {
     document.head.appendChild(js);
 }
 
-
+// Call The Functions to HighlightJS to render
 llab.highlightSyntax = function() {
+    // TODO: PUT THESE CLASSES SOMEWHERE
      $('pre code').each(function(i, block) {
           // Trim the extra whitespace in HTML files.
           block.innerHTML = block.innerHTML.trim();
@@ -121,7 +122,9 @@ llab.highlightSyntax = function() {
      });
 }
 
-
+/** Import the required JS and CSS for LaTeX Code.
+ *  TODO: Abstract this away into its own function
+ */
 llab.mathDisplaySetup = function () {
     var cssFile, jsFile, css, js;
     cssFile = llab.paths.css_files.math_katex_css;
@@ -136,8 +139,19 @@ llab.mathDisplaySetup = function () {
     document.head.appendChild(js);
 }
 
+// Call the KaTeX APIS to render the LaTeX code.
 llab.displayMathDivs = function () {
-    
+    // TODO: Investigate caching of the selectors?
+    // TODO: PUT THESE CLASSES SOMEWHERE
+    $('.katex, .katex-inline').each(function (idx, elm) {
+        katex.render(elm.innerHTML, elm, {throwOnError: false});
+    });
+    // TODO: PUT THESE CLASSES SOMEWHERE
+    $('.katex-block').each(function (idx, elm) {
+        katex.render(elm.innerHTML, elm, {
+            displayMode: true, throwOnError: false
+        });
+    });
 }
 
 /**
