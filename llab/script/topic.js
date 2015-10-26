@@ -49,158 +49,158 @@ llab.tags = ["h1", "h2", "h3", "h4", "h5", "h6"];
 
 
 llab.renderFull = function(data, ignored1, ignored2) {
-	var FULL   = llab.selectors.FULL,
-		params = llab.getURLParameters(),
-		course = params.course;
+    var FULL   = llab.selectors.FULL,
+        params = llab.getURLParameters(),
+        course = params.course;
 
 
-	if (course) {
-		if (course.indexOf("://") === -1) {
-			course = llab.courses_path + course;
-		}
-		$(FULL).append($(document.createElement("a")).attr(
-			{"class":"course_link", "href": course }
-			).html(llab.strings.goMain));
-	}
+    if (course) {
+        if (course.indexOf("://") === -1) {
+            course = llab.courses_path + course;
+        }
+        $(FULL).append($(document.createElement("a")).attr(
+            {"class":"course_link", "href": course }
+            ).html(llab.strings.goMain));
+    }
 
-	llab.file = llab.topic;
+    llab.file = llab.topic;
 
-	data = data.replace(/(\r)/gm,""); // normalize line endings
-	var lines = data.split("\n");
-	var line;
-	var in_topic = false;
-	var topic;
-	var item;
-	var learningGoal = false;
-	var bigIdea = false;
-	var list;
-	var raw = false;
-	var text;
-	var isHidden;
-	var num = 0;
-	var indent = "";
-	var url = document.URL;
-	for (var i = 0; i < lines.length; i++) {
-		line = lines[i];
-		line = llab.stripComments(line);
-		// TODO: Refactor this line
-		isHidden = params.hasOwnProperty('no' + $.trim(line.slice(0, line.indexOf(':'))));
-		if (line.length && !raw && !isHidden) {
-			if (line.slice(0, 6) === "title:") {
-				// TODO: Refractor to a set title function!
-				var titleHTML = line.slice(6);
-				$('.navbar-title').html(titleHTML);
-				$('.title-small-screen').html(titleHTML);
-				var titleText = $('.navbar-title').text();
-				// SPECIAL-CASE for 'Snap' in titles.
-				titleText = titleText.replace('snap', 'Snap!');
-				document.title = titleText;
-				learningGoal = false;
-				bigIdea = false;
-			} else if (line.slice(0, 8) == "raw-html") {
-				raw = true;
-			} else if (line[0] == "{") {
-				in_topic = true;
-				topic = $(document.createElement("div")).attr({'class': 'topic'});
-				$(FULL).append(topic);
-				learningGoal = false;
-				bigIdea = false;
-			} else if (line.slice(0, 6) == "topic:") {
-				// FIXME -- style
-				item = $(document.createElement("div")).attr({'class': 'topic_header'}).append(line.slice(6));
-				topic.append(item);
-				learningGoal = false;
-				bigIdea = false;
-			} else if (line.slice(0, 8) == "heading:") {
-				item = $(document.createElement("h3")).append(line.slice(8));
-				topic.append(item);
-				learningGoal = false;
-				bigIdea = false;
-			} else if (line[0] == "}") {
-				in_topic = false;
-				learningGoal = false;
-				bigIdea = false;
-			} else if (line.slice(0, 13) == "learning-goal") {
-				bigIdea = false;
-				if (learningGoal) {
-					list.append($(document.createElement("li")).append(line.slice(14)));
-				} else {
-					indent = llab.indentString(line);
-					line = $.trim(line);
-					learningGoal = true;
-					item = $(document.createElement("div")).attr({'class': 'learninggoals' + indent});
-					list = $(document.createElement("ul"));
-					list.append($(document.createElement("li")).append(line.slice(14)));
-					item.append(list);
-					topic.append(item);
-				};
-			} else if (line.slice(0, 8) == "big-idea") {
-				learningGoal = false;
-				if (bigIdea) {
-					list.append($(document.createElement("li")).append(line.slice(9)));
-				} else {
-					indent = llab.indentString(line);
-					line = $.trim(line);
-					bigIdea = true;
-					item = $(document.createElement("div")).attr({'class': 'bigideas' + indent});
-					list = $(document.createElement("ul"));
-					list.append($(document.createElement("li")).append(line.slice(9)));
-					item.append(list);
-					topic.append(item);
-				};
-			} else {
-				indent = llab.indentString(line);
-				line = $.trim(line);
-				learningGoal = false;
-				bigIdea = false;
-				var sepIdx = line.indexOf(":");
-				if (sepIdx != -1 && llab.isTag(line.slice(0, sepIdx))) {
-					item = $(document.createElement(line.slice(0, sepIdx)));
-				} else if (sepIdx != -1) {
-					item = $(document.createElement("div")).attr({'class': line.split(":")[0] + indent});
-				} else {
-					item = $(document.createElement("div"));
-				}
-				if (line.indexOf("[") != -1) {
-					var temp = $(document.createElement("a"));
-					var query = params;
-					text = line.slice(sepIdx + 1, line.indexOf("["))
-					temp.append($.trim(text));
-					url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
-					if (url.indexOf("http") != -1) {
-						query = $.extend({}, query, { src: url, title: text });
-						url = llab.empty_curriculum_page_path;
-					} else if (url.indexOf(llab.rootURL) == -1 && url.indexOf("..") == -1) {
-						var slash = url[0] == "/" ? '' : '/';
-						url = llab.rootURL + slash + url;
-					}
-					url += (url.indexOf('?') !== -1 ? '&' : '?') + llab.QS.stringify(query);
-					num += 1;
-					temp.attr({'href': url});
-					item.append(temp);
-				} else {
-					item.append(line.slice(sepIdx + 1));
-				}
-				topic.append(item);
-			}
-		} else if (line.length == 1) {
-			learningGoal = false;
-			bigIdea = false;
-			raw = false;
-		} else if (raw) {
-			var raw_html = "";
-			while (line.length > 1 && line.slice[0] != "}") {
-				raw_html += " " + line;
-				i++;
-				line = lines[i];
-			}
-			topic.append(raw_html);
-			raw = false;
-		} else {
-			learningGoal = false;
-			bigIdea = false;
-		}
-	}
+    data = data.replace(/(\r)/gm,""); // normalize line endings
+    var lines = data.split("\n");
+    var line;
+    var in_topic = false;
+    var topic;
+    var item;
+    var learningGoal = false;
+    var bigIdea = false;
+    var list;
+    var raw = false;
+    var text;
+    var isHidden;
+    var num = 0;
+    var indent = "";
+    var url = document.URL;
+    for (var i = 0; i < lines.length; i++) {
+        line = lines[i];
+        line = llab.stripComments(line);
+        // TODO: Refactor this line
+        isHidden = params.hasOwnProperty('no' + $.trim(line.slice(0, line.indexOf(':'))));
+        if (line.length && !raw && !isHidden) {
+            if (line.slice(0, 6) === "title:") {
+                // TODO: Refractor to a set title function!
+                var titleHTML = line.slice(6);
+                $('.navbar-title').html(titleHTML);
+                $('.title-small-screen').html(titleHTML);
+                var titleText = $('.navbar-title').text();
+                // SPECIAL-CASE for 'Snap' in titles.
+                titleText = titleText.replace('snap', 'Snap!');
+                document.title = titleText;
+                learningGoal = false;
+                bigIdea = false;
+            } else if (line.slice(0, 8) == "raw-html") {
+                raw = true;
+            } else if (line[0] == "{") {
+                in_topic = true;
+                topic = $(document.createElement("div")).attr({'class': 'topic'});
+                $(FULL).append(topic);
+                learningGoal = false;
+                bigIdea = false;
+            } else if (line.slice(0, 6) == "topic:") {
+                // FIXME -- style
+                item = $(document.createElement("div")).attr({'class': 'topic_header'}).append(line.slice(6));
+                topic.append(item);
+                learningGoal = false;
+                bigIdea = false;
+            } else if (line.slice(0, 8) == "heading:") {
+                item = $(document.createElement("h3")).append(line.slice(8));
+                topic.append(item);
+                learningGoal = false;
+                bigIdea = false;
+            } else if (line[0] == "}") {
+                in_topic = false;
+                learningGoal = false;
+                bigIdea = false;
+            } else if (line.slice(0, 13) == "learning-goal") {
+                bigIdea = false;
+                if (learningGoal) {
+                    list.append($(document.createElement("li")).append(line.slice(14)));
+                } else {
+                    indent = llab.indentString(line);
+                    line = $.trim(line);
+                    learningGoal = true;
+                    item = $(document.createElement("div")).attr({'class': 'learninggoals' + indent});
+                    list = $(document.createElement("ul"));
+                    list.append($(document.createElement("li")).append(line.slice(14)));
+                    item.append(list);
+                    topic.append(item);
+                };
+            } else if (line.slice(0, 8) == "big-idea") {
+                learningGoal = false;
+                if (bigIdea) {
+                    list.append($(document.createElement("li")).append(line.slice(9)));
+                } else {
+                    indent = llab.indentString(line);
+                    line = $.trim(line);
+                    bigIdea = true;
+                    item = $(document.createElement("div")).attr({'class': 'bigideas' + indent});
+                    list = $(document.createElement("ul"));
+                    list.append($(document.createElement("li")).append(line.slice(9)));
+                    item.append(list);
+                    topic.append(item);
+                };
+            } else {
+                indent = llab.indentString(line);
+                line = $.trim(line);
+                learningGoal = false;
+                bigIdea = false;
+                var sepIdx = line.indexOf(":");
+                if (sepIdx != -1 && llab.isTag(line.slice(0, sepIdx))) {
+                    item = $(document.createElement(line.slice(0, sepIdx)));
+                } else if (sepIdx != -1) {
+                    item = $(document.createElement("div")).attr({'class': line.split(":")[0] + indent});
+                } else {
+                    item = $(document.createElement("div"));
+                }
+                if (line.indexOf("[") != -1) {
+                    var temp = $(document.createElement("a"));
+                    var query = params;
+                    text = line.slice(sepIdx + 1, line.indexOf("["))
+                    temp.append($.trim(text));
+                    url = (line.slice(line.indexOf("[") + 1, line.indexOf("]")));
+                    if (url.indexOf("http") != -1) {
+                        query = $.extend({}, query, { src: url, title: text });
+                        url = llab.empty_curriculum_page_path;
+                    } else if (url.indexOf(llab.rootURL) == -1 && url.indexOf("..") == -1) {
+                        var slash = url[0] == "/" ? '' : '/';
+                        url = llab.rootURL + slash + url;
+                    }
+                    url += (url.indexOf('?') !== -1 ? '&' : '?') + llab.QS.stringify(query);
+                    num += 1;
+                    temp.attr({'href': url});
+                    item.append(temp);
+                } else {
+                    item.append(line.slice(sepIdx + 1));
+                }
+                topic.append(item);
+            }
+        } else if (line.length == 1) {
+            learningGoal = false;
+            bigIdea = false;
+            raw = false;
+        } else if (raw) {
+            var raw_html = "";
+            while (line.length > 1 && line.slice[0] != "}") {
+                raw_html += " " + line;
+                i++;
+                line = lines[i];
+            }
+            topic.append(raw_html);
+            raw = false;
+        } else {
+            learningGoal = false;
+            bigIdea = false;
+        }
+    }
 }
 
 
@@ -209,53 +209,53 @@ llab.renderFull = function(data, ignored1, ignored2) {
  * depending on how far it has been indented
  * on the line. */
 llab.indentString = function(s) {
-	var len = s.length;
-	var count = 0;
-	for (var i = 0; i < len; i++) {
-		if (s[i] == " ") {
-			count++;
-		} else if (s[i] == "\t") {
-			count += 4;
-		} else {
-			break;
-		}
-	}
-	return " indent" + Math.floor(count/4);
+    var len = s.length;
+    var count = 0;
+    for (var i = 0; i < len; i++) {
+        if (s[i] == " ") {
+            count++;
+        } else if (s[i] == "\t") {
+            count += 4;
+        } else {
+            break;
+        }
+    }
+    return " indent" + Math.floor(count/4);
 }
 
 
 /* Returns true iff S is an allowed html tag. */
 llab.isTag = function(s) {
-	return llab.tags.indexOf(s) !== -1;
+    return llab.tags.indexOf(s) !== -1;
 }
 
 llab.displayTopic = function() {
-	llab.file = llab.getQueryParameter("topic");
+    llab.file = llab.getQueryParameter("topic");
 
-	if (llab.file) {
-		$.ajax({
-			url : llab.topics_path + llab.file,
-			type : "GET",
-			dataType : "text",
-			cache : true,
-			success : llab.renderFull
-		});
-	} else {
-		document.getElementsByTagName(llab.selectors.FULL).item(0).innerHTML = "Please specify a file in the URL.";
-	}
+    if (llab.file) {
+        $.ajax({
+            url : llab.topics_path + llab.file,
+            type : "GET",
+            dataType : "text",
+            cache : true,
+            success : llab.renderFull
+        });
+    } else {
+        document.getElementsByTagName(llab.selectors.FULL).item(0).innerHTML = "Please specify a file in the URL.";
+    }
 }
 
 // Make a call to build a topic page.
 // Be sure that content is set only on pages that it should be
 $(document).ready(function() {
-	var url = document.URL,
-		isTopicFile = (url.indexOf("topic.html") !== -1 ||
-			// FIXME -- this may be broken.
-			url.indexOf("empty-topic-page.html") !== -1);
+    var url = document.URL,
+        isTopicFile = (url.indexOf("topic.html") !== -1 ||
+            // FIXME -- this may be broken.
+            url.indexOf("empty-topic-page.html") !== -1);
 
-	if (isTopicFile) {
-		llab.displayTopic();
-	}
+    if (isTopicFile) {
+        llab.displayTopic();
+    }
 });
 
 
