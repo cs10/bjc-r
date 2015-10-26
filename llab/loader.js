@@ -1,23 +1,21 @@
 // Polyfills for older browsers
 if (!String.prototype.endsWith) {
   Object.defineProperty(String.prototype, 'endsWith', {
-	value: function(searchString, position) {
-	  var subjectString = this.toString();
-	  if (position === undefined || position > subjectString.length) {
-		position = subjectString.length;
-	  }
-	  position -= searchString.length;
-	  var lastIndex = subjectString.indexOf(searchString, position);
-	  return lastIndex !== -1 && lastIndex === position;
-	}
+    value: function(searchString, position) {
+      var subjectString = this.toString();
+      if (position === undefined || position > subjectString.length) {
+        position = subjectString.length;
+      }
+      position -= searchString.length;
+      var lastIndex = subjectString.indexOf(searchString, position);
+      return lastIndex !== -1 && lastIndex === position;
+    }
   });
 }
 
 
 
 /////////// FIXME -- put this in a better place.
-
-
 
 
 
@@ -46,10 +44,14 @@ llab.CONFIG_FILE_PATH = "../llab.js";
 llab.BUILD_FILE_PATH = "./llab-complied.js";
 
 
+// ADDITIONAL LIBRARIES
+
 // Syntax Highlighting support
 llab.paths.syntax_highlights = "//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js";
 llab.paths.css_files.syntax_highlights = "css/tomorrow-night-blue.css";
-
+// Math / LaTeX rendering
+llab.paths.math_katex_js = "lib/katex.min.js";
+llab.paths.css_files.math_katex_css = "css/katex.min.css";
 
 
 /////////////////////////
@@ -60,7 +62,7 @@ llab.paths.scripts[0].push("lib/jquery.min.js");
 
 llab.loaded['config'] = false;
 llab.paths.stage_complete_functions[0] = function() {
-	return ( typeof jQuery === 'function' && llab.loaded['config'] );
+    return ( typeof jQuery === 'function' && llab.loaded['config'] );
 }
 
 
@@ -71,11 +73,11 @@ llab.paths.stage_complete_functions[0] = function() {
 ///////////////// stage 1
 llab.paths.scripts[1] = [];
 llab.paths.scripts[1].push("script/library.js");
-// llab.paths.scripts[1].push("script/lib/sha1.js");	 // for brainstorm
+// llab.paths.scripts[1].push("script/lib/sha1.js");     // for brainstorm
 
 llab.loaded['library'] = false;
 llab.paths.stage_complete_functions[1] = function() {
-	return ( llab.loaded['library'] );
+    return ( llab.loaded['library'] );
 }
 
 
@@ -94,9 +96,9 @@ llab.paths.scripts[2].push("lib/bootstrap.min.js");
 
 llab.loaded['multiplechoice'] = false;
 llab.paths.stage_complete_functions[2] = function() {
-	return ( llab.loaded['multiplechoice'] //&&
-			 // llab.loaded['user']
-		);
+    return ( llab.loaded['multiplechoice'] //&&
+             // llab.loaded['user']
+        );
 }
 
 
@@ -105,92 +107,92 @@ llab.paths.stage_complete_functions[2] = function() {
 ////////////////
 ////////////////  stage 3
 // quiz.js depends on each of the quiz item types having loaded
+// TODO: fix this.
 llab.paths.scripts[3] = [];
 llab.paths.scripts[3].push("script/quiz.js");
-llab.paths.scripts[3].push("//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML");
 // llab.paths.scripts[3].push("script/brainstorm.js");
 
 
 
 llab.paths.stage_complete_functions[3] = function() {
-	return true; // the last stage, no need to wait
+    return true; // the last stage, no need to wait
 }
 
 //////////////
 
 llab.getPathToThisScript = function() {
-	var scripts = document.scripts;
-	for (var i = 0; i < scripts.length; i += 1) {
-		var src = scripts[i].src;
-		if (src.endsWith('/' + THIS_FILE)) {
-			return src;
-		}
-	}
-	return '';
+    var scripts = document.scripts;
+    for (var i = 0; i < scripts.length; i += 1) {
+        var src = scripts[i].src;
+        if (src.endsWith('/' + THIS_FILE)) {
+            return src;
+        }
+    }
+    return '';
 };
 
 llab.thisPath = llab.getPathToThisScript();
 
 
 function getTag(name, src, type) {
-	var tag = document.createElement(name);
+    var tag = document.createElement(name);
 
-	if (src.substring(0, 2) !== "//") {
-		src = llab.thisPath.replace(THIS_FILE, src);
-	}
+    if (src.substring(0, 2) !== "//") {
+        src = llab.thisPath.replace(THIS_FILE, src);
+    }
 
-	var link  = name === 'link' ? 'href' : 'src';
-	tag[link] = src;
-	tag.type  = type;
+    var link  = name === 'link' ? 'href' : 'src';
+    tag[link] = src;
+    tag.type  = type;
 
-	return tag;
+    return tag;
 }
 
 
 
 llab.initialSetUp = function() {
-	var headElement = document.head;
-	var tag, i, src;
+    var headElement = document.head;
+    var tag, i, src;
 
-	// start the process
-	loadScriptsAndLinks(0);
+    // start the process
+    loadScriptsAndLinks(0);
 
-	function loadScriptsAndLinks(stage_num) {
-		var i, tag;
+    function loadScriptsAndLinks(stage_num) {
+        var i, tag;
 
-		//console.log("starting script load stage " + stage_num);
+        //console.log("starting script load stage " + stage_num);
 
-		// load css files
-		while (llab.paths.css_files.length != 0) {
-			tag = getTag("link", llab.paths.css_files.shift(), "text/css");
-			tag.rel = "stylesheet";
-			tag.media = "screen";
-			headElement.appendChild(tag);
-		}
+        // load css files
+        while (llab.paths.css_files.length != 0) {
+            tag = getTag("link", llab.paths.css_files.shift(), "text/css");
+            tag.rel = "stylesheet";
+            tag.media = "screen";
+            headElement.appendChild(tag);
+        }
 
-		// load scripts
-		llab.paths.scripts[stage_num].forEach(function(scriptfile) {
-			tag = getTag("script", scriptfile, "text/javascript");
-			headElement.appendChild(tag);
-		});
+        // load scripts
+        llab.paths.scripts[stage_num].forEach(function(scriptfile) {
+            tag = getTag("script", scriptfile, "text/javascript");
+            headElement.appendChild(tag);
+        });
 
-		if ((stage_num + 1) < llab.paths.scripts.length) {
-			proceedWhenComplete(stage_num);
-		}
-	}
+        if ((stage_num + 1) < llab.paths.scripts.length) {
+            proceedWhenComplete(stage_num);
+        }
+    }
 
-	function proceedWhenComplete(stage_num) {
-		if (llab.paths.stage_complete_functions[stage_num]()) {
-			if ((stage_num + 1) < llab.paths.scripts.length) {
-				loadScriptsAndLinks(stage_num + 1);
-			}
-		} else {
-			// console.log("waiting on stage " + stage_num);
-			setTimeout(function() {
-				proceedWhenComplete(stage_num);
-			}, 5);
-		}
-	}
+    function proceedWhenComplete(stage_num) {
+        if (llab.paths.stage_complete_functions[stage_num]()) {
+            if ((stage_num + 1) < llab.paths.scripts.length) {
+                loadScriptsAndLinks(stage_num + 1);
+            }
+        } else {
+            // console.log("waiting on stage " + stage_num);
+            setTimeout(function() {
+                proceedWhenComplete(stage_num);
+            }, 5);
+        }
+    }
 };
 
 /////////////////////

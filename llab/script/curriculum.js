@@ -59,22 +59,56 @@ llab.secondarySetUp = function() {
           }
      });
 
-     // TODO: Make a function.
-     codeElements = $('pre code');
-     if (codeElements.length) {
-          cssFile = llab.paths.css_files.syntax_highlights;
-          jsFile  = llab.paths.syntax_highlights;
-          css = getTag('link', cssFile, 'text/css');
-          css.rel = "stylesheet";
-          js = getTag('script', jsFile, 'text/javascript');
-          // onload function
-          $(js).attr({'onload': 'llab.highlightSyntax()'});
-          // Using $ to append to head causes onload not to be fired...
-          document.head.appendChild(css);
-          document.head.appendChild(js);
-     }
+     llab.additionalSetup([
+         {
+            trigger: 'pre code',
+            function: llab.codeHighlightSetup()
+         },
+         {
+             trigger: 'katex, katex-inline, katex-block',
+             function: llab.mathDisplaySetup()
+         }
+     ]);
 
 }; // close secondarysetup();
+
+
+/** A prelimary API for defining loading additional content based on triggers.
+ *  @{param} array TRIGGERS is an array of {trigger, callback} pairs.
+ *  a `trigger` is currently a CSS selector that gets passed to $ to see if any
+ *  of those elements are on the current page. If the elements are found then a
+ *  `callback` is called with no arguments.
+ *  TODO: Cleanup and test this code.
+ *  TODO: Explore ideas for better trigger options?
+ */
+llab.additionalSetup = function(triggers) {
+    var items;
+    triggers.forEach(function (obj) {
+        if (obj.trigger && obj.function) {
+            items = $(trigger);
+            if (items.length) {
+                Function.call(null, obj.function);
+            }
+        }
+    });
+}
+
+/** Import the required JS and CSS for Code highlighting.
+ *  TODO: Abstract this away into its own function
+ */
+llab.codeHighlightSetup = function () {
+    var cssFile, jsFile, css, js;
+    cssFile = llab.paths.css_files.syntax_highlights;
+    jsFile  = llab.paths.syntax_highlights;
+    css = getTag('link', cssFile, 'text/css');
+    css.rel = "stylesheet";
+    js = getTag('script', jsFile, 'text/javascript');
+    // onload function
+    $(js).attr({'onload': 'llab.highlightSyntax()'});
+    // Using $ to append to head causes onload not to be fired...
+    document.head.appendChild(css);
+    document.head.appendChild(js);
+}
 
 
 llab.highlightSyntax = function() {
@@ -85,6 +119,25 @@ llab.highlightSyntax = function() {
                hljs.highlightBlock(block);
           }
      });
+}
+
+
+llab.mathDisplaySetup = function () {
+    var cssFile, jsFile, css, js;
+    cssFile = llab.paths.css_files.math_katex_css;
+    jsFile  = llab.paths.math_katex_js;
+    css = getTag('link', cssFile, 'text/css');
+    css.rel = "stylesheet";
+    js = getTag('script', jsFile, 'text/javascript');
+    // onload function
+    $(js).attr({'onload': 'llab.displayMathDivs()'});
+    // Using $ to append to head causes onload not to be fired...
+    document.head.appendChild(css);
+    document.head.appendChild(js);
+}
+
+llab.displayMathDivs = function () {
+    
 }
 
 /**
