@@ -37,6 +37,17 @@ llab.secondarySetUp = function() {
           $(this).attr('href', llab.getSnapRunURL(this.getAttribute('href')));
      });
 
+     llab.additionalSetup([
+         {  // TODO: PUT THESE CLASSES SOMEWHERE
+            trigger: 'pre code',
+            function: llab.codeHighlightSetup()
+         },
+         {   // TODO: PUT THESE CLASSES SOMEWHERE
+             trigger: '.katex, .katex-inline, .katex-block',
+             function: llab.mathDisplaySetup()
+         }
+     ]);
+     
      // We don't have a topic file, so we should exit.
      if (llab.file === '' || !llab.isCurriculum()) {
           return;
@@ -58,17 +69,6 @@ llab.secondarySetUp = function() {
                console.log('Status: ' + status);
           }
      });
-
-     llab.additionalSetup([
-         {  // TODO: PUT THESE CLASSES SOMEWHERE
-            trigger: 'pre code',
-            function: llab.codeHighlightSetup()
-         },
-         {   // TODO: PUT THESE CLASSES SOMEWHERE
-             trigger: '.katex, .katex-inline, .katex-block',
-             function: llab.mathDisplaySetup()
-         }
-     ]);
 
 }; // close secondarysetup();
 

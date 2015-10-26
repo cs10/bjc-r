@@ -62,7 +62,17 @@
         
         <p>"Getting Started" is an optional (for us&mdash;it's required for students) <em>HTML page</em> at the beginning of each lab. "Take it Further" is a <em>page element</em> that we can (optionally) place at the end of each lab or wherever makes sense.</p>
         
-        <p>You can now insert LaTeX using a double-dollar-sign delimiter... <span class="katex">\| f + g \| \le \|f\|+\|g\|</span> </p>
+        <p>You can now insert LaTeX (such as <span class="katex">\| f + g \| \le \|f\|+\|g\|</span>) using the following syntax:
+          <br />
+          <pre class="html">
+            <code>
+              &lt;span class="katex"&gt;\| f + g \| \le \|f\|+\|g\|&lt;/span&gt;
+            </code>
+          </pre>
+          <br />
+          Block-based LaTeX (that renders on its own line) can be used with the syntax <code>class="katex-block"</code>.
+          The name "<span id="katex">\KaTeX</span>" is the current LaTeX library, which is developed by Khan Academy.
+        </p>
         
         <div class="forYouToDo" id="first">
             This is a made with a div within a div. The class of the surrounding div is "forYouToDo".<br />
@@ -233,7 +243,7 @@ isn't something you can type into Snap!.  And every so often (once per unit?) we
             </ol>
             Principles for when to include a script:
             <ul>
-            	<li>Early on, and for simple scripts (and minimal or no typing), getting them to build is useful practice.</li>
+                <li>Early on, and for simple scripts (and minimal or no typing), getting them to build is useful practice.</li>
                 <li>For complicated scripts that we want them to test and/or modify, let them load it.  Saves time and guarantees they're testing what we actually intended.</li>
                 <li>For lists with lots of typing, let them load initial versions, especially for getting started or experiments.  Again, reduces overhead. Also, they can always tailor if they want.</li>
             </ul>
