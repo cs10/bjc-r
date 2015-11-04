@@ -93,9 +93,10 @@
     webpage is <span style="font-style: italic;">GET </span>followed
     by a path. Let's try it, enter the following EXACTLY as shown: <br>
     <br>
-    <div style="margin-left: 40px;"><pre>GET / HTTP/1.1
-    Host:inst.eecs.berkeley.edu</pre><br>
+    <div style="margin-left: 40px;"><pre>GET /index.html HTTP/1.1
+Host:inst.eecs.berkeley.edu</pre><br>
     </div>
+    <br>This tells the computer that we're talking to that we want the file "index.html" using the HTTP protocol (not discussed in class), and that the index.html in question should correspond to "inst.eecs.berkeley.edu". This last bit may seem strange because we already connected to "inst.eecs.berkeley.edu" using the telnet command. However, the computer we're connected to may host many websites. It's like calling someone on a landline phone: You try to call "Sarah", but she might share the phone with someone else so you have to ask for Sarah. <br>
     <br>Press enter one more time, and you should now see a response that looks like this:<br>
     <br>
     <div style="margin-left: 40px; font-style: italic;">[...]<br>
@@ -116,13 +117,14 @@
     <br>
     Congratulations, you just downloaded the page for <span
       style="font-style: italic;">http://inst.eecs.berkeley.edu/! <br>
+      <p>Of course, telnet 
       <br>
       <span style="text-decoration: underline;"><span style="font-style:
           italic;"><span style="text-decoration: underline;"><span
               style="font-style: italic;"><span style="text-decoration:
                 underline;"></span></span></span></span></span></span>Now:<br>
     <ol>
-      <li>Download the webpage that you are currnelty looking at (this
+      <li>Download the webpage that you are currenlty looking at (this
         page).</li>
       <li>Take a moment to discuss with your peers the technical changes
         between the historical video and today.</li>
