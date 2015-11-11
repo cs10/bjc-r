@@ -19,12 +19,13 @@ heading: Introduction to Python Data Structures
 heading: Mutability and List Functions in Python
     resource: List Mutability [/bjc-r/cur/programming/python/list_mutability.html]
     resource: List Functions [/bjc-r/cur/programming/python/list_functions.html]
-    resource: Iterators [/bjc-r/cur/programming/python/python_iterators.html]
+    resource: Iterables [/bjc-r/cur/programming/python/python_iterables.html]
     resource: Getting Ready to Program [/bjc-r/cur/programming/python/data_structs_getting_setup.html]
     resource: 2D Lists [/bjc-r/cur/programming/python/2D_lists.html]
 
 heading: Higher Order Functions in Python
-    resource: HOFs in Python [/bjc-r/cur/programming/python/python_hofs_comprehensions.html]
+    resource: HOFs in Python [/bjc-r/cur/programming/python/python_hofs.html]
+    resource: HOFs in Python [/bjc-r/cur/programming/python/python_comprehensions.html]
     resource: Trying to Combine in Python [/bjc-r/cur/programming/python/trying_combine.html]
 
 heading: Python Dictionaries
