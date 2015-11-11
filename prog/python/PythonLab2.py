@@ -20,13 +20,13 @@ Place the first odd number at the back of the input list.
 Do not return a new list.
 
 >>> input = [10, 2, 4, 7, 6, 7, 8, 9]
->>> push_odd_back(input)
+>>> push_first_odd_back(input)
 >>> input
 [10, 2, 4, 6, 7, 8, 9, 7]
 
 """
 
-def push_odd_back(lst):
+def push_first_odd_back(lst):
     print("Fill me in!")
 
 ##############
@@ -264,10 +264,10 @@ def main(argv):
 def test_EX1():
     for tple in [[[10, 2, 4, 7, 6, 7, 8, 9], [10, 2, 4, 6, 7, 8, 9, 7]], [[5, 4, 3, 2, 1], [4, 3, 2, 1, 5]], [[1, 2, 3], [2, 3, 1]]]:
         test = list(tple[0])
-        push_odd_back(test)
+        push_first_odd_back(test)
         if (test != tple[1]):
-            return function_fail_output("push_odd_back", tple[0], test)
-    return function_pass_output("push_odd_back")
+            return function_fail_output("push_first_odd_back", tple[0], test)
+    return function_pass_output("push_first_odd_back")
 
 # Test exercise 2 #
 def test_EX2():
