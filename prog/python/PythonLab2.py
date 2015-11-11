@@ -29,6 +29,7 @@ Do not return a new list.
 def push_first_odd_back(lst):
     print("Fill me in!")
 
+
 ##############
 # Exercise 2 #
 ##############
