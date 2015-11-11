@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>HOFs in Python</title>
+    </head>
+    <body>
+        <h3>Map in Python</h3>
+        <p>
+            Just like in Snap<em>!</em>, Python allows us to operate on all of the items of a list by using Higher Order Functions (HOFs).  In python we can perform a map operation that squares all of the numbers in a list by using the following syntax:
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 2, 3]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/set_my_list_snap.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> def square(x):
+...    return x * x
+>>> map(square, my_list)
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_map_square.png"/>
+                </td>
+            </tr>
+        </table>
+
+        <p>
+            Above you can see that the python code is very similar to the Snap<em>!</em> code.  Instead of having a multiply function with two blanks, as in the Snap<em>!</em> version of map, we first define a <code>square</code> function and pass it as an argument to the map function. We could also create an <a href="https://docs.google.com/presentation/d/1TwO63UECd9I4ufKDYUj9LDFT6RrDOtFQlbbcC9oBebE/pub?start=false&loop=false&delayms=3000&slide=id.gd1cee3eda_1_361">anonymous function</a> by using the <code>lambda</code> keyword, which acts a lot like the ringify command in Snap! We won't use <code>lambda</code> in this lab, but you'll see it plenty in 61A.
+
+        <h3>Keep in Python</h3>
+        <p>
+            In Python, the keep function is called <code>filter</code>. However, in practice, most people use list comprehensions, so we will not show any examples of using <code>filter</code>.
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 1, 2, 3, 5, 9]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/longer_my_list.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> def less_than_three(x):
+...    return x < 3
+>>> filter(less_than_three, my_list)
+[1, 1, 2]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/keep_less_than3.png"/>
+                </td>
+            </tr>
+        </table>
+        <p>
+            I'm fibbing slightly, since the code above only works in python2, not python3. But that doesn't matter for reasons that will become clear on the next page of the lab. 
+</html>
