@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Python Iterables</title>
+    </head>
+    <body>
+        <h3>Iterables in Python</h3>
+        <p>
+            In Snap!, we have two different <code>for</code> blocks. One of them iterates over a range of numbers, and the other one (<code>for each item of</code>) iterates over a list. 
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="/bjc-r/img/blocks/for.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="/bjc-r/img/python/foreach.png">
+                    </td>
+                </tr>
+            </table>
+
+
+            <p>In Python, there is only one <code>for</code> construct and it behaves like <code>for each item of</code> in Snap!. However, <code>for each item</code>, <code>for</code> can iterate over many different types of objects, including lists, strings, and more.
+
+            <p>We use the term <b>iterable</b> to refer to any object that we can iterate over using the <code>for</code> keyword. For example, we can iterate over a range:
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+for i in range(0,5):
+    print(i)
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_for_say.png"/>
+                </td>
+            </tr>
+        </table>
+        <p class="alert quoteBlue">
+        We can iterate over a list:
+        </p>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> names = ["Larry", "Curly", "Moe"]
+>>> for item in names:
+...	    print("Hello, " + item)
+Hello Larry
+Hello Curly
+Hello Moe
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_for_list.png"/>
+                </td>
+            </tr>
+        </table>
+            <p>
+            And we can iterate over a string:
+            </p>
+            <p><pre><code>
+>>> chant = "Go Bears!"
+>>> for letter in chant:
+...     print(letter)
+G
+O
+
+B
+E
+A
+R
+S
+!
+            </code></pre></p>
+    </body>
+</html>
