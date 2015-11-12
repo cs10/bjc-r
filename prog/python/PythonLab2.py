@@ -58,7 +58,8 @@ of all of the even numbers.
 """
 
 def squares_of_evens(number_list):
-    return [x * x for x in number_list if x % 2 == 0]
+    return []
+    
 
 
 ###########################
@@ -75,10 +76,10 @@ For example, 3 ** 4 is 3 to the 4th power or 81.
 """
 
 def nth_power_of_evens(number_list, n):
-    return [x ** n for x in number_list if x % 2 == 0]
+    return []
 
 ###########################
-# Exercise 3 Part 1 (3.1) #
+# Exercise 4 Part 1 (4.1) #
 ###########################
 """
 Takes as input a string representing a DNA sequence, a base to be substituted,
@@ -95,7 +96,7 @@ def substitute_base(sequence, old, new):
 
 
 ###########################
-# Exercise 3 Part 2 (3.2) #
+# Exercise 4 Part 2 (4.2) #
 ###########################
 """
 Takes as input a list of strings representing DNA sequences, a base
@@ -104,17 +105,17 @@ being substituted (new).  This function should return a list of DNA sequences
 with the proper base substituted in each sequence (make sure to use HOFs here).
 
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
->>> substitue_sequences(sequences, "A", "C")
+>>> substitute_sequences(sequences, "A", "C")
 ["CCGTTCGTCC", "CTCGCGTCCGCCCGC", CCGTTCCGCTG"]
 
 """
 
-def substitue_sequences(sequences, old, new):
+def substitute_sequences(sequences, old, new):
     return sequences
 
 
 ##############
-# Exercise 4 #
+# Exercise 5 #
 ##############
 """
 Takes in a list of numbers OR strings and returns the combined result
@@ -134,7 +135,7 @@ def combine(lst):
 
 
 ##############
-# Exercise 5 #
+# Exercise 6 #
 ##############
 """
 Given a DNA sequence string, calculate the frequency of each
@@ -150,7 +151,7 @@ def base_freq(sequence):
 
 
 ##############
-# Exercise 6 #
+# Exercise 7 #
 ##############
 """
 Given a dictionary of people (band), like the one below, returns a
@@ -242,9 +243,11 @@ def main(argv):
                      "3": test_EX3,
                      "3.1": test_EX31,
                      "3.2": test_EX32,
-                     "4": test_EX4,
+                     "4.1": test_EX41,
+                     "4.2": test_EX42,
                      "5": test_EX5,
                      "6": test_EX6,
+                     "7": test_EX7,
                      "C1": test_C1,
                      "C2": test_C2,
                      "C3": test_C3,
@@ -310,30 +313,54 @@ def test_EX2():
             return function_fail_output("flatten", tple[0], test)
     return function_pass_output("flatten")
 
+
 # Test exercise 3.1 #
 def test_EX31():
+    numbers = [-5, -2, -1, 0, 1, 5, 7, 8]
+    answer = [4, 0, 64]
+    student_answer = squares_of_evens(numbers)
+    if (answer != student_answer):
+        return function_fail_output("squares_of_evens", numbers, student_answer)
+    return function_pass_output("squares_of_evens")
+
+# Test exercise 3.2 #
+def test_EX32():
+    numbers = [-5, -2, -1, 0, 1, 5, 7, 8]
+    answer = [16, 0, 4096]
+    student_answer = nth_power_of_evens(numbers, 4)
+    if (answer != student_answer):
+        return function_fail_output("nth_power_of_evens", int(4) + ", " + str(numbers), student_answer)
+    return function_pass_output("nth_power_of_evens")
+
+# Text exercises 4.1 and 4.2 #
+def test_EX3():
+    test_EX31()
+    test_EX32()
+
+# Test exercise 4.1 #
+def test_EX41():
     for quad in [("AAGTTAGTCA", "A", "C", "CCGTTCGTCC") , ("CTCGAGTCCGAAAGC", "C", "G", "GTGGAGTGGGAAAGG") , ("AAGTTCCGACTG", "T", "U", "AAGUUCCGACUG")]:
         test = substitute_base(quad[0], quad[1], quad[2])
         if (test != quad[3]):
             return function_fail_output("substitute_base", "substitute_base('" + quad[0] + "', " + quad[1] + ", " + quad[2] + ")", test)
     return function_pass_output("substitute_base")
 
-# Test exercise 3.2 #
-def test_EX32():
+# Test exercise 4.2 #
+def test_EX42():
     sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
-    test = substitue_sequences(sequences, "A", "C")
+    test = substitute_sequences(sequences, "A", "C")
     if (test != ["CCGTTCGTCC", "CTCGCGTCCGCCCGC", "CCGTTCCGCCTG"]):
         return function_fail_output("substitute_sequences", "substitute_sequences(['AAGTTAGTCA', 'CTCGAGTCCGAAAGC', 'AAGTTCCGACTG'], 'A', 'C')", test)
     else:
         return function_pass_output("substitute_sequences")
 
-# Text exercises 3.1 and 3.2 #
-def test_EX3():
+# Text exercises 4.1 and 4.2 #
+def test_EX4():
     test_EX31()
     test_EX32()
 
-# Test exercise 4 #
-def test_EX4():
+# Test exercise 5 #
+def test_EX5():
     nums = [1, 2, 3, 4, 5]
     strings = ["hello ", "my ", "name ", "is ", "someone?"]
     test1 = combine(nums)
@@ -346,16 +373,16 @@ def test_EX4():
     else:
         return function_pass_output("combine")
 
-# Test exercise 5 #
-def test_EX5():
+# Test exercise 6 #
+def test_EX6():
     for tple in [["AAGTTAGTCA", {"A": 4, "C": 1, "G": 2, "T": 3}], ["CTCGAGTCCGAAAGC", {"A": 4, "C": 5, "G": 4, "T": 2}]]:
         test = base_freq(tple[0])
         if (test != tple[1]):
             return function_fail_output("base_freq", tple[0], test)
     return function_pass_output("base_freq")
 
-# Test exercise 6 #
-def test_EX6():
+# Test exercise 7 #
+def test_EX7():
     alonzo = {"age": 10, "height": 42, "weight": 175, "instrument": "fiddle" }
     turing = {"age": 41, "height": 70, "weight": 160, "instrument": "theremin"}
     bertha = {"age": 32, "height": 97, "weight": 587, "instrument": "cello"}
