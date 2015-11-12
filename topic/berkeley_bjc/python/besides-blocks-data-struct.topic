@@ -25,7 +25,8 @@ heading: Mutability and List Functions in Python
 
 heading: Higher Order Functions in Python
     resource: HOFs in Python [/bjc-r/cur/programming/python/python_hofs.html]
-    resource: HOFs in Python [/bjc-r/cur/programming/python/python_comprehensions.html]
+    resource: List Comprehensions in Python [/bjc-r/cur/programming/python/python_comprehensions.html]
+    resource: List Comprehensions and Strings [/bjc-r/cur/programming/python/python_comprehensions_and_strings.html]    
     resource: Trying to Combine in Python [/bjc-r/cur/programming/python/trying_combine.html]
 
 heading: Python Dictionaries

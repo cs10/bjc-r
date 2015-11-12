@@ -49,6 +49,38 @@ def flatten(lst):
 # Exercise 3 Part 1 (3.1) #
 ###########################
 """
+Takes as input a list of numbers.  Returns a list containing the squares
+of all of the even numbers.
+
+>>> squares_of_evens([-5, -2, 0, 1, 3, 4, 8]) 
+[4, 0, 16, 64]
+
+"""
+
+def squares_of_evens(number_list):
+    return [x * x for x in number_list if x % 2 == 0]
+
+
+###########################
+# Exercise 3 Part 2 (3.2) #
+###########################
+"""
+Takes as input a list of numbers.  Returns a list containing the nth power
+of all of the even numbers. Note: The exponentiation operator in Python is **.
+For example, 3 ** 4 is 3 to the 4th power or 81.
+
+>>> nth_power_of_evens([-5, -2, 0, 1, 3, 4, 8], 3) 
+[-8, 0, 64, 512]
+
+"""
+
+def nth_power_of_evens(number_list, n):
+    return [x ** n for x in number_list if x % 2 == 0]
+
+###########################
+# Exercise 3 Part 1 (3.1) #
+###########################
+"""
 Takes as input a string representing a DNA sequence, a base to be substituted,
 and a base that is to take the place of the base being substituted.  Returns
 a string with the proper base substituted.

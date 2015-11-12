@@ -2,44 +2,17 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>HOFs in Python</title>
+        <title>Python Comprehensions</title>
     </head>
     <body>
+        <h3>Pythonic Code</h3>
+        <p>A common term in the Python community is <em>pythonic</em>. Code that is pythonic is code that takes advantage of the special features and idioms of the Python language. Code that looks like a rough transcription from another language is often called unpythonic. If you become a Python programmer, you'll want to learn how to code pythonically, so that others can understand your code, and so that you can understand other's code. One of the most important (but tricky) pythonic code concepts is the <b>list comprehension</b>, which can be used in place of the <code>map</code> and <code>filter</code> HoFs. 
+        <p>In fact, <code>map</code> and <code>filter</code> are actually not very commonly used in Python. Many (but not all) in the community have decided that code that uses list comprehensions is more concise and easier to read than code that uses the equivalent HoFs that we learned in Snap!
+        <p>The syntax for list comprehensions is quite unlike anything you've probably seen before, but it's really not so bad once you try it out.
+        </p> 
         <h3>Map in Python</h3>
         <p>
-            Just like in Snap<em>!</em>, Python allows us to operate on all of the items of a list by using Higher Order Functions (HOFs).  In python we can perform a map operation that squares all of the numbers in a list by using the following syntax:
-        </p>
-        <table style="width:80%">
-            <tr>
-                <td>
-                    <pre><code>
->>> my_list = [1, 2, 3]
-                    </code></pre>
-                </td>
-                <td>
-                    <img src="/bjc-r/img/python/set_my_list_snap.png"/>
-                </td>
-            </tr>
-        </table>
-        <table style="width:80%">
-            <tr>
-                <td>
-                    <pre><code>
->>> def square(x):
-...    return x * x
->>> map(square, my_list)
-                    </code></pre>
-                </td>
-                <td>
-                    <img src="/bjc-r/img/python/snap_map_square.png"/>
-                </td>
-            </tr>
-        </table>
-
-        <p>
-            Above you can see that the python code is very similar to the Snap<em>!</em> code.  Instead of having a multiply function with two blanks, as in the Snap<em>!</em> version of map, we first define a <code>square</code> function and pass it as an argument to the map function. We could also create an <a href="https://docs.google.com/presentation/d/1TwO63UECd9I4ufKDYUj9LDFT6RrDOtFQlbbcC9oBebE/pub?start=false&loop=false&delayms=3000&slide=id.gd1cee3eda_1_361">anonymous function</a> by using the <code>lambda</code> keyword, which acts a lot like the ringify command in Snap! We won't use <code>lambda</code> in this lab, but you'll see it plenty in 61A.
-
-            <p>The <code>map</code> function in Python is actually not used very often. Instead, a closely related construct called a <b>list comprehension</b> is often used instead. An example is given below.
+            First, let's discuss how list comprehensions can be used in place of the <code>map</code> HoF. An example is given below:
 
         <table style="width:80%">
             <tr>
@@ -68,7 +41,7 @@
         </table>
         
         <p>
-            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. As before, you'll see that the python code shown is still fairly similar to the Snap! code. The differences are:
+            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. While a bit aliend, we can see that python code using comprehensions is still somewhat similar to the Snap! code. The differences are:
         </p>
         <p><ul>
             <li>
@@ -89,7 +62,7 @@
 
         <h3>Keep in Python</h3>
         <p>
-            In Python, the keep function is called <code>filter</code>. However, in practice, most people use list comprehensions, so we will not show any examples of using <code>filter</code>.
+            As we saw on the previous page of this lab, the keep function in Python is called <code>filter</code>. However, in practice, most people use list comprehensions instead of filter. Indeed, many python programmers probably have no idea what filter is. An example of using a comprehension to keep items is shown below.
         </p>
         <table style="width:80%">
             <tr>
@@ -117,12 +90,12 @@
             </tr>
         </table>
         <p>
-            Or more generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>.
+            More generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>.
         </p>
         <p><pre><code>
 >>> [x for x in my_list if predicate(x)]
         </code></pre></p>
-        <h3>Using Map and Keep Together</h3>
+        <h3>Using List Comprehensions for Map and Keep Simultaneously</h3>
         <p>
             List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise.
         </p>
@@ -151,23 +124,19 @@
                 </td>
             </tr>
         </table>
-        <h3>Exercise 3.1: Substitute Base</h3>
+        <h3>Exercise 3.1: Squares of Evens</h3>
         <p>
-            Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted:
-        </p>
+            Write the function <code>squares_of_evens</code> that takes as input a list of numbers, and returns a list that is equal to the squares of all even numbers. Use list comprehensions. 
+
         <p><pre><code>
->>> substitute_base("AAGTTAGTCA", "A", "C")
+>>> squares_of_evens("AAGTTAGTCA", "A", "C")
 "CCGTTCGTCG"
         </code></pre></p>
-        <h3>Exercise 3.2: Substitute Sequences</h3>
+
+        <h3>Exercise 3.2: Nth Power of Evens</h3>
         <p>
-            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions or HOFs (<code>filter</code>, <code>map</code>) here):
+            Write the function <code>squares_of_evens</code> that takes as input an integer n as well as a list of numbers, and returns a list that is equal to the nth power of all even numbers in the list. As before, use list comprehensions. 
         </p>
-        <p><pre><code>
->>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
->>> substitue_sequence(sequences, "A", "C")
-["CCGTTCGTCC", "CTCGCGTCCGCCCGC", CCGTTCCGCTG"]
-        </code></pre></p>
     </body>
     <p class="alert quoteGreen">
         You can test these functions using the same command as in previous exercises, just replace the function number with either 3.1 or 3.2
