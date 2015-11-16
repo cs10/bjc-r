@@ -1,0 +1,21 @@
+title: Besides Blocks: Welcome to Data in Python!
+{
+h2: Big Ideas
+big-idea: Horse
+
+h2: Activities
+learning-goal: Horse
+
+heading: Introduction to Data Science
+	resource: Introduction to Text Processing [/bjc-r/cur/programming/python/hug_text_processing/python_text_processing_intro.html]
+    resource: Basic File Input in Python [/bjc-r/cur/programming/python/hug_text_processing/python_basic_files.html]
+    resource: Counting Words [/bjc-r/cur/programming/python/hug_text_processing/python_counting_words.html]
+    resource: Top Words [/bjc-r/cur/programming/python/hug_text_processing/python_top_words.html]
+    resource: Word Length [/bjc-r/cur/programming/python/hug_text_processing/python_word_length.html]
+
+heading: Markov Model
+    resource: Introduction to Markov Models [/bjc-r/cur/programming/python/hug_text_processing/python_markov_model_intro.html]
+    resource: Building a Markov Model (optional) [/bjc-r/cur/programming/python/hug_text_processing/python_markov_model_intro.html]
+    resource: Generating Text with a Markov Model (optional) [/bjc-r/cur/programming/python/hug_text_processing/python_generating_text_with_a_markov_model.html]
+
+}

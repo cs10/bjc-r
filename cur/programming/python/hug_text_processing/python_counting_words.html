@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Counting Words</title>
+    </head>
+    <body>
+        <p>
+            Now let's start working with our data. Our goal here is to generate a list of the counts of every word in a file, and to find which words appear most often. There are libraries available for Python that would make us able to do this in two lines, but for the sake of education, let's write our own code that does all this from scratch.
+        </p>
+
+        <p>Modify word_counting.py so that it reads as below:
+        </p>
+
+    <pre>
+      <code>def read_file(filename):
+    """Returns the text contained in file with given filename."""
+    f = open("ketchup.txt", "r")
+    text = f.read()
+    return text
+
+  def count_words(text):
+  """Takes a text and returns a dictionary mapping each word to its count, for example:
+
+  count_words(["the pickle is the best pickle in pickle town"])
+
+  would return: 
+  {'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}
+  return counts
+
+text = read_file("ketchup.txt")
+print(count_words(text))</code>
+    </pre>
+      <p>Your job is to fill out the count_words function so that it returns a dictionary with the right counts. If you're stuck, look back at Exercise 5 from the Data Structures lab.
+    </body>
+</html>

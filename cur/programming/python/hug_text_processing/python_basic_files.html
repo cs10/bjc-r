@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Basic File Input</title>
+    </head>
+    <body>
+        <p>
+            In this section we will discuss how you can read files in Python. We'll also demo a common pattern in Python programming, where we first create "top level" scripts, that we later move into functions once we feel confident they are working. 
+
+            Open up markov.py in your favorite text editor and add the following code:
+        </p>
+
+    <pre>
+      <code>f = open("ketchup.txt", "r")
+print(f)
+      </code>
+    </pre>
+      <p>
+        The open command in Python is a reporter that takes two arguments. The first is the name of the file you want to open, and the second is a "mode", in this case "r" for "read". The reporter reports a file object, which we then store in variable f using the <code>=</code> operator. What is a file object? You can think of it as a magical portal into the file specified, that will let us get information out of files on our computer.
+      </p>
+        Run this file and you should see something mysterious that looks something like:
+      </p>
+
+    <pre>
+      <code>$ python markov.py
+<_io.TextIOWrapper name='down71.txt' mode='r' encoding='UTF-8'>
+      </code>
+    </pre>
+
+    <p>The mysterious stuff in between brackets is Python's way of telling us about the file object itself. Of course, we don't really care (or understand) what this means. Instead, we want to use the file object to get the data from the file. To do this, modify your markov.py so that it reads as shown below:
+
+    <pre>
+      <code>$ python markov.py
+<_io.TextIOWrapper name='down71.txt' mode='r' encoding='UTF-8'>
+      </code>
+    </pre>
+
+    <pre>
+      <code>f = open("ketchup.txt", "r")
+text = f.read()
+print(text)
+      </code>
+    </pre>
+
+    <p><code>f.read()</code> is the important part here. read is a function that is built into any file object (just like <code>.append</code> is built into any list and <code>.join</code> is built into any string). Here, we're telling the file object (which we said to think of as a magical portal into ketchup.txt) to give us the contents of its corresponding file. Try running markov.py, and you should get a print out of the contents of the file "ketchup.txt".
+    </p>
+
+    <pre>
+      <code>$ python markov.py
+bleep blorp bloop
+      </code>
+    </pre>
+
+    <p>We're going to want to read files throughout the rest of the lab, so what we'll do now is move our code into a function called read_file. We're doing this because if we want to read many files throughout the lab, we'd rather use a single function rather than have to rewrite these two lines of code every time. Modify your markov.py so that it reads as below. The triple quoted line is a special comment so that people reading your code know what the function is supposed to do.
+    </p>
+
+    <pre>
+      <code>def read_file(filename):
+    """Returns the text contained in file with given filename."""
+    f = open("ketchup.txt", "r")
+    text = f.read()
+    return text</code>
+    </pre>
+
+    <p>Recall that abstraction gives us two glorious advantages: detail hiding and generalization. Here, we've hidden detail. If we ever want to read a file again, we don't have to think about file objects or even understand object oriented programming, we just call the read_file function. Furthermore, we now have a general function for reading files. Embracing this philosophy of creating nicely defined abstractions is probably the key thing I want you to do before leaving CS10.  
+    </p>
+
+    </body>
+</html>

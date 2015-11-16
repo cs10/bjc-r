@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Top Words</title>
+    </head>
+    <body>
+        <p>
+            Now that we know how to count the number of occurrence of words in a file, let's use that to find the most popular words in a file.
+        </p>
+
+        <p>At the bottom of word_counts.py, add the code below (not part of any function):
+        </p>
+
+    <pre>
+      <code>
+text = read_file("ketchup.txt")
+counts = (count_words(text))
+print(sorted(counts))</code>
+    </pre>
+
+    <p>The sorted function takes as input an iterable, and reports a sorted version of this iterable. As you'll see when you run this program, it will return a list of the words in the dictionary sorted alphabetically. However, we want them sorted by their values (i.e. by their counts in the original file.
+    </p>
+
+    <p>Luckily for us, sort is a higher order function. Sort can take an optional input called <code>key</code> which tells the sorted function how to sort. For example, if we did
+    </p>
+
+    <pre>
+      <code>>>> sorted([-5, -1, 2, 3], key = abs)
+[-1, 2, 3, -5]</p></code>
+    </pre>
+
+
+    <p>In this case, we want to sort each key in the dictionary by its value. This is probably a bit mind blowing, but this means that we need to use count's <code>get</code> function, as shown below:
+    </p>
+
+    <pre>
+      <code>
+text = read_file("ketchup.txt")
+counts = (count_words(text))
+print(sorted(counts, key = counts.get))</code>
+    </pre>
+
+        <p>What this does is called the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency. However, you'll see that the less common words come first, whereas we want them to come last. To do this, we use another optional parameter for the sorted function called reverse, as shown below:
+        </p>
+
+    <pre>
+      <code>
+text = read_file("ketchup.txt")
+counts = (count_words(text))
+print(sorted(counts, key = counts.get, reverse = True))</code>
+    </pre>        
+
+    <p>Using the example above, write a function top_n_words as defined below:
+    </p>
+
+<pre>
+<code>def top_n_words(counts, n):
+    """Returns the top n words by count. For example:
+
+    top_n_words({'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}, 2)
+
+    would return ["pickle", "the"].
+
+    In the case of a tie, it doesn't matter which words are chosen to break the tie."""</code>
+    </pre>
+
+    <p>Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
+
+<pre>
+<code>def print_top_n_words(counts, n):
+    """Prints the top n words along with their counts. For example:
+
+    print_top_n_words({'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}, 2)
+
+    would print:
+    pickle 3
+    the 2"""</code>
+    </pre>
+
+    <p>Try printing the top words in a few of the provided files. 
+    </p>
+
+    <p>Optional: You might find it annoying that the most common words for most texts are boring things like "the". Create another function <code>top_n_words_except(counts, n, except)</code> that returns the top words except for the except list.
+    </p>
+</html>
