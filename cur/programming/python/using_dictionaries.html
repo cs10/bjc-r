@@ -40,6 +40,16 @@
 >>> grades["Alice"]
 90
                 </code></pre></p>
+
+                <p>
+                Or alternately, you can use the get command (which can be handy if you're doing some sort of Higher Order Functions, as in our next lab).
+                </p>
+                <p><pre><code>
+>>> grades.get("Alice")
+90
+                </code></pre></p>
+
+
             </li>
             <li>
                 <p>
@@ -57,11 +67,15 @@
                 To get either all keys or all values as a list:
                 </p>
                 <p><pre><code>
->>> grades.keys( )
+>>> grades.keys()
 ["Alice", "Eve"]
->>> grades.values( )
+>>> grades.values()
 [90, 100]
                 </code></pre></p>
+                <p>
+                Here, the empty parentheses indicate that we are invoking a zero argument function. 
+                </p>
+
             </li>
             <li>
                 <p>
