@@ -75,11 +75,11 @@ def less_than_m(text):
         </code></pre></p>
         <h3>Exercise 4.2: Substitute Sequences</h3>
         <p>
-            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions or HOFs (<code>filter</code>, <code>map</code>) here):
+            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions. You're also welcome to try out the <code>map</code> HOF if you'd like on this one, though be warned that almost all Python programmers use list comprehensions instead of map.
         </p>
         <p><pre><code>
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
->>> substitue_sequence(sequences, "A", "C")
+>>> substitute_sequence(sequences, "A", "C")
 ["CCGTTCGTCC", "CTCGCGTCCGCCCGC", "CCGTTCCGCTG"]
         </code></pre></p>
 </html>
