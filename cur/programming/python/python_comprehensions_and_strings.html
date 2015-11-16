@@ -23,7 +23,7 @@
             </tr>
         </table>
         
-        <p>In this case, we're using the <code>join</code> function that is built into every string. In this case we're asking the empty string "" to use its join command. We can also ask other strings to join lists, for example:
+        <p>In this case, we're using the <code>join</code> function that is built into every string. In this case we're asking the empty string <code>""</code> to use its join command. We can also ask other strings to join lists, for example, we could request that the string <code>" and "</code> to perform the join operation. This would result in the characters being joined, but with an " and " between each in the joined string.
         </p>
 
         <table style="width:80%">
@@ -67,19 +67,22 @@ def less_than_m(text):
         <h3>Exercise 4.1: Substitute Characters</h3>
 
         <p>
-            Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted. Use a list comprehension along with the <code>"".join</code> trick.
+            Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted. Use a list comprehension along with the <code>"".join</code> trick. Hint: Create a helper function that considers what to do with only one character and map this function over each character using your comprenehsion (similar to what you may have done for the HW1 word guessing game). 
         </p>
         <p><pre><code>
 >>> substitute_base("AAGTTAGTCA", "A", "C")
 "CCGTTCGTCG"
         </code></pre></p>
+        <p class="alert quoteGreen">
+        There is a built in string function called <code>replace</code> that you'd use in real world programming instead of doing it the way we require in thisproblem.
+        </p>        
         <h3>Exercise 4.2: Substitute Sequences</h3>
         <p>
-            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions or HOFs (<code>filter</code>, <code>map</code>) here):
+            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions. You're also welcome to try out the <code>map</code> HOF if you'd like on this one, though be warned that almost all Python programmers use list comprehensions instead of map.
         </p>
         <p><pre><code>
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
->>> substitue_sequence(sequences, "A", "C")
+>>> substitute_sequence(sequences, "A", "C")
 ["CCGTTCGTCC", "CTCGCGTCCGCCCGC", "CCGTTCCGCTG"]
         </code></pre></p>
 </html>

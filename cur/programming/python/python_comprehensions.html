@@ -46,7 +46,9 @@
         </p>
         <p><ul>
             <li>
-            Instead of having a multiply function with two blanks, we have <code>x * x</code> and we then specify that <code>x in my_list</code>.  
+            Instead of having a multiply function with two blanks, we have <code>x * x</code> 
+            </li>
+            <li>Instead of passing my_list as an argument we use something that resembles a for loop: <code>for x in my_list</code>.  
             </li>
             <li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
             </li>
@@ -59,7 +61,7 @@
         <p><pre><code>
 >>> [function(x) for x in my_list]
         </code></pre></p>
-        <p>This syntax can be confusing at first because it looks like we're writing a bunch of code on one line inside of a list. Don't be fooled! Again, list comprehensions look weird, but they'll make lots of sense after you use them.
+        <p>This syntax can be confusing at first because it looks like we're writing a for loop on one line inside of a list. Don't be fooled! Thi isn't actually a for loop at all, but instead special syntax that cosmetically resembles a for loop. Again, list comprehensions look weird, but they'll make lots of sense after you use them.
         </p>
 
         <h3>Keep in Python</h3>
@@ -92,14 +94,14 @@
             </tr>
         </table>
         <p>
-            More generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>.
+            More generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>. 
         </p>
         <p><pre><code>
 >>> [x for x in my_list if predicate(x)]
         </code></pre></p>
         <h3>Using List Comprehensions for Map and Keep Simultaneously</h3>
         <p>
-            List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise. Many epxerienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.
+            List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise. Many experienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.
         </p>
         <table style="width:80%">
             <tr>
@@ -131,13 +133,13 @@
             Write the function <code>squares_of_evens</code> that takes as input a list of numbers, and returns a list that is equal to the squares of all even numbers. Use list comprehensions. 
 
         <p><pre><code>
->>> squares_of_evens("AAGTTAGTCA", "A", "C")
-"CCGTTCGTCG"
+>>> squares_of_evens([-5, -2, 0, 1, 3, 4, 8]) 
+[4, 0, 16, 64]
         </code></pre></p>
 
         <h3>Exercise 3.2: Nth Power of Evens</h3>
         <p>
-            Write the function <code>squares_of_evens</code> that takes as input an integer n as well as a list of numbers, and returns a list that is equal to the nth power of all even numbers in the list. As before, use list comprehensions. 
+            Write the function <code>nth_power_of_evens</code> that takes as input an integer n as well as a list of numbers, and returns a list that is equal to the nth power of all even numbers in the list. As before, use list comprehensions. 
         </p>
     </body>
     <p class="alert quoteGreen">
