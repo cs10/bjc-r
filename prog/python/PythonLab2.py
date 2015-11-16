@@ -8,7 +8,7 @@ how to approach each problem (particularly the challenge problems).  This is
 not because we are mean, we just want you to learn a lot! So definitely try to
 have fun with this.  Welcome to data structures.
 
-Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014)
+Creators: Max Doughtery and Andrew Schmitt (UC Berkeley CS10 TAs, Fall 2014), Josh Hug (instructor Fall 2015)
 
 """
 
