@@ -25,8 +25,9 @@
             <tr>
                 <td>
                     <pre><code>
->>> [x * x for x in my_list]                          
-[1, 4, 9]
+>>> def square(x):
+...    return x * x
+>>> map(square, my_list)
                     </code></pre>
                 </td>
                 <td>
@@ -34,18 +35,61 @@
                 </td>
             </tr>
         </table>
+
         <p>
-            Above you can see that the python code is very similar to the Snap<em>!</em> code.  Instead of having a multiply function with two blanks, as in the Snap<em>!</em> version of map, we have <code>x * x</code> and we then specify that <code>x in my_list</code>.  As a result, we see that we multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number.  <b>Note:</b> In both Snap<em>!</em> and Python, map returns a new list and does not modify the old list.
+            Above you can see that the python code is very similar to the Snap<em>!</em> code.  Instead of having a multiply function with two blanks, as in the Snap<em>!</em> version of map, we first define a <code>square</code> function and pass it as an argument to the map function. We could also create an <a href="https://docs.google.com/presentation/d/1TwO63UECd9I4ufKDYUj9LDFT6RrDOtFQlbbcC9oBebE/pub?start=false&loop=false&delayms=3000&slide=id.gd1cee3eda_1_361">anonymous function</a> by using the <code>lambda</code> keyword, which acts a lot like the ringify command in Snap! We won't use <code>lambda</code> in this lab, but you'll see it plenty in 61A.
+
+            <p>The <code>map</code> function in Python is actually not used very often. Instead, a closely related construct called a <b>list comprehension</b> is often used instead. An example is given below.
+
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> my_list = [1, 2, 3]
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/set_my_list_snap.png"/>
+                </td>
+            </tr>
+        </table>
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> [x * x for x in my_list]                          
+[1, 4, 9]    
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_map_square.png"/>
+                </td>
+            </tr>
+        </table>
+        
+        <p>
+            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. As before, you'll see that the python code shown is still fairly similar to the Snap! code. The differences are:
+        </p>
+        <p><ul>
+            <li>
+            Instead of having a multiply function with two blanks, we have <code>x * x</code> and we then specify that <code>x in my_list</code>.  
+            </li>
+            <li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
+            </li>
+        </p>
+            The net result is exactly the same: We multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number. And like the <code>map</code> function, we produce a new list without changing the original list.
         </p>
         <p>
-            To generalize this map-like functionality (also know as a <b>list comprehension</b>) we can use the following syntax to apply any function to the items of our list:
-        </p>
+            The syntax for a <b>list comprehension</b> is as follows:
         <p><pre><code>
 >>> [function(x) for x in my_list]
         </code></pre></p>
+        <p>This syntax can be confusing at first because it looks like we're writing a bunch of code on one line inside of a list. Don't be fooled! Again, list comprehensions look weird, but they'll make lots of sense after you use them.
+        </p>
+
         <h3>Keep in Python</h3>
         <p>
-            In Python, keep has syntax that is similar to Python's map:
+            In Python, the keep function is called <code>filter</code>. However, in practice, most people use list comprehensions, so we will not show any examples of using <code>filter</code>.
         </p>
         <table style="width:80%">
             <tr>
@@ -73,14 +117,14 @@
             </tr>
         </table>
         <p>
-            Just like Python's map, we can also generalize keep to be used with any function:
+            Or more generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>.
         </p>
         <p><pre><code>
->>> [x for x in my_list if function(x)]
+>>> [x for x in my_list if predicate(x)]
         </code></pre></p>
         <h3>Using Map and Keep Together</h3>
         <p>
-            Python also has some nice syntax that allows us to perform map and keep at the same time (you can also do this in Snap<em>!</em>, but it's a little bit messy as shown to the right):
+            List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise.
         </p>
         <table style="width:80%">
             <tr>
@@ -115,9 +159,9 @@
 >>> substitute_base("AAGTTAGTCA", "A", "C")
 "CCGTTCGTCG"
         </code></pre></p>
-        <h3>Exercise 3.2: Substitue Sequences</h3>
+        <h3>Exercise 3.2: Substitute Sequences</h3>
         <p>
-            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use HOFs here):
+            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions or HOFs (<code>filter</code>, <code>map</code>) here):
         </p>
         <p><pre><code>
 >>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
@@ -126,6 +170,6 @@
         </code></pre></p>
     </body>
     <p class="alert quoteGreen">
-        You can test these functions using the same command as in previous exercises, just replace the fucntion number with either 3.1 or 3.2
+        You can test these functions using the same command as in previous exercises, just replace the function number with either 3.1 or 3.2
     </p>
 </html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>List Comprehensions and Strings</title>
+    </head>
+    <body>
+        <h3>The join Function</h3>
+        <p>In Snap!, when we wanted to turn a list into a text, we used the combine HoF along with the join reporter. In Python, things are a little weirder, but not so bad. Suppose we want to combine <code>['h', 'e', 'l', 'l', 'o']</code> into a string. To do this, we'd do the following:
+
+
+        <table style="width:80%">
+            <tr>
+                <td>
+                    <pre><code>
+>>> "".join(["h", "e", "l", "l", "o"])
+'hello'
+                    </code></pre>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_list_to_text.png"/>
+                </td>
+            </tr>
+        </table>
+        
+        <p>In this case, we're using the <code>join</code> function that is built into every string. In this case we're asking the empty string "" to use its join command. We can also ask other strings to join lists, for example:
+        </p>
+
+        <table style="width:80%">
+            <tr>
+                <td>
+<p><pre><code>
+>>> " and ".join(["h", "e", "l", "l", "o"])
+'h and e and l and l and o'
+</code></pre></p>
+                </td>
+                <td>
+                    <img src="/bjc-r/img/python/snap_list_to_text_fancy.png"/>
+                </td>
+            </tr>
+        </table>
+
+        <p>This trick of using <code>"".join</code> to convert lists to strings will be useful for using list comprehensions on strings.
+
+        <h3>List Comprehensions and Strings</h3>
+        <p>We can use list comprehensions to perform string operations as well. For example, suppose we want to write a function that gets rid of any letters that are alphabetically less than m. We might try something like:
+        </p>        
+<p><pre><code>
+def less_than_m(text):
+    return [letter for letter in text if letter < "m"]
+</code></pre></p>
+
+        <p>This almost works! However, there's a problem: List comprehensions always return a list, not a string. Even though the list comprehension knows how to iterate through the string, it returns a list of characters, not a string.
+
+<p><pre><code>
+>>> less_than_m("buddy")                          
+['b', 'd', 'd']
+</code></pre></p>
+
+        <p>To deal with this, we'll simply use the trick we saw in the section above:
+
+<p><pre><code>
+>>> "".join(less_than_m("buddy"))
+'bdd'
+</code></pre></p>
+
+        <h3>Exercise 4.1: Substitute Characters</h3>
+
+        <p>
+            Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted. Use a list comprehension along with the <code>"".join</code> trick.
+        </p>
+        <p><pre><code>
+>>> substitute_base("AAGTTAGTCA", "A", "C")
+"CCGTTCGTCG"
+        </code></pre></p>
+        <h3>Exercise 4.2: Substitute Sequences</h3>
+        <p>
+            Now imagine that we have a list of DNA sequences and we want to make a base substitution in all of them.  Write the function <code>substitute_sequences</code> that takes as input a list of strings representing DNA sequences, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  This function should return a list of DNA sequences with the proper base substituted in each sequence (make sure to use list comprehensions or HOFs (<code>filter</code>, <code>map</code>) here):
+        </p>
+        <p><pre><code>
+>>> sequences = ["AAGTTAGTCA", "CTCGAGTCCGAAAGC", "AAGTTCCGACTG"]
+>>> substitue_sequence(sequences, "A", "C")
+["CCGTTCGTCC", "CTCGCGTCCGCCCGC", "CCGTTCCGCTG"]
+        </code></pre></p>
+</html>
