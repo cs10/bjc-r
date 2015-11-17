@@ -22,13 +22,13 @@ git submodule update
 ```
 
 ## Viewing the Site
-The main "production" server for labs is hosted at Berkeley, [here][main].
+The main "production" server for labs is hosted at Berkeley, [here][main], it lags behind this repo in content.
 
 We also sometimes use CS10 students as lab rats, and you can view beta labs on
 the CS10 [site][cs10].
 
 However, the repository is setup so that any fork can be run using GitHub pages.
-The main BJC repo can be viewed in a live state, [here](gh), or you can use your own fork by visiting the following url: `http://[username].github.io/bjc-r/`, where you replace `[username]` with your GitHub account name.
+The main BJC repo can be viewed in a live state, [here][gh], or you can use your own fork by visiting the following url: `http://[username].github.io/bjc-r/`, where you replace `[username]` with your GitHub account name.
 
 ## Running Your Own Server
 While GitHub pages are convenient, you'll likely want to run your own web server
@@ -36,12 +36,14 @@ to make debugging changes much more quick and easy. In order to view the labs, y
 
 __No matter the platform, you should serve files from `/bjc-r/` at the root of your server.__
 This might not be convenient in all cases. So, you have a few options:
+
 1. Use a Git hook to do a find-and-replace when copying files to the destination.
 2. In your fork, replace all "absolute" paths (e.g. `/bjc-r/...`), with relative ones. You could also use a simple script to do this.
 
 
 ### Mac OS X and Unix
 The easiest way to setup a server is to use a simple, built-in Python server.
+
 1. `cd` into one level above the `bjc-r` directory.
 2. In a separate window run
 	`python -m SimpleHTTPServer` (for Python 2) or
@@ -55,6 +57,7 @@ Windows guide coming...sometime. However, the Python solution should work as wel
 ## Contributing
 A basic guide on writing labs is, [here][authorship]. However, for the most part, all you need to do is write some HTML.
 To contribute:
+
 1. Create your own fork of `bjc-r`.
 2. Optionally: Create a new branch for your feature.
 3. Work away!
@@ -76,5 +79,6 @@ Of course, submitting issues is always welcome and encouraged! These issues can 
 [cs10]: http://cs10.berkeley.edu/labs
 [llab]: http://github.com/beautyjoy/llab
 [localhost]: http://localhost:8000/bjc-r
-[main]: http://bjc.eecs.berkeley.edu/bjc-r/
+[main]: http://bjc.berkeley.edu/bjc-r/
+[gh]: http://beautyjoy.github.io/bjc-r/
 
