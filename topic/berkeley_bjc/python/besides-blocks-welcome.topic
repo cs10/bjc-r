@@ -13,7 +13,6 @@ learning-goal: Learn the basics of Python syntax and write a few simple programs
 learning-goal: You should be comfortable with basic math and "string" operations.
 
 heading: Introduction to Python
-    resource: Background Survey [/bjc-r/cur/programming/python/intro-survey.html]
     resource: Welcome to Besides Blocks: An Introduction to Python [/bjc-r/cur/programming/python/introduction_to_besides_blocks.html]
     resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_shell_and_python.html]
     
