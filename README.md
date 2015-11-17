@@ -52,7 +52,7 @@ The easiest way to setup a server is to use a simple, built-in Python server.
 4. That's it! :)
 
 ### Windows
-Windows guide coming...sometime. However, the Python solution should work as well.
+If you have python, the above method for Mac OS X will also work for you!
 
 ## Contributing
 A basic guide on writing labs is, [here][authorship]. However, for the most part, all you need to do is write some HTML.
