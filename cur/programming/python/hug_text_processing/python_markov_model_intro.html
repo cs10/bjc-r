@@ -26,7 +26,7 @@
         <img src="bjc-r/img/python/markov_example.png">
         </p>
 
-        <p>Let's start with some terminology. Given a text, the set of k-grams in that text is the set of all texts of length k that appear in that text. For example, if our text is "the ether" and k = 3, then the 3-grams that appear are "the", "he ", "e e", " et", "eth", "her", "ert", and "rth". The mysterious last two 3grams are "ert" and "rth" because we pretend that the text wraps around. You could also build a markov model that does not involve wrapping the text like this, but it'll be handy for our ultimate goals (explained later).
+        <p>Let's start with some terminology. Given a text, the set of k-grams in that text is the set of all texts of length k that appear in that text. For example, if our text is "the ether" and k = 3, then the 3-grams that appear are <code>"the", "he ", "e e", " et", "eth", "her", "ert", and "rth"</code>. The mysterious last two 3grams are "ert" and "rth" because we pretend that the text wraps around. You could also build a markov model that does not involve wrapping the text like this, but it'll be handy for our ultimate goals (explained later).
         </p>
 
         <p>The model that we'll be building of our text is a Markov Chain. A Markov Chain is a table of information about how frequently particular characters follow each unique kgram appearing in the text. As an example, the Markov Chain for our text with k=3 is:
@@ -51,61 +51,6 @@ kgram   freq         e   h   r   t         e   h   r   t
 
 <p>
 
-
-def kgram(text, ptr, k):
-    return text[ptr:ptr+k]
-
-def process_character(m, text, ptr, k):
-    """Adds information about the given character to the model
-
-    m is the model (a dictionary)
-    text is the text
-    text[ptr] is the character to be processed
-    k is the order of our Markov chain"""
-    
-    this_kgram = kgram(text, ptr, k)
-    next_character = text[ptr+k]
-
-    if this_kgram not in m:
-        m[this_kgram] = {}
-
-    if next_character not in m[this_kgram]:
-        m[this_kgram][next_character] = 1
-    else:
-        m[this_kgram][next_character] += 1
-
-def build_markov_model(text, k):
-    m = {}
-    text_length = len(text) - k
-    for ptr in range(0, text_length):
-        process_character(m, text, ptr, k)
-
-    return m
-
-def random_character(m, kgram):
-    """returns a character that follows the given kgram"""
-    char_list = []
-    for char, count in m[kgram].items():
-        char_list.extend([char] * count)
-    
-    return random.choice(char_list)
-
-def generate_random_text(m, N):
-    starter = random.choice(list(m.keys()))
-
-#    if starter not in m.keys():
-#        return("Invalid starter")
-    
-    output_str = starter
-    current_kgram = starter
-
-    for i in range(N):
-        new_char = random_character(m, current_kgram)
-        output_str = output_str + new_char
-        current_kgram = current_kgram + new_char
-        current_kgram = current_kgram[1:]
-
-    return output_str
 
     </body>
 </html>
