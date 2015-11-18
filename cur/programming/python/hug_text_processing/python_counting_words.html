@@ -13,25 +13,30 @@
         </p>
 
     <pre>
-      <code>  def read_file(filename):
+      <code>def read_file(filename):
     """Returns the text contained in file with given filename."""
     f = open(filename, "r")
     text = f.read()
     return text
 
-  def count_words(text):
+def count_words(text):
   """Takes a text and returns a dictionary mapping each word to its count, for example:
 
-  count_words(["the pickle is the best pickle in pickle town"])
+  count_words(["Fruits and Vegetables and Vegetables on a Budget and Vegetables at a Store and Vegetables to Clean Fruit and Vegetables"])
 
   would return: 
-  {'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}
+  {'and': 5, 'on': 1, 'Vegetables': 5, 'Budget': 1, 'to': 1, 'Fruit': 1, 'a': 2, 'Clean': 1, 'Fruits': 1, 'Store': 1, 'at': 1}
   """
   return ???
-
-text = read_file("ketchup.txt")
+  
+text = read_file("horse_ebooks.txt")
 print(count_words(text))</code>
     </pre>
       <p>Your job is to fill out the count_words function so that it returns a dictionary with the right counts. If you're stuck, look back at <a href="/bjc-r/cur/programming/python/using_dictionaries.html">Exercise 6 from the Data Structures lab</a>.
     </body>
+
+
+ <p class="alert quoteBlue">
+To split a sentence into a list of words, use the <code>split</code> function. For example, <code>"hello my name is josh".split</code> would return <code>["hello", "my", "name", "is", "josh"]</code>.
+ </p>    
 </html>
