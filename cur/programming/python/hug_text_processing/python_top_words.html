@@ -19,10 +19,10 @@ counts = count_words(text)
 print(sorted(counts))</code>
     </pre>
 
-    <p>The sorted function takes as input an iterable, and reports a sorted version of this iterable. As you'll see when you run this program, it will return a list of the words in the dictionary sorted alphabetically. However, we want them sorted by their values (i.e. by their counts in the original file.
+    <p>The sorted function takes as input an iterable, and reports a sorted version of this iterable. As you'll see when you run this program, it will return a list of the words in the dictionary sorted alphabetically. However, we want them sorted by their values (i.e. by their counts in the original file).
     </p>
 
-    <p>Luckily for us, sort is a higher order function. Sort can take an optional input called <code>key</code> which tells the sorted function how to sort. For example, we can sort a list of numbers by their absolute value as follows, by passing <code>abs</code> function into the <code>key</code> parameter. Here we're using a special syntax for optional parameters in Python, where we set the optional parameter with an equals sign. There is no equivalent for this in Snap<em>!</em>, but the idea should hopefully be clear.
+    <p>Luckily for us, <code>sort</code> is a higher order function. <code>sort</code> can take an optional input called <code>key</code> which tells the sorted function how to sort. For example, we can sort a list of numbers by their absolute value as follows, by passing <code>abs</code> function into the <code>key</code> parameter. Here we're using a special syntax for optional parameters in Python, where we set the optional parameter with an equals sign. There is no equivalent for this in Snap<em>!</em>, but the idea should hopefully be clear.
     </p>
 
     <pre>
@@ -49,7 +49,7 @@ $ python word_analyzer.py
     </pre>
 
 
-        <p>What this does is called the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency. Because the sorted function always puts smallest items first, you'll see that the less common words come first. If we want the opposite order, we can use another optional parameter for the sorted function called reverse, as shown below:
+        <p>What this does is call the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency (i.e. their value in the dictionary). Because the sorted function always puts smallest items first, you'll see that the less common words come first. If we want the opposite order, we can use another optional parameter for the sorted function called reverse, as shown below:
         </p>
 
     <pre>
@@ -79,8 +79,9 @@ print(sorted(counts, key = counts.get, reverse = True))</code>
 Hint by example: <code>x[:5]</code> returns the first 5 items of a list.
  </p>    
 
+ <h3>Printing the Top N Words</h3>
 
-    <p>Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
+    <p>Complete this section of the lab by writing a function <code>print_top_n_words</code> that prints out the top n words along with their counts, with one word on each line.</p>
 
 <pre>
 <code>def print_top_n_words(counts, n):
