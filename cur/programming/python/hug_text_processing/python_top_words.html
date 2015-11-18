@@ -9,20 +9,20 @@
             Now that we know how to count the number of occurrence of words in a file, let's use that to find the most popular words in a file.
         </p>
 
-        <p>At the bottom of word_counts.py, add the code below (not part of any function):
+        <p>At the bottom of word_analyzer.py, add the code below (not part of any function):
         </p>
 
     <pre>
       <code>
-text = read_file("ketchup.txt")
-counts = (count_words(text))
+text = read_file("horse_ebooks.txt")
+counts = count_words(text)
 print(sorted(counts))</code>
     </pre>
 
     <p>The sorted function takes as input an iterable, and reports a sorted version of this iterable. As you'll see when you run this program, it will return a list of the words in the dictionary sorted alphabetically. However, we want them sorted by their values (i.e. by their counts in the original file.
     </p>
 
-    <p>Luckily for us, sort is a higher order function. Sort can take an optional input called <code>key</code> which tells the sorted function how to sort. For example, if we did
+    <p>Luckily for us, sort is a higher order function. Sort can take an optional input called <code>key</code> which tells the sorted function how to sort. For example, we can sort a list of numbers by their absolute value as follows, by passing <code>abs</code> function into the <code>key</code> parameter. Here we're using a special syntax for optional parameters in Python, where we set the optional parameter with an equals sign. There is no equivalent for this in Snap<em>!</em>, but the idea should hopefully be clear.
     </p>
 
     <pre>
@@ -31,51 +31,58 @@ print(sorted(counts))</code>
     </pre>
 
 
-    <p>In this case, we want to sort each key in the dictionary by its value. This is probably a bit mind blowing, but this means that we need to use count's <code>get</code> function, as shown below:
+    <p>In our case, in order to find the most popular words, we want to sort each key in the dictionary by its value. This is probably a bit mind blowing, but this means that we need to use count's <code>get</code> function, as shown below. Try copying and pasting this into word_analyzer.py to see what happens:
     </p>
 
     <pre>
       <code>
-text = read_file("ketchup.txt")
-counts = (count_words(text))
+text = read_file("horse_ebooks.txt")
+counts = count_words(text)
 print(sorted(counts, key = counts.get))</code>
     </pre>
 
-        <p>What this does is called the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency. However, you'll see that the less common words come first, whereas we want them to come last. To do this, we use another optional parameter for the sorted function called reverse, as shown below:
+    <pre>
+      <code>
+$ python word_analyzer.py
+['on', 'Budget', 'to', 'Fruit', 'Clean', 'Fruits', 'Store', 'at', 'a', 'and', 'Vegetables']
+</code>
+    </pre>
+
+        <p>What this does is called the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency. Because the sorted function always puts smallest items first, you'll see that the less common words come first. If we want the opposite order, we can use another optional parameter for the sorted function called reverse, as shown below:
         </p>
 
     <pre>
       <code>
-text = read_file("ketchup.txt")
+text = read_file("horse_ebooks.txt")
 counts = (count_words(text))
 print(sorted(counts, key = counts.get, reverse = True))</code>
     </pre>        
 
-    <p>Using the example above, write a function top_n_words as defined below:
+    <p>Using the examples above as inspiration, write a function <code>top_n_words</code> as defined below:
     </p>
 
 <pre>
 <code>def top_n_words(counts, n):
     """Returns the top n words by count. For example:
 
-    top_n_words({'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}, 2)
+    top_n_words({'and': 5, 'on': 1, 'Vegetables': 5, 'Budget': 1, 'to': 1, 'Fruit': 1, 'a': 2, 'Clean': 1, 'Fruits': 1, 'Store': 1, 'at': 1}, 2)
 
-    would return ["pickle", "the"].
+    would return ["and", "Vegetables"].
 
     In the case of a tie, it doesn't matter which words are chosen to break the tie."""</code>
     </pre>
 
-    <p>Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
+    <p>Make sure to test that <code>top_n_words</code> works. Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
 
 <pre>
 <code>def print_top_n_words(counts, n):
     """Prints the top n words along with their counts. For example:
 
-    print_top_n_words({'town': 1, 'is': 1, 'in': 1, 'the': 2, 'pickle': 3, 'best': 1}, 2)
+    print_top_n_words({'and': 5, 'on': 1, 'Vegetables': 5, 'Budget': 1, 'to': 1, 'Fruit': 1, 'a': 2, 'Clean': 1, 'Fruits': 1, 'Store': 1, 'at': 1}, 2)
 
     would print:
-    pickle 3
-    the 2"""</code>
+    and 5
+    Vegetables 5"""</code>
     </pre>
 
     <p>Try printing the top words in a few of the provided files. 
