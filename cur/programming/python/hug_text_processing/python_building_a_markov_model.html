@@ -47,8 +47,20 @@ kgram   freq         e   h   r   t
     k is the order of our Markov chain"""</code>
     </pre>
 
-<p>For example, consider what happens if we want to build a markov model of "the ether". Suppose our markov model is stored in a variable called <code>markov</code>. Initially <code>markov = {}</code>.  start with an empty model <code>{}</code>, and tell process_character to consider the first kgram by making the call 
+<p>For example, consider what happens if we want to build a markov model of "the ether". Suppose our markov model is stored in a variable called <code>markovmodel</code> and we have k = 4. After we've processed the first three characters, <code>markovmodel = {'the ': {'e': 1}, 'he e': {'t': 1}, 'e et': {'h': 1}}</code>. To process the next character, we'd call <code>process_character(markovmodel, "the ether", 3, 4)</code>. Make sure you understand this before proceeding!</p>
 
+<p>Write the <code>process_character</code> function. Test it with the following code and make sure your output matches the output given in the example in the paragraph above.
+</p>
+
+<pre>
+<code>markovmodel = {}
+process_character(markovmodel, "the ether", 0, 4)
+process_character(markovmodel, "the ether", 1, 4)
+process_character(markovmodel, "the ether", 2, 4)
+</code>
+    </pre>
+
+<p>More coming soon...</p>
 
     </body>
 </html>
