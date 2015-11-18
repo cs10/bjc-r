@@ -22,6 +22,10 @@
         <p>So far, we've talked about what is called "natural language processing". We feed our algorithms some text data, and it spits back out something else. The reminder of this lab is an exercise in "natural language generation", where we'll train a model how to speak and have it generate new text for us. We'll use the simplest possible model, but the results may still surprise you in their sophistication.
         </p>
 
+        <p align = "center">
+        <img src="bjc-r/img/python/markov_example.png">
+        </p>
+
         <p>Let's start with some terminology. Given a text, the set of k-grams in that text is the set of all texts of length k that appear in that text. For example, if our text is "the ether" and k = 3, then the 3-grams that appear are "the", "he ", "e e", " et", "eth", "her", "ert", and "rth". The mysterious last two 3grams are "ert" and "rth" because we pretend that the text wraps around. You could also build a markov model that does not involve wrapping the text like this, but it'll be handy for our ultimate goals (explained later).
         </p>
 
