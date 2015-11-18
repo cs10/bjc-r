@@ -33,7 +33,22 @@ kgram   freq         e   h   r   t
     get_kgram("hello", 3, 4) would crash since 3 + 4 is longer than the string."""</code>
     </pre>
 
-    
+<h3>Adding a Single Character to our Model</h3>
+
+<p>Next we'll add a function that add single characters to our model. Add the following code to the bottom of markov.py:</p>
+
+<pre>
+<code>def process_character(m, text, ptr, k):
+    """Adds information about the given character to the model
+
+    m is the model (a dictionary)
+    text is the text
+    text[ptr] is the character to be processed
+    k is the order of our Markov chain"""</code>
+    </pre>
+
+<p>For example, consider what happens if we want to build a markov model of "the ether". Suppose our markov model is stored in a variable called <code>markov</code>. Initially <code>markov = {}</code>.  start with an empty model <code>{}</code>, and tell process_character to consider the first kgram by making the call 
+
 
     </body>
 </html>
