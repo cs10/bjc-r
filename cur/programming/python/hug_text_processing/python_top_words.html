@@ -48,6 +48,7 @@ $ python word_analyzer.py
 </code>
     </pre>
 
+
         <p>What this does is called the get function of the counts dictionary for each item, and use that for sorting. You'll see that the words are now sorted by frequency. Because the sorted function always puts smallest items first, you'll see that the less common words come first. If we want the opposite order, we can use another optional parameter for the sorted function called reverse, as shown below:
         </p>
 
@@ -72,7 +73,14 @@ print(sorted(counts, key = counts.get, reverse = True))</code>
     In the case of a tie, it doesn't matter which words are chosen to break the tie."""</code>
     </pre>
 
-    <p>Make sure to test that <code>top_n_words</code> works. Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
+    <p>Make sure to test that <code>top_n_words</code> works. We haven't told you how to do this explicitly, but using what you know so far, you should try to figure out how to test top_n_words using a print statement.</p>
+
+ <p class="alert quoteBlue">
+Hint by example: <code>x[:5]</code> returns the first 5 items of a list.
+ </p>    
+
+
+    <p>Complete this section of the lab by writing a function print_top_n_words that prints out the top n words along with their counts, with one word on each line.</p>
 
 <pre>
 <code>def print_top_n_words(counts, n):
@@ -85,9 +93,16 @@ print(sorted(counts, key = counts.get, reverse = True))</code>
     Vegetables 5"""</code>
     </pre>
 
-    <p>Try printing the top words in a few of the provided files. 
+
+ <p class="alert quoteBlue">
+Hint: Make sure to use your <code>top_n_words</code> function when writing this function. 
+Hint 2: Use str to convert integers to strings.
+ </p>    
+
+
+    <p>Try printing the top words in a few of the provided files (beatles.txt, nietzsche.txt, etc.) You may need to make n kind of large to see anything interesting.
     </p>
 
-    <p>Optional: You might find it annoying that the most common words for most texts are boring things like "the". Create another function <code>top_n_words_except(counts, n, except)</code> that returns the top words except for the except list.
+    <p>Optional: You might find it annoying that the most common words for most texts are boring things like "the". Create another function <code>top_n_words_except(counts, n, except)</code> that returns the top words except for anything that appears in <code>except</code>, which is a list.
     </p>
 </html>
