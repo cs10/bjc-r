@@ -6,17 +6,20 @@
     </head>
     <body>
         <p>
-            So far, we've looked at how we can find the top words from a text as well as the average word length in a text. There are many more interesting thing we could do to analyze textual or other data, as described in the reading for this week. One common term for such analysis is "data science". If you're interested in learning more about how to use Python to analyze real data, consider taking the Data Science Foundations course C8.
+            So far, we've looked at how we can find the top words from a text as well as the average word length in a text. There are many more interesting things we could do to analyze textual or other data, as described in the reading for this week. One common term for such analysis is "data science". If you're interested in learning more about how to use Python to analyze real data, consider taking the Data Science Foundations course C8.
         </p>
 
-        <p>C8 and CS61A don't overlap very much. Both assume no prior programming experience (not even CS10), but CS61A focuses much more on traditional computer science topics. By contrast C8 focuses more on ...
+        <p>If you're trying to decide between C8 and CS61A: C8 and CS61A don't overlap very much, and there's no reason you can't take both. We expect that there are many students who will take CS61A followed by C8, and many students will take C8 followed by CS61A. If you're pretty sure that you're interested in being a CS major, you'll need to take CS61A, but it's OK to wait until the Fall if you're a freshman. 
+        </p>
+        <p>Both assume no prior programming experience (not even CS10). CS61A focuses much more on traditional computer science topics. It'll feel like an advanced version of CS10 that moves more quickly and covers a broader variety of topics, largely oriented around abstraction and programming paradigms. By contrast, C8 is more of a class in applied techniqes for analyzing real world data. The syllabi can be found here: <a href="http://cs61a.org/">CS61A</a> and here: <a href="http://data8.org/">C8</a>.
         </p>
 
         <h3>Building an AI that Can Talk (Optional)</h3>
 
-        <p>While this exercise is optional, it's definitely within reach of everyone in CS10. We encourage you to try this activity, though if you don't have the time that's fine. This exercise is great practice with Python data structure, so you might consider doing it while you're studying for finals, even if you don't do it the same week as the rest of this lab.
+        <p>While this exercise is optional, it's definitely within reach of everyone in CS10. We encourage you to try this activity, though if you don't have the time that's fine. This exercise is great practice with Python data structures, so you might consider doing it while you're studying for finals, even if you don't do it the same week as the rest of this lab.
+        </p>
 
-        <p>So far, we've talked about "natural language processing". We feed our algorithms some text data, and it spits back out something else. The reminder of this lab is an exercise in "natural language generation", where we'll train a model how to speak and have it generate new text for us. We'll use the simplest possible model, but the results may still surprise you in their sophistication.
+        <p>So far, we've talked about what is called "natural language processing". We feed our algorithms some text data, and it spits back out something else. The reminder of this lab is an exercise in "natural language generation", where we'll train a model how to speak and have it generate new text for us. We'll use the simplest possible model, but the results may still surprise you in their sophistication.
         </p>
 
         <p>Let's start with some terminology. Given a text, the set of k-grams in that text is the set of all texts of length k that appear in that text. For example, if our text is "the ether" and k = 3, then the 3-grams that appear are "the", "he ", "e e", " et", "eth", "her", "ert", and "rth". The mysterious last two 3grams are "ert" and "rth" because we pretend that the text wraps around. You could also build a markov model that does not involve wrapping the text like this, but it'll be handy for our ultimate goals (explained later).
