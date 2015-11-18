@@ -5,7 +5,7 @@
         <title>Building a Markov Model</title>
     </head>
     <body>
-        <p>For this part of the lab, create a new file markov.py. Your ultimate goal is to write a function build_markov_model(text, k) that generates a dictionary representation of a Markov Chain of order k for the given text. For example, <code>build_markov_model("the ether")</code> will return <code>{' et': {'h': 1}, 'the': {' ': 1, 'r': 1}, 'e e': {'t': 1}, 'he ': {'e': 1}, 'eth': {'e': 1}}</code>. Note that this is just a dictionary representation of our table from the previous page:
+        <p>Your ultimate goal is to write a function build_markov_model(text, k) that generates a dictionary representation of a Markov Chain of order k for the given text. For example, <code>build_markov_model("the ether")</code> will return <code>{' et': {'h': 1}, 'the': {' ': 1, 'r': 1}, 'e e': {'t': 1}, 'he ': {'e': 1}, 'eth': {'e': 1}}</code>. Note that this is just a dictionary representation of our table from the previous page:
 <pre>                frequency of           probability that
                  next char             
 kgram   freq         e   h   r   t   
@@ -20,7 +20,7 @@ kgram   freq         e   h   r   t
  rth      1      0   1   0   0   0</pre>        
         </p>
         <p>
-        To reach this goal, let's take things one step at a time. 
+        To reach this goal, let's take things one step at a time. Let's start by creating a file called markov.py in our datalab folder. In that file, add the following function and fill it in. Test it to your satisfaction before proceeding.
         </p>
 
 <pre>
@@ -32,6 +32,8 @@ kgram   freq         e   h   r   t
     get_kgram("hello", 1, 4) would return "ello"
     get_kgram("hello", 3, 4) would crash since 3 + 4 is longer than the string."""</code>
     </pre>
+
+    
 
     </body>
 </html>

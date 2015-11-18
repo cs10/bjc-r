@@ -21,7 +21,7 @@ heading: Introduction to Data Science
 
 heading: Markov Model
     resource: Introduction to Markov Models [/bjc-r/cur/programming/python/hug_text_processing/python_markov_model_intro.html]
-    resource: Building a Markov Model (optional) [/bjc-r/cur/programming/python/hug_text_processing/python_building_a_markov_model.html.html]
+    resource: Building a Markov Model (optional) [/bjc-r/cur/programming/python/hug_text_processing/python_building_a_markov_model.html]
     resource: Generating Text with a Markov Model (optional) [/bjc-r/cur/programming/python/hug_text_processing/python_generating_text_with_a_markov_model.html]
 
 }
