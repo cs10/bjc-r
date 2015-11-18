@@ -7,52 +7,55 @@
     <body>
         <p>
             In this section we will discuss how you can read files in Python. We'll also demo a common pattern in Python programming, where we first create "top level" scripts, that we later move into functions once we feel confident they are working. 
-
-            Open up markov.py in your favorite text editor and add the following code:
+        </p>
+        <p>
+            To start, create a file called "word_analyzer.py" and open it in your favorite text editor. Once you've got it open, add the following code:
         </p>
 
     <pre>
-      <code>f = open("ketchup.txt", "r")
+      <code>f = open("horse_ebooks.txt", "r")
 print(f)
       </code>
     </pre>
       <p>
-        The open command in Python is a reporter that takes two arguments. The first is the name of the file you want to open, and the second is a "mode", in this case "r" for "read". The reporter reports a file object, which we then store in variable f using the <code>=</code> operator. What is a file object? You can think of it as a magical portal into the file specified, that will let us get information out of files on our computer.
+        In Python, <code>open</code> is a reporter that takes two arguments. The first is the name of the file you want to open, and the second is a "mode", in this case "r" for "read". Don't worry about the details too much in this lab, you'll cover them in a later course. The <code>open</code> reporter reports a file object, which we then store in variable f using the <code>=</code> operator. What is a file object? You can think of it as a magical portal into the file specified, that will let us get information out of files on our computer.
       </p>
         Run this file and you should see something mysterious that looks something like:
       </p>
 
     <pre>
-      <code>$ python markov.py
-<_io.TextIOWrapper name='down71.txt' mode='r' encoding='UTF-8'>
+      <code>$ python word_analyzer.py
+<_io.TextIOWrapper name='horse_ebooks.txt' mode='r' encoding='UTF-8'>
       </code>
     </pre>
 
-    <p>The mysterious stuff in between brackets is Python's way of telling us about the file object itself. Of course, we don't really care (or understand) what this means. Instead, we want to use the file object to get the data from the file. To do this, modify your markov.py so that it reads as shown below:
+ <p class="alert quoteBlue">
+ Tip: Instead of typing out the entire filename for "word_analyzer.py", instead just type "python wo", then press tab, and your command line will autocomplete the filename. 
+ </p>
+
+    <p>We see some mysterious stuff get printed out by Python: <pre><_io.TextIOWrapper name='horse_ebooks.txt' mode='r' encoding='UTF-8'></pre> This is Python's way of printing out the file object. Of course, we don't really care (or understand) what this stuff means. Instead, we want to use the file object to get the data from the file on our computers. To do this, modify your word_analyzer.py so that it reads as shown below:
 
     <pre>
-      <code>$ python markov.py
-<_io.TextIOWrapper name='down71.txt' mode='r' encoding='UTF-8'>
-      </code>
-    </pre>
-
-    <pre>
-      <code>f = open("ketchup.txt", "r")
+      <code>f = open("horse_ebooks.txt", "r")
 text = f.read()
 print(text)
       </code>
     </pre>
 
-    <p><code>f.read()</code> is the important part here. read is a function that is built into any file object (just like <code>.append</code> is built into any list and <code>.join</code> is built into any string). Here, we're telling the file object (which we said to think of as a magical portal into ketchup.txt) to give us the contents of its corresponding file. Try running markov.py, and you should get a print out of the contents of the file "ketchup.txt".
+    <p>
+    Try running word_analyzer.py, and you should get a print out of the contents of the file "horse_ebooks.txt".
     </p>
 
     <pre>
-      <code>$ python markov.py
-bleep blorp bloop
+      <code>$ python word_lengths.py
+Fruits and Vegetables and Vegetables on a Budget and Vegetables at a Store and Vegetables to Clean Fruit and Vegetables
       </code>
     </pre>
 
-    <p>We're going to want to read files throughout the rest of the lab, so what we'll do now is move our code into a function called read_file. We're doing this because if we want to read many files throughout the lab, we'd rather use a single function rather than have to rewrite these two lines of code every time. Modify your markov.py so that it reads as below. The triple quoted line is a special comment so that people reading your code know what the function is supposed to do.
+    <p>If we look to the Python code, <code>f.read()</code> is the important part. <code>read</code> is a function that is built into every file object (just like <code>.append</code> is built into any list and <code>.join</code> is built into any string). Here, we're telling the file object (which we said to think of as a magical portal into horse_ebooks.txt) to give us the contents of its corresponding file.
+    </p>
+
+    <p>Just like we've done before in Snap<em>!</em>, it makes sense to move code that does specific tasks into a block. In this case, we're going to want to read files throughout the rest of this lab, so we should move our code into a function called <code>read_file</code>. We're doing this because if we want to read many files throughout the lab, we'd rather use a single function rather than have to rewrite these two lines of code every time. T Modify your word_length.py so that it reads as below. 
     </p>
 
     <pre>
@@ -63,7 +66,9 @@ bleep blorp bloop
     return text</code>
     </pre>
 
-    <p>Recall that abstraction gives us two glorious advantages: detail hiding and generalization. Here, we've hidden detail. If we ever want to read a file again, we don't have to think about file objects or even understand object oriented programming, we just call the read_file function. Furthermore, we now have a general function for reading files. Embracing this philosophy of creating nicely defined abstractions is probably the key thing I want you to do before leaving CS10.  
+    <p>You'll notice that we've done something strange, and have added an English description of what the function is supposed to do inside triple quotes. These triple quoted comments are very (!!) common in real world Python code, as it provides other programmers with an understanding of what your function is supposed to do.</p>
+
+    <p>Recall that abstraction gives us two glorious advantages: detail hiding and generalization. We've now got a general function that can read any file, and when we read files we don't have to think about file objects or modes or any of that mysterious business. We first saw these principles in action in Snap<em>!</em>, but they'll be important to you as long as you're writing programs, and even beyond. 
     </p>
 
     </body>
