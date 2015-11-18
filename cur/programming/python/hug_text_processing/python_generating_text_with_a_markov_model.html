@@ -2,36 +2,11 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Building a Markov Model</title>
+        <title>Generating Text with a Markov Model</title>
     </head>
     <body>
-        <p>For this part of the lab, create a new file markov.py. Your ultimate goal is to write a function build_markov_model(text, k) that generates a dictionary representation of a Markov Chain of order k for the given text. For example, <code>build_markov_model("the ether")</code> will return <code>{' et': {'h': 1}, 'the': {' ': 1, 'r': 1}, 'e e': {'t': 1}, 'he ': {'e': 1}, 'eth': {'e': 1}}</code>. Note that this is just a dictionary representation of our table from the previous page:
-<pre>                frequency of           probability that
-                 next char             
-kgram   freq         e   h   r   t   
--------------------------------------
- the      2      1   0   0   1   0    
- he       1      0   1   0   0   0    
- e e      1      0   0   0   0   1   
-  et      1      0   0   1   0   0   
- eth      1      0   1   0   0   0   
- her      1      0   0   0   0   1   
- ert      1      0   0   1   0   0   
- rth      1      0   1   0   0   0</pre>        
+        <p>You sure are speedy! Other things call. Expect this page to be done by Thursday around noon.
         </p>
-        <p>
-        To reach this goal, let's take things one step at a time. 
-        </p>
-
-<pre>
-<code>def get_kgram(text, ptr, k):
-    """Returns the kgram starting at position ptr in a text. For example:
-
-    get_kgram("hello", 0, 3) would return "hel"
-    get_kgram("hello", 1, 3) would return "ell"
-    get_kgram("hello", 1, 4) would return "ello"
-    get_kgram("hello", 3, 4) would crash since 3 + 4 is longer than the string."""</code>
-    </pre>
 
     </body>
 </html>
