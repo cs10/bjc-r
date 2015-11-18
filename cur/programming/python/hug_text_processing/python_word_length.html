@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Word Length</title>
+        <title>Word Length and Diversity</title>
     </head>
     <body>
         <p>
@@ -27,5 +27,17 @@ Hint: To get the length of a string, use the <code>len</code> function.
 
     <p>Make sure to test your code. When you've completed this task, get your lab TA to check off your code. For fun, test the length of the average word used by Nietzsche, MLK, Jay-Z, candidates running for office in the recent debates, etc.
     </p>
+ <h3>Measuring Word Diversity (optional)</h3>
+
+    <p>Another interesting measure of an author or speaker is the diversity of their words. One crude measure we might use is as follows: Define the diversity score of a text as the number of distinct words divided by the total number of words. For example "Fruits and Vegetables and Vegetables on a Budget and Vegetables at a Store and Vegetables to Clean Fruit and Vegetables" is not a very diverse sentence, as it has 20 total words, but only 11 distinct words, with a diversity score of 11/20 = 0.55.
+    </p>
+
+    <p>Write a function <code>word_diversity(counts)</code> that returns the diversity of a text. Test the diversity of the given input texts.
+    </p>
+
+ <p class="alert quoteBlue">
+Hint: To find the number of distinct items, use the <code>set</code> function to convert a list into a set data structure. For example <code>x = set(["dog", "cat", "fish", "dog", "dog", "fish"])</a> would give us <code>set(["dog", "fish", "cat"])</code>.
+ </p>    
+
     </body>
 </html>
