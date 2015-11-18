@@ -33,7 +33,7 @@ print(f)
  Tip: Instead of typing out the entire filename for "word_analyzer.py", instead just type "python wo", then press tab, and your command line will autocomplete the filename. 
  </p>
 
-    <p>We see some mysterious stuff get printed out by Python: <pre><_io.TextIOWrapper name='horse_ebooks.txt' mode='r' encoding='UTF-8'></pre> This is Python's way of printing out the file object. Of course, we don't really care (or understand) what this stuff means. Instead, we want to use the file object to get the data from the file on our computers. To do this, modify your word_analyzer.py so that it reads as shown below:
+    <p>Consider that mysterious stuff that got printed out by Python: <code><_io.TextIOWrapper name='horse_ebooks.txt' mode='r' encoding='UTF-8'></code> This is Python's way of printing out the file object. As a programmer, you don't really care (or understand) what this stuff means. It's like asking one of your friends for her DNA sequence instead of asking her to pass you the mashed potatoes. Instead, we want the file object to do its job and get the data from the file on our computer. To do this, modify your word_analyzer.py so that it reads as shown below:
 
     <pre>
       <code>f = open("horse_ebooks.txt", "r")
