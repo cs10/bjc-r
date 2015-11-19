@@ -87,7 +87,7 @@ and a base that is to take the place of the base being substituted.  Returns
 a string with the proper base substituted.
 
 >>> substitute_base("AAGTTAGTCA", "A", "C") # substitute "A" with "C"
-"CCGTTCGTCG"
+"CCGTTCGTCC"
 
 """
 
