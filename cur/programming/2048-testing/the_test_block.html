@@ -1,0 +1,39 @@
+<html>
+
+
+   <head>
+
+      <script src="/bjc-r/llab/loader.js"></script>
+
+      <title> The Test Block</title>
+
+   </head>
+
+
+   <body>
+
+<h3>How The <code>test</code> Block Works</h3>
+<br>
+<p>We've provided a large number of blocks that you can use in 2048. You'll also need to fill in all of the gray blocks described in the spec. As mentioned in lecture, in this assignment we're going to use a new HoF called test to verify the correct function of the gray blocks that we build.</p>
+
+<p>To understand how the testing block works, let's start by looking at its structure.</p>
+
+<p><img border="0" src="/bjc-r/img/2048-testing/test_block.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+
+<p>Based on the structure of the block, we notice that the domain consists of a reporter (inside the gray border, or ring), a list, and a slot for anything. This is very similar to the other HOFs we have already seen! The provided reporter will be the block we wish to test, the list will be the inputs for the reporter, and the final slot will hold the expected output of the provided reporter. Let's take a look at some examples.</p>
+
+<p><img border="0" src="/bjc-r/img/2048-testing/simple_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs etc." /></p>
+
+<p>The above test is verifying that the addition block works properly. We leave the inputs of the addition block empty so that the provided inputs are fed into their spaces when we execute our test (exactly like Combine!), and then the provided output is checked against the actual output of the addition block. The output of the test block is a list, containing items that are either <code>true</code> or <code>false</code>. Let's see an example with multiple tests.</p>
+
+<p>Click on the "TESTER" sprite, and you'll see two example tests for the addition operation. The first block tests that 1 + 1 = 2. Try running it, and you should get back <code>true</code> , since this test is correct. The second block performs two tests: One that <samp>1 + 1 = 2</samp>, and one that <samp>2 + 4 = 5</samp>. Try running it, and you should get the first test passes and the second test fails.</p>
+
+<p>In this specific case, the problem is not the addition operation, but the input/output relationships that were wrong. In other words, we wrote an intentionally buggy test so you could see what happens when there is an input/output mismatch. Now let's try to test a block that needs a list as input.</p>
+
+<p><img border="0" src="/bjc-r/img/2048-testing/sum_of_list_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+
+<p>We've defined a simple block, Sum of List, that sums the contents of a list, and are testing it with two sets of inputs. As you can see, since the input to the Sum of List block requires a list, we needed to provide the test block with a list of lists! This can be a bit confusing at first, but it is really no different than the addition block example shown above. You will see more examples of this in the next slides.</p>
+
+
+</body>
+</html>
