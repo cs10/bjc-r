@@ -13,6 +13,8 @@ learning-goal: Write tests that you can use for 2048.
 
 heading: 2048 and Tests
    resource: Intro to the Game 2048 [/bjc-r/cur/programming/2048-testing/intro_to_hw3.html]
+   resource: Test Your Understanding [/bjc-r/cur/programming/2048-testing/test_your_understanding.html]
+   resource: The Test Block [/bjc-r/cur/programming/2048-testing/the_test_block.html]
    resource: Basic Tests for 2048 [/bjc-r/cur/programming/2048-testing/basic_hw3_tests.html]
    resource: Writing Tests  [/bjc-r/cur/programming/2048-testing/test_driven_development.html]
 
