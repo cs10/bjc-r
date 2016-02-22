@@ -9,18 +9,25 @@
 
 <p>There are two main goals for practicing TDD:
   <ul>
-    <li>Think <em>before</em> you code. To be able to write a successful test, you need to know exactly what you want your blocks to do. In reality, this exercise takes takes quite a bit of practice to get used to, but the planning pays off for most programmers who use TDD.</li>
+    <li>Think <em>before</em> you code. To be able to write a successful test, you need to know exactly what you want your blocks to do. In reality, this exercise takes quite a bit of practice to get used to, but the planning pays off for most programmers who use TDD.</li>
     <li>Make sure you know your code works! In "traditional" programming, where you write tests for code <em>after</em> you finished a block, it's easy to forget writing the tests. TDD helps by making sure you always have a set of test you can quickly run to make sure there are no errors.</li>
   </ul>
 </p>
 
 
-<p>Let's start by writing a test for the rotate clockwise block. In this case, we'll type in all of the values of the board. To make this easier, we've created a <code>new 4x4 board with values</code>  block that you can use. Each set of four values between / symbols is a single row.
+<p>
+  Let's start by writing a test for the <code>merge up</code> block. In this case, we'll type in all of the values of the board. To make this easier, we've created a <code>new 4x4 board with values</code>  block that you can use. Each set of four values between <code>/</code> symbols is a single row. Try it out with the <code>update display</code> block if you are still confused about how this block constructs a new board.
+</p>
 
-<p>Fill in the output values so that the test is correct. Note that if you click on the block, it will return <code>false</code>. This is because you haven't filled-in the <code>rotate clockwise</code> block yet! In a sense, you've now created a little game for yourself that you win once the block starts returning true. One of the appeals of Test Driven Development is setting little challenges like this, and basking in the brilliant glow of the <code>true</code> that shines forth once your block is properly working.</p>
+<div class="alert quoteGreen alert-success">
+  <h4><strong>For You To Do:</strong></h4>
+  <p>
+    Fill in the output values so that the test pictured below is correct. Note that if you click on the block, it will return <code>false</code>. This is because you haven't filled-in the <code>merge up</code> block yet! In a sense, you've now created a little game for yourself that you win once the block starts returning true. One of the appeals of Test Driven Development is setting little challenges like this, and basking in the brilliant glow of the <code>true</code> that shines forth once your block is properly working.
+  </p>
+</div>
 
 <p>
-  We recommend that when you write a test for an unfinished block, you should actually run it and make sure it says "false". That might seem silly, but it provides a sanity check that the test itself is doing its job. It turns out that it's just as easy to write buggy tests, as it is to write buggy code. A test case that can never fail is not very helpful! By having test cases change from failing to passing, you can verify that both your code and your tests are progressing in sync with one another.
+  Once you finish writing a test for an unfinished block you should always verify that the test actually returns <code>false</code>. That might seem silly, but it provides a sanity check that the test itself is doing its job. It turns out that it's just as easy to write buggy tests, as it is to write buggy code. A test case that can never fail is not very helpful! By having test cases change from failing to passing, you can verify that both your code and your tests are progressing in sync with one another.
 </p>
 
 <!-- Commenting this out for now, not sure if it's helpful, but it's a true reason for TDD:
@@ -32,7 +39,7 @@ partially comes from this recent post: http://engineeringblog.yelp.com/2015/02/a
 </p>
 -->
 
-<p><img src="/bjc-r/img/2048-testing/test_rotate_clockwise.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+<p><img src="/bjc-r/img/2048-testing/merge-up-test.png" alt="this should be testing the merge up block" title="lists of nouns, verbs, etc." /></p>
 
 <div class="alert quoteGreen alert-success">
   <h4><strong>For You To Do:</strong></h4>
