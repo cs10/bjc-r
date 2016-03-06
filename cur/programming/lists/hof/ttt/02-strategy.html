@@ -16,34 +16,26 @@
       <h4><strong>Thinking like a Computer Scientist</strong></h4>
       <p>A good way to approach building a program: Design top-down, implement bottom-up.</p>
     </div>
-    <p>We're not, right now, dealing with the user interface part of the game: displaying the board, accepting a move from the user, or even noticing when someone wins. Those parts have been done for you, but you could pretty easily add them yourself, too. Here is a <a class='run' href='/bjc-r/prog/algorithms/tic-tac-toe-framework-gui.xml'>starter file</a> for you to use. Try clicking the green flag to play the game. The computer is playing with a very unintelligent strategy for the moment, which you will improve upon in this lab.</p>
-    <h3>
-      How do <em>you</em> play tic-tac-toe?
-    </h3>
-    <p>
-      Almost certainly, you have a bunch of rules of the form "<strong>if</strong> such-and-such is true, <strong>then</strong> play here." These rules have different degrees of urgency. For example, the most important rule is "if I can win on this move, then play in the winning square."
-    </p>
-    <p>
-      Before you read further, answer these questions, discussing them with your partner and with other students if necessary:
-    </p>
+    <h3>Board Design</h3>
+    <p>Remember on the last page, when we asked ourselves several questions about the game? Let's think about answering those, and how we could design the program to fit our goals.</p>
+    <p><b>Question 1: What constitutes a good move?</b></p>
     <blockquote>
-      <p>
-        1. What's the next most important rule?
-      </p>
-      <p>
-        2. Can you express "If I can win on this move" in more detail, in terms of the current board position, so that you could program it into Snap<em>!</em> ?
-      </p>
+      <p>Before you continue, discuss with a neighbor what you think the most important rules for a good move are in tic-tac-toe.</p>
     </blockquote>
-    <p>
-      The if-all-else-fails rule is "If no other rule applies, play in the best possible square: the center (square 5), if it's free, or a corner (squares 1, 3, 7, and 9) as second choice, or an edge (2, 4, 6, 8) as last resort."
-    </p>
+    <p>We thought of a couple that are pretty important: (1) if we can win on this move, make that move! (2) if the opponent can win on the next move, block that move! (3) otherwise, prioritize the middle, then corners, then edges.</p>
+    <p>Thinking about the first two rules, we'll probably need to check if we ever have two in a row and the opponent isn't in the third spot. That is, if we see two X's and no O's in a row, then we know where to move to win! Think about what condition we'd need to look for to block opponent wins.</p>
+    <p><b>Question 2: What do I want my tic-tac-toe block to accomplish?</b> We know that we should input the current board and the player to find a move for. We also know that we want the output to be an indication of where we should move on the board. There are only nine spots on the board, what if we just numbered them 1 through 9? Then, out <code>ttt</code> block could simply output a number.</p>
+    <p>This brings us to an important question: What should the board itself look like? Our board needs to store 9 pieces of information, mainly where X and O have played. What if we made our board a simple 9 item list, and put X's and O's on it where the players move? How should we represent the blank spaces? Well, we just determined that our <code>ttt</code> block should report a number representing the space where a player should move. If the empty spaces are simply their space number, it could make things easier for us!</p>
+    <p><b>Question 3: How do you win tic-tac-toe?</b> You win by getting "three in a row". A tic-tac-toe board is 3x3. How many ways can you win tic-tac-toe? It's not 9— think about it.</p>
     <blockquote>
-      <p>
-        3. Why is the center the best choice? Why is a corner second best? You should have a really short, logical, convincing explanation. Compare your explanation with those of other students.
-      </p>
+      <p>Go on, count them</p>
     </blockquote>
-    <p>
-      These three rules (including the one you answered in question 1 above) are part of everyone's tic-tac-toe strategy, and they are the minimum acceptable strategy for this assignment. Humans don't always think alike about the in-between rules; we'll make suggestions later, after you finish the minimal assignment.
-    </p>
+    <p>Hmm, that's not very many ways! It's small enough that we could define them explicitly in our program. We'll call each row, column, and diagonal a triple. The program will need a list of all the winning triples. This is the sort of thing—an unchanging value that's needed throughout the program—that can reasonably be put in a global variable.</p>
+    <p><img src="/bjc-r/img/hof/ttt-wins.png" alt="list of winning combinations" /></p>
+    <p>Why is this a good way to think of things? Well now, "can I win on the next move" means "is there a triple in which two of the squares have my letter and the third square is empty?" This solves the problem we thought of at the end of answering Question 1.</p>
+
+    <div class="alert quoteGreen alert-success">
+      <p>Asking and answering questions beforehand allowed us to clearly define what we're going to do before we get started. We gained valuable insights that affected our design, and will make things go smoothly for us!</p>
+    </div>
   </body>
 </html>

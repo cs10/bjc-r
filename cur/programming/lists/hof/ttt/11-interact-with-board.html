@@ -23,6 +23,9 @@
 <p>Now that we've set <code>Step</code> to work with any <code>Size</code>, we can set <code>Size</code> to however large we'd like! Let's try 8 for now. While we're at it, let's create an store our board.</p>
 <p><img src="/bjc-r/img/hof/board-set-globals.png" alt="setting the board globals" /></p>
 <p>So that's everything we really need to start drawing the board. <code>Draw Square Board</code> is a basic block that draws the borders of our new board according to the global variables we just defined! Try changing the <code>Size</code> variable.</p>
+<div class="alert quoteGreen alert-success">
+  <p>Make sure you understand the little bits of math we just did. What we achieved is pretty powerful-- we can make any sized board, with any width, centered automatically for us.</p>
+</div>
 <h3>Turning Clicks Into (Row, Column)</h3>
 <p>For this portion, we'll use a bit of math to convert the (mouse x, mouse y) coordinates of our clicks into (row, column) coordinates on our board.</p>
 <p>Here is how we can convert <code>mouse x</code> into <code>column</code>:</p>
