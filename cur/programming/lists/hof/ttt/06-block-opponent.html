@@ -23,9 +23,9 @@
   <p>Question: Why do we get the answer 1 for O? What winning combination is the program finding?</p>
 </blockquote>
 <p>Now add a second rule to <code>ttt</code> that looks for a square in which the opponent can win on the next move. This new rule comes <em>after</em> the one we have already, because if the computer can win on this move, we don't care what the opponent could have done later.</p>
-<p><strong>Big hint: Do not write any new helper blocks!</strong> You already have all the tools you need to find and block a potential win for the human player.</p>
+<p><strong>Big hint: Do not write any new helper blocks!</strong> You already have all the tools you need to find and block a potential win for the human player (can we use <code>winning square</code> with a different input to do this?).</p>
 <div class="alert quoteGreen alert-success">
-  <p>Implement the new opponent-blocking rule as described.</p>
+  <p>Implement the new opponent-blocking rule as described. Definitely use the hint to make it easier!</p>
 </div>
 <p>Once you've modified <code>ttt</code> with the new rule, it should give an answer for our sample board with the computer playing X, who can't win on this move but can block O's win on the next move:</p>
 <p><img src="/bjc-r/img/hof/ttt-reports-1-for-x.png" alt="ttt blocking for X" /></p>
@@ -33,6 +33,7 @@
 <div class="alert quoteGreen alert-success">
   <p>Complete your <code>ttt</code> block strategy so that it always makes a move.</p>
 </div>
+<h3>Nice Job!</h3>
 <p>As we saw, stopping before we begin to ask ourselves questions about our program can really help out. We were more confident when writing blocks than we would've been because we knew what our goals were and were already thinking about how to implement them! Let's shift focus a bit for the rest of the lab- which should be helpful for upcoming project work (and doesn't involve writing too many blocks).</p>
 </body>
 </html>
