@@ -21,5 +21,9 @@ heading: Tic-Tac-Toe strategy
    resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
    //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
    resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
-
+   resource: Making Your Own Board  [/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html]
+   resource: Interacting With the Board  [/bjc-r/cur/programming/lists/hof/ttt/11-interact-with-board.html]
+   resource: Put Stuff On the Board [/bjc-r/cur/programming/lists/hof/ttt/12-populating-board.html]
+   resource: Build A Maze [/bjc-r/cur/programming/lists/hof/ttt/13-maze.html]
+   resource: Multiple Agents [/bjc-r/cur/programming/lists/hof/ttt/14-many-agents.html]
 }

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="/bjc-r/llab/loader.js"></script>
+<title>Build A Maze</title>
+</head>
+
+<body>
+<p>Here's a solution to our <code>create object</code> block; you'll see that we abstracted the drawing routine as its own block.</p>
+<p><img src="/bjc-r/img/hof/board-create-object.png" alt="solution to create object block" /></p>
+<p><img src="/bjc-r/img/hof/board-draw-object.png" alt="solution to draw object block" /></p>
+<p>Let's add our <code>create object</code> block to the end of our click detector script, so that whenever we click the board, it adds a Bug at that tile!</p>
+<p><img src="/bjc-r/img/hof/click-detector-with-objects.png" alt="click detector with object addition" /></p>
+<h3>Putting It All Together!</h3>
+<p>Let's create a customizable, playable maze! Our final product will look something like this:</p>
+<p><img src="/bjc-r/img/hof/board-maze-sneakpeek.png" alt="maze with player and obstacles on it" /></p>
+<p>Head over to our Player sprite, and let's see how it works.</p>
+<p>When the Green Flag is pressed, our player gets a position as a (row, column) coodinate. Notice that we have some arrow-key receivers set up- almost! When we press an arrow key, we want <code>position</code> to change accordingly. Take a look in <code>finish move</code> to see how we update the player's displayed position before we move on.</p>
+<p>Let's fill in the arrow key receivers so that they change our position coordinate (which is a list of two values) appropriately. You can use the following blocks to get the "row" and "column" numbers out of the <code>position</code> variable, or you can just use "item 1" and "item 2"!</p>
+<p><img src="/bjc-r/img/hof/board-row-coords.png" alt="get row from coordinates" /></p>
+<p><img src="/bjc-r/img/hof/board-col-coords.png" alt="get column from coordinates" /></p>
+<p>The last thing we have to do is add a game over condition when we hit an obstacle. When does it make sense to check to see if the game should be over? <code>finish move</code> seems like a good place, because it gets run after every move.</p>
+<p>Add a condition to <code>finish move</code> that checks to see if any objects are at our <code>position</code> on the Board. Some ideas for inside the condition: Turn the sprite red; speak the words "Game over!"; have our Player say "Oops, I hit a (object name)!"; Reset a time when the flag is clicked and stop it when the game is over.</p>
+<h3>Avoiding "if touching"</h3>
+<p>There's a big advantage to using boards to store info about our game state that we haven't discussed yet. And that is: using "if touching" under "sensing" is really slow. Imagine if instead of moving in discrete steps and checking the item on the board at our position, we had a separate "forever if touching" script for each type of object we want to detect! This lead to repetitive code, AND each "forever if touching" really eats away at our speed. Boards representations can make games much more playable by allowing us to avoid all of this!</p>
+</body>
+</html>
