@@ -7,33 +7,50 @@
 </head>
 
 <body>
-<h3> Introduction </h3>
-Now that you've learned about higher order functions (HOFs), we're going  to use them for a larger example. You are going to make a program that  plays a decent game of tic-tac-toe. First of all, you should understand how a mid-game tic-tac-toe board will be represented in the project, as a list of what's in each of the nine squares.
-<div>
-  <blockquote>
-    <p><img src="/bjc-r/img/hof/tic-tac-toe-board.png" alt="tic-tac-toe board" /></p>
-  </blockquote>
-</div>
-<p> </p>
-<p> We will represent the board as a list whose items are in the order of the numbers above. In this sample board the first item is an underline (which represents a blank  square to make the list more human-readable), and the second item is a O. We will call this the <em>position.</em> (We'll see shortly that our program will also use a second representation of the board that's easier for the program to manipulate.)<br />
-</p>
-<div>
-  <blockquote>
-    <p><img src="/bjc-r/img/hof/ttt-position.png" alt="position as list" /></p>
-  </blockquote>
-</div>
-<p></p>
-<p>The program will allow a human user to play against the computer. Your goal in this project is to write a block, <code>ttt</code>, that will determine the computer's next move based on the current position. (Tic-tac-toe isn't a very challenging game for people, but as a first game-strategy project it's just right.)</p>
-<p>The  <code>ttt</code> block will  report the computer's next move given the current configuration. It  takes two inputs: the current position and whether the computer is  playing X or O. If the computer is X and using the board above, we can  use the <code>ttt</code> block like this: </p>
-<div>
-  <blockquote>
-    <p><img src="/bjc-r/img/hof/ttt-sample-call.png" alt="ttt sample call" /><br />
-    </p>
-  </blockquote>
-  <div>
-    <p>So the computer will move in the first square, which makes sense.<br />
-    </p>
-    <p>&nbsp;</p>
+<h3> Introduction, and Asking Questions</h3>
+<p>In the first part of this lab, we'll be making a computer player for the game Tic-Tac-Toe. We're not, right now, dealing with the user interface part of the game (displaying the board, accepting a move from the user, or even noticing when someone wins). Those parts have been done for you. You'll learn more about making those things in the second portion of the lab. Here is a <a class='run' href='http://snap.berkeley.edu/snapsource/snap.html#present:Username=cs10sp16&ProjectName=tic-tac-toe%20lab%20starter'>starter file</a> for you to use. Try clicking the green flag to play the game. The computer is playing with a very unintelligent strategy for the moment, which you will improve upon in this lab.</p>
+<p>The program will allow a human user to play against the computer. Your goal in this project is to write a block, <code>ttt</code>, that will determine the computer's next move based on the current position.</p>
+<p>The  <code>ttt</code> block will  report the computer's next move given the current configuration. Here's what we'd like out of the block:
+<ul>
+  <li>Inputs: the current state of the game, and whether the computer is playing X or O.</li>
+  <li>Output: where the computer should move.</li>
+</ul>
+<p>If those don't sound super defined (<em>current state</em>, <em>where to move</em>), don't worry- we'll define them on the next page together.</p>
+
+<div class="assessment-data"  type="multiplechoice"  maxchoices="1" responseIdentifier="tic-tac-toe" hasinlinefeedback="true"  shuffle="false">
+  <div class="prompt">
+     <p>
+       Which question should we ask ourselves before we begin?
+     </p>
+  </div>
+
+  <div class="choice" identifier="c1">
+     <div class="text">How do you win tic-tac-toe?</div>
+     <div class="feedback">
+         We should definitely ask this question. Our <code>ttt</code> block should work toward satisfying the answer to this question. What else could we ask?
+     </div>
+  </div>
+  <div class="choice" identifier="c2">
+     <div class="text">What constitutes a good move?</div>
+     <div class="feedback">
+         This is definitely an important question; the <code>ttt</code> block's implementation will depend on the strategy we're going for. What other questions could we ask?
+     </div>
+  </div>
+  <div class="choice" identifier="c3">
+     <div class="text">What do I want my tic-tac-toe block to accomplish?</div>
+     <div class="feedback">
+         Yes, clearly defining the inputs and outputs of our <code>ttt</code> block is necessary before we begin writing anything. What else could we ask?
+     </div>
+  </div>
+  <div class="choice" identifier="c4">
+     <div class="text">All of the above are good questions you should ask.</div>
+     <div class="feedback">
+         Correct!
+     </div>
+  </div>
+
+  <div class="responseDeclaration" identifier="tic-tac-toe">
+    <div class="correctResponse" identifier="c4"></div>
   </div>
 </div>
 
