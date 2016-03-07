@@ -11,16 +11,16 @@
 <p>So first thing's first, we need to actually draw the board. Abstraction is key to programming, so we should write our code such that we can draw <em>any</em> size board!</p>
 <p>Let's define some global variables that we should keep track of and use:</p>
 <p><img src="/bjc-r/img/hof/board-global-size.png" alt="size global" /></p>
-<p><code>Size</code> will define the how many tiles per side our board has.</p>
+<p><code>Size</code> will define how many tiles per side our board has.</p>
 <p><img src="/bjc-r/img/hof/board-global-start.png" alt="start global" /></p>
 <p><code>Start</code> will define where we want to start drawing our board from.</p>
 <p><img src="/bjc-r/img/hof/board-global-step.png" alt="step global" /></p>
 <p><code>Step</code> will define how wide our tiles are when we draw them.</p>
 <p><img src="/bjc-r/img/hof/board-global-displaywidth.png" alt="display width global" /></p>
 <p><code>Display width</code> will define how wide our tiles are when we draw them.</p>
-<p>The idea here is that our board should be general enough that we can change the size and number of tiles any time we want. If we want our board to always be centered, no matter what value we use for <code>Display width</code>, then what should <code>Start</code> be? If you think about it, if our display width is W, then our Start should always be (-W/2, W/2). Determine for yourself where the other corners of the board will be if the top-left is at (-W/2, W/2) and the display width of the board is W.</p>
+<p>The idea here is that our board should be general enough that we can change the size and number of tiles any time we want. If we want our board to always be centered, no matter what value we use for <code>Display width</code>, then what should <code>Start</code> be? If you think about it, if our display width is some number W, then our Start should always be the coordinate (x: -W/2, y: W/2). Determine for yourself where the other corners of the board will be if the top-left is at (x: -W/2, y: W/2) and the display width of the board is W.</p>
 <p>How big should the <code>Step</code>, a.k.a. the width and height of the tiles be? We know that the board is going to be <code>Display width</code>x<code>Display width</code> units on the screen. If we want <code>Size</code> tiles to fit in each direction, then they should each be <code>Display width / Size</code> units.</p>
-<p>Now that we've set <code>Step</code> to work with any <code>Size</code>, we can set <code>Size</code> to however large we'd like! Let's try 8 for now. While we're at it, let's create an store our board.</p>
+<p>Now that we've set <code>Step</code> to work with any <code>Size</code>, we can set <code>Size</code> to however large we'd like! Let's try 8 for now. While we're at it, let's create and store our board.</p>
 <p><img src="/bjc-r/img/hof/board-set-globals.png" alt="setting the board globals" /></p>
 <p>So that's everything we really need to start drawing the board. <code>Draw Square Board</code> is a basic block that draws the borders of our new board according to the global variables we just defined! Try changing the <code>Size</code> variable.</p>
 <div class="alert quoteGreen alert-success">

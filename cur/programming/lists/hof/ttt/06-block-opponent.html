@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
-<title>Blocking the Opponent</title>
+<title>Blocking The Opponent</title>
 </head>
 
 <body>
+<h3>Preliminary <code>ttt</code></h3>
 <p>At this point you're ready to assemble a first version of the <code>ttt</code> block (you'll need to remove our current definition):
 </p>
 <blockquote>
@@ -22,6 +23,7 @@
 <blockquote>
   <p>Question: Why do we get the answer 1 for O? What winning combination is the program finding?</p>
 </blockquote>
+<h3>Blocking The Opponent</h3>
 <p>Now add a second rule to <code>ttt</code> that looks for a square in which the opponent can win on the next move. This new rule comes <em>after</em> the one we have already, because if the computer can win on this move, we don't care what the opponent could have done later.</p>
 <p><strong>Big hint: Do not write any new helper blocks!</strong> You already have all the tools you need to find and block a potential win for the human player (can we use <code>winning square</code> with a different input to do this?).</p>
 <div class="alert quoteGreen alert-success">
