@@ -51,6 +51,8 @@ The easiest way to setup a server is to use a simple, built-in Python server.
 3. Navigate to [http://localhost:8000/bjc-r][localhost] in a browser.
 4. That's it! :)
 
+#### **WARNING** Python's SimpleServer is visible to anyone on your local network! Don't run it from `~/` or your could expose your SSH keys!
+
 ### Windows
 If you have python, the above method for Mac OS X will also work for you!
 

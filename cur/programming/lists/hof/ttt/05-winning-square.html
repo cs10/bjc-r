@@ -8,7 +8,7 @@
 
 <body>
 <h3> Can the Computer Win on this Move? </h3>
-<p>Converting a <em>position</em> into a <em>list of triples </em>will pay off as we start writing strategy rules. The overall structure of <code>ttt</code> will be (don't try to build this in Snap<em>!</em> yet; just read it)</p>
+<p>Let's call the current board our <em>position</em>; it's the current position of the game. Converting a <em>position</em> into a <em>list of triples </em>will pay off as we start writing strategy rules. The overall structure of <code>ttt</code> will be (don't try to build this in Snap<em>!</em> yet; just read it)</p>
 <blockquote>
   <p><img src="/bjc-r/img/hof/simplified-ttt.png" alt="super-simplified ttt structure" /></p>
 </blockquote>
@@ -22,14 +22,19 @@
 </blockquote>
 <hr />
 <p>Okay, time to move from planning to doing. The next goal is to build a <code>winning square</code> block. It'll take a list of triples and an X-or-O, and look for a square in which that player can move to win immediately. What does that mean in terms the program can understand? (We asked you to think about this a few screens ago.) Our answer is, &quot;look for a winning combination in which our letter appears twice and the other letter doesn't appear at all.&quot; So we seem to need two helpers: one that reports how many times a letter appears in a triple, and one that reports &quot;the other letter.&quot;</p>
-<p>Start with the second of those. Write a reporter called <code>opponent</code> that just takes an <code>X</code> or <code>O</code> as its input, and reports the other letter.<br />
+<div class="alert quoteGreen alert-success">
+	<p>Start by writing a reporter called <code>opponent</code> that just takes an <code>X</code> or <code>O</code> as its input, and reports the other letter.<br />
+</div>
 Now make a helper block called <code>appearances</code> that takes a word and a list as inputs, and  returns the number of times the first one appears in the second. Hint: Use a higher order function.</p>
-<div>
-  <blockquote>
-    <p><img src="/bjc-r/img/hof/appearances-block.png" alt="" title="There should be an image here" border="0" /></p>
-  </blockquote>
+<blockquote>
+  <p><img src="/bjc-r/img/hof/appearances-block.png" alt="" title="There should be an image here" border="0" /></p>
+</blockquote>
+<div class="alert quoteGreen alert-success">
+  <p>Write the <code>appearances </code> block as defined above. Definitely use the given hint; this block can be really short!</p>
 </div>
 <p>Now write a <code>winning square</code> block that uses a higher order function to select those triples in which our letter appears twice and the opponent's letter doesn't appear at all, and then if any such triples are found, report the number of the vacant square in the first such triple; if not, report <code>false</code>.</p>
-<div></div>
+<div class="alert quoteGreen alert-success">
+  <p>Write the <code>winning square</code> block as defined above.</p>
+</div>
 </body>
 </html>
