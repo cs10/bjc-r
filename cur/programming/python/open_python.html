@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Starting Up Python</title>
+    </head>
+    <body>
+        <p class="alert alert-danger">
+            Sometimes running python is be more difficult on some computers. Always ask if you're having trouble.
+        </p>
+        <h3>On Mac OS X: (including in-lab computers)</h3>
+        <p>
+            You'll be running python from the Teriminal application that we learned about on the last page.
+        </p>
+        <h3>On Windows</h3>
+        <p>
+            Python may not be set up properly on windows. If you are unable to get python to work from the command line (as explained below) here is a <a href="https://docs.python.org/3.4/faq/windows.html" target="_blank">link</a> that will help you get things set up if you'd like to work on your Windows machine.
+        </p>
+        <h3>Running Python</h3>
+        <p>
+            The first step is to open the Python <b>interpreter</b>. On the command line in your terminal, use the command <code>python3</code>. If you see something like "command not found", then use the command <code>python</code> instead. You should see something similar to the following:
+        </p>
+        <p><pre><code>
+Alonzos-MacBook:~ alonzo$ python3
+Python 3.4.0 (v3.4.0:04f714765c13, Month DD YYYY, HH:MM:SS)
+[GCC X.X.X] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+        </code></pre></p>
+        <br />
+        <p class="alert quoteGreen"><strong>python and python3, what's the difference?</strong> When you open Python with one of these commands, check out the text that appears like above. You'll see something like <code>Python 3.4.0</code> or <code>Python 2.7.10</code>. These are just different versions of Python. Don't worry, both will work for this lab.</p>
+        <br />
+        <p>
+            We're now using Python! Notice that we still have a <b>prompt</b>, but it looks like this now: <code>>>></code>. The <code>>>></code> indicates that we're using Python right now, and is where we can type Python code. After typing a line of code, hitting <code>enter</code> will tell the python interpreter to run the instruction. Try typing the following into the interpreter:
+        </p>
+        <p><pre><code>
+>>> 3 + 5
+8
+        </code></pre></p>
+        <p>
+            If the text cursor is on a line beginning with <code>>>></code>, the command line window has an active python interpreter open. <b>That means we can't do commands like <code>cd</code>, or <code>ls</code>, because the program is expecting Python code.</b> To leave the python interpreter, type the exit command <code>exit()</code> and hit <code>enter</code>.
+        <p><pre><code>
+>>> exit()
+Alonzos-MacBook:~ alonzo$
+        </code></pre></p>
+        <p>
+            Any functions or variables created in the python interpreter are erased when the <code>exit()</code> command is run.
+        </p>
+
+    </body>
+</html>
