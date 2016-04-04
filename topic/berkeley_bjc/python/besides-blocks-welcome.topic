@@ -32,4 +32,6 @@ heading: String Manipulation, Conditionals, and Recursion
   resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
   resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
 
+heading: Turtle Graphics
+  resource: Introduction to Turtle Graphics [/bjc-r/cur/programming/python/intro_to_turtle.html]
 }
