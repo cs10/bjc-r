@@ -3,7 +3,7 @@ title: Besides Blocks: Welcome to Python!
 {
 h2: Big Ideas
 big-idea: Computational Thinking is the idea of how you solve a problem. This process can be applied to any language.
-big-idea: Python and Snap<em>!</em> are awesome languages which coexist. 
+big-idea: Python and Snap<em>!</em> are awesome languages which coexist.
 big-idea: After learning one language, the few languages you learn will be much easier. What you're learning is "how to learn".
 big-idea: Text based languages are just as power as visual languages and come with their own set of pros and cons.
 
@@ -14,15 +14,15 @@ learning-goal: You should be comfortable with basic math and "string" operations
 
 heading: Introduction to Python
     resource: Welcome to Besides Blocks: An Introduction to Python [/bjc-r/cur/programming/python/introduction_to_besides_blocks.html]
-    resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_shell_and_python.html]
-    
+    resource: Introduction to the Terminal [/bjc-r/cur/programming/python/introduction-to-the-terminal.html]
+    resource: Opening a Shell and Python [/bjc-r/cur/programming/python/open_python.html]
+
 heading: Math and Variables
-  resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/python_syntax_and_operators.html]
-  quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
+    resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/python_syntax_and_operators.html]
+    quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/math-and-variables-self-test.html]
 
 heading: Running Python Scripts
-    resource: Running a script from the Command Line [/bjc-r/cur/programming/python/running_script_from_command_line.html]
-    resource: Finding A Bar [/bjc-r/cur/programming/python/finding_a_bar.html]
+    resource: Running a script from the Command Line [/bjc-r/cur/programming/python/run_a_python_script.html]
 
 heading: Defining Functions and Loops
   resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/define_simple_function.html]
@@ -32,4 +32,6 @@ heading: String Manipulation, Conditionals, and Recursion
   resource: Basic String Manipulation [/bjc-r/cur/programming/python/python_basic_string.html]
   resource: Conditionals and Recursion [/bjc-r/cur/programming/python/python_conditionals.html]
 
+heading: Turtle Graphics
+  resource: Introduction to Turtle Graphics [/bjc-r/cur/programming/python/intro_to_turtle.html]
 }

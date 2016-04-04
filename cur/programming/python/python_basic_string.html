@@ -22,7 +22,7 @@
               <tr>
                   <td>
                       <p><pre><code>
->>> name                  
+>>> name
 "Alonzo"
                     </code></pre></p>
                   </td>
@@ -64,8 +64,10 @@
                 </td>
               </tr>
           </table>
-          <p class="alert quoteBlue">
-              Notice that the output letter is actually surrounded in single quotes (<code>'A'</code>). We can also make strings using single quotes.  The most important thing to notice is that the first letter is located at the "0th" position.  Unlike in Snap<em>!</em> where the first letter was simply letter 1 of word, in python the first letter is at position 0.  Having the first element at the 0th position is called <b>"0 indexing"</b> and is very common in all other programming languages.   
+          <p class="alert alert-info quoteBlue">
+            <b>Why is the first letter at position 0?</b>
+            <br>
+              Notice that the output letter is actually surrounded in single quotes (<code>'A'</code>). We can also make strings using single quotes.  The most important thing to notice is that the first letter is located at the "0th" position.  Unlike in Snap<em>!</em> where the first letter was simply letter 1 of word, in python the first letter is at position 0.  Having the first element at the 0th position is called <b>"0 indexing"</b> and is standard in most programming languages.
           </p>
           <p>
               To get the <b>last letter</b> of a string we can do one of the following in python:
@@ -101,9 +103,12 @@
                 </td>
               </tr>
           </table>
+          <p class="alert alert-danger quoteRed">
+            Note that using the <code>+</code> operator to join strings creates a new string and does not modify the old string. This means that joining two strings as shown above does not change the value of the variable <code>name</code>! You'll need to use the assignment operator (<code>=</code>) to actually change the value of a variable.
+          </p>
           <h3>Substrings</h3>
           <p>
-              In Python we can also easily create substrings of a string by using some special Python syntax as a shown below (note that Snap<em>!</em> does not have a default function to do this):
+              In Python we can also easily create substrings of a string by using some special Python syntax as shown below (note that Snap<em>!</em> does not have a default function to do this):
           </p>
           <p><pre><code>
 >>> name[1:5]
@@ -115,23 +120,23 @@
 >>> name[:3] + name[3:]
 'Alonzo'
         </code></pre></p>
-        <p class="alert quoteOrange">
+        <p class="alert alert-warning quoteOrange">
              Substring <code>[start:end]</code> returns the letters in the word from <code>start</code> to <code>end-1</code> (notice this is exactly how <code>range(x, y)</code> worked.  The upper index value is not included), so always be careful with your indexing when using the substring and range functions.
         </p>
-        <h3>Exercise 3</h3>
-        <p>
-            Find exercise 3 in the virus.py file and modify the function <code>reverse_string(string)</code> that takes in a string and puts it in the reverse order as shown below:
+        <h3>Exercise 2</h3>
+        <p class="alert alert-success quoteGreen">
+            Write the function <code>reverse_string(string)</code> that takes in a string and puts it in the reverse order as shown below:
         </p>
         <p><pre><code>
 >>> reverse_string("Alonzo")
 'oznolA'
 
         </code></pre></p>
-        <p class="alert quoteGreen">
+        <p class="alert alert-info quoteBlue">
             You'll want to use some sort of loop, along with some of the things that you've learned about strings in this section.  When you think your function works, run the tests that we have provided by entering the following command into the shell:
         </p>
         <p><pre><code>
-python3 virus.py reverse_string
+python3 autograder.py lab1.py
         </code></pre></p>
     </body>
 </html>

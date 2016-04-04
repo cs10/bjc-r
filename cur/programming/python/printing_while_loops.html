@@ -5,8 +5,8 @@
         <title>Printing and While Loops</title>
     </head>
     <body>
-        <p class="alert quoteGreen">
-            <b>Print Statement:</b> As you saw on the previous page the print statement converted the number <code>i</code> into a string and printed it to the command line. This is more or less the equivalent of "say" in Snap<em>!</em>. Print statements allow a programmer to print values and variables at a chosen location in the code. 
+        <p class="alert alert-info quoteBlue">
+            <b>Print Statement:</b> As you saw on the previous page the print statement converted the number <code>i</code> into a string and printed it to the command line. This is more or less the equivalent of "say" in Snap<em>!</em>. Print statements allow a programmer to print values and variables at a chosen location in the code.
         </p>
         <table style="width:auto; table-height:150px">
               <tr>
@@ -32,15 +32,15 @@
 3
 4
         </code></pre></p>
-        <p class="alert quoteBlue">
-            Notice how <code>count_up</code> did not include the input value 5? Remember back to the discussion of the <code>range(x,y)</code> function.It produces a list that does not include <code>y</code>. Glancing at the python function defined above reveals the same mistake found in the previous <code>find_even_nums(x)</code> exercise. To include the final value, the <code>for</code> loop must be changed to:
+        <p class="alert alert-warning quoteOrange">
+            Notice how <code>count_up</code> did not include the input value 5? Remember back to the discussion of the <code>range(x,y)</code> function on the previous page. It produces a list that does not include the value <code>y</code> itself. To include the final value, the <code>for</code> loop must be changed to:
         </p>
         <p><pre><code>
 for i in range(1, num + 1):
         </code></pre></p>
         <h3>While Loop</h3>
         <p>
-            Below is the now familiar <code>count_up</code> function written using a <code>while</code> loop. Unlike the <code>for</code> loop, <code>while</code> does not have a built-in index variable.
+            Below is the now familiar <code>count_up</code> function written using a <code>while</code> loop. Unlike the <code>for</code> loop, <code>while</code> does not have a built-in index variable (but we can easily define our own using the variable <code>i</code> below).
         </p>
         <table style="width:auto; table-height:200px">
               <tr>
@@ -59,11 +59,11 @@ def count_up(num):
               </tr>
           </table>
           <p>
-              The <code>while</code> loop is analogous to the 'repeat until' block in Snap<em>!</em> However, in Python the loop ends when the condition becomes <code>False</code>. This is opposite of  'repeat until', which waits for its condition to become <code>True</code>.
+              The <code>while</code> loop is analogous to the <code>repeat until</code> loop in Snap<em>!</em> However, in Python the loop ends when the condition becomes <code>False</code> (so you can think of a while loop as "repeat the code in the loop while True"). This is the opposite of Snap<em>!</em>'s <code>repeat until</code> loop, which waits for its condition to become <code>True</code>.
           </p>
-          <h3>Exercise 2</h3>
-          <p>
-              Find Exercise 2 in the virus.py file and write an <code>exponent(num, power)</code> function that takes two arguments (a number and an exponent value) and returns the computed result. Below are a few example inputs. 
+          <h3>Exercise 1</h3>
+          <p class="alert alert-success quoteGreen">
+              Write an <code>exponent(num, power)</code> function that takes two arguments (a number and an exponent value) and returns the computed result. Below are a few example inputs.
           </p>
                   <p><pre><code>
 >>> exponent(10, 0)
@@ -74,13 +74,13 @@ def count_up(num):
 1024
         </code></pre></p>
         <p>
-            To test your function, type the following into the command line:
+            We've written a small autograder to help you test your functions. Right click on this <a href="/bjc-r/prog/python/autograder.py">link</a>, choose "Save As", and <b>save the file to the same directory that your <code>lab1.py</code> file is in</b>. To test exercises 1-3, use the following command:
         </p>
         <p><pre><code>
-python3 virus.py exponent         
+python3 autograder.py lab1.py
         </code></pre></p>
-        <p class="alert quoteOrange">
-            This will run a series of tests to validate the functionality of your exponent definition. Check the output to make sure it worked!
+        <p class="alert alert-info quoteBlue">
+            This will run a series of tests to validate the functionality of your exponent definition (and the definitions for exercises 2 and 3). Check the output to make sure it worked!
         </p>
     </body>
 </html>
