@@ -1,0 +1,40 @@
+title: The Internet and Tic-Tac-Toe
+{
+h2: The Internet
+
+h2: Big Ideas
+
+big-idea: Learn how to do network commands on a Unix shell
+big-idea: Investigate the properties and architecture of the Internet using standard Unix commands
+big-idea: Learn about an important social impact of the Internet: Privacy issues
+
+h2: Activities
+learning-goal: Invoke a Unix shell
+learning-goal: Use traceroute, whois, ping, telnet, and other commands to investigate the Internet
+learning-goal: Discuss challenges in Internet privacy
+
+heading: Internet under the Hood
+  resource: Introduction [/bjc-r/cur/programming/internet/introshell.html]
+  resource: Practice: Traceroute and Whois [/bjc-r/cur/programming/internet/trace.html]
+  resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
+  resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/speed.html]
+  resource: Practice: Internet and Privacy [/bjc-r/cur/programming/internet/introprivacy.html]
+
+h2: Practice with Lists and Tic-Tac-Toe
+
+h2: Activities
+learning-goal: Get more practice with lists and higher order functions used in combination.
+learning-goal: Develop a significant-sized project
+
+heading: Tic-Tac-Toe strategy
+  resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
+  resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
+  resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
+  resource: Finding Triples (Continued) [/bjc-r/cur/programming/lists/hof/ttt/04-triples2.html]
+  resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
+  resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
+  resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
+  //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
+  resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
+
+}
