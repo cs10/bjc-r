@@ -19,23 +19,4 @@ heading: Internet under the Hood
   resource: Practice: Telnet [/bjc-r/cur/programming/internet/telnet.html]
   resource: Practice: Ping and Speedtest [/bjc-r/cur/programming/internet/speed.html]
   resource: Practice: Internet and Privacy [/bjc-r/cur/programming/internet/introprivacy.html]
-
-h2: Practice with Lists and Tic-Tac-Toe
-
-h2: Activities
-learning-goal: Get more practice with lists and higher order functions used in combination.
-learning-goal: Develop a significant-sized project.
-
-
-heading: Tic-Tac-Toe strategy
-   resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
-   resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
-   resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
-   resource: Finding Triples (Continued) [/bjc-r/cur/programming/lists/hof/ttt/04-triples2.html]
-   resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
-   resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
-   resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
-   //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
-   resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
-
 }
