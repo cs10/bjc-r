@@ -5,8 +5,92 @@
         <title>Generating Text with a Markov Model</title>
     </head>
     <body>
-        <p>You sure are speedy! Other things call. Expect this page to be done by Thursday around noon.
+        <h3>Generating Random Text with a Markov Model</h3>
+        <p>Now that we can build a Markov Model for a given text. The next step is to write a function <code>generate_random_text</code> that can generate natural language in accordance to a given Markov Model. In order to write this function we will first start by implementing a function that tells us how many times a character appears after a given kgram. </p>
+
+        <p> Add the following function to the bottom of markov.py:
         </p>
+<pre>
+<code>def next_character_frequency(m, kgram, c):
+    """ Returns the number of times c follows kgram
+    m is the model (a dictionary)
+    kgram is a kgram in in m
+    c is a character that follows the given kgram"""</code>
+    </pre>
+        <p>The functions should return the number of times a character appears after a given kgram in the Markov Model. An example of the functions behavior is given below. After implementing this function use the example below to test that it works correctly.</p>
+<pre>
+<code>text = "the theremin in the basement is the theologian's theft detection device."
+m = construct_markov_model(text, 3)
+next_frequency(m, "the", "f")       would return 1
+next_frequency(m, "the", " ")       would return 3
+next_frequency(m, "there", "m")     would return 0 (because "there" is not a 3-gram)"""</code>
+</pre>
+        
+        Next use <code>next_character_frequency</code> to implement <code>random_character</code>
+
+<pre>
+<code>def random_character(m, kgram):               
+    """returns a random character obeying markov model
+    m is the model (a dictionary)
+    kgram is a kgram in in m"""</code>
+    </pre>
+
+        <p>This function should return a randomly selected character. The character should follow the distribution of the original text. The example below further shows the behavior of the function.</p>
+
+<pre>
+<code>text = "the theremin in the basement is the theologian's theft detection device."
+m = construct_markov_model(text, 3)
+random_character(m, "the")      would return " " with probability 3/6, and "r", "o", or "f" with probability 1/6
+random_character(m, "ase")      would return "m" with probability 1</code>
+</pre>
+
+
+        <p>In Snap! we have a block that can pick random numbers and a blocks that can pick a random item from a list. Python also has these functions, but in order to access these functions we must import the library that contains them. This is just like importing a library in Snap! At the top of your markov.py file add the following line:</p>
+
+        <pre>
+            <code>import random</code>
+        </pre>
+
+        <p class="alert quoteBlue">
+        Hint: Look at the python random library's <a href="https://docs.python.org/2/library/random.html">documentation</a> for helpful functions.
+        </p> 
+
+        <p> Now we are ready to implement <code>generate_random_text</code>.</p>
+
+<pre>
+<code>def generate_random_text(m, N):
+    """Returns A randomly generated text of length N 
+    that obeys the probability distribution specified in m.
+
+    m is a Markov Model
+    N is the desired output length"""</code>
+    </pre>
+
+        <p><code>generate_random_text</code> should start by picking a random kgram from among the possible kgrams that appear in the text. This will form the first k characters of the randomly generated output text. This first choice does not have to obey any particular statistical properties. We observe from the example above that the kgram selected was "uest,\nth". We call this the seed-kgram.</p>
+
+        <p>After the first kgram is selected, the program should use random_character to select the next character. In the example above, the first such character selected was "o". The program should then use this character to form a new seed-kgram of length k by throwing away the 0th character of the old seed, and appending the new character to the end. In the example above, the seed k-gram becomes "est,\ntho", and the next character to be selected will be selected using the distribution for this seed-kgram. In this case the next character selected is "u", and the new seed-kgram becomes "st,\nthou". This process is repeated until we have 80 total characters.</p>
+
+        <p> Here is an example of the behavior of <code>generate_random_text:</code> </p>
+<pre>
+<code>f = open("moby_dick.txt", "r")
+md = f.read()
+m = construct_markov_model(md, 8)
+print(generate_random_text(m, 80))</code>
+</pre>
+        <p> The output after running the above lines of code would look something like this:</p>
+<pre>
+<code>uest,
+thought of an inch; slip your hoe-cake done!"
+"Seven hundred feet above all ot</code>
+</pre>
+
+        <p class="alert quoteBlue">
+        Note: The output is generated random so your output will not be the same as the shown output above.
+        </p>
+
+        <p>Because the new kgram obeys the same statistical properties as the original text, you know that any kgram that is generated is guaranteed to appear at some point in the text.</p>
+
+        <p>Try generating texts using various ks. You should observe that for small k (k= 1, 2, 3), the generated text resembles but is not quite English (or whatever language utilized by your modeled text). For higher order k, the text should start looking more and more like the original text.</p>
 
     </body>
 </html>
