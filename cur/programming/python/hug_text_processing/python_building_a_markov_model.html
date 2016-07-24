@@ -60,7 +60,23 @@ process_character(markovmodel, "the ether", 2, 4)
 </code>
     </pre>
 
-<p>More coming soon...</p>
+<h3>Building our Markov Model</h3>
+
+<p>Now we have all the functions we need to build a markov model from a corpus of text! Add the following code to the bottom of markov.py:</p>
+
+<pre>
+<code>def build_markov_model(text, k):
+    """ Returns the markov model for text.
+    m is the model (a dictionary)
+    text is the text
+    k is the order of our Markov chain"""</code>
+    </pre>
+
+<p> This function should loop through text, process each character and add it to the model accordingly. For example calling build_markov_model('the ether', 3) would return {' et': {'h': 1}, 'the': {' ': 1, 'r': 1}, 'e e': {'t': 1}, 'he ': {'e': 1}, 'eth': {'e': 1}}.</p>
+
+<p class="alert quoteBlue">
+Hint: Use the process_character function in your implementation of build_markov_model</code>.
+ </p> 
 
     </body>
 </html>
