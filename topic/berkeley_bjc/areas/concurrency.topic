@@ -34,11 +34,10 @@ heading: Two heads are better than one.
 
 heading: Snap<em>!</em> ... don't all talk at once!
   resource: Determinism vs. Non-determinism [/bjc-r/cur/programming/concurrency/snap/snap-modify.html]
-  resource: What are the possible values? [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-script-snap.html]
-  resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/read-and-finish-with-n-answer-snap.html]
+  resource: What are the possible values? [/bjc-r/cur/programming/concurrency/snap/subset-race-script.html]
+  resource: These are the possible values [/bjc-r/cur/programming/concurrency/snap/subset-race-answers.html]
 
 heading: Snap<em>!</em> ... some details to form a mental model
-  resource: Overview: Broadcasts [/bjc-r/cur/programming/concurrency/snap/overview-snap-3.html]
   resource: Multiple Broadcasts [/bjc-r/cur/programming/concurrency/snap/snap-play-3.html]
   resource: Reflection: Multiple Broadcasts [/bjc-r/cur/programming/concurrency/snap/reflection-snap-3.html]
 
