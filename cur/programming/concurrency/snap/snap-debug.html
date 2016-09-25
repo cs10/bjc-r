@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-
-  
-  <script type="text/javascript" src="/bjc-r/llab/loader.js">
-			
-	</script><title>Snap<em>!</em>  Debug</title>
+  <script type="text/javascript" src="/bjc-r/llab/loader.js"></script>
+  <title>Serial vs. Parallel</title>
 </head>
 <body>
 <p> When you put two "When green flag ..." hat blocks in the same
@@ -24,13 +21,8 @@ side) paint the area on the right by stamping itself. </li>
 labor of painting the area on the left by stamping themselves. </li>
 </ul>
 
-<p> (Two screenshots are included below) The first thing to note is
-that the parallel side finished in exactly half the time of the serial
-side. Discuss with your partner why this is. </p>
-
-<p> The second thing to note is that there is a slight concurrency bug.
-The first blue squares for the 1 and 2 sprites appear not to get
-stamped. Fix this bug so that there are no missing stamps. </p>
+<p> (Two screenshots are included below) Note that the parallel side finished in exactly half the time of the serial
+side. Discuss with your partner why this is. You should use the phrase <b>time sharing</b> in your explanation. If you don't remember what that is, go back to the first page of lab, "<em>Snap!</em> Machine Concepts"</p>
 
 <p>First, a screenshot taken during computation.</p>
 
@@ -39,5 +31,8 @@ stamped. Fix this bug so that there are no missing stamps. </p>
 
 <img alt="parallel vs serial end" class="center" src="../../../../img/conc/parallel-vs-serial-end.png">
 
-</body></html>
+<p>It is important to form an accurate mental model of the machine/software when working with it.
+	Hopefully you have seen here that Snap<em>!</em>  gives equal time to all the workers (scripts),
+	in lock step, and that concurrency bugs can creep up very easily.</p>
 
+</body></html>

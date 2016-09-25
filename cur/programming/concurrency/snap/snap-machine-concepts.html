@@ -2,7 +2,7 @@
 <html><head><!-- put the following in exactly -->
 
 
-  
+
   <script src="/bjc-r/llab/loader.js"></script><title>Snap<em>!</em>  Machine Concepts</title></head><body>
 <p> Snap<em>!</em>  supports parallelism! The programming environment is full
 of concurrency, implicit (two scripts both start when the green flag is
@@ -22,9 +22,9 @@ parent wants to give the kids equal attention. So if there are 3 things
 happening at one time, Snap<em>!</em>  will rotate among the three of them,
 giving each of them a chance to do their "thing" (e.g., complete one
 iteration of a loop). It will choose the same order every time, in
-a very predictable way. This is known as time-sharing. </li>
+a very predictable way. This is known as <b>time-sharing.</b> </li>
   <li>
-Snap<em>!</em>  has a speed governor so that projects
+Snap<em>!</em>  has a <b>speed governor</b> so that projects
 can run at the same speed on different machines. It is obvious why that is
 important&#8212;imagine developing this great Pac Man game on your parent's
 slow computer and working very hard to get the timing just right so
@@ -39,7 +39,7 @@ lots of idle "cycles" to handle multiple things running at the same
 time. </li>
   <li> Snap<em>!</em>  actually does NOT make use of more
 than one core (independent hardware computation unit), it runs
-everything in one core and time shares any parallel task on the single
+everything in <b>one core</b> and time shares any parallel task on the single
 core. This gives Snap<em>!</em>  much more control over its parallelism, since
 once you decide to use two (or more) physical cores, you can no longer
 control when (or in what order) the computations will return, and you

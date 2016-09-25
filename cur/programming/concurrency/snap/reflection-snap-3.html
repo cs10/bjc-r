@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html><head>
 <!-- put the following in exactly -->
-  
+
   <script src="/bjc-r/llab/loader.js"></script>
   <title>Reflection</title>
 
-  
+
 
 </head><body>
-When lots of broadcasts are coming through into a receive block,
-there are three possibilities:
-    <br>
-<ol>
-  <li>If you want <em>all</em> of them to take effect, use "<code>broadcast
-_ and wait</code>"</li>
-  <li>If you do not need all of them to take effect, but want to keep
-all of your inner data structures consistent, make sure you have <code>Edit-&gt;Thread
-Safe Scripts</code> checked.</li>
-
-    
-  <li>If you have Edit-&gt;Thread Safe Scripts unchecked, you cannot
-trust Snap<em>!</em>  to preserve your Loop Invariants!</li>
-
-    
-  <li>Lesson: The first thing you should always do is check <code>Edit-&gt;Thread
-Safe Scripts</code>! </li>
-
-  
-</ol>
-
+<p>Run the example in <em>Snap!</em> with this <code><a class="run" href="/bjc-r/prog/Snap/multiple-broadcast-short.xml">file</a></code>. Is the answer what you expected?</p>
+<p>Things may not go as planned when multiple messages are being received at once. If you want <em>all</em> of them to take effect, use <code>broadcast
+_ and wait</code></p>
 
 </body></html>
