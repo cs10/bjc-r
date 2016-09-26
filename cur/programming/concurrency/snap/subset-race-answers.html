@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly -->
+
+
+
+		<script src="/bjc-r/llab/loader.js"></script><title>These are the possible values.</title></head><body>
+
+<p>Play around with the script first: <code><a class="run" href="/bjc-r/prog/Snap/multiple-broadcast-short.xml">Race</a></code>.</p>
+
+
+<p>The answer is: all the permutations of a,b,c where all three letters
+are present (there are six of them) + all the permutations of a,b,c
+where only two letters are present (also six of these) + all the
+permutations of a,b,c where only one letter is present (two
+possibilities) for a total of fifteen possibilities.</p>
+  <ul>
+    <li>If all three letters are present, it is as if we were deterministic (didn't have the <code>wait</code> blocks).
+      Here is how it could happen (for this example order, all 6 permutations
+      are possible = {abc, acb, bac, bca, cab, bca}):
+      <ul>
+        <li>result starts empty</li>
+        <li>a, b, and c all clear result.</li>
+				<li>a reads result (), joins its a, result is now a.</li>
+        <li>b reads result (a), joins its b, result is now ab.</li>
+        <li>c reads result (ab), joins its c, result is now abc.</li>
+        <li>finish is abc</li>
+      </ul>
+    </li>
+    <li>If
+only two letters were present, we had a race condition, and here is how
+it could happen (again, all 6 combinations and permutations are
+possible = {ab, ba, ac, ca, bc, cb}): <ul>
+        <li>result starts empty</li>
+        <li>a clears result ()</li>
+        <li>a reads result (), joins its a, result is now a.</li>
+        <li>b and c clear result.</li>
+        <li>b reads result (), joins its b, result is now b.</li>
+				<li>c reads result (b), joins its c, result is now bc.</li>
+        <li>finish is bc</li>
+      </ul>
+      </li>
+      <li>If
+only one number were present, we also had a race condition, and here is
+how it could happen (again, all permutations possible = {a, b, c}): <ul>
+        <li>result starts empty</li>
+        <li>a, b clear result.</li>
+				<li>a reads result (), joins its a, result is now a.</li>
+        <li>b reads result (a), joins its b, result is now b.</li>
+        <li>c clears result.</li>
+				<li>c reads result (), joins its c, result is now c.</li>
+        <li>finish is c</li>
+      </ul>
+      </li>
+  </ul>
+
+	</body></html>
