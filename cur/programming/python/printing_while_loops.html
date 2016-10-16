@@ -22,22 +22,7 @@
                 </td>
               </tr>
           </table>
-          <p>
-              Calling the python <code>count_up(num)</code> function with an input produces the following result. (If you'd like you can define <code>count_up</code> yourself, using the code shown on the previous page.)
-          </p>
-          <p><pre><code>
->>> count_up(5)
-1
-2
-3
-4
-        </code></pre></p>
-        <p class="alert alert-warning quoteOrange">
-            Notice how <code>count_up</code> did not include the input value 5? Remember back to the discussion of the <code>range(x,y)</code> function on the previous page. It produces a list that does not include the value <code>y</code> itself. To include the final value, the <code>for</code> loop must be changed to:
-        </p>
-        <p><pre><code>
-for i in range(1, num + 1):
-        </code></pre></p>
+
         <h3>While Loop</h3>
         <p>
             Below is the now familiar <code>count_up</code> function written using a <code>while</code> loop. Unlike the <code>for</code> loop, <code>while</code> does not have a built-in index variable (but we can easily define our own using the variable <code>i</code> below).
