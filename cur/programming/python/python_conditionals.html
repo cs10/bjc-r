@@ -13,7 +13,7 @@
             <tr>
                 <td>
                     <pre><code class="prettify lang-python linenums">
-if (condition):
+if condition:
     do something
                     </code></pre>
                   </td>
@@ -22,7 +22,7 @@ if (condition):
               <tr>
                   <td>
                       <pre><code class="prettify lang-python linenums">
-if (condition):
+if condition:
     do something
 else:
     do something else
@@ -33,9 +33,9 @@ else:
               <tr>
                   <td>
                       <pre><code class="prettify lang-python linenums">
-if (condition):
+if condition:
     do thing 1
-elif (condition2):
+elif condition2:
     do thing 2
 else:
     do something else
@@ -53,9 +53,9 @@ else:
                   <td>
                       <p><pre><code class="prettify lang-python linenums">
 def fib(n):
-    if (n == 0):
+    if n == 0:
         return 0
-    elif (n == 1):
+    elif n == 1:
         return 1
     else:
         return fib(n - 1) + fib(n - 2)
@@ -68,7 +68,7 @@ def fib(n):
           </table>
           <h3>Exercise 3</h3>
           <p class="alert alert-success quoteGreen">
-              Use conditionals and recursion to write the <code>palindrome(string)</code> predicate function in Python, which should return <code>True</code> if the input string is a palindrome and <code>False</code> otherwise. When you want to test your solution, enter the following command:
+              Use conditionals and recursion to write a function <code>palindrome(string)</code>, which should return <code>True</code> if the input string is a palindrome and <code>False</code> otherwise. Write the function in your <code>lab1.py</code> file. When you want to test your solution, enter the following command:
           </p>
           <p><pre><code class="lang-bash">
 python3 autograder.py lab1.py

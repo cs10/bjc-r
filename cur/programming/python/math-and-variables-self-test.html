@@ -101,53 +101,39 @@
         <div class="choice" identifier="c1">
             <div class="text">
                 <pre><code class="lang-python">
->>> x = x + y
->>> y = x - y
->>> x = x - y
+>>> x = y
+>>> y = x
                 </code></pre>
             </div>
-            <div class="feedback">Correct!</div>
+            <div class="feedback">Not quite: You'll lose the value of <code>x</code>in the first line.</div>
         </div>
         <div class="choice" identifier="c2">
             <div class="text">
                 <pre><code class="lang-python">
->>> x = x - y
->>> x = x + y
->>> y = x + y
+>>> temp = x
+>>> x = y
+>>> y = temp
                     </code></pre>
                 </div>
                 <div class="feedback">
-                    Try again! This one is a little tricky.
+                    Correct! You have to save one of the values temporarily.
                 </div>
             </div>
             <div class="choice" identifier="c3">
                 <div class="text">
                     <pre><code class="lang-python">
->>> x = x + y
->>> y = x - y
->>> x = x + y
+>>> x = y
+>>> temp = x
+>>> y = temp
                     </code></pre>
                 </div>
                 <div class="feedback">
-                    Incorrect. Check the final value of <code>x</code> and try again.
-                </div>
-            </div>
-            <div class="choice" identifier="c4">
-                <div class="text">
-                    <pre><code class="lang-python">
->>> x = x - y
->>> y = x - y
->>> x = x + y
-                    </code></pre>
-                </div>
-                <div class="feedback">
-                    Try running though a couple examples to see what's wrong.
+                    Not quite: You'll lose the value of <code>x</code> in the first line.
                 </div>
             </div>
             <div class="responseDeclaration" identifier="ri3">
-                <div class="correctResponse" identifier="c1"></div>
+                <div class="correctResponse" identifier="c2"></div>
             </div>
     </div>
     </body>
 </html>
-

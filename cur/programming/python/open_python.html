@@ -28,7 +28,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>>
         </code></pre></p>
         <br />
-        <p class="alert alert-info quoteBlue"><strong>python and python3, what's the difference?</strong> When you open Python with one of these commands, check out the text that appears like above. You'll see something like <code>Python 3.4.0</code> or <code>Python 2.7.10</code>. These are just different versions of Python. Don't worry, both will work for this lab.</p>
+        <p class="alert alert-info quoteBlue"><strong>python and python3, what's the difference?</strong> When you open Python with one of these commands, check out the text that appears like above. You'll see something like <code>Python 3.4.0</code> or <code>Python 2.7.10</code>. These are just different versions of Python. The folks who develop Python release updates as new versions, just like apps on the App Store. Don't worry, both versions will work for this lab.</p>
         <br />
         <p>
             We're now using Python! Notice that we still have a <b>prompt</b>, but it looks like this now: <code>>>></code>. The <code>>>></code> indicates that we're using Python right now, and is where we can type Python code. After typing a line of code, hitting <code>enter</code> will tell the python interpreter to run the instruction. Try typing the following into the interpreter:
@@ -38,13 +38,24 @@ Type "help", "copyright", "credits" or "license" for more information.
 8
         </code></pre></p>
         <p class="alert alert-danger quoteRed">
-            If the text cursor is on a line beginning with <code>>>></code>, the command line window has an active python interpreter open. <b>That means we can't do commands like <code>cd</code>, or <code>ls</code>, because the program is expecting Python code.</b> To leave the python interpreter, type the exit command <code>exit()</code> and hit <code>enter</code>.
+            If the text cursor is on a line beginning with <code>>>></code>, the command line window has an active python interpreter open. <b>That means we can't do commands like <code>cd</code>, or <code>ls</code>, because the program is expecting Python code.</b> To leave the python interpreter, type the exit command <code>exit()</code> and press <code>enter</code>.
         <p><pre><code>
 >>> exit()
 Alonzos-MacBook:~ alonzo$
         </code></pre></p>
         <p>
             Any functions or variables created in the python interpreter are erased when the <code>exit()</code> command is run.
+        </p>
+
+        <p>
+          Here are some basic concepts about the Python <b>intepreter</b> you should understand before you move on:
+          <ul>
+            <li>Open the interpreter with the command <code>python</code> or <code>python3</code>.</li>
+            <li>The interpreter will run the code you typed every time you press <code>enter</code>.</li>
+            <li>
+              Exit the interpreter with the command <code>exit()</code>. Now you can use commands like <code>cd</code> and <code>ls</code> again, and whatever you did in Python is lost.
+            </li>
+          </ul>
         </p>
 
     </body>
