@@ -26,12 +26,12 @@ heading: Mutability and List Functions in Python
 heading: Higher Order Functions in Python
     resource: HOFs in Python [/bjc-r/cur/programming/python/python_hofs.html]
     resource: List Comprehensions in Python [/bjc-r/cur/programming/python/python_comprehensions.html]
-    resource: List Comprehensions and Strings [/bjc-r/cur/programming/python/python_comprehensions_and_strings.html]    
+    resource: List Comprehensions and Strings [/bjc-r/cur/programming/python/python_comprehensions_and_strings.html]
     resource: Trying to Combine in Python [/bjc-r/cur/programming/python/trying_combine.html]
 
 heading: Python Dictionaries
     resource: Comparing Dictionaries and Lists [/bjc-r/cur/programming/python/comparing_dicts_lists.html]
     resource: Using Python Dictionaries [/bjc-r/cur/programming/python/using_dictionaries.html]
-    resource: 2D Dictionaries [/bjc-r/cur/programming/python/2D_dictionaries.html]
+    resource: More Dictionaries [/bjc-r/cur/programming/python/advanced_dictionary_problems.html]
 
 }

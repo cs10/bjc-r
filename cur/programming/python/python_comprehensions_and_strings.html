@@ -64,18 +64,18 @@ def less_than_m(text):
 'bdd'
 </code></pre></p>
 
-        <h3>Exercise 4.1: Substitute Characters</h3>
+        <h3>Exercise 4.1: Substitute Base</h3>
 
         <p class="alert alert-success quoteGreen">
-          Write the helper function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted. Use a list comprehension along with the <code>"".join</code> trick.
-        </p>
-        <p>
-          <b>Hint:</b> Create a helper function that considers what to do with only one character and map this function over each character using your comprenehsion (similar to what you may have done for the HW1 word guessing game).
+          Write a function <code>substitute_base</code> that takes as input a string representing a DNA sequence, a base to be substituted (old), and a base that is to take the place of the base being substituted (new).  Old and New could be any letter, so make sure to keep your code general! This function should return a string with the proper base substituted. Use a list comprehension along with the <code>"".join</code> trick.
         </p>
         <p><pre><code>
 >>> substitute_base("AAGTTAGTCA", "A", "C")
 "CCGTTCGTCG"
         </code></pre></p>
+        <p>
+          <b>Hint:</b> Create a helper function that considers what to do with only one character and map this function over each character using your comprenehsion (similar to what you may have done for the HW1 word guessing game).
+        </p>
         <p class="alert alert-info quoteBlue">
         Just so you know, there is a built in string function called <code>replace</code> that you'd use in real world programming instead of doing it the way we require in this problem. We don't want you to use it for this function though!
         </p>
