@@ -152,7 +152,7 @@ def main():
     exercise_7_1.run_tests()
 
     exercise_7_2 = Exercise("exercise 7.2: Invert Dictionary", testmodule, "invert_dict")
-    exercise_7_2.add_test(TestCase(ints=({"A":"X", "B":"Y", "C":"Z"},), out={"X":"A", "Z":"C", "Y":"B"}))
+    exercise_7_2.add_test(TestCase(ins=({"A":"X", "B":"Y", "C":"Z"},), out={"X":"A", "Z":"C", "Y":"B"}))
     exercise_7_2.run_tests()
 
 if __name__ == "__main__":
