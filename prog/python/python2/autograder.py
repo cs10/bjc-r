@@ -117,7 +117,7 @@ def main():
 
     class Flag:
         def __init__(self, key):
-            self.key == key
+            self.key = key
         def test(against):
             return self.key in [against, "all", None]
     flag = Flag(sys.argv[2] if len(sys.argv) > 2 else None)
