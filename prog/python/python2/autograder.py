@@ -32,10 +32,10 @@ class TestCase:
         if result == self.output:
             return True, self.format_success_message()
         else:
-            return False, self.format_error_message(result)
+            return False, self.format_error_message(repr(result))
     def format_success_message(self):
         return color.OKGREEN + "Passed. " + color.ENDC + "With inputs %s, returned %s." \
-                % (anyjoin(self.inputs), self.output)
+                % (anyjoin(self.inputs), repr(self.output))
     def format_error_message(self, got):
         return color.FAIL + "Failed. " + color.ENDC + "With inputs %s, expected %s, instead got:\n %s" \
                 % (anyjoin(self.inputs), self.output, got)
@@ -141,12 +141,12 @@ def main():
 
     if flag.test("3.2"):
         exercise_3_2 = Exercise("exercise 3.2: Nth Power of Evens", testmodule, "nth_power_of_evens")
-        exercise_3_2.add_test(TestCase(ins=([-5, -2, 0, 1, 3, 4, 8], 3), out=[-8, 0, 32, 128]))
+        exercise_3_2.add_test(TestCase(ins=([-5, -2, 0, 1, 3, 4, 8], 3), out=[-8, 0, 64, 512]))
         exercise_3_2.run_tests()
 
     if flag.test("4"):
         exercise_4 = Exercise("exercise 4: Substitute Base", testmodule, "substitute_base")
-        exercise_4.add_test(TestCase(ins=("AAGTTAGTCA", "A", "C"), out="CCGTTCGTCG"))
+        exercise_4.add_test(TestCase(ins=("AAGTTAGTCA", "A", "C"), out="CCGTTCGTCC"))
         exercise_4.run_tests()
 
     if flag.test("5"):
@@ -163,7 +163,7 @@ def main():
     if flag.test("7.1"):
         exercise_7_1 = Exercise("exercise 7.1: Substitute Characters", testmodule, "substitute_chars")
         replacements = {"S":"Z", "E":"U", "T":"P", "A":"M"}
-        exercise_7_1.add_test(TestCase(ins=("SECRET MESSAGE", replacements), out="ZUCRUP MUZZMGE"))
+        exercise_7_1.add_test(TestCase(ins=("SECRET MESSAGE", replacements), out="ZUCRUP MUZZMGU"))
         exercise_7_1.run_tests()
 
     if flag.test("7.2"):
