@@ -5,15 +5,19 @@
         <title>Python Comprehensions</title>
     </head>
     <body>
+        <!--
         <h3>Pythonic Code</h3>
         <p>A common term in the Python community is <em>pythonic</em>. Code that is pythonic is code that takes advantage of the special features and idioms of the Python language. Code that looks like a rough transcription from another language is often called unpythonic. If you become a Python programmer, you'll want to learn how to code pythonically, so that others can understand your code, and so that you can understand others' code. One of the most important (but tricky) pythonic code concepts is the <b>list comprehension</b>, which can be used in place of the <code>map</code> and <code>filter</code> HoFs.
-        <p>While <code>map</code> and <code>filter</code> work, most members of the Python community consider them less pythonic than list comprehensions.
+        <p>While <code>map</code> and <code>filter</code> work, most members of the Python community consider them less pythonic than list comprehensions. -->
 
-        <p>The syntax for list comprehensions is quite unlike anything you've seen so far, but they're really not so bad once you try them out.
+        <h3>List Comprehensions</h3>
+        <p>
+          One of the most important (but tricky) pythonic code concepts is the <b>list comprehension</b>, which can act almost indistinguishably from the <code>map</code> and <code>keep</code> HoFs.
+          The syntax for list comprehensions is quite unlike anything you've seen so far, but they're really not so bad once you try them out.
         </p>
         <h3>Map in Python</h3>
         <p>
-            First, let's discuss how list comprehensions can be used in place of the <code>map</code> HoF. An example is given below:
+            First, let's discuss how list comprehensions can be used to emulate the <code>map</code> HoF. An example is given below:
 
         <table style="width:80%">
             <tr>
@@ -42,7 +46,7 @@
         </table>
 
         <p>
-            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. While a bit alien, we can see that python code using comprehensions is still somewhat similar to the Snap! code. The differences are:
+            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. While a bit alien, we can see that Python code using comprehensions is still somewhat similar to the Snap<em>!</em> code. The differences are:
         </p>
         <p><ul>
             <li>
@@ -50,11 +54,11 @@
             </li>
             <li>Instead of passing my_list as an argument we use something that resembles a for loop: <code>for x in my_list</code>.
             </li>
-            <li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
-            </li>
+            <!--<li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
+            </li>-->
         </ul>
         </p>
-            Despite these syntactic differences, the net result is exactly the same: We multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number. And like the <code>map</code> function, we produce a new list without changing the original list.
+            Despite these syntactic differences, the net result is exactly the same: We multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number. And like the <code>map</code> block in Snap<em>!</em>, we produce a new list without changing the original list.
         </p>
         <p>
             The syntax for a <b>list comprehension</b> is as follows:
@@ -66,7 +70,7 @@
 
         <h3>Keep in Python</h3>
         <p>
-            As we saw on the previous page of this lab, the keep function in Python is called <code>filter</code>. However, in practice, most people use list comprehensions instead of filter. Indeed, many python programmers probably have no idea what filter is. An example of using a comprehension to keep items is shown below.
+            List comprehensions are used to do <code>keep</code> as well. An example of using a comprehension to keep items is shown below.
         </p>
         <table style="width:80%">
             <tr>
@@ -101,7 +105,8 @@
         </code></pre></p>
         <h3>Using List Comprehensions for Map and Keep Simultaneously</h3>
         <p>
-            List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise. Many experienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.
+            List comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise.
+            <!--Many experienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.-->
         </p>
         <table style="width:80%">
             <tr>
