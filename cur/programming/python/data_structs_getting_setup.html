@@ -6,26 +6,32 @@
     </head>
     <body>
         <h3>Starter File</h3>
-        <p class="alert quoteOrange">
-            Refer to the previous lab for instructions on how to open and use a shell application (terminal for Mac/Linux users and the CMD command prompt for Windows users).  Once you have a shell up and running, <code>cd</code> into your documents directory and use <code>mkdir PythonLab2</code> to create a new directory called PythonLab2.  Save this <a href="/bjc-r/prog/python/PythonLab2.py">starter file</a> to the PythonLab2 directory you just made (right click the link and "save as").  Then use <code>cd PythonLab2</code> to enter your newly created directory, enabling you to run the starter file.
+        <p>
+            Refer to the previous lab for instructions on how to open and use a shell application (terminal for Mac/Linux users and the CMD command prompt for Windows users).  Once you have a shell up and running, <code>cd</code> into your documents directory and use <code>mkdir PythonLab2</code> to create a new directory called PythonLab2. Use <code>cd PythonLab2</code> to enter the directory. Save this <a href="/bjc-r/prog/python/python2/lab2.py">file</a> as <code>lab2.py</code> to the PythonLab2 directory. <code>lab2.py</code> contains the function signatures to get you started. Save this <a href="/bjc-r/prog/python/python2/autograder.py">file</a> as <code>autograder.py</code> to the PythonLab2 directory as well.
+        </p>
+        <p>
+          You can test your functions as you go by running <code>python3 autograder.py lab2.py exercise_#</code> in the PythonLab2 directory.
+        </p>
+        <p>
+          For example: <code>python3 autograder.py lab2.py 3.1</code> tests exercise 3.1. Use <code>all</code> instead of an exercise number to test all of the functions.
         </p>
         <h3>Exercise 1: Push First Odd Back</h3>
         <p>
-            Fill out the function <code>push_first_odd_back</code> under exercise 1 in the starter file.  This function should place the first odd number at the back of the input list. 
-Do not return a new list - in fact this function shouldn't return anything, it should only modify the input list (remember when we talked about mutability a few pages back?). Hint: Just because the previous page was all about the <code>for</code> keyword doesn't necessarily mean that this is the right approach for this problem. Don't forget about <code>while</code>. 
+            Fill out the function <code>push_first_odd_back</code> under exercise 1 in the starter file.  This function should place the first odd number at the back of the input list. Do not return a new list - in fact this function shouldn't return anything, it should only modify the input list (remember when we talked about mutability a few pages back?). Hint: Just because the previous page was all about the <code>for</code> keyword doesn't necessarily mean that this is the right approach for this problem. Don't forget about <code>while</code>.
         </p>
         <p><pre><code>
->>> input = [10, 2, 4, 7, 6, 7, 8, 9]
->>> push_first_odd_back(input)
->>> input
+>>> lst = [10, 2, 4, 7, 6, 7, 8, 9]
+>>> push_first_odd_back(lst)
+>>> lst
 [10, 2, 4, 6, 7, 8, 9, 7]
         </code></pre></p>
         <p>
-            To test this function using our tests enter the command:
+            To test this function, run:
         </p>
-        <p><pre><code>
-python3 PythonLab2.py 1
+        <p><pre><code class="bash">
+python3 autograder.py lab2.py 1
         </code></pre></p>
+        <!-- Held to shorten lab
         <h3>Challenge Exercise 1: merge</h3>
         <p>
             Write the function <code>merge</code>, found in the challenge exercise section of the starter file.  This should recursively merge two sorted lists into a single sorted list.  To test this function enter:
@@ -36,6 +42,7 @@ python3 PythonLab2.py C1
         <h3>Challenge Exercise 1b: recursive push_first_odd_back</h3>
         <p>
             Rewrite your <code>push_first_odd_back</code> so that it is recursive. Hint: You'll need a helper function. Hint #2: Your helper function will need two inputs: a list and an index.
-        </p>        
+        </p>
+        -->
     </body>
 </html>

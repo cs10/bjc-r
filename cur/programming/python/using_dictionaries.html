@@ -6,8 +6,8 @@
     </head>
     <body>
         <h3>How to use Dictionaries</h3>
-        <p class="alert quoteBlue">
-        Below you will see how to use dictionaries to represent something like a gradebook.  Remember that dictionaries contain (key, value) pairs, where every key must be unique.  Make sure to pay close attention to how you can create, access, and remove dictionary entries.
+        <p>
+        Below you will see how to use dictionaries to represent something like a gradebook.  Remember that dictionaries contain (key, value) pairs, where every key must be unique.  Make sure to pay close attention to how you can create, access, and remove dictionary entries, as these are basic and fundamental dictionary operations.
         </p>
         <ol>
             <li>
@@ -73,7 +73,11 @@
 [90, 100]
                 </code></pre></p>
                 <p>
-                Here, the empty parentheses indicate that we are invoking a zero argument function. 
+                Here, the empty parentheses indicate that we are invoking a zero argument function.
+                </p>
+                <p class="alert quoteRed">
+                  <b>Python 3 users:</b><br>
+                  In Python 3, <code>.keys()</code> and <code>.values()</code> return <code>dict_keys</code> and <code>dict_values</code> instead of <code>lists</code>. Luckily, <code>dict_keys</code> and <code>dict_values</code> are <b>iterable</b>, so we can use operators like <code>"Alice" in grades.keys()</code>, or loop with <code>for each name in grades.keys()</code>. However, if we want to use other list operations on them, like append, we have to turn them into list objects first. Here's an easy way to do that: <code>list(grades.keys())</code>
                 </p>
 
             </li>
@@ -92,23 +96,27 @@ Traceback (most recent call last):
 KeyError: 'Bob'
                 </code></pre></p>
             </li>
+            <li>
+              <p>
+                  Search online to find more helpful dictionary methods!  Here is a <a href="https://docs.python.org/3.4/tutorial/datastructures.html#dictionaries" target="_blank">link to the python documentation</a>.
+              </p>
+            </li>
         </ol>
-        <p class="alert alert-danger">
+        <!-- This warning is explained above already
+        <p class="alert alert-danger quoteRed">
             We can see that if we try to access a dictionary with a key that doesn't exist we get a key error.  Any type of error is very bad and will immediately stop the program from running, so always check if a key exists in a dictionary before accessing the dictionary with a key (unless you're absolutely sure it's there.   An easy way to do this is to use my_dict.keys() which returns a list of all of the keys in the dictionary, as explained above).
         </p>
-        <p>      
-            Search online to find more helpful dictionary methods!  Here is a <a href="https://docs.python.org/3.4/tutorial/datastructures.html#dictionaries" target="_blank">link to the python documentation</a>.  
-        </p>
+        -->
         <h3>Exercise 6: Base Frequency</h3>
-        <p>
+        <p class="alert alert-success quoteGreen">
             Given a DNA sequence string, calculate the frequency of each base pair (i.e. the number of times that each letter appears in the sequence).  Test this function using function number 6.
         </p>
-        <p><pre><code>
+        <p><pre><code class="python">
 >>> base_freq("AAGTTAGTCA")
 {"A": 4, "C": 1, "G": 2, "T": 3}
         </code></pre></p>
         <p>
-            <b>Note:</b> you can easily add to the value stored in a dictionary by using the following trick:
+            <b>Hint:</b> you can easily add to the value stored in a dictionary by using the following trick:
         </p>
         <p><pre><code>
 >>> grades
@@ -117,13 +125,15 @@ KeyError: 'Bob'
 >>> grades
 {"Alice": 95, "Eve": 100}
         </code></pre></p>
+        <!-- Held to shorten lab. Also, this question is the main focus of Data Processing lab.
         <h3>Challenge Exercise 2: Most Frequent Sequence</h3>
-        <p>
+        <p class="alert alert-success quoteGreen">
             Find the most frequent sub-sequence of base pairs of a given length.  Using a dictionary will make your life a lot easier!  Test this exercise with function number C2 (yeah we know it's not actually a number, but just go with it).
         </p>
         <p><pre><code>
 >>> most_freq_seq("AAGTTAGTCA", 3)
 "AGT"
         </code></pre></p>
+        -->
     </body>
 </html>

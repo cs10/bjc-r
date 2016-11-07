@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>More Dictionary Problems</title>
+  </head>
+  <body>
+    <p>
+      In this exercise, we'll expand the idea of Exercise 4.1: Substitute Characters. Imagine that we're given lots of character pairs to replace instead of just one. A dictionary would be a great way to represent all of these character pairs. For example:
+    </p>
+    <pre><code>
+{"A":"X", "B":"Y", "C":"Z"}
+    </code></pre>
+    <p>
+      could mean that the letter "A" should be replaced with "X"; "B" with "Y"; "C" with "Z".
+    </p>
+    <h3>Exercise 7.1: Substitute Characters</h3>
+
+    <p class="alert alert-success quoteGreen">
+      Write a function <code>substitute_chars</code> that takes as input a string and a dictionary. The dictionary will have characters as keys and values, which represent what to replace certain characters with (as shown above). This function should return a string with each character substituted with that characters's value from the dictionary. If a character doesn't exist as a key in the dictionary, it should be left alone.
+    </p>
+    <p><pre><code>
+>>> replacements = {"S":"Z", "E":"U", "T":"P", "A":"M"}
+>>> substitute_chars("SECRET MESSAGE", replacements)
+"ZUCRUP MUZZMGU"
+    </code></pre></p>
+    <p>
+        To test this function, run:
+    </p>
+    <p><pre><code class="bash">
+python3 autograder.py lab2.py 7.1
+    </code></pre></p>
+
+    <p>
+      What if we wanted to undo our substitution? We could re-use the <code>substitute_chars</code> function if we had an inverted version of our dictionary. Let's write a function that inverts the keys and values of a dictionary.
+    </p>
+
+    <h3>Exercise 7.2: Invert Dictionary</h3>
+
+    <p class="alert alert-success quoteGreen">
+      Write a function <code>invert_dict</code> that takes as input a dictionary. The output should be a new dictionary that has each key:value pair reversed. The input dictionary should be left unchanged.
+    </p>
+    <p><pre><code>
+>>> original = {"A":"X", "B":"Y", "C":"Z"}
+>>> invert_dict(original)
+{"X":"A", "Z":"C", "Y":"B"}
+>>> original
+{"A":"X", "B":"Y", "C":"Z"}
+    </code></pre></p>
+    <p>
+      <b>Question:</b> What does this function do when some of the values in the dictionary are identical? Can a dictionary have identical keys? Talk with your partner, then try using your function on one such dictionary, like this: <code>invert_dict({"A":"X", "B":"Z", "C":"Z"})</code> and see if you were right.
+    </p>
+
+    <h3>Putting Them Together</h3>
+    <p>Good job! Now you can substitute characters in a string, then recover the original string like so:</p>
+    <pre><code>
+>>> replacements = {"S":"Z", "E":"U", "T":"P", "A":"M"}
+>>> substitute_chars("SECRET MESSAGE", replacements)
+"ZUCRUP MUZZMGU"
+>>> substitute_chars("ZUCRUP MUZZMGU", invert_dict(replacements))
+"SECRET AESSAGE"
+    </code></pre>
+    <p>
+      Hold up- something's not quite right. The original message wasn't quite recovered. That's because the replacement dictionary didn't have a complete alphabet, so some un-mapped characters ended up getting caught up in the reverse-substituting. If we want a complete encrypt-unencrypt system, we'll need to make sure we map the full alphabet.
+    </p>
+  </body>
+</html>

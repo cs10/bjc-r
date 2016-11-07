@@ -5,15 +5,19 @@
         <title>Python Comprehensions</title>
     </head>
     <body>
+        <!--
         <h3>Pythonic Code</h3>
-        <p>A common term in the Python community is <em>pythonic</em>. Code that is pythonic is code that takes advantage of the special features and idioms of the Python language. Code that looks like a rough transcription from another language is often called unpythonic. If you become a Python programmer, you'll want to learn how to code pythonically, so that others can understand your code, and so that you can understand other's code. One of the most important (but tricky) pythonic code concepts is the <b>list comprehension</b>, which can be used in place of the <code>map</code> and <code>filter</code> HoFs. 
-        <p>While <code>map</code> and <code>filter</code> work, most members of the Python community consider them less pythonic than list comprehensions. 
+        <p>A common term in the Python community is <em>pythonic</em>. Code that is pythonic is code that takes advantage of the special features and idioms of the Python language. Code that looks like a rough transcription from another language is often called unpythonic. If you become a Python programmer, you'll want to learn how to code pythonically, so that others can understand your code, and so that you can understand others' code. One of the most important (but tricky) pythonic code concepts is the <b>list comprehension</b>, which can be used in place of the <code>map</code> and <code>filter</code> HoFs.
+        <p>While <code>map</code> and <code>filter</code> work, most members of the Python community consider them less pythonic than list comprehensions. -->
 
-        <p>The syntax for list comprehensions is quite unlike anything you've seen so far, but they're really not so bad once you try them out.
-        </p> 
+        <h3>List Comprehensions</h3>
+        <p>
+          One of the most important (but tricky) Python concepts is the <b>list comprehension</b>, which can act almost indistinguishably from the <code>map</code> and <code>keep</code> HoFs.
+          The syntax for list comprehensions is quite unlike anything you've seen so far, but they're really not so bad once you try them out.
+        </p>
         <h3>Map in Python</h3>
         <p>
-            First, let's discuss how list comprehensions can be used in place of the <code>map</code> HoF. An example is given below:
+            First, let's discuss how list comprehensions can be used to emulate the <code>map</code> HoF. An example is given below:
 
         <table style="width:80%">
             <tr>
@@ -31,8 +35,8 @@
             <tr>
                 <td>
                     <pre><code>
->>> [x * x for x in my_list]                          
-[1, 4, 9]    
+>>> [x * x for x in my_list]
+[1, 4, 9]
                     </code></pre>
                 </td>
                 <td>
@@ -40,33 +44,33 @@
                 </td>
             </tr>
         </table>
-        
+
         <p>
-            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. While a bit alien, we can see that python code using comprehensions is still somewhat similar to the Snap! code. The differences are:
+            <code>[x * x for x in my_list]</code> may look very strange at first, but once you've used this idea a few times, you'll realize it's quite powerful and easy to use. While a bit alien, we can see that Python code using comprehensions is still somewhat similar to the Snap<em>!</em> code. The differences are:
         </p>
         <p><ul>
             <li>
-            Instead of having a multiply function with two blanks, we have <code>x * x</code> 
+            Instead of having a multiply function with two blanks, we have <code>x * x</code>
             </li>
-            <li>Instead of passing my_list as an argument we use something that resembles a for loop: <code>for x in my_list</code>.  
+            <li>Instead of passing my_list as an argument we use something that resembles a for loop: <code>for x in my_list</code>.
             </li>
-            <li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
-            </li>
+            <!--<li>Instead of explicitly calling the <code>map</code> function we are now using a special purpose syntax used specifically for mapping functions over lists.
+            </li>-->
         </ul>
         </p>
-            Despite these syntactic differences, the net result is exactly the same: We multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number. And like the <code>map</code> function, we produce a new list without changing the original list.
+            Despite these syntactic differences, the net result is exactly the same: We multiply each element of <code>my_list</code> by itself, producing the effect of squaring each number. And like the <code>map</code> block in Snap<em>!</em>, we produce a new list without changing the original list.
         </p>
         <p>
             The syntax for a <b>list comprehension</b> is as follows:
         <p><pre><code>
 >>> [function(x) for x in my_list]
         </code></pre></p>
-        <p>This syntax can be confusing at first because it looks like we're writing a for loop on one line inside of a list. Don't be fooled! Thi isn't actually a for loop at all, but instead special syntax that cosmetically resembles a for loop. Again, list comprehensions look weird, but they'll make lots of sense after you use them.
+        <p>This syntax can be confusing at first because it looks like we're writing a for loop on one line inside of a list. Don't be fooled! This isn't actually a for loop at all, but instead special syntax that cosmetically resembles a for loop. Again, list comprehensions look weird, but they'll make lots of sense after you use them.
         </p>
 
         <h3>Keep in Python</h3>
         <p>
-            As we saw on the previous page of this lab, the keep function in Python is called <code>filter</code>. However, in practice, most people use list comprehensions instead of filter. Indeed, many python programmers probably have no idea what filter is. An example of using a comprehension to keep items is shown below.
+            List comprehensions are used to do <code>keep</code> as well. An example of using a comprehension to keep items is shown below.
         </p>
         <table style="width:80%">
             <tr>
@@ -94,14 +98,15 @@
             </tr>
         </table>
         <p>
-            More generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>. 
+            More generally, if we want to keep only items corresponding to some predicate, we'd use the following. Keep in mind that a predicate is simply a function that returns <code>True</code> or <code>False</code>.
         </p>
         <p><pre><code>
 >>> [x for x in my_list if predicate(x)]
         </code></pre></p>
         <h3>Using List Comprehensions for Map and Keep Simultaneously</h3>
         <p>
-            List Comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise. Many experienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.
+            List comprehensions can be used to perform map and keep at the same time. We've also seen how to do this in Snap<em>!</em>, as shown to the right. Observe that the list comprehension is more concise.
+            <!--Many experienced programmers find list comprehensions to be generally more concise and easier to read than code that uses HoFs like <code>map</code> and <code>keep</code>, and thus comprehensions are considered more Pythonic.-->
         </p>
         <table style="width:80%">
             <tr>
@@ -119,7 +124,7 @@
             <tr>
                 <td>
                     <pre><code>
->>> [x + 5 for x in my_list if x <  3] 
+>>> [x + 5 for x in my_list if x <  3]
 [6, 6, 7]
                     </code></pre>
                 </td>
@@ -129,20 +134,27 @@
             </tr>
         </table>
         <h3>Exercise 3.1: Squares of Evens</h3>
-        <p>
-            Write the function <code>squares_of_evens</code> that takes as input a list of numbers, and returns a list that is equal to the squares of all even numbers. Use list comprehensions. 
-
+        <p class="alert alert-success quoteGreen">
+            Write the function <code>squares_of_evens</code> that takes as input a list of numbers, and returns a list that is equal to the squares of all even numbers. Use list comprehensions.
+        </p>
         <p><pre><code>
->>> squares_of_evens([-5, -2, 0, 1, 3, 4, 8]) 
+>>> squares_of_evens([-5, -2, 0, 1, 3, 4, 8])
 [4, 0, 16, 64]
+        </code></pre></p>
+        <p>
+            To test this function, run:
+        </p>
+        <p><pre><code class="bash">
+python3 autograder.py lab2.py 3.1
         </code></pre></p>
 
         <h3>Exercise 3.2: Nth Power of Evens</h3>
-        <p>
-            Write the function <code>nth_power_of_evens</code> that takes as input an integer n as well as a list of numbers, and returns a list that is equal to the nth power of all even numbers in the list. As before, use list comprehensions. 
+        <p class="alert alert-success quoteGreen">
+            Write the function <code>nth_power_of_evens</code> that takes as input an integer n as well as a list of numbers, and returns a list that is equal to the nth power of all even numbers in the list. As before, use list comprehensions.
         </p>
+        <p><pre><code>
+>>> nth_power_of_evens([-5, -2, 0, 1, 3, 4, 8], 3)
+[-8, 0, 64, 512]
+        </code></pre></p>
     </body>
-    <p class="alert quoteGreen">
-        You can test these functions using the same command as in previous exercises, just replace the function number with either 3.1 or 3.2
-    </p>
 </html>

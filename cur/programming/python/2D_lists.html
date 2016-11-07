@@ -7,9 +7,9 @@
     <body>
         <h3>Another Dimension</h3>
         <p>
-            Recall the Lists 2: Tic Tac Toe Lab. To create a more computer-appropriate representation of the board, a list of winning triples was created. This list of lists allowed for a more comprehensive representation of the board. Creating nested lists can be useful when designing everything from user accounts to game boards. 
+            Recall the Lists 2: Tic Tac Toe Lab. To create a more computer-appropriate representation of the board, a list of winning triples was created. This list of lists allowed for a more comprehensive representation of the board. Creating nested lists can be useful when designing everything from user accounts to game boards.
         </p>
-        <p class="alert quoteBlue">
+        <p class="alert alert-info quoteBlue">
         A list within another list is called 2-Dimensional (2D). And just like in a 2D cartesian graph, retrieving an element requires two index values (essentially "the x and y position").
         </p>
         <p><pre><code>
@@ -42,21 +42,15 @@
 [ ["kale", "spinach", "cabbage"], ["olives", "tomatoes", "avocado"]]
         </code></pre></p>
         <h3>Exercise 2: Flatten List</h3>
+        <p class="alert alert-success quoteGreen">
+            Now that you have some experience with lists in Python, try writing a function that takes a list of lists (2D) and returns all the items of each list concatenated together into one new list. See below for an example.
+        </p>
         <p>
-            Now that you have some experience with lists in Python, try writing a function that takes a list of lists (2D) and returns all the items of each list concatenated together into one new list as shown below:
+            <b>Hint:</b> To create an empty list, just set a variable equal to empty brackets, e.g. <code>x = []</code>
         </p>
         <p><pre><code>
 >>> flatten([["a", "b"],["c", "d", "e"], ["f"]])
 ["a", "b", "c", "d", "e", "f"]
         </code></pre></p>
-        <p>
-            To test this function enter:
-        </p>
-        <p><pre><code>
-python3 PythonLab2.py 2
-        </code></pre></p>
-        <p>
-            Hint: To create an empty list, just set a variable equal to empty brackets, e.g. <code>x = []</code>
-        </p>            
     </body>
 </html>

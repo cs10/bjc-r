@@ -7,10 +7,12 @@
     <body>
         <h3>Append</h3>
         <p>
-            There are many list functions that mutate rather than recreate a list. The first of these is the list <code>append</code> function. This operation adds an element to the end of the list (<strong>Note:</strong>this is different from <code>append</code> block in Snap<em>!</em>, which will combine lists). This function cannot be called alone. It must be called using a existing list as shown below. This is an example of the <em>object oriented programming</em> paradigm: you can think of the <code>append</code> function as a superpower that the list uses to absorb items. This is quite different from Snap<em>!</em>, where the <code>add</code> block is a contractor who can add items to any list upon request.
+        The <code>append(item)</code> function <b>adds</b> an item to the end of a list. This function mutates a list rather than creating a copy of the list.
         </p>
-        <!-- TODO: This paragraph is weird. -->
-        <p>As an analogy, in Python, lists can feed themselves. You put "pod" in the list's mouth and tell it to eat, and it does. By contrast, in Snap<em>!</em>, you have to put the pod right into the poor list's tummy yourself.</p>
+
+        <p class="alert quoteRed">
+            This is different from the <code>append</code> block in Snap<em>!</em>, which will combine multiple lists into a single list.
+        </p>
         <table style="width:80%">
             <tr>
                 <td>
@@ -37,12 +39,17 @@
                 </td>
             </tr>
         </table>
-        <p class="alert quoteOrange">
-            <b>Note:</b> <code>idiom.append("pod")</code> does not return the modified list. In other words, it's like a Snap<em>!</em> command, not a Snap<em>!</em> reporter. If you've just been reading the lab so far, try this example out and make sure you see what we mean by this note.
+        <p class="alert alert-info quoteBlue">
+            <b> Object Oriented Programming </b>
+            <br>
+            You might be wondering why we put <code>.append("pod")</code> after the <code>idiom</code> list. This is an instance of Object Oriented Programming (OOP), which we talked about in the Programming Paradigms lecture. The list <code>idiom</code> is an object. Objects can have their own functions. In Python, every list object has an append function. In contrast with the <code>add</code> block in Snap<em>!</em>, when we use the <code>.append("pod")</code> function we don't need to specify which list to use. The reason for that is that we are telling the <code>idiom</code> object to use its <code>append</code> function.
+
+            <!--In other words, it's like a Snap<em>!</em> command, not a Snap<em>!</em> reporter. -->
+            </br>
         </p>
         <h3>Insert</h3>
         <p>
-            If you want the list to add the item to a specific location instead of the end, you'd use the <code>insert</code> function to place an element at a desired index. The first argument is the index of the insert position, the second argument is the element itself.
+            If you want the list to add the item to a specific location instead of the end, you'd use the <code>insert(index, item)</code> function to specify the desired index. The first argument is the desired index, the second argument is the item you want to insert.
         </p>
         <table style="width:80%">
             <tr>
@@ -72,7 +79,7 @@
         </table>
         <h3>Pop</h3>
         <p>
-            Finally, use <code>pop(i)</code> to remove the item at position <code>i</code> in the list. If no argument is given (e.g. <code>crime.pop()</code>) will remove the last item of the list.
+            Finally, use <code>pop(index)</code> to remove the item at position <code>index</code> in the list. If no argument is given (e.g. <code>crime.pop()</code>) the last item of the list will be removed.
         </p>
         <table style="width:80%">
             <tr>
@@ -101,8 +108,8 @@
                 </td>
             </tr>
         </table>
-        <p class="alert quoteOrange">
-            <b>Note:</b> in Snap<em>!</em> the delete block does not return the list item that is deleted, while Python's <code>.pop()</code> function does return the item that it removes. If you'd like, you could make a Snap<em>!</em> reporter that takes in a list, an mimics Python's <code>pop()</code> function.
+        <p class="alert alert-info quoteBlue">
+            In Snap<em>!</em> the delete block does not report the deleted item. In contrast, Python's <code>.pop(index)</code> function does return the item that it removes. 
         </p>
     </body>
 </html>
