@@ -20,7 +20,7 @@ Snap<em>!</em>  is still in lock step. </p>
 
 <p> Make a very small change to Fill Screen - have each sprite wait a
 random value between 1 and 1/10 seconds before stamping. (this involves
-the introduction of a very simple command right before the "stamp" call
+the introduction of a very simple command right before the outermost for-loop
 in <code>Fill Screen</code>: "wait (1 / (pick random [1] to [10]))
 secs"). Run it a few times; now what happens? (Answer: Four "threads"
 take off, and the slowest (i.e., last) color at each time step is that
