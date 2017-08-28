@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly -->
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Composing with "buggy" custom blocks
+        </title>
+
+    </head>
+    <body>
+
+        <p>
+            A "buggy" program is one that doesn't work right.  You would say that it contains
+            one or more "bugs", which are parts of the program that do something other
+            than what the programmer intended.
+        </p>
+
+        <p>
+            Consider the following implementation of <code>draw square</code>:
+        </p>
+        <img class="indent" src="/bjc-r/img/drawing/draw-square-buggy-code.png" alt="buggy draw square custom block">
+        <p>
+            This block <i>will</i> draw a square correctly, but there is a bug: a sneaky one
+            that will only show itself when you use it inside other, more complicated custom blocks.
+        </p>
+
+        <!-- question 1 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="buggy-draw-square"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp1" shuffle="true" >
+            <div class="prompt">
+                <p>
+                    What is the bug?
+                </p>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    The buggy <code>draw square</code> block will draw a square of the wrong size.
+                </div>
+                <div class="feedback">
+                    No, each side is the correct length.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    The buggy <code>draw square</code> block won't draw 4 sides in the shape of a square.
+                </div>
+                <div class="feedback">
+                    No, the square looks correct when it is drawn by itself.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    That block actually works correctly!
+                </div>
+                <div class="feedback">
+                    While the square will be drawn with the correct size and shape, the problem arises with
+                    it the way it leaves the drawing turtle when it finishes.  Compare it with the correct <code>draw square</code>
+                    block.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    The buggy <code>draw square</code> block doesn't return the drawing turtle in the right position
+                    when it is done.
+                </div>
+                <div class="feedback">
+                    No, not quite. Something is wrong with the drawing turtle when the block finishes; but it is in the
+                    right position.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c5">
+                <div class="text">
+                    The buggy <code>draw square</code> block doesn't finish with the drawing turtle
+                    pointing in the right direction..
+                </div>
+                <div class="feedback">
+                    Right! If there was another <img class="inline" src="/bjc-r/img/blocks/turn-right-90.png"> at the end, all would be well.
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp1">
+                <div class="correctResponse" identifier="c5"></div>
+            </div>
+        </div>
+
+        <!-- question 2 -->
+        <div class="assessment-data"
+        type="multiplechoice" identifier="buggy-draw-square"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="resp10" shuffle="true" >
+            <div class="prompt">
+                <p>
+                    Consider the following block definition to draw a house; it uses a <b>correct</b> <code>draw square</code> block, it will draw a house (with a flat roof)
+                    and a door at the lower right:
+                </p>
+                <div class="indent">
+                    <a class="run" href="https://editor.netsblox.org/#open:https://beautyjoy.github.io/bjc-r/prog/drawing/draw-house-buggy-netsblox.xml"> <img class="inline" src="/bjc-r/img/drawing/draw-house-code.png" alt="draw-house block definition using proper draw-square"> </a>
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture">
+                </div>
+
+                <p>
+                    What will be drawn if it uses the <b>buggy</b> <code>draw square</code> code above?
+                </p>
+                <div class="indent">
+                    <a class="run" href="https://editor.netsblox.org/#open:https://beautyjoy.github.io/bjc-r/prog/drawing/draw-house-buggy-netsblox.xml"> <img  src="/bjc-r/img/drawing/draw-house-code-buggy.png" alt="draw-house block definition using buggy draw-square"> </a>
+                </div>
+            </div>
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-correct.png" alt="draw-house picture correct">
+                    (The correct picture)
+
+                </div>
+                <div class="feedback">
+                    No. The bug definitely has an effect when the two squares are composed.
+                    By using a buggy block, <code>draw house</code> becomes buggy itself!
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    Because <code>draw square</code> is buggy, there is no way to predict what
+                    the picture will look like.
+                </div>
+                <div class="feedback">
+                    Incorrect.  This buggy program, like most buggy programs, will predicably do the same <b>wrong</b>
+                    thing every time it is run.  Carefully "run" the program block by block in your head.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-buggy1.png" alt="draw-house picture upside down">
+                    (Flipped over)
+
+                </div>
+                <div class="feedback">
+                    Nope. Carefully "run" the program block by block in your head to see what the buggy <code>draw square</code>
+                    will do.
+                </div>
+            </div>
+
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    <img class="inline" src="/bjc-r/img/drawing/draw-house-picture-buggy2.png" alt="draw-house picture upside down">
+
+                </div>
+                <div class="feedback">
+                    Right!
+                </div>
+            </div>
+
+            <div class="responseDeclaration" identifier="resp10">
+                <div class="correctResponse" identifier="c4"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
