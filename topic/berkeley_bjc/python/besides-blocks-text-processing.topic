@@ -15,6 +15,7 @@ learning-goal: Get a tiny taste of what C8 is like.
 heading: Introduction to Data Science
 	resource: Introduction to Text Processing [/bjc-r/cur/programming/python/hug_text_processing/python_text_processing_intro.html]
     resource: Basic File Input in Python [/bjc-r/cur/programming/python/hug_text_processing/python_basic_files.html]
+    resource: Language Games [/bjc-r/cur/programming/python/hug_text_processing/python_language_games.html]
     resource: Counting Words [/bjc-r/cur/programming/python/hug_text_processing/python_counting_words.html]
     resource: Top Words [/bjc-r/cur/programming/python/hug_text_processing/python_top_words.html]
     resource: Word Length [/bjc-r/cur/programming/python/hug_text_processing/python_word_length.html]
