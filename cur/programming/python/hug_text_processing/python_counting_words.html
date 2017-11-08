@@ -12,8 +12,7 @@
         <p>Modify word_analyzer.py so that it reads as below:
         </p>
 
-    <pre>
-      <code>def read_file(filename):
+    <pre><code>def read_file(filename):
     """Returns the text contained in file with given filename."""
     f = open(filename, "r")
     text = f.read()
@@ -30,15 +29,9 @@ def count_words(text):
   return ???
 
 text = read_file("horse_ebooks.txt")
-print(count_words(text))</code>
-    </pre>
+print(count_words(text))</code></pre>
       <p>Your job is to fill out the count_words function so that it returns a dictionary with the right counts. If you're stuck, look back at <a href="/bjc-r/cur/programming/python/using_dictionaries.html">Exercise 6 from the Data Structures lab</a>.
     </body>
-
-
- <p class="alert quoteBlue">
-To split a sentence into a list of words, use the <code>split</code> function. For example, <code>"hello my name is josh".split()</code> would return <code>["hello", "my", "name", "is", "josh"]</code>.
- </p>    
 
  <h3>Removing Punctuation (optional)</h3>
 
