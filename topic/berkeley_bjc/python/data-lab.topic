@@ -1,0 +1,18 @@
+title: Data and Python
+{
+h2: Big Ideas
+big-idea: Python is a great tool for analyzing real world data.
+big-idea: Libraries in Python allow for easy manipulation and visualization of data.
+big-idea: Deriving meaning from data isn't so hard!
+
+h2: Activities
+learning-goal: Gain an introduction to iPython.
+learning-goal: Learn to work with tables.
+learning-goal: Explore data through visualization using a scatter plot.
+learning-goal: Get a tiny taste of what C8 is like.
+
+
+heading: Introduction to Data Science
+	resource: Set-up Instructions [/bjc-r/cur/programming/python/data-science/data_introduction.html]
+
+}
