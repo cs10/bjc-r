@@ -21,7 +21,7 @@ heading: Introduction to Python
 
 heading: Defining Functions and Loops
   resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/csed_python/define_simple_function.html]
-  resource: Printing and While Loops [/bjc-r/cur/programming/python/csed_python/printing_while_loops.html]
+  resource: Printing vs Reporters [/bjc-r/cur/programming/python/csed_python/python_reporters.html]
 
 heading: String Manipulation, Conditionals, and Recursion
   resource: Basic String Manipulation [/bjc-r/cur/programming/python/csed_python/python_basic_string.html]
