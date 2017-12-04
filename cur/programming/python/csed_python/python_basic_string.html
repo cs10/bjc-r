@@ -6,40 +6,29 @@
     </head>
     <body>
         <p>
-            In this section we will discuss the basic ways that strings (i.e. words and sentences) can be manipulated in python. To get started, open up the python interpreter like we did earlier on in the lab (if you forgot, simply enter <code>python3</code> into the shell).  To create a string, set a variable to text enclosed in quotes as shown below (notice that assigning a variable does not return it's value, we must do that seperately):
+            In this section we will discuss the basic ways that strings (i.e. words and sentences) can be manipulated in python. As we saw in the first part of the lab, we can set a variable to have a certain string by using the equals sign and the text we want in quotes.
         </p>
         <table style="width:auto; table-height:200px">
               <tr>
                   <td>
                       <p><pre><code>
->>> name = "Alonzo"
+name = "Alonzo"
                     </code></pre></p>
                   </td>
                   <td>
                       <img src="/bjc-r/img/python/set_name_to_alonzo.png"/>
                 </td>
               </tr>
-              <tr>
-                  <td>
-                      <p><pre><code>
->>> name
-"Alonzo"
-                    </code></pre></p>
-                  </td>
-                  <td>
-                      <img src="/bjc-r/img/python/name.png"/>
-                </td>
-            </tr>
           </table>
           <p>
-              Next, set a variable called name to your name (or the name of someone else).  We can then use the len() function to get the length of the variable:
+              Once we have a variable with a string, we can use the len() function to get the length of the variable:
           </p>
           <table style="width:auto; table-height:200px">
               <tr>
                   <td>
                       <p><pre><code>
 >>> name = "Alonzo"
->>> len(name)
+>>> print(len(name))
 6
                     </code></pre></p>
                   </td>
@@ -49,13 +38,13 @@
               </tr>
           </table>
           <p>
-              To access certain letters of a string we can do the following:
+              We can also access certain letters using a special notation where we specify the letter we want in between brackets, as shown below.
           </p>
           <table style="width:auto; table-height:200px">
               <tr>
                   <td>
                       <p><pre><code>
->>> name[0]
+>>> print(name[0])
 'A'
                     </code></pre></p>
                   </td>
@@ -76,9 +65,9 @@
               <tr>
                   <td>
                       <p><pre><code>
->>> name[len(name) - 1]
+>>> print(name[len(name) - 1])
 'o'
->>> name[-1]
+>>> print(name[-1])
 'o'
                     </code></pre></p>
                   </td>
@@ -94,7 +83,7 @@
               <tr>
                   <td>
                       <p><pre><code>
->>> name + " says hello"
+>>> print(name + " says hello")
 'Alonzo says hello'
                     </code></pre></p>
                   </td>
@@ -111,13 +100,13 @@
               In Python we can also easily create substrings of a string by using some special Python syntax as shown below (note that Snap<em>!</em> does not have a default function to do this):
           </p>
           <p><pre><code>
->>> name[1:5]
+>>> print(name[1:5])
 'lonz'
->>> name[:3]
+>>> print(name[:3])
 'Alo'
->>> name[3:]
+>>> print(name[3:])
 'nzo'
->>> name[:3] + name[3:]
+>>> print(name[:3] + name[3:])
 'Alonzo'
         </code></pre></p>
         <p class="alert alert-warning quoteOrange">
@@ -128,7 +117,7 @@
             Write the function <code>reverse_string(string)</code> that takes in a string and puts it in the reverse order as shown below:
         </p>
         <p><pre><code>
->>> reverse_string("Alonzo")
+>>> print(reverse_string("Alonzo"))
 'oznolA'
 
         </code></pre></p>
