@@ -15,14 +15,9 @@ learning-goal: Become comfortable with basic math and "string" operations.
 heading: Introduction to Python
   resource: Welcome to Besides Blocks: An Introduction to Python [/bjc-r/cur/programming/python/csed_python/introduction_to_besides_blocks.html]
   resource: Introduction to the Terminal [/bjc-r/cur/programming/python/csed_python/introduction-to-the-terminal.html]
-  resource: Opening a Shell and Python [/bjc-r/cur/programming/python/csed_python/open_python.html]
+  resource: Creating Your First Python Program [/bjc-r/cur/programming/python/csed_python/first_python.html]
+  resource: Bigger Python Programs [/bjc-r/cur/programming/python/csed_python/bigger_python.html]
 
-heading: Math and Variables
-  resource: Variables and Primitive Expressions [/bjc-r/cur/programming/python/csed_python/python_syntax_and_operators.html]
-  quiz: Self-Test: Math and Variables [/bjc-r/cur/programming/python/csed_python/math-and-variables-self-test.html]
-
-heading: Running Python Scripts
-  resource: Running a script from the Command Line [/bjc-r/cur/programming/python/csed_python/run_a_python_script.html]
 
 heading: Defining Functions and Loops
   resource: Defining a Simple Python Function [/bjc-r/cur/programming/python/csed_python/define_simple_function.html]
