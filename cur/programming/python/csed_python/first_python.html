@@ -7,30 +7,45 @@
     <body>
       <h3>Running a Python File</h3>
         <p>
-          To write a python program, we first need to open up a text editor. We'll be using "Sublime Text", which is installed on the lab machines. Click on the swirly icon in the top left again. You'll probably see the word "terminal" still there. Delete it, then type in "sublime" and a "Sublime Text 2" icon should appear. Click on this icon and you should see the Sublime Text 2 editor open up.
+          To write a python program, we first need to open up a text editor. We'll be using "Sublime Text", which is installed on the lab machines. Click on the swirly icon in the top left again. You'll probably see the word "terminal" still there. Delete it, then type in "sublime" and a "Sublime Text 2" icon should appear. Click on this icon and you should see the Sublime Text 2 editor open up, as shown below.
+          <br>
+          <img src="/bjc-r/img/edday/sublime1.png" alt="sublime1"/>
         </p>
         <p>We'll start by saving our blank file and giving it a name. To do this, press control-S, and a window should appear that looks like the picture below.
+          <br>
+          <img src="/bjc-r/img/edday/sublime2.png" alt="sublime2"/>        
         </p>
         <p>Press delete to erase "untitled", and type "hello.py" instead. Then click the "Documents" folder on the left side. Once you've done both of these things, your screen should look like this:
+          <br>
+          <img src="/bjc-r/img/edday/sublime3.png" alt="sublime3"/>        
         </p>
         <p>If you're getting a little lost, make sure to ask one of the lab assistants! Once you feel like you've reached this step, click "Save" in the bottom right hand corner. Once you've done, this, you've now saved your first program.
         </p>
         <p>Of course, a blank program is pretty boring, so in the Sublime Text window, type exactly <code>print("Hello World")</code>. Once you've done this, your sublime window should look as follows: 
+          <br>
+          <img src="/bjc-r/img/edday/sublime4.png" alt="sublime4"/>                
         </p>
-        <p>It's very important that the text should be showing up in color. If it's showing up still all white, ask a lab assistant for help. Now press control-S to save the changes to your program, which will make the little dot in the title bar go away, as shown below:
+        <p>It's very important that the text should be showing up in color. If it's showing up still all white, ask a lab assistant for help. Now press control-S to save the changes to your program, which will make the little dot in the title bar go away, as shown below. If you look carefully you can see there is no longer a little tiny dot to the right of "hello.py" in the title bar.
+          <br>
+          <img src="/bjc-r/img/edday/sublime5.png" alt="sublime5"/>        
         </p>
         <p>
           Now finally, it's time to run your program from the terminal. Go back to your terminal window and use the <code>ls</code> command to verify that <code>hello.py</code> is there! When you type ls, you should see something like the following:
         </p>
         <p><pre><code>
 s273-2 [3] ~/Documents # ls
-hellopy
+hello.py
         </code></pre></p>
         <p>
-          To run your program, just type <code>python3 hello.py</code>. You should see the words <code>Hello World</code> printed to your terminal. You've just run your file with Python.
+          To run your program, just type <code>python3 hello.py</code>. You should see the words <code>Hello World</code> printed to your terminal. It should look a little something like this: 
         </p>
+        <p><pre><code>
+s273-2 [4] ~/Documents # python3 hello.py
+Hello World
+        </code></pre></p>        
+        <p>You've just run your file with Python!</p>
         <p class="alert alert-info quoteBlue">
-          Now let's write some Python functions <code>>>></code>
+          Now let's write some more interesting Python code<code>>>></code>
         </p>
     </body>
 </html>
