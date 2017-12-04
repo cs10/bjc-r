@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+    <title>Introduction to Turtle Graphics</title>
+    </head>
+    <body>
+        <h3>Python Modules</h3>
+        <p class="alert alert-info quoteBlue">
+            So you've probably been wondering where the sprites and graphics are in python. It turns out that there are many different ways to display graphics in Python by using modules. A <b>module</b> is code that someone else has written that we can then <code>import</code> into our file and use.
+        </p>
+        <p>
+            A simple and popular graphics module for Python is called <b>turtle</b>. To import the turtle module, add the following line of code to the top of your file:
+        </p>
+        <pre><code>
+import turtle
+        </code></pre>
+        <p>
+            This imports the turtle module and allows us to use all of its functionality. If we want to call a function from the turtle module we would do something like below:
+        </p>
+        <pre><code>
+turtle.forward(100) # moves the sprite 100 steps forward
+        </code></pre>
+
+        <p class="alert alert-info quoteBlue">
+            Sometimes we might want to rename the modules that we import so that they are more easy to type or have a more intuitive name.  Let's say that we felt like turtle was too long of a word to type before each function call. We could have instead written the following import line: <code>import turtle as t</code>. This would then allow us to access the turtle module via the alias name <code>t</code>. This would allow us to call a function like this:
+        </p>
+        <pre><code>
+import turtle as t
+t.forward(100)
+        </code></pre>
+
+        <h3>Turtle Functions</h3>
+        <p>
+            The turtle module has all of the same drawing functions as Snap<em>!</em> and much more. A few of the module's functions are shown below, but if you want to learn more about the incredible things that you can do with turtle please refer to the <a href="https://docs.python.org/3/library/turtle.html">documentation</a>. The first time that you call any one of the turtle functions a new window will open for the turtle to draw in. You can think of this window as being analogous to the stage in Snap<em>!</em> its just that we only see the "stage" in python when we actually draw something.
+        </p>
+        <pre><code>
+# moves the sprite 100 steps forward
+turtle.forward(100)
+
+# moves the sprite 100 steps backward
+turtle.backward(100)
+
+# rotate to the right 45 degrees
+turtle.right(45)
+
+# rotate to the left 45 degrees
+turtle.left(45)
+
+# Pen doesn't draw when moving
+turtle.penup()
+
+# Pen draws when moving
+turtle.pendown()
+
+# Go to a coordinate (x: 130, y: -50)
+# The turtle starts at the center of the stage which is at position (x: 0, y: 0)
+turtle.goto(130, -50)
+
+# Write the string "Hello World!" to the stage at the sprite's current position.
+# Don't worry too much about the font=(...) part, just make sure it's there.
+# Refer to the official documentation for more information (linked above).
+turtle.write("Hello World!", font=("Arial", 30, "normal"))
+
+# clear all drawings on the stage
+turtle.clear()
+        </code></pre>
+
+        <p class="alert alert-info quoteBlue">
+            As you can see almost all of these functions are identical to what is in Snap<em>!</em>. Many of these functions have abbreviations as well, such as <code>turtle.fd(100)</code> which moves the sprite forward. Check out the <a href="https://docs.python.org/3/library/turtle.html">documentation</a> for other tips, tricks, and help.
+        </p>
+
+        <h3>Exercise 4</h3>
+        <p class="alert alert-success quoteGreen">
+            Write a function that when called draws the fractal pattern shown below (this is the c-curve from the past recursion lab). Also use the turtle's <code>write</code> function to write your name (or something funny or both!) on the stage somewhere. You should use recursion and the turtle module to complete this exercise (this exercise is not graded by autograder).
+        </p>
+        <div style="margin-left: 40px;">
+            <img border="0" src="/bjc-r/img/recur/c-curve-level0.gif" alt="There should be an image here" title="There should be an image here" >
+            <img border="0" src="/bjc-r/img/recur/c-curve-level1.gif" alt="There should be an image here" title="There should be an image here" >
+            <img border="0" src="/bjc-r/img/recur/c-curve-level2.gif" alt="There should be an image here" title="There should be an image here" >
+            <img border="0" src="/bjc-r/img/recur/c-curve-level3.gif" alt="There should be an image here" title="There should be an image here" >
+            <img border="0" src="/bjc-r/img/recur/c-curve-level4.gif" alt="There should be an image here" title="There should be an image here" >
+             <img border="0" src="/bjc-r/img/recur/c-curve-level5.gif" alt="There should be an image here" title="There should be an image here" >
+        </div>
+
+        <h3>Congrats, You've Finished Besides Blocks Lab 1!</h3>
+        <p>
+          To confirm that you've completed all of the exercises enter the folowing command and show the output to your teacher (you'll have to show your turtle result as well, as the autograder only tests exercises 1-3):
+        </p>
+        <p><pre><code class="lang-bash">
+python3 autograder.py lab1.py
+        </code></pre></p>
+    </body>
+</html>

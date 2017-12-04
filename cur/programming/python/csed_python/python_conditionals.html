@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Conditionals and Recursion</title>
+    </head>
+    <body>
+        <h3>Python Conditionals</h3>
+          <p>
+              In Python, conditional statements consist of <code>if</code>, <code>if-else</code>, and <code>if-elif-else</code>: <br>
+          </p>
+              <table style="width:800px;">
+            <tr>
+                <td>
+                    <pre><code class="prettify lang-python linenums">
+if condition:
+    do something
+                    </code></pre>
+                  </td>
+                  <td><img src="/bjc-r/img/python/ifgeneral.png" alt="if condition"/></td>
+              </tr>
+              <tr>
+                  <td>
+                      <pre><code class="prettify lang-python linenums">
+if condition:
+    do something
+else:
+    do something else
+                    </code></pre>
+                  </td>
+                  <td><img src="/bjc-r/img/python/ifelse.png" alt="if-elsecondition"/></td>
+              </tr>
+              <tr>
+                  <td>
+                      <pre><code class="prettify lang-python linenums">
+if condition:
+    do thing 1
+elif condition2:
+    do thing 2
+else:
+    do something else
+                    </code></pre>
+                  </td>
+                  <td><img src="/bjc-r/img/python/ifelseif.png" alt="if-elif-else condition"/></td>
+              </tr>
+              </table>
+              <h3>Recursion!</h3>
+              <p class="alert alert-info quoteBlue">
+                  Recursion is just as elegant in Python! Below is the well known Fibonacci function.
+              </p>
+                        <table style="width:auto; table-height:200px">
+              <tr>
+                  <td>
+                      <p><pre><code class="prettify lang-python linenums">
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 1) + fib(n - 2)
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/snap_fib.png"/>
+                </td>
+              </tr>
+          </table>
+          <h3>Exercise 3</h3>
+          <p class="alert alert-success quoteGreen">
+              Use conditionals and recursion to write a function <code>palindrome(string)</code>, which should return <code>True</code> if the input string is a palindrome and <code>False</code> otherwise. Write the function in your <code>lab1.py</code> file. When you want to test your solution, enter the following command:
+          </p>
+          <p><pre><code class="lang-bash">
+python3 autograder.py lab1.py
+        </code></pre></p>
+    </body>
+</html>
