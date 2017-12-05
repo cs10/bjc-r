@@ -48,9 +48,16 @@ s273-2 [2] ~ # cd Documents
 s273-2 [3] ~/Documents # 
         </code></pre></p>
         <p>
-          Now you're in the <code>Documents</code> directory. We can use <code>ls</code> again to see the contents of <code>Documents</code>. You should notice that nothing appears, which means that the directory is empty. We'll change this in the next section of this lab when we create our first python program.
+          Now you're in the <code>Documents</code> directory. We can use <code>ls</code> again to see the contents of <code>Documents</code>. If you're the first person using the computer of the day, you should notice that nothing appears, which means that the directory is empty. If anything appears, for example hello.py, lab1.py, or anything else, that's something another student created earlier in the day.
         </p>
-
+        <p>If you see an earlier students work, mercilessly destroy it using the command <code>rm *.py</code> and answer yes when prompted.
+        </p>
+        <p><pre><code>
+s271-22 [2] ~/Documents # ls
+hello.py
+s271-22 [3] ~/Documents # rm *.py
+rm: remove regular file ‘hello.py’? yes
+        </code></pre></p>
         <p class="alert alert-info quoteBlue">
           You can also use the terminal to do almost anything, such as moving, copying, and removing files and directories. If you would like an explanation of some other useful terminal commands check out this <b><a target ="_blank" href="http://cs61a.org/articles/unix.html">article</a></b>.
         </p>
