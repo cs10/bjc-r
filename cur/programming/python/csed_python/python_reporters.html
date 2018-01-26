@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Printing and While Loops</title>
+    </head>
+    <body>
+        <h3>Print vs. Return</h3>
+        <p>Just as in Snap<em>!</em>, there is a very important distinction between printing values and reporting them.
+        </p>
+        <p>
+          <b>Print Statement:</b> As you saw on the previous page the print statement prints out values. This is more or less the equivalent of "say" in Snap<em>!</em>. Print statements allow a programmer to print values and variables at a chosen location in the code.
+        </p>
+        <table style="width:auto; table-height:150px">
+              <tr>
+                  <td>
+                      <p><pre><code>
+x = 5
+print(x)
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/say_var.png"/>
+                </td>
+              </tr>
+          </table>
+
+        <p>
+          <b>Return:</b> If <code>print</code> is Python's version of "say", then <code>return</code> is Python's version of "report". <code>return</code> should be used when you want to end a function and report a value.
+        </p>
+        <table style="width:auto; table-height:150px">
+              <tr>
+                  <td>
+                      <p><pre><code>
+def times_5(x):
+    return 5 * x
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/times-5.png"/>
+                </td>
+              </tr>
+        </table>
+        
+
+          <h3>Exercise 1</h3>
+          <p class="alert alert-success quoteGreen">
+              Write an <code>exponent(num, power)</code> function that takes two arguments (a number and an exponent value) and returns the computed result. For example <code>exponent(10, 0)</code> should return <code>1</code> and <code>exponent(5, 3)</code> should return <code>125</code>, since 5 * 5 * 5 is 125.
+            </p>
+          <p>Create a new file called <code>lab1.py</code>, and write your function inside that file. Make sure that you <code>return</code> your result instead of just printing it!
+          </p>                  
+        <p>
+            We've written a small autograder to help you test your functions. Right click on this <a href="/bjc-r/prog/python/autograder.py">link</a>, choose "Save As", and <b>save the file to the same directory that your <code>lab1.py</code> file is in</b>. To test exercises 1-3, use the following command:
+        </p>
+        <p><pre><code class="lang-bash">
+s273-2 [6] ~/Documents # python3 autograder.py lab1.py
+        </code></pre></p>
+        <p class="alert alert-info quoteBlue">
+            This will run a series of tests to validate the functionality of your exponent definition (and the definitions for exercises 2 and 3). Check the output to make sure it worked!
+        </p>
+    </body>
+</html>

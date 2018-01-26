@@ -14,17 +14,17 @@
 		<br>
 		<br>
 		<div style="text-align: center;">
-            <img title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized.png" >
+            <img title="Memoized" alt="Memoized" src="/bjc-r/img/list/find-number-in-list-memoized2.png" >
 			<br>
 		</div>
-		We&rsquo;ll use a list to keep track of the locations of numbers that we&rsquo;ve found already: the index of each element in the list will be the number we&rsquo;re looking for and the corresponding value will be the location where that number was found. If the value at a particular index is -1, that means that we haven&rsquo;t looked for the number yet and if the value is 0 then that means that the number doesn't exist in the list. Here is an algorithm describing how the new  block should progress using the new memoization list:
+		We&rsquo;ll use a list to keep track of the locations of numbers that we&rsquo;ve found already: the index of each element in the list will be the number we&rsquo;re looking for and the corresponding value will be the location where that number was found. If the value at a particular index is 0, that means that we haven&rsquo;t looked for the number yet and if the value is -1 then that means that the number doesn't exist in the list. Here is an algorithm describing how the new  block should progress using the new memoization list:
 		<br>
 		<ol>
 			<li>
-				Start off setting all of the slots in <em>memory</em> to -1 because we haven't found any numbers yet.
+				Start off setting all of the slots in <em>memory</em> to 0 because we haven't found any numbers yet. (already completed for you)
 			</li>
 			<li>
-				Check the global list <em>memory</em> to determine if the number in question has already been found.
+				Check the list <em>memory</em> to determine if the number in question has already been found.
 			</li>
 			<li>
 				If so, report the saved location. If not, we&rsquo;ll have to calculate it.
@@ -37,7 +37,7 @@
 			</li>
 		</ol>
         <br />
-		Each value will now be computed a maximum of one time. Now that&rsquo;s fast!
+		Each value will now be computed a maximum of one time. Now that&rsquo;s fast, but Test for yourself how much faster this method is by clicking the timer script.
         <br /><br />
         Consider the following questions:<br />
         <ul>

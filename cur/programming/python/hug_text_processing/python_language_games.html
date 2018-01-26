@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Language Games</title>
+    </head>
+    <body>
+
+    	 <p>
+            Before we start working with our data, let's have some fun and play some <a href="https://en.wikipedia.org/wiki/Language_game">language games</a> with text that we are now able to read from files. A language game is a systematic manipulation of a word that is used to conceal a conversation. 
+        </p>
+        <h3>Pig Latin</h3>
+        <p>
+          	Pig Latin is one of the most famous English language games. You can convert an English word into Pig Latin by moving all the consonants up to the first vowel to the end of the word and then appending "ay". E.g. "hello, Chris how are you?" becomes "Ellohay, ischray owhay areay ouyay?" Let's write a function that takes in a single word and return its Pig Latin translation.
+        </p>
+        <p>
+        	Add the following function after the <code>read_file</code> function you just defined in word_analyzer.py:
+       	</p>
+
+        <pre><code>def pig_latin(word):
+    """ Returns the pig latin translation of a word. """
+    return ???</code></pre>
+
+    	 <p class="alert quoteBlue">
+		Hint: Make a list of vowels [a, e, i, o, u].</a>
+		 </p>  
+
+		 <p>
+		 	To test if your code works you can add the following line to the end of the file. 
+		 </p>
+		 <pre><code>print(pig_latin("hello"))</code></pre>
+		 <p>
+		 	Try running word_analyzer.py, and you should get: 
+		 </p>
+		 <pre><code>$ python word_analyzer.py
+Ellohay</code></pre>
+	<h3> -izzle Speak </h3>
+	<p>
+	Mac Dre an American Rapper is accredited for coming up with the next language game we will implement, however Snoop Dogg (D-O-double-g) is responsible for its wide spread use. You can convert an English word into -izzle speak by replacing the last vowel and all its following consonants with "-izzle." E.g. "Merry Christmas" becomes "Mizzle Christmizzle." If a word only has one vowel like 'and' and 'a' or it doesn't contain a cardinal vowel, [a, e, i, o, u], like the word 'my' you can either replace the entire word with 'izzle' or append '-izzle' to the end of the word.
+
+    <p>
+        Add the following function after the <code>pig_latin</code> function you just defined:
+    </p>
+
+        <pre><code>def izzle(word):
+    """ Returns the izzle translation of a word. """
+    return ???</code></pre>
+
+    <p>
+        You can test your function using the same methodology we used for Pig Latin.
+    </p>
+
+    <h3> Higher Order Manipulation </h3>
+    <p>
+    Now let's apply our language games to the Gettysburg Address. We could make two separate functions that apply the language games we just defined to the text, but that would mean writing some redundant code. Just like in Snap<em>!</em> you can pass in a function as input in Python. Refer to the example below which takes in a language game and applies it to the word "hello." 
+	</p>
+    </body>
+
+    <table style="width:80%">
+            <tr>
+                <td>
+                    <img src="/bjc-r/img/python/HOF.png" alt="HOF"/>
+                </td>
+                <td>
+                    <pre><code>
+def hello_language_game(languageGame):
+    return languageGame("hello")
+                    </code></pre>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <img src="/bjc-r/img/python/izzle.png" alt="izzle Game"/>
+                </td>
+                <td>
+                    <pre><code>
+	hello_language_game(izzle)
+                    </code></pre>
+                </td>
+            </tr>
+
+        </table>
+    <p>
+    Notice that in the example above, the function <code>izzle</code> is passed into <code>hello_language_game</code> without any parenthesis. In Snap<em>!</em> we use <img src="/bjc-r/img/python/call.png" alt="call"/> to evaluate the input function, but in Python we do this by using parenthesis: <code>languageGame("hello")</code>.
+    </p>
+
+    <p>
+    With this knowledge write the following function:  
+    </p>
+
+    <pre><code>def apply_language_game(text, language_game):
+    """Takes a text and a language_game function as inputs"""
+    """ Returns the language game function applied to every word of the text. """
+    return ???</code></pre>
+
+     <p class="alert quoteBlue">
+	To split a sentence into a list of words, use the <code>split</code> function. For example, <code>"hello my name is josh".split()</code> would return <code>["hello", "my", "name", "is", "josh"]</code>.
+	 </p>  
+
+	 <p class="alert quoteBlue">
+	To convert a list into a string use <code>" ".join()</code>. E.g. <code>" ".join(["hello", "world"])</code> evaluates to <code>"hello world"</code>
+	 </p>   
+
+	 <p>
+	 	To test if your code works you can add the following line to the end of the file. 
+	 </p>
+	 <pre><code>text = read_file("text_processing/gettysburg.txt")
+print(apply_language_game(text, izzle))
+	 </code></pre> 
+     <pre><code>$ python word_analyzer.py
+Foizzle scorizzle izzle sevizzle yeizzle agizzle oizzle fathizzle broizzle ...</code></pre>
+
+</html>

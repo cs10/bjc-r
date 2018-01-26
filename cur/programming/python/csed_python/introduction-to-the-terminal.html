@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+    <title>Introduction to the Terminal</title>
+    </head>
+    <body>
+        <h2>What's a Terminal?</h2>
+        <p>
+          You're used to navigating around your computer by clicking on folder icons and using menus to create new files and folders. We can do all of this from the terminal as well, by typing out commands instead of using the mouse to click on things.
+        </p>
+        <h2>Opening a Terminal</h2>
+        <p>
+          To open a terminal, first click on the swirly icon on the top left of the lab computer screen, shown in the picture below.<br>
+          <img src="/bjc-r/img/edday/terminal1.png" alt="terminal1"/>
+        </p>
+        <p>
+          Once you've clicked on it, a window should pop up that says "Search your computer and online sources" as shown below.<br>          
+          <img src="/bjc-r/img/edday/terminal2.png" alt="terminal2"/>
+        </p>
+        <p>
+          In that box, type in the word terminal, and a list of applications should pop up. This list should include terminal, as shown below.<br>
+          <img src="/bjc-r/img/edday/terminal3.png" alt="terminal3"/>
+        </p>
+        <p>Click on terminal, and you should see a window appear that looks similar to the window below.<br>
+        <img src="/bjc-r/img/edday/terminal4.png" alt="terminal4"/> 
+        </p>
+        <p>
+          The little bit of text that looks similar to <code>s273-2 [1] ~ # </code> is called the <b>prompt</b>. When you type commands, they appear to the right of the prompt.
+        </p>
+        <p>
+          Let's learn how to navigate around. Right now, you're in the <b>home</b> directory, also called <b>~</b>. A <b>directory</b> is just another name for a folder (like the <code>Documents</code> folder).
+        </p>
+        <h3><code>ls</code>: listing contents of a directory</h3>
+        <p>
+          To see what's in the current directory, we can use the command <code>ls</code>. The <code>ls</code> command lists the contents of our current directory. To use a command, type it in the terminal, then press 'enter'. Try it out. You should see something like this:
+        </p>
+        <p><pre><code>
+s273-2 [1] ~ # ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+      </code></pre></p>
+        <h3><code>cd</code>: navigating to another directory</h3>
+        <p>
+          We can see that the home directory has some other directories in it, such as <code>Documents</code> and <code>Desktop</code>. If we want to go into one of those directories, we can use the command <code>cd</code>, followed by that directory's name. Try it out by using the command <code>cd Documents</code>.
+        </p>
+        <p><pre><code>
+s273-2 [2] ~ # cd Documents
+s273-2 [3] ~/Documents # 
+        </code></pre></p>
+        <p>
+          Now you're in the <code>Documents</code> directory. We can use <code>ls</code> again to see the contents of <code>Documents</code>. If you're the first person using the computer of the day, you should notice that nothing appears, which means that the directory is empty. If anything appears, for example hello.py, lab1.py, or anything else, that's something another student created earlier in the day.
+        </p>
+        <p>If you see an earlier students work, mercilessly destroy it using the command <code>rm *.py</code> and answer yes when prompted.
+        </p>
+        <p><pre><code>
+s271-22 [2] ~/Documents # ls
+hello.py
+s271-22 [3] ~/Documents # rm *.py
+rm: remove regular file ‘hello.py’? yes
+        </code></pre></p>
+        <p class="alert alert-info quoteBlue">
+          You can also use the terminal to do almost anything, such as moving, copying, and removing files and directories. If you would like an explanation of some other useful terminal commands check out this <b><a target ="_blank" href="http://cs61a.org/articles/unix.html">article</a></b>.
+        </p>
+    </body>
+</html>

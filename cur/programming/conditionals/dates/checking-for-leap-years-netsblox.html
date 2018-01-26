@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript" src="/bjc-r/llab/loader.js" ></script>
+        <title>
+            Checking for Leap Years
+        </title>
+    </head>
+
+    <body>
+        <p>
+            Some years in our (Gregorian) calendar are <b>leap years</b>. February has a 29th day and the year overall has 366.
+            Many people think that leap years come every fourth year, and some know that this is because
+            it takes the earth takes 365.25 days to revolve around the sun.
+        <p></p>
+        But, things are a bit more complicated than that: leap years come slightly less often than
+        once every four years.  To figure out if a year (say, 1999) is a leap year, you need to
+        test whether it is divisible evenly &mdash; that is, if there is no remainder after
+        the division &mdash; by three different values.
+        </p>
+        <div class="alert quoteGreen">
+            <p>A calendar year is a leap year if</p>
+            <ul class="noborder">
+                <li>
+                    it can be divided evenly by <b>4</b>,
+                </li>
+                <li>
+                    <i>unless</i> it can also be divided evenly by <b>100</b>,
+                </li>
+                <li>
+                    except if it is also divisible evenly by <b>400</b>, in which case it is a leap year.
+                </li>
+            </ul>
+           <p><a href="http://en.wikipedia.org/wiki/Leap_year#Gregorian_calendar">We aren't making this up.</a> </p>
+        </div>
+
+        <p>
+            Thus 2000 was a leap year (divisible evenly by 400, 100, and 4), 
+            1900 was not (divisible evenly by 100 and 4 but not by 400), 
+            1996 was (divisible evenly by 4 but neither 100 nor 400), and 1999
+            wasn't (not divisible by anything!) .
+        </p>
+        <p>
+            Consider the block sets below: they all say <b>"leap year"</b>
+            if the <code>year</code> variable is a leap year and <b>"normal year"</b> otherwise.  That is, they all
+            work correctly, without any bugs. 
+            (The scripts are available in <a class="run" href="https://editor.netsblox.org/#open:https://beautyjoy.github.io/bjc-r/prog/conditionals/dates/is-leap-year-netsblox.xml">this Netsblox program</a>).
+
+        </p>
+        <table>
+            <tr>
+                <td>(A)&nbsp;&nbsp;</td>
+                <td>
+                <br>
+                <img src="/bjc-r/img/cond/leap-year-script-boolean.png" />
+                <br>
+                <br>
+                </td>
+            </tr>
+            <td>(B)&nbsp;&nbsp;</td>
+            <td>
+            <br>
+            <img src="/bjc-r/img/cond/leap-year-script-conditional-1.png" />
+            <br>
+            <br>
+            </td>
+            </tr>
+            <td>(C)&nbsp;&nbsp;</td>
+            <td>
+            <br>
+            <img src="/bjc-r/img/cond/leap-year-script-conditional-2.png" />
+            <br>
+            <br>
+            </td>
+            </tr>
+        </table>
+        <p>
+            Form a small group and discuss which version you prefer, and defend your answer.
+            </p>
+        <p class="alert quoteGreen">
+
+            Which one is easiest to read?
+            <br>
+            Which one would be easiest to rewrite from memory?
+            <br>
+            In which one would it be the easiest to find a bug?
+            <br>
+            Which one is the most <i>beautiful</i>?!
+            <br>
+        </p>
+
+    </body>
+</html>
+

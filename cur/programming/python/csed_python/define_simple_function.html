@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Defining a Simple Python Function</title>
+    </head>
+    <body>
+        Defining a function in Python is easy! Compare the Snap<em>!</em> program on the left with its Python equivalent on the right. Both programs take an integer as an argument, and print out all the numbers between 1 and that number.
+        <table style="width:auto; table-height:200px">
+                  <tr>
+                      <td>
+                        <img src="/bjc-r/img/edday/count_up_function.png"/>
+                      </td>
+                      <td>                          
+                          <img src="/bjc-r/img/edday/count_up_function_python.png"/>
+                    </td>
+                  </tr>
+              </table>
+              <p>
+                  <b>Function definition:</b> Like in Snap<em>!</em>, a function is separated into two parts. The first part is the function header, which specifies the name of the function, and any arguments (a.k.a. input variables, parameters) of the function. Notice that in Python, the line must begin with the keyword <code>def</code> and end with a <code>:</code>. This lets the Python interpreter know that the indented lines are a function header. The second part of a function is the function body. Notice that the two bodies look very similar.
+              <p>
+                  Create a new file in Sublime Text and give it any name you want, e.g. <code>count.py</code>. Inside your file, add the following code to your file:
+        <p><pre><code>def count_up(num):
+    x = 1
+    while x <= num:
+        print(x)
+        x = x + 1
+
+count_up(4)        
+        </code></pre></p> 
+              <p>Try running the file, and you should see something like the following happen:
+        <p><pre><code>
+s273-2 [5] ~/Documents # python3 count.py
+1
+2
+3
+4
+        </code></pre>
+              </p>
+        <p>Before moving on, let's consider how our Python and Snap<em>!</em> programs are different:
+          </p>
+              <p>
+                  <b>Declaration and setting of variables:</b> In Snap<em>!</em>, we had to create a script variable before setting it. In Python, we can do this all at once by simply setting a variable equal to a value, e.g. <code>x = 1</code>.
+              <p>
+              <p>
+                  <b>while vs. repeat until:</b> In Python, instead <code>repeat until</code>, we have a block called <code>while</code>. As you know, <code>repeat until</code> goes until the condition is false. <code>while</code> does the opposite thing, going until the condition is true.
+              <p>                            
+              <p>
+                  <b>Less than or equal:</b> In Python, we have a special operator called <code><=</code> which returns true if the left operand is less than or equal to the right operand. For example <code>x <= num</code> returns true as long as <code>x</code> is less than or equal to <code>num</code>, and false if <code>x</code> is greater than <code>num</code>.
+              <p>              
+              <p>
+                  <b>Definitions and calls can go in the same file:</b> When we make a Snap<em>!</em> program, the block definitions don't show up on the main page. However, inside a Python file, function definitions and calls to those functions can go in the same file. For example, in the program above, the definition of <code>count_up</code> is in the same file as the call to this function at the very end that reads <code>count_up(4)</code>. 
+              <p>                   
+        <p class="alert alert-info quoteBlue">
+          In the real world, programmers often put function definitions into separate files, but for simplicity, we will not do this today.
+        </p>              
+    </body>
+</html>
