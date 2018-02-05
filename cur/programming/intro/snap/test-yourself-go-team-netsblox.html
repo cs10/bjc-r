@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Test Yourself: Go Team!</title>
+    </head>
+
+    <body>
+
+        <div class="assessment-data" type="multiplechoice" identifier="goteam"
+        hasinlinefeedback="true" maxchoices="1"
+        responseIdentifier="ri" shuffle="true"
+        >
+            <div class="prompt">
+                <p>
+                    Without trying this in Netsblox, try to answer the following question:
+                    <br />
+                    <br />
+                    What does the following set of scripts do when the <code>Turn1</code> message is broadcast?
+                </p>
+                <p><img src="/bjc-r/img/prog/receive-turn1-broadcast.png"  alt="receive turn1 broadcast script" />&nbsp;&nbsp;&nbsp;&nbsp; 
+                    <img src="/bjc-r/img/prog/receive-turn2-broadcast.png"  alt="receive turn2 broadcast script" />
+                  </p>
+                <p>
+                    Choose one:
+                </p>
+            </div>
+
+            <div class="choice" identifier="c1">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Team!&quot; and then stops.
+                </div>
+                <div class="feedback">
+                    No, the <code>broadcast Turn1 and wait</code> block after the <code>say Team! ...</code> block will execute.  Snap<em>!</em>  will blindly follow its script.
+                </div>
+            </div>
+            <div class="choice" identifier="c2">
+                <div class="text">
+                    The sprite repeatedly says &quot;Go!&quot; and then &quot;Team!&quot; until you hit the red Stop button.
+                </div>
+                <div class="feedback">
+                    <p>
+                        Right!
+                        Here, we see an <em>infinite loop,</em> or a never-ending loop. 
+                        Whenever this happens in Snap<em>!</em>, we can always stop it by 
+                        pressing the Stop button at the top right of the window, just above the stage.
+                    </p>
+                    <p>
+                        Why does this happen? Well, when you the <code>Turn1</code> message is first broadcast,
+                        the sprite says <code> Go!</code>
+                        for half a second, and then broadcasts a <code>Turn2</code> message.
+                    </p>
+                    <p>
+                        If there is any character that has a script that responds to the <code>Turn2</code>
+                        message, it will perform that script. 
+                        In this case, the same sprite has a script that responds to the <code>Turn2</code>
+                        message, and so it will run the corresponding script. It says <code>Team!</code>
+                        and then broadcasts a <code>Turn1</code>
+                        message. But, it also has a script that responds to the <code>Turn1</code>
+                        message, which in turn sends a <code>Turn2</code>
+                        message, and so on. This continues until the scripts are forced to stop.
+                    </p>
+                </div>
+            </div>
+            <div class="choice" identifier="c3">
+                <div class="text">
+                    Nothing happens - the script does not work.
+                </div>
+                <div class="feedback">
+                    No, the script here definitely does something when receiving the <code>Turn1</code> script.
+                </div>
+            </div>
+            <div class="choice" identifier="c4">
+                <div class="text">
+                    The sprite says &quot;Go!&quot; and then &quot;Team!&quot;, repeating a few times, and then stops by itself.
+                </div>
+                <div class="feedback">
+                    No.  The computer can't just decide to stop itself; rather, it will blindly follow the script.
+                </div>
+            </div>
+            <div class="responseDeclaration" identifier="ri">
+                <div class="correctResponse" identifier="c2"></div>
+            </div>
+        </div>
+
+    </body>
+</html>
