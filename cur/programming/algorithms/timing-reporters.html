@@ -12,11 +12,15 @@ do the converse: to report how long a program takes to finish. In the <code>Sens
 
 &nbsp;&nbsp;&nbsp;&nbsp;We are going to be performing timing
 experiments in the following sections, so the current time will prove
-useful.&nbsp; The <img src="/bjc-r/img/algorithms/time-function.png"> block provided takes any reporter (with its inputs filled in), computes the result, and reports how long it took to do the computation. The answer will be in milliseconds. Take a minute to review the code in <code>time function</code>.
-
+useful.&nbsp; The <img src="/bjc-r/img/algorithms/time-function.png"> block provided takes any reporter (with its inputs filled in), computes the result, and reports how long it took to do the computation. The answer will be in milliseconds. Take a minute to review the code in <code>time function</code>. 
 <div>
 	<img src="/bjc-r/img/algorithms/time-function-code.png">
 </div>
+
+<p class="quoteRed">
+You'll notice that you haven't seen the blocks used in this line of code <img style="height: 40px;" src="/bjc-r/img/algorithms/ignore.png">. We will learn about the <code>call</code> block in a later lab. For now all this line does is run the function that is passed in as input to the <img src="/bjc-r/img/algorithms/time-function.png">  block. 
+</p>
+
 <br>
 <p> Now use the <code>time function</code> block to compare the efficiency of the non-gauss and gauss blocks you created on the previous page. What happens when <code>N</code> is <code>2</code>? If <code>N</code> is <code>10</code>? If <code>N</code> is <code>100</code>? If <code>N</code> is <code>1000</code>? </p>
 
