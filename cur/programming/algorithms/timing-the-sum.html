@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly -->
+
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Competing with Young Gauss
+        </title>
+    </head>
+    <body>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;For this lab, we will be using <a class="run" href="../../../../prog/algorithms/timing-framework.xml">this starter file</a>.&nbsp;
+            We would like to add all the numbers from <code>1</code> to <code>N</code>, where <code>N</code> could
+            be a big number.  The obvious way to do this is to simply add them up, one by one. Complete the body of the <img src="/bjc-r/img/algorithms/add-all-numbers-non-gauss.png"> block, so it reports the sum of the numbers in the input list. 
+        </p>
+         <p>
+            To test your block fill in the <img src="/bjc-r/img/algorithms/list-from-to.png"> block. This block should report a list with all of the numbers from <code>start</code> to <code>end</code>.&nbsp; If working correctly, the code on stage should set the <code>numbers</code> global variable to a list of the numbers from <code>1</code> to <code>N</code>, where <code>N</code> is a number that we will change when running timing experiments. Run the code and check that you get the correct sum.
+        </p>
+        <img class="imageRight" src="/bjc-r/img/pictures/Carl_Friedrich_Gauss.jpg" >
+        <p>
+            Summing the numbers one by one gives us the correct output, but could it be more efficient? The answer is yes! We can follow in the footsteps of the young Johann Carl
+            Friedrich Gauss, a now-revered 18th century mathematician. As the
+            story goes, he was punished by his elementary
+            school teacher to do the same exercise: add all the 
+            numbers from <code>1</code> to <code>100</code>. 
+            The teacher, J. G. B&uuml;ttner, assumed that the problem
+            would take Gauss a long time to do, yet Gauss finished 
+            the problem in a matter of seconds. He realized that,
+            adding <code>1 + 2 + 3 + ... + 100</code> was the same as 
+            adding <code>(1 + 100) + (2 + 99) + (3 + 98) + ... + (50 + 51)</code>.
+            Each pair summed up to <code>101</code>, and there were 
+            <code>50</code> of these pairs, so he quickly deduced that the 
+            answer was &nbsp;<code>101 &times; 50 = 5050</code>.
+            Presumably, teacher B&uuml;ttner wasn't pleased.
+        </p>
+        <p class="alert quoteOrange">
+            In general, if you wanted to add the numbers from <code>1</code> to <code>N</code>, the answer would be 
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>(N + 1) &times; (N &divide; 2)</code>,
+            <br>
+            because there are <code>(N &divide; 2)</code> pairs, each of which add up to <code>(N + 1)</code>.
+        </p>
+        <p>
+            Complete the body of the <img src="/bjc-r/img/algorithms/add-all-numbers-gauss.png"> block, so it reports the sum of the numbers in a list using Gauss's algorithm. 
+        </p>
+        <p>
+            Imagine that you are playing a game against young Gauss to see who could add numbers from <code>1</code> to <code>N</code> faster:
+            he does it his way, while you manually add them one by one. You can either win, lose, or tie in this game.
+            What do you think would happen if <code>N</code> is <code>2</code>? If <code>N</code> is <code>10</code>?
+            If <code>N</code> is <code>100</code>? If <code>N</code> is one million?
+        </p>
+        <p>
+            On the next page we will use the timing feature in Snap<em>!</em> to quantify our belief of which algorithm is faster.
+        </p>
+    </body>
+</html>
