@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly -->
+
+<script src="/bjc-r/llab/loader.js"></script><title>Constant Time</title></head><body>
+<p>Let us first analyze the <img src="/bjc-r/img/algorithms/add-all-numbers-gauss.png"> block.  You may have noticed that the computer takes approximately the same time, even though N was made progressively larger.  Computer scientists (programmers and theorists) thus call the operations used in computing this sum (addition, division, etc..) constant-time operation.  In fact, any basic arithmetic operation (addition, subtraction, multiplication, division, and exponentiation) is considered to be a constant-time operation. So, no matter how large our input list is we are only performing 3 constant-time operations to computer the sum.</p> 
+
+<div class="center">
+	<img src="/bjc-r/img/algorithms/constant.png">
+</div>
+
+<p>  Notice that we call these operations constant-time operations, but we don't actually say how much time they take.  Different computers will take different amounts of time to perform the same operation.  To report the exact time of any algorithm, we would have to also report the physical configurations of the computer that the algorithm was run on.  This gets very difficult and annoying very fast, especially with the almost infinite variety of computers available today.  Instead, we focus on how the running time of an algorithm scales as we scale its inputs to larger and larger sizes, because this is a property of the algorithm itself, and is independent of the computer that it is run on. </p>
+
+<p>  Constant-time operations are the Holy Grail of computer science algorithms, and unfortunately, most algorithms are not constant-time, as we will soon see.</p>
+
+</body>
