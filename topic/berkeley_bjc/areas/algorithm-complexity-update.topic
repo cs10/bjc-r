@@ -1,0 +1,29 @@
+title: Algorithm Complexity
+{
+h2: Big Ideas
+big-idea: Understand that the running-time of an algorithm can be measured as the number of steps an algorithm takes as a function of its inputs.
+
+//   // video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
+  reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
+  reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
+
+h2: Activities
+learning-goal: Use the Snap<em>!</em>  timer to gather run time information
+learning-goal: Observe the difference between constant, logarithmic, linear, quadratic run times.
+
+heading: Introduction
+  resource: Algorithmic Complexity [/bjc-r/cur/programming/algorithms/algorithmic-complexity.html]
+  
+
+heading: Timing Experiments
+  resource: Competing with Young Gauss [/bjc-r/cur/programming/algorithms/timing-the-sum.html]
+  resource: Time is of the Es-sense [/bjc-r/cur/programming/algorithms/timing-reporters.html]
+  resource: Keep it Constant [/bjc-r/cur/programming/algorithms/constant.html]
+  resource: Linear-Time [/bjc-r/cur/programming/algorithms/linear.html]
+  quiz: Searching Through Time [/bjc-r/cur/programming/algorithms/timing/quiz-searching-through-time.html]
+  resource: A (non-video) Game [/bjc-r/cur/programming/algorithms/a-non-video-game.html]
+  resource: Logarithmic-Time [/bjc-r/cur/programming/algorithms/logarithmic.html]
+  resource: A Distinct Difference [/bjc-r/cur/programming/algorithms/a-distinct-difference.html]
+  resource: Quadratic-Time [/bjc-r/cur/programming/algorithms/quadratic.html]
+
+}
