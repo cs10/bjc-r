@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            Working With Clones
+        </title>
+
+    </head>
+    <body>
+
+        <p>
+           In this section, you're going to be adding features to a simple <a class='run' href='http://snap.berkeley.edu/snapsource/snap.html#present:Username=lucyannie&ProjectName=clones%20starter%20file'>starter file</a> to create a game. But first, let's discuss the blocks you need to use clones. The first step in intitializing clones is to create a sprite that you want to generate clones. Give instructions to the original sprite, and within the script for the sprite, place this block to start making clones.
+         </p>
+         <p>
+            <img class="indent" src="/bjc-r/img/clones/createaclone.png"
+            alt="cloud icon"/>.
+        </p>
+
+         <p>
+           Snap! Clones are not copies of the sprite, they actually share information, so a change in the original may be seen in its clones. This block creates a clone of the selected sprite, with the same position, direction, costumes, sounds, local variables, local blocks, and scripts. Most of these properties are shared with the original, so that a change in the original changes the clone, but not the other way around. Temporary clones are deleted when the stop button is pressed.
+
+        </p>
+        <p>
+           When you want to delete specific clones, use this block:
+         </p>
+          <p>
+            <img class="indent" src="/bjc-r/img/clones/deleteclone.png"
+            alt="cloud icon"/>.
+        </p>
+        <p>
+           To initialize clones with their own instructions, use this block:
+         </p>
+          <p>
+            <img class="indent" src="/bjc-r/img/clones/whenistart.png"
+            alt="cloud icon"/>.
+        </p>
+
+        <p>
+           Look at the  <a class='run' href='http://snap.berkeley.edu/snapsource/snap.html#present:Username=lucyannie&ProjectName=clones%20starter%20file'>starter file</a> to see all of these blocks in action. Press space to see what this code does. This is simple code, but it has a lot of potential! We want you to change this code so that everytime the Controller sprite catches a clone, they gain a point, and each time the Controller sprite misses a clone, they lose a point. You'll see that the Controller sprite has no code. Change that by adding this script:
+         </p>
+          <p>
+            <img class="indent" src="/bjc-r/img/clones/whenspace.png"
+            alt="cloud icon"/>.
+        </p>
+        <p>
+           Now when you move your mouse, the Controller sprite follows, but it still does nothing when it touches the clones. Using a "delete this clone" block, add a script to Clone sprite so that when it touches the Controller sprite, it gets deleted. The game should now look like this:
+         </p>
+         <p>
+            <img class="indent" src="/bjc-r/img/clones/clonesgameplay.gif"
+            alt="cloud icon"/>.
+        </p>
+        <p>
+           Lastly, to make it a true game, add a "score" variable so that when the Controller catches a Clone, it earns a point, and when it misses a clone, it loses a point. Alternatively, you can make the Controller gain a point when it evades a clones, and lose a point when it gets hit by a clone. It's up to you, the possibilities are endless!
+         </p>
+         <p class="alert quoteGreen">
+           You made a game using clones! Clones are extremely useful in simplifying your code if you want to make a game, like with your final project. Good luck!
+         </p>
+
+
+    </body>
+</html>
+
+
+
+
+        
