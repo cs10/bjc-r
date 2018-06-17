@@ -1,0 +1,19 @@
+title: Clones
+{
+h2: Big Ideas
+
+big-idea: Explore clones
+big-idea: See how clones can simplify your code, and how they can be very helpful for your final project!
+
+h2: Activities
+learning-goal: Familiarize yourself with clones
+learning-goal: Make a game utilizing clones
+learning-goal: Explore creative games that you can make with clones
+heading: Clones
+  resource: Introduction [/bjc-r/cur/programming/clones/introclones.html]
+
+  resource: Working With Clones [/bjc-r/cur/programming/clones/starter.html]
+
+  resource: What You Can Make With Clones [/bjc-r/cur/programming/clones/examples.html]
+
+}

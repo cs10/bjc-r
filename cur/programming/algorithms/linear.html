@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly -->
+
+<script src="/bjc-r/llab/loader.js"></script><title>Linear-Time</title></head><body>
+<p>Next let us analyze the <img src="/bjc-r/img/algorithms/add-all-numbers-non-gauss.png"> block.
+<p>&nbsp;&nbsp;&nbsp;&nbsp;You may have noticed that if you increased <code>N</code> by a factor of two, then the computer took approximately twice as much time to computer the sum.&nbsp; Similarly, if you increased <code>N</code> by a factor of ten, then the computer took approximately ten times as much time; if you increased <code>N</code>
+by a factor of 100, then the computer ran approximately 100 times
+longer.&nbsp; In general, as we scale the size of the input by a
+certain amount, we also scale the running time by the same
+amount.&nbsp; We call these algorithms <strong>linear-time</strong> algorithms, because if we were to plot the runtime of one such algorithm against the size of its input, we would get a line.</p>
+
+<div class="center">
+	<img src="/bjc-r/img/algorithms/linear.png">
+</div>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Additionally, the <img src="/bjc-r/img/algorithms/list-from-to.png"> block also runs in linear time. When <code>N</code> was set to <code>20</code>, we had to add 20 numbers to the <code>numbers</code> list; when <code>N</code> was set to <code>40</code>, we had to add 40 numbers to the number list.&nbsp; In other words, as we scaled <code>N</code>, we also scaled how many numbers we had to add to the <code>numbers</code>
+list by the same amount.&nbsp; Linear-time algorithms are also much
+sought-after in computer science, and for many problems, they are the
+fastest algorithms you can find.</p>  
+
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In conclusion, the "non-Gauss" block had a linear runtime, while the "Gauss" block had a constant runtime.
+
+    Both blocks were answering the same question: I have a list of numbers from 1 to N, and I want to know what the total of these numbers is.  The "<img src="/bjc-r/img/algorithms/add-all-numbers-non-gauss.png"> block is a great first attempt at solving the problem, and works rather fast even for large lists.  However, its main disadvantage is that its runtime is nonetheless dependent on the length of the input, and so the longer the list, the longer you will have to wait to get an answer.  The "<img src="/bjc-r/img/algorithms/add-all-numbers-gauss.png">block, however, does not have to go through the numbers in the list; all it ever needs, every time, is one piece of information: the length of the list, which (in this case) is also the value of max.  Once you give it this information, it will always perform the same number of arithmetic operations, regardless of whether the list is 10 elements long or 10 million, and that instantly makes it the better algorithm.
+</p>
+<p>
+    Many computer scientists work every day to try and get this kind of an improvement in running time, or to try and show that you can't get any faster.
+ </p>
+
+
+ </body></html>
