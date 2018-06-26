@@ -23,7 +23,7 @@
 <hr />
 <p>Okay, time to move from planning to doing. The next goal is to build a <code>winning square</code> block. It'll take a list of triples and an X-or-O, and look for a square in which that player can move to win immediately. What does that mean in terms the program can understand? (We asked you to think about this a few screens ago.) Our answer is, &quot;look for a winning combination in which our letter appears twice and the other letter doesn't appear at all.&quot; So we seem to need two helpers: one that reports how many times a letter appears in a triple, and one that reports &quot;the other letter.&quot;</p>
 <div class="alert quoteGreen alert-success">
-	<p>Start by writing a reporter called <code>opponent</code> that just takes an <code>X</code> or <code>O</code> as its input, and reports the other letter.<br />
+	<p>Start by looking for a reporter called <code>opponent</code> that just takes an <code>X</code> or <code>O</code> as its input, and reports the other letter.<br />
 </div>
 Now make a helper block called <code>appearances</code> that takes a word and a list as inputs, and  returns the number of times the first one appears in the second. Hint: Use a higher order function.</p>
 <blockquote>
