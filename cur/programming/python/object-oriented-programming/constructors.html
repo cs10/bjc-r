@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Constructors</title>
+    </head>
+    <body>
+        <p>
+            Recall the code thus far for our book class:
+
+            <pre><code>
+class Book:
+    language = 'English'
+    worn_down = False
+            </code></pre>
+        </p>
+        <p>
+            In addition to having attributes like above, we can also include functions within our class. We call these functions methods; these methods are specific to our class and can only be used by instances of our class. There is a special method which we use to initialize, or create, objects, known as the __init__ method (two underscores on each side). This method is called a constructor and is the key to initializing objects with instance attributes. Keep in mind that this method is very useful to include for all classes, <em>but it is not required</em>.
+        </p>
+        <p>
+            Here is what our code would look like if we wanted to initialize an object with certain attributes :
+
+            <pre><code>
+class Book:
+        	language = 'English'
+        	worn_down = False
+
+        	def __init__(self, genre, title, author, publication_year):
+        	     self.genre = genre
+        	     self.title = title
+        	     self.author = author
+        	     self.publication_year = publication_year
+            </code></pre>
+        </p>
+        <p>
+            Now, when we create a Book object, we must pass in the proper number of arguments, which in this case is 4:
+        </p>
+        <p>
+            <strong>
+                >>> hunger_games = Book('Dystopian fiction', 'The Hunger Games', 'Suzanne Collins', 2008)<br>
+                >>> hunger_games.genre<br>
+            </strong>
+                'Dystopian fiction'<br>
+            <strong>
+                >>> hunger_games.publication_year<br>
+            </strong>
+                2008<br>
+            <strong>
+                >>> hunger_games.language<br>
+            </strong>
+                'English'
+        </p>
+        <p>
+            <br>
+            <strong>Key things to note:</strong>
+        </p>
+        <ol>
+        <li>If you are wondering why we did not pass anything in for the argument self, the answer is that we did. Self is automatically bound to whatever name/variable we bind our object to, which in this case is hunger_games. Inside our __init__ function, we have to type "self.[insert attribute here]" on the left side of the equal sign because this uses dot notation to bind the instance attribute we pass in to whatever name/variable we put on the right side of the dot. Without the self, our code would not error right away, but Python wouldnt recognize what we typed as instance attribute, so it would error when we tried to later ask for those instance attributes.</li>
+        <li>We must ensure that any arguments we pass into __init__ that are words are properly quoted, so that Python can recognize them as string types.</li>
+        <li>Even though we never specifically passed in a language when we created our hunger_games object, we can still access its language (when typing in hunger_games.language) because earlier we coded a class attribute language shared by ALL book instances.</li>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+title: Besides Blocks: Welcome to Object-Oriented Programming in Python!
+{
+h2: Big Ideas
+big-idea: We've seen lists, dictionaries, etc. as types of data structures in Python, but now we will see objects as a data structure
+big-idea: Each object is an instance of some Class. Python has built-in classes and objects, but we can also define our own
+big-idea: The object system is designed so our object acts as an actual real-life object of that type would. For instance, if we had a Class Book, and created a specific Book object, we should be able to ask for its title, author, and genre
+big-idea: Classes can be hierarchical. For example, the Book Class above might have a subclass Textbook
+
+h2: Activities
+learning-goal: Build up a class that represents a book object step-by-step by just following along
+learning-goal: Learn about the basics of OOP in Python while completing above activity
+learning-goal: Use the aforementioned knowledge to build your own UC Berkeley Memes for Edgy Teens class
+
+
+heading: Introduction to Object-Oriented Programming (OOP)
+	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming/oop_intro.html]
+    resource: Coding A Class Book [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
+    resource: Book Instances [/bjc-r/cur/programming/python/object-oriented-programming/book_instances.html]
+
+heading: Initializing Objects
+    resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming/constructors.html]
+    resource: Adding Instance Attributes [/bjc-r/cur/programming/python/object-oriented-programming/adding_instance_attributes.html]
+
+heading: Methods
+    resource: Calculating Your Book's Age [/bjc-r/cur/programming/python/object-oriented-programming/book_age.html]
+    resource: Practice with Methods [/bjc-r/cur/programming/python/object-oriented-programming/method_exercises.html]
+
+heading: Inheritance
+    resource: Subclasses and their Attributes [/bjc-r/cur/programming/python/object-oriented-programming/inheritance.html]
+
+heading: Implementing Your Own Class
+	resource: Meme Oriented Programming [/bjc-r/cur/programming/python/object-oriented-programming/final_exercise.html]
+}

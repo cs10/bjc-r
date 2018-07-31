@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Calculating Your Book's Age</title>
+    </head>
+
+    <body>
+        <p>
+        Let's talk in more details about methods, which were briefly mentioned earlier. In addition to the <em>__init__</em> method we talked about above, we can also include any other methods we want for our classes. Methods are just another type of <em>attribute</em>, and you can think of them as functions that only objects of the same class can use. Let's look at an example with our book class (remember you still have to fill some of this out yourself in the file you downloaded):
+
+        <pre><code>
+        	class Book:
+        	language = 'English'
+                    worn_down = False
+
+        	def __init__(self, genre, title, author, publication_year):
+            	    self.genre = genre
+            	    self.title = title
+         	    self.author = author
+          	    self.publication_year = publication_year
+
+        	def calculate_age(self):
+           	    return 2018 - self.publication_year
+
+        </code></pre>
+        </p>
+        <p>
+        For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year and its year of publication. However, there are a couple of important things worth noting:
+
+        <ol>
+        	<li>Any method we write must have at minimum one parameter: self. This parameter is how our method recognizes which object it is being called on (an example of how to call it will be given in a moment).
+        	</li>
+
+        	<li>In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to.
+        	</li>
+        </ol>
+
+        Any method we write must have at minimum one parameter: self. This parameter is how our method recognizes which object it is being called on (an example of how to call it will be given in a moment).
+        In the function body, it is essential to refer to any instance attributes with dot notation using ­self, otherwise our method will not be able to recognize what object we are referring to.
+        </p>
+        <p>
+        Now say we want to figure out the age of our hunger_games book object from earlier. Here's how we'd do it:
+        <strong>
+        <br>
+        >>>hunger_games.calculate_age()
+        <br>
+        </strong>
+        10
+        <br>
+        </p>
+        <p>
+        Not too bad, right? What you might be wondering, however, is where we actually passed in our argument self? In this case, self is bound to hunger_games, and we passed it in through dot notation. A bit weird, but you will get used to it in time. If our method had other arguments, they'd be passed in the traditional way. Keep this in mind for your first exercise!
+        </p>
+    </body>
+</html>

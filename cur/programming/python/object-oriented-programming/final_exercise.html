@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/bjc-r/llab/loader.js"></script>
+    	<title>Meme Oriented Programming</title>
+	</head>
+
+	<body>
+		<p>
+			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to <strong>create your very own class!</strong> We will provide you with some basic building blocks and hints, but in the end it's up to you to make it work! Good luck!
+		</p>
+		<p>
+			If you download the Python file below, you will find a bit of starter code for the class UCBMFET (UC Berkeley Memes for Edgy Teens). Please complete the class so that it has the following characteristics:
+		</p>
+
+	<h3>To-Do:</h3>
+	<ul>
+		<li>
+			The following class attributes:
+			<ul>
+				<li>
+					<em>members</em>, initialized to 173532
+				</li>
+				<li>
+					<em>topic</em>, initialized to 'memes'
+				</li>
+				<li>
+					<em>posts</em>, intialized to an empty dictionary
+				</li>
+			</ul>
+		</li>
+		<li>
+			A constructor method which does the following:
+			<ul>
+				<li>
+					sets an instance attribute <em>name</em> to the input paramter of the same name
+				</li>
+				<li>
+					sets two instance attributes <em>activity</em> and <em>posts</em> both to 0.
+				</li>
+				<li>
+					sets an instance attribute <em>member</em> to True
+				</li>
+				<li>
+					increases the class attribute <em>member</em> by 1
+				</li>
+			</ul>
+		</li>
+		<li>
+			Completion of the <em>tag_your_friend_in_meme</em> so that it does the following:
+			<ul>
+				<li>
+					If the input parameter <em>friend</em> is not an instance of the UCBMFET class, returns string: 'You cannot tag someone in a meme if they are not a member of UCBMFET.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
+				</li>
+				<li>
+					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] us in CS10!'
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			Completion of the method post_in_UCBMFET so that it does the following:
+			<ul>
+				<li>
+					If the paramter of <em>title_of_post</em> already exists as a key inside the class attribute <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
+				</li>
+				<li>
+					Otherwise, it adds the <em>title_of_post</em> as a key inside the class attribute <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on UCMBFET is [insert your activity value here], and your total posts to UCBMFET is now [insert your posts value here].'
+				</li>
+			</ul>
+		</li>
+
+		<li>
+			Completion of the method <em>like_a_post_in_UCBMFET</em> so that it does the following:
+			<ul>
+				<li>
+					increases your activity by 1
+				</li>
+				<li>
+					increases the value of the key which corresponds to the post's title in the class attribute <em>posts</em> by 1.
+				</li>
+				<li>
+					returns the string 'Your total activity on UCBMFET is [insert your activity value here, and the total number of likes on the post [insert title_of_post] is [insert number of likes].'
+				</li>
+			</ul>
+		</li>
+	</ul>
+	<br>
+	<p>
+		Congratulations! You have just built your very own class!
+	</p>
+	</body>
+</html>

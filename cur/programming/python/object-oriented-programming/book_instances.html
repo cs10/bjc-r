@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Book Instances</title>
+    </head>
+    <body>
+        <p>
+          Now let's think about some aspects that we want to be unique to each book. For example, each book should have its own title, author, genre, and year of publication. Since these characteristics vary from one book object to the next, we refer to them as <strong>instance attributes</strong>. The first thing to know is that instance attributes take precedence over class attributes. So, if you ask for an object's attribute and it has both a class and an instance attribute by that name, it will return the instance attribute. Coding these attributes is a bit trickier than with class attributes. In order to do so, we have to first talk about how to create individual objects of the class Book and access their attributes.
+      </p>
+      <p>
+          As a refresher, here is our code so far:
+          <pre><code>
+          class Book:
+          language = 'English'
+          condition = "Great"
+        </code></pre>
+    </p>
+        <p>
+          At this point, in order to create a book object, we would type out something like this:
+        <strong>
+        <br>
+        >>> example_book = Book()
+        <br>
+        >>> example_book
+        <br>
+    </strong>
+        <__main__.Book object at 0x000001FAC7F7F320>
+        <br>
+        <strong>
+        >>> example_book.language
+        <br>
+        </strong>
+        'English'
+        </p>
+
+        <p>
+          Notice how we were able to ask for the language of our book above. This can be done with all attributes, using dot notation. Dot notation is quite simple: on the left side of the period we type the name which our object is bound to (in this case example_book), and on the right side we type the attribute we want.
+
+          But what if we wanted to change of our instance attributes? How do we assign or reassign them? There are 2 ways to do this. The first method assigns these attributes at the time our object is created, while the second assigns them later on. Let's talk about the former first.
+
+        </p>
+
+    </body>
+</html>
