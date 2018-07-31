@@ -14,7 +14,7 @@ learning-goal: Use the aforementioned knowledge to build your own UC Berkeley Me
 
 heading: Introduction to Object-Oriented Programming (OOP)
 	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming/oop_intro.html]
-    resource: Coding A Class Book [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
+    resource: Coding A Book Class [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
     resource: Book Instances [/bjc-r/cur/programming/python/object-oriented-programming/book_instances.html]
 
 heading: Initializing Objects
