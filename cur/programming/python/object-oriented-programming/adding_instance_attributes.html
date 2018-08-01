@@ -7,13 +7,19 @@
     <body>
         <p>
             Now, let's discuss the second method for adding instance attributes, which involves adding them after your object has already been created. So far, we've created a hunger_games book object with the instance attributes genre, title, author, and publication_year. Say that we also want it to be known that the owner of this particular book is Alonzo.
-            But how do I do that, now that I've already created it? It is quite straightforward:
+            But how do we do that if we've already made the book? Observe!
+            <code><pre>
+                >>> hunger_games.owner = 'Alonzo'
+            </pre></code>
         </p>
+
         <p>
-            <strong>>>> hunger_games.owner = 'Alonzo'</strong>
-        </p>
-        <p>
-            Done! Now <em>this specific book object</em> has an instance attribute which encodes its owner. We can apply this technique to any object we want to add an instance attribute to.
+            Done! Now this specific book object has an instance attribute <em>owner</em>.
+        <pre><code>
+>>> hunger_games.owner
+>>>'Alonzo'
+        </code></pre>
+            We can apply this technique to any object we want to add an instance attribute to.
             Here are some of the most common situations it comes into play:
         </p>
         <ul>
@@ -27,31 +33,20 @@ class Test:
     value = 1
     def __init__(self, number):
         self.number = 3
-            </code></pre>
-        </p>
-        <p>
-            <strong>
-                >>> example = Test(7)<br>
-                >>> example.number<br>
-            </strong>
-                3<br>
-            <strong>
-                >>> example.value<br>
-            </strong>
-                1<br>
-            <strong>
-                >>> Test.value<br>
-            </strong>
-                1
-            <strong>
-                >>> example.value = 7<br>
-                >>> example.value<br>
-            </strong>
-                7<br>
-            <strong>
-                >>> Test.value<br>
-            </strong>
-                1
+
+>>> example = Test(7)
+>>> example.number
+7
+>>> example.value
+1
+>>> Test.value
+1
+>>> example.value = 7
+>>> example.value
+7
+>>> Test.value
+1
+            </pre></code>
         </p>
     </body>
 </html>

@@ -1,23 +1,28 @@
 <!DOCTYPE html>
+
 <html>
 	<head>
 		<script src="/bjc-r/llab/loader.js"></script>
-    	<title>Meme Oriented Programming</title>
+    	<title>Final Exercise</title>
 	</head>
 
 	<body>
 		<p>
-			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to <strong>create your very own class!</strong> We will provide you with some basic building blocks and hints, but in the end it's up to you to make it work! Good luck!
+			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to create your very own class! If you look below your Textbook class, you'll see the class UCBMFET. Your job is to fill it out!
 		</p>
 		<p>
-			If you download the Python file below, you will find a bit of starter code for the class UCBMFET (UC Berkeley Memes for Edgy Teens). Please complete the class so that it has the following characteristics:
+			<ul>
+				<li>
+					If you're not sure what UCBMFET is, it stands for UC Berkeley Memes for Edgy Teens. It's a Facebook page where both Berkeley and non-Berkeley students post funny jokes and memes about Berkeley. It's currently the largest college meme page that exists with roughly 173,532 members! Since there are so many people, moderators often regolate the page make sure the memes are original and everyone is an actual member of the group.
+				</li>
+			</ul>
 		</p>
 
-	<h3>To-Do:</h3>
-	<ul>
+	<h3>To-Do</h3>
+	<ol>
 		<li>
 			The following class attributes:
-			<ul>
+			<ol type="a">
 				<li>
 					<em>members</em>, initialized to 173532
 				</li>
@@ -27,13 +32,13 @@
 				<li>
 					<em>posts</em>, intialized to an empty dictionary
 				</li>
-			</ul>
+			</ol>
 		</li>
 		<li>
 			A constructor method which does the following:
-			<ul>
+			<ol type="a">
 				<li>
-					sets an instance attribute <em>name</em> to the input paramter of the same name
+					sets an instance attribute <em>name</em> to the input parameter of the same name
 				</li>
 				<li>
 					sets two instance attributes <em>activity</em> and <em>posts</em> both to 0.
@@ -44,35 +49,35 @@
 				<li>
 					increases the class attribute <em>member</em> by 1
 				</li>
-			</ul>
+			</ol>
 		</li>
 		<li>
 			Completion of the <em>tag_your_friend_in_meme</em> so that it does the following:
-			<ul>
+			<ol type="a">
 				<li>
 					If the input parameter <em>friend</em> is not an instance of the UCBMFET class, returns string: 'You cannot tag someone in a meme if they are not a member of UCBMFET.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
 				</li>
 				<li>
 					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] us in CS10!'
 				</li>
-			</ul>
+			</ol>
 		</li>
 
 		<li>
 			Completion of the method post_in_UCBMFET so that it does the following:
-			<ul>
+			<ol type="a">
 				<li>
-					If the paramter of <em>title_of_post</em> already exists as a key inside the class attribute <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
+					If the parameter of <em>title_of_post</em> already exists as a key inside the class attribute <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
 				</li>
 				<li>
 					Otherwise, it adds the <em>title_of_post</em> as a key inside the class attribute <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on UCMBFET is [insert your activity value here], and your total posts to UCBMFET is now [insert your posts value here].'
 				</li>
-			</ul>
+			</ol>
 		</li>
 
 		<li>
 			Completion of the method <em>like_a_post_in_UCBMFET</em> so that it does the following:
-			<ul>
+			<ol type="a">
 				<li>
 					increases your activity by 1
 				</li>
@@ -82,9 +87,9 @@
 				<li>
 					returns the string 'Your total activity on UCBMFET is [insert your activity value here, and the total number of likes on the post [insert title_of_post] is [insert number of likes].'
 				</li>
-			</ul>
+			</ol>
 		</li>
-	</ul>
+	</ol>
 	<br>
 	<p>
 		Congratulations! You have just built your very own class!

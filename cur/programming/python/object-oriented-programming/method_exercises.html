@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html>
+
 	<head>
     	<script src="/bjc-r/llab/loader.js"></script>
     	<title>Practice with Methods</title>
@@ -10,10 +12,29 @@
 		<p>
 			<ol>
 				<li>
-					Exercise 1: Please complete the method outdated, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, the book object should be assigned instance attribute "worn_down" which is set to True.
+					Exercise 1: Please complete the method <em>outdated</em>, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, the book object should be assigned instance attribute "worn_down" which is set to True.
+					<pre><code>
+>>>strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
+>>>strange_book.calculate_age()
+2
+>>>strange_book.outdated(2018)
+>>>strange_book.worn_out
+True
+					</code></pre>
+
+
 				</li>
 				<li>
 					Edit the Book class so that it has a new attribute called <em>varieties</em>, initialized to an empty dictionary. Then, fill out the method <em>add_genres</em> so that it takes in a book object. If the book's genre does not exist inside varieties, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book object's method is called multiple times.
+
+					<pre><code>
+>>>Book.varieties
+{}
+>>>old_book = Book("Comic", "Calvin & Hobbes", "Bill Watterson", 1985)
+>>>Book.add_genres(old_book)
+>>>Book.varieties
+{"Comic" : [["Calvin & Hobbes", "Bill Watterson"]]}
+					</code></pre>
 				</li>
 			</ol>
 		</p>
