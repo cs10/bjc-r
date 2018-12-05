@@ -1,0 +1,18 @@
+title: Social Implications: Algorithmic Bias
+{
+h2: Big Ideas
+big-idea: Algorithms are essential, useful tools in computer science, but can often contain hidden biases.
+big-idea: Learning about hidden patterns (biases) in data sets is not as easy as it may seem.
+big-idea: Biased algorithms and datasets can have major consequences that we as programmers need to be aware of.
+
+h2: Activities
+learning-goal: Develop a classification algorithm in iPython.
+learning-goal: Apply your algorithm to large dataset.  
+learning-goal: Explore first-hand how algorithmic bias can manifest in data science and machine learning.
+learning-goal: Think critically about algorithmic bias, including its possible causes, consequences, and cures.
+
+
+heading: Algorithmic Bias in iPython
+	resource: Set-up Instructions [/bjc-r/cur/programming/python/social-implications/si_introduction.html]
+
+}
