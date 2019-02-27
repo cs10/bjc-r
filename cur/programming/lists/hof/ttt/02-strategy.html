@@ -11,26 +11,65 @@
     <h3>
       Building the program
     </h3>
-    <p>We're going to go through the program structure <em>bottom-up,</em> which means that you'll build helper blocks before you build <code>ttt</code> itself. But keep the goal in mind.</p>
+    <p>We're going to go through the program structure <em>bottom-up,</em> which means that you'll build helper blocks before you build <img src="/bjc-r/img/hof/next-move-for-computer.png" alt="list of winning combinations" width="20%" height="20%"/> itself. But keep the goal in mind.</p>
     <div class="alert quoteGreen alert-success">
       <h4><strong>Thinking like a Computer Scientist</strong></h4>
       <p>A good way to approach building a program: Design top-down, implement bottom-up.</p>
     </div>
-    <h3>Board Design</h3>
     <p>Remember on the last page, when we asked ourselves several questions about the game? Let's think about answering those, and how we could design the program to fit our goals.</p>
     <p><b>Question 1: What constitutes a good move?</b></p>
     <blockquote>
       <p>Before you continue, discuss with a neighbor what you think the most important rules for a good move are in tic-tac-toe.</p>
     </blockquote>
-    <p>We thought of a couple that are pretty important: (1) if we can win on this move, make that move! (2) if the opponent can win on the next move, block that move! (3) otherwise, prioritize the middle, then corners, then edges.</p>
+
+    <p>The strategy your code for <img src="/bjc-r/img/hof/next-move-for-computer.png" alt="list of winning combinations" width="20%" height="20%"/>  will need to implement three strategic rules: </p>
+    <ul>
+    <li>Rule 1: If I (the computer, player O) can win; do so.</li>
+    <li>Rule 2: If my opponent (the human, player X) can win; block them.</li>
+    <li>Final rule: Otherwise, just pick the best empty square.</li>
+  </ul>
+
+  <h3>Board Design</h3>
+    <p> The board for this tic-tac-toe game is represented as a 9 item list with each item of the list representing a space in the board. X's and O's are placed where the players move and the blank spaces are represented by a number. The list is updated as each player takes their turn. For example, this list <img src="/bjc-r/img/hof/example-board.png" alt="example board" width="20%" height="20%"/> corresponds to this tic-tac-toe board <img src="/bjc-r/img/hof/tic-tac-toe.png" align="middle" width="20%" height="20%"/>(Notice: the empty spaces are represented by a number).</p> 
+    <div class="assessment-data"  type="multiplechoice"  maxchoices="1" responseIdentifier="tic-tac-toe" hasinlinefeedback="true"  shuffle="false">
+  <div class="prompt">
+     <p>
+       The <img src="/bjc-r/img/hof/next-move-for-computer.png" alt="list of winning combinations" width="20%" height="20%"/> block will take in a list, like the one above, and "X" or an "O" signifying what the computer is playing as. Then it should report the number that corresponds to the space where we should move. Following the strategy above which what should this <img src="/bjc-r/img/hof/next-move-example.png" alt="list of winning combinations" width="40%" height="40%"/> report when executed? 
+     </p>
+  </div>
+
+  <div class="choice" identifier="c1">
+     <div class="text">1</div>
+     <div class="feedback">
+         Space 1 is already filled with an "o".
+     </div>
+  </div>
+  <div class="choice" identifier="c2">
+     <div class="text">O</div>
+     <div class="feedback">
+         This block should report a number representing a space in the board.
+     </div>
+  </div>
+  <div class="choice" identifier="c3">
+     <div class="text">9</div>
+     <div class="feedback">
+         Correct!
+     </div>
+  </div>
+  <div class="choice" identifier="c4">
+     <div class="text">4</div>
+     <div class="feedback">
+         The first rule the block should follow is " If I (the computer, player O) can win; do so." Can the computer playing as "O" win in the next round?
+     </div>
+  </div>
+
+  <div class="responseDeclaration" identifier="tic-tac-toe">
+    <div class="correctResponse" identifier="c3"></div>
+  </div>
+</div>
+
     <p>Thinking about the first two rules, we'll probably need to check if we ever have two in a row and the opponent isn't in the third spot. That is, if we see two X's and no O's in a row, then we know where to move to win! Think about what condition we'd need to look for to block opponent wins.</p>
-    <p>
-      <b>Question 2: What do I want my tic-tac-toe block to accomplish?</b> 
-      <br>
-      We know that we should input the current board and the player to find a move for. We also know that we want the output to be an indication of where we should move on the board. There are only nine spots on the board, what if we just numbered them 1 through 9? Then, our <code>ttt</code> block could simply output a number that corresponds to the spot where we should move!
-    </p>
-    <p>This brings us to another important question: What should our representation of the board look like? Our board needs to store 9 pieces of information, mainly where X and O have been played. What if we made our board a simple 9 item list, and put X's and O's on it where the players move? How should we represent the blank spaces? Well, we just determined that our <code>ttt</code> block should report a number representing the space where a player should move. If the empty spaces are simply their space number, it could make things easier for us!</p>
-    <p>
+
       <b>Question 3: How do you win tic-tac-toe?</b> 
       <br>
       You win by getting "three in a row". A tic-tac-toe board is 3x3.
