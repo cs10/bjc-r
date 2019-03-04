@@ -24,7 +24,7 @@
   <p>Head to the <code>Player</code> sprite, and fill in the empty lists in the arrow key receivers with the appropriate code for changing the player's position.</p>
 </div>
 <p>The last thing we have to do is add a game over condition when we hit an obstacle. When does it make sense to check to see if the game should be over? <code>finish move</code> seems like a good place, because it gets run after every move.</p>
-<p>Add a condition to <code>finish move</code> that checks to see if any objects are at our <code>position</code> on the Board. Some ideas for inside the condition: Turn the sprite red; speak the words "Game over!"; have our Player say "Oops, I hit a (object name)!"; Reset a timer when the flag is clicked and stop it when the game is over.</p>
+<p>Fill in the <code>finish move</code> block so that it checks to see if any objects are at our <code>position</code> on the Board. Some ideas for inside the condition: Turn the sprite red; speak the words "Game over!"; have our Player say "Oops, I hit a (object name)!"; Reset a timer when the flag is clicked and stop it when the game is over.</p>
 <div class="alert quoteGreen alert-success">
   <p>Add a condition to <code>finish move</code> that checks the players <code>position</code> against the board, and do something if there's an object there!</p>
 </div>
