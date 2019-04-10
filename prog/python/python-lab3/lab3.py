@@ -9,11 +9,11 @@ def split_into_digits(num):
 
 # Warm-up
 
-# Exercise 1
+# Exercise 1.1
 def is_factorion(num):
     pass
 
-# Exercise 1.1
+# Exercise 1.2
 def list_all_factorions_between(start, end):
     pass
 

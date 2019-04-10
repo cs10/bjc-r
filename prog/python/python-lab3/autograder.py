@@ -20,6 +20,19 @@ def anyjoin(lst):
     """ Join the items of lst into a string with each item's __repr__ """
     return ", ".join(map(repr, lst))
 
+def is_pandigital(num):
+    digits = split_into_digits(num)
+    return len(digits) == len([x for x in range(1, len(digits)+1) if x in digits])
+
+def is_factorion(num):
+    return num == sum([factorial(x) for x in split_into_digits(num)])
+
+def is_even(num):
+    return (num % 2) == 0
+
+def split_into_digits(num):
+    return [int(i) for i in str(num)]
+
 class TestCase:
     def __init__(self, ins=None, out=None):
         self.inputs = ins
@@ -122,54 +135,42 @@ def main():
             return self.key in [against, "all", None]
     flag = Flag(sys.argv[2] if len(sys.argv) > 2 else None)
 
-    if flag.test("1"):
-        exercise_1 = Exercise("exercise 1: Push First Odd Back", testmodule, "push_first_odd_back")
-        exercise_1.add_test(MutableTestCase(ins=([2, 3, 4, 5],), outs=([2, 4, 5, 3],)))
-        exercise_1.add_test(MutableTestCase(ins=([2, 4, 6, 8],), outs=([2, 4, 6, 8],)))
-        exercise_1.add_test(MutableTestCase(ins=([0, 0, 1],), outs=([0, 0, 1],)))
-        exercise_1.run_tests()
+    if flag.test("1.1"):
+        exercise_1_1 = Exercise("exercise 1: Is Factorion", testmodule, "is_factorion")
+        exercise_1_1.add_test(TestCase(ins=([145]), out=(True)))
+        exercise_1_1.add_test(TestCase(ins=([1]), out=(True)))
+        exercise_1_1.add_test(TestCase(ins=([18]), out=(False)))
+        exercise_1_1.run_tests()
 
-    if flag.test("2"):
-        exercise_2 = Exercise("exercise 2: Flatten", testmodule, "flatten")
-        exercise_2.add_test(TestCase(ins=([["a", "b"],["c", "d", "e"], ["f"]],), out=["a", "b", "c", "d", "e", "f"]))
-        exercise_2.run_tests()
+    if flag.test("1.2"):
+        exercise_1_2 = Exercise("exercise 1.2: List All Factorion", testmodule, "list_all_factorions_between")
+        exercise_1_2.add_test(TestCase(ins=([1, 150]), out=([1, 2, 145])))
+        exercise_1_2.add_test(TestCase(ins=([1, 2]), out=([1, 2])))
+        exercise_1_2.run_tests()
 
-    if flag.test("3.1"):
-        exercise_3_1 = Exercise("exercise 3.1: Squares of Evens", testmodule, "squares_of_evens")
-        exercise_3_1.add_test(TestCase(ins=([-5, -2, 0, 1, 3, 4, 8],), out=[4, 0, 16, 64]))
-        exercise_3_1.run_tests()
+    if flag.test("2.1"):
+        exercise_2_1 = Exercise("exercise 2.1: Is Panditgital", testmodule, "is_pandigital")
+        exercise_2_1.add_test(TestCase(ins=([15432]), out=(True)))
+        exercise_2_1.add_test(TestCase(ins=([1]), out=(True)))
+        exercise_2_1.add_test(TestCase(ins=([2]), out=(False)))
+        exercise_2_1.add_test(TestCase(ins=([11132]), out=(False)))
+        exercise_2_1.run_tests()
 
-    if flag.test("3.2"):
-        exercise_3_2 = Exercise("exercise 3.2: Nth Power of Evens", testmodule, "nth_power_of_evens")
-        exercise_3_2.add_test(TestCase(ins=([-5, -2, 0, 1, 3, 4, 8], 3), out=[-8, 0, 64, 512]))
-        exercise_3_2.run_tests()
+    if flag.test("2.2"):
+        exercise_2_2 = Exercise("exercise 2.2: List All Panditgital", testmodule, "list_all_pandigital_between")
+        exercise_2_2.add_test(TestCase(ins=([1, 12]), out=([1, 12])))
+        exercise_2_2.add_test(TestCase(ins=([1, 135]), out=([1, 12, 21, 123, 132])))
+        exercise_2_2.run_tests()
 
-    if flag.test("4"):
-        exercise_4 = Exercise("exercise 4: Substitute Base", testmodule, "substitute_base")
-        exercise_4.add_test(TestCase(ins=("AAGTTAGTCA", "A", "C"), out="CCGTTCGTCC"))
-        exercise_4.run_tests()
-
-    if flag.test("5"):
-        exercise_5 = Exercise("exercise 5: Combine", testmodule, "combine")
-        exercise_5.add_test(TestCase(ins=([1, 2, 3, 4, 5],), out=15))
-        exercise_5.add_test(TestCase(ins=(["hello ", "my ", "name ", "is ", "someone?"],), out="hello my name is someone?"))
-        exercise_5.run_tests()
-
-    if flag.test("6"):
-        exercise_6 = Exercise("exercise 6: Base Frequency", testmodule, "base_freq")
-        exercise_6.add_test(TestCase(ins=("AAGTTAGTCA",), out={"A": 4, "C": 1, "G": 2, "T": 3}))
-        exercise_6.run_tests()
-
-    if flag.test("7.1"):
-        exercise_7_1 = Exercise("exercise 7.1: Substitute Characters", testmodule, "substitute_chars")
-        replacements = {"S":"Z", "E":"U", "T":"P", "A":"M"}
-        exercise_7_1.add_test(TestCase(ins=("SECRET MESSAGE", replacements), out="ZUCRUP MUZZMGU"))
-        exercise_7_1.run_tests()
-
-    if flag.test("7.2"):
-        exercise_7_2 = Exercise("exercise 7.2: Invert Dictionary", testmodule, "invert_dict")
-        exercise_7_2.add_test(TestCase(ins=({"A":"X", "B":"Y", "C":"Z"},), out={"X":"A", "Z":"C", "Y":"B"}))
-        exercise_7_2.run_tests()
+    if flag.test("3"):
+        exercise_3 = Exercise("exercise 2.2: List All Panditgital", testmodule, "list_satisfying_numbers_between")
+        exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 12]), out=([1, 12])))
+        exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 135]), out=([1, 12, 21, 123, 132])))
+        exercise_1_2.add_test(TestCase(ins=([is_factorion, 1, 150]), out=([1, 2, 145])))
+        exercise_1_2.add_test(TestCase(ins=([is_factorion, 1, 2]), out=([1, 2])))
+        exercise_1_2.add_test(TestCase(ins=([is_even, 1, 4]), out=([2, 4])))
+        exercise_1_2.add_test(TestCase(ins=([is_even, 11, 16]), out=([12, 14, 16])))
+        exercise_3.run_tests()
 
 if __name__ == "__main__":
     main()
