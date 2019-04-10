@@ -1,0 +1,22 @@
+title: Practice with HOFs and Functions as Data
+{
+h2: Big Ideas
+big-idea: Functions can be treated as data, just like strings, numbers, and lists.
+big-idea: Creating our own higher-order functions allows us to achieve a whole new level of generality in our programs.
+
+h2: Activities
+learning-goal: Build non-HOF blocks to use as helper functions in larger HOFs problems.
+learning-goal: Complete complex, multi-step HOFs problems.
+learning-goal: Use HOFs to solve real-life problems, like minimizing or composing functions.
+
+
+h3: A Little Practice
+    resource: Introduction and Warm-up [/bjc-r/cur/programming/python/hofs/intro-hofs-python.html]
+
+h3: Factorions
+  resource: Factorions [/bjc-r/cur/programming/python/hofs/factorions.html]
+
+h3: Fun with Numbers
+  resource: Pandigital Numbers [/bjc-r/cur/programming/python/hofs/pandigital-numbers.html]
+  resource: Generalize "List all" [/bjc-r/cur/programming/python/hofs/generalizing-list-all.html]
+}

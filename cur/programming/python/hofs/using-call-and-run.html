@@ -1,0 +1,66 @@
+<html>
+   <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+      
+        <title>Functions as Data - Call and Run</title>
+      
+   </head>
+   <body>
+        
+        <p>
+            At this point, you may be wondering "what's the point of treating functions as data? Isn't the point of functions to call them?".
+            Enter <code>call</code> and <code>run</code>. These two blocks are the inverse of the gray border. They take a function, and evaluate it for us.
+            The only difference between <code>call</code> and <code>run</code> is that <code>call</code> is for reporter blocks, and <code>run</code>
+            is for command blocks.
+        </p>
+        
+        <p>
+            Call takes in a function and inputs, and applies the function to those inputs.
+            For example
+            <br/> <img src="../../../../img/hof/call-minus.png" alt="call gray-border(_-_) with inputs 5 2"/> <br/>
+            is equivalent to
+            <br/> <img src="../../../../img/hof/directly-compute-5-2.png" alt="5 - 2"/> <br/>
+        </p>
+        
+        <p>
+            We can even use <code>call</code> on variables and list items!
+            
+        </p>
+        <p>
+            <img src="../../../../img/hof/call-variable.png" alt="call function-as-data with inputs 5 2"/> <br/>
+            <br/> <img src="../../../../img/hof/call-list-item.png" alt="call item 2 of list with inputs 5 2"/>
+        </p>
+        
+        <p>
+            Notice, however, that the inputs in these two <code>call</code> blocks <u>do not</u> have gray borders!
+            This is because the two inputs already were "ringified" when they were set to a variable or added to a list.
+            To get rid of the ring, you can right-click on the block and select "unringify."
+        </p>
+        
+        <p>
+            As mentioned above, <code>run</code> works on command blocks. Example:
+            <br/> <img src="../../../../img/hof/run-say.png" alt="run gray-border(say _ for 2 seconds) with inputs Hello!"/> <br/>
+        </p>
+        
+        <p>
+            The example below is a homemade HOF! It takes in a function that draws some type of line,
+            and uses that block to draw a tree.
+            <br/><img src="../../../../img/hof/general-tree.png" alt="block definition for draw tree with size, levels, line-type"/> <br/>
+            We run it like this:
+            <br/> <img src="../../../../img/hof/draw-tree-simple.png" alt="draw tree with 80, 3, simple line"/> <br/>
+            or this:
+            <br/> <img src="../../../../img/hof/draw-tree-zig-zag.png" alt="draw tree with 80, 3, zig-zag"/> <br/>
+            
+            Try it out with the functions provided in the starter file,
+            and then try making your own function that draws a different type of line.
+            When making your own HOF blocks, you can get the gray-border input by clicking the input name in the block editor,
+            then clicking the dropdown arrow. You'll be able to select "command" or "reporter" as the input type.
+        </p>
+        
+        <p>
+            <img src="../../../../img/hof/editing-input-name.png" alt="editing a function input name" style="padding-right:30px;"/>
+            <img src="../../../../img/hof/editing-input-name-details.png" alt="editing the details of a function's input name"/>
+        </p>
+        
+   </body>
+</html>
