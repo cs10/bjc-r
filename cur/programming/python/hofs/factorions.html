@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <script type="text/javascript" src="/bjc-r/llab/loader.js">
+</script>
+    <title>
+      Factorions
+    </title>
+  </head>
+  <body>
+
+    <h3>Exercise 1.1: Factorian</h3>
+
+        <p>
+          A number is called a factorion if it is equal to the sum of the factorials of its digits. For example, 145 is a factorion since 145 = 1! + 4! + 5! (Remember that n! is the fancy, mathematical way of denoting the factorial of n, which is the product of all of the numbers from 1 to the number n.) Another, relatively simpler example of a factorion is 2, since 2 is equal to 2! (we're not exclaiming there.) For all of the exercises in this lab you must use the python list comprehension that you learned in <a href="https://beautyjoy.github.io/bjc-r/cur/programming/python/python_comprehensions.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-data-struct.topic&course=cs10_sp19.html&novideo&noreading&noassignment">the last lab</a>. You cannot use explicit recursion or loops (while and for).
+        </p>
+
+        <p>
+          We've started you out with a function <code>split_into_digits</code> that takes in a number and returns a list of its digits.
+          <p><pre><code>
+>>> split_into_digits(145)
+[1, 4, 5]
+>>> split_into_digits(12)
+[1, 2]
+        </code></pre></p>
+
+        <p>
+            Fill out the function <code>is_factorion</code> under exercise 1.1 in the starter file.  This function should checks if a number satisfies the definition above. 
+         </p>
+         <p>
+            <b>Hint:</b> You should define and implement a <code>factorial</code> function that computes the factorial of a given number
+          </p>
+         <p>
+            <b>Hint:</b> You can use the <code>sum</code> function to take the sum of a list. For example, <code>sum([1,4,5])</code> will return <code>10</code>
+        </p>
+
+        <p><pre><code>
+>>> is_factorion(145)
+True
+>>> is_factorion(12)
+False
+        </code></pre></p>
+
+    <h3>Exercise 1.2: List all Factorions</h3>
+
+    <p>
+      Using the <code>is_factorion</code> function you created above, fill in the function <code>list_all_factorions_between</code> that lists all the factorions between the first and second inputs, inclusive. For example:
+    </p>
+
+    <p><pre><code>
+>>> list_all_factorions_between(1, 150)
+[1,2,145]
+>>> list_all_factorions_between(1, 4)
+[1,2]
+    </code></pre></p>
+
+    </p>
+        <p>
+            <b>Hint:</b> You can use the <code>range</code> function to give you all the numbers between a given start and end (exclusive). For example, <code>range(1, 6)</code> will give you the numbers <code>[1, 2, 3, 4, 5]</code>
+        </p>
+        <p>
+            <b>Hint:</b> If I wanted to list all the even numbers between 1-10 the code in python using list comprehension would be the following:
+        </p>
+        <p><pre><code>
+>>> [x for x in range(1,11) if (x % 2) == 0]
+[2, 4, 6, 8, 10]
+    </code></pre></p>
+  </body>
+</html>

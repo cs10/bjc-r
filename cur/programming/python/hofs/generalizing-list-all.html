@@ -1,0 +1,65 @@
+<html>
+   <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+      
+        <title>Generalizing "List all"</title>
+      
+   </head>
+   <body>
+        <h3>Exercise 3: List All Satisfying Numbers</h3>
+        <p>
+            In the last two exercises we had you create two functions <code>list_all_factorions_between</code> and <code>list_all_pandigital_between</code>.
+        </p>
+        
+        <p>
+            The functionality of these functions (and, probably, your implementations of them) bear a striking resemblance to one another.
+            Computer scientists love generalization, so let's make a function that can accomplish the duties of both
+            of the above blocks. Since the main difference between the two is what predicate (<code>is_factorion</code> or <code>is_pandigital</code>) they use, we'll add that as in input.
+        </p>
+
+        <p><pre><code>
+def list_satisfying_numbers_between(predicate, start, end):
+    pass
+    </code></pre></p>
+
+    Fill out the function <code>list_satisfying_numbers_between</code> under exercise 3 in the starter file.  The function definition is shown above. It takes in a predicate, start and end of the range of numbers to check. Notice that this functin takes in a predicate as an input. This makes it a Higher Order Function! Passing in a function as an input is easy in Python. Example calls to <code>list_satisfying_numbers_between</code> are shown below.
+
+    <p>
+        <b>Hint:</b> Your implementation will be very similar to <code>list_all_factorions_between</code> and <code>list_all_pandigital_between</code>
+    </p>
+
+    <p><pre><code>
+>>>list_satisfying_numbers_between(is_pandigital, 1, 135)
+    [1, 12, 21, 123 , 132]
+>>>list_satisfying_numbers_between(is_factorial, 1, 150)
+    [1, 2, 145]
+    </code></pre></p>
+        
+        <p>
+            Now, imagine you're given a new predicate, such as:
+        </p>
+        
+        <p><pre><code>
+def is_even(num):
+    if (num % 2) == 0:
+        return True
+    else:
+        return False
+    </code></pre></p>
+        
+        <p>
+            and want to write the function <code>list_all_even_between</code>...
+        </p>
+        
+        <p>
+            Wait! Doesn't this sound pretty familiar? This problem can be easily solved using the general block we just created
+            (you don't actually have to solve this one)
+        </p>
+        
+        <p>
+            The beauty of abstraction: build once, use over and over again! When we wrote the <code>list_satisfying_numbers_between</code> block, we didn't know
+            that we'd ever want to list even numbers! But since we generalized properly, we were able to use the block to solve a future problem.
+        </p>
+        
+   </body>
+</html>
