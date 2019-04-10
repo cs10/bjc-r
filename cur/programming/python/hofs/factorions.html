@@ -13,7 +13,7 @@
     <h3>Exercise 1.1: Factorian</h3>
 
         <p>
-          A number is called a factorion if it is equal to the sum of the factorials of its digits. For example, 145 is a factorion since 145 = 1! + 4! + 5! (Remember that n! is the fancy, mathematical way of denoting the factorial of n, which is the product of all of the numbers from 1 to the number n.) Another, relatively simpler example of a factorion is 2, since 2 is equal to 2! (we're not exclaiming there.) For all of the exercises in this lab you must use the python list comprehension that you learned in <a href="https://beautyjoy.github.io/bjc-r/cur/programming/python/python_comprehensions.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-data-struct.topic&course=cs10_sp19.html&novideo&noreading&noassignment">the last lab</a>. You cannot use explicit recursion or loops (while and for).
+          A number is called a factorion if it is equal to the sum of the factorials of its digits. For example, 145 is a factorion since 145 = 1! + 4! + 5! (Remember that n! is the fancy, mathematical way of denoting the factorial of n, which is the product of all of the numbers from 1 to the number n.) Another, relatively simpler example of a factorion is 2, since 2 is equal to 2! (we're not exclaiming there.) <b>For all of the exercises in this lab you must use the python list comprehension that you learned in <a href="https://beautyjoy.github.io/bjc-r/cur/programming/python/python_comprehensions.html?topic=berkeley_bjc%2Fpython%2Fbesides-blocks-data-struct.topic&course=cs10_sp19.html&novideo&noreading&noassignment">the last lab</a>. You cannot use explicit recursion or loops (while and for)</b>.
         </p>
 
         <p>
@@ -41,7 +41,13 @@ True
 >>> is_factorion(12)
 False
         </code></pre></p>
+<p>
+To test this function, run:
+</p>
 
+<p><pre><code>
+python3 autograder.py lab3.py 1.1
+</code></pre></p>
     <h3>Exercise 1.2: List all Factorions</h3>
 
     <p>
@@ -66,5 +72,14 @@ False
 >>> [x for x in range(1,11) if (x % 2) == 0]
 [2, 4, 6, 8, 10]
     </code></pre></p>
+
+<p>
+To test this function, run:
+</p>
+
+<p><pre><code>
+python3 autograder.py lab3.py 1.2
+</code></pre></p>
+
   </body>
 </html>
