@@ -166,10 +166,10 @@ def main():
         exercise_3 = Exercise("exercise 2.2: List All Panditgital", testmodule, "list_satisfying_numbers_between")
         exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 12]), out=([1, 12])))
         exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 135]), out=([1, 12, 21, 123, 132])))
-        exercise_1_2.add_test(TestCase(ins=([is_factorion, 1, 150]), out=([1, 2, 145])))
-        exercise_1_2.add_test(TestCase(ins=([is_factorion, 1, 2]), out=([1, 2])))
-        exercise_1_2.add_test(TestCase(ins=([is_even, 1, 4]), out=([2, 4])))
-        exercise_1_2.add_test(TestCase(ins=([is_even, 11, 16]), out=([12, 14, 16])))
+        exercise_3.add_test(TestCase(ins=([is_factorion, 1, 150]), out=([1, 2, 145])))
+        exercise_3.add_test(TestCase(ins=([is_factorion, 1, 2]), out=([1, 2])))
+        exercise_3.add_test(TestCase(ins=([is_even, 1, 4]), out=([2, 4])))
+        exercise_3.add_test(TestCase(ins=([is_even, 11, 16]), out=([12, 14, 16])))
         exercise_3.run_tests()
 
 if __name__ == "__main__":
