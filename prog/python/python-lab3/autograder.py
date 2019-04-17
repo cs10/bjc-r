@@ -169,7 +169,7 @@ def main():
         exercise_2_2.run_tests()
 
     if flag.test("3"):
-        exercise_3 = Exercise("exercise 2.2: List All Panditgital", testmodule, "list_satisfying_numbers_between")
+        exercise_3 = Exercise("exercise 2.2: List Satisfying Numbers", testmodule, "list_satisfying_numbers_between")
         exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 12]), out=([1, 12])))
         exercise_3.add_test(TestCase(ins=([is_pandigital, 1, 135]), out=([1, 12, 21, 123, 132])))
         exercise_3.add_test(TestCase(ins=([is_factorion, 1, 150]), out=([1, 2, 145])))
