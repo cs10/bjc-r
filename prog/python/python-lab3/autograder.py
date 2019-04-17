@@ -25,7 +25,7 @@ def is_pandigital(num):
     return len(digits) == len([x for x in range(1, len(digits)+1) if x in digits])
 
 def factorial(n):
-    if n == 1:
+    if n < 2:
         return 1
     else:
         return n * factorial(n-1)
