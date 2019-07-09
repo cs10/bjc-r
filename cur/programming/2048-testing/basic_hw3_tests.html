@@ -16,13 +16,16 @@
 <p>Let's now turn to some tests of the blocks that we provided for 2048. Click on the "2048 Lab" sprite, and you should see a test that looks like this at the top:
 
 
-<p><img border="0" src="/bjc-r/img/2048-testing/size_of_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+<p><img border="0" src="/bjc-r/img/2048-testing/new_test_size_of_board.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
 
-<p>This block performs two tests: It ensures that "size of board" applied to "new board of size 1" returns 1, and "size of board" applied to "new board of size 4" returns 4. If you click on the block, you should see "true" twice, since both of these tests pass. This tells us that these functions have consistent behavior with each other, which is a good thing!
+<p>This block ensures that "size of board" applied to "new board of size 10" returns 10. 
+	If you click that block, you should see "true," since this test passes. This tells
+	us that these two functions have consistent behavior with each other, which
+	is a good thing!
 
 <p>The next test should look like:
 
-<p><img src="/bjc-r/img/2048-testing/set_item_of_test.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
+<p><img src="/bjc-r/img/2048-testing/set_item_of_test_new.png" alt="lists of nouns, verbs, etc." title="lists of nouns, verbs, etc." /></p>
 
 <p>This test is a little trickier. Since we're testing a command block, we have to create a temporary variable to use that command block. In this case, the test verifies that if you set position (1, 4) to 2, that the actual value stored at that position is a 2. It also verifies that the value at position (1, 2) is just zero (since it hasn't been set). Again, if you run this test, you should get back <code>true</code> twice. Make sure that this test makes sense before proceeding.</p>
 
