@@ -8,26 +8,52 @@
 
 <body>
   <h3>Winning Triples</h3>
-  <p> To program a way to detect a win, we need to determine what counts as a win. Since there are only <b>8</b> ways to win we could define them explicitly in our program. We'll store each possible winning triple as a list of three position numbers (a triple). </p>
-
-  <p>For example, this winning triple could be represented as <img src="/bjc-r/img/hof/triple.png" width="10%" height="10%" /> because the win is in the 3rd, 5th, and 7th positions: <img src="/bjc-r/img/hof/triple-board.png" width="10%" height="10%" /></p>
   <p>
-  We'll call each row, column, and diagonal a triple. The program will need a list of all the winning triples. This is the sort of thing—an unchanging value that's needed throughout the program—that can reasonably be put in a global variable.</p>
-  <p><img src="/bjc-r/img/hof/winning-triples.png" alt="list of winning combinations" /></p>
-  <p>Why is this a good way to think of things? Well now, "can I win on the next move" means "is there a triple in which two of the squares have my letter and the third square is empty?" This solves the problem we thought of at the end of answering Question 1.</p>
+    To program a way to detect a win, we need to determine what counts as a win. Since there are only <b>8</b> ways to win, we could define them explicitly in our program. We'll store each possible winning triple as a list of three position numbers (a triple).
+  </p>
 
+  <p>
+    For example, this winning triple:
+  </p>
+  <p style="text-align:center;">
+    <img src="/bjc-r/img/hof/triple-board.png" width="15%" height="15%"/>
+    <img src="/bjc-r/img/hof/tic-tac-toe-board-numbered.png" width="15%" height="15%"/>
+  </p> 
+  <p>
+    could be represented as <img src="/bjc-r/img/hof/triple.png" width="10%" height="10%" /> because the win is in the 3rd, 5th, and 7th positions: 
+  </p>
+
+  <p>
+    We'll call each row, column, and diagonal a triple. The program will need a list of all the winning triples. This is the sort of thing—an unchanging value that's needed throughout the program—that can reasonably be put in a global variable.
+  </p>
+  <p style="text-align:center;">
+    <img src="/bjc-r/img/hof/winning-triples.png" alt="list of winning combinations" />
+  </p>
+  <p>
+    Why is this a good way to think of things? Well now, "can I win on the next move" means "is there a triple in which two of the squares have my letter and the third square is empty?" This solves the problem we thought of at the end of answering Question 1.
+  </p>
   <div class="alert quoteGreen alert-success">
-    <p>Asking and answering questions beforehand allowed us to clearly define what we're going to do before we get started. We gained valuable insights that affected our design, and will make things go smoothly for us!</p>
+    <p>
+      Asking and answering questions beforehand allowed us to clearly define what we're going to do before we get started. We gained valuable insights that affected our design, and will make things go smoothly for us!
+    </p>
   </div>
-
   <h3>Checking One Way to Win</h3>
+  <p>
+    <img src="/bjc-r/img/hof/tic-tac-toe-board.png" alt="tic-tac-toe board" />
+  </p>
+  <p>
+    So we've decided that we'll  represent the board as a list whose items are in the order of the numbers above. If we have the board state above with X's and O's, our list looks like this:
+  </p>
+  <p>
+    <img src="/bjc-r/img/hof/ttt-list-basic.png" alt="example board as triples" />
+  </p>
+  <p>
+    The list of winning triples above will help us answer all the questions our strategy program will have to ask. Remember, &quot;can I win on the next move&quot; now means &quot;is there a triple in which two of the squares have my letter and the third square is empty?&quot; 
+  </p>
 
-  <p><img src="/bjc-r/img/hof/tic-tac-toe-board.png" alt="tic-tac-toe board" /></p>
-  <p>So we've decided that we'll  represent the board as a list whose items are in the order of the numbers above. If we have the board state above with X's and O's, our list looks like this:</p>
-  <p><img src="/bjc-r/img/hof/ttt-list-basic.png" alt="example board as triples" /></p>
-  <p>The list of winning triples above will help us answer all the questions our strategy program will have to ask. Remember, &quot;can I win on the next move&quot; now means &quot;is there a triple in which two of the squares have my letter and the third square is empty?&quot; </p>
-
-  <p> Fill-in the block <img src="/bjc-r/img/hof/status-of-triple.png" width="20%" height="20%"/> that takes one possible winning triple (a triple like list{1, 2, 3}) as input and reports a list of what is in those three positions (X, O, or Empty). For example: <img src="/bjc-r/img/hof/status-of-triple-example.png" width="40%" height="40%"/></p>
+  <p>
+    Fill in the block <img src="/bjc-r/img/hof/status-of-triple.png" width="20%" height="20%"/> that takes one possible winning triple (a triple like list{1, 2, 3}) as input and reports a list of what is in those three positions (X, O, or Empty). For example: <img src="/bjc-r/img/hof/status-of-triple-example.png" width="40%" height="40%"/>
+  </p>
 
   <div class="alert quoteGreen alert-success">
     <p>Hint: Use a HOF with <img src="/bjc-r/img/hof/item-of.png" width="10%" height="10%"/> for this problem </p>
