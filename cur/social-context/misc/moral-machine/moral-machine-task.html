@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="/bjc-r/llab/loader.js"></script>
+		<title>Algorithmic Bias and the Moral Machine</title>
+	</head>
+	<body>
+		<h2>Building a Decision-Making Algorithm</h2>
+		<p>
+			During this activity, you will be making a decision-making algorithm for the 
+			Moral Machine. We have started you off with some <a href="/bjc-r/cur/social-context/misc/moral-machine/moral-machine.zip">starter code</a>. First, download the folder and unzip it on your computer.
+		</p>
+		<p>
+			The starter code consists of many Python files; you only need to worry about one:
+			<code>engine.py</code>. <code>engine.py</code> has one function for you to fill out:
+			<code>decide</code>, which takes in a scenario and returns who it wants to save: <code>"passengers"</code> or <code>"pedestrians"</code>.
+		</p>
+		<p>
+			A scenario is an object that represents the decision you need to make. If you'd like 
+			to learn more about how it's built, feel free to peak at <code>scenario.py</code>. You
+			are not expected to understand all of the code, but if you do want help understanding it,
+			feel free to ask your TA or an Academic Intern. 
+		</p>
+		<p>
+			Scenarios consist of a few important attributes: the number (and kinds) of passengers, 
+			the number (and kinds) of pedestrians, and some more information about the kind of 
+			encounter. Here is a full list of attributes for you to use in your decision-making
+			algorithm:
+		</p>
+		<p> Some basic information about the scenario: </p>
+		<ul>
+			<li><code>scenario.numPassengers</code>: (Integer) The number of passengers in the car.</li>
+			<li><code>scenario.numPedestrians</code>: (Integer) The number of pedestrians crossing the street.</li>
+			<li><code>scenario.youInCar</code>: (Boolean) Whether you, the owner of the car, are present in the car.</li>
+			<li><code>scenario.legalCrossing</code>: (Boolean) Whether the pedestrians are crossing legally.</li>
+			<li><code>scenario.pedsInLane</code>: (Boolean) Whether the pedestrians are in the car's current lane.</li>
+		</ul>
+		<p> Some more information about the kinds of passengers and pedestrians: </p>
+		<ul>
+			<li><code>scenario.humanPassengers</code>: (Integer) The number of passengers in the car who are human.</li>
+			<li><code>scenario.humanPedestrians</code>: (Integer) The number of pedestrians who are human.</li>
+			<li><code>scenario.dogPassengers</code>: (Integer) The number of passengers who are dogs.</li>
+			<li><code>scenario.dogPedestrians</code>: (Integer) The number of pedestrians who are dogs.</li>
+			<li><code>scenario.catPassengers</code>: (Integer) The number of passengers who are cats.</li>
+			<li><code>scenario.catPedestrians</code>: (Integer) The number of pedestrians who are cats.</li>
+		</ul>
+		<p> And some more information about the humans: </p>
+		<ul>
+			<li><code>scenario.pregnantPassengers</code>: (Integer) The number of pregnant passengers. Only humans can be pregnant in this scenario.</li>
+			<li><code>scenario.pregnantPedestrians</code>: (Integer) The number of pregnant pedestrians. Only humans can be pregnant in this scenario.</li>
+			<li><code>scenario.passengerAges</code>: (List of strings) The ages of human passengers. Possible ages include: baby, child, adult, elderly. </li>
+			<li><code>scenario.pedestrianAges</code>: (List of strings) The ages of human pedestrians. Possible ages include: baby, child, adult, elderly. </li>
+			<li><code>scenario.passengerGenders</code>: (List of strings) The genders of human passengers. Possible genders in these scenarios include: male, female.</li>
+			<li><code>scenario.pedestrianGenders</code>: (List of strings) The genders of human pedestrians. Possible genders in these scenarios include: male, female.</li>
+			<li><code>scenario.passengerProfessions</code>: (List of strings) The professions of human passengers. Possible professions include: doctor, CEO, criminal, unemployed, unknown.</li>
+			<li><code>scenario.pedestrianProfessions</code>: (List of strings) The professions of human pedestrians. Possible professions include: doctor, CEO, criminal, unemployed, unknown.</li>
+		</ul>
+		<p class="alert alert-success quoteGreen"> 
+			Given this information, fill out <code>engine.py</code> to decide who the car should save in ANY scenario given to it. Try to make your algorithm as objective and fair as possible. To see your algorithm in action, run <code>python3 main.py</code>.
+		</p>
+	</body>
+</html>
