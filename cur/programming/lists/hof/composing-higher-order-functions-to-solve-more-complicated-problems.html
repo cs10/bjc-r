@@ -34,8 +34,9 @@ Don't be confused about which inputs do and don't have rings. It's the square <u
 <p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
 
 </p>
-To translate from a text string to a list of words, Snap<em>!</em>  provides the reporter <code>sentence-&gt;list</code> (pronounced &quot;sentence to list&quot;) that takes a text string as input and reports a list of words:<br>
-<img border="0" src="/bjc-r/img/list/hof/stol-bjc.png" alt="sentence->list block" title="sentence->list block"/>
+To translate from a text string to a list of words, you will need to import the <code>sentence->list</code> block by importing the <em>Words and Sentences</em> library. To import the library, click on the file icon in the upper left hand corner of Snap<em>!</em>, select <em>Libraries</em>, and import the <em>Words and Sentences</em> library.  
+<br><img border="0" src="/bjc-r/img/list/hof/words-sentences-lib.png" alt="words sentences lib" title="sentence->list block"/></br>
+<br><img border="0" src="/bjc-r/img/list/hof/stol.png" alt="sentence->list block" title="sentence->list block"/></br>
 <br>As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.
 
 <p>Once we have the list, we can use the tools we've already built to get a list of the first letters of the long words. What we want, though, is a single word as the reported value. We can use one of the higher order functions to join the letters into a string.
