@@ -54,6 +54,10 @@ ul.output {
     padding-bottom: 4px;
 }
 
+.parsonsButton:hover {
+    color:white;
+}
+
 .parsonsButton:visited {
     color:white;
 }
