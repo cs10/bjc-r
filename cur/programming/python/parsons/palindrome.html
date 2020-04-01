@@ -37,11 +37,10 @@
                       '  elif string[0] != string[-1]:\n' +
                       '  elif string[0] != string[1]: #distractor\n' +
                       '    return False\n' +
-                      '  else:\n' +
-                      '    return palindrome(string[1:-1])\n' +
-                      '    return palindrome(string[0:-1]) #distractor\n' +
-                      '    return palindrome(string[1:-2]) #distractor\n' +
-                      '    return palindrome(string[0:-2]) #distractor\n'
+                      '  return palindrome(string[1:-1])\n' +
+                      '  return palindrome(string[0:-1]) #distractor\n' +
+                      '  return palindrome(string[1:-2]) #distractor\n' +
+                      '  return palindrome(string[0:-2]) #distractor\n'
 
         function displayErrors(fb) {
             if(fb.errors.length > 0) {
