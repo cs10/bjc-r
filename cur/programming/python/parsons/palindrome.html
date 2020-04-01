@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Palindrome</title>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <link href="/bjc-r/js-parsons/parsons.css" rel="stylesheet" />
+        <link href="/bjc-r/js-parsons/lib/prettify.css" rel="stylesheet" />
+        <script src="/bjc-r/js-parsons/lib/prettify.js"></script>
+    </head>
+    <body>
+        <h2>Exercise 3: Palindrome</h2>
+        <p>Drag and drop the code below to write a function <code>palindrome(string)</code>, which should return <code>True</code> if the input string is a palindrome and <code>False</code> otherwise. </p> 
+        <p>You can reorder the blocks and drag them to different indentation levels as you wish. You may not need to use all of the provided lines. </p> 
+        <div id="sortableTrash" class="sortable-code"></div>
+        <div id="sortable" class="sortable-code">
+        </div>
+        <div style="clear:both;"></div>
+        <p style="text-align: center">
+            <a class="parsonsButton" href="#" id="newInstanceLink">New instance</a>
+            <a class="parsonsButton" href="#" id="feedbackLink">Get feedback</a>
+            <a class="parsonsButton" class="parsonsButton" href="#" id="exportLink">Export</a>
+        </p>
+        <p class="alert alert-danger quoteRed">
+            Before you leave this page, be sure to check your answer for correctness by clicking "Get feedback" above and export your code using the "Export button." <strong>You will need to submit your exported code to get credit for this lab.</strong>
+        </p>
+        <script src="/bjc-r/js-parsons/lib/jquery.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/jquery-ui.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/jquery.ui.touch-punch.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/underscore-min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/lis.js"></script>
+        <script src="/bjc-r/js-parsons/parsons.js"></script>
+        <script>
+            var initial = 'def palindrome(string):\n' +
+                      '  if len(string) < 2:\n' +
+                      '  if len(string) < 2 #distractor\n' +
+                      '    return True\n' +
+                      '    return False #distractor\n' +
+                      '  elif string[0] != string[-1]:\n' +
+                      '  elif string[0] != string[1]: #distractor\n' +
+                      '    return False\n' +
+                      '  else:\n' +
+                      '    return palindrome(string[1:-1])\n' +
+                      '    return palindrome(string[0:-1]) #distractor\n' +
+                      '    return palindrome(string[1:-2]) #distractor\n' +
+                      '    return palindrome(string[0:-2]) #distractor\n'
+
+        function displayErrors(fb) {
+            if(fb.errors.length > 0) {
+                alert(fb.errors[0]);
+            }
+        } 
+
+        $(document).ready(function(){
+            var parson = new ParsonsWidget({
+                'sortableId': 'sortable',
+                'trashId': 'sortableTrash',
+                'max_wrong_lines': 4,
+                'feedback_cb' : displayErrors
+            });
+            parson.init(initial);
+            parson.shuffleLines();
+            $("#newInstanceLink").click(function(event){
+                event.preventDefault();
+                parson.shuffleLines();
+            });
+            $("#feedbackLink").click(function(event){
+                event.preventDefault();
+                parson.getFeedback();
+            });
+            $("#exportLink").click(function(event){
+                event.preventDefault();
+                parson.export("palindrome.py");
+            });
+        });
+        </script>
+    </body>
+</html>

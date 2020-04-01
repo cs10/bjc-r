@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Writing your First Python Program</title>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <link href="/bjc-r/js-parsons/parsons.css" rel="stylesheet" />
+        <link href="/bjc-r/js-parsons/lib/prettify.css" rel="stylesheet" />
+        <script src="/bjc-r/js-parsons/lib/prettify.js"></script>
+    </head>
+    <body>
+        <h2>Exercise 1: Sum All Numbers</h2>
+        <p>Now, let's put what we've learned about loops to work!</p>
+
+        <p>Drag and drop the code below to write a <code>sum_all_numbers(x, y)</code> function that takes two numbers, x and y, and returns the sum of all numbers between x and y (inclusive). Below are a few example inputs: </p> 
+        <p><pre><code>
+>>> sum_all_numbers(1, 4)
+10
+>>> sum_all_numbers(2, 3)
+5
+        </code></pre></p>
+        <br>
+        <p>You can reorder the blocks and drag them to different indentation levels as you wish. <strong>You may not need to use all of the provided lines.</strong></p> 
+        <div id="sortableTrash" class="sortable-code"></div>
+        <div id="sortable" class="sortable-code">
+        </div>
+        <div style="clear:both;"></div>
+        <p style="text-align: center">
+            <a class="parsonsButton" href="#" id="newInstanceLink">New instance</a>
+            <a class="parsonsButton" class="parsonsButton" href="#" id="feedbackLink">Get feedback</a>
+            <a class="parsonsButton" class="parsonsButton" href="#" id="exportLink">Export</a>
+        </p>
+
+        <p class="alert alert-danger quoteRed">
+            Before you leave this page, be sure to check your answer for correctness by clicking "Get feedback" above and export your code using the "Export button." <strong>You will need to submit your exported code to get credit for this lab.</strong>
+        </p>
+
+        <script src="/bjc-r/js-parsons/lib/jquery.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/jquery-ui.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/jquery.ui.touch-punch.min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/underscore-min.js"></script>
+        <script src="/bjc-r/js-parsons/lib/lis.js"></script>
+        <script src="/bjc-r/js-parsons/parsons.js"></script>
+        <script>
+            var initial = 'def sum_all_numbers(x, y):\n' +
+                      '  total = 0\n' +
+                      '  for i in range(x, y): #distractor\n' +
+                      '  for i in range(x + 1, y): #distractor\n' +
+                      '  for i in range(x, y + 1):\n' +
+                      '  for i in range(x + 1, y + 1): #distractor\n' +
+                      '    total = total + i\n' +
+                      '  return total' 
+
+        function displayErrors(fb) {
+            if(fb.errors.length > 0) {
+                alert(fb.errors[0]);
+            }
+        } 
+
+        $(document).ready(function(){
+            var parson = new ParsonsWidget({
+                'sortableId': 'sortable',
+                'trashId': 'sortableTrash',
+                'max_wrong_lines': 5,
+                'feedback_cb' : displayErrors
+            });
+            parson.init(initial);
+            parson.shuffleLines();
+            $("#newInstanceLink").click(function(event){
+                event.preventDefault();
+                parson.shuffleLines();
+            });
+            $("#feedbackLink").click(function(event){
+                event.preventDefault();
+                parson.getFeedback();
+            });
+            $("#exportLink").click(function(event){
+                event.preventDefault();
+                parson.export("sum_all_numbers.py");
+            });
+        });
+        </script>
+    </body>
+</html>

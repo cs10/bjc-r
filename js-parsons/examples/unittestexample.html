@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Example of unittests in js-parsons</title>
+    <link href="../parsons.css" rel="stylesheet" />
+    <link href="../lib/prettify.css" rel="stylesheet" />
+    <script src="../lib/prettify.js"></script>
+    <meta charset="utf8" />
+  </head>
+  <body>
+    <h2>Example of "unittests" in js-parsons</h2>
+    <p>Your task is to construct a function which returns the index of the largest
+      element in the array.</p>
+    <div id="sortableTrash" class="sortable-code"><p>Trash</p></div>
+    <div id="sortable" class="sortable-code"><p>Solution</p></div>
+    <div style="clear:both;"></div>
+        <p>
+            <a href="#" id="newInstanceLink">New instance</a>
+            <a href="#" id="feedbackLink">Get feedback</a>
+        </p>
+    <div id="jsparson"></div>
+    <script src="../lib/jquery.min.js"></script>
+    <script src="../lib/jquery-ui.min.js"></script>
+    <script src="../lib/jquery.ui.touch-punch.min.js"></script>
+    <script src="../lib/underscore-min.js"></script>
+    <script src="../lib/lis.js"></script>
+    <script src="../parsons.js"></script>
+    <script src="../lib/skulpt.js"></script>
+    <script src="../lib/skulpt-stdlib.js"></script>
+    <script>
+    var initial = "def maxindex(arg):\n" +
+                  " ans = 0\n" +
+                  " for i in range(len(arg)):\n" +
+                  " if arg[i] > arg[ans]:\n" +
+                  " ans = i\n" +
+                  " while True:\n" +
+                  "pass\n" +
+                  " return ans\n";
+
+    var unittests = 'import unittestparson\n' +
+                  'class myTests(unittestparson.unittest):\n' +
+                  '  def testOne(self):\n' +
+                  '    self.assertEqual(maxindex([0, 2, 4]),2,' +
+                          '"Calling function <code>maxindex([0, 2, 4])</code>.")\n' +
+                  '    self.assertEqual(maxindex([7, 2, 4]),0,' +
+                          '"Calling function <code>maxindex([7, 2, 4])</code>.")\n' +
+                  '    self.assertEqual(maxindex([7, 8, 4]),1,' +
+                          '"Calling function <code>maxindex([7, 8, 4])</code>.")\n' +
+                  '  def testTwo(self):\n' +
+                  '    self.assertEqual(maxindex([0, 2, 4]),2,' +
+                          '"Calling function <code>maxindex([0, 2, 4])</code>.")\n' +
+                  '    self.assertEqual(maxindex([7, 2, 4]),0,' +
+                          '"Calling function <code>maxindex([7, 2, 4])</code>.")\n' +
+                  '    self.assertEqual(maxindex([7, 8, 4]),1,' +
+                          '"Calling function <code>maxindex([7, 8, 4])</code>.")\n' +
+                  '_test_result = myTests().main()';
+
+
+    $(document).ready(function(){
+      var parson = new ParsonsWidget({
+                  'sortableId': 'sortable',
+                  'trashId': 'sortableTrash',
+                  'unittests': unittests
+      });
+      parson.init(initial);
+      parson.shuffleLines();
+      $("#newInstanceLink").click(function(event){
+        event.preventDefault();
+        parson.shuffleLines();
+      });
+      $("#feedbackLink").click(function(event){
+        event.preventDefault();
+        var fb = parson.getFeedback();
+        $("#jsparson").html("<h2>Feedback from testing your program:</h2>" +
+                            fb.feedback);
+        if (fb.success) { alert("Good, you solved the assignment!"); }
+      });
+   });
+    </script>
+    </body>
+</html>

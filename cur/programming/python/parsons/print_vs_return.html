@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Printing and While Loops</title>
+    </head>
+    <body>
+        <h3>Print vs. Return</h3>
+        <p>
+          <b>Print Statement:</b> As you saw on the previous page the print statement converted the number <code>i</code> into a string and printed it to the command line. This is more or less the equivalent of "say" in Snap<em>!</em>. Print statements allow a programmer to print values and variables at a chosen location in the code.
+        </p>
+        <table style="width:auto; table-height:150px">
+              <tr>
+                  <td>
+                      <p><pre><code>
+>>> x = 5
+>>> print(x)
+5
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/say_var.png"/>
+                </td>
+              </tr>
+          </table>
+
+        <p>
+          <b>Return:</b> If <code>print</code> is Python's version of "say", then <code>return</code> is Python's version of "report". <code>return</code> should be used when you want to end a function and report a value.
+        </p>
+        <table style="width:auto; table-height:150px">
+              <tr>
+                  <td>
+                      <p><pre><code>
+>>> def times_5(x):
+...     return 5 * x
+...
+>>> times_5(3)
+15
+>>> times_5(3) + 2
+17
+                    </code></pre></p>
+                  </td>
+                  <td>
+                      <img src="/bjc-r/img/python/times-5.png"/>
+                </td>
+              </tr>
+        </table>
+        <p>If you're testing a function in Python like above, the interpreter will often print the return value so you can see what it was.</p>
+    </body>
+</html>
