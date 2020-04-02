@@ -619,8 +619,8 @@
     // Find the line objects for the student's code
     for (i = 0; i < student_code.length; i++) {
       studentCodeLineObjects.push($.extend(true, 
-    	                                   {},
-    	                                   parson.getLineById(student_code[i].id)));
+                                         {},
+                                         parson.getLineById(student_code[i].id)));
     }
 
     // This maps codeline strings to the index, at which starting from 0, we have last
@@ -629,55 +629,55 @@
     // assigns appropriate indices for duplicate lines.
     var lastFoundCodeIndex = {};
     $.each(studentCodeLineObjects, function(index, lineObject) {
-    	// find the first matching line in the model solution
-    	// starting from where we have searched previously
-    	for (var i = (typeof(lastFoundCodeIndex[lineObject.code]) !== 'undefined') ? lastFoundCodeIndex[lineObject.code]+1 : 0; 
-    	     i < parson.model_solution.length;
-    	     i++) {
-    	  if (parson.model_solution[i].code === lineObject.code) {
-    		  // found a line in the model solution that matches the student's line
-    		  lastFoundCodeIndex[lineObject.code] = i;
+      // find the first matching line in the model solution
+      // starting from where we have searched previously
+      for (var i = (typeof(lastFoundCodeIndex[lineObject.code]) !== 'undefined') ? lastFoundCodeIndex[lineObject.code]+1 : 0; 
+           i < parson.model_solution.length;
+           i++) {
+        if (parson.model_solution[i].code === lineObject.code) {
+          // found a line in the model solution that matches the student's line
+          lastFoundCodeIndex[lineObject.code] = i;
               lineObject.lisIgnore = false;
               // This will be used in LIS computation
-        	  lineObject.position = i;
-        	  break;
-    	  }
-    	}
-    	if (i === parson.model_solution.length) {
-    	  if (typeof(lastFoundCodeIndex[lineObject.code]) === 'undefined') {
-	    	// Could not find the line in the model solution at all,
-	    	// it must be a distractor
-	    	// => add to feedback, log, and ignore in LIS computation
-	        wrong_order = true;
-	        lineObject.markIncorrectPosition();
-	    	incorrectLines.push(lineObject.orig);
-	        lineObject.lisIgnore = true;
-	      } else {
-	        // The line is part of the solution but there are now
-	    	// too many instances of the same line in the student's code
-	        // => Let's just have their correct position to be the same
-	    	// as the last one actually found in the solution.
-	        // LIS computation will handle such duplicates properly and
-	    	// choose only one of the equivalent positions to the LIS and
-	        // extra duplicates are left in the inverse and highlighted as
-	    	// errors.
-	        // TODO This method will not always give the most intuitive 
-	    	// highlights for lines to supposed to be moved when there are 
-	        // several extra duplicates in the student's code.
+            lineObject.position = i;
+            break;
+        }
+      }
+      if (i === parson.model_solution.length) {
+        if (typeof(lastFoundCodeIndex[lineObject.code]) === 'undefined') {
+        // Could not find the line in the model solution at all,
+        // it must be a distractor
+        // => add to feedback, log, and ignore in LIS computation
+          wrong_order = true;
+          lineObject.markIncorrectPosition();
+        incorrectLines.push(lineObject.orig);
+          lineObject.lisIgnore = true;
+        } else {
+          // The line is part of the solution but there are now
+        // too many instances of the same line in the student's code
+          // => Let's just have their correct position to be the same
+        // as the last one actually found in the solution.
+          // LIS computation will handle such duplicates properly and
+        // choose only one of the equivalent positions to the LIS and
+          // extra duplicates are left in the inverse and highlighted as
+        // errors.
+          // TODO This method will not always give the most intuitive 
+        // highlights for lines to supposed to be moved when there are 
+          // several extra duplicates in the student's code.
             lineObject.lisIgnore = false;
             lineObject.position = lastFoundCodeIndex[lineObject.code];
-	      }
-	      
-    	}
+        }
+        
+      }
       });
     
     var lisStudentCodeLineObjects = 
       studentCodeLineObjects.filter(function (lineObject) { return !lineObject.lisIgnore; });
     var inv = 
       LIS.best_lise_inverse_indices(lisStudentCodeLineObjects
-    			 				    .map(function (lineObject) { return lineObject.position; }));
+                      .map(function (lineObject) { return lineObject.position; }));
     $.each(inv, function(_index, lineObjectIndex) {
-    	// Highlight the lines that could be moved to fix code as defined by the LIS computation
+      // Highlight the lines that could be moved to fix code as defined by the LIS computation
         lisStudentCodeLineObjects[lineObjectIndex].markIncorrectPosition();
         incorrectLines.push(lisStudentCodeLineObjects[lineObjectIndex].orig);
       });
@@ -873,10 +873,10 @@
 
   // Creates a parsons widget. Init must be called after creating an object.
    var ParsonsWidget = function(options) {
-	 // Contains line objects of the user-draggable code.
-	 // The order is not meaningful (unchanged from the initial state) but
-	 // indent property for each line object is updated as the user moves
-	 // codelines around. (see parseCode for line object description)
+   // Contains line objects of the user-draggable code.
+   // The order is not meaningful (unchanged from the initial state) but
+   // indent property for each line object is updated as the user moves
+   // codelines around. (see parseCode for line object description)
      this.modified_lines = [];
      // contains line objects of distractors (see parseCode for line object description)
      this.extra_lines = [];
@@ -1018,12 +1018,14 @@
    };
 
    ParsonsWidget.prototype.init = function(text) {
-  	 // TODO: Error handling, parseCode may return errors in an array in property named errors.
+     // TODO: Error handling, parseCode may return errors in an array in property named errors.
      var initial_structures = this.parseCode(text.split("\n"), this.options.max_wrong_lines);
+     this.attempts = 0
      this.model_solution = initial_structures.solution;
      this.extra_lines = initial_structures.distractors;
      this.modified_lines = initial_structures.widgetInitial;
      var id_prefix = this.id_prefix;
+     this.id = makeid(10);
      
      // Add ids to the line objects in the user-draggable lines
      $.each(this.modified_lines, function(index, item) {
@@ -1031,6 +1033,16 @@
        item.indent = 0;
      });
    };
+
+   function makeid(length) {
+     var result           = '';
+     var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+     var charactersLength = characters.length;
+     for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+     }
+     return result;
+    }
 
    ParsonsWidget.prototype.getHash = function(searchString) {
      var hash = [],
@@ -1307,8 +1319,9 @@
     * @return
     * TODO(petri): Separate UI from here
     */
-   ParsonsWidget.prototype.getFeedback = function() {
+   ParsonsWidget.prototype.getFeedback = function(activity_name) {
      this.feedback_exists = true;
+     this.attempts++;
      var fb = this.grader.grade();
      if (this.options.feedback_cb) {
        this.options.feedback_cb(fb); //TODO(petri): what is needed?
@@ -1317,6 +1330,9 @@
      if (fb.success) {
        $("#ul-" + this.options.sortableId).addClass("correct");
      }
+
+     this.logData(activity_name);
+
      // log the feedback and return; based on the type of grader
      if ('html' in fb) { // unittest/vartests type feedback
        this.addLogEntry({type: "feedback", tests: fb.tests, success: fb.success});
@@ -1326,6 +1342,21 @@
        return fb.errors;
      }
    };
+
+   ParsonsWidget.prototype.logData = function(activity_name) {
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "https://parsons-logging.herokuapp.com/", true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(JSON.stringify({
+      subject: activity_name + ' ' + this.id,
+      body: {
+        id: this.id,
+        activity: activity_name,
+        attempts: this.attempts,
+        logs: this.user_actions
+      }
+    }));
+   }
 
    ParsonsWidget.prototype.clearFeedback = function() {
      if (this.feedback_exists) {
