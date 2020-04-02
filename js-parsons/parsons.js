@@ -1331,19 +1331,19 @@
        $("#ul-" + this.options.sortableId).addClass("correct");
      }
 
-     this.logData(activity_name);
-
      // log the feedback and return; based on the type of grader
      if ('html' in fb) { // unittest/vartests type feedback
-       this.addLogEntry({type: "feedback", tests: fb.tests, success: fb.success});
+       this.addLogEntry({type: "feedback", tests: fb.tests, success: fb.success});     
+       this.sendLogs(activity_name);
        return { feedback: fb.html, success: fb.success };
      } else {
        this.addLogEntry({type: "feedback", errors: fb.log_errors, success: fb.success});
+       this.sendLogs(activity_name);
        return fb.errors;
      }
    };
 
-   ParsonsWidget.prototype.logData = function(activity_name) {
+   ParsonsWidget.prototype.sendLogs = function(activity_name) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST", "https://parsons-logging.herokuapp.com/", true);
     xhr.setRequestHeader('Content-Type', 'application/json');
