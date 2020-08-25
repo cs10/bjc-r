@@ -17,7 +17,7 @@
 <p><img src="/bjc-r/img/hof/board-global-step.png" alt="step global" /></p>
 <p><code>Step</code> will define how wide our tiles are when we draw them.</p>
 <p><img src="/bjc-r/img/hof/board-global-displaywidth.png" alt="display width global" /></p>
-<p><code>Display width</code> will define how wide our tiles are when we draw them.</p>
+<p><code>Display width</code> length of one side of the board</p>
 <p>The idea here is that our board should be general enough that we can change the size and number of tiles any time we want. If we want our board to always be centered, no matter what value we use for <code>Display width</code>, then what should <code>Start</code> be? If you think about it, if our display width is some number W, then our Start should always be the coordinate (x: -W/2, y: W/2). Determine for yourself where the other corners of the board will be if the top-left is at (x: -W/2, y: W/2) and the display width of the board is W.</p>
 <p>How big should the <code>Step</code>, a.k.a. the width and height of the tiles be? We know that the board is going to be <code>Display width</code>x<code>Display width</code> units on the screen. If we want <code>Size</code> tiles to fit in each direction, then they should each be <code>Display width / Size</code> units.</p>
 <p>Now that we've set <code>Step</code> to work with any <code>Size</code>, we can set <code>Size</code> to however large we'd like! Let's try 8 for now. While we're at it, let's create and store our board.</p>
