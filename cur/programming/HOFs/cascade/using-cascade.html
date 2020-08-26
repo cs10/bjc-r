@@ -5,7 +5,16 @@
         <title>
             Using Cascade
         </title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         The cascade block, which is found in the Control palette, takes three inputs: a number, a reporter block, and a starting value (which can be any type). Cascade calls the block with the starting value as input, then calls the block with the value reported the first time, then calls the block with <span style="font-style: italic;">that</span> value, etc., as many times as indicated by the number input.
         <br>

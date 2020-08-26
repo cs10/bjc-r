@@ -3,7 +3,16 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Coding a Book Class (cont.)</title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         <p>
           Now let's think about some aspects that we want to be unique to each book. For example, each book should have its own title, author, genre, and year of publication. Since these characteristics vary from one book object to the next, we refer to them as <strong>instance attributes</strong>. The first thing to know is that instance attributes take precedence over class attributes. So, if you ask for an object's attribute and it has both a class and an instance attribute by that name, it will return the instance attribute. Coding these attributes is a bit trickier than with class attributes. In order to do so, we have to first talk about how to create individual objects of the class Book and access their attributes.

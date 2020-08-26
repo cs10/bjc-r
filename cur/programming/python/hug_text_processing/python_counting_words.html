@@ -3,7 +3,16 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Counting Words</title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         <p>
             Now let's start working with our data. Our goal here is to generate a list of the counts of every word in a file, and to find which words appear most often. There are libraries available for Python that would make us able to do this in two lines, but for the sake of education, let's write our own code that does all this from scratch.

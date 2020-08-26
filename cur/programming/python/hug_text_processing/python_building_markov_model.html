@@ -3,7 +3,16 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Building a Markov Model</title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         <p>For this part of the lab, create a new file markov.py. Your ultimate goal is to write a function build_markov_model(text, k) that generates a dictionary representation of a Markov Chain of order k for the given text. For example, build_markov_model("") will return
 

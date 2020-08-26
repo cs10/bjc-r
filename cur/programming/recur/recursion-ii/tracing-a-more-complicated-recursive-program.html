@@ -1,5 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Tracing a More Complicated Recursive Program</title></head><body>Below is a small variation to the "say the numbers" program we were just working with. Except this one changed the order of the two lines in the recursive case (see the order of the blocks in the else case). This is more complicated because the function delegates (makes a recursive call) and then when the recursive call returns we still have more blocks to run. Before you start - run this program and compare it to the result of the last program. <br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-code-BYOB.gif"  replaced by the actual value.<br></li>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Tracing a More Complicated Recursive Program</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head><body>Below is a small variation to the "say the numbers" program we were just working with. Except this one changed the order of the two lines in the recursive case (see the order of the blocks in the else case). This is more complicated because the function delegates (makes a recursive call) and then when the recursive call returns we still have more blocks to run. Before you start - run this program and compare it to the result of the last program. <br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-code-BYOB.gif"  replaced by the actual value.<br></li>
   <li>The black arrows show "delegation" to another COPY of the function (i.e. a recursive call)<br></li>
   <li>The white arrows show the return of control to the calling function. The caller had another line after the recursive call, so those are executed at the time indicated by the white arrow. Therefore the numbers will be said in the opposite order! <br></li>
   <ul><li>The first "say" block that is executed is in the COPY of the function where x = 0. <br></li>

@@ -3,7 +3,16 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Building a Markov Model</title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         <p>Your ultimate goal is to write a function build_markov_model(text, k) that generates a dictionary representation of a Markov Chain of order k for the given text. For example, <code>build_markov_model("the ether")</code> will return <code>{' et': {'h': 1}, 'the': {' ': 1, 'r': 1}, 'e e': {'t': 1}, 'he ': {'e': 1}, 'eth': {'e': 1}}</code>. Note that this is just a dictionary representation of our table from the previous page:
 <pre>                frequency of           probability that

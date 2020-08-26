@@ -2,7 +2,16 @@
 <html>
 	<head>
 		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Algorithms in BYOB</title>
-	</head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
 	<body>
 		Using <a href="/bjc-r/prog/BYOB/algorithms-framework.ypr">the framework provided</a>, implement a BYOB block in the <span style="font-weight: bold;">Unsorted</span> sprite that finds a number in a list of unsorted numbers using the strategy that we discussed. The block should accept the target number (the "needle") and a full list of numbers (the "haystack") as arguments, and return the index of the number&#128;&#153;s position in the list. What was the strategy we discussed for unsorted lists, and how could you implement it in BYOB? Fill in a separate block for the sorted approach and implement it as well. Use the framework to determine how their running time changes as the list size increases. Which is faster for a list of size 5? 50? 500? 5000? Why do you think this is?
 		<br>

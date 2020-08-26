@@ -3,7 +3,16 @@
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
         <title>Generating Text with a Markov Model</title>
-    </head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
     <body>
         <h3>Generating Random Text with a Markov Model</h3>
         <p>Now that we can build a Markov Model for a given text. The next step is to write a function <code>generate_random_text</code> that can generate natural language in accordance to a given Markov Model. In order to write this function we will first start by implementing a function that tells us how many times a character appears after a given kgram. </p>

@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-<script src="/bjc-r/llab/loader.js"></script><title>Constant Time</title></head><body>
+<script src="/bjc-r/llab/loader.js"></script><title>Constant Time</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head><body>
 <p>Let us first analyze the <img src="/bjc-r/img/algorithms/add-all-numbers-gauss.png"> block.  You may have noticed that the computer takes approximately the same time, even though N was made progressively larger.  Computer scientists (programmers and theorists) thus call the operations used in computing this sum (addition, division, etc..) constant-time operation.  In fact, any basic arithmetic operation (addition, subtraction, multiplication, division, and exponentiation) is considered to be a constant-time operation. So, no matter how large our input list is we are only performing 3 constant-time operations to computer the sum.</p> 
 
 <div class="center">
