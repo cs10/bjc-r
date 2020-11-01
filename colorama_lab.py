@@ -19,7 +19,7 @@ def change_text_color(text, color):
 
 
 
-####### Teext Processing ########
+####### Text Processing ########
 
 def read_file(filename):
     """Returns the text contained in file with given filename."""
