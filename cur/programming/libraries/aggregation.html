@@ -4,21 +4,21 @@
 </head>
 <body>
     <h3>Aggregation</h3>
-    <p><b>Aggregation functions</b> allow us to operate on data in a different way by combining results across multiple rows. Common aggregation functions to be familiar with include COUNT, MAX, MIN, SUM, AVG. </p>
+    <p>Aggregation functions allow us to operate on data in a different way by combining results across multiple rows. Common aggregation functions to be familiar with include <b>COUNT, MAX, MIN, SUM, AVG.</b> </p>
 
     <h3>Group Operator</h3>
-    <p>The <b>GROUP</b> operator groups rows that have the <b>same values</b> into summary rows. This brings back the point about how the NATURAL JOIN operator extends the number of columns we have available to us, which can help us identify the patterns in data. By using JOIN on both the Course_Students and Students, there are now multiple rows with the <b>same SID, LEVEL, AGE, FNAME,and LNAME values</b>, since the same student can be enrolled in multiple courses. We can use the GROUP operator on our previous NATURAL JOIN query to make a new query that groups by SID, FNAME, and LNAME, and counts the occurrences of a CID based on the student. This query will allow us to see the student’s ID, first name, last name, and number of classes they are enrolled in.</p>
+    <p>The <b>GROUP</b> operator groups rows that have the <b>same values</b> into summary rows. This brings back the point about how the NATURAL JOIN operator extends the number of columns we have available to us, which can help us identify the patterns in data. By using JOIN on both the Course_Students and Students, there are now multiple rows with the <b>same SID, LEVEL, AGE, FNAME, and LNAME values</b>, since the same student can be enrolled in multiple courses. We can use the GROUP operator on our previous NATURAL JOIN query to make a new query that groups by SID, FNAME, and LNAME, and counts the occurrences of a CID based on the student. This query will allow us to see the student&#39s ID, first name, last name, and number of classes they are enrolled in.</p>
 
     <p>Your query should look like this:</p>
-    <p><img src="/bjc-r/img/dbsnap/group_example.png" alt="group query example" /></p>
+    <p><img src="/bjc-r/img/dbsnap/group_example.png" width="350" height="250" alt="group query example" /></p>
     <p>The query result should look like this:</p>
-    <p><img src="/bjc-r/img/dbsnap/group_example_qresult.png" alt="group example query result" /></p>
-    <p>As you can see, there are 90 entries instead of 100 entries &#40the number of entries in the students data set&#41. This means that there are 10 students that aren’t enrolled in any courses. 🤔 </p>
+    <p><img src="/bjc-r/img/dbsnap/group_example_qresult.png" width="350" height="250" alt="group example query result" /></p>
+    <p>As you can see, there are 90 entries instead of 100 entries &#40the number of entries in the students data set&#41. This means that there are 10 students that aren&#39t enrolled in any courses. 🤔 <meta charset="U+1F914"> </p>
 
 
     <h3>Exercise #3 Aggregation and Join</h3>
     <p>3a. Using the <q>Students</q> and <q>Course_Students</q> data sets, group students according to FNAME, LNAME, LEVEL, and AGE based on how many classes they have taken &#40should look pretty similar to the example from before&#41. Also, make sure the query only includes students who are Sophomores and are 20 years old or older.</p>
-    <p><b>Remember to save 3A before moving on</b></p>
+    <p><b>Remember to save 3A before moving on.</b></p>
     <p>3b. Using the <q>Students,</q> <q>Course_Students,</q> and <q>Courses</q> data sets, try finding the average age of students for each course. Make sure to group by both the CID and CNAME. <i>Hint: You can use more than one NATURAL JOIN.</i> <b>Remember to save when you are finished with 3B.</b></p>
     <p>Congrats! You are done with the DBSnap lab. Hopefully you have learned a little more about the world of data science queries and are excited to potentially learn SQL in the future. </p>
 
