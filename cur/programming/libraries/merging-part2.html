@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Merging Cont.</title><!-- Global site tag (gtag.js) - Google Analytics -->
+
+</head>
+<body>
+    <h3>Natural Join Operator</h3>
+    <p>The <b>NATURAL JOIN</b> operator combines data from more than one source. In DBSnap, you provide the NATURAL JOIN operator two datasets that have at least one matching column. For example, if you tried joining the data sets “Professors” and “Students” it wouldn’t work because they have no related columns. However, if you try to join the data sets “Course_Students” and “Students,” this would work because they both share a SID column. </p>
+    <p>Let’s try joining the data sets “Course_Students” and “Students” and see what happens.</p>
+    <p><img src="/bjc-r/img/dbsnap/join_example.png" alt="natura join query example" /></p>
+    <p>This query results in a new table where the entries of each row from the two data sets are joined if the rows both include the same SID. As you can see below, the number of entries takes on the number of entries the larger data set has. Course_Students has 128 entries, while Students has 100 entries. NATURAL JOIN extends the number of columns we have available to us, which can help us identify the patterns in data. This will be useful when we incorporate aggregation. </p>
+</body>
