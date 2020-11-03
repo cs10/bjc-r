@@ -4,9 +4,9 @@
 </head>
 <body>
     <h3>Natural Join Operator</h3>
-    <p>The <b>NATURAL JOIN</b> operator combines data from more than one source. In DBSnap, you provide the NATURAL JOIN operator two datasets that have at least one matching column. For example, if you tried joining the data sets <q>Professors</q> and <q>Students</q> it wouldn&#39t work because they have no related columns. However, if you try to join the data sets “Course_Students” and “Students,” this would work because they both share a SID column. </p>
+    <p>The <b>NATURAL JOIN</b> operator combines data from more than one source. In DBSnap, you provide the NATURAL JOIN operator two datasets that have at least one matching column. For example, if you tried joining the data sets <q>Professors</q> and <q>Students</q> it wouldn&#39t work because they have no related columns. However, if you try to join the data sets <q>Course_Students</q> and <q>Students,</q>this would work because they both share a SID column. </p>
     <p>Let&#39s try joining the data sets <q>Course_Students</q> and <q>Students</q> and see what happens.</p>
-    <p><img src="/bjc-r/img/dbsnap/join_example.png" width="300" height="250" alt="natural join query example"/></p>
+    <p><img src="/bjc-r/img/dbsnap/join_example.png" width="350" height="250" alt="natural join query example"/></p>
     <p>This query results in a new table where the entries of each row from the two data sets are joined if the rows both include the same SID. As you can see below, the number of entries takes on the number of entries the larger data set has. Course_Students has 128 entries, while Students has 100 entries. NATURAL JOIN extends the number of columns we have available to us, which can help us identify the patterns in data. This will be useful when we incorporate aggregation. </p>
-    <p><img src="/bjc-r/img/dbsnap/join_example_qresult.png" width="300" height="250" alt="natural join example query result"/></p>
+    <p><img src="/bjc-r/img/dbsnap/join_example_qresult.png" width="350" height="300" alt="natural join example query result"/></p>
 </body>
