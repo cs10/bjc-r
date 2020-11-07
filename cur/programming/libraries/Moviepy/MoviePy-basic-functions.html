@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction to MoviePy</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+    	<h3>Basic MoviePy Functions</h3>
+      <p>
+        In this section, we will introduce some basic functions in MoviePy that can carry out simple tasks in video/audio editing. Firstly, in order to work with clips in python, you must assign a clip to a variable as shown below:
+      </p>
+      <p><pre><code>
+>>> example_clip = VideoFileClip("clipName.mp4")
+      </code></pre></p>
+      <h3>Subclip</h3>
+      <p>
+        After this clip is assigned, we can introduce our first function, which is the <code>subclip</code> function.
+        This function, as well as all other MoviePy functions work through OOP, or Object Oriented Programming, which you would have learned about in a previous lab.
+        The <code>subclip</code> function can break up the clip into segments which can then be used later in moving parts of different clips around.
+        The inputs of the <code>subclip</code> function are 2 integers, which correspond to the start and end time of the part of the clip you want, as shown in the examples below.
+        The generic form of the function looks like this: <code>clip.subclip(start_time, end_time)</code>
+      </p>
+      <p><pre><code>
+# Obtaining only the part of the clip from 10 seconds to 25 seconds
+>>> clip_segment1 = example_clip.subclip(10, 25)
+# Similarly, obtaining another segment of the clip from 40 seconds to 53 seconds
+>>> clip_segment2 = example_clip.subclip(40, 53)
+      </code></pre></p>
+      <p class="alert alert-info quoteBlue">
+          Note: The times which are the inputs for the subclip function, can be expressed in many ways. 1 way is just in seconds as seen above, however it can
+          also be expressed as a string. E.g. "00:00:10" for 10s and "01:23:45" as 1h, 23m and 45s.
+      </p>
+      <p>
+        Now, we have 3 different clips assigned to 3 different variables. <code>example_clip</code> contains the entire original clip,
+        while the two segments we made, <code>clip_segment1</code> and <code>clip_segment2</code>, contain the subclips from 10s to 25s and 40s to 53s respectively.
+      </p>
+      <h3>Volume</h3>
+      <p>
+        Next, another basic function is the <code>volume</code> within the MoviePy library. This function simply changes the volume of a selected clip.
+        The input for this function is a double, which is a number with a decimal point, and this number represents the <b>percentage</b> of the current volume that you want the new volume to be.
+        For example, inputing <b>0.50</b> corresponds to 50% and inputting it into the volume function will change the volume to <b>50% of the current volume</b>, or <b>0.5 * the current volume</b>. Its implementation is shown in the example below:
+      </p>
+      <p><pre><code>
+# Halves the volume of clip_segment1 which we created before.
+>>> clip_segment1 = clip_segment1.volume(0.5)
+# Creates a new variable clip_segment2b, which is the same as clip_segment2 but with its volume multiplied by 1.20.
+>>> clip_segment2b = clip_segment2.volume(1.20)
+      </code></pre></p>
+      <p class="alert alert-info quoteBlue">
+          Note: Within MoviePy, as seen by the examples above, a function is called while also assigning the function call to a clip variable, e.g. clip_segment1 = clip_segment1.volume(0.5).
+          Using this method ensures that the clip's changed attributes are stored, and thus the clip is updated, rather than the clip with the reduced volume being created and then lost forever.
+          So, reassigning the clip variable, or assigning a new variable, to the function call is necessary to store changes to the clip.
+      </p>
+      <h3>TextClip</h3>
+      <p>
+        Lastly, now that we've introduced a few basics of video and audio manipulation, one final basic function is the <code>TextClip</code> function, which can be used to add text within to a clip.
+        This function takes in 3 inputs: A string which is the actual text you want to add to the video, an integer which is the font size for the text, and another string which corresponds to the color you want the text to appear in.
+        The generic form of the function looks like this: <code>TextClip("Text string", fontsize=size, color='colour string')</code>
+      </p>
+      <p><pre><code>
+# Storing a new text clip to a created variable.
+>>> text_clip1 = TextClip("This is my new text clip!", fontsize=50, color='blue')
+      </code></pre></p>
+      <h3>Set starting time</h3>
+      <p>
+      With the function <code>set_start</code>, you can set a start time for your video. The function takes in one variable that indicates your desired start time for the new clip.
+      </p>
+      <p><pre><code>
+# The new clip starts after 5 seconds of the original clip.
+>>> new_clip2 = clip.set_start(5)
+      </code></pre></p>
+      <h3>Composite Video</h3>
+      <p>
+      This function allows you to overlay one video clip on another, and it allows multiple overlay of videos. For example, video plays clip1, and clip2 on top of clip1, and clip3 on top of clip1 and clip2.
+      Note that if video clips have the same size, then only the one laid on top is shown in the result. For instance, in the example above, if clip1, clip2, and clip3 all have the same size, then only clip3 is going to be visible in the video because it's on the top.
+      Another thing to keep in mind is that by default the resulting video has the size of its first clip, functioning as its background. Though it's also possible to set the size of the background and make videos <i>float</i> in the bigger frame.
+      </p>
+      <p><pre><code>
+# Overlays clip2 on top of clip1, and clip3 on top of both clip1 and clip2.
+>>> composite_clip = CompositeVideoClip([clip1, clip2, clip3])
+
+# Indicates size of the final result video.
+>>> composite_clip = CompositeVideoClip([clip1, clip2, clip3], size=(750, 600))
+
+# Combines videos using the set_start function.
+#Here, clip1 starts at t=0, clip2 starts at t=2s, and clip3 starts at t=5s.
+>>> composite_clip = CompositeVideoClip([clip1, clip2.set_start(2), clip3.set_start(5)])
+</code></pre></p>
+      <h3>Saving the file</h3>
+      <p>Lastly, now that we've introduced a few basics of video and audio manipulation, the most important function is perhaps <code>write_videofile</code>, which allows you to save the file and name it.
+      </p>
+      <p><pre><code>
+# Gives the name "best video" to <code>my_video</code> clip and saves it.
+my_video.write_videofile(“best video.mp4”)
+      </code></pre></p>
+    </body>
+</html>
