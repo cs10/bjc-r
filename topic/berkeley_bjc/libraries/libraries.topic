@@ -19,6 +19,12 @@ heading: MoviePy
 	resource: Activity [/bjc-r/cur/programming/libraries/Moviepy/MoviePy-activity.html]
 
 heading: Colorama
+	resource: Intro to Colorama [/bjc-r/cur/programming/libraries/colorama/intro.html]
+	resource: Fore, Back, and Style [/bjc-r/cur/programming/libraries/colorama/fore_back_style.html]
+	resource: Putting it all together [/bjc-r/cur/programming/libraries/colorama/tasks.html]
+
+
+
 heading: Snap to Python
 heading: Data Base Snap
 	resource: What is DB Snap? [/bjc-r/cur/programming/libraries/dbsnap/what-is-dbsnap.html]
