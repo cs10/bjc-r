@@ -42,11 +42,11 @@ def parse_text(text):
 
 	text = list(text)
 	for word in text:
-		if len(word) >= :
+		if len(word) >= 5:
 			change_
 		if 'y' in word:
 			change_
-		if word[len(word)-1] == 's':
+		if word[len(word)-1] == 'e':
 			change_
 		if is_palindrome(word):
 			change_
