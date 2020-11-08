@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Working More With MoviePy</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+    	<h3>Some More Complex MoviePy Functions</h3>
+      <p>
+        Now that we have introduced a few basics of how to create and alter basic audio and video, we can dive into some more complicated aspects and functions to help us
+        implement what we've learned so far.
+      </p>
+      <h3>Clip Effects - Speed</h3>
+      <p>
+        With the basics of clip creation and how it can be used, one slightly more complicated topic we can explore is adding effects of various kinds to the clips we've created.
+        One such example, is altering the speed or linearity of the clip. This includes changing the clip speed to 0.5x, 2x, or any chosen speed. These effects can also change the clip
+        to run backwards, giving you more options on how to edit your chosen video. For adding effects to the speed of the video, the functions <code>speedx</code> and <code>fx</code> are
+        to be used. Example:
+      </p>
+      <p><pre><code>
+# Doubling the speed of my chosen clip and storing it in a new variable using the 'speedx' function
+>>> example_clip = VideoFileClip("clipName.mp4")
+>>> double_speed_clip = example_clip.speedx(2)
+
+# Changing the original clip to run backwards using the 'fx' function with the input 'vfx.time_mirror'
+>>> example_clip = example_clip.fx(vfx.time_mirror)
+<h3>Clip Effects - Color</h3>
+<p>
+  Another feature of clip effect is the ability to increase or decrease the video's brightness.
+  The function takes the form <code>clip.fx(vfx.colorx, color_num)</code> where <code>color_num</code> is the input you can give to the function to change the video's brightness.
+  Try experimenting with different values to see their results! What values darken or brightens the video?
+</p>
+<p><pre><code>
+# Darkens the video.
+colored_clip = clip.fx(vfx.colorx, 0.5)
+</code></pre></p>
+
+<h3>Clip Effects - Black and White</h3>
+<p>
+  Next, we'll introduce a very cool feature of the clip effect series, the black and white function. As its name suggests, this function turns the video into black and white.
+</p>
+<p><pre><code>
+# Makes video black and white.
+bw_clip = clip.fx(blackwhite)
+</code></pre></p>
+
+<h3>Clip Effects - Resize</h3>
+<p>
+  It's always important to have a way to resize your video. So here we introduce the <code>resize</code> function. This funciton resizes the clip, but keep the length-to-width ratio.
+  There are multiple ways to use this function with more details given in the example below.
+<p><pre><code>
+# Resizes clip with desired width. Height will be computed automatically.
+resized_clip = clip.resize(resize, width = 500)
+
+# Resizes clip by passing in new width and height values.
+resized_clip = clip.resize((460, 720))
+
+# Resizes clip with width and height multiplied by 0.5.
+resized_clip = clip.resize(0.5)
+</code></pre></p>
+      </code></pre></p>
+      <h3>Joining Videoclips</h3>
+      <p>
+        Now that we've explored how to change and edit individual clips, lets see how we can put it all together in one video file in order to create a single completed project.
+        There are various different ways to join video clips together, and the following sections will go through a few of the most utilised ones.
+      </p>
+      <h3>Concatenating Video Clips</h3>
+      <p>
+        The first function used to join video clips is the <code>concatenate_videoclips</code> function. This function takes in an array of video clips, (E.g.[clip1, clip2, clip3, etc.])
+        and outputs a single video clip with each of the inputted clips one after another. An example is shown below:
+      </p>
+      <p><pre><code>
+# Initialising 3 videoclips
+>>> clip1 = VideoFileClip("clipName.mp4")
+>>> clip2 = example_clip.speedx(2)
+>>> clip3 = example_clip.subclip(20, 45)
+
+# Using the concatenate_videoclips function to play the original, followed by the same video at 2x speed, followed by just seconds 20 to 45 of the original clip
+>>> final_clip = concatenate_videoclips([clip1, clip2, clip3])
+      </code></pre></p>
+    </body>
+</html>
