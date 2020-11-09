@@ -9,9 +9,15 @@
     <p>Aggregation functions allow us to operate on data in a different way by combining results across multiple rows. Common aggregation functions to be familiar with include <b>COUNT, MAX, MIN, SUM, AVG.</b> </p>
 
     <h3>Group Operator</h3>
-    <p>The <b>GROUP</b> operator groups rows that have the <b>same values</b> into summary rows. This brings back the point about how the NATURAL JOIN operator extends the number of columns we have available to us, which can help us identify the patterns in data. By using JOIN on both the Course_Students and Students, there are now multiple rows with the <b>same SID, LEVEL, AGE, FNAME, and LNAME values</b>, since the same student can be enrolled in multiple courses. We can use the GROUP operator on our previous NATURAL JOIN query to make a new query that groups by SID, FNAME, and LNAME, and counts the occurrences of a CID based on the student. This query will allow us to see the student&#39s ID, first name, last name, and number of classes they are enrolled in.</p>
+    <p>The <b>GROUP</b> operator groups rows that have the <b>same values</b> into summary rows. This brings back the point about how the NATURAL JOIN operator extends the number of columns we have available to us, which can help us identify the patterns in data. By using JOIN on both the Course_Students and Students, there are now multiple rows with the <b>same SID, LEVEL, AGE, FNAME, and LNAME values</b>, since the same student can be enrolled in multiple courses.</p>
 
-    <p>Your query should look like this:</p>
+    <p>We can use the GROUP operator on our previous NATURAL JOIN query to make a new query that groups by SID, FNAME, and LNAME, and counts the occurrences of a CID based on the student. This compresses all the rows that had the same SID, LEVEL, AGE, FNAME, and LNAME values into one row and creates a new column called count(CID) that shows the number of courses that the student is enrolled in. This might be a little hard to understand when reading it, so we have provided a visual explanation below.</p>
+
+    <p>This is the node result of pressing on the Natural Join node. We’ve only selected Rodney for this example to better visualize what grouping does. You can do this by adding a SELECT block to your previous Natural Join query with the input FNAME = “Rodney.” As you can see, the Natural Join operator has created three rows that share the same SID, FNAME, LNAME, and AGE (off-screen) values. The only different value is the CID.</p>
+
+    <p>After grouping by SID, FNAME, SID, and aggregating using count(CID), the query result counts the occurrences of CID for Rodney, which is 3. This query result is helpful because it counts how many classes Rodney is enrolled in for us. </p>
+
+    <p>Now let’s try to apply this same query on the whole data set and not just Rodney. Your query should look like this:</p>
     <p><img src="/bjc-r/img/dbsnap/group_example.png" width="400" height="300" alt="group query example" /></p>
     <p>The query result should look like this:</p>
     <p><img src="/bjc-r/img/dbsnap/group_example_qresult.png" width="400" height="350" alt="group example query result" /></p>
