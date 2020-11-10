@@ -1,13 +1,16 @@
 title: Data and Python
 {
 h2: Big Ideas
-big-idea: Every programming language has 3rd party resources that are constantly being developed
-big-idea: Libraries in Snap! and Python, along with extensions in Snap! come in all different varities
-big-idea: Using these Libraries/extensions can be extremely fun and rewarding!
+big-idea: Every programming language have resources that give it extra functionality
+big-idea: Libraries in Snap! and Python, along with extensions in Snap! come in all different shapes and sizes
+big-idea: Using these libraries and extensions can be extremely fun and rewarding!
 
 h2: Activities
-learning-goal: Introduce yourself to a couple 3rd party Snap/Python resources
+learning-goal: Learn what about libraries and extensions in programming
+learning-goal: Use some of these libraries and extensions to learn about their capabilities
 
+heading: Introduction
+	resource: What are Libraries?[/bjc-r/cur/programming/libraries/Lab18-Intro.html]
 
 heading: Bokeh
 	resource: Starting Bokeh [/bjc-r/cur/programming/libraries/bokeh/bokeh_lab.html]
@@ -24,8 +27,6 @@ heading: Colorama
 	resource: Putting it all together [/bjc-r/cur/programming/libraries/colorama/tasks.html]
 
 
-
-heading: Snap to Python
 heading: Data Base Snap
 	resource: What is DB Snap? [/bjc-r/cur/programming/libraries/dbsnap/what-is-dbsnap.html]
 	resource: User Interface [/bjc-r/cur/programming/libraries/dbsnap/user-interface.html]
