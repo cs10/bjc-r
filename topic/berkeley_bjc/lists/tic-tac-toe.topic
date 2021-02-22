@@ -10,7 +10,6 @@ learning-goal: Build a generalized game board.
 
 heading: Game Board Building
    resource: Making Your Own Board  [/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html]
-   resource: Remember to Vote! [/bjc-r/cur/programming/voting.html]
    resource: Interacting With the Board  [/bjc-r/cur/programming/lists/hof/ttt/11-interact-with-board.html]
    resource: Put Stuff On the Board [/bjc-r/cur/programming/lists/hof/ttt/12-populating-board.html]
    resource: Build A Maze [/bjc-r/cur/programming/lists/hof/ttt/13-maze.html]
