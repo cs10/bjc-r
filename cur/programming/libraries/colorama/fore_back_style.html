@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Fore, Back, and Style</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+    	<h3>Fore</h3>
+      <p>
+        The Fore class has a variety of set attributes which can be used to print text in a different color. For example:print(Fore.RED + 'The text is now red!') will print ‘The text is now red!’ in red.
+      </p>  
+
+      <img src="/bjc-r/img/python/colorama-fore.png" alt="fore" height="60px" width="600px">
+
+    <p>
+        Here are all the attributes you will be working with for the Fore class. Have some fun and try printing different text in different colors!
+    </p>  
+    <p><pre><code>
+       Fore: BLACK, GREEN, RED, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET
+    </code></pre></p>  
+    <p>To reset the text color back to default (white), print (Fore.RESET) 
+    </p>
+    <p>Make sure you are always printing when you call these commands because Fore is a class object with attributes, so simply calling it will not produce any side-effect behavior. 
+    </p>
+    <h3>Back</h3>
+      <p>
+        The Back class is very similar to the Fore class in the attributes we will be accessing, but rather than changing the color of the text, it changes the background color. 
+    </p>  
+    <p>For example: print(Back.GREEN + 'The background is now green!') will print 'The background is now green!’ with a green background. </p>
+  
+    <img src="/bjc-r/img/python/colorama-back.png" alt="back" height="60px" width="600px">
+
+    <p>
+        (HINT: If your text is still red, how could you change the text color back to default?)
+    </p>  
+    <p>The attribute options are the same as those of the Fore class. Have some fun and try printing different text with different background colors!</p>
+    <p><pre><code>
+       Back: BLACK, GREEN, RED, YELLOW, BLUE, MAGENTA, CYAN, WHITE, RESET
+    </code></pre></p>  
+    <h3>Style</h3>
+    <p>
+        The last class we will be focusing on for this lab is Style. Style changes the brightness of your text. For example: print(Style.DIM + 'The text is now dimmed!’) will print 'The text is now dimmed!’ in a lower brightness.   </p>  
+  <p>For example: print(Back.GREEN + 'The background is now green!') will print 'The background is now green!’ with a green background. </p>
+
+  <img src="/bjc-r/img/python/colorama-style.png" alt="style" height="60px" width="600px">
+
+  <p>
+    The attributes to change the brightness are listed below. Have fun playing around with it and changing the brightness of your text!   </p>  
+  <p>The attribute options are the same as those of the Fore class. Have some fun and try printing different text with different background colors!</p>
+  <p><pre><code>
+Style: DIM, NORMAL, BRIGHT, RESET_ALL
+  </code></pre></p> 
+<P>Now that you have all the basic commands you need to make your terminal output colorful, let’s get some practice!</P>
+
+</html>

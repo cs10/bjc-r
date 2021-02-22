@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Trying it Yourself</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+    	<h3>Making your own video</h3>
+      <p>
+        Now that you've been introduced to how MoviePy functions work, it's time to try these out yourself!
+        Feel free to try these functions out on any of your own videos or videos you would like to try and edit.
+        If you would like to try them out in another fun, challenging way, we have an exercise for you below! Just before that,
+        here is a quick summary of all the functions you have read about, and a brief explanation of how they're used:
+      </p>
+      <h3>MoviePy Functions</h3>
+      <pre><code>
+# stores a video clip to a variable
+clip1 = VideoFileClip("video1.mp4")
+
+# accesses a specific segment of a clip
+short_clip1 = clip1.subclip(10, 25)
+
+# changes the volume of a clip
+clip1 = clip1.volume(0.8)
+
+# creates a new text clip
+text_clip1 = TextClip("This is my new text clip!", fontsize=70, color='white')
+
+# sets a specific time for the clip to start playing at when combined with other clips in a Composite Video Clip
+clip1 = clip1.set_start(10)
+
+# Plays multiple clips on top of one another or at the same time
+# useful for text and audio clips being added
+clip1 = VideoFileClip("video1.mp4")
+text_clip1 = TextClip("This is my new text clip!", fontsize=70, color='white')
+video1 = CompositeVideoClip([clip1, text_clip1])
+
+# Writes and exports a chosen video file, saving it in the directory where the code is being run.
+video1.write_videofile("my_new_movie.mp4")
+
+# Change the speed or linearity of your chosen clip
+clip1 = clip1.speedx(1.5) #speedx changes the speed of the clip
+clip_reverse = clip1.fx(vfx.time_mirror) #makes the clip play backwards
+
+# Change the color or size of your chosen clip
+clip1 = clip1.resize(0.8) #changes the size of the clip
+clip2 = clip1.fx(vfx.black_white) #makes the clip black and white
+
+# Plays chosen clips one after another
+complete_clip1 = concatenate_videoclips([clip1, clip2])
+
+# Stacks clips and plays them in a table-like information
+# Takes in an array of arrays (or a list of lists)
+complete_clip2 = clips_array([[clip1], [clip2]])
+
+      </code></pre>
+      <h3>MoviePy - Video Task</h3>
+      <p>
+        In the starter files for this lab, we have provided you with 3 video files: video1.mp4, video2.mp4, video3.mp4. Using these very video files,
+        we have created a brand new final_video.mp4 which is also available for you to view. Your task is to use
+        the functions you have learned about to edit and put together these 3 videos to ultimately try and get as close
+        as you can to the video we have created! If you haven't downloaded the starter files yet, you can download them from <a href="/bjc-r/prog/python/moviepy.zip">here</a>.
+        We have provided some starter code as well as some hints in the file "moviepy_activity.py" but feel free to experiment and try to figure it out yourself!
+      </p>
+      <p class="alert alert-info quoteBlue">
+          Note: You should definitely look back at the previous pages and refer to them if you are looking for a more in depth explanation
+          of the various functions because there are quite a few! Also, this library is a lot of fun to just play around with so try it out
+          by yourself and see what kinds of interesting videos you can create using everything you've learned about this library!
+      </p>
+    </body>
+</html>
