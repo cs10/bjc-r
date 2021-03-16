@@ -1,11 +1,5 @@
-title: Practicing with Lists: Tic-Tac-Toe
+title: Practicing with Lists: Making Boards
 {
-h2: Big Ideas
-
-
-//   video: Recursion 2 [https://coursesharing.org/courses/6/lectures/19]
-//   video: Social Implications 2 [https://coursesharing.org/courses/6/lectures/20]
-  reading: Blown to Bits, Chapter 4 [http://www.bitsbook.com/wp-content/uploads/2008/12/chapter4.pdf]
 
 h2: Activities
 learning-goal: Get more practice with lists and higher order functions used in combination.
@@ -13,15 +7,7 @@ learning-goal: Develop a significant-sized project.
 learning-goal: Explore approaches to mouse detection without "touching" blocks.
 learning-goal: Build a generalized game board.
 
-heading: Tic-Tac-Toe strategy
-   resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
-   resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
-   resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
-   resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
-   //resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
-   //resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
-   //resource: Make the Game Interactive [/bjc-r/cur/programming/lists/hof/ttt/08-interactive.html] // this has been given in new starter file
-   //resource: Improving the Strategy  [/bjc-r/cur/programming/lists/hof/ttt/09-improving.html]
+
 heading: Game Board Building
    resource: Making Your Own Board  [/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html]
    resource: Interacting With the Board  [/bjc-r/cur/programming/lists/hof/ttt/11-interact-with-board.html]
