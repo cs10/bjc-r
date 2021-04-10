@@ -1,7 +1,6 @@
 if (typeof llab === 'undefined') {
     llab = {};
     llab.paths = {};
-    llab.paths.css_files = [];
     llab.loaded = {};
 }
 
