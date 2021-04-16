@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Thinking about the Program Structure</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Thinking about the Program Structure</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,9 +16,22 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body>Remember that this block only represent the strategy in which the computer chooses the next move; we are not programming any visual parts at the moment. <br><br>Before we approach to make the strategy in BYOB, think about how do you play tic-tac-toe. We have many strategy rules that has priority over another. We will represent these rules with "if" statements:<br><br><ul><li>If there is a winning move, we take that move.</li>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+Remember that this block only represent the strategy in which the computer chooses the next move; we are not programming any visual parts at the moment. <br><br>Before we approach to make the strategy in BYOB, think about how do you play tic-tac-toe. We have many strategy rules that has priority over another. We will represent these rules with "if" statements:<br><br><ul><li>If there is a winning move, we take that move.</li>
 </ul><ul><li>If the opponent has a winning move, we move to the square that blocks it.</li>
 </ul><ul><li>If none of the above applies, then choose the best free square.</li>
 </ul><br>And if you're daring, you may also do this:<br><ul><li>If we can make a move that allows us to win on the next turn, we take that move.</li>
   <li>If there is a move that the opponent can make that will make them win in two moves, then block it.</li>
-</ul>The last two allows the computer to play a perfect game of tic-tac-toe.<br><br>You can see that we are going to make many helper blocks to complete the strategy. We need to check each condition sequentially and make sure we get what we need to get. <br></body></html>
+</ul>The last two allows the computer to play a perfect game of tic-tac-toe.<br><br>You can see that we are going to make many helper blocks to complete the strategy. We need to check each condition sequentially and make sure we get what we need to get. <br>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

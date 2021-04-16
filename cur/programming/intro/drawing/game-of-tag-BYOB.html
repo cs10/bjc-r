@@ -2,10 +2,18 @@
 <html>
    <head>
       <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
       <title>Game of TAG!</title>
       
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,11 +23,24 @@
 </script>
 </head>
    <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
       <br>
       We want one of the characters to react if the two characters touch.  In the last step, we showed an example with <code>Cat</code> and <code>Mouse</code>.  We can add either of the following equivalent scripts to the <code>Mouse</code> sprite to say <code>OH NOs!!!</code> when it touches the cat. <br><br>
       <div style="text-align: center;"><img border="0" title="Mouse script when touching cat" alt="Mouse script when touching cat" src="/bjc-r/img/conc/touching-cat-forever-with-oh-nos-script-BYOB.jpg" ><br></div>
       <br><em>Note</em>: One really important thing to note here is that once we click the green flag, the scripts above will <strong>always</strong> be running: notice that they always have a highlighted outline.  Compare this to the script below that would only run once when you click the green flag.  The functionality above is often called an <strong>infinite loop</strong>, and can be very helpful when we want something to continue running forever.
       <br><br>
       <div style="text-align: center;"><img border="0" title="Script with only IF" alt="Script with only IF" src="/bjc-r/img/conc/touching-cat-normal-script.png" ><br></div>
-   </body>
+       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

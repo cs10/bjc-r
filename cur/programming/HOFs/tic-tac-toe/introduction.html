@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Introduction </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Introduction </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,15 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> Now that you've learned about HOF's, we're going to use them for a larger example. We are going to make a program that plays a decent game of tic-tac-toe! Because we are going to be using HOF's, it is natural for us to use lists as our data structure for the game. So first of all, let's make ourselves a board configuration:
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ Now that you've learned about HOF's, we're going to use them for a larger example. We are going to make a program that plays a decent game of tic-tac-toe! Because we are going to be using HOF's, it is natural for us to use lists as our data structure for the game. So first of all, let's make ourselves a board configuration:
 <p></p>
 <div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/tic-tac-toe-board.png" title="There should be an image here" ></div>
 <p> </p>
@@ -19,4 +35,9 @@
 <p>Next, we are going to construct our main block, TTT, which will report the computer's next move given the current configuration. It takes two arguments: the current position and whether the computer is playing X or O. If the computer is O and using the board above, we can use the TTT block like this: </p>
 <p></p>
 <div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/ttt-block-call.png" title="There should be an image here" ><br>So the computer will go to the first square, which makes sense.<br>Obviously, TTT is not going to work right now because we haven't implemented any strategies yet, nor have we even designed the program structure!<br></div></div>
-<p></p>   </body></html>
+<p></p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

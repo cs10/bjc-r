@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Hat blocks and command blocks</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Here's the script from the last screen again:</p>
 <p><img alt="when flag, pen down, repeat 4, move turn" src="/bjc-r/img/prog/script.png" />
 
@@ -26,5 +42,10 @@ tells the <em>sprite</em> (the arrowhead shape on the stage at the right end of 
 <p>The number 10 in the <code>move</code> block above is called an <em>input</em> to the block.  By clicking on the white oval, you can type any number in place of the 10.  The sample script above uses 100 as the input value.  We'll see later that inputs can have non-oval shapes that accept values other than numbers.  We'll also see that you can compute input values, instead of typing a particular value into the oval.  A block can have more than one input slot.  For example, the <code>glide</code> block located about halfway down the Motion palette has three inputs.
   Most command blocks have that brick shape, but some, like the <code>repeat</code> block in the sample script, are <em>C-shaped.</em> Most C-shaped blocks are found in the Control palette.  The slot inside the C shape is a special kind of input slot that accepts a script as the input.  In the sample script, the <code>repeat</code> block has two inputs: the number 4 and the script
 <img alt="move, turn" src="/bjc-r/img/prog/subscript.png" /> . 
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

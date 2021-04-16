@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>What Is Pascal's Triangle?</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Perhaps you remember this picture from a high school math class:</p>
 <p align="center">1<br />
 1&nbsp;&nbsp;1<br />
@@ -43,5 +59,10 @@
 <p align="left">The numbers in Pascal's triangle turn up in several different mathematical contexts. In algebra you probably studied the <em>binomial expansion </em>that expresses (<em>a</em>+<em>b</em>)<sup><em>n</em></sup> in terms of powers of <em>a</em> and <em>b</em> using numbers from the <em>n</em>th row:</p>
 <p align="center">(<em>a</em>+<em>b</em>)<sup><em>5</em></sup> = <strong>1</strong><em>a</em><sup><em>5</em></sup> + <strong>5</strong><em>a</em><sup>4</sup><em>b</em> + <strong>10</strong><em>a</em><sup>3</sup><em>b</em><sup>2</sup> + <strong>10</strong><em>a</em><sup>2</sup><em>b</em><sup>3</sup> + <strong>5</strong><em>a</em><em>b</em><sup>4</sup> + <strong>1</strong><em>b</em><sup>5</sup></p>
 <p align="left">In the study of <em>combinatorics, </em>numbers from Pascal's Triangle tell you how many ways you can choose <em>column</em> items from a set of <em>row </em>items. For example, if you want to choose two people from  Adele, Brian, Cindy, David, Evelyn, and Frank, there are 15 (row 6, column 2) ways to do it: Adele and Brian, Adele and Cindy, ... Evelyn and Frank.</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

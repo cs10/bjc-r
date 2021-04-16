@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-<script src="/bjc-r/llab/loader.js"></script><title>Linear-Time</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Linear-Time</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,6 +19,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>&nbsp;&nbsp;&nbsp;&nbsp;You may have noticed that if you increased <code>max</code> by a factor of two, then the computer took approximately twice as much time to fill the <code>numbers</code> list.&nbsp; Similarly, if you increased <code>max</code> by a factor of ten, then the computer took approximately ten times as much time; if you increased <code>max</code>
 by a factor of 100, then the computer ran approximately 100 times
 longer.&nbsp; In general, as we scale the size of the input by a
@@ -19,4 +35,9 @@ amount.&nbsp; We call these algorithms <strong>linear-time</strong> algorithms, 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Why is the algorithm a linear-time algorithm?&nbsp; When <code>max</code> was set to <code>20</code>, we had to add 20 numbers to the <code>numbers</code> list; when <code>max</code> was set to <code>40</code>, we had to add 40 numbers to the number list.&nbsp; In other words, as we scaled <code>max</code>, we also scaled how many numbers we had to add to the <code>numbers</code>
 list by the same amount.&nbsp; Linear-time algorithms are also much
 sought-after in computer science, and for many problems, they are the
-fastest algorithms you can find.</p>   </body></html>
+fastest algorithms you can find.</p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

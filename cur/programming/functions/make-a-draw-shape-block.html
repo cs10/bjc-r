@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Make a draw shape Block</title>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Make a draw shape Block</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 		Now, you are going to make a block that takes two inputs.  We want to create a <code>draw shape</code> block that takes a number of sides and a number of pixels for the length of each side.  We will call these input arguments <code>n</code> and <code>pixel</code>.  This exercise should be done with a partner, so introduce yourself to your neighbor and get started on the exercise together!
 
 		<br>
@@ -31,5 +47,10 @@
 		<br>
 		<br>
 		Unfortunately, the size of the text field where you can type in the name of the block (and any %input shortcuts) is limited. If you find yourself running out of room, we recommend that you just name the block and use the plus signs later to add inputs.
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

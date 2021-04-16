@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Build A Maze</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Here's a solution to our <code>create object</code> block; you'll see that we abstracted the drawing routine as its own block.</p>
 <p><img src="/bjc-r/img/hof/board-create-object.png" alt="solution to create object block" /></p>
 <p><img src="/bjc-r/img/hof/board-draw-object.png" alt="solution to draw object block" /></p>
@@ -42,5 +58,10 @@
 <p>Sometimes it's tempting to use several <img src="/bjc-r/img/hof/touching.png" alt="touching block" /> to check if the <code>Player</code> sprite itself is touching another object or color on the stage. Sometimes it's useful to use one of these, but in general, they're <b>really slow!</b></p>
 <p>Imagine if instead of moving in discrete steps and checking the item on the board at our position, we had a separate "forever if touching" script for each type of object we want to detect! This lead to repetitive code, AND each "forever if touching" really eats away at our speed.</p>
 <p>Board representations can make games much more playable by allowing us to avoid all of this!</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

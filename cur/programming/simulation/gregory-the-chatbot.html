@@ -2,11 +2,19 @@
 <html>
     <head>
         <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>
             Gregory the Chatbot
         </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
         <p>
             Artificial intelligence is one of the most exciting fields in computer science, featuring heavily in science fiction and present in everything from GPS systems to children's toys. Today we'll see some strategies used to attempt artificial intelligence and work with programming a classic artificial intelligence program.
@@ -28,5 +44,10 @@
         <p>
             One way suggested to measure self-awareness is the Turing test, in which a machine is tested to see if it can pass as a human in a conversation. The AI we'll be working with, Gregory, is a simplified version of a classic Turing test-taker, ELIZA. ELIZA and many other AIs work by storing a history of a conversation and manipulating syntax patterns in the conversation to simulate speech. Gregory works by first creating lists of keywords, taking an input from the user, then reacting to keywords (or a lack of keywords), with appropriate responses. One of the reasons why ELIZA and Gregory are successful at being undetected is that they tend to respond with questions, as they are designed to mimic Rogerian psychologists�they don't answer questions. Thus, they can't be caught because of their ignorance of some common human knowledge�i.e. �How many feet do birds have?� FYI, Gregory was named that because its reaction to profanity is to quote the TV show House M.D. Try out Gregory and see if you can figure out how it works. Also feel free to debate whether �it� is a �he;� the anthropomorphization of computer programs was one of ELIZA's creator's great fears, because to him, the idea that computers could be human or almost-human also implied the opposite�that humans could be viewed as a certain type of computer.
         </p>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

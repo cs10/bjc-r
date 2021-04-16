@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Base Case and Recursive Case</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Base Case and Recursive Case</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,15 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body><div style="text-align: center;">
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+<div style="text-align: center;">
   <div style="text-align: left;">For our <code>tree</code> block, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the end of this page.<br><ul>
       <li>We always need a way to figure out that we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
       <li>If this isn't the base case we think to ourselves "Woah &#8212; That seems complicated. I'll just do a small part of the problem and delegate to someone else". Here's what we do:<br></li>
@@ -30,4 +46,9 @@
     <p>2. Sometimes you can make a recursive procedure more elegant by having a smaller base case. In our <code>tree</code> program, what would a &quot;zero level&quot; tree mean? Try rewriting <code>tree</code> so that the base case is <code>level=0</code>.</p>
 
     
+      </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
   </body></html>

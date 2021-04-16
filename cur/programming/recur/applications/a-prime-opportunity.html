@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Background</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Background</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,15 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body>A <a href="http://en.wikipedia.org/wiki/Prime_numbers">prime number</a> is defined as a natural number that has exactly two distinct natural number divisors (1 and itself). They have a number of mathematical uses, and are also very important to modern encryption techniques.<br><br><div style="text-align: center;"><span style="font-weight: bold;">The First 16 Primes:</span><br></div><br><table border="1" align="middle" width="100%"><tbody><tr><td width="25%" valign="top">2<br></td>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+A <a href="http://en.wikipedia.org/wiki/Prime_numbers">prime number</a> is defined as a natural number that has exactly two distinct natural number divisors (1 and itself). They have a number of mathematical uses, and are also very important to modern encryption techniques.<br><br><div style="text-align: center;"><span style="font-weight: bold;">The First 16 Primes:</span><br></div><br><table border="1" align="middle" width="100%"><tbody><tr><td width="25%" valign="top">2<br></td>
     <td width="25%" valign="top">3<br></td>
     <td width="25%" valign="top">5<br></td>
     <td width="25%" valign="top">7<br></td>
@@ -41,4 +57,9 @@
 </ul>This can be an intimidating problem if tackled as a whole. Try breaking it up into multiple sub-problems (one potential sub-problem: filling a list with the numbers from 2 to Y) and solving those individually. Some things to consider:<br><ul><li>Use a list to hold all of the numbers that haven't been ruled out as you process them. Start off by adding all of the numbers between 2 and Y to this list. <br></li>
   <li>The sieve technique will only allow you to determine primes between 2 and Y -- you cannot adjust the lower boundary directly. You will have to do this as an additional step.</li>
   <li>Not <span style="font-style: italic;">every</span> block has to be recursive.<br></li>
-</ul></body></html>
+</ul>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

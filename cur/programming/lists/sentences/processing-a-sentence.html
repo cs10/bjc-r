@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Processing a Sentence</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Processing a Sentence</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,6 +17,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
 The pattern of using an index variable to process a bunch of values is pretty common in programming, and is not specific to lists alone!  The block on the left below is the one that we used to say all of the names in our player list.  The block on the right can be used to say all of the letters in a sentence like <code>Go Bears!</code>.
 
@@ -25,4 +41,9 @@ There are striking similarities between the two scripts, and so we should be abl
 <li>Say a range of letters, using either a <code>repeat until</code> or a <code>repeat</code> block.
 </li></ul>
 
-Often, when writing a script, if we have already written a similar script for another purpose or data structure, we can either modify the script for the new functionality, or we can create a more general function that can be used for both purposes.  Do as many exercises as you need, until you feel really comfortable with this general pattern of code, because it is very common.   </body></html>
+Often, when writing a script, if we have already written a similar script for another purpose or data structure, we can either modify the script for the new functionality, or we can create a more general function that can be used for both purposes.  Do as many exercises as you need, until you feel really comfortable with this general pattern of code, because it is very common.       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

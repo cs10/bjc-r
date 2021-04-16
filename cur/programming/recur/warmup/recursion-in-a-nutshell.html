@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Recursion in a Nutshell</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Recursion in a Nutshell</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,6 +17,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
 We have spent the last couple of labs learning about recursion.  You have probably realized that the technique for <em>writing</em> recursive blocks is relatively straightforward, although the body of the block can be a bit tricky to figure out until you have gotten enough practice, or have worked through several examples of what the block should do.
 
@@ -25,4 +41,9 @@ The process for writing recursive functions can be summarized in a few steps:
 </ul></li><li><strong>Choose a more complicated example.</strong> Continuing our work on the factorial problem, we will consider <img border="0" title="Factorial of 10" alt="Factorial of 10" src="/bjc-r/img/recur/factorial-of-10.png" >.  We could choose any number here: 3, 5, 100, 24481, as long as it is not the base case.  Hint: sometimes choosing values right next to the base case (2, in this case) makes it harder to detect the relationship in step 3, but any value outside of the base case will do.</li>
 
 <li><strong>Consider an example that is <em>slightly simpler</em> (closer to the base case) than the complicated example.</strong> <img border="0" title="Factorial of 9" alt="Factorial of 9" src="/bjc-r/img/recur/factorial-of-9.png"  between solutions, which is a pivotal point in writing a recursive function. In this case, 10! = 9! * 10, which shows a clear relationship that we can represent in BYOB.</li>
-</ol></body></html>
+</ol>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Countdown</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Countdown</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,5 +16,18 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body>We want to make the character count down from any number. Here we're going to discuss how we would write the following block that counts down from a number to zero.<br><img border="0" src="/bjc-r/img/prog/say-numbers-block-BYOB.gif" alt="There should be an image here" title="There should be an image here" ><br><br>We discussed that we always need a base case. We can think of the base case as when the program is asked to do something SO simple, that it doesn't need to delegate at all. It knows how to do it all by itself. If x is less than 1, we've got that kind of simple case. If x is less than 1 we've decided to just say 0 and be done! <br><ul><li>NOTE: Whenever you write a recursive procedure, make sure you have a base case! Even experienced programmers will forget - so always double-check!<br></li>
-</ul><img border="0" src="/bjc-r/img/recur/say-numbers-base-case-BYOB.jpg" alt="There should be an image here" title="There should be an image here" ><br><br><br></body></html>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+We want to make the character count down from any number. Here we're going to discuss how we would write the following block that counts down from a number to zero.<br><img border="0" src="/bjc-r/img/prog/say-numbers-block-BYOB.gif" alt="There should be an image here" title="There should be an image here" ><br><br>We discussed that we always need a base case. We can think of the base case as when the program is asked to do something SO simple, that it doesn't need to delegate at all. It knows how to do it all by itself. If x is less than 1, we've got that kind of simple case. If x is less than 1 we've decided to just say 0 and be done! <br><ul><li>NOTE: Whenever you write a recursive procedure, make sure you have a base case! Even experienced programmers will forget - so always double-check!<br></li>
+</ul><img border="0" src="/bjc-r/img/recur/say-numbers-base-case-BYOB.jpg" alt="There should be an image here" title="There should be an image here" ><br><br><br>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

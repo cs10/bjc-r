@@ -2,9 +2,21 @@
 <html>
 	<head>
 		<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 		<title>Algorithmic Bias and the Moral Machine</title>
 	</head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 		<h2>Building a Decision-Making Algorithm</h2>
 		<p>
 			During this activity, which is largely based off the <a href="https://medium.com/bucknell-hci/the-ethical-engine-integrating-ethical-design-into-intro-to-computer-science-4f9874e756af">Ethical Engine</a> created by Professor Evan Peck at Bucknell University, you will be making a decision-making algorithm for the Moral Machine. We have started you off with some <a href="/bjc-r/cur/social-context/misc/moral-machine/moral-machine.zip">starter code</a>. First, download the folder and unzip it on your computer.
@@ -58,5 +70,10 @@
 		<p class="alert alert-success quoteGreen"> 
 			Given this information, fill out <code>engine.py</code> to decide who the car should save in ANY scenario given to it. Try to make your algorithm as objective and fair as possible. To see your algorithm in action, run <code>python3 main.py</code>.
 		</p>
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

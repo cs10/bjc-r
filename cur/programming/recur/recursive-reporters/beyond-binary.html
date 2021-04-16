@@ -2,10 +2,18 @@
 <html>
 <head>
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <meta charset="utf-8" />
 <title>Beyond Binary</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Here's our solution:</p>
 <p><img src="/bjc-r/img/recur/reporters/tobinary.png" alt="decimal-&gt;binary" /></p>
 <p>The base case is that the number fits in a single bit—that is, it has to be less than 2. If so, the number itself, 0 or 1, is the desired output.</p>
@@ -33,5 +49,10 @@
   <p>☞ Write the inverse function <code>from base</code> that takes a (text) string of digits and a base as inputs, and reports the corresponding number (which Snap<em>!</em> will show in decimal, of course, but you're converting to a <em>number, </em>not to a string of digits). Again, bases above ten are optional.</p>
   <p><img src="/bjc-r/img/recur/reporters/frombase.png" alt="frombase" /></p>
 </blockquote>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

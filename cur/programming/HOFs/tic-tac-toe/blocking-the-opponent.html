@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Blocking the Opponent</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Blocking the Opponent</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,10 +16,23 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> Now that you've made a block to allow the computer to win, you must now make a block to block the computer's opponent winning move. You made something like this before! You don't have to go through the complicated process of finding triples that have two of the opponent's letter piece and none of the computer's piece - it's already done for one way. <br><br> By using the i-can-win? block, make a <i>opponent-can-win?</i> block that takes a list of triples and a piece as inputs and returns the square that the computer should block. If there isn't, return false.
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ Now that you've made a block to allow the computer to win, you must now make a block to block the computer's opponent winning move. You made something like this before! You don't have to go through the complicated process of finding triples that have two of the opponent's letter piece and none of the computer's piece - it's already done for one way. <br><br> By using the i-can-win? block, make a <i>opponent-can-win?</i> block that takes a list of triples and a piece as inputs and returns the square that the computer should block. If there isn't, return false.
 <p></p>
 <div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/opponent-can-win-block.png" ></div>
 <p>&nbsp;</p>
 <p></p>
 <div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/opponent-can-win-block2.png" ></div>
-<p></p>   </body></html>
+<p></p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

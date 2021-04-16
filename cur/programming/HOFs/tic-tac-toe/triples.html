@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Triples </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Triples </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,11 +16,24 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> When we look at a tic-tac-toe board, we look at each row, column, and diagonal. Essentially the question is "are there three squares in a line that contain two pieces that are mine with one square empty?" In fact nothing really matters about the game besides the potential winning combinations.
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ When we look at a tic-tac-toe board, we look at each row, column, and diagonal. Essentially the question is "are there three squares in a line that contain two pieces that are mine with one square empty?" In fact nothing really matters about the game besides the potential winning combinations.
 <p> There are eight winning combinations in tic-tac-toe. By looking at our previous board: </p>
 <p></p>
 <div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/tic-tac-toe-board.png" ></div>
 <p> We can then make a list of all its winning combinations, or <span style="font-weight: bold;">triples</span> for short. </p>
 <p></p>
 <div style="text-align: center;"><img border="0" title="There should be an image here" src="/bjc-r/img/hof/ttt-8-lists.png" ></div>
-<p> Take a minute to convince yourself that this list is all you need to know about the corresponding board position. Once the strategy finds the triples for a board position, it never needs to look back at the original position again.</p>   </body></html>
+<p> Take a minute to convince yourself that this list is all you need to know about the corresponding board position. Once the strategy finds the triples for a board position, it never needs to look back at the original position again.</p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

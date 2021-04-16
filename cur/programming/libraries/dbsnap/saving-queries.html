@@ -1,9 +1,21 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Saving Your Queries</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Saving Your Queries</title><!-- Global site tag (gtag.js) - Google Analytics -->
 <!-- Lab Written by AI Michelle Cheung Fall 2020. Edited by AI Yishu Chao. -->
 
 </head>
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
     <h3>Saving Your Queries</h3>
     <li><b>Important note when saving:</b> Do this every time you make a query. The web application can only save one query at a time. This is different from Snap! where multiple different connected blocks can exist at once in your workspace. This means after every exercise, you should save your query as either a view or a file if you want to keep a version of it. Otherwise, to remember what you did you can just take a screenshot. To screenshot on a Mac you can press <i>Command-Shift-4</i> and drag over the area you want to take an image of. On Windows, you can use the Snipping Tool. </li>
     <li><b>Save each query as a view (Optional).</b> Make sure the query result and node result is what you want. Saving a view will essentially make a block that shows the result of the query. However, it will not show what blocks you used to make it. Once you make a view, the block will automatically appear in your data sets palette.</li>
@@ -17,4 +29,9 @@
     <li>Simply press the <b><u>import query</u></b> button and choose the according .dbs file that was saved to your Downloads folder.</li>
     <p><img src="/bjc-r/img/dbsnap/import_query.png" alt="import query" /></p>   
     
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>

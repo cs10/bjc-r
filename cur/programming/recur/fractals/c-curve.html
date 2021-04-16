@@ -2,10 +2,18 @@
 <html>
 	<head>
 		<!-- put the following in exactly -->
-		<script src="/bjc-r/llab/loader.js"></script><title>C-Curve</title>
+		<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>C-Curve</title>
 		
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </script>
 </head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 		We can make very, very complex images by just repeating the same shape multiple times. You'll be writing the recursive function to draw the c-curve. Below the base case is that the sprite draws a single line. The sprite starts facing right and faces right at the end. This fractal also does not return to the same place between recursive calls. The base case has the sprite start on the left and go to the right. (Hint - the direction that the sprite points at the end is important! It should point in the same direction it did at the beginning of the recursive call.)<br>
 		<div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/c-curve-level0.gif" >
 			<br>
@@ -64,5 +80,10 @@
 			<img border="0" src="/bjc-r/img/recur/c-curve-level11.gif" alt="There should be an image here" title="There should be an image here" >
 			<br>
 		</div>
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

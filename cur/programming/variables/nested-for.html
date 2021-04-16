@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <!-- put the following in exactly --><script type="text/javascript" src="../../../llab/loader.js"></script>
+      <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
       <title>Nested FORs</title>
       
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </script>
 </head>
    <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
    <p>The ability to change the name of the <code>for</code> variable isn't just to make your program self-documenting, although that would be a good reason by itself. But changing the variable name is crucial for <em>nesting </em><code>for</code> blocks, like this:</p>
    <p><img src="../../../img/prog/pentastar-script.png" alt="pentastar script"> <img src="../../../img/prog/pentastar.png" alt="pentastar"></p>
    <p>The overall structure of this picture is an invisible (because the pen is up while it's traced out) pentagonal spiral. Here are the last few sides of that spiral:</p>
@@ -25,5 +41,10 @@
    <p>Predict what the following script will do before you try it. (Write down everything it will say, in the right order.)</p>
    <p><img src="../../../img/prog/sayjoinfor.png" alt="sayjoinfor"></p>
    <p>Optional open-ended problem: We've been drawing spirals by repeating a <code>move</code>-and-<code>turn</code> sequence with a varying <code>move</code> length and a constant <code>turn</code> angle. What kinds of pictures will you get if you use a constant <code>move</code> and a varying <code>turn</code>? Don't decide too quickly that you've exhausted the possibilities; you can get an infinite variety of shapes! (And draw at least 300 repetitions in each experiment.)</p>
-   </body>
+       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

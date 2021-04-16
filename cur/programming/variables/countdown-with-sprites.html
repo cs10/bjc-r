@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Countdown with Sprites</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Countdown with Sprites</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,20 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> Often, we want to display text or numbers on the screen without using the <code>say</code> block. We have written a program that displays one number based upon a variable named <code>digit</code>. You can download the program <a title="Digital display" href="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab02/DigitalDisplay.sb">here</a>. You should modify this program to work for five digits! (Initially, however, you may want to start by modifying it just to work with two digits.) 
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ Often, we want to display text or numbers on the screen without using the <code>say</code> block. We have written a program that displays one number based upon a variable named <code>digit</code>. You can download the program <a title="Digital display" href="http://veritas.eecs.berkeley.edu/courses/file.php/17/Images/Lab02/DigitalDisplay.sb">here</a>. You should modify this program to work for five digits! (Initially, however, you may want to start by modifying it just to work with two digits.) 
 <h2>How does the original code work?</h2> We have created a <code>MyDigit</code> sprite with ten different costumes, one for each digit, as shown below. Costume 1 corresponds to the digit <code>1</code>, costume 2 corresponds to the digit <code>2</code> and so on. Costume 10 corresponds to the digit <code>0</code>. Each costume has a name (for example, <code>one</code>, as shown circled in yellow) and a number (for example, <code>1</code>, as shown circled in red). <br><br><div style="text-align: center;"><img border="0" title="Digital display" alt="Digital display" src="/bjc-r/img/prog/Digit-Costumes-BYOB.jpg" ><br></div> <br> When we use the <code>switch to costume</code> block, we can specify either the name or the costume number. In the script below, we use the costume number (1-9) to set the costume unless the digit is 0. If the digit is 0, we cannot just tell it to switch to costume 0 (because there is no costume 0), so we have to use the name of the costume (<code>zero</code>). 
 <div style="text-align: center;"><img border="0" src="/bjc-r/img/prog/digit-display-code-BYOB.gif" alt="Example script using 'switch to costume'" title="Example script using 'switch to costume'" >&nbsp;</div> 
-<h2><br></h2>    </body></html>
+<h2><br></h2>        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

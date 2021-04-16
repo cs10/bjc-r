@@ -2,10 +2,18 @@
 <html>
    <head>
       <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
       <title>Repeat Until</title>
       
    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </script>
 </head>
    <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
       There is another Snap<em>!</em>  piece that lets us repeat things. It is called "repeat until". Just like REPEAT, it will do everything inside the C-shaped block a certain number of times. Except, before it starts the loop each time, it checks to see if the condition (below x &gt; 5) is true. If this is condition is true, then it will not repeat again. <br><br>
       <div style="margin-left: 40px;"><img border="0" src="/bjc-r/img/prog/simple-while-loop-with-repeat-until-block-BYOB.gif" alt="There should be an image here " title="There should be an image here " ><br><br></div>
       <br>It can be really helpful to keep track of what the variable X is at each point to help us understand how this new piece works. <br>
@@ -29,5 +45,10 @@
       <div style="margin-left: 40px;"><img border="0" src="/bjc-r/img/prog/Tracking-Variables-through-loops-BYOB.jpg" alt="There should be an image here" title="There should be an image here" ><br></div>
       Try to use a chart like the one above to keep track of what happens in the complicated "repeat until" code below. <br><br>
       <div style="margin-left: 40px;"><img border="0" src="/bjc-r/img/prog/while-loop-with-repeat-until-block-BYOB.gif" alt="There should be an image here" title="There should be an image here" ><br></div>
-   </body>
+       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

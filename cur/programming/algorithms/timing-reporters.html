@@ -1,8 +1,16 @@
 <!DOCTYPE html>
 <html><head><!-- put the following in exactly -->
 
-<script src="/bjc-r/llab/loader.js"></script><title>Time is of the Es-sense</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Time is of the Es-sense</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,6 +19,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>&nbsp;&nbsp;&nbsp;&nbsp;We have seen how Snap<em>!</em>  can be used to wait
 for a certain time before reporting anything. Snap<em>!</em>  also allows us to
 do the converse: to report how long a program takes to finish. In the <code>Sensing</code> menu, you will see a reporter called <code>current(date)</code>, which can be used to report the current time in milliseconds: <br><br></p>
@@ -33,4 +49,9 @@ You'll notice that you haven't seen the blocks used in this line of code <img st
 <br>
 <p> Now use the <code>time function</code> block to compare the efficiency of the non-gauss and gauss blocks you created on the previous page. What happens when <code>N</code> is <code>2</code>? If <code>N</code> is <code>10</code>? If <code>N</code> is <code>100</code>? If <code>N</code> is <code>1000</code>? </p>
 
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>

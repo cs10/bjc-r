@@ -3,9 +3,17 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>The Natural Language ToolKit</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
     <p class="alert alert-danger">
             This section provides information regarding how to run nltk. The computers in the lab do not have ntlk and its accompanying libraries installed. The easy way to do go this lab is to either use the python data analysis browser application of <a href="http://wakari.io">wakari.io</a>, or you can download the <a href="https://store.continuum.io/cshop/anaconda/">anaconda program</a>, which installs a full scientific stack of python on a mac.
@@ -97,5 +113,10 @@ Before we go any further, let's make a directory that will hold our python data 
 	<p style="clear:both" class="alert quoteBlue">
 	Depending on whether ntlk books have been downloaded before on the computer you are on, your query may not successfuly complete. If your query doesn't give you some of these books, enter the command <code>nltk.download()</code> This will open a window, or show a command list in your python environment. Go ahead and download the corpora if you would like to play around with it. Otherwise, feel free to skip, as we will build our own corpora.
 	</p>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

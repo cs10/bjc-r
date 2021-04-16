@@ -2,11 +2,19 @@
 <html>
     <head>
         <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>
             Overview
         </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,11 +24,24 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
         Now, we'll attack this problem using Snap<em>!</em>. We will assume that these DNA sequences are strings, like any other words we've used in this course. We will start this problem by defining a superstring. A <i>superstring</i> of a set of strings is any string that contains every string in that set. For example, if we had a set RACAD, DABRA, ADABR, ABRAC, ACADA, one possible superstring is RACADABRAADABRABRACACADA. The <i>shortest superstring</i>, is a superstring that is also as short as possible (the solution for the above set is ABRACADABRA).
         <br>
         <br>
         Basically, we keep combining them, bigger and bigger, like a snowball, until we arrive at the full string. First, we compute overlaps, where ABRA and RACA has 2 overlaps because the RA overlaps. We compute all the pairwise overlaps. We pick the pair with the greatest overlap and combine them into a single string. The above case would have resulted in ABRACA. We repeat this process over and over, until we're left with a single string, which we claim to be the <span style="font-style: italic;">shortest superstring</span>.
         <br>
         <br>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>
