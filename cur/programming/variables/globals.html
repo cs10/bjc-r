@@ -2,9 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Global variables</title><script type="text/javascript" src="../../../llab/loader.js"></script>
+<title>Global variables</title><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -15,6 +23,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Sometimes it's not good enough to remember a value inside one script. Instead, you need the value available everywhere in your project.  The classic example is the score in a video game; even when no script is running, the score should be remembered.</p>
 <p>There was a time, in the early history of programming languages, when all variables were global. This led to a lot of bugs, because different parts of the program would use the same name for different purposes and erase each others' saved values. So don't use global variables as your first choice; think whether a script variable or a <code>for</code> block (which makes a variable local to just that block) would work instead.</p>
 <p>To make a global variable, you must go to the Variables palette and click on the <code>Make a variable</code> button (not a block -- you can't put it into a script!):</p>
@@ -25,5 +41,10 @@
 <p>The checkbox to the left of the variable block determines whether or not the value of the variable is displayed on the stage. The variable <em>watcher </em>(which is what that display is called) can be useful for debugging, or can be displayed permanently so that the user of your project can see the score, or whatever you have in the variable. By right-clicking on the watcher, you can change the format in which it appears on the screen.</p>
 <p>Try this: Experiment with using a <em>slider</em> watcher to change the value of a numeric variable.</p>
 <p>When you make a global variable, you also get a &quot;Delete a variable&quot; button that can be used for the obvious purpose.☺</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

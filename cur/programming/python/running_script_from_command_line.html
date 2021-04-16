@@ -2,9 +2,17 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>Running a script from the Command Line</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,6 +22,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
     	<p>
     		In today's lab, you've seen how to run python from the command line (also known as a shell) via the interpreter; however, we can also write our code in a separate text file, which we can save and then run from the command line. This is how most people create python programs.  However, before we can start writing more Python, you'll need to learn a few shell commands.
     	</p>
@@ -74,5 +90,10 @@ Alonzos-MacBook:PythonLab1 alonzo$
 				</p>
 			</li>
 		</ol>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

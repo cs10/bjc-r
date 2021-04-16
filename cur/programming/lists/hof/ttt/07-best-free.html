@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Best Free Square</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>It's time to write the fallback rule: If none of the other rules apply, then take the center square if it's free, or a corner square if one of those is free, or an edge square if necessary.</p>
 <p>Take a moment to think about how to write this. You <em>could </em>do it this way:</p>
 <blockquote>
@@ -25,5 +41,10 @@
 <p>This rule takes the position as input, rather than the triples, because we've given up on finding potential winning or losing combinations if all those rules failed. Now we just want a square, and it's easier to find it in a simple ordered list of squares. Don't forget, though, that free squares in the position are represented as <code>_</code> rather than as a number.</p>
 <p>We suggest <code>for each item</code> as the easiest way to do this.</p>
 <p>This is the end of the required part of the project. You now have a procedure that plays a pretty good, but not perfect, tic-tac-toe strategy. Be sure to test your program thoroughly, on several board positions with different configurations of possible wins and losses. Then go on to the next screen.</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

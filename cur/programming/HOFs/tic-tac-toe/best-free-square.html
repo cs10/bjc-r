@@ -2,11 +2,19 @@
 <html>
     <head>
         <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>
             Best Free Square
         </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,6 +25,14 @@
 </head>
 
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
         There won't always be a move where you can win or block an opponent's winning move.
         So now we want to make sure that the computer will take the best free square. For example,
         it's always good to take the middle square (5) first when playing the game; if that's taken,
@@ -33,5 +49,10 @@
                 <br>
             </div>
         </div>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

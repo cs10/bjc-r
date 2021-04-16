@@ -2,8 +2,16 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<script src="/bjc-r/llab/loader.js"></script><title>Blocks and Scripts</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Blocks and Scripts</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,6 +22,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Snap<em>!</em> is a programming language -— a notation in which you can tell a computer what you want it to do.  Unlike most programming languages, though, Snap<em>!</em> is a <em>visual </em>language; instead of writing a program using the keyboard, the Snap<em>!</em>  programmer uses the same drag-and-drop interface familiar to computer users.
 <p>Start Snap<em>!</em>. You should see the following arrangement of regions in the window:</p>
 <img alt="Snap palette, scripting area, stage, etc" width="80%" style=center src="/bjc-r/img/sys/snapwindow.png" />
@@ -25,5 +41,10 @@
 <p><img alt="blocks snapping together" src="/bjc-r/img/prog/clicktogether.png" />
 <p>The white horizontal line is a signal that if you let go of the green block it will snap into the gold one.
 <p>If you haven't already done so, make the script in the picture above, then find and click the green flag and see what happens.
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

@@ -3,10 +3,22 @@
 <head>
     <meta charset="utf-8" />
     <script src="/bjc-r/llab/loader.js"></script>
-    <script type="text/javascript" src="//latex.codecogs.com/latexit.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
+    <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
     <title>How Long Does This Computation Take?</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -17,6 +29,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
     <p>Here's our solution:</p>
     <p><img src="/bjc-r/img/recur/reporters/pascal-script.png" alt="pascal script" /></p>
     <p>If the desired position is at the left (<code>column=0</code>) or the right (<code>column=row</code>) end of a row, then the value is 1. That's the base case. In the recursive case, the desired value is the sum of two values in the previous row (the two recursive calls).</p>
@@ -47,5 +67,10 @@
     </blockquote>
     <p>The rest of you might remember from your earlier exposure to Pascal's Triangle that there's a <em>formula </em>to compute the numbers in the table:</p><div align="center" lang="latex"> {_nC_r} = \dfrac{n!}{r!(n-r)!}</div></p>
     <p>This can be computed, without using recursion at all, in a time proportional to the row number <em>n</em>. The moral: An ounce of math is worth a pound of computer science, sometimes.</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Tracing a More Complicated Recursive Program</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Tracing a More Complicated Recursive Program</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,11 +16,24 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body>Below is a small variation to the "say the numbers" program we were just working with. Except this one changed the order of the two lines in the recursive case (see the order of the blocks in the else case). This is more complicated because the function delegates (makes a recursive call) and then when the recursive call returns we still have more blocks to run. Before you start - run this program and compare it to the result of the last program. <br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-code-BYOB.gif"  replaced by the actual value.<br></li>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+Below is a small variation to the "say the numbers" program we were just working with. Except this one changed the order of the two lines in the recursive case (see the order of the blocks in the else case). This is more complicated because the function delegates (makes a recursive call) and then when the recursive call returns we still have more blocks to run. Before you start - run this program and compare it to the result of the last program. <br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-code-BYOB.gif"  replaced by the actual value.<br></li>
   <li>The black arrows show "delegation" to another COPY of the function (i.e. a recursive call)<br></li>
   <li>The white arrows show the return of control to the calling function. The caller had another line after the recursive call, so those are executed at the time indicated by the white arrow. Therefore the numbers will be said in the opposite order! <br></li>
   <ul><li>The first "say" block that is executed is in the COPY of the function where x = 0. <br></li>
     <li>Then that function returns to the COPY of the function where x = 1 and we say 1<br></li>
     <li>Then that function returns to the COPY of the function where x = 2 and we say 2<br></li>
     <li>Then that function returns to the COPY of the function where x = 3 and we say 3<br></li>
-  </ul></ul><br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-recursion-trace-BYOB.jpg" ><br></body></html>
+  </ul></ul><br><br><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/recur/reverse-say-number-recursion-trace-BYOB.jpg" ><br>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

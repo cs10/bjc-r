@@ -2,11 +2,19 @@
 <html>
     <head>
         <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>
             Ecosystem Equilibrium
         </title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
         Natural ecosystems are often incredibly sensitive to change, such as the introduction or removal of a species. A healthy ecosystem is said to be <span style="font-style: italic;">in equilibrium</span>, which is a relatively stable state that keeps population sizes within a sustainable range (not too many of a certain species alive or dead). Consider the case of bears (who only eat fish) and salmon (who are only hunted by bears):
         <br>
         <ul>
@@ -137,5 +153,10 @@
                 The population model (<code>rules</code>) can be assigned by adding new blocks to each species' <code>rules</code> list.  You can add as many rules as you like. Try reading through the rules -- it should be fairly straightforward what each rule is doing, and comments have been provided as well.
             </li>
         </ol>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

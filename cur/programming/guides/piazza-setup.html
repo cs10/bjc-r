@@ -1,9 +1,17 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
         <title>Introduction to Piazza</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 	<h1>Introduction to Piazza and Discord</h1>
 	<p>
 	    In this course, we will be using Piazza an online discussion forum. We automatically enroll everyone on <a href="https://piazza.com/berkeley/fall2020/cs10/home">CS10's Piazza</a>, however if you join the class late, you need to add yourself <a href="https://piazza.com/berkeley/fall2020/cs10">ENROLL HERE</a>. Piazza is a forum for you to discuss with your fellow classmates things that you have questions about. 
@@ -58,5 +74,10 @@
 		  This semester, we will also be using Discord to facilitate labs. <a href="https://docs.google.com/document/d/1t1Ucw0VGKaB9pEb_H533pvCjfiiQaHsAHg--JW5tYdk/edit">HERE</a> is a doc to help you get started with Discord, as well as get you into the CS10 server.
 	  </p>
 
-   </body>
+       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

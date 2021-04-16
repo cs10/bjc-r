@@ -2,6 +2,10 @@
 <html>
 <head>
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Go Bears!</title>
 <style type="text/css">
 wrong {
@@ -12,7 +16,11 @@ wrong {
 }
 </style>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -23,6 +31,14 @@ wrong {
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Without trying this in Snap<em>!</em> , try to answer the following question: <br />
   <br />
 What does the following set of scripts do when you click on the <code>When I receive Turn1</code> script? </p>
@@ -54,5 +70,10 @@ Here, we see an <em>infinite loop,</em> or a never-ending loop. Whenever this ha
 <p>Why does this happen? Well, when you click on the <code>When I receive Turn1</code> script, the sprite says <code>Go</code> for two seconds, and then broadcasts a <code>Turn2</code> message.
 
 <p>If there is any character that has a script that responds to the <code>Turn2</code> message, it will perform that script. In this case, the same sprite has a script that responds to the <code>Turn2</code> message, and so it will run the corresponding script. It says <code>Bears!</code> and then broadcasts a <code>Turn1</code> message. But, it also has a script that responds to the <code>Turn1</code> message, which in turn sends a <code>Turn2</code> message, and so on. This continues until the scripts are forced to stop. 
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

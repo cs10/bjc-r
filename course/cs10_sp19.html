@@ -4,10 +4,22 @@
       <title>CS10 Labs | Spring 2019 | UC Berkeley </title>
 
       <!-- keep these libraries for any bjc course you write, add others as necessary -->
-      <script src="/bjc-r/llab/loader.js" type="text/javascript"></script>
+      <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
   </head>
 
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
       <p>
         This is the CS10 version of The Beauty and Joy of Computing course during
         Spring 2019.
@@ -126,5 +138,10 @@
               <a href="/bjc-r/topic/topic.html?topic=berkeley_bjc/additional-videos-reading.topic">Additional Videos and Readings</a>
           </div>
       </div>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

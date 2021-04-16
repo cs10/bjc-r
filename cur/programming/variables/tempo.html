@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Tempo</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Tempo</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,9 +17,22 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>But it doesn't have to be so difficult to change the speed of a song! We can keep track of a variable that we will call "tempo" that will change how long 1 beat is. </p>
 <p>In the sounds tab find the tempo block and select the check box next to "tempo" so that you can see the value of the variable "tempo" on the stage.</p>
 <div style="margin-left: 80px;">
   <p><img border="0" title="tempo blocks" alt="tempo blocks" src="/bjc-r/img/sys/tempo-blocks.png" ></p></div>
 <p>Now double-click on the tempo blocks and see how the variable tempo changes!</p>
-<p>Make a song and change the tempo.. <br></p>   </body></html>
+<p>Make a song and change the tempo.. <br></p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

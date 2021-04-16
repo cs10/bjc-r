@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Drawing the board (not the pieces)</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Drawing the board (not the pieces)</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,15 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body>We want to be able to draw rectangles for a board given the number of columns and rows and the range of x and y values that the board should cover. In this step you're going to make the following block that does just that. Notice below that both examples draw in the same range, but there are different numbers of rows and columns in each. <br><br><div style="margin-left: 40px;"><img border="0" title="GameBoard" alt="GameBoard" src="/bjc-r/img/prog/draw-board-4-by-8-block-BYOB.gif" ><br></div>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+We want to be able to draw rectangles for a board given the number of columns and rows and the range of x and y values that the board should cover. In this step you're going to make the following block that does just that. Notice below that both examples draw in the same range, but there are different numbers of rows and columns in each. <br><br><div style="margin-left: 40px;"><img border="0" title="GameBoard" alt="GameBoard" src="/bjc-r/img/prog/draw-board-4-by-8-block-BYOB.gif" ><br></div>
 <div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/game-board-4-by-8-on-stage-BYOB.jpg" ><br></div>
 <div style="margin-left: 40px;"><img border="0" title="There should be an image here" alt="There should be an image here" src="/bjc-r/img/prog/game-board-8-by-4-on-stage-BYOB.jpg" ><br></div>
 <div style="margin-left: 40px;"><img border="0" title="Draw rectangle" alt="Draw rectangle" src="/bjc-r/img/prog/draw-rectangle-block-BYOB.gif" ><br><br></div>The variables that we used to make this were rather complicated. <br><br>Input to the function:<br><ul><li>width - number of columns desired</li>
@@ -21,4 +37,9 @@
   <li>pixel width - the total number of pixels between y1 and y2<br></li>
   <li>square height - the height (in pixels) of the game board squares<br></li>
   <li>square width - the width (in pixels) of the game board squares<br></li>
-</ul><div style="margin-left: 40px;"><img border="0" title="Block Editor" alt="Block Editor" src="/bjc-r/img/prog/draw-board-block-editor-4script-vars-BYOB.gif" ><br><br></div>Go for it! <br></body></html>
+</ul><div style="margin-left: 40px;"><img border="0" title="Block Editor" alt="Block Editor" src="/bjc-r/img/prog/draw-board-block-editor-4script-vars-BYOB.gif" ><br><br></div>Go for it! <br>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

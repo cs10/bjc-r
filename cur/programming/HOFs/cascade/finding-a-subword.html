@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Finding a Subword </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Finding a Subword </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,6 +16,19 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> Make a block "subword" that takes three inputs: a word, a starting position number, and an ending position number. It should report the subword containing only the letters between the specified positions:
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ Make a block "subword" that takes three inputs: a word, a starting position number, and an ending position number. It should report the subword containing only the letters between the specified positions:
 <p></p>
-<div style="text-align: center;"><img border="0" title="Finding the subword of polythene" src="/bjc-r/img/hof/subword-block-call.png" >Hint: Use CASCADE twice.<br><br></div></div>   </body></html>
+<div style="text-align: center;"><img border="0" title="Finding the subword of polythene" src="/bjc-r/img/hof/subword-block-call.png" >Hint: Use CASCADE twice.<br><br></div></div>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

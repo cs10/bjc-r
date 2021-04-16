@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Swap Two List Values</title>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Swap Two List Values</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
 		We want to make a block that swaps two items in a list.  The block takes two numbers, representing positions of items in the list, and the list itself as its inputs; it swaps the positions of those items in the list.
 
@@ -91,5 +107,10 @@
 				for</code>
 			loop, there's no way another part of the program can be relying on an old value. Mutating <em>global</em> variables does have the same risk, though, which is why we've been saying that script variables are a better choice when possible. But a game board is an example of a value that's unavoidably both global and mutable.  We'll go into this further in the next lesson.
 		</p>
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

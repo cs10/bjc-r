@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Interacting With the Board</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Let's start using our board right away! Here's a thought- wouldn't it be cool to be able to draw our board on the stage, and be able to click on squares and use the clicked (row, column) pairs in our code? Imagine, we could build a chess game where you can actually drag the pieces; we could make battleship where we get to place ships on the board with the mouse... there are tons of fun things we could make.</p>
 <p>So first thing's first, we need to actually draw the board. Abstraction is key to programming, so we should write our code such that we can draw <em>any</em> size board!</p>
 <p>Let's define some global variables that we should keep track of and use:</p>
@@ -52,5 +68,10 @@
 <p><img src="/bjc-r/img/hof/full-click-detector.png" alt="basic functioning click detector" /></p>
 
 
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

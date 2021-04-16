@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>A New Structure: "Hash Tables"</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>A New Structure: "Hash Tables"</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,11 +16,24 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body><div>Today's goal is going to be to design a simple search engine that can be used to look for words in a list of quotations. We're going to design our search engine similarly to how Google designed theirs (a topic we'll discuss more soon). As you can probably imagine, search engines need to be able to do things <i>quickly</i> in order to be useful, but the techniques we've learned won't give us the speed we need to build a fast search engine. We're going to need something fast -- no, not just fast. <span style="font-style: italic;">L</span><i>ightning</i> fast. <br></div>
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+<div>Today's goal is going to be to design a simple search engine that can be used to look for words in a list of quotations. We're going to design our search engine similarly to how Google designed theirs (a topic we'll discuss more soon). As you can probably imagine, search engines need to be able to do things <i>quickly</i> in order to be useful, but the techniques we've learned won't give us the speed we need to build a fast search engine. We're going to need something fast -- no, not just fast. <span style="font-style: italic;">L</span><i>ightning</i> fast. <br></div>
 
 <div style="float: right;"><img border="0" src="/bjc-r/img/prog/hash-comparison.png" alt="Hash Comparison" title="Hash Comparison" > </div>
 <h2>[Optional] Information for the Curious</h2>
 <div style="float: right;"><img border="0" src="/bjc-r/img/prog/hash-numbers-example.png" alt="How a Hash Table Works" title="How a Hash Table Works" ></div>
 <p>Hash tables are a tremendous tool for a computer scientist's toolbox because they allow for very quick information storage and retrieval. Hash tables make use of two regular lists: one to store the index data, or <span style="font-style: italic;">keys</span>, and the other to store the data, or <span style="font-style: italic;">values</span>. Each key is paired with its own value and entered at equal points in the two lists (see red highlighted region of image). <br></p>
 <p>When someone wants to know Cleopatra's phone number, it is then possible to move through the list of keys until Cleopatra's name is discovered, then look up the phone number from the list of values with the equivalent index (if Cleopatra's name is stored in slot 4 of the key list, her phone number will be stored in slot 4 of the values list). In reality, it is not necessary to move through the list in order; there is a special technique called <span style="font-style: italic;">hashing </span>(hence the name 'hash tables') that makes it possible to find elements in far less time.<span style="font-style: italic;"></span> We won't go into the details of that technique here, but the combination of hashing with the two lists is what gives the hash table its power.</p>
-<p>Feel free to check out the <a href="http://en.wikipedia.org/wiki/Hash_table" title="Hash tables">Wikipedia article on hash tables</a> for more information.<br></p>   </body></html>
+<p>Feel free to check out the <a href="http://en.wikipedia.org/wiki/Hash_table" title="Hash tables">Wikipedia article on hash tables</a> for more information.<br></p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

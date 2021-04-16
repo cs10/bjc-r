@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Adding a Range of Numbers to a List</title>
+        <!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Adding a Range of Numbers to a List</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
     <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
         Lists have an almost unlimited variety of uses and allow us to do a number of things that we could not do otherwise.  When dealing with mathematical problems, we can often use lists as "memory" to keep track of numbers that are possible solutions to a problem.  A typical example of this sort of situation would involve loading all of the initial possibilities into a list (for example, all of the positive numbers from 1 to 50) and removing items as they are found to be invalid (possibly the numbers that are not evenly divisible by 5, for example).  We can continue to remove numbers from the list of possibilities until all of the restrictions have been enforced, leaving only the solutions to the problem in the list.
 
@@ -23,5 +39,10 @@
 
         <div style="margin-left: 40px;"><img border="0" src="/bjc-r/img/prog/add-numbers-in-range-to-list.png" alt="Block to add numbers between X and Y to a list" title="Block to add numbers between X and Y to a list" >
         </div>
-    </body>
+        </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Improving the Strategy</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>Our strategy up to this point is just so-so. It looks just one move ahead. To play a perfect game, you have to consider the move after that (your own move) and the move after <em>that </em>(the opponent's move).</p>
 <p>The rules we gave you so far are obvious. There's more than one possible way to finish the strategy program, but we'll go through one possible choice for the third rule.</p>
 <h3>Finding a Fork</h3>
@@ -44,5 +60,10 @@
 <p>Instead, take the offensive. Just find a singleton triple (one with one of your letter and the other squares free) and pick either square. That will force the opponent to block.</p>
 <p>However, it's really important to make sure that you don't force your opponent into a square that creates a fork! If that would happen, just choose another singleton triple in which to attack.</p>
 <p>We're not going to go through this rule in any further detail; try it on your own.</p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

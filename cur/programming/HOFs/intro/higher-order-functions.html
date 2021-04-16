@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Higher Order Functions </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Higher Order Functions </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,6 +17,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <b>Higher Order Functions (HOFs)</b> are "higher order" because they are functions that take another function as an input. Here's a silly example just to show what we mean:  The function <b>call-with-5</b> takes a function as input, and reports the value you get by calling that function with the input value 5.  You can use any function as the input:
 
 <p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/call-with-5-examples.png" title="example of a HOF" ></div>
@@ -18,4 +34,9 @@ In this lesson we will mainly use three HOFs that take a function and a list as 
 
 </p><p></p><div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/map-keep-combine-blocks.png" title="picture of HOF blocks in palette" ></div>
 
-<p>Unlike most of the Scratch list blocks, HOFs are all reporters.  If the reported value is a list, it's a newly constructed list; these blocks do <b><i>not</i></b> modify their input lists. This style of programming, in which existing values are not modified, is called <i>functional programming</i>.   </p></body></html>
+<p>Unlike most of the Scratch list blocks, HOFs are all reporters.  If the reported value is a list, it's a newly constructed list; these blocks do <b><i>not</i></b> modify their input lists. This style of programming, in which existing values are not modified, is called <i>functional programming</i>.   </p>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

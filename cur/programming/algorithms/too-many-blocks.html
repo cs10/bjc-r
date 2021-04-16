@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Too Many Blocks!</title>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Too Many Blocks!</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 		<p>
 			There&rsquo;s only one problem with our search project: we&rsquo;ve got three different blocks that all do the same thing (finding a number in a list). That&rsquo;s way more complicated than it needs to be...how could we use abstraction to make this clearer and simpler for others who want to find numbers in a list?
 		</p>
@@ -25,5 +41,10 @@
 		<p>
 			In fact, each of the blocks in Snap<em>!</em> has an algorithm that tells it how to do what it does. Think how much harder it would be to work with Snap<em>!</em> if you had to understand how each block worked before you could use it!
 		</p>
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

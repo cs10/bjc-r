@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Rock, Paper, Scissors</title>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Rock, Paper, Scissors</title>
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -13,6 +21,14 @@
 </script>
 </head>
 	<body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 		For this activity, you will create the <em>Rock, Paper, Scissors</em> game. <h2>Step 1:</h2>
 		<p>
 			First, make a script that makes the cat and the duck say either <code>Rock</code>, <code>Paper</code>, or <code>Scissors</code> when the green flag is pressed.
@@ -32,5 +48,10 @@
 				Add <code>cat score</code> and <code>duck score</code> variables that keep track of how many times each character has won. You can make these variables visible on the stage by clicking on the check-box next to the variable name.
 			</li>
 		</ul>
-	</body>
+	    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>

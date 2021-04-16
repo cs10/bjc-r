@@ -2,9 +2,17 @@
 <html>
   <head>
     <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
     <title>More Dictionary Problems</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -14,6 +22,14 @@
 </script>
 </head>
   <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
     <p>
       In this exercise, we'll expand the idea of Exercise 4.1: Substitute Characters. Imagine that we're given lots of character pairs to replace instead of just one. A dictionary would be a great way to represent all of these character pairs. For example:
     </p>
@@ -72,5 +88,10 @@ python3 autograder.py lab2.py 7.1
     <p>
       Hold up- something's not quite right. The original message wasn't quite recovered. That's because the replacement dictionary didn't have a complete alphabet, so some un-mapped characters ended up getting caught up in the reverse-substituting. If we want a complete encrypt-unencrypt system, we'll need to make sure we map the full alphabet.
     </p>
+      </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
   </body>
 </html>

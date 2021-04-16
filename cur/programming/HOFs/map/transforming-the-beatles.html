@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Transforming the Beatles </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Transforming the Beatles </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,11 +16,24 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> Make a "transform-beatles" block that takes a reporter as an argument, applies it to each of the Beatles (John, Paul, George, Ringo), and returns the result in a sentence. Don't forget to use the "list-&gt;sentence" block, and <i>make sure you use a list</i> in the script that defines this block. Note that transform-beatles does <i>not</i> take a list or a sentence as an input.<br><br> We can use this to "amazify" the Beatles!
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ Make a "transform-beatles" block that takes a reporter as an argument, applies it to each of the Beatles (John, Paul, George, Ringo), and returns the result in a sentence. Don't forget to use the "list-&gt;sentence" block, and <i>make sure you use a list</i> in the script that defines this block. Note that transform-beatles does <i>not</i> take a list or a sentence as an input.<br><br> We can use this to "amazify" the Beatles!
 <p></p>
 <div style="text-align: center;"><img border="0" title="The transform-beatles block" alt="There should be an image here" src="/bjc-r/img/hof/transform-beatles-amazify-block-call.png" ></div>
 <p></p>
 <div style="text-align: center;"><img border="0" title="The amazify block" alt="There should be an image here" src="/bjc-r/img/hof/amazify-block.png" ></div>
 <p>Hint: First write a version of transform-beatles that reports a <i>list of length four</i> in which each element is one transformed Beatle, then modify the definition to turn the list into sentence form.</p>
 <h3>Try another problem<br></h3>
-<p>Now use your transform-beatles block with an input that will cause it to report the sentence "J P G R" -- the initials of the Beatles. </p>   </body></html>
+<p>Now use your transform-beatles block with an input that will cause it to report the sentence "J P G R" -- the initials of the Beatles. </p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html><head>
-<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Do You Have Time to Add?</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Do You Have Time to Add?</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -10,6 +18,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Let us start our timing experiments with
 something simple: how long does it take for a computer to add 1 to (or <em>increment</em>) a number?&nbsp; Replace <code>Hello!</code> in the timing script with an addition operator from the <code>Operators</code> menu, and add <code>1</code> to <code>100000</code>
 (that's five zeros!).&nbsp; Run the script a few times (around four) to
@@ -24,4 +40,9 @@ multiple times (around four) to get an idea of the average approximate
 time (you don't have to be precise).&nbsp; What do you observe? </p>
 <p>&nbsp;&nbsp;&nbsp;&nbsp;Take another huge leap and find out how long
 it (approximately) takes for the computer to increment numbers that you
-progressively scale by 10: <code>160000000</code>, <code>1600000000</code> (that's eight zeros), and maybe <code>16000000000</code> (that's nine zeros).&nbsp; What do you observe?</p>   </body></html>
+progressively scale by 10: <code>160000000</code>, <code>1600000000</code> (that's eight zeros), and maybe <code>16000000000</code> (that's nine zeros).&nbsp; What do you observe?</p>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

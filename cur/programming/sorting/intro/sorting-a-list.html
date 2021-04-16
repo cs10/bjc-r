@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Sorting a List</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Sorting a List</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -9,6 +17,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 
 In the rest of today's lab, we will tackle the problem of sorting a list: we have a list of numbers or letters, and we want to arrange them in a particular order.  We are going to look at one algorithm (out of many!) to sort a list of numbers or words.  Whenever we read a new algorithm, we need to step back and see the Big Picture: what task is this algorithm trying to accomplish, and how is it going to approach this task?  For this new sorting algorithm, the Big Picture is:
 
@@ -48,4 +64,9 @@ Below, we show the algorithm running on a particular list.  Make sure that you u
 <td width="20%" valign="top">Rows 1 through 9 are sorted.<br><img border="0" title="Rows 1 through 9 are sorted." alt="Rows 1 through 9 are sorted." src="/bjc-r/img/list/insertion-sort-list-step6-BYOB.gif" ><br>(<code>762</code> moved up 1 spot into its correct position.)<br></td>
 
 <td width="20%" valign="top">Rows 1 through 10 are sorted.<br><img border="0" title="Rows 1 through 10 are sorted." alt="Rows 1 through 10 are sorted." src="/bjc-r/img/list/insertion-sort-list-step8-BYOB.gif" ><br>(<code>6</code> moved up 9 spots into its correct position.)<br></td>
-</tr></tbody></table></body></html>
+</tr></tbody></table>    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

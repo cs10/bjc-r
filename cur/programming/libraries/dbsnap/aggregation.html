@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Aggregation</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>Aggregation</title><!-- Global site tag (gtag.js) - Google Analytics -->
 <meta charset=“UTF-8”> <!-- for emojis -->
 <!-- Lab Written by AI Michelle Cheung Fall 2020. Edited by AI Yishu Chao. -->
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
     <h3>Aggregation</h3>
     <p>Aggregation functions allow us to operate on data in a different way by combining results across multiple rows. Common aggregation functions to be familiar with include <b>COUNT, MAX, MIN, SUM, AVG.</b> </p>
 
@@ -37,4 +49,9 @@
     <p>Congrats! You are done with the DBSnap lab. Hopefully you have learned a little more about the world of data science queries and are excited to potentially learn SQL in the future. </p>
 
 
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>

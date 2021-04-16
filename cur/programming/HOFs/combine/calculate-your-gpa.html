@@ -1,6 +1,14 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title> Calculate your GPA </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title> Calculate your GPA </title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -8,7 +16,15 @@
 
   gtag('config', 'UA-176402054-1');
 </script>
-</head><body> You want to calculate your GPA but you're tired of converting the letters to numbers. So you decide to make a GPA block. It takes a sentence of grades and returns the corresponding grade point average.
+</head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+ You want to calculate your GPA but you're tired of converting the letters to numbers. So you decide to make a GPA block. It takes a sentence of grades and returns the corresponding grade point average.
 <p></p>
 <div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/gpa-block-call2.png" alt="gpa" title="gpa" ><br></div>
 <p> Hint 1: Use "sentence-&gt;list" to put the grades in a list that you can use as input to the higher order functions.<br></p>
@@ -16,4 +32,9 @@
 <p></p>
 <div style="text-align: center;"><img border="0" src="/bjc-r/img/hof/base-grade-call.png" alt="base-grade" title="base-grade" ><br></div>
 <p></p>
-<div style="text-align: center;"><br></div>   </body></html>
+<div style="text-align: center;"><br></div>       </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

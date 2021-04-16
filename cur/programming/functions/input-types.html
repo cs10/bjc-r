@@ -1,8 +1,16 @@
 <!DOCTYPE html>
-<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>
+<html><head><!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+<title>
 	Input Types 
 </title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -11,6 +19,14 @@
   gtag('config', 'UA-176402054-1');
 </script>
 </head><body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 The <code>max</code> block has an unexpected behavior. We wanted it to work only for numbers. Yet, you can type text in! <br><br><div style="margin-left: 40px;">
 	<img border="0" title="Max can also take text" alt="Max can also take text" src="/bjc-r/img/prog/max-of-cat-dog-output.png" ><br></div>
 <br>
@@ -30,4 +46,9 @@ We are going to limit the <code>max</code> block to accept only numbers as argum
 		<img border="0" src="/bjc-r/img/prog/max-of-5-and-10.png" alt="'max' block with defaults" title="'max' block with defaults" ><br></div>
 </li></ol>
 <em>Note</em>: Maybe you <em>did</em> want the <code>max</code> block to work with words! However, for the <code>draw square</code> and <code>draw polygon</code> blocks, we definitely only wanted numbers. Modify those blocks to take only numbers as inputs.   
-</body></html>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body></html>

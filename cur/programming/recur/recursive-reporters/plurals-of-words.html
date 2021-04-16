@@ -3,9 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <title>Plurals of Words</title>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script src="/bjc-r/llab/loader.js"></script>
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap.min.css">
+<link rel=stylesheet href="/bjc-r/llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+<link rel=stylesheet href="/bjc-r/llab/css/default.css">
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -16,6 +24,14 @@
 </head>
 
 <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title"></div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
+
 <p>We want a block that will take a <em>list of words </em> as input, and report a list of the plurals of those words.</p>
 <p>You already know how to do this with a higher order function, and that's how you <em>will </em>do it in real life, but just for this lesson, pretend you don't know about HOFs and think about how to do it recursively.</p>
 <hr />
@@ -29,5 +45,10 @@
 <p><img src="/bjc-r/img/recur/reporters/squares-ex.png" alt="squares example" /></p>
 <p>☞ Make an <code>exaggerate</code> block that takes a sentence as input, and reports a sentence in which every number in the input is doubled, &quot;good&quot; is replaced by &quot;great,&quot; &quot;bad&quot; is replaced by &quot;terrible,&quot; &quot;like&quot; is replaced by &quot;love,&quot; and &quot;dislike&quot; is replaced by &quot;hate.&quot; Hint: You'll almost certainly find the <code>all but first word of ()</code> and <code>first word of ()</code> blocks useful. You can find these in the "Words, sentences" library (click the "file" icon, select "Libraries..."). Another hint: You'll probably want a helper function that exaggerates a single word. One more hint: It might help to look back at your <code>exaggerate</code> block from the <a href="/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html?topic=berkeley_bjc/lists/lists-I.topic" target="_blank" class="lab-link">lists</a> lab.</p>
 <p><img src="/bjc-r/img/recur/reporters/ex-ex.png" alt="exaggerate example" /></p>
-</body>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
+  </body>
 </html>
