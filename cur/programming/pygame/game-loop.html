@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Introduction to Turtle Graphics</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+
+    <p>One thing any game must have is a game loop to ensure that the game does not end until a game-ending condition
+        (or conditions) is met. In Tic Tac Toe, there are 3 such conditions: Player 1 wins, Player 2 wins, or no player
+        wins and there are no moves left. </p>
+    <p>Before we build the game loop, we must import all our libraries and classes that we may need for our game to run.
+        We will also need to define some variables for later use and initialize pygame so that our game can run
+        properly. The difference between variables we define now vs variables we define later while the game loop is
+        running is that variables defined outside of the game loop will be needed to start the game. Theses variables
+        may or not change later when we run the actual game, but we are going to need them before we start even playing
+        the game. Below are the variables we are definindng and why they are defined here instead of inside the game
+        loop:</p>
+    <pre>
+        <code class="hljs livecodeserver">
+# importing needed libraries and classes 
+import pygame as pg
+import random
+import os
+from ttt_classes import Game
+from ttt_classes import Player
+
+# initialize the pygame library
+pg.init()
+
+# Screen size will be needed to initiate the screen, which needs to happen to display the game Screen
+screen = pg.display.set_mode([500, 500])
+
+# we do not want to be creating new players everytime the game loop runs, we only want to be creating two players that will stay the same as the game runs Players
+player1 = Player("x")
+player2 = Player("o")
+
+# This code contains our game functions along with our game board. It essentially the heart of the game. WE only need one instance of this because we are only playing one game
+ttt_game = Game(player1, player2)
+        </code>
+        </pre>
+
+<p>
+    Now we can move onto the game loop. To build the game loop, we will be using a while loop as the base. Remember that the game loop runs until one of the game-edingin conditijons is met. To accomplish this, we will set a variable called running equal to True before we start the game loop. The game loop will run while <code>running == True</code> When one of the game-ending conscious is met, we will set <code>running == False</code> to exit out of our while loop.
+</p>
+<pre>
+    <code>
+running = True
+while running:
+	# do game stuff
+	If game-ending condition == True
+		running = False
+    # do more game stuff
+
+# game ends when while loop breaks
+
+    </code>
+</pre>
+
+<p>
+    The next thing we need to do is listen for events in python. Events are essentially actions that the players do that affect the game. Usually this is a mouse click, keyboard input, or on-screen button press of some sort. In ttt, there are two types of events we want to listen for: Quitting the game, and a mouse click. For quitting the game, if the quitting event is ever triggered, we simply want to stop running the game. To do this, we would just set <code>running = False</code>.
+</p>
+<p>
+When a player clicks on the board, they will be placing their ttt piece. We will go through how the game handles a click later, but for now we will leave the area empty.
+</p>
+
+<pre>
+    <code>
+running = True
+while running:
+
+    for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+            running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+            #do stuff with the mouse coordinates
+
+
+
+	if game-ending condition == True
+		running = False
+
+    # do more game stuff
+
+# game ends when while loop breaks
+    </code>
+</pre>
+
+<p>
+    The next part of the game loop is checking the game-ending condtions. Remember that we have 3 we want to check for. We will use two if statements to check our three conditions. The first condition will simply check if any player has one. This means that we are looking for if player 1 or player 2 has won the game. The second condition checks whether or not a tie has occurred. In ttt, a tie has occurred if there are no moves left and no one was won yet. Because we are already checking if there is a winner in the first if condition, we will not need to check that condition again to see if there is a tie. We will only need to check if there are no moves left. The structure of the code is outlined below, we will replace the if conditions with actual code later in the module.
+</p>
+
+<pre>
+    <code>
+running = True
+while running:
+
+    for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+            running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+            #do stuff with the mouse coordinates
+
+
+
+	if ttt_game.cur_player_win() == True:
+		running = False
+    elif ttt_game.no_moves_left() == True:
+        running = False
+
+    # do more game stuff
+
+# game ends when while loop breaks
+    </code>
+</pre>
+
+<p>
+    Many games have “records” that may need to be updated. This includes includes things like scores or hidden values not seen by the player. Usually, an update function is called towards the end of the code to deal witht this record keeping. Ttt does not really have any records that need to be kept. But we will include an empty update function in the game code anyways so you don't forget!
+</p>
+
+<p>
+    Another function that is called at the end of each game loop is a draw function. This function will draw the board based on the board representation in the game class. Every time the game loop runs, we draw everything that is on the board. You might think that this is awfully tedious, and that in games with a lot of animation, this might lead to laggy animation. However the reality is that 
+</p>
+
+
+<p>
+    Here is the final skeleton for our game loop:
+</p>
+
+<pre>
+    <code>
+running = True
+while running:
+
+    for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+            running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+            #do stuff with the mouse coordinates
+
+
+
+	if ttt_game.cur_player_win() == True:
+		running = False
+    elif ttt_game.no_moves_left() == True:
+        running = False
+
+    # do more game stuff
+
+    ttt_game.update()
+    ttt_game.draw()
+
+# game ends when while loop breaks
+    </code>
+</pre>
+
+</body>
+
+</html>
