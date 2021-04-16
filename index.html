@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>The Beauty and Joy Of Computing repository</title>
+    <title>The Beauty and Joy of Computing repository</title>
+    <link rel=stylesheet href="llab/lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel=stylesheet href="llab/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel=stylesheet href="llab/css/default.css">
+    <!-- Add any additional desired CSS files here -->
+
     <script src="/bjc-r/llab/loader.js"></script>
   </head>
   <body>
+    <nav class="llab-nav navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="nav navbar-nav navbar-left navbar-title">The Beauty and Joy of Computing repository</div>
+        <div class="nav navbar-nav navbar-right">
+          <ul class="nav-btns btn-group"></ul>
+        </div>
+    </nav>
+    <div class="llab-full">
     <section>
       <h1>Welcome to the Beauty and Joy of Computing Curriculum Repository</h1>
 
@@ -125,5 +137,10 @@
                 Check it out <a href="http://bjc.berkeley.edu/website/bjc4nyc.html">here</a>.
       </p>
     </section>
+    </div>
+    <div class="page-feedback">
+      <button class="btn btn-primary btn-xs feedback-button" type="button" data-toggle="collapse" data-target="#fdbk">Feedback</button>
+      <div id="fdbk" class="collapse feedback-panel panel panel-primary"></div>
+    </div>
   </body>
 </html>
