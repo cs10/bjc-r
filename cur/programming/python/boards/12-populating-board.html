@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="/bjc-r/llab/loader.js"></script>
+<title>Put Stuff On the Board</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+<body>
+<p>Remember the board type we made? Let's start using it to store information.</p>
+<p>What is involved in putting something on our board? We need to do TWO things in this function: (a) set an item on the board itself, and (b) display the change. Let's write the <code>create_item(object, row, col)</code> function, which will do both of these things for us. We have several objects that we want to be able to place on the board; //?check out the costumes.</p>
+<p>You'll find these functions helpful:</p>
+<pre><code>
+  set_item(row, col, board, item):
+    board[row][col] = item
+</pre></code>
+<pre><code>
+  go_to(coord): 
+  //might need to change since pygame/turtle have functions for this
+    go_to_row_col(row_of_coord(coord), col_of_coord(coord))
+</pre></code>
+<pre><code>
+  draw_object(object, row, col):
+    //include this?
+    //NOT COMPLETE
+    go_to_row_col(row, col)
+    turtle.penup()
+</pre></code>
+<p>(Hint: the idea behind displaying our object is that we should first go to the correct coordinate on the board, and draw on object at that coordinate)</p>
+<p>Alright, head to the next page when you think you have your answer.</p>
+<div class="alert quoteGreen alert-success">
+  <p>Write the <code>create_item(object, row, col)</code> block as described.</p>
+</div>
+</body>
+</html>

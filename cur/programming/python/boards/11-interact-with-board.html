@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="/bjc-r/llab/loader.js"></script>
+<title>Interacting With the Board</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+<body>
+<p>Let's start using our board right away! Here's a thought- wouldn't it be cool to be able to draw our board on the stage, and be able to click on squares and use the clicked (row, column) pairs in our code? Imagine, we could build a chess game where you can actually drag the pieces; we could make battleship where we get to place ships on the board with the mouse... there are tons of fun things we could make.</p>
+<p>So first thing's first, we need to actually draw the board. Abstraction is key to programming, so we should write our code such that we can draw <em>any</em> size board!</p>
+<p>Let's define some global variables that we should keep track of and use:</p>
+<p><code>SIZE</code> will define how many tiles per side our board has.</p>
+<p><code>START</code> will define where we want to start drawing our board from.</p>
+<p><code>STEP</code> will define how wide our tiles are when we draw them.</p>
+<p><code>DISPLAYWIDTH</code> length of one side of the board</p>
+<p>The idea here is that our board should be general enough that we can change the size and number of tiles any time we want. If we want our board to always be centered, no matter what value we use for <code>DISPLAYWIDTH</code>, then what should <code>START</code> be? If you think about it, if our <code>DISPLAYWIDTH</code> is some number W, then our START should always be the coordinate (x: -W/2, y: W/2). Determine for yourself where the other corners of the board will be if the top-left is at (x: -W/2, y: W/2) and the <code>DISPLAYWIDTH</code> of the board is W.</p>
+<p>How big should the <code>STEP</code>, a.k.a. the width and height of the tiles be? We know that the board is going to be <code>DISPLAYWIDTH</code> x <code>DISPLAYWIDTH</code> units on the screen. If we want <code>SIZE</code> tiles to fit in each direction, then they should each be <code>DISPLAYWIDTH / SIZE</code> units.</p>
+<p>Now that we've set <code>STEP</code> to work with any <code>SIZE</code>, we can set <code>SIZE</code> to however large we'd like! Let's try 8 for now. While we're at it, let's create and store our board.</p>
+<pre><code> 
+SIZE = 8
+BOARD = create_board(SIZE)
+DISPLAYWIDTH = 300
+START = [- DISPLAYWIDTH / 2, DISPLAYWIDTH / 2]
+STEP = DISPLAYWIDTH / SIZE
+</pre></code>
+<p>So that's everything we really need to start drawing the board. <code>draw_square_board</code> is a basic function that draws the borders of our new board according to the global variables we just defined! Try changing the <code>SIZE</code> variable.</p>
+<div class="alert quoteGreen alert-success">
+  <p>Make sure you understand the little bits of math we just did. What we achieved is pretty powerful-- we can make any sized board, with any width, centered automatically for us.</p>
+</div>
+<h3>Turning Clicks Into (Row, Column)</h3>
+<p>For this portion, we'll use a bit of math to convert the (mouse x, mouse y) coordinates of our clicks into (row, column) coordinates on our board.</p>
+<p>Here is how we can convert <code>mouse x</code> into <code>column</code>:</p>
+<pre><code> 
+  def find_col(x_coord):
+  return abs(x_coord - START[0]) // STEP
+</pre></code>
+<p>Here is how we can convert <code>mouse y</code> into <code>row</code>:</p>
+<pre><code> 
+  def find_row(y_coord):
+  return abs(y_coord - START[1]) // STEP
+</pre></code>
+<p>Let's put it all together to get a functioning click detector!</p>
+<p><img src="/bjc-r/img/hof/click-detect-basic.png" alt="basic functioning click detector" /></p>
+<p>Try clicking on a spot outside of the board. What coordinates do we get? Does this make sense?</p>
+<p>Let's make it so that our click-detecting script doesn't fire when we click outside of the display board. Remember the (x, y) bounds of our board from earlier? Write the <code>inside_board(x, y)</code> predicate function that returns whether the given x and y coordinates are inside the board. Note: we're going to be passing <code>mouse x</code> and <code>mouse y</code> coordinates to this block.</p>
+<div class="alert quoteGreen alert-success">
+  <p>Write the <code>inside_board</code> function as described.</p>
+</div>
+<p>Once you have that ready, put them together like this to finish off our neat click detector.</p>
+<p><img src="/bjc-r/img/hof/full-click-detector.png" alt="basic functioning click detector" /></p>
+
+
+</body>
+</html>
