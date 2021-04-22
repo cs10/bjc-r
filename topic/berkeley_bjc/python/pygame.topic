@@ -1,0 +1,23 @@
+title: Pygame Resource
+{
+
+resource: Introduction [/bjc-r/cur/programming/python/pygame_intro.html]
+
+heading: Tic Tac Toe
+
+resource: Tic Tac Toe Overview [/bjc-r/cur/programming/python/ttt_classes.html]
+
+resource: Creating a Game Loop [/bjc-r/cur/programming/pygame/game-loop.html]
+
+resource: Board Representation and Mouse clicking [/bjc-r/cur/programming/python/click_detection.html]
+
+heading: Frogger
+
+resource: Object Oriented Programming  [/bjc-r/cur/programming/python/oop-class-interactions.html]
+
+resource: Sprites [/bjc-r/cur/programming/python/sprites_and_groups.html]
+
+resource: Keyboard Movement [/bjc-r/cur/programming/python/keyboard_press.html]
+
+resource: Animation in Pygame [/bjc-r/cur/programming/python/pygame_animation.html]
+}

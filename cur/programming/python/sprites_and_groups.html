@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Sprites and Groups</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+
+    <p> One of Pygame's most useful classes is the <code>pygame.sprite</code> class. A close comparison to this class
+        would be sprites you have seen in Snap! Within this class we will be working closely with two of its
+        sub-classes:
+        <code><a href="https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Sprite" target="_blank">pygame.sprite.Sprite</a></code>
+        and
+        <code><a href="https://www.pygame.org/docs/ref/sprite.html#pygame.sprite.Group" target="_blank">pygame.sprite.Group</a></code>.
+        To understand what these classes are and how they work, we will look at <code>Obstacle.py</code> as an example.
+        But before we do that, let's look at some of the capabilities of the <code>pygame.sprite.Sprite</code> and
+        <code>pygame.sprite.Group</code> classes that make <code>pygame.sprite</code> so special.
+    </p>
+    <h3>
+        pygame.sprite.Sprites
+    </h3>
+    <pre>
+            <code class="hljs livecodeserver">
+# Sprite class in pygame. This class can be used to initialize objects that move and appear on the screen. In this game, it will be used to implement car obstacles and the frog that the player controls
+pygame.sprite.Sprite()
+
+# a sprite update function like the update function described in the ttt class, this one will update the x and y position of the obstacle and frog based on how much it is supposed to move
+pygame.sprite.Sprite().update()
+
+# This function removes the sprite from all groups that it has been added to
+pygame.sprite.Sprite().kill()
+
+# This attribute the user to upload an image and use that to represent the sprite on the screen
+pygame.sprite.Sprite().image
+
+# This attribute, when used in conjunction with the Sprite.image attribute is responsible for the size of the sprite and its location on the screen
+pygame.sprite.Sprite().rect
+            </code>
+        </pre>
+    <p>
+        In pygame, an image can be loaded and rendered on top of a pygame.Rect object to represent things on the screen.
+        The Sprite class is able to combine the Rect object, the image, and a load of other functions into one, easy to
+        use class. Sprite even has a built-in update function to update any data for a particular object that the game
+        may need to know about. In the case of the Obstacle class and the Frog class, the update function will include
+        setting the position of the coordinates of the Sprite().rect class to new ones if it is moved from its previous
+        position during the course of a game. The kill function is used to remove a sprite from groups it may be a part
+        of. To understand what that means, let's look at the Group class.
+    </p>
+    <h3>
+        pygame.sprite.Group
+    </h3>
+    <pre>
+        <code class="hljs livecodeserver">
+# Group class that contains different sprite objects. Sprite groups can then be used to streamline things that may usually be done manually like drawing every sprite or checking to see if one sprite collides with any sprite in a a sprite group
+pygame.sprite.Group()
+
+# Adds a sprite to a sprite group
+pygame.sprite.Group().add(sprite)
+
+# Draws the image attribute of all sprites in a sprite class, location is given by the sprite's rect attribute
+pygame.sprite.Group().draw()
+
+# a function of pygame.Sprite that checks if a given sprite has collided with any thing in a sprite group
+pygame.sprite.spritecollideany(sprite, group)
+        </code>
+    </pre>
+
+    <p>
+        It is important to note that while all of these sprite and group functions can be created manually with simpler
+        pygame building blocks, the advantages of these classes is that they have abstracted much of that work away for
+        you. If the group class did not exist, then users would have to draw each obstacle sprite individually and check
+        every obstacle sprite to see if it has collided with the frog sprite manually. While this is certainly possible
+        to do. using the group class allows to perform these long checks with a very small amount of code.
+    </p>
+    <h3>
+        Obstacle.py
+    </h3>
+
+    <p>
+        If you haven't already, open up Obstacle.py and give it a look. Some of it might not make sense right away, and
+        some of it might look completely foreign to you. That's ok! In this section we will talk about a few of the
+        specific class attributes and functions in depth, others we will leave you to figure out by reading the comments
+        in the start files. If you have questions, please go to lab or office hours to get them answered!
+    </p>
+    <pre>
+        <code>
+class Obstacle(pg.sprite.Sprite):
+
+
+    def __init__(self, lane_num, screen_width, screen_height, direction, speed, img_path, car_size):
+        pg.sprite.Sprite.__init__(self)
+        self.lane_num = lane_num
+        
+        self.width = car_size[0]
+        self.height = car_size[1]
+       
+        self.screen_width = screen_width
+        self.screen_height = screen_height
+        
+        self.finished = False
+        self.direction = direction
+
+        if self.direction == 1:
+            self.image = pg.transform.scale(pg.image.load(img_path), car_size)
+        else:
+            self.image = pg.transform.flip(pg.transform.scale(pg.image.load(img_path), car_size), True, False)
+
+        self.rect = self.image.get_rect()
+        self.move_x = 0
+
+        self.speed = speed
+        </code>
+    </pre>
+
+    <p>
+        The first thing to notice about this Obstacles class is that it is a sub class of the pygame.sprite.Sprite
+        class. If you remember back to the OOP lab, this means that the Obstacles class will have all the attributes of
+        the pygame.sprite.Sprite class, in addition to a few useful functions and attributes that we will add. Another
+        line of code that looks particularly interesting is the <code>pg.sprite.Sprite.__init__(self)</code> code
+        underneath the <code>def __init__(self ...)</code> line. What is happening here is that the init function we
+        defined will initialize all the attributes that we have created as part of the Obstacles subclass, but the
+        attributes in the original class has not yet been initialized. The line of code calling the init function fo the
+        Sprite class initializes all the attributes of that class, giving the Sprite class what it needs to function.
+    </p>
+    <p>
+        Some notable attributes that have been mentioned before are self.rect and self.image. If you take a look at the
+        image that we are using to represent pygame obstacles, you may notice that the size of it is quite large. First
+        off,to get an image into pygame, we must use the function <code>pygame.image.load</code>. This loads the image
+        froma file path and returns a <code>pygame.image</code> object. From there we can use pygame's transform
+        functions to scale, flip, or apply other transformations to the image.
+    </p>
+    <p>
+        For the sprite rect, we will use the image.get_rect function to give our sprite its dimensions and location.
+        These dimensions
+        will be based off the image dimensions and the location will be set to x = 0 and y = 0 by default. To change the
+        x, y coordinates of the rect, we have tp set <code>self.rect.x</code> and <code>self.rect.y</code> to our desired coordniates
+    </p>
+    <p>
+        Looking further down the code, we see two functions called <code>move</code> and <code>update</code>. Let's take
+        a closer look at these two fucntions.
+    </p>
+
+    <pre>
+            <code>
+def move(self):
+    self.move_x += self.speed * self.direction
+    if (self.rect.x > self.screen_width and self.direction == 1) or (self.rect.x < 0 and self.direction == -1):
+        self.finished = True
+
+def update(self):
+    self.rect.x += self.move_x
+    self.move_x = 0
+            </code>
+        </pre>
+
+    <p>
+        The purpose of the move function is to simply move the obstacle along its lane, towards the end of the screen.
+        The direction of and speed of this movement is determined by instance attributes that are assigned during
+        initialization. What you might notice is that <code>Obstacle.move()</code> does not actually move the x
+        coordinate in <code>self.rect.x</code>, but it changes another instance attribute called
+        <code>self.move_x</code>. This attribute describes how much <code>self.rect.x</code> will change by when the
+        update function is called.
+    </p>
+    <p>
+        In the <code>self.update()</code> function, the position of the sprite is actually changed by changing
+        <code>self.rect.x</code>. The attribute <code>self.move_x</code> is set to 0 so that <code>self.move()</code>
+        will operate correctly in the next call of the function.
+    </p>
+
+</body>
+
+</html>
