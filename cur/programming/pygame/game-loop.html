@@ -46,16 +46,30 @@ screen = pg.display.set_mode([500, 500])
 player1 = Player("x")
 player2 = Player("o")
 
+# Here we set up some variables that will help us draw and display things on the screen
+# The first is game_font. This pygame tool will help with displaying words and messages on the Pygame screen
+game_font = pg.font.SysFont("helvetica", 15)
+
+# The second is a set of colors that are pre defined as a tuple of RGB values. These variables will be helpful when we want to render a drawing or text with a certain color
+red = (255,0,0)
+green = (0,255,0)
+black = (0,0,0)
+white = (255,255,255)
+
 # This code contains our game functions along with our game board. It essentially the heart of the game. WE only need one instance of this because we are only playing one game
 ttt_game = Game(player1, player2)
         </code>
         </pre>
 
-<p>
-    Now we can move onto the game loop. To build the game loop, we will be using a while loop as the base. Remember that the game loop runs until one of the game-edingin conditijons is met. To accomplish this, we will set a variable called running equal to True before we start the game loop. The game loop will run while <code>running == True</code> When one of the game-ending conscious is met, we will set <code>running == False</code> to exit out of our while loop.
-</p>
-<pre>
-    <code>
+    <p>
+        Now we can move onto the game loop. To build the game loop, we will be using a while loop as the base. Remember
+        that the game loop runs until one of the game-edingin conditijons is met. To accomplish this, we will set a
+        variable called running equal to True before we start the game loop. The game loop will run while
+        <code>running == True</code> When one of the game-ending conditions are met, we will set
+        <code>running == False</code> to exit out of our while loop.
+    </p>
+    <pre>
+    <code class="hljs livecodeserver">
 running = True
 while running:
 	# do game stuff
@@ -68,15 +82,20 @@ while running:
     </code>
 </pre>
 
-<p>
-    The next thing we need to do is listen for events in python. Events are essentially actions that the players do that affect the game. Usually this is a mouse click, keyboard input, or on-screen button press of some sort. In ttt, there are two types of events we want to listen for: Quitting the game, and a mouse click. For quitting the game, if the quitting event is ever triggered, we simply want to stop running the game. To do this, we would just set <code>running = False</code>.
-</p>
-<p>
-When a player clicks on the board, they will be placing their ttt piece. We will go through how the game handles a click later, but for now we will leave the area empty.
-</p>
+    <p>
+        The next thing we need to do is listen for events in python. Events are essentially actions that the players do
+        that affect the game. Usually this is a mouse click, keyboard input, or on-screen button press of some sort. In
+        ttt, there are two types of events we want to listen for: Quitting the game, and a mouse click. For quitting the
+        game, if the quitting event is ever triggered, we simply want to stop running the game. To do this, we would
+        just set <code>running = False</code>.
+    </p>
+    <p>
+        When a player clicks on the board, they will be placing their ttt piece. We will go through how the game handles
+        a click later, but for now we will leave the area empty.
+    </p>
 
-<pre>
-    <code>
+    <pre>
+    <code class="hljs livecodeserver">
 running = True
 while running:
 
@@ -99,12 +118,19 @@ while running:
     </code>
 </pre>
 
-<p>
-    The next part of the game loop is checking the game-ending condtions. Remember that we have 3 we want to check for. We will use two if statements to check our three conditions. The first condition will simply check if any player has one. This means that we are looking for if player 1 or player 2 has won the game. The second condition checks whether or not a tie has occurred. In ttt, a tie has occurred if there are no moves left and no one was won yet. Because we are already checking if there is a winner in the first if condition, we will not need to check that condition again to see if there is a tie. We will only need to check if there are no moves left. The structure of the code is outlined below, we will replace the if conditions with actual code later in the module.
-</p>
+    <p>
+        The next part of the game loop is checking the game-ending condtions. Remember that we have 3 we want to check
+        for. We will use two if statements to check our three conditions. The first condition will simply check if any
+        player has one. This means that we are looking for if player 1 or player 2 has won the game. The second
+        condition checks whether or not a tie has occurred. In ttt, a tie has occurred if there are no moves left and no
+        one was won yet. Because we are already checking if there is a winner in the first if condition, we will not
+        need to check that condition again to see if there is a tie. We will only need to check if there are no moves
+        left. The structure of the code is outlined below, we will replace the if conditions with actual code later in
+        the module.
+    </p>
 
-<pre>
-    <code>
+    <pre>
+    <code class="hljs livecodeserver">
 running = True
 while running:
 
@@ -120,8 +146,8 @@ while running:
 
 	if ttt_game.cur_player_win() == True:
 		running = False
-    elif ttt_game.no_moves_left() == True:
-        running = False
+        elif ttt_game.no_moves_left() == True:
+            running = False
 
     # do more game stuff
 
@@ -129,21 +155,27 @@ while running:
     </code>
 </pre>
 
-<p>
-    Many games have “records” that may need to be updated. This includes includes things like scores or hidden values not seen by the player. Usually, an update function is called towards the end of the code to deal witht this record keeping. Ttt does not really have any records that need to be kept. But we will include an empty update function in the game code anyways so you don't forget!
-</p>
+    <p>
+        Many games have "records" that may need to be updated. This includes includes things like scores or hidden
+        values not seen by the player. Usually, an update function is called towards the end of the code to deal with
+        this record keeping. The only thing that ttt needs to update is who's turn it is in the game.
+    </p>
 
-<p>
-    Another function that is called at the end of each game loop is a draw function. This function will draw the board based on the board representation in the game class. Every time the game loop runs, we draw everything that is on the board. You might think that this is awfully tedious, and that in games with a lot of animation, this might lead to laggy animation. However the reality is that 
-</p>
+    <p>
+        Another function that is called at the end of each game loop is a draw function. This function will draw the
+        board based on the board representation in the game class. Every time the game loop runs, we draw everything
+        that is on the board. You might think that this is awfully tedious, and that in games with a lot of animation,
+        this might lead to laggy animation. However the reality is that because the game loop is being run so many times
+        a second, there is virtually no lag or delay between every call of the draw function.
+    </p>
 
 
-<p>
-    Here is the final skeleton for our game loop:
-</p>
+    <p>
+        Here is the final skeleton for our game loop:
+    </p>
 
-<pre>
-    <code>
+    <pre>
+    <code class="hljs livecodeserver">
 running = True
 while running:
 
@@ -159,8 +191,8 @@ while running:
 
 	if ttt_game.cur_player_win() == True:
 		running = False
-    elif ttt_game.no_moves_left() == True:
-        running = False
+        elif ttt_game.no_moves_left() == True:
+            running = False
 
     # do more game stuff
 

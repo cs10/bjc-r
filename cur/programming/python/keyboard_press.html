@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Pygame: Keyboard Input Detection</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+ 
+    <p>
+        One type of event that can be checked for while inside our game loop is keyboard inputs.
+        A keyboard input event will be detected using the <code>pg.event.get()</code> method (assuming we had used
+        <code>import pygame as pg</code> so that we don't have to fully type out "pygame" in all of our pygame methods).
+    </p>
+    <p class="alert quoteRed">
+        <strong>Note:</strong> The following code is not actual code from the Frogger game example; some code was taken
+        out to avoid confusion and streamline your understanding of keyboard input detection.
+    </p>
+
+
+    <pre><code>
+running = True
+while running:
+    for event in pg.event.get():
+        if event.type == pg.QUIT:
+            running = False
+        if event.type == pg.KEYDOWN:
+            if event.key == pg.K_UP:
+                frog.move_frog("UP")
+            elif event.key == pg.K_DOWN:
+                frog.move_frog("DOWN")
+            elif event.key == pg.K_LEFT:
+                frog.move_frog("LEFT")
+            elif event.key == pg.K_RIGHT:
+                frog.move_frog("RIGHT")
+        </code></pre>
+    <p>
+        Above is an example of the game loop parsing different pygame events. In the code for TicTacToe, we only say
+        events that dealt with quitting and mousedown. Now we are looking at the <code>KEYDOWN</code> event type in
+        main.py. Notice that we are using a <code>for</code> loop to detect events, meaning that
+        <code>pg.event.get()</code> must
+        return an iterable.
+        We can think of this returned iterable as a constantly-changing list of events, ordered by which event occured
+        first, like a queue.
+        It is constantly changing because events are always being added as we do certain things like click the screen,
+        press keys, or quit the game.
+    </p>
+    <p>
+        These events are actually objects from an Event class that is built into the pygame library.
+        Instances of this underlying Event class contain information about the event itself.
+        It makes sense that these are actually objects because the script variable <code>event</code> (which represents
+        an Event object) has attributes that we retrieve using dot notation.
+    </p>
+    <pre><code>
+if event.type == pg.KEYDOWN:
+    </code></pre>
+    <p>
+        <code>event.type</code> will tell us whether the event is a key press (<code>pg.KEYDOWN</code>), mouse click
+        (<code>pg.MOUSEBUTTONDOWN</code>), quitting the window (<code>pg.QUIT</code>), etc.
+        If the event type is indeed keyboard input, the other event attribute we will care about is
+        <code>event.key</code>, which will tell us exactly which key was pressed.
+    </p>
+    <pre><code>
+if event.key == pg.K_UP:
+    </code></pre>
+    <p>
+        <code>pg.K_UP</code> is just pygame's way of representing the up arrow key. Notice that we have conditionals to
+        catch all arrow key presses.
+    </p>
+    <pre><code>
+if event.key == pg.K_UP: # Up Arrow Key
+    frog.move_frog("UP")
+elif event.key == pg.K_DOWN: # Down Arrow Key
+    frog.move_frog("DOWN")
+elif event.key == pg.K_LEFT: # Left Arrow Key
+    frog.move_frog("LEFT")
+elif event.key == pg.K_RIGHT: # Right Arrow Key
+    frog.move_frog("RIGHT")
+    </code></pre>
+    <p>
+        You are not limited to arrow key presses; check out the pygame documentation on key presses to see all of the
+        key presses that you can detect: <a href="https://www.pygame.org/docs/ref/key.html">pygame.key</a>.
+    </p>
+    <p>
+        Now that we have conditionals to catch all kinds of key presses, we can control what the game does in response
+        to user keyboard input.
+        You will notice that we have a call to <code>frog.move_frog</code> with every arrow key press we detect
+        The <code>move_frog</code> function is a method bound to the <code>Frog</code> class that changes the
+        <code>rect.x</code>, <code>rect.y</code>, and <code>lane</code> instance attributes of our frog instance,
+        effectively
+        moving the frog object itself.
+        This is because our <code>Frog</code> class inherits from the <code>pg.sprite.Sprite</code> class, which uses
+        rectangles to represent size and location. Rectangles in
+        pygame have <code>x</code> and <code>y</code> attributes. When we draw a rectangle, or a Sprite that has a rect
+        attribute, we use the x and y values of the rectangle to tell us where to draw. Over many iterations of the game
+        loop, the drawing of a Sprite at different x,y coordinates will simulate movement.
+    </p>
+    <pre><code>
+def move_frog(self, direction):
+    if (self.lane == 0 and direction == "DOWN") or # Checks if move is out of (bottom) bounds
+        (direction == "LEFT" and self.rect.x - self.block_size < 0) or # Checks if move is out of (left) bounds 
+        (direction == "RIGHT" and self.rect.x + self.width >= screen_width): # Checks if move is out of (right) bounds
+        return None
+    elif direction == "UP": # Move frog up
+        self.lane += 1
+        self.move_y -= self.block_size
+    elif direction == "DOWN": # Move frog down
+        self.lane -= 1
+        self.move_y += self.block_size
+    elif direction == "LEFT": # Move frog to the left
+        self.move_x -= self.block_size
+    elif direction == "RIGHT": # Move frog to the right
+        self.move_x += self.block_size
+    </code></pre>
+
+    <p>
+        Similar to the move function in the Obstacles class, the move function in the Frog class only changes the
+        attributes <code>self.move_x</code> and <code>self.move_y</code>. the update function for the frog class will
+        change the actual coordinates.
+    </p>
+
+    <p>
+        Moving some object does not have to be the only thing that happens upon key presses.
+        With the functionality of our game loops and keyboard input detection, we can make anything happen upon certain
+        events; we are not limited to checking for arrow key presses and only moving objects around.
+    </p>
+</body>
+
+</html>
