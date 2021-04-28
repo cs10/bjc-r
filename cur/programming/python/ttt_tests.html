@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+​
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Introduction to TicTacToe</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+<body>
+    <p>We will be working off of a really simple and well known game, TicTacToe. One thing any game must have is a game
+        loop to ensure that the game does not end until a game-ending condition (or conditions) is met. In Tic Tac Toe,
+        there are 3 such conditions: Player 1 wins, Player 2 wins, or no player wins and there are no moves left.</p>
+    <p>Before we build the game loop, we must import all our libraries and classes that we may need for our game to run.
+        We will also need to define some variables for later use and initialize pygame so that our game can run
+        properly. The difference between variables we define now vs variables we define later while the game loop is
+        running is that variables defined outside of the game loop will be needed to start the game. These variables may
+        or not change later when we run the actual game, but we are going to need them before we start even playing the
+        game. Below are the variables we are defining and why they are defined here instead of inside the game loop:</p>
+    <p># importing needed libraries and classes
+        import pygame as pg
+        import random
+        import os
+        from ttt_classes import Game
+        from ttt_classes import Player
+        ​
+        # initialize the pygame library
+        pg.init()
+        ​
+        # Screen size will be needed to initiate the screen, which needs to happen to display the game Screen
+        screen = pg.display.set_mode([300, 300])
+        ​
+        # we do not want to be creating new players everytime the game loop runs, we only want to be creating two
+        players that will stay the same as the game runs Players
+        player1 = Player("x")
+        player2 = Player("o")
+        ​
+        # This code contains our game functions along with our game board. It essentially the heart of the game. WE only
+        need one instance of this because we are only playing one game
+        ttt_game = Game(player1, player2)</p>
+    <p>Now we can move onto the game loop. To build the game loop, we will be using a while loop as the base. Remember
+        that the game loop runs until one of the game-ending conditions is met. To accomplish this, we will set a
+        variable called running equal to True before we start the game loop. The game loop will run while running ==
+        True When one of the game-ending conscious is met, we will set running == False to exit out of our while loop.
+    </p>
+    <p>running = True
+        while running:
+        # do game stuff
+        If game-ending condition == True
+        running = False
+        # do more game stuff
+        ​
+        # game ends when while loop breaks</p>
+    <p>The next thing we need to do is listen for events in python. Events are essentially actions that the players do
+        that affect the game. Usually, this is a mouse click, keyboard input, or on-screen button press of some sort. In
+        ttt, there are two types of events we want to listen for: Quitting the game, and a mouse click. For quitting the
+        game, if the quitting event is ever triggered, we simply want to stop running the game. To do this, we would
+        just set running = False.</p>
+    <p>When a player clicks on the board, they will be placing their ttt piece. We will go through how the game handles
+        a click later, but for now, we will leave the area empty.</p>
+    <p>running = True
+        while running:
+        ​
+        for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+        running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+        #do stuff with the mouse coordinates
+        ​
+        ​
+        ​
+        if game-ending condition == True
+        running = False
+        ​
+        # do more game stuff
+        ​
+        # game ends when while loop breaks</p>
+    <p>The next part of the game loop is checking the game-ending conditions. Remember that we have 3 we want to check
+        for. We will use two if statements to check our three conditions. The first condition will simply check if any
+        player has one. This means that we are looking for if player 1 or player 2 has won the game. The second
+        condition checks whether or not a tie has occurred. In ttt, a tie has occurred if there are no moves left and no
+        one was won yet. Because we are already checking if there is a winner in the first if condition, we will not
+        need to check that condition again to see if there is a tie. We will only need to check if there are no moves
+        left. The structure of the code is outlined below, we will replace the if conditions with actual code later in
+        the module.</p>
+    ​
+    <pre><code>
+running = True
+while running:
+​
+    for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+            running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+            #do stuff with the mouse coordinates
+​
+​
+​
+    if ttt_game.cur_player_win() == True:
+        running = False
+    elif ttt_game.no_moves_left() == True:
+        running = False
+​
+    # do more game stuff
+​
+# game ends when while loop breaks</code></pre>
+    ​
+    <p>Many games have “records” that may need to be updated. This includes things like scores or hidden values not seen
+        by the player. Usually, an update function is called towards the end of the code to deal with this record
+        keeping. Ttt does not really have any records that need to be kept. But we will include an empty update function
+        in the game code anyways so you don't forget!</p>
+    ​
+    <p>Another function that is called at the end of each game loop is a draw function. This function will draw the
+        board based on the board representation in the game class. Every time the game loop runs, we draw everything
+        that is on the board. You might think that this is awfully tedious and that in games with a lot of animation,
+        this might lead to laggy animation.</p>
+    <p>Here is the final skeleton for our game loop:</p>
+
+    <pre><code>
+running = True
+while running:
+​
+    for event in pg.event.get():
+        # handling the event where player exits out of pygame window
+        if event.type == pg.QUIT:
+            running = False
+        # handling event where player clicks on the board
+        if event.type == pg.MOUSEBUTTONUP:
+            #do stuff with the mouse coordinates
+​
+​
+​
+    if ttt_game.cur_player_win() == True:
+        running = False
+    elif ttt_game.no_moves_left() == True:
+        running = False
+​
+    # do more game stuff
+​
+    ttt_game.update()
+    ttt_game.draw()
+​
+# game ends when while loop breaks</code></pre>
+    ​
+    <p>Once you have the skeleton of the loop done, you can now start to build your game. We suggest doing this in a
+        separate python file that you can import to the main python file of the skeleton loop.</p>
+    <p>The first thing you need to do is create instances of the game that you can readily update during the loop. Does
+        this sound familiar? Object Oriented Programming is a great way to define a game object that has certain
+        attributes (such as board, players, etc.) that you can update.</p>
+    <p>What we’ve done in the ttt_classes.py file is create a class defined as ‘Game’ where each instance of a game will
+        have a board (which is a list), player1, player2, and the current turn.</p>
+    ​
+    <pre><code>
+    def __init__(self, player1, player2, board = [None, None, None, None, None, None, None, None, None]):
+       self.board = board
+       self.curr_turn = player1.piece
+       self.p1 = player1
+       self.p2 = player2
+    </code></pre>
+    ​
+    <p>Now that we have a game to work with, we can define the different functions we’ll need in order to update the
+        board and the game.</p>
+    <p>The first function we should define is an update function that lets you change the current turn to the next
+        player’s turn.</p>
+    <pre><code>
+    def update(self):
+       if self.curr_turn == self.p1.piece:
+           self.curr_turn = self.p2.piece
+       else:
+           self.curr_turn = self.p1.piece</code></pre>
+    ​
+    <p>Next, we defined a game_click function that changes the board list when a user clicks on an empty block. Remember
+        that our board is represented as a list (index 0) as shown below:</p>
+    <pre><code>
+ #        0 | 1 | 2
+ #       -----------
+ #        3 | 4 | 5
+ #       -----------
+ #        6 | 7 | 8  </code></pre>
+    ​
+    <p>For example, if the user clicks on the area that index 3 is covering and it is empty, the object at index 3 of
+        the board list will change from None to the current player’s piece. The index is derived from an equation based
+        on the display of the actual game.</p>
+    <pre><code>
+    def game_click(self, x, y):
+       length = 300
+       piece = self.curr_turn
+       index = ((y * 3) + x ) / (length / 3)
+       if (self.board[index] == None):
+           self.board[index] = piece </code></pre>
+    ​
+    <p>Draw_board is a function that draws the current board. It is called in the game loop after the board gets update
+        to show a visualization of the game. Remember that game_click and update only changes the python variables and
+        not the actual pygame board. Draw_board is in charge of updating the actual display of the game.</p>
+    <pre><code>
+    def draw_board(self):
+       #credit: https://dev.to/ramakm/a-simple-python-tic-tac-toe-game-using-pygame-1l8b
+       length = 300
+       rows = 3
+       gameboard = pygame.display.set_mode((length, length))
+       pygame.display.set_caption("TicTacToe")
+  
+       # Colors
+       white = (255, 255, 255)
+       black = (0, 0, 0)
+  
+       # Images
+       X_IMAGE = pygame.transform.scale(pygame.image.load("Images/x.png"), (150, 150))
+       O_IMAGE = pygame.transform.scale(pygame.image.load("Images/o.png"), (150, 150))
+      
+       gap = length // rows
+  
+       #Drawing Board LInes
+       for i in range(rows):
+           x = i * gap
+  
+           pygame.draw.line(gameboard, WHITE, (x, 0), (x, WIDTH), 3)
+           pygame.draw.line(gameboard, WHITE, (0, x), (WIDTH, x), 3)
+  
+       center_coordinates = [[50, 50], [150, 50], [250, 50], [50, 150], [150, 150], [250, 150], [50, 250], [150, 250], [250, 250]]
+      
+       for i in range(len(self.board)):
+           if self.board[i] == 'x':
+               x = center_coordinates[i][0]
+               y = center_coordinates[i][1]
+               gameboard.display(X_IMAGE, (x, y))
+           if self.board[i] == 'o':
+               x = center_coordinates[i][0]
+               y = center_coordinates[i][1]
+               gameboard.display(O_IMAGE, (x, y)) </code></pre>
+    <p>The last two functions end the game. Both functions return a boolean value.
+        The function curr_player_win checks if the current player has a winning triple. If the current player has a
+        winning triple, then they win.</p>
+    <pre><code>
+    def curr_player_win(self):
+       winning_triples = [[0, 1, 2], [0, 4, 8], [2, 5, 8], [0, 3, 6], [1, 4, 7], [2, 4, 6], [3, 4, 5], [6, 7, 8]]
+       piece = self.curr_turn
+       for triple in a winning_triples:
+           if (self.board[triple[0]] == piece) and (self.board[triple[1]] == piece) and (self.board[triple[2]] == piece):
+               return True
+       return False </code></pre>
+    ​
+    <p>No_moves_left checks if there are any places left to place a piece on the board. If there are still empty spaces
+        on the board (None values in the board list), the game is still in play.</p>
+    ​
+    <pre><code>
+    def no_moves_left(self):
+       if None in self.board:
+           return False
+       return True </code></pre>
+    <p>The remaining class, Player simply instantiates a player with either the piece “x” or “o”.</p>
+    ​
+    <pre><code>
+class Player:
+   def __init__(self, xo):
+       self.piece = xo </code></pre>
+    ​
+    ​
+    ​
+</body>
+​
+
+</html>
