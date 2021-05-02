@@ -11,23 +11,42 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-176402054-1');
+  gtag('config', 'UA-176402054-1'); 
 </script>
 </head>
 
 <body>
-<p>For our case, it was fine to go stamp objects on the display when we create them. Think about how we'd write a block that could delete an object from the board: we'd need to set that item on the board to 0 or 'blank', and then stamp a white or blank spot on the display to get rid of the image.</p>
-<p>But imagine if the objects could move around too? It'd get complicated really fast- imagine trying to keep track of all of those objects with their own position variables like we did with the <code>Player</code>!</p>
-<p>This would be a perfect case for a new type of display board, in which objects are drawn on the board according to their positions in the board, instead of according to outside variables. So if we want to move several objects on the board, we use the set block to change their positions, and then re-draw the entire board. Let's take a look at some implementations to see what we mean:</p>
-<p>Below is our update display. Notice that every time we click it, the entire board is redrawn.</p>
-<p><img src="/bjc-r/img/hof/board-update-display.png" alt="update display block contents" /></p>
-<p>Here's where it gets good. To draw the objects on the board, we iterate over row and column values while moving the sprite at the same time! By reading the item at the current (row, column) from the board, we can stamp something if needed as we go.</p>
-<p><img src="/bjc-r/img/hof/board-draw-objects.png" alt="draw objects block contents" /></p>
-<p>Let's make sure we know what's going on in the stamp block as well (The "if object" is just a short way of saying "if something was there").</p>
-<p><img src="/bjc-r/img/hof/board-stamp-object.png" alt="stamp object block contents" /></p>
-<p>Try it out if you'd like: use the <code>Set</code> block to set some bugs somewhere on the board, then run <code>update display</code>.</p>
-
+<p>For our case, it was fine to go stamp objects on the display when we create them. Think about how we'd write a function that could delete an object from the board: we'd need to set that item on the underlying board representation to 0 or 'blank', and then stamp a white or blank spot on the display to get rid of the image.</p>
+<p>But imagine if the objects could move around too? It'd get complicated really fast- imagine trying to keep track of all of those objects with their own position variables like we did with the main turtle in <code>player.py</code>!</p>
+<p>This would be a perfect case for a new type of display board, in which we look at the underlying board representation (in our case, a list of lists) to see if there is supposed to be an object there, and then stamp accordingly. So if we want to move several objects on the board, we use the <code>set_item</code> function to change the value on the underlying board representation, and then re-draw the entire board. Let's take a look at some implementations to see what we mean:</p>
+<p>Below is our <code>update_display</code> function. Notice that every time we run it, the entire board is redrawn.</p>
+<pre><code>
+def update_display():
+  turtle.clear()
+  draw_square_board()
+  draw_all_objects()
+  draw_instructions()
+</code></pre>
+<p>Here's where it gets good. To draw the objects on the board, we iterate over all of the row and column values. By reading the item at the current (row, column) from the board, we can draw something if needed as we go.</p>
+<pre><code>
+def draw_all_objects():
+  for row in range(SIZE):
+    for col in range(SIZE):
+      draw_at(row, col)
+</code></pre>
+<p>Let's make sure we know what's going on in the <code>draw_at</code> function as well. Note that empty sequences (lists, tuples, strings, etc.), <code>0</code>, and <code>None</code> all behave like <code>False</code> when used in a boolean context. Similarly, all other values behave like <code>True</code>. This is where our "<code>if object:</code>" conditional comes from.</p>
+<pre><code>
+def draw_at(row, col):
+  object = BOARD[row][col]
+  if object:
+    draw_obj("circle", row, col)
+  else:
+    draw_blank(row, col)
+</code></pre>
+<p>
+  Our <code>draw_obj</code> function serves to draw an item at a given row, col coordinate. Since there is no way to selectively erase drawings in turtle (<code>turtle.clear</code> erases the whole screen), our <code>draw_blank</code> will "erase" a drawing at a given board position (dictated by the <code>row</code> and <code>col</code> variable) by simply covering that spot with white.
+</p>
 <h3>Nice Job!</h3>
-<p>That's it for this lab about boards and how to create a good one for your purposes. You may find yourself wanting to refer back to this lab when your planning your midterm project, if applicable!</p>
+<p>That's it for this lab about boards and how to create a good one for your purposes. You may find yourself wanting to refer back to this lab when planning your final project, if applicable!</p>
 </body>
 </html>

@@ -17,28 +17,31 @@
 
 <body>
 <p>Remember the board type we made? Let's start using it to store information.</p>
-<p>What is involved in putting something on our board? We need to do TWO things in this function: (a) set an item on the board itself, and (b) display the change. Let's write the <code>create_item(object, row, col)</code> function, which will do both of these things for us. We have several objects that we want to be able to place on the board; //?check out the costumes.</p>
+<p>What is involved in putting something on our board? We need to do TWO things in this function: (a) set an item on the board itself, and (b) display the change. Let's write the <code>create_item(object, row, col)</code> function, which will do both of these things for us. The turtle library has a few options for turtle shapes, these shape names include "arrow", "turtle", "circle", "square", "triangle", "classic".</p>
 <p>You'll find these functions helpful:</p>
 <pre><code>
-  set_item(row, col, board, item):
-    board[row][col] = item
+  set_item(item, row, col):
+    BOARD[row][col] = item
 </pre></code>
 <pre><code>
-  go_to(coord): 
-  //might need to change since pygame/turtle have functions for this
-    go_to_row_col(row_of_coord(coord), col_of_coord(coord))
+  def find_x_y(row, col):
+    x = (START[0] + STEP * col) + (STEP / 2)
+    y = (START[1] - STEP * row) - (STEP / 2)
+    return (x, y)
 </pre></code>
 <pre><code>
-  draw_object(object, row, col):
-    //include this?
-    //NOT COMPLETE
-    go_to_row_col(row, col)
-    turtle.penup()
+  def draw_obj(obje, row, col):
+    obj = turtle.Turtle()
+    obj.penup()
+    obj.goto(find_x_y(row, col))
+    obj.shape(obje) # obje parameter is a string that represents the type of turtle head shape
+    obj.color("red") # you can pass in other color names as well
+    obj.shapesize(0.50, 0.50)
 </pre></code>
 <p>(Hint: the idea behind displaying our object is that we should first go to the correct coordinate on the board, and draw on object at that coordinate)</p>
 <p>Alright, head to the next page when you think you have your answer.</p>
 <div class="alert quoteGreen alert-success">
-  <p>Write the <code>create_item(object, row, col)</code> block as described.</p>
+  <p>Write the <code>create_item(object, row, col)</code> function as described.</p>
 </div>
 </body>
 </html>

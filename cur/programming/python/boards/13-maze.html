@@ -7,47 +7,44 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-176402054-1');
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+ 
+ gtag('config', 'UA-176402054-1');
 </script>
 </head>
-
+ 
 <body>
-<p>Here's a solution to our <code>create object</code> block; you'll see that we abstracted the drawing routine as its own block.</p>
+<p>Here's a solution to our <code>create_object</code> function; you'll see that we abstracted the drawing routine as its own function.</p>
 <pre><code>
-  def create_item(object, row, col):
-    set_item(row, col, BOARD, object)
-    draw_object(object, row, col)
+ def create_item(object, row, col):
+   set_item(row, col, object)
+   draw_object(object, row, col)
 </pre></code>
-<p>Let's add our <code>create_item</code> function to the end of our //click detector script, so that whenever we click the board, it adds a Bug at that tile!</p>
-<p><img src="/bjc-r/img/hof/click-detector-with-objects.png" alt="click detector with object addition" /></p>
+<p>Let's add our <code>create_item</code> function to the end of our <code>click</code> function, so that whenever we click the board, it adds a Bug at that tile!</p>
+<pre><code>
+def click(x, y):
+  if inside_board(x, y):
+      row, col = find_row(y), find_col(x)
+      create_item('circle', row, col)
+</code></pre>
 <h3>Putting It All Together!</h3>
 <p>Let's create a customizable, playable maze! Our final product will look something like this:</p>
-<p><img src="/bjc-r/img/hof/board-maze-sneakpeek.png" alt="maze with player and obstacles on it" /></p>
-<p>Head over to our Player sprite, and let's see how it works.</p>
-<p>When the Green Flag is pressed, our player gets a position as a (row, column) coodinate. Notice that we have some arrow-key receivers set up- almost! When we press an arrow key, we want <code>position</code> to change accordingly. Take a look in <code>finish move</code> to see how we update the player's displayed position before we move on.</p>
-<p>Let's fill in the arrow key receivers so that they change our position coordinate (which is a list of two values) appropriately. You can use the following functions to get the "row" and "column" numbers out of the <code>position</code> variable, or you can just use "item 1" and "item 2"!</p>
-<pre><code>
-row_of_coord(position)
-</pre></code>
-<pre><code>
-col_of_coord(position)
-</pre></code> 
+<p><img src="/bjc-r/cur/programming/python/boards/board-sc.png" width="500" height="500" /></p>
+<p>Head over to our <code>main.py</code> file, and let's see how it works.</p>
+<p>When you run <code>main.py</code> in your terminal, a screen will show up with our turtle object. It will draw the board that we just made. You will notice that the lines 4-14 in the <code>main.py</code> file create the display of our board using the turtle library. It first makes a screen, sets the color and title accordingly, and then draws the board and instructions.
+ You also may have noticed the <code>window.listen</code> and <code>window.onkeypress</code>. These are the functions that handle interactions and movements when we press the "up", "down", "left", and "right" arrow keys. They each correspond with separate functions in the <code>player.py</code> file.
+ In our <code>player.py</code> file, you will see that our player gets a position as <code>POS = [row, column]</code>, a global variable.
+ When we press an arrow key, we want <code>POS</code> to change accordingly. The functions <code>up</code> , <code>down</code>, <code>left</code>, and <code>right</code> takes care of the movement and is used in our <code>main.py</code> to interact with the keyboard inputs. Take a look in <code>finish_move</code> to see how we update the player's displayed position before we move on.</p>
+<p>Let's fill in the arrow key receiver functions (up, down, left, right in the player.py file) so that they change our position coordinate (which is a list of two values) appropriately. Remember that <code>POS[0]</code> corresponds to the row of the main sprite while <code>POS[1]</code> corresponds to the column of the main sprite. </p>
 <div class="alert quoteGreen alert-success">
-  <p>Head to the <code>player.py</code> file, and fill in the empty lists in the arrow key receivers with the appropriate code for changing the player's position.</p>
+ <p>Head to the <code>player.py</code> file, and fill in the receiver functions with the appropriate code for changing the player's position.</p>
 </div>
 <p>The last thing we have to do is add a game over condition when we hit an obstacle. When does it make sense to check to see if the game should be over? <code>finish_move</code> seems like a good place, because it gets run after every move.</p>
-<p>Fill in the <code>finish_move</code> block so that it checks to see if any objects are at our <code>position</code> on the Board. Some ideas for inside the condition: Turn the sprite red; speak the words "Game over!"; have our Player say "Oops, I hit a (object name)!"; Reset a timer when the flag is clicked and stop it when the game is over.</p>
+<p>Fill in the <code>finish_move</code> function so that it checks to see if any objects are at our <code>position</code> on the Board.</p>
 <div class="alert quoteGreen alert-success">
-  <p>Add a condition to <code>finish_move</code> that checks the players <code>position</code> against the board, and do something if there's an object there!</p>
+ <p>Add a condition to <code>finish_move</code> that checks the players <code>position</code> against the board, and do something if there's an object there!</p>
 </div>
-<h3>Avoiding "if touching"</h3>
-<p>There's a big advantage to using boards to store info about our game state that we haven't discussed yet. And that is: using "if touching" under "sensing" is really slow.</p>
-<p>Sometimes it's tempting to use several <img src="/bjc-r/img/hof/touching.png" alt="touching block" /> to check if the <code>Player</code> sprite itself is touching another object or color on the stage. Sometimes it's useful to use one of these, but in general, they're <b>really slow!</b></p>
-<p>Imagine if instead of moving in discrete steps and checking the item on the board at our position, we had a separate "forever if touching" script for each type of object we want to detect! This lead to repetitive code, AND each "forever if touching" really eats away at our speed.</p>
-<p>Board representations can make games much more playable by allowing us to avoid all of this!</p>
 </body>
 </html>
