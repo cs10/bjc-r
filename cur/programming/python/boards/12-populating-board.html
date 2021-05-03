@@ -24,19 +24,15 @@
     BOARD[row][col] = item
 </pre></code>
 <pre><code>
-  def find_x_y(row, col):
-    x = (START[0] + STEP * col) + (STEP / 2)
-    y = (START[1] - STEP * row) - (STEP / 2)
-    return (x, y)
-</pre></code>
-<pre><code>
-  def draw_obj(obje, row, col):
-    obj = turtle.Turtle()
+  def draw_obj(obje, row, col): # makes a new turtle that is left on the board to represent an obstacle
+    obj = turtle.Turtle() # initialize new turtle
+    obj.hideturtle()
     obj.penup()
     obj.goto(find_x_y(row, col))
     obj.shape(obje) # obje parameter is a string that represents the type of turtle head shape
-    obj.color("red") # you can pass in other color names as well
+    obj.color("red") # you can use other color names as well
     obj.shapesize(0.50, 0.50)
+    obj.showturtle()
 </pre></code>
 <p>(Hint: the idea behind displaying our object is that we should first go to the correct coordinate on the board, and draw on object at that coordinate)</p>
 <p>Alright, head to the next page when you think you have your answer.</p>

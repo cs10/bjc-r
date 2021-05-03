@@ -22,7 +22,7 @@
    set_item(row, col, object)
    draw_object(object, row, col)
 </pre></code>
-<p>Let's add our <code>create_item</code> function to the end of our <code>click</code> function, so that whenever we click the board, it adds a Bug at that tile!</p>
+<p>Let's add our <code>create_item</code> function to the end of our <code>click</code> function, so that whenever we click the board, it adds an obstacle at that tile!</p>
 <pre><code>
 def click(x, y):
   if inside_board(x, y):
@@ -33,18 +33,17 @@ def click(x, y):
 <p>Let's create a customizable, playable maze! Our final product will look something like this:</p>
 <p><img src="/bjc-r/cur/programming/python/boards/board-sc.png" width="500" height="500" /></p>
 <p>Head over to our <code>main.py</code> file, and let's see how it works.</p>
-<p>When you run <code>main.py</code> in your terminal, a screen will show up with our turtle object. It will draw the board that we just made. You will notice that the lines 4-14 in the <code>main.py</code> file create the display of our board using the turtle library. It first makes a screen, sets the color and title accordingly, and then draws the board and instructions.
- You also may have noticed the <code>window.listen</code> and <code>window.onkeypress</code>. These are the functions that handle interactions and movements when we press the "up", "down", "left", and "right" arrow keys. They each correspond with separate functions in the <code>player.py</code> file.
- In our <code>player.py</code> file, you will see that our player gets a position as <code>POS = [row, column]</code>, a global variable.
- When we press an arrow key, we want <code>POS</code> to change accordingly. The functions <code>up</code> , <code>down</code>, <code>left</code>, and <code>right</code> takes care of the movement and is used in our <code>main.py</code> to interact with the keyboard inputs. Take a look in <code>finish_move</code> to see how we update the player's displayed position before we move on.</p>
+<p>When you run <code>main.py</code> in your terminal, a screen will show up with our turtle object. It will draw the board that we just made. You will notice that the lines 4-14 in the <code>main.py</code> file create the display of our board using the turtle library. It first makes a screen, sets the color and title accordingly, and then draws the board and instructions.</p>
+ <p>You also may have noticed the <code>window.listen</code> and <code>window.onkeypress</code>. These are the functions that handle interactions and movements when we press the "up", "down", "left", and "right" arrow keys. They each correspond with separate functions in the <code>player.py</code> file.</p>
+ <p>In our <code>player.py</code> file, you will see that our player gets a position as <code>POS = [row, column]</code>, a global variable.
+ When we press an arrow key, we want <code>POS</code> to change accordingly. The functions <code>up</code> , <code>down</code>, <code>left</code>, and <code>right</code> takes care of the movement and is used in our <code>main.py</code> to interact with the keyboard inputs.</p>
 <p>Let's fill in the arrow key receiver functions (up, down, left, right in the player.py file) so that they change our position coordinate (which is a list of two values) appropriately. Remember that <code>POS[0]</code> corresponds to the row of the main sprite while <code>POS[1]</code> corresponds to the column of the main sprite. </p>
 <div class="alert quoteGreen alert-success">
  <p>Head to the <code>player.py</code> file, and fill in the receiver functions with the appropriate code for changing the player's position.</p>
 </div>
 <p>The last thing we have to do is add a game over condition when we hit an obstacle. When does it make sense to check to see if the game should be over? <code>finish_move</code> seems like a good place, because it gets run after every move.</p>
-<p>Fill in the <code>finish_move</code> function so that it checks to see if any objects are at our <code>position</code> on the Board.</p>
 <div class="alert quoteGreen alert-success">
- <p>Add a condition to <code>finish_move</code> that checks the players <code>position</code> against the board, and do something if there's an object there!</p>
+ <p>Fill in the <code>finish_move</code> function so that it moves our turtle; it should also reset our turtle's position if we hit an object.</p>
 </div>
 </body>
 </html>

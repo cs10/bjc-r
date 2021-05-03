@@ -2,16 +2,16 @@ title: Practicing with Lists: Making Boards
 {
 
 h2: Activities
-learning-goal: Get more practice with lists and higher order functions used in combination.
+learning-goal: Using lists to represent game board values
 learning-goal: Develop a significant-sized project.
-learning-goal: Explore approaches to mouse detection without "touching" blocks.
+learning-goal: Explore Python's Turtle library.
 learning-goal: Build a generalized game board.
 
 
 heading: Game Board Building
-   resource: Making Your Own Board  [/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html]
-   resource: Interacting With the Board  [/bjc-r/cur/programming/lists/hof/ttt/11-interact-with-board.html]
-   resource: Put Stuff On the Board [/bjc-r/cur/programming/lists/hof/ttt/12-populating-board.html]
-   resource: Build A Maze [/bjc-r/cur/programming/lists/hof/ttt/13-maze.html]
-   resource: Multiple Agents [/bjc-r/cur/programming/lists/hof/ttt/14-many-agents.html]
+   resource: Making Your Own Board  [/bjc-r/cur/programming/python/boards/10-your-board.html]
+   resource: Interacting With the Board  [/bjc-r/cur/programming/python/boards/11-interact-with-board.html]
+   resource: Put Stuff On the Board [/bjc-r/cur/programming/python/boards/12-populating-board.html]
+   resource: Build A Maze [/bjc-r/cur/programming/python/boards/13-maze.html]
+   resource: Multiple Agents [/bjc-r/cur/programming/python/boards/14-many-agents.html]
 }
