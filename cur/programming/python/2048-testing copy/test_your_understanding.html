@@ -1,0 +1,92 @@
+<html>
+   <head>
+      <script src="/bjc-r/llab/loader.js"></script>
+      <title> Test Your Understanding</title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+
+   <body>
+       <p>
+         Now that you've read over the basics of the assignment, let's refine our understanding. Begin this lab by opening up the starter file linked on the assignment spec. After opening the file, go to terminal and change directory to the 2048 game directory.
+           <p>
+             <pre><code>
+>>> python3 main.py
+           </code></pre>
+         </p>
+
+        <p>Run the code above and you should see the game running on pygame. <b>For this project, you should NOT change any existing code in this sprite (otherwise you might break the game), </b> unless you are doing some of the extra credit options.
+
+        <p>Exit from the pygame and, without changing any existing code, run the following script in terminal.
+        </p>
+          <pre><code>
+>>> python3 -i main.py
+>>> lab_board = Board(4)
+>>> lab_board.set_value(1, 4, 2)
+>>> lab_board.print_board()
+        </code></pre>
+        <p>You should see a 2 appear gloriously in the top right corner. What this code does is it first creates a new empty gameboard of size 4x4, then it places a 2 at position (1,4) in the gameboard (this corresponds to the top right corner), and lastly it updates the display of the screen so that a picture of a 2 actually appears.</p>
+           <div class="alert quoteGreen alert-success">
+             <h4><strong>For You To Do:</strong></h4>
+             <p>
+               Modify the code above so that it displays the board pictured below. This is an opportunity for you to use the set_value function and learn how the grid works for the 2048 game. <b>Note:</b> if you want the board to appear you will need to use the <code>print_board</code> function after setting the appropriate values in the board (as is shown above).
+             </p>
+             <pre><code>
+0 0 0 128
+4 0 0 0
+0 16 0 0
+0 0 0 128
+             </code></pre>
+
+             <br /><br />
+            <div class="assessment-data"  type="multiplechoice"  maxchoices="1"
+                responseIdentifier="2048" hasinlinefeedback="true"  shuffle="true">
+                <div class="prompt">
+                    <p>
+                      In the above image, what is the position of the <strong>16</strong> tile?
+                    </p>
+                </div>
+
+                <div class="choice" identifier="c1">
+                    <div class="text">(2, 3)</div>
+                    <div class="feedback">
+                        Remember, that we specify positions in the format (row, column)
+                    </div>
+                </div>
+
+                <div class="choice" identifier="c2">
+                    <div class="text">(2, 1)</div>
+                    <div class="feedback">
+                        Consider what the starting value of the left box is. Is it 0 or 1?
+                    </div>
+                </div>
+
+                <div class="choice" identifier="c3">
+                    <div class="text">(3, 2)</div>
+                    <div class="feedback">
+                        Correct!
+                    </div>
+                </div>
+
+                <div class="choice" identifier="c4">
+                    <div class="text">(2, 2)</div>
+                    <div class="feedback">
+                        Which corner of the board is (1, 1)? Start counting from there.
+                    </div>
+                </div>
+
+                <div class="responseDeclaration" identifier="2048">
+                  <div class="correctResponse" identifier="c3"></div>
+                </div>
+              </div>
+            </div>
+   </body>
+</html>

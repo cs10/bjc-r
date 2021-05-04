@@ -1,0 +1,93 @@
+<html>
+
+
+   <head>
+
+      <script src="/bjc-r/llab/loader.js"></script>
+
+      <title> The Unit testing</title>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+
+   <body>
+
+<h3>How The <code>Unit testing</code> Framework Works</h3>
+<br>
+<p>We've provided a large number of Unit testing functions that you can use in 2048. Your main task will be filling in all of the problems in the spec; however, using the functions that we have provided to you will make writing the required codes much easier. In addition, in this assignment we're going to use a new framework called Unit testing to verify the correctness of the codes that we write.</p>
+
+<p>To understand how the Unit testing framework works, let's start by looking at its structure.</p>
+
+<p>
+<pre>
+<code>
+import unittest
+
+class TestGame(unittest.TestCase):
+
+    def test_action(self):
+        self.assertEqual(FOO, expected_result)
+
+    def test_another_action(self):
+        self.assertTrue(FOO)
+        self.assertFalse(FOO)
+
+    def test_third_action(self):
+        with self.assertRaises(TypeError):
+            function(something_erroneous)
+
+if __name__ == '__main__':
+    unittest.main()
+</code>
+</pre>
+</p>
+
+<p>Based on the structure of the function, we notice that the class for your unittest, functions within the class, intended input, and expected output. This is very similar to the other HOFs we have already seen! Let's take a look at some examples.</p>
+
+<p>
+  <pre>
+  <code>
+import unittest
+import main
+
+class TestExample(unittest.TestCase):
+
+    def test_subtraction(self):
+        self.assertEqual(subtraction(5, 2), 3)
+
+if __name__ == '__main__':
+    unittest.main()
+  </code>
+  </pre>
+</p>
+
+<p>The above test is verifying that the subtraction function works properly. The output of the test function is a Boolean.</p>
+
+<div class="alert quoteGreen alert-success">
+	<h4><strong>For You To Do:</strong></h4>
+	<p>
+		Run the "Proj3 Lab" file in the 2048 starter file (the starter file is in the spec), and you'll see two example tests for the addition operation. The first function tests that <samp>1 + 1 = 2</samp>. Try running the following code in terminal, and you should get back <code>true</code> , since this test is correct. The second function performs <samp>2 + 4 = 5</samp>. Try running it, and you should get that this test fails.
+
+	</p>
+</div>
+
+  <pre>
+  <code>
+>>> python3 -m unittest test_main.TestClass
+  </code>
+  </pre>
+
+<p>In this specific case, the problem is not the addition operation, but the input/output relationships that were wrong. In other words, we wrote an intentionally buggy test so you could see what happens when there is an input/output mismatch.</p>
+
+
+</body>
+</html>
