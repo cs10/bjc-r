@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Object Oriented Programming</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+    <p class="alert quoteGreen">
+        If you haven't done so already, take a look at the files for the Frogger game! The remainder of the guide will talk about different aspects of the Frogger game. Try to understand the Obstacles,
+        Game, and Frog classes and how they interact with each other.
+    </p>
+
+    <p>Object Oriented Programming (OOP) is particularly useful when it comes to game design, not only due to the
+        easiness to
+        organize and collaborate, but due to games' inherent nature--the interaction between different objects!</p>
+
+    <p>Because this method of programming focuses on the creation of objects along with its attributes and behaviors, we
+        are
+        able to easily work with different objects within the game in organized manner. Furthermore, with the power of
+        inheritance and interaction between the different classes and their subclasses, it prevents things such as
+        repetition in
+        code, because you can easily reuse and/or override methods that you've written under those classes.
+    </p>
+
+    <p>An important thing to note is that that we are able to split our code into multiple files. Each file would
+        usually
+        comprise of its own class, and with a certain syntax, we are able to make all of the classes within our program
+        interact
+        with one another as if they are in the same file.</p>
+
+    <p>In order to do this, you have to make sure that the files comprised of your different classes are within the same
+        directory or folder. By doing so, you could import one or more classes' components onto that of another file
+        containing
+        a different class, allowing you to utilize features from those imported class.</p>
+
+    <pre>
+        <code class="hljs livecodeserver">
+import pygame as pg
+import random
+
+class Obstacle(pg.sprite.Sprite):
+
+    # lane_num: the number lane that the obstacle will be in
+    # screen_width: width of the game screen 
+    # screen_height: height of the game screen 
+    # direction: either 1 or -1 for how the block should be moving
+    # speed: how fast we want the object to move, higher number == faster speed
+    # img_path: the location of the image of the car. Is a string
+    # car_size: tuple with the dimensions of the car object: (Width, Height)
+
+    def __init__(self, lane_num, screen_width, screen_height, direction, speed, img_path, car_size):
+        pg.sprite.Sprite.__init__(self)
+        self.lane_num = lane_num
+        
+        self.width = car_size[0]
+        self.height = car_size[1]
+        
+        self.screen_width = screen_width
+        self.screen_height = screen_height
+        
+        self.finished = False
+        self.direction = direction
+
+        if self.direction == 1:
+            self.image = pg.transform.scale(pg.image.load(img_path), car_size)
+        else:
+            self.image = pg.transform.flip(pg.transform.scale(pg.image.load(img_path), car_size), True, False)
+
+        self.rect = self.image.get_rect()
+        self.move_x = 0
+
+        self.speed = speed
+    </code>
+        </pre>
+
+    <p>As you can see, in the Game.py file, we could utilize components from the Obstacles class by including "from
+        Obstacles
+        import Obstacle," where "Obstacles" is the Obstacles.py file and "Obstacle" is the name of the class. If you
+        want to
+        import everything from a particular file or even a library such as pygame, you would simply type "from pygame
+        import *".</p>
+
+    <p>And voila! You have access to the different methods and instances (objects) of that imported class, allowing for
+        efficient interaction between the different classes!</p>
+
+    <p>Ultimately, it is up to you and your design to decide which classes are necessary, and what methods and instance
+        variables should each class have. Good design decisions could make your game more manageable and easier to
+        debug.
+        However, it is completely ok if your first design turns out unsatisfactory - it often takes several iterations
+        to
+        achieve the optimal design, so do not be afraid to make modifications to your design as you work on the project.
+    </p>
+
+    <p>We hope that Frogger could give you an idea as to how you can break down a complex game and organize each
+        component into
+        a class. We want to emphasize that there are multiple ways of doing this, and in no way is our way the correct
+        answer;
+        therefore, as you read through the rest of this guide, think about how you could have organized things
+        differently!</p>
+
+    <p>For Frogger, we decided that three game components should have their own classes - frog (player), obstacle, and
+        lanes
+        (Game.py). Before diving into the actual code. Let's think about how these components should be able to handle
+        and how
+        they should interact.</p>
+
+    <p>For our frog, we want to make sure that it can move in 4 different directions given keyboard inputs; we would
+        like to
+        return the frog to its starting position if it collided with an obstacle; we want the frog to identify that it
+        has made
+        it across all the traffic lanes safely; and finally, we need to display the frog.</p>
+
+    <p>For each obstacle, it should be able to move at varying speeds; it should be able to detect that it has moved
+        past the
+        edges of the screen and signal that; and it should be displayed on screen.</p>
+
+
+    <pre>
+        <code class="hljs livecodeserver">
+import pygame as pg
+import pygame.freetype as freetype
+import random
+import os
+from Game import Game
+from Frog import Frog
+from Obstacles import Obstacle
+
+
+
+# Simple pygame program
+screen_width = 700
+screen_height = 600
+num_lanes = 4
+
+# Import and initialize the pygame library
+pg.init()
+
+# Set up the drawing window
+screen = pg.display.set_mode([screen_width,screen_height])
+
+f_game = Game(4,3)
+
+</code>
+    </pre>
+
+    <p>With the big picture set, let's look more closely at the code. In particular, we will focus on how the Obstacle
+        class
+        and Game class interact. In the game loop in main.py, a new Game object is created, and obstacles are created
+        and stored
+        into the sprite groups</p>
+
+    <pre>
+        <code class="hljs livecodeserver">
+class Game:
+
+# num_lanes: How many total lanes is wanted in this game, minimum is two for start and end lanes. includes start, end
+and traffic lanes
+# num_lives: Game over when this number reaches 0
+# screen_height: Height of the pygame screen, will be used for some calculations later
+# screen_width: Width of the pygame screen, will be used for some calculations later
+# obstacle_group: A special class under pygame.sprite.Group() that can store pygame.sprite.Sprite() objects. We will talk more about sprites and groups later in the module
+
+def __init__(self, num_lanes, num_lives, screen_height, screen_width, obstacle_group):
+    self.num_lives = num_lives
+    self.num_lanes  = num_lanes
+    self.screen_height = screen_height
+    self.screen_width = screen_width
+    self.obstacle_group = obstacle_group
+
+</code>
+    </pre>
+
+    <p>
+        Obstacles are stored within the game through the <code>self.obstacle_group</code> variable. In the next page,
+        you will learn about sprites and groups in pygame and how they might be useful in building a game. Basically, by
+        making obstacles into a sprite, you can access of pygame's useful built-in sprite and group features such as
+        collision detection with other sprites and drawing many sprites at one one time with relative ease.
+
+    </p>
+    <p>Now, consider if we had not split up the code into different classes. It could become overwhelming to think about
+        all
+        obstacles that you have to keep track of and all the things you need to check for. However, by creating an
+        Obstacle
+        class, we only need to think about what a single Obstacle object needs to do. Similarly, the Game class gives us
+        a
+        useful data structure for storing all the Obstacle objects. Again, there is a lot of flexibility in design. For
+        example,
+        we could have chosen a different data structure to store the obstacle sprites; or we could have not used sprites
+        and created our
+        own classes; or we could have done the collisino detection through the game class instead of using pygame's
+        built in functions.
+
+    <p>We hope that this guide helps you see the importance and intricacy of design and gets you started on thinking
+        about how
+        you could componentize your final project!</p>
+
+</body>
+
+</html>

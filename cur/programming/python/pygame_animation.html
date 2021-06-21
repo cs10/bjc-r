@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Animation in Pygame</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+    <h2>
+        Limiting the Frames per Second (FPS)
+    </h2>
+
+    <p>
+        In the game loop of <code>main.py</code>, there are many lines of code that run in each iteration of the loop.
+        While this seems like a lot for the computer to process, the execution of all lines happens extremely fast.
+        While this is nice for most scripts, when we are making objects move on their own (i.e. the Obstacle sprites),
+        we usually want to control how fast they move. Otherwise, if an obstacle was to move every single call of the
+        game loop, or every single frame, the obstacles would move too fast for the user to play the game. Below is an
+        example of the Frogger game running without capping the FPS.
+    </p>
+
+    <div class = "center">
+        <img src = "/bjc-r/img/python/frogger.gif">
+    </div>
+
+    <p>
+
+
+        Luckily, pygame has a solution for this! Using the
+        <code><a href = "https://www.pygame.org/docs/ref/time.html#pygame.time.Clock.tick" target = "_blank">pygame.time.Clock.tick(fps)</a></code>
+        function, we can cap
+        the number of frames that happens per second.
+    </p>
+
+    <pre>
+        <code>
+import pygame as pg
+import pygame.freetype as freetype
+import random
+import os
+from Game import Game
+from Frog import Frog
+from Obstacles import Obstacle
+
+
+
+# Simple pygame program
+screen_width = 700
+screen_height = 600
+num_lanes = 6
+fps = 40
+
+# Import and initialize the pygame library
+pg.init()
+
+# Set up the drawing window
+screen = pg.display.set_mode([screen_width,screen_height])
+
+clock = pg.time.Clock()
+
+        </code>
+    </pre>
+
+    <p>
+        The above code is how we start the implementation of the FPS cap in our game code. The first thing we do is set
+        an fps variable when we set the rest of our variables. The second thing we do is create a
+        <code>pygame.time.Clock</code> instance.
+    </p>
+    <pre>
+        <code>
+running = True
+while running:
+
+    # Did the user click the window close button?
+    if win:
+        # do something ...
+
+    elif lose
+        # do something else ...
+
+    # Code for handling key presses and hitting the exit button
+    for event in pg.event.get():
+        #handle event ...
+
+
+    update()
+    draw()
+
+
+    #pg display things
+    pg.display.flip()
+    clock.tick(fps)
+        </code>
+    </pre>
+
+    <p>
+        At the end of the game loop, we simply call <code>clock.tick(fps)</code> to make sure that the fps is capped. And that is it!
+    </p>
+
+</body>
+
+</html>

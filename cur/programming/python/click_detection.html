@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>X,Y Coordinate to Index of the Board</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+    <p>
+        Looking back at the game loop, something happens in the game when the event <code>MOUSEBUTTONUP</code> happens.
+        When
+        we sense that the mouse button as been clicked and the player has let go of the mouse button, we want to log the
+        x,y
+        coordinates of the mouse and pass it through the function <code>Game().game_click(x,y)</code>.
+    </p>
+
+    <pre>
+        <code>
+running = True
+while running:
+    
+    for event in pg.event.get():
+        # Did the user click the window close button?
+        if event.type == pg.QUIT:
+            running = False
+        # is the player clicking on the screen right now?
+        if event.type == pg.MOUSEBUTTONUP:
+            x,y = pg.mouse.get_pos()
+            ttt_game.game_click(x, y)
+        </code>
+    </pre>
+    <p>
+        Let's take a more in depth look at the <code>game_click function</code> To understand how the game_click
+        function works, remember that our tic-tac-toe board is being represented as a list. As such, the indexes of the
+        list coresponds to coordinates like so:
+    </p>
+
+    <div class="center">
+        <img src="/bjc-r/img/python/board_rep.png" width="600" height="500">
+
+    </div>
+
+    <p>
+        There are multiple ways to use lists to represent a board, such as the <a
+            href="https://beautyjoy.github.io/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html?topic=berkeley_bjc%2Flists%2Ftic-tac-toe.topic&course=cs10_fa20.html&novideo&noreading&noassignment"
+            target="_blank">2D list array used in the boards lab.</a> The way that the board is implemented in TTT is
+        the same way the board was impleneted in the Pytris project. If you have trouble understanding this board
+        representation works, refer back to your code for Pytris for some extra clarification.
+    </p>
+    <pre>
+    <code>
+def game_click(self, x, y):
+
+
+    if x <= self.length * (1/3):
+        x_coor = 0
+    elif x <= self.length * (2/3):
+        x_coor = 1
+    else:
+        x_coor = 2
+
+    if y <= self.length * (1/3):
+        y_coor = 0
+    elif y <= self.length * (2/3):
+        y_coor = 1
+    else:
+        y_coor = 2
+
+    index = ((y_coor * 3) + x_coor ) 
+
+
+    if self.board[index] == None:
+
+        self.board[index] = self.curr_turn
+
+        self.switch_players = True
+    </code>
+</pre>
+
+    <p>
+        The inputs of <code>game_click(x,y)</code> are physical x, y coordinates on the pygame screen. In pygame, (0,0)
+        starts at the top left corder of the screen. The y coordinates grow in a positive direction going towards the
+        right side of the screen, and the y coordinates grows positvely when going towards the botom of the screen.
+    </p>
+
+    <div class="center">
+        <img src="/bjc-r/img/python/pygame_screen.png" width="500" height="500">
+    </div>
+
+    <p>
+        The <code>game_click</code>> function takes in a set of screen coordinates. In this tic-tac-toe game, the height
+        of the screen is 300, and the width is also 300. The game board spans the entire width and length of the screen.
+        With this information, it is possible to go from
+        <code>x,y coordinates -> col, row coordinate -> list index</code>
+    </p>
+    <p>
+        To go from x,y coordinate to row, col coordinate, we have to recognize the boundries of the for col = 0 is when
+        x is between 0 and 100, boundries for col = 1 is when x is between 100 and 200, and the boundries for col = 2 is
+        when x is between 200 and 300. This process is exactly the same for determining the col coordinate from y. Once
+        we have the col,row coordinate, we can use the index equation from the pytris project to find the index of the
+        list using the col,row coordinate: <code>index = ((y_coor * 3) + x_coor )</code>.
+    </p>
+    <p>
+        The rest of the code for <code>game_click</code> makes sure thatwe are only writing to the board if that
+        position is empty and not already filledß
+    </p>
+</body>
+
+</html>

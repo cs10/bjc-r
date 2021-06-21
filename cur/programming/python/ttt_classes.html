@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Tic Tac Toe Classes + Object Oriented Programming</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+
+<body>
+    <p class = "alert quoteGreen">
+        The next few pages deals with the tic tac toe game and its related files. If you have not done so already, take
+        a look at the code for the tic tac toe game to get an idea for what is going on.
+    </p>
+
+    <p> In this implementation of tic tac toe, wee are going to focus on how we can
+        use classes and objects to render a board and update it as players play a game of Tic Tac Toe.
+        Looking at the provided Game and Player classes, we see the connection between the functionality of the two
+        classes -- we use the Player objects in our Game. The Player class simply has a constructor method which
+        instantiates a Player and assigns it to either "x" or "o", while the Game class has 6 different methods: the
+        <code>__init__ method, update, game_click, draw_board, curr_player_win, and no_moves_left </code>. We are going
+        to take a
+        further look into what each of these methods do and how we might go about implementing them, focusing on
+        instance attributes and how we change them.
+        ​
+    </p>
+    <p>
+        The <code>__init__</code> method and the update method have been provided for you and looking at the body of the
+        methods, we
+        can see that a Game is initalized with 2 players and a defualt empty board, and player1 always starts first. We
+        see in the update method that it simply changes whose turn it now is based on whoever the previous player was.
+        The interaction between the Player class and Game class is clear here as we see the Game class using and
+        accessing instance variables from the Players passed in.
+        ​</p>
+    <p>
+        The <code>game_click</code> method has an actual behavior in the sense that it will actually take in a
+        "coordiante" as an
+        argument and update the board accordingly with the current player's piece. When writing your solution, think
+        about how boards are represented and how we might access the board variable of the Game and how we might figure
+        out which piece to put in that specified location depending on who the current player is. We will go more in
+        depth into how this function was implemented and how it works with the board represenation in the next page.
+    </p>
+    <p>
+        The <code>draw_board</code> method has a side effect of actually drawing the board that was created depending on
+        whose turn
+        it
+        just was and the move they made. The board drawing should reflect what the board currently looks like (think
+        about
+        how you could access the board in a Game).
+    </p>
+    <p>The <code>curr_player_win</code> method should return True or False based on whether or not the current player is
+        able to win
+        in
+        the current state of the board. Remember a player can win with any winning tripe (horizontal, vertical,
+        diagonal)
+        With respect to the loop in the game, where might we want to put this method? Think about what its functionality
+        is
+        -- what should the current player do if there is a winning move for them?
+    </p>
+    <p>
+        Finally, the <code>no_moves_left</code> method will tell the user whether or not there are any remaining moves.
+        At this
+        point,
+        what should the board look like if there are still moves? And if there are no more moves? Think about the
+        representation of the board and what its values should be if there can still be moves made in the Game and what
+        the
+        values should be if neither player can make a move. (Hint: there are no more moves when a board is full).
+
+    </p>
+</body>
+
+</html>
