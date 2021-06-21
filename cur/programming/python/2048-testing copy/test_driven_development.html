@@ -1,0 +1,78 @@
+<html>
+   <head>
+      <script src="/bjc-r/llab/loader.js"></script>
+      <title> Test Driven Development</title>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+   <body>
+     <br />
+<p>One interesting programming practice is so-called <em>Test Driven Development</em> or <a href="http://en.wikipedia.org/wiki/Test-driven_development" target="_blank">TDD</a>. In TDD, a programmer writes a test for each function <em>before</em> even writing that function at all. A substantial minority of programmers prefer to program in this way. To get a feeling for what it's all about, let's try it for this lab.</p>
+
+<p>There are two main goals for practicing TDD:
+  <ul>
+    <li>Think <em>before</em> you code. To be able to write a successful test, you need to know exactly what you want your functions to do. In reality, this exercise takes quite a bit of practice to get used to, but the planning pays off for most programmers who use TDD.</li>
+    <li>Make sure you know your code works! In "traditional" programming, where you write tests for code <em>after</em> you finished a , it's easy to forget writing the tests. TDD helps by making sure you always have a set of test you can quickly run to make sure there are no errors.</li>
+  </ul>
+</p>
+
+
+<p>
+  Let's start by writing a test for the <code>merge_up</code> function. In this case, we'll type in all of the values of the board. To make this easier, we've created a <code>new 4x4 board with values</code> that you can use. Each set of four values between <code>/</code> symbols is a single row. Try it out with the <code>print_board</code> function if you are still confused about how this function constructs a new board.
+</p>
+
+<div class="alert quoteGreen alert-success">
+  <h4><strong>For You To Do:</strong></h4>
+  <p>
+    Fill in the output values so that the test below is correct. Note that if you run the test, it will return <code>false</code>. This is because you haven't filled-in the <code>merge_up</code> function yet! In a sense, you've now created a little game for yourself that you win once the function starts returning true. One of the appeals of Test Driven Development is setting little challenges like this, and basking in the brilliant glow of the <code>true</code> that shines forth once your function is properly working.
+  </p>
+</div>
+
+<p>
+  Once you finish writing a test for an unfinished function you should always verify that the test actually returns <code>false</code>. That might seem silly, but it provides a sanity check that the test itself is doing its job. It turns out that it's just as easy to write buggy tests, as it is to write buggy code. A test case that can never fail is not very helpful! By having test cases change from failing to passing, you can verify that both your code and your tests are progressing in sync with one another.
+</p>
+
+<!-- Commenting this out for now, not sure if it's helpful, but it's a true reason for TDD:
+partially comes from this recent post: http://engineeringblog.yelp.com/2015/02/assert_called_once-threat-or-menace.html
+-->
+
+<p>
+  Another advantage of failing tests is that it gives you reassurance that the test is doing it's job. It turns out that it's just as easy to write buggy tests, as it is to write buggy code. A test case that can never fail is not very helpful! By having test cases change from failing to passing, you can verify that both your code and your tests are progressing in sync with one another.
+</p>
+
+<p>
+<pre>
+<code>
+import unittest
+import main
+
+class TestGame(unittest.TestCase):
+
+    def test_merge_up(self):
+        board = Board(4)
+        board.grid = [[4, 0, 0, 8], [2, 0, 0, 0], [2, 0, 32, 0], [4, 0, 0, 16]]
+        new_board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+        board.merge_up()
+        self.assertEqual(board.grid, new_board)
+
+if __name__ == '__main__':
+    unittest.main()
+</code>
+</pre>
+</p>
+
+<div class="alert quoteGreen alert-success">
+  <h4><strong>For You To Do:</strong></h4>
+  <p>As the final step in this short lab, write a test for the <code>merge_column_up</code> function. You should have at least TWO boards as input test cases (whereas our test for rotate clockwise only tried out one input board). Make sure you have your lab TA check off your test before you leave.
+	</p>
+</p>
+
+   </body>
+</html>
