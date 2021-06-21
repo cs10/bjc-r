@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+​
+<head>
+    <script src="/bjc-r/llab/loader.js"></script>
+    <title>Time is of the Es-sence</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+​
+        gtag('config', 'UA-176402054-1');
+    </script>
+</head>
+​
+<body>
+​
+<p>&nbsp;&nbsp;&nbsp;&nbsp;In Python exists a module that allows for us to measure execution time of our programs, the <code>timeit</code> module. <br><br></p>
+
+<pre>
+        <code class="hljs livecodeserver">
+            import timeit
+        </code>
+</pre>
+
+<p>We are going to be performing timing experiments in the following sections, so the current time will prove useful. </p>
+
+<pre>
+        <code class="hljs livecodeserver">
+            def runtime(fn):
+            start = timeit.default_timer()
+            fn
+            print('The sum took', int((timeit.default_timer() - start) * 1000000), 'ms.')
+        </code>
+</pre>
+
+<p>The <code>runtime</code> function above is also provided in your starter file, and it computes the runtime of a particular function by calculating the difference of the start time of the function and the current time. The answer will be in milliseconds.</p>
+
+<p> Now use the provided function to compare the efficiency of the non-gauss and gauss functions you created
+    on the previous page by calling it in the global frame. What happens when <code>n</code> is <code>2</code>? If <code></code> is <code>10</code>? If
+    <code>n</code> is <code>100</code>? If <code>n</code> is <code>1000</code>? </p>
+
+</body>
+​
+</html>

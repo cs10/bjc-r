@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html><head>
+<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>A Distinct Difference</title><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head><body>
+<p> We will end this lab by introducing another kind of running time that appears frequently.  
+</p>
+<p>
+Consider the following problem: I have a list of numbers and I want to know if the numbers in this list are <em>distinct</em>.
+In other words, I want to know if there are any repetitions in my list.
+This kind of question pops up frequently in computer science: for
+example, when returning search results, Google would like to ensure
+that all of the search results are different from each other (as far as
+possible). Here is a first attempt at an algorithm (which is a series
+of steps) to solve the problem:</p> <br><strong>Step 1</strong>. I take
+the first number of the list, and compare it with all of the other
+numbers in the list (the second number, the third number, and so on).
+If, at any point, I see the same number again, I stop and tell the user
+that the numbers are not distinct.<span style="font-weight: bold;"><br><br></span> <strong>Step 2</strong>.
+If I complete step 1 without stopping, I take the second number of the
+list, and compare it with all of the other numbers in the list (the
+third number, the fourth number, and so on). If, at any point, I see
+the same number again, I stop and tell the user that the numbers are
+not distinct.<span style="font-weight: bold;"><br><br></span> <strong>Step 3</strong>.
+I repeat the two steps above for all of the numbers in the list, each
+time taking a number from the list and comparing it with all of the
+following numbers.<br><br><strong>Step 4.</strong> If I am done with all of the numbers in the list, I stop and tell the user that the numbers <em>are</em> distinct.
+<br><br>
+<p> Take a moment to understand the algorithm, and ask any questions
+that you may have. Using the algorithm above, complete the body of the <code>are_distinct</code> function in the starter file. ><br><br></div>
+<p> Once we are done with the function, we need to figure out the <strong>worst-case</strong>
+running time of the algorithm: how long will this algorithm take on the
+worst possible input? By "worst", we mean an input that will cause the
+algorithm to work the most, or to run through the most steps. For this
+algorithm, for example, what is the worst possible input?</p>
+
+<p> Well, since the algorithm only ever stops partway if the numbers in
+the list are not distinct, we need a list whose numbers are distinct,
+so that the algorithm will have to look at all the numbers in the list.
+We already have one such list: the list of numbers from <code>1</code> to <code>n</code>! (This is turning out to be quite a useful list.) Let's use it!</p>
+<p> Place the <code>are_distinct</code> function that you just made inside the <code>runtime</code> function. The list that we are going to test is the <code>numbers</code>
+list, as we explained above. </p>
+<p> Run the timing script with <code>n</code> set to <code>10</code>. Again, run the script a few times to get an idea of the average time the computer takes to determine if the numbers in the <code>numbers</code> list is distinct.</p>
+<p> Repeat the experiment with <code>n</code> set to <code>20</code>, <code>40</code>, and <code>100</code>.
+What happens to the running time of the function when the size of the list
+is doubled? What happens when the size of the list is scaled by a
+factor of 10? (If you have quite a bit of time, you may want to try and
+see how long the algorithm takes with <code>n</code> set to <code>1000</code>.)</p>   </body></html>
