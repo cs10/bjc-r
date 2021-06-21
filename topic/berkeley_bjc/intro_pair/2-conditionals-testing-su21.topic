@@ -42,7 +42,7 @@ heading: More work with reporters
 
 heading: Testing your code
 
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?2]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
   resource: Simple Debugging [/bjc-r/cur/programming/debugging/simple-debugging-house.html]
   resource: The Check Block [/bjc-r/cur/programming/debugging/the-check-block.html]
   //resource: Using The Check Block [/bjc-r/cur/programming/debugging/using-the-check-block.html]
@@ -52,13 +52,13 @@ heading: Programs with Multiple Sprites
   resource: Experiment with a short Snap<em>!</em> play [/bjc-r/cur/programming/concurrency/snap/snap-play-learn-broadcast.html]
   quiz: Test Yourself: Go Team! [/bjc-r/cur/programming/intro/snap/test-yourself-go-team.html]
   quiz: Test Yourself: Different ways to broadcast [/bjc-r/cur/programming/concurrency/snap/quiz-different-ways-to-broadcast.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?5]
   resource: More "Message" Passing [/bjc-r/cur/programming/concurrency/snap/more-message-passing.html]
   resource: Global Variables [/bjc-r/cur/programming/variables/global-variables.html]
 
 
 heading: Number Guessing
   resource: Number Guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v1-0.html]
-  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?4]
+  resource: Pair Programming Swap [/bjc-r/cur/programming/guides/pair-programming-swap.html?6]
   resource: More number guessing [/bjc-r/cur/programming/conditionals/number-guessing-game-v2-0.html]
 //  resource: Tamagotchi [/bjc-r/cur/programming/conditionals/tamagotchi.html]
