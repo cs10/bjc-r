@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Too Many Blocks!</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+	<body>
+		<p>
+			There is only one problem with our search project: we have got three different functions that all do the same thing (finding a number in a list). That is way more complicated than it needs to be... How could we use abstraction to make this clearer and simpler for others who want to find numbers in a list?
+		</p>
+		<p>
+			Here is a thought: what if we created a single function "find number x in list y" that made no mention of how it found the number. The user of the function could assume that it would do what it said without worrying about the technicalities of how it gets it done. Then, even if you started with a terribly slow version of the function, you could easily update the algorithm it used without changing anything outside of the function itself. The input and output would remain the same -- only the steps to get from one to the other would change.
+		</p>
+		<p>
+			This is the beauty of abstraction with algorithms: users are able to assume that a particular function works without having to understand all of the details of the algorithm itself! Did you investigate the sort function included with this lab? You did not have to -- you could just assume that it worked!
+		</p>
+	</body>
+</html>
