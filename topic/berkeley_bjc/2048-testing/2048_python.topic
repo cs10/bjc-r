@@ -1,0 +1,21 @@
+title: Testing Code and 2048
+{
+h2: Introduction to the game 2048
+big-idea: Understand the essentials of 2048 and our new HoF block: <code>test</code>.
+
+
+h2: Activities
+learning-goal: Understand the 2048 assignment spec.
+learning-goal: Understand how the <code>test</code> block works.
+learning-goal: Gain familiarity with the idea of test driven development.
+learning-goal: Write tests that you can use for 2048.
+
+
+heading: 2048 and Tests
+   resource: Intro to the Game 2048 [/bjc-r/cur/programming/python/2048-testing/intro_to_proj3.html]
+   resource: Test Your Understanding [/bjc-r/cur/programming/python/2048-testing/test_your_understanding.html]
+   resource: The Test Block [/bjc-r/cur/programming/python/2048-testing/the_test_block.html]
+   resource: Basic Tests for 2048 [/bjc-r/cur/programming/python/2048-testing/basic_proj3_tests.html]
+   resource: Writing Tests  [/bjc-r/cur/programming/python/2048-testing/test_driven_development.html]
+
+}
