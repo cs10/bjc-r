@@ -1,0 +1,29 @@
+title: Algorithm Complexity
+{
+h2: Big Ideas
+big-idea: Understand that the running-time of an algorithm can be measured as the number of steps an algorithm takes as a function of its inputs.
+
+//   // video: Algorithmic Complexity [https://coursesharing.org/courses/6/lectures/15]
+  reading: How Moore's Law Works [http://computer.howstuffworks.com/moores-law.htm]
+  reading: The Free Lunch is Over [http://www.gotw.ca/publications/concurrency-ddj.htm]
+
+h2: Activities
+learning-goal: Use the Snap<em>!</em>  timer to gather run time information
+learning-goal: Observe the difference between constant, logarithmic, linear, quadratic run times.
+
+
+heading: Introduction
+  resource: Algorithmic Complexity [/bjc-r/cur/programming/python/algorithmic_complexity/algorithmic_complexity_intro.html]
+  
+heading: Timing Experiments
+  resource: Competing with Young Gauss [/bjc-r/cur/programming/python/algorithmic_complexity/competing_with_young_gauss.html]
+  resource: Time is of the Es-sense [/bjc-r/cur/programming/python/algorithmic_complexity/time_is_of_the_essence.html]
+  resource: Keep it Constant [/bjc-r/cur/programming/python/algorithmic_complexity/keep_it_constant.html]
+  resource: Linear-Time [/bjc-r/cur/programming/python/algorithmic_complexity/linear-time.html]
+  quiz: Searching Through Time [/bjc-r/cur/programming/python/algorithmic_complexity/self-test.html]
+  resource: A (non-video) Game [/bjc-r/cur/programming/python/algorithmic_complexity/a-nonvideo-game.html]
+  resource: Logarithmic-Time [/bjc-r/cur/programming/python/algorithmic_complexity/logarithmic-time.html]
+  resource: A Distinct Difference [/bjc-r/cur/programming/python/algorithmic_complexity/a-distinct-difference.html]
+  resource: Quadratic-Time [/bjc-r/cur/programming/python/algorithmic_complexity/quadratic-time.html]
+
+}

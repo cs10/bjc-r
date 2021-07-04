@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- put the following in exactly --><script src="/bjc-r/llab/loader.js"></script><title>Improving Our Number Finder</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+	<body>
+		<p>
+			<b>Feel free to ask for help on this section if you get stuck. We will be discussing a somewhat difficult subject and it may be helpful to have it explained in person.</b>
+		</p>
+		<p>
+			If the user may be searching for the same number multiple times, it seems ridiculous to calculate the answer each time that they ask. Why don't we remember the answer after it's been calculated instead? Remembering previously calculated information is called <b>memoization</b> (not memorization) in computer science. It is a powerful technique that can be used to speed up programs that have redundant calculations.
+		</p>
+		<p>
+			Let's implement a third function in our project that uses memoization to remember the location of numbers that have already been found. This function will be very similar to our second function you built, the sorted number finder.
+		</p>
+		<p><pre><code>
+def findNumberInSortedListMemo(x, lst):
+		</code></pre></p>
+		<p>
+			We will use a dictionary called <b>storage</b> to keep track of the locations of numbers that we have found already: each key in the dictionary will be the number we are looking for and the corresponding value will be the location where that number was found. And if the value is -1, that means that the number does not exist in the list. Here is an algorithm describing how the new function should progress using the new memoization list:
+		</p>
+		<ol>
+			<li>
+				Start off with an empty dictionary because we have not found any numbers yet (this has been done for you; just make sure you are accessing and storing values in <b>storage</b>).
+			</li>
+			<li>
+				Check the dictionary <em>storage</em> to determine if the number in question has already been found.
+			</li>
+			<li>
+				If so, report the saved location. If not, we will have to calculate it.
+			</li>
+			<li>
+				Find the location of the number using the sorted technique we have used in the past.
+			</li>
+			<li>
+				Save the location of the number in the <b>storage</b> dictonary so that we don't have to go through this pain again.
+			</li>
+		</ol>
+		<p>
+			To check your implementation, run:
+		</p>
+		<p><pre><code>
+python3 autograder.py skeleton.py 3
+		</code></pre></p>
+		<p>
+			Each value will now be computed a maximum of one time, which will save us a lot of time computing the position of the number. But notice that we are now keeping a dictionary that keeps increasing in size. This tradeoff between runtime and memory is something you will see over and over again in future classes.
+        </p>
+		<p>
+        	Consider the following questions:
+        </p>
+		<ul>
+        	<li>
+				When is memoization most useful?
+			</li>
+        	<li>
+				What are some trade-offs of using memorization?
+			</li>
+        </ul>
+	</body>
+</html>

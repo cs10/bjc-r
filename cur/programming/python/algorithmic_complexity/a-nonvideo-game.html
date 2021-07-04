@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- put the following in exactly -->
+
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            A (Non-Video) Game
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+        <p>
+            Let's play a number-guessing game. &nbsp;
+        </p>
+        <p>
+            Between your partner and yourself, decide who
+            will be the <i>guesser</i> and the the <i>picker</i>.
+
+            The picker chooses a number between 1 and 50, privately.
+            The guesser's role is to determine what the number is, and
+            to that end asks the picker questions with the only possible answers
+            being "yes" or "no".
+        </p>
+        <p>
+            The guesser should try two different
+            strategies to playing this game:
+        </p>
+        <ol>
+            <li>
+                <u>Guessing in sequence</u>: "Is the number 1?",
+                "Is the number 2?", "Is the number 3?", and so on.
+            </li>
+            <li>
+                <u>Guessing halfway</u>: You know the number must be between 1 and 50, so you
+                start off by asking "Is the number greater than 25?". If the
+                answer is "yes", you instantly know that it must be between 26 and 50,
+                so you ask "Is the number greater than 37?" (that is, halfway between
+                26 and 50).
+                <br>
+                <br>
+                If the answer to the original question
+                was no, the number must
+                be between 1 and 25, so you ask "Is the number greater than 12?"
+            </li>
+        </ol>
+        <p>
+            Play several times.  The picker should
+            pick a wide variety of numbers, while the guesser should
+            use each strategy
+            alternately.
+        </p>
+        <p class="alert quoteGreen">
+            As you play each game, think about the ways in which one
+            strategy is better than the other.  Which strategy would be better if, say,
+            the guessing game involved numbers from 1 to 1000?  From 1 to a
+            million?  From 1 to 3?
+            <br><br>
+            Are there other stragtegies you can think of?</p>
+    </body>
+</html>

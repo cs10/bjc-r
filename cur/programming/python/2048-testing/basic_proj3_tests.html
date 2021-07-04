@@ -1,0 +1,51 @@
+<html>
+
+
+   <head>
+
+      <script src="/bjc-r/llab/loader.js"></script>
+
+      <title> Introduction to 2048</title>
+
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+
+   <body>
+<h3>Testing 2048</h3>
+
+<p>Let's now turn to some tests of the functions that we provided for 2048. Click on the "2048 Lab" file, and you should see a test that looks like this at the top:
+
+<p>
+  <pre><code>
+board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+copy_board = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+test(copy_board, board, arg2 = None, arg3 = None, arg4 = None, copy_board)
+  </code></pre>
+</p>
+
+<p>This function ensures that the "copy_board" function applied to a board returns a copy of that board. If you run that test, you should see a return value of <code>True</code>, since this test passes. This tells us that these two functions have consistent behavior with each other, which is a good thing!
+
+<p>The next test should look like:
+
+<p>
+  <pre><code>
+board = Board(4)
+set_value(board, 1, 3, 2)
+test(get_value, board, 1, 3, arg4 = None, 2)
+test(get_value, board, 1, 2, arg4 = None, 0)
+  </code></pre>
+</p>
+
+<p>This test is a little trickier. Since the function we're testing takes in more than one argument, we have to make sure the inputs to the test function include all 3 of the arguments that the <code>get_value</code> function takes in. We also have to create a Board object that we can test this function so we instantiate a board we will test on called "board" and then set the item at position (2, 4) to be 2. In this case, the test verifies that if you set position (2, 4) to 2, that the actual value stored at that position is a 2 (remember that Python has 0 indexing). It also verifies that the value at position (2, 3) is just zero (since it hasn't been set). Again, if you run these tests, you should get back <code>True</code> twice. Make sure that this test makes sense before proceeding.</p>
+
+   </body>
+</html>

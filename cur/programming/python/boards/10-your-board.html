@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<script src="/bjc-r/llab/loader.js"></script>
+<title>Making Your Own Board</title>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+
+<body>
+<p>Today we are going to make a general purpose game board! Underestanding how to make a board will give you a better understanding of the boards in Project 3</p>
+  <div class="alert quoteGreen">
+	<!-- <p>We're going to be using a different <a class='run' href='http://snap.berkeley.edu/snapsource/snap.html#present:Username=cs10sp16&ProjectName=General%20board%20game%20starter'>starter file</a> for the remainder of the lab.</p> -->
+	<p>Here is the <a href='/bjc-r/cur/programming/python/boards/boards-starter-file.zip'>starter file</a> for the lab</p>
+</div>
+<p>One way to think of a board is as a collection of values at (row, column) coordinates. How can we represent this when it comes to implementation? Lists store values, so let's start there.</p>
+<p>Lists are groups of things in order, and we can group coordinates on a board into rows and columns:</p>
+<p><img src="/bjc-r/img/hof/board-rows-columns.png" alt="a board as rows and columns" /></p>
+<p>Let's choose to think of our board as a group of rows. Notice that each row is a group of values.</p>
+<p><img src="/bjc-r/img/hof/board-item.png" alt="a board as a list of rows" /></p>
+<p>It would make sense that each row be a list, right? The length of each list would then be the number of columns the board has. Since our board is made up of rows, it can be a list that stores all of the rows in it! Here's a visual representation of what this means in Python:</p>
+<p><img src="/bjc-r/img/hof/board-python-lists.png" alt="a list of rows in snap" /></p>
+<p>In the lab file, we have already written a function called <code>create_board(N)</code> that builds this structure for us. Take a look at the function definition to make sure we're all on the same page. For a board of size <code>N</code>, meaning a board with <code>N</code> rows and <code>N</code> columns, the function will generate a list with <code>N</code> items. Each item is a list of length <code>N</code> representing a row. Just like we planned!</p>
+<p>Now we have board representation! Congrats!</p>
+
+
+<p>How would our <code>set_item</code> and <code>get_item</code> functions change if we decided to group coordinates by column instead?</p>
+</body>
+</html>
