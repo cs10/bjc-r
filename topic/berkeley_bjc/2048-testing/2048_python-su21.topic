@@ -1,0 +1,38 @@
+title: Object-Oriented Programming & Intro to Project 3
+{
+h2: Introduction to the game 2048
+big-idea: Understand the essentials of 2048 and Object-Oriented Programming: <code>test</code>.
+big-idea: We've seen lists, dictionaries, etc. as types of data structures in Python, but now we will see objects as a data structure
+big-idea: Each object is an instance of some Class. Python has built-in classes and objects, but we can also define our own
+big-idea: The object system is designed so our object acts as an actual real-life object of that type would. For instance, if we had a Class Book, and created a specific Book object, we should be able to ask for its title, author, and genre
+big-idea: Classes can be hierarchical. For example, the Book Class above might have a subclass Textbook
+
+h2: Activities
+learning-goal: Understand the 2048 assignment spec.
+learning-goal: Build up a class that represents a book object step-by-step by just following along
+learning-goal: Learn about the basics of OOP in Python while completing above activity
+learning-goal: Use the aforementioned knowledge to build your own UC Berkeley Memes for Edgy Teens class
+
+heading: 2048 
+   resource: Intro to the Game 2048 [/bjc-r/cur/programming/python/2048-testing/intro_to_proj3-su21.html]
+
+heading: Introduction to Object-Oriented Programming (OOP)
+	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming/oop_intro.html]
+    resource: Coding a Book Class [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
+    resource: Coding a Book Class (cont.) [/bjc-r/cur/programming/python/object-oriented-programming/book_instances.html]
+
+heading: Initializing Objects
+    resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming/constructors.html]
+    resource: Adding Instance Attributes [/bjc-r/cur/programming/python/object-oriented-programming/adding_instance_attributes.html]
+
+heading: Methods
+    resource: Calculating Your Book's Age [/bjc-r/cur/programming/python/object-oriented-programming/book_age.html]
+    resource: Practice with Methods [/bjc-r/cur/programming/python/object-oriented-programming/method_exercises.html]
+
+heading: Inheritance
+    resource: Subclasses and their Attributes [/bjc-r/cur/programming/python/object-oriented-programming/inheritance.html]
+
+heading: Implementing Your Own Class
+	resource: Meme Oriented Programming [/bjc-r/cur/programming/python/object-oriented-programming/final_exercise.html]
+
+}
