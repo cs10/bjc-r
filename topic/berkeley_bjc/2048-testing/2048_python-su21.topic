@@ -18,19 +18,19 @@ heading: 2048
 
 heading: Introduction to Object-Oriented Programming (OOP)
 	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming/oop_intro.html]
-    resource: Coding a Book Class [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
-    resource: Coding a Book Class (cont.) [/bjc-r/cur/programming/python/object-oriented-programming/book_instances.html]
+   resource: Coding a Book Class [/bjc-r/cur/programming/python/object-oriented-programming/class_book_intro.html]
+   resource: Coding a Book Class (cont.) [/bjc-r/cur/programming/python/object-oriented-programming/book_instances.html]
 
 heading: Initializing Objects
-    resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming/constructors.html]
-    resource: Adding Instance Attributes [/bjc-r/cur/programming/python/object-oriented-programming/adding_instance_attributes.html]
+   resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming/constructors.html]
+   resource: Adding Instance Attributes [/bjc-r/cur/programming/python/object-oriented-programming/adding_instance_attributes.html]
 
 heading: Methods
-    resource: Calculating Your Book's Age [/bjc-r/cur/programming/python/object-oriented-programming/book_age.html]
-    resource: Practice with Methods [/bjc-r/cur/programming/python/object-oriented-programming/method_exercises.html]
+   resource: Calculating Your Book's Age [/bjc-r/cur/programming/python/object-oriented-programming/book_age.html]
+   resource: Practice with Methods [/bjc-r/cur/programming/python/object-oriented-programming/method_exercises.html]
 
 heading: Inheritance
-    resource: Subclasses and their Attributes [/bjc-r/cur/programming/python/object-oriented-programming/inheritance.html]
+   resource: Subclasses and their Attributes [/bjc-r/cur/programming/python/object-oriented-programming/inheritance.html]
 
 heading: Implementing Your Own Class
 	resource: Meme Oriented Programming [/bjc-r/cur/programming/python/object-oriented-programming/final_exercise.html]
