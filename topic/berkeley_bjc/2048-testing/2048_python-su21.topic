@@ -1,7 +1,7 @@
 title: Object-Oriented Programming & Intro to Project 3
 {
 h2: Introduction to the game 2048
-big-idea: Understand the essentials of 2048 and Object-Oriented Programming: <code>test</code>.
+big-idea: Understand the essentials of 2048 and Object-Oriented Programming.
 big-idea: We've seen lists, dictionaries, etc. as types of data structures in Python, but now we will see objects as a data structure
 big-idea: Each object is an instance of some Class. Python has built-in classes and objects, but we can also define our own
 big-idea: The object system is designed so our object acts as an actual real-life object of that type would. For instance, if we had a Class Book, and created a specific Book object, we should be able to ask for its title, author, and genre

@@ -17,13 +17,11 @@
 
 	<body>
 		<p>
-			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to create your very own class! If you look below your Textbook class, you'll see the class UCBMFET. Your job is to fill it out!
+			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to create your very own class! If you look below your Textbook class, you'll see the class MemePage. Your job is to fill it out!
 		</p>
 		<p>
 			<ul>
-				<li>
-					If you're not sure what UCBMFET is, it stands for UC Berkeley Memes for Edgy Teens. It's a Facebook page where both Berkeley and non-Berkeley students post funny jokes and memes about Berkeley. It's currently the largest college meme page that exists with roughly 173,532 members! Since there are so many people, moderators often regulate the page make sure the memes are original and everyone is an actual member of the group.
-				</li>
+				<li>The MemePage class represents one of the many meme pages on the internet. Your job is to fill out the following to-do list so people actually want to post memes on it, and so it has all of the properties of a proper meme page.</li>
 			</ul>
 		</p>
 
@@ -33,7 +31,7 @@
 			The following class attributes:
 			<ol type="a">
 				<li>
-					<em>members</em>, initialized to 173532
+					<em>members</em>, initialized to 10000
 				</li>
 				<li>
 					<em>topic</em>, initialized to 'memes'
@@ -64,28 +62,28 @@
 			Completion of the <em>tag_your_friend_in_meme</em> so that it does the following:
 			<ol type="a">
 				<li>
-					If the input parameter <em>friend</em> is not an instance of the UCBMFET class, returns string: 'You cannot tag someone in a meme if they are not a member of UCBMFET.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
+					If the input parameter <em>friend</em> is not an instance of the MemePage class, returns string: 'You cannot tag someone in a meme if they are not a member of this page.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
 				</li>
 				<li>
-					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] us in CS10!'
+					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] tagged!'
 				</li>
 			</ol>
 		</li>
 
 		<li>
-			Completion of the method post_in_UCBMFET so that it does the following:
+			Completion of the method post_in_page so that it does the following:
 			<ol type="a">
 				<li>
 					If the parameter of <em>title_of_post</em> already exists as a key inside the class attribute <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
 				</li>
 				<li>
-					Otherwise, it adds the <em>title_of_post</em> as a key inside the class attribute <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on UCMBFET is [insert your activity value here], and your total posts to UCBMFET is now [insert your posts value here].'
+					Otherwise, it adds the <em>title_of_post</em> as a key inside the class attribute <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on this meme page is [insert your activity value here], and your total posts to it is now [insert your posts value here].'
 				</li>
 			</ol>
 		</li>
 
 		<li>
-			Completion of the method <em>like_a_post_in_UCBMFET</em> so that it does the following:
+			Completion of the method <em>like_a_post_in_page</em> so that it does the following:
 			<ol type="a">
 				<li>
 					Increases your activity by 1
@@ -94,7 +92,7 @@
 					Increases the value of the key which corresponds to the post's title in the class attribute <em>posts</em> by 1.
 				</li>
 				<li>
-					Returns the string 'Your total activity on UCBMFET is [insert your activity value here, and the total number of likes on the post <br> [insert title_of_post] is [insert number of likes].'
+					Returns the string 'Your total activity on this meme page is [insert your activity value here, and the total number of likes on the post <br> [insert title_of_post] is [insert number of likes].'
 				</li>
 			</ol>
 		</li>
