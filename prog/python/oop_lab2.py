@@ -19,13 +19,13 @@ class Textbook(Book):
 
 	def random_function(self):
 		return 'Do something'
-class UCBMFET:
+class MemePage:
 	def __init__(self, name):
 		return
 	def tag_ur_friend_in_meme(self, friend):
 		return
 		#Hint: use the isinstance function
-	def post_in_UCBMFET(self, title_of_post):
+	def post_in_page(self, title_of_post):
 		return
-	def like_a_post_in_UCBMFET(self, title_of_post):
+	def like_a_post_in_page(self, title_of_post):
 		return
