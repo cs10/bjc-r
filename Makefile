@@ -6,8 +6,7 @@ EXTRAS=img llab.js llab/img/ llab/css/ llab/fonts/ llab/html llab/lib llab/scrip
 
 # Copies the existing source files into the www/ folder subdirectories.
 copy:
-	find ${SOURCES} | xargs -I {} cp -r --parents {} www/bjc-r/
-	cp -r --parents ${EXTRAS} www/bjc-r
+	cp -r --parents ${SOURCES} ${EXTRAS} www/bjc-r/
 
 # Processes each HTML file as a template. If any template markers are present
 # in the file, they will be replaced with data from config.json.
