@@ -3,7 +3,10 @@
   <head>
       <title>CS10 Labs | Spring 2021 | UC Berkeley </title>
       $for(css)$ 
-        <link rel="stylesheet" href="$base$$css$" />
+        <link rel="stylesheet" href="$css$"/>
+      $endfor$
+      $for(js)$ 
+        <script src="$js$"/>
       $endfor$
 
       <!-- keep these libraries for any bjc course you write, add others as necessary -->
