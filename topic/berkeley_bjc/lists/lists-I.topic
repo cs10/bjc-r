@@ -22,6 +22,7 @@ heading: Introduction to Lists
    resource: Transforming each item of a list [/bjc-r/cur/programming/lists/hof/transforming-each-item-of-a-list.html]
    resource: Choosing some items from a list [/bjc-r/cur/programming/lists/hof/choosing-some-items-from-a-list.html]
    resource: Combining all the items of a list [/bjc-r/cur/programming/lists/hof/combining-all-the-items-of-a-list.html]
+   resource: Hyperblocks instead of Map or Combine [/bjc-r/cur/programming/lists/hyperblocks/hyperblocks.html]   
    resource: Composing higher order functions to solve more complicated problems [/bjc-r/cur/programming/lists/hof/composing-higher-order-functions-to-solve-more-complicated-problems.html]
    resource: More on composition of higher order functions [/bjc-r/cur/programming/lists/hof/more-on-composition-of-higher-order-functions.html]
    resource: When you really have to loop [/bjc-r/cur/programming/lists/hof/when-you-really-have-to-loop.html]
