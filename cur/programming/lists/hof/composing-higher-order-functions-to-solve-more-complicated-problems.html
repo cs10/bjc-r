@@ -37,26 +37,28 @@ But what if we want the squares of the odd numbers? This is neither a simple <co
 
 Don't be confused about which inputs do and don't have rings. It's the square <b>function</b> and the are-you-odd? <b>function</b> that we use as the first input to each higher order function. But, even though <code>keep</code> itself is a function, it's <i>the <b>list</b> reported by <code>keep </code></i>that we're using as the second input to <code>map</code>.
 
-</p><br>We're building up to one the great beautiful procedures you'll see in this course: We want to take a phrase, such as &quot;Beauty and Joy of Computing,&quot; and report its acronym, the word BJC. You've explored two of the pieces of this problem in previous activities:
-<br>   - Select only the words with five or more letters.<br>   - Make a list of the first letters of the words.
-<br>Review those activities if you don't remember how to solve those problems.
+</p>
+<p>Or if we wrote this code using the hyperblock feature of the times operator, it might look like:
 
-<p>But there are two more steps, one at the beginning of the problem and one at the end, both related to the fact that people (the users of your program) want to see words and phrases in the form of text strings, but as you've seen, it's much easier to compute functions of those words and sentences if we have them in the form of lists, so we can use the higher order functions you're learning.
+<br>
+<img border="0" title="hyperblock squaring of odd items" alt="hyperblock squaring of odd items" src="/bjc-r/img/list/hyperblock/sq-odds.png"/>   
+
+</p><br>In this section, we'll combine everything we know to make a better version of our acroynm block. For example, if we provide the input &quot;University of California Berkeley&quot;, the block will report the text UCB. Or if we provide the input &quot;Beauty and Joy of Computing,&quot; the block will report the text BC. Here, our acronym block will keep the first letter of any word that is 5 or more syllables.
+
+<p>In addition to only keeping words of 5 or more syllables, another big difference between this block and your previous acroynm block is that this block accepts a text. That is, instead of providing a list that says ["University", "of", "California", "Berkeley"], you'll just get a text that says "University of California Berkeley". 
 
 </p>
-To translate from a text string to a list of words, you will need to import the <code>sentence->list</code> block by importing the <em>Words and Sentences</em> library. To import the library, click on the file icon in the upper left hand corner of Snap<em>!</em>, select <em>Libraries</em>, and import the <em>Words and Sentences</em> library.  
+<p>To translate from a text string to a list of words, you will need to import the <code>sentence->list</code> block by importing the <em>Words and Sentences</em> library. To import the library, click on the file icon in the upper left hand corner of Snap<em>!</em>, select <em>Libraries</em>, and import the <em>Words and Sentences</em> library.  
 <br><img border="0" src="/bjc-r/img/list/hof/words-sentences-lib.png" alt="words sentences lib" title="sentence->list block"/></br>
 <br><img border="0" src="/bjc-r/img/list/hof/stol.png" alt="sentence->list block" title="sentence->list block"/></br>
 <!--<br>As usual, you see only the first three list elements in the speech balloon, but you're told at the bottom that the length of the list is 5, as it should be for the five words in the given phrase.-->
 
-<p>Once we have the list, we can use the tools we've already built to get a list of the first letters of the long words. What we want, though, is a single word as the reported value. We can use one of the higher order functions to join the letters into a string.
 
-</p><b>Try this: </b>Should we use <code>map</code>, <code>keep</code>, or <code>combine</code> for this purpose?
+</p><p><b>Try this:</b> Define an acronym block that behaves as described above and as pictured below.
 
-<p>Here's the final result:<br>
-<img border="0" src="/bjc-r/img/list/hof/acronym.png" alt="acronym definition" title="acronym definition" /><br>
 <img border="0" src="/bjc-r/img/list/hof/bad-bjc.png" alt="acronym reports BC instead of BJC" title="acronym reports BC instead of BJC"/>
-<br>Oops! The word &quot;Joy&quot; is shorter than five letters, but it's still an important word in the acronym. We need a better algorithm.
+
+<br>You may use any combination of higher order functions and hyperblocks that you'd like. If you're stuck, click this link for a pure HOF solution with no hyperblocks: <a href="/bjc-r/img/list/hof/acronym.png">/bjc-r/img/list/hof/acronym.png</a>, or click this link for a solution which also uses hyperblocks: <a href="/bjc-r/img/list/hof/acronym.png"></a>.
 
 </p><br><br><b>Try this: <br></b>
 Modify the <code>acronym</code> block so that, instead of keeping long words, it keeps words that start with a capital letter. (Hint: Experiment with the <code>unicode of</code> block.)<br>
