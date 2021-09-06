@@ -5,7 +5,7 @@
 
       <script src="/bjc-r/llab/loader.js"></script>
 
-      <title> Transforming each item of a list</title>
+      <title> Introduction to Hyperblocks</title>
 
    <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
@@ -21,22 +21,37 @@
 
    <body>
 
-<p><br>In the last activity we made this list of nouns:<br>
+<p>In the map activity, we saw how we can transform a list using the map block. For example:
+</p>
+
+<p><img border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/list/hof/3x_7.png" /></p>
+<p>
+<img border="0" title="map letter 1 of" alt="map letter 1 of" src="/bjc-r/img/list/hof/ywd.png"/></p>
+<img border="0" title="map x * x" alt="map x * x" src="/bjc-r/img/list/hof/squares.png"/>
+
+<p>As of July 2020, many blocks in Snap! have now been converted into "hyperblocks". Roughly speaking, a hyperblock is a block which intuitively handles both list and scalar values. A scalar value is simply a value which is not a list.
+  </p>
+<p>So the code snippets above could instead simply be given by:</p>
+
+<p><img border="0" title="3x+7" alt="3x+7" src="/bjc-r/img/list/hyperblock/3x_7.png" /></p>
+<p>
+<img border="0" title="letter 1 of" alt="letter 1 of" src="/bjc-r/img/list/hyperblock/ywd.png"/></p>
+<img border="0" title="x * x" alt="x * x" src="/bjc-r/img/list/hyperblock/squares.png"/>
+
+<p>As you can see, hyperblock code is shorter and arguably easier to understand. In the examples above, the hyperblocks avoid the need to use the map function.
+
+</p>
+
+<p>Another example of a hyperblock is the </p>
+
+
+<p><br>In the maps activity we saw how we transform the list of nouns below and make them plural:<br>
 <img border="0" title="giraffe, elephant, pizza, etc." alt="giraffe, elephant, pizza, etc." src="/bjc-r/img/list/hof/nouns.png"/>
 
-</p>Now suppose we'd like to be able to vary our noun phrases by sometimes using one of these nouns in the plural. So we need a way to add the letter &quot;s&quot; to each item of the list. Find the <b>map</b> block near the bottom of the Variables palette and use it this way:<br>
+</p>Specifically, we used the map code block:<br>
 <img border="0" title="map ((join () (s))) over (nouns)" alt="map ((join () (s))) over (nouns)" src="/bjc-r/img/list/hof/map-join-s.png"/>
 
-<br><br>
-The first input to the <code>map</code> block has a form you haven't seen before this:<br>
-<img border="0" title="the MAP block" alt="the MAP block" src="/bjc-r/img/list/hof/mapblock.png"/>
 
-</p>
-<p>The grey ring means that the input should be a <i>function</i>. What we mean by this is basically the same thing as the <i>f</i>(<i>x</i>)=3<i>x</i>+7 kind of function in algebra, except that it doesn't have to be a numeric function. In this case the function we want is &quot;join the letter 's' after the given word.&quot; When you drag the <code>join</code> block into the <code>map</code> input slot, the grey ring is still visible, to remind you that the input is a function, not the word that you'd get from some particular <code>join</code>ing.
-  </p>
-<p>Instead of using a variable, like the <i>x</i> in <i>f</i>(<i>x</i>), to represent the input to the function, we leave one of <code>join</code>'s input slots as an empty box. This is supposed to remind you of the notation 3&times;&#x2610;+7 (&quot;three times box plus seven&quot;) that you learned for functions in elementary school before you knew about variables.
-
-</p>
 <p><br><b>Try this:</b> Modify your <code>noun phrase</code> block so that half the time it uses a plural noun. Note that, if you use a plural noun, the article has to be &quot;the,&quot; rather than &quot;a.&quot;
 
 </p>
