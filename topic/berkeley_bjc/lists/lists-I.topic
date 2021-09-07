@@ -1,9 +1,9 @@
 title: Collecting Data into Lists
 {
-h2: Big Ideas
+// h2: Big Ideas
 // big-idea: Understand the meaning of Turing Completeness.
 // big-idea: Understand the concept of recursion.
-big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
+// big-idea: Explore privacy issues related to the widespread unchecked dissemination of digital information.
 
 //  video: Programming Paradigms (Dan Garcia) [https://coursesharing.org/courses/6/lectures/13]
 //   video: Recursion 1 [https://coursesharing.org/courses/6/lectures/17]
@@ -14,7 +14,7 @@ h2: Activities
 learning-goal: Practice writing and reading functions with different input types.
 learning-goal: Determine how to break problems down into individual functions.
 learning-goal: Gain experience working with a new data structure and the large repository of blocks that work on this data structure.
-learning-goal: Develop the techniques and functions to draw a game board.
+// learning-goal: Develop the techniques and functions to draw a game board.
 
 heading: Introduction to Lists
    resource: Using the LIST block to make a list [/bjc-r/cur/programming/lists/hof/using-the-LIST-block-to-make-a-list.html]
