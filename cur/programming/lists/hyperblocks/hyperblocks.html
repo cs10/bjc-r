@@ -23,26 +23,36 @@
 
 <h3>Hyperblocks in Lieu of Map</h3>
 
-<p>In the map activity, we saw how we can transform a list using the map block. For example:
-</p>
+<p>As of July 2020, many blocks in Snap! have now been converted into "hyperblocks". Roughly speaking, a hyperblock is a block which intuitively handles both list and scalar values. A scalar value is simply a value which is not a list.</p>
 
-<p><img border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/list/hof/3x_7.png" /></p>
-<p>
-<img border="0" title="map letter 1 of" alt="map letter 1 of" src="/bjc-r/img/list/hof/ywd.png"/></p>
-<img border="0" title="map x * x" alt="map x * x" src="/bjc-r/img/list/hof/squares.png"/>
+<p>Hyperblocks allow us to write shorter (and arguably easier to understand) code in some places where we might have used the map function. For example, the +, x, and letter of blocks are all now hyperblocks, allowing us to write some familiar examples without map:
 
-<p>As of July 2020, many blocks in Snap! have now been converted into "hyperblocks". Roughly speaking, a hyperblock is a block which intuitively handles both list and scalar values. A scalar value is simply a value which is not a list.
-  </p>
-<p>So the code snippets above could instead simply be given by:</p>
-
-<p><img border="0" title="3x+7" alt="3x+7" src="/bjc-r/img/list/hyperblock/3x_7.png", style="width: 50%"></p>
-<p>
-<img border="0" title="letter 1 of" alt="letter 1 of" src="/bjc-r/img/list/hyperblock/ywd.png", style="width: 50%"></p>
-<img border="0" title="x * x" alt="x * x" src="/bjc-r/img/list/hyperblock/squares.png", style="width: 50%">
-
-<p>As you can see, hyperblock code is shorter and arguably easier to understand. In the examples above, the hyperblocks avoid the need to use the map function.
-
-</p>
+  <table>
+    <tr>
+      <td>
+        <img border="0" title="map 3x+7" alt="map 3x+7" src="/bjc-r/img/list/hof/3x_7.png", style = "width 40%">
+      </td>
+      <td>
+        <img border="0" title="3x+7" alt="3x+7" src="/bjc-r/img/list/hyperblock/3x_7.png", style="width: 40%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img border="0" title="map letter 1 of" alt="map letter 1 of" src="/bjc-r/img/list/hof/ywd.png", style = "width 40%">
+      </td>
+      <td>
+        <img border="0" title="letter 1 of" alt="letter 1 of" src="/bjc-r/img/list/hyperblock/ywd.png", style="width: 40%">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img border="0" title="map x * x" alt="map x * x" src="/bjc-r/img/list/hof/squares.png", style="width: 40%">
+      </td>
+      <td>
+        <img border="0" title="x * x" alt="x * x" src="/bjc-r/img/list/hyperblock/squares.png", style="width: 40%">  
+      </td>
+    </tr>
+  </table>
 
 <h3>Hyperblocks in Lieu of Combine</h3>
 
