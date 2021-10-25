@@ -17,55 +17,52 @@
 
 	<body>
 		<p>
-			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to create your very own class! If you look below your Textbook class, you'll see the class MemePage. Your job is to fill it out!
+			Okay, now that you've learned the basics of object-oriented programming in Python, it is time for you to create your very own classes! If you look below your Textbook class, you'll see the classes MemePage and Member. Your job is to fill them both out!
 		</p>
 		<p>
 			<ul>
-				<li>The MemePage class represents one of the many meme pages on the internet. Your job is to fill out the following to-do list so people actually want to post memes on it, and so it has all of the properties of a proper meme page. </li>
+				<li>The MemePage class represents one of the many meme pages on the internet. Your job is to fill out the following to-do list so people actually want to post memes on it, and so it has all of the properties of a proper meme page. The Member class represents a person who is a member of a MemePage, and can add and like posts on a MemePage. </li>
 			</ul>
 		</p>
 
 	<h3>To-Do</h3>
 	<ol>
 		<li>
-			The following class attributes:
+			A constructor method <em>for the MemePage class</em> which does the following:
 			<ol type="a">
 				<li>
-					<em>members</em>, initialized to 10000
+					Sets an instance attribute <em>members</em> to 0, representing the number of members who are in the MemePage.
 				</li>
 				<li>
-					<em>topic</em>, initialized to 'memes'
+					Sets an instance attribute <em>topic</em> to the input parameter of the same name.
 				</li>
 				<li>
-					<em>posts</em>, intialized to an empty dictionary
+					Sets an instance attribute <em>posts</em> to an empty dictionary. The keys in this dictionary will be the titles of the posts, and the value will be the number of likes for each post.
 				</li>
 			</ol>
 		</li>
 		<li>
-			A constructor method which does the following:
+			A constructor method <em>for the Member class</em> which does the following:
 			<ol type="a">
 				<li>
-					Sets an instance attribute <em>name</em> to the input parameter of the same name
+					Sets two instance attributes <em>name</em> and <em>memepage</em> to the input parameters of the same name. The memepage represents an instance of the MemePage class.
 				</li>
 				<li>
-					Sets two instance attributes <em>activity</em> and <em>posts</em> both to 0.
+					Sets two instance attributes <em>activity</em> and <em>num_posts</em> both to 0.
 				</li>
 				<li>
-					Sets an instance attribute <em>member</em> to True
-				</li>
-				<li>
-					Increases the class attribute <em>members</em> by 1
+					Increases the attribute <em>members</em> of the input memepage by 1, representing the addition of this member to their corresponding memepage.
 				</li>
 			</ol>
 		</li>
 		<li>
-			Completion of the <em>tag_your_friend_in_meme</em> so that it does the following:
+			Completion of the <em>tag_your_friend_in_meme</em> method so that it does the following:
 			<ol type="a">
 				<li>
-					If the input parameter <em>friend</em> is not an instance of the MemePage class, returns string: 'You cannot tag someone in a meme if they are not a member of this page.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
+					If the input parameter <em>friend</em> is not an instance of the Member class, or the friend's memepage attribute is not the same as the current instance's memepage attribute, returns string: 'You cannot tag someone in a meme if they are not a member of this page.' (Hint: You can use <em>isinstance(object, class)</em> to check if an object is an instance of a class)
 				</li>
 				<li>
-					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] tagged!'
+					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] has been tagged!' (Hint: Look up the string format() method in Python)
 				</li>
 			</ol>
 		</li>
@@ -74,10 +71,10 @@
 			Completion of the method post_in_page so that it does the following:
 			<ol type="a">
 				<li>
-					If the parameter of <em>title_of_post</em> already exists as a key inside the class attribute <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
+					If the parameter of <em>title_of_post</em> already exists as a key inside the memepage's <em>posts</em>, returns the string, 'You have been banned for reposting a meme.'
 				</li>
 				<li>
-					Otherwise, it adds the <em>title_of_post</em> as a key inside the class attribute <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on this [insert the topic of the meme page here] page is [insert your activity value here], and your total posts to it is now [insert your posts value here].'
+					Otherwise, it adds the <em>title_of_post</em> as a key inside the memepage's <em>posts</em>, with the value initialized to 0 (corresponding to the number of likes so far). It increases your activity and posts each by 1. It also returns the string 'Your total activity on this [insert the topic of the meme page here] page is [insert your activity value here], and your total posts to it is now [insert your posts value here].' (Hint: Look up the string format() method in Python)
 				</li>
 			</ol>
 		</li>
@@ -89,17 +86,17 @@
 					Increases your activity by 1
 				</li>
 				<li>
-					Increases the value of the key which corresponds to the post's title in the class attribute <em>posts</em> by 1.
+					Increases the value of the key which corresponds to the post's title in the memepage's instance attribute <em>posts</em> by 1.
 				</li>
 				<li>
-					Returns the string 'Your total activity on this [insert the topic of the meme page here] page is [insert your activity value here, and the total number of likes on the post <br> [insert title_of_post] is [insert number of likes].'
+					Returns the string 'Your total activity on this [insert the topic of the memepage here] page is [insert your activity value here], and the total number of likes on the post [insert title_of_post] is [insert number of likes].'
 				</li>
 			</ol>
 		</li>
 	</ol>
 	<br>
 	<p>
-		Congratulations! You have just built your very own class!
+		Congratulations! You have just built your very own classes!
 	</p>
 	</body>
 </html>
