@@ -22,12 +22,20 @@ class Textbook(Book):
 		return 'Do something'
 
 class MemePage:
-	def __init__(self, name):
+	def __init__(self, topic):
 		return 
-	def tag_ur_friend_in_meme(self, friend):
+
+
+class Member:
+	def __init__(self, name, memepage):
+		return
+
+	def tag_ur_friend_in_meme(self, friend, title_of_post):
 		return 
 		#Hint: use the isinstance function
+
 	def post_in_page(self, title_of_post):
 		return 
+
 	def like_a_post_in_page(self, title_of_post):
 		return 
