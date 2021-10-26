@@ -16,7 +16,6 @@ This lab assumes you have already watched the OOP lecture video. If you have not
 heading: Introduction to Object-Oriented Programming (OOP)
 	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_intro.html]
     resource: Coding a Book Class [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/class_book_intro.html]
-    resource: Coding a Book Class (cont.) [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/book_instances.html]
 
 heading: Initializing Objects
     resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/constructors.html]
