@@ -11,7 +11,8 @@ learning-goal: Build up a class that represents a book object step-by-step by ju
 learning-goal: Learn about the basics of OOP in Python while completing above activity
 learning-goal: Use the aforementioned knowledge to build your own UC Berkeley Memes for Edgy Teens class
 
-This lab assumes you have already watched the OOP lecture video. If you have not, stop and go watch that first! If you didn't attend lecture, it should be posted by 11:20 AM on 10/27.
+h2: Notes
+big-idea: This lab assumes you have already watched the OOP lecture video. If you have not, stop and go watch that first! If you didn't attend lecture, it should be posted by 11:20 AM on 10/27.
 
 heading: Introduction to Object-Oriented Programming (OOP)
 	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_intro.html]
