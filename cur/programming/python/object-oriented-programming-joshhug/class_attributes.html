@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Class Attributes</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+        <p>
+          It is also possible to define variables that are part of the class definition itself. Such variables are called class attributes. For example, let's add a variable that represent the count of all books that have been created.
+          <pre><code>
+class Book:
+    number_of_books = 0
+
+    def __init__(self, genre, title, author, py):
+        self.genre = genre
+        self.title = title
+        self.author = author
+        self.publication_year = py
+        Book.number_of_books = Book.number_of_books + 1
+
+    def calculate_age(self):
+        return 2021 - self.publication_year    
+          </code></pre>
+        </p>
+        <p>
+            For example, if we run the code below, we'll see the number 3 get printed, since there have been 3 books published at the time the code finishes running.
+        </p>
+
+          <pre><code>
+hunger_games = Book('Dystopian fiction', 'The Hunger Games', 'Suzanne Collins', 2008)
+ranger_games = Book('Crime Nonfiction', 'Ranger Games', 'Ben Blum', 2017)
+strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
+print(Book.number_of_books)
+          </code></pre>
+
+        <p> Try running <a href="https://pythontutor.com/visualize.html#code=class%20Book%3A%0A%20%20%20%20number_of_books%20%3D%200%0A%0A%20%20%20%20def%20__init__%28self,%20genre,%20title,%20author,%20py%29%3A%0A%20%20%20%20%20%20%20%20self.genre%20%3D%20genre%0A%20%20%20%20%20%20%20%20self.title%20%3D%20title%0A%20%20%20%20%20%20%20%20self.author%20%3D%20author%0A%20%20%20%20%20%20%20%20self.publication_year%20%3D%20py%0A%20%20%20%20%20%20%20%20Book.number_of_books%20%3D%20Book.number_of_books%20%2B%201%0A%0A%20%20%20%20def%20calculate_age%28self%29%3A%0A%20%20%20%20%20%20%20%20return%202021%20-%20self.publication_year%20%0A%20%20%20%20%20%20%20%20%0Ahunger_games%20%3D%20Book%28'Dystopian%20fiction',%20'The%20Hunger%20Games',%20'Suzanne%20Collins',%202008%29%0Aranger_games%20%3D%20Book%28'Crime%20Nonfiction',%20'Ranger%20Games',%20'Ben%20Blum',%202017%29%0Astrange_book%20%3D%20Book%28%22Cooking%22,%20%22How%20to%20Cook%20Water%22,%20%22Yaxson%20Mang%22,%202016%29%0Aprint%28Book.number_of_books%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">the code at Python tutor at this link.</a>
+        </p>
+
+<p>As usual, I have a few notes:
+
+            <ol>
+                <li>
+                    Technically, you can refer to class attributes using the name of an instance. For example, we could ask for ranger_games.number_of_books. However, this is bad style. <b>I strongly advise against accessing class attributes with instance names.</b> This leads to confusing code. Only use class names when accessing or modifying class attributes, e.g. Book.number_of_books.
+                </li>
+                <li>Technically, you can add an instance attribute with the same name as a class attribute. This is also bad coding style. For example, see what happens when you run the code <a href="https://pythontutor.com/visualize.html#code=class%20Book%3A%0A%20%20%20%20number_of_books%20%3D%200%0A%0A%20%20%20%20def%20__init__%28self,%20genre,%20title,%20author,%20py%29%3A%0A%20%20%20%20%20%20%20%20self.genre%20%3D%20genre%0A%20%20%20%20%20%20%20%20self.title%20%3D%20title%0A%20%20%20%20%20%20%20%20self.author%20%3D%20author%0A%20%20%20%20%20%20%20%20self.publication_year%20%3D%20py%0A%20%20%20%20%20%20%20%20Book.number_of_books%20%3D%20Book.number_of_books%20%2B%201%0A%0A%20%20%20%20def%20calculate_age%28self%29%3A%0A%20%20%20%20%20%20%20%20return%202021%20-%20self.publication_year%20%0A%20%20%20%20%20%20%20%20%0Ahunger_games%20%3D%20Book%28'Dystopian%20fiction',%20'The%20Hunger%20Games',%20'Suzanne%20Collins',%202008%29%0Aranger_games%20%3D%20Book%28'Crime%20Nonfiction',%20'Ranger%20Games',%20'Ben%20Blum',%202017%29%0Astrange_book%20%3D%20Book%28%22Cooking%22,%20%22How%20to%20Cook%20Water%22,%20%22Yaxson%20Mang%22,%202016%29%0A%0Aranger_games.number_of_books%20%3D%2012786&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">at this link</a>. You'll see the ranger_games object has a new variable that is ALSO called number_of_books which "hides" the class attribute. Do not do this in real code. The exact details of what happens when you are foolish enough to create instance attributes with the same name as class attributes will not be tested on exams. It's not worth your time to learn. </li>
+                <li><b>Class attributes should be used VERY SPARINGLY</b>. The example above is a reasonable example: For some reason you want to count the number of books instantiated. There's no way to do this as an instance attribute since every instance has its own variable, so we use a class attribute instead. Another common example is when there is a constant used by a class, e.g. Math has a class attribute called pi, which you can access with Math.pi. In CS10, you should NEVER use class attributes unless we specifically tell you to or you have a really good reason (e.g. constants or counting the number of somethings across a large number of instances).</li>
+                <li>This is beyond the scope of the course, but occasionally online you will see someone suggest that class attributes can be used to represent a default value for an instance attribute. This is almost always bad practice. (In case you're curious why, it's because class attributes are mutable).</li>
+        </ol>
+    </body>
+</html>
