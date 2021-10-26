@@ -20,7 +20,6 @@ heading: Introduction to Object-Oriented Programming (OOP)
 
 heading: Initializing Objects
     resource: Constructors [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/constructors.html]
-    resource: Adding Instance Attributes [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/adding_instance_attributes.html]
 
 heading: Methods
     resource: Calculating Your Book's Age [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/book_age.html]
