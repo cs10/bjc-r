@@ -22,50 +22,53 @@
 
 		<pre><code>
 class Book:
-	language = 'English'
-	worn_down = False
-
-	def __init__(self, genre, title, author, publication_year):
+	def __init__(self, genre, title, author, py):
 		self.genre = genre
 		self.title = title
 		self.author = author
-		self.publication_year = publication_year
+		self.publication_year = py
 
 	def calculate_age(self):
-		return 2018 - self.publication_year
+		return 2021 - self.publication_year
 		</code></pre>
 		</p>
 
 		<p>
-			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year and its year of publication. However, there are a couple of important things worth noting:
+			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year (2021) and its year of publication. 
+		</p>
+		<p>To invoke our method, the most obvious way is as follows:
+
+            <pre><code>
+ranger_games = Book('Crime Nonfiction', 'Ranger Games', 'Ben Blum', 2017)
+print(Book.calculate_age(ranger_games))
+            </code></pre>  
+
+ 		</p>          
+ 		<p>This code tells the Book class to run the calculate_age method on the instance of the Book class called ranger_games. You can try it out on PythonTutor <a href="https://pythontutor.com/visualize.html#code=class%20Book%3A%0A%20%20%20%20def%20__init__%28self,%20genre,%20title,%20author,%20py%29%3A%0A%20%20%20%20%20%20%20%20self.genre%20%3D%20genre%0A%20%20%20%20%20%20%20%20self.title%20%3D%20title%0A%20%20%20%20%20%20%20%20self.author%20%3D%20author%0A%20%20%20%20%20%20%20%20self.publication_year%20%3D%20py%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20def%20calculate_age%28self%29%3A%0A%20%20%20%20%20%20%20%20return%202021%20-%20self.publication_year%0A%0Aranger_games%20%3D%20Book%28'Crime%20Nonfiction',%20'Ranger%20Games',%20'Ben%20Blum',%202017%29%0Aprint%28Book.calculate_age%28ranger_games%29%29%0A&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">at this link</a>.</p>
+
+ 		<p>The code above, while it technically works, does not obey the usual idioms. Instead, we usually tell the instance itself to do the age calculation:
+
+            <pre><code>
+ranger_games = Book('Crime Nonfiction', 'Ranger Games', 'Ben Blum', 2017)
+ranger_games.calculate_age()            
+						</code></pre>
+		</p>
+		<p>This alternate syntax is EXACTLY identical in behavior, as you can see by running the code in Python Tutor <a href="https://pythontutor.com/visualize.html#code=class%20Book%3A%0A%20%20%20%20def%20__init__%28self,%20genre,%20title,%20author,%20py%29%3A%0A%20%20%20%20%20%20%20%20self.genre%20%3D%20genre%0A%20%20%20%20%20%20%20%20self.title%20%3D%20title%0A%20%20%20%20%20%20%20%20self.author%20%3D%20author%0A%20%20%20%20%20%20%20%20self.publication_year%20%3D%20py%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20def%20calculate_age%28self%29%3A%0A%20%20%20%20%20%20%20%20return%202021%20-%20self.publication_year%0A%0Aranger_games%20%3D%20Book%28'Crime%20Nonfiction',%20'Ranger%20Games',%20'Ben%20Blum',%202017%29%0Aprint%28ranger_games.calculate_age%28%29%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">at this link</a>.
+		</p>
+
+		</p>There are a few important things worth noting:
 
 			<ol>
 				<li>
-					Any method we write must have at minimum one parameter: self. This parameter is how our method recognizes which object it is being called on (an example of how to call it will be given in a moment).
+					Any method we write must have at minimum one parameter: self. If we use the class name to invoke the method, e.g. Book.calculate_age(ranger_games), then we must provide the book whose age is to be calculated. If we instead use the more common syntax where we invoke using the name of an instance, e.g. ranger_games.calculate_age(), then Python automatically fills in the first argument of the function with the instance whose method got called.
+				</li>
+				<li>The name "self" is just a convention. You can technically put anything you want, e.g. def calculate_age(a_book), and it would just fine. However, other programmers might get confused that you're not using the usual convention of putting self. 
 				</li>
 
 			<li>
-				In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to.
+				In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to. For example, if our calculate_age method returned  2021 - publication_year, the code would just crash, since we don't know WHOSE publication year. You can try this out by editing the code on PythonTutor if you'd like.
 			</li>
 		</ol>
-
-			Any method we write must have at minimum one parameter: self. This parameter is how our method recognizes which object it is being called on (an example of how to call it will be given in a moment).
-			In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to.
-
-			Now say we want to figure out the age of our hunger_games book object from earlier. Here's how we'd do it:
-		<pre><code>
->>>hunger_games.calculate_age()
-10
-		</code></pre>
-		Not too bad, right? What you might be wondering, however, is where we actually passed in our argument self? In this case, self is bound to hunger_games, and we passed it in through dot notation. A bit weird, but you will get used to it in time. If our method had other arguments, they'd be passed in the traditional way. Keep this in mind for your first exercise!
-
-		<ul>
-			<li>
-				Also, as a side note, you can assign methods to specific, individual objects using lambda notation as well. This technique won't be super important for this class, but be sure to ask your TA about it if you're interested!
-			</li>
-		</ul>
-	</p>
-
 
 	</body>
 </html>
