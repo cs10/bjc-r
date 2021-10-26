@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Constructors</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+        <p>
+            Recall the code thus far for our book class:
+
+            <pre><code>
+class Book:
+    language = 'English'
+    worn_down = False
+            </code></pre>
+        </p>
+        <p>
+            In addition to having attributes like above, we can also include functions within our class. We call these functions <strong>methods</strong>; these methods are specific to our class and can only be used by instances of our class. There is a special method which we use to initialize, or create, objects, known as the __init__ method (two underscores on each side). This method is called a <strong>constructor</strong> and very useful in initializing objects with instance attributes!
+        </p>
+        <p>
+            Here is what our code would look like if we wanted to initialize an object with certain attributes :
+
+            <pre><code>
+class Book:
+    language = 'English'
+    worn_down = False
+
+    def __init__(self, genre, title, author, publication_year):
+        self.genre = genre
+        self.title = title
+        self.author = author
+        self.publication_year = publication_year
+            </code></pre>
+        </p>
+        <p>
+            Now, when we create a Book object, we need to make sure every argument is correctly filled, which would be 4 in this case.
+        </p>
+        <p>
+            <pre><code>
+>>> hunger_games = Book('Dystopian fiction', 'The Hunger Games', 'Suzanne Collins', 2008)
+>>> hunger_games.genre
+'Dystopian fiction'
+>>> hunger_games.publication_year
+2008
+>>> hunger_games.language
+'English'
+            </code></pre>
+        </p>
+        <p>
+            <br>
+            <strong>Key things to note:</strong>
+        </p>
+        <ol>
+            <li>
+                If you're wondering why we didn't pass anything in self, it's because Python automatically does that for you. How neat!
+            </li>
+            <li>
+                Inside the constructor, you'll notice that we add <em>self</em> in front of our class attributes. Since our constructor has the same argument names as our instance attributes, we use self to let Python know that we're referring to the object and its attributes, not the argument names. If we didn't add this, Python would simply define the argument as the argument.
+            </li>
+            <li>
+                We must ensure that any arguments we pass into In our case, we need to make sure we put quotes around our string if we want Python to treat the input as a string.
+            </li>
+            <li>
+                Even though we never defined our book's language, it's automatically set to English because we defined it outside of the constructor. In general, class attributes don't need to be defined in the constructor, and every instance of a class shares the attribute.
+            </li>
+        </ol>
+    </body>
+</html>

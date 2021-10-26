@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Inheritance</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+        <p>
+            There is one more topic we have left to discuss with regards to OOP in Python. Imagine that we want to create objects of the type <em>Textbook</em>.
+            Now, a textbook is a specific type of book, right? So, it follows that it should have every attribute and method a book has, like a cover, pages, authors, but also some other things like a publisher or product key.
+            Writing out the code again would be tedious, not to mention an abstraction violation! Luckily, we (you) don't have to! Instead we can do this:
+
+            <pre><code>
+class Textbook(Book):
+    publisher = 'Houghton Mifflin Harcourt'
+
+    def random_function(self):
+        return 'Do something'
+            </code></pre>
+        </p>
+        <p>
+            At first glance, it might seem that our new class just has a publisher and a method that...does something?<br>
+            Well, load up your Python file and try the following out in the terminal:
+        </p>
+        <p>
+            <pre><code>
+>>>math_textbook = Textbook('Mathematics', 'Mathematics Textbook', 'Euclid', 324)
+            </code></pre>
+        </p>
+        <p>
+            Now, try asking for its language, genre, and author. What do you see? The reason for this is that Textbook is a <strong>subclass</strong> of <em>Book</em> and so all the things we defined in Book are automatically defined in Textbook as well! This is known as <em>inheritance</em> in OOP!
+            <pre><code>
+>>>math_textbook.language
+'English'
+>>>math_textbook.genre
+'Mathematics'
+>>>math_textbook.author
+'Euclid'
+            </code></pre>
+        </p>
+        <p>
+            We can create as many subclasses of our main class as we want, and subclasses of those subclasses, and subclasses of those subclasses, and so on and so forth. The key idea to remember however,
+            is that when you look up an attribute or a method of an object, it will start looking at the bottom of the pyramid and work its way up.
+            So, for our example above, when we asked for the language of our math textbook, Python actually started by looking in the Textbook class, and when it did not find any attribute with that name,
+            it went and looked in the superclass Book, finding it there.
+        </p>
+    </body>
+</html>
