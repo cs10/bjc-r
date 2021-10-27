@@ -21,7 +21,7 @@
 		<p>
 			<ol>
 				<li>
-					Exercise 1: Please complete the method <em>outdated</em>, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, returns true.
+					Exercise 1: Please complete the method <em>outdated</em>, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, returns True.
 					<pre><code>
 >>>strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
 >>>strange_book.calculate_age()
@@ -34,11 +34,12 @@ False
 
 				</li>
 				<li>
-					Edit the Book class so that it has a new class attribute called <em>genres</em>, initialized to an empty dictionary. Then, add a method <em>add_to_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside varieties, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book is added to the catalog multiple times.
+					Edit the Book class so that it has a new class attribute called <em>genres</em>, initialized to an empty dictionary. Then, add a method <em>add_to_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside genres, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book is added to the catalog multiple times.
 					<pre><code>
 >>>Book.genres
 {}
 >>>old_book = Book("Comic", "Calvin & Hobbes", "Bill Watterson", 1985)
+strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
 >>>Book.add_to_catalog(old_book)
 >>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]]}

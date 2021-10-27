@@ -15,29 +15,27 @@
 </head>
     <body>
         <p>
-            There is one more topic we have left to discuss with regards to OOP in Python. Imagine that we want to create objects of the type <em>Textbook</em>.
-            Now, a textbook is a specific type of book, right? So, it follows that it should have every attribute and method a book has, like a cover, pages, authors, but also some other things like a publisher or product key.
-            Writing out the code again would be tedious, not to mention an abstraction violation! Luckily, we (you) don't have to! Instead we can do this:
+           As a sneak preview of future CS courses you might take, let's very briefly discuss the idea of "inheritance". Imagine that we want to create objects of the type <em>MooingBook</em>, which is a book that is just like any other book, except that it can make a mooing sound.
+            A MooingBook should have every attribute and method a book has: a genre, title, author, and publication year. However, it will also have a method called moo that lets it moo.
+            Writing out all that code again would be tedious and reptetitive! Instead we can do this:
 
             <pre><code>
-class Textbook(Book):
-    publisher = 'Houghton Mifflin Harcourt'
-
-    def random_function(self):
-        return 'Do something'
+class MooingBook(Book):    
+    def moo(self):
+        print("On behalf of " + self.author +  ", I moo.")
             </code></pre>
         </p>
         <p>
-            At first glance, it might seem that our new class just has a publisher and a method that...does something?<br>
-            Well, load up your Python file and try the following out in the terminal:
+            At first glance, it might seem that our new class just has a moo method.<br>
+            Well, load up your Python file by entering "python3 -i oop_labv3.py" at your command line, then try the following out in the terminal:
         </p>
         <p>
             <pre><code>
->>>math_textbook = Textbook('Mathematics', 'Mathematics Textbook', 'Euclid', 324)
+>>> math_textbook = MooingBook('Mathematics', 'Mathematics Textbook', 'Euclid', 324)
             </code></pre>
         </p>
         <p>
-            Now, try asking for its language, genre, and author. What do you see? The reason for this is that Textbook is a <strong>subclass</strong> of <em>Book</em> and so all the things we defined in Book are automatically defined in Textbook as well! This is known as <em>inheritance</em> in OOP!
+            Now, try asking for its language, genre, and author. What do you see? The reason for this is that MooingBook is a <strong>subclass</strong> of <em>Book</em> and so all the things we defined in Book are automatically defined in MooingBook as well! This is known as <em>inheritance</em> in OOP!
             <pre><code>
 >>>math_textbook.language
 'English'
@@ -45,13 +43,15 @@ class Textbook(Book):
 'Mathematics'
 >>>math_textbook.author
 'Euclid'
+>>>math_textbook.moo()
+'On behalf of Euclid, I moo.'
             </code></pre>
         </p>
         <p>
             We can create as many subclasses of our main class as we want, and subclasses of those subclasses, and subclasses of those subclasses, and so on and so forth. The key idea to remember however,
             is that when you look up an attribute or a method of an object, it will start looking at the bottom of the pyramid and work its way up.
-            So, for our example above, when we asked for the language of our math textbook, Python actually started by looking in the Textbook class, and when it did not find any attribute with that name,
-            it went and looked in the superclass Book, finding it there.
+            So, for our example above, when we asked for the genre of our MooingBook, Python actually started by looking in the MooingBook class, and when it did not find any attribute with that name,
+            it went and looked in the superclass Book, finding it there. We won't really use inheritance in our course, but you'll see this idea if you take 61A.
         </p>
     </body>
 </html>
