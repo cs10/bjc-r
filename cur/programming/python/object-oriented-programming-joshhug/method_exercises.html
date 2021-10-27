@@ -34,25 +34,25 @@ False
 
 				</li>
 				<li>
-					Edit the Book class so that it has a new class attribute called <em>genres</em>, initialized to an empty dictionary. Then, add a method <em>add_to_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside genres, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book is added to the catalog multiple times.
+					Edit the Book class so that it has a new class attribute called <em>genres</em>, initialized to an empty dictionary. Then, add a method <em>add_to_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside genres, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book is passed to add_to_genres multiple times.
 					<pre><code>
 >>>Book.genres
 {}
 >>>old_book = Book("Comic", "Calvin & Hobbes", "Bill Watterson", 1985)
 strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
->>>Book.add_to_catalog(old_book)
+>>>Book.add_to_genres(old_book)
 >>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]]}
->>>Book.add_to_catalog(strange_book)
+>>>Book.add_to_genres(strange_book)
 >>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
  "Cooking" : [["How to Cook Water", "Yaxson Mang"]]}
->>>Book.add_to_catalog(old_book)
+>>>Book.add_to_genres(old_book)
 >>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
  "Cooking" : [["How to Cook Water", "Yaxson Mang"]]}
 >>>cooking_two = Book("Cooking", "Never Cook Slime", "Josh Hug", 2021)
->>>Book.add_to_catalog(cooking_two)
+>>>Book.add_to_genres(cooking_two)
 >>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
  "Cooking" : [["How to Cook Water", "Yaxson Mang"],
