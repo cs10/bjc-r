@@ -25,6 +25,9 @@ class MooingBook(Book):
 
 class MemePage:
 	def __init__(self, topic):
+		self.members = 0
+		self.topic = topic
+		self.posts = {}
 		return 
 
 
