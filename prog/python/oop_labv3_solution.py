@@ -28,19 +28,36 @@ class MemePage:
 		self.members = 0
 		self.topic = topic
 		self.posts = {}
-		return 
-
-
+		 
 class Member:
 	def __init__(self, name, memepage):
-		return
+		self.name = name
+		self.memepage = memepage
+		self.activity = 0
+		self.num_posts = 0
+		memepage.members += 1
 
 	def tag_ur_friend_in_meme(self, friend, title_of_post):
-		return 
-		#Hint: use the isinstance function
+		if not isinstance(friend, Member):
+			return "You cannot tag someone in a meme if they are not a member of this page."		
+		if friend.memepage != self.mempage:
+			return "You cannot tag someone in a meme if they are not a member of this page."
+		self.activity += 1
+		return "@ " + friend.name +  "has been tagged!"
+		#Hint: use the isinstance function as described in lab
 
 	def post_in_page(self, title_of_post):
-		return 
+		if title_of_post in self.posts:
+			return "You have been banned for reposting a meme."
+		self.memepage.posts[title_of_post] = 0
+		self.activity += 1
+		self.num_posts += 1
+		return String.format("Your total activity on this {} page is {}, and your total posts to it is now {}.",
+			                  self.memepage.topic, self.activity, self.num_posts)
 
 	def like_a_post_in_page(self, title_of_post):
-		return 
+		self.activity += 1
+		self.memepage.posts[title_of_post] += 1		
+		return String.format("Your total activity on this {} page is {}, and the total number of likes on the post {} is {}.",
+			                  self.memepage.topic, self.activity, title_of_post, self.memepage.posts[title_of_post])
+
