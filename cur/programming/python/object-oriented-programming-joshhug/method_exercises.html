@@ -21,30 +21,46 @@
 		<p>
 			<ol>
 				<li>
-					Exercise 1: Please complete the method <em>outdated</em>, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, the book object should be assigned a new instance attribute "worn_down" which is set to True.
+					Exercise 1: Please complete the method <em>outdated</em>, which determines if a book has reached old age. The takes in a book object and an age, and if the book's age is greater than the age given, returns true.
 					<pre><code>
 >>>strange_book = Book("Cooking", "How to Cook Water", "Yaxson Mang", 2016)
 >>>strange_book.calculate_age()
-2
+5
 >>>strange_book.outdated(4)
->>>strange_book.worn_down
 True
+>>>strange_book.outdated(2)
+False
 					</code></pre>
-
-					<p>Note that the example above is contrived. Methods like "outdated" that set a new instance variable as a side effect are generally undesirable. It's better design to simply have the outdated method return True rather than setting some other arbitrary value to True.</p>
 
 				</li>
 				<li>
-					Edit the Book class so that it has a new class attribute called <em>varieties</em>, initialized to an empty dictionary. Then, add a method <em>add_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside varieties, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book object's method is called multiple times. 
-
+					Edit the Book class so that it has a new class attribute called <em>genres</em>, initialized to an empty dictionary. Then, add a method <em>add_to_genres</em> to the Book class that takes in a book object. If the book's genre does not exist inside varieties, then we add the genre as a key, with its value being a list of lists. Each list inside this list of lists should contain a book's title and author. If the genre does exist already, then we simply add our book object's title and author to the corresponding genre's value. The same book title and author should not appear more than once for a given genre, even if that book is added to the catalog multiple times.
 					<pre><code>
->>>Book.varieties
+>>>Book.genres
 {}
 >>>old_book = Book("Comic", "Calvin & Hobbes", "Bill Watterson", 1985)
->>>Book.add_genres(old_book)
->>>Book.varieties
+>>>Book.add_to_catalog(old_book)
+>>>Book.genres
 {"Comic" : [["Calvin & Hobbes", "Bill Watterson"]]}
+>>>Book.add_to_catalog(strange_book)
+>>>Book.genres
+{"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
+ "Cooking" : [["How to Cook Water", "Yaxson Mang"]]}
+>>>Book.add_to_catalog(old_book)
+>>>Book.genres
+{"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
+ "Cooking" : [["How to Cook Water", "Yaxson Mang"]]}
+>>>cooking_two = Book("Cooking", "Never Cook Slime", "Josh Hug", 2021)
+>>>Book.add_to_catalog(cooking_two)
+>>>Book.genres
+{"Comic" : [["Calvin & Hobbes", "Bill Watterson"]],
+ "Cooking" : [["How to Cook Water", "Yaxson Mang"],
+              ["Never Cook Slime", "Josh Hug"]]}
+
 					</code></pre>
+				</li>
+				<li>
+				Extra: Change genres so that the list of books in each genre is stored as a set (rather than a list). Hint: Sets can only contain immutable objects, so you'll also need to store the book title and author in another data structure from lecture in order to create a set of them.
 				</li>
 			</ol>
 		</p>
