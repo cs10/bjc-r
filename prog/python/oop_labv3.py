@@ -11,7 +11,7 @@ class Book:
 		#Should return True if the age is at least old_age
 		return 
 
-	def add_genre(self):
+	def add_to_genres(self):
 		'''If the book's genre isn't in the genres, then you'll need to add the genre to genres
 		as well as the original book's information. Otherwise, just make sure the book isn't
 		inside genres before you add it!'''
