@@ -19,14 +19,6 @@ learning-goal: Multiple sprites only exacerbate the problem, and race conditions
 learning-goal: When we call "launch", does that mean another worker starts up? (answer: yes and no)
 learning-goal: The meta learning goal for this part is for you to develop an accurate mental model of how Scratch handles concurrency. This is so you avoid race conditions and deadlock, and so that you can fully exploit it to your benefit!
 
-
-// heading: Background: concurrency without the computer
-// resource: Card Sorting [/bjc-r/cur/programming/sorting/cards/card-sorting.html]
- // group: Card Sorting: Discussion [/bjc-r/cur/programming/sorting/cards/card-sorting-discuss.html]
- // resource: Card Sorting: Let's do it [/bjc-r/cur/programming/sorting/cards/card-sorting-lets-do-it.html]
- // resource: Card Sorting: Reflect [/bjc-r/cur/programming/sorting/cards/card-sorting-reflect.html]
- // forum: Concurrency in real life... [/bjc-r/cur/programming/concurrency/concurrency-in-real-life.html]
-
 heading: Two heads are better than one.
   resource: Snap<em>!</em>  Machine Concepts [/bjc-r/cur/programming/concurrency/snap/snap-machine-concepts.html]
   resource: Concurrency in Snap<em>!</em>  [/bjc-r/cur/programming/concurrency/snap/snap-play-1.html]
