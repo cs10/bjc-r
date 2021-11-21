@@ -1,4 +1,4 @@
-from lab10 import Beater, Chaser, Seeker, Keeper
+from oop_debugging import Beater, Chaser, Seeker, Keeper
 import random
 
 def main():
