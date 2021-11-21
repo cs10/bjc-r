@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction to Debugging</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            One of the most important skills to learn in programming is how to debug and spot errors in your own code. This lab will help you practice debugging, and reading error messages from the terminal. 
+          </p>
+
+          <p>To get started, download the lab files from <a href="/bjc-r/prog/python/oop-debugging-lab.zip">this link</a>.</p>
+
+          To get started on this lab:
+          <ul>
+          <li>Create a new folder called "datalab" on your computer (the name doesn't actually matter, but I'll assume that's the name you used). 
+          </li>
+          <li>Download the data for this lab from <a href="/bjc-r/prog/python/text_processing.zip">this link</a>. 
+          </li>
+          <li>Unzip this file. You can unzip this file through the command line by using the  <code>unzip</code> command.
+            <pre><code>$ unzip oop-debugging-lab.zip
+$ cd oop-debugging-lab
+$ ls
+oop_debugging.py      quidditch_game.py
+</code></pre>
+          </li>
+          </p>
+          <p>If you need help with this process, make sure to ask your lab TA.</p>
+          <h3>Debugging the Account Class</h3>
+          <p>Take a look inside oop_debugging.py. There are several bugs in the Account class. Fix the bugs to satisfy the code in the docstring, shown below. The docstring is the text in triple quotes underneath the class header. It also shows examples of what each function should do. You can put this code into your terminal to test it out! </p>
+          <p>/Make sure to read the docstrings for EVERY function so you understand what each function should do!</p>
+          <pre><code>
+            >>> sophia_account = Account('Sophia')
+            >>> sophia_account.deposit(1000000)   # depositing my paycheck for the week
+            1000000
+            >>> sophia_account.transactions
+            [('deposit', 1000000)]
+            >>> sophia_account.withdraw(100)      # buying dinner
+            999900
+            >>> sophia_account.transactions
+            [('deposit', 1000000), ('withdraw', 100)]
+          </code></pre>
+    </body>
+</html>

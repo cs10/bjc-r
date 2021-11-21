@@ -1,0 +1,14 @@
+title: Debugging OOP in Python
+{
+h2: Big Ideas
+big-idea: We can use messages from the terminal to help debug code, and find errors step by step.
+
+h2: Activities
+learning-goal: Debug an Account class by testing in the terminal.
+learning-goal: Learn about inheritance and subclasses.
+
+heading: Debugging 
+	resource: The Account Class [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_debug_intro.html]
+heading: Quidditch
+    resource: Quidditch Players and Their Subclasses [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_debug_quidditch.html]
+}
