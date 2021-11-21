@@ -78,9 +78,7 @@ class Chaser(QuidditchPlayer):
         """
         Chasers have a name, score goals, and begin with base_energy.
         """
-        self.name = name
-        self.base_energy = base_energy
-        self.goals = goals
+        "*** YOUR CODE HERE ***"
         
 
     def energy(self, time):
