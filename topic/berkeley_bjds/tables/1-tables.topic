@@ -1,0 +1,33 @@
+title: Welcome to Data Science in Snap! <em>!</em>
+
+{
+h2: Big Ideas
+big-idea: Explore Data Science using Snap<em>!</em>
+big-idea: Explore Tables and how we can use Snap<em>!</em> to manipulate them
+big-idea: Understand how Tables can be used to answer questions about data
+
+
+h2: Activities
+learning-goal: Familiarize yourself with the Data Science in Snap<em>!</em> (DASIS) library
+learning-goal: Create a Table from scratch using data we do not need to import
+learning-goal: Access data from a Table
+learning-goal: Access information about a Table
+learning-goal: Explore introductory calculation using Table data
+
+heading: Introduction to Data Science in Snap<em>!</em>
+
+  resource: Introduction [/bjc-r/cur/programming/data_science/lab01/01-welcome-to-dasis.html]
+  resource: Important Settings [/bjc-r/cur/programming/data_science/lab01/02-dasis-settings.html]
+  resource: Create Your Own Tables [/bjc-r/cur/programming/data_science/lab01/03-create-your-own-tables.html]
+  resource: Viewing Tables [/bjc-r/cur/programming/data_science/lab01/04-viewing-tables.html]
+  resource: Querying a Table [/bjc-r/cur/programming/data_science/lab01/05-intro-to-querying.html]
+  resource: Editing Tables [/bjc-r/cur/programming/data_science/lab01/06-editing-tables.html]
+
+heading: Answering Data-Related Questions
+  
+  resource: Importing Tables [/bjc-r/cur/programming/data_science/lab01/07-importing-tables.html]
+  resource: Using Queries [/bjc-r/cur/programming/data_science/lab01/08-using-queries1.html]
+  resource: Using Queries [/bjc-r/cur/programming/data_science/lab01/09-using-queries2.html]
+  resource: Conclusion [/bjc-r/cur/programming/data_science/lab01/10-conclusion.html]
+
+}

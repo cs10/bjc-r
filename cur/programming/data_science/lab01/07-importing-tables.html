@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            Importing Tables
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            Now that we've worked with a Table we created for a bit, you may be finding that working with
+            data sets any larger than a few rows and columns will start to become more time consuming to enter in
+            by hand. Luckily, we have a way to bypass the manual input by <b>importing a file</b>.
+        </p>
+
+        <p>
+            A file is just a way to store data. You may have seen files on your computer before, but their actual contents
+            were not as important. Now, we are interested in seeing how a <b>CSV</b> file can help us solve our input problem.
+            A <b>.csv</b> tag at the end of a filename means that the information stored in the file is separated by commas.
+            Why or how it works is not as important, but what you do need to know is that you can import and even store a Table
+            in this file format. When you see <b>.csv</b>, think <b>Table</b>.
+        </p>
+
+        <p>
+            The process of importing a Table in Snap<em>!</em> requires:
+        </p>
+
+        <ol>
+            <li> A <b>.csv</b> file that contains Table data </li>
+            <li> A global variable for you to store that data in (in this lab, we use <img src="/bjc-r/img/data-science/taxi-data.png" alt="taxi_data" style="width:10%"/>) </li>
+            <li> That global variable to be shown on the stage (by clicking the little check box next to it in the toolbar on the left of the screen) </li>
+        </ol>
+
+        <p>
+            Once you have all those things, you can follow these steps:
+        </p>
+
+        <ol>
+            <li>
+                <p>
+                    You should see your new global variable, <img src="/bjc-r/img/data-science/taxi-data.png" alt="taxi_data" style="width:7%"/> in the stage.
+                    Right click the variable on the stage to find the <b>import</b> option:
+                </p>
+        
+                <div class="center">
+                    <img src="/bjc-r/img/data-science/import.gif" alt="Import Option" style="width:30%"/>
+                </div>
+            </li>
+            <li> Select the <b>.csv</b> file from your computer </li>
+            <li> 
+                Set the global variable to a new Table Object using <img src="/bjc-r/img/data-science/create-from-file.png" alt="Create from file block" style="width:40%"/>.
+                This will overwrite the raw table you imported and replace it with a DASIS Table object, which is what we want.
+                <p class="alert quoteGreen">
+                    This version of the <code>CREATE Table Object</code> block assumes that the <b>.csv</b> file you provide has column names already. This is the case with most
+                    existing data sets, but if you ever want to use a <b>.csv</b> file that has no column names, you can use
+                    <img src="/bjc-r/img/data-science/create-from-file-no-cols.png" alt="Create from file with no columns block" style="width:40%"/>
+                </p>
+            </li>
+        </ol>
+
+        <p>
+            If you did everything right, this should be what is stored in your <img src="/bjc-r/img/data-science/taxi-data.png" alt="taxi_data" style="width:7%"/> variable:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/correct-import.png" alt="Correct taxi_data" style="width:60%"/>
+        </div>
+
+    </body>
+</html>

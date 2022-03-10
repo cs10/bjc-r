@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            Editing Tables
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            At some point, we may want to add additional data to an existing Table. When adding data to a Table, always remember
+            to make sure your new column/row has the correct number of items to match with the Table.
+            Let's try adding one new row and one new column to our Table by running the following blocks in this order:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/add-row.png" alt="Add row" style="width:43%"/>
+
+            <img src="/bjc-r/img/data-science/add-col.png" alt="Add column" style="width:42%"/>
+        
+            <p style="clear:both";></p>
+        </div>
+
+        <p class="alert quoteRed">
+            Note that we had to use a 'set' block to see the Table change. The <b>ADD (non-permanent)</b> alone is just a reporter and will not change the table itself.
+            There are command block versions of the <b>ADD</b> blocks that make the changes to the actual Table, so when using those be
+            careful not to overwrite data. We recommend using the reporter versions for now.
+        </p>
+
+        <p>
+            What happens when we try to add a column or row with an incorrect number of values? Try adding this row and this column to
+            <img src="/bjc-r/img/data-science/our-table.png" alt="Our table" style="width:8%"/>:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/add-row-error.png" alt="Add row error" style="width:43%"/>
+
+            <img src="/bjc-r/img/data-science/add-col-error.png" alt="Add column error" style="width:42%"/>
+        
+            <p style="clear:both";></p>
+        </div>
+
+        <p class="alert quoteGreen">
+            Note the error message here. This may be a common mistake at first, so if you see this error message
+            make sure to check that the number of items you are adding to the table is valid.
+        </p>
+
+        <p>
+            Because <img src="/bjc-r/img/data-science/our-table.png" alt="Our table" style="width:8%"/> has 3 columns,
+            adding this row with 2 values does not work. The same goes for adding the column with 3 values
+            because <img src="/bjc-r/img/data-science/our-table.png" alt="Our table" style="width:8%"/> has 5 rows.
+            Think about what you could do to the proposed row and column to allow them to be added to the Table successfully.
+        </p>
+
+    </body>
+</html>
