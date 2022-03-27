@@ -1,0 +1,29 @@
+title: Table Methods
+
+{
+h2: Big Ideas
+big-idea: Explore Data Science using Snap<em>!</em>
+big-idea: Explore Tables and how we can use Snap<em>!</em> to manipulate them
+big-idea: Understand how Tables can be used to answer questions about data
+
+
+h2: Activities
+learning-goal: Explore new Table methods in DASIS
+learning-goal: Use those Table methods to answer more complex questions about data
+
+heading: New Table Methods
+
+  resources: Introduction [/bjc-r/cur/programming/data_science/lab02/01-intro.html]
+  resources: The Order Block [/bjc-r/cur/programming/data_science/lab02/02-order.html]
+  resources: The Where Block [/bjc-r/cur/programming/data_science/lab02/03-where.html]
+  resources: A Quick Query Quiz [/bjc-r/cur/programming/data_science/lab02/04-query-quiz.html]
+  resources: The Select Block [/bjc-r/cur/programming/data_science/lab02/05-select.html]
+  resources: The Drop Block [/bjc-r/cur/programming/data_science/lab02/06-drop.html]
+  resources: The Limit Block [/bjc-r/cur/programming/data_science/lab02/07-limit.html]
+  resources: The Apply Block [/bjc-r/cur/programming/data_science/lab02/08-apply.html]
+  resources: The Relabel Block [/bjc-r/cur/programming/data_science/lab02/09-relabel.html]
+  resources: The Delete Blocks [/bjc-r/cur/programming/data_science/lab02/10-delete.html]
+  resources: Practice Questions [/bjc-r/cur/programming/data_science/lab02/11-questions.html]
+  resources: Conlcusion [/bjc-r/cur/programming/data_science/lab02/12-conc.html]
+
+}

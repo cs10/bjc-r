@@ -1,0 +1,9 @@
+﻿pickup,dropoff,passengers,distance,fare,tip,tolls,total,color,payment,pickup_zone,dropoff_zone,pickup_borough,dropoff_borough,pickup_hour,dropoff_hour,pickup_day,dropoff_day
+2019-03-01 00:03:29,2019-03-01 00:13:32,3,2.16,10.0,2.0,0.0,15.8,yellow,credit card,Lincoln Square East,Upper East Side North,Manhattan,Manhattan,0,0,1,1
+2019-03-01 00:08:32,2019-03-01 00:29:47,3,7.35,22.5,1.0,0.0,27.3,yellow,credit card,East Chelsea,Mott Haven/Port Morris,Manhattan,Bronx,0,0,1,1
+2019-03-01 00:15:53,2019-03-01 00:47:58,1,7.0,25.5,7.3,0.0,36.6,yellow,credit card,West Village,Astoria,Manhattan,Queens,0,0,1,1
+2019-03-01 00:29:22,2019-03-01 00:32:48,4,0.74,4.5,1.0,0.0,9.3,yellow,credit card,Meatpacking/West Village West,Meatpacking/West Village West,Manhattan,Manhattan,0,0,1,1
+2019-03-01 00:30:59,2019-03-01 00:37:39,2,1.35,7.0,0.0,0.0,8.3,green,cash,Astoria,Queensbridge/Ravenswood,Queens,Queens,0,0,1,1
+2019-03-01 00:32:49,2019-03-01 00:53:18,1,5.34,19.0,2.0,0.0,24.8,yellow,credit card,Clinton East,Sunnyside,Manhattan,Queens,0,0,1,1
+2019-03-01 00:53:00,2019-03-01 00:58:22,1,0.9,5.5,1.0,0.0,10.3,yellow,credit card,Midtown Center,Midtown North,Manhattan,Manhattan,0,0,1,1
+2019-03-01 00:56:50,2019-03-01 01:04:01,1,1.45,7.0,1.0,0.0,11.8,yellow,credit card,Union Sq,UN/Turtle Bay South,Manhattan,Manhattan,0,1,1,1

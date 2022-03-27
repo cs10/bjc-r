@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Select Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/select-block.png" alt="ORDER block" style="width:60%"/>
+        </div>
+
+        <p>
+            The <code>SELECT</code> block is a block we can use to get a new Table containing only a small number of columns
+            from the original Table. If you only need a few columns from a Table to do additional work, the <code>SELECT</code>
+            block can eliminate columns you don't need.
+        </p>
+
+        <p>
+            The Table that results from a <code>SELECT</code> block call has <b>at most the same number of columns</b>
+            (if you selected every column), but <b>typically fewer columns</b> than the original table, and it will also
+            have the <b>same number of rows</b> as the original Table. The order of the columns in the new Table will be
+            the same as their order in the original Table, just with the unselected columns omitted.
+        </p>
+
+        <p>
+            The <code>SELECT</code> block takes in 2 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> A list of column names or indexes to select (you can include both, but we recommend using only names or only indexes) </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            To see an example of the <code>SELECT</code> block in use, we will try to answer the question
+            <b>How much do taxis charge per mile on average?</b>.
+        </p>
+
+        <p>
+            To calculate the per mile rate for these taxis, we need the fare and distance data.
+            To see only the <code>fare</code> and <code>distance</code> columns of the 
+            <img src="/bjc-r/img/data-science/taxi-data.png" alt="Taxi data" style="width:7%"> Table,
+            we can use the following query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-selected.png" alt="Fare and Distance" style="width:80%">
+        </div>
+
+        <p>
+            Using the <code>SELECT</code> block, we can make seeing the data we want easier by only focusing on the columns
+            we want to see. 
+        </p>
+
+        <p>
+            Now that we have the columns we want, we can answer our question about the average per mile rate for these taxis.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-per-mile-mean.png" alt="Average per mile rate" style="width:80%">
+        </div>
+
+    </body>
+</html>

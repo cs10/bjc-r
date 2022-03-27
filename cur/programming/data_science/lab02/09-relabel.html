@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Relabel Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/relabel-block.png" alt="RELABEL block" style="width:60%"/>
+        </div>
+
+        <p>
+            The <code>RELABEL</code> block is a block we can use to rename an existing column. The
+            <code>RELABEL</code> block is a command block, so it will <b>permanently</b> affect the Table you are working with;
+            it will not make a copy.
+        </p>
+
+        <p>
+            The <code>RELABEL</code> block does not change the dimensions of the Table, but it changes a column name.
+            It will still have the same number of rows and columns as before.
+        </p>
+
+        <p>
+            The <code>RELABEL</code> block takes in 3 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> An existing column name (not an index) </li>
+            <li> The new column name </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            To see an example of the <code>RELABEL</code> block in use, we will change the name of one of our
+            existing columns because in the last slide we made a new kilometers column for distance.
+            We will change the <code>distance</code> column's label to better reflect the data it contains
+            using the following query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/relabel-distance.png" alt="RELABEL block call" style="width:60%"/>
+        </div>
+
+        <p>
+            Now, our 2 distance columns more clearly reflect the data they contain. If we just left them as
+            <code>distance</code> and <code>distance (km)</code>, then other programmers who see our table may
+            be confused as to the units of the <code>distance</code> column, or after enough time we may even forget
+            ourselves!
+        </p>
+
+    </body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Where Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/where-block.png" alt="ORDER block" style="width:80%"/>
+        </div>
+
+        <p>
+            The <code>WHERE</code> block is a block we can use to filter out rows we don't want and keep the ones we do.
+            You can think of the <code>WHERE</code> block as being similar to the <b>keep</b> HOF block in Snap<em>!</em>,
+            where you use a boolean condition to keep certain rows and discard others.
+        </p>
+
+        <p>
+            The Table that results from a <code>WHERE</code> block call has <b>at most the same number of rows</b>
+            (if you didn't filter any rows out), but <b>typically fewer rows</b> than the original table, and it will also
+            have the <b>same number of columns</b> as the original Table. The order of the rows in the new Table will be
+            the same as their order in the original Table, just with the unkept rows omitted.
+        </p>
+
+        <p>
+            The <code>WHERE</code> block takes in 5 arguments, with the third argument being optional. These arguments are:
+        </p>
+
+        <ol>
+            <li> A Table </li>
+            <li> A column label or index to use as the keeping values </li>
+            <li> A modifying reporter function to apply to the column argument before keeping (optional) </li>
+            <li> A boolean to indicate whether to keep or discard a row </li>
+            <li> The threshold value you want to use as the border between keeping and discarding a row </li>
+        </ol>
+
+        <p class="alert quoteGreen">
+            As with the <code>ORDER</code> block, the third argument should be left blank if you do not want to use it.
+        </p>
+
+        <p>
+            Let's see examples of the <code>WHERE</code> block in use.
+        </p>
+
+        <p>
+            To see only the rows in the <img src="/bjc-r/img/data-science/taxi-data.png" alt="Taxi data" style="width:7%"> Table
+            where the passengers were dropped off in <b>Queens</b>, we can use the following query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-dropoff-queens.png" alt="Dropoff in Queens" style="width:80%">
+        </div>
+
+        <p>
+            And to see the rows where the passengers were dropped off in <b>Manhattan</b>, we can use a similar query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-dropoff-manhattan.png" alt="Dropoff in Queens" style="width:80%">
+        </div>
+
+    </body>
+</html>

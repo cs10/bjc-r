@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Limit Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/limit-block.png" alt="LIMIT block" style="width:60%"/>
+        </div>
+
+        <p>
+            The <code>LIMIT</code> block is a block we can use to get a new Table with only the first <code>n</code> rows
+            in a Table.
+        </p>
+
+        <p>
+            The Table that results from a <code>LIMIT</code> block call has the same number of columns as the
+            original Table, and <code>n</code> rows, where <code>n</code> is the argument you pass in.
+        </p>
+
+        <p>
+            The <code>LIMIT</code> block takes in 2 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> A number, <code>n</code>, that represents how many rows you want from the top of the Table.
+                Must be <code>1</code> &le; <code>n</code> &le; <code>number of rows in original Table</code> </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            We can see an example of the <code>LIMIT</code> block in use in this query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-limited.png" alt="Taxi data limited" style="width:90%">
+        </div>
+
+        <p>
+            There is another important visual block that utilizes the <code>LIMIT</code> block.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/head-block.png" alt="Average per mile rate" style="width:30%">
+        </div>
+
+        <p>
+            The <img src="/bjc-r/img/data-science/head-block.png" alt="Average per mile rate" style="width:12%"> 
+            block shows you the first 5 rows of a Table using an <b>abstraction</b>
+            of the <code>LIMIT</code> block and the  <code>VIEW Table</code> block. 
+            This is a great way to see the beginning of a Table quickly without having to create a query!
+        </p>
+
+        <p class="alert quoteGreen">
+            If the Table you call the <img src="/bjc-r/img/data-science/head-block.png" alt="Average per mile rate" style="width:12%">
+            block on a Table that has less than 5 rows, you will see the entire Table.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-head.png" alt="Taxi data head" style="width:80%">
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Order Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/order-block.png" alt="ORDER block" style="width:80%"/>
+        </div>
+
+        <p>
+            The <code>ORDER</code> block is a block we can use to rearrange the data in a Table. You can think
+            of the <code>ORDER</code> block as a way to <b>sort</b> a Table based on the values in a particular column.
+        </p>
+
+        <p>
+            The Table that results from an <code>ORDER</code> block call has the same number of rows and columns, only
+            the order of the rows in the new Table is different.
+        </p>
+
+        <p class="alert quoteGreen">
+            The <code>ORDER</code> block does not change the original Table because as a <b>reporter</b> it creates a new
+            copy of the Table. This is the case for any DASIS reporter blocks, and you only have to worry about
+            making a permanent change to a Table when you are using <b>command</b> DASIS blocks.
+        </p>
+
+        <p>
+            The <code>ORDER</code> block takes in 4 arguments, with the third argument being optional. These arguments are:
+        </p>
+
+        <ol>
+            <li> A Table </li>
+            <li> A column label or index to order the Table by </li>
+            <li> A modifying reporter function to apply to the column argument before sorting (optional) </li>
+            <li> A boolean to indicate ascending/descending order (<code>True</code> = Descending, <code>False</code> = Ascending) </li>
+        </ol>
+
+        <p class="alert quoteGreen">
+            A few tips for using these arguments properly:
+        </p>
+
+        <ul>
+            <li> The optional third argument can be used to modify the column values before sorting.
+                 If you do not want to use the optional argument, you can simply leave it blank (as the
+                 block has it empty by default) and the block will work properly. </li>
+            <li> Instead of dragging a <img src="/bjc-r/img/data-science/true.png" alt="TRUE block" style="width:7%">
+                 or <img src="/bjc-r/img/data-science/false.png" alt="FALSE block" style="width:7%"> block into the
+                 ascending/descending argument, you can click on the argument in the block and choose True or False
+                 that way. </li>
+        </ul>
+
+        <p>
+            Let's see a examples of the <code>ORDER</code> block in use.
+        </p>
+
+        <p>
+            We can see our <img src="/bjc-r/img/data-science/taxi-data.png" alt="Taxi data" style="width:7%"> Table
+            in ascending or desceinding order by <code>fare</code> using the following query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-asc.png" alt="Ascending order" style="width:80%">
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/taxi-data-desc.png" alt="Descending order" style="width:80%">
+        </div>
+
+        <p>
+            We can also use the optional third argument that (non-permanently) modifies the column before ordering.
+            Run these blocks in your Snap<em>!</em> file to see the resulting Table. Before you run them, try and
+            think about what should happen based on what the query looks like. Then run the blocks to see if you
+            were right!
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/dropoff-borough-length-asc.png" alt="Ascending order" style="width:40%">
+
+            <img src="/bjc-r/img/data-science/dropoff-borough-length-desc.png" alt="Descending order" style="width:40%">
+        
+            <p style="clear:both";></p>
+        </div>
+
+    </body>
+</html>

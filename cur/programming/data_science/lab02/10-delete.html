@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Delete Blocks
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-col-block.png" alt="Delete column by label" style="width:40%">
+
+            <img src="/bjc-r/img/data-science/delete-col-i-block.png" alt="Delete column by index" style="width:38%">
+        
+            <p style="clear:both";></p>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-cols-block.png" alt="Delete columns by label or index" style="width:42%">
+
+            <img src="/bjc-r/img/data-science/delete-row-block.png" alt="Delete row by index" style="width:38%">
+        
+            <p style="clear:both";></p>
+        </div>
+
+        <p>
+            The <code>DELETE column</code> and <code>DELETE row</code> blocks are used to remove data from a Table.
+            They are all command blocks, so their changes to the Table are <b>permanent</b>. We can delete a column
+            with either its index or its label, but we can only delete rows by their index because they do not have labels.
+            Additionally, we can delete several columns at once using a list of column names.
+        </p>
+
+        <p>
+            The <code>DELETE</code> blocks each take in 2 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> A column label, index, or list of labels; A list of column indexes; A row index </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            To see an example of the <code>DELETE</code> blocks in use, we have an example query for each of the 4
+            <code>DELETE</code> block variants. Do not run any of these in the Snap<em>!</em> file, but observe
+            how they would be called if you needed to call them.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-col-call.png" alt="Delete column by label call" style="width:60%">
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-col-i-call.png" alt="Delete column by index call" style="width:60%">
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-cols-call.png" alt="Delete columns by labels call" style="width:60%">
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-cols-i-call.png" alt="Delete columns by indexes call" style="width:60%">
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/delete-row-call.png" alt="Delete row call" style="width:60%">
+        </div>
+
+        <ol>
+            <li> The first call deletes the <code>tolls</code> column from the Table </li>
+            <li> The second call deletes the 7th column from the Table, which in this case is the <code>tolls</code> column </li>
+            <li> The third call simultaneously deletes the <code>pickup_hour</code> and <code>dropoff_hour</code> columns </li>
+            <li> The fourth call simultaneously deletes the 15th and 16th columns, which in this case are the
+                <code>pickup_hour</code> and <code>dropoff_hour</code> columns </li>
+            <li> The fifth call deletes the third row from the Table </li>
+        </ol>
+
+        <p class="alert quoteOrange">
+            Be very cautious and precise with the way you delete data from a Table. These actions are very difficult
+            to undo, so before you use a <code>DELETE</code> block, make sure you know for sure that you want to delete that data.
+        </p>
+
+    </body>
+</html>

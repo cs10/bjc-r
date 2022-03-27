@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Apply Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/apply-block.png" alt="APPLY block" style="width:60%"/>
+        </div>
+
+        <p>
+            The <code>APPLY</code> block is a block we can use to <b>apply</b> a reporter function to all the
+            values in a particular column. This can be helpful when we need to change the type or format of an
+            existing column for another DASIS block to use.
+        </p>
+
+        <p>
+            The <code>APPLY</code> block reports a list of the modified values rather than a new Table. This list
+            has a length equal to the number of rows in the original Table.
+        </p>
+
+        <p class="alert quoteGreen">
+            In the <code>ORDER</code> and <code>WHERE</code> blocks, you may remember the optional <b>modifying</b>
+            argument. This is actually an abstraction of the <code>APPLY</code> block!
+        </p>
+
+        <p>
+            The <code>APPLY</code> block takes in 3 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> A reporter function with no inputs provided (just like the HOFs you have seen before!) </li>
+            <li> A column name or index to apply that function to </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            To see an example of the <code>APPLY</code> block in use, we will look at a situation where you
+            want the distance traveled by each taxi in kilometers instead of in miles. In this case, we need
+            to apply a conversion reporter to the <code>distance</code> column.
+        </p>
+
+        <p>
+            Good news! The <img src="/bjc-r/img/data-science/miles-to-km.png" alt="Miles to km block" style="width:15%">
+            block has already been written for you! We can use that reporter
+            to execute a query with the <code>APPLY</code> block.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/apply-miles-to-km.png" alt="Apply query" style="width:80%">
+        </div>
+
+        <p>
+            In the case above, we only wanted to report the list of applied values, and maybe use them elsewhere in our
+            Snap<em>!</em> file. If you want to also add your new applied column back to your Table, we have a DASIS
+            block that does that as well:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/apply-and-add-block.png" alt="Apply and add query" style="width:80%">
+        </div>
+
+        <p class="alert quoteGreen">
+            This slightly different variant of the <code>APPLY</code> block takes an additional argument, a new column
+            name, for the new column you are adding to your Table.
+        </p>
+
+        <p>
+            Using this <b>command</b> block, we can instead make the permanent change to our
+            <img src="/bjc-r/img/data-science/taxi-data.png" alt="Taxi data" style="width:10%"> that adds a new column.
+            We will add our new column from the example above that converts the distance to kilometers under the name
+            <code>distance (km)</code> using the following query:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/apply-and-add-miles-to-km.png" alt="Apply and add query" style="width:80%">
+        </div>
+
+        <p class="alert quoteOrange">
+            Warning: if you click a DASIS command block multiple times, you should get an error message because the
+            first time you ran the block the action was taken. The command blocks do not have a visual output like
+            reporters do, but the first time you run it will make the change you want.
+        </p>
+
+    </body>
+</html>

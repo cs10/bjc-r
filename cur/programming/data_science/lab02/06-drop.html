@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Drop Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/drop-block.png" alt="ORDER block" style="width:60%"/>
+        </div>
+
+        <p>
+            The <code>DROP</code> block is a block we can use to get a new Table containing most of the columns
+            from the original Table. If you find that you do not need a particular column anymore, you can drop it from
+            the Table.
+        </p>
+
+        <p class="alert quoteOrange">
+            Though you may commonly may want to drop columns permanently (editing the Table instead of making
+            a copy), to make the change permanent, you need to use a <code>set</code> block to overwrite the variable
+            that contains your Table. Be careful when doing this, as any permanent action on a Table cannot easily
+            be undone in Snap<em>!</em>.
+        </p>
+
+        <p>
+            The Table that results from a <code>DROP</code> block call has <b>at least the same number of columns</b>
+            (if you dropped no columns), but <b>typically fewer columns</b> than the original table, and it will also
+            have the <b>same number of rows</b> as the original Table. The order of the columns in the new Table will be
+            the same as their order in the original Table, just with the dropped columns omitted.
+        </p>
+
+        <p>
+            The <code>DROP</code> block takes in 2 arguments. These arguments are:
+        </p>
+
+        <ol>
+            <li> A list of column names or indexes to drop (you can include both, but we recommend using only names or only indexes) </li>
+            <li> A Table </li>
+        </ol>
+
+        <p>
+            The <code>DROP</code> block has very similar behavior to the <code>SELECT</code> block, and in fact any
+            query you can write with one you can write identically with the other. If you only want to exclude a small
+            number of columns, you use <code>DROP</code>, but if you want to exclude a large number of columns (include
+            only a few), you use <code>SELECT</code>.
+        </p>
+
+    </body>
+</html>

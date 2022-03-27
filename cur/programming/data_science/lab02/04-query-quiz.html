@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Self Test: A Quick Query Quiz
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+	<body>
+		<!-- question 1 -->
+				<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp3" shuffle="false" >
+			<div class="prompt">
+				<p>
+					Which of the following queries would tell us the average distance traveled by taxis
+                    that dropped off their passengers in Queens?
+				</p>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					<img src="/bjc-r/img/data-science/query-quiz-wrong-answer-1.png" alt="Answer A" style="width:75%">
+				</div>
+				<div class="feedback">
+					Not quite, remember what the <code>row</code> block does. Instead of the first row, what
+                    part of the Table do we need?
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					<img src="/bjc-r/img/data-science/query-quiz-wrong-answer-2.png" alt="Answer B" style="width:75%">
+				</div>
+				<div class="feedback">
+					Not quite, if we modify the <code>dropoff_borough</code> column with the <code>last letter</code>
+                    function before comparing it to the word "Queens", which rows have a last letter of "Queens"?
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					<img src="/bjc-r/img/data-science/query-quiz-wrong-answer-3.png" alt="Answer C" style="width:75%">
+				</div>
+				<div class="feedback">
+					Not quite, remember which column we are interested in for this query.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					<img src="/bjc-r/img/data-science/taxi-data-queens-mean.png" alt="Answer D" style="width:75%">
+				</div>
+				<div class="feedback">
+					Correct! This query filters the Table properly by borough and then asks for the mean of the
+                    resulting Table's <code>distance</code> column.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp3">
+				<div class="correctResponse" identifier="c4"></div>
+			</div>
+		</div>
+
+				<!-- question 2 -->
+				<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp4" shuffle="false" >
+			<div class="prompt">
+				<p>
+					Assuming we used the same query on the Table with taxis that were dropped off in <b>Manhattan</b>,
+                    we would now know the average distance for the Queens taxis and the Manhattan taxis. After finding
+                    these numbers using queries, which of the following could <b>not</b> be a reason for the difference in these numbers?
+				</p>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					In this dataset, since all taxis originated in Manhattan, they had to travel further to get to Queens
+                    for dropoff.
+				</div>
+				<div class="feedback">
+					Not quite. Nearly every dataset does not represent every possible data point in the world. Sometimes, datasets only
+                    represent a small amount of data, and therefore exhibit a <b>bias</b> that causes certain patterns to emerge.
+                    In this case, it can be seen that this data does not represent all 5 boroughs of New York equally.
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					People who live in Queens cause their taxi drivers to get lost, and therefore drive further.
+				</div>
+				<div class="feedback">
+					Correct! Correlation <b>does not equal</b> causation, meaning that if a pattern emerges from data, then
+                    there does not have to be an obvious cause for that pattern. Just because data shows a pattern,
+                    does not mean any explanation for that pattern is automatically true. Any conclusion made like this
+                    must be supported by other data-driven conclusions, which this one is assuredly not.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					The size of this dataset does not fully represent New York taxis, so this result could be an anomaly.
+				</div>
+				<div class="feedback">
+					Not quite. For example, if you flip heads 3 times in a row on a fair coin, the small sample size could lead
+                    to an incorrect conclusion. A fair coin does not only land on heads, 
+                    but with the small sample size of 3 that may appear to be the case even with a Table query.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					There may be some other field-related knowledge that would help us explain the difference.
+				</div>
+				<div class="feedback">
+					Not quite. In data science, field-specific knowledge can be very helpful when interpreting data. In this case,
+                    knowing more about New York transportation could help us draw a concrete conclusion, but our dataset
+                    does not have enough information to accurately make a conclusion ourselves.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp4">
+				<div class="correctResponse" identifier="c2"></div>
+			</div>
+		</div>
+	</body>
+</html>
