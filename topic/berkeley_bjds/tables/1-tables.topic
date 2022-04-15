@@ -12,6 +12,7 @@ learning-goal: Familiarize yourself with the Data Science in Snap<em>!</em> (DAS
 learning-goal: Create a Table from scratch using data we do not need to import
 learning-goal: Access data from a Table
 learning-goal: Access information about a Table
+learning-goal: Import a Table from a file
 learning-goal: Explore introductory calculation using Table data
 
 heading: Introduction to Data Science in Snap<em>!</em>

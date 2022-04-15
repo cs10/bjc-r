@@ -1,4 +1,4 @@
-title: Table Methods
+title: Querying a Table
 
 {
 h2: Big Ideas
@@ -8,8 +8,8 @@ big-idea: Understand how Tables can be used to answer questions about data
 
 
 h2: Activities
-learning-goal: Explore new Table methods in DASIS
-learning-goal: Use those Table methods to answer more complex questions about data
+learning-goal: Explore new querying blocks in DASIS
+learning-goal: Use those querying blocks to answer more complex questions about data
 
 heading: New Table Methods
 
