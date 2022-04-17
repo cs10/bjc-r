@@ -13,17 +13,18 @@ learning-goal: Use those querying blocks to answer more complex questions about 
 
 heading: New Table Methods
 
-  resource: Introduction [/bjc-r/cur/programming/data_science/lab02/01-intro.html]
-  resource: The Order Block [/bjc-r/cur/programming/data_science/lab02/02-order.html]
-  resource: The Where Block [/bjc-r/cur/programming/data_science/lab02/03-where.html]
-  resource: A Quick Query Quiz [/bjc-r/cur/programming/data_science/lab02/04-query-quiz.html]
-  resource: The Select Block [/bjc-r/cur/programming/data_science/lab02/05-select.html]
-  resource: The Drop Block [/bjc-r/cur/programming/data_science/lab02/06-drop.html]
-  resource: The Limit Block [/bjc-r/cur/programming/data_science/lab02/07-limit.html]
-  resource: The Apply Block [/bjc-r/cur/programming/data_science/lab02/08-apply.html]
-  resource: The Relabel Block [/bjc-r/cur/programming/data_science/lab02/09-relabel.html]
-  resource: The Delete Blocks [/bjc-r/cur/programming/data_science/lab02/10-delete.html]
-  resource: Practice Questions [/bjc-r/cur/programming/data_science/lab02/11-questions.html]
-  resource: Conlcusion [/bjc-r/cur/programming/data_science/lab02/12-conc.html]
+  resource: Introduction [/bjc-r/cur/programming/data_science/assignment2/01-intro.html]
+  resource: The Order Block [/bjc-r/cur/programming/data_science/assignment2/02-order.html]
+  resource: The Where Block [/bjc-r/cur/programming/data_science/assignment2/03-where.html]
+  resource: A Quick Query Quiz [/bjc-r/cur/programming/data_science/assignment2/04-query-quiz-1.html]
+  resource: The Select Block [/bjc-r/cur/programming/data_science/assignment2/05-select.html]
+  resource: The Drop Block [/bjc-r/cur/programming/data_science/assignment2/06-drop.html]
+  resource: The Limit Block [/bjc-r/cur/programming/data_science/assignment2/07-limit.html]
+  resource: Another Quick Query Quiz [/bjc-r/cur/programming/data_science/assignment2/08-query-quiz-2.html]
+  resource: The Apply Block [/bjc-r/cur/programming/data_science/assignment2/09-apply.html]
+  resource: The Relabel Block [/bjc-r/cur/programming/data_science/assignment2/10-relabel.html]
+  resource: The Delete Blocks [/bjc-r/cur/programming/data_science/assignment2/11-delete.html]
+  resource: Practice Questions [/bjc-r/cur/programming/data_science/assignment2/12-questions.html]
+  resource: Conclusion [/bjc-r/cur/programming/data_science/assignment2/13-conc.html]
 
 }

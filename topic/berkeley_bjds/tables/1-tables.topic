@@ -17,19 +17,19 @@ learning-goal: Explore introductory calculation using Table data
 
 heading: Introduction to Data Science in Snap<em>!</em>
 
-  resource: Introduction [/bjc-r/cur/programming/data_science/lab01/01-welcome-to-dasis.html]
-  resource: Important Settings [/bjc-r/cur/programming/data_science/lab01/02-dasis-settings.html]
-  resource: Downloading DASIS [/bjc-r/cur/programming/data_science/lab01/03-download.html]
-  resource: Create Your Own Tables [/bjc-r/cur/programming/data_science/lab01/04-create-your-own-tables.html]
-  resource: Viewing Tables [/bjc-r/cur/programming/data_science/lab01/05-viewing-tables.html]
-  resource: Querying a Table [/bjc-r/cur/programming/data_science/lab01/06-intro-to-querying.html]
-  resource: Editing Tables [/bjc-r/cur/programming/data_science/lab01/07-editing-tables.html]
+  resource: Introduction [/bjc-r/cur/programming/data_science/assignment1/01-welcome-to-dasis.html]
+  resource: Important Settings [/bjc-r/cur/programming/data_science/assignment1/02-dasis-settings.html]
+  resource: Downloading DASIS [/bjc-r/cur/programming/data_science/assignment1/03-download.html]
+  resource: Create Your Own Tables [/bjc-r/cur/programming/data_science/assignment1/04-create-your-own-tables.html]
+  resource: Viewing Tables [/bjc-r/cur/programming/data_science/assignment1/05-viewing-tables.html]
+  resource: Querying a Table [/bjc-r/cur/programming/data_science/assignment1/06-intro-to-querying.html]
+  resource: Editing Tables [/bjc-r/cur/programming/data_science/assignment1/07-editing-tables.html]
 
 heading: Answering Data-Related Questions
   
-  resource: Importing Tables [/bjc-r/cur/programming/data_science/lab01/08-importing-tables.html]
-  resource: Using Queries [/bjc-r/cur/programming/data_science/lab01/09-using-queries1.html]
-  resource: Using Queries [/bjc-r/cur/programming/data_science/lab01/10-using-queries2.html]
-  resource: Conclusion [/bjc-r/cur/programming/data_science/lab01/11-conclusion.html]
+  resource: Importing Tables [/bjc-r/cur/programming/data_science/assignment1/08-importing-tables.html]
+  resource: Using Queries [/bjc-r/cur/programming/data_science/assignment1/09-using-queries1.html]
+  resource: Using Queries [/bjc-r/cur/programming/data_science/assignment1/10-using-queries2.html]
+  resource: Conclusion [/bjc-r/cur/programming/data_science/assignment1/11-conclusion.html]
 
 }

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>
+            Self Test: Another Quick Query Quiz
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+	<body>
+		<!-- question 1 -->
+				<div class="assessment-data"
+		type="multiplechoice" identifier="pentagon"
+		hasinlinefeedback="true" maxchoices="1"
+		responseIdentifier="resp3" shuffle="false" >
+			<div class="prompt">
+				<p>
+					Which querying blocks could we use (in order from first to last) to <b>best</b> answer the following question about our taxis dataset:
+                    What percentage tip did the passenger on the longest ride in the dataset leave?
+				</p>
+			</div>
+			<div class="choice" identifier="c1">
+				<div class="text">
+					<code>LIMIT</code>, <code>WHERE</code>, <code>SELECT</code>
+				</div>
+				<div class="feedback">
+					Not quite, if we use the <code>LIMIT</code> block first, we would potentially eliminate the row with the longest ride. This is because we do not know where
+                    the longest ride is located in the Table, so we cannot accurately <code>LIMIT</code> the Table to assuredly include that row.
+				</div>
+			</div>
+			<div class="choice" identifier="c2">
+				<div class="text">
+					<code>ORDER</code>, <code>LIMIT</code>, <code>SELECT</code>
+				</div>
+				<div class="feedback">
+					Correct! We can first <code>ORDER</code> the Table by distance in descending order, then <code>LIMIT</code> the Table to just the longest ride (the
+                    first row of the ordered Table), and finally <code>SELECT</code> the <code>tip</code> and <code>total</code> columns to be able to answer
+                    the question with arithmetic.
+				</div>
+			</div>
+
+			<div class="choice" identifier="c3">
+				<div class="text">
+					<code>WHERE</code>, <code>LIMIT</code>, <code>SELECT</code>
+				</div>
+				<div class="feedback">
+					Not quite, although you could use the <code>WHERE</code> block to find the row with the <code>max</code> distance, this would only leave you with one row.
+                    Even though this is the row we want to use, the use of the <code>LIMIT</code> block immediately after that is redundant because we do not have any rows we
+                    want to eliminate. Always try to make your queries as precise as possible!
+				</div>
+			</div>
+
+			<div class="choice" identifier="c4">
+				<div class="text">
+					<code>DROP</code>, <code>ORDER</code>, <code>LIMIT</code>
+				</div>
+				<div class="feedback">
+					Not quite, although you could use these three queries in this order to answer the question, we should not use the <code>DROP</code> block in this case
+                    because we are interested in 3 of the 18 columns. When we are interested in a small amount of the columns, we should use <code>SELECT</code> instead of <code>DROP</code>
+                    to avoid having to write out each of the several columns we want to <code>DROP</code>.
+				</div>
+			</div>
+			<div class="responseDeclaration" identifier="resp3">
+				<div class="correctResponse" identifier="c2"></div>
+			</div>
+		</div>
+
+	</body>
+</html>

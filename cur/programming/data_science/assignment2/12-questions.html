@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            Practice Questions
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            For these practice questions, we will be using the entirety of the <code>taxis</code> dataset instead of the truncated 8-row version we have been working with
+            so far in this lab. This dataset has 6432 rows and has the same 18 columns as the dataset you have seen before.
+            You can click <a href="/bjc-r/cur/programming/data_science/data/taxi_data_large.csv" download> this link</a> to download the larger taxis dataset, and you can practice
+            importing a Table from a <b>.csv</b> file by loading it into a DASIS Snap<em>!</em> file. the starter file has a variable,
+            <code>taxi_data_large</code>, that you can use, but feel free to use any variable name you like if you are not using the starter code file.
+        </p>
+
+        <p>
+            Once you have loaded the large taxi dataset into Snap<em>!</em>, you can begin to answer these questions.
+            To answer each of these questions, you may use any of the DASIS blocks we have covered so far in the first 2 assignments. Some questions may be able to be answered using
+            several different combinations of querying blocks, but any way you can concisely arrive at the answer to the question is acceptable.
+        </p>
+        
+
+        <ol>
+            <li>
+                What percentage of all payments were made with a credit card?
+            </li>
+
+            <li>
+                How many rides were between 2 and 3 <b>kilometers</b> long?
+                (Hint: write a helper predicate <img src="/bjc-r/img/data-science/val-between-n-n+1.png" alt="Value betwen n and n+1 block" style="width:20%"/>
+                that returns True when a value is between <code>n</code> and <code>n</code>+1 and False otherwise to avoid having to use 2 consecutive calls to the
+                same query block). Similar to the earlier task involving miles and kilometers from this assignment, relabel the <code>distance</code> column to
+                <code>distance (mi)</code>
+            </li>
+
+            <li>
+                What was the average distance traveled by the 50 longest rides (longest in distance, not duration)?
+            </li>
+
+            <li>
+                How many taxi rides occurred in pickup zones that began with the letter <b>m</b>?
+            </li>
+
+            <li>
+                How many taxi rides had the maximum number of passengers in the dataset?
+            </li>
+
+        </ol>
+
+        <p class="alert quoteOrange">
+            A quick note on errors: if you are using a DASIS block and you receive an error, try to walk through your whole query to ensure you are using each block
+            correctly and providing correct arguments to blocks. Sometimes the best way to debug is to follow the arguments to your different functions and see if one is
+            receiving an argument it shouldn't. Debugging is always part of the programming process, so don't get discouraged if it takes a bit of time to find a bug.
+        </p>
+
+    </body>
+</html>
