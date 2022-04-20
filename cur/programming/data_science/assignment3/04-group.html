@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Group Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/group-block.png" alt="GROUP block" style="width:80%"/>
+        </div>
+
+        <p>
+            The first way we can group rows is using the <code>GROUP</code> block. It takes in 4 arguments, with the second argument being optional.
+            These arguments are:
+        </p>
+
+        <ol>
+            <li> A Table </li>
+            <li> A reporter to modify the grouping column before grouping (optional) </li>
+            <li> A column index or label to group on </li>
+            <li> An aggregation function (<code>count</code>, <code>sum</code>, or <code>mean</code>) </li>
+        </ol>
+
+        <p>
+            Some important information about the return value of the <code>GROUP</code> block:
+        </p>
+
+        <ul>
+            <li> The Table returned by the <code>GROUP</code> block contains the same amount of columns as the original Table </li>
+            <li> The returned Table contains a row for each unique value of the column used to group on </li>
+            <li> The values in the column used for grouping will indicate each unique value </li>
+            <li> The rest of the columns will contain aggregate data for each of those unique values in other columns </li>
+        </ul>
+
+        <p>
+            The 3 aggregating function options provided by DASIS are <code>count</code>, <code>sum</code>, and <code>mean</code> via a dropdown menu included in the block.
+            The column names of the resulting Table will be the same as the original Table's, except that all but the grouping column will have the name of the
+            aggregating function appended to their name (i.e. <code>title</code> -> <code>title count</code>).
+        </p>
+
+        <p>
+            For help visualizing how the <code>GROUP</code> block works, you can watch this short video. It uses a Python library to introduce the function, but you do not have to worry about that.
+            The DASIS <code>GROUP</code> block exhibits identical behavior.
+        </p>
+
+        <p class="code-vid">
+            <iframe width="420" height="315" src="https://youtu.be/HLoYTCUP0fc" frameboarder="0" allowfullscreen></iframe>
+        </p>
+
+        <p>
+            Let's take a look at examples of the <code>GROUP</code> block in use in Snap<em>!</em>:
+        </p>
+
+        <p>
+            Let's say we wanted to know how many movies from each genre there are in our dataset. We can use the <code>GROUP</code> block to learn this information!
+            By grouping on the <code>genre</code> column, we can see the breakdown of each column by either <code>count</code>, <code>sum</code>, or <code>mean</code>.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/group-genre-count.png" alt="GROUP on genre (count)" style="width:90%"/>
+        </div>
+
+        <p>
+            Here we can see a breakdown of the data by genre. As you can see, using the <code>GROUP</code> block can therefore be very helpful for us when asking about the composition
+            of a dataset.
+        </p>
+
+        <p class="alert quoteOrange">
+            Why do you think there is a blank value in the <code>genre</code> column of this result? Is this a mistake, or is it saying something about the data?
+        </p>
+
+        <p>
+            In this case, we can see that the data in the result when using <code>count</code> is rather repetitive. Results will get more interesting with the
+            other 2 aggregating functions.
+        </p>
+
+        <p>
+            Let's take a look at the same group, but using <code>mean</code> instead of <code>count</code>:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/group-genre-mean.png" alt="GROUP on genre (mean)" style="width:90%"/>
+        </div>
+
+        <p>
+            The result of this <code>GROUP</code> call are very important to discuss.
+        </p>
+
+        <p>
+            The first thing to notice is that there are entire blank columns like
+            <code>title</code>, <code>actor</code>, and <code>actress</code>. This is because these columns contain text, and you cannot take the mean of text.
+            This is expected behavior by the <code>GROUP</code> block, and is not a result of any kind of error.
+        </p>
+
+        <p>
+            Another thing to notice is the blank values in the numerical columns like <code>length</code> and <code>popularity</code>.
+            These blanks result from blank values in the original dataset, as the blanks do not have a numerical value.
+        </p>
+
+        <p class="alert quoteGreen">
+            We will talk about how we can eliminate these blanks spaces when we talk about cleaning data later in this assignment
+        </p>
+
+        <p>
+            Having seen what happens when we use the <code>count</code> and <code>mean</code> options, what do you think will happen if you use the same <code>GROUP</code>
+            block arguments, but use <code>sum</code> aggregation function instead? Think about what would happen before you run the block and see if you were right!
+        </p>
+
+    </body>
+</html>

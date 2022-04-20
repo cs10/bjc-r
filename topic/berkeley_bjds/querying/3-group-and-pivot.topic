@@ -10,13 +10,27 @@ big-idea: Understand how Tables can be used to answer questions about data
 h2: Activities
 learning-goal: Explore the Group and Pivot table methods in Snap<em>!</em>
 learning-goal: Use those Table methods to answer more complicated questions about data
+learning-goal: Understand how Group and Pivot allow us to more easily visualize data
+
+heading: More Querying Methods
+
+    resource: Introduction [/bjc-r/cur/programming/data_science/assignment3/01-intro.html]
+    resource: Grouping Rows [/bjc-r/cur/programming/data_science/assignment3/02-grouping-rows.html]
+    resource: The Movies Dataset [/bjc-r/cur/programming/data_science/assignment3/03-movies.html]
 
 heading: Group
 
-
+    resource: The Group Block [/bjc-r/cur/programming/data_science/assignment3/04-group.html]
 
 heading: Pivot
 
+    resource: The Pivot Block [/bjc-r/cur/programming/data_science/assignment3/05-pivot.html]
 
+heading: Combining Everything So Far
+
+    resource: Introduction to Cleaning Data [/bjc-r/cur/programming/data_science/assignment3/06-cleaning.html]
+    resource: A Quick Data Cleaning Exercise [/bjc-r/cur/programming/data_science/assignment3/07-cleaning-exercise.html]
+    resource: Practice Questions [/bjc-r/cur/programming/data_science/assignment3/08-questions.html]
+    resource: Conclusion [/bjc-r/cur/programming/data_science/assignment3/09-conclusion.html]
 
 }

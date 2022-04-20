@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            A Quick Data Cleaning Activity
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            Let's try a quick exercise involving some basic data cleaning. You may have noticed that in the <code>GROUP</code> block examples, there were blank spaces in numerical columns.
+            This was due to the fact that some rows were <b>missing</b> values that resulted in the <code>mean</code> aggregation function not being able to properly calculate a value.
+            There were also 2 rows that did not even contain a value in their <code>genre</code> column, so they were grouped into a blank category instead.
+        </p>
+
+        <p>
+            We will try to remedy this by removing the rows that contain these missing values. With those rows removed from the grouping and aggregation, we should be able to see values where
+            we did not before.
+        </p>
+
+        <p class="alert quoteOrange">
+            It will not always be the case that eliminating rows with missing or outlier values solves the problem. We are doing it in this assignment for educational purposes, but
+            you will learn as you interact with more data and study Data Science further that there are other remedies to this issue that do not involve deleting rows.
+        </p>
+
+        <p>
+            For reference, here is the previous <code>GROUP</code> call we made:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/group-genre-mean.png" alt="GROUP on genre (mean)" style="width:90%"/>
+        </div>
+
+        <p>
+            We will now run code that removes the rows with missing values in numerical columns, in this case the <code>genre</code>, <code>length</code>, and <code>popularity</code> columns.
+            Write code using DASIS blocks you know makes a Table with these rows removed, and make the same exact <code>GROUP</code> call on this new Table.
+        </p>
+
+        <p class="alert quoteOrange">
+            Remember to use another variable (either script or global) to store the Table each time you remove rows. You should only ever use the permanent versions of DASIS blocks when you
+            absolutely do not want the information you are eliminating anymore. This means you should use other variables to store modified versions of your Table as you go.
+        </p>
+
+        <p class="alert quoteGreen">
+            Hint: the cleaned version of your Table should contain 1585 rows.
+        </p>
+
+        <p>
+            Once you have your cleaned dataset, you should be able to run the same <code>GROUP</code> block call to get this. Notice the values that appear in the second call, but not the first,
+            and think about why those values are present after cleaning the data. If you want to see for yourself, you can write more code that finds the rows from the original data
+            that have the missing values to see if your hypothesis is correct!
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/group-genre-mean-clean.png" alt="GROUP on genre (mean, clean)" style="width:90%"/>
+        </div>
+
+    </body>
+</html>

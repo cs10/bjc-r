@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            Introduction to Cleaning Data
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <p>
+            The <code>GROUP</code> block and the <code>PIVOT</code> block allow us the ability to categorize rows of a dataset into groups.
+            But what happens when there is a row is missing data that would have been used to categorize it?
+        </p>
+
+        <p>
+            This is where we can talk about <b>cleaning</b> data. Not all collected data is <b>clean</b>, or able to be readily queried and used in
+            data analysis or visualizations. Cleaning data is an important skill for a data scientist, and we can talk about some ways to clean
+            data using the blocks you have learned about thus far.
+        </p>
+
+        <p>
+            Unclean data can take many forms:
+        </p>
+
+        <ul>
+            <li> missing values </li>
+            <li> outlier/nonsensical values (for example, a negative popularity score, when popularity is supposed to be on a 0 to 100 scale) </li>
+            <li> incorrect data types (in other programming languages, this could mean having a column of text values when the column needs to be treated as numbers) </li>
+        </ul>
+
+        <p>
+            Solving these issues can a complicated and nuanced task, that many times involves a background in probability and/or statistics. For our purposes,
+            you do not need to have these skills yet, but there are a few ideas we want to outline about cleaning data.
+        </p>
+        
+        <ul>
+            <li> Simply removing missing values from a dataset is not always the solution; the reason the data was missing from those rows may be a reason to leave them in the dataset.
+                Removing them may introdice a <b>bias</b> to your data </li>
+            <li> Simply removing outliers presents the same issue, there may be a reason the data was collected with these default outlier/nonsensical values </li>
+            <li> Changing data types is typically safe, but you should always maintain a copy of the original data just in case you need to revert back (Snap<em>!</em>
+                takes care of most types for you, so this is more important in other languages like Python) </li>
+            <li> Any of these issues could just stem from human error, so it is important to understand how your data was collected before you begin cleaning it </li>
+        </ul>
+
+        <p>
+            While all of the datasets in these assignments was cleaned before you downloaded them, you can use some of the DASIS blocks we have learned about
+            so far to clean data you use yourself. The <code>WHERE</code>, <code>DROP</code>, and <code>RELABEL</code> blocks (among others) can be used to modify
+            a Table you import that contains unclean data. We will not go into tremendous detail in these assignments, but it is important to know that cleaning
+            data is an integral part of using data science tools.
+        </p>
+
+    </body>
+</html>

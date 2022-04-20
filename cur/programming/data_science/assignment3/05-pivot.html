@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Pivot Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/pivot-block.png" alt="PIVOT block" style="width:80%"/>
+        </div>
+
+        <p>
+            The second way we can group rows is using the <code>PIVOT</code> block. It takes in 3 arguments:
+        </p>
+
+        <ol>
+            <li> A Table </li>
+            <li> A column label or index to indicate the columns of the resulting Table </li>
+            <li> A column label or index to indicate the rows of the resulting Table </li>
+        </ol>
+
+        <p>
+            Some important information about the return value of the <code>PIVOT</code> block:
+        </p>
+
+        <ul>
+            <li> The value returned by PIVOT <b>is not</b> a Table object, it is a list of lists that can be accessed like a list, but not like a Table
+                (this is because the <code>PIVOT</code> call results in row labels, which is not Table-like for DASIS) </li>
+            <li> The data returned by the <code>PIVOT</code> block contains one column for every unique value of the column corresponding with
+            the first column label argument </li>
+            <li> The returned data also contains a row for each unique value of the column corresponding to the second column label argument </li>
+            <li> The values at each (row, column) location is the number of rows in the original Table that had both the column and row values
+                at that intersection of the data </li>
+            <li> The top left cell of the resulting data is always blank </li>
+        </ul>
+
+        <p>
+            For help visualizing how the <code>PIVOT</code> block works, you can watch this short video:
+        </p>
+
+        <p class="code-vid">
+            <iframe width="420" height="315" src="https://youtu.be/4WzXo8eKLAg" frameboarder="0" allowfullscreen></iframe>
+        </p>
+
+        <p>
+            Let's take a look at examples of the <code>PIVOT</code> block in use in Snap<em>!</em>:
+        </p>
+
+        <p>
+            Let's say we wanted to know how many movies of each <code>genre</code> were released each <code>year</code>:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/pivot-year-genre.png" alt="PIVOT on year and genre" style="width:90%"/>
+        </div>
+
+        <p>
+            Here we can see a breakdown of the data by <code>genre</code> and <code>year</code>. As expected, the <code>years</code> appear as the column labels and the
+            <code>genres</code> appear as the row labels. The values at each location indicate the number of rows at that intersection
+            (for example there were 3 <code>drama</code> movies released in <code>1924</code> in this dataset).
+        </p>
+
+        <p class="alert quoteOrange">
+            Note that there is once again a blank space in the first row of the <code>genres</code>, is this a mistake or is this saying something about the data?
+        </p>
+
+    </body>
+</html>
