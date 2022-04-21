@@ -16,6 +16,10 @@ learning-goal: Explore introductory calculation using Table data
 
 heading: Data Visualization
 
-
+    resource: Introduction [/bjc-r/cur/programming/data_science/assignment4/01-intro.html]
+    resource: The Penguins Dataset [/bjc-r/cur/programming/data_science/assignment4/02-dataset.html]
+    resource: Data Science Fundamentals [/bjc-r/cur/programming/data_science/assignment4/03-dv-fundamentals.html]
+    resource: The Horizontal Bar Block [/bjc-r/cur/programming/data_science/assignment4/04-barh.html]
+    resource: The Histogram Block [/bjc-r/cur/programming/data_science/assignment4/05-histogram.html]
 
 }

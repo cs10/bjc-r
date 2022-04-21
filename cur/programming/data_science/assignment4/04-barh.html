@@ -1,0 +1,113 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Horizontal Bar Plot Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-block.png" alt="BARH block" style="width:80%"/>
+        </div>
+
+        <p>
+            The first data visualization technique we will cover is a <code>horizontal bar</code> plot. Horizontal bar plots are used to visualize a <b>categorical</b>
+            variable. Both <b>ordinal</b> and <b>nominal</b> categorical variables can be visualized using a horiontal bar chart.
+        </p>
+
+        <b>
+            The horizontal bar block takes in 4 arguments, 2 that are required and 2 that are optional:
+        </b>
+
+        <ol>
+            <li> A Table from which some data will be visualized using a horizontal bar plot </li>
+            <li> A column label whose values will be counted and plotted on the y-axis </li>
+            <li> Another column label whose values will be used to group the first column before plotting (optional) </li>
+            <li> A title for the plot (optional; will generate a default title if none is provided) </li>
+        </ol>
+
+        <p>
+            Let's look at a standard use of the horizontal bar block:
+        </p>
+
+        <p>
+            Let's say we wanted to see the species breakdown for all penguins in the dataset. To do so, we would need to group the data by the <code>species</code> column
+            and then visualize it. In DASIS, this grouping happens automatically when you call the block (using the <code>GROUP</code> block from the last assignment)
+            but in other languages you will have to do this grouping yourself before visualizing.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species.png" alt="BARH species" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species-stage.png" alt="BARH species stage" style="width:40%"/>
+        </div>
+
+        <p>
+            Compare this to the output of the <code>GROUP</code> call on <code>species</code>:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species-group.png" alt="BARH block" style="width:80%"/>
+        </div>
+
+        <p>
+            This is the result of calling DASIS's horizontal bar block! As stated eariler, in other languages you would have to construct the <code>GROUP</code> yourself.
+        </p>
+
+        <p>
+            There is even more cool functionality of the horizontal bar block! We can even see the breakdown of one column grouped by another column using the
+            optional column label argument:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species-island.png" alt="BARH species-island" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species-island-stage.png" alt="BARH species-island stage" style="width:40%"/>
+        </div>
+
+        <p>
+            Here we can see the data grouped by <code>island</code> <b>and</b> <code>species</code>. We could also have switched the order of the column label arguments to get this: 
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-island-species.png" alt="BARH island-species" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-island-species-stage.png" alt="BARH island-species stage" style="width:40%"/>
+        </div>
+
+        <p>
+            Again, compare this to a <code>PIVOT</code> call that was made under the hood:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/barh-species-island-pivot.png" alt="BARH species-island pivot" style="width:80%"/>
+        </div>
+
+        <p class="alert quoteGreen">
+            Try and find the bars on each plot that correspond to the <code>PIVOT</code> query above.
+        </p>
+
+        <p>
+            Note that the data is the same on both plots, but the ordering can influence how someone interprets the same data. The first plot appears to show us where to find
+            each species, but the second appears to show us which species we would find on each island.
+        </p>
+
+    </body>
+</html>
