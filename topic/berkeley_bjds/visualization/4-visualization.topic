@@ -1,4 +1,4 @@
-title: Welcome to Data Science in Snap! <em>!</em>
+title: Data Visualization
 
 {
 h2: Big Ideas
@@ -8,11 +8,9 @@ big-idea: Understand how Tables can be used to answer questions about data
 
 
 h2: Activities
-learning-goal: Familiarize yourself with the Data Science in Snap<em>!</em> (DASIS) library
-learning-goal: Create a Table from scratch using data we do not need to import
-learning-goal: Access data from a Table
-learning-goal: Access information about a Table
-learning-goal: Explore introductory calculation using Table data
+learning-goal: Learn about statistical variable types
+learning-goal: Learn how to properly visualize these variables using DASIS blocks
+learning-goal: Detect patterns and draw connclusions about data using visualization
 
 heading: Data Visualization
 
