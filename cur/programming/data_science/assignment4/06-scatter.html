@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Scatter Plot Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-block.png" alt="SCATTER block" style="width:80%"/>
+        </div>
+
+        <p>
+            The third data visualization technique we will cover is a <code>scatter plot</code>. Scatter plots are used to visualize the distribution of 2 <b>numerical</b>
+            variables at once. Both <b>discrete</b> and <b>continuous</b> numerical variables can be visualized using a scatter plot. A scatter plot involves plotting
+            each row's values from the two columns associated with the 2 variables using the first column as the x-axis and the second column as the y-axis.
+        </p>
+
+        <p>
+            The scatter plot block takes in 5 arguments, 3 that are required and 2 that are optional:
+        </p>
+
+        <ol>
+            <li> A Table from which some data will be visualized using a scatter plot </li>
+            <li> A column label whose values will plotted on the x-axis </li>
+            <li> A column label whose values will plotted on the y-axis </li>
+            <li> A third column to group rows on before plotting (optional) </li>
+            <li> A title for the plot (optional; will generate a default title if none is provided) </li>
+        </ol>
+
+        <p>
+            Scatter plots are used to visualize the relationship between the data in 2 columns. There are 3 general relationships we can observe: positive correlation, negative correlation,
+            or no correlation. There are statistical methods to mathematically determine which of the 3 a given relationship is, however we will not cover these methods in these assignments.
+        </p>
+
+        <ul>
+            <li> <b>Positive correlation</b> can be seen in a scatter plot when the points appear to form a general line from the bottom left to the top right of the plot </li>
+            <li> <b>Negative correlation</b> can be seen in a scatter plot when the points appear to form a general line from the top left to the bottom right of the plot </li>
+            <li> <b>No correlation</b> can be seen in a scatter plot when the points appear to form neither general line listed above </li>
+        </ul>
+
+        <p>
+            <b>Correlation</b> means that the two columns tend to reflect patterns in each other. As we have mentioned before in a previous assignment, correlation does not
+            imply causation, so there may not be a readily available reason for the positive correlation. In cases of positive correlation, lower values of one column tend to
+            have lower values of the other and vice versa. In cases of negative correlation, lower values of one column tend to have higher values of the other and vice versa.
+        </p>
+
+        <p>
+            Let's look at some standard uses of the scatter plot block:
+        </p>
+
+        <p>
+            Let's say we wanted to see relationship between a penguin's body mass and its flipper length:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-body-mass-flipper-length.png" alt="SCATTER body mass flipper length" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-body-mass-flipper-length-stage.png" alt="SCATTER body mass flipper length stage" style="width:40%"/>
+        </div>
+
+        <p class="alert quoteGreen">
+            Note the bottom left to top right general shape of the plot. This scatter plot shows the relationship between body mass and flipper length to be <b>positively</b> correlated.
+        </p>
+
+        <p>
+            Using the optional third column argument to group the rows before plotting can show us additional patterns about the values in that third column.
+            Let's take a look at an example of how this can be useful:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-bill-length-depth.png" alt="HIST body mass 4 bins" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-bill-length-depth-stage.png" alt="HIST body mass 4 bins stage" style="width:40%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-bill-length-depth-species.png" alt="HIST body mass 20 bins" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/scatter-bill-length-depth-species-stage.png" alt="HIST body mass 20 bins stage" style="width:40%"/>
+        </div>
+
+        <p>
+            In the first plot without grouping by <code>species</code>, there appears to be no correlation between <code>bill_length_mm</code> and <code>bill_depth_mm</code>.
+            However, by grouping on the <code>species</code> column, we can see 3 slightly positive correlations amongst each species! Scatter plots like this can be used in
+            <b>machine learning</b> because computers can start to answer questions like: <b>Based on the dimensions of its beak, which species of penguin could this beak belong to?</b>.
+            You could probably make a pretty good guess yourself given a random penguin's beak dimensions, and so could a computer. The most exciting part of that is that
+            neither you nor the computer would have ever had to see a penguin, or in the computer's case, even know what a penguin is!
+        </p>
+
+        <p class="alert quoteGreen">
+            Don't be intimidated with the term <b>machine learning</b>; data scientists use it all the time, and with the skills you are learning in these assignments, you too
+            can start to comprehend fundamental ideas in machine learning!
+        </p>
+
+        <p>
+            Feel free to see the relationships between other numerical variables in this dataset, and see what kinds of cool patterns you can find!
+        </p>
+
+    </body>
+</html>

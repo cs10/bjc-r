@@ -1,0 +1,109 @@
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+
+        <title>
+            The Line Plot Block
+        </title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-176402054-1');
+</script>
+</head>
+    <body>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/line-block.png" alt="BARH block" style="width:80%"/>
+        </div>
+
+        <p class="alert quoteGreen">
+            Because line plots require a variable representing time, and the <code>penguins</code> dataset does not contain any time variables, we will be returning to
+            the <code>taxis</code> dataset from Assignments 1 and 2. You can re-download it by clicking
+            <a href="/bjc-r/cur/programming/data_science/data/taxi_data.csv" download> this link </a>.
+        </p>
+
+        <p>
+            The last data visualization technique we will cover is a <code>line plot</code>. Line plots are used to visualize the distribuation of two <b>numerical</b>
+            variables. Both <b>discrete</b> and <b>continuous</b> categorical variables can be visualized using a line plot. The numerical variable on the x-axis must be
+            a variable that indicates the passing of time, and the second numerical variable can be aby variable leasured over that period of time.
+        </p>
+
+        <p>
+            The line plot block takes in 4 arguments, 2 that are required and 2 that are optional:
+        </p>
+
+        <ol>
+            <li> A Table from which some data will be visualized using a line plot </li>
+            <li> A column label whose values represent the passage of time </li>
+            <li> A column label to use to group the first column (optional) </li>
+            <li> A title for the plot (optional; will generate a default title if none is provided) </li>
+        </ol>
+
+        <p class="alert quoteOrange">
+            The first column label must contain time values that are evenly spaced out. Always make sure if you want a line plot that your time variable has a measurement
+            for consistent intervals of time. The <code>line plot</code> block will error if this is not the case.
+        </p>
+
+        <p>
+            Let's look at a standard use of the line plot block:
+        </p>
+
+        <p>
+            Let's say we wanted to see the pattern of pickups for each hour of the day. To do so, we would need to group the data by the <code>pickup_hour</code>
+            column and then visualize it. This grouping happens automatically when you call the line plot block (using the <code>GROUP</code> block),
+            but in other languages you will have to do the grouping yourself before visualizing.
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/line-pickup-hour.png" alt="HIST body mass" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/line-pickup-hour-stage.png" alt="HIST body mass stage" style="width:40%"/>
+        </div>
+
+        <p>
+            We can use this plot to see patterns about the dataset. In this dataset, the middle of the night and early morning have fewer taxis pickups
+            than the daytime, and peak hours occur around 19, which translates to 7:00 PM.
+        </p>
+
+        <p class="alert quoteGreen">
+            Think of some explanations for some of the patterns you see. If you can think of some off the top of your head, is it safe to assume these
+            are the correct explanations? WHy or why not?
+        </p>
+
+        <p>
+            Using the optional goruping column argument, we can see a further breakdown of the pickups by time and by the borough of New York the passengers
+            were picked up in:
+        </p>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/line-pickup-hour-borough.png" alt="HIST body mass 4 bins" style="width:60%"/>
+        </div>
+
+        <div class="center">
+            <img src="/bjc-r/img/data-science/line-pickup-hour-borough-stage.png" alt="HIST body mass 4 bins stage" style="width:40%"/>
+        </div>
+
+        <p>
+            As we can see here, Manhattan pickups appear to make up a majority of the taxi rides in this dataset, but we can still see the other pickup
+            boroughs at the bottom in other colors.
+        </p>
+
+        <p class="alert quoteGreen">
+            Are the patterns from the original single line plot as easy to detect in every borough?
+        </p>
+
+        <p>
+            DASIS only currently supports 6 different groups (5 colors and the original sprite), so if you are visualizing a column with more than 6 groups
+            from the grouping column, you may start to get a repeated use of the original sprite. be careful visualizing too many groups, as you could experience
+            <b>overplotting</b>.
+        </p>
+
+    </body>
+</html>

@@ -21,5 +21,12 @@ heading: Data Visualization
     resource: Data Science Fundamentals [/bjc-r/cur/programming/data_science/assignment4/03-dv-fundamentals.html]
     resource: The Horizontal Bar Block [/bjc-r/cur/programming/data_science/assignment4/04-barh.html]
     resource: The Histogram Block [/bjc-r/cur/programming/data_science/assignment4/05-histogram.html]
+    resource: The Scatter Plot Block [/bjc-r/cur/programming/data_science/assignment4/06-scatter.html]
+    resource: The Line Plot Block [/bjc-r/cur/programming/data_science/assignment4/07-line.html]
+
+heading: Putting it All Together
+
+    resource: Practice Questions [/bjc-r/cur/programming/data_science/assignment4/08-questions.html]
+    resource: Summary [/bjc-r/cur/programming/data_science/assignment4/09-summary.html]
 
 }

@@ -18,95 +18,78 @@
     <body>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-block.png" alt="BARH block" style="width:80%"/>
+            <img src="/bjc-r/img/data-science/hist-block.png" alt="BARH block" style="width:80%"/>
         </div>
 
         <p>
-            The first data visualization technique we will cover is a <code>horizontal bar</code> plot. Horizontal bar plots are used to visualize a <b>categorical</b>
-            variable. Both <b>ordinal</b> and <b>nominal</b> categorical variables can be visualized using a horiontal bar chart.
+            The second data visualization technique we will cover is a <code>histogram</code>. Histograms are used to visualize the distribution of a <b>numerical</b>
+            variable. Both <b>discrete</b> and <b>continuous</b> numerical variables can be visualized using a histogram. A histogram involves <b>binning</b>
+            the numerical variable and seeing its distribution over all its values. Each row is put into a <b>bin</b> that represents a certain range, and the
+            histogram is the result of <b>binning</b> every row and seeing the counts of each bin.
         </p>
 
-        <b>
-            The horizontal bar block takes in 4 arguments, 2 that are required and 2 that are optional:
-        </b>
+        <p>
+            The histogram block takes in 6 arguments, 2 that are required and 4 that are optional:
+        </p>
 
         <ol>
-            <li> A Table from which some data will be visualized using a horizontal bar plot </li>
-            <li> A column label whose values will be counted and plotted on the y-axis </li>
-            <li> Another column label whose values will be used to group the first column before plotting (optional) </li>
+            <li> A Table from which some data will be visualized using a histogram </li>
+            <li> A column label whose values will be binned and plotted on the x-axis </li>
+            <li> An integer specifying how many bins you want (optional; the default value of -1 lets DASIS decide how many bins there should be) </li>
             <li> A title for the plot (optional; will generate a default title if none is provided) </li>
+            <li> An x-axis label for the plot (optional; will generate a default x-axis label if none is provided) </li>
+            <li> A y-axis label for the plot (optional; will generate a default y-axis label if none is provided) </li>
         </ol>
 
         <p>
-            Let's look at a standard use of the horizontal bar block:
+            Let's look at some standard uses of the histogram block:
         </p>
 
         <p>
-            Let's say we wanted to see the species breakdown for all penguins in the dataset. To do so, we would need to group the data by the <code>species</code> column
-            and then visualize it. In DASIS, this grouping happens automatically when you call the block (using the <code>GROUP</code> block from the last assignment)
-            but in other languages you will have to do this grouping yourself before visualizing.
+            Let's say we wanted to see the body mass distribution for all penguins in the dataset. To do so, we would need to group the data by the <code>body_mass_g</code> column
+            and then visualize it. The difference is that for horizontal bar plots, the categorical variable already has natural groups, but with a numerical variable,
+            you can think of each row's group as the bin it falls into when binning. This grouping/binning happens automatically when you call the histogram block
+            (using the <code>GROUP</code> block), but in other languages you will have to do the grouping/binning yourself before visualizing.
         </p>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-species.png" alt="BARH species" style="width:60%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass.png" alt="HIST body mass" style="width:60%"/>
         </div>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-species-stage.png" alt="BARH species stage" style="width:40%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass-stage.png" alt="HIST body mass stage" style="width:40%"/>
         </div>
 
         <p>
-            Compare this to the output of the <code>GROUP</code> call on <code>species</code>:
+            Using the <code>number of bins</code> argument, we can see the same numerical variable binned into a different number of bins:
         </p>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-species-group.png" alt="BARH block" style="width:80%"/>
-        </div>
-
-        <p>
-            This is the result of calling DASIS's horizontal bar block! As stated eariler, in other languages you would have to construct the <code>GROUP</code> yourself.
-        </p>
-
-        <p>
-            There is even more cool functionality of the horizontal bar block! We can even see the breakdown of one column grouped by another column using the
-            optional column label argument:
-        </p>
-
-        <div class="center">
-            <img src="/bjc-r/img/data-science/barh-species-island.png" alt="BARH species-island" style="width:60%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass-4.png" alt="HIST body mass 4 bins" style="width:60%"/>
         </div>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-species-island-stage.png" alt="BARH species-island stage" style="width:40%"/>
-        </div>
-
-        <p>
-            Here we can see the data grouped by <code>island</code> <b>and</b> <code>species</code>. We could also have switched the order of the column label arguments to get this: 
-        </p>
-
-        <div class="center">
-            <img src="/bjc-r/img/data-science/barh-island-species.png" alt="BARH island-species" style="width:60%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass-4-stage.png" alt="HIST body mass 4 bins stage" style="width:40%"/>
         </div>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-island-species-stage.png" alt="BARH island-species stage" style="width:40%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass-20.png" alt="HIST body mass 20 bins" style="width:60%"/>
         </div>
-
-        <p>
-            Again, compare this to one of the <code>GROUP</code> calls that was made under the hood:
-        </p>
 
         <div class="center">
-            <img src="/bjc-r/img/data-science/barh-group-adelie.png" alt="BARH island-species stage" style="width:80%"/>
+            <img src="/bjc-r/img/data-science/hist-body-mass-20-stage.png" alt="HIST body mass 20 bins stage" style="width:40%"/>
         </div>
 
         <p>
-            Note that the data is the same on both plots, but the ordering can influence how someone interprets the same data. The first plot seems to show us where to find
-            each species, but the second seems to show us which species we would ind on each island.
+            Using a proper number of bins is an important part of making a good histogram. The fewer bins you use, the more difficult it can be to see the true distribution,
+            but the same is true for using too many bins. With too few bins, a lot of different values fall into the same bins, but with too many bins,
+            each row could potentially have its very own bin or make the x-axis difficult to read due to <b>overplotting</b>. This is why it's important to pick an appropriate
+            number of bins, or let DASIS decide if you are not sure.
         </p>
 
         <p class="alert quoteGreen">
-            Try and find the bars on each plot that correspond to the <code>GROUP</code> query above.
+            <b>Overplotting</b> happens when some part of your plot becomes difficult to read. The visualization may be correct, but if people cannot read the plot, it
+            defeats the purpose of visualizing the data in the first place.
         </p>
 
     </body>
