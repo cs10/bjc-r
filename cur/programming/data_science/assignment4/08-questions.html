@@ -17,26 +17,27 @@
 </head>
     <body>
 
-        <!--
         <p>
-            Once we query a Table using <code>GROUP</code> or <code>PIVOT</code>, we can answer more specific questions about the data by accessing the Table we get.
-            In the case of a <code>GROUP</code> call, the returned value is a Table, so we can access it using DASIS blocks we have seen before. In the case of a
-            <code>PIVOT</code> call, the result is not a Table, so we must access it like a Snap<em>!</em> list with the
-            <img src="/bjc-r/img/data-science/item-i-block.png" alt="Item i of list block" style="width:10%"/> block.
-        </p>
-
-        <p>
-            Using this strategy, use the <code>GROUP</code> and <code>PIVOT</code> blocks on the cleaned version of your movies Table to answer the following questions.
-            You can make this helper block and use it as necessary
+            Let's answer some questions about the <code>penguins</code> data using the data visualization techniques we have learned about in this assignment:
         </p>
 
         <ol>
-            <li> Who has directed the most movies in this dataset? </li>
-            <li> On average, which decade in the dataset had the longest movies? (Hint: use <code>GROUP</code>'s optional grouping function argument) </li>
-            <li> How many comedy movies were released in the 1960s? (Hint: add a new column to the Table that indicates the decade in which a given movie was released) </li>
-            <li> How many science fiction movies were released in the 1980s? </li>
+            <li> Do any of the species have an uneven split between the sexes? </li>
+            <li> Do any of the islands have an uneven split between the sexes? </li>
+            <li> Create a histogram of the flipper length column with 15 bins. The distribution here appears to be <b>bimodal</b>, which means that there are two "bumps" in the histogram.
+            Typically, distributions with more than one distinct "bump" indicate there are multiple groups of data being visualized at once (for example, on a test where a lot
+            of students cheat, the distribution of the class's scores is bimodal because cheaters and non-cheaters are in different data groups). What groups of data are
+            causing this bimodal distribution? </li>
+            <li> If you were provided data about a new penguin with a flipper length of 220 mm and a bill depth of 15 mm, which species would you guess this penguin is based on
+                the data you have about penguins? Do you need any more information to decide? </li>
+            <li> If you were provided data about a new penguin with a flipper length of 192 mm and a bill depth of 18 mm, which species would you guess this penguin is based on
+                the data you have about penguins? Do you need any more information to decide? </li>
         </ol>
-        -->
+
+        <p class="alert quoteGreen">
+            These questions could possibly be answered by queries, but the visualizations help us make conclusions faster and more confidently when we can see the
+            data represented on a plot.
+        </p>
 
     </body>
 </html>
