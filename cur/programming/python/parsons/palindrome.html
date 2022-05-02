@@ -57,7 +57,7 @@
             }
         } 
 
-        $(document).ready(function(){
+        $$(document).ready(function(){
             var parson = new ParsonsWidget({
                 'sortableId': 'sortable',
                 'trashId': 'sortableTrash',
@@ -66,15 +66,15 @@
             });
             parson.init(initial);
             parson.shuffleLines();
-            $("#newInstanceLink").click(function(event){
+            $$("#newInstanceLink").click(function(event){
                 event.preventDefault();
                 parson.shuffleLines();
             });
-            $("#feedbackLink").click(function(event){
+            $$("#feedbackLink").click(function(event){
                 event.preventDefault();
                 parson.getFeedback("palindrome");
             });
-            $("#exportLink").click(function(event){
+            $$("#exportLink").click(function(event){
                 event.preventDefault();
                 parson.export("palindrome.py");
             });
