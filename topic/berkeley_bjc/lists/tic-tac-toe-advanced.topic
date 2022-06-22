@@ -10,6 +10,4 @@ heading: Tic-Tac-Toe strategy
    resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
    resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
    resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
-   resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
-   resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
 }
