@@ -3,15 +3,14 @@ title: Practicing with Lists: Making Boards
 
 h2: Activities
 learning-goal: Get more practice with lists and higher order functions used in combination.
-learning-goal: Develop a significant-sized project.
-learning-goal: Explore approaches to mouse detection without "touching" blocks.
-learning-goal: Build a generalized game board.
+learning-goal: Develop a two-player game with a computer strategy.
 
 
-heading: Game Board Building
-   resource: Making Your Own Board  [/bjc-r/cur/programming/lists/hof/ttt/10-your-board.html]
-   resource: Interacting With the Board  [/bjc-r/cur/programming/lists/hof/ttt/11-interact-with-board.html]
-   resource: Put Stuff On the Board [/bjc-r/cur/programming/lists/hof/ttt/12-populating-board.html]
-   resource: Build A Maze [/bjc-r/cur/programming/lists/hof/ttt/13-maze.html]
-   resource: Multiple Agents [/bjc-r/cur/programming/lists/hof/ttt/14-many-agents.html]
+heading: Tic-Tac-Toe strategy
+   resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
+   resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
+   resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
+   resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
+   resource: Blocking the Opponent [/bjc-r/cur/programming/lists/hof/ttt/06-block-opponent.html]
+   resource: Best Free Square  [/bjc-r/cur/programming/lists/hof/ttt/07-best-free.html]
 }
