@@ -1,7 +1,7 @@
 title: Testing Code and 2048
 {
 h2: Introduction to the game 2048
-big-idea: Understand the essentials of 2048 and our new HoF block: <code>test</code>.
+big-idea: Understand the essentials of 2048 and our new HOF block: <code>test</code>.
 
 
 h2: Activities
