@@ -10,7 +10,7 @@
 </script>
 </head><body><div style="text-align: center;">
   <div style="text-align: left;">For our <code>tree</code> block, we're going to point out various parts of the anatomy of a recursive procedure. The line numbers mentioned below refer to the picture at the end of this page.<br><ul>
-      <li>We always need a way to figure out that we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
+      <li>We always need a way to figure out when we're done and shouldn't call the recursive call again. Lines 2-4 are the <em>Base Case,</em> in which we handle a situation so simple that we don't need to call the block recursively.</li>
       <li>If this isn't the base case we think to ourselves "Woah &#8212; That seems complicated. I'll just do a small part of the problem and delegate to someone else". Here's what we do:<br></li>
       <ul><li>draw the trunk of the tree (line 6), <br></li>
         <li>position the sprite for the left sub-tree (line 7), <br></li>
@@ -29,5 +29,5 @@
     <p>1. What would happen if we ran our <code>tree</code> block with a <code>level</code> input of less than 1? Think about it before you try it out.</p>
     <p>2. Sometimes you can make a recursive procedure more elegant by having a smaller base case. In our <code>tree</code> program, what would a &quot;zero level&quot; tree mean? Try rewriting <code>tree</code> so that the base case is <code>level=0</code>.</p>
 
-    
+
   </body></html>

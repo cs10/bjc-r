@@ -12,8 +12,8 @@ h2: Activities
 learning-goal: Explore the idea of representing a problem in terms of itself.
 learning-goal: Practice planning and coding recursive blocks.
 
-h2: Reminder
-big-idea: Make sure you watch the first recursion lecture before doing this lab!
+//h2: Reminder
+//big-idea: Make sure you watch the first recursion lecture before doing this lab!
 
 heading: Trees in a Forest
     resource: Recursive Tree Part 1 [/bjc-r/cur/programming/recur/tree/recursive-tree-part-1.html]
