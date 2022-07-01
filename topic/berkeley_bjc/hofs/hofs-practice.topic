@@ -3,7 +3,8 @@ title: Practice with HOFs and Functions as Data
 h2: Big Ideas
 big-idea: There are more to HOFs than just map, keep, and combine.
 big-idea: Functions can be treated as data, just like strings, numbers, and lists.
-big-idea: Creating our own higher-order function blocks allows us to achieve a whole new level of generality in our programs.
+big-idea: Achieve a new level of generality in our programs by creating our own higher-order function blocks.
+
 
 h2: Activities
 learning-goal: Build non-HOF blocks to use as helper functions in larger HOFs problems.
@@ -13,12 +14,12 @@ learning-goal: Use HOFs to solve real-life problems, like minimizing or composin
 
 h3: A Little Practice
     resource: Introduction and Warm-up [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction-and-warmup.html]
-    // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction.html] 
+    // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-introduction.html]
     // [/bjc-r/cur/programming/HOFs/functions-as-data/hofs-practice-warmup.html]
 
 h3: Factorions
   resource: Factorions [/bjc-r/cur/programming/HOFs/functions-as-data/factorions.html]
-  
+
 h3: Functions as Data
   resource: Functions as Data [/bjc-r/cur/programming/HOFs/functions-as-data/functions-as-data.html]
   resource: Call and Run [/bjc-r/cur/programming/HOFs/functions-as-data/using-call-and-run.html]
@@ -29,7 +30,7 @@ h3: Fun with Numbers
 
 h3: Minimizing Functions
   resource: I hope you remember your calculus [/bjc-r/cur/programming/HOFs/functions-as-data/minimize-function.html]
-  
+
 h3: Extra for Experience
   resource: Compose, compose, compose... [/bjc-r/cur/programming/HOFs/functions-as-data/compose-over-list.html]
 }
