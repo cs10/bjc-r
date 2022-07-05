@@ -19,7 +19,7 @@
 <h3> Can the Computer Win on this Move? </h3>
 <p>Now that we can find the status of all the winning triples we can use this information to find a winning move for the computer. You'll begin by building the <img src="/bjc-r/img/hof/
 winning-triple-for-player.png" width="30%" height="30%" /> block to identify the contents of the triple on the board where the player could win on their next turn. Then, you'll fill in <img src="/bjc-r/img/hof/
-winning-square.png" width="30%" height="30%" />,which will select the correct position out of that triple.
+winning-square.png" width="30%" height="30%" />, which will select the correct position out of that triple.
 
 <p style="text-align:center;">
   <img src="/bjc-r/img/hof/winning-triple-example.png" width="50%" height="50%"/>
@@ -75,7 +75,14 @@ Here is some oversimplified code that roughly represents what your block should 
     </p>
   </div>
 
-Your implementation should use the <img src="/bjc-r/img/hof/winning-square.png" width="30%" height="30%" /> block we made above. Try to make your implementation as readable as possible by abstracting away sections of your code. You can implement the final rule by 1) picking a random spot in situations where there's no immediate win or opponent to block (2) prioritizing the middle, then corners, then edges or (3) implementing some more advanced tic-tac-toe strategies, if you're a tic-tac-toe buff and up for a challenge! (ever heard of 'forks'?). Once, you finish implementing the <img src="/bjc-r/img/hof/next-move-for-computer.png" alt="list of winning combinations" width="20%" height="20%"/> block, play the tic-tac-toe against the computer and see if you can beat the computer! Let's shift focus a bit for the rest of the lab- which should be helpful for upcoming project work (and doesn't involve writing too many blocks).
+Your implementation should use the <img src="/bjc-r/img/hof/winning-square.png" width="30%" height="30%" /> block we made above. Try to make your implementation as readable as possible by abstracting away sections of your code. You can implement the final rule by:
+<ol>
+<li>Picking a random spot in situations where there's no immediate win or opponent to block</li>
+  <li>Prioritizing the middle, then corners, then edges, or</li>
+  <li>implementing some more advanced tic-tac-toe strategies, if you're a tic-tac-toe buff and up for a challenge! (ever heard of 'forks'?)</li>
+</ol>
+
+  Once you finish implementing the <img src="/bjc-r/img/hof/next-move-for-computer.png" alt="list of winning combinations" width="20%" height="20%"/> block, you're done with this lab! You can click the green flag to play tic-tac-toe against the computer strategy you defined.
 
 
  <!-- 
