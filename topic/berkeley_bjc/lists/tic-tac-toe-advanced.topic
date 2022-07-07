@@ -1,0 +1,13 @@
+title: Practicing Lists and Higher Order Functions: Tic-Tac-Toe
+{
+h2: Activities
+learning-goal: Get more practice with lists and higher order functions used in combination.
+learning-goal: Develop a two-player game with a computer strategy.
+
+
+heading: Tic-Tac-Toe strategy
+   resource: Tic-Tac-Toe: Introduction [/bjc-r/cur/programming/lists/hof/ttt/01-intro.html]
+   resource: Program Structure and Strategy [/bjc-r/cur/programming/lists/hof/ttt/02-strategy.html]
+   resource: Finding Triples [/bjc-r/cur/programming/lists/hof/ttt/03-triples.html]
+   resource: Find a Winning Square [/bjc-r/cur/programming/lists/hof/ttt/05-winning-square.html]
+}
