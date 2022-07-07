@@ -18,7 +18,7 @@
 </head>
     <body>
         <h2>Exercise 2: Exponents</h2>
-        <p>Drag and drop the code below to write an <code>exponent(num, power)</code> function that takes two arguments (a number and an exponent value) and returns the computed result. Below are a few example inputs: </p> 
+        <p>Drag and drop the code below to write an <code>exponent(num, power)</code> function that takes two arguments (a number and an exponent value) and returns the computed result. Below are a few example inputs: </p>
         <p><pre><code>
 >>> exponent(10, 0)
 1
@@ -27,7 +27,7 @@
 >>> exponent(2, 10)
 1024
         </code></pre></p>
-        <p>You can reorder the blocks and drag them to different indentation levels as you wish. <strong>You may not need to use all of the provided lines.</strong></p> 
+        <p>You can reorder the blocks and drag them to different indentation levels as you wish. <strong>You may not need to use all of the provided lines.</strong></p>
         <div id="sortableTrash" class="sortable-code"></div>
         <div id="sortable" class="sortable-code">
         </div>
@@ -38,8 +38,7 @@
         </p>
 
         <p class="alert alert-danger quoteRed">
-            Before you leave this page, be sure to check your answer for correctness by clicking "Get feedback" above and export your code using the "Export button." <strong>You will need to show your exported code to get credit for this lab.</strong>
-        </p>
+            Before you leave this page, be sure to check your answer for correctness by clicking "Get feedback" above and export your code using the "Export button." 
         <script src="/bjc-r/js-parsons/lib/jquery.min.js"></script>
         <script src="/bjc-r/js-parsons/lib/jquery-ui.min.js"></script>
         <script src="/bjc-r/js-parsons/lib/jquery.ui.touch-punch.min.js"></script>
@@ -56,13 +55,13 @@
                       '    result = result * num\n' +
                       '    result = result * power #distractor\n' +
                       '    power = power - 1\n' +
-                      '  return result' 
+                      '  return result'
 
         function displayErrors(fb) {
             if(fb.errors.length > 0) {
                 alert(fb.errors[0]);
             }
-        } 
+        }
 
         $(document).ready(function(){
             var parson = new ParsonsWidget({
