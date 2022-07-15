@@ -15,7 +15,7 @@
 </head>
     <body>
         <p>
-            Recall the code thus far for our book class, which is essentially empty:
+            The code for our book class from before, which is essentially empty, has been copied below for your convenience:
 
             <pre><code>
 class Book:
@@ -23,7 +23,7 @@ class Book:
             </code></pre>
         </p>
         <p>
-            It is pretty annoying to set all the attributes individually like we did in the previous page of this lab. We can add a special function to our class which will initialize (a.k.a. create) an object from a list of desired attributes. This special function is called a constructor, and in Python has the name __init__ (two underscores on each side). 
+            It is pretty annoying to set all the attributes individually like we did in the previous page of this lab. We can add a special function to our class which will initialize (a.k.a. create) an object from a list of desired attributes. This special function is called a constructor, and in Python has the name __init__ (two underscores on each side).
         </p>
         <p>
             An example of a constructor is given below:
@@ -57,17 +57,17 @@ Ben Blum
             <br>
         </p>
             <p>
-            <strong>Key things to note:</strong>        
-        <ol>    
-        <li>The __init__ function is automatically called when you create a Book object, i.e. x = Book(...). Furthermore, the first argument, self, is not something that we explicitly pass to the Python function. Instead, self refers to the object that is being created. This is a little weird when you frist see it as a novice programmer.
-        </li>        
+            <strong>Key things to note:</strong>
+        <ol>
+        <li>The __init__ function is automatically called when you create a Book object, i.e. x = Book(...). Furthermore, the first argument, self, is not something that we explicitly pass to the Python function. Instead, self refers to the object that is being created. This is a little weird when you frist see it.
+        </li>
             <li>
                 Inside the code for the constructor, you'll notice that we add <em>self</em> in front of the name of each argument on the left hand side of each = operation. This is because we're taking the arguments passed to the function and copying their data into the current book's personal memory. For example, above, the book is handed a number called py which is equal to 2008, and the fourth line of the constructor copies this 2008 into the self's variable called "publication_year". This makes more sense if you step through the code in PythonTutor as suggested above.
             </li>
             <li>
-                The four variables created in the constructor are called "instance attributes". Each instance of the Book class has its own personal data that it shares with no other Book.
+                The four variables created in the constructor are called "instance attributes". Each instance of the Book class has its own personal data (these instance attributes) that it shares with no other Book.
             </li>
-            <li>My friend wrote Ranger Games, btw. I'm biased, but really loved it. If you read it and get to the scene in the small town in Canada, email me and let me know. Such a jaw-dropping moment.</li>
+            <!-- <li>My friend wrote Ranger Games, btw. I'm biased, but really loved it. If you read it and get to the scene in the small town in Canada, email me and let me know. Such a jaw-dropping moment.</li> -->
         </ol>
     </body>
 </html>

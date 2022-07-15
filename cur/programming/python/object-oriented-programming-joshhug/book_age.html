@@ -29,21 +29,21 @@ class Book:
 		self.publication_year = py
 
 	def calculate_age(self):
-		return 2021 - self.publication_year
+		return 2022 - self.publication_year
 		</code></pre>
 		</p>
 
 		<p>
-			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year (2021) and its year of publication. 
+			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year (2021) and its year of publication.
 		</p>
 		<p>To invoke our method, the most obvious way is as follows:
 
             <pre><code>
 ranger_games = Book('Crime Nonfiction', 'Ranger Games', 'Ben Blum', 2017)
 print(Book.calculate_age(ranger_games))
-            </code></pre>  
+            </code></pre>
 
- 		</p>          
+ 		</p>
  		<p>This code tells the Book class to run the calculate_age method on the instance of the Book class called ranger_games.</p>
 
  		<p>Try running <a href="https://pythontutor.com/visualize.html#code=class%20Book%3A%0A%20%20%20%20def%20__init__%28self,%20genre,%20title,%20author,%20py%29%3A%0A%20%20%20%20%20%20%20%20self.genre%20%3D%20genre%0A%20%20%20%20%20%20%20%20self.title%20%3D%20title%0A%20%20%20%20%20%20%20%20self.author%20%3D%20author%0A%20%20%20%20%20%20%20%20self.publication_year%20%3D%20py%0A%20%20%20%20%20%20%20%20%0A%20%20%20%20def%20calculate_age%28self%29%3A%0A%20%20%20%20%20%20%20%20return%202021%20-%20self.publication_year%0A%0Aranger_games%20%3D%20Book%28'Crime%20Nonfiction',%20'Ranger%20Games',%20'Ben%20Blum',%202017%29%0Aprint%28Book.calculate_age%28ranger_games%29%29%0A&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">the code on PythonTutor at this link</a>.</p>
@@ -52,7 +52,7 @@ print(Book.calculate_age(ranger_games))
 
             <pre><code>
 ranger_games = Book('Crime Nonfiction', 'Ranger Games', 'Ben Blum', 2017)
-ranger_games.calculate_age()            
+ranger_games.calculate_age()
 						</code></pre>
 		</p>
 		<p>This alternate syntax is EXACTLY identical in behavior.</p>
@@ -67,7 +67,7 @@ ranger_games.calculate_age()
 					Any method we write must have at minimum one parameter: self. If we use the class name to invoke the method, e.g. Book.calculate_age(ranger_games), then we must provide the book whose age is to be calculated. If we instead use the more common syntax where we invoke using the name of an instance, e.g. ranger_games.calculate_age(), then Python automatically fills in the first argument of the function with the instance whose method got called.
 				</li>
 				<li>The second style of method invocation (where self gets automatically filled in) is far more common. Don't use the first style (where you manually specify the argument for self) in real world code. The first style is so rare that many people don't even know that it's possible. In other words, the second style is more Pythonic.</li>
-				<li>The name "self" is just a convention. You can technically put anything you want, e.g. def calculate_age(a_book), and it would just fine. However, other programmers might get confused that you're not using the usual convention of naming the first variable self. 
+				<li>The name "self" is just a convention. You can technically put anything you want, e.g. def calculate_age(a_book), and it would just fine. However, other programmers might get confused that you're not using the usual convention of naming the first variable self.
 				</li>
 
 			<li>
