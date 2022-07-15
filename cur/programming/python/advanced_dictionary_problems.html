@@ -15,7 +15,7 @@
 </head>
   <body>
     <p>
-      In this exercise, we'll expand the idea of Exercise 4.1: Substitute Characters. Imagine that we're given lots of character pairs to replace instead of just one. A dictionary would be a great way to represent all of these character pairs. For example:
+      In this exercise, we'll expand the idea of Exercise 4.1: Substitute Base. Imagine that we're given lots of character pairs to replace instead of just one. A dictionary would be a great way to represent all of these character pairs. For example:
     </p>
     <pre><code>
 {"A":"X", "B":"Y", "C":"Z"}
@@ -47,7 +47,7 @@ python3 autograder.py lab2.py 7.1
     <h3>Exercise 7.2: Invert Dictionary</h3>
 
     <p class="alert alert-success quoteGreen">
-      Write a function <code>invert_dict</code> that takes as input a dictionary. The output should be a new dictionary that has each key:value pair reversed. The input dictionary should be left unchanged.
+      Write a function <code>invert_dict</code> that takes as input a dictionary. The output should be a new dictionary that has each key, value pair reversed. The input dictionary should be left unchanged.
     </p>
     <p><pre><code>
 >>> original = {"A":"X", "B":"Y", "C":"Z"}
@@ -70,7 +70,7 @@ python3 autograder.py lab2.py 7.1
 "SECRET AESSAGE"
     </code></pre>
     <p>
-      Hold up- something's not quite right. The original message wasn't quite recovered. That's because the replacement dictionary didn't have a complete alphabet, so some un-mapped characters ended up getting caught up in the reverse-substituting. If we want a complete encrypt-unencrypt system, we'll need to make sure we map the full alphabet.
+      Hold up- something's not quite right. The original message wasn't quite recovered. That's because the replacement dictionary didn't have a complete alphabet, so some un-mapped characters ended up getting caught up in the reverse-substituting. If we want a complete encrypt-decrypt system, we'll need to make sure we map the full alphabet.
     </p>
   </body>
 </html>

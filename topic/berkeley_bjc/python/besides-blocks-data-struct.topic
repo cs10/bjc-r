@@ -1,15 +1,15 @@
 title: Besides Blocks: Data Structures and Python
 {
 h2: Big Ideas
-big-idea: Data Structures are a way to help programmers organize items in ways which are easier to manipulate and understand.
+big-idea: Data Structures are a way to help programmers organize items in ways which are easy to manipulate and understand.
 big-idea: Lists are a basic data structure which exist in just about every language.
 big-idea: "Key-Value Pairs" are a very easy way to create simple relationships among different data.
-big-idea: Python dictionaries utilize key-value pairs to make organizing certain kinds of data much more effecient.
+big-idea: Python dictionaries utilize key-value pairs to make organizing certain kinds of data efficient.
 
 h2: Activities
-learning-goal: Get more practice writing functions in Python.
+learning-goal: Practice writing functions in Python.
 learning-goal: Manipulate simple data structures and their data.
-learning-goal: Learn how to use key-value pairs and why they are useful.
+learning-goal: Learn how to use key-value pairs and determine why they are useful.
 learning-goal: Solve problems with Python lists and dictionaries.
 
 heading: Introduction to Python Data Structures
