@@ -15,12 +15,12 @@
 </head>
     <body>
         <p>
-            So far, we've looked at how we can find the top words from a text as well as the average word length in a text. There are many more interesting things we could do to analyze textual or other data, as described in the reading for this week. One common term for such analysis is "data science". If you're interested in learning more about how to use Python to analyze real data, consider taking the Data Science Foundations course C8.
+            So far, we've looked at how we can find the top words from a text as well as the average word length in a text. There are many more interesting things we could do to analyze textual or other data. One common term for such analysis is "data science". If you're interested in learning more about how to use Python to analyze real data, consider taking the Data Science Foundations course DATA C8.
         </p>
 
-        <p>If you're trying to decide between C8 and CS61A: C8 and CS61A don't overlap very much, and there's no reason you can't take both. We expect that there are many students who will take CS61A followed by C8, and many students will take C8 followed by CS61A. If you're pretty sure that you're interested in being a CS major, you'll need to take CS61A, but it's OK to wait until the Fall if you're a freshman. 
+        <p>If you're trying to decide between DATA C8 and CS61A: DATA C8 and CS61A don't overlap very much, and there's no reason you can't take both. We expect that there are many students who will take CS61A followed by DATA C8, and many students will take DATA C8 followed by CS61A. If you're pretty sure that you're interested in being a CS major, you'll need to take CS61A.
         </p>
-        <p>Both assume no prior programming experience (not even CS10). CS61A focuses much more on traditional computer science topics. It'll feel like an advanced version of CS10 that moves more quickly and covers a broader variety of topics, largely oriented around abstraction and programming paradigms. By contrast, C8 is more of a class in applied techniqes for analyzing real world data. The syllabi can be found here: <a href="http://cs61a.org/">CS61A</a> and here: <a href="http://data8.org/">C8</a>.
+        <p>Both assume no prior programming experience (not even CS10). CS61A focuses much more on traditional computer science topics. It'll feel like an advanced version of CS10 that moves quickly and covers a broad variety of topics, largely oriented around abstraction and programming paradigms. By contrast, DATA C8 is more of a class in applied techniqes for analyzing real world data. The syllabi can be found here: <a href="http://cs61a.org/">CS61A</a> and here: <a href="http://data8.org/"> DATA C8</a>.
         </p>
 
         <h3>Building an AI that Can Talk (Optional)</h3>
@@ -30,7 +30,7 @@
 
  <p class="alert quoteRed">
 Most of the TAs will not be familiar with this new exercise. If you ask for help, be friendly to them since they'll be figuring it out along with you.
- </p>    
+ </p>
 
         <p>So far, we've talked about what is called "natural language processing". We feed our algorithms some text data, and it spits back out something else. The reminder of this lab is an exercise in "natural language generation", where we'll train a model how to speak and have it generate new text for us. We'll use the simplest possible model, but the results may still surprise you in their sophistication.
         </p>
@@ -46,13 +46,13 @@ Most of the TAs will not be familiar with this new exercise. If you ask for help
         </p>
 
 <pre>                frequency of           probability that
-                 next char               next char is 
+                 next char               next char is
 kgram   freq         e   h   r   t         e   h   r   t
 -----------------------------------------------------------
- the      2      1   0   0   1   0    1/2  0   0  1/2  0 
- he       1      0   1   0   0   0     0   1   0   0   0  
+ the      2      1   0   0   1   0    1/2  0   0  1/2  0
+ he       1      0   1   0   0   0     0   1   0   0   0
  e e      1      0   0   0   0   1     0   0   0   0   1
-  et      1      0   0   1   0   0     0   0   1   0   0 
+  et      1      0   0   1   0   0     0   0   1   0   0
  eth      1      0   1   0   0   0     0   1   0   0   0
  her      1      0   0   0   0   1     0   0   0   0   1
  ert      1      0   0   1   0   0     0   0   1   0   0
