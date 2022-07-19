@@ -18,28 +18,22 @@
             Now let's start working with our data. Our goal here is to generate a list of the counts of every word in a file, and to find which words appear most often. There are libraries available for Python that would make us able to do this in two lines, but for the sake of education, let's write our own code that does all this from scratch.
         </p>
 
-        <p>Modify word_analyzer.py so that it reads as below:
+        <p>Modify word_analyzer.py by removing any print statements that tested the functions from the previous lab page. Also, add and complete the <code>count_words</code> function as shown below:
         </p>
 
-    <pre><code>def read_file(filename):
-    """Returns the text contained in file with given filename."""
-    f = open(filename, "r")
-    text = f.read()
-    return text
-
-def count_words(text):
+    <pre><code>def count_words(text):
   """Takes a text and returns a dictionary mapping each word to its count, for example:
 
   count_words(["Fruits and Vegetables and Vegetables on a Budget and Vegetables at a Store and Vegetables to Clean Fruit and Vegetables"])
 
-  would return: 
+  would return:
   {'and': 5, 'on': 1, 'Vegetables': 5, 'Budget': 1, 'to': 1, 'Fruit': 1, 'a': 2, 'Clean': 1, 'Fruits': 1, 'Store': 1, 'at': 1}
   """
   return ???
 
 text = read_file("horse_ebooks.txt")
 print(count_words(text))</code></pre>
-      <p>Your job is to fill out the count_words function so that it returns a dictionary with the right counts. If you're stuck, look back at <a href="/bjc-r/cur/programming/python/using_dictionaries.html">Exercise 6 from the Data Structures lab</a>.
+      <p>Your job is to fill out the count_words function so that it returns a dictionary with the right counts. If you're stuck, look back at <a href="/bjc-r/cur/programming/python/using_dictionaries.html">Exercise 6 from the Data Structures lab</a>. Remember that dictionaries are unordered data structures so what is printed by the above call may have the keys in a different order.
     </body>
 
  <h3>Removing Punctuation (optional)</h3>
@@ -48,7 +42,7 @@ print(count_words(text))</code></pre>
 
  <p class="alert quoteBlue">
 Hint: Use a combination of <code>"".join()</code> with a list comprehension. See the <a href="/bjc-r/cur/programming/python/python_comprehensions_and_strings.html">previous lab for some hints.</a>
- </p>    
+ </p>
 
 <!-- strip punctuation?? -->
 </html>
