@@ -24,7 +24,7 @@ permutations of a,b,c where only one letter is present (three
 possibilities) for a total of fifteen possibilities.</p>
   <ul>
     <li>If all three letters are present, it is as if we were deterministic (didn't have random wait times).
-      Here is how it could happen (for this example order, all 6 permutations
+      Here is one way we could end up with three letters (for this example order, all 6 permutations
       are possible = {abc, acb, bac, bca, cab, bca}):
       <ul>
         <li>result starts empty</li>
@@ -36,7 +36,7 @@ possibilities) for a total of fifteen possibilities.</p>
       </ul>
     </li>
     <li>If
-only two letters were present, we had a race condition, and here is how
+only two letters were present, we had a race condition. Here is one way
 it could happen (again, all 6 combinations and permutations are
 possible = {ab, ba, ac, ca, bc, cb}): <ul>
         <li>result starts empty</li>
@@ -49,7 +49,7 @@ possible = {ab, ba, ac, ca, bc, cb}): <ul>
       </ul>
       </li>
       <li>If
-only one number were present, we also had a race condition, and here is
+only one number was present, we also had a race condition, and here is
 how it could happen (again, all permutations possible = {a, b, c}): <ul>
         <li>result starts empty</li>
         <li>a, b clear result.</li>
