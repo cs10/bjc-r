@@ -59,7 +59,7 @@ Ben Blum
             <p>
             <strong>Key things to note:</strong>
         <ol>
-        <li>The __init__ function is automatically called when you create a Book object, i.e. x = Book(...). Furthermore, the first argument, self, is not something that we explicitly pass to the Python function. Instead, self refers to the object that is being created. This is a little weird when you frist see it.
+        <li>The __init__ function is automatically called when you create a Book object, i.e. x = Book(...). Furthermore, the first argument, self, is not something that we explicitly pass to the Python function. Instead, self refers to the object that is being created. This is a little weird when you first see it.
         </li>
             <li>
                 Inside the code for the constructor, you'll notice that we add <em>self</em> in front of the name of each argument on the left hand side of each = operation. This is because we're taking the arguments passed to the function and copying their data into the current book's personal memory. For example, above, the book is handed a number called py which is equal to 2008, and the fourth line of the constructor copies this 2008 into the self's variable called "publication_year". This makes more sense if you step through the code in PythonTutor as suggested above.
