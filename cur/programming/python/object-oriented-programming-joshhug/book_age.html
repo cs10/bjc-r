@@ -18,7 +18,7 @@
 
 	<body>
 		<p>
-			Let's talk in more details about methods, which were briefly mentioned earlier. In addition to the <em>__init__</em> method we talked about above, we can also include any other methods we want for our classes. Methods are just another type of <em>attribute</em>, and you can think of them as functions that only objects of the same class can use. Let's look at an example with our book class (remember you still have to fill some of this out yourself in the file you downloaded):
+			Let's talk in more details about methods, which were briefly mentioned earlier. In addition to the <em>__init__</em> method we talked about before, we can also include any other methods we want for our classes. Methods are just another type of <em>attribute</em>, and you can think of them as functions that only objects of the same class can use. Let's look at an example with our book class (remember you still have to fill some of this out yourself in the file you downloaded):
 
 		<pre><code>
 class Book:
@@ -34,7 +34,7 @@ class Book:
 		</p>
 
 		<p>
-			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year (2021) and its year of publication.
+			For our class, we have added a new method, called calculate_age. It returns the age of our book based on the current year (2022) and its year of publication.
 		</p>
 		<p>To invoke our method, the most obvious way is as follows:
 
@@ -71,7 +71,7 @@ ranger_games.calculate_age()
 				</li>
 
 			<li>
-				In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to. For example, if our calculate_age method returned  2021 - publication_year, the code would just crash, since we don't know WHOSE publication year. You can try this out by editing the code on PythonTutor if you'd like.
+				In the function body, it is essential to refer to any instance attributes with dot notation using self, otherwise our method will not be able to recognize what object we are referring to. For example, if our calculate_age method returned  2022 - publication_year, the code would just crash, since we don't know WHOSE publication year. You can try this out by editing the code on PythonTutor if you'd like.
 			</li>
 		</ol>
 
