@@ -8,7 +8,7 @@ class Book:
 
 	def outdated(self, old_age):
 		#Determines if the book is outdated. Takes in an old_age and return True or False.
-		#Should return True if the age is at least old_age
+		#Should return True if the age is less than old_age
 		return 
 
 	def add_to_genres(self):
@@ -16,11 +16,8 @@ class Book:
 		as well as the original book's information. Otherwise, just make sure the book isn't
 		inside genres before you add it!'''
 		return 
-
-class MooingBook(Book):    
-    def moo(self):
-        print("On behalf of " + self.author +  ", I moo.")
-
+	
+'''--------------------------------------------The Following Code is Optional---------------------------------------------------'''
 class MemePage:
 	def __init__(self, topic):
 		pass # remove this line when done with the __init__ function, pass just means do nothing
