@@ -29,7 +29,7 @@ kgram   freq         e   h   r   t
  rth      1      0   1   0   0   0</pre>        
         </p>
         <p>
-        To reach this goal, let's take things one step at a time. Let's start by creating a file called markov.py in our datalab folder. In that file, add the following function and fill it in. Test it to your satisfaction before proceeding.
+        To reach this goal, let's take things one step at a time. Let's start by filling out the get_kgram function. Test it to your satisfaction with the autograder before proceeding.
         </p>
 
 <pre>
@@ -40,10 +40,12 @@ kgram   freq         e   h   r   t
     get_kgram("hello", 1, 3) would return "ell"
     get_kgram("hello", 1, 4) would return "ello"
     get_kgram("hello", 3, 4) would crash since 3 + 4 is longer than the string."""</code></pre>
+ 
+    <pre><code>$ python autograder.py get_kgram</code></pre>
 
 <h3>Adding a Single Character to our Model</h3>
 
-<p>Next we'll create a function that adds single characters to our model. Add the following code to the bottom of markov.py:</p>
+<p>Next we'll create a function that adds single characters to our model. Fill in the following function:</p>
 
 <pre>
 <code>def process_character(m, text, ptr, k):
@@ -66,9 +68,14 @@ process_character(markovmodel, "the ether", 1, 4)
 process_character(markovmodel, "the ether", 2, 4)
 </code></pre>
 
+ <p> You can test your code with the autograder as well by running:
+</p>
+    
+<pre><code>$ python autograder.py process_character</code></pre>
+
 <h3>Building our Markov Model</h3>
 
-<p>Now we have all the functions we need to build a markov model from a corpus of text! Add the following code to the bottom of markov.py:</p>
+<p>Now we have all the functions we need to build a markov model from a corpus of text! Fill in build_markov_model:</p>
 
 <pre>
 <code>def build_markov_model(text, k):
@@ -83,5 +90,9 @@ process_character(markovmodel, "the ether", 2, 4)
 Hint: Use the process_character function in your implementation of build_markov_model</code>.
  </p> 
 
+<p> You can check your work with the autograder:
+</p>
+
+<pre><code>$ python autograder.py build_markov_model</code></pre>
     </body>
 </html>
