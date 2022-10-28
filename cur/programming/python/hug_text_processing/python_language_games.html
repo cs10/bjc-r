@@ -16,14 +16,14 @@
     <body>
 
     	 <p>
-            Before we start working with our data, let's have some fun and play some <a href="https://en.wikipedia.org/wiki/Language_game">language games</a> with text that we are now able to read from files. A language game is a systematic manipulation of a word that is used to conceal a conversation. Please complete either <code>pig_latin(word)</code> or <code>izzle(word)</code>. Only one language game function is required for full credit on this lab.
+            Before we start working with our data, let's have some fun and play some <a href="https://en.wikipedia.org/wiki/Language_game">language games</a> with text that we are now able to read from files. A language game is a systematic manipulation of a word that is used to conceal a conversation. Please complete <code>pig_latin(word)</code> and <code>izzle(word)</code>.
         </p>
         <h3>Pig Latin</h3>
         <p>
           	Pig Latin is one of the most famous English language games. You can convert an English word into Pig Latin by moving all the consonants up to the first vowel to the end of the word and then appending "ay". E.g. "hello, Chris how are you?" becomes "Ellohay, ischray owhay areay ouyay?" Let's write a function that takes in a single word and return its Pig Latin translation.
         </p>
         <p>
-        	Add and complete the following function after the <code>read_file</code> function you just defined in word_analyzer.py:
+        	Complete the following function after the <code>read_file</code> function you just defined in word_analyzer.py:
        	</p>
 
         <pre><code>def pig_latin(word):
@@ -43,12 +43,19 @@
 		 </p>
 		 <pre><code>$ python word_analyzer.py
 ellohay</code></pre>
+		
+		<p>
+			You may also test your code with the autograder by running the following line.
+		</p>
+		<pre><code>$ python autograder.py pig_latin</code></pre>
+
+
 	<h3> -izzle Speak </h3>
 	<p>
 	Mac Dre an American Rapper is accredited for coming up with the next language game we will implement, however Snoop Dogg (D-O-double-g) is responsible for its wide spread use. You can convert an English word into -izzle speak by replacing the last vowel and all its following consonants with "-izzle." E.g. "Merry Christmas" becomes "Mizzle Christmizzle." If a word only has one vowel like 'and' and 'a' or it doesn't contain a cardinal vowel, [a, e, i, o, u], like the word 'my' you can either replace the entire word with 'izzle' or append '-izzle' to the end of the word.
 
     <p>
-        Add and complete the following function after the <code>pig_latin</code> function you just defined:
+        Complete the following function after the <code>pig_latin</code> function you just defined:
     </p>
 
         <pre><code>def izzle(word):
@@ -58,6 +65,11 @@ ellohay</code></pre>
     <p>
         You can test your function using the same methodology we used for Pig Latin.
     </p>
+
+	<p>
+	You may also use the autograder by running the following line.
+	</p>
+<pre><code>$ python autograder.py izzle</code></pre>
 
     <h3> Higher Order Manipulation </h3>
     <p>
@@ -119,5 +131,8 @@ print(apply_language_game(text, izzle))
 	 </code></pre>
      <pre><code>$ python word_analyzer.py
 Foizzle scorizzle izzle sevizzle yeizzle agizzle oizzle fathizzle broizzle ...</code></pre>
-
+	<p>
+		You may also run the following line to test your code with the autograder.
+	</p>
+	<pre><code>$ python autograder.py apply_language_game
 </html>
