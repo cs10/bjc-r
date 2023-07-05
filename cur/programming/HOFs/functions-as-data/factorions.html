@@ -28,8 +28,15 @@
       <img src="../../../../img/hof/factorion-145.png" alt="is 145 a factorion?"><br>
       and <code>false</code> for:<br>
       <img src="../../../../img/hof/factorion-12.png" alt="is 12 a factorion?"><br>
-      To do this, you'll need the <code>factorial</code> block. This time, write it using HOFs, rather than recursion.
-    </p>
+      To do this, you'll need the <code>factorial</code> block. This time, <b>write it using HOFs, rather than recursion.</b>
+      <img src="../../../../img/hof/factorial.png" alt="factorial block"><br>
+      <b>Important:</b>
+      <p>In this lab, we define <code>factorial</code> as:</p>
+      <pre>
+        factorial(n) = 
+          <span id="base-case">1</span> if n == 0 or n == 1,
+          n * factorial(n - 1) otherwise for n &gt;= 0
+      </pre>
     <p>
       Using the block you created above, create the block<br>
       <img src="../../../../img/hof/list-all-factorions.png" alt="list all factorions between min and max"><br>
