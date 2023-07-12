@@ -16,13 +16,10 @@
     <body>
         <h3>Starter File</h3>
         <p>
-            Refer to the previous lab for instructions on how to open and use a shell application (terminal for Mac/Linux users and the CMD command prompt for Windows users).  Once you have a shell up and running, <code>cd</code> into your documents directory and use <code>mkdir PythonLab2</code> to create a new directory called PythonLab2. Use <code>cd PythonLab2</code> to enter the directory. Save this <a href="/bjc-r/prog/python/python2/lab2.py">file</a> as <code>lab2.py</code> to the PythonLab2 directory. <code>lab2.py</code> contains the function signatures to get you started. Save this <a href="/bjc-r/prog/python/python2/autograder.py">file</a> as <code>autograder.py</code> to the PythonLab2 directory as well.
+            Refer to the previous lab for instructions on how to open and use a shell application (terminal for Mac/Linux users and the CMD command prompt for Windows users).  Once you have a shell up and running, <code>cd</code> into the directory that contains the <a href="../../../prog/python/lab2starter.py"">starter file</a> you have downloaded at the beginning of the lab. Make sure you are completing all of the exercises in the starter code file. You will submit it to Gradescope to receive credit for this lab. 
         </p>
         <p>
-          You can test your functions as you go by running <code>python3 autograder.py lab2.py exercise_#</code> in the PythonLab2 directory.
-        </p>
-        <p>
-          For example: <code>python3 autograder.py lab2.py 3.1</code> tests exercise 3.1. Use <code>all</code> instead of an exercise number to test all of the functions.
+          You can test your functions as you go by running <code>python3 -m doctest lab2starter.py</code> in the directory that contains the starter code file.
         </p>
         <h3>Exercise 1: Push First Odd Back</h3>
         <p>
@@ -38,7 +35,7 @@
             To test this function, run:
         </p>
         <p><pre><code class="bash">
-python3 autograder.py lab2.py 1
+python3 -m doctest lab2starter.py
         </code></pre></p>
         <!-- Held to shorten lab
         <h3>Challenge Exercise 1: merge</h3>
