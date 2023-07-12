@@ -15,15 +15,17 @@
 </head>
     <body>
         <h3>Python Modules</h3>
-        <p class="alert alert-info quoteBlue">
+        <p>
             So you've probably been wondering where the sprites and graphics are in Python. It turns out that there are many different ways to display graphics in Python by using modules. A <b>module</b> is code that someone else has written that we can then <code>import</code> into our file and use (just like a library in Snap<em>!</em>).
         </p>
+        <p class="alert alert quoteGreen">The following turtle exercise is optional</p>
         <p>
-            A simple and popular graphics module for Python is called <b>turtle</b>. To import the turtle module, add the following line of code to the top of your file:
+            A simple and popular graphics module for Python is called <b>turtle</b>. To import the turtle module, uncomment the following line of code to the top of your file:
         </p>
         <pre><code>
 import turtle
         </code></pre>
+        <p class="alert alert-danger quoteRed">If you decided to complete this exercise, you must comment out the line <code>import turtle</code> in your starter code file beofre you submit it to the autograder. Otherwise, the autograder will break. This import statement is commented out by default in the starter code.</p>
         <p>
             This imports the turtle module and allows us to use all of its functionality. If we want to call a function from the turtle module we would do something like below:
         </p>
@@ -84,8 +86,8 @@ turtle.clear()
             As you can see almost all of these functions are identical to what is in Snap<em>!</em>. Many of these functions have abbreviations as well, such as <code>turtle.fd(100)</code> which moves the sprite forward. Check out the <a href="https://docs.python.org/3/library/turtle.html">documentation</a> for other tips, tricks, and help.
         </p>
 
-        <h3>Exercise 5</h3>
-        <p class="alert alert-success quoteGreen">
+        <h3>Exercise 5 (Optional)</h3>
+        <p>
             Write a function that when called draws the fractal pattern shown below (this is the c-curve from the past recursion lab). Also use the turtle's <code>write</code> function to write your name (or something funny or both!) on the stage somewhere. You should use recursion and the turtle module to complete this exercise.
         </p>
         <div style="margin-left: 40px;">
