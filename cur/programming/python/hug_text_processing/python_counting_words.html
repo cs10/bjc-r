@@ -38,13 +38,13 @@ print(count_words(text))</code></pre>
     
     <p> Test your code using the autograder by running the following line.
     </p>
-    <pre><code>$ python autograder.py count_words</code></pre>
+    <pre><code>$ python -m doctest word_analyzer.py</code></pre>
 
  <h3>Removing Punctuation (optional)</h3>
 
  <p>One issue with our <code>count_words</code> function is that it includes punctuation as part of each word. For example "cows" and "cows." would be considered different words. As an optional exercise, write a <code>remove_punctuation</code> function that returns a string without any punctuation. Modify <code>count_words</code> so that it uses this new function.
 
- <p class="alert quoteBlue">
+ <p class="alert quoteGreen">
 Hint: Use a combination of <code>"".join()</code> with a list comprehension. See the <a href="/bjc-r/cur/programming/python/python_comprehensions_and_strings.html">previous lab for some hints.</a>
  </p>
 

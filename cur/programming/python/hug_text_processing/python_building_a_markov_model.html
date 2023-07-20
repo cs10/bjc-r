@@ -41,7 +41,7 @@ kgram   freq         e   h   r   t
     get_kgram("hello", 1, 4) would return "ello"
     get_kgram("hello", 3, 4) would crash since 3 + 4 is longer than the string."""</code></pre>
  
-    <pre><code>$ python autograder.py get_kgram</code></pre>
+    <pre><code>$ python -m doctest word_analyzer.py</code></pre>
 
 <h3>Adding a Single Character to our Model</h3>
 
@@ -71,7 +71,7 @@ process_character(markovmodel, "the ether", 2, 4)
  <p> You can test your code with the autograder as well by running:
 </p>
     
-<pre><code>$ python autograder.py process_character</code></pre>
+<pre><code>$ python -m doctest word_analyzer.py</code></pre>
 
 <h3>Building our Markov Model</h3>
 
@@ -93,6 +93,6 @@ Hint: Use the process_character function in your implementation of build_markov_
 <p> You can check your work with the autograder:
 </p>
 
-<pre><code>$ python autograder.py build_markov_model</code></pre>
+<pre><code>$ python -m doctest word_analyzer.py</code></pre>
     </body>
 </html>

@@ -85,7 +85,7 @@ print(sorted(counts, key = counts.get, reverse = True))</code>
     <p>Make sure to test that <code>top_n_words</code> works. We haven't told you how to do this with print statements explicitly, but using what you know so far, you should try to figure out how to test top_n_words using print statements.</p>
     <p>After playing around with print statements, you may validate your work by running the autograder:
     </p>
-    <pre><code>$ python autograder.py top_n_words</code></pre>
+    <pre><code>$ python -m doctest word_analyzer.py</code></pre>
  <p class="alert quoteBlue">
 Hint by example: <code>x[:5]</code> returns the first 5 items of a list.
  </p>    
@@ -117,7 +117,7 @@ Hint 2: <code>"and " + 5</code> will cause a TypeError since Python doesn't want
     
     <p> You may additionally use the autograder to check your work:
     </p>
-    <pre><code>$ python autograder.py print_top_n_words</code></pre>
+    <pre><code>$ python -m doctest word_analyzer.py</code></pre>
 
  <h3>Removing Boring Words (optional)</h3>
 
