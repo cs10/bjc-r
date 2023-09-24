@@ -26,24 +26,26 @@
 <p>
   The following blocks are graded:
   <ul>
+    <li>
+      <img class="image-border" src="/bjc-r/img/list/item.png" alt="Item (x), (y) of (list) block" title="Item (x), (y) of (list) block" width="300"/>
+      <ul>
+        <li>No restrictions. </li>
+      </ul>
+    </li>
+
     <li><img class="image-border" src="/bjc-r/img/list/rmo.png" alt="Row-Major Order" title="RMO of (board)" width="300" />
       <ul>
-        <li>HOFs and Iteration are allowed. </li>
+        <li>HOFs and Iteration are allowed. Do not use recursion. </li>
       </ul>
     </li>
     <li>
     <img class="image-border" src="/bjc-r/img/list/cmo.png" alt="Column-Major Order" title="CMO of (board)" width="300"/>
     <ul>
-      <li>HOFs and Iteration are allowed.</li>
+      <li>HOFs and Iteration are allowed. Do not use recursion. </li>
     </ul>
   </li>
 
-  <li>
-    <img class="image-border" src="/bjc-r/img/list/item.png" alt="Item (x), (y) of (list) block" title="Item (x), (y) of (list) block" width="300"/>
-    <ul>
-      <li>No restrictions. </li>
-    </ul>
-  </li>
+
 
   </ul>
   <br />
@@ -69,7 +71,18 @@
 <p>It would make sense that each row be a list, right? The length of each list would then be the number of columns the board has. Since our board is made up of rows, it can be a list that stores all of the rows in it! Here's a visual representation of what this means:</p>
 <p><img src="/bjc-r/img/hof/board-snap-lists.png" alt="a list of rows in snap" /></p>
 <p>In the lab file, we have already written a block called <code>create board of length ( )</code> that builds this structure for us. Check inside it to make sure we're all on the same page. For a board of size N, meaning a board with N rows and N columns, the block will generate a list with N items. Each item is a list of length N representing a row. Just like we planned!</p>
-<p>Now that we have a board representation, we need to be able to work with it! Look through the code in <code>set () () of board</code> and <code>item () () of board</code> blocks so that they behave properly with our style of board.</p>
+<p>Now that we have a board representation, we need to be able to work with it! 
+  Look through the code in <code>set (), () of board</code> 
+  and <code>item (), () of board</code> blocks so that they behave properly with our style of board.</p>
+  <p>
+    TODO: Implement the <code>item (), () of board</code> block.
+    <img class="image-border" src="/bjc-r/img/list/item.png" alt="Item (x), (y) of (list) block" title="Item (x), (y) of (list) block" width="300"/>
+
+    <img class="image-border" src="/bjc-r/img/hof/board_item_test_1.png" alt="Item test case" title="Item test case" />
+    Using the above board, row 1, column 2 corresponds to the number 7.
+    <code>item (1), (2) of board</code> should report <code>True</code>.
+
+  </p>
 <p>When you're done, congrats! You've just made your own board type!</p>
 
 <p>Consider how would our <code>set () () of board</code> and <code>item () () of board</code> blocks change if we decided to group coordinates by column instead?</p>
