@@ -16,10 +16,13 @@ In this file is basic 'skeleton code' for many of the exercises that you will be
 asked to complete in this lab. Put you answers under the function doctests.
 To run the code, in the command line, run the command:
 python -m doctest <file_name>.py
+
+NOTE: Please make sure that line 1 is commented out in your gradescope submission, otherwise
+your submission will fail the autograder.
 """
 
 ## Exercise 1 ## 
-def sum_all_numbers(x, y):
+def sum_all_numbers(x: int, y: int):
     """
     Calculate the sum of all numbers between x and y (inclusive).
 
@@ -47,7 +50,7 @@ def sum_all_numbers(x, y):
     pass
 
 ## Exercise 2 ##
-def exponent(num, power):
+def exponent(num: int, power: int):
     """
     Calculate the exponentiation of a number.
 
@@ -77,7 +80,7 @@ As an optional exercise, uncomment the exponent_any
 code that works for any `pow`. It may be helpful to 
 utilize your existing `exponent` function.
 """
-# def exponent_any(num, pow):
+# def exponent_any(num: int, pow: int):
 #     """
 #     Calculate the exponentiation of a number.
 
@@ -103,7 +106,7 @@ utilize your existing `exponent` function.
     
 
 ## Exercise 3 ##
-def palindrome(string):
+def palindrome(string: str):
     """
     Returns a boolean that indicates whether the inputted string is a palindrome.
 
@@ -130,7 +133,7 @@ def palindrome(string):
     pass
 
 ## Exercise 4 ##
-def reverse_string(string):
+def reverse_string(string: str):
     """
     Reverses a string.
 
@@ -154,9 +157,11 @@ def reverse_string(string):
 
 
 ### OPTIONAL ###
-def c_curve(size, levels):
+def c_curve(size: int, levels: int):
     """
     Draw a c-curve shape recursively using the turtle module.
+    NOTE: Please make sure that line 1 is commented out in your gradescope submission, otherwise
+    your submission will fail the autograder.
     """
     pass 
 
