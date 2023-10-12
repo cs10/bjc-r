@@ -1,5 +1,5 @@
 # Exercise 1
-def push_first_odd_back(lst):
+def push_first_odd_back(lst: list) -> None:
     """
     Modify the input list by pushing the first odd number to the back.
 
@@ -29,7 +29,7 @@ def push_first_odd_back(lst):
     pass #FIXME
 
 # Exercise 2
-def flatten(lst):
+def flatten(lst: list) -> list:
     """
     Flatten a 2D list to a single-dimensional list.
 
@@ -60,7 +60,7 @@ def flatten(lst):
 
 
 ## OPTIONAL EXERCISE ##
-def flatten_ND(lst):
+def flatten_ND(lst: list) -> list:
     """
     Flatten a nested list to a single-dimensional list.
 
@@ -91,7 +91,7 @@ def flatten_ND(lst):
 
 
 # Exercise 3.1
-def squares_of_evens(lst):
+def squares_of_evens(lst: list) -> list:
     """
     Square the numbers in `lst`
 
@@ -119,7 +119,7 @@ def squares_of_evens(lst):
 
 
 # Exercise 3.2
-def nth_power_of_evens(lst, n):
+def nth_power_of_evens(lst: list, n: int) -> list:
     """
     Generate a list of even numbers raised to the nth power from the input list.
 
@@ -144,7 +144,7 @@ def nth_power_of_evens(lst, n):
 
 
 # Exercise 4
-def substitute_base(string, old, new):
+def substitute_base(string: str, old: str, new: str) -> str:
     """
     Replace the occurrences of 'old' character with 'new' character in the input 'string'.
 
@@ -171,7 +171,7 @@ def substitute_base(string, old, new):
 
 
 # Exercise 5
-def combine(items):
+def combine(items: list):
     """
     Combine the items of a list by concatenating strings or summing numbers.
 
@@ -198,7 +198,7 @@ def combine(items):
 
 
 # Exercise 6
-def base_freq(sequence):
+def base_freq(sequence) -> dict:
     """
     Calculate the frequency of each base pair in a DNA sequence string.
 
@@ -219,7 +219,7 @@ def base_freq(sequence):
     
 
 # Exercise 7.1
-def substitute_chars(string, replacements):
+def substitute_chars(string, replacements) -> str:
     """
     Substitute characters in a string based on a dictionary of replacements.
 
@@ -242,7 +242,7 @@ def substitute_chars(string, replacements):
 
 
 # Exercise 7.2
-def invert_dict(original):
+def invert_dict(original) -> dict:
     """
     Invert a dictionary, swapping keys and values.
 
@@ -268,7 +268,7 @@ def invert_dict(original):
 
 
 ## Optional ##
-# def sum_columns(board):
+# def sum_columns(board) -> list:
 #     """
 #     Calculate the sum of each column in a given 2D array and return the results as a list.
 
@@ -294,7 +294,7 @@ def invert_dict(original):
 
 
 ## Optional ##
-# def binary_search(numbers, target):
+# def binary_search(numbers, target) -> int:
 #     """
 #     Perform binary search on a sorted list of numbers to find the target.
 
@@ -319,7 +319,7 @@ def invert_dict(original):
 #     pass #FIXME
 
 ## Optional ##
-# def count_paths(level):
+# def count_paths(level) -> int:
 #     """
 #     Given a level in Super Mario Bros represented as a 2D array,
 #     write a Python function to count the number of possible paths 
