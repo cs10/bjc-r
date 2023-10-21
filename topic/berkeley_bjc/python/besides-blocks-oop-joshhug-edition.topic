@@ -27,4 +27,7 @@ heading: Methods
 
 heading: Implementing Your Own Class
 	resource: Meme Oriented Programming [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/final_exercise.html]
+
+heading: Debugging 
+    resource: TicTacToe [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/ttt.html] 
 }
