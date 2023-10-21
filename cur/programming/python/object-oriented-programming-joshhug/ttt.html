@@ -87,6 +87,26 @@
         </code>
     </pre>
 
+    <h1>Implementing <code>do_move</code> in Tic Tac Toe</h1>
+
+<p>The <code>do_move</code> function is responsible for handling the player's move. Here's a breakdown of how to implement it:</p>
+
+<h2>1. Check Validity of the Move:</h2>
+First, implement <code>is_valid_move</code>. Use this method in <code>do_move</code>.
+ In this method: 
+<ul>
+    <li>Ensure the chosen cell is within the boundaries of the board.</li>
+    <li>Ensure the chosen cell is unoccupied (i.e., it doesn't already contain <code>X</code> or <code>O</code>).</li>
+    
+</ul>
+
+<h2>2. Update the Board:</h2>
+<ul>
+    <li>Assign the current player's <code>self.current_player</code> symbol (<code>X</code> or <code>O</code>) to the chosen cell.</li>
+    <li>Return <code>True</code> if we successfully updated the game board and <code>False</code> otherwise.</li>
+</ul>
+
+
 
     <h2>Instructions to Play</h2>
     <p>
