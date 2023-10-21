@@ -9,7 +9,7 @@ big-idea: Classes can be hierarchical. For example, the Book Class above might h
 h2: Activities
 learning-goal: Build a class that represents a book object step-by-step by just following along.
 learning-goal: Learn about the basics of OOP in Python while completing above activity.
-learning-goal: Use the aforementioned knowledge to build your own UC Berkeley Memes for Edgy Teens class.
+learning-goal: Use the aforementioned knowledge to build your own MemePage class.
 
 heading: Introduction to Object-Oriented Programming (OOP)
 	resource: Introduction to Object-Oriented Programming (OOP) [/bjc-r/cur/programming/python/object-oriented-programming-joshhug/oop_intro.html]
