@@ -160,12 +160,12 @@ This concept will be covered in CS61A.
 
 '''---------------------------------MemePage Class-----------------------------------------------'''
 class MemePage:
-    def __init__(self: 'MemePage', topic: int):
+    def __init__(self: 'MemePage', topic: str):
         """
         Initialize a MemePage object.
 
         Args:
-            topic (int): The topic of the meme page.
+            topic (str): The topic of the meme page.
         Examples:
         >>> meme = MemePage("CS61A")
         >>> (meme.members, meme.topic) == (0, "CS61A")
