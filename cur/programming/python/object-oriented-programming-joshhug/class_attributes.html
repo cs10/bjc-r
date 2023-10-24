@@ -20,11 +20,11 @@
 class Book:
     number_of_books = 0
 
-    def __init__(self, genre, title, author, py):
+    def __init__(self, genre, title, author, publication_year):
         self.genre = genre
         self.title = title
         self.author = author
-        self.publication_year = py
+        self.publication_year = publication_year
         Book.number_of_books = Book.number_of_books + 1
 
     def calculate_age(self):
