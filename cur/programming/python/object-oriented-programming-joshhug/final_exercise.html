@@ -64,6 +64,9 @@
 					If the friend's memepage attribute is not the same as the current instance's memepage attribute, returns string: 'You cannot tag someone in a meme if they are not a member of this page.' 
 				</li>
 				<li>
+					If <code>friend</code> is not a MemePage object, return the string 'Invalid input. Expected a Member object but received an object of a different type.'
+				</li>
+				<li>
 					Otherwise it increases your activity (not your friend's) by 1 and returns the string: '@ [insert friend's name here] has been tagged!'. 
 				</li>
 			</ol>
