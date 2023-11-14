@@ -10,7 +10,7 @@
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'UA-XXXXX-Y');
+          gtag('config', 'UA-176402054-1');
         </script>
     </head>
     <body>
@@ -45,8 +45,14 @@ print(random.random())
 print(random.random())
 print(random.random())
         </code></pre></p>
+        <iframe width="800" height="500"
+         frameborder="0"
+          src="https://pythontutor.com/iframe-embed.html#code=%23%20Import%20the%20random%20library%0Aimport%20random%0A%0A%23%20Initialize%20the%20random%20number%20generator%20with%20a%20seed%0Arandom.seed%2842%29%0A%0A%23%20Generate%20three%20random%20numbers%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0A%0A%23%20Re-seed%20the%20generator%0Arandom.seed%2842%29%0A%0A%23%20Generate%20three%20random%20numbers%20again%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29&codeDivHeight=400&codeDivWidth=350&cumulative=false&curInstr=0&heapPrimitives=nevernest&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false"> </iframe>
         <p>
-            In this example, you will notice that the first set of three random numbers is identical to the second set.
+            In this 
+            <a href="https://pythontutor.com/render.html#code=%23%20Import%20the%20random%20library%0Aimport%20random%0A%0A%23%20Initialize%20the%20random%20number%20generator%20with%20a%20seed%0Arandom.seed%2842%29%0A%0A%23%20Generate%20three%20random%20numbers%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0A%0A%23%20Re-seed%20the%20generator%0Arandom.seed%2842%29%0A%0A%23%20Generate%20three%20random%20numbers%20again%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29%0Aprint%28random.random%28%29%29&cumulative=false&curInstr=0&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=3&rawInputLstJSON=%5B%5D&textReferences=false">
+                example</a>,
+                 you will notice that the first set of three random numbers is identical to the second set.
             This is because we used the same seed value (`42`) before each set. Without setting the seed, the numbers
             would have been different each time.
         </p>
