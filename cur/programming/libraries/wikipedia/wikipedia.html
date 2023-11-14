@@ -2,7 +2,7 @@
 <html>
     <head>
         <script src="/bjc-r/llab/loader.js"></script>
-        <title>Understanding random.seed in Python</title>
+        <title>The Wikipedia API</title>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
         <script>
@@ -78,6 +78,33 @@
             <li><strong>Button:</strong> Interactive buttons that the user can click to perform actions like searching for a term or exiting the application.</li>
             <li><strong>Multiline:</strong> A large, scrollable text area where the Wikipedia summary is displayed after a search is performed.</li>
         </ul>
+    
+        <h1>Explaining the Wikipedia Search Functionality</h1>
+    
+        <h2>Code Snippet Explanation</h2>
+        <pre><code>
+    if search_term:
+        summary = get_wikipedia_summary(search_term)
+        window['-OUTPUT-'].update(summary)
+        </code></pre>
+        <p>
+            The code snippet is part of a Python script using PySimpleGUI to create a graphical user interface for a Wikipedia search tool. Here is what each line does:
+        </p>
+        <ol>
+            <li>
+                <code>if search_term:</code> checks if the variable <code>search_term</code> is truthy, meaning it checks if the user has entered a term in the input field. If <code>search_term</code> is not empty or <code>None</code>, the condition evaluates to <code>True</code> and the code inside the if-block will execute.
+            </li>
+            <li>
+                <code>summary = get_wikipedia_summary(search_term)</code> calls the function <code>get_wikipedia_summary</code> with the user-provided <code>search_term</code> as an argument. The function queries the Wikipedia API and returns the summary of the article related to the search term.
+            </li>
+            <li>
+                <code>window['-OUTPUT-'].update(summary)</code> updates the GUI component with the key <code>'-OUTPUT-'</code>, which is a multiline text box, with the summary received from the Wikipedia API. This allows the summary to be displayed on the screen for the user to read.
+            </li>
+        </ol>
+        <p>
+            In summary, this snippet takes the user's input, retrieves a summary of the relevant Wikipedia page, and displays it in the application's window.
+        </p>
+    </body>
     
         <h2>Putting It All Together</h2>
         <p>
