@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduction to PySimpleGUI</title>
+        
+    </head>
+    <body>
+        <h2>Introduction to PySimpleGUI</h2>
+        <p>
+            PySimpleGUI is a Python library designed to make the creation of graphical user interfaces (GUI) quick and accessible to beginners.
+            It wraps tkinter, Qt, WxPython, and Remi in a single, well-documented API that allows for simpler GUI creation using the Python programming language.
+        </p>
+        
+        <h3>Creating a Simple Popup Menu with PySimpleGUI</h3>
+        <p>
+            One of the simplest yet most useful features in PySimpleGUI is the popup window. Popups can be used to display messages, ask for user input, or provide simple interactions. Here’s how you can create a basic popup menu:
+        </p>
+        <pre><code>
+import PySimpleGUI as sg
+
+# Simple popup
+sg.popup('Hello World!', 'This is a simple popup menu.')
+        </code></pre>
+        <p>
+            When you run this code, it will display a popup window with the text "Hello World!" and a subtext "This is a simple popup menu." with an OK button to close it.
+        </p>
+        
+        <h3>Installing PySimpleGUI</h3>
+        <p>
+            Before you can use PySimpleGUI, you need to install it. If you have pip installed, you can easily install PySimpleGUI by running the following command in your terminal or command prompt:
+        </p>
+        <pre><code>
+pip install PySimpleGUI
+        </code></pre>
+        <p>
+            After installation, you can import PySimpleGUI in your Python script and start creating your GUIs.
+        </p>
+
+        Here are examples of what is possible with PySimpleGUI:
+        <ul>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Pong">Pong</a>. According to Wikipedia, 
+                Pong is a table tennis-themed 
+                twitch arcade sports video game, 
+                featuring simple two-dimensional graphics,
+                manufactured by Atari and originally released in 1972.
+                Pong was the first commercially successful video game,
+                and it helped to establish the video game industry
+                along with the Magnavox Odyssey.
+                <br />
+                <img src="../../../../img/libraries/pong.png/" alt="PySimpleGUI Example" width="500" height="300">
+            </li>
+            <li>
+                
+                <bold>
+                    <a href="https://matplotlib.org/stable/index.html">Matplotlib</a>
+                </bold>
+                MatplotLib is used for making plots, graphs, and charts, helping in visualizing data in a form that is easy to understand and interpret.
+                <br />
+                <img src="../../../../img/libraries/matplotlib.png/" alt="Matplotlib" width="300" height="300" />
+            </li>
+            <li>
+                <a href="https://en.wikipedia.org/wiki/Uno_(card_game)">Uno</a>
+                <br />
+                <img src="../../../../img/libraries/uno.png/" alt="Uno Cards" width="350" height="300" />
+            </li>
+            <li>
+                <a href="https://www.pysimplegui.org/en/latest/#slider-element">Sliders</a>
+                <br/>
+                <img src="../../../../img/libraries/slider.png/" alt="Uno Cards" width="300" height="100" />
+            </li>
+            <li>
+                <a href="https://github.com/PySimpleGUI/PySimpleGUI/blob/master/DemoPrograms/Demo_Dashboard.py">Custom Dashboard</a>
+                Dashboards provide a more user-friendly way to interact with complex data and systems. nteractive elements in a dashboard 
+                can make a project more engaging, allowing users to manipulate data or control parameters and see the effects in real-time.
+                PySimpleGUI offers a straightforward way to create custom GUIs quickly. 
+                <br/>
+                <img src="../../../../img/libraries/dashboard.png/" alt="Custom Dashboard" width="400" height="200" />
+            </li>
+            <li>
+                <a href="https://github.com/PySimpleGUI/PySimpleGUI-YOLO/blob/master/yolo_video.py">Computer Vision</a>
+                Computer vision is a field of artificial intelligence that trains computers to interpret and understand 
+                the visual world. Using digital images from cameras and videos and deep learning models, machines 
+                can accurately identify and classify objects — and then react to what they “see.”
+
+                This particular system is using an object detection algorithm (YOLO - You Only Look Once) to
+                 identify and locate vehicles in the video. It provides bounding boxes around each detected vehicle 
+                 and includes a confidence score that indicates the algorithm's certainty that the identified object 
+                 is a vehicle. The confidence score is a probability between 0 and 1, with numbers closer to 1 indicating higher confidence.
+                <br/>
+                <img src="../../../../img/libraries/cv.png/" alt="Computer Vision" width="400" height="200" />
+            </li>
+        </ul>
+
+
+        <h3>Documentation and Resources</h3>
+        <p>
+            For more information about PySimpleGUI and its features, visit the <a href="https://pysimplegui.readthedocs.io/">official PySimpleGUI documentation</a>. It offers a comprehensive guide and examples to help you build GUIs with Python easily.
+        </p>
+    </body>
+</html>
