@@ -146,11 +146,39 @@ def create_window(game):
                 <td>Universal in Python, not limited to a specific library.</td>
             </tr>
         </table>
-    </body>
 
         <p>
             Read more about PySimpleGUI keys <a href="https://www.pysimplegui.org/en/latest/#keys">here</a>
         </p>
+
+        <h2>Explaining the GUI Text Element</h2>
+    <p>
+        In PySimpleGUI, the GUI layout is defined using lists of elements. Each list represents a row in the window, and each element within the list represents a component in that row. Let's break down the following line of code:
+    </p>
+    <pre><code>[sg.Text('Word:'), sg.Text(' '.join(game.get_display_word()), key='-WORD-')],</code></pre>
+    <p>
+        This line of code is constructing a row with two text elements for our GUI:
+    </p>
+    <ul>
+        <li><code>sg.Text('Word:')</code> creates a static text label that displays the text "Word:" to the user. This acts as a prompt for the dynamic content that follows.</li>
+        <li>
+            <code>sg.Text(' '.join(game.get_display_word()), key='-WORD-')</code> serves two purposes:
+            <ul>
+                <li>
+                    <code>' '.join(game.get_display_word())</code> takes a list of characters representing the current state of the word to be guessed in the game (with letters still to be guessed shown as underscores) and joins them into a string with spaces. For example, if the word is "apple" and the letters "a" and "p" have been guessed, it would display "a p p _ _".
+                </li>
+                <li>
+                    The <code>key='-WORD-'</code> part assigns a unique identifier to this text element, which allows the GUI to update this element with new content when the game state changes (like when a new letter is guessed correctly).
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>
+        This setup allows the Hangman game's GUI to display the word to the user with guessed letters revealed and unguessed letters hidden. The unique key enables the program to find and update this specific text element throughout the game.
+    </p>
+
+
+
         <!-- Hi Hana Lee, Activities Director of IEEE -->
     </body>
 </html>
