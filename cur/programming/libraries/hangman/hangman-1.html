@@ -62,5 +62,37 @@ def create_window(game):
             events in a loop. This knowledge can be applied to many other types of Python projects that require a graphical
             user interface.
         </p>
+
+        <h1>Window Keys and Element Updating in PySimpleGUI</h1>
+        
+        <h2>Understanding Window['-ATTEMPTS-'].update()</h2>
+        <p>
+            In PySimpleGUI, each element in a window can be accessed via a unique identifier known as a "key". This allows for dynamic interaction with the GUI elements. The line of code in question demonstrates how to update an element's content:
+        </p>
+        <pre><code>window['-ATTEMPTS-'].update(game.get_attempts_left())</code></pre>
+        <p>
+            This code performs two key actions:
+        </p>
+        <ol>
+            <li>
+                <strong>Element Selection:</strong> <code>window['-ATTEMPTS-']</code> selects the GUI element with the key <code>'-ATTEMPTS-'</code>. This key is a unique string that identifies a specific element within the window, in this case, a text element displaying the number of attempts left in a game of Hangman.
+            </li>
+            <li>
+                <strong>Content Update:</strong> The <code>.update()</code> method changes the content of the selected element. <code>game.get_attempts_left()</code> calls a method from the <code>HangmanGame</code> class instance to retrieve the current number of attempts left for the player. This value is then used to update the text displayed on the window.
+            </li>
+        </ol>
+        
+        <h2>Role of Window Keys in PySimpleGUI</h2>
+        <p>
+            A window key in PySimpleGUI is a powerful feature that allows developers to interact with the GUI elements after the window has been created. By assigning a key to an element, developers can:
+        </p>
+        <ul>
+            <li>Access and modify elements directly without the need for complex queries or maintaining references to the elements.</li>
+            <li>Update the GUI in response to user input or other events, ensuring the interface reflects the current state of the application.</li>
+        </ul>
+        
+        <p>
+            Keys enable the creation of dynamic and responsive GUI applications, making PySimpleGUI an accessible library for both beginners and experienced developers looking to build interactive Python programs.
+        </p>
     </body>
 </html>
