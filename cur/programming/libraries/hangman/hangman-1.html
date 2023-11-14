@@ -39,6 +39,13 @@
             other player draws one element of a hanged man stick figure as a tally mark.
         </p>
 
+        <p>
+            We have defined the <code>Hangman</code> Class with several methods. Please read through the code in <code>hangman.py</code>
+        </p>
+
+        <img src="../../../../img/libraries/hangman.png" alt="Computer Vision" width="500" height="100" style="display: block; margin: 0 auto;"/>
+
+
         <h2>Creating the Game Window</h2>
         <p>
             The <code>create_window</code> function is responsible for setting up the graphical interface of the game.
@@ -177,7 +184,85 @@ def create_window(game):
         This setup allows the Hangman game's GUI to display the word to the user with guessed letters revealed and unguessed letters hidden. The unique key enables the program to find and update this specific text element throughout the game.
     </p>
 
+    <h2>Event Loop Explained</h2>
+    <p>
+        An event loop in PySimpleGUI is a control structure that listens for events such as button clicks or window close actions and responds accordingly. Here's an explanation of a typical event loop code snippet:
+    </p>
+    <pre><code>event, values = window.read()
 
+if event == sg.WIN_CLOSED or event == '-EXIT-':
+    break</code></pre>
+    <ol>
+        <li>
+            <strong>Reading Events:</strong> <code>event, values = window.read()</code> waits for the user to perform an action. 
+            <ul>
+                <li>The <code>event</code> variable captures what the user did, such as clicking a button.</li>
+                <li>The <code>values</code> dictionary stores data from input fields, although it's not directly used in this snippet.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Checking the Event:</strong> The line <code>if event == sg.WIN_CLOSED or event == '-EXIT-':</code> checks if the user has either closed the window or clicked an 'Exit' button.
+            <ul>
+                <li><code>sg.WIN_CLOSED</code> is a special event that occurs when the window's close button is clicked.</li>
+                <li><code>'-EXIT-'</code> is a custom event tied to a button with the key <code>'-EXIT-'</code>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Exiting the Loop:</strong> If either condition is met, the <code>break</code> statement is executed, which terminates the nearest enclosing loop — in this case, the main event loop of the GUI.
+        </li>
+    </ol>
+    <p>
+        This control flow allows the application to close gracefully when the user decides to exit, either by closing the window or clicking an 'Exit' button.
+    </p>
+
+    <h2>Understanding Event Handlers</h2>
+    <p>
+        In PySimpleGUI, the event loop listens for events and executes code in response. Let's examine how the game handles two specific events:
+    </p>
+    <pre><code>
+if event == '-NEW-':
+    game.reset_game()
+    window['-WORD-'].update(game.get_display_word())
+    window['-ATTEMPTS-'].update(game.get_attempts_left())
+    for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        window[c].update(button_color=('white', 'blue'), disabled=False)
+elif event in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' and not game.has_lost():
+    game.guess_letter(event)
+    window['-WORD-'].update(game.get_display_word())
+    window['-ATTEMPTS-'].update(game.get_attempts_left())
+    window[event].update(button_color=('white', 'red'), disabled=True)
+    </code></pre>
+    <h3>New Game Event</h3>
+    <p>
+        When the '-NEW-' event is triggered (typically by a button click), the following actions are taken:
+        <ol>
+            <li>The game is reset using <code>game.reset_game()</code>, which initializes a new game state.</li>
+            <li>The display word on the GUI is updated to reflect the new hidden word using <code>window['-WORD-'].update()</code>.</li>
+            <li>The attempts counter is reset, and its display is updated with <code>window['-ATTEMPTS-'].update()</code>.</li>
+            <li>All alphabet buttons are re-enabled, allowing the player to guess letters again.</li>
+        </ol>
+    </p>
+    <h3>Letter Guess Event</h3>
+    <p>
+        When the player clicks a letter button (an event for any letter 'A' to 'Z'), and the player has not yet lost the game:
+        <ol>
+            <li>The game processes the guessed letter with <code>game.guess_letter(event)</code>.</li>
+            <li>The displayed word is updated, revealing any correct guesses or leaving it unchanged if the guess is incorrect.</li>
+            <li>The number of attempts left is updated, which decreases if the guess was incorrect.</li>
+            <li>The guessed letter's button is disabled and turned red to indicate that it has been used.</li>
+        </ol>
+    </p>
+    <p>
+        These event handlers are crucial for the interactivity of the game, responding to user inputs and updating the GUI accordingly.
+    </p>
+
+    <p>
+        Example of a popup when the game is won:
+        <img src="../../../../img/libraries/hangman_win.png" alt="Computer Vision" width="500" height="100" style="display: block; margin: 0 auto;"/>
+        Relevant code snippet:
+        <code>    sg.popup('Congratulations, you won!', title='Game Over')
+        </code>
+    </p>
 
         <!-- Hi Hana Lee, Activities Director of IEEE -->
     </body>
