@@ -87,5 +87,60 @@
                     </div>
                 </div>
             </div>
+
+            <h3>Quiz: Predicting the Output of Wikipedia API Code</h3>
+        
+            <!-- Python Code Snippet -->
+            <pre><code>
+    import wikipediaapi
+    wiki_wiki = wikipediaapi.Wikipedia('english')
+    page = wiki_wiki.page('tottenham')
+    print("Page - Exists: %s" % page.exists())
+            </code></pre>
+            
+            <!-- Question 3-->
+            <div class="assessment-data" type="multiplechoice" identifier="page-exists-output"
+                 hasinlinefeedback="true" maxchoices="1">
+                
+                <div class="prompt">      
+                    <p>What will be the output of the above code?</p>
+                </div>
+                
+                <div class="choice" identifier="output-true">
+                    <div class="text">
+                        <p>A) Page - Exists: True</p>
+                    </div>
+                    <div class="feedback">
+                        Correct! Since the page 'tottenham' exists on Wikipedia, the output will affirm its existence.
+                    </div>
+                </div>
+                
+                <div class="choice" identifier="output-false">
+                    <div class="text">
+                        <p>B) Page - Exists: False</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. If the 'tottenham' page did not exist, this would be the output. However, the page does exist on Wikipedia.
+                    </div>
+                </div>
+    
+                <div class="choice" identifier="output-error">
+                    <div class="text">
+                        <p>C) Error: Page not found</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. The Wikipedia API does not throw an error for non-existent pages; it returns False for the 'exists' method.
+                    </div>
+                </div>
+    
+                <div class="choice" identifier="output-none">
+                    <div class="text">
+                        <p>D) None</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. The 'exists' method will always return a boolean value, not None.
+                    </div>
+                </div>
+            </div>
     </body>
 </html>
