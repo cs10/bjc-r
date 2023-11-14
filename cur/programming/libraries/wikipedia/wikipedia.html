@@ -33,6 +33,20 @@
             <li><strong>Focus on Core Functionality:</strong> By using APIs, developers can focus on the unique aspects of their project, rather than the underlying infrastructure and basic services.</li>
         </ul>
     
+        <p>
+            To install wikipedia, in your terminal please run the command
+            <pre><code>
+                pip install wikipedia-api
+                        </code>
+                    </pre>
+        </p>
+        <p>
+            To use the wikipedia api in your project, import the library in your code like this: 
+            <pre><code>
+                import wikipediaapi
+                        </code>
+                    </pre>
+        </p>
         <h2>How the Wikipedia API Works</h2>
         <p>
             The <a href="https://wikipedia-api.readthedocs.io/en/latest/README.html">Wikipedia API</a> allows developers to access Wikipedia's vast repository of knowledge programmatically. The provided Python script uses the <code>wikipediaapi</code> library to interact with the Wikipedia API, fetching information from Wikipedia articles in a structured format.
@@ -41,6 +55,14 @@
         <h3>Functionality of <code>wiki_wiki.page</code></h3>
         <p>
             In the script, the <code>wiki_wiki</code> variable is an instance of the Wikipedia API wrapper. The <code>.page</code> method is used to retrieve a Wikipedia page corresponding to a given search term. It returns an object that includes various properties of the page, such as its content, summary, and metadata. If the page doesn't exist, it allows the program to handle this case gracefully.
+        </p>
+        <p>
+            In wikipedia.py, we created the Wikipedia wrapper:
+            <pre>
+                <code>
+        # Initialize Wikipedia API wrapper
+        wiki_wiki = wikipediaapi.Wikipedia('english')
+            </code></pre>
         </p>
     
         <h2>GUI Components Explained</h2>
