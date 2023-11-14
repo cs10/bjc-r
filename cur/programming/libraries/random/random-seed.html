@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Understanding random.seed in Python</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-XXXXX-Y');
+        </script>
+    </head>
+    <body>
+        <h3>What is random.seed?</h3>
+        <p>
+            The `random.seed` function is a method provided by the Python `random` library that initializes the random number generator.
+            Using `random.seed` guarantees that the same sequence of numbers will appear every time you run your code. This is particularly
+            useful for debugging and for scenarios where you need consistent results, like in automated tests or simulations.
+        </p>
+        <h3>Using random.seed</h3>
+        <p>
+            To use `random.seed`, simply call the function at the beginning of your script. You can pass it any hashable object, and the same
+            seed will always produce the same sequence of numbers. Here's a simple example of how to use `random.seed`:
+        </p>
+        <p><pre><code>
+# Import the random library
+import random
+
+# Initialize the random number generator with a seed
+random.seed(42)
+
+# Generate three random numbers
+print(random.random())
+print(random.random())
+print(random.random())
+
+# Re-seed the generator
+random.seed(42)
+
+# Generate three random numbers again
+print(random.random())
+print(random.random())
+print(random.random())
+        </code></pre></p>
+        <p>
+            In this example, you will notice that the first set of three random numbers is identical to the second set.
+            This is because we used the same seed value (`42`) before each set. Without setting the seed, the numbers
+            would have been different each time.
+        </p>
+        <p>
+            Try experimenting with different seed values and functions from the `random` library to see how they work together.
+            For more information on `random.seed` and other features of the `random` library, visit the 
+            <a href="https://docs.python.org/3/library/random.html">Python documentation</a>.
+        </p>
+    </body>
+</html>
