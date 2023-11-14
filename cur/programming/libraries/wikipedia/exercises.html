@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Wikipedia Exercises</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402054-1');
+        </script>
+    </head>
+    <body>
+        <h3>Quiz: Understanding the Wikipedia API</h3>
+        
+        <!-- Question 1 -->
+        <div class="assessment-data" type="multiplechoice" identifier="api-purpose"
+                 hasinlinefeedback="true" maxchoices="1">
+                
+                <div class="prompt">      
+                    <p>1. What is the primary purpose of the Wikipedia API?</p>
+                </div>
+                
+                <div class="choice" identifier="data-retrieval">
+                    <div class="text">
+                        <p>A) To retrieve data from Wikipedia such as texts, sections, links, and categories.</p>
+                    </div>
+                    <div class="feedback">
+                        Correct!
+                    </div>
+                </div>
+                
+                <div class="choice" identifier="data-editing">
+                    <div class="text">
+                        <p>B) To edit and update existing Wikipedia pages.</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. The Wikipedia API is mainly for data retrieval, not editing.
+                    </div>
+                </div>
+
+                <div class="choice" identifier="account-creation">
+                    <div class="text">
+                        <p>C) To create user accounts on Wikipedia.</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. Account management is not the primary purpose of the Wikipedia API.
+                    </div>
+                </div>
+            </div>
+
+        <!-- Question 2 -->
+        <div class="assessment-data" type="multiplechoice" identifier="api-installation"
+                 hasinlinefeedback="true" maxchoices="1">
+                
+                <div class="prompt">      
+                    <p>2. How do you install the Wikipedia API Python wrapper?</p>
+                </div>
+                
+                <div class="choice" identifier="pip-install">
+                    <div class="text">
+                        <p>A) pip3 install wikipedia-api</p>
+                    </div>
+                    <div class="feedback">
+                        Correct!
+                    </div>
+                </div>
+                
+                <div class="choice" identifier="npm-install">
+                    <div class="text">
+                        <p>B) npm install wikipedia-api</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. npm is used for Node.js packages, not Python libraries.
+                    </div>
+                </div>
+
+                <div class="choice" identifier="apt-get-install">
+                    <div class="text">
+                        <p>C) apt-get install wikipedia-api</p>
+                    </div>
+                    <div class="feedback">
+                        Incorrect. apt-get is used for Debian-based Linux distributions, not for installing Python libraries.
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
