@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Understanding random.seed in Python</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402054-1');
+        </script>
+    </head>
+    <body>
+        <h1>Understanding APIs and the Wikipedia API Python Script</h1>
+    
+        <h2>What is an API?</h2>
+        <p>
+            An <a href="https://aws.amazon.com/what-is/api/">API</a>, or Application Programming Interface, is a set of rules and protocols for building and interacting with software applications. APIs enable different software programs to communicate with each other, allowing developers to access functionality provided by other services without needing to understand the underlying code.
+            It's like a menu in a restaurant; the menu provides a list of dishes you can order, along with a description of each dish. When you specify what you would like to eat, the kitchen (system) prepares the meal and serves it. In this analogy, the API is the menu, and the service provided by the kitchen is the underlying code that processes the API calls.
+        </p>
+
+        <p>
+            APIs are incredibly useful because they allow developers to use functionalities that have already been implemented by others rather than having to create them from scratch. Here's why this is beneficial:
+        </p>
+    
+        <ul>
+            <li><strong>Efficiency:</strong> Why spend time writing code that someone else has already perfected? Utilizing an API saves time and resources.</li>
+            <li><strong>Reliability:</strong> APIs are usually well-tested and reliable, reducing the potential for errors in your project.</li>
+            <li><strong>Up-to-date:</strong> API providers typically manage updates and improvements, ensuring that your application can take advantage of the latest features without extra work on your part.</li>
+            <li><strong>Focus on Core Functionality:</strong> By using APIs, developers can focus on the unique aspects of their project, rather than the underlying infrastructure and basic services.</li>
+        </ul>
+    
+        <h2>How the Wikipedia API Works</h2>
+        <p>
+            The <a href="https://wikipedia-api.readthedocs.io/en/latest/README.html">Wikipedia API</a> allows developers to access Wikipedia's vast repository of knowledge programmatically. The provided Python script uses the <code>wikipediaapi</code> library to interact with the Wikipedia API, fetching information from Wikipedia articles in a structured format.
+        </p>
+    
+        <h3>Functionality of <code>wiki_wiki.page</code></h3>
+        <p>
+            In the script, the <code>wiki_wiki</code> variable is an instance of the Wikipedia API wrapper. The <code>.page</code> method is used to retrieve a Wikipedia page corresponding to a given search term. It returns an object that includes various properties of the page, such as its content, summary, and metadata. If the page doesn't exist, it allows the program to handle this case gracefully.
+        </p>
+    
+        <h2>GUI Components Explained</h2>
+        <p>
+            The script uses PySimpleGUI to create an interactive graphical user interface (GUI) that makes it easy for users to enter search terms and view Wikipedia summaries. Here's an overview of the key components:
+        </p>
+    
+        <ul>
+            <li><strong>Text:</strong> Labels that display static text to the user, such as instructions and headings.</li>
+            <li><strong>InputText:</strong> A field where the user can enter the search term they want to look up on Wikipedia.</li>
+            <li><strong>Button:</strong> Interactive buttons that the user can click to perform actions like searching for a term or exiting the application.</li>
+            <li><strong>Multiline:</strong> A large, scrollable text area where the Wikipedia summary is displayed after a search is performed.</li>
+        </ul>
+    
+        <h2>Putting It All Together</h2>
+        <p>
+            When a user enters a term and clicks the 'Search' button, the script uses the Wikipedia API to fetch a summary of the related article. This summary is then displayed in the GUI for the user to read. The 'Exit' button allows the user to close the application at any time.
+        </p>
+    
+        <img src="../../../../img/libraries/wikipedia.png" alt="WordMatch" width="800" height="500" style="display: block; margin: 0 auto;"/>
+        <p>
+            This combination of a simple-to-use GUI and the powerful Wikipedia API provides a user-friendly way to quickly access information from one of the world's largest knowledge databases.
+        </p>
+    </body>
+</html>
