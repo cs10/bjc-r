@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction to the Random Library in Python</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-XXXXX-Y');
+        </script>
+    </head>
+    <body>
+        <h3>What is the Random Library?</h3>
+        <p>
+            In this section, we explore the Python `random` library, a built-in module that allows you to generate 
+            pseudo-random numbers for various probabilistic distributions and random selections. Learn how to leverage 
+            randomness for simulations, testing, and more—all through Python code.
+        </p>
+        <h3>Using the Random Library</h3>
+        <p>
+            Since the `random` library is part of Python's standard library, there's no need to install it separately. 
+            You can start using it directly in your code. Here are some examples of how to use the `random` library.
+        </p>
+        <p><pre><code>
+# Import the random library
+import random
+
+# Generate a random integer from 1 to 10
+random_int = random.randint(1, 10)
+print(random_int)
+
+# Generate a random float between 0 and 1
+random_float = random.random()
+print(random_float)
+
+# Choose a random element from a list
+items = ['apple', 'banana', 'cherry']
+random_choice = random.choice(items)
+print(random_choice)
+        </code></pre></p>
+        <p>
+            These basic functions are just the beginning. The `random` library provides a rich set of tools to 
+            control randomness, including functions like `shuffle`, `seed`, and more, which you can use to create 
+            simulations or games.
+        </p>
+        Here are some use cases of the <code>random</code> library 
+        <ul>
+            <li>Implement game mechanics that require randomness,
+                 such as shuffling a deck of cards, generating random
+                  enemy behavior, or creating random loot drops.</li>
+            <li>In data science, shuffling data or creating random samples,
+                 which is important for training and testing machine learning 
+                 models without bias.</li>
+            <li>Understand probability distributions by simulating random events,
+                 like coin tosses or dice rolls.</li>
+            <li>Testing code deterministically that involves the random library, by using <code>random.seed</code></li>
+        </ul>
+        <p>
+            To learn more about what the `random` library can do, check out the 
+            <a href="https://docs.python.org/3/library/random.html">official Python documentation</a>.
+        </p>
+    </body>
+</html>
