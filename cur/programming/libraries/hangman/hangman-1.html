@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Introduction to Hangman</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402054-1');
+        </script>
+    </head>
+    <body>
+        <h1>Hangman Game in Python with PySimpleGUI</h1>
+        <h2>Introduction to Hangman</h2>
+        <p>
+            Hangman is a classic word game where one player thinks of a word and the other tries to guess it by
+            suggesting letters within a certain number of guesses. The word to guess is represented by a row of dashes,
+            representing each letter of the word. If the guessing player suggests a letter which occurs in the word, the
+            other player writes it in all its correct positions. If the suggested letter does not occur in the word, the
+            other player draws one element of a hanged man stick figure as a tally mark.
+        </p>
+
+        <h2>Creating the Game Window</h2>
+        <p>
+            The <code>create_window</code> function is responsible for setting up the graphical interface of the game.
+            Using PySimpleGUI, we create a window layout that includes text elements for the game title, the word to guess,
+            and the number of attempts left. There are also buttons for each letter of the alphabet to allow the player
+            to choose letters, and additional buttons to start a new game or exit.
+        </p>
+        <pre><code>
+def create_window(game):
+    layout = [
+        [sg.Text('Hangman Game', font=('Helvetica', 16))],
+        [sg.Text('Word:'), sg.Text(' '.join(game.get_display_word()), key='-WORD-')],
+        [sg.Text('Attempts left:'), sg.Text(game.get_attempts_left(), key='-ATTEMPTS-')],
+        [sg.Button(c, key=c, button_color=('white', 'blue')) for c in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
+        [sg.Button('New Game', key='-NEW-'), sg.Button('Exit', key='-EXIT-')]
+    ]
+    return sg.Window('Hangman', layout)
+        </code></pre>
+
+        <h2>The Game Loop</h2>
+        <p>
+            The <code>while True</code> loop in the <code>play_game</code> function is the main loop of the game, which
+            continues to run until the game is over, either because the player has guessed the word or has run out of attempts.
+            The loop checks for events, such as button clicks, and updates the game state accordingly.
+        </p>
+
+        <h2>Exiting the Game</h2>
+        <p>
+            The <code>window.close()</code> method is called when the game loop ends, which closes the game window and
+            ends the PySimpleGUI program cleanly.
+        </p>
+        
+        <p>
+            You can learn how to use GUI elements to interact with Python code, manage application state, and handle
+            events in a loop. This knowledge can be applied to many other types of Python projects that require a graphical
+            user interface.
+        </p>
+    </body>
+</html>
