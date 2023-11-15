@@ -32,17 +32,12 @@ heading: PySimpleGUI
 	resource: Random Seed [/bjc-r/cur/programming/libraries/random/random-seed.html]
 	resource: WordMatch [/bjc-r/cur/programming/libraries/wordmatch/wordmatch-1.html]
 
-
 heading: Python APIs
 	resource: Wikipedia API [/bjc-r/cur/programming/libraries/wikipedia/wikipedia.html]
 	resource: Wikipedia Self-check [/bjc-r/cur/programming/libraries/wikipedia/exercises.html]
 	resource: Weather API [/bjc-r/cur/programming/libraries/weather/weather.html]
 	resource: Face Detector [/bjc-r/cur/programming/libraries/facedetector/facedetector.html]
 	resource: Dictionary API [/bjc-r/cur/programming/libraries/dictionary/dictionary.html]
-
-
-
-
 
 heading: Data Base Snap (Not Covered)
 	resource: What is DB Snap? [/bjc-r/cur/programming/libraries/dbsnap/what-is-dbsnap.html]
@@ -60,6 +55,5 @@ heading: Beetle Blocks (Not Covered)
 	resource: Moving in 3D [/bjc-r/cur/programming/libraries/beetleblocks/moving.html]
 	resource: More Functionality [/bjc-r/cur/programming/libraries/beetleblocks/more_beetleblocks.html]
 	resource: Fractals [/bjc-r/cur/programming/libraries/beetleblocks/fractals_3d.html]
-
 
 }
