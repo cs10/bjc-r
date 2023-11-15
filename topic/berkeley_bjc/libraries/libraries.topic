@@ -30,6 +30,16 @@ heading: PySimpleGUI
 	resource: Intro to PySimpleGUI [/bjc-r/cur/programming/libraries/random/pysimplegui-intro.html]
 	resource: Random Library [/bjc-r/cur/programming/libraries/random/random-intro.html]
 	resource: Random Seed [/bjc-r/cur/programming/libraries/random/random-seed.html]
+	resource: WordMatch [/bjc-r/cur/programming/libraries/wordmatch/wordmatch-1.html]
+
+
+heading: Python APIs
+	resource: Wikipedia API [/bjc-r/cur/programming/libraries/wikipedia/wikipedia.html]
+	resource: Wikipedia Self-check [/bjc-r/cur/programming/libraries/wikipedia/exercises.html]
+	resource: Weather API [/bjc-r/cur/programming/libraries/weather/weather.html]
+	resource: Face Detector [/bjc-r/cur/programming/libraries/facedetector/facedetector.html]
+	resource: Dictionary API [/bjc-r/cur/programming/libraries/dictionary/dictionary.html]
+
 
 
 
