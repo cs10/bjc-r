@@ -12,7 +12,7 @@ learning-goal: Use some of these libraries and extensions to learn about their c
 heading: Introduction
 	resource: What are Libraries?[/bjc-r/cur/programming/libraries/Lab18-Intro.html]
 
-heading: Bokeh
+heading: Bokeh (Not Covered)
 	resource: Starting Bokeh [/bjc-r/cur/programming/libraries/bokeh/bokeh_lab.html]
 
 heading: MoviePy
@@ -26,8 +26,15 @@ heading: Colorama
 	resource: Fore, Back, and Style [/bjc-r/cur/programming/libraries/colorama/fore_back_style.html]
 	resource: Putting it all together [/bjc-r/cur/programming/libraries/colorama/tasks.html]
 
+heading: PySimpleGUI
+	resource: Intro to PySimpleGUI [/bjc-r/cur/programming/libraries/random/pysimplegui-intro.html]
+	resource: Random Library [/bjc-r/cur/programming/libraries/random/random-intro.html]
+	resource: Random Seed [/bjc-r/cur/programming/libraries/random/random-seed.html]
 
-heading: Data Base Snap
+
+
+
+heading: Data Base Snap (Not Covered)
 	resource: What is DB Snap? [/bjc-r/cur/programming/libraries/dbsnap/what-is-dbsnap.html]
 	resource: User Interface [/bjc-r/cur/programming/libraries/dbsnap/user-interface.html]
 	resource: Select [/bjc-r/cur/programming/libraries/dbsnap/select.html]
@@ -37,7 +44,7 @@ heading: Data Base Snap
 	resource: Merging Part 2 [/bjc-r/cur/programming/libraries/dbsnap/merging-part2.html]
 	resource: Aggregation [/bjc-r/cur/programming/libraries/dbsnap/aggregation.html]
 
-heading: Beetle Blocks
+heading: Beetle Blocks (Not Covered)
 	resource: Intro to Beetle Blocks [/bjc-r/cur/programming/libraries/beetleblocks/intro.html]
 	resource: Snap! vs Beetle Blocks [/bjc-r/cur/programming/libraries/beetleblocks/snap_vs_beetleblocks.html]
 	resource: Moving in 3D [/bjc-r/cur/programming/libraries/beetleblocks/moving.html]
