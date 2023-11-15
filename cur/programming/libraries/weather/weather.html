@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="/bjc-r/llab/loader.js"></script>
+        <title>Weather API</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176402054-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-176402054-1');
+        </script>
+    </head>
+    <body>
+        <h1>Weather Application Overview</h1>
+        <h2>Introduction</h2>
+        <p>This page provides an overview of a Python weather application that uses several libraries to fetch and display weather data.</p>
+    
+        <h2>Libraries Used</h2>
+        <ul>
+            <li><strong>bs4 (BeautifulSoup):</strong> A library for pulling data out of HTML and XML files. It provides easy-to-use methods and Pythonic idioms for searching, navigating, and modifying the parse tree.</li>
+            <li><strong>requests:</strong> A simple HTTP library for Python. It allows you to send HTTP/1.1 requests easily, without the need to manually add query strings to your URLs, or to form-encode your POST data.</li>
+            <li><strong>datetime:</strong> A module that supplies classes for manipulating dates and times. With it, you can perform various operations like date arithmetic, formatting, and more. This is built into Python.</li>
+        </ul>
+
+        <p>You can install these libraries using <code>pip</code>, the Python package installer, with the following commands:</p>
+        <code>pip install requests</code><br>
+        <code>pip install beautifulsoup4</code>
+    
+        <p>
+            Weather App:
+        <img src="../../../../img/libraries/weather.png" alt="Seattle WA Weather" width="300" height="200" style="display: block; margin: 0 auto;"/>
+        </p>
+        <h2>Application Structure</h2>
+        <p>The application is built using PySimpleGUI for the user interface and the aforementioned libraries for backend processing. It works as follows:</p>
+        <ol>
+            <li>The user enters a location into the input field and clicks submit.</li>
+            <li>The <code>get_weather_data</code> function fetches weather data from the web.</li>
+            <li>The GUI is updated with the weather information, including an appropriate symbol to represent the current weather conditions.</li>
+        </ol>
+    
+        <h2>Key Functions</h2>
+        <p>The <code>get_weather_data</code> function takes a location as input and scrapes weather data using <code>requests</code> to send a query to Google and <code>BeautifulSoup</code> to parse the returned HTML content.</p>
+    
+        <h2>Running the Application</h2>
+        <p>To run the application, execute the script in a Python environment where the required libraries are installed. Ensure that the image files for weather symbols are available in the specified paths.</p>
+
+        <h1>How the Weather Data Fetching Works</h1>
+    
+        <p>The provided Python code snippet is part of a function that retrieves weather data from the web. Let's break down its functionality and the libraries you need to have installed to run this code.</p>
+    
+        <h2>Code Breakdown</h2>
+        <ol>
+            <li>
+                <strong>User Agent:</strong> A user agent string is set to mimic a web browser. This helps in making the server think that the request is coming from a real user using a browser.
+                <code>USER_AGENT = "Mozilla/5.0 ... Safari/537.36"</code>
+            </li>
+            <li>
+                <strong>URL Construction:</strong> The URL for a Google search query is formulated to include the desired search term, here being 'weather' followed by a location without spaces.
+                <code>url = f'https://www.google.com/search?q=weather+{location.replace(" ","")}'</code>
+            </li>
+            <li>
+                <strong>Session Creation:</strong> A session is created using the <code>requests</code> library to persist parameters across requests, such as cookies or headers.
+                <code>session = requests.Session()</code>
+            </li>
+            <li>
+                <strong>Setting Session Headers:</strong> The User Agent is set for the session to the earlier defined string.
+                <code>session.headers['User-Agent'] = USER_AGENT</code>
+            </li>
+            <li>
+                <strong>Performing the GET Request:</strong>The session sends a GET request to the constructed URL and receives the HTML content of the web page in response. A GET request is one of the most common types of HTTP requests.
+                In the context of the web and networking, a GET request is used to retrieve data from a specified resource on a server. 
+                <code>html = session.get(url)</code>
+            </li>
+        </ol>
+    
+        <h2>Retrieving and Displaying Weather Data</h2>
+        <p>The Python script uses a graphical user interface (GUI) built with PySimpleGUI to interact with users and display weather information. Here is a step-by-step explanation of what happens when the user submits a location to find out the current weather:</p>
+    
+        <ol>
+            <li>
+                <strong>Data Retrieval:</strong>
+                <p>
+                    The function <code>get_weather_data()</code> is called with the user's inputted location. It sends a request to a weather service and receives the current weather data, which includes the location's name, the time of the weather data, a brief description of the weather, and the temperature.
+                </p>
+                <code>name, time, weather, temp = get_weather_data(values['-INPUT-'])</code>
+            </li>
+            <li>
+                <strong>Updating the GUI:</strong>
+                <p>
+                    The GUI elements corresponding to the location, time, and temperature are updated with the new data. This is done using the <code>update()</code> method on each element, identified by their keys, to make them visible and display the retrieved weather data.
+                </p>
+                <code>
+                    window['-LOCATION-'].update(name, visible = True)<br>
+                    window['-TIME-'].update(f"{time.split(' ')[0]} {datetime.now().strftime('%H:%M:%S')}", visible = True)<br>
+                    window['-TEMP-'].update(f'{temp} \u2103 ({weather})', visible = True)
+                </code>
+            </li>
+            <li>
+                <strong>Weather Icon Update:</strong>
+                <p>
+                    Depending on the weather description, an appropriate weather icon is displayed. This is determined by checking if the current weather status matches any condition within a set of predefined weather types (like 'Sunny' or 'Rain'). When a match is found, the corresponding image is updated in the window.
+                </p>
+                <code>
+                    if weather in ('Sun','Sunny','Clear',...):<br>
+                    &nbsp;&nbsp;window['-IMAGE-'].update('symbols/sunny.png')
+                </code>
+            </li>
+        </ol>
+    
+        <h2>Conclusion</h2>
+        <p>By using these libraries, the code snippet is capable of querying Google for weather information and retrieving the results for further processing in a Python application.
+            Try running this application yourself with a city of your choice!
+        </p>
+    </body>
+</html>
