@@ -4,8 +4,7 @@
 ## Part 2 (Exercises 3-9) + read_file setup: Text Processing
 ##
 ## Do NOT edit the names of any functions, and do NOT delete comments.
-## Part 2 reads .txt files (e.g. gettysburg.txt), so run doctests from the
-## folder that contains this file AND the text files:
+## To run the doctests, go to the folder that contains this file and run:
 ##     python3 -m doctest lab17starter.py
 ########################################################################
 
@@ -177,13 +176,16 @@ def apply_language_game(text: str, language_game) -> str:
         text (str): The input text to be processed.
         language_game (callable): A function that takes in a word and returns a new word.
 
-    Requires read_file and pig_latin to pass local doctests (run from the folder with gettysburg.txt).
+    Requires pig_latin to pass local doctests.
 
     Returns:
         str: The modified text where each word has been transformed according to the language game.
     Examples:
-    >>> text = read_file("gettysburg.txt")
-    >>> result = apply_language_game(text, str.upper) #Uppercases all words read from gettysburg.txt
+    >>> text = ("Four score and seven years ago our fathers brought forth on this continent, "
+    ...         "a new nation, conceived in Liberty, and dedicated to the proposition that all men "
+    ...         "are created equal. ... and that government of the people, by the people, "
+    ...         "for the people, shall not perish from the earth.")  #from the Gettysburg Address
+    >>> result = apply_language_game(text, str.upper) #Uppercases all words in text
     >>> result = result.split()
     >>> result[0:8]
     ['FOUR', 'SCORE', 'AND', 'SEVEN', 'YEARS', 'AGO', 'OUR', 'FATHERS']
@@ -192,7 +194,7 @@ def apply_language_game(text: str, language_game) -> str:
     >>> pig[0:8]
     ['ourFay', 'orescay', 'anday', 'evensay', 'earsyay', 'agoay', 'ouray', 'athersfay']
     >>> vowels = ['a', 'e', 'i', 'o', 'u']
-    >>> #the below language_game filters out the vowels in each word of the file
+    >>> #the below language_game filters out the vowels in each word of the text
     >>> no_vowels = apply_language_game(text, lambda word: "".join([char for char in word if char not in vowels]))
     >>> no_vowels = no_vowels.split()
     >>> no_vowels[-10:] #the last 10 words
@@ -382,11 +384,12 @@ def build_markov_model(text: str, k: int) -> dict:
     m is the model (a dictionary)
     text is the text
     k is the order of our Markov chain
-    >>> expected = {'the': {' ': 1, 'r': 1}, 'he ': {'e': 1}, 'e e': {'t': 1}, ' et': {'h': 1}}
+    >>> expected = {'the': {' ': 1, 'r': 1}, 'he ': {'e': 1}, 'e e': {'t': 1}, ' et': {'h': 1}, 'eth': {'e': 1}}
     >>> actual = build_markov_model("the ether", 3)
     >>> expected == actual
     True
-    >>> expected = {'Beau': {'t': 1, 'y': 1}, 'eaut': {'y': 1}, 'auty': {' ': 1}, 'uty ': {'+': 1}, 'ty +': {' ': 1}}
+    >>> expected = {'Beau': {'t': 1}, 'eaut': {'y': 1}, 'auty': {' ': 1}, 'uty ': {'+': 1},
+    ... 'ty +': {' ': 1}, 'y + ': {'J': 1}, ' + J': {'o': 1}, '+ Jo': {'y': 1}}
     >>> actual = build_markov_model("Beauty + Joy", 4)
     >>> expected == actual
     True
