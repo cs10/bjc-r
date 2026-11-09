@@ -5,7 +5,7 @@
 ##
 ## Do NOT edit the names of any functions, and do NOT delete comments.
 ## To run the doctests, go to the folder that contains this file and run:
-##     python3 -m doctest lab17starter.py
+##     python3 -m doctest cs10-fa26-lab17-starter.py
 ########################################################################
 
 ########################################################################
